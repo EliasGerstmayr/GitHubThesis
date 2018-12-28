@@ -1,0 +1,218 @@
+%\UseRawInputEncoding
+\RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass[12pt]{report}
+
+\usepackage{amsmath}
+\usepackage[a4paper,top=2.3cm,bottom=2.3cm,includeheadfoot]{geometry}
+\usepackage{graphicx}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{microtype} %use after fonts
+\usepackage{siunitx}
+%\usepackage{booktabs}
+\usepackage{lastpage}
+\usepackage{subcaption}
+\usepackage{epigraph} % this is to add quotes at the beginning of chapters
+\usepackage{bibunits}
+
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{color}
+\newcommand{\EliasComm}[1]{\todo[inline,color=blue!40]{EG: #1}}
+
+%\DeclareUnicodeCharacter{00A0}{ }
+%\DeclareUnicodeCharacter{00A0}{~}
+%\DeclareUnicodeCharacter{2212}{-}
+%\DeclareUnicodeCharacter{2010}{-}
+%\DeclareUnicodeCharacter{2009}{\,} 
+%\DeclareUnicodeCharacter{308}{"}
+
+
+\usepackage{cite}
+\usepackage[font={it}]{caption} % package to customise caption fonts
+\usepackage[nottoc,numbib]{tocbibind} % This is to enable titles for table of contents, references etc.
+\setlength{\headheight}{1.1\baselineskip}
+\usepackage[automark]{scrlayer-scrpage} % package to customise the headers and footers
+\pagestyle{scrheadings}
+\clearscrheadfoot
+
+\usepackage[final]{feynmp}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\makeatletter
+\def\endfmffile{%
+	\fmfcmd{\p@rcent\space the end.^^J%
+			end.^^J%
+			endinput;}%
+	\if@fmfio
+		\immediate\closeout\@outfmf
+	\fi
+	\ifnum\pdfshellescape=\@ne
+		\immediate\write18{mpost \thefmffile}%
+	\fi}
+\makeatother
+
+
+\ofoot{\pagemark}
+\ohead{\headmark}
+
+\usepackage[colorlinks=true, citecolor=blue, linkcolor = black, pdfborder={0 0 0},backref=page]{hyperref}
+\usepackage{cleveref}
+
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{%
+    \ifcase #1 (Not cited.)%
+    \or        (Cited on page~#2.)%
+    \else      (Cited on pages~#2.)%
+    \fi}
+
+\numberwithin{equation}{section}
+
+
+\graphicspath{{pics/}{pics/Ch1_Introduction/}{pics/Ch2_Theory/}{pics/Ch3_Methods/}{pics/Ch5_Results1/}{pics/Ch6_Results2/}{pics/Ch7_Results3/}}
+
+\begin{document}
+
+\begin{titlepage}
+\vspace*{\fill}
+\begin{center}
+\huge{Probing high-field QED effects with laser wakefield acceleration}\\[2cm]%\\[3.5cm]
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.6\columnwidth]{Imperial_2_Pantones}
+\end{figure}
+
+\vspace{1.5cm}
+\Large{Elias Gerstmayr}\\[1.0cm]%\\[3.5cm]
+\large{\today}
+\vfill
+\normalsize{Submitted in partial fulfilment of the requirements for the degree of Doctor of Philosophy in Physics of Imperial College London and for the Diploma of Imperial College London.}
+\vfill
+\large{Department of Physics\\Imperial College London\\ Prince Consort Road\\ London SW7 2AZ}
+\vfill
+\end{center}
+\end{titlepage}
+\stepcounter{page}
+
+
+
+
+\chapter*{Declaration}
+\vspace*{\fill}
+
+\newpage
+
+
+\thispagestyle{plain}
+%\maketitle
+\vspace*{\fill}
+\begin{center}
+
+\textit{Da\ss \,\,ich erkenne, was die Welt}
+
+\textit{Im Innersten zusammenh\"alt.}
+\vspace{\baselineskip}
+
+\textit{So that I may perceive whatever holds}
+
+\textit{the world together in its inmost folds.}
+\vspace{\baselineskip}
+
+Johann Wolfgang von Goethe -- Faust. Der Trag\"odie erster Teil.
+\vspace*{\fill}
+
+\end{center}
+\newpage
+
+\thispagestyle{plain}
+
+\vspace*{\fill}
+
+\chapter*{Abstract}
+
+The report is submitted to partially satisfy the requirements for the degree of Doctor of Philosophy (PhD). It begins with an overview and summary of experimental methods and theory relevant to the author's research, followed by an analysis of experimental data taken during the course of this degree.
+The main focus of this thesis is using relativistic particles accelerated by laser wakefield acceleration and highly energetic radiation.
+
+The first results presented are based on two recent colliding pulse experiment performed using the dual 300 TW Astra Gemini laser facility at the Rutherford Appleton Laboratory, where GeV scale electrons were collided with a high intensity laser beam to look for signatures of a fundamental process called radiation reaction.
+Experimental evidence strongly indicates that the electron bunch and the laser beam were successfully overlapped in time and space at the collision point. Furthermore, results suggest that this happened at high laser intensities ($a_0 \sim 7$) and electron energies ($\sim 600\, \mathrm{MeV}$), generating radiation from inverse Compton scattering at photon energies of several tens of MeV, which is significantly higher than reported in previous experiments \cite{Sarri2014,Chen2013a,TaPhuoc2012a,Khrennikov2015}.
+
+The second part of the results will be focused on a improved colliding pulse experiment, build upon the lessons learnt on the campaigns described in the first part.
+
+The third chapter looks at another campaign performed at the Astra Gemini laser facility, this time attempting to generate matter from light through the simplest QED mechanism there is: the linear Breit-Wheeler process.
+\vspace*{\fill}
+
+
+\chapter*{Role of the Author}
+
+Something about experiments and large teams and collaborations. Work in experimental groups for 9-12 experimental campaigns, mainly at Astra Gemini. Leading experiments as Target Area Operator, planning and design. Sometimes just one diagnostic.
+
+The author has mainly been involved at experimental campaigns at the Astra Gemini laser facility at the Central Laser Facility (CLF), Rutherford Appleton Laboratory (RAL), Oxfordshire, UK. At the submission of this thesis, the author completed 10 campaigns in different roles, initially mainly setting up diagnostics of different kind, later on leading as Target Area Operator.
+
+The results presented in chapter X are based on data taken on an experimental campaign at Gemini in 2015, during the first year of the author's PhD, investigating radiation reaction in the collision of a highly relativistic electron beam with a very intense laser pulse. During the campaign the author helped setting up different diagnostics and was mainly in charge of the electron spectrometer. Following the completion of the campaign the author analysed the electron spectra, their energy, shape and statistical stability. The author also processed data from a diagnostic measuring the gamma-ray spectrum and investigated links between the gamma-ray signal and electron spectra. This analysis was a crucial contribution to identify successful collisions of electron beam and laser pulse, and express statistical confidence in those results. The findings of this campaign were published in Cole et al., PRX 8 (2018), with the author of this thesis as third author. In this context another experiment was performed at the Astra Gemini facility. The results were published in Poder et al., PRX 8 (2018), with the author of this thesis as co-author.
+
+In chapter X, the author presents results from another experimental campaign performed at the Astra Gemini laser facility on the topic of radiation reaction. The author was leading the planning efforts of this experiment over the course of several months and also took the lead of the  experimental execution in late 2018 until early 2019 as Target Area Operator (TAO).
+
+In chapter X, the author presents results from an experimental campaign on the measurement of the linear Breit-Wheeler process. The author was strongly involved in the planning of this experiment and acted as Target Area Operator (TAO) for the time of the experiment. 
+
+%\begin{center}
+%\textbf{Publications}
+%\end{center}
+
+\iffalse
+\chapter*{Publications}
+
+The following publications contain work presented in this thesis:
+\vspace{\baselineskip}
+Special Issue ElecStability (this year to submit?), results from RR2? (realistically not before submission)
+
+The author contributed to the following publications during the course of his PhD:
+
+Cole RR PRX, Poder RR PRX, Keegan Gamma KSI, Amina imaging (soon to be submitted), Brendan XANES (soon to be submitted), Savio Cluster paper (soon to be submitted?), CP Ridgers special issue (soon to be submitted?), Joel chirp? (soon to be submitted), Roman SPIE special issue (soon to be submitted?), any imaging stuff?
+
+% bibunit to list our publications
+\begin{bibunit}
+\renewcommand{\bibsection}{}%{\large \textbf{\begin{center}
+%Publications
+%\end{center}}}
+\makeatletter
+\renewcommand\@biblabel[1]{#1.}
+\makeatother
+\def\bibfont{\small}
+ 
+%list all the references in the publications bibtex file
+\nocite{*}
+\putbib[mypub]
+\end{bibunit}
+
+\vspace*{\fill}
+\fi
+
+\newpage
+
+\tableofcontents
+\newpage
+
+%\include{Ch1_Introduction/Introduction}
+
+\include{Ch2_Theory/Theoretical_Background}
+
+\include{Ch3_Methods/Experimental_Methods}
+
+%%\include{Ch4_SimTools/Simulation_tools}
+
+\include{Ch5_Results1/RR2015}
+
+\include{Ch6_Results2/RR2018}
+
+\include{Ch7_Results3/BW2018}
+
+%\include{Ch8_Conclusion/Conclusions}
+
+%%\include{Ch9/Appendix}
+
+\clearpage
+\renewcommand{\bibname}{References}
+\bibliography{PhD_wakefield_2}{}
+\bibliographystyle{unsrt}
+
+\end{document}
+

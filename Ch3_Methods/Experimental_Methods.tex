@@ -1,0 +1,364 @@
+\chapter{Experimental Methods}
+
+The following chapter briefly introduces a few essential experimental components required to perform a LWFA experiment: a high-intensity laser, a target and diagnostics.
+
+It starts by introducing high-intensity lasers, the main tool to drive and probe the plasma wave, and the technique of chirped-pulse amplification (CPA) \cite{Strickland1985}, a key development that enabled the realisation of high-intensity lasers now reaching peak intensities in excess of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$. Strickland and Mourour were also awarded the Nobel Prize in physics in 2018 for this technology.
+
+The chapter is then continued with a section on gas targets routinely used in LWFA experiments. The different types of targets encountered by the author during his research are presented and compared where the author tries to communicate the diversity of targets in use and their advantages or disadvantages with respect to different applications.
+
+Finally, commonly used techniques to diagnose the plasma, the laser focal spot, their interaction as well as the product of LWFA, electrons and X-ray radiation.
+
+
+\section{Laser Systems}
+
+Since the invention of the laser in 1960 \cite{Maiman1960} lasers have taken an indispensable role in numerous fields of daily life, technology and science, further pushing towards higher peak intensities and shorter pulse durations, opening up interesting new phenomena and applications \cite{DiPiazza2012}.
+\vspace{\baselineskip}
+
+At the beginnings of the experimental work in the field of wakefield acceleration, high intensity short pulse lasers as the ones that achieved the breakthrough for LWFA in 2004 (quasi-monoenergetic electrons in the MeV regime \cite{Mangles2004,Faure2004,Geddes2004}) were not available.
+Restricted by the breakdown threshold of the amplification crystals the pulse duration and intensity were limited. In order to still drive wakes creative acceleration schemes were developed to compensate the lack of more powerful lasers, an example is the beat wave plasma accelerator \cite{Tajima1979}.
+
+With the advent of short pulse terrawatt systems after the invention of chirped pulse amplification (CPA) \cite{Strickland1985}, wakefield acceleration achieved a breakthrough reaching the non-linear regime, sometimes referred to as the `blowout' or `bubble' regime, and the production of quasi-monoenergetic electrons in the MeV regime \cite{Mangles2004,Faure2004,Geddes2004}.
+CPA opened up the relativistic regime at intensities of around $10^{17}-10^{18}\,\mathrm{W}\,\mathrm{cm}^{-2}$, where electrons accelerate to relativistic velocities within a single laser period leading to interesting effects like relativistic self-focusing which is also used to achieve longer guiding in LWFA. Even intensities of $10^{21} \,\mathrm{W}\,\mathrm{cm}^{-2}$ are within reach where QED corrections become relevant and phenomena like radiation reaction (classical and quantum), multi-photon Compton scattering or even the quantum vacuum can be investigated. The current record exceeds a peak intensity of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and laser systems pushing this even further by orders of magnitude are being planned or built already, as for instance the facilities of the Extreme Light Infrastructure (ELI) REFERENCE HERE or the upgrade of the Vulcan laser at the Central Laser Facility in the UK.
+\vspace{\baselineskip}
+
+Due to the importance of CPA for the recent progress in this field the scheme will be introduced in the following section.
+
+\subsection{Chirped-pulse amplification (CPA)}
+
+In regular laser amplification a laser pulse (single pass) passes once or several times (multipass) through an amplifier crystal, the laser gain medium. To generate ultrashort pulses a large bandwith gain medium is required in order to amplify continuously over a large frequency domain. A popular choice are lasers based on titanium-doped sapphire (Ti:Sa) as gain medium. At these short pulse durations and high intensities non-linear effects such as relativistic self-guiding start to occur leading to a local increase of the field strength. At very high field strengths the gain medium starts to ionize and in turn to take damage: amplification of these short pulse lasers is limited by this breakdown. Further amplification can then only be achieved if the beam is expanded and if a large enough gain medium is available. This limitation was overcome or at least pushed further by the invention of chirped-pulse amplification (CPA) \cite{Strickland1985} based on a technique employed in radar technology.
+\vspace{\baselineskip}
+
+CPA takes advantage of the fact that short laser pulses are not monochromatic but a spectrum. This is a necessary property for the pulse to have a short duration, an evident feature when considering the Fourier transformation.
+
+CPA exploits this fact and stretches the pulse in time using sets of refraction gratings: depending on the frequency of the light it will be refracted differently, extending or shortening the path relative to other frequencies. A pair or a couple of grating pairs can in this way stretch the pulse with a dependence on wavelength: the pulse is `chirped'. The energy density is now much lower than before and the pulse in total can be amplified to much higher intensities without damaging or saturating the gain medium. In the next step, sets of gratings reverse the process and compress the pulse, achieving a high intensity but also an ultrashort pulse duration that is ideal for LWFA.
+\vspace{\baselineskip}
+
+However, even with CPA the amplification achievable is finite as it is not useful to stretch the laser pulse arbitrarily much to lower the energy density and an ordinary gain medium as amplifier will reach its limits again as soon as the stretched pulse reaches the ionisation threshold. In addition, the gratings have to withstand these high intensities when recombining the stretched pulse and hence have to have a high damage threshold. An improved chirped-pulse amplification scheme to push this boundary even further is the so called optical parameter chirped-pulse amplification (OPCPA) scheme. The normal amplifier crystal is substituted by a non-linear medium. The laser pulse deposits only a fraction of energy of the amount in ordinary laser gain media as it works via a parametric process, which allows to pump this medium with even higher powers.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{Chirped_pulse_amplification.png}
+\caption{Schematic layout of a CPA system\protect\footnotemark. The initial short pulse is sent through a grating which disperses the spectrum of the pulse and stretches it, resulting in a longer pulse with a monotonic frequency shift throughout: the pulse is chirped. The pulse with lower power is amplified and re-compressed in another set of gratings to a short and high-power pulse.}
+\end{figure}
+
+
+\footnotetext{Graphic taken from Wikipedia: \url{https://en.wikipedia.org/wiki/Chirped\_pulse\_amplification}}
+
+\subsection{Gaussian optics}
+
+The research in wakefield acceleration involves the work with lasers of different kinds as driver, scatterer or probe. A good understanding of optics is essential for setting up imaging systems, aligning and estimating properties like intensity, focal spot sizes and guiding of the beam.
+
+The following section will briefly introduce a few equations from Gaussian optics that are useful in this context.
+\vspace{\baselineskip}
+
+Gaussian beams are one of the solutions to the paraxial Helmholtz equation describing the propagation of an electromagnetic wave in free space confined spatially and angularly. The transverse profile of the beam follows a Gaussian function and is axial-symmetric.
+
+Crucial properties of the laser in experiment to consider are the size of the focal spot, the intensity at focus and how quickly the beam refracts.
+
+\paragraph{The waist size} $w(z)$ in a longitudinal distance $z$ from focus at $z=0$ is given by
+\begin{equation}
+w(z) = w_0 \sqrt{1 + \left(\frac{z}{z_R}\right)^2},
+\end{equation}
+where $w_0$ is the waist size at focus and $z_R$ the Rayleigh range, the distance over which the laser diffracts in vacuum to $w(z_R) = \sqrt{2}w_0$:
+\begin{equation}
+z_R = \frac{\pi w^2_0}{\lambda_0}.
+\end{equation}
+Sometimes the distance $\pm z_R$ from $w_0$ is referred to as the `depth of focus'.
+
+\paragraph{The divergence} of the beam $\theta$ several Rayleigh lengths from focus is given by the ratio of the waist to the Rayleigh length
+\begin{equation}
+\theta = \frac{w_0}{z_R} = \frac{\lambda}{\pi w_0},
+\end{equation}
+where $\lambda$ denotes the wavelength of the laser.
+
+In experiment, the divergence of the beam is determined by the focusing optics in use, commonly characterised by the F-number:
+\begin{equation}
+F = \frac{w_0}{\lambda} = \frac{f}{d} = \frac{1}{\pi\theta},
+\end{equation}
+where $f$ is the focal length and $d$ the diameter of the optic.
+
+In other words, the smaller the beam waist, the stronger the beam diverges.
+This poses us with a problem, as we aim for high intensities but want the beam to be guided over several milli- to centimetres. This can be overcome using waveguides or at sufficient conditions nature helps us out through relativistic self-focusing.
+\vspace{\baselineskip}
+
+\paragraph{The intensity} of a Gaussian beam is given by
+\begin{equation}
+I(\rho,z) = I_0 \left(\frac{w_0}{w(z)}\right)^2 \exp\left(-\frac{2\rho^2}{w^2(z)}\right),
+\end{equation}
+where $\rho$ is the radial distance to the central axis along which the beam propagates and $I_0$ is the peak intensity. 
+
+On axis $\rho = 0$ this simplifies to
+\begin{equation}
+I(0,z) = \frac{I_0}{1+(z/z_R)^2},
+\end{equation}
+where we see that the intensity drops to half of the maximum $I_0$ over a Rayleigh length from focus and at proportional to $I_0 z^2_R/z^2$ at long distances $z \gg z_R$, similarly to spherical waves.
+
+The intensity at the waist on the other hand is
+\begin{equation}
+I(r,w_0)=I_0 \exp\left(-\frac{2r^2}{w^2_0}\right),
+\end{equation}
+and integrating over the radius will give the total intensity, where the peak intensity is on axis.
+\vspace{\baselineskip}
+
+The intensity is in this context also often expressed in terms of the normalised vector potential, which can be expressed in units commonly used in experiment:
+\begin{equation}
+a_0 = \sqrt{\frac{I \lambda^2_{\mu m}}{1.37 \times 10^{18} \mathrm{W/cm^2 \mu m^2}}}.
+\end{equation}
+
+We can use these equations now, for instance, to estimate the conditions to expect at the Astra Gemini laser. Gemini delivers roughly $15\,\mathrm{J}$ on target at a pulse duration of $45\,\mathrm{fs}$, i.e. a power of a bit over $300\,\mathrm{TW}$. The standard setup LWFA uses a focusing optic with an F-number of $F = 20$ ($f=3\,\mathrm{m}$,$D=0.15\,\mathrm{m}$) at a central wavelength of $\lambda = 0.8\,\mu m$.
+
+This gives a focal spot waist of $w_0 = 10.186 \mathrm{\mu m}$ and a peak intensity $I_0 = 2.045 \times 10^{20} \,\mathrm{W}\,\mathrm{cm}^{-2}$ and $a_0 \approx 7.5$
+
+A typical focusing optic for the second Gemini beam as scatterer has an F-number of $F = 2$, which in is by a factor $10$ smaller, leading to a $10$ times smaller focal spot with $w_0 \approx 1\,\mathrm{\mu m}$, a $100$ times higher peak intensity $I_0 = 2.045 \times 10^{20}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and finally a $10$ times higher peak normalised vector potential $a_0 \approx 75$.
+\vspace{\baselineskip}
+
+Other properties of the beam, like the radius of curvature and the Guoy phase are not mentioned in this section as they were not explicitly used in the work of the author so far.
+
+%OTHER PROPERTIES
+
+%Wavefront, radius of curvature
+%\begin{equation}
+%R(z) = z \left(1+\left(\frac{z_R}{z}\right)^2\right)
+%\end{equation}
+
+%Guoy phase
+
+\section{Laser Diagnostics}
+
+\subsection{Focal Spot Camera}
+
+The focal spot camera is used to diagnose, as the name already implies, the focal spot of the laser. A special microscope objective magnifies and images the focal spot onto a camera chip. The energy distribution, shape and size of the focal spot has been shown to be a crucial factor to couple energy from the laser pulse to the wake. Also the position of the focus, i.e. the point of highest intensity, is important to know in order to reach the non-linear regime and to correctly analyse the situation in experiment realistically.
+Due to the high intensity of the lasers in use usually the focal spot of a weaker beam, i.e. before compression, before final amplification etc., is imaged to avoid damaging the equipment. The energy of the actual focal spot on shot is then scaled from the low power image.
+
+\subsection{Timing Diagnostics}
+
+\subsection{Pointing Diagnostics}
+
+
+\section{Gas Targets}
+
+In laser-wakefield acceleration (LWFA) the laser pulse has to propagate through the plasma in order to drive a wave. Hence the density of the plasma has to permit propagation, i.e. its density has to be below the critical density $n_c = m_e \epsilon_0 \omega^2/e^2$ or also called `underdense'. For high intensity (HI) lasers with peak intensities around $10^{17}-10^{18}\,W\,cm^{-2}$ relativistic effects become important that change the critical density locally and can in some cases prevent the laser pulse from propagating. This effect is the principle of plasma mirrors which helps reducing the pre-pulse of the laser pulse and to improve the contrast. For LWFA experiments, however, densities well below $n_c$ are required. At $\lambda = 800\,\mathrm{nm}$ these are gaseous targets. `Overdense', i.e. targets with a density higher as the critical density, are mostly solid or liquid targets in context of Ti:Sa lasers. They are preferrably used for ion acceleration schemes (e.g. Target Normal Sheath Acceleration (TNSA) \cite{Wilks2001,Maksimchuk2000}) or to generate X-rays.
+\vspace{\baselineskip}
+
+Gas and liquid targets offer the advantage of being used in high-repetition experiments as they can be destroyed and reproduced in a short amount of time without re-alignment, mainly limited by the performance of the vacuum system, the time it takes for the gas to reach equilibrium -- in a gas cell for instance to avoid turbulences -- and the repetition rate of the laser system in use.
+\vspace{\baselineskip}
+
+Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001}, gas cells or capillaries \cite{Leemans2006,Nakamura2007} and capillary targets with a pre-ionised plasma (using a discharge) \cite{Spence2001}.
+However, even within those types of targetry a large variety exists, each target tailored for different applications and purposes. 
+
+As listing and explaining all those different targets would be a hopeless task, the author will limit himself to focus on examples of gas jets and cells relevant for the work presented later in this thesis.
+
+
+%Hence the author wants to emphasise the following sections are far from complete or exhaustive, but are rather meant as an introduction into the wide field of gas targetry used in LWFA.
+
+\subsection{Gas Jets}
+
+The first type of gas targetry used...?
+Gas jets are generated by...
+If the dimensions are chosen...the divergence of the cone has to match a specific ratio to allow supersonic flow. Supersonic flows are able to produce relatively smooth flat-top density profiles with short density ramps on both sides.
+
+The expanding gas cools down and in some cases can lead to the formation of clusters held together by the Van-der-Waals force between the atoms or molecules \cite{Hagena1972}. Clusters are being investigated as gas targets with potentially higher charge or beam stability as in self-injection. Suprasonic flows on the other hand might be useful for other applications including the production of betatron radiation. 
+
+
+Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. However, experimental results are less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014} and stability \cite{Desforges2014,Osterhoff2013} to set-ups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible.
+\vspace{\baselineskip}
+
+Different geometries and sizes are being used depending on the application: for instance conical and rectangular, completely flat or double cones, diverging or converging. Different nozzle types and sizes have advantages for certain applications, producing density profiles for enable specific injection mechanisms, provide a fairly smooth flat-top profile \cite{Semushin2001a} and so on.
+
+
+The nozzle size, i.e. the distance the laser pulse has to propagate through the medium, has to be matched with the laser in use, considering depletion and dephasing lengths to optimise the particle and radiation output, and to use the energy of the laser pulse to its fullest.
+\vspace{\baselineskip}
+
+The density of the gas jet is controlled by varying the backing pressure of the gas line, where higher pressure results in higher densities. When comparing nozzles of the same type in different sizes, larger nozzles require higher backing pressures to reach the same densities as smaller nozzles. For supersonic flat-top profiles the density slowly decreases above the nozzle. The actual density profile and gas flow depends on the specific design and manufacturing.
+\vspace{\baselineskip}
+
+The diversity of nozzle designs also lead to the idea of using 3D printing methods for fast prototyping and tailoring the nozzles to the specific needs of the experiment \cite{Jolly2012}.
+
+The material applied is generally a type of metal, varying from aluminium to steel or brass. In the case of \cite{Jolly2012} plastic was used for prototyping. Manufacture errors or deterioration over long run times can have an impact on the gas flow and will lead to deviations from idealised hydrodynamic simulations. Hence nozzles (and other gas targets as well) are usually characterised, i.e. their gas flow is analysed, either before or after an experiment to account for deviations from the ideal simulation properties in hydrodynamic codes like FLASH. The density can, for instance, be determined using an interferometry set-up and Abel inversion \cite{Bracewell1978}. In case of clustered media Rayleigh-scattering can be used to determine the cluster size and density.
+\vspace{\baselineskip}
+
+\EliasComm{Some general bits about gas jets, how they work and then about shock injection.}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{conical_nozzle_prettypic.jpg}
+\caption{Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionized by the laser and lights up. Picture taken at Gemini, Central Laser Facility, in December 2015.}
+\end{figure}
+
+
+\subsection{Gas Cells}
+
+Gas cells are compartments filled with gas. Something about difference of gas volume required.
+
+
+, sometimes with variable length or with several stages in one cell to tailor the density profile for different injection mechanisms \cite{Pollock2011}.
+\vspace{\baselineskip}
+
+In general, gas cells have shown to be able to provide relatively uniform density profiles, stable even at low densities and -- even though harder to design, manufacture, to set up and align -- to be a very feasible option to achieve great reproducible results \cite{Osterhoff2008}.
+
+In contrast to gas jets, the alignment is more involved as the orientation of the gas cell is crucial to make sure the laser pulse propagates through the entire cell, also in order to avoid damaging the gas cell and in consequence possibly other components through debris. Depending on the size of the laser beam and the gas cell even careful alignment can lead to deterioration of components, especially at the entry and exit holes if the laser beam is too large, jitters or defocuses in interaction with the plasma.
+
+Gas cells have been very successfully used by several research teams reaching energies up to the multi-GeV level in a single stage \cite{Leemans2014}.
+\vspace{\baselineskip}
+
+A disadvantage, in addition to the factors mentioned previously, is the potential reduction in field of view due to the enclosing shell of the gas cell. This might make taking data from optical diagnostics like side-scattering more challenging.
+This can be resolved by designing the gas cell accordingly and use appropriate materials that allow probing and withstand the experimental conditions. However, more careful planning is required in advance to design the gas cell and put appropriate maintenance and alignment procedures in place.
+\vspace{\baselineskip}
+
+Just as 3D printing methods have been considered for gas jets \cite{Jolly2012} researchers have demonstrated that this is also possible and feasible for gas cell designs \cite{Vargas2014}.
+
+
+
+\section{Characterising Gas Targets}
+
+In wakefield experiments a variety of optical diagnostics can be used to gain an insight into the behaviour of the laser pulse in the plasma, the wake itself or the injection mechanisms.
+The most common diagnostics for a typical wakefield experiment setup are shadowgraphy and interferometry to measure the plasma density at interaction and see features of the plasma channel, the focal spot camera to diagnose the shape and energy distribution of the driver pulse and post-interaction diagnostics to derive from frequency-shifting or shape of the focal spot how laser and plasma interacted.
+
+\subsection{Types of Gas}
+
+\subsection{Shadowgraphy}
+
+In a shadowgraphy light is shone through a transparent medium and then imaged onto a camera chip. Modulations in the density are visible in form of a change in refractive index: less dense areas are brighter while darker areas indicate higher densities. This shadow image or shadowgram is a useful tool to see features in plasmas, such as a plasma channel, resulting from density perturbations. Whilst features become very clear, the absolute density itself can not be derived from it without further reference.
+\vspace{\baselineskip}
+
+In a LWFA set-up a shadowgraphy can be achieved by using a secondary laser beam, commonly called `the probe', passing transversely to the laser axis through the plasma. In addition, it has to be timed with the main beam to capture interesting features. If the probe pulse is too early, there will be no plasma channel and if too late the channel will have expanded already and blurred out on the image. The imaging system includes one or multiple lenses, depending on the path of the light, magnification desired and so on. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\columnwidth]{Shadowgraphy_example_cut.jpg}
+\caption{Example of a shadowgram taken on an experiment run at TA2 (Central Laser Facility, RAL) in Spring 2016. The image shows a plasma channel produced by the Astra laser pulse in a gas cell of $3\,\mathrm{mm}$ length filled with helium. The density is relatively high leading to strong scattering and filamentation of the channel.}
+\end{figure}
+
+If one wants to capture smaller and volatile features like a bubble itself, a very short pulse duration ($\sim 10\,\mathrm{fs}$) for the probe pulse is required and the set-up described has to be complemented by a microscope objective \cite{Buck2011,Savert2015}.
+
+\subsection{Interferometry}
+
+\EliasComm{Include some theory about refractive indices.}
+
+In interferometry two collimated beams are overlapped with a phase difference resulting in an interference pattern. Usually one beam will act as the unperturbed reference, the second beam will image the interesting interaction point. Starting from the original interference pattern, the interference fringes will shift as the second beam picks up phase shifts when propagating through the interaction region. Phase shifts can occur, for instance, due to density modulations.
+\vspace{\baselineskip}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\columnwidth]{MachZehnder_standard.pdf}
+\caption{Sketch of a Mach-Zehnder interferometer setup. The probe beam enters from the left and is split up with a beam splitter into two beams: one enters the vacuum chamber and the target, for instance a gas jet, the second beam is guided on a path of the same length without perturbation and is then reunited with the first beam to be imaged onto a camera chip.}
+\label{Methods:Figs:Interferometer:MachZehnder:Normal}
+\end{figure}
+Interferometry is a diverse field and as there are a multitude of applications, there exist a variety of different setups for interferometers. The author will focus here on the set-ups of a Mach-Zehnder and a Michelson-Morley interferometer as these are the most commonly used types in the experiments the author is involved in.
+\vspace{\baselineskip}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\columnwidth]{MachZehnder_Second.pdf}
+\caption{Mach-Zehnder setup in experiment using just one beam. The beam is split up after the interaction and so overlapped that the the part that interacted with the beam is overlapped with an unperturbed part of the beam.}
+\label{Methods:Figs:Interferometer:MachZehnder:Compact}
+\end{figure}
+Interferometry constitutes a complementary and very useful tool in addition to the shadowgraphy. Whilst the shadowgraphy is useful to spot features in the medium, the interferometry image can give explicit numbers for the phase shift, i.e. the density modulation using Abel inversion \cite{Bracewell1978}.
+
+In experiment, a shadowgraphy can simply be achieved by splitting off a beam from the interferometry setup if the imaging system is similar (magnification etc.).
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\columnwidth]{Interferometry_example_cut.jpg}
+\caption{Example of an interferometry image: plasma channel in a $2.8\,\mathrm{mm}$ long gas cell filled with hydrogen at a high density. The laser propagated from the right to the left. The fringe shift at the entry hole indicates an up-ramp in the density profile.}
+\end{figure}
+
+\iffalse
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\columnwidth]{MichelsonMorley_cut_arrows.jpg}
+\caption{Michelson-Morley interferometer at the BOND laboratory in Hamburg. The same beam is being used as reference and probe beam by overlapping a neutral area with a part of the beam that captured the density perturbation.}
+\end{figure}
+\fi
+
+Alternatively, to setting up two different beam paths, one as reference and one probing the interaction region (see figure \ref{Methods:Figs:Interferometer:MachZehnder:Normal}), in some cases it is possible to use only the beam going through the region of interest.
+This is an option if the field of view of the probing beam has well known regions that are not affected by the perturbation investigated, just like a reference beam. In this case the entire interferometer is set up after the interaction point and the beams are shifted so that the event region of the one beam overlaps with the static part of the second beam (compare figure \ref{Methods:Figs:Interferometer:MachZehnder:Normal} with figure \ref{Methods:Figs:Interferometer:MachZehnder:Compact}).
+
+\EliasComm{require some information on symmetry.}
+
+\EliasComm{PHASIX, PICOSTAR?}
+
+\EliasComm{Characterising non-symmetric targets (in the lab).}
+
+\newpage
+\section{Particle Diagnostics}
+
+\subsection{Energy Spectrometer}
+
+The electron energy spectrometer commonly used in experiment is based on magnetic dispersion. The relativistic charged particle beam is deflected with a dipole magnet according to the energy of the respective particle. Then a scintillator screen, e.g. lanex, is positioned in the beam path and imaged by a camera. When all parameters, magnet strength, propagation distance, particle mass etc. are well-known, each coordinate on the screen can be associated to an energy.
+\vspace{\baselineskip}
+
+\begin{figure}[h]
+\includegraphics[scale=1.2]{magnet3.png}
+\includegraphics[scale=0.12]{Espec_shotexemp.jpg}
+\caption{Sketch of a typical spectrometer setup in a LWFA experiment (left). The relativistic electron beam enters the dipole magnet (grey) and is dispersed onto the lanex screen according to its energy. Higher energies are deflected less than lower energies. The image on the right is an example of a spectrum taken on an experiment. The high energies are on the top and the spectrum decreases downwards.}
+\end{figure}
+
+The correct assignment of position on the screen to electron energy is achieved by measuring the position of all components (lanex screen, magnet, TCC) accurately and by running a particle tracking code with these details.
+Each pixel has a certain error bar on its associated energy as the divergence of the electron beam, an offset at source or shot-to-shot pointing fluctuations could lead to different positions at the same electron energy.
+\vspace{\baselineskip}
+
+A second lanex screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations to achieve a more accurate determination of the energy.
+
+The width of the electron trace can be used to determine the divergence of the beam and cross-checked with the spectrum of the betatron radiation.
+
+In experiment, perfectly homogeneous fields are even in approximation rarely encountered, especially at the fringes of physical magnets the fields smoothly fall off to a zero background field. Hence, usually homogeneous fields are only used as approximation that can provide a rough estimate (see the analytic solution of the deflection angle in the theory section) and physical magnets are mapped using a Hall probe for instance before or after the experiment to achieve more accurate results. Even outside the magnet by-passing electrons can be influenced by fringe fields which can lead to deflection of electrons at low energies if the space is limited. This should be avoided or the fields sufficiently shielded, e.g. by applying mu-metals.
+
+\subsection{Electron Beam Profile}
+
+One possible beam profile diagnostics is a scintillating screen, e.g. lanex, that is positioned in the unperturbed electron beam, i.e. without dispersion. It  measures the shot-to-shot pointing fluctuation and the divergence in both axes of the electron beam accelerated in experiment. 
+
+Combined with an absolute calibration of the detected signal to the charge the beam profile can also give detail about the total charge of the beam, also including particles that are out of range of the magnetic spectrometer. However, it does not give any information about the spectrum of energies and how the charge is distributed amongst those energies.
+\vspace{\baselineskip}
+
+The electrons are emitted with a momentum distribution that is dominated by the component in the direction of the laser propagation. Additional transverse components are present, for instance visible in betatron oscillations, and lead to a divergence of the beam, typically a few $\mathrm{mrad}$.
+To estimate the divergence one can work with a simple geometric relation and the spot size of the beam at the beam profile. A long propagation distance before the profile measurement increases the accuracy of the measurement.
+
+Assume a point source that propagates and diverges over a distance $d$ until it is detected at the beam profile, now extending to a circle of radius $r$. If $d \gg r$, then the small angle approximation holds:
+
+\begin{align}
+\tan \theta \approx \sin \theta &= \frac{r}{d},\nonumber\\
+\theta &\approx \frac{r}{d},
+\end{align}
+where $\theta$ denotes the divergence, equivalent to the ratio of forwards to transverse momentum.
+\vspace{\baselineskip}
+
+The pointing fluctuations of the beam can be estimated similarly if one suspects mainly an angular jitter. In reality the pointing will be related to a combination of translation and rotation.
+
+\subsection{TimePix Detectors}
+
+
+\section{X-ray and Gamma-ray Diagnostics}
+
+Wakefield acceleration has not only demonstrated to be a feasible tool to accelerate electrons to a GeV scale, but has also been shown to be a useful source for X-rays of remarkable brightness, e.g. by the means of betatron radiation \cite{Rousse2004} or also as a tunable Compton-source \cite{TaPhuoc2012a}.
+
+In order to decide whether a radiation source can be used for certain applications, it has to be characterised properly regarding properties like flux, energy spectrum, source size, pulse duration and divergence.
+
+\subsection{X-ray Pinhole Camera}
+
+This measures the source size of the X-ray source.
+
+\subsection{X-ray Crystal Camera}
+
+This measures the spectrum of  an X-ray source by diffraction of X-ray photons from a crystal lattice.  Bragg condition.
+
+\subsection{X-ray Filter Pack}
+
+X-ray cameras or direct CCD cameras are a more direct way to measure radiation.
+So called `filter packs' will be placed in front of the chip to measure the transmission through several materials in order to obtain sufficient information to determine the spectrum collected.
+A common method is the use of Ross filter pairs.
+This method works well for soft X-rays, in a regime where the transmission is very dependent on the material. For harder X-ray spectra in the MeV range the transmission is almost constant for most materials and interaction with matter can result in the production of electron-positron pairs.
+
+\EliasComm{not relevant for the experiments presented?}
+
+\subsection{Gamma-ray Scintillator Profile}
+
+
+
+
+\subsection{Gamma-ray Scintillator Arrays}
+
+One method to detect and characterise X-rays is using blocks or slaps of scintillating material extending in the propagation direction of the radiation or perpendicular to it, depending on what aspect of the radiation one is interested in. The response of the material, i.e. how photons or particles deposit energy and how the scintillator reacts, is then modelled using Monte-Carlo codes, e.g. GEANT4 \cite{Agostinelli2003} or MCNP \cite{Goorley2012}, and compared to the response measured. In general, the penetration depth and the energy deposited in the crystals are proportional to the energy of the radiation transmitted. To discriminate the spectrum even further, different materials can be overlaid as the response varies from material to material. This might be more complicated for very high energetic gamma rays as the cross section is almost identical for most materials at the MeV scale.
+
+
+\EliasComm{Deeper explanation of the setup and how the spectrum is being retrieved. Reference Keegan's paper.}
+
