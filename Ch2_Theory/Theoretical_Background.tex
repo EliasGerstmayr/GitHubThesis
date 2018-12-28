@@ -55,13 +55,13 @@ Using the previously derived equation for the Lorentz force we can now consider 
 
 If we choose the coordinate system such that  $\mathbf{E} =  (E,0,0)^t = E e_x$, we see that the momentum of the electron is unchanged in the other two directions, $\mathrm{d}p_x/\mathrm{d}t = \mathrm{d}p_y/\mathrm{d}p_y = 0$. In x-direction the electron however feels a constant force $qE$ accelerating it further and further. 
 
-Let us assume a field strength $E = 100\,\mathrm{MeV/m}$, then the electron will have gained an energy of $100\,\mathrm{MeV}$ afer $1\,\mathrm{m}$. After $1\,\mathrm{km}$ it would have gained already $100\,\mathrm{GeV}$ and so on. If we double the field strenght, we only need half of the distance to reach the same energy. We just built ourselves a linear electron accelator! In reality most accelerating structures are not based on static electric fields anymore but on matched alternating fields. The principal idea, however, remains the same and the energy gain scales linearly with field strength and the distance over which the particle experiences this field. This is also the motivation and the appeal of plasma based accelerators: plasmas for example can sustain arbitrarily high electric field strengths and some of the accelerating fields measured so far reached an excess of $100\,\mathrm{GeV/m}$ (REF) - we just managed to save us quite some space!
+Let us assume a field strength $E = 100\,\mathrm{MeV/m}$, then the electron will have gained an energy of $100\,\mathrm{MeV}$ afer $1\,\mathrm{m}$. After $1\,\mathrm{km}$ it would have gained already $100\,\mathrm{GeV}$ and so on. If we double the field strenght, we only need half of the distance to reach the same energy. We just built ourselves a linear electron accelerator! In reality most accelerating structures are not based on static electric fields anymore but on matched alternating fields. The principal idea, however, remains the same and the energy gain scales linearly with field strength and the distance over which the particle experiences this field. This is also the motivation and the appeal of plasma based accelerators: plasmas for example can sustain arbitrarily high electric field strengths and some of the accelerating fields measured so far reached an excess of $100\,\mathrm{GeV/m}$ (REF) - we just managed to save us quite some space!
 
 \EliasComm{add diagram of particle acceleration like in between two plates.}
 
 \subsection{Electron motion in a homogeneous magnetic field}
 
-The energy of electrons in wakefield experiments can be determined in experiment using an electron energy spectrometer based on magnetic dispersion. The electrons are deflected using a dipole magnet and detected on a scintillator screen.
+The energy of electrons in wakefield experiments can be determined in experiment using an electron energy spectrometer based on magnetic dispersion. The electrons are deflected using a dipole magnet and detected on a scintillating screen.
 
 In order to understand the fundamental relations this method is based on, the motion of a single electron in a homogeneous magnetic field is considered and analytically solved: first for a motion completely within the magnetic field, then the case of an electron passing through a region of a homogeneous magnetic field of finite extent, but also without considering fringe fields or gradients. In reality, the magnetic fields are measured or simulated and particle tracked using numerical methods.
 \vspace{\baselineskip}
@@ -118,7 +118,7 @@ and then expressing this into parameters we can measure in experiment we reach
 &= \frac{e B r_b}{p_\perp}.
 \end{align}
 
-In a typical LWFA experiment $p_\perp$ will be dominated by the component on the laser propagation axis. 
+In a typical LWFA experiment $p_\perp$ will be dominated by the component in the laser propagation axis. 
 
 \EliasComm{Write about Sokolov-Ternov effect here or later during radiation reaction?}
 
@@ -261,14 +261,16 @@ Here an overview of all tree-level diagrams
 
 \subsection{Compton Scattering}
 
+Classical Compton scattering describes the inelastic scattering of a photon off an electron which is at rest or close to it. Here the photon loses energy to the electron, hence this is called inelastic. In some conventions this interaction might still be referred to as elastic as energy is transferred into kinetic energy from one particle to another and is not dissipated in terms of heat or deformation.
+
+The reaction can be written as follows:
+
 \begin{equation}
-\gamma + e^- \longrightarrow \gamma + e^-
+\gamma + e^- \longrightarrow \gamma + e^-.
 \end{equation}
 
-Classical Compton scattering describes the inelastic scattering of a photon off an electron which is at rest or close to it.
-
-We will treat the electron and the incoming photon both as particles and calculate their final momenta based on energy and momentum conservation in a relativistic framework
-
+We will treat the electron and the incoming photon both as particles and calculate their final momenta based on energy and momentum conservation in a relativistic framework.
+\vspace{\baselineskip}
 
 The electron has a negligible initial momentum $\mathbf{p}_{e,initial} = \mathbf{0}$ and the total energy hence reduces to the rest energy of the electron $E_{e,initial} = m_e c^2$. The subscript $e$ stands for `electron'.
 The photon on the other hand has initally a momentum $\mathbf{p}_{\gamma, initial}$ and an energy $E_{\gamma, initial} = p/c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
@@ -304,7 +306,6 @@ Similarly there is an equation for the emission angle of the electron:
 
 These equations describe an angular dependent energy distribution, but not the probability of those interactions.
 For this purpose we require the differential cross section for Compton scattering.
-
 
 
 We can derive this by calculating the matrix element for the process. This derivation is based on Peskin and Schroeder REF.
@@ -366,7 +367,7 @@ A well known and frequently observed process is the annihilation of electrons an
 e^- + e^+ \longrightarrow \gamma + \gamma
 \end{equation}
 
-The cross section can be easily calculated by re-using the result for the Compton cross section we derived earlier. Both Feynmann diagrams are very similar and the cross-sections are relatable by making use of crossing symmetries.
+The cross section can be easily calculated by re-using the result for the Compton cross section we derived earlier. Both Feynman diagrams are very similar and the cross-sections can be related by making use of crossing symmetries.
 
 Dirac (Prc Camb Phil Soc 26, 1930)
 
@@ -385,7 +386,7 @@ For $E \gg m$ this simplifies to:
 
 The inverse process of the electron-positron pair annihilation is the more elusive linear Breit-Wheeler process. Whereas the electron-positrons easily annihilate when close enough to each other, the inverse process - creating matter in form of an electron-positron pair from light - is much more difficult to achieve. The two photons have to have a centre-of-mass energy in excess of the pair rest energy of $2\times 511\,\mathrm{keV}$. Relatively high energetic photons like this are hard to produce in large numbers. Typical energies at synchrotron sources with large photon numbers are in the few keV region. Typical processes that allow reaching high energies, for instance Bremsstrahlung, are not directed and emit all their photons in $4\,\pi$ reducing the number of usable photons in an interaction drastically.
 
-This might explain why the linear Breit-Wheeler process is the only fundamental tree-level interaction that has not been observed yet in experiment.
+This might explain why the linear Breit-Wheeler process is the only fundamental QED tree-level interaction that has not been observed yet in an experiment.
 
 \begin{equation}
 \gamma + \gamma \longrightarrow e^- + e^+
@@ -414,6 +415,8 @@ Whereas it is difficult to interact two photons with the sufficient energy, it i
 n\gamma + \gamma \longrightarrow e^- + e^+
 \end{equation}
 
+It has been observed in the 90s at SLAC in the interaction of a 46.6 GeV electron beam with a laser of intensity $10^{17}\,\mathrm{W cm^{-2}}$
+
 Observed at SLAC (Burke PRL 79, 1997 REF)
 Bamber PRD 60, 1999
 
@@ -434,14 +437,16 @@ No tree-level diagram, just higher orders are possible.
 
 \section{Radiation Production}
 
-Charged particles always then produce radiation when accelerated.
+After having considered the motion of a charged particle, in this case an electron, in external fields and also discussed briefly the fundamental processes of QED, we should consider the production of radiation in general and the different processes that bear significance in experiments.
+
+Charged particles always then produce radiation when they are being accelerated.
 
 \subsection{Synchrotron Radiation}
 
 \subsection{Bremsstrahlung}
 
 Charged particles that ... atomic collisions... are being accelerated and radiate.
-The radiation emitted is commonly called bremsstrahlung, which translates in braking radiation.
+The radiation emitted is commonly called by its German name `bremsstrahlung', which translates into `braking radiation'.
 
 The process of bremsstrahlung is of interest in this context in two ways:
 Firstly, we use the process to generate high-energetic gamma radiation. Relativistic electrons accelerated in a laser wakefield accelerator are collided with a high-Z material to convert efficiently into a collimated burst of X-rays.
@@ -455,7 +460,7 @@ Secondly, the generation of radiation from electrons interacting with solids is 
 
 The previous sections left out the effect of radiation losses onto the equation of motion of charged particles.
 Charged particles emit radiation when being accelerated. The charged particle emitting the radiation loses the energy associated with the photon and is knocked back, adhering to momentum and energy conservation rules. This is called radiation reaction or radiation friction.
-Radiation reaction is a very fundamental problem of physics and a universally accepted description does not exist. Each description only exists in a certain limit and approximation.
+Radiation reaction is a very fundamental problem of physics and a universally accepted description does not exist. Each description only exists in a certain limit and is an approximation valid within those limits.
 
 In many cases the radiation losses are small or occur over longer spans of time which means they can be ignored or the detailed physics of radiation reaction is not important. In storage rings of large accelerator and collider facilities radiation losses pose a significant problem as they limit the maximum energy the particles can be accelerated to. The exact dynamics of radiation reaction and the influence on the equation of motion of the particles is not very significant. It suffices to add the average energy lost over the a turn in the storage ring to prop up the system.
 
