@@ -482,16 +482,22 @@ The author developed several filter packs over the course of his studies, two fo
 
 \subsection{Gamma-ray Scintillator Profile}
 
+When X-rays increase in energy and reach the gamma-ray regime (> 1 MeV), the direct detection of those photons with a camera on axis becomes less feasible as photons will decay into secondary particles and radiation that will shower the camera and reduce its lifetime.
+
+Relying on indirect detection then becomes necessary. Using an array or a screen of scintillator. The shape of the profile is interesting as it allows deduction of the source. In this context it gives insight into the properties of the electrons (their divergence, propagation and so on). In case of ICS this also gives an idea of interaction intensity and polarisation of the beam.
 To measure the divergence in both axes and as measurement of the intensity.
 
 \subsection{Gamma-ray Converter Spectrometer}
 
-Convert gamma rays into electron-positron pairs and measure the spectrum to deduce the gamma spectrum.
-Works for several MeV radiation but becomes less sensitive at higher energies (REF?).
+At gamma-ray energies above 1 MeV one photon can generate a pair of electron-positron pairs when scattering on matter. The spectrum of the generated electrons and positrons are linked to the energy of the gamma photon. Based on this principle one method to measure the gamma spectrum is using a sheet of high-Z material to convert the gamma rays into matter and then measure the spectrum of these particles in a magnetic spectrometer (REF).
+
+This works well for several MeV radiation but becomes less sensitive at higher energies (REF?) when the energy spectrum of the generated particles becomes less sensitive to the photon energy.
 
 \subsection{Gamma-ray Scintillator Arrays}
 
 One method to detect and characterise X-rays is using blocks or slaps of scintillating material extending in the propagation direction of the radiation or perpendicular to it, depending on what aspect of the radiation one is interested in. The response of the material, i.e. how photons or particles deposit energy and how the scintillator reacts, is then modelled using Monte-Carlo codes, e.g. GEANT4 \cite{Agostinelli2003} or MCNP \cite{Goorley2012}, and compared to the response measured. In general, the penetration depth and the energy deposited in the crystals are proportional to the energy of the radiation transmitted. To discriminate the spectrum even further, different materials can be overlaid as the response varies from material to material. This might be more complicated for very high energetic gamma rays as the cross section is almost identical for most materials at the MeV scale.
+
+In contrast to other transmission studies the energy deposition and transmission is less linear but involves decays of photons into matter and those cascading back to photons. This means the signal will not follow a simple Beer's law but will require numerical solving and simulation via GEANT4 considering Bethe-Heitler processes etc.
 
 
 \EliasComm{Deeper explanation of the setup and how the spectrum is being retrieved. Reference Keegan's paper.}
