@@ -446,21 +446,35 @@ The following tools were used in the context of the author's work for this purpo
 
 \subsection{X-ray Pinhole Camera}
 
-This measures the source size of the X-ray source.
+One simple but effective way to measure the source size of an X-ray source is using a pinhole camera. An X-ray pinhole camera works the same way as its optical counterpart: the X-ray sensitive detector e.g. a CCD and the source are separated by an opaque wall only with a small hole (smaller than the source) to let light pass through. The magnification M is determined by the ratio of distances detector to pinhole and pinhole to source:
 
-The setup consists of a camera pointing at the X-ray source and a pinhole positioned between source and camera.
+\begin{equation}
+M = (a + b)/a,
+\end{equation}
+
+where $a$ is the distance source to pinhole and $b$ the distance pinhole to detector.
+
+Measuring these distances carefully one can then derive the source size and from shot-to-shot fluctuations in position and photon flux.
+
+To shield the CCD from ambient light the chip is typically covered with a thin beryllium window which is transparent to most X-rays but opaque to visible light. Depending on the range of X-rays one is interested the pinhole can be covered with plastic or other low-Z material to filter out low energy radiation.
+
+The commonly used cameras for experiments at the Central Laser Facility (UK) are Andor DX420 with a ... thick beryllium window.
+
 
 \subsection{X-ray Crystal Camera}
 
-This measures the spectrum of an X-ray source by diffraction of X-ray photons from a crystal lattice.  Bragg condition.
-High resolution spectrally but narrow energy range.
+To measure the spectrum of X-rays there are typically two routes: one is measuring the transmission of the radiation through different materials and derive its energy from this. The second is diffracting the X-rays on a crystal based on the Bragg condition and measuring the diffracted components.
+
+Latter method allows a measuring a narrow energy range at high resolution bound to available crystal lattices. Towards higher X-ray energies around tens of keV it becomes more difficult to use this method as crystals with the right structure and Bragg condition are rare.
 
 \subsection{X-ray Filter Pack}
 
-X-ray cameras or direct CCD cameras are a more direct way to measure radiation.
-So called `filter packs' will be placed in front of the chip to measure the transmission through several materials in order to obtain sufficient information to determine the spectrum collected.
-A common method is the use of Ross filter pairs.
-This method works well for soft X-rays, in a regime where the transmission is very dependent on the material. For harder X-ray spectra in the MeV range the transmission is almost constant for most materials and interaction with matter can result in the production of electron-positron pairs.
+When reaching higher X-ray energies the transmission through materials becomes a more feasible and flexible tool to measure the X-ray spectrum at high energy and broad bandwith.
+The composition of an array of different Z materials and thicknesses is sometimes referred to as `filter pack'. Each component has a distinct transmission profile for X-rays with sharp edges around electron absorption edges (K-edge). When selecting a suitable range of materials with K-edges in the desired energy range, a comparison of the signal levels through the filters relative to each other can deduce the underlying spectrum. In some cases pairs of materials are exhibiting almost the same transmission behaviour except for a slightly shifted position of their K-edge. A subtraction their transmission from each other tells the experimentalist the number of photons in a narrow energy bandwidth. These pairs are referred to as `Ross filter pairs'.
+
+The signal can be detected using X-ray sensitive CCD cameras directly in the beam path (direct detection). An indirect detection method is relying on scintillators that are then imaged with a sufficiently sensitive camera.
+
+This method works well for soft X-rays, in a regime where the transmission is very dependent on the material. For harder X-ray spectra in the MeV range the transmission is almost constant for most materials and interaction with matter can result in the production of electron-positron pairs which then in turn produce secondary radiation.
 
 The author developed several filter packs over the course of his studies, two for application at the Astra Gemini laser and one filter pack that was installed at the FlashForward facility at DESY in Hamburg, Germany. This filter pack is also compatible with the ultra-high vacuum of the accelerator beam line.
 
@@ -481,4 +495,8 @@ One method to detect and characterise X-rays is using blocks or slaps of scintil
 
 
 \EliasComm{Deeper explanation of the setup and how the spectrum is being retrieved. Reference Keegan's paper.}
+
+\subsubsection{Dual Axis Scintillator Array}
+
+The new dual axis detector. Measure spectrum and divergence in two axes.
 
