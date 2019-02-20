@@ -263,6 +263,8 @@ The material applied is generally a type of metal, varying from aluminium to ste
 \end{figure}
 
 
+\subsubsection{Blade}
+
 \subsection{Gas Cells}
 
 Gas cells are compartments filled with gas. Something about difference of gas volume required.
@@ -284,11 +286,6 @@ This can be resolved by designing the gas cell accordingly and use appropriate m
 
 Just as 3D printing methods have been considered for gas jets \cite{Jolly2012} researchers have demonstrated that this is also possible and feasible for gas cell designs \cite{Vargas2014}.
 
-\section{Characterising Gas Targets}
-
-In wakefield experiments a variety of optical diagnostics can be used to gain an insight into the behaviour of the laser pulse in the plasma, the wake itself or the injection mechanisms.
-The most common diagnostics for a typical wakefield experiment setup are shadowgraphy and interferometry to measure the plasma density at interaction and see features of the plasma channel, the focal spot camera to diagnose the shape and energy distribution of the driver pulse and post-interaction diagnostics to derive from frequency-shifting or shape of the focal spot how laser and plasma interacted.
-
 \subsection{Types of Gas}
 
 The properties and the behaviour of the plasma accelerator depend on the medium the laser propagates in. Tailoring the density profile or the gas in use can force the evolution of the bubble and inject electrons before wave-breaking. An easy handle is the choice of gas as it requires little engineering, but can have a significant impact on the injection mechanism in the wakefield accelerator.
@@ -305,6 +302,14 @@ The third example is methane. When being cooled down some gases start to form cl
 
 Injection mechanism similar to ionisation injection. Laser pulse evolution is different.
 Enhanced stability and charge but theory is subject to present research.
+
+
+\section{Characterising Gas Targets}
+
+In wakefield experiments a variety of optical diagnostics can be used to gain an insight into the behaviour of the laser pulse in the plasma, the wake itself or the injection mechanisms.
+The most common diagnostics for a typical wakefield experiment setup are shadowgraphy and interferometry to measure the plasma density at interaction and see features of the plasma channel, the focal spot camera to diagnose the shape and energy distribution of the driver pulse and post-interaction diagnostics to derive from frequency-shifting or shape of the focal spot how laser and plasma interacted.
+
+
 
 \subsection{Shadowgraphy}
 
@@ -334,7 +339,7 @@ In interferometry two collimated beams are overlapped with a phase difference re
 \caption{Sketch of a Mach-Zehnder interferometer setup. The probe beam enters from the left and is split up with a beam splitter into two beams: one enters the vacuum chamber and the target, for instance a gas jet, the second beam is guided on a path of the same length without perturbation and is then reunited with the first beam to be imaged onto a camera chip.}
 \label{Methods:Figs:Interferometer:MachZehnder:Normal}
 \end{figure}
-Interferometry is a diverse field and as there are a multitude of applications, there exist a variety of different setups for interferometers. The author will focus here on the set-ups of a Mach-Zehnder and a Michelson-Morley interferometer as these are the most commonly used types in the experiments the author is involved in.
+Interferometry is a diverse field and as there are a multitude of applications, there exist a variety of different setups for interferometers. The author will focus here on the set-ups of a Mach-Zehnder as is the most commonly used types in the experiments the author is involved in.
 \vspace{\baselineskip}
 
 \begin{figure}[h]
@@ -352,47 +357,30 @@ In experiment, a shadowgraphy can simply be achieved by splitting off a beam fro
 \caption{Example of an interferometry image: plasma channel in a $2.8\,\mathrm{mm}$ long gas cell filled with hydrogen at a high density. The laser propagated from the right to the left. The fringe shift at the entry hole indicates an up-ramp in the density profile.}
 \end{figure}
 
-\iffalse
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\columnwidth]{MichelsonMorley_cut_arrows.jpg}
-\caption{Michelson-Morley interferometer at the BOND laboratory in Hamburg. The same beam is being used as reference and probe beam by overlapping a neutral area with a part of the beam that captured the density perturbation.}
-\end{figure}
-\fi
+
 
 Alternatively, to setting up two different beam paths, one as reference and one probing the interaction region (see figure \ref{Methods:Figs:Interferometer:MachZehnder:Normal}), in some cases it is possible to use only the beam going through the region of interest.
 This is an option if the field of view of the probing beam has well known regions that are not affected by the perturbation investigated, just like a reference beam. In this case the entire interferometer is set up after the interaction point and the beams are shifted so that the event region of the one beam overlaps with the static part of the second beam (compare figure \ref{Methods:Figs:Interferometer:MachZehnder:Normal} with figure \ref{Methods:Figs:Interferometer:MachZehnder:Compact}).
 
 \EliasComm{require some information on symmetry.}
 
-\EliasComm{PHASIX, PICOSTAR?}
-
 \EliasComm{Characterising non-symmetric targets (in the lab).}
+
+\subsection{Moire-Deflectrometry}
+
+Based on ray tracing. Measure density gradients. 
+
+\subsection{Wavefront sensor}
+
+PHASICS. Wavefront changes can be used to estimate density of plasma channel.
+
+
+\subsection{Self emission of the plasma}
+
+Measuring the self emission of the plasma channel. Pretty Pic. Top view on channel. Less quantitative or ultrashort diagnostic.
 
 \newpage
 \section{Particle Diagnostics}
-
-\subsection{Energy Spectrometer}
-
-The energy of the relativistic electrons are commonly measured by a spectrometer based on magnetic dispersion. In most wakefield setups at laser facilities or universities the relativistic charged particle beam is deflected by the field of a dipole magnet. In experiments located at conventional accelerator facilities the beam is often diverted and re-imaged using a series of dipole and quadrupole magnets. 
-Finally, a scintillator screen, e.g. lanex, is positioned in the beam path and imaged by a camera. When all parameters, magnet strength, propagation distance, particle mass etc. are well-known, each position on the screen in the dispersion axis can be associated to an energy.
-\vspace{\baselineskip}
-
-\begin{figure}[h]
-\includegraphics[scale=1.2]{magnet3.png}
-\includegraphics[scale=0.12]{Espec_shotexemp.jpg}
-\caption{Sketch of a typical spectrometer setup in a LWFA experiment (left). The relativistic electron beam enters the dipole magnet (grey) and is dispersed onto the lanex screen according to its energy. Higher energies are deflected less than lower energies. The image on the right is an example of a spectrum taken on an experiment. The high energies are on the top and the spectrum decreases downwards.}
-\end{figure}
-
-The correct assignment of the position on the screen to the correct electron energy is achieved by measuring the position of all components (lanex screen, magnet, TCC) and the magnet field strength accurately and then running a particle tracking code with these details.
-Each pixel has a certain error bar on its associated energy as the divergence of the electron beam, an offset at source or shot-to-shot pointing fluctuations could lead to different positions at the same electron energy.
-\vspace{\baselineskip}
-
-A second lanex screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations or an overall pointing to achieve a more accurate determination of the energy.
-
-The width of the electron trace in the non-dispersion direction can be used to determine the divergence of the beam and cross-checked with the spectrum of the betatron radiation.
-
-In experiment, perfectly homogeneous fields are even in approximation rarely encountered, especially at the fringes of physical magnets the fields smoothly fall off to a zero background field. Hence, usually homogeneous fields are only used as approximation that can provide a rough estimate (see the analytic solution of the deflection angle in the theory section) and physical magnets are mapped using a Hall probe for instance before or after the experiment to achieve more accurate results. Even outside the magnet by-passing electrons can be influenced by fringe fields which can lead to deflection of electrons at low energies if the space is limited. This should be avoided or the fields need to be sufficiently shielded, e.g. by using mu-metal.
 
 \subsection{Electron Beam Profile}
 
@@ -414,6 +402,37 @@ where $\theta$ denotes the divergence, equivalent to the ratio of forwards to tr
 \vspace{\baselineskip}
 
 The pointing fluctuations of the beam can be estimated similarly if one suspects mainly an angular jitter. In reality the pointing will be related to a combination of translation and rotation.
+
+\subsection{Electron Energy Spectrometer}
+
+The energy of the relativistic electrons are commonly measured by a spectrometer based on magnetic dispersion. In most wakefield setups at laser facilities or universities the relativistic charged particle beam is deflected by the field of a dipole magnet. In experiments located at conventional accelerator facilities the beam is often diverted and re-imaged using a series of dipole and quadrupole magnets. 
+Finally, a scintillator screen, e.g. lanex, is positioned in the beam path and imaged by a camera. When all parameters, magnet strength, propagation distance, particle mass etc. are well-known, each position on the screen in the dispersion axis can be associated to an energy.
+\vspace{\baselineskip}
+
+\begin{figure}[h]
+\includegraphics[scale=1.2]{magnet3.png}
+\includegraphics[scale=0.12]{Espec_shotexemp.jpg}
+\caption{Sketch of a typical spectrometer setup in a LWFA experiment (left). The relativistic electron beam enters the dipole magnet (grey) and is dispersed onto the lanex screen according to its energy. Higher energies are deflected less than lower energies. The image on the right is an example of a spectrum taken on an experiment. The high energies are on the top and the spectrum decreases downwards.}
+\end{figure}
+
+The correct assignment of the position on the screen to the correct electron energy is achieved by measuring the position of all components (lanex screen, magnet, TCC) and the magnet field strength accurately and then running a particle tracking code with these details.
+Each pixel has a certain error bar on its associated energy as the divergence of the electron beam, an offset at source or shot-to-shot pointing fluctuations could lead to different positions at the same electron energy.
+\vspace{\baselineskip}
+
+A second lanex screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations or an overall pointing to achieve a more accurate determination of the energy.
+
+The width of the electron trace in the non-dispersion direction can be used to determine the divergence of the beam and cross-checked with the spectrum of the betatron radiation.
+
+In experiment, perfectly homogeneous fields are even in approximation rarely encountered, especially at the fringes of physical magnets the fields smoothly fall off to a zero background field. Hence, usually homogeneous fields are only used as approximation that can provide a rough estimate (see the analytic solution of the deflection angle in the theory section) and physical magnets are mapped using a Hall probe for instance before or after the experiment to achieve more accurate results. Even outside the magnet by-passing electrons can be influenced by fringe fields which can lead to deflection of electrons at low energies if the space is limited. This should be avoided or the fields need to be sufficiently shielded, e.g. by using mu-metal.
+
+\subsubsection{Multiple screens}
+
+\subsection{Charge Measurement}
+
+Imaging plate and overlap with lanex measurement.
+Account for imaging system and collection angle.
+
+ICT Turbo and EMP problems.
 
 \subsection{TimePix Detectors}
 
@@ -450,6 +469,11 @@ The author developed several filter packs over the course of his studies, two fo
 \subsection{Gamma-ray Scintillator Profile}
 
 To measure the divergence in both axes and as measurement of the intensity.
+
+\subsection{Gamma-ray Converter Spectrometer}
+
+Convert gamma rays into electron-positron pairs and measure the spectrum to deduce the gamma spectrum.
+Works for several MeV radiation but becomes less sensitive at higher energies (REF?).
 
 \subsection{Gamma-ray Scintillator Arrays}
 
