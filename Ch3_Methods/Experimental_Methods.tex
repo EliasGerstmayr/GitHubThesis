@@ -156,13 +156,14 @@ However, even with CPA the amplification achievable is finite as it is not usefu
 
 \subsection{Wavefront Sensor}
 
-Shack-Hartmann (?)
+Shack-Hartmann (?) sensor. HASO.
 
 Array of micro lenses
 
 Temporally integrated wavefront profile of the laser pulse
 
 In combination with an adaptive optic (technique from astrophysics) used to flatten the wavefront to enable reaching the diffraction limited focus.
+\EliasComm{Add picture.}
 
 \subsection{Pointing Diagnostics}
 
@@ -177,18 +178,41 @@ In the context of colliding-pulse experiment the shape of the focal spot of the 
 Due to the high intensity of the lasers in use usually the focal spot of a weaker beam, i.e. before compression, before final amplification etc., is imaged to avoid damaging the equipment. The energy of the actual focal spot on shot is then scaled from the low power image.
 A direct measurement of the actual focus at typical intensities used in wakefield experiments is very challenging and has to the knowledge of the author not been achieved so far. Recent attempts involved the full 3D characterisation of the wavefront of the collimated laser beam by applying an asymmetric Mach-Zehnder interferometer and scanning the entire beam profile over hundreds of shots (see TERMITES REF). 
 
+\subsection{Dazzler and FROG}
+
+Measure the pulse duration of the laser and the shape. Control over the shape of the laser pulse (rise, compression).
+
 \subsection{Timing Diagnostics}
 
+Relative timing of laser beams, for probe and main beam or dual beam experiments.
+
 \subsubsection{Diode Timing}
+
+To time laser pulses to an accuracy of few picoseconds fast silicon photodiodes combined with fast scopes are an appropriate tool.
+
+\EliasComm{Add a picture.}
+
+Both laser pulses have to be overlapped in space and then combined onto the diode. Alternatively, an object at the crossing point can be used to scatter both beams that is then picked up by the diode.
+
+In experiment the fast diode EOT.... with a rise time of ... ps and a fast WaveMaster ... was used. This limits the resolution of the signal to about ... ps. The accuracy of the difference measurement is per measurement is a few picoseconds. If several measurements at different separations (using a delay stage to delay one laser arm) are taken the error can be reduced to an accuracy of ....
+
+Dead reckoning.
+
+Limitations in vacuum.
+
 
 \subsubsection{Spatial Interferometry}
 
 Two beams, at angle or different radius of curvature, same polarisation. Interference.
 For two pulsed beams the interference will only take place if within the combined pulse duration.
 
+Visibility only over the short duration of the combined pulse duration.
+
 \subsubsection{Spectral Interferometry}
 
 Two identically chirped pulses are being spectrally dispersed using a grating.
+
+Visible over hundreds of femtoseconds.
 
 
 \section{Gas Targets}
