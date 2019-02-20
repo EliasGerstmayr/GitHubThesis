@@ -23,40 +23,35 @@ In physics, the push towards higher intensities and shorter pulse durations allo
 %Restricted by the breakdown threshold of the amplification crystals the pulse duration and intensity were limited. In order to still drive wakes creative acceleration schemes were developed to compensate the lack of more powerful short-pulse lasers. Examples are for instance the beat wave plasma accelerator \cite{Tajima1979} or the self-modulated plasma accelerator.
 
 With the advent of short pulse terrawatt systems after the invention of chirped pulse amplification (CPA) \cite{Strickland1985}, wakefield acceleration achieved a breakthrough reaching the non-linear regime, sometimes referred to as the `blowout' or `bubble' regime, and the production of quasi-monoenergetic electrons in the MeV regime \cite{Mangles2004,Faure2004,Geddes2004}.
-CPA opened up the relativistic regime at intensities of around $10^{17}-10^{18}\,\mathrm{W}\,\mathrm{cm}^{-2}$, where electrons accelerate to relativistic velocities within a single laser period leading to interesting effects like relativistic self-focusing which is also used to achieve longer guiding in LWFA. Even intensities of $10^{21} \,\mathrm{W}\,\mathrm{cm}^{-2}$ are within reach where QED corrections become relevant and phenomena like radiation reaction (classical and quantum), multi-photon Compton scattering or even the quantum vacuum itself can be investigated. The current record exceeds a peak intensity of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and laser systems pushing this even further by orders of magnitude are being planned or built already, as for instance the facilities of the Extreme Light Infrastructure (ELI) REFERENCE HERE or the upgrade of the Vulcan laser at the Central Laser Facility in the UK.
+CPA opened up the relativistic regime at intensities of around $10^{17}-10^{18}\,\mathrm{W}\,\mathrm{cm}^{-2}$, where electrons accelerate to relativistic velocities within a single laser period leading to interesting effects like relativistic self-focusing which is also used to achieve longer guiding in LWFA. Even intensities of $10^{21} \,\mathrm{W}\,\mathrm{cm}^{-2}$ are within reach where QED corrections become relevant and phenomena like radiation reaction (classical and quantum), multi-photon Compton scattering or even the quantum vacuum itself can be investigated. The current record exceeds a peak intensity of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and laser systems pushing this even further by orders of magnitude are being planned or built already, as for instance the facilities of the Extreme Light Infrastructure (ELI) REFERENCE HERE or the proposed upgrade of the Vulcan laser at the Central Laser Facility in the UK (REF).
 \vspace{\baselineskip}
 
-Due to the importance of CPA for the recent progress in this field the scheme will be introduced in the following section.
 
-\subsection{Chirped-pulse amplification (CPA)}
+\subsection{Describing a Laser}
 
-In regular laser amplification a laser pulse (single pass) passes once or several times (multipass) through an amplifier crystal, called the laser gain medium. To generate ultrashort pulses a large bandwith gain medium is required in order to amplify continuously over a large frequency domain. A popular choice are lasers based on titanium-doped sapphire (Ti:Sa) as gain medium. At these short pulse durations and high intensities non-linear effects such as relativistic self-guiding start to occur, leading to a local increase of the field strength. At very high field strengths the gain medium starts to ionize and in turn to take damage: amplification of these short pulse lasers is limited by this breakdown. Further amplification can then only be achieved if the beam is expanded and if a large enough gain medium is available. This limitation was overcome or at least pushed further by the invention of chirped-pulse amplification (CPA) \cite{Strickland1985} based on a technique employed in radar technology.
-\vspace{\baselineskip}
+Intensity
 
-CPA takes advantage of the fact that short laser pulses are not monochromatic but a spectrum. This is a necessary property for the pulse to have a short duration, an evident feature when considering the Fourier transformation.
+Fluence
 
-CPA exploits this fact and stretches the pulse in time using sets of refraction gratings: depending on the frequency of the light it will be refracted differently, extending or shortening the path relative to other frequencies. A pair or a couple of grating pairs can in this way stretch the pulse with a dependence on wavelength: the pulse is `chirped'. The energy density is now much lower than before and the pulse in total can be amplified to much higher intensities without damaging or saturating the gain medium. In the next step, sets of gratings reverse the process and compress the pulse, achieving a high intensity but also an ultrashort pulse duration that is ideal for LWFA.
-\vspace{\baselineskip}
+Pulse duration
 
-However, even with CPA the amplification achievable is finite as it is not useful to stretch the laser pulse arbitrarily much to lower the energy density and an ordinary gain medium as amplifier will reach its limits again as soon as the stretched pulse reaches the ionisation threshold. In addition, the gratings have to withstand these high intensities when recombining the stretched pulse and hence have to have a high damage threshold. An improved chirped-pulse amplification scheme to push this boundary even further is the so called optical parameter chirped-pulse amplification (OPCPA) scheme. The normal amplifier crystal is substituted by a non-linear medium. The laser pulse deposits only a fraction of energy of the amount in ordinary laser gain media as it works via a parametric process, which allows to pump this medium with even higher powers.
+Strehl ratio
 
-\begin{figure}
-\centering
-\includegraphics[width=0.8\columnwidth]{Chirped_pulse_amplification.png}
-\caption{Schematic layout of a CPA system\protect\footnotemark. The initial short pulse is sent through a grating which disperses the spectrum of the pulse and stretches it, resulting in a longer pulse with a monotonic frequency shift throughout: the pulse is chirped. The pulse with lower power is amplified and re-compressed in another set of gratings to a short and high-power pulse.}
-\end{figure}
+M squared
+
+Top hat profile/Flat top?
+
+B-Integral
 
 
-\footnotetext{Graphic taken from Wikipedia: \url{https://en.wikipedia.org/wiki/Chirped\_pulse\_amplification}}
+The research in wakefield acceleration involves the work with lasers as driver for LWFA, scatterer or heater, or probe to diagnose the plasma. A good understanding of optics and beam propagation is essential for setting up imaging systems, aligning and estimating properties like intensity, focal spot sizes and the guiding of the beam.
 
-\subsection{Gaussian optics}
-
-The research in wakefield acceleration involves the work with lasers of different kinds as driver for LWFA, scatterer or probe to diagnose the plasma. A good understanding of optics and beam propagation is essential for setting up imaging systems, aligning and estimating properties like intensity, focal spot sizes and the guiding of the beam.
-
-The following section will briefly introduce a few equations from Gaussian optics that are useful in this context.
+The following section will briefly introduce a few basic terms used to describe the properties of those lasers later in this work and some equations from Gaussian optics that are useful in this context as well.
 \vspace{\baselineskip}
 
 Gaussian beams are one of the solutions to the paraxial Helmholtz equation describing the propagation of an electromagnetic wave in free space confined spatially and angularly. The transverse profile of the beam follows a Gaussian function and is axial-symmetric.
+
+\EliasComm{Add wave equation.}
 
 Crucial properties of the laser in experiment to consider are the size of the focal spot, the intensity at focus and how quickly the beam refracts.
 
@@ -70,7 +65,7 @@ z_R = \frac{\pi w^2_0}{\lambda_0}.
 \end{equation}
 Sometimes the distance $\pm z_R$ from $w_0$ is referred to as the `depth of focus'.
 
-\paragraph{The divergence} of the beam $\theta$ several Rayleigh lengths from focus is given by the ratio of the waist to the Rayleigh length
+\paragraph{The divergence} of the beam $\theta$ several Rayleigh lengths from focus is approximately given by the ratio of the waist to the Rayleigh length
 \begin{equation}
 \theta = \frac{w_0}{z_R} = \frac{\lambda}{\pi w_0},
 \end{equation}
@@ -110,25 +105,69 @@ The intensity is in this context also often expressed in terms of the normalised
 a_0 = \sqrt{\frac{I \lambda^2_{\mu m}}{1.37 \times 10^{18} \mathrm{W/cm^2 \mu m^2}}}.
 \end{equation}
 
-We can use these equations now, for instance, to estimate the conditions to expect at the Astra Gemini laser. Gemini delivers roughly $15\,\mathrm{J}$ on target at a pulse duration of $45\,\mathrm{fs}$, i.e. a power of a bit over $300\,\mathrm{TW}$. The standard setup LWFA uses a focusing optic with an F-number of $F = 20$ ($f=3\,\mathrm{m}$,$D=0.15\,\mathrm{m}$) at a central wavelength of $\lambda = 0.8\,\mu m$.
+We can use these equations now, for instance, to estimate the conditions to expect at the Astra Gemini laser. Gemini delivers roughly $15\,\mathrm{J}$ on target at a pulse duration of $45\,\mathrm{fs}$, i.e. a power of a bit over $300\,\mathrm{TW}$. The standard setup LWFA uses a focusing optic with an F-number of $F = 40$ ($f=6\,\mathrm{m}$,$D=0.15\,\mathrm{m}$) at a central wavelength of $\lambda = 0.8\,\mu m$.
 
-This gives a focal spot waist of $w_0 = 10.186 \mathrm{\mu m}$ and a peak intensity $I_0 = 2.045 \times 10^{20} \,\mathrm{W}\,\mathrm{cm}^{-2}$ and $a_0 \approx 7.5$
+This gives a focal spot waist of $w_0 = XX \mathrm{\mu m}$ and a peak intensity $I_0 = XX \times 10^{20} \,\mathrm{W}\,\mathrm{cm}^{-2}$ and $a_0 \approx XX$
 
-A typical focusing optic for the second Gemini beam as scatterer has an F-number of $F = 2$, which in is by a factor $10$ smaller, leading to a $10$ times smaller focal spot with $w_0 \approx 1\,\mathrm{\mu m}$, a $100$ times higher peak intensity $I_0 = 2.045 \times 10^{20}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and finally a $10$ times higher peak normalised vector potential $a_0 \approx 75$.
+A typical focusing optic for the second Gemini beam as scatterer has an F-number of $F = 2$, which in is by a factor $10$ smaller, leading to a $10$ times smaller focal spot with $2 w_0 \approx 2\,\mathrm{\mu m}$, a $100$ times higher peak intensity $I_0 = XX\times 10^{20}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and finally a $10$ times higher peak normalised vector potential $a_0 \approx XX$.
 \vspace{\baselineskip}
 
 Other properties of the beam, like the radius of curvature and the Guoy phase are not mentioned in this section as they were not explicitly used in the work of the author so far.
 
-%OTHER PROPERTIES
+\EliasComm{Real lasers are typically not Gaussian.}
 
-%Wavefront, radius of curvature
-%\begin{equation}
-%R(z) = z \left(1+\left(\frac{z_R}{z}\right)^2\right)
-%\end{equation}
+\EliasComm{Wavefront}
+
+\EliasComm{Radius of Curvature}
+
+\EliasComm{Guoy Phase}
+
+\begin{equation}
+R(z) = z \left(1+\left(\frac{z_R}{z}\right)^2\right)
+\end{equation}
 
 %Guoy phase
 
+\subsection{Chirped-pulse amplification (CPA)}
+
+In laser amplification a laser pulse (single pass) passes once or several times (multipass) through an amplifier crystal, called the laser gain medium. To generate ultrashort pulses a large bandwith gain medium is required in order to amplify continuously over a large frequency domain. A popular choice are lasers based on titanium-doped sapphire (Ti:Sa) as gain medium. At these short pulse durations and high intensities non-linear effects such as relativistic self-guiding start to occur, leading to a local increase of the field strength. At very high field strengths the gain medium starts to ionize and in turn to take damage: amplification of these short pulse lasers is limited by this breakdown. Further amplification can then only be achieved if the beam is expanded for which then a larger gain medium becomes necessary. This limitation was overcome or at least pushed further by the invention of chirped-pulse amplification (CPA) \cite{Strickland1985} based on a technique employed in radar technology.
+\vspace{\baselineskip}
+
+CPA takes advantage of the fact that short laser pulses are not monochromatic but a spectrum. This is a necessary property for the pulse to have a short duration, an evident feature when considering the Fourier transformation.
+
+CPA exploits this fact and stretches the pulse in time using sets of refraction gratings: depending on the frequency of the light it will be refracted differently, extending or shortening the path relative to other frequencies. In the pioneering work of Strickland and Mourou a long glass fibre was used to stretch the pulse \cite{Strickland1985}. A pair or a couple of grating pairs can in this way stretch the pulse with a dependence on wavelength: the pulse is `chirped'. The energy density is now much lower than before and the pulse in total can be amplified to much higher intensities without damaging or saturating the gain medium. In the next step, a set of gratings reverse the process and compress the pulse, achieving a high intensity but also an ultrashort pulse duration that is ideal for LWFA.
+\vspace{\baselineskip}
+
+\EliasComm{Add a picture of a chirped pulse?}
+
+However, even with CPA the amplification achievable is finite as it is not useful to stretch the laser pulse arbitrarily much to lower the energy density and an ordinary gain medium as amplifier will reach its limits again as soon as the stretched pulse reaches the ionisation threshold. In addition, the gratings have to withstand these high intensities when recombining the stretched pulse and hence have to have a high damage threshold. An improved chirped-pulse amplification scheme to push this boundary even further is the so called optical parameter chirped-pulse amplification (OPCPA) scheme. The normal amplifier crystal is substituted by a non-linear medium. The laser pulse deposits only a fraction of energy of the amount in ordinary laser gain media as it works via a parametric process, which allows to pump this medium with even higher powers.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{Chirped_pulse_amplification.png}
+\caption{Schematic layout of a CPA system\protect\footnotemark. The initial short pulse is sent through a grating which disperses the spectrum of the pulse and stretches it, resulting in a longer pulse with a monotonic frequency shift throughout: the pulse is chirped. The pulse with lower power is amplified and re-compressed in another set of gratings to a short and high-power pulse.}
+\end{figure}
+
+
+\footnotetext{Graphic taken from Wikipedia: \url{https://en.wikipedia.org/wiki/Chirped\_pulse\_amplification}}
+
 \section{Laser Diagnostics}
+
+
+\subsection{Wavefront Sensor}
+
+Shack-Hartmann (?)
+
+Array of micro lenses
+
+Temporally integrated wavefront profile of the laser pulse
+
+In combination with an adaptive optic (technique from astrophysics) used to flatten the wavefront to enable reaching the diffraction limited focus.
+
+\subsection{Pointing Diagnostics}
+
+Monitoring shot-to-shot fluctuations and long-term drifts.
+
 
 \subsection{Focal Spot Camera}
 
@@ -140,6 +179,8 @@ A direct measurement of the actual focus at typical intensities used in wakefiel
 
 \subsection{Timing Diagnostics}
 
+\subsubsection{Diode Timing}
+
 \subsubsection{Spatial Interferometry}
 
 Two beams, at angle or different radius of curvature, same polarisation. Interference.
@@ -148,9 +189,6 @@ For two pulsed beams the interference will only take place if within the combine
 \subsubsection{Spectral Interferometry}
 
 Two identically chirped pulses are being spectrally dispersed using a grating.
-
-\subsection{Pointing Diagnostics}
-
 
 
 \section{Gas Targets}
