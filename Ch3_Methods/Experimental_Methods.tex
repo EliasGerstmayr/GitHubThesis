@@ -137,24 +137,29 @@ A direct measurement of the actual focus at typical intensities used in wakefiel
 
 \subsubsection{Spatial Interferometry}
 
+Two beams, at angle or different radius of curvature, same polarisation. Interference.
+For two pulsed beams the interference will only take place if within the combined pulse duration.
+
 \subsubsection{Spectral Interferometry}
 
+Two identically chirped pulses are being spectrally dispersed using a grating.
 
 \subsection{Pointing Diagnostics}
 
 
+
 \section{Gas Targets}
 
-In laser-wakefield acceleration (LWFA) the laser pulse has to propagate through the plasma in order to drive a wave. Hence the density of the plasma has to permit propagation, i.e. its density has to be below the critical density $n_c = m_e \epsilon_0 \omega^2/e^2$. Such a medium is referred to as `underdense'. For high intensity (HI) lasers with peak intensities around $10^{17}-10^{18}\,W\,cm^{-2}$ relativistic effects that change the critical density locally and can in some cases prevent the laser pulse from propagating become important. This effect is the principle of plasma mirrors which helps reducing the pre-pulse of the laser pulse and to improve the contrast. For LWFA experiments, however, densities well below $n_c$ are required. At $\lambda = 800\,\mathrm{nm}$ these are typically gaseous targets. `Overdense', i.e. targets with a density higher as the critical density, are mostly solid or liquid targets in the context of Ti:Sa lasers. They are preferrably used for ion acceleration schemes (e.g. Target Normal Sheath Acceleration (TNSA) \cite{Wilks2001,Maksimchuk2000}) or to generate X-rays.
+In laser-wakefield acceleration (LWFA) the laser pulse has to propagate through the plasma in order to drive a wave. Hence the density of the plasma has to permit propagation or in other words its density has to be below the critical density $n_c = m_e \epsilon_0 \omega^2/e^2$. Such a medium is referred to as `underdense'. For high intensity (HI) lasers with peak intensities around $10^{17}-10^{18}\,W\,cm^{-2}$ relativistic effects that change the critical density locally and can in some cases prevent the laser pulse from propagating become important. This effect is the principle of plasma mirrors which helps reducing the pre-pulse of the laser pulse and to improve the contrast. For LWFA experiments, however, densities well below $n_c$ are required. At $\lambda = 800\,\mathrm{nm}$ these are typically gaseous targets. `Overdense', i.e. targets with a density higher as the critical density, are mostly solid or liquid targets in the context of Ti:Sa lasers. They are preferrably used for ion acceleration schemes (e.g. Target Normal Sheath Acceleration (TNSA) \cite{Wilks2001,Maksimchuk2000}) or to generate X-rays.
 \vspace{\baselineskip}
 
-Gas and liquid targets offer the advantage of being used in high-repetition experiments as they can be destroyed and replenished in a short amount of time without re-alignment, mainly limited by the performance of the vacuum system, the time it takes for the gas to reach equilibrium -- in a gas cell for instance to avoid turbulences -- and the repetition rate of the laser system in use.
+Gas and liquid targets offer the advantage of being used in high-repetition experiments as they can be destroyed and replenished in a short amount of time without re-alignment and debris production, mainly limited by the performance of the vacuum system, the time it takes for the gas to reach equilibrium -- in a gas cell for instance to avoid turbulences -- and the repetition rate of the laser system in use.
 \vspace{\baselineskip}
 
 Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001}, gas cells or capillaries \cite{Leemans2006,Nakamura2007} and capillary targets with a pre-ionised plasma (using an electric discharge) \cite{Spence2001}.
 However, even within those types of targetry a large variety exists, each target tailored to different applications and purposes. 
 
-As listing and explaining all those different targets would be a hopeless task, the author will limit himself to focus on examples of gas jets and cells relevant for the work presented later in this thesis.
+As listing and explaining all those different targets would be a hopeless task, the author will limit himself to focus on examples of gas jet and cell specimen relevant for the work presented later in this thesis.
 
 \subsection{Gas Jets}
 
@@ -211,8 +216,6 @@ This can be resolved by designing the gas cell accordingly and use appropriate m
 \vspace{\baselineskip}
 
 Just as 3D printing methods have been considered for gas jets \cite{Jolly2012} researchers have demonstrated that this is also possible and feasible for gas cell designs \cite{Vargas2014}.
-
-
 
 \section{Characterising Gas Targets}
 
@@ -304,7 +307,8 @@ This is an option if the field of view of the probing beam has well known region
 
 \subsection{Energy Spectrometer}
 
-The electron energy spectrometer commonly used in experiment is based on magnetic dispersion. The relativistic charged particle beam is deflected with a dipole magnet according to the energy of the respective particle. Then a scintillator screen, e.g. lanex, is positioned in the beam path and imaged by a camera. When all parameters, magnet strength, propagation distance, particle mass etc. are well-known, each coordinate on the screen can be associated to an energy.
+The energy of the relativistic electrons are commonly measured by a spectrometer based on magnetic dispersion. In most wakefield setups at laser facilities or universities the relativistic charged particle beam is deflected by the field of a dipole magnet. In experiments located at conventional accelerator facilities the beam is often diverted and re-imaged using a series of dipole and quadrupole magnets. 
+Finally, a scintillator screen, e.g. lanex, is positioned in the beam path and imaged by a camera. When all parameters, magnet strength, propagation distance, particle mass etc. are well-known, each position on the screen in the dispersion axis can be associated to an energy.
 \vspace{\baselineskip}
 
 \begin{figure}[h]
@@ -313,13 +317,13 @@ The electron energy spectrometer commonly used in experiment is based on magneti
 \caption{Sketch of a typical spectrometer setup in a LWFA experiment (left). The relativistic electron beam enters the dipole magnet (grey) and is dispersed onto the lanex screen according to its energy. Higher energies are deflected less than lower energies. The image on the right is an example of a spectrum taken on an experiment. The high energies are on the top and the spectrum decreases downwards.}
 \end{figure}
 
-The correct assignment of position on the screen to electron energy is achieved by measuring the position of all components (lanex screen, magnet, TCC) accurately and by running a particle tracking code with these details.
+The correct assignment of the position on the screen to the correct electron energy is achieved by measuring the position of all components (lanex screen, magnet, TCC) and the magnet field strength accurately and then running a particle tracking code with these details.
 Each pixel has a certain error bar on its associated energy as the divergence of the electron beam, an offset at source or shot-to-shot pointing fluctuations could lead to different positions at the same electron energy.
 \vspace{\baselineskip}
 
-A second lanex screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations to achieve a more accurate determination of the energy.
+A second lanex screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations or an overall pointing to achieve a more accurate determination of the energy.
 
-The width of the electron trace can be used to determine the divergence of the beam and cross-checked with the spectrum of the betatron radiation.
+The width of the electron trace in the non-dispersion direction can be used to determine the divergence of the beam and cross-checked with the spectrum of the betatron radiation.
 
 In experiment, perfectly homogeneous fields are even in approximation rarely encountered, especially at the fringes of physical magnets the fields smoothly fall off to a zero background field. Hence, usually homogeneous fields are only used as approximation that can provide a rough estimate (see the analytic solution of the deflection angle in the theory section) and physical magnets are mapped using a Hall probe for instance before or after the experiment to achieve more accurate results. Even outside the magnet by-passing electrons can be influenced by fringe fields which can lead to deflection of electrons at low energies if the space is limited. This should be avoided or the fields need to be sufficiently shielded, e.g. by using mu-metal.
 
@@ -351,15 +355,19 @@ The pointing fluctuations of the beam can be estimated similarly if one suspects
 
 Wakefield acceleration has not only demonstrated to be a feasible tool to accelerate electrons to a GeV scale, but has also been shown to be a useful source for X-rays of remarkable brightness, e.g. by the means of betatron radiation \cite{Rousse2004} or also as a tunable Compton-source \cite{TaPhuoc2012a}.
 
-In order to decide whether a radiation source can be used for certain applications, it has to be characterised properly regarding properties like flux, energy spectrum, source size, pulse duration and divergence.
+To decide whether a radiation source is suitable for certain applications, a thorough characterisation of its properties like flux, energy spectrum, source size, pulse duration and divergence is useful.
+The following tools were used in the context of the author's work for this purpose.
 
 \subsection{X-ray Pinhole Camera}
 
 This measures the source size of the X-ray source.
 
+The setup consists of a camera pointing at the X-ray source and a pinhole positioned between source and camera.
+
 \subsection{X-ray Crystal Camera}
 
-This measures the spectrum of  an X-ray source by diffraction of X-ray photons from a crystal lattice.  Bragg condition.
+This measures the spectrum of an X-ray source by diffraction of X-ray photons from a crystal lattice.  Bragg condition.
+High resolution spectrally but narrow energy range.
 
 \subsection{X-ray Filter Pack}
 
@@ -368,12 +376,13 @@ So called `filter packs' will be placed in front of the chip to measure the tran
 A common method is the use of Ross filter pairs.
 This method works well for soft X-rays, in a regime where the transmission is very dependent on the material. For harder X-ray spectra in the MeV range the transmission is almost constant for most materials and interaction with matter can result in the production of electron-positron pairs.
 
+The author developed several filter packs over the course of his studies, two for application at the Astra Gemini laser and one filter pack that was installed at the FlashForward facility at DESY in Hamburg, Germany. This filter pack is also compatible with the ultra-high vacuum of the accelerator beam line.
+
 \EliasComm{not relevant for the experiments presented?}
 
 \subsection{Gamma-ray Scintillator Profile}
 
-
-
+To measure the divergence in both axes and as measurement of the intensity.
 
 \subsection{Gamma-ray Scintillator Arrays}
 

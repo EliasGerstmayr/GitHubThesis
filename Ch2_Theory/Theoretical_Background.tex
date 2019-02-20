@@ -613,7 +613,7 @@ where $E_L$ is the electric field of the laser and $E_S$ the Schwinger field. Al
 
 \subsection{General Properties}
 
-Plasmas are frequently referred to as the `4th state of matter' in addition to the more commonly in daily life encountered matter states solid, liquid and gaseous. Heating up a material at a constant pressure will take it from the solid to the liquid, then to the gas phase and finally will ionize the gas first partially, then completely. The gas is now charged and exhibits interesting collective behaviour due to the dominance of electromagnetic forces whilst upholding quasi-neutrality. This is called a plasma. Sometimes summarised in this definition: ``A quasi-neutral ionized gas that exhibits collective behaviour.'' However, setting `ionized gas' equal to `plasma' might be a too narrow description as the range of temperature and density scales is very wide for plasmas, including exotic states like the quark-gluon plasma. Although plasmas are probably the most common state of matter in the universe, they barely exists on earth outside of the laboratory environment.
+Plasmas are frequently referred to as the `4th state of matter' in addition to the more commonly in daily life encountered matter states solid, liquid and gaseous. Heating up a material at a constant pressure will take it from the solid to the liquid, then to the gas phase and finally will ionize the gas first partially, then completely. The gas is now charged and exhibits interesting collective behaviour due to the dominance of electromagnetic forces whilst upholding quasi-neutrality. This is called a plasma. Sometimes summarised in this definition: ``A quasi-neutral ionized gas that exhibits collective behaviour.'' (REF) However, setting `ionized gas' equal to `plasma' might be a too narrow description as the range of temperature and density scales is very wide for plasmas, including exotic states like the quark-gluon plasma. Although plasmas are probably the most common state of matter in the universe, they barely exists on earth outside of the laboratory environment.
 \vspace{\baselineskip}
 \EliasComm{Phase Diagram including plasma?}
 \EliasComm{if using quote then have to reference.}
@@ -635,7 +635,9 @@ In that sense quasi-neutrality is also a manifestation of `collective behaviour'
 
 \subsection{Laser Ionisation}
 
-Ionisation effects can influence the dynamics of a system. In the context of the work the author presents high intensity lasers are used to drive waves in plasmas. The plasma is usually formed by filling a gas compartment or firing a gas jet with a neutral gas, assuming that the laser pulse ionises the gas fully.
+Ionisation describes the process of removing an electron from a neutral atom, tipping the charge balance from zero to positive and turning the atom to an ion. Already ionised atoms can be further ionised by stripping more and more electrons from the shells, but this process requires more and more energy as the remainig electrons are bound tighly to the core.
+
+In the context of this work high intensity lasers are used to drive waves in plasmas. A change in the number density of free electrons through ionisation effects can influence the dynamics of the system. The plasma is usually formed by filling a gas compartment or firing a gas jet with a neutral gas, assuming that the laser pulse ionises the gas fully to first approximation.
 \vspace{\baselineskip}
 
 There are different mechanisms through which an oscillating laser field ionises a gas. In addition to single photon ionisation, there is multi-photon ionisation \cite{Keldysh1965}, where one electron is excited by absorbing multiple photons before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}. In the case of very high field strengths, the Coulomb potential might be completely suppressed by the laser field and the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
@@ -645,7 +647,7 @@ In the simple example of a hydrogen-like atom in an external electric field $E$,
 \begin{equation}
 V(r) = -\frac{Ze^2}{4\pi\epsilon_0 r} - eEr,
 \end{equation}
-where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. Using this result and by setting the height of the barrier to the ionisation potential $V_e$, the electric field required comes to
+where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. Using this result and by setting the height of the barrier to the ionisation potential $V_e$, the electric field required amounts to
 
 \begin{equation}
 E = \frac{\pi \epsilon_0 V^2_e}{Ze^3},
@@ -658,7 +660,7 @@ I = \frac{c\epsilon^3 \pi^2 V^4_e}{2e^6 Z^2}.
 \end{equation}
 
 For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
-The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser: this is taken advantage of in an injection method for wakefields called `ionisation injection'. 
+The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF).  
 
 Partially ionised plasmas result in a couple of problems: more complex, absorption of X-rays, dampening of particles, scattering? Weaker fields.
 \EliasComm{add also some comments on partially ionised plasmas and how they change for instance the absorption of X-rays in this medium.}
@@ -667,7 +669,7 @@ Partially ionised plasmas result in a couple of problems: more complex, absorpti
 
 \subsection{The Plasma Frequency}
 
-The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced and constitutes at the same time a typical time scale of the medium. The corresponding plasma wavelength $\lambda_p$ on the other hand constitutes a typical length scale.
+The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced and constitutes the typical time scale of the medium. The corresponding plasma wavelength $\lambda_p$ on the other hand constitutes a typical length scale.
 \vspace{\baselineskip}
 
 Assume a uniform and neutral plasma, i.e. $n_e = Z n_i = n_{e0}$, where $n_e$ is the electron number density, $Z$ the charge number of the ions, $n_i$ the ion number density, and the electric field $E = 0$.
@@ -855,14 +857,14 @@ To overcome this limitation, the beat wave scheme was proposed. Two laser beams 
 \EliasComm{add some references.}
 \EliasComm{add a few lines for self-modulated beams and their recent revival.}
 
-Although the history of wakefield acceleration and its different schemes are certainly fascinating and inspirational for research today, the author will for now focus on laser wakefield acceleration (LWFA) relying CPA high power lasers and plasma wakefield acceleration (PWFA), which describes particle-driven wakefield acceleration.
+Although the history of wakefield acceleration and its different schemes are certainly fascinating and inspirational for research today, the author will for now focus on laser wakefield acceleration (LWFA) relying on CPA high intensity lasers. %and plasma wakefield acceleration (PWFA), which describes particle-driven wakefield acceleration.
 \EliasComm{Nobel prize winning.}
 
 A good and comprehensive overview on this topic explaining the fundamental physics is given in \cite{Esarey2009}, a more recent overview on the progress and status of experiments in the laser wakefield community can be found in \cite{Mangles2016}.
 
 \subsection{Laser Wakefield Acceleration (LWFA)}
 
-In laser wakefield acceleration (LWFA) a short ($\sim 30-50\,\mathrm{fs}$) and intense laser pulse travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way using the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake with strong longitudinal accelerating fields. This is commonly referred to as the non-linear regime or also the `bubble' regime, where particles can be trapped and accelerated to relativistic energies. The `bubble' regime and the acceleration of quasi-monoenergetic electrons at $100s$ of $\mathrm{MeV} $ has firstly been reported in 2004 \cite{Mangles2004,Faure2004,Geddes2004}. By now maximum electron energies via LWFA have reached the multi-GeV level in one \cite{Leemans2006} or two stages \cite{Steinke2016,Kim2013}.
+In laser wakefield acceleration (LWFA) a short ($\sim 30-50\,\mathrm{fs}$) and intense laser pulse travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way using the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake with strong longitudinal accelerating fields. This is commonly referred to as the non-linear regime or also the `bubble' regime, where particles can be trapped and accelerated to relativistic energies. The `bubble' regime and the acceleration of quasi-monoenergetic electrons at $100s$ of $\mathrm{MeV} $ has first been reported in 2004 \cite{Mangles2004,Faure2004,Geddes2004}. By now maximum electron energies via LWFA have reached the multi-GeV level in one \cite{Leemans2006} or two stages \cite{Steinke2016,Kim2013}.
 \vspace{\baselineskip}
 
 Although supporting several orders of magnitude higher electric fields than conventional RF cavities (for a 3D non-linear wake: $E_{max} = \sqrt{a_0} m_e c \omega_p/e$), the energy and charge of electrons accelerated through the LWFA scheme are limited by several factors, the most important two are the phenomena called \textbf{dephasing} and \textbf{depletion}.
@@ -950,7 +952,7 @@ The electrons oscillate at the so-called betatron frequency $\omega_\beta$
 \end{equation}
 which depends on the plasma frequency $\omega_p$ and the energy of the electrons here given by the relativistic Lorentz factor $\gamma$.
 
-Similarly to electrons in an insertion device (undulator or wiggler) the oscillations lead to the emission of radiation, collimated due to the relativistic forward momentum of the particles.
+Similarly to electrons in an insertion device (undulator or wiggler) these oscillations lead to the emission of radiation in a narrow forward pointing cone due to the relativistic forward momentum of the particles.
 Not surprisingly, the equations describing both processes are very similar.
 
 The collimation depends on $K$, the wiggler parameter (for insertion devices) or betatron strength parameter
