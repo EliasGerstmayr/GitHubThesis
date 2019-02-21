@@ -409,7 +409,7 @@ PHASICS. Wavefront changes can be used to estimate density of plasma channel.
 
 \subsection{Self emission of the plasma}
 
-Measuring the self emission of the plasma channel. Pretty Pic. Top view on channel. Less quantitative or ultrashort diagnostic.
+Measuring the self emission of the plasma channel. Pretty Pic. Top view on channel. Less quantitative or ultrashort diagnostic. Recombination light. Depends on the plasma.
 
 \newpage
 \section{Particle Diagnostics}
@@ -478,26 +478,42 @@ The following tools were used in the context of the author's work for this purpo
 
 \subsection{X-ray Pinhole Camera}
 
-One simple but effective way to measure the source size of an X-ray source is using a pinhole camera. An X-ray pinhole camera works the same way as its optical counterpart: the X-ray sensitive detector e.g. a CCD and the source are separated by an opaque wall only with a small hole (smaller than the source) to let light pass through. The magnification M is determined by the ratio of distances detector to pinhole and pinhole to source:
+One simple but effective way to measure the source size of an X-ray source is using a pinhole camera. An X-ray pinhole camera works the same way as its optical counterpart: the X-ray sensitive detector e.g. a CCD and the source are separated by an opaque wall only with a small hole (smaller than the source) to let light pass through. The magnification M is geometric and hence determined by the ratio of distances detector to pinhole and pinhole to source:
 
 \begin{equation}
-M = (a + b)/a,
+M = b/a,
 \end{equation}
 
 where $a$ is the distance source to pinhole and $b$ the distance pinhole to detector.
 
 Measuring these distances carefully one can then derive the source size and from shot-to-shot fluctuations in position and photon flux.
 
+The smaller the size the sharper the image but the signal becomes weaker. Optimum size is...
+
 To shield the CCD from ambient light the chip is typically covered with a thin beryllium window which is transparent to most X-rays but opaque to visible light. Depending on the range of X-rays one is interested the pinhole can be covered with plastic or other low-Z material to filter out low energy radiation.
 
 The commonly used cameras for experiments at the Central Laser Facility (UK) are Andor DX420 with a ... thick beryllium window.
 
+Specs DX420: (REF Andor)
+1024 x 255 pixel
+pixel 26 um x 26 um
+Image area 26.6 mm x 6.7 mm
+
+Alignment using alignment spikes that are then replaced with the pinhole.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{20180406r002s023_PinholeCam.jpg}
+\caption{Example of a Pinhole image. Double pinhole. Magnification M. Pixel at ..., so source size was... Need to work out all these things and plot with line outs in both axes. Compare with a beam profile from the heater beam.}
+\end{figure}
 
 \subsection{X-ray Crystal Camera}
 
 To measure the spectrum of X-rays there are typically two routes: one is measuring the transmission of the radiation through different materials and derive its energy from this. The second is diffracting the X-rays on a crystal based on the Bragg condition and measuring the diffracted components.
 
 Latter method allows a measuring a narrow energy range at high resolution bound to available crystal lattices. Towards higher X-ray energies around tens of keV it becomes more difficult to use this method as crystals with the right structure and Bragg condition are rare.
+
+A list of crystals being used in experiments: HOPG.
 
 \subsection{X-ray Filter Pack}
 
@@ -537,4 +553,7 @@ In contrast to other transmission studies the energy deposition and transmission
 \subsubsection{Dual Axis Scintillator Array}
 
 The new dual axis detector. Measure spectrum and divergence in two axes.
+
+
+\subsubsection{GEANT simulations?}
 
