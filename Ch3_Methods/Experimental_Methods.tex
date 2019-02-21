@@ -1,17 +1,17 @@
 \chapter{Experimental Methods}
 
-The following chapter introduces a selection of experimental methods and components relevant in the context of the LWFA experiments presented in the course of this work. The author aims to cover the three main components of an LWFA experiment: high-intensity lasers, gas targetry and diagnostics for particles and secondary radiation.
+The following chapter introduces a selection of experimental methods and techniques relevant in the context of the laser wakefield acceleration (LWFA) experiments presented in the course of this work. The author aims to cover the three main ingredients of an LWFA experiment: high-intensity lasers, gas targetry and diagnostics for particles and secondary radiation.
 
-The chapter starts by introducing high-intensity lasers, the main tool to drive and probe the plasma wave, how to diagnose them in experiment and some basic terminology. It continues with a section on the technique of chirped-pulse amplification (CPA) \cite{Strickland1985}, a key development that enabled the realisation of high-intensity lasers now reaching peak intensities in excess of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$. A breakthrough Strickland and Mourou were awarded the Nobel Prize in physics in 2018 for.
+The chapter starts by introducing high-intensity lasers, the main tool to drive and probe the plasma wave, how to diagnose them in experiment and some basic terminology. It continues with a section on the technique of chirped-pulse amplification (CPA) \cite{Strickland1985}, a key development that enabled the realisation of high-intensity lasers now reaching peak intensities in excess of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$ (REF: Bahk 2004, Optics Letters 29). A breakthrough Strickland and Mourou were awarded the Nobel Prize in physics for in 2018.
 
 The chapter then continues with a section on gas targets used in LWFA experiments focusing on targetry that is specifically relevant to the results presented later in this work.
 
-Finally, the author discusses techniques used to diagnose the plasma, the interaction of laser and plasma with each other as well as particles and radiation generated in the process.
+Finally, the author discusses techniques used to diagnose the plasma, the interaction of the laser with the plasma as well as particles and radiation generated in the process.
 
 
 \section{Laser Systems}
 
-Since the experimental realisation of the maser (REF), shortly followed by the laser in 1960 \cite{Maiman1960} lasers have taken an indispensable role in a wide range of fields of communication, construction, navigation, medicine, machining, defense and numerous applications in science and innovation. 
+Since the experimental realisation of the maser (REF), shortly afterwards followed by the laser in 1960 \cite{Maiman1960}, lasers have taken an indispensable role in a wide range of fields covering communication, construction, navigation, medicine, pharmaceuticals, machining, defense, numerous applications in science and innovation and more. 
 
 The advent of chirped pulse amplification (CPA) \cite{Strickland1985} enabled the generation of short and intense laser pulses paving the way for precision machining, medical tools used in cornea and heart surgeries, but also multi-photon science, non-linear optics and in the context of this work the wakefield acceleration in the so-called 'bubble' or 'blowout' regime, generating a directed relativistic quasi-monoenergetic electrons from a laser-plasma interaction.
 
@@ -81,6 +81,12 @@ In other words, the smaller the beam waist, the stronger the beam diverges.
 This poses us with a problem, as we aim for high intensities but want the beam to be guided over several milli- to centimetres. This can be overcome using waveguides or at sufficient conditions nature helps us out through relativistic self-focusing.
 \vspace{\baselineskip}
 
+\paragraph{The radius of curvature} can be expressed as
+
+\begin{equation}
+R(z) = z \left(1+\left(\frac{z_R}{z}\right)^2\right)
+\end{equation}
+
 \paragraph{The intensity} of a Gaussian beam is given by
 \begin{equation}
 I(\rho,z) = I_0 \left(\frac{w_0}{w(z)}\right)^2 \exp\left(-\frac{2\rho^2}{w^2(z)}\right),
@@ -105,16 +111,16 @@ The intensity is in this context also often expressed in terms of the normalised
 a_0 = \sqrt{\frac{I \lambda^2_{\mu m}}{1.37 \times 10^{18} \mathrm{W/cm^2 \mu m^2}}}.
 \end{equation}
 
-We can use these equations now, for instance, to estimate the conditions to expect at the Astra Gemini laser. Gemini delivers roughly $15\,\mathrm{J}$ on target at a pulse duration of $45\,\mathrm{fs}$, i.e. a power of a bit over $300\,\mathrm{TW}$. The standard setup LWFA uses a focusing optic with an F-number of $F = 40$ ($f=6\,\mathrm{m}$,$D=0.15\,\mathrm{m}$) at a central wavelength of $\lambda = 0.8\,\mu m$.
+We can use these equations now, for instance, to estimate the conditions expected at the Astra Gemini laser where the experiments presented in this work were performed at. Gemini delivers a maximum of $15\,\mathrm{J}$ on target at a pulse duration of $45\,\mathrm{fs}$, i.e. a power of a bit over $300\,\mathrm{TW}$. The central wavelength of the Ti:Sa based system is  $\lambda = 0.8\,\mu m$. 
+The LWFA setups presented in this work use a focusing optic with an F-number of $F = 40$ (focal length $f=6\,\mathrm{m}$, beam diameter $D=0.15\,\mathrm{m}$) for the beam driving the wake.
 
 This gives a focal spot waist of $w_0 = XX \mathrm{\mu m}$ and a peak intensity $I_0 = XX \times 10^{20} \,\mathrm{W}\,\mathrm{cm}^{-2}$ and $a_0 \approx XX$
 
-A typical focusing optic for the second Gemini beam as scatterer has an F-number of $F = 2$, which in is by a factor $10$ smaller, leading to a $10$ times smaller focal spot with $2 w_0 \approx 2\,\mathrm{\mu m}$, a $100$ times higher peak intensity $I_0 = XX\times 10^{20}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and finally a $10$ times higher peak normalised vector potential $a_0 \approx XX$.
+A typical focusing optic for the second Gemini beam as scatterer has an F-number of $F = 2$ (focal length $f=0.3\,\mathrm{m}$, beam diameter $D=0.15\,\mathrm{m}$ , which is by a factor $10$ smaller, leading to a $10$ times smaller minimum focal spot with $2 w_0 \approx 2\,\mathrm{\mu m}$, a $100$ times higher peak intensity $I_0 = XX\times 10^{20}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and finally a $10$ times higher peak normalised vector potential $a_0 \approx XX$.
 \vspace{\baselineskip}
 
-Other properties of the beam, like the radius of curvature and the Guoy phase are not mentioned in this section as they were not explicitly used in the work of the author so far.
 
-\EliasComm{Real lasers are typically not Gaussian.}
+\EliasComm{Real lasers are typically not Gaussian. Aberrations.}
 
 \EliasComm{Wavefront}
 
@@ -122,15 +128,12 @@ Other properties of the beam, like the radius of curvature and the Guoy phase ar
 
 \EliasComm{Guoy Phase}
 
-\begin{equation}
-R(z) = z \left(1+\left(\frac{z_R}{z}\right)^2\right)
-\end{equation}
 
 %Guoy phase
 
 \subsection{Chirped-pulse amplification (CPA)}
 
-In laser amplification a laser pulse (single pass) passes once or several times (multipass) through an amplifier crystal, called the laser gain medium. To generate ultrashort pulses a large bandwith gain medium is required in order to amplify continuously over a large frequency domain. A popular choice are lasers based on titanium-doped sapphire (Ti:Sa) as gain medium. At these short pulse durations and high intensities non-linear effects such as relativistic self-guiding start to occur, leading to a local increase of the field strength. At very high field strengths the gain medium starts to ionize and in turn to take damage: amplification of these short pulse lasers is limited by this breakdown. Further amplification can then only be achieved if the beam is expanded for which then a larger gain medium becomes necessary. This limitation was overcome or at least pushed further by the invention of chirped-pulse amplification (CPA) \cite{Strickland1985} based on a technique employed in radar technology.
+In laser amplification a laser pulse passes once (single pass) or multiple times (multipass) through an amplifier medium, called the laser gain medium. To generate ultrashort pulses a large bandwith gain medium is required in order to amplify continuously over a large frequency domain. A popular choice are lasers based on titanium-doped sapphire (Ti:Sa) as gain medium due to their large bandwidth and tunability. At short pulse durations and high intensities non-linear effects such as relativistic self-guiding start to occur, leading to a local increase of the field strength. At very high field strengths the gain medium starts to ionize and in turn to take damage: amplification of these short pulse lasers is limited by this breakdown. Further amplification can then only be achieved if the beam is expanded for which then a larger gain medium becomes necessary. This limitation was overcome or at least pushed further by the invention of chirped-pulse amplification (CPA) \cite{Strickland1985} based on a technique employed in radar technology.
 \vspace{\baselineskip}
 
 CPA takes advantage of the fact that short laser pulses are not monochromatic but a spectrum. This is a necessary property for the pulse to have a short duration, an evident feature when considering the Fourier transformation.
