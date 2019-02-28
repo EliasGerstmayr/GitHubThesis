@@ -157,7 +157,7 @@ However, even with CPA the amplification achievable is finite as it is not usefu
 \section{Laser Diagnostics}
 
 
-\subsection{Wavefront Sensor}
+\subsection{Wavefront Sensor and Adaptive Optics}
 
 Shack-Hartmann (?) sensor. HASO.
 
@@ -398,13 +398,6 @@ This is an option if the field of view of the probing beam has well known region
 
 \EliasComm{Characterising non-symmetric targets (in the lab).}
 
-\subsection{Moire-Deflectrometry}
-
-Based on ray tracing. Measure density gradients. 
-
-\subsection{Wavefront sensor}
-
-PHASICS. Wavefront changes can be used to estimate density of plasma channel.
 
 
 \subsection{Self emission of the plasma}
@@ -466,7 +459,6 @@ Account for imaging system and collection angle.
 
 ICT Turbo and EMP problems.
 
-\subsection{TimePix Detectors}
 
 
 \section{X-ray and Gamma-ray Diagnostics}
@@ -476,57 +468,6 @@ Wakefield acceleration has not only demonstrated to be a feasible tool to accele
 To decide whether a radiation source is suitable for certain applications, a thorough characterisation of its properties like flux, energy spectrum, source size, pulse duration and divergence is useful.
 The following tools were used in the context of the author's work for this purpose.
 
-\subsection{X-ray Pinhole Camera}
-
-One simple but effective way to measure the source size of an X-ray source is using a pinhole camera. An X-ray pinhole camera works the same way as its optical counterpart: the X-ray sensitive detector e.g. a CCD and the source are separated by an opaque wall only with a small hole (smaller than the source) to let light pass through. The magnification M is geometric and hence determined by the ratio of distances detector to pinhole and pinhole to source:
-
-\begin{equation}
-M = b/a,
-\end{equation}
-
-where $a$ is the distance source to pinhole and $b$ the distance pinhole to detector.
-
-Measuring these distances carefully one can then derive the source size and from shot-to-shot fluctuations in position and photon flux.
-
-The smaller the size the sharper the image but the signal becomes weaker. Optimum size is...
-
-To shield the CCD from ambient light the chip is typically covered with a thin beryllium window which is transparent to most X-rays but opaque to visible light. Depending on the range of X-rays one is interested the pinhole can be covered with plastic or other low-Z material to filter out low energy radiation.
-
-The commonly used cameras for experiments at the Central Laser Facility (UK) are Andor DX420 with a ... thick beryllium window.
-
-Specs DX420: (REF Andor)
-1024 x 255 pixel
-pixel 26 um x 26 um
-Image area 26.6 mm x 6.7 mm
-
-Alignment using alignment spikes that are then replaced with the pinhole.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.8\columnwidth]{20180406r002s023_PinholeCam.jpg}
-\caption{Example of a Pinhole image. Double pinhole. Magnification M. Pixel at ..., so source size was... Need to work out all these things and plot with line outs in both axes. Compare with a beam profile from the heater beam.}
-\end{figure}
-
-\subsection{X-ray Crystal Camera}
-
-To measure the spectrum of X-rays there are typically two routes: one is measuring the transmission of the radiation through different materials and derive its energy from this. The second is diffracting the X-rays on a crystal based on the Bragg condition and measuring the diffracted components.
-
-Latter method allows a measuring a narrow energy range at high resolution bound to available crystal lattices. Towards higher X-ray energies around tens of keV it becomes more difficult to use this method as crystals with the right structure and Bragg condition are rare.
-
-A list of crystals being used in experiments: HOPG.
-
-\subsection{X-ray Filter Pack}
-
-When reaching higher X-ray energies the transmission through materials becomes a more feasible and flexible tool to measure the X-ray spectrum at high energy and broad bandwith.
-The composition of an array of different Z materials and thicknesses is sometimes referred to as `filter pack'. Each component has a distinct transmission profile for X-rays with sharp edges around electron absorption edges (K-edge). When selecting a suitable range of materials with K-edges in the desired energy range, a comparison of the signal levels through the filters relative to each other can deduce the underlying spectrum. In some cases pairs of materials are exhibiting almost the same transmission behaviour except for a slightly shifted position of their K-edge. A subtraction their transmission from each other tells the experimentalist the number of photons in a narrow energy bandwidth. These pairs are referred to as `Ross filter pairs'.
-
-The signal can be detected using X-ray sensitive CCD cameras directly in the beam path (direct detection). An indirect detection method is relying on scintillators that are then imaged with a sufficiently sensitive camera.
-
-This method works well for soft X-rays, in a regime where the transmission is very dependent on the material. For harder X-ray spectra in the MeV range the transmission is almost constant for most materials and interaction with matter can result in the production of electron-positron pairs which then in turn produce secondary radiation.
-
-The author developed several filter packs over the course of his studies, two for application at the Astra Gemini laser and one filter pack that was installed at the FlashForward facility at DESY in Hamburg, Germany. This filter pack is also compatible with the ultra-high vacuum of the accelerator beam line.
-
-\EliasComm{not relevant for the experiments presented?}
 
 \subsection{Gamma-ray Scintillator Profile}
 
