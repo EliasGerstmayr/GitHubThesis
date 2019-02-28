@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  28 FEB 2019 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  28 FEB 2019 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1332,20 +1332,21 @@ put line 58.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [63 <./pics/Ch4_Results1/RR2015_Eta_thiswork.pdf>]
-<pics/quantumness_contour_block8.png, id=1344, 2007.5pt x 1003.75pt>
-File: pics/quantumness_contour_block8.png Graphic file (type png)
-<use pics/quantumness_contour_block8.png>
-Package pdftex.def Info: pics/quantumness_contour_block8.png  used on input lin
-e 72.
+<pics/Ch4_Results1/quantumness_contour_block8.png, id=1344, 2007.5pt x 1003.75p
+t>
+File: pics/Ch4_Results1/quantumness_contour_block8.png Graphic file (type png)
+<use pics/Ch4_Results1/quantumness_contour_block8.png>
+Package pdftex.def Info: pics/Ch4_Results1/quantumness_contour_block8.png  used
+ on input line 72.
 (pdftex.def)             Requested size: 334.60422pt x 167.29636pt.
- [64 <./pics/Ch4_Results1/Exp_setup_render_RR1.png>] [65 <./pics/quantumness_co
-ntour_block8.png (PNG copy)>]
+ [64 <./pics/Ch4_Results1/Exp_setup_render_RR1.png>] [65 <./pics/Ch4_Results1/q
+uantumness_contour_block8.png (PNG copy)>]
 <pics/scintillator.JPG, id=1360, 3276.24pt x 2457.18pt>
 File: pics/scintillator.JPG Graphic file (type jpg)
 <use pics/scintillator.JPG>
 Package pdftex.def Info: pics/scintillator.JPG  used on input line 90.
 (pdftex.def)             Requested size: 334.60422pt x 250.94398pt.
-[66 <./pics/scintillator.JPG>]
+ [66 <./pics/scintillator.JPG>]
 <pics/Ch4_Results1/Elec_EdgeSpectrum_Null_V2.png, id=1369, 851.18pt x 649.42625
 pt>
 File: pics/Ch4_Results1/Elec_EdgeSpectrum_Null_V2.png Graphic file (type png)
@@ -1376,9 +1377,8 @@ File: pics/Ch4_Results1/DCsI_sigma.pdf Graphic file (type pdf)
 Package pdftex.def Info: pics/Ch4_Results1/DCsI_sigma.pdf  used on input line 1
 88.
 (pdftex.def)             Requested size: 334.60422pt x 207.83528pt.
-
-[71] [72 <./pics/Ch4_Results1/ElecQ2_CsI_Correlation.pdf>] [73 <./pics/Ch4_Resu
-lts1/DCsI_sigma.pdf>]
+ [71] [72 <./pics/Ch4_Results1/ElecQ2_CsI_Correlation.pdf>]
+[73 <./pics/Ch4_Results1/DCsI_sigma.pdf>]
 <pics/Ch4_Results1/ElecEdge_raster_null_predrift_histo.pdf, id=1555, 581.77347p
 t x 361.35pt>
 File: pics/Ch4_Results1/ElecEdge_raster_null_predrift_histo.pdf Graphic file (t
@@ -1460,10 +1460,11 @@ File: pics/Ch4_Results1/20151217r002_CollGroup.jpg Graphic file (type jpg)
 Package pdftex.def Info: pics/Ch4_Results1/20151217r002_CollGroup.jpg  used on 
 input line 318.
 (pdftex.def)             Requested size: 198.91423pt x 104.56342pt.
-<pics/up_arrows.jpg, id=1829, 97.3236pt x 380.622pt>
-File: pics/up_arrows.jpg Graphic file (type jpg)
-<use pics/up_arrows.jpg>
-Package pdftex.def Info: pics/up_arrows.jpg  used on input line 319.
+<pics/Ch4_Results1/up_arrows.jpg, id=1829, 97.3236pt x 380.622pt>
+File: pics/Ch4_Results1/up_arrows.jpg Graphic file (type jpg)
+<use pics/Ch4_Results1/up_arrows.jpg>
+Package pdftex.def Info: pics/Ch4_Results1/up_arrows.jpg  used on input line 31
+9.
 (pdftex.def)             Requested size: 26.73659pt x 104.56342pt.
 <pics/Ch4_Results1/DCsI_sigma_v_ElecEdge.pdf, id=1832, 581.77347pt x 361.35pt>
 File: pics/Ch4_Results1/DCsI_sigma_v_ElecEdge.pdf Graphic file (type pdf)
@@ -1472,8 +1473,8 @@ Package pdftex.def Info: pics/Ch4_Results1/DCsI_sigma_v_ElecEdge.pdf  used on i
 nput line 332.
 (pdftex.def)             Requested size: 334.60422pt x 207.83528pt.
 [78] [79 <./pics/Ch4_Results1/20151217r002_NullGroup.jpg> <./pics/Ch4_Results1/
-20151217r002_CollGroup.jpg> <./pics/up_arrows.jpg> <./pics/Ch4_Results1/DCsI_si
-gma_v_ElecEdge.pdf>] [80] [81] [82]
+20151217r002_CollGroup.jpg> <./pics/Ch4_Results1/up_arrows.jpg> <./pics/Ch4_Res
+ults1/DCsI_sigma_v_ElecEdge.pdf>] [80] [81] [82]
 <pics/Ch4_Results1/Poder_Laser_Corr.pdf, id=1907, 581.77347pt x 361.35pt>
 File: pics/Ch4_Results1/Poder_Laser_Corr.pdf Graphic file (type pdf)
 <use pics/Ch4_Results1/Poder_Laser_Corr.pdf>
@@ -1650,17 +1651,25 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
 Package rerunfilecheck Info: File `Thesis_Gerstmayr_V2.out' has not changed.
 (rerunfilecheck)             Checksum: 7A828CED4198D49F30F910F106194A61;6076.
-Package rerunfilecheck Info: File `Thesis_Gerstmayr_V2.brf' has not changed.
-(rerunfilecheck)             Checksum: C80B36B3EEB0C9AD6BC00EE0392586FD;3234.
 
+
+Package rerunfilecheck Warning: File `Thesis_Gerstmayr_V2.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Thesis_Gerstmayr_V2.brf':
+(rerunfilecheck)             Before: 974D09AA4DAFBD2F2D53A73DC77ECD59;3234
+(rerunfilecheck)             After:  C80B36B3EEB0C9AD6BC00EE0392586FD;3234.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
  ) 
 Here is how much of TeX's memory you used:
- 36488 strings out of 492639
- 743840 string characters out of 6129301
+ 36489 strings out of 492639
+ 743962 string characters out of 6129301
  852933 words of memory out of 5000000
  39215 multiletter control sequences out of 15000+600000
  549512 words of font info for 146 fonts, out of 8000000 for 9000
@@ -1683,7 +1692,7 @@ ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Thesis_Gerstmayr_V2.pdf (101 pages, 6036652 bytes).
+Output written on Thesis_Gerstmayr_V2.pdf (101 pages, 6036656 bytes).
 PDF statistics:
  2420 PDF objects out of 2487 (max. 8388607)
  1523 compressed objects within 16 object streams
