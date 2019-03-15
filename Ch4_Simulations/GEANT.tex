@@ -134,6 +134,19 @@ The 2D array of crystals allows to also obtain an angular response from the dete
 
 One screen, however, is unable to tell us anything about an angular structure and spectrum. Does the spectrometer react differently to a global angular pointing of the beam? these simulations indicate the opposite. The realistic angular changes are of order of mrads which is smaller than a crystal over the size of the stack, meaning even at an angle the response is fairly limited to the same crystal rows. Integrated the response looks almost identical.
 
+
+\section{Combining responses to spectra}
+
+The simulations so far have assumed individual photons at a defined energy. The response functions and the energy deposition was averaged over the number of photons (10.000 to 100.000 per energy).
+
+In an experiment, however, perfectly monoenergetic photon sources are not to be found. Even deeply linear inverse Compton scattering undergoes a broadening from various sources. To restore the response of a realistic spectrum the simulated responses are being added up and weighted according to the shape of the spectrum. This assumes that photon-photon interactions or multi-photon interactions are negligible and that each photon travelling unperturbed and isolated for all practical purposes. This adding up of spectra can mathematically easily be performed by applying a matrix multiplication: the matrix contains the responses of a range of photon energies and multiplying it with a vector containing the weighting for each photon energy results in the detector response of a full spectrum.
+
+This means that in principle a backwards transformation should be possible to invert the matrix and immediately gain a spectrum from experimental data from this process. Previous work, however, indicated that this process does not perform well due to noise in the experiment meaning the problem is ill-posed and the inversion proces does not converge. Instead a spectrum is assumed an a range of parameters used to vary this spectrum. The experimental data and the range of responses can then be compared using a least-square fit. This technique requires an input spectrum and a good knowledge of the spectrum expected. Especially in a transient regime where spectral shapes are expected to change this does not perform well.
+
+\section{Model-independent unfolding algorithm}
+
+To overcome the assumption of a well-known shape we have to resort to an algorithm based on Bayes-Theorem to find a spectrum independent of any presumption. In the case of some results to follow later for linear inverse Compton scattering the electron spectrum is expected to remain unperturbed while the laser pulse is strongly defocused and is also not expected to vary its intensity much. Under these conditions this method can be fielded and compared to the linear theory.
+
 \section{Bremsstrahlung simulations}
 
 One potential application is measuring hard bremsstrahlung from a source. Bremsstrahlung is very well understood as a process and is only mildly dependent on the shape of the electron spectrum, although large energy fluctuations will make a difference. This also turns out to be a good way to calibrate a detector and in experiment spot differences in crystal efficiency, flaws in the imaging system and so on.
