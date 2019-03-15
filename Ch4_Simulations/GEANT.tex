@@ -49,12 +49,26 @@ It consists of 45 x 45 CsI(Tl) crystals of face dimension 1 mm x 1 mm and a thic
 
 The stack was defined as such in the simulation and it can be seen in figure ADD HERE.
 
+\begin{figure}
+\centering
+\includegraphics[width=.3\columnwidth]{ScreenshotGEANT_JenaStack.png}
+\caption{Simulated stack.}
+\end{figure}
+
 The front side of the detector is XX m away from the source of the radiation, similarly to experiment conditions, hence being in general able to cover plus minus NUMBER divergence from a point source if centred along the same axis.
 
 Now individual photons with ranging energy from 10 keV to 500 MeV are launched from the source point and the energy deposited in the crystals is being recorded. Each energy step is simulated 10.000 to 100.000 times and then averaged to obtain an average energy deposited per photon of this energy.
 
 The results from these simulation can be seen in figure ADD HERE. Photon energies up to ENERGY are almost completely absorbed, backscattered and rarely transmitted. At around 200 keV suddenly a large amount of radiation is being absorbed. This indicates a material characteristic absorption edge.
 This means that whilst for the majority of the enegry ranges the CsI profile will give a good indication as energy times flux is monotonic increasing and somewhat linear for the two regimes of interest. In the regime of hundreds of keV we have to consider that a lot of energy will be absorped in the front layer and we have to check how this behaves further downstream in the next detector.
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{Edep_JenaStack.pdf}\includegraphics[width=.5\columnwidth]{Edep_JenaStack_rel.pdf}
+\caption{Simulation results: energy deposited per photon in a profile stack.}
+\end{figure}
+
+If we look at this in terms of relative energy deposited per photon, so in other words energy deposited over energy of the photon, this does not look like a sharp edge but merely a steady decrease in energy deposited relative to the total photon energy. Scattering cross sections typically decrease with increase in energy and this goes along the same lines.
 
 \section{Energy Deposition in an extended scintillator array}
 
@@ -80,6 +94,14 @@ The energy conversion is of order.... percent.
 Similarly as before an array of crystals continuing in the penetration direction of the radiation is being modelled. This time the orientation of the stacks is changing from layer to layer. In addition the stack is longer in the propagation direction and spaced by plastic instead of aluminium and lacks a thick steel plate as cover. As radiation is in these situations very collimated the detector is elongated to enable resolving the full decay process, also at higher energies.
 The lower Z spacers and front plate also is supposed to help make use of this extra length and space out the decay.
 
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{ScreenshotGEANT_DualAxis_Side.png}
+\includegraphics[width=.5\columnwidth]{ScreenshotGEANT_DualAxisStack.png}
+\caption{Simulated stack: dual axis}
+\end{figure}
+
+
 \section{Comparison of scintillator array responses}
 
 The described detectors (dual axis, single axis and profile) were combined in different ways and the cover plate for one of the detectors was changed to see the change in response.
@@ -90,6 +112,14 @@ Dual axis array. Dependence of peak from materials in between, mainly front plat
 
 As expected adding more material or higher density materials forces earlier attenuation and pair production (as the cross-section increases).
 Adding a profile detector has the same effect as adding a steel plate. The plastic spacers seem to have the effect that the peak propagates slower within the stack even though it starts quite deep in already. The main effect is carried by the dense scintillator material.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{EdepMax_Cases.pdf}
+\caption{Comparison simulation results.}
+\end{figure}
+
 
 \section{Angular dependence of responses}
 
@@ -105,5 +135,10 @@ The 2D array of crystals allows to also obtain an angular response from the dete
 One screen, however, is unable to tell us anything about an angular structure and spectrum. Does the spectrometer react differently to a global angular pointing of the beam? these simulations indicate the opposite. The realistic angular changes are of order of mrads which is smaller than a crystal over the size of the stack, meaning even at an angle the response is fairly limited to the same crystal rows. Integrated the response looks almost identical.
 
 \section{Bremsstrahlung simulations}
+
+One potential application is measuring hard bremsstrahlung from a source. Bremsstrahlung is very well understood as a process and is only mildly dependent on the shape of the electron spectrum, although large energy fluctuations will make a difference. This also turns out to be a good way to calibrate a detector and in experiment spot differences in crystal efficiency, flaws in the imaging system and so on.
+
+In this simulation monoenergetic electrons were launched at a converter foil at distance...
+The material of the converter foil and the thickness was varied. The electrons are after their interaction dispersed by a magnetic field such that they do not interact with the detector. 
 
 Measuring conversion of electrons into bremsstrahlung (efficiency) and response for experiment factors.
