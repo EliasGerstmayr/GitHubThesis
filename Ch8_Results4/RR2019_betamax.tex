@@ -2,6 +2,14 @@
 
 \section{Motivation}
 
+Betatron radiation as interesting source due to short pulse duration, brightness and broad bandwidth. Small source size makes it suitable for phase contrast imaging and warm dense matter studies to probe transitions in matter states. It can also be used for XANES studies.
+
+Over the years a variety of handles have been found to manipulate the accelerating structure of a wakefield and use this to enhance radiation produced through the oscillation of trapped and accelerated electrons.
+
+Enhancement through shaping of the wavefront and imapcting the pulse evolution (oscillation and trapping), density ramps, drifting (increase of oscillation radius), density structures bending the beam, tilted shocks....
+
+This work presents another example where a combination of shock injection and tilted shock front and drift results in an enhancement and hardening of betatron radiation by using a double shock feature.
+
 \section{Experimental Setup}
 
 The following experiment was performed at the Astra Gemini laser facility in early 2019. This dataset only used one of the two laser arms available at Gemini.
@@ -17,12 +25,33 @@ The radiation propagates approximately on laser axis and unperturbed through the
 
 \section{Density profile}
 
+Shadowgraphy and interferometry images.
+
+Prety pic.
+
 \section{Electron Spectra}
 
-\section{GEANT simulations}
+The shape of the electron spectra vary from shot to shot but are mainly high charge beams up to 1.2 GeV. Large oscillations become apparent in some cases whereas in some cases the main oscillation clearly happens in the magnet dispersion direction which is also the laser polarisation axis of the driving laser beam.
+
+\section{GEANT simulations for the gamma detector}
+
+\begin{figure}
+\includegraphics[width=.5\columnwidth]{Edep_GSpec_CombinedRows.pdf}
+\caption{Response curves.}
+\end{figure}
 
 \section{Background treatment}
 
+In contrast to the previous chapters, the signal is comparatively low as there is less energy in the beam and less flux. Due to the divergent nature of the radiation the signal is spread out over the detector and is not constraint to a fine but bright line. On top of that the electron beams as discussed above show high charge and hence produce a lot of background signal. This makes the extraction of an accurate X-ray or gamma energy estimate challenging. We have to treat the data for an energy dependent bremsstrahlung background. In the ideal case this is being done on an individual crystal basis. Not doing this would result in a clear overestimate and skewing of the assumption. Hundreds of keV radiation from betatron radiation or suddenly tens of MeV indicate very different physics and need to be addressed differently.
+
 \section{Estimating the spectrum}
+
+\section{Enhancement of betatron radiation: theories}
+
+From the electron energy spectrum the expected radiation would be of order 30 keV (critical energy) for a betatron radius of ...
+To achieve a hardening of a factor of 10 the radius has to be increased by that same factor. The density crunch could be squeezing the electrons together giving them a strong transversal component due to the strong focusing fields reaching higher levels.
+The tilted density scheme as described in other work would lead to a motion in the vertical direction (judging from the shadowgraphy images) hence enhancing oscillations preferentially in that axis. In some instances a strong preference in the polarisation direction is indicated which means a laser evolution and hence bubble evolution enhances existing oscillations instead of forcing a new one.
+
+\section{EPOCH/PIC Simulations}
 
 \section{Conclusion}
