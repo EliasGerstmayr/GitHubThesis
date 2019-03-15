@@ -1,0 +1,85 @@
+\chapter{GEANT simulations}
+
+\section{Motivation}
+
+In the following chapters various arrays of scintillator arrays (in this case caesium-iodide doped with thallium, CsI(Tl)) are emplyed to measure the spectrum of gamma radiation from various sources (bremsstrahlung, linear and non-linear inverse Compton scattering and hard betatron radiation).
+
+In the soft and hard X-ray regime spectra can be deduced by comparing the transmission of the radiation through various materials with characteristic K-absorption edges or relying on crystal reflections matching the Bragg-condition or a combination of both.
+For these conditions a good knowledge of the material properties and the positioning of the crystal and cameras is essential.
+The energy-dependent transmission through the material is related to an interplay of different mechanisms (Compton scattering, Rayleigh scattering, photoelectric effect, pair production and so on). The sum of these cross sections can be combined and found in specific repositories.
+
+At higher X-ray energies entering the gamma regime $\hbar \omega \rightarrow 1\,\mathrm{MeV}$ K-edges to effectively distinguish spectral bands become rarer and most materials become more transparent, as a consequence the resolving a full spectrum becomes challenging. At the same time pair production becomes possible and more likely with increasing energy.
+A detector interacting with such high energetic gamma-radiation is now faced with energy deposition by the radiation itself and secondary particles and radiation. An extended detector can mitigate this effect by forcing pair production in an earlier part of the detector and performing an again well resolved measurement in a second part of the detector. The complex interplay of pair production and energy deposition from secondary sources requires numerical solutions calculating the cross-sections for various processes dynamically throughout the interaction with the detector. This is where GEANT or other Monte Carlo based simulation codes come into play.
+
+At the few MeV level the spectrum of the generated electron-positron pairs scales directly with the energy of the gamma radiation interacting with the matter. Measuring the spectrum of these particles, for instance with a magnetic electron spectrometer, and comparing the results with a simulation result can then be used to deduce a gamma spectrum.
+
+The spectrum of the pairs, however, becomes less sensitive to the energy of the gamma-radiation at higher (tens of MeV) energies. An alternative method to measure such a hard spectrum is tracking the energy deposition of radiation and secondary sources throughout an array of scintillator material until it decays.
+This method has the advantage of being variable and viable for the few MeV level and much harder radiation.
+
+Simulations linked to this technique are outlined in this work and are then applied to experimental data in the following chapters to measure radiation from different materials in a range of hundreds of keV to hundred MeV (over three orders of magnitude).
+
+
+\section{Simulation Code and Functionality}
+
+The at CERN developed GEANT code is a Monte Carlo code incorporating most known and well measured cross-sections for fundamental particle/light-matter interactions.
+
+The specific simulation code for GEANT used is strongly based on work by Jason Cole (Imperial College) who in turn benefitted from input by Kristjan Poder (formerly Imperial College, now at DESY in Hamburg).
+
+In this case the code was used to simulate the energy deposited in an array of scintillator crystals by individual X-ray photons or in other word to simulate the response of the detector. It was assumed that multi-photon processes and photon-photon interactions would be negligible and hence tracking individual photons through the detector and simply adding the respective detector response would be sufficient.
+It was also assumed that the energy deposited within the scintillator crystals is linearly related to the light yield of the scintillator, i.e. the number of fluorescence photons emitted, and independent of the process of energy deposition. Above a certain threshold this appears to be true (REF).
+
+The code was used to simulate the response of various configurations of scintillator crystals and materials used in experiment, and also to simulate the bremsstrahlung spectrum from electrons interacting with slabs of material and the respective response of detectors to this secondary radiation.
+
+
+\section{Energy Deposition in one scintillation layer}
+
+In some experiments an additional and separate array of crystals was posititoned before the main detector to measure the profile of the gamma ray burst.
+This gives information about the divergence of the beam but also in some way the number of photons and energy contained in the burst of radiation.
+How well this scales with the actual total energy is subject to the energy range and the processes involved and was to be investigated as well.
+
+The profile is also an indicator the the intensity of the interaction in non-linear ICS and carries the imprint of the interacting electron beam within it.
+It is hence a useful diagnostic to not only confirm an interaction took place but also to characterise the conditions at the interaction.
+
+When planning to use such a detector as measurement of the total energy of the radiation one has to keep in mind that this is not a calorimeter in the gamma regime as radiation is bound to be transmitted through the stack. However, it is expected that the energy deposited per photon will vary and of course the number of photons will leave their trace on this detector.
+
+
+The detector in the simulation:
+the detector assembled in the simulation is based on a CsI stack used in some experiments and provided by the Helmholtz Institut in Jena.
+It consists of 45 x 45 CsI(Tl) crystals of face dimension 1 mm x 1 mm and a thickness of 10 mm. The crystals are spaced by a 0.2 mm layer of TiO2 and the frontside has another layer of TiO2 of 0.5 mm which keeps the entire stack together.
+
+The stack was defined as such in the simulation and it can be seen in figure ADD HERE.
+
+The front side of the detector is XX m away from the source of the radiation, similarly to experiment conditions, hence being in general able to cover plus minus NUMBER divergence from a point source if centred along the same axis.
+
+Now individual photons with ranging energy from 10 keV to 500 MeV are launched from the source point and the energy deposited in the crystals is being recorded. Each energy step is simulated 10.000 to 100.000 times and then averaged to obtain an average energy deposited per photon of this energy.
+
+The results from these simulation can be seen in figure ADD HERE. Photon energies up to ENERGY are almost completely absorbed, backscattered and rarely transmitted.
+
+Can this be used as indicator for brightness or interaction?
+
+Dimension of detector and material.
+
+
+\section{Energy Deposition in an extended scintillator array}
+
+RAL stack.
+
+\section{Energy Deposition in an extended scintillator array in two directions}
+
+\section{Comparison of scintillator array responses}
+
+RAL stack with steel and plastic and gamma profile in front.
+Dual axis array. Dependence of peak from materials in between, mainly front plate. Shifts depending on that.
+
+\section{Angular dependence of responses}
+
+The along the transverse direction integrated response remains unchanged for a source merely translated in a direction.
+Does it change within a realistically expected range of angles?
+
+Running simulations with sources and angles. Does the response curves for one energy change with change of angle?
+
+If not that means that we can take slices of the response to measure the differential spectrum.
+
+\section{Bremsstrahlung simulations}
+
+Measuring conversion of electrons into bremsstrahlung (efficiency) and response for experiment factors.
