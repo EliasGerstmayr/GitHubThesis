@@ -250,7 +250,7 @@ The electron is performing a periodic oscillation around the z-axis, whilst the 
 \label{Theory:Figs:FigureOfEight}
 \end{figure}
 
-\section{Introduction to Plasmas}
+\section{Plasmas}
 
 \subsection{General Properties}
 
@@ -274,50 +274,6 @@ where $\epsilon_0$ is the dielectric constant, $k_B$ the Boltzmann constant and 
 
 In that sense quasi-neutrality is also a manifestation of `collective behaviour'. Whilst the formation of Debye-spheres is a microscopic effect, the particles can act together on macroscopic scales as well through long range electromagnetic forces to form instabilities and waves. Even small imbalances can give rise to significant responses of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, the introduction of electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces.
 
-\subsection{Laser Ionisation}
-
-Ionisation describes the process of removing an electron from a neutral atom, tipping the charge balance from zero to positive and turning the atom to an ion. Already ionised atoms can be further ionised by stripping more and more electrons from the shells, but this process requires more and more energy as the remainig electrons are bound tighly to the core.
-
-In the context of this work high intensity lasers are used to drive waves in plasmas. A change in the number density of free electrons through ionisation effects can influence the dynamics of the system. The plasma is usually formed by filling a gas compartment or firing a gas jet with a neutral gas, assuming that the laser pulse ionises the gas fully to first approximation.
-\vspace{\baselineskip}
-
-There are different mechanisms through which an oscillating laser field ionises a gas. In addition to single photon ionisation, there is multi-photon ionisation \cite{Keldysh1965}, where one electron is excited by absorbing multiple photons before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}. In the case of very high field strengths, the Coulomb potential might be completely suppressed by the laser field and the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
-\vspace{\baselineskip}
-
-In the simple example of a hydrogen-like atom in an external electric field $E$, the potential $V$ is given by
-\begin{equation}
-V(r) = -\frac{Ze^2}{4\pi\epsilon_0 r} - eEr,
-\end{equation}
-where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. Using this result and by setting the height of the barrier to the ionisation potential $V_e$, the electric field required amounts to
-
-\begin{equation}
-E = \frac{\pi \epsilon_0 V^2_e}{Ze^3},
-\end{equation} 
-
-or in terms of intensity using $I = \frac{c\epsilon_0}{2}|E|^2$ in (near) vacuum:
-
-\begin{equation}
-I = \frac{c\epsilon^3 \pi^2 V^4_e}{2e^6 Z^2}.
-\end{equation}
-
-For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
-The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF).  
-
-Partially ionised plasmas result in a couple of problems: more complex, absorption of X-rays, dampening of particles, scattering? Weaker fields.
-\EliasComm{add also some comments on partially ionised plasmas and how they change for instance the absorption of X-rays in this medium.}
-
-\EliasComm{Add sketch of barrier suppression ionisation or all mechanisms in comparison.}
-
-\subsection{Recombination Light}
-
-After ionisation the electrons return to the ionic cores of the atom and recombine. During this process called recombination the energy obtained to leave the atom is being released in form of photons again. The wavelength of the radiation is determined by the atom structure and hence characteristic of the material and in case of high Z gases also of the intensity of the interaction. Recombination occurs on a time-scale of XX.
-
-Energy of the photon:
-\begin{equation}
-E_{ph} = hf = E_{e,kin} + E_{bound}
-\end{equation}
-
-The ground level of hydrogen is bound by 13.6 eV corresponding to a photon of wavelength 91 nm (?). The ground level of hydrogen-like helium is bound by a potential $V_e = 54.4\,\mathrm{eV}$, corresponding to a wavelength of 22.8 nm and the first level ionisation level of 24.6 eV corresponds to 50.4 nm.
 
 \subsection{The Plasma Frequency}
 
@@ -401,6 +357,51 @@ For $n_e > n_c$, i.e. an overdense plasma, the refractive index is imaginary and
 \EliasComm{add some comments here on reflection (plasma mirror).}
 \EliasComm{something about absorption of energy in ion acceleration, heating etc.}
 \EliasComm{add some explicit curves for transmission/absorption and reflection?}
+
+
+
+\subsection{Plasma Formation and Recombination}
+
+Ionisation describes the process of removing an electron from a neutral atom, tipping the charge balance from zero to positive and turning the atom to an ion. Already ionised atoms can be further ionised by stripping more and more electrons from the shells, but this process requires more and more energy as the remainig electrons are bound tighly to the core.
+
+In the context of this work high intensity lasers are used to drive waves in plasmas. A change in the number density of free electrons through ionisation effects can influence the dynamics of the system. The plasma is usually formed by filling a gas compartment or firing a gas jet with a neutral gas, assuming that the laser pulse ionises the gas fully to first approximation.
+\vspace{\baselineskip}
+
+There are different mechanisms through which an oscillating laser field ionises a gas. In addition to single photon ionisation, there is multi-photon ionisation \cite{Keldysh1965}, where one electron is excited by absorbing multiple photons before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}. In the case of very high field strengths, the Coulomb potential might be completely suppressed by the laser field and the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
+\vspace{\baselineskip}
+
+In the simple example of a hydrogen-like atom in an external electric field $E$, the potential $V$ is given by
+\begin{equation}
+V(r) = -\frac{Ze^2}{4\pi\epsilon_0 r} - eEr,
+\end{equation}
+where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. Using this result and by setting the height of the barrier to the ionisation potential $V_e$, the electric field required amounts to
+
+\begin{equation}
+E = \frac{\pi \epsilon_0 V^2_e}{Ze^3},
+\end{equation} 
+
+or in terms of intensity using $I = \frac{c\epsilon_0}{2}|E|^2$ in (near) vacuum:
+
+\begin{equation}
+I = \frac{c\epsilon^3 \pi^2 V^4_e}{2e^6 Z^2}.
+\end{equation}
+
+For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
+The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF).  
+
+Partially ionised plasmas result in a couple of problems: more complex, absorption of X-rays, dampening of particles, scattering? Weaker fields.
+\EliasComm{add also some comments on partially ionised plasmas and how they change for instance the absorption of X-rays in this medium.}
+
+\EliasComm{Add sketch of barrier suppression ionisation or all mechanisms in comparison.}
+
+After ionisation the electrons return to the ionic cores of the atom and recombine. During this process called recombination the energy obtained to leave the atom is being released in form of photons again. The wavelength of the radiation is determined by the atom structure and hence characteristic of the material and in case of high Z gases also of the intensity of the interaction. Recombination occurs on a time-scale of XX.
+
+Energy of the photon:
+\begin{equation}
+E_{ph} = hf = E_{e,kin} + E_{bound}
+\end{equation}
+
+The ground level of hydrogen is bound by 13.6 eV corresponding to a photon of wavelength 91 nm (?). The ground level of hydrogen-like helium is bound by a potential $V_e = 54.4\,\mathrm{eV}$, corresponding to a wavelength of 22.8 nm and the first level ionisation level of 24.6 eV corresponds to 50.4 nm.
 
 
 \section{Ponderomotive Force}
@@ -753,6 +754,42 @@ The results of a ICS experiment via LWFA at the Astra Gemini facility in the UK 
 
 ICS has been widely used in the conventional accelerator community to measure the spin-polarisation of beams.
 
+
+\subsubsection{Low Intensity behaviour at low electron energies}
+
+At low laser intensities and electron energies the scattering cross section is symmetric in forwards and backwards direction of the incoming photon. It forms two lobes.
+From the Klein-Nishina formula based on energy and momentum conservation we see that each angular position in the lobe corresponds to a fixed energy with maxima on the forwards-backwards axis.
+
+\subsubsection{Low intensity behaviour at relativistic electron energies}
+
+At low laser intensities in the limit $a_0 \rightarrow 0$ and relativistic electron energies the interaction looks fairly similar in the rest frame of the electron. In the lab frame however the emitted radiation is now preferential in the backwards direction (the direction of the electron propagation). This is sometimes referred to as `headlight effect'. The electrons are passing through the laser pulse and oscillate up and down. The maximum energy is of order $\hbar \omega' \approx 4 \hbar \omega a_0 \gamma^2,$ based on the Lorentz boost. This energy is again located on the forwards-backwards axis. The cone of emitted radiation is of order $1/\gamma$.
+
+\subsubsection{Rising laser intensity at relativistic electron energies}
+
+At laser intensities reaching an relativistic regime $a_0 ~ 0.1$ the equation of motion of the electron starts deviating from a simple up-and-down oscillation due to a longitudinal component. The electrons start performing a figure-of-eight motion with a longitudinal component increasing with $a_0$.
+This additional component has two effects:
+Firstly, the modification of the equation of motion leads to a redshifting of the spectrum. The energy of the Doppler-shifted radiation is damped to 
+\begin{equation}
+\hbar \omega' \approx \frac{4 \hbar \omega a_0 \gamma^2}{1+a_0^2/2 + \gamma^2 \theta^2},
+\end{equation}
+This leads to a downshift and broadening of the radiation.
+
+Secondly, energy is being transferred from this fundamental radiation at $\omega$ to higher order harmonics $\omega_1 = n\omega$, when multiple photons upconvert to one higher energy photon. Since this is a free electron process the harmonics are not restricted to either odd or even numbers but cover both.
+
+The angular distribution of each component is distinct and symmetric, with odd harmonics showing a maximum on-axis and (n-1)/2 lobes on either side and even harmonics having a minimum on-axis and n/2 side-maxima on either side.
+
+\subsubsection{Ultrahigh intensities and relativistic electron energies}
+
+In the highly nonlinear regime $a_0 \gg 1$ the number of harmonics increases by a factor $a_0^3$ (REF). At the same time each harmonic is spread out due to the longitudinal component which now dominates the electron motion.
+
+The high number of harmonics (hundreds!) and the redshifting of each component transforms the spectrally very peaked spectrum to a broadband source resembling a synchrotron spectrum.
+
+\subsubsection{Other modifications of the spectrum}
+
+In a real setting the ICS spectrum is modified by several input parameters:
+the energy spread of the electron beam will translate to an energy spread in the ICS spectrum.
+Short pulse lasers intrinsically require a certain bandwidth are hence not monochromatic. The spread of photon energies modifies the spectrum similarly.
+Deviations from a head-on collision have to be considered and also introduce a spread, in particular considering divergence and emittance of the electron beam and the range of angles of the focusing laser pulse with respect to the laser axis.
 
 
 \section{Radiation Reaction}
