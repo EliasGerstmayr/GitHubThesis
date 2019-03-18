@@ -135,7 +135,7 @@ As previously we will use a Lagrangian. We ignore any vector potential contribut
 The Lagrangian of this scenario is described by
 
 \begin{equation}
-L = - m_e c^2 \gamma^{-1} - q \hi
+L = - m_e c^2 \gamma^{-1} - q \phi
 \end{equation}
 where $\phi$ is the scalar potential describing the electrostatic field of the channel.
 
@@ -341,6 +341,13 @@ z(\tau) = \frac{c a^2_0}{4}\left(\tau + \frac{1}{2\omega}\sin(2\omega\tau)\right
 where we chose the initial conditions $x(0)=y(0)=z(0)=0$ and returned to non-normalised units.
 
 The electron is performing a periodic oscillation around the z-axis, whilst the motion in the z-axis is composed of a constant drift and another oscillation (see figure \ref{Theory:Figs:FigureOfEight} (left)). This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame (see figure \ref{Theory:Figs:FigureOfEight} (right)). For $a_0 \leq 1$ the motion in z is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
+
+The extremal values are then 
+
+\begin{align*}
+x_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0}{\omega}\\
+z_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0^2 \pi}{8 \omega} (2n+1)
+\end{align*}
 
 \begin{figure}[h]
 \centering
@@ -704,6 +711,8 @@ After having considered the motion of a charged particle, in this case an electr
 
 Charged particles always then produce radiation when they are being accelerated.
 
+The classical relativistic description requires using retarded Lienard-Wiechert potentials to account appropriately for causality. The trajectories of the electrons as solved before have to be integrated over. In a later section we will discuss why this treatment also lacks in some extreme cases. 
+
 \subsection{Synchrotron Radiation}
 
 In a synchrotron a charged bunch is constantly redirected to remain on a circular orbit. This redirection is an acceleration and hence results in the emission of radiation.
@@ -794,6 +803,12 @@ Differential cross section under Born approximation (see Jackson):
 for $\hbar \omega < E$.
 
 The number of photons hence scales quadratically with the $Z$ of the converter target used. Higher yield however comes at the cost of spatial resolution and a wider cone of radiation due to scattering in the material.
+
+For $\hbar \omega << E$
+
+\begin{equation}
+\frac{d^2 \chi_R}{d \omega d \Omega_\gamma} = \left[\frac{3}{2 \pi} \gamma^2 \frac{(1+\gamma^4 \theta^4)}{(1+\gamma^2 \theta^2)^4}\right] \cdot \frac{d \chi_R}{d \omega}
+\end{equation}
 
 \subsection{Compton Scattering}
 
@@ -923,6 +938,10 @@ Firstly, the modification of the equation of motion leads to a redshifting of th
 This leads to a downshift and broadening of the radiation.
 
 We solved the equation of motion previously and it follows the relativistic Doppler shift.
+
+\begin{equation}
+\omega' = \gamma \omega (1-\beta \cos(\theta)) \approx \omega (1+\gamma^2 \theta^2)/2\gamma
+\end{equation}
 
 Secondly, energy is being transferred from this fundamental radiation at $\omega$ to higher order harmonics $\omega_1 = n\omega$, when multiple photons upconvert to one higher energy photon. Since this is a free electron process the harmonics are not restricted to either odd or even numbers but cover both.
 
