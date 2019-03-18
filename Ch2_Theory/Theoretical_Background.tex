@@ -55,7 +55,7 @@ Using the previously derived equation for the Lorentz force we can now consider 
 
 If we choose the coordinate system such that  $\mathbf{E} =  (E,0,0)^t = E e_x$, we see that the momentum of the electron is unchanged in the other two directions, $\mathrm{d}p_x/\mathrm{d}t = \mathrm{d}p_y/\mathrm{d}p_y = 0$. In x-direction the electron however feels a constant force $qE$ accelerating it further and further. 
 
-Let us assume a field strength $E = 100\,\mathrm{MeV/m}$, then the electron will have gained an energy of $100\,\mathrm{MeV}$ afer $1\,\mathrm{m}$. After $1\,\mathrm{km}$ it would have gained already $100\,\mathrm{GeV}$ and so on. If we double the field strenght, we only need half of the distance to reach the same energy. We just built ourselves a linear electron accelerator! In reality most accelerating structures are not based on static electric fields anymore but on matched alternating fields. The principal idea, however, remains the same and the energy gain scales linearly with field strength and the distance over which the particle experiences this field. This is also the motivation and the appeal of plasma based accelerators: plasmas for example can sustain arbitrarily high electric field strengths and some of the accelerating fields measured so far reached an excess of $100\,\mathrm{GeV/m}$ (REF) - we just managed to save us quite some space!
+Let us assume a field strength $E = 100\,\mathrm{MeV/m}$, then the electron will have gained an energy of $100\,\mathrm{MeV}$ after $1\,\mathrm{m}$. After $1\,\mathrm{km}$ it would have gained already $100\,\mathrm{GeV}$ and so on. If we double the field strength, we only need half of the distance to reach the same energy. We just built ourselves a linear electron accelerator! In reality most accelerating structures are not based on static electric fields any more but on matched alternating fields. The principal idea, however, remains the same and the energy gain scales linearly with field strength and the distance over which the particle experiences this field. This is also the motivation and the appeal of plasma based accelerators: plasmas for example can sustain arbitrarily high electric field strengths and some of the accelerating fields measured so far reached an excess of $100\,\mathrm{GeV/m}$ (REF) - we just managed to save us quite some space!
 
 \EliasComm{add diagram of particle acceleration like in between two plates.}
 
@@ -127,15 +127,15 @@ In a typical LWFA experiment $p_\perp$ will be dominated by the component in the
 Now let us assume an electron in a cylindrically symmetric electric field that allows for oscillation. The previously discussed case of a particle in a homogeneous magnetic field corresponds to the motion in a magnetic spectrometer or a circular accelerator.
 A field as discussed now is a similar case to a plasma channel or an electron in a wakefield oscillating and generating betatron radiation.
 
-This is based on Jon Wood's thesis!
 
 The electron is relativistic and moves in the longitudinal direction. The field structure is cylindrically symmetric around its propagation axis.
-The velocity of the electron is $\beta c$ for $\beta \rightarrow 1$ in the highly relativistic case.
+
+As previously we will use a Lagrangian. We ignore any vector potential contributions and only use a scalar potential.
 
 The Lagrangian of this scenario is described by
 
 \begin{equation}
-L = - m_e c^2 \sqrt{1-\beta^2} + e \phi,
+L = - m_e c^2 \gamma^{-1} - q \hi
 \end{equation}
 where $\phi$ is the scalar potential describing the electrostatic field of the channel.
 
@@ -152,13 +152,15 @@ The solution is
 
 In the extreme case of a completely evacuated channel, $n_e \rightarrow 0$, $\phi = -n_0 er^2/(4\epsilon_0)$.
 
+As before $\mathbf{E} = - \nabla \phi$ and in this case $E_r = - \partial_r \phi$.
+
 The equation of motion for the radial motion is then
 
 \begin{equation}
-\frac{d}{dt} (\gamma m_e \dot{r}) = \frac{\partial }{\partial r} L = -\frac{e^2 n_0}{2\epsilon_0} r
+\frac{d}{dt} \mathbf{p} = - \frac{e^2 n_0}{2 \epsilon_0} r
 \end{equation}
 
-Assume there is no axial acceleration field. Assume the radial component of the velocity is small compared to c and the longitudinal component be close to c. $\dot{\gamma}$ is then close to zero.
+Assume there is no axial acceleration field. Assume the radial component of the velocity is small compared to c and the longitudinal component be close to c. $\dot{\gamma}$ is then close to zero. $\mathbf{p} = \gamma m_e \mathbf{\dot{r}}$
 
 The equation then takes the shape of a harmonic oscillator
 
@@ -183,21 +185,41 @@ Firstly, as before
 
 Secondly the z-component
 \begin{equation}
-\frac{d}{dt} (\gamma m_e \dot{z}) = \frac{\partial }{\partial z} L = e E_z
+\frac{d}{dt} (\gamma m_e \dot{z}) = \frac{\partial }{\partial z} L = e E_z = const.
 \end{equation}
 
-This time the change in momentum in time is not negligible.
+This time the change in momentum in time is not negligible and we have to expand the brackets.
+
+Radial component:
+\begin{equation}
+\dot{\gamma}m_e \dot{r} + \gamma m_e \ddot{r} = - \frac{e^2 n_0}{2 \epsilon_0} r
+\end{equation}
+
+Axial component is equal to a constant so simply by integrating
+\begin{equation}
+\gamma m_e \dot{z} = - e E_z t + const.
+\end{equation}
+
+If we assume that the electron is very relativistic $\dot{z} \rightarrow c$, so $\dot{\gamma} = eE_z/m_e c$ nad
 
 \begin{equation}
-radial component
+\gamma \beta_z \approx \gamma = - \frac{e E_z t}{m_e c} + \gamma_0 \beta_0,
 \end{equation}
+
+where $\gamma_0 \beta_0$ are the initial conditions.
+
+Combining both results and keeping the same assumptions:
 
 \begin{equation}
-longitudinal component
+eE_z \dot{r} + (eE_z t + \gamma_0 \beta_0 m_e c) \ddot{r} = - \frac{e^2 n_0 c}{2 \epsilon_0} r
 \end{equation}
 
-For relativistic electrons the velocity in z will be close to 1 and we can read off the change in momentum with time as $\dot{\gamma} = eE_z/m_e c$
+Abbreviating some terms....
 
+\begin{equation}
+r(t) = \frac{\pi \sqrt{CB}}{A} r_{\beta 0} \left[ J_1 \left( 2 \sqrt{CB}/A \right) Y_0 \left(2 \sqrt{C (B+At)}/A\right) - Y_1 \left(2\sqrt{CB}/A\right)J_0\left(2\sqrt{C(B+At)}/A\right)\right]
+\end{equation}
+with the initial conditions $r(t=0) = r_{\beta 0}$ and $\dot{r}(t=0) = 0$. 
 
 
 \subsection{Electron motion in a laser field}
@@ -899,6 +921,8 @@ Firstly, the modification of the equation of motion leads to a redshifting of th
 \hbar \omega' \approx \frac{4 \hbar \omega a_0 \gamma^2}{1+a_0^2/2 + \gamma^2 \theta^2},
 \end{equation}
 This leads to a downshift and broadening of the radiation.
+
+We solved the equation of motion previously and it follows the relativistic Doppler shift.
 
 Secondly, energy is being transferred from this fundamental radiation at $\omega$ to higher order harmonics $\omega_1 = n\omega$, when multiple photons upconvert to one higher energy photon. Since this is a free electron process the harmonics are not restricted to either odd or even numbers but cover both.
 
