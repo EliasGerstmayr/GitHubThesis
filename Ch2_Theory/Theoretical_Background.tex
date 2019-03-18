@@ -122,6 +122,84 @@ In a typical LWFA experiment $p_\perp$ will be dominated by the component in the
 
 \EliasComm{Write about Sokolov-Ternov effect here or later during radiation reaction?}
 
+\subsection{Electron in a cylindrically symmetric electric field}
+
+Now let us assume an electron in a cylindrically symmetric electric field that allows for oscillation. The previously discussed case of a particle in a homogeneous magnetic field corresponds to the motion in a magnetic spectrometer or a circular accelerator.
+A field as discussed now is a similar case to a plasma channel or an electron in a wakefield oscillating and generating betatron radiation.
+
+This is based on Jon Wood's thesis!
+
+The electron is relativistic and moves in the longitudinal direction. The field structure is cylindrically symmetric around its propagation axis.
+The velocity of the electron is $\beta c$ for $\beta \rightarrow 1$ in the highly relativistic case.
+
+The Lagrangian of this scenario is described by
+
+\begin{equation}
+L = - m_e c^2 \sqrt{1-\beta^2} + e \phi,
+\end{equation}
+where $\phi$ is the scalar potential describing the electrostatic field of the channel.
+
+The scalar potential is the solution matching the radially/cylindrically symmetric Poisson equation
+
+\begin{equation}
+\frac{1}{r} \frac{\partial}{\partial r} \left(r \frac{\partial \phi}{\partial r}\right) = \frac{- e (n_0 - n_e)}{\epsilon_0}
+\end{equation}
+
+The solution is 
+\begin{equation}
+\phi = -\frac{(n_0 - n_e) e r^2}{4 \epsilon_0}
+\end{equation}
+
+In the extreme case of a completely evacuated channel, $n_e \rightarrow 0$, $\phi = -n_0 er^2/(4\epsilon_0)$.
+
+The equation of motion for the radial motion is then
+
+\begin{equation}
+\frac{d}{dt} (\gamma m_e \dot{r}) = \frac{\partial }{\partial r} L = -\frac{e^2 n_0}{2\epsilon_0} r
+\end{equation}
+
+Assume there is no axial acceleration field. Assume the radial component of the velocity is small compared to c and the longitudinal component be close to c. $\dot{\gamma}$ is then close to zero.
+
+The equation then takes the shape of a harmonic oscillator
+
+\begin{equation}
+\ddot{r} = - \frac{e^2 n_0}{2\epsilon_0 m_e \gamma} r = - \omega_\beta^2 r
+\end{equation}
+
+with a frequency we will call the betatron frequency $\omega_\beta$.
+
+\subsection{Electron in a cylindrically symmetric electric field with axial field}
+
+Now in addition to the previous case we will add an axial field in the longitudinal (direction of electron propagation). This comes closer to the reality of a wakefield accelerator.
+The electric field component shall now be $E_z$, with z being the longitudinal axis.
+This gives us an extra term $\frac{\partial \phi}{\partial z} = - E_z$.
+
+The Euler-Lagrangian now has two equations of motions.
+
+Firstly, as before
+\begin{equation}
+\frac{d}{dt} (\gamma m_e \dot{r}) = \frac{\partial }{\partial r} L = -\frac{e^2 n_0}{2\epsilon_0} r
+\end{equation}
+
+Secondly the z-component
+\begin{equation}
+\frac{d}{dt} (\gamma m_e \dot{z}) = \frac{\partial }{\partial z} L = e E_z
+\end{equation}
+
+This time the change in momentum in time is not negligible.
+
+\begin{equation}
+radial component
+\end{equation}
+
+\begin{equation}
+longitudinal component
+\end{equation}
+
+For relativistic electrons the velocity in z will be close to 1 and we can read off the change in momentum with time as $\dot{\gamma} = eE_z/m_e c$
+
+
+
 \subsection{Electron motion in a laser field}
 
 Taking the equation of motion (EoM) in terms of the potentials $\mathbf{A}$ and $\Phi$ as given in equation \eqref{Theory:Eqns:EoMLorentz} on page \pageref{Theory:Eqns:EoMLorentz}:
@@ -626,6 +704,10 @@ Wiggler parameter: wiggler and undulator regime.
 Coherent and incoherent radiation.
 
 This is using the magnetic (!) field!
+
+\begin{equation}
+K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c}
+\end{equation}
 
 \subsection{Betatron Radiation}
 
