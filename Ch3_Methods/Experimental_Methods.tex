@@ -405,6 +405,18 @@ This is an option if the field of view of the probing beam has well known region
 Measuring the self emission of the plasma channel. Pretty Pic. Top view on channel. Less quantitative or ultrashort diagnostic. Recombination light. Depends on the plasma.
 
 \newpage
+
+
+\section{Scintillators}
+
+A convenient indirect detection method is using scintillators of various kinds. For electron beams from LWFA typically LANEX scintillators are being used. This is due to their thin substrate layer which gives a decent spatial resolution (about 100 microns for standard LANEX). Thicker versions of this scintillator, e.g. KODAK Biomax, give a higher light yield and hence signal sensitivity without losing much spatial resolution. Lanex is at the same time light-tight and hence more favourable to transparent scintillators with comparable spatial resolution. At the same time Lanex can be put on a plastic substrate making it flexible, available in large sizes and harder to break.
+
+The signal from a relativistic ~100 pC electron beam, however, tends to be much brighter than the X-rays and gamma rays as they do not deposit as much energy and the flux is lower. More direct measurements based on silicon detectors or thicker scintillators is employed. Harder radiation requires thicker and more dense scintillators to absorb enough energy.
+
+
+Typically one assumes that the energy deposited translates linearly into photons. Caesium iodide doped with thallium (CsI(Tl)) is one of the brightest scintillators available. The main emission spectrum is centred around 546 nm (green) conveniently matching the peak of quantum efficiency of many silicon-based cameras.
+
+
 \section{Particle Diagnostics}
 
 \subsection{Electron Beam Profile}
@@ -450,24 +462,37 @@ The width of the electron trace in the non-dispersion direction can be used to d
 
 In experiment, perfectly homogeneous fields are even in approximation rarely encountered, especially at the fringes of physical magnets the fields smoothly fall off to a zero background field. Hence, usually homogeneous fields are only used as approximation that can provide a rough estimate (see the analytic solution of the deflection angle in the theory section) and physical magnets are mapped using a Hall probe for instance before or after the experiment to achieve more accurate results. Even outside the magnet by-passing electrons can be influenced by fringe fields which can lead to deflection of electrons at low energies if the space is limited. This should be avoided or the fields need to be sufficiently shielded, e.g. by using mu-metal.
 
-\subsubsection{Multiple screens}
+\subsubsection{Multiple screens and deconvolution}
+
+In a magnetic spectrometer electrons are being dispersed in one axis and the spectrum can be deduced from the fan of electrons and the position at a detector screen. Whereas the spatial extent in the non-dispersion direction tells us the divergence of the beam in that axis as it is approximately unperturbed, the divergence of the beam in the dispersion direction is convolved with the magnetic dispersion. At the same time an overall pointing of the beam could lead to an overestimate or underestimate of the actual energy. In order to be able to correct for these factors several points of reference are required. The source position has to be known along with two more measurements. This could be two screens or a spatial feature (fiudicial) and one screen.
+A simple symmetry assumption mainly allows adding an error bar to the maximum energy within a reasonable limit.
+
+Two screen tracking: forwards or backwards method.
+Run tracking with a variety of angles for identical energies. Check what energy estimate each screen gives at a distinct feature. See if there are any deviations, try the next angle and find the least square fit.
+The other approach is backtracking but this is more complicated.
+
+If one has a fiudicial no explicit features in the beam are required as the fiudicial will become that feature. However, the positions have to be measured to a high precision to be able to distinguish sensible pointing shifts.
+
+Either methods can be used to deconvolve the spectrum and iteratively find the real energy spectrum udnerlying the measured distribution. More screens can increase the accuracy but the scattering of the beam passing through lanex becomes quite evident and distinct features blur out when drifting further because of this.
 
 \subsection{Charge Measurement}
 
-Imaging plate and overlap with lanex measurement.
-Account for imaging system and collection angle.
+Absolute charge measurements are challenging in an EMP rich enviroment as intense laser-plasma interactions.
+ICT Turbos have been attempted to be used in laser facilities but have only been successfully applied in facilities based on conventional facilities.
 
-ICT Turbo and EMP problems.
+In other facilities image plates are being applied to find an absolute number for a certain range of shots which is then used to calibrate normal imaging systems giving a pixel count to charge conversion factor. The image plate is in our case attached to the back of the lanex scintillator screen such that for the respective shots the electron spectrum is being recorded on the lanex and on the imaging plate.
+Image plate is light sensitive and is scanned after radiation/particle exposure at known conditions to extract the information.
+The spatial resolution and dynamic range is superior to many cameras. The image from the camera and the imaging plate can be overlaid to find a suitable conversion factor. The scattering and damping of the imaging plate has to be considered and its heightened sensitivity which might result in additional background noise on the imaging plate due to its large dynamic range.
 
+The downside of imaging plate technology is that it is not feasible as high repetition rate diagnostic. Any change of setup requires a new calibration.
 
 
 \section{X-ray and Gamma-ray Diagnostics}
 
-Wakefield acceleration has not only demonstrated to be a feasible tool to accelerate electrons to a GeV scale, but has also been shown to be a useful source for X-rays of remarkable brightness, e.g. by the means of betatron radiation \cite{Rousse2004} or also as a tunable Compton-source \cite{TaPhuoc2012a}.
+Wakefield acceleration has not only demonstrated to be a feasible tool to accelerate electrons to a GeV scale, but has also been shown to be a useful source for X-rays of remarkable brightness, e.g. by the means of betatron radiation \cite{Rousse2004} or also as a tunable all-optical Compton-source \cite{TaPhuoc2012a}.
 
 To decide whether a radiation source is suitable for certain applications, a thorough characterisation of its properties like flux, energy spectrum, source size, pulse duration and divergence is useful.
 The following tools were used in the context of the author's work for this purpose.
-
 
 \subsection{Gamma-ray Scintillator Profile}
 
@@ -487,6 +512,7 @@ This works well for several MeV radiation but becomes less sensitive at higher e
 One method to detect and characterise X-rays is using blocks or slaps of scintillating material extending in the propagation direction of the radiation or perpendicular to it, depending on what aspect of the radiation one is interested in. The response of the material, i.e. how photons or particles deposit energy and how the scintillator reacts, is then modelled using Monte-Carlo codes, e.g. GEANT4 \cite{Agostinelli2003} or MCNP \cite{Goorley2012}, and compared to the response measured. In general, the penetration depth and the energy deposited in the crystals are proportional to the energy of the radiation transmitted. To discriminate the spectrum even further, different materials can be overlaid as the response varies from material to material. This might be more complicated for very high energetic gamma rays as the cross section is almost identical for most materials at the MeV scale.
 
 In contrast to other transmission studies the energy deposition and transmission is less linear but involves decays of photons into matter and those cascading back to photons. This means the signal will not follow a simple Beer's law but will require numerical solving and simulation via GEANT4 considering Bethe-Heitler processes etc.
+
 
 
 \EliasComm{Deeper explanation of the setup and how the spectrum is being retrieved. Reference Keegan's paper.}

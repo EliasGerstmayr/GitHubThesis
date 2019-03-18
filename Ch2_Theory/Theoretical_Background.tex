@@ -250,6 +250,104 @@ The electron is performing a periodic oscillation around the z-axis, whilst the 
 \label{Theory:Figs:FigureOfEight}
 \end{figure}
 
+\section{Ponderomotive Force}
+
+
+In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates through an underdense plasma and drives a wave via the ponderomotive force which is proportional to the gradient of the laser intensity. There exists a variety of derivations. The following derivation is based on Alec Thomas' PhD thesis (Imperial College, 2007) (REF).
+\EliasComm{add a reference here.}
+
+We start with the Euler-Lagrange equations after plugging in the Lagrangian in terms of the potentials $\mathbf{A}$ and $\Phi$ as given as intermediate step in equation \eqref{Theory:Eqns:EoMLorentzRaw} on page \pageref{Theory:Eqns:EoMLorentzRaw}:
+
+\begin{equation}
+\frac{\mathrm{d}}{\mathrm{d}t} \left[\mathbf{p}+q\mathbf{A}\right]-\left[q\nabla\left( \mathbf{A} \cdot \mathbf{v}\right) - q\nabla \Phi \right] = 0.
+\end{equation}
+
+This can be written in terms of the normalised quantities
+\begin{align}
+\mathbf{a} &= -q \mathbf{A}/m_e c,\nonumber\\
+\phi &= -q\phi/mc^2,\nonumber\\
+\mathbf{v} &\rightarrow \beta = \mathbf{v}/c,\nonumber\\
+\mathbf{p} &\rightarrow \mathbf{p}/m c,
+\end{align}
+
+resulting in
+
+\begin{equation}
+\frac{\mathrm{d}}{\mathrm{d}t} \left[\mathbf{p}-\mathbf{a}\right] - \left(c\nabla \mathbf{a}\right) - c \nabla \phi = 0.
+\end{equation}
+
+Now using the canonical momentum $\mathbf{u} = \mathbf{p} - \mathbf{a}$ the time derivative can be re-written and we can also substitute $\mathbf{v} = \mathbf{p}/\gamma = (\mathbf{u}+\mathbf{a})/\gamma$:
+
+\begin{align}
+\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u} &= c\nabla\phi - (c\nabla\mathbf{a})\cdot\frac{(\mathbf{u}+\mathbf{a})}{\gamma},\\
+\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u} &= c\nabla\phi - \frac{1}{\gamma} c \nabla \frac{\mathbf{a}^2}{2}-c\nabla\mathbf{a}\cdot\frac{\mathbf{u}}{\gamma}.
+\end{align}
+
+For the situation of an electromagnetic pulse at high frequency $\omega$ of long pulse duration $\tau \gg 1/\omega$ and sufficiently large spot size $w \gg 1/|k|$ in terms of the fast oscillations, fast and slow dynamics can be treated separately.
+
+When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear order $\mathbf{a}$ and the potential $\phi$ amount to zero:
+
+\begin{equation}
+\left\langle\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u}\right\rangle \sim -\left\langle\frac{1}{\gamma}c\nabla\frac{\mathbf{a}^2}{2}\right\rangle,
+\end{equation}
+which is the ponderomotive force $\mathbf{F}_p$ on on a single electron. Since $\mathbf{F}_p \sim \nabla <\mathbf{a}^2>$, this implies $\mathbf{F}_p \sim \nabla<I>$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
+
+
+\iffalse
+As the force is essential for the understanding of LWFA it will be derived in the following.
+
+A derivation (Kruer), THIS SECTION NEEDS WORK AS IT IS SO FAR ALMOST 1:1 TAKEN FROM KRUER
+
+
+HERE A COMMENT WHAT ASSUMED TO TAKE E(x) without the -kx term, as it is a wave actually....
+
+Consider response of a homogeneous plasma to a high frequency field with spatially dependent amplitude $E = E(x) \sin(\omega t)$. We assume $\omega$ is around the electron plasma frequency which in turn is much larger than the frequency of the ion species. The electrons are treated as a fluid and the electron pressure is neglected.
+
+The force equation:
+\begin{equation}
+\frac{\partial u_e}{\partial t} + u_e \cdot \nabla u_e = - \frac{e}{m} E(x) \sin(\omega t).
+\end{equation}
+
+To lowest order $|E|$, $u_e = u^h$ (what is h?)
+
+\begin{equation}
+\frac{\partial u^h}{\partial t} = -\frac{e}{m} E(x) \sin(\omega t),\\
+u^h = \frac{eE}{m\omega} \cos(\omega t).
+\end{equation}
+
+The electrons are oscillating in the electric field. Averaging over the force equation over these oscillations:
+\begin{equation}
+m \frac{\partial u^s}{\partial t} = -e E^s - m \langle u^h \cdot \nabla u^h \rangle_t,
+\end{equation}
+where the brackets with index t denote the time average over the high frequency oscillations and $u^s$ is the time average of $u_e$.
+
+Now substituting for $u^h$ from our previous result this gives 
+
+\begin{equation}
+m \frac{\partial u^s}{\partial t} = - e E^s - \frac{1}{4} \frac{e^2}{m \omega^2} \nabla E^2(x).
+\end{equation}
+
+In addition to the linear term we observe a force that pushes away electrons from regions of high field pressure. The ponderomotive force is proportional to the gradient of the electric field pressure:
+\begin{equation}
+F_p = - \frac{e^2}{4 m \omega} \nabla E^2 (x)
+\end{equation}
+
+When considering this in the relativistic regime, for instance in \cite{Quesnel1998}
+
+in terms of the normalised vector potential
+\begin{equation}
+F_p = - \frac{1}{2} m_e c^2 \frac{1}{|\gamma|}\nabla \langle a^2 \rangle.
+\end{equation}
+
+
+ANOTHER DERIVATION HERE BASED ON ALEC THOMAS
+
+USE ONE BIT TO EXPLAIN LASER WAKEFIELD ACCELERATION, TAKE THE SECOND TERM TO GO FOR PWFA (PONDEROMOTIVE FORCE MISSING)
+
+\fi
+
+
+
 \section{Plasmas}
 
 \subsection{General Properties}
@@ -404,101 +502,6 @@ E_{ph} = hf = E_{e,kin} + E_{bound}
 The ground level of hydrogen is bound by 13.6 eV corresponding to a photon of wavelength 91 nm (?). The ground level of hydrogen-like helium is bound by a potential $V_e = 54.4\,\mathrm{eV}$, corresponding to a wavelength of 22.8 nm and the first level ionisation level of 24.6 eV corresponds to 50.4 nm.
 
 
-\section{Ponderomotive Force}
-
-
-In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates through an underdense plasma and drives a wave via the ponderomotive force which is proportional to the gradient of the laser intensity. There exists a variety of derivations. The following derivation is based on Alec Thomas' PhD thesis (Imperial College, 2007) (REF).
-\EliasComm{add a reference here.}
-
-We start with the Euler-Lagrange equations after plugging in the Lagrangian in terms of the potentials $\mathbf{A}$ and $\Phi$ as given as intermediate step in equation \eqref{Theory:Eqns:EoMLorentzRaw} on page \pageref{Theory:Eqns:EoMLorentzRaw}:
-
-\begin{equation}
-\frac{\mathrm{d}}{\mathrm{d}t} \left[\mathbf{p}+q\mathbf{A}\right]-\left[q\nabla\left( \mathbf{A} \cdot \mathbf{v}\right) - q\nabla \Phi \right] = 0.
-\end{equation}
-
-This can be written in terms of the normalised quantities
-\begin{align}
-\mathbf{a} &= -q \mathbf{A}/m_e c,\nonumber\\
-\phi &= -q\phi/mc^2,\nonumber\\
-\mathbf{v} &\rightarrow \beta = \mathbf{v}/c,\nonumber\\
-\mathbf{p} &\rightarrow \mathbf{p}/m c,
-\end{align}
-
-resulting in
-
-\begin{equation}
-\frac{\mathrm{d}}{\mathrm{d}t} \left[\mathbf{p}-\mathbf{a}\right] - \left(c\nabla \mathbf{a}\right) - c \nabla \phi = 0.
-\end{equation}
-
-Now using the canonical momentum $\mathbf{u} = \mathbf{p} - \mathbf{a}$ the time derivative can be re-written and we can also substitute $\mathbf{v} = \mathbf{p}/\gamma = (\mathbf{u}+\mathbf{a})/\gamma$:
-
-\begin{align}
-\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u} &= c\nabla\phi - (c\nabla\mathbf{a})\cdot\frac{(\mathbf{u}+\mathbf{a})}{\gamma},\\
-\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u} &= c\nabla\phi - \frac{1}{\gamma} c \nabla \frac{\mathbf{a}^2}{2}-c\nabla\mathbf{a}\cdot\frac{\mathbf{u}}{\gamma}.
-\end{align}
-
-For the situation of an electromagnetic pulse at high frequency $\omega$ of long pulse duration $\tau \gg 1/\omega$ and sufficiently large spot size $w \gg 1/|k|$ in terms of the fast oscillations, fast and slow dynamics can be treated separately.
-
-When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear order $\mathbf{a}$ and the potential $\phi$ amount to zero:
-
-\begin{equation}
-\left\langle\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u}\right\rangle \sim -\left\langle\frac{1}{\gamma}c\nabla\frac{\mathbf{a}^2}{2}\right\rangle,
-\end{equation}
-which is the ponderomotive force $\mathbf{F}_p$ on on a single electron. Since $\mathbf{F}_p \sim \nabla <\mathbf{a}^2>$, this implies $\mathbf{F}_p \sim \nabla<I>$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
-
-
-\iffalse
-As the force is essential for the understanding of LWFA it will be derived in the following.
-
-A derivation (Kruer), THIS SECTION NEEDS WORK AS IT IS SO FAR ALMOST 1:1 TAKEN FROM KRUER
-
-
-HERE A COMMENT WHAT ASSUMED TO TAKE E(x) without the -kx term, as it is a wave actually....
-
-Consider response of a homogeneous plasma to a high frequency field with spatially dependent amplitude $E = E(x) \sin(\omega t)$. We assume $\omega$ is around the electron plasma frequency which in turn is much larger than the frequency of the ion species. The electrons are treated as a fluid and the electron pressure is neglected.
-
-The force equation:
-\begin{equation}
-\frac{\partial u_e}{\partial t} + u_e \cdot \nabla u_e = - \frac{e}{m} E(x) \sin(\omega t).
-\end{equation}
-
-To lowest order $|E|$, $u_e = u^h$ (what is h?)
-
-\begin{equation}
-\frac{\partial u^h}{\partial t} = -\frac{e}{m} E(x) \sin(\omega t),\\
-u^h = \frac{eE}{m\omega} \cos(\omega t).
-\end{equation}
-
-The electrons are oscillating in the electric field. Averaging over the force equation over these oscillations:
-\begin{equation}
-m \frac{\partial u^s}{\partial t} = -e E^s - m \langle u^h \cdot \nabla u^h \rangle_t,
-\end{equation}
-where the brackets with index t denote the time average over the high frequency oscillations and $u^s$ is the time average of $u_e$.
-
-Now substituting for $u^h$ from our previous result this gives 
-
-\begin{equation}
-m \frac{\partial u^s}{\partial t} = - e E^s - \frac{1}{4} \frac{e^2}{m \omega^2} \nabla E^2(x).
-\end{equation}
-
-In addition to the linear term we observe a force that pushes away electrons from regions of high field pressure. The ponderomotive force is proportional to the gradient of the electric field pressure:
-\begin{equation}
-F_p = - \frac{e^2}{4 m \omega} \nabla E^2 (x)
-\end{equation}
-
-When considering this in the relativistic regime, for instance in \cite{Quesnel1998}
-
-in terms of the normalised vector potential
-\begin{equation}
-F_p = - \frac{1}{2} m_e c^2 \frac{1}{|\gamma|}\nabla \langle a^2 \rangle.
-\end{equation}
-
-
-ANOTHER DERIVATION HERE BASED ON ALEC THOMAS
-
-USE ONE BIT TO EXPLAIN LASER WAKEFIELD ACCELERATION, TAKE THE SECOND TERM TO GO FOR PWFA (PONDEROMOTIVE FORCE MISSING)
-
-\fi
 
 \section{Wakefield Acceleration}
 
@@ -603,6 +606,27 @@ Charged particles always then produce radiation when they are being accelerated.
 
 \subsection{Synchrotron Radiation}
 
+In a synchrotron a charged bunch is constantly redirected to remain on a circular orbit. This redirection is an acceleration and hence results in the emission of radiation.
+
+Assume the charged bunch is moving in one big homogeneous magnetic field ignoring separate acceleration and bending modules.
+From the previous treatment we know that the charge will move along a Larmor radius determined by the charge mass ratio and the strength of the field. Relativistic particles have an increased effective mass.
+
+We can take this periodic equation of motion and integrate to obtain a spectrum.
+
+Scalings: Power scales to the power of 4?
+
+Insertion devices:
+Instead of bending magnets on one big circular trajectory, force the bunch to oscillate strongly while moving through a series of magnets of alternating polarisation. 
+
+Strongest acceleration at the turning points.
+Cone related to gamma factor of electrons.
+
+Wiggler parameter: wiggler and undulator regime.
+
+Coherent and incoherent radiation.
+
+This is using the magnetic (!) field!
+
 \subsection{Betatron Radiation}
 
 Just as the evacuated `bubble' in a wakefield accelerates particles in a similar way as conventional RF cavities would, the generation of X-rays draws another parallel in conventional devices.
@@ -634,6 +658,8 @@ where this energy parameter indicates when approximately half the energy radiate
 The oscillation of the particles and hence the emission of radiation can be enhanced in wakefield experiments by tailoring the wavefront \cite{Mangles2009} or by using different injection mechanisms.
 In LWFA betatron radiation typically reaches the soft X-ray regime of a few to tens of keV.
 
+Difference here is that we use an quasi-electrostatic field instead of a magnetic field!
+
 
 \EliasComm{be more extensive and also include comments about absorption in gases).}
 
@@ -649,10 +675,21 @@ In LWFA betatron radiation typically reaches the soft X-ray regime of a few to t
 Charged particles that ... atomic collisions... are being accelerated and radiate.
 The radiation emitted is commonly called by its German name `bremsstrahlung', which translates into `braking radiation'.
 
+Also sometimes treated as Compton scattering with a virtual photon (from field of the nucleus).
+
 The process of bremsstrahlung is of interest in this context in two ways:
 Firstly, we use the process to generate high-energetic gamma radiation. Relativistic electrons accelerated in a laser wakefield accelerator are collided with a high-Z material to convert efficiently into a collimated burst of X-rays.
 
 Secondly, the generation of radiation from electrons interacting with solids is an ubiquitous source of noise in the experiments described later on.
+
+Differential cross section under Born approximation (see Jackson):
+
+\begin{equation}
+\frac{d \sigma}{d (\hbar \omega)} \approx \frac{Z^2 e^6}{12 \hbar \pi^3 \epsilon_0^3 M^2 c^3} \left(1- \frac{\hbar \omega}{E} + \frac{3}{4} \frac{(\hbar \omega)^2}{E^2}\right) \times \left[\ln\left(\frac{2 E (E-\hbar\omega)}{Mc^2\hbar\omega} - \frac{1}{2}\right] \frac{1}{\hbar \omega},
+\end{equation}
+for $\hbar \omega < E$.
+
+The number of photons hence scales quadratically with the $Z$ of the converter target used. Higher yield however comes at the cost of spatial resolution and a wider cone of radiation due to scattering in the material.
 
 \subsection{Compton Scattering}
 
@@ -725,6 +762,7 @@ The Klein Nishina Formula! At high energies.... see ICS.
 
 \subsection{Inverse Compton Scattering (ICS)}
 
+Laser wiggler. Electric field component, later on at high intensities the magnetic field becomes important as well.
 
 \begin{figure}
 \centering
