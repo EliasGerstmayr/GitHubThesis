@@ -77,7 +77,38 @@ or in terms of the relativistic momentum $\mathbf{p} = \gamma m \mathbf{v}$
 \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = \frac{q}{\gamma m} \mathbf{p} \times \mathbf{B}.
 \end{equation}
 
-We choose the coordinate system such that $\mathbf{B} = (0,0,B)^t = B e_z$. This immediately gives us the result that the motion of the electron consists of two decoupled motions: one at the constant, initial velocity parallel to the magnetic field vector in z, the second motion is a circular motion in the x-y plane. This is called a cyclotron motion. For now we will ignore the dissipation of energy in form of radiation due to the acceleration of the electron and accept the result that the Lorentz force conserves the total momentum and energy of the particle in this case.
+We choose the coordinate system such that $\mathbf{B} = (0,0,B)^t = B e_z$. The momentum vector is simply $\mathbf{p} = (p_x,p_y,p_z)^t$.
+This then gives us the differential equations:
+
+\begin{align}
+\dot{p_x} &= \frac{q}{\gamma m} p_y B\\
+\dot{p_y} &= - \frac{q}{\gamma m} p_x B\\
+\dot{p_z} &= 0
+\end{align}
+which gives us
+
+\begin{align}
+\ddot{p_x}  &= - \left(\frac{qB}{\gamma m}\right)^2 p_x\\
+\ddot{p_y}  &= - \left(\frac{qB}{\gamma m}\right)^2 p_y
+\end{align}
+which can be solved by a periodic motion of type $p_x(t) = C \sin(\omega t) + D \cos(\omega t)$ with $\omega = qB/\gamma m$. 
+
+With initial conditions $p_x(t=0) = p_\perp$ and $p_y(t=0)=0$, we get these equations for the momenta:
+
+\begin{align}
+p_x(t) &= p_\perp \cos(\omega t)\\
+p_y(t) &= - p_\perp \sin(\omega t) 
+\end{align}
+The solution for the z-motion is trivial $p_z = p_{z,0}$.
+
+or in terms of the trajectories with $x(0) = 0, y(0) = p_\perp/qB, z(0) = 0$
+\begin{align}
+x(t) &= \frac{p_\perp}{q B} \sin(\omega t)\\
+y(t) &= \frac{p_\perp}{q B} \cos(\omega t)\\
+z(t) &= \frac{p_{z,0}}{\gamma m} t
+\end{align}
+
+The motion of the electron consists of two decoupled motions: one at the constant, initial velocity parallel to the magnetic field vector in z, the second motion is a circular motion in the x-y plane. This is called a cyclotron motion. For now we will ignore the dissipation of energy in form of radiation due to the acceleration of the electron and accept the result that the Lorentz force conserves the total momentum and energy of the particle in this case.
 \vspace{\baselineskip}
 
 The radius of the circular motion of the electron, called the Larmor radius, depends on the total momentum in the x-y plane and the field strength: 
@@ -87,7 +118,7 @@ r_{Larmor} = |\mathbf{p}_\perp|/eB,
 where $e$ is the charge of the electron and $\mathbf{p}_\perp$ is the component of the momentum vector $\mathbf{p}$ that is perpendicular to the field component of the magnetic field.
 \vspace{\baselineskip}
 
-Now consider an external magnetic field restricted to a circle of radius $r_b$ embedded in a completely field-free region. The following derivation is based on Stuart Mangles' (Imperial College) PhD thesis.
+Now consider an external magnetic field restricted to a circle of radius $r_b$ embedded in an otherwise completely field-free region. The following derivation is based on Stuart Mangles' (Imperial College) PhD thesis.
 \begin{align}
 \mathbf{B} &= B e_z \, &r \leq r_b,\nonumber \\
 &= 0 &r > r_b
@@ -97,7 +128,7 @@ The angular deflection of a particle in this case can be solved analytically usi
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\columnwidth]{Bfield_analytic.png}
+\includegraphics[width=0.5\columnwidth]{elecspec.pdf}
 \caption{Visualisation of an electron deflected in a homogeneous circular magnetic field (purple) with radius $r_b$\protect\footnotemark. The larger green circle indicates the Larmor radius, determining the electron trajectory (orange) from the point of entry into the field (A) to its exit point (C) resulting in a total deflection $\theta$.}
 \end{figure}
 
@@ -135,9 +166,9 @@ As previously we will use a Lagrangian. We ignore any vector potential contribut
 The Lagrangian of this scenario is described by
 
 \begin{equation}
-L = - m_e c^2 \gamma^{-1} - q \phi
+L(\mathbf{r},\mathbf{v},t) = - m_e c^2 \gamma^{-1} - q \Phi
 \end{equation}
-where $\phi$ is the scalar potential describing the electrostatic field of the channel.
+where $\Phi$ is the scalar potential describing the electrostatic field of the channel.
 
 The scalar potential is the solution matching the radially/cylindrically symmetric Poisson equation
 
@@ -222,7 +253,7 @@ r(t) = \frac{\pi \sqrt{CB}}{A} r_{\beta 0} \left[ J_1 \left( 2 \sqrt{CB}/A \righ
 with the initial conditions $r(t=0) = r_{\beta 0}$ and $\dot{r}(t=0) = 0$. 
 
 
-\subsection{Electron motion in a laser field}
+\subsection{Electron motion in a monochromatic plane EM wave}
 
 Taking the equation of motion (EoM) in terms of the potentials $\mathbf{A}$ and $\Phi$ as given in equation \eqref{Theory:Eqns:EoMLorentz} on page \pageref{Theory:Eqns:EoMLorentz}:
 
