@@ -704,6 +704,29 @@ W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.
 Other challenges are related to the guiding of the beam: to access higher intensities the laser has to be focused down further. This, however, leads to a rapidly diverging beam, without maintaining the conditions to drive the wave over a long distance. One solution is given by the response of the plasma itself. The interaction of the intense pulse above a critical power $P_c \approx 17 \omega^2_L/\omega^2_p \,\mathrm{GW}$ with the electrons in the plasma can lead to relativistic self-guiding, guiding the laser pulse over multiple Rayleigh lengths, oscillating around the matched spot size $r_b \approx 2 \sqrt{a_0} \frac{c}{\omega_p}$.
 
 
+\subsection{Injection Mechanisms}
+
+\subsubsection{Wave breaking}
+
+Self injection
+
+\subsubsection{Medium based}
+
+Ionisation injection
+
+Clusters and nano particles
+
+\subsubsection{Density Modulations}
+
+- Shock injection
+- Downramp
+- Upramp
+
+\subsubsection{Laser-assisted}
+
+\subsubsection{External injection}
+
+
 \iffalse
 \subsection{Plasma Wakefield Acceleration (PWFA)}
 
@@ -886,11 +909,15 @@ Similarly there is an equation for the emission angle of the electron:
 \cot(\phi) = (1+\frac{hf}{m_e c^2}) \tan(\theta/2).
 \end{equation}
 
+In terms of photon energy we can write
+\begin{equation}
+E_{\gamma,f} = \frac{E_{\gamma,i}}{1+\frac{E_{\gamma,i}}{m_e c^2}}(1+\cos(\theta))
+\end{equation}
+
 These equations describe an angular dependent energy distribution, but not the probability of those interactions.
 For this purpose we require the differential cross section for Compton scattering.
 
-
-We can derive this by calculating the matrix element for the process. This derivation is based on Peskin and Schroeder REF.
+We can derive this by calculating the matrix element for the process. This derivation is based on Peskin and Schroeder or Schwartz REF.
 
 \EliasComm{differential cross section!!}
 \EliasComm{polar plot and energy axis}
@@ -900,15 +927,17 @@ The spin-averaged Klein-Nishina formula:
 \frac{\mathrm{d}\sigma}{\mathrm{d}\cos{\theta}} = \frac{\pi \alpha^2}{m^2}\left(\frac{\omega'}{\omega}\right)^2 \left(\frac{\omega'}{\omega} + \frac{\omega}{\omega'}-\sin^2{\theta}\right).
 \end{equation}
 
+
+\begin{equation}
+\frac{d \sigma}{d \Omega} = \frac{3}{16 \pi} \sigma_T \left(\frac{E_f}{E_i}\right)^2 \left(\frac{E_i}{E_f} + \frac{E_f}{E_i} - \sin^2 \theta \right)
+\end{equation}
+
 For very low energetic photons in the limit $\omega \rightarrow 0$ the cross section simplifies to 
 \begin{equation}
 \frac{\mathrm{d}\sigma}{\mathrm{d}\cos{\theta}} = \frac{\pi \alpha^2}{m^2} (1 + \cos^2\theta),
 \end{equation}
 with a total cross section of $\sigma_{total} = 8\pi\alpha^2/(3m^2)$. This is the Thomson scattering cross section.
 
-
-
-The Klein Nishina Formula! At high energies.... see ICS.
 
 \subsection{Inverse Compton Scattering (ICS)}
 
@@ -922,14 +951,46 @@ Laser wiggler. Electric field component, later on at high intensities the magnet
 
 In inverse Compton scattering (ICS) a relativistic electron scatters with one (linear ICS) or multiple photons (non-linear ICS). Whilst in Compton scattering (CS)  momentum is transferred from the photon to the electron (heating), resulting in a longer wavelength of the scattered photon, in ICS the photon gains energy (hence inverse Compton scattering) as it experiences a relativistic Doppler shift.
 
-In a head-on collision the photons are boosted by $(2\gamma)^2$ to an energy $E' = \hbar \omega'$ of
+To calculate energy distribution, we can treat this scattering process similarly to the standard Compton scattering we discussed. This requires shifting frames of reference. In the lab frame $S$ quantities will be denoted as before $E, \theta$ and so on. In the rest frame of the electron $S'$ quantities will be denoted as such $E', \theta'$ and so on.
+
+Assume a single relativistic electron beam with a gamma factor $\gamma$ moving in x and a photon of energy $E_{i}$ with an incident angle $\theta_i$.
+In the rest frame of the electron the photon experiences a relativistic Doppler-shift. 
+
+\begin{equation}
+E'_i = \gamma E_i (1-\mathbf{\beta} \cdot \mathbf{e_k}) = \gamma E_i (1 - \beta \cos\theta) \approx \gamma E_i (1- \cos\theta),
+\end{equation}
+where we assumed that the electrons are highly relativistic and $\beta \approx 1$.
+In a head-on collision ($\theta = \pi$) the photon energy is in the electron rest frame by a factor $2\gamma$ higher.
+For $E'_i << m_e c^2$ we are now in the Thomson scattering regime in this frame of reference.
+
+In the rest frame we can now treat this normally for Compton scattering. The photon energies of the scattered photon and the angles follow the previously discussed equations.
+
+\begin{equation}
+E'_f = \frac{E'_i}{1+\frac{E'_i}{m_e c^2}(1-\cos\alpha')},
+\end{equation}
+where $\alpha'$ is the difference between the incident and outgoing angle. As for normal Compton scattering the photon is now losing energy in this frame.
+
+\begin{equation}
+\cos \alpha' = \mathbf{n'_f} \cdot \mathbf{n'_i} = \cos \theta'_i \cos \theta'_f + \sin \theta'_i \sin \theta'_f \cos(\phi'_i - \phi'_f)
+\end{equation}
+with $\phi'$ angles being the azimuthal angles of the photon.
+
+The energies have to be boosted back into the lab frame. This gives another factor amplifying the energy of the photon
+\begin{equation}
+E_f = E'_f \gamma (1+\beta \cos \theta'_f) \approx E'_f \gamma (1+ \cos \theta'_f)
+\end{equation}
+
+From these equations we see that the maximum energy can be achieved in a head-on collision and observing the radiation on-axis.
+The photons are boosted by $(2\gamma)^2$ to an energy $E_{f,max} = 2 \gamma E'_f = 2 \gamma E'_i = 4 \gamma^2 E_i$.
+
+In more intense interactions several photons can interact at once and are re-emitted as one photon with an integer multiple energy. The normalised vector potential is an indicator of how many photons commonly interact with one electron and the maximum energy then is around
 \begin{equation}
 \hbar \omega' \approx 4 \hbar \omega a_0 \gamma^2,
 \end{equation}
-where $a_0$ is the normalised vector potential. In case of very intense laser fields one electron can interact on average with $a_0$-times photons and re-emit them as one.
-\vspace{\baselineskip}
 
-The scattering process itself is in principle the same as for CS, except for the relativistic treatment. Hence, it is not surprising that the cross sections for ICS and CS are are identical, as naively expected.
+The calculation of the cross section follows the same scheme, relying on the quantum-corrected Klein-Nishina equation using the angles and energies in the electron rest frame. The angles corresponding to the cross sections and the solid angles, however, have to be transformed in a similar way.
+
+The Klein-Nishina equation already indicates a headlight effect of the radiation being preferably emitted in forwards direction.
 
 \begin{figure}
 \centering
@@ -948,6 +1009,8 @@ The results of a ICS experiment via LWFA at the Astra Gemini facility in the UK 
 
 ICS has been widely used in the conventional accelerator community to measure the spin-polarisation of beams.
 
+
+\subsubsection{Higher harmonics}
 
 \subsubsection{Low Intensity behaviour at low electron energies}
 
