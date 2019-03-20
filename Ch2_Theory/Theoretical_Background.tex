@@ -81,8 +81,8 @@ We choose the coordinate system such that $\mathbf{B} = (0,0,B)^t = B e_z$. The 
 This then gives us the differential equations:
 
 \begin{align}
-\dot{p_x} &= \frac{q}{\gamma m} p_y B\\
-\dot{p_y} &= - \frac{q}{\gamma m} p_x B\\
+\dot{p_x} &= \frac{qB}{\gamma m} p_y\\
+\dot{p_y} &= - \frac{qB}{\gamma m} p_x\\
 \dot{p_z} &= 0
 \end{align}
 which gives us
@@ -129,10 +129,9 @@ The angular deflection of a particle in this case can be solved analytically usi
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{elecspec.pdf}
-\caption{Visualisation of an electron deflected in a homogeneous circular magnetic field (purple) with radius $r_b$\protect\footnotemark. The larger green circle indicates the Larmor radius, determining the electron trajectory (orange) from the point of entry into the field (A) to its exit point (C) resulting in a total deflection $\theta$.}
+\caption{Visualisation of an electron deflected in a homogeneous circular magnetic field (grey) with radius $r_b$. The larger green circle indicates the Larmor radius, determining the electron trajectory (blue) from the point of entry into the field (A) to its exit point (C) resulting in a total deflection $\theta$.}
 \end{figure}
 
-\footnotetext{Image taken from Stuart Mangles' (Imperial College) PhD thesis.}
 Drawing the circular field region for the magnetic field and the electron entering the field, one can then graphically indicate its Larmor radius, equivalent to its expected motion for the region with the constant B-field. The angles in this constellation are determined using the trigonometric relation that the angles in a triangle have to add up to $\pi$:
 \begin{equation}
 2 \alpha + \theta = \pi,
@@ -150,8 +149,6 @@ and then expressing this into parameters we can measure in experiment we reach
 \end{align}
 
 In a typical LWFA experiment $p_\perp$ will be dominated by the component in the laser propagation axis. 
-
-\EliasComm{Write about Sokolov-Ternov effect here or later during radiation reaction?}
 
 \subsection{Electron in a cylindrically symmetric electric field}
 
@@ -246,6 +243,10 @@ eE_z \dot{r} + (eE_z t + \gamma_0 \beta_0 m_e c) \ddot{r} = - \frac{e^2 n_0 c}{2
 \end{equation}
 
 Abbreviating some terms....
+
+\begin{equation}
+(At + B) \ddot{r} + A \dot{r} + C r = 0
+\end{equation}
 
 \begin{equation}
 r(t) = \frac{\pi \sqrt{CB}}{A} r_{\beta 0} \left[ J_1 \left( 2 \sqrt{CB}/A \right) Y_0 \left(2 \sqrt{C (B+At)}/A\right) - Y_1 \left(2\sqrt{CB}/A\right)J_0\left(2\sqrt{C(B+At)}/A\right)\right]
@@ -384,9 +385,11 @@ z_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0^2 \pi}{8 \omega} (2n+1)
 \centering
 	\includegraphics[width=0.49\columnwidth]{figeight_lab.pdf}
 	\includegraphics[width=0.49\columnwidth]{figeight_drift.pdf}
-\caption{Electron motion in an infinite, plane, linearly polarised EM wave in the lab frame (left), normalised by $a_0/k$ in x and $a^2_0/k$ in z, with the wavenumber $k = \omega/c$. On the right the figure-of-eight motion in the drift frame.}
+\caption{Electron motion in an infinite, linearly polarised, plane EM wave in the lab frame (left), normalised by $a_0/k$ in x and $a^2_0/k$ in z, with the wavenumber $k = \omega/c$. On the right the figure-of-eight motion in the drift frame.}
 \label{Theory:Figs:FigureOfEight}
 \end{figure}
+
+\EliasComm{Add lines to the plot for various $a_0$.}
 
 \section{Ponderomotive Force}
 
@@ -492,7 +495,6 @@ USE ONE BIT TO EXPLAIN LASER WAKEFIELD ACCELERATION, TAKE THE SECOND TERM TO GO 
 
 Plasmas are frequently referred to as the `4th state of matter' in addition to the more commonly in daily life encountered matter states solid, liquid and gaseous. Heating up a material at a constant pressure will take it from the solid to the liquid, then to the gas phase and finally will ionize the gas first partially, then completely. The gas is now charged and exhibits interesting collective behaviour due to the dominance of electromagnetic forces whilst upholding quasi-neutrality. This is called a plasma. Sometimes summarised in this definition: ``A quasi-neutral ionized gas that exhibits collective behaviour.'' (REF) However, setting `ionized gas' equal to `plasma' might be a too narrow description as the range of temperature and density scales is very wide for plasmas, including exotic states like the quark-gluon plasma. Although plasmas are probably the most common state of matter in the universe, they barely exists on earth outside of the laboratory environment.
 \vspace{\baselineskip}
-\EliasComm{Phase Diagram including plasma?}
 \EliasComm{if using quote then have to reference.}
 \EliasComm{Some examples of plasma states in real life: sun, aurora borealis, wakefields?, neon lamps?}
 Two important features of plasma that result in interesting phenomena are quasi-neutrality and collective behaviour.
@@ -509,6 +511,52 @@ Whilst this balance might locally not be true at every moment in time, the mobil
 where $\epsilon_0$ is the dielectric constant, $k_B$ the Boltzmann constant and $T_e$ the electron temperature. 
 
 In that sense quasi-neutrality is also a manifestation of `collective behaviour'. Whilst the formation of Debye-spheres is a microscopic effect, the particles can act together on macroscopic scales as well through long range electromagnetic forces to form instabilities and waves. Even small imbalances can give rise to significant responses of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, the introduction of electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces.
+
+\subsection{Plasma Formation and Recombination}
+
+Ionisation describes the process of removing an electron from a neutral atom, tipping the charge balance from zero to positive and turning the atom to an ion. Already ionised atoms can be further ionised by stripping more and more electrons from the shells, but this process requires more and more energy as the remainig electrons are bound tighly to the core.
+
+In the context of this work high intensity lasers are used to drive waves in plasmas. A change in the number density of free electrons through ionisation effects can influence the dynamics of the system. The plasma is usually formed by filling a gas compartment or firing a gas jet with a neutral gas, assuming that the laser pulse ionises the gas fully to first approximation.
+\vspace{\baselineskip}
+
+There are different mechanisms through which an oscillating laser field ionises a gas. In addition to single photon ionisation, there is multi-photon ionisation \cite{Keldysh1965}, where one electron is excited by absorbing multiple photons before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}. In the case of very high field strengths, the Coulomb potential might be completely suppressed by the laser field and the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
+\vspace{\baselineskip}
+
+In the simple example of a hydrogen-like atom in an external electric field $E$, the potential $V$ is given by
+\begin{equation}
+V(r) = -\frac{Ze^2}{4\pi\epsilon_0 r} - eEr,
+\end{equation}
+where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. Using this result and by setting the height of the barrier to the ionisation potential $V_e$, the electric field required amounts to
+
+\begin{equation}
+E = \frac{\pi \epsilon_0 V^2_e}{Ze^3},
+\end{equation} 
+
+or in terms of intensity using $I = \frac{c\epsilon_0}{2}|E|^2$ in (near) vacuum:
+
+\begin{equation}
+I = \frac{c\epsilon^3 \pi^2 V^4_e}{2e^6 Z^2}.
+\end{equation}
+
+For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
+The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF).  
+
+Partially ionised plasmas result in a couple of problems: more complex, absorption of X-rays, dampening of particles, scattering? Weaker fields.
+\EliasComm{add also some comments on partially ionised plasmas and how they change for instance the absorption of X-rays in this medium.}
+
+\EliasComm{Add sketch of barrier suppression ionisation or all mechanisms in comparison.}
+
+After ionisation the electrons return to the ionic cores of the atom and recombine. During this process called recombination the energy obtained to leave the atom is being released in form of photons again. The wavelength of the radiation is determined by the atom structure and hence characteristic of the material and in case of high Z gases also of the intensity of the interaction. Recombination occurs on a time-scale of XX.
+
+Energy of the photon:
+\begin{equation}
+E_{ph} = hf = E_{e,kin} + E_{bound}
+\end{equation}
+
+The ground level of hydrogen is bound by 13.6 eV corresponding to a photon of wavelength 91 nm (?). The ground level of hydrogen-like helium is bound by a potential $V_e = 54.4\,\mathrm{eV}$, corresponding to a wavelength of 22.8 nm and the first level ionisation level of 24.6 eV corresponds to 50.4 nm.
+
+\EliasComm{Add some comments on tunnel ionisation as this is related to ionisation injection.}
+\EliasComm{add a diagram to show energy and emission of recombination light.}
 
 
 \subsection{The Plasma Frequency}
@@ -562,6 +610,9 @@ The critical plasma density $n_c$ is the electron density at which electromagnet
 \caption{Critical density for wavelengths up to $2 \mu m$. The critical density corresponding to a central wavelength of $0.8 \mu m$, as for the commonly used titanium-doped sapphire (Ti:Sa) lasers, is marked on the graph.}
 \end{figure}
 
+\EliasComm{add plot for group velocity vs. density}
+\EliasComm{add longer range to include for instance CO2 lasers and mark typical laser frequencies used.}
+\EliasComm{write about nonlinear dispersion relation}
 
 Consider a quasi-neutral plasma (charge density $\rho \approx 0$) with a current density $\mathbf{j} = -e n_e \mathbf{v}$, depending on the velocity $\mathbf{v}$ of the electrons in the plasma and the electron density $n_e$. The wave equation for the electric field $\mathbf{E}$ becomes
 
@@ -577,6 +628,8 @@ v_g &= \frac{\partial\omega_L}{\partial k} = c \sqrt{1-\left(\frac{\omega_p}{\om
 \end{align}
 where $\omega$ is the frequency of the electromagnetic wave.
 
+\EliasComm{Add specific example 1m air or vacuum.}
+
 The group velocity reaches zero for $\omega_p = \omega_L$, where $\omega_p$ is the plasma frequency, derived in the previous section and given by $\omega_p = (n_e e^2/\epsilon_0 m_e)^{1/2}$. Solving this for the density, we obtain a relation for the critical density:
 
 \begin{equation}
@@ -587,6 +640,7 @@ which only depends on the frequency of the incident electromagnetic wave, and so
 \begin{equation}
 \eta = \sqrt{1-\left(\frac{\omega_p}{\omega}\right)^2} = \sqrt{1-\frac{n_e}{n_c}}.
 \end{equation}
+\EliasComm{add some comments on the refractive index.}
 
 For $n_e > n_c$, i.e. an overdense plasma, the refractive index is imaginary and the wave becomes evanescent in the medium.
 
@@ -595,49 +649,6 @@ For $n_e > n_c$, i.e. an overdense plasma, the refractive index is imaginary and
 \EliasComm{add some explicit curves for transmission/absorption and reflection?}
 
 
-
-\subsection{Plasma Formation and Recombination}
-
-Ionisation describes the process of removing an electron from a neutral atom, tipping the charge balance from zero to positive and turning the atom to an ion. Already ionised atoms can be further ionised by stripping more and more electrons from the shells, but this process requires more and more energy as the remainig electrons are bound tighly to the core.
-
-In the context of this work high intensity lasers are used to drive waves in plasmas. A change in the number density of free electrons through ionisation effects can influence the dynamics of the system. The plasma is usually formed by filling a gas compartment or firing a gas jet with a neutral gas, assuming that the laser pulse ionises the gas fully to first approximation.
-\vspace{\baselineskip}
-
-There are different mechanisms through which an oscillating laser field ionises a gas. In addition to single photon ionisation, there is multi-photon ionisation \cite{Keldysh1965}, where one electron is excited by absorbing multiple photons before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}. In the case of very high field strengths, the Coulomb potential might be completely suppressed by the laser field and the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
-\vspace{\baselineskip}
-
-In the simple example of a hydrogen-like atom in an external electric field $E$, the potential $V$ is given by
-\begin{equation}
-V(r) = -\frac{Ze^2}{4\pi\epsilon_0 r} - eEr,
-\end{equation}
-where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. Using this result and by setting the height of the barrier to the ionisation potential $V_e$, the electric field required amounts to
-
-\begin{equation}
-E = \frac{\pi \epsilon_0 V^2_e}{Ze^3},
-\end{equation} 
-
-or in terms of intensity using $I = \frac{c\epsilon_0}{2}|E|^2$ in (near) vacuum:
-
-\begin{equation}
-I = \frac{c\epsilon^3 \pi^2 V^4_e}{2e^6 Z^2}.
-\end{equation}
-
-For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
-The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF).  
-
-Partially ionised plasmas result in a couple of problems: more complex, absorption of X-rays, dampening of particles, scattering? Weaker fields.
-\EliasComm{add also some comments on partially ionised plasmas and how they change for instance the absorption of X-rays in this medium.}
-
-\EliasComm{Add sketch of barrier suppression ionisation or all mechanisms in comparison.}
-
-After ionisation the electrons return to the ionic cores of the atom and recombine. During this process called recombination the energy obtained to leave the atom is being released in form of photons again. The wavelength of the radiation is determined by the atom structure and hence characteristic of the material and in case of high Z gases also of the intensity of the interaction. Recombination occurs on a time-scale of XX.
-
-Energy of the photon:
-\begin{equation}
-E_{ph} = hf = E_{e,kin} + E_{bound}
-\end{equation}
-
-The ground level of hydrogen is bound by 13.6 eV corresponding to a photon of wavelength 91 nm (?). The ground level of hydrogen-like helium is bound by a potential $V_e = 54.4\,\mathrm{eV}$, corresponding to a wavelength of 22.8 nm and the first level ionisation level of 24.6 eV corresponds to 50.4 nm.
 
 
 
@@ -701,8 +712,14 @@ W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.
 
 \footnotetext{Image taken from Jason Cole's PhD thesis (Imperial College,2015).}
 
+\EliasComm{make own plot for LWFA.}
+
 Other challenges are related to the guiding of the beam: to access higher intensities the laser has to be focused down further. This, however, leads to a rapidly diverging beam, without maintaining the conditions to drive the wave over a long distance. One solution is given by the response of the plasma itself. The interaction of the intense pulse above a critical power $P_c \approx 17 \omega^2_L/\omega^2_p \,\mathrm{GW}$ with the electrons in the plasma can lead to relativistic self-guiding, guiding the laser pulse over multiple Rayleigh lengths, oscillating around the matched spot size $r_b \approx 2 \sqrt{a_0} \frac{c}{\omega_p}$.
 
+
+\EliasComm{Deviation dephasing, depletion, etching, self-guiding, wavebreaking}
+
+\EliasComm{Plots to show energy versus year, energy spread and type of injection and whether it holds to the scaling laws.}
 
 \subsection{Injection Mechanisms}
 
@@ -794,6 +811,9 @@ This is using the magnetic (!) field!
 K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c}
 \end{equation}
 
+\EliasComm{energy loss per turn.}
+\EliasComm{sketch on emission and cones.}
+
 \subsection{Betatron Radiation}
 
 Just as the evacuated `bubble' in a wakefield accelerates particles in a similar way as conventional RF cavities would, the generation of X-rays draws another parallel in conventional devices.
@@ -805,6 +825,9 @@ The electrons oscillate at the so-called betatron frequency $\omega_\beta$
 \omega_\beta = \omega_p / \sqrt{2 \gamma},
 \end{equation}
 which depends on the plasma frequency $\omega_p$ and the energy of the electrons here given by the relativistic Lorentz factor $\gamma$.
+
+\EliasComm{done this derivation earlier and might want to combine sections.}
+\EliasComm{add plot to show particle motion either pic or PIC.}
 
 Similarly to electrons in an insertion device (undulator or wiggler) these oscillations lead to the emission of radiation in a narrow forward pointing cone due to the relativistic forward momentum of the particles.
 Not surprisingly, the equations describing both processes are very similar.
@@ -836,6 +859,8 @@ Difference here is that we use an quasi-electrostatic field instead of a magneti
 
 \EliasComm{Include an image of betatron oscillations.}
 
+\EliasComm{Include plots on spectrum on- and off-axis.}
+
 
 \subsection{Bremsstrahlung}
 
@@ -864,6 +889,9 @@ For $\hbar \omega << E$
 \frac{d^2 \chi_R}{d \omega d \Omega_\gamma} = \left[\frac{3}{2 \pi} \gamma^2 \frac{(1+\gamma^4 \theta^4)}{(1+\gamma^2 \theta^2)^4}\right] \cdot \frac{d \chi_R}{d \omega}
 \end{equation}
 
+\EliasComm{Add an explicit plot of the spectrum}
+\EliasComm{Add a plot on the diagram.}
+
 \subsection{Compton Scattering}
 
 Classical Compton scattering describes the inelastic scattering of a photon off an electron which is at rest or close to it. Here the photon loses energy to the electron, hence this is called inelastic. In some conventions this interaction might still be referred to as elastic as energy is transferred into kinetic energy from one particle to another and is not dissipated in terms of heat or deformation.
@@ -873,6 +901,7 @@ The reaction can be written as follows:
 \begin{equation}
 \gamma + e^- \longrightarrow \gamma + e^-.
 \end{equation}
+\EliasComm{Feynman diagram?}
 
 We will treat the electron and the incoming photon both as particles and calculate their final momenta based on energy and momentum conservation in a relativistic framework.
 \vspace{\baselineskip}
@@ -881,21 +910,21 @@ The electron has a negligible initial momentum $\mathbf{p}_{e,initial} = \mathbf
 The photon on the other hand has initally a momentum $\mathbf{p}_{\gamma, initial}$ and an energy $E_{\gamma, initial} = p/c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
 
 Relying on the conservation of energy we can postulate that the sum of energies before and after the interaction have to be equal:
-\begin{align}
+\begin{align*}
 E_{e, initial} + E_{\gamma,initial} &= E_{e,final} + E_{\gamma,final},\\
 m_e c^2 + h f &= \sqrt{(p_{e,final} c)^2 + (m_e c^2)^2} + h f',\\
 hf - hf' +m_e c^2 &= \sqrt{(p_{e,final} c)^2 + (m_e c^2)^2},\\
 \left( hf - hf' +m_e c^2\right)^2 -(m_e c^2)^2 &= (p_{e,final} c)^2.
-\end{align}
+\end{align*}
 Here the frequency $f'$ refers to the new frequency of the photon after the interaction.
 
 Similarly we can use momentum conservation to find an expression for the momentum of the electron after the scattering process:
-\begin{align}
+\begin{align*}
 p_{\gamma, initial} &= p_{e, final} + p_{\gamma, final}\\
 p_{\gamma, initial} - p_{\gamma, final}c &= p_{e, final}\\
 (p_{\gamma, initial} - p_{\gamma, final}c)^2 &= (p_{e, final} )^2\\
 (p_{\gamma, initial})^2 + (p_{\gamma, final})^2 - 2 p_{\gamma, initial}p_{\gamma, final}\cos(\theta) &= (p_{e, final} )^2.
-\end{align}
+\end{align*}
 
 Setting both equations equal we find the familiar equation for the angular dependent change in wavelength of a photon performing Compton scattering with an electron:
 
@@ -920,7 +949,9 @@ For this purpose we require the differential cross section for Compton scatterin
 We can derive this by calculating the matrix element for the process. This derivation is based on Peskin and Schroeder or Schwartz REF.
 
 \EliasComm{differential cross section!!}
+\EliasComm{derive KN cross section explicitly}
 \EliasComm{polar plot and energy axis}
+\EliasComm{add visualisation for ICS (own)}
 
 The spin-averaged Klein-Nishina formula:
 \begin{equation}
@@ -948,6 +979,8 @@ Laser wiggler. Electric field component, later on at high intensities the magnet
 \includegraphics[width=0.8\columnwidth]{ICS_Jason.png}
 \caption{Visualisation of inverse Compton scattering (ICS). A relativistic electron is counter-propagated with a laser pulse which gains energy from the interaction due to the relativistic Doppler-effect. Graphics by Jason Cole (Imperial College).}
 \end{figure}
+
+\EliasComm{need new ICS visualisation.}
 
 In inverse Compton scattering (ICS) a relativistic electron scatters with one (linear ICS) or multiple photons (non-linear ICS). Whilst in Compton scattering (CS)  momentum is transferred from the photon to the electron (heating), resulting in a longer wavelength of the scattered photon, in ICS the photon gains energy (hence inverse Compton scattering) as it experiences a relativistic Doppler shift.
 
@@ -1046,6 +1079,8 @@ The angular distribution of each component is distinct and symmetric, with odd h
 \includegraphics[width=.5\columnwidth]{ICS_Redshift.png}\includegraphics[width=.5\columnwidth]{ICS_Redshift2.png}
 \caption{Redshift of the fundamental harmonic.}
 \end{figure}
+
+\EliasComm{make a plot for the spectrum and correct this spectrum to reflect the spectrum in the lab frame or make notable that this is in the rest frame. Maybe compare the two.}
 
 \subsubsection{Ultrahigh intensities and relativistic electron energies}
 
