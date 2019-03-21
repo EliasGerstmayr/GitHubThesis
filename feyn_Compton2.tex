@@ -1,0 +1,28 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}
+
+
+\begin{document}
+\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(110,60)
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2}
+
+    \fmflabel{$e^-$}{i1}
+    \fmflabel{$e^-$}{o2}
+    \fmflabel{$\gamma$}{i2}
+    \fmflabel{$\gamma$}{o1}
+
+    \fmf{fermion}{i1,v1}
+    \fmf{fermion}{v1,v2}
+    \fmf{fermion}{v2,o2}
+    \fmf{photon}{i2,v2}
+    \fmf{photon}{v1,o1}
+  \end{fmfgraph*}
+\end{fmffile}
+
+\end{document}

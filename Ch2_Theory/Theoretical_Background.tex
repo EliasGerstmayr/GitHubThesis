@@ -919,7 +919,13 @@ The reaction can be written as follows:
 \begin{equation}
 \gamma + e^- \longrightarrow \gamma + e^-.
 \end{equation}
-\EliasComm{Feynman diagram?}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\columnwidth]{Compton_Feyn1.pdf}\includegraphics[width=0.4\columnwidth]{Compton_Feyn2.pdf}
+\caption{Feynman diagrams for Compton scattering. Time axis from left to right. s- and u-channel.}
+\end{figure}
 
 \subsubsection{Kinematics}
 
@@ -929,23 +935,25 @@ We will treat the electron and the incoming photon both as particles and calcula
 \vspace{\baselineskip}
 
 The electron has a negligible initial momentum $\mathbf{p}_{e,initial} = \mathbf{0}$ and the total energy hence reduces to the rest energy of the electron $E_{e,initial} = m_e c^2$. The subscript $e$ stands for `electron'.
-The photon on the other hand has initally a momentum $\mathbf{p}_{\gamma, initial}$ and an energy $E_{\gamma, initial} = p/c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
+The photon on the other hand has initally a momentum $\mathbf{p}_{\gamma, initial}$ and an energy $E_{\gamma, initial} = p_{\gamma, initial} c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
 
 Relying on the conservation of energy we can postulate that the sum of energies before and after the interaction have to be equal:
 \begin{align}
 E_{e, initial} + E_{\gamma,initial} &= E_{e,final} + E_{\gamma,final},\nonumber\\ 
 m_e c^2 + h f &= \sqrt{(p_{e,final} c)^2 + (m_e c^2)^2} + h f',\nonumber\\
 hf - hf' +m_e c^2 &= \sqrt{(p_{e,final} c)^2 + (m_e c^2)^2},\nonumber\\
-\left( hf - hf' +m_e c^2\right)^2 -(m_e c^2)^2 &= (p_{e,final} c)^2.
+\left( hf - hf' +m_e c^2\right)^2 -(m_e c^2)^2 &= (p_{e,final} c)^2, \nonumber\\
+(E_{\gamma, initial} - E_{\gamma, final} + m_e c^2)^2 - (m_e c^2)^2 &= (p_{e, final} c)^2.
 \end{align}
 Here the frequency $f'$ refers to the new frequency of the photon after the interaction.
 
 Similarly we can use momentum conservation to find an expression for the momentum of the electron after the scattering process:
 \begin{align}
 p_{\gamma, initial} &= p_{e, final} + p_{\gamma, final}\nonumber\\
-p_{\gamma, initial} - p_{\gamma, final}c &= p_{e, final}\nonumber\\
-(p_{\gamma, initial} - p_{\gamma, final}c)^2 &= (p_{e, final} )^2\nonumber\\
-(p_{\gamma, initial})^2 + (p_{\gamma, final})^2 - 2 p_{\gamma, initial}p_{\gamma, final}\cos(\theta) &= (p_{e, final} )^2.
+p_{\gamma, initial} - p_{\gamma, final} &= p_{e, final}\nonumber\\
+(p_{\gamma, initial} - p_{\gamma, final})^2 &= (p_{e, final} )^2\nonumber\\
+(p_{\gamma, initial}c)^2 + (p_{\gamma, final}c)^2 - 2 p_{\gamma, initial}p_{\gamma, final}c^2\cos(\theta) &= (p_{e, final} c )^2,\nonumber\\
+E_{\gamma, initial}^2 + E_{\gamma, final} - 2 E_{\gamma, initial} E_{\gamma, final} \cos\theta &= (p_{e, final} c)^2.
 \end{align}
 
 Setting both equations equal we find the familiar equation for the angular dependent change in wavelength of a photon performing Compton scattering with an electron:
@@ -962,7 +970,7 @@ Similarly there is an equation for the emission angle of the electron:
 
 In terms of photon energy we can write
 \begin{equation}
-E_{\gamma,f} = \frac{E_{\gamma,i}}{1+\frac{E_{\gamma,i}}{m_e c^2}}(1+\cos(\theta))
+E_{\gamma,f} = \frac{E_{\gamma,i}}{1+\frac{E_{\gamma,i}}{m_e c^2}(1-\cos(\theta))}
 \end{equation}
 
 
@@ -970,6 +978,14 @@ These equations describe an angular dependent energy distribution, but not the p
 For this purpose we require the differential cross section for Compton scattering.
 
 \subsubsection{Cross-Section}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{Compton_kinematic.pdf}\includegraphics[width=.5\columnwidth]{Compton_KN_cross.pdf}
+\caption{Kinematics and differential cross section for different photon energies. The electron is at rest.}
+\end{figure}
+
 
 The cross section combines the kinematics of the process (as discussed) with the matrix element of the interaction which includes the physics of the interaction.
 
@@ -1067,11 +1083,6 @@ The calculation of the cross section follows the same scheme, relying on the qua
 At $\gamma >> 1$ we will assume that the collisions are always head-on, such that $\sigma' = \sigma$ and we need to only change the solid angle.
 Due to the relativistic boost the energy of the photons will look as if $2\gamma$ higher and we will be in the regime where the Klein-Nishina equation already indicates a headlight effect of the radiation being preferably emitted in forwards direction.
 
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{ThomsonScattering.png}\includegraphics[width=.5\columnwidth]{Headlight.png}
-\caption{Rest frame and lab frame emission. ICS.}
-\end{figure}
 
 \EliasComm{add some parts here from Jason's calculations.}
 
@@ -1082,6 +1093,12 @@ Due to the relativistic boost the energy of the photons will look as if $2\gamma
 \begin{equation}
 n\gamma_L + e^- \longrightarrow \gamma + e^-.
 \end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[width=.9\columnwidth]{feyn_nICS.pdf}
+\caption{Feynman diagram for Volkov state equivalent to infinite series of diagrams}
+\end{figure}
 
 \subsubsection{Kinematics}
 
@@ -1243,6 +1260,13 @@ Formation time, coherence time.
 
 Cooling of spectra versus competing processes.
 
+\section{Pair Production}
 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\columnwidth]{feyn_BW1.pdf}\includegraphics[width=0.4\columnwidth]{feyn_BW2.pdf}
+\caption{Feynman diagrams for Breit-Wheeler pair production. Time axis from left to right.}
+\end{figure}
 
 
