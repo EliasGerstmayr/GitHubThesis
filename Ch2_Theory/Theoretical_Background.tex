@@ -1,7 +1,7 @@
 \chapter{Theory}
 
 
-\section{Single particle motion in an electromagnetic field}
+\section{Single particle motion in an EM field}
 
 The Lagrangian for a relativistic particle in an electromagnetic field with the potentials $\Phi$ and $\mathbf{A}$ is given by
 
@@ -77,6 +77,8 @@ or in terms of the relativistic momentum $\mathbf{p} = \gamma m \mathbf{v}$
 \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = \frac{q}{\gamma m} \mathbf{p} \times \mathbf{B}.
 \end{equation}
 
+Note that in this case the purely magnetic Lorentz force does not do any work. The instantaneous rate of work (power) is $P = \mathbf{F} \cdot \mathbf{v}$, where the force $\mathbf{F}$ is through virtue of the cross product always orthogonal and the dot product vanishes.
+
 We choose the coordinate system such that $\mathbf{B} = (0,0,B)^t = B e_z$. The momentum vector is simply $\mathbf{p} = (p_x,p_y,p_z)^t$.
 This then gives us the differential equations:
 
@@ -93,7 +95,7 @@ which gives us
 \end{align}
 which can be solved by a periodic motion of type $p_x(t) = C \sin(\omega t) + D \cos(\omega t)$ with $\omega = qB/\gamma m$. 
 
-With initial conditions $p_x(t=0) = p_\perp$ and $p_y(t=0)=0$, we get these equations for the momenta:
+$\mathbf{p_\perp}$ be the momentum vector of the particle perpendicular to the magnetic field lines and $\mathbf{p_\parallel}$ the component parallel to the magnetic field (z). Assume initial conditions $p_x(t=0) = |\mathbf{p_\perp}| = p_\perp$ and $p_y(t=0)=0$. We get these equations for the momenta:
 
 \begin{align}
 p_x(t) &= p_\perp \cos(\omega t)\\
@@ -152,6 +154,8 @@ In a typical LWFA experiment $p_\perp$ will be dominated by the component in the
 
 \subsection{Electron in a cylindrically symmetric electric field}
 
+\EliasComm{Maybe move this and the next section to Betatron radiation?}
+
 Now let us assume an electron in a cylindrically symmetric electric field that allows for oscillation. The previously discussed case of a particle in a homogeneous magnetic field corresponds to the motion in a magnetic spectrometer or a circular accelerator.
 A field as discussed now is a similar case to a plasma channel or an electron in a wakefield oscillating and generating betatron radiation.
 
@@ -199,6 +203,8 @@ The equation then takes the shape of a harmonic oscillator
 with a frequency we will call the betatron frequency $\omega_\beta$.
 
 \subsection{Electron in a cylindrically symmetric electric field with axial field}
+
+\EliasComm{Maybe move this section to Betatron radiation?}
 
 Now in addition to the previous case we will add an axial field in the longitudinal (direction of electron propagation). This comes closer to the reality of a wakefield accelerator.
 The electric field component shall now be $E_z$, with z being the longitudinal axis.
@@ -344,17 +350,17 @@ p_z &= \frac{1}{2} a^2_z.
 In normalised units $\mathbf{p} = \gamma \mathbf{v}$ and this can be written as:
 
 \begin{align}
-\gamma \frac{\mathrm{d}x}{\mathrm{d}t} = a_x,\\
-\gamma \frac{\mathrm{d}y}{\mathrm{d}t} = a_y,\\
-\gamma \frac{\mathrm{d}z}{\mathrm{d}t} = \frac{a^2}{2}.
+\gamma \frac{\mathrm{d}x}{\mathrm{d}t} &= a_x,\\
+\gamma \frac{\mathrm{d}y}{\mathrm{d}t} &= a_y,\\
+\gamma \frac{\mathrm{d}z}{\mathrm{d}t} &= \frac{a^2}{2}.
 \end{align}
 
 Changing from $t$ to proper time $\tau$, we transform via $\mathrm{d}\tau = \gamma^{-1}\mathrm{d}t$, simply giving the equation of motions in term of $\tau$:
 
 \begin{align}
-\frac{\mathrm{d}x}{\mathrm{d}\tau} = a_x,\\
-\frac{\mathrm{d}y}{\mathrm{d}\tau} = a_y,\\
-\frac{\mathrm{d}z}{\mathrm{d}\tau} = \frac{a^2}{2}.
+\frac{\mathrm{d}x}{\mathrm{d}\tau} &= a_x,\\
+\frac{\mathrm{d}y}{\mathrm{d}\tau} &= a_y,\\
+\frac{\mathrm{d}z}{\mathrm{d}\tau} &= \frac{a^2}{2}.
 \end{align}
 
 Let us assume a laser field with linear polarisation in $x$, described by the vector potential
@@ -362,24 +368,6 @@ Let us assume a laser field with linear polarisation in $x$, described by the ve
 \mathbf{a} = a_0 \cos(\omega \tau)\mathbf{e}_x,
 \end{equation}
 where $\mathbf{e}_x$ is the unit vector in the x-coordinate. 
-
-Using this explicit vector potential and integrating the equation of motions, results in:
-
-\begin{align}
-x(\tau) = \frac{c a_0}{\omega}\sin(\omega \tau),\\
-y(\tau) = 0,\\
-z(\tau) = \frac{c a^2_0}{4}\left(\tau + \frac{1}{2\omega}\sin(2\omega\tau)\right),
-\end{align}
-where we chose the initial conditions $x(0)=y(0)=z(0)=0$ and returned to non-normalised units.
-
-The electron is performing a periodic oscillation around the z-axis, whilst the motion in the z-axis is composed of a constant drift and another oscillation (see figure \ref{Theory:Figs:FigureOfEight} (left)). This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame (see figure \ref{Theory:Figs:FigureOfEight} (right)). For $a_0 \leq 1$ the motion in z is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
-
-The extremal values are then 
-
-\begin{align*}
-x_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0}{\omega}\\
-z_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0^2 \pi}{8 \omega} (2n+1)
-\end{align*}
 
 \begin{figure}[h]
 \centering
@@ -389,9 +377,30 @@ z_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0^2 \pi}{8 \omega} (2n+1)
 \label{Theory:Figs:FigureOfEight}
 \end{figure}
 
+Using this explicit vector potential and integrating the equation of motions, results in:
+
+\begin{align}
+x(\tau) &= \frac{c a_0}{\omega}\sin(\omega \tau),\\
+y(\tau) &= 0,\\
+z(\tau) &= \frac{c a^2_0}{4}\left(\tau + \frac{1}{2\omega}\sin(2\omega\tau)\right),
+\end{align}
+where we chose the initial conditions $x(0)=y(0)=z(0)=0$ and returned to non-normalised units.
+
+The electron is performing a periodic oscillation around the z-axis, whilst the motion in the z-axis is composed of a constant drift and another oscillation (see figure \ref{Theory:Figs:FigureOfEight} (left)). This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame (see figure \ref{Theory:Figs:FigureOfEight} (right)). For $a_0 \leq 1$ the motion in z is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
+
+The extremal values are then 
+
+\begin{align*}
+x_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0}{\omega}\\
+z_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0^2 \pi}{8 \omega} (2n+1),
+\end{align*}
+with $z_{max}$ being unbound as the electron drifts forwards in the lab frame. The drift velocity is (ADD NUMBER HERE) which shows that particles can be accelerated using this method. For a realistic $a_0$ of NUMBER, this gives us a drift momentum of NUMBER. The energies we can achieve in wakefield acceleration is much larger.
+
+
+
 \EliasComm{Add lines to the plot for various $a_0$.}
 
-\section{Ponderomotive Force}
+\subsection{Ponderomotive Force}
 
 
 In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates through an underdense plasma and drives a wave via the ponderomotive force which is proportional to the gradient of the laser intensity. There exists a variety of derivations. The following derivation is based on Alec Thomas' PhD thesis (Imperial College, 2007) (REF).
@@ -433,6 +442,7 @@ When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear 
 \end{equation}
 which is the ponderomotive force $\mathbf{F}_p$ on on a single electron. Since $\mathbf{F}_p \sim \nabla <\mathbf{a}^2>$, this implies $\mathbf{F}_p \sim \nabla<I>$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
 
+\EliasComm{What is the ponderomotive force? Is it not just the electrons gaining mass and oscillating out of the region?}
 
 \iffalse
 As the force is essential for the understanding of LWFA it will be derived in the following.
@@ -529,17 +539,21 @@ V(r) = -\frac{Ze^2}{4\pi\epsilon_0 r} - eEr,
 where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. Using this result and by setting the height of the barrier to the ionisation potential $V_e$, the electric field required amounts to
 
 \begin{equation}
-E = \frac{\pi \epsilon_0 V^2_e}{Ze^3},
+E = \frac{\pi \epsilon_0 V^2_e}{Ze^3} \approx 173.6 \times \frac{V_e^2 [eV]}{Z}  \mathrm{MV/m},
 \end{equation} 
 
 or in terms of intensity using $I = \frac{c\epsilon_0}{2}|E|^2$ in (near) vacuum:
 
 \begin{equation}
-I = \frac{c\epsilon^3 \pi^2 V^4_e}{2e^6 Z^2}.
+I = \frac{c\epsilon_0^3 \pi^2 V^4_e}{2e^6 Z^2} \ approx 4 \times 10^{9} \frac{V_e^4 [eV]}{Z^2} \mathrm{\frac{W}{cm^2}}.
 \end{equation}
 
 For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
-The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF).  
+The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF). 
+
+\EliasComm{Check that this does not rely on tunnel ionisation.}
+\EliasComm{Write about tunnel ionisation.}
+\EliasComm{Add sketch of tunnel ionisation and ionisation mechanisms in general.}
 
 Partially ionised plasmas result in a couple of problems: more complex, absorption of X-rays, dampening of particles, scattering? Weaker fields.
 \EliasComm{add also some comments on partially ionised plasmas and how they change for instance the absorption of X-rays in this medium.}
@@ -553,18 +567,19 @@ Energy of the photon:
 E_{ph} = hf = E_{e,kin} + E_{bound}
 \end{equation}
 
+\EliasComm{is this true, simple as that?}
+\EliasComm{add a diagram to show energy and emission of recombination light.}
+
 The ground level of hydrogen is bound by 13.6 eV corresponding to a photon of wavelength 91 nm (?). The ground level of hydrogen-like helium is bound by a potential $V_e = 54.4\,\mathrm{eV}$, corresponding to a wavelength of 22.8 nm and the first level ionisation level of 24.6 eV corresponds to 50.4 nm.
 
-\EliasComm{Add some comments on tunnel ionisation as this is related to ionisation injection.}
-\EliasComm{add a diagram to show energy and emission of recombination light.}
 
 
 \subsection{The Plasma Frequency}
 
-The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced and constitutes the typical time scale of the medium. The corresponding plasma wavelength $\lambda_p$ on the other hand constitutes a typical length scale.
+The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced. It constitutes the typical time scale and the corresponding plasma wavelength $\lambda_p$ the typical length scale of the medium.
 \vspace{\baselineskip}
 
-Assume a uniform and neutral plasma, i.e. $n_e = Z n_i = n_{e0}$, where $n_e$ is the electron number density, $Z$ the charge number of the ions, $n_i$ the ion number density, and the electric field $E = 0$.
+Assume a uniform and neutral plasma, i.e. $n_e = Z n_i = n_{e0}$, where $n_e$ is the electron number density, $Z$ the charge number of the ions, $n_i$ the ion number density, and the initial electric field be $\mathbf{E} = \mathbf{0}$.
 Now consider displacing a slab of charge in an arbitrary direction defining an axis that we will call X.
 
 Starting with Gauss' Law:
@@ -576,26 +591,29 @@ where we used that the displacement is only along $x$, simplifying the nabla ope
 
 We assume a uniform plasma so the charge density is a constant $\rho = e n_{e0} = const.$. Integrating the previous equation gives an extra factor times the displacement X:
 \begin{equation}
-E_x = \frac{1}{\epsilon_0} \int^x_0 \rho (x') dx' + E_x(0) = \frac{e n_{e0} X}{\epsilon_0}.
+E_x = \frac{1}{\epsilon_0} \int^x_0 \rho (x') dx' + E_x(0) = \frac{e n_{e0}}{\epsilon_0} X.
 \end{equation}
 
 \begin{equation}
-E = \frac{e n_e X}{\epsilon_0}
+E = \frac{e n_e}{\epsilon_0} X
 \end{equation}
 
 If we now consider a force based on this field, we immediately see that this is equivalent to the equation of motion of a harmonic oscillator: 
 
 \begin{equation}
-\frac{m_e \mathrm{d}^2 X}{\mathrm{d}t^2} = - \frac{e^2 n_e}{\epsilon_0} X = - \omega^2_p X,
+m_e \frac{\mathrm{d}^2 X}{\mathrm{d}t^2} = - \frac{e^2 n_e}{\epsilon_0} X = - \omega^2_p X,
 \end{equation}
 
 with the (plasma) frequency
 
 \begin{equation}
-\omega^2_p = \frac{n_{e0} e^2}{\epsilon_0 m_e}.
+\omega_p = \sqrt{\frac{n_{e0} e^2}{\epsilon_0 m_e}},
 \end{equation}
 
-\EliasComm{Add some typical numbers used in wakefield accelerators.}
+and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
+
+A typical regime wakefield accelerators at a Gemini class laser operate in is at an electron density of around $10^{18} cm^{-3}$. This corresponds to a plasma frequency of around $5.6 \times 10^{13} \,\mathrm{Hz}$ or $\lambda_p \approx 33\,\mathrm{\mu m}$.
+
 \EliasComm{Add sketch on displacing slabs.}
 
 \subsection{The Critical Density}
@@ -894,7 +912,7 @@ For $\hbar \omega << E$
 
 \subsection{Compton Scattering}
 
-Classical Compton scattering describes the inelastic scattering of a photon off an electron which is at rest or close to it. Here the photon loses energy to the electron, hence this is called inelastic. In some conventions this interaction might still be referred to as elastic as energy is transferred into kinetic energy from one particle to another and is not dissipated in terms of heat or deformation.
+Classical Compton scattering describes the inelastic scattering of a photon off an electron which is at rest or close to it. Here the photon loses energy to the electron, hence this is called inelastic. In some conventions this interaction might still be referred to as elastic as energy is transferred into kinetic energy from one particle to another and is not dissipated in terms of heat or deformation. The fully elastic process in the low energy limit is Thomson scattering where the incoming photon does not lose any significant amount of energy in the process.
 
 The reaction can be written as follows:
 
@@ -903,6 +921,10 @@ The reaction can be written as follows:
 \end{equation}
 \EliasComm{Feynman diagram?}
 
+\subsubsection{Kinematics}
+
+\EliasComm{Add a kinematics diagram}
+
 We will treat the electron and the incoming photon both as particles and calculate their final momenta based on energy and momentum conservation in a relativistic framework.
 \vspace{\baselineskip}
 
@@ -910,21 +932,21 @@ The electron has a negligible initial momentum $\mathbf{p}_{e,initial} = \mathbf
 The photon on the other hand has initally a momentum $\mathbf{p}_{\gamma, initial}$ and an energy $E_{\gamma, initial} = p/c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
 
 Relying on the conservation of energy we can postulate that the sum of energies before and after the interaction have to be equal:
-\begin{align*}
-E_{e, initial} + E_{\gamma,initial} &= E_{e,final} + E_{\gamma,final},\\
-m_e c^2 + h f &= \sqrt{(p_{e,final} c)^2 + (m_e c^2)^2} + h f',\\
-hf - hf' +m_e c^2 &= \sqrt{(p_{e,final} c)^2 + (m_e c^2)^2},\\
+\begin{align}
+E_{e, initial} + E_{\gamma,initial} &= E_{e,final} + E_{\gamma,final},\nonumber\\ 
+m_e c^2 + h f &= \sqrt{(p_{e,final} c)^2 + (m_e c^2)^2} + h f',\nonumber\\
+hf - hf' +m_e c^2 &= \sqrt{(p_{e,final} c)^2 + (m_e c^2)^2},\nonumber\\
 \left( hf - hf' +m_e c^2\right)^2 -(m_e c^2)^2 &= (p_{e,final} c)^2.
-\end{align*}
+\end{align}
 Here the frequency $f'$ refers to the new frequency of the photon after the interaction.
 
 Similarly we can use momentum conservation to find an expression for the momentum of the electron after the scattering process:
-\begin{align*}
-p_{\gamma, initial} &= p_{e, final} + p_{\gamma, final}\\
-p_{\gamma, initial} - p_{\gamma, final}c &= p_{e, final}\\
-(p_{\gamma, initial} - p_{\gamma, final}c)^2 &= (p_{e, final} )^2\\
+\begin{align}
+p_{\gamma, initial} &= p_{e, final} + p_{\gamma, final}\nonumber\\
+p_{\gamma, initial} - p_{\gamma, final}c &= p_{e, final}\nonumber\\
+(p_{\gamma, initial} - p_{\gamma, final}c)^2 &= (p_{e, final} )^2\nonumber\\
 (p_{\gamma, initial})^2 + (p_{\gamma, final})^2 - 2 p_{\gamma, initial}p_{\gamma, final}\cos(\theta) &= (p_{e, final} )^2.
-\end{align*}
+\end{align}
 
 Setting both equations equal we find the familiar equation for the angular dependent change in wavelength of a photon performing Compton scattering with an electron:
 
@@ -943,10 +965,15 @@ In terms of photon energy we can write
 E_{\gamma,f} = \frac{E_{\gamma,i}}{1+\frac{E_{\gamma,i}}{m_e c^2}}(1+\cos(\theta))
 \end{equation}
 
+
 These equations describe an angular dependent energy distribution, but not the probability of those interactions.
 For this purpose we require the differential cross section for Compton scattering.
 
-We can derive this by calculating the matrix element for the process. This derivation is based on Peskin and Schroeder or Schwartz REF.
+\subsubsection{Cross-Section}
+
+The cross section combines the kinematics of the process (as discussed) with the matrix element of the interaction which includes the physics of the interaction.
+
+This derivation is based on Peskin and Schroeder or Schwartz REF.
 
 \EliasComm{differential cross section!!}
 \EliasComm{derive KN cross section explicitly}
@@ -969,8 +996,13 @@ For very low energetic photons in the limit $\omega \rightarrow 0$ the cross sec
 \end{equation}
 with a total cross section of $\sigma_{total} = 8\pi\alpha^2/(3m^2)$. This is the Thomson scattering cross section.
 
+This cross section and kinematics holds for an electron at rest and a single photon. The cases of one or multiple photons interacting with a relativistic electron are discussed in the following section.
 
-\subsection{Inverse Compton Scattering (ICS)}
+The emission spectrum of Compton scattering at low photon energies is symmetric in the forwards and backwards direction. At increasing photon energies reaching the X-ray and gamma regime the photon is preferentially scattered in the forwards direction.
+
+\EliasComm{Add a low energy differential cross section and spectrum here.}
+
+\subsection{Linear Inverse Compton Scattering}
 
 Laser wiggler. Electric field component, later on at high intensities the magnetic field becomes important as well.
 
@@ -983,6 +1015,17 @@ Laser wiggler. Electric field component, later on at high intensities the magnet
 \EliasComm{need new ICS visualisation.}
 
 In inverse Compton scattering (ICS) a relativistic electron scatters with one (linear ICS) or multiple photons (non-linear ICS). Whilst in Compton scattering (CS)  momentum is transferred from the photon to the electron (heating), resulting in a longer wavelength of the scattered photon, in ICS the photon gains energy (hence inverse Compton scattering) as it experiences a relativistic Doppler shift.
+
+The photon energies accessible with sufficiently relativistic particles is multiple orders of magnitude higher. In all optical Compton sources \cite{TaPhuoc2012a} relativistic electrons of several hundreds of $\mathrm{MeV}$ have been collided with high-intensity laser pulses, producing tunable X-rays in the $\mathrm{keV}$ \cite{TaPhuoc2012a,Powers2014,Khrennikov2015} to $\mathrm{MeV}$ \cite{Chen2013a,Sarri2014} range with pulse durations of the order of tens of femtoseconds and a micron-scale source size.
+
+In addition to all-optical schemes, it has also been proposed to combine conventional accelerator elements with high-intensity lasers to reach high stability and repetition rates\cite{Seryi2015}.
+\vspace{\baselineskip}
+
+The results of a ICS experiment via LWFA at the Astra Gemini facility in the UK are presented later in this report. 
+
+ICS has been widely used in the conventional accelerator community to measure the spin-polarisation of beams.
+
+\subsubsection{Kinematics}
 
 To calculate energy distribution, we can treat this scattering process similarly to the standard Compton scattering we discussed. This requires shifting frames of reference. In the lab frame $S$ quantities will be denoted as before $E, \theta$ and so on. In the rest frame of the electron $S'$ quantities will be denoted as such $E', \theta'$ and so on.
 
@@ -1016,14 +1059,13 @@ E_f = E'_f \gamma (1+\beta \cos \theta'_f) \approx E'_f \gamma (1+ \cos \theta'_
 From these equations we see that the maximum energy can be achieved in a head-on collision and observing the radiation on-axis.
 The photons are boosted by $(2\gamma)^2$ to an energy $E_{f,max} = 2 \gamma E'_f = 2 \gamma E'_i = 4 \gamma^2 E_i$.
 
-In more intense interactions several photons can interact at once and are re-emitted as one photon with an integer multiple energy. The normalised vector potential is an indicator of how many photons commonly interact with one electron and the maximum energy then is around
-\begin{equation}
-\hbar \omega' \approx 4 \hbar \omega a_0 \gamma^2,
-\end{equation}
+
+\subsubsection{Cross-Section}
 
 The calculation of the cross section follows the same scheme, relying on the quantum-corrected Klein-Nishina equation using the angles and energies in the electron rest frame. The angles corresponding to the cross sections and the solid angles, however, have to be transformed in a similar way.
 
-The Klein-Nishina equation already indicates a headlight effect of the radiation being preferably emitted in forwards direction.
+At $\gamma >> 1$ we will assume that the collisions are always head-on, such that $\sigma' = \sigma$ and we need to only change the solid angle.
+Due to the relativistic boost the energy of the photons will look as if $2\gamma$ higher and we will be in the regime where the Klein-Nishina equation already indicates a headlight effect of the radiation being preferably emitted in forwards direction.
 
 \begin{figure}
 \centering
@@ -1033,28 +1075,21 @@ The Klein-Nishina equation already indicates a headlight effect of the radiation
 
 \EliasComm{add some parts here from Jason's calculations.}
 
-However, the photon energies accessible with sufficiently relativistic particles is multiple orders of magnitude higher. In all optical Compton sources \cite{TaPhuoc2012a} relativistic electrons of several hundreds of $\mathrm{MeV}$ have been collided with high-intensity laser pulses, producing tunable X-rays in the $\mathrm{keV}$ \cite{TaPhuoc2012a,Powers2014,Khrennikov2015} to $\mathrm{MeV}$ \cite{Chen2013a,Sarri2014} range with pulse durations of the order of tens of femtoseconds and a micron-scale source size.
+\EliasComm{add plot for relativistic kinematics.}
 
-In addition to all-optical schemes, it has also been proposed to combine conventional accelerator elements with high-intensity lasers to reach high stability and repetition rates\cite{Seryi2015}.
-\vspace{\baselineskip}
+\subsection{Nonlinear Inverse Compton Scattering}
 
-The results of a ICS experiment via LWFA at the Astra Gemini facility in the UK are presented later in this report. 
+\begin{equation}
+n\gamma_L + e^- \longrightarrow \gamma + e^-.
+\end{equation}
 
-ICS has been widely used in the conventional accelerator community to measure the spin-polarisation of beams.
+\subsubsection{Kinematics}
 
+Relativistic kinematics is identical for one or several photons as many incoming identical energy photons and one outgoing with n times $\omega$ the energy. When following the kinematics through one arrives at the same equation as previously for the scattering process in the rest frame of the electron
 
-\subsubsection{Higher harmonics}
-
-\subsubsection{Low Intensity behaviour at low electron energies}
-
-At low laser intensities and electron energies the scattering cross section is symmetric in forwards and backwards direction of the incoming photon. It forms two lobes.
-From the Klein-Nishina formula based on energy and momentum conservation we see that each angular position in the lobe corresponds to a fixed energy with maxima on the forwards-backwards axis.
-
-\subsubsection{Low intensity behaviour at relativistic electron energies}
-
-At low laser intensities in the limit $a_0 \rightarrow 0$ and relativistic electron energies the interaction looks fairly similar in the rest frame of the electron. In the lab frame however the emitted radiation is now preferential in the backwards direction (the direction of the electron propagation). This is sometimes referred to as `headlight effect'. The electrons are passing through the laser pulse and oscillate up and down. The maximum energy is of order $\hbar \omega' \approx 4 \hbar \omega a_0 \gamma^2,$ based on the Lorentz boost. This energy is again located on the forwards-backwards axis. The cone of emitted radiation is of order $1/\gamma$.
-
-\subsubsection{Rising laser intensity at relativistic electron energies}
+\begin{equation}
+E'_f = \frac{n E'_i}{1+\frac{n E'_i}{m_e c^2}(1-\cos\alpha')},
+\end{equation}
 
 At laser intensities reaching an relativistic regime $a_0 ~ 0.1$ the equation of motion of the electron starts deviating from a simple up-and-down oscillation due to a longitudinal component. The electrons start performing a figure-of-eight motion with a longitudinal component increasing with $a_0$.
 This additional component has two effects:
@@ -1071,6 +1106,7 @@ We solved the equation of motion previously and it follows the relativistic Dopp
 \end{equation}
 
 Secondly, energy is being transferred from this fundamental radiation at $\omega$ to higher order harmonics $\omega_1 = n\omega$, when multiple photons upconvert to one higher energy photon. Since this is a free electron process the harmonics are not restricted to either odd or even numbers but cover both.
+Fourier analysis.
 
 The angular distribution of each component is distinct and symmetric, with odd harmonics showing a maximum on-axis and (n-1)/2 lobes on either side and even harmonics having a minimum on-axis and n/2 side-maxima on either side.
 
@@ -1082,11 +1118,22 @@ The angular distribution of each component is distinct and symmetric, with odd h
 
 \EliasComm{make a plot for the spectrum and correct this spectrum to reflect the spectrum in the lab frame or make notable that this is in the rest frame. Maybe compare the two.}
 
-\subsubsection{Ultrahigh intensities and relativistic electron energies}
 
 In the highly nonlinear regime $a_0 \gg 1$ the number of harmonics increases by a factor $a_0^3$ (REF). At the same time each harmonic is spread out due to the longitudinal component which now dominates the electron motion.
 
 The high number of harmonics (hundreds!) and the redshifting of each component transforms the spectrally very peaked spectrum to a broadband source resembling a synchrotron spectrum.
+
+This means to reach higher photon energies a more intense laser is not necessarily the best option as the redshifting appears rapidly along with the harmonics. A more energetic electron provides a redshift-free upshift. If one wants a close to monoenergetic spectrum on top of that linear Compton scattering in the limit $a_0 \rightarrow 0$ is more suitable.
+
+\subsubsection{Cross-Section}
+
+Volkov state, Furry picture, dressed states.
+
+Infinite series of diagrams in this set.
+
+\EliasComm{One, two photon feynman diagrams. Add image of dressed states and series equivalent.}
+
+Models: classical harmonics, polarisation dependency, quantum model.
 
 \subsubsection{Other modifications of the spectrum}
 
@@ -1098,6 +1145,7 @@ Deviations from a head-on collision have to be considered and also introduce a s
 
 \section{Radiation Reaction}
 
+\EliasComm{How does radiation reaction compare to the ponderomotive force? It scales with $1/\gamma$ so it is less important in this context but what does it mean?}
 
 The previous sections left out the effect of radiation losses onto the equation of motion of charged particles.
 Charged particles emit radiation when being accelerated. The charged particle emitting the radiation loses the energy associated with the photon and is knocked back, adhering to momentum and energy conservation rules. This is called radiation reaction or radiation friction.
