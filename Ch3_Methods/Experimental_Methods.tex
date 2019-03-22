@@ -2,7 +2,7 @@
 
 The following chapter introduces a selection of experimental methods and techniques relevant in the context of the laser wakefield acceleration (LWFA) experiments presented in the course of this work. The author aims to cover the three main ingredients of an LWFA experiment: high-intensity lasers, gas targetry and diagnostics for particles and secondary radiation.
 
-The chapter starts by introducing high-intensity lasers, the main tool to drive and probe the plasma wave, how to diagnose them in experiment and some basic terminology. It continues with a section on the technique of chirped-pulse amplification (CPA) \cite{Strickland1985}, a key development that enabled the realisation of high-intensity lasers now reaching peak intensities in excess of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$ (REF: Bahk 2004, Optics Letters 29). A breakthrough Strickland and Mourou were awarded the Nobel Prize in physics for in 2018.
+The chapter starts by introducing high-intensity lasers, the main tool to drive and probe the plasma wave, how to describe a laser and how to diagnose it in experiment. It continues with a section on the technique of chirped-pulse amplification (CPA) \cite{Strickland1985}, a key development that enabled the realisation of high-intensity lasers now reaching peak intensities in excess of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$ (REF: Bahk 2004, Optics Letters 29) and heading for $10^{23}\,\mathrm{W}\,\mathrm{cm}^{-2}$ with the next generation of laser facilities. A breakthrough Donn Strickland and Gerard Mourou were awarded the Nobel Prize in physics for in 2018.
 
 The chapter then continues with a section on gas targets used in LWFA experiments focusing on targetry that is specifically relevant to the results presented later in this work.
 
@@ -11,7 +11,7 @@ Finally, the author discusses techniques used to diagnose the plasma, the intera
 
 \section{Laser Systems}
 
-Since the experimental realisation of the maser (REF), shortly afterwards followed by the laser in 1960 \cite{Maiman1960}, lasers have taken an indispensable role in a wide range of fields covering communication, construction, navigation, medicine, pharmaceuticals, machining, defense, numerous applications in science and innovation and more. 
+Since the experimental realisation of the laser \cite{Maiman1960} it has taken an indispensable role in a wide range of fields covering communication, construction, navigation, medicine, pharmaceuticals, machining, defense, numerous applications in science and innovation and more. 
 
 The advent of chirped pulse amplification (CPA) \cite{Strickland1985} enabled the generation of short and intense laser pulses paving the way for precision machining, medical tools used in cornea and heart surgeries, but also multi-photon science, non-linear optics and in the context of this work the wakefield acceleration in the so-called 'bubble' or 'blowout' regime, generating a directed relativistic quasi-monoenergetic electrons from a laser-plasma interaction.
 
@@ -24,6 +24,7 @@ In physics, the push towards higher intensities and shorter pulse durations allo
 
 With the advent of short pulse terrawatt systems after the invention of chirped pulse amplification (CPA) \cite{Strickland1985}, wakefield acceleration achieved a breakthrough reaching the non-linear regime, sometimes referred to as the `blowout' or `bubble' regime, and the production of quasi-monoenergetic electrons in the MeV regime \cite{Mangles2004,Faure2004,Geddes2004}.
 CPA opened up the relativistic regime at intensities of around $10^{17}-10^{18}\,\mathrm{W}\,\mathrm{cm}^{-2}$, where electrons accelerate to relativistic velocities within a single laser period leading to interesting effects like relativistic self-focusing which is also used to achieve longer guiding in LWFA. Even intensities of $10^{21} \,\mathrm{W}\,\mathrm{cm}^{-2}$ are within reach where QED corrections become relevant and phenomena like radiation reaction (classical and quantum), multi-photon Compton scattering or even the quantum vacuum itself can be investigated. The current record exceeds a peak intensity of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and laser systems pushing this even further by orders of magnitude are being planned or built already, as for instance the facilities of the Extreme Light Infrastructure (ELI) REFERENCE HERE or the proposed upgrade of the Vulcan laser at the Central Laser Facility in the UK (REF).
+\EliasComm{Some doubling in this paragraph}
 \vspace{\baselineskip}
 
 
@@ -133,17 +134,22 @@ A typical focusing optic for the second Gemini beam as scatterer has an F-number
 
 \subsection{Chirped-pulse amplification (CPA)}
 
-In laser amplification a laser pulse passes once (single pass) or multiple times (multipass) through an amplifier medium, called the laser gain medium. To generate ultrashort pulses a large bandwith gain medium is required in order to amplify continuously over a large frequency domain. A popular choice are lasers based on titanium-doped sapphire (Ti:Sa) as gain medium due to their large bandwidth and tunability. At short pulse durations and high intensities non-linear effects such as relativistic self-guiding start to occur, leading to a local increase of the field strength. At very high field strengths the gain medium starts to ionize and in turn to take damage: amplification of these short pulse lasers is limited by this breakdown. Further amplification can then only be achieved if the beam is expanded for which then a larger gain medium becomes necessary. This limitation was overcome or at least pushed further by the invention of chirped-pulse amplification (CPA) \cite{Strickland1985} based on a technique employed in radar technology.
+In laser amplification a laser pulse passes once (single pass) or multiple times (multipass) through an amplifier medium, called the laser gain medium, and is amplified in the process. To generate ultrashort pulses a large bandwith gain medium is required in order to amplify continuously over a large frequency domain. A popular choice are lasers based on titanium-doped sapphire (Ti:Sa) as gain medium due to their large bandwidth and tunability. At short pulse durations and high intensities non-linear effects such as relativistic self-guiding start to occur, leading to a local increase of the field strength. At very high field strengths the gain medium starts to ionize and in turn to take damage: amplification of these short pulse lasers is limited by this breakdown. Further amplification can then only be achieved if the beam is expanded for which then a larger gain medium becomes necessary. This limitation was overcome or at least pushed further by the invention of chirped-pulse amplification (CPA) \cite{Strickland1985} based on a technique employed in radar technology.
+\EliasComm{Add explicit number for damage threshold.}
 \vspace{\baselineskip}
 
 CPA takes advantage of the fact that short laser pulses are not monochromatic but a spectrum. This is a necessary property for the pulse to have a short duration, an evident feature when considering the Fourier transformation.
 
-CPA exploits this fact and stretches the pulse in time using sets of refraction gratings: depending on the frequency of the light it will be refracted differently, extending or shortening the path relative to other frequencies. In the pioneering work of Strickland and Mourou a long glass fibre was used to stretch the pulse \cite{Strickland1985}. A pair or a couple of grating pairs can in this way stretch the pulse with a dependence on wavelength: the pulse is `chirped'. The energy density is now much lower than before and the pulse in total can be amplified to much higher intensities without damaging or saturating the gain medium. In the next step, a set of gratings reverse the process and compress the pulse, achieving a high intensity but also an ultrashort pulse duration that is ideal for LWFA.
+CPA exploits this fact and stretches the pulse in time using sets of refraction gratings: depending on the frequency of the light it will be refracted differently, extending or shortening the path relative to other frequencies. A pair or a couple of grating pairs can in this way stretch the pulse with a dependence on wavelength: the pulse is `chirped'. In the pioneering work of Strickland and Mourou a long glass fibre was used to stretch the pulse coupled to a grating to compress it again \cite{Strickland1985}. The energy density of the stretched pulse is now much lower than before and the pulse in total can be amplified to much higher intensities without damaging or saturating the gain medium. In the next step, a set of gratings reverse the process and compress the pulse, achieving a high intensity but also an ultrashort pulse duration that is ideal for LWFA.
 \vspace{\baselineskip}
 
 \EliasComm{Add a picture of a chirped pulse?}
+\EliasComm{Add picture of gain curve for TiSa?}
 
 However, even with CPA the amplification achievable is finite as it is not useful to stretch the laser pulse arbitrarily much to lower the energy density and an ordinary gain medium as amplifier will reach its limits again as soon as the stretched pulse reaches the ionisation threshold. In addition, the gratings have to withstand these high intensities when recombining the stretched pulse and hence have to have a high damage threshold. An improved chirped-pulse amplification scheme to push this boundary even further is the so called optical parameter chirped-pulse amplification (OPCPA) scheme. The normal amplifier crystal is substituted by a non-linear medium. The laser pulse deposits only a fraction of energy of the amount in ordinary laser gain media as it works via a parametric process, which allows to pump this medium with even higher powers.
+
+\EliasComm{What is the largest amplifier crystal available so far?}
+\EliasComm{Mention coherent combining of beams as at SULF(?).}
 
 \begin{figure}
 \centering
@@ -181,9 +187,7 @@ In the context of colliding-pulse experiment the shape of the focal spot of the 
 Due to the high intensity of the lasers in use usually the focal spot of a weaker beam, i.e. before compression, before final amplification etc., is imaged to avoid damaging the equipment. The energy of the actual focal spot on shot is then scaled from the low power image.
 A direct measurement of the actual focus at typical intensities used in wakefield experiments is very challenging and has to the knowledge of the author not been achieved so far. Recent attempts involved the full 3D characterisation of the wavefront of the collimated laser beam by applying an asymmetric Mach-Zehnder interferometer and scanning the entire beam profile over hundreds of shots (see TERMITES REF). 
 
-%\subsection{Dazzler and FROG}
-
-%Measure the pulse duration of the laser and the shape. Control over the shape of the laser pulse (rise, compression).
+\EliasComm{Present typical focal spot analysis. How much energy is in spot?}
 
 \subsection{Timing Diagnostics}
 
@@ -223,6 +227,8 @@ Two identically chirped pulses are being spectrally dispersed using a grating.
 
 Visible over hundreds of femtoseconds.
 
+\subsubsection{Crosscorrelator}
+
 \subsubsection{Necessary Considerations for Timing Beams}
 
 Light moves slower through media than through vacuum. The group velocity is reduced to EQUATION.
@@ -244,18 +250,19 @@ Attenuation has to be taken into account.
 
 In recent days the attenuators have been matched with compensator plates. So the timing difference should be within the coating, so few femtoseconds, assuming the plates are not loose and changed the matched angle and changing the thickness of material the light propagates through.
 
+Drifts in time and space over time. Monitoring over time durations. Show some results from Oxford report indicating the slow drift.
 
 \section{Gas Targets}
 
-In laser-wakefield acceleration (LWFA) the laser pulse propagates through the plasma and sets up a density modulation. To permit this propagation the density of the medium has to be below a certain threshold. This threshold is the critical density $n_c = m_e \epsilon_0 \omega^2/e^2$. A medium with electron density $n_e < n_c$ is referred to as `underdense'. At $\lambda = 800\,\mathrm{nm}$ these are typically gaseous targets. `Overdense', i.e. targets with a density higher as the critical density, are mostly solid or liquid targets in the context of Ti:Sa lasers. They are preferrably used for ion acceleration schemes (e.g. Target Normal Sheath Acceleration (TNSA) \cite{Wilks2001,Maksimchuk2000}) or to generate X-rays. 
+In laser-wakefield acceleration (LWFA) the laser pulse propagates through the plasma and sets up a density modulation. To permit this propagation the density of the medium has to be below a certain threshold. This threshold is the critical density $n_c = m_e \epsilon_0 \omega^2/e^2$. A medium with electron density $n_e < n_c$ is referred to as `underdense'. At $\lambda = 800\,\mathrm{nm}$ these are typically gaseous targets. `Overdense', i.e. targets with a density higher as the critical density, are mostly solid or liquid targets in the context of Ti:Sa lasers. They are preferrably used for ion acceleration schemes (e.g. (Target Normal) Sheath Acceleration (TNSA) \cite{Wilks2001,Maksimchuk2000}) or to generate X-rays. 
 
-For high intensity (HI) lasers with peak intensities around $10^{17}-10^{18}\,W\,cm^{-2}$ relativistic effects that change the critical density locally and can in some cases prevent the laser pulse from propagating become important. This effect is the principle of plasma mirrors which helps reducing the pre-pulse of the laser pulse and to improve the contrast. For LWFA experiments, however, densities well below $n_c$ are required. 
+For high intensity (HI) lasers with peak intensities around $10^{17}-10^{18}\,\mathrm{W\,cm^{-2}}$ relativistic effects that change the critical density locally and can in some cases prevent the laser pulse from propagating become important. This effect is the principle of plasma mirrors which helps reducing the pre-pulse of the laser pulse and to improve the contrast. For LWFA experiments, however, densities well below $n_c$ are required. 
 \vspace{\baselineskip}
 
 Gas and liquid targets offer the advantage of being used in high-repetition experiments as they can be destroyed and replenished in a short amount of time without significant re-alignment and debris production. The limiting factors are the performance of the vacuum system, the time it takes the gas flow to reach equilibrium and the repetition rate of the laser system in use. Facilities like FLASHForward that have in principle the capibilities and the ambition to operate at MHz repetition rate even have to consider ion and plasma dynamics and scintillation times for detectors.
 \vspace{\baselineskip}
 
-Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001}, gas cells or capillaries \cite{Leemans2006,Nakamura2007} and capillary targets with a pre-ionised plasma (using an electric discharge) \cite{Spence2001}.
+Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001}, gas cells or capillaries \cite{Leemans2006,Nakamura2007} and capillary targets with a pre-ionised plasma (using an electric discharge) \cite{Spence2001}. In some cases several targets of the same or different type or combined and staged together to achieve more favourable results.
 However, even within those types of targetry a large variety exists, each target tailored to different applications and purposes. 
 
 As listing and explaining all those different targets would be a hopeless task, the author will limit himself to focus on examples of gas jet and cell specimen relevant for the work presented later in this thesis.
@@ -268,12 +275,10 @@ If the dimensions are chosen...the divergence of the cone has to match a specifi
 
 The expanding gas cools down and in some cases can lead to the formation of clusters held together by the Van-der-Waals force between the atoms or molecules \cite{Hagena1972}. Clusters are being investigated as gas targets with potentially higher charge or beam stability as in self-injection. Suprasonic flows on the other hand might be useful for other applications including the production of betatron radiation. 
 
-
-Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. However, experimental results are less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014} and stability \cite{Desforges2014,Osterhoff2013} to set-ups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible.
+Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. However, experimental results are less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014} and stability \cite{Desforges2014,Osterhoff2013} to set-ups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible.
 \vspace{\baselineskip}
 
 Different geometries and sizes are being used depending on the application: for instance conical and rectangular, completely flat or double cones, diverging or converging. Different nozzle types and sizes have advantages for certain applications, producing density profiles for enable specific injection mechanisms, provide a fairly smooth flat-top profile \cite{Semushin2001a} and so on.
-
 
 The nozzle size, i.e. the distance the laser pulse has to propagate through the medium, has to be matched with the laser in use, considering depletion and dephasing lengths to optimise the particle and radiation output, and to use the energy of the laser pulse to its fullest.
 \vspace{\baselineskip}
@@ -287,6 +292,7 @@ The material applied is generally a type of metal, varying from aluminium to ste
 \vspace{\baselineskip}
 
 \EliasComm{Some general bits about gas jets, how they work and then about shock injection.}
+\EliasComm{make a plot of a density profile.}
 
 \begin{figure}
 \centering
@@ -297,10 +303,12 @@ The material applied is generally a type of metal, varying from aluminium to ste
 
 \subsubsection{Blade}
 
+\EliasComm{Add picture of blade setup and simulation.}
+
 \subsection{Gas Cells}
 
-Gas cells are compartments filled with gas. Something about difference of gas volume required.
-
+Gas cells are compartments filled with gas. Something about difference of gas volume required. Steady state. Lower backing pressure and gas required.
+\EliasComm{Add a picture of a gas cell. Nelson's that we used...}
 
 , sometimes with variable length or with several stages in one cell to tailor the density profile for different injection mechanisms \cite{Pollock2011}.
 \vspace{\baselineskip}
@@ -323,7 +331,7 @@ Just as 3D printing methods have been considered for gas jets \cite{Jolly2012} r
 The properties and the behaviour of the plasma accelerator depend on the medium the laser propagates in. Tailoring the density profile or the gas in use can force the evolution of the bubble and inject electrons before wave-breaking. An easy handle is the choice of gas as it requires little engineering, but can have a significant impact on the injection mechanism in the wakefield accelerator.
 \vspace{\baselineskip}
 
-The author will present three examples of gases each related to a different injection mechanism.
+The author will present three examples of gases each related to a different injection mechanism introduced earlier.
 
 The first example is helium. At typical laser intensities in the context of LWFA helium is fully ionised and at first approximation the laser pulse propagates through a homogeneous medium. While propagating through the medium the laser pulse and the bubble evolve, the laser self-focuses, the wake becomes strongly non-linear and wave-breaking occurs, resulting in electrons being injected into the bubble: this is called self-injection as this mechanism is purely based on the evolution of the bubble in the plasma. This mechanism, however, is hence strongly coupled to the properties of the laser and its evolution in the plasma.
 Another gas that is fully ionised at these intensities is hydrogen. The downside is, however, the additional safety concern arising from its explosive capabilities. 
@@ -347,7 +355,7 @@ The most common diagnostics for a typical wakefield experiment setup are shadowg
 
 In a shadowgraphy light is shone through a transparent medium and then imaged onto a camera chip. Modulations in the density are visible in form of a change in refractive index: less dense areas are brighter while darker areas indicate higher densities. This shadow image or shadowgram is a useful tool to see features in plasmas, such as a plasma channel, resulting from density perturbations. Whilst features become very clear, the absolute density itself can not be derived from a single projection without further reference.
 \vspace{\baselineskip}
-
+\EliasComm{Some comment on refractive index and how shadowgraphy really works and which order of density perturbation it refers to.}
 In a LWFA set-up a shadowgraphy can be achieved by using a secondary laser beam, commonly called `the probe', passing transversely to the laser axis through the plasma. In addition, it has to be timed with the main beam to capture interesting features. If the probe pulse is too early, there will be no plasma channel and if too late the channel will have expanded already and blurred out on the image. The imaging system includes one or multiple lenses, depending on the path of the light, magnification desired and so on. 
 
 \begin{figure}[h]
@@ -373,7 +381,7 @@ In interferometry two collimated beams are overlapped with a phase difference re
 \end{figure}
 Interferometry is a diverse field and as there are a multitude of applications, there exist a variety of different setups for interferometers. The author will focus here on the set-ups of a Mach-Zehnder as is the most commonly used types in the experiments the author is involved in.
 \vspace{\baselineskip}
-
+\EliasComm{Make a new different schematic or add many new comments.}
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\columnwidth]{MachZehnder_Second.pdf}
@@ -397,7 +405,7 @@ This is an option if the field of view of the probing beam has well known region
 \EliasComm{require some information on symmetry.}
 
 \EliasComm{Characterising non-symmetric targets (in the lab).}
-
+\EliasComm{Add comment on Abel-Inevrsion.}
 
 
 \subsection{Self emission of the plasma}
@@ -455,7 +463,8 @@ Finally, a scintillator screen, e.g. lanex, is positioned in the beam path and i
 The correct assignment of the position on the screen to the correct electron energy is achieved by measuring the position of all components (lanex screen, magnet, TCC) and the magnet field strength accurately and then running a particle tracking code with these details.
 Each pixel has a certain error bar on its associated energy as the divergence of the electron beam, an offset at source or shot-to-shot pointing fluctuations could lead to different positions at the same electron energy.
 \vspace{\baselineskip}
-
+\EliasComm{Present typical path from raw image and tracking to the end.}
+\EliasComm{Make a new sketch.}
 A second lanex screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations or an overall pointing to achieve a more accurate determination of the energy.
 
 The width of the electron trace in the non-dispersion direction can be used to determine the divergence of the beam and cross-checked with the spectrum of the betatron radiation.
@@ -475,6 +484,8 @@ If one has a fiudicial no explicit features in the beam are required as the fiud
 
 Either methods can be used to deconvolve the spectrum and iteratively find the real energy spectrum udnerlying the measured distribution. More screens can increase the accuracy but the scattering of the beam passing through lanex becomes quite evident and distinct features blur out when drifting further because of this.
 
+\EliasComm{Add an image for deconvolution.}
+
 \subsection{Charge Measurement}
 
 Absolute charge measurements are challenging in an EMP rich enviroment as intense laser-plasma interactions.
@@ -486,6 +497,7 @@ The spatial resolution and dynamic range is superior to many cameras. The image 
 
 The downside of imaging plate technology is that it is not feasible as high repetition rate diagnostic. Any change of setup requires a new calibration.
 
+\EliasComm{Add images from image plates from this run and how to overlap them.}
 
 \section{X-ray and Gamma-ray Diagnostics}
 
@@ -506,6 +518,7 @@ To measure the divergence in both axes and as measurement of the intensity.
 At gamma-ray energies above 1 MeV one photon can generate a pair of electron-positron pairs when scattering on matter. The spectrum of the generated electrons and positrons are linked to the energy of the gamma photon. Based on this principle one method to measure the gamma spectrum is using a sheet of high-Z material to convert the gamma rays into matter and then measure the spectrum of these particles in a magnetic spectrometer (REF).
 
 This works well for several MeV radiation but becomes less sensitive at higher energies (REF?) when the energy spectrum of the generated particles becomes less sensitive to the photon energy.
+\EliasComm{Add an image.}
 
 \subsection{Gamma-ray Scintillator Arrays}
 
@@ -516,6 +529,7 @@ In contrast to other transmission studies the energy deposition and transmission
 
 
 \EliasComm{Deeper explanation of the setup and how the spectrum is being retrieved. Reference Keegan's paper.}
+\EliasComm{Provide picture of the arrays.}
 
 \subsubsection{Dual Axis Scintillator Array}
 
