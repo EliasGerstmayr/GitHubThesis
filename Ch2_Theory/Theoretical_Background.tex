@@ -42,7 +42,7 @@ With the definitions of the electric field $\mathbf{E}$ and the magnetic field $
 the equation of motion takes the familiar shape of the Lorentz force:
 
 \begin{equation}
-\frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = q \left(\mathbf{E} + \mathbf{v} \times \mathbf{B}\right).
+\boxed{\frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = q \left(\mathbf{E} + \mathbf{v} \times \mathbf{B}\right).}
 \end{equation}
 
 \subsection{Electron motion in a homogeneous electric field}
@@ -65,48 +65,54 @@ In order to understand the fundamental relations this method is based on, the mo
 \vspace{\baselineskip}
 
 Firstly, consider the motion of a single electron in a homogeneous magnetic field extending over the entire region of interest. The equation for the Lorentz force simplifies with $\mathbf{E} = \mathbf{0}$ to:
-\begin{equation}
-\frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = q \mathbf{v} \times \mathbf{B},
-\end{equation}
-
-or in terms of the relativistic momentum $\mathbf{p} = \gamma m \mathbf{v}$
-
-\begin{equation}
-\frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = \frac{q}{\gamma m} \mathbf{p} \times \mathbf{B}.
-\end{equation}
+\begin{subequations}
+\begin{align}
+\frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} &= q \mathbf{v} \times \mathbf{B},\\
+\frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} &= \frac{q}{\gamma m} \mathbf{p} \times \mathbf{B},
+\end{align}
+\end{subequations}
+in terms of the relativistic momentum $\mathbf{p} = \gamma m \mathbf{v}$
 
 Note that in this case the purely magnetic Lorentz force does not do any work. The instantaneous rate of work (power) is $P = \mathbf{F} \cdot \mathbf{v}$, where the force $\mathbf{F}$ is through virtue of the cross product always orthogonal and the dot product vanishes.
 
 We choose the coordinate system such that $\mathbf{B} = (0,0,B)^t = B e_z$. The momentum vector is simply $\mathbf{p} = (p_x,p_y,p_z)^t$.
 This then gives us the differential equations:
 
+\begin{subequations}
 \begin{align}
 \dot{p_x} &= \frac{qB}{\gamma m} p_y\\
 \dot{p_y} &= - \frac{qB}{\gamma m} p_x\\
 \dot{p_z} &= 0
 \end{align}
+\end{subequations}
 which gives us
 
+\begin{subequations}
 \begin{align}
 \ddot{p_x}  &= - \left(\frac{qB}{\gamma m}\right)^2 p_x\\
 \ddot{p_y}  &= - \left(\frac{qB}{\gamma m}\right)^2 p_y
 \end{align}
+\end{subequations}
 which can be solved by a periodic motion of type $p_x(t) = C \sin(\omega t) + D \cos(\omega t)$ with $\omega = qB/\gamma m$. 
 
 $\mathbf{p_\perp}$ be the momentum vector of the particle perpendicular to the magnetic field lines and $\mathbf{p_\parallel}$ the component parallel to the magnetic field (z). Assume initial conditions $p_x(t=0) = |\mathbf{p_\perp}| = p_\perp$ and $p_y(t=0)=0$. We get these equations for the momenta:
 
+\begin{subequations}
 \begin{align}
 p_x(t) &= p_\perp \cos(\omega t)\\
 p_y(t) &= - p_\perp \sin(\omega t) 
 \end{align}
+\end{subequations}
 The solution for the z-motion is trivial $p_z = p_{z,0}$.
 
 or in terms of the trajectories with $x(0) = 0, y(0) = p_\perp/qB, z(0) = 0$
-\begin{align}
+\begin{subequations}
+\begin{empheq}[box=\widefbox]{align}
 x(t) &= \frac{p_\perp}{q B} \sin(\omega t)\\
 y(t) &= \frac{p_\perp}{q B} \cos(\omega t)\\
 z(t) &= \frac{p_{z,0}}{\gamma m} t
-\end{align}
+\end{empheq}
+\end{subequations}
 
 The motion of the electron consists of two decoupled motions: one at the constant, initial velocity parallel to the magnetic field vector in z, the second motion is a circular motion in the x-y plane. This is called a cyclotron motion. For now we will ignore the dissipation of energy in form of radiation due to the acceleration of the electron and accept the result that the Lorentz force conserves the total momentum and energy of the particle in this case.
 \vspace{\baselineskip}
@@ -205,10 +211,12 @@ For a medium close to vacuum or an unperturbed plasma one one can assume $\Phi =
 In the case of an infinite plane wave the transversal gradient $\nabla_\perp$ is zero.
 
 This means we obtain two separate components:
+\begin{subequations}
 \begin{align}
 \frac{\partial}{\partial t}\mathbf{u}_\perp &= 0,\\
 \frac{\partial}{\partial t}\mathbf{u}_\parallel &= \nabla_\parallel \gamma mc^2.
 \end{align}
+\end{subequations}
 
 From the perpendicular component we see that the transverse canonical momentum is conserved: $\mathbf{p}_\perp + q\mathbf{A} = 0$. If $q = -e$ and $e\mathbf{A}_\perp = \mathbf{a}_\perp$, then $\mathbf{p}_\perp = \mathbf{a}_\perp$. In terms of the Cartesian coordinates, this means $p_x = a_x, p_y = a_y$.
 
@@ -220,7 +228,7 @@ The parallel component will be considered in the waveframe, using the quasistati
 
 Assuming an unperturbed stationary plasma, the initial conditions are $\gamma = 1$ and $p_\parallel = 0$ and integrating the previous equation gives:
 \begin{align}
-c p_\parallel - \gamma mc^2 &= - mc^2,\\
+c p_\parallel - \gamma mc^2 &= - mc^2,\nonumber\\
 cp_\parallel + mc^2 &= \gamma mc^2.
 \end{align}
 
@@ -233,27 +241,33 @@ where $a^2 = p^2_\perp$.
 
 Normalising this result by $mc$ we now have:
 
+\begin{subequations}
 \begin{align}
 p_x &= a_x,\\
 p_y &= a_y,\\
 p_z &= \frac{1}{2} a^2_z.
 \end{align}
+\end{subequations}
 
 In normalised units $\mathbf{p} = \gamma \mathbf{v}$ and this can be written as:
 
+\begin{subequations}
 \begin{align}
 \gamma \frac{\mathrm{d}x}{\mathrm{d}t} &= a_x,\\
 \gamma \frac{\mathrm{d}y}{\mathrm{d}t} &= a_y,\\
 \gamma \frac{\mathrm{d}z}{\mathrm{d}t} &= \frac{a^2}{2}.
 \end{align}
+\end{subequations}
 
 Changing from $t$ to proper time $\tau$, we transform via $\mathrm{d}\tau = \gamma^{-1}\mathrm{d}t$, simply giving the equation of motions in term of $\tau$:
 
+\begin{subequations}
 \begin{align}
 \frac{\mathrm{d}x}{\mathrm{d}\tau} &= a_x,\\
 \frac{\mathrm{d}y}{\mathrm{d}\tau} &= a_y,\\
 \frac{\mathrm{d}z}{\mathrm{d}\tau} &= \frac{a^2}{2}.
 \end{align}
+\end{subequations}
 
 Let us assume a laser field with linear polarisation in $x$, described by the vector potential
 \begin{equation}
@@ -271,21 +285,25 @@ where $\mathbf{e}_x$ is the unit vector in the x-coordinate.
 
 Using this explicit vector potential and integrating the equation of motions, results in:
 
+\begin{subequations}
 \begin{align}
 x(\tau) &= \frac{c a_0}{\omega}\sin(\omega \tau),\\
 y(\tau) &= 0,\\
 z(\tau) &= \frac{c a^2_0}{4}\left(\tau + \frac{1}{2\omega}\sin(2\omega\tau)\right),
 \end{align}
+\end{subequations}
 where we chose the initial conditions $x(0)=y(0)=z(0)=0$ and returned to non-normalised units.
 
 The electron is performing a periodic oscillation around the z-axis, whilst the motion in the z-axis is composed of a constant drift and another oscillation (see figure \ref{Theory:Figs:FigureOfEight} (left)). This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame (see figure \ref{Theory:Figs:FigureOfEight} (right)). For $a_0 \leq 1$ the motion in z is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
 
 The extremal values are then 
 
-\begin{align*}
+\begin{subequations}
+\begin{align}
 x_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0}{\omega}\\
 z_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0^2 \pi}{8 \omega} (2n+1),
-\end{align*}
+\end{align}
+\end{subequations}
 with $z_{max}$ being unbound as the electron drifts forwards in the lab frame. The drift velocity is (ADD NUMBER HERE) which shows that particles can be accelerated using this method. For a realistic $a_0$ of NUMBER, this gives us a drift momentum of NUMBER. The energies we can achieve in wakefield acceleration is much larger.
 
 
@@ -321,7 +339,7 @@ resulting in
 Now using the canonical momentum $\mathbf{u} = \mathbf{p} - \mathbf{a}$ the time derivative can be re-written and we can also substitute $\mathbf{v} = \mathbf{p}/\gamma = (\mathbf{u}+\mathbf{a})/\gamma$:
 
 \begin{align}
-\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u} &= c\nabla\phi - (c\nabla\mathbf{a})\cdot\frac{(\mathbf{u}+\mathbf{a})}{\gamma},\\
+\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u} &= c\nabla\phi - (c\nabla\mathbf{a})\cdot\frac{(\mathbf{u}+\mathbf{a})}{\gamma},\nonumber\\
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u} &= c\nabla\phi - \frac{1}{\gamma} c \nabla \frac{\mathbf{a}^2}{2}-c\nabla\mathbf{a}\cdot\frac{\mathbf{u}}{\gamma}.
 \end{align}
 
@@ -330,7 +348,7 @@ For the situation of an electromagnetic pulse at high frequency $\omega$ of long
 When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear order $\mathbf{a}$ and the potential $\phi$ amount to zero:
 
 \begin{equation}
-\left\langle\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u}\right\rangle \sim -\left\langle\frac{1}{\gamma}c\nabla\frac{\mathbf{a}^2}{2}\right\rangle,
+\boxed{\left\langle\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u}\right\rangle \sim -\left\langle\frac{1}{\gamma}c\nabla\frac{\mathbf{a}^2}{2}\right\rangle,}
 \end{equation}
 which is the ponderomotive force $\mathbf{F}_p$ on on a single electron. Since $\mathbf{F}_p \sim \nabla <\mathbf{a}^2>$, this implies $\mathbf{F}_p \sim \nabla<I>$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
 
@@ -482,13 +500,11 @@ Starting with Gauss' Law:
 where we used that the displacement is only along $x$, simplifying the nabla operator to a spatial derivative in $x$.
 
 We assume a uniform plasma so the charge density is a constant $\rho = e n_{e0} = const.$. Integrating the previous equation gives an extra factor times the displacement X:
-\begin{equation}
-E_x = \frac{1}{\epsilon_0} \int^x_0 \rho (x') dx' + E_x(0) = \frac{e n_{e0}}{\epsilon_0} X.
-\end{equation}
+\begin{align}
+E_x = \frac{1}{\epsilon_0} \int^x_0 \rho (x') dx' + E_x(0) &= \frac{e n_{e0}}{\epsilon_0} X,\nonumber\\
+E &= \frac{e n_e}{\epsilon_0} X.
+\end{align}
 
-\begin{equation}
-E = \frac{e n_e}{\epsilon_0} X
-\end{equation}
 
 If we now consider a force based on this field, we immediately see that this is equivalent to the equation of motion of a harmonic oscillator: 
 
@@ -499,7 +515,7 @@ m_e \frac{\mathrm{d}^2 X}{\mathrm{d}t^2} = - \frac{e^2 n_e}{\epsilon_0} X = - \o
 with the (plasma) frequency
 
 \begin{equation}
-\omega_p = \sqrt{\frac{n_{e0} e^2}{\epsilon_0 m_e}},
+\boxed{\omega_p = \sqrt{\frac{n_{e0} e^2}{\epsilon_0 m_e}},}
 \end{equation}
 
 and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
@@ -547,7 +563,7 @@ where $\omega$ is the frequency of the electromagnetic wave.
 The group velocity reaches zero for $\omega_p = \omega_L$, where $\omega_p$ is the plasma frequency, derived in the previous section and given by $\omega_p = (n_e e^2/\epsilon_0 m_e)^{1/2}$. Solving this for the density, we obtain a relation for the critical density:
 
 \begin{equation}
-n_c = \frac{m_e \epsilon_0 \omega^2}{e^2},
+\boxed{n_c = \frac{m_e \epsilon_0 \omega^2}{e^2},}
 \end{equation}
 which only depends on the frequency of the incident electromagnetic wave, and so we can write the refractive index $\eta = c/v_p$ in terms of the electron density $n_e$ and the critical density $n_c$:
 
@@ -977,7 +993,7 @@ Similarly there is an equation for the emission angle of the electron:
 
 In terms of photon energy we can write
 \begin{equation}
-E_{\gamma,f} = \frac{E_{\gamma,i}}{1+\frac{E_{\gamma,i}}{m_e c^2}(1-\cos(\theta))}
+\boxed{E_{\gamma,f} = \frac{E_{\gamma,i}}{1+\frac{E_{\gamma,i}}{m_e c^2}(1-\cos(\theta))}}
 \end{equation}
 
 
@@ -1068,6 +1084,13 @@ In the rest frame we can now treat this normally for Compton scattering. The pho
 E'_f = \frac{E'_i}{1+\frac{E'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
 where $\alpha'$ is the difference between the incident and outgoing angle. As for normal Compton scattering the photon is now losing energy in this frame.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{boost_temp.png}
+\caption{Boost and reference frames.}
+\end{figure}
+\EliasComm{Make own illustration of kinematics and boosted frame. (This is a screenshot from some slides, will make own illustration)}
 
 \begin{equation}
 \cos \alpha' = \mathbf{n'_f} \cdot \mathbf{n'_i} = \cos \theta'_i \cos \theta'_f + \sin \theta'_i \sin \theta'_f \cos(\phi'_i - \phi'_f)
