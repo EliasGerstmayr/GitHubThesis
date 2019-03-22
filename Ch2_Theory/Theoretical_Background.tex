@@ -504,6 +504,12 @@ with the (plasma) frequency
 
 and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
 
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{omegap_lambdap_density.pdf}
+\caption{Plasma frequency and wavelength at density.}
+\end{figure}
+
 A typical regime wakefield accelerators at a Gemini class laser operate in is at an electron density of around $10^{18} cm^{-3}$. This corresponds to a plasma frequency of around $5.6 \times 10^{13} \,\mathrm{Hz}$ or $\lambda_p \approx 33\,\mathrm{\mu m}$.
 
 \EliasComm{Add sketch on displacing slabs.}
@@ -513,14 +519,6 @@ A typical regime wakefield accelerators at a Gemini class laser operate in is at
 The critical plasma density $n_c$ is the electron density at which electromagnetic waves can no longer propagate through the plasma. A plasma with a density $n_e < n_c$ is transparent and called `underdense'. For $n_e > n_c$ the plasma is opaque and `overdense'. LWFA requires the laser pulse to propagate through the plasma to drive the wave and hence targets used are typically operating at densities of only a fraction of $n_c$, whilst many ion acceleration mechanisms are based on overdense media.
 \vspace{\baselineskip}
 
-
-\begin{figure}
-\centering
-\includegraphics[width=0.8\columnwidth]{critical_density.pdf}
-\caption{Critical density for wavelengths up to $2 \mu m$. The critical density corresponding to a central wavelength of $0.8 \mu m$, as for the commonly used titanium-doped sapphire (Ti:Sa) lasers, is marked on the graph.}
-\end{figure}
-
-\EliasComm{add plot for group velocity vs. density}
 \EliasComm{add longer range to include for instance CO2 lasers and mark typical laser frequencies used.}
 \EliasComm{write about nonlinear dispersion relation}
 
@@ -539,6 +537,12 @@ v_g &= \frac{\partial\omega_L}{\partial k} = c \sqrt{1-\left(\frac{\omega_p}{\om
 where $\omega$ is the frequency of the electromagnetic wave.
 
 \EliasComm{Add specific example 1m air or vacuum.}
+
+\begin{figure}
+\centering
+\includegraphics[width= 0.5\columnwidth ]{GroupVelocity_density.pdf}\includegraphics[width=0.5\columnwidth]{critical_density.pdf}
+\caption{Group velocity at different densities for two photon wavelengths. Critical density for wavelengths up to $2 \mu m$. The critical density corresponding to a central wavelength of $0.8 \mu m$, as for the commonly used titanium-doped sapphire (Ti:Sa) lasers, is marked on the graph.}
+\end{figure}
 
 The group velocity reaches zero for $\omega_p = \omega_L$, where $\omega_p$ is the plasma frequency, derived in the previous section and given by $\omega_p = (n_e e^2/\epsilon_0 m_e)^{1/2}$. Solving this for the density, we obtain a relation for the critical density:
 
@@ -608,6 +612,7 @@ The dephasing length is then
 L_{dp} = \lambda_p \frac{n_c}{n_e}.
 \end{equation}
 
+\EliasComm{add plot of dephasing length.}
 This gives the counter-intuitive result that one has to choose low plasma densities (corresponding to lower field gradients) to accelerate particles to higher energies. In addition, this means that one has to balance the between high charge (requiring high $n_e$) and high peak energy. To solve this dilemma and optimise charge and energy, a variety of injection mechanisms (internal \cite{Faure2006,Geddes2008,Pak2010,Buck2013} and external \cite{Hidding2012b,Steinke2016}) have been proposed. The maximum energy gain $W_{max}$ for a 3D non-linear wake is given by \cite{Lu2006}
 \begin{equation}
 W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.
