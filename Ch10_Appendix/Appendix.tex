@@ -6,11 +6,55 @@
 
 \section{Maxwell's equations}
 
+In differential form
+
+\begin{align}
+\nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0}\\
+\nabla \cdot \mathbf{B} &= 0\\
+\nabla \times \mathbf{E} &= - \frac{\partial \mathbf{B}}{\partial t}\\
+\nabla \times \mathbf{B} &= \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}
+\end{align}
+
+In integral form
+
 \section{Relativistic Transformations}
 
 Boosts
 
 \section{Radiation Integrals}
+
+Lienard Wiechart potentials and fields.
+
+Jackson:
+\begin{equation}
+\mathbf{E} (\mathbf{r}, t) = \frac{e}{4 \pi \epsilon_0} \left[\frac{\mathbf{n}-\mathbf{\beta}}{\gamma^2 R^2 (1-\mathbf{\beta} \cdot \mathbf{n})^3}+\frac{\mathbf{n}\times\left[(\mathbf{n}-\mathbf{\beta})\times\dot{\mathbf{\beta}}\right]}{cR(1-\mathbf{\beta}\cdot\mathbf{n})^3}\right]_{retarded}
+\end{equation}
+
+\begin{equation}
+\mathbf{B}(\mathbf{r},t) = \frac{\mathbf{n}\times\mathbf{E}}{c}
+\end{equation}
+
+Poynting vector
+\begin{equation}
+\mathbf{S} = \mu_0^{-1} \mathbf{E}\times\mathbf{B} = (c \mu_0)^{-1} \mathbf{E} \times \mathbf{n} \times \mathbf{E}
+\end{equation}
+
+\begin{equation}
+[\mathbf{S} \cdot \mathbf{n}]_{retarded} = \frac{e^2}{16 \pi c \epsilon_0} \left[ \frac{1}{R^2}|\frac{\mathbf{n} \times [(\mathbf{n}-\mathbf{\beta})\times\dot{\mathbf{\beta}}]}{(1-\mathbf{\beta}\cdot \mathbf{n})^3}|^2\right]_{retarded}
+\end{equation}
+
+\begin{equation}
+\frac{dP(t)}{d\Omega} = R^2 [\mathbf{S}\cdot\mathbf{n}]_{retarded}
+\end{equation}
+
+Total power radiated:
+\begin{equation}
+P = \frac{e^2 \gamma^6}{6 \pi c \epsilon_0} \left( |\\mathbf{\dot{\beta}}|^2 - |\mathbf{\beta} \times \dot{\mathbf{\beta}}|^2\right)
+\end{equation}
+
+%\begin{equation}
+%\frac{d^2 I}{d\omega d\Omega} = \frac{e^2 \omega^2}{16 \pi^3 c \epsilon_0} |\int_{-\inf}^\inf \mathbf{n} \times (\mathbf{n} \times \mathbf{\beta}) e^{i\omega (t'- \mathbf{n}\cdot\mathbf{r}(t')/c)} dt|^2
+%\end{equation}
 
 \section{Feynman diagrams and convention}
 
