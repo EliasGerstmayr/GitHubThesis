@@ -59,12 +59,7 @@ Let us assume a field strength $E = 100\,\mathrm{MeV/m}$, then the electron will
 
 \subsection{Electron motion in a homogeneous magnetic field}
 
-The energy of electrons in wakefield experiments can be determined in experiment using an electron energy spectrometer based on magnetic dispersion. The electrons are deflected using a dipole magnet and detected on a scintillating screen.
-
-In order to understand the fundamental relations this method is based on, the motion of a single electron in a homogeneous magnetic field is considered and analytically solved: first for a motion completely within the magnetic field, then the case of an electron passing through a region of a homogeneous magnetic field of finite extent, but also without considering fringe fields or gradients. In reality, the magnetic fields are measured or simulated and particle tracked using numerical methods.
-\vspace{\baselineskip}
-
-Firstly, consider the motion of a single electron in a homogeneous magnetic field extending over the entire region of interest. The equation for the Lorentz force simplifies with $\mathbf{E} = \mathbf{0}$ to:
+Consider the motion of a single electron in a homogeneous magnetic field extending over the entire region of interest. The equation for the Lorentz force simplifies with $\mathbf{E} = \mathbf{0}$ to:
 \begin{subequations}
 \begin{align}
 \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} &= q \mathbf{v} \times \mathbf{B},\\
@@ -73,7 +68,7 @@ Firstly, consider the motion of a single electron in a homogeneous magnetic fiel
 \end{subequations}
 in terms of the relativistic momentum $\mathbf{p} = \gamma m \mathbf{v}$
 
-Note that in this case the purely magnetic Lorentz force does not do any work. The instantaneous rate of work (power) is $P = \mathbf{F} \cdot \mathbf{v}$, where the force $\mathbf{F}$ is through virtue of the cross product always orthogonal and the dot product vanishes.
+Note that in this case the purely magnetic Lorentz force does not do any work. The instantaneous rate of work (power) is $P = \mathbf{F} \cdot \mathbf{v}$, where the force $\mathbf{F}$ is through virtue of the cross product always orthogonal to $\mathbf{v}$ and the dot product vanishes.
 
 We choose the coordinate system such that $\mathbf{B} = (0,0,B)^t = B e_z$. The momentum vector is simply $\mathbf{p} = (p_x,p_y,p_z)^t$.
 This then gives us the differential equations:
@@ -105,57 +100,24 @@ p_y(t) &= - p_\perp \sin(\omega t)
 \end{subequations}
 The solution for the z-motion is trivial $p_z = p_{z,0}$.
 
-or in terms of the trajectories with $x(0) = 0, y(0) = p_\perp/qB, z(0) = 0$
+or in terms of the trajectories with $x(0) = 0, z(0) = 0, y(0) = p_\perp/qB = r_{Larmor}$
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
-x(t) &= \frac{p_\perp}{q B} \sin(\omega t)\\
-y(t) &= \frac{p_\perp}{q B} \cos(\omega t)\\
+x(t) &= r_{Larmor} \sin(\omega t)\\
+y(t) &= r_{Larmor} \cos(\omega t)\\
 z(t) &= \frac{p_{z,0}}{\gamma m} t
 \end{empheq}
 \end{subequations}
 
-The motion of the electron consists of two decoupled motions: one at the constant, initial velocity parallel to the magnetic field vector in z, the second motion is a circular motion in the x-y plane. This is called a cyclotron motion. For now we will ignore the dissipation of energy in form of radiation due to the acceleration of the electron and accept the result that the Lorentz force conserves the total momentum and energy of the particle in this case.
-\vspace{\baselineskip}
-
-The radius of the circular motion of the electron, called the Larmor radius, depends on the total momentum in the x-y plane and the field strength: 
+The radius of the circular motion of the electron is called the Larmor radius. It depends on the total momentum in the x-y plane and the field strength: 
 \begin{equation}
 r_{Larmor} = |\mathbf{p}_\perp|/eB,
 \end{equation}
 where $e$ is the charge of the electron and $\mathbf{p}_\perp$ is the component of the momentum vector $\mathbf{p}$ that is perpendicular to the field component of the magnetic field.
 \vspace{\baselineskip}
 
-Now consider an external magnetic field restricted to a circle of radius $r_b$ embedded in an otherwise completely field-free region. The following derivation is based on Stuart Mangles' (Imperial College) PhD thesis.
-\begin{align}
-\mathbf{B} &= B e_z \, &r \leq r_b,\nonumber \\
-&= 0 &r > r_b
-\end{align}
-
-The angular deflection of a particle in this case can be solved analytically using simple geometry.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\columnwidth]{elecspec.pdf}
-\caption{Visualisation of an electron deflected in a homogeneous circular magnetic field (grey) with radius $r_b$. The larger green circle indicates the Larmor radius, determining the electron trajectory (blue) from the point of entry into the field (A) to its exit point (C) resulting in a total deflection $\theta$.}
-\end{figure}
-
-Drawing the circular field region for the magnetic field and the electron entering the field, one can then graphically indicate its Larmor radius, equivalent to its expected motion for the region with the constant B-field. The angles in this constellation are determined using the trigonometric relation that the angles in a triangle have to add up to $\pi$:
-\begin{equation}
-2 \alpha + \theta = \pi,
-\end{equation}
-where $\theta$ is the deflection angle and $\alpha$ the angle indicated in the graphic (see figure).
-
-Relating this to the angles to substitute $\alpha$:
-\begin{equation}
-\tan \alpha = \frac{r_L}{r_b},
-\end{equation}
-and then expressing this into parameters we can measure in experiment we reach
-\begin{align}
-\tan \frac{\theta}{2} &= \frac{r_b}{r_L},\nonumber\\
-&= \frac{e B r_b}{p_\perp}.
-\end{align}
-
-In a typical LWFA experiment $p_\perp$ will be dominated by the component in the laser propagation axis. 
-
+The motion of the electron consists of two decoupled motions: one at the constant, initial velocity parallel to the magnetic field vector in z, the second motion is a circular motion in the x-y plane. This is called a cyclotron motion. For now we will ignore the dissipation of energy in form of radiation due to the acceleration of the electron and accept the result that the Lorentz force conserves the total momentum and energy of the particle in this case.
+\vspace{\baselineskip}
 
 
 \subsection{Electron motion in a monochromatic plane EM wave}
@@ -313,7 +275,7 @@ with $z_{max}$ being unbound as the electron drifts forwards in the lab frame. T
 \subsection{Ponderomotive Force}
 
 
-In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates through an underdense plasma and drives a wave via the ponderomotive force which is proportional to the gradient of the laser intensity. There exists a variety of derivations. The following derivation is based on Alec Thomas' PhD thesis (Imperial College, 2007) (REF).
+In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates through an underdense plasma and drives a wave via the ponderomotive force which is proportional to the gradient of the laser intensity. There exists a variety of derivations. The following relativistic derivation is based on Alec Thomas' PhD thesis (Imperial College, 2007) (REF).
 \EliasComm{add a reference here.}
 
 We start with the Euler-Lagrange equations after plugging in the Lagrangian in terms of the potentials $\mathbf{A}$ and $\Phi$ as given as intermediate step in equation \eqref{Theory:Eqns:EoMLorentzRaw} on page \pageref{Theory:Eqns:EoMLorentzRaw}:
@@ -409,9 +371,11 @@ USE ONE BIT TO EXPLAIN LASER WAKEFIELD ACCELERATION, TAKE THE SECOND TERM TO GO 
 
 
 
-\section{Plasmas}
+\section{Laser Propagation in an Underdense Medium}
 
-\subsection{General Properties}
+\subsection{Laser Propagation in Vacuum}
+
+\subsection{General Properties of Plasmas}
 
 Plasmas are frequently referred to as the `4th state of matter' in addition to the more commonly in daily life encountered matter states solid, liquid and gaseous. Heating up a material at a constant pressure will take it from the solid to the liquid, then to the gas phase and finally will ionize the gas first partially, then completely. The gas is now charged and exhibits interesting collective behaviour due to the dominance of electromagnetic forces whilst upholding quasi-neutrality. This is called a plasma. Sometimes summarised in this definition: ``A quasi-neutral ionized gas that exhibits collective behaviour.'' (REF) However, setting `ionized gas' equal to `plasma' might be a too narrow description as the range of temperature and density scales is very wide for plasmas, including exotic states like the quark-gluon plasma. Although plasmas are probably the most common state of matter in the universe, they barely exists on earth outside of the laboratory environment.
 \vspace{\baselineskip}
@@ -530,7 +494,7 @@ A typical regime wakefield accelerators at a Gemini class laser operate in is at
 
 \EliasComm{Add sketch on displacing slabs.}
 
-\subsection{The Critical Density}
+\subsection{The Critical Density (Laser Propagation in Plasma)}
 
 The critical plasma density $n_c$ is the electron density at which electromagnetic waves can no longer propagate through the plasma. A plasma with a density $n_e < n_c$ is transparent and called `underdense'. For $n_e > n_c$ the plasma is opaque and `overdense'. LWFA requires the laser pulse to propagate through the plasma to drive the wave and hence targets used are typically operating at densities of only a fraction of $n_c$, whilst many ion acceleration mechanisms are based on overdense media.
 \vspace{\baselineskip}
@@ -579,7 +543,7 @@ For $n_e > n_c$, i.e. an overdense plasma, the refractive index is imaginary and
 \EliasComm{add some explicit curves for transmission/absorption and reflection?}
 
 
-
+\subsection{Relativistic Self-focusing and guiding}
 
 
 \section{Wakefield Acceleration}
@@ -715,6 +679,40 @@ Charged particles always then produce radiation when they are being accelerated.
 
 The classical relativistic description requires using retarded Lienard-Wiechert potentials to account appropriately for causality. The trajectories of the electrons as solved before have to be integrated over. In a later section we will discuss why this treatment also lacks in some extreme cases. 
 
+\subsection{Synchrotron Radiation}
+
+In a synchrotron a charged bunch is constantly redirected to remain on a circular orbit. This redirection is an acceleration and hence results in the emission of radiation.
+
+Assume the charged bunch is moving in one big homogeneous magnetic field ignoring separate acceleration and bending modules.
+From the previous treatment we know that the charge will move along a Larmor radius determined by the charge mass ratio and the strength of the field. Relativistic particles have an increased effective mass.
+
+We can take this periodic equation of motion and integrate to obtain a spectrum.
+
+Scalings: Power scales to the power of 4?
+
+Insertion devices:
+Instead of bending magnets on one big circular trajectory, force the bunch to oscillate strongly while moving through a series of magnets of alternating polarisation. 
+
+Strongest acceleration at the turning points.
+Cone related to gamma factor of electrons.
+
+Wiggler parameter: wiggler and undulator regime.
+
+Coherent and incoherent radiation.
+
+This is using the magnetic (!) field!
+
+\begin{equation}
+K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c}
+\end{equation}
+
+\EliasComm{energy loss per turn.}
+\EliasComm{sketch on emission and cones.}
+
+\subsection{Electron in a periodically alternating magnetic field}
+
+\subsection{Undulator and Wiggler Radiation}
+
 \subsection{Electron in a cylindrically symmetric electric field}
 
 
@@ -823,37 +821,8 @@ with the initial conditions $r(t=0) = r_{\beta 0}$ and $\dot{r}(t=0) = 0$.
 
 \EliasComm{Make plot with trajectories.}
 
-\subsection{Synchrotron Radiation}
 
-In a synchrotron a charged bunch is constantly redirected to remain on a circular orbit. This redirection is an acceleration and hence results in the emission of radiation.
 
-Assume the charged bunch is moving in one big homogeneous magnetic field ignoring separate acceleration and bending modules.
-From the previous treatment we know that the charge will move along a Larmor radius determined by the charge mass ratio and the strength of the field. Relativistic particles have an increased effective mass.
-
-We can take this periodic equation of motion and integrate to obtain a spectrum.
-
-Scalings: Power scales to the power of 4?
-
-Insertion devices:
-Instead of bending magnets on one big circular trajectory, force the bunch to oscillate strongly while moving through a series of magnets of alternating polarisation. 
-
-Strongest acceleration at the turning points.
-Cone related to gamma factor of electrons.
-
-Wiggler parameter: wiggler and undulator regime.
-
-Coherent and incoherent radiation.
-
-This is using the magnetic (!) field!
-
-\begin{equation}
-K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c}
-\end{equation}
-
-\EliasComm{energy loss per turn.}
-\EliasComm{sketch on emission and cones.}
-
-\subsection{Undulator and Wiggler Radiation}
 
 \subsection{Betatron Radiation}
 
@@ -1298,7 +1267,7 @@ Cooling of spectra versus competing processes.
 \section{Pair Production}
 
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.4\columnwidth]{feyn_BW1.pdf}\includegraphics[width=0.4\columnwidth]{feyn_BW2.pdf}
 \caption{Feynman diagrams for Breit-Wheeler pair production. Time axis from left to right.}
