@@ -398,9 +398,9 @@ In that sense quasi-neutrality is also a manifestation of `collective behaviour'
 
 \subsection{Plasma Formation and Recombination}
 
-Ionisation describes the process of removing an electron from a neutral atom, tipping the charge balance from zero to positive and turning the atom to an ion. Already ionised atoms can be further ionised by stripping more and more electrons from the shells, but this process requires more and more energy as the remainig electrons are bound tighly to the core.
+Ionisation describes the process of removing an electron from the shell of a neutral atom or a not fully ionised ion. Already ionised atoms can be further ionised reaching higher ionisation states by stripping more and more electrons from the shells, but this process requires more and more energy as the remaining electrons are bound tightly to the core. The ionisation of a neutral atom can be expressed by $X + \mathrm{energy} \rightarrow X^+ + e^-$, whereas higher order ionisation will follow the pattern $X^{n+1} + \mathrm{energy} \rightarrow X^{n+} + e^-$.
 
-In the context of this work high intensity lasers are used to drive waves in plasmas. A change in the number density of free electrons through ionisation effects can influence the dynamics of the system. The plasma is usually formed by filling a gas compartment or firing a gas jet with a neutral gas, assuming that the laser pulse ionises the gas fully to first approximation.
+In the context of this work high intensity lasers are used to drive waves in plasmas. A change in the number density of free electrons through ionisation effects can influence the dynamics of the system. The plasma is usually formed by filling a gas compartment or firing a gas jet with a neutral gas, assuming that the laser pulse ionises the gas fully to first approximation or by pre-ionising targets using an electrical discharge or a secondary laser.
 \vspace{\baselineskip}
 
 There are different mechanisms through which an oscillating laser field ionises a gas. In addition to single photon ionisation, there is multi-photon ionisation \cite{Keldysh1965}, where one electron is excited by absorbing multiple photons before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}. In the case of very high field strengths, the Coulomb potential might be completely suppressed by the laser field and the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
@@ -424,6 +424,34 @@ I = \frac{c\epsilon_0^3 \pi^2 V^4_e}{2e^6 Z^2} \approx 4 \times 10^{9} \frac{V_e
 
 For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
 The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF). 
+
+\begin{table}
+\centering
+\begin{tabular}{l|r|l}
+Transition & $V_e [\mathrm{eV}]$ & $I_L [\mathrm{W\,cm^{-2}}]$\\ \hline \hline
+$H \rightarrow H^+$ & $13.6$ & $1.4 \times 10^{14}$ \\ \hline
+$He \rightarrow He^+$ & $24.6$ & $1.5 \times 10^{15}$\\
+$He^+ \rightarrow He^{2+}$ & $54.4$ & $8.8 \times 10^{15}$\\ \hline
+$N \rightarrow N^+$ & $14.5$ & $1.8 \times 10^{14}$\\
+$N^+ \rightarrow N^{2+} $ & $29.6$ & $7.7 \times 10^{14}$\\
+$N^{2+} \rightarrow N^{3+} $ & $47.4$ & $2.2 \times 10^{15}$\\
+$N^{3+} \rightarrow N^{4+} $ & $77.5$ & $9.0 \times 10^{15}$\\
+$N^{4+} \rightarrow N^{5+} $ & $97.9$ & $1.5 \times 10^{16}$\\
+$N^{5+} \rightarrow N^{6+} $ & $552.1$ & $1.0 \times 10^{19}$\\
+$N^{6+} \rightarrow N^{7+} $ & $667$ & $1.6 \times 10^{19}$
+\end{tabular}
+\caption{Binding energies and required laser intensities for barrier suppression ionisation. REF NIST ASD. Using equation XX with Z being $Z_{eff}=final state ionisation level$ of ions.}
+% @Misc{NIST_ASD,
+%author = {A.~Kramida and {Yu.~Ralchenko} and
+%J.~Reader and {and NIST ASD Team}},
+%HOWPUBLISHED = {{NIST Atomic Spectra Database
+%(ver. 5.6.1), [Online]. Available:
+%{\tt{https://physics.nist.gov/asd}} [2019, March 25].
+%National Institute of Standards and Technology,
+%Gaithersburg, MD.}},
+%year = {2018},
+%}
+\end{table}
 
 \EliasComm{Check that this does not rely on tunnel ionisation.}
 \EliasComm{Write about tunnel ionisation.}
@@ -466,7 +494,7 @@ where we used that the displacement is only along $x$, simplifying the nabla ope
 We assume a uniform plasma so the charge density is a constant $\rho = e n_{e0} = const.$. Integrating the previous equation gives an extra factor times the displacement X:
 \begin{align}
 E_x = \frac{1}{\epsilon_0} \int^x_0 \rho (x') dx' + E_x(0) &= \frac{e n_{e0}}{\epsilon_0} X,\nonumber\\
-E &= \frac{e n_e}{\epsilon_0} X.
+E &= \frac{e n_{e0}}{\epsilon_0} X.
 \end{align}
 
 
@@ -492,14 +520,12 @@ and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
 
 A typical regime wakefield accelerators at a Gemini class laser operate in is at an electron density of around $10^{18} cm^{-3}$. This corresponds to a plasma frequency of around $5.6 \times 10^{13} \,\mathrm{Hz}$ or $\lambda_p \approx 33\,\mathrm{\mu m}$.
 
-\EliasComm{Add sketch on displacing slabs.}
 
 \subsection{The Critical Density (Laser Propagation in Plasma)}
 
 The critical plasma density $n_c$ is the electron density at which electromagnetic waves can no longer propagate through the plasma. A plasma with a density $n_e < n_c$ is transparent and called `underdense'. For $n_e > n_c$ the plasma is opaque and `overdense'. LWFA requires the laser pulse to propagate through the plasma to drive the wave and hence targets used are typically operating at densities of only a fraction of $n_c$, whilst many ion acceleration mechanisms are based on overdense media.
 \vspace{\baselineskip}
 
-\EliasComm{add longer range to include for instance CO2 lasers and mark typical laser frequencies used.}
 \EliasComm{write about nonlinear dispersion relation}
 
 Consider a quasi-neutral plasma (charge density $\rho \approx 0$) with a current density $\mathbf{j} = -e n_e \mathbf{v}$, depending on the velocity $\mathbf{v}$ of the electrons in the plasma and the electron density $n_e$. The wave equation for the electric field $\mathbf{E}$ becomes
@@ -516,7 +542,6 @@ v_g &= \frac{\partial\omega_L}{\partial k} = c \sqrt{1-\left(\frac{\omega_p}{\om
 \end{align}
 where $\omega$ is the frequency of the electromagnetic wave.
 
-\EliasComm{Add specific example 1m air or vacuum.}
 
 \begin{figure}
 \centering
@@ -547,17 +572,6 @@ For $n_e > n_c$, i.e. an overdense plasma, the refractive index is imaginary and
 
 
 \section{Wakefield Acceleration}
-
-In the course of the last decades wakefield acceleration has undergone a promising development, strongly influenced by the high intensity lasers available at the time. Creative ideas and schemes were invented to push the boundaries where the lasers available did not reach ideal conditions.
-
-In the early days of wakefield acceleration lasers with femtosecond pulse duration and TW scale were not available.
-However, the short duration of the plasma wavelength requires pulse durations on the femtosecond scale.
-To overcome this limitation, the beat wave scheme was proposed. Two laser beams at different frequencies are overlapped and start beating in the plasma. If the frequency difference of the two beams is chosen to be the plasma frequency, the beat wave will have the plasma frequency as its beat frequency.
-\EliasComm{add some references.}
-\EliasComm{add a few lines for self-modulated beams and their recent revival.}
-
-Although the history of wakefield acceleration and its different schemes are certainly fascinating and inspirational for research today, the author will for now focus on laser wakefield acceleration (LWFA) relying on CPA high intensity lasers. %and plasma wakefield acceleration (PWFA), which describes particle-driven wakefield acceleration.
-\EliasComm{Nobel prize winning.}
 
 A good and comprehensive overview on this topic explaining the fundamental physics is given in \cite{Esarey2009}, a more recent overview on the progress and status of experiments in the laser wakefield community can be found in \cite{Mangles2016}.
 
@@ -637,37 +651,6 @@ Clusters and nano particles
 \subsubsection{Laser-assisted}
 
 \subsubsection{External injection}
-
-
-\iffalse
-\subsection{Plasma Wakefield Acceleration (PWFA)}
-
-In plasma wakefield acceleration (PWFA) the laser driver is substituted by a beam of charged particles, for instance electrons\cite{Chen1985}, positrons\cite{Lee2001} or protons \cite{Caldwell2009}. Although the basic concept of driving the plasma wave remains the same, certain parameters will deviate and lead to interesting properties in comparison to LWFA.
-\vspace{\baselineskip}
-
-The first thing to notice is that PWFA has been investigated less exhaustively in experiment and breakthroughs have been achieved just in recent years. This is understandable as high quality relativistic charged particle beams as required for PWFA are only available at large accelerator facilities. After a successful demonstration of energy doubling at the Stanford Linear Accelerator (SLAC) \cite{Blumenfeld2007} the interest of the accelerator community increased significantly. By now major facilities such as CERN (AWAKE) \cite{Gschwendtner2016} and DESY (FLASHForward) \cite{Aschikhin2016} as well as other projects in the planning consider PWFA as part of their agenda.
-
-Why is PWFA so attractive and what are its advantages over LWFA?
-\vspace{\baselineskip}
-
-PWFA uses a particle beam to drive a plasma wake and to accelerate particles. So far mainly electrons, positrons and protons have been considered as feasible drivers as they are being generated in sufficiently high quality at major facilities today. The relativistic bunch of charged particles will exhibit a space charge which will push away the mobile part of the plasma driving a plasma wake similar as in the case of LWFA.
-However, despite the similar concept several differences are to consider. The driver bunch is a highly relativistic particle bunch: until it loses a fair amount of energy, it will propagate at a velocity close to the speed of light, closer than a laser pulse in the plasma medium. Whilst the bunch sustains such an energy level, it avoids dephasing as in the case of LWFA. When heavy particles such as protons are being used at highly relativistic energies, the depletion through interaction with the electrons in the plasma would be negligible and depletion as limiting factor excluded as well. This shows qualitatively the compelling attraction of PWFA: by choosing the right particles the boundaries as existing in LWFA are not present and energy gains of tens, hundreds or even more GeV seem achievable.
-
-Secondly, the `bubble' following the bunch may have a different shape and geometry sensitive to the space charge and its distribution. This may lead to a more favourable focusing field but could also result in other instabilities.
-
-Thirdly, whilst the mechanisms involved in LWFA in the bubble regime are influenced by a number of non-linear effects affecting the stability, the control over the process in PWFA might be much better, especially as the particle beams used are of excellent stability and quality at these facilities. This might require the use of more sophisticated injection mechanisms though.
-\vspace{\baselineskip}
-
-However, PWFA introduces new limitations and problems. Just one to mention here is the transformer ratio $R$ which describes the theoretical maximum how much energy can be transferred from the driver to the witness bunch:
-
-\begin{equation}
-R = \frac{E^{witness}_{max}}{E^{driver}_{max}} \leq 2 - \frac{N_{witness}}{N_{driver}}.
-\end{equation}
-
- For a longitudinally symmetric bunch it has been shown to be $2$ at maximum \cite{Ruth1984,Caldwell2009} but research is in progress to overcome this limitation by tailoring the driver, the target and using different injection mechanisms.
-
-\EliasComm{be more specific and include recent results.}
-\fi
 
 
 
@@ -874,6 +857,10 @@ Difference here is that we use an quasi-electrostatic field instead of a magneti
 
 \subsection{Bremsstrahlung}
 
+\begin{equation}
+Z + e^- \longrightarrow Z + e^- + \gamma.
+\end{equation}
+
 Charged particles that ... atomic collisions... are being accelerated and radiate.
 The radiation emitted is commonly called by its German name `bremsstrahlung', which translates into `braking radiation'.
 
@@ -881,6 +868,12 @@ Also sometimes treated as Compton scattering with a virtual photon (from field o
 
 The process of bremsstrahlung is of interest in this context in two ways:
 Firstly, we use the process to generate high-energetic gamma radiation. Relativistic electrons accelerated in a laser wakefield accelerator are collided with a high-Z material to convert efficiently into a collimated burst of X-rays.
+
+
+\begin{figure}
+\includegraphics[width=.5\columnwidth]{feyn_brems.pdf}\includegraphics[width=0.5\columnwidth]{brems_classical.pdf} 
+\caption{Classical and feynman diagram.}
+\end{figure}
 
 Secondly, the generation of radiation from electrons interacting with solids is an ubiquitous source of noise in the experiments described later on.
 
@@ -891,7 +884,7 @@ Differential cross section under Born approximation (see Jackson):
 \end{equation}
 for $\hbar \omega < E$.
 
-The number of photons hence scales quadratically with the $Z$ of the converter target used. Higher yield however comes at the cost of spatial resolution and a wider cone of radiation due to scattering in the material.
+The number of photons hence scales quadratically with the $Z$ of the converter target used. Higher yield however comes at the cost of spatial resolution and a wider cone of radiation due to scattering in the material. There is a term proportional to $Z$ from electron-electron bremsstrahlung or in other words electrons from the beam interacting with the Z shell electrons of the atom. As the nucleus-electron interaction scales with $Z^2$ is becomes negligible for high-Z materials.
 
 For $\hbar \omega << E$
 
@@ -900,8 +893,6 @@ For $\hbar \omega << E$
 \end{equation}
 
 \EliasComm{Add an explicit plot of the spectrum}
-\EliasComm{Add a plot on the diagram.}
-
 \subsection{Compton Scattering}
 
 Classical Compton scattering describes the inelastic scattering of a photon off an electron which is at rest or close to it. Here the photon loses energy to the electron, hence this is called inelastic. In some conventions this interaction might still be referred to as elastic as energy is transferred into kinetic energy from one particle to another and is not dissipated in terms of heat or deformation. The fully elastic process in the low energy limit is Thomson scattering where the incoming photon does not lose any significant amount of energy in the process.
@@ -913,7 +904,7 @@ The reaction can be written as follows:
 \end{equation}
 
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.4\columnwidth]{Compton_Feyn1.pdf}\includegraphics[width=0.4\columnwidth]{Compton_Feyn2.pdf}
 \caption{Feynman diagrams for Compton scattering. Time axis from left to right. s- and u-channel.}

@@ -2,22 +2,50 @@
 
 \section{Motivation}
 
+As outlined in the theory section a relativistic electron beam interacting with a laser pulse is an effective source of high energy radiation.
+In the case of a very intense laser beam $a_0 \rightarrow 1$ the dominant process is nonlinear inverse Compton scattering forming a synchrotron-like spectrum with hundreds of higher harmonics, redshifting orders, all convolved with the energy spread of the electron beam. Under these conditions the electrons lose a significant amount of energy and radiation reaction becomes significant.
+
+In this context we will look at the low-intensity interaction being linear inverse Compton scattering producing a nearly monoenergetic response from each electron. In this scenario we are operating in the weakly nonlinear regime where first harmonics become visible.
+
+The gamma diagnostics will help us to characterise the spectrum, this time in two axes and hopefully also a shape-independent algorithm. The ability to diagnose a full 3D spectrum of the gamma ray burst and do this without assuming a shape is important. In a very linear regime the theory is well understood and an ideal test bed to trial these methods and the new diagnostics. The varying electron beams should result in a one to one mapping into the spectrum.
+The varying shape and spreads should be picked up by the detector and could then in the future be used in high intensity interactions as another indicator (change of shape) for a model-dependent response.
+
 \section{Experimental Setup}
 
 This experiment was performed at the Astra Gemini facility in early 2019 using both laser arms of the dual laser beam facility.
 
 The first laser pulse is focused with an f/40 off-axis parabola onto the edge of a 15 mm conical supersonic helium gas jet. The measured pulse duration was around 42 femtoseconds with an average energy on-target of about XX NUMBER. The size of the focal spot was around XX XX UM, reaching an a0 of around XX NUMBER.
 
-The second laser pulse is focused down tightly by an f/2 off-axis parabola at the other end of the gas jet in a head-on collision. The f/2 OAP has a hole in the centre to allow the electrons and radiation from ICS to propagate through. A round piece of plastic is also fitted around the hole to protect the optic from scattered light from the other laser. This reduces the energy by around 7.84 percent which brings the laser energy on-target to around XX NUMBER on average at a pulse duration of 42 femtoseconds. The minimum spot size reached was about XX NUMBER, which translates into a normalised vector potential of a0 ~ NUMBER. The f/2 OAP is in addition protected from debris by a thin pellicle. The laser is linearly polarised in the vertical plane.
+The second laser pulse is focused down tightly by an f/2 off-axis parabola at the other end of the gas jet in a head-on collision. The f/2 OAP has a hole in the centre to allow the electrons and radiation from ICS to propagate through. A round piece of plastic is also fitted around the hole to protect the optic from scattered light from the other laser. This reduces the energy by around 7.84 percent which brings the laser energy on-target to around XX NUMBER on average at a pulse duration of 42 femtoseconds. The minimum spot size reached was about XX NUMBER, which translates into a normalised vector potential of a0 ~ NUMBER. The f/2 OAP is in addition protected from debris by a thin pellicle. The laser is linearly polarised in the vertical plane. The beam can be defocused to larger spot sizes which makes an interaction less intense.
 
 The radiation and the electrons propagate through the hole into a large aperture permanent magnet.
 The electrons are dispersed in the horizontal plane and propagate through a kevlar-kapton vacuum window.
 A scintillating lanex screen measures the spectrum just after the window. Another lanex screen captures the spectrum about 1 m further downstream.
 The electron spectrum is cut off at around 200 MeV as lower energetic electrons hit the yoke of the magnet and do not make out of the magnet.
 
-The radiation propagates straight through the magnet and is damped by a 10-12 layer aluminium foil beam block and the kevlar-kapton window. Hard and bright radiation is also captured by the first LANEX screen as it extends beyond the axis. A scintillating stack of caesium-iodide crystals is measuring the profile of the radiation, another long stack of crystals can be used to retrieve the spectrum of the radiation.
+The radiation propagates straight through the magnet and is damped by a 10-12 layer aluminium foil beam block and the kevlar-kapton window. Hard and bright radiation is also captured by the first LANEX screen as it extends beyond the axis. A scintillating stack of caesium-iodide crystals is measuring the profile of the radiation, another long stack of crystals can be used to retrieve the spectrum of the radiation. Both diagnostics are described in more detail in the Methods section and their GEANT modelling in the simulations chapter.
+
 
 \section{Electron Spectra}
+
+The electron spectra were recorded by two lanex screens using the large aperture Jena magnet as dispersing magnet. The first screen is positioned just outside the vacuum window.
+
+\EliasComm{Run tracking.}
+
+The second screen is positioned about MM away from it. 
+
+The tracking using these distances gives for zero divergence an energy range from XX MEV to XX MEV. The zero point was selected by
+ on-axis radiation.
+ 
+ The screens were imaged using Andor Neo cameras with camera objectives.
+ 
+ The absolute calibration was performed using an image plate and integrating around 20 shots.
+
+The raw images were projective transformed to account for the viewing angle.
+
+
+The electron beams considered are relying on shock injection, with the blade in various positions into the gas jet. The typical maximum energy was around 1.2 GeV with in some cases around 5 percent energy spread and in some cases a long tail down to around 200 MeV, filling the entire range. The total charge varied from XX pC to XX pC.
+
 
 \section{Timing procedure}
 

@@ -1,0 +1,34 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}
+
+
+\begin{document}
+\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(110,60)
+    \fmfstraight
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2,o3}
+
+    \fmflabel{$Ze^-,Z$}{i1}
+    \fmflabel{$e^-$}{o2}
+    \fmflabel{$\gamma$}{o3}
+    \fmflabel{$e^-$}{i2}
+    \fmflabel{$Ze^-,Z$}{o1}
+
+    \fmf{fermion}{i1,v1}
+    \fmf{photon}{v1,v2}
+    \fmf{fermion}{v2,o2}
+    \fmf{fermion}{i2,v3}
+    \fmf{fermion}{v3,v2}
+    \fmf{fermion}{v1,o1}
+    \fmf{photon}{v3,o3}
+    \fmf{phantom, tension=0.2}{i1,v2}
+  \end{fmfgraph*}
+\end{fmffile}
+
+
+\end{document}

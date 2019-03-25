@@ -10,21 +10,73 @@
 
 Boosts
 
+\section{Radiation Integrals}
+
 \section{Feynman diagrams and convention}
 
 Different particles and types
 
 Time direction in this thesis from left to right
 
-\section{Calculating Matrix Elements from Feynman diagrams}
+\subsection{Mandelstam variables}
+
+\begin{align}
+s & = (p + p')^2 &= (k + k')^2; \nonumber\\
+t &= (k-p)^2 &= (k' - p')^2; \nonumber\\
+u &= (k'-p)^2 &= (k-p')^2.
+\end{align}
+
+\subsection{Trace Identities}
+
+
+\subsection{Calculating Matrix Elements from Feynman diagrams}
+
+\section{Derivation Klein-Nishina equation}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\columnwidth]{Compton_Feyn1.pdf}\includegraphics[width=0.4\columnwidth]{Compton_Feyn2.pdf}
+\caption{Feynman diagrams for Compton scattering. Time axis from left to right. s- and u-channel.}
+\end{figure}
+
+See the Feynman diagrams for this.
+
+This derivation is based on Peskin and Schroeder.
+
+Based on the Feynman diagrams find the following expression for the matrix element:
+
+\begin{align}
+iM &= \bar{u}(p')(-ie\gamma^\mu)\epsilon_\mu^*(k') \frac{i(\cancel{p} + \cancel{k} + m)}{(p+k)^2 - m^2}(-ie\gamma^\nu)\epsilon_\nu(k)u(p)\nonumber\\
+&+ \bar{u}(p')(-ie\gamma^\nu)\epsilon_\nu(k) \frac{i(\cancel{p} - \cancel{k}' + m)}{(p - k')^2 - m^2}(-ie\gamma^\mu) \epsilon_\mu^*(k')u(p)\\
+&= -ie^2 \epsilon_\mu^*(k')\epsilon_\nu(k) \bar{u}(p') \left[\frac{\gamma^\mu (\cancel{p} + \cancel{k} +m)\gamma^\nu}{(p+k)^2 - m^2} + \frac{\gamma^\nu(\cancel{p}-\cancel{k'}+m)\gamma^\mu}{(p-k')^2-m^2}\right] u(p).
+\end{align}
+
+\begin{equation}
+iM = -ie^2\epsilon_\mu^*(k')\epsilon_\nu(k)\bar{u}(p')\left[\frac{\gamma^\mu \cancel{k} \gamma^\nu + 2 \gamma^\mu p^\nu}{2p\cdot k} + \frac{-\gamma_\nu \cancel{k'} \gamma^\mu + 2 \gamma^\nu p^\mu}{-2p\cdot k'}\right]u(p).
+\end{equation}
+
+
+\begin{equation}
+\Sigma \epsilon_\mu^* \epsilon_\nu \longrightarrow - g_{\mu \nu}.
+\end{equation}
+
+
+Average squared amplitude over initial electron and photon polarisations. This is the spin-averaged Klein-Nishina equation.
+
+\begin{equation}
+\frac{1}{4} \Sigma_{spins} |M|^2 = 2 e^4 \left[\frac{p \cdot k'}{p \cdot k} + \frac{p \cdot k}{p \cdot k'} + 2 m^2 \left(\frac{1}{p \cdot k}-\frac{1}{p \cdot k'}\right) + m^4 \left( \frac{1}{p \cdot k} - \frac{1}{p \cdot k'}\right)^2   \right].
+\end{equation}
+
+Replacing $p \cdot k = m \omega$ and $p \cdot k' = m\omega'$
+
+\begin{equation}
+\frac{d \sigma}{d \cos \theta} = \frac{\pi \alpha^2}{m^2} \left(\frac{\omega'}{\omega}\right)^2 \left[ \frac{\omega'}{\omega} + \frac{\omega}{\omega'} - \sin^2 \theta \right].
+\end{equation}
 
 \section{Scintillators}
 
-CsI
-
-LYSO
-
-LANEX
+Exponential decay. Fast (prompt) and slow response. Dual exponential.
 
 scintillation wavelength
 light yield
@@ -34,3 +86,41 @@ decay time
 material
 
 Calibration using a radioactive source
+
+
+\subsection{CsI(Tl)}
+Caesium-iodide doped with thallium
+
+Hallide crystal. Inorganic alkali halide.
+
+CsI (NIST webbook and STAR):
+
+Density 4.51 g/cc
+Atomic fraction 0.488451 for 53 and 0.511549 for 55 (fraction by weight).
+
+One of the brightest scintillators.
+
+Slow scintillaotr, with 0.6 microsecs to 3.5 microsecon components.
+
+This is based on St Gobain (deviations from manufacturers possible).
+
+Wavelength of maximum emission around 550 nm (suitable for photodiode detection) and cutoff around 320 nm.
+Primary decay time around 1000 ns.
+Light yield around 54 photons/keV gamma.
+
+Best light output at room temperature.
+
+\subsection{LYSO}
+LYSO ($Lu_{1.8}Y_{.2} SiO_5:Ce$)
+
+Oxide crystal
+
+St Gobain:
+Density 7.1 g/cc
+Wavelength emission maximum at 420 nm
+Decay time around 45 ns (faster than CsI)
+Light yield around 27.6 photons/keV.
+
+\subsection{LANEX}
+Commercially available scintillator, frequently used in dentistry.
+
