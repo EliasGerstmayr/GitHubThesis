@@ -375,6 +375,46 @@ USE ONE BIT TO EXPLAIN LASER WAKEFIELD ACCELERATION, TAKE THE SECOND TERM TO GO 
 
 \subsection{Laser Propagation in Vacuum}
 
+Maxwell's equations.
+
+Based on Jackson:
+From that we get the wave equation where $\mathbf{E}$ and $\mathbf{B}$ satisfy this:
+
+\begin{equation}
+\nabla^2 u - \frac{1}{v^2}\frac{\partial^2 u}{\partial t^2} = 0,
+\end{equation}
+where $v = c/\sqrt{\mu \epsilon}$ and in vacuum $v = c$.
+
+The plane wave solution of this is 
+
+\begin{equation}
+u = e^{i \mathbf{k}\cdot\mathbf{x} - i \omega t},
+\end{equation}
+with
+\begin{equation}
+k = \frac{\omega}{v} = \sqrt{\mu \epsilon} \frac{\omega}{c}
+\end{equation}
+
+Helmholtz equation
+\begin{equation}
+\nabla^2 u + k^2 u = 0
+\end{equation}
+
+
+For a Gaussian beam:
+
+Waist size
+
+Rayleigh length
+
+Intensity
+
+Radius of curvature
+
+Guoy phase
+
+Poynting vector
+
 \subsection{General Properties of Plasmas}
 
 Plasmas are frequently referred to as the `4th state of matter' in addition to the more commonly in daily life encountered matter states solid, liquid and gaseous. Heating up a material at a constant pressure will take it from the solid to the liquid, then to the gas phase and finally will ionize the gas first partially, then completely. The gas is now charged and exhibits interesting collective behaviour due to the dominance of electromagnetic forces whilst upholding quasi-neutrality. This is called a plasma. Sometimes summarised in this definition: ``A quasi-neutral ionized gas that exhibits collective behaviour.'' (REF) However, setting `ionized gas' equal to `plasma' might be a too narrow description as the range of temperature and density scales is very wide for plasmas, including exotic states like the quark-gluon plasma. Although plasmas are probably the most common state of matter in the universe, they barely exists on earth outside of the laboratory environment.
@@ -406,24 +446,45 @@ In the context of this work high intensity lasers are used to drive waves in pla
 There are different mechanisms through which an oscillating laser field ionises a gas. In addition to single photon ionisation, there is multi-photon ionisation \cite{Keldysh1965}, where one electron is excited by absorbing multiple photons before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}. In the case of very high field strengths, the Coulomb potential might be completely suppressed by the laser field and the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
 \vspace{\baselineskip}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.9\columnwidth]{ionisation_sketch.png}
+\caption{Sketch of ionisation mechanisms.}
+\end{figure}
+
 In the simple example of a hydrogen-like atom in an external electric field $E$, the potential $V$ is given by
 \begin{equation}
 V(r) = -\frac{Ze^2}{4\pi\epsilon_0 r} - eEr,
 \end{equation}
-where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. Using this result and by setting the height of the barrier to the ionisation potential $V_e$, the electric field required amounts to
+where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. 
+
+In single or multi-photon ionisation processes the absorbed photons have to bear at least the binding energy of the electron. Any excess energy will be transferred into additional kinetic energy of the freed electron.
+
+In tunnel ionisation an external electric field deforms the binding potential of the atom and lowers the potential barrier. The rate of tunnel ionisation is given by...
+
+(Using Keldysh parameter to estimate in which regime we are?).
 
 \begin{equation}
-E = \frac{\pi \epsilon_0 V^2_e}{Ze^3} \approx 173.6 \times \frac{V_e^2 [eV]}{Z}  \mathrm{MV/m},
+\gamma_K = \omega \frac{\sqrt{2 m_e V}}{eE}
+\end{equation}
+At $\gamma_K >> 1$ multiphoton ionisation is expected and in the other extreme for very small $\gamma_K < 0.5$ tunnel ionization is important.
+If the electric field is larger than the potential barrier suppression is dominating.
+
+In barrier-suppression ionisation the external electrical field is even stronger and completely suppresses the barrier such that the bound electron is now not limited by any potential barrier any more.
+Using the equation to calculate the potential and by setting the height of the barrier to the ionisation potential $V_e$, the electric field required for complete barrier suppression amounts to
+
+\begin{equation}
+E = \frac{\pi \epsilon_0 V^2_e}{Ze^3} \approx 173.6 \times \left(\frac{V_e}{eV}\right)^2 \frac{1}{Z}  \mathrm{MV/m},
 \end{equation} 
 
 or in terms of intensity using $I = \frac{c\epsilon_0}{2}|E|^2$ in (near) vacuum:
 
 \begin{equation}
-I = \frac{c\epsilon_0^3 \pi^2 V^4_e}{2e^6 Z^2} \approx 4 \times 10^{9} \frac{V_e^4 [eV]}{Z^2} \mathrm{\frac{W}{cm^2}}.
+I = \frac{c\epsilon_0^3 \pi^2 V^4_e}{2e^6 Z^2} \approx 4 \times 10^{9} \left(\frac{V_e}{eV}\right)^4\frac{1}{Z^2} \mathrm{W/cm^2}.
 \end{equation}
 
 For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
-The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF). 
+The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser either through full barrier suppression or by triggering an increased tunnelling rate: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF). 
 
 \begin{table}
 \centering
@@ -453,14 +514,9 @@ $N^{6+} \rightarrow N^{7+} $ & $667$ & $1.6 \times 10^{19}$
 %}
 \end{table}
 
-\EliasComm{Check that this does not rely on tunnel ionisation.}
-\EliasComm{Write about tunnel ionisation.}
-\EliasComm{Add sketch of tunnel ionisation and ionisation mechanisms in general.}
 
 Partially ionised plasmas result in a couple of problems: more complex, absorption of X-rays, dampening of particles, scattering? Weaker fields.
 \EliasComm{add also some comments on partially ionised plasmas and how they change for instance the absorption of X-rays in this medium.}
-
-\EliasComm{Add sketch of barrier suppression ionisation or all mechanisms in comparison.}
 
 After ionisation the electrons return to the ionic cores of the atom and recombine. During this process called recombination the energy obtained to leave the atom is being released in form of photons again. The wavelength of the radiation is determined by the atom structure and hence characteristic of the material and in case of high Z gases also of the intensity of the interaction. Recombination occurs on a time-scale of XX.
 
@@ -473,8 +529,6 @@ E_{ph} = hf = E_{e,kin} + E_{bound}
 \EliasComm{add a diagram to show energy and emission of recombination light.}
 
 The ground level of hydrogen is bound by 13.6 eV corresponding to a photon of wavelength 91 nm (?). The ground level of hydrogen-like helium is bound by a potential $V_e = 54.4\,\mathrm{eV}$, corresponding to a wavelength of 22.8 nm and the first level ionisation level of 24.6 eV corresponds to 50.4 nm.
-
-
 
 \subsection{The Plasma Frequency}
 
@@ -521,12 +575,7 @@ and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
 A typical regime wakefield accelerators at a Gemini class laser operate in is at an electron density of around $10^{18} cm^{-3}$. This corresponds to a plasma frequency of around $5.6 \times 10^{13} \,\mathrm{Hz}$ or $\lambda_p \approx 33\,\mathrm{\mu m}$.
 
 
-\subsection{The Critical Density (Laser Propagation in Plasma)}
-
-The critical plasma density $n_c$ is the electron density at which electromagnetic waves can no longer propagate through the plasma. A plasma with a density $n_e < n_c$ is transparent and called `underdense'. For $n_e > n_c$ the plasma is opaque and `overdense'. LWFA requires the laser pulse to propagate through the plasma to drive the wave and hence targets used are typically operating at densities of only a fraction of $n_c$, whilst many ion acceleration mechanisms are based on overdense media.
-\vspace{\baselineskip}
-
-\EliasComm{write about nonlinear dispersion relation}
+\subsection{Laser Propagation in Plasma}
 
 Consider a quasi-neutral plasma (charge density $\rho \approx 0$) with a current density $\mathbf{j} = -e n_e \mathbf{v}$, depending on the velocity $\mathbf{v}$ of the electrons in the plasma and the electron density $n_e$. The wave equation for the electric field $\mathbf{E}$ becomes
 
@@ -563,10 +612,14 @@ which only depends on the frequency of the incident electromagnetic wave, and so
 
 For $n_e > n_c$, i.e. an overdense plasma, the refractive index is imaginary and the wave becomes evanescent in the medium.
 
+The critical plasma density $n_c$ is the electron density at which electromagnetic waves can no longer propagate through the plasma. A plasma with a density $n_e < n_c$ is transparent and called `underdense'. For $n_e > n_c$ the plasma is opaque and `overdense'. LWFA requires the laser pulse to propagate through the plasma to drive the wave and hence targets used are typically operating at densities of only a fraction of $n_c$, whilst many ion acceleration mechanisms are based on overdense media.
+\vspace{\baselineskip}
+
 \EliasComm{add some comments here on reflection (plasma mirror).}
 \EliasComm{something about absorption of energy in ion acceleration, heating etc.}
 \EliasComm{add some explicit curves for transmission/absorption and reflection?}
 
+\subsection{Nonlinear Refractive Index}
 
 \subsection{Relativistic Self-focusing and guiding}
 
@@ -678,6 +731,11 @@ Instead of bending magnets on one big circular trajectory, force the bunch to os
 
 Strongest acceleration at the turning points.
 Cone related to gamma factor of electrons.
+
+\begin{figure}
+\includegraphics[width=.5\columnwidth]{synchrotron_classical.png}
+\caption{Synchrotron radiation.}
+\end{figure}
 
 Wiggler parameter: wiggler and undulator regime.
 
@@ -905,7 +963,7 @@ Firstly, we use the process to generate high-energetic gamma radiation. Relativi
 
 
 \begin{figure}
-\includegraphics[width=.5\columnwidth]{feyn_brems.pdf}\includegraphics[width=0.5\columnwidth]{brems_classical.pdf} 
+\includegraphics[width=.5\columnwidth]{feyn_brems.pdf}\includegraphics[width=0.5\columnwidth]{brems_classical.png} 
 \caption{Classical and feynman diagram.}
 \end{figure}
 
@@ -1235,7 +1293,6 @@ First attempts to simply add radiation reaction as a force onto the Lorentz-forc
 
 The relativistic generalisation was found by Dirac renormalising in 4-space. The result is referred to as Lorentz-Abraham-Dirac equation (LAD).
 
-\EliasComm{Remember which metric to use? +--- or -+++}
 
 \EliasComm{Here add some calculations explicitly.}
 
@@ -1243,16 +1300,14 @@ The relativistic generalisation was found by Dirac renormalising in 4-space. The
 
 \subsection{Self-consistent classical description: Landau-Lifschitz}
 
-
-\EliasComm{Furry picture, treating the laser field as classical external field.}
-
-
 A first self-consistent solution to including radiation reaction into a classical model was achieved by Landau and Lifschitz (REF).
 
 
 Problems: energy loss can exceed initial energy. Stochasticity not included.
 
-\subsection{Quantum Corrections}
+\subsection{Quantum picture and corrections}
+\EliasComm{Furry picture, treating the laser field as classical external field.}
+
 
 Quantum parameter eta and chi. $\eta = E_{RF}/E_{crit}$
 
@@ -1289,8 +1344,16 @@ What is the force in this picture? How does it compare to ponderomotive force?
 
 Cooling of spectra versus competing processes.
 
-\section{Pair Production}
+\section{Pair Production and Annihilation}
 
+Pairs are easily annihilated in radiactive substances for low energy positrons cancelling out with ambient electrons.
+At higher energies the cross section decreases.
+
+There are different ways to create pairs:
+Bethe Heitler: 
+Trident: second order diagram. Electron emits a virtual photon which then decays into an electron-positron pair. Could happen in a two-step process of an electron in an external field (laser) performing inverse Compton.
+
+Linear and nonlinear Breit-Wheeler: two or more photons interact to produce one pair.
 
 \begin{figure}[h]
 \centering
@@ -1298,4 +1361,5 @@ Cooling of spectra versus competing processes.
 \caption{Feynman diagrams for Breit-Wheeler pair production. Time axis from left to right.}
 \end{figure}
 
+Schwinger pair production: The external electric field is so strong that virtual electron-positron pairs can be accelerated to relativistic energies within a Compton wavelength and made real.
 

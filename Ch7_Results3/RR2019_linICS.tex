@@ -26,8 +26,13 @@ The electron spectrum is cut off at around 200 MeV as lower energetic electrons 
 The radiation propagates straight through the magnet and is damped by a 10-12 layer aluminium foil beam block and the kevlar-kapton window. Hard and bright radiation is also captured by the first LANEX screen as it extends beyond the axis. A scintillating stack of caesium-iodide crystals is measuring the profile of the radiation, another long stack of crystals can be used to retrieve the spectrum of the radiation. Both diagnostics are described in more detail in the Methods section and their GEANT modelling in the simulations chapter.
 
 
+\section{North and South focal spot}
+
+
 \section{Electron Spectra}
 
+
+\subsection{Tracking}
 The electron spectra were recorded by two lanex screens using the large aperture Jena magnet as dispersing magnet. The first screen is positioned just outside the vacuum window.
 
 \EliasComm{Run tracking.}
@@ -39,20 +44,70 @@ The tracking using these distances gives for zero divergence an energy range fro
  
  The screens were imaged using Andor Neo cameras with camera objectives.
  
+ \subsection{Treatment for background and projective transform}
+ 
+The raw images were projective transformed to account for the viewing angle.
+ 
+ \subsection{Absolute Calibration}
  The absolute calibration was performed using an image plate and integrating around 20 shots.
 
-The raw images were projective transformed to account for the viewing angle.
 
+\subsection{Spectra}
 
 The electron beams considered are relying on shock injection, with the blade in various positions into the gas jet. The typical maximum energy was around 1.2 GeV with in some cases around 5 percent energy spread and in some cases a long tail down to around 200 MeV, filling the entire range. The total charge varied from XX pC to XX pC.
 
+\section{Bremsstrahlung results and gamma spec}
 
-\section{Timing procedure}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\columnwidth]{20190211r009s060_GammaSpec_analysis1.png}
+
+\includegraphics[width=0.6\columnwidth]{20190211r009s060_GammaSpec_analysis2.png}
+\caption{Gamma Spec waterfall converter.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\columnwidth]{20190211r009s001-062_GammaSpec_Waterfall.png}
+\caption{Gamma Spec waterfall converter.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{compFePTFE.png}\includegraphics[width=0.5\columnwidth]{compvert.png}
+\caption{Correction factor simulation and data.}
+\end{figure}
 
 \section{Raster Scan}
 
-\section{GEANT simulations}
 
-\section{Radiation signal}
+\begin{figure}
+
+\centering
+\includegraphics[width=0.8\columnwidth]{20190208r015s047_Probe_Slim.jpg}
+
+\includegraphics[width=0.4\columnwidth]{20190208r015s047_PrettyPicIC.png}\includegraphics[width=0.4\columnwidth]{20190208r015s047_TopViewZoom.jpg}
+\caption{Diagnostics on shot to characterise overlap.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\columnwidth]{20190211r005s077-160_EspecScan.png}
+\caption{Raster scan at 400 microns. Maybe one example shot as well?}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\columnwidth]{20190211r005s077-160_GammaProfile.jpg}
+\caption{Raster scan at 400 microns. Maybe one example shot as well?}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\columnwidth]{20190211r006s077-160_GammaSpec_Waterfall.png}
+\caption{Raster scan at 400 microns. Maybe one example shot as well?}
+\end{figure}
+
+
 
 \section{Conclusion}
