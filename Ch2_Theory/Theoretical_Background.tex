@@ -315,7 +315,7 @@ When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear 
 \begin{equation}
 \boxed{\left\langle\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u}\right\rangle \sim -\left\langle\frac{1}{\gamma}c\nabla\frac{\mathbf{a}^2}{2}\right\rangle,}
 \end{equation}
-which is the ponderomotive force $\mathbf{F}_p$ on on a single electron. Since $\mathbf{F}_p \sim \nabla <\mathbf{a}^2>$, this implies $\mathbf{F}_p \sim \nabla<I>$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
+which is the ponderomotive force $\mathbf{F}_p$ on on a single electron. Since $\mathbf{F}_p \sim \nabla \left\langle\mathbf{a}^2\right\rangle$, this implies $\mathbf{F}_p \sim \nabla \left\langle I\right\rangle$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
 
 \EliasComm{What is the ponderomotive force? Is it not just the electrons gaining mass and oscillating out of the region?}
 
@@ -406,17 +406,54 @@ Helmholtz equation
 
 For a Gaussian beam:
 
+Electric field of laser in vacuum:
+\begin{equation}
+\mathbf{E}(r,z,t) = E_0 \mathbf{x} \frac{w_0}{w_z} \exp\left(-\frac{r^2}{w(z)^2}\right) \exp\left[-\frac{(z-v_g t)^2}{(c \tau)^2}\right] \exp\left[-i\left(kz - \omega t + l \frac{r^2}{2 R(z)} - \psi(z)\right)\right]
+\end{equation}
+
 Waist size
 
-Rayleigh length
+\begin{equation}
+w(z) = w_0 \sqrt{1+ \left(\frac{z}{z_R}\right)^2}
+\end{equation}
+
+Rayleigh length/range
+\begin{equation}
+z_r = \frac{\pi w^2_0}{\lambda}
+\end{equation}
 
 Intensity
 
 Radius of curvature
 
+\begin{equation}
+R(z) = z \left[1+\left(\frac{z_r}{z}\right)^2\right]
+\end{equation}
+
 Guoy phase
 
 Poynting vector
+
+
+f number: focal length over beam diameter
+
+how tightly focussed
+\begin{equation}
+w_0 = \frac{2 \sqrt{2}}{\pi} \lambda f \approx 0.9 \lambda f
+\end{equation}
+
+distance over which laser stays intense
+\begin{equation}
+z_R = \frac{\pi w^2_0}{\lambda} \approx 2.5 \lambda f^2
+\end{equation}
+
+Typical numbers 
+f/2: $w_0 = 1.4 \mu m; z_R = 8.1 \mu m$
+f/20: $w_0 14.4 \mu m; z_R = 815 \mu m$
+f/40: $w_0 = 28.8 \mu m; z_R = 3200 \mu m$
+
+Real beams are not Gaussian but flat top.
+Deviations from wave front and curvature profile, spatio-temporal couplings and so on
 
 \subsection{General Properties of Plasmas}
 
@@ -596,6 +633,12 @@ v_g &= \frac{\partial\omega_L}{\partial k} = c \sqrt{1-\left(\frac{\omega_p}{\om
 \end{align}
 where $\omega$ is the frequency of the electromagnetic wave.
 
+At $\omega << \omega_p$ this the expression can be approximated by
+\begin{align}
+v_p &= \frac{\omega}{k} \approx c \left(1+ \frac{1}{2}\frac{\omega^2_p}{\omega^2}\right),\\
+v_g &= \frac{\partial\omega}{\partial k} \approx c \left(1 - \frac{1}{2}\frac{\omega^2_p}{\omega^2}\right).\\
+\end{align}
+
 
 \begin{figure}
 \centering
@@ -626,8 +669,92 @@ The critical plasma density $n_c$ is the electron density at which electromagnet
 
 \subsection{Nonlinear Refractive Index}
 
-\subsection{Relativistic Self-focusing and guiding}
+High intensity lasers interact with the electrons and their relativistic motion will lead to a modification of the refractive index
 
+\EliasComm{Stuart's slides and Mori IEEE J Quantum Elec 33, 1997}
+
+\begin{equation}
+\eta = \frac{c}{v_p} = \left(1-\frac{\omega^2_p}{\gamma \omega^2}\right)
+\end{equation}
+
+Local modifications of plasma density, laser frequency and laser intensity
+\begin{align}
+n &= n_0 &+ \frac{\delta n}{n_0} n_0\\
+\omega_L &= \omega_0 &+ \frac{\delta \omega_L}{\omega_0} \omega_0\\
+\left\langle \gamma \right\rangle &= 1&+ \frac{a^2_0}{4}
+\end{align}
+
+\begin{equation}
+\eta = 1 - \frac{1}{2}\frac{\omega^2_p}{\omega^2_0}\left(1+ \frac{\delta n}{n_0} - \frac{2 \delta \omega_L}{\omega_0} - \frac{a^2_0}{4}\right).
+\end{equation}
+
+\subsection{Relativistic Self-focusing}
+
+Laser diffraction by differentiating the waist size of Gaussian near focus ($z < z_R$) using 
+\begin{equation}
+\frac{\partial w}{\partial\tau} = \frac{\partial z}{\partial \tau} \frac{\partial w}{\partial z}
+\end{equation}
+\begin{equation}
+\frac{\partial^2 w}{\partial \tau^2} = \frac{4 c^4}{\omega^2_0 w^3_0}
+\end{equation}
+
+For the plasma refractive index
+
+\begin{equation}
+\frac{\partial^2 w}{\partial \tau^2} = \frac{c^2}{\eta}\frac{\partial \eta}{\partial r} = -\frac{c^2}{8} \frac{\omega^2_p}{\omega^2_0} \frac{\partial}{\partial r} a^2 (r,z) \approx - \frac{1}{8}\frac{\omega^2_p}{\omega^2_0}\frac{a^2_0}{w0}c^2
+\end{equation}
+
+Balancing both
+
+\begin{equation}
+w^2_0 a^2_0 = 32 \frac{c^2}{\omega^2_p}
+\end{equation}
+
+and expressing this in terms of laser power
+\begin{equation}
+P[GW] \leq 17.3 \frac{\omega^2_0}{\omega^2_p}
+\end{equation}
+
+\subsection{Self-guiding}
+
+matched spot size
+
+\begin{equation}
+w_m = \left(\frac{r^2_{ch}}{\pi r_e \Delta n_e}\right)^{\frac{1}{4}}
+\end{equation}
+
+for parabolic plasma channel
+\begin{equation}
+n_e(r) = n_{e0} + \Delta n_e \frac{r^2}{r^2_{ch}}
+\end{equation}
+
+Loads of terms: relativistic, ponderomotive, pre-formed, diffraction
+
+\subsection{Pulse compression}
+
+Due to different group velocities
+
+\begin{equation}
+\Delta L = (v_{g2} - v_{g1}) \Delta t
+\end{equation}
+
+\begin{equation}
+\Delta v_g \approx \frac{\partial v_g}{\partial z} L
+\end{equation}
+
+Rate of compression in wave frame 
+
+\begin{equation}
+\frac{1}{L} \frac{\partial L}{\partial t} = -c \frac{\partial \eta}{\partial \xi}
+\end{equation}
+
+In bubble regime $n_e = n_0, n_e = 0$
+
+rate of compression
+
+\begin{equation}
+\tau = \tau_0 - \frac{n_0 l}{2c n_c}
+\end{equation}
 
 \section{Wakefield Acceleration}
 
@@ -712,6 +839,13 @@ Clusters and nano particles
 
 \subsubsection{External injection}
 
+\subsection{Depletion}
+
+\begin{equation}
+v_{etch} = \frac{\omega^2_p}{\omega^2_0} c.
+\end{equation}
+
+\subsection{Dephasing}
 
 
 \section{Radiation Production}
@@ -1397,3 +1531,18 @@ Linear and nonlinear Breit-Wheeler: two or more photons interact to produce one 
 
 Schwinger pair production: The external electric field is so strong that virtual electron-positron pairs can be accelerated to relativistic energies within a Compton wavelength and made real.
 
+
+Explain why X-ray and Gamma interaction is suitable:
+Need to overcome threshold for interaction. Cross section needs to be directed and hence we need one of the photons to be at much higher energy.
+
+
+
+
+Linear Breit Wheeler kinematics
+
+
+
+Linear Breit Wheeler cross section
+
+
+Nonlinear Breit Wheeler 
