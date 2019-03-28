@@ -271,6 +271,7 @@ with $z_{max}$ being unbound as the electron drifts forwards in the lab frame. T
 
 \EliasComm{add numbers for estimate ponderomotive against wakefield.}
 \EliasComm{Add lines to the plot for various $a_0$.}
+\EliasComm{Move this explicitly to a moving frame! argument should be $kz - \omega t$. This also changes the max values and so on.}
 
 \subsection{Ponderomotive Force}
 
@@ -1236,6 +1237,27 @@ Models: classical harmonics, polarisation dependency, quantum model.
 
 \EliasComm{See Naroshny 1965 Soviet JETP, KT McDonal 1986, dsigma/dx = ... Jl(x)/(1+x)2}
 
+In the classical derivation this becomes a Fourier analysis and the electron trajectories (see figure of eight motion) leads to higher harmonic generation.
+The emission spectrum is composed of generalised Bessel functions.
+
+\begin{equation}
+\sim \Sigma ... C_x^2(1-\sin^2\theta\cos^2\phi)+C_z^2\sin^2\theta-C_x C_z \sin2\theta\cos\phi
+\end{equation}
+
+\begin{equation}
+C_x = \Sigma (-1)^m j_m(\alpha_z) (J_{n-2m-1)} ...)
+\end{equation}
+
+Use some Bessel identities (see appendix) and $\theta = 0$. (There are also small angle solutions I believe).
+
+The specific case of on-axis backscattering leads to the differential expression (REF Esarey):
+
+\begin{equation}
+\sim n \alpha_n \left[ J_{(n-1)/2}(\alpha_n) - J_{(n+1)/2}(\alpha_n)\right]^2
+\end{equation}
+
+For odd harmonics. For even harmonics the generalised Bessel function vanishes. This means there are only odd harmonics on the axis. However, there are off-axis contributions with both harmonics and very close at higher orders.
+
 \subsubsection{Other modifications of the spectrum}
 
 In a real setting the ICS spectrum is modified by several input parameters:
@@ -1345,6 +1367,8 @@ What is the force in this picture? How does it compare to ponderomotive force?
 Cooling of spectra versus competing processes.
 
 \section{Pair Production and Annihilation}
+
+\EliasComm{Might not be necessary if I don't really write about BW.}
 
 Pairs are easily annihilated in radiactive substances for low energy positrons cancelling out with ambient electrons.
 At higher energies the cross section decreases.
