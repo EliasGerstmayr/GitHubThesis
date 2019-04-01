@@ -53,11 +53,11 @@ Using the previously derived equation for the Lorentz force we can now consider 
 \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = q \mathbf{E}.
 \end{equation}
 
-If we choose the coordinate system such that  $\mathbf{E} =  (E,0,0)^t = E e_x$, we see that the momentum of the electron is unchanged in the other two directions, $\mathrm{d}p_x/\mathrm{d}t = \mathrm{d}p_y/\mathrm{d}p_y = 0$. In x-direction the electron however feels a constant force $qE$ accelerating it further and further. 
+If we choose the coordinate system such that  $\mathbf{E} =  (E,0,0)^t = E e_x$, we see that the momentum of the electron is unchanged in the other two directions, $\mathrm{d}p_x/\mathrm{d}t = \mathrm{d}p_y/\mathrm{d}p_y = 0$. In x-direction the electron however feels a constant force $qE$ accelerating it further and further at a linear energy gain.
 
+\iffalse
 Let us assume a field strength $E = 100\,\mathrm{MeV/m}$, then the electron will have gained an energy of $100\,\mathrm{MeV}$ after $1\,\mathrm{m}$. After $1\,\mathrm{km}$ it would have gained already $100\,\mathrm{GeV}$ and so on. If we double the field strength, we only need half of the distance to reach the same energy. We just built ourselves a linear electron accelerator! In reality most accelerating structures are not based on static electric fields any more but on matched alternating fields. The principal idea, however, remains the same and the energy gain scales linearly with field strength and the distance over which the particle experiences this field. This is also the motivation and the appeal of plasma based accelerators: plasmas for example can sustain arbitrarily high electric field strengths and some of the accelerating fields measured so far reached an excess of $100\,\mathrm{GeV/m}$ (REF) - we just managed to save us quite some space!
-
-\EliasComm{Make this shorter.}
+\fi
 
 \subsection{Electron motion in a homogeneous magnetic field}
 
@@ -1520,6 +1520,10 @@ At higher energies the cross section decreases.
 There are different ways to create pairs:
 Bethe Heitler: 
 Trident: second order diagram. Electron emits a virtual photon which then decays into an electron-positron pair. Could happen in a two-step process of an electron in an external field (laser) performing inverse Compton.
+O. Pike:
+\begin{equation}
+\frac{d \sigma_{\gamma Z}}{dE_+}(\omega,x) = -\frac{1}{\bar x^2}\frac{d\sigma_{eZ}}{d\omega}(-\omega,x)
+\end{equation}
 
 Linear and nonlinear Breit-Wheeler: two or more photons interact to produce one pair.
 
@@ -1535,7 +1539,10 @@ Schwinger pair production: The external electric field is so strong that virtual
 Explain why X-ray and Gamma interaction is suitable:
 Need to overcome threshold for interaction. Cross section needs to be directed and hence we need one of the photons to be at much higher energy.
 
-
+Annihilation
+\begin{equation}
+\sigma_{e^+ e^-} = \pi r^2_0 \frac{(1-\beta^2)}{4\beta^2}\left[(3-\beta^4) ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right]
+\end{equation}
 
 
 Linear Breit Wheeler kinematics
@@ -1544,5 +1551,24 @@ Linear Breit Wheeler kinematics
 
 Linear Breit Wheeler cross section
 
+In CM frame, from REF Ribeyre, 2015 (Pair creation in collision of gamma-ray beams produced with high intensity lasers) also found in O. Puke's thesis
+
+\begin{equation}
+\sigma_{\gamma,\gamma} = \frac{\pi r^2_e}{2}(1-\beta^2) \left[(3-\beta^4) ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right] = 2 \beta^2 \sigma_{e^+ e^-}
+\end{equation}
+
+$s = (E^*/m_e c^2)^2 = E_{\gamma 1} E_{\gamma 2} (1-\cos\phi)/2 m^2_e c^4, \beta = (1-1/s)^{1/2}$
+
+For head-on collision $\theta = \pi \rightarrow s = E_1 E_2/m^2_e c^4$ and for $\theta = \pi/2 \rightarrow s = E_1 E_2/2m^2_e c^4$.
+The threshold is $s > 1$.
+
+A thermal distribution
+
+\begin{equation}
+n_\gamma = \frac{2\chi(3)}{\pi^2 \lambda^3} \left(\frac{k_B T}{m_e c^2}\right)^3
+\end{equation} 
+
 
 Nonlinear Breit Wheeler 
+
+Photon-photon scattering
