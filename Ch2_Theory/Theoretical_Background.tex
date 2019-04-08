@@ -8,7 +8,7 @@ The Lagrangian for a relativistic particle in an electromagnetic field with the 
 \begin{equation}
 L(\mathbf{r},\mathbf{v},t) = - mc^2 \gamma^{-1}+q \mathbf{v}\cdot\mathbf{A} - q \Phi,
 \end{equation}
-where $m$ is the mass of the particle, $\gamma$ the relativistic Lorentz factor and q the charge.
+where $m$ is the mass of the particle, $\gamma$ the relativistic Lorentz factor and $q$ the charge.
 
 To obtain the equation of motion (EoM) we use the Euler-Lagrange equation
 
@@ -47,7 +47,7 @@ the equation of motion takes the familiar shape of the Lorentz force:
 
 \subsection{Electron motion in a homogeneous electric field}
 
-Using the previously derived equation for the Lorentz force we can now consider a first simple example. Consider the motion of a single electron in a homogeneous electric field $\mathbf{B} = \mathbf{0}$. The Lorentz equation simplifies to:
+Using the previously derived equation for the Lorentz force we can now consider a first simple example. Consider the motion of a single electron in a homogeneous electric field without presence of a magnetic field, i.e. $\mathbf{B} = \mathbf{0}$. The Lorentz equation simplifies to:
 
 \begin{equation}
 \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = q \mathbf{E}.
@@ -77,20 +77,20 @@ This then gives us the differential equations:
 
 \begin{subequations}
 \begin{align}
-\dot{p_x} &= \frac{qB}{\gamma m} p_y\\
-\dot{p_y} &= - \frac{qB}{\gamma m} p_x\\
-\dot{p_z} &= 0
+\dot{p_x} &= \frac{qB}{\gamma m} p_y,\\
+\dot{p_y} &= - \frac{qB}{\gamma m} p_x,\\
+\dot{p_z} &= 0,
 \end{align}
 \end{subequations}
 which gives us
 
 \begin{subequations}
 \begin{align}
-\ddot{p_x}  &= - \left(\frac{qB}{\gamma m}\right)^2 p_x\\
-\ddot{p_y}  &= - \left(\frac{qB}{\gamma m}\right)^2 p_y
+\ddot{p_x}  &= - \left(\frac{qB}{\gamma m}\right)^2 p_x,\\
+\ddot{p_y}  &= - \left(\frac{qB}{\gamma m}\right)^2 p_y.
 \end{align}
 \end{subequations}
-which can be solved by a periodic motion of type $p_x(t) = C \sin(\omega t) + D \cos(\omega t)$ with $\omega = qB/\gamma m$. 
+This can be solved by a periodic motion of type $p_x(t) = C \sin(\omega t) + D \cos(\omega t)$ with $\omega = qB/\gamma m$. 
 
 $\mathbf{p_\perp}$ be the momentum vector of the particle perpendicular to the magnetic field lines and $\mathbf{p_\parallel}$ the component parallel to the magnetic field (z). Assume initial conditions $p_x(t=0) = |\mathbf{p_\perp}| = p_\perp$ and $p_y(t=0)=0$. We get these equations for the momenta:
 
@@ -102,18 +102,18 @@ p_y(t) &= - p_\perp \sin(\omega t)
 \end{subequations}
 The solution for the z-motion is trivial $p_z = p_{z,0}$.
 
-or in terms of the trajectories with $x(0) = 0, z(0) = 0, y(0) = p_\perp/qB = r_{Larmor}$
+or in terms of the trajectories with $x(0) = 0, z(0) = 0, y(0) = p_\perp/qB = r_{L}$
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
-x(t) &= r_{Larmor} \sin(\omega t)\\
-y(t) &= r_{Larmor} \cos(\omega t)\\
+x(t) &= r_{L} \sin(\omega t)\\
+y(t) &= r_{L} \cos(\omega t)\\
 z(t) &= \frac{p_{z,0}}{\gamma m} t
 \end{empheq}
 \end{subequations}
 
 The radius of the circular motion of the electron is called the Larmor radius. It depends on the total momentum in the x-y plane and the field strength: 
 \begin{equation}
-r_{Larmor} = |\mathbf{p}_\perp|/eB,
+r_{L} = |\mathbf{p}_\perp|/eB,
 \end{equation}
 where $e$ is the charge of the electron and $\mathbf{p}_\perp$ is the component of the momentum vector $\mathbf{p}$ that is perpendicular to the field component of the magnetic field.
 \vspace{\baselineskip}
@@ -123,6 +123,8 @@ The motion of the electron consists of two decoupled motions: one at the constan
 
 
 \subsection{Electron motion in a monochromatic plane EM wave}
+
+This is based on Alec Thomas' thesis (REF).
 
 Taking the equation of motion (EoM) in terms of the potentials $\mathbf{A}$ and $\Phi$ as given in equation \eqref{Theory:Eqns:EoMLorentz} on page \pageref{Theory:Eqns:EoMLorentz}:
 
@@ -143,12 +145,12 @@ With this result the EoM becomes
 \end{align}
 where in the last step we introduced the canonical momentum $\mathbf{u} = \mathbf{p} + q\mathbf{A}$.
 
-Note that
+We can express $(\nabla\mathbf{p})\cdot \mathbf{v}$ as follows
 \begin{equation}
 (\nabla\mathbf{p})\cdot \mathbf{v} = \frac{1}{m\gamma} \nabla (p^2/2) = \frac{1}{m\gamma}\nabla(\gamma^2/2) = m c^2 \nabla \gamma.
 \end{equation}
 
-Using this result to substitute in the previous equation, this can be expressed as
+We can substitute by this result in the previous equation:
 \begin{equation}
 \frac{\partial}{\partial t}\mathbf{u} = \mathbf{v}\times\left(\nabla\times\mathbf{u}\right) - \nabla \left(q\Phi + \gamma mc^2\right).
 \end{equation}
@@ -160,9 +162,9 @@ Taking the curl of this equation results in:
 \end{equation}
 where the second term disappeared as the curl of a gradient is always zero.
 
-This equation shows that if $\nabla \times \mathbf{u}$ is zero initially, it will remain always. The condition is satisfied, for instance, for a plasma at rest before the laser pulse arrives.
+This equation shows that if $\nabla \times \mathbf{u}$ is zero initially, it will remain so always. The condition is satisfied, for instance, for a plasma at rest before the laser pulse arrives.
 
-Thus, assuming this condition we can write:
+Assuming this conditions our previous equation simplifies to
 \begin{equation}
 \frac{\partial}{\partial t}\mathbf{u} = - \nabla \left(q\Phi + \gamma mc^2\right).
 \end{equation}
@@ -184,42 +186,41 @@ This means we obtain two separate components:
 
 From the perpendicular component we see that the transverse canonical momentum is conserved: $\mathbf{p}_\perp + q\mathbf{A} = 0$. If $q = -e$ and $e\mathbf{A}_\perp = \mathbf{a}_\perp$, then $\mathbf{p}_\perp = \mathbf{a}_\perp$. In terms of the Cartesian coordinates, this means $p_x = a_x, p_y = a_y$.
 
-The parallel component will be considered in the waveframe, using the quasistatic approximation $\frac{\partial}{\partial t} \approx c \frac{\partial}{\partial \xi}$. In this case the spatial component $\xi$ is the direction of propagation, the parallel component, i.e. $\nabla_\parallel = \frac{\partial}{\partial \xi}$. The parallel-component of the vector potential $\mathbf{A}$ is zero, so $u_\parallel = p_\parallel$:
+For the parallel spatial component $z$ consider the substitution $z = ct$ for light. Thus, $\partial z = c \partial t$. The parallel-component of the vector potential $\mathbf{A}$ is zero, so $u_\parallel = p_\parallel = p_z$:
 
 \begin{equation}
-\frac{\partial}{\partial \xi}(cp_\parallel - \gamma mc^2) = 0.
+\frac{\partial}{\partial t}(cp_z - \gamma mc^2) = 0.
 \end{equation}
 
-Assuming an unperturbed stationary plasma, the initial conditions are $\gamma = 1$ and $p_\parallel = 0$ and integrating the previous equation gives:
-\begin{align}
-c p_\parallel - \gamma mc^2 &= - mc^2,\nonumber\\
-cp_\parallel + mc^2 &= \gamma mc^2.
-\end{align}
+Assuming an unperturbed stationary plasma, the initial conditions are $\gamma(t=0) = 1$ and $p_z(t=0) = 0$ and integrating the previous equation gives:
+\begin{equation}
+c p_z+ mc^2 = \gamma mc^2.
+\end{equation}
 
-Using $E = \gamma m c^2 = \sqrt{mc^2 + (cp_\parallel)^2 + (cp_\perp)^2}$ and substituting, one obtains an expression for $p_\parallel$:
+Using $E = \gamma m c^2 = \sqrt{mc^2 + (cp_\parallel)^2 + (cp_\perp)^2}$ and substituting, one obtains an expression for $p_\parallel = p_z$:
 
 \begin{equation}
-p_\parallel = \frac{1}{2} mc a^2,
+p_z = \frac{1}{2} mc a^2,
 \end{equation}
 where $a^2 = p^2_\perp$.
 
-Normalising this result by $mc$ we now have:
+We now have
 
 \begin{subequations}
 \begin{align}
-p_x &= a_x,\\
-p_y &= a_y,\\
-p_z &= \frac{1}{2} a^2_z.
+p_x &= mc a_x,\\
+p_y &= mc a_y,\\
+p_z &= \frac{1}{2} mc a^2.
 \end{align}
 \end{subequations}
 
-In normalised units $\mathbf{p} = \gamma \mathbf{v}$ and this can be written as:
+Using $\mathbf{p} = \gamma m \mathbf{v}$ this can be written as:
 
 \begin{subequations}
 \begin{align}
-\gamma \frac{\mathrm{d}x}{\mathrm{d}t} &= a_x,\\
-\gamma \frac{\mathrm{d}y}{\mathrm{d}t} &= a_y,\\
-\gamma \frac{\mathrm{d}z}{\mathrm{d}t} &= \frac{a^2}{2}.
+\frac{\gamma}{c} \frac{\mathrm{d}x}{\mathrm{d}t} &= a_x,\\
+\frac{\gamma}{c} \frac{\mathrm{d}y}{\mathrm{d}t} &= a_y,\\
+\frac{\gamma}{c} \frac{\mathrm{d}z}{\mathrm{d}t} &= \frac{a^2}{2}.
 \end{align}
 \end{subequations}
 
@@ -227,59 +228,53 @@ Changing from $t$ to proper time $\tau$, we transform via $\mathrm{d}\tau = \gam
 
 \begin{subequations}
 \begin{align}
-\frac{\mathrm{d}x}{\mathrm{d}\tau} &= a_x,\\
-\frac{\mathrm{d}y}{\mathrm{d}\tau} &= a_y,\\
-\frac{\mathrm{d}z}{\mathrm{d}\tau} &= \frac{a^2}{2}.
+\frac{1}{c}\frac{\mathrm{d}x}{\mathrm{d}\tau} &= a_x,\\
+\frac{1}{c}\frac{\mathrm{d}y}{\mathrm{d}\tau} &= a_y,\\
+\frac{1}{c}\frac{\mathrm{d}z}{\mathrm{d}\tau} &= \frac{a^2}{2}.
 \end{align}
 \end{subequations}
 
 Let us assume a laser field with linear polarisation in $x$, described by the vector potential
 \begin{equation}
-\mathbf{a} = a_0 \cos(\omega \tau)\mathbf{e}_x,
+\mathbf{a} = a_0 \cos(kz - \omega t)\mathbf{e}_x = a_0 \cos(\xi)\mathbf{e}_x,
 \end{equation}
-where $\mathbf{e}_x$ is the unit vector in the x-coordinate. 
+where $\mathbf{e}_x$ is the unit vector in the x-coordinate, $\xi = kz - \omega t$ the waveframe coordinate and $k = \omega/c$ the wave number. 
 
 \begin{figure}[h]
 \centering
 	\includegraphics[width=0.49\columnwidth]{figeight_lab.pdf}
 	\includegraphics[width=0.49\columnwidth]{figeight_drift.pdf}
-\caption{Electron motion in an infinite, linearly polarised, plane EM wave in the lab frame (left), normalised by $a_0/k$ in x and $a^2_0/k$ in z, with the wavenumber $k = \omega/c$. On the right the figure-of-eight motion in the drift frame.}
+\caption{Electron motion in an infinite, linearly polarised, plane EM wave in the lab frame (left), with the wavenumber $k = \omega/c$. On the right the figure-of-eight motion in the drift frame.}
 \label{Theory:Figs:FigureOfEight}
 \end{figure}
 
-Using this explicit vector potential and integrating the equation of motions, results in:
+Using this explicit vector potential:
+\begin{subequations}
+\begin{align}
+\frac{\gamma}{c}\frac{\mathrm{d}x}{\mathrm{d}t} &= a_0 \cos \xi,\\
+\frac{\gamma}{c}\frac{\mathrm{d}y}{\mathrm{d}t} &= 0,\\
+\frac{\gamma}{c}\frac{\mathrm{d}z}{\mathrm{d}t} &= \frac{1}{2} a^2_0 \cos^2 \xi.
+\end{align}
+\end{subequations}
+
+and integrating the equation of motions, results in:
 
 \begin{subequations}
 \begin{align}
-x(\tau) &= \frac{c a_0}{\omega}\sin(\omega \tau),\\
-y(\tau) &= 0,\\
-z(\tau) &= \frac{c a^2_0}{4}\left(\tau + \frac{1}{2\omega}\sin(2\omega\tau)\right),
+x(\xi) &= \frac{a_0}{k}\sin(\xi),\\
+y(\xi) &= 0,\\
+z(\xi) &= \frac{a^2_0}{4k}\left(\xi + \frac{1}{2}\sin(2\xi)\right),
 \end{align}
 \end{subequations}
-where we chose the initial conditions $x(0)=y(0)=z(0)=0$ and returned to non-normalised units.
+where we chose the initial conditions $x(0)=y(0)=z(0)=0$  and used $\mathrm{d}\xi/\mathrm{d}t = \omega/\gamma$.
 
 The electron is performing a periodic oscillation around the z-axis, whilst the motion in the z-axis is composed of a constant drift and another oscillation (see figure \ref{Theory:Figs:FigureOfEight} (left)). This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame (see figure \ref{Theory:Figs:FigureOfEight} (right)). For $a_0 \leq 1$ the motion in z is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
 
-The extremal values are then 
-
-\begin{subequations}
-\begin{align}
-x_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0}{\omega}\\
-z_{max}(\tau = (2n+1)\pi/2\omega) &= \frac{c a_0^2 \pi}{8 \omega} (2n+1),
-\end{align}
-\end{subequations}
-with $z_{max}$ being unbound as the electron drifts forwards in the lab frame. The drift velocity is (ADD NUMBER HERE) which shows that particles can be accelerated using this method. For a realistic $a_0$ of NUMBER, this gives us a drift momentum of NUMBER. The energies we can achieve in wakefield acceleration is much larger.
-
-
-\EliasComm{add numbers for estimate ponderomotive against wakefield.}
-\EliasComm{Add lines to the plot for various $a_0$.}
-\EliasComm{Move this explicitly to a moving frame! argument should be $kz - \omega t$. This also changes the max values and so on.}
-
 \subsection{Ponderomotive Force}
 
+In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates through an underdense plasma, expels electrons in its way and drives a wave. The driving force is the so-called ponderomotive force which is proportional to the gradient of the laser intensity. 
 
-In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates through an underdense plasma and drives a wave via the ponderomotive force which is proportional to the gradient of the laser intensity. There exists a variety of derivations. The following relativistic derivation is based on Alec Thomas' PhD thesis (Imperial College, 2007) (REF).
-\EliasComm{add a reference here.}
+The following relativistic derivation of the ponderomotive force is based on Alec Thomas' PhD thesis (Imperial College, 2007) (REF Alec Thomas PhD Thesis).
 
 We start with the Euler-Lagrange equations after plugging in the Lagrangian in terms of the potentials $\mathbf{A}$ and $\Phi$ as given as intermediate step in equation \eqref{Theory:Eqns:EoMLorentzRaw} on page \pageref{Theory:Eqns:EoMLorentzRaw}:
 
@@ -317,7 +312,6 @@ When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear 
 \end{equation}
 which is the ponderomotive force $\mathbf{F}_p$ on on a single electron. Since $\mathbf{F}_p \sim \nabla \left\langle\mathbf{a}^2\right\rangle$, this implies $\mathbf{F}_p \sim \nabla \left\langle I\right\rangle$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
 
-\EliasComm{What is the ponderomotive force? Is it not just the electrons gaining mass and oscillating out of the region?}
 
 \iffalse
 As the force is essential for the understanding of LWFA it will be derived in the following.
