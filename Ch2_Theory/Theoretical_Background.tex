@@ -506,84 +506,72 @@ A typical regime wakefield accelerators at a Gemini class laser operate in is at
 
 \subsection{Laser Propagation in Vacuum}
 
-Maxwell's equations.
-
-Based on Jackson:
-From that we get the wave equation where $\mathbf{E}$ and $\mathbf{B}$ satisfy this:
+An electromagnetic wave of arbitrary shape $u$ has to satisfy Maxwell's equations and hence also the wave equation (REF Jackson)
 
 \begin{equation}
-\nabla^2 u - \frac{1}{v^2}\frac{\partial^2 u}{\partial t^2} = 0,
+\left(\nabla^2 - \frac{1}{v^2}\frac{\partial^2}{\partial t^2} \right) u= 0,
 \end{equation}
 where $v = c/\sqrt{\mu \epsilon}$ and in vacuum $v = c$.
 
-The plane wave solution of this is 
+In the case of waves with an electric field $\mathbf{E} = \mathbf{E}(\mathbf{r},t) = \mathbf{u}(\mathbf{r}) v(t)$, where the spatial and temporal dependencies separate, the components solve two separate differential equations 
+\begin{align}
+\left(\nabla^2 + k^2\right) \mathbf{u} &= 0,\\
+\left(\frac{\partial^2}{\partial t^2} + k^2\right) v &= 0,
+\end{align}
+where $k = \sqrt{\mu \epsilon} \omega/c$. The spatial component is called the Helmholtz equation.
 
+For an an electric field $\mathbf{E} = \mathbf{E_0}(r,z) e^{i(kz-\omega t)}$ with cylindrical symmetry in the paraxial approximation $|k \mathbf{E}_0| \gg |\partial_z \mathbf{E}_0|$ the Helmholtz equation takes the form
 \begin{equation}
-u = e^{i \mathbf{k}\cdot\mathbf{x} - i \omega t},
-\end{equation}
-with
-\begin{equation}
-k = \frac{\omega}{v} = \sqrt{\mu \epsilon} \frac{\omega}{c}
-\end{equation}
-
-Helmholtz equation
-\begin{equation}
-\nabla^2 u + k^2 u = 0
+\left(\frac{\partial^2}{\partial r^2} + \frac{1}{r}\frac{\partial}{\partial r}- 2ik \frac{\partial}{\partial z}\right) \mathbf{E}_0 = 0.
 \end{equation}
 
-Paraxial approximation in cylindrical symmetry.
-
-Gaussian beam is a solution of the paraxial form of the Helmholtz equation.
-
-Electric field of laser in vacuum:
+For an in x-direction linearly-polarised electric field moving in $z$ the solution takes the form
 \begin{equation}
-\mathbf{E}(r,z,t) = E_0 \mathbf{x} \frac{w_0}{w_z} \exp\left(-\frac{r^2}{w(z)^2}\right) \exp\left[-\frac{(z-v_g t)^2}{(c \tau)^2}\right] \exp\left[-i\left(kz - \omega t + l \frac{r^2}{2 R(z)} - \psi(z)\right)\right]
+\mathbf{E}(r,z,t) = E_0 \frac{w_0}{w(z)} \exp\left(-\frac{r^2}{w(z)^2}\right) \exp\left[-i(kz-\omega t)-i k\frac{r^2}{2 R(z)} + i \zeta (z)\right]\mathbf{\hat{x}}.
 \end{equation}
+This family of solutions is referred to as Gaussian modes and the physical properties of the beam is captured in the parameters of the wave function. This beam focuses down to a spot of size $w_0$ at $z=0$ and then expands again.
 
-Waist size for $1/e$.
-
+$w(z)$ is the waist size of the Gaussian beam at position $z$ and indicates the size of the beam when the intensity drops to $1/e$ of its maximum:
 \begin{equation}
-w(z) = w_0 \sqrt{1+ \left(\frac{z}{z_R}\right)^2}
+w(z) = w_0 \sqrt{1+ \left(\frac{z}{z_R}\right)^2},
 \end{equation}
-
-Rayleigh length/range
+where $w_0$ is the waist size at focus $z=0$ and $z_R$ the Rayleigh length defined as 
 \begin{equation}
-z_r = \frac{\pi w^2_0}{\lambda}
+z_R = \frac{\pi w^2_0}{\lambda},
 \end{equation}
+and is the distance over which a Gaussian beam expands from $w_0$ to $\sqrt{2}w_0$ and is hence an indicator for how quickly a beam diverges or in other words over which distance it maintains an intensity close to its maximum.
 
+The intensity can be calculated by integrating over the area of the beam.... and considering the pulse duration.
 Intensity
 
-Radius of curvature
-
+$R(z)$ is the radius of curvature of the wavefront
 \begin{equation}
-R(z) = z \left[1+\left(\frac{z_r}{z}\right)^2\right]
+R(z) = z \left[1+\left(\frac{z_R}{z}\right)^2\right].
 \end{equation}
+The wavefront is strongly curved around the focus $z < z_R$ and slowly flattens out at $z \gg z_R$.
 
-Guoy phase
+$\zeta$ is called the Guoy phase and is an additional phase term that changes signs once the Gaussian mode goes through its focus.
 
-Poynting vector
+Poynting vector:
 
-
-f number: focal length over beam diameter
-
-how tightly focussed
+When focusing down a beam with an optic, for instance an off-axis parabola or spherical mirror, the ratio of the focal length and the beam diameter is a useful quantity. $F = f/d$.
+Expressing some of the previous quantities in terms of the f-number it indicates how tightly a beam is focussed
 \begin{equation}
 w_0 = \frac{2 \sqrt{2}}{\pi} \lambda f \approx 0.9 \lambda f
 \end{equation}
-
-distance over which laser stays intense
+and the distance over which laser stays intense
 \begin{equation}
-z_R = \frac{\pi w^2_0}{\lambda} \approx 2.5 \lambda f^2
+z_R = \frac{\pi w^2_0}{\lambda} \approx 2.5 \lambda f^2.
 \end{equation}
 
-Typical numbers 
+For a Ti:Sa laser at $\lambda = 800\,\mathrm{nm}$ typical numbers are
+
 f/2: $w_0 = 1.4\, \mu m; z_R = 8.1 \,\mu m$;
 f/20: $w_0 =14.4\, \mu m; z_R = 815 \,\mu m$;
 f/40: $w_0 = 28.8\, \mu m; z_R = 3200\, \mu m$;
 
-Real beams are not Gaussian but flat top.
-Deviations from wave front and curvature profile, spatio-temporal couplings and so on
 
+However, real laser beams in experiments are not Gaussian but mostly flat-top beams. In addition, changes in the wave front, curvature profile, spatio-temporal couplings and so on consist further deviations from an ideal beam.
 
 \subsection{Laser Propagation in Plasma}
 
@@ -604,7 +592,7 @@ where $\omega$ is the frequency of the electromagnetic wave.
 At $\omega \ll \omega_p$ this the expression can be approximated by
 \begin{align}
 v_p &= \frac{\omega}{k} \approx c \left(1+ \frac{1}{2}\frac{\omega^2_p}{\omega^2}\right),\\
-v_g &= \frac{\partial\omega}{\partial k} \approx c \left(1 - \frac{1}{2}\frac{\omega^2_p}{\omega^2}\right).\\
+v_g &= \frac{\partial\omega}{\partial k} \approx c \left(1 - \frac{1}{2}\frac{\omega^2_p}{\omega^2}\right).
 \end{align}
 
 
@@ -624,41 +612,34 @@ which only depends on the frequency of the incident electromagnetic wave, and so
 \begin{equation}
 \eta = \sqrt{1-\left(\frac{\omega_p}{\omega}\right)^2} = \sqrt{1-\frac{n_e}{n_c}}.
 \end{equation}
-\EliasComm{add some comments on the refractive index.}
 
-For $n_e > n_c$, i.e. an overdense plasma, the refractive index is imaginary and the wave becomes evanescent in the medium.
-
-The critical plasma density $n_c$ is the electron density at which electromagnetic waves can no longer propagate through the plasma. A plasma with a density $n_e < n_c$ is transparent and called `underdense'. For $n_e > n_c$ the plasma is opaque and `overdense'. LWFA requires the laser pulse to propagate through the plasma to drive the wave and hence targets used are typically operating at densities of only a fraction of $n_c$, whilst many ion acceleration mechanisms are based on overdense media.
-\vspace{\baselineskip}
-
-\EliasComm{add some comments here on reflection (plasma mirror).}
-\EliasComm{something about absorption of energy in ion acceleration, heating etc.}
-\EliasComm{add some explicit curves for transmission/absorption and reflection?}
+For $n_e > n_c$, i.e. an `overdense plasma', the refractive index is imaginary and the wave becomes evanescent in the medium.
+A plasma with a density $n_e < n_c$ is transparent and called `underdense'. LWFA requires the laser pulse to propagate through the plasma to drive the wave and hence targets used are typically operating at densities of only a fraction of $n_c$, whilst many ion acceleration mechanisms are based on overdense media.
 
 \subsection{Nonlinear Refractive Index}
 
-High intensity lasers interact with the electrons and their relativistic motion will lead to a modification of the refractive index
-
+As we have seen previously electrons interacting with a high intensity lasers perform a relativistic motion. This will lead to a modification of the refractive index
 \EliasComm{Stuart's slides and Mori IEEE J Quantum Elec 33, 1997}
 
 \begin{equation}
 \eta = \frac{c}{v_p} = \left(1-\frac{\omega^2_p}{\gamma \omega^2}\right)
 \end{equation}
 
-Local modifications of plasma density, laser frequency and laser intensity
+Taking into consideration local modifications of the plasma density, laser frequency and laser intensity
 \begin{align}
-n &= n_0 &+ \frac{\delta n}{n_0} n_0\\
-\omega_L &= \omega_0 &+ \frac{\delta \omega_L}{\omega_0} \omega_0\\
-\left\langle \gamma \right\rangle &= 1&+ \frac{a^2_0}{4}
+n &= n_0 + \frac{\delta n}{n_0} n_0\\
+\omega_L &= \omega_0 + \frac{\delta \omega_L}{\omega_0} \omega_0\\
+\left\langle \gamma \right\rangle &= 1+ \frac{a^2_0}{4}
 \end{align}
 
+the nonlinear refractive index becomes
 \begin{equation}
 \eta = 1 - \frac{1}{2}\frac{\omega^2_p}{\omega^2_0}\left(1+ \frac{\delta n}{n_0} - \frac{2 \delta \omega_L}{\omega_0} - \frac{a^2_0}{4}\right).
 \end{equation}
 
-\subsection{Relativistic Self-focusing}
+\subsection{Relativistic Self-focusing and Self-guiding}
 
-Laser diffraction by differentiating the waist size of Gaussian near focus ($z < z_R$) using 
+The diffraction of a Gaussian mode near focus ($z < z_R$) can be calculated by differentiating the waist size
 \begin{equation}
 \frac{\partial w}{\partial\tau} = \frac{\partial z}{\partial \tau} \frac{\partial w}{\partial z}
 \end{equation}
@@ -666,25 +647,27 @@ Laser diffraction by differentiating the waist size of Gaussian near focus ($z <
 \frac{\partial^2 w}{\partial \tau^2} = \frac{4 c^4}{\omega^2_0 w^3_0}
 \end{equation}
 
-For the plasma refractive index
+Using the expression of the nonlinear refractive index and focusing on the term involving the vector potential of the laser we find
 
 \begin{equation}
-\frac{\partial^2 w}{\partial \tau^2} = \frac{c^2}{\eta}\frac{\partial \eta}{\partial r} = -\frac{c^2}{8} \frac{\omega^2_p}{\omega^2_0} \frac{\partial}{\partial r} a^2 (r,z) \approx - \frac{1}{8}\frac{\omega^2_p}{\omega^2_0}\frac{a^2_0}{w0}c^2
+\frac{\partial^2 w}{\partial \tau^2} = \frac{c^2}{\eta}\frac{\partial \eta}{\partial r} = -\frac{c^2}{8} \frac{\omega^2_p}{\omega^2_0} \frac{\partial}{\partial r} a^2 (r,z) \approx - \frac{1}{8}\frac{\omega^2_p}{\omega^2_0}\frac{a^2_0}{w_0}c^2,
 \end{equation}
+showing that this term has an opposite sign and hence focuses.
 
-Balancing both
-
+To find the conditions when diffraction and focusing balance each other we set both terms equal
 \begin{equation}
-w^2_0 a^2_0 = 32 \frac{c^2}{\omega^2_p}
+w^2_0 a^2_0 = 32 \frac{c^2}{\omega^2_p},
 \end{equation}
 
 and expressing this in terms of laser power
 \begin{equation}
-P[GW] \leq 17.3 \frac{\omega^2_0}{\omega^2_p}
+P_c \approx 17 \frac{\omega^2_0}{\omega^2_p} \,\mathrm{GW},
 \end{equation}
+where $P_c$ is the critical power or minimum power required to outweigh diffraction by relativistic self-focusing.
 
-\subsection{Self-guiding}
+Balancing both terms the laser pulse remains focused over several Rayleigh lengths. This is referred to as self-guiding as it enables guiding without external guiding structures.
 
+\iffalse
 matched spot size
 
 \begin{equation}
@@ -697,31 +680,28 @@ n_e(r) = n_{e0} + \Delta n_e \frac{r^2}{r^2_{ch}}
 \end{equation}
 
 Loads of terms: relativistic, ponderomotive, pre-formed, diffraction
-
+\fi
 \subsection{Pulse compression}
 
-Due to different group velocities
-
+Since a laser pulse of finite duration requires a certain frequency bandwidth, the group velocity also shows a spread and results in different parts of the beam propagating faster than others:
 \begin{equation}
-\Delta L = (v_{g2} - v_{g1}) \Delta t
+\Delta L = (v_{g2} - v_{g1}) \Delta t.
 \end{equation}
 
+The difference in group velocities is 
 \begin{equation}
-\Delta v_g \approx \frac{\partial v_g}{\partial z} L
+\Delta v_g \approx \frac{\partial v_g}{\partial z} L.
 \end{equation}
 
-Rate of compression in wave frame 
-
+Hence the rate of compression in the wave frame is
 \begin{equation}
-\frac{1}{L} \frac{\partial L}{\partial t} = -c \frac{\partial \eta}{\partial \xi}
+\frac{1}{L} \frac{\partial L}{\partial t} = -c \frac{\partial \eta}{\partial \xi}.
 \end{equation}
 
-In bubble regime $n_e = n_0, n_e = 0$
-
-rate of compression
-
+In bubble regime the leading edge of the beam sees a density $n_e = n_0$, whereas the rest propagates in vacuum with $n_e = 0$.
+The pulse duration after propagating a length $l$ is hence
 \begin{equation}
-\tau = \tau_0 - \frac{n_0 l}{2c n_c}
+\tau = \tau_0 - \frac{n_0 l}{2c n_c}.
 \end{equation}
 
 \section{Wakefield Acceleration}
