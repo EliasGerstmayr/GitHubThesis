@@ -404,11 +404,13 @@ The dominant ionisation mechanism is indicated by the Keldysh parameter $\gamma_
 \end{equation}
 At $\gamma_K \gg 1$ multiphoton ionisation dominates, whereas for small $\gamma_K < 0.5$ tunnel ionization is expected to be important. If the electric field is larger than the binding Coulomb potential, the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
 
+\iffalse
 \begin{figure}
 \centering
 \includegraphics[width=0.9\columnwidth]{ionisation_sketch.png}
 \caption{Sketch of ionisation mechanisms.}
 \end{figure}
+\fi
 
 In the simple example of a hydrogen-like atom in an external electric field $E$, the potential $V$ at a distance $r$ from the core is given by
 \begin{equation}
@@ -431,6 +433,7 @@ I = \frac{c\epsilon_0^3 \pi^2 V^4_e}{2e^6 Z^2} \approx 4 \times 10^{9} \left(\fr
 For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
 The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionised: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser either through full barrier suppression or by triggering an increased tunnelling rate: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF). Partially ionised plasmas are more complex systems as one has to consider, for instance, ionisation effects, absorption of X-rays, weaker fields, dampening of particles, scattering and so on.
 
+\iffalse
 \begin{table}
 \centering
 \begin{tabular}{l|r|l}
@@ -458,7 +461,7 @@ $N^{6+} \rightarrow N^{7+} $ & $667.0$ & $1.6 \times 10^{19}$
 %year = {2018},
 %}
 \end{table}
-
+\fi
 
 \subsection{The Plasma Frequency}
 
@@ -513,7 +516,7 @@ An electromagnetic wave of arbitrary shape $u$ has to satisfy Maxwell's equation
 \end{equation}
 where $v = c/\sqrt{\mu \epsilon}$ and in vacuum $v = c$.
 
-In the case of waves with an electric field $\mathbf{E} = \mathbf{E}(\mathbf{r},t) = \mathbf{u}(\mathbf{r}) v(t)$, where the spatial and temporal dependencies separate, the components solve two separate differential equations 
+In the case of waves with an electric field $\mathbf{E} = \mathbf{E}(\mathbf{r},t) = \mathbf{u}(\mathbf{r}) v(t)$, where the spatial and temporal dependencies can be separated, the components solve two separate differential equations 
 \begin{align}
 \left(\nabla^2 + k^2\right) \mathbf{u} &= 0,\\
 \left(\frac{\partial^2}{\partial t^2} + k^2\right) v &= 0,
@@ -529,7 +532,8 @@ For an in x-direction linearly-polarised electric field moving in $z$ the soluti
 \begin{equation}
 \mathbf{E}(r,z,t) = E_0 \frac{w_0}{w(z)} \exp\left(-\frac{r^2}{w(z)^2}\right) \exp\left[-i(kz-\omega t)-i k\frac{r^2}{2 R(z)} + i \zeta (z)\right]\mathbf{\hat{x}}.
 \end{equation}
-This family of solutions is referred to as Gaussian modes and the physical properties of the beam is captured in the parameters of the wave function. This beam focuses down to a spot of size $w_0$ at $z=0$ and then expands again.
+This family of solutions is referred to as Gaussian modes and the physical properties of the beam are captured in the different parameters of the wave function. The function $\mathbf{E}$ describes a beam converging from $z < 0$ at a size $w(z)$ onto a minimum at $z = 0$ achieving the highest energy field strengths before diverging again for $z > 0$.
+\vspace{\baselineskip}
 
 $w(z)$ is the waist size of the Gaussian beam at position $z$ and indicates the size of the beam when the intensity drops to $1/e$ of its maximum:
 \begin{equation}
@@ -542,17 +546,16 @@ z_R = \frac{\pi w^2_0}{\lambda},
 and is the distance over which a Gaussian beam expands from $w_0$ to $\sqrt{2}w_0$ and is hence an indicator for how quickly a beam diverges or in other words over which distance it maintains an intensity close to its maximum.
 
 The intensity can be calculated by integrating over the area of the beam.... and considering the pulse duration.
-Intensity
+Intensity, Poynting vector
 
 $R(z)$ is the radius of curvature of the wavefront
 \begin{equation}
 R(z) = z \left[1+\left(\frac{z_R}{z}\right)^2\right].
 \end{equation}
-The wavefront is strongly curved around the focus $z < z_R$ and slowly flattens out at $z \gg z_R$.
+The wavefront is strongly curved around the focus $z < z_R$ and slowly flattens out at $z \gg z_R$. The difference of in radii of curvature for beams with different Rayleigh length can be used in spatial interferometry applied in the context of synchronising two laser pulses in time.
 
 $\zeta$ is called the Guoy phase and is an additional phase term that changes signs once the Gaussian mode goes through its focus.
 
-Poynting vector:
 
 When focusing down a beam with an optic, for instance an off-axis parabola or spherical mirror, the ratio of the focal length and the beam diameter is a useful quantity. $F = f/d$.
 Expressing some of the previous quantities in terms of the f-number it indicates how tightly a beam is focussed
@@ -566,9 +569,9 @@ z_R = \frac{\pi w^2_0}{\lambda} \approx 2.5 \lambda f^2.
 
 For a Ti:Sa laser at $\lambda = 800\,\mathrm{nm}$ typical numbers are
 
-f/2: $w_0 = 1.4\, \mu m; z_R = 8.1 \,\mu m$;
-f/20: $w_0 =14.4\, \mu m; z_R = 815 \,\mu m$;
-f/40: $w_0 = 28.8\, \mu m; z_R = 3200\, \mu m$;
+f/2: $w_0 = 1.4\, \mu m; z_R = 8.1 \,\mu m$;\\
+f/20: $w_0 =14.4\, \mu m; z_R = 815 \,\mu m$;\\
+f/40: $w_0 = 28.8\, \mu m; z_R = 3200\, \mu m$;\\
 
 
 However, real laser beams in experiments are not Gaussian but mostly flat-top beams. In addition, changes in the wave front, curvature profile, spatio-temporal couplings and so on consist further deviations from an ideal beam.
@@ -683,7 +686,7 @@ Loads of terms: relativistic, ponderomotive, pre-formed, diffraction
 \fi
 \subsection{Pulse compression}
 
-Since a laser pulse of finite duration requires a certain frequency bandwidth, the group velocity also shows a spread and results in different parts of the beam propagating faster than others:
+Since a laser pulse of finite duration requires a certain frequency bandwidth, the group velocity also shows a spread. This results in different parts of the beam propagating faster than others, in turn leading to a change in the length $\Delta L$ of the laser pulse after a time $\Delta t$
 \begin{equation}
 \Delta L = (v_{g2} - v_{g1}) \Delta t.
 \end{equation}
@@ -699,10 +702,13 @@ Hence the rate of compression in the wave frame is
 \end{equation}
 
 In bubble regime the leading edge of the beam sees a density $n_e = n_0$, whereas the rest propagates in vacuum with $n_e = 0$.
-The pulse duration after propagating a length $l$ is hence
+The pulse duration after propagating is hence
 \begin{equation}
-\tau = \tau_0 - \frac{n_0 l}{2c n_c}.
+\tau = \tau_0 - \frac{n_0}{2c n_c}l,
 \end{equation}
+where the rate of compression is $n_0/(2 c n_c)$.
+$l$ is the length over which the electron density increases from $0$ to $n_0$.
+
 
 \section{Wakefield Acceleration}
 
