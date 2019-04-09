@@ -370,6 +370,140 @@ USE ONE BIT TO EXPLAIN LASER WAKEFIELD ACCELERATION, TAKE THE SECOND TERM TO GO 
 
 \section{Laser Propagation in an Underdense Medium}
 
+\subsection{Plasma Properties}
+
+A plasma is an on average charge-neutral medium that consists of charged particles, in the context of wakefield acceleration ions and free electrons. This property is called quasi-neutrality and can mathematically expressed as
+\begin{equation}
+-e n_e + Z e n_i \approx 0,
+\end{equation}
+where $e$ is the fundamental charge, $n_e$ the electron number density, $n_i$ the ion number density and $Z$ the charge number of the ions.
+Whilst this balance might locally not be true at every moment in time, the mobility of the charges lead to shielding at length scales larger than the so-called Debye length $\lambda_D$:
+\begin{equation}
+\lambda_D = \left(\frac{\epsilon_0 k_B T_e}{n_e e^2}\right)^{1/2},
+\end{equation}
+where $\epsilon_0$ is the dielectric constant, $k_B$ the Boltzmann constant and $T_e$ the electron temperature. 
+
+The formation of Debye-spheres is an example of a collective response of the plasma to a small perturbation. In a plasma particles can act together on macroscopic scales through long range electromagnetic forces to form instabilities and waves. Even small imbalances can give rise to a significant response of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, the introduction of electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces.
+
+\iffalse
+Whilst plasmas are probably the most common state of matter in the universe, they barely exists on earth outside of a controlled laboratory environment as a lot of pressure or heat is required to maintain a plasma.
+
+
+Plasmas are frequently referred to as the `4th state of matter' in addition to the more commonly in daily life encountered matter states solid, liquid and gaseous. Heating up a material at a constant pressure will take it from the solid to the liquid, then to the gas phase and finally will ionize the gas first partially, then completely. The gas is now charged and exhibits interesting collective behaviour due to the dominance of electromagnetic forces whilst upholding quasi-neutrality. This is called a plasma. Sometimes summarised in this definition: ``A quasi-neutral ionized gas that exhibits collective behaviour.'' (REF) However, setting `ionized gas' equal to `plasma' might be a too narrow description as the range of temperature and density scales is very wide for plasmas, including exotic states like the quark-gluon plasma. Although plasmas are probably the most common state of matter in the universe, they barely exists on earth outside of the laboratory environment.
+\fi
+
+\subsection{Plasma Formation}
+
+In the context of this work the process of forming a plasma is usually set equal to ionising a medium consisting of neutral atoms or molecules by applying an electric field in form of an intense laser pulse. The resulting collection of unbound electrons and ions is a plasma. After a certain time the electrons will return to the ionic cores of the atoms and back again to a bound energy state emitting any excess energy in form of radiation in the process. This is called recombination and the emitted radiation recombination light.
+
+There are different mechanisms through which an oscillating laser field ionises a gas. In addition to single photon ionisation, there is multi-photon ionisation \cite{Keldysh1965}, where one electron is excited by absorbing multiple photons before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}.
+
+The dominant ionisation mechanism is indicated by the Keldysh parameter $\gamma_K$ considering the strength of the electric field $E$ relative to the binding potential $V$ and the frequency of the oscillating field $\omega$:
+\begin{equation}
+\gamma_K = \omega \frac{\sqrt{2 m_e V}}{eE}.
+\end{equation}
+At $\gamma_K \gg 1$ multiphoton ionisation dominates, whereas for small $\gamma_K < 0.5$ tunnel ionization is expected to be important. If the electric field is larger than the binding Coulomb potential, the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\columnwidth]{ionisation_sketch.png}
+\caption{Sketch of ionisation mechanisms.}
+\end{figure}
+
+In the simple example of a hydrogen-like atom in an external electric field $E$, the potential $V$ at a distance $r$ from the core is given by
+\begin{equation}
+V(r) = -\frac{Ze^2}{4\pi\epsilon_0 r} - eEr,
+\end{equation}
+where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. 
+
+Hence the electric field required for complete barrier suppression of an ionisation potential $V_e$ amounts to
+
+\begin{equation}
+E = \frac{\pi \epsilon_0 V^2_e}{Ze^3} \approx 173.6 \times \left(\frac{V_e}{eV}\right)^2 \frac{1}{Z} \, \mathrm{MV/m},
+\end{equation} 
+
+or in terms of intensity using $I = \frac{c\epsilon_0}{2}|E|^2$ in (near) vacuum:
+
+\begin{equation}
+I = \frac{c\epsilon_0^3 \pi^2 V^4_e}{2e^6 Z^2} \approx 4 \times 10^{9} \left(\frac{V_e}{eV}\right)^4\frac{1}{Z^2} \,\mathrm{W/cm^2}.
+\end{equation}
+
+For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
+The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionised: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser either through full barrier suppression or by triggering an increased tunnelling rate: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF). Partially ionised plasmas are more complex systems as one has to consider, for instance, ionisation effects, absorption of X-rays, weaker fields, dampening of particles, scattering and so on.
+
+\begin{table}
+\centering
+\begin{tabular}{l|r|l}
+Transition & $V_e [\mathrm{eV}]$ & $I_L [\mathrm{W\,cm^{-2}}]$\\ \hline \hline
+$H \rightarrow H^+$ & $13.6$ & $1.4 \times 10^{14}$ \\ \hline
+$He \rightarrow He^+$ & $24.6$ & $1.5 \times 10^{15}$\\
+$He^+ \rightarrow He^{2+}$ & $54.4$ & $8.8 \times 10^{15}$\\ \hline
+$N \rightarrow N^+$ & $14.5$ & $1.8 \times 10^{14}$\\
+$N^+ \rightarrow N^{2+} $ & $29.6$ & $7.7 \times 10^{14}$\\
+$N^{2+} \rightarrow N^{3+} $ & $47.4$ & $2.2 \times 10^{15}$\\
+$N^{3+} \rightarrow N^{4+} $ & $77.5$ & $9.0 \times 10^{15}$\\
+$N^{4+} \rightarrow N^{5+} $ & $97.9$ & $1.5 \times 10^{16}$\\
+$N^{5+} \rightarrow N^{6+} $ & $552.1$ & $1.0 \times 10^{19}$\\
+$N^{6+} \rightarrow N^{7+} $ & $667.0$ & $1.6 \times 10^{19}$
+\end{tabular}
+\caption{Binding energies and required laser intensities for barrier suppression ionisation. REF NIST ASD. Using equation XX with Z being $Z_{eff}=\,$final state ionisation level of ions.}
+% @Misc{NIST_ASD,
+%author = {A.~Kramida and {Yu.~Ralchenko} and
+%J.~Reader and {and NIST ASD Team}},
+%HOWPUBLISHED = {{NIST Atomic Spectra Database
+%(ver. 5.6.1), [Online]. Available:
+%{\tt{https://physics.nist.gov/asd}} [2019, March 25].
+%National Institute of Standards and Technology,
+%Gaithersburg, MD.}},
+%year = {2018},
+%}
+\end{table}
+
+
+\subsection{The Plasma Frequency}
+
+The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced. It constitutes the typical time scale and the corresponding plasma wavelength $\lambda_p$ the typical length scale of the medium.
+\vspace{\baselineskip}
+
+Assume a uniform and neutral plasma, i.e. $n_e = Z n_i = n_{e0}$, where $n_e$ is the electron number density, $Z$ the charge number of the ions, $n_i$ the ion number density, and the initial electric field be $\mathbf{E} = \mathbf{0}$.
+Now consider displacing a slab of charge in an arbitrary direction defining an axis that we will call X.
+
+Starting with Gauss' Law:
+
+\begin{equation}
+\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} = \frac{\partial E_x}{\partial x},
+\end{equation}
+where we used that the displacement is only along $x$, simplifying the nabla operator to a spatial derivative in $x$.
+
+We assume a uniform plasma so the charge density is a constant $\rho = e n_{e0}$. Integrating the previous equation then gives a constant factor times the displacement X:
+\begin{align}
+E_x = \frac{1}{\epsilon_0} \int^x_0 \rho (x') dx' + E_x(0) &= \frac{e n_{e0}}{\epsilon_0} X,\nonumber\\
+E &= \frac{e n_{e0}}{\epsilon_0} X.
+\end{align}
+
+
+If we now consider a force based on this field, we immediately see that this is equivalent to the equation of motion of a harmonic oscillator: 
+
+\begin{equation}
+m_e \frac{\mathrm{d}^2 X}{\mathrm{d}t^2} = - \frac{e^2 n_e}{\epsilon_0} X = - \omega^2_p X,
+\end{equation}
+
+with the (plasma) frequency
+
+\begin{equation}
+\boxed{\omega_p = \sqrt{\frac{n_{e0} e^2}{\epsilon_0 m_e}},}
+\end{equation}
+
+and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{omegap_lambdap_density.pdf}
+\caption{Plasma frequency and wavelength as function of plasma density.}
+\end{figure}
+
+A typical regime wakefield accelerators at a Gemini class laser operate in is at an electron density of around $10^{18}\,\mathrm{cm^{-3}}$. This corresponds to a plasma frequency of $5.6 \times 10^{13} \,\mathrm{Hz}$ or a wavelength of $\lambda_p \approx 33\,\mathrm{\mu m}$.
+
 \subsection{Laser Propagation in Vacuum}
 
 Maxwell's equations.
@@ -397,15 +531,16 @@ Helmholtz equation
 \nabla^2 u + k^2 u = 0
 \end{equation}
 
+Paraxial approximation in cylindrical symmetry.
 
-For a Gaussian beam:
+Gaussian beam is a solution of the paraxial form of the Helmholtz equation.
 
 Electric field of laser in vacuum:
 \begin{equation}
 \mathbf{E}(r,z,t) = E_0 \mathbf{x} \frac{w_0}{w_z} \exp\left(-\frac{r^2}{w(z)^2}\right) \exp\left[-\frac{(z-v_g t)^2}{(c \tau)^2}\right] \exp\left[-i\left(kz - \omega t + l \frac{r^2}{2 R(z)} - \psi(z)\right)\right]
 \end{equation}
 
-Waist size
+Waist size for $1/e$.
 
 \begin{equation}
 w(z) = w_0 \sqrt{1+ \left(\frac{z}{z_R}\right)^2}
@@ -442,173 +577,12 @@ z_R = \frac{\pi w^2_0}{\lambda} \approx 2.5 \lambda f^2
 \end{equation}
 
 Typical numbers 
-f/2: $w_0 = 1.4 \mu m; z_R = 8.1 \mu m$
-f/20: $w_0 14.4 \mu m; z_R = 815 \mu m$
-f/40: $w_0 = 28.8 \mu m; z_R = 3200 \mu m$
+f/2: $w_0 = 1.4\, \mu m; z_R = 8.1 \,\mu m$;
+f/20: $w_0 =14.4\, \mu m; z_R = 815 \,\mu m$;
+f/40: $w_0 = 28.8\, \mu m; z_R = 3200\, \mu m$;
 
 Real beams are not Gaussian but flat top.
 Deviations from wave front and curvature profile, spatio-temporal couplings and so on
-
-\subsection{General Properties of Plasmas}
-
-Plasmas are frequently referred to as the `4th state of matter' in addition to the more commonly in daily life encountered matter states solid, liquid and gaseous. Heating up a material at a constant pressure will take it from the solid to the liquid, then to the gas phase and finally will ionize the gas first partially, then completely. The gas is now charged and exhibits interesting collective behaviour due to the dominance of electromagnetic forces whilst upholding quasi-neutrality. This is called a plasma. Sometimes summarised in this definition: ``A quasi-neutral ionized gas that exhibits collective behaviour.'' (REF) However, setting `ionized gas' equal to `plasma' might be a too narrow description as the range of temperature and density scales is very wide for plasmas, including exotic states like the quark-gluon plasma. Although plasmas are probably the most common state of matter in the universe, they barely exists on earth outside of the laboratory environment.
-\vspace{\baselineskip}
-\EliasComm{if using quote then have to reference.}
-\EliasComm{Some examples of plasma states in real life: sun, aurora borealis, wakefields?, neon lamps?}
-Two important features of plasma that result in interesting phenomena are quasi-neutrality and collective behaviour.
-
-Whilst a plasma is a charged state, overall approximately equal amounts of opposite charges are available:
-\begin{equation}
--e n_e + Z e n_i \approx 0,
-\end{equation}
-where $e$ is the fundamental charge, $n_e$ the electron number density, $n_i$ the ion number density and $Z$ the charge number of the ions.
-Whilst this balance might locally not be true at every moment in time, the mobility of the charges lead to shielding at length scales larger than the so-called Debye length $\lambda_D$:
-\begin{equation}
-\lambda_D = \left(\frac{\epsilon_0 k_B T_e}{n_e e^2}\right)^{1/2},
-\end{equation}
-where $\epsilon_0$ is the dielectric constant, $k_B$ the Boltzmann constant and $T_e$ the electron temperature. 
-
-In that sense quasi-neutrality is also a manifestation of `collective behaviour'. Whilst the formation of Debye-spheres is a microscopic effect, the particles can act together on macroscopic scales as well through long range electromagnetic forces to form instabilities and waves. Even small imbalances can give rise to significant responses of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, the introduction of electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces.
-
-\subsection{Plasma Formation and Recombination}
-
-\EliasComm{Shorten this section as it is not really important in this context. Move details into appendix if necessary or just delete.}
-
-Ionisation describes the process of removing an electron from the shell of a neutral atom or a not fully ionised ion. Already ionised atoms can be further ionised reaching higher ionisation states by stripping more and more electrons from the shells, but this process requires more and more energy as the remaining electrons are bound tightly to the core. The ionisation of a neutral atom can be expressed by $X + \mathrm{energy} \rightarrow X^+ + e^-$, whereas higher order ionisation will follow the pattern $X^{n+1} + \mathrm{energy} \rightarrow X^{n+} + e^-$.
-
-In the context of this work high intensity lasers are used to drive waves in plasmas. A change in the number density of free electrons through ionisation effects can influence the dynamics of the system. The plasma is usually formed by filling a gas compartment or firing a gas jet with a neutral gas, assuming that the laser pulse ionises the gas fully to first approximation or by pre-ionising targets using an electrical discharge or a secondary laser.
-\vspace{\baselineskip}
-
-There are different mechanisms through which an oscillating laser field ionises a gas. In addition to single photon ionisation, there is multi-photon ionisation \cite{Keldysh1965}, where one electron is excited by absorbing multiple photons before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}. In the case of very high field strengths, the Coulomb potential might be completely suppressed by the laser field and the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
-\vspace{\baselineskip}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\columnwidth]{ionisation_sketch.png}
-\caption{Sketch of ionisation mechanisms.}
-\end{figure}
-
-In the simple example of a hydrogen-like atom in an external electric field $E$, the potential $V$ is given by
-\begin{equation}
-V(r) = -\frac{Ze^2}{4\pi\epsilon_0 r} - eEr,
-\end{equation}
-where the position of the maximum potential is given by $r_{max} = (Ze/4\pi\epsilon E)^{1/2}$. 
-
-In single or multi-photon ionisation processes the absorbed photons have to bear at least the binding energy of the electron. Any excess energy will be transferred into additional kinetic energy of the freed electron.
-
-In tunnel ionisation an external electric field deforms the binding potential of the atom and lowers the potential barrier. The rate of tunnel ionisation is given by...
-
-(Using Keldysh parameter to estimate in which regime we are?).
-
-\begin{equation}
-\gamma_K = \omega \frac{\sqrt{2 m_e V}}{eE}
-\end{equation}
-At $\gamma_K >> 1$ multiphoton ionisation is expected and in the other extreme for very small $\gamma_K < 0.5$ tunnel ionization is important.
-If the electric field is larger than the potential barrier suppression is dominating.
-
-In barrier-suppression ionisation the external electrical field is even stronger and completely suppresses the barrier such that the bound electron is now not limited by any potential barrier any more.
-Using the equation to calculate the potential and by setting the height of the barrier to the ionisation potential $V_e$, the electric field required for complete barrier suppression amounts to
-
-\begin{equation}
-E = \frac{\pi \epsilon_0 V^2_e}{Ze^3} \approx 173.6 \times \left(\frac{V_e}{eV}\right)^2 \frac{1}{Z}  \mathrm{MV/m},
-\end{equation} 
-
-or in terms of intensity using $I = \frac{c\epsilon_0}{2}|E|^2$ in (near) vacuum:
-
-\begin{equation}
-I = \frac{c\epsilon_0^3 \pi^2 V^4_e}{2e^6 Z^2} \approx 4 \times 10^{9} \left(\frac{V_e}{eV}\right)^4\frac{1}{Z^2} \mathrm{W/cm^2}.
-\end{equation}
-
-For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
-The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionized: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. Typical lasers used for LWFA might struggle to fully ionise nitrogen, but will reach higher degrees of ionisation at peak fields of the laser either through full barrier suppression or by triggering an increased tunnelling rate: this is taken advantage of in an injection method for wakefields called `ionisation injection' (REF). 
-
-\begin{table}
-\centering
-\begin{tabular}{l|r|l}
-Transition & $V_e [\mathrm{eV}]$ & $I_L [\mathrm{W\,cm^{-2}}]$\\ \hline \hline
-$H \rightarrow H^+$ & $13.6$ & $1.4 \times 10^{14}$ \\ \hline
-$He \rightarrow He^+$ & $24.6$ & $1.5 \times 10^{15}$\\
-$He^+ \rightarrow He^{2+}$ & $54.4$ & $8.8 \times 10^{15}$\\ \hline
-$N \rightarrow N^+$ & $14.5$ & $1.8 \times 10^{14}$\\
-$N^+ \rightarrow N^{2+} $ & $29.6$ & $7.7 \times 10^{14}$\\
-$N^{2+} \rightarrow N^{3+} $ & $47.4$ & $2.2 \times 10^{15}$\\
-$N^{3+} \rightarrow N^{4+} $ & $77.5$ & $9.0 \times 10^{15}$\\
-$N^{4+} \rightarrow N^{5+} $ & $97.9$ & $1.5 \times 10^{16}$\\
-$N^{5+} \rightarrow N^{6+} $ & $552.1$ & $1.0 \times 10^{19}$\\
-$N^{6+} \rightarrow N^{7+} $ & $667$ & $1.6 \times 10^{19}$
-\end{tabular}
-\caption{Binding energies and required laser intensities for barrier suppression ionisation. REF NIST ASD. Using equation XX with Z being $Z_{eff}=final state ionisation level$ of ions.}
-% @Misc{NIST_ASD,
-%author = {A.~Kramida and {Yu.~Ralchenko} and
-%J.~Reader and {and NIST ASD Team}},
-%HOWPUBLISHED = {{NIST Atomic Spectra Database
-%(ver. 5.6.1), [Online]. Available:
-%{\tt{https://physics.nist.gov/asd}} [2019, March 25].
-%National Institute of Standards and Technology,
-%Gaithersburg, MD.}},
-%year = {2018},
-%}
-\end{table}
-
-
-Partially ionised plasmas result in a couple of problems: more complex, absorption of X-rays, dampening of particles, scattering? Weaker fields.
-\EliasComm{add also some comments on partially ionised plasmas and how they change for instance the absorption of X-rays in this medium.}
-
-After ionisation the electrons return to the ionic cores of the atom and recombine. During this process called recombination the energy obtained to leave the atom is being released in form of photons again. The wavelength of the radiation is determined by the atom structure and hence characteristic of the material and in case of high Z gases also of the intensity of the interaction. Recombination occurs on a time-scale of XX.
-
-Energy of the photon:
-\begin{equation}
-E_{ph} = hf = E_{e,kin} + E_{bound}
-\end{equation}
-
-\EliasComm{is this true, simple as that?}
-\EliasComm{add a diagram to show energy and emission of recombination light.}
-
-The ground level of hydrogen is bound by 13.6 eV corresponding to a photon of wavelength 91 nm (?). The ground level of hydrogen-like helium is bound by a potential $V_e = 54.4\,\mathrm{eV}$, corresponding to a wavelength of 22.8 nm and the first level ionisation level of 24.6 eV corresponds to 50.4 nm.
-
-\subsection{The Plasma Frequency}
-
-The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced. It constitutes the typical time scale and the corresponding plasma wavelength $\lambda_p$ the typical length scale of the medium.
-\vspace{\baselineskip}
-
-Assume a uniform and neutral plasma, i.e. $n_e = Z n_i = n_{e0}$, where $n_e$ is the electron number density, $Z$ the charge number of the ions, $n_i$ the ion number density, and the initial electric field be $\mathbf{E} = \mathbf{0}$.
-Now consider displacing a slab of charge in an arbitrary direction defining an axis that we will call X.
-
-Starting with Gauss' Law:
-
-\begin{equation}
-\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} = \frac{\partial E_x}{\partial x},
-\end{equation}
-where we used that the displacement is only along $x$, simplifying the nabla operator to a spatial derivative in $x$.
-
-We assume a uniform plasma so the charge density is a constant $\rho = e n_{e0} = const.$. Integrating the previous equation gives an extra factor times the displacement X:
-\begin{align}
-E_x = \frac{1}{\epsilon_0} \int^x_0 \rho (x') dx' + E_x(0) &= \frac{e n_{e0}}{\epsilon_0} X,\nonumber\\
-E &= \frac{e n_{e0}}{\epsilon_0} X.
-\end{align}
-
-
-If we now consider a force based on this field, we immediately see that this is equivalent to the equation of motion of a harmonic oscillator: 
-
-\begin{equation}
-m_e \frac{\mathrm{d}^2 X}{\mathrm{d}t^2} = - \frac{e^2 n_e}{\epsilon_0} X = - \omega^2_p X,
-\end{equation}
-
-with the (plasma) frequency
-
-\begin{equation}
-\boxed{\omega_p = \sqrt{\frac{n_{e0} e^2}{\epsilon_0 m_e}},}
-\end{equation}
-
-and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
-
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{omegap_lambdap_density.pdf}
-\caption{Plasma frequency and wavelength at density.}
-\end{figure}
-
-A typical regime wakefield accelerators at a Gemini class laser operate in is at an electron density of around $10^{18} cm^{-3}$. This corresponds to a plasma frequency of around $5.6 \times 10^{13} \,\mathrm{Hz}$ or $\lambda_p \approx 33\,\mathrm{\mu m}$.
 
 
 \subsection{Laser Propagation in Plasma}
@@ -627,7 +601,7 @@ v_g &= \frac{\partial\omega_L}{\partial k} = c \sqrt{1-\left(\frac{\omega_p}{\om
 \end{align}
 where $\omega$ is the frequency of the electromagnetic wave.
 
-At $\omega << \omega_p$ this the expression can be approximated by
+At $\omega \ll \omega_p$ this the expression can be approximated by
 \begin{align}
 v_p &= \frac{\omega}{k} \approx c \left(1+ \frac{1}{2}\frac{\omega^2_p}{\omega^2}\right),\\
 v_g &= \frac{\partial\omega}{\partial k} \approx c \left(1 - \frac{1}{2}\frac{\omega^2_p}{\omega^2}\right).\\
