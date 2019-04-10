@@ -637,7 +637,7 @@ n &= n_0 + \frac{\delta n}{n_0} n_0\\
 
 the nonlinear refractive index becomes
 \begin{equation}
-\eta = 1 - \frac{1}{2}\frac{\omega^2_p}{\omega^2_0}\left(1+ \frac{\delta n}{n_0} - \frac{2 \delta \omega_L}{\omega_0} - \frac{a^2_0}{4}\right).
+\boxed{\eta = 1 - \frac{1}{2}\frac{\omega^2_p}{\omega^2_0}\left(1+ \frac{\delta n}{n_0} - \frac{2 \delta \omega_L}{\omega_0} - \frac{a^2_0}{4}\right).}
 \end{equation}
 
 \subsection{Relativistic Self-focusing and Self-guiding}
@@ -664,7 +664,7 @@ w^2_0 a^2_0 = 32 \frac{c^2}{\omega^2_p},
 
 and expressing this in terms of laser power
 \begin{equation}
-P_c \approx 17 \frac{\omega^2_0}{\omega^2_p} \,\mathrm{GW},
+\boxed{P_c \approx 17 \frac{\omega^2_0}{\omega^2_p} \,\mathrm{GW},}
 \end{equation}
 where $P_c$ is the critical power or minimum power required to outweigh diffraction by relativistic self-focusing.
 
@@ -723,7 +723,7 @@ Although supporting several orders of magnitude higher electric fields than conv
 
 This gives the counter-intuitive result that one has to choose low plasma densities (corresponding to lower field gradients) to accelerate particles to higher energies. In addition, this means that one has to balance the between high charge (requiring high $n_e$) and high peak energy. To solve this dilemma and optimise charge and energy, a variety of injection mechanisms (internal \cite{Faure2006,Geddes2008,Pak2010,Buck2013} and external \cite{Hidding2012b,Steinke2016}) have been proposed. The maximum energy gain $W_{max}$ for a 3D non-linear wake is given by \cite{Lu2006}
 \begin{equation}
-W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.
+\boxed{W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.}
 \end{equation}
 
 
@@ -1014,7 +1014,7 @@ where $k_\beta = \omega_\beta / c$ is the wavenumber and $r_\beta$ is the betatr
 
 The radiation generated follows the on-axis synchrotron radiation with a critical energy
 \begin{equation}
-E_c = \frac{3}{4} \hbar \gamma^2 \omega^2_p r_\beta / c,
+\boxed{E_c = \frac{3}{4} \hbar \gamma^2 \omega^2_p r_\beta / c,}
 \end{equation}
 where this energy parameter indicates when approximately half the energy radiated above and below this value.
 \vspace{\baselineskip}
@@ -1100,26 +1100,26 @@ The reaction can be written as follows:
 We will treat the electron and the incoming photon both as particles and calculate their final momenta based on energy and momentum conservation in a relativistic framework.
 \vspace{\baselineskip}
 
-The electron has a negligible initial momentum $\mathbf{p}_{e,initial} = \mathbf{0}$ and the total energy hence reduces to the rest energy of the electron $E_{e,initial} = m_e c^2$. The subscript $e$ stands for `electron'.
-The photon on the other hand has initally a momentum $\mathbf{p}_{\gamma, initial}$ and an energy $E_{\gamma, initial} = p_{\gamma, initial} c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
+The electron has a negligible initial momentum $\mathbf{p}_{e,i} = \mathbf{0}$ and the total energy hence reduces to the rest energy of the electron $E_{e,i} = m_e c^2$. The subscript $e$ stands for `electron' and $i$ for initial.
+The photon on the other hand has initally a momentum $\mathbf{p}_{\gamma, i}$ and an energy $E_{\gamma, i} = p_{\gamma, i} c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
 
 Relying on the conservation of energy we can postulate that the sum of energies before and after the interaction have to be equal:
 \begin{align}
-E_{e, initial} + E_{\gamma,initial} &= E_{e,final} + E_{\gamma,final},\nonumber\\ 
-m_e c^2 + h f &= \sqrt{(p_{e,final} c)^2 + (m_e c^2)^2} + h f',\nonumber\\
-hf - hf' +m_e c^2 &= \sqrt{(p_{e,final} c)^2 + (m_e c^2)^2},\nonumber\\
-\left( hf - hf' +m_e c^2\right)^2 -(m_e c^2)^2 &= (p_{e,final} c)^2, \nonumber\\
-(E_{\gamma, initial} - E_{\gamma, final} + m_e c^2)^2 - (m_e c^2)^2 &= (p_{e, final} c)^2.
+E_{e, i} + E_{\gamma,i} &= E_{e,f} + E_{\gamma,f},\nonumber\\ 
+m_e c^2 + h f &= \sqrt{(p_{e,f} c)^2 + (m_e c^2)^2} + h f',\nonumber\\
+hf - hf' +m_e c^2 &= \sqrt{(p_{e,f} c)^2 + (m_e c^2)^2},\nonumber\\
+\left( hf - hf' +m_e c^2\right)^2 -(m_e c^2)^2 &= (p_{e,f} c)^2, \nonumber\\
+(E_{\gamma, i} - E_{\gamma, f} + m_e c^2)^2 - (m_e c^2)^2 &= (p_{e, f} c)^2.
 \end{align}
 Here the frequency $f'$ refers to the new frequency of the photon after the interaction.
 
 Similarly we can use momentum conservation to find an expression for the momentum of the electron after the scattering process:
 \begin{align}
-p_{\gamma, initial} &= p_{e, final} + p_{\gamma, final}\nonumber\\
-p_{\gamma, initial} - p_{\gamma, final} &= p_{e, final}\nonumber\\
-(p_{\gamma, initial} - p_{\gamma, final})^2 &= (p_{e, final} )^2\nonumber\\
-(p_{\gamma, initial}c)^2 + (p_{\gamma, final}c)^2 - 2 p_{\gamma, initial}p_{\gamma, final}c^2\cos(\theta) &= (p_{e, final} c )^2,\nonumber\\
-E_{\gamma, initial}^2 + E_{\gamma, final} - 2 E_{\gamma, initial} E_{\gamma, final} \cos\theta &= (p_{e, final} c)^2.
+p_{\gamma, i} &= p_{e, f} + p_{\gamma, f}\nonumber\\
+p_{\gamma, i} - p_{\gamma, } &= p_{e, f}\nonumber\\
+(p_{\gamma, i} - p_{\gamma, f})^2 &= (p_{e, f} )^2\nonumber\\
+(p_{\gamma, i}c)^2 + (p_{\gamma, f}c)^2 - 2 p_{\gamma, i}p_{\gamma, f}c^2\cos(\theta) &= (p_{e, f} c )^2,\nonumber\\
+E_{\gamma, i}^2 + E_{\gamma, f} - 2 E_{\gamma, i} E_{\gamma, f} \cos\theta &= (p_{e, f} c)^2.
 \end{align}
 
 Setting both equations equal we find the familiar equation for the angular dependent change in wavelength of a photon performing Compton scattering with an electron:
@@ -1401,19 +1401,17 @@ For a vanishing external force, we obtain two solutions for $\mathbf{\dot{v}}$:
 
 $\mathbf{a}$ is the acceleration at $t = 0$. If $\mathbf{a} \neq 0$ we run into trouble.
 
-First attempts to simply add radiation reaction as a force onto the Lorentz-force equation resulted in unphysical expressions depending on several derivatives of the velocity. This in the end required knowing about the future to calculate its equation of motion, and led to self-acceleration of the particles in question. These solutions are commonly referred to as 'runaway solutions'.
+First attempts to simply add radiation reaction as a force onto the Lorentz-force equation resulted in unphysical expressions depending on several derivatives of the velocity. This in the end required knowing about the future to calculate its equation of motion, and led to self-acceleration of the particles in question. These solutions are commonly referred to as `runaway solutions'.
 
 The relativistic generalisation was found by Dirac renormalising in 4-space. The result is referred to as Lorentz-Abraham-Dirac equation (LAD).
 
-
-\EliasComm{Here add some calculations explicitly.}
 
 \EliasComm{Jackson seems to be in cgs. Make sure you know which unit system you work in.}
 
 \subsection{Self-consistent classical description: Landau-Lifschitz}
 
 A first self-consistent solution to including radiation reaction into a classical model was achieved by Landau and Lifschitz (REF).
-
+LL solution is a perturbation and means the radiation reaction force has to be small compared to the Lorentz force and a suitable frame of reference has to be found to make this valid. In some cases energy conservation might be violated.
 
 Problems: energy loss can exceed initial energy. Stochasticity not included.
 
@@ -1462,6 +1460,19 @@ Cooling of spectra versus competing processes.
 
 Pairs are easily annihilated in radiactive substances for low energy positrons cancelling out with ambient electrons.
 At higher energies the cross section decreases.
+
+\subsection{Pair annihilation}
+
+\subsection{Bethe Heitler process}
+
+\subsection{Trident process}
+
+\subsection{Linear Breit Wheeler}
+
+\subsection{Nonlinear Breit Wheeler}
+
+\subsection{A side note: photon-photon scattering}
+
 
 There are different ways to create pairs:
 Bethe Heitler: 
