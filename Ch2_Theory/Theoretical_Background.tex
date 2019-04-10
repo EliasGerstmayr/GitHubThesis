@@ -708,46 +708,19 @@ The pulse duration after propagating is hence
 \end{equation}
 where the rate of compression is $n_0/(2 c n_c)$.
 $l$ is the length over which the electron density increases from $0$ to $n_0$.
+\EliasComm{Add here parts from Jason's thesis.}
 
-
-\section{Wakefield Acceleration}
+\section{Laser Wakefield Acceleration}
 
 A good and comprehensive overview on this topic explaining the fundamental physics is given in \cite{Esarey2009}, a more recent overview on the progress and status of experiments in the laser wakefield community can be found in \cite{Mangles2016}.
 
-\subsection{Laser Wakefield Acceleration (LWFA)}
-
-\EliasComm{Short paragraphs on the key theory bits without deriving it all.}
-
-In laser wakefield acceleration (LWFA) a short ($\sim 30-50\,\mathrm{fs}$) and intense laser pulse travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way using the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake with strong longitudinal accelerating fields. This is commonly referred to as the non-linear regime or also the `bubble' regime, where particles can be trapped and accelerated to relativistic energies. The `bubble' regime and the acceleration of quasi-monoenergetic electrons at $100s$ of $\mathrm{MeV} $ has first been reported in 2004 \cite{Mangles2004,Faure2004,Geddes2004}. By now maximum electron energies via LWFA have reached the multi-GeV level in one \cite{Leemans2006} or two stages \cite{Steinke2016,Kim2013}.
+In laser wakefield acceleration (LWFA) a short ($\sim 30-50\,\mathrm{fs}$) and intense laser pulse travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way using the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake with strong longitudinal accelerating fields. This is commonly referred to as the non-linear regime or also the `bubble' regime, where particles can be trapped and accelerated to relativistic energies. The `bubble' regime and the acceleration of quasi-monoenergetic electrons at $100s$ of $\mathrm{MeV} $ has first been reported in 2004 \cite{Mangles2004,Faure2004,Geddes2004}. By now maximum electron energies via LWFA have reached the multi-GeV level in one \cite{Leemans2006} (REF new BELLA paper) or two stages \cite{Steinke2016,Kim2013}.
 \vspace{\baselineskip}
 
 Although supporting several orders of magnitude higher electric fields than conventional RF cavities (for a 3D non-linear wake: $E_{max} = \sqrt{a_0} m_e c \omega_p/e$), the energy and charge of electrons accelerated through the LWFA scheme are limited by several factors, the most important two are the phenomena called \textbf{dephasing} and \textbf{depletion}.
 \EliasComm{add some references.}
 
-Firstly, depletion describes the energy loss of the laser pulse as it moves through the plasma and drives the wave. After a certain distance, the depletion length, the pulse is not intense enough any more to drive a stable wave with sufficient field gradients - the cavity collapses. 
-The depletion length is given by
-\begin{equation}
-L_{pd} = 2 \epsilon \left(\frac{a_0}{\delta}\right)^2 \frac{n_c}{n_e} \lambda_p.
-\end{equation}
 
-Secondly, in the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma medium at a group velocity smaller than $c$. The electrons slowly catch up with the driver and leave the accelerating phase of the cavity, this is called dephasing. The dephasing length is the distance over which electrons leave the acceleration phase.
-
-The relativistic electrons are moving close to the speed of light ($\beta_e \rightarrow 1$) whilst the plasma wave moves at a velocity $\beta_p$:
-\begin{equation}
-\beta_p = \frac{v_g}{c} = \left(1-\frac{n_e}{n_c}\right)^{\frac{1}{2}},
-\end{equation}
-where $n_e$ is the electron and $n_c$ the critical density.
-
-Using this one can estimate the time it takes the electrons to move out of the acceleration phase of the wave, half the length of the plasma wave:
-\begin{equation}
-t_d = \frac{\lambda_p}{2c\left(\beta_e-\beta_p\right)}\approx \frac{\lambda_p}{c} \frac{n_c}{n_e}.
-\end{equation}
-The dephasing length is then 
-\begin{equation}
-L_{dp} = \lambda_p \frac{n_c}{n_e}.
-\end{equation}
-
-\EliasComm{add plot of dephasing length.}
 This gives the counter-intuitive result that one has to choose low plasma densities (corresponding to lower field gradients) to accelerate particles to higher energies. In addition, this means that one has to balance the between high charge (requiring high $n_e$) and high peak energy. To solve this dilemma and optimise charge and energy, a variety of injection mechanisms (internal \cite{Faure2006,Geddes2008,Pak2010,Buck2013} and external \cite{Hidding2012b,Steinke2016}) have been proposed. The maximum energy gain $W_{max}$ for a 3D non-linear wake is given by \cite{Lu2006}
 \begin{equation}
 W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.
@@ -764,12 +737,7 @@ W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.
 
 \EliasComm{make own plot for LWFA.}
 
-Other challenges are related to the guiding of the beam: to access higher intensities the laser has to be focused down further. This, however, leads to a rapidly diverging beam, without maintaining the conditions to drive the wave over a long distance. One solution is given by the response of the plasma itself. The interaction of the intense pulse above a critical power $P_c \approx 17 \omega^2_L/\omega^2_p \,\mathrm{GW}$ with the electrons in the plasma can lead to relativistic self-guiding, guiding the laser pulse over multiple Rayleigh lengths, oscillating around the matched spot size $r_b \approx 2 \sqrt{a_0} \frac{c}{\omega_p}$.
 
-
-\EliasComm{Deviation dephasing, depletion, etching, self-guiding, wavebreaking}
-
-\EliasComm{Plots to show energy versus year, energy spread and type of injection and whether it holds to the scaling laws.}
 
 \subsection{Injection Mechanisms}
 
@@ -795,12 +763,36 @@ Clusters and nano particles
 
 \subsection{Depletion}
 
+
+Firstly, depletion describes the energy loss of the laser pulse as it moves through the plasma and drives the wave. After a certain distance, the depletion length, the pulse is not intense enough any more to drive a stable wave with sufficient field gradients - the cavity collapses. 
+The depletion length is given by
+\begin{equation}
+L_{pd} = 2 \epsilon \left(\frac{a_0}{\delta}\right)^2 \frac{n_c}{n_e} \lambda_p.
+\end{equation}
+
 \begin{equation}
 v_{etch} = \frac{\omega^2_p}{\omega^2_0} c.
 \end{equation}
 
 \subsection{Dephasing}
 
+
+Secondly, in the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma medium at a group velocity smaller than $c$. The electrons slowly catch up with the driver and leave the accelerating phase of the cavity, this is called dephasing. The dephasing length is the distance over which electrons leave the acceleration phase.
+
+The relativistic electrons are moving close to the speed of light ($\beta_e \rightarrow 1$) whilst the plasma wave moves at a velocity $\beta_p$:
+\begin{equation}
+\beta_p = \frac{v_g}{c} = \left(1-\frac{n_e}{n_c}\right)^{\frac{1}{2}},
+\end{equation}
+where $n_e$ is the electron and $n_c$ the critical density.
+
+Using this one can estimate the time it takes the electrons to move out of the acceleration phase of the wave, half the length of the plasma wave:
+\begin{equation}
+t_d = \frac{\lambda_p}{2c\left(\beta_e-\beta_p\right)}\approx \frac{\lambda_p}{c} \frac{n_c}{n_e}.
+\end{equation}
+The dephasing length is then 
+\begin{equation}
+L_{dp} = \lambda_p \frac{n_c}{n_e}.
+\end{equation}
 
 \section{Radiation Production}
 
