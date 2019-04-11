@@ -40,12 +40,12 @@ CPA exploits this fact and stretches the pulse in time using sets of refraction 
 \vspace{\baselineskip}
 
 \EliasComm{Add a picture of a chirped pulse?}
-\EliasComm{Add picture of gain curve for TiSa?}
 
 However, even with CPA the amplification achievable is finite as it is not useful to stretch the laser pulse arbitrarily much to lower the energy density and an ordinary gain medium as amplifier will reach its limits again as soon as the stretched pulse reaches the ionisation threshold. In addition, the gratings have to withstand these high intensities when recombining the stretched pulse and hence have to have a high damage threshold. An improved chirped-pulse amplification scheme to push this boundary even further is the so called optical parameter chirped-pulse amplification (OPCPA) scheme. The normal amplifier crystal is substituted by a non-linear medium. The laser pulse deposits only a fraction of energy of the amount in ordinary laser gain media as it works via a parametric process, which allows to pump this medium with even higher powers.
 
+Another alternative is combining several separately amplified laser pulses either incoherently or coherently (add references REF).
+
 \EliasComm{What is the largest amplifier crystal available so far?}
-\EliasComm{Mention coherent combining of beams as at SULF(?).}
 
 \begin{figure}
 \centering
@@ -56,19 +56,11 @@ However, even with CPA the amplification achievable is finite as it is not usefu
 
 \footnotetext{Graphic taken from Wikipedia: \url{https://en.wikipedia.org/wiki/Chirped\_pulse\_amplification}}
 
-\subsection{Wavefront Sensor and Adaptive Optics}
-
-Shack-Hartmann (?) sensor. HASO.
-
-Array of micro lenses
-
-Temporally integrated wavefront profile of the laser pulse
-
-In combination with an adaptive optic (technique from astrophysics) used to flatten the wavefront to enable reaching the diffraction limited focus.
-\EliasComm{Add picture.}
-
-
 \subsection{Focal Spot Camera}
+
+In the context of LWFA the laser is focused down to reach high enough intensities to drive a wake and to guide itself over a long range. The second application in this context is using the laser as scatterer which also requires focusing the beam down to a small volume with high energy density.
+
+A CCD camera is used to image the focal spot and characterise its size and energy content. Due to the small size of the focal spot, typically around 30 to 50 microns or around few microns, microscope objectives are employed.
 
 The focal spot camera is a diagnostic to characterise the focal spot of the laser. A special microscope objective magnifies and images the focal spot onto a camera chip. The energy distribution, shape and size of the focal spot has been shown to be a crucial factor to couple energy from the laser pulse to the wake. Also the position of the focus, i.e. the point of highest intensity, is important to know in order to reach the non-linear regime and to correctly analyse the situation in experiment realistically.
 In the context of colliding-pulse experiment the shape of the focal spot of the scattering laser is also of interest as a precise knowledge of the wavefront and intensity distribution is required for an accurate model of the interaction.
@@ -78,10 +70,46 @@ A direct measurement of the actual focus at typical intensities used in wakefiel
 
 \EliasComm{Present typical focal spot analysis. How much energy is in spot?}
 
+Spatial Calibration
+
+As the exact size of the focal spot is important, the focal spot camera is spatially calibrated. This can be done by carefully measuring the distances between the components of the optical system and knowing about their properties. Alternatively, the camera can be used to image an object of well-defined spatial extent. A typically used tool are USAF targets provided by Thorlabs. Knowing the pixel size of the camera one can then relate the width of the lines to a real spatial extent.
+
+Estimating the focal spot size
+
+Having calibrated the camera spatially one can then image the focal spot. Typically a thin wire is used to fix the focal plane to a well-defined position.
+There are various ways to approach the problem. One can take the maximum value of the distribution and find the boundary when the value drops to half of that value or whatever threshold one decides on. Fitting an ellipse to it one can then find the spatial dimensions.
+
+Estimating energy contained in the FWHM
+
+Comparing the number of counts in the ellipse with the counts on the image, one can estimate how much of the total energy of the beam is contained within the focal spot.
+
+Under the assumption that the intensity is proportional to counts on the CCD, knowing the energy contained in the beam and its pulse duration one can then calculate the intensity of the laser pulse. 
+
+All of this is done under a lower intensity version of the beam as a high intensity laser pulse would damage the camera and optics.
+
+
+\subsection{Wavefront Sensor and Adaptive Optics}
+
+The wavefront of a laser can be distorted by aberrations in the system, thermal effects, or others.
+Aberrations or other inhomogeneities impose and additional limit on the minimum size of the focal spot and hence the maximum intensity.
+
+A trained eye can spot the different aberrations when looking at the focal spot and attempt to find the source (e.g. wrong angle onto off-axis parabola can introduce astigmatism).
+Another method is using a wavefront sensor in combination with an adaptive optic (AO) or a more simple deformable mirror to flatten the wavefront.
+In this work a Shack-Hartmann sensor or company HASO was used. This type of wavefront sensor is an array of microlenses.
+
+In combination with an adaptive optic a software can deduce a map of which change in the mirror relates to what kind of change in the wavefront. Having characterised this the mirror can be used to flatten the wavefront iteratively and on top of that also manually add aberrations if one wishes to do so.
+
+A HASO observes the temporally integrated wavefront profile of the laser pulse. Spatio-temporal couplings are not visible and have to be diagnosed differently.
+
+Using this method one can attempt to optimise the wavefront as such to reach a diffraction limited focus.
+\EliasComm{Add picture.}
+
 \subsection{Timing Diagnostics}
 
-In experiments involving two or more pulsed beams the beams have to be timed to each other within their combined pulse duration.
+In experiments involving two or more pulsed laser beams the beams have to be timed to each other within their combined pulse duration.
 Depending on the accuracy required different techniques can help measure the difference in timing, correct and monitor it over extended periods of time.
+
+Photodiodes, spatial and spectral interferometry are introduced. Other methods, e.g. cross-correlator, were not introduced as they were not used in experiment. However, they are suitable and have their validity.
 
 \subsubsection{Diode Timing}
 
@@ -100,22 +128,37 @@ Limitations in vacuum.
 
 \subsubsection{Spatial Interferometry}
 
-Two beams, at angle or different radius of curvature, same polarisation. Interference.
-For two pulsed beams the interference will only take place if within the combined pulse duration.
+A more sensitive method is relying on spatial interferometry of the laser beams. If both laser pulses are overlapped in space and time within their combined pulse duration both beams can interfere. For that purpose both beams have to have the same polarisation. The fringes are coupled to the relative angle, radii of curvature and the visibility relies on the relative intensities.
 
 Visibility only over the short duration of the combined pulse duration.
 
 \EliasComm{Add example of f/40 and f/2, image sim and real experimental result}
 
+Two beams are combined onto a camera and after having timed them, for instance using a photodiode, a delay stage can be used to scan over a reasonable parameter space to find the overlap time. If one wishes a medium can be used to stretch one of the beams to make finding the overlap easier.
+
+How to combine the beams depends on the experiment geometry. In this case the beams were counterpropagating. A prism with reflective surface was used to deflect both beams.
+
+Different radii of curvature. Show example. The visibility is indicator for better overlap. It does not give an absolute number but a binary overlapped signal.
+The lower limit is around 20 fs.
+
 \subsubsection{Spectral Interferometry}
 
-Two identically chirped pulses are being spectrally dispersed using a grating.
+Two identically chirped pulses are being spectrally dispersed using a grating. The individual spectral components can overlap.
 
-Visible over hundreds of femtoseconds.
+Visible over hundreds of femtoseconds and hence over a much larger time duration than for spatial interferometry.
+Limitation similar to before pulse duration, 20 fs or so.
 
-\subsubsection{Crosscorrelator}
+A grating is required coupled to a detector, e.g. CCD camera.
+This could simply be a spectrometer with suitable grating.
+
+\EliasComm{Add some maths here.}
+
+The fringes now depend on the temporal separation of the beams in the dispersive direction.
+This means an absolute number can be deduced by the fringes instead of a single overlap signal. This diagnostic is also able to track changes in absolute terms and suitable to track changes in timing over extended time periods.
 
 \subsubsection{Necessary Considerations for Timing Beams}
+
+Timing two beams to each other down to the femtosecond level comes with challenges and considerations one has to do.
 
 Light moves slower through media than through vacuum. The group velocity is reduced to EQUATION.
 In experiment this means that introducing or removing media asymmetrically from beam paths will change the relative timing.
