@@ -658,17 +658,24 @@ Using the expression of the nonlinear refractive index and focusing on the term 
 showing that this term has an opposite sign and hence focuses.
 
 To find the conditions when diffraction and focusing balance each other we set both terms equal
-\begin{equation}
-w^2_0 a^2_0 = 32 \frac{c^2}{\omega^2_p},
-\end{equation}
+\begin{align}
+w^2_0 a^2_0 &= 32 \frac{c^2}{\omega^2_p},\nonumber\\
+w_0 &= \frac{\sqrt{32}}{a_0} \frac{c}{\omega_p}
+\end{align}
 
 and expressing this in terms of laser power
 \begin{equation}
-\boxed{P_c \approx 17 \frac{\omega^2_0}{\omega^2_p} \,\mathrm{GW},}
+\boxed{P_c \approx 17 \frac{\omega^2_0}{\omega^2_p} \,\mathrm{GW} = 17 \frac{n_c}{n_e} \, \mathrm{GW},}
 \end{equation}
 where $P_c$ is the critical power or minimum power required to outweigh diffraction by relativistic self-focusing.
 
 Balancing both terms the laser pulse remains focused over several Rayleigh lengths. This is referred to as self-guiding as it enables guiding without external guiding structures.
+
+In the `blowout' regime a highly intense laser pulse completely clears the laser axis from electrons forming a cavity of radius $R_b$, the blowout radius. This cavity is void of electrons $n_e = 0$ and no focusing occurs. In this case the guided spot size is matched to $R_b$:
+
+\begin{equation}
+R_b = 2 \sqrt{a_0} \frac{c}{\omega_p}.
+\end{equation}
 
 \iffalse
 matched spot size
@@ -717,14 +724,7 @@ A good and comprehensive overview on this topic explaining the fundamental physi
 In laser wakefield acceleration (LWFA) a short ($\sim 30-50\,\mathrm{fs}$) and intense laser pulse travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way using the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake with strong longitudinal accelerating fields. This is commonly referred to as the non-linear regime or also the `bubble' regime, where particles can be trapped and accelerated to relativistic energies. The `bubble' regime and the acceleration of quasi-monoenergetic electrons at $100s$ of $\mathrm{MeV} $ has first been reported in 2004 \cite{Mangles2004,Faure2004,Geddes2004}. By now maximum electron energies via LWFA have reached the multi-GeV level in one \cite{Leemans2006} (REF new BELLA paper) or two stages \cite{Steinke2016,Kim2013}.
 \vspace{\baselineskip}
 
-Although supporting several orders of magnitude higher electric fields than conventional RF cavities (for a 3D non-linear wake: $E_{max} = \sqrt{a_0} m_e c \omega_p/e$), the energy and charge of electrons accelerated through the LWFA scheme are limited by several factors, the most important two are the phenomena called \textbf{dephasing} and \textbf{depletion}.
-\EliasComm{add some references.}
 
-
-This gives the counter-intuitive result that one has to choose low plasma densities (corresponding to lower field gradients) to accelerate particles to higher energies. In addition, this means that one has to balance the between high charge (requiring high $n_e$) and high peak energy. To solve this dilemma and optimise charge and energy, a variety of injection mechanisms (internal \cite{Faure2006,Geddes2008,Pak2010,Buck2013} and external \cite{Hidding2012b,Steinke2016}) have been proposed. The maximum energy gain $W_{max}$ for a 3D non-linear wake is given by \cite{Lu2006}
-\begin{equation}
-\boxed{W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.}
-\end{equation}
 
 
 \begin{figure}
@@ -739,45 +739,25 @@ This gives the counter-intuitive result that one has to choose low plasma densit
 
 
 
-\subsection{Injection Mechanisms}
-
-\subsubsection{Wave breaking}
-
-Self injection
-
-\subsubsection{Medium based}
-
-Ionisation injection
-
-Clusters and nano particles
-
-\subsubsection{Density Modulations}
-
-- Shock injection
-- Downramp
-- Upramp
-
-\subsubsection{Laser-assisted}
-
-\subsubsection{External injection}
 
 \subsection{Depletion}
 
-
-Firstly, depletion describes the energy loss of the laser pulse as it moves through the plasma and drives the wave. After a certain distance, the depletion length, the pulse is not intense enough any more to drive a stable wave with sufficient field gradients - the cavity collapses. 
-The depletion length is given by
-\begin{equation}
-L_{pd} = 2 \epsilon \left(\frac{a_0}{\delta}\right)^2 \frac{n_c}{n_e} \lambda_p.
-\end{equation}
+As the laser pulse propagates through the plasma it slowly loses energy through diffraction and driving the wake. The energy loss is concentrated at the front of the laser pulse that is interacting with the medium and thus slowly etches away at a velocity $v_{etch}$
 
 \begin{equation}
 v_{etch} = \frac{\omega^2_p}{\omega^2_0} c.
 \end{equation}
 
+After a certain distance, the depletion length $pd$, the pulse is not intense enough any more to drive a stable wave with sufficient field gradients - the cavity collapses:
+\begin{equation}
+L_{pd} = 2 \epsilon \left(\frac{a_0}{\delta}\right)^2 \frac{n_c}{n_e} \lambda_p.
+\end{equation}
+
+Higher densities lead to faster etching away of the pulse, whilst reducing the plasma density allows sustaining the accelerating structure over longer distances.
+
 \subsection{Dephasing}
 
-
-Secondly, in the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma medium at a group velocity smaller than $c$. The electrons slowly catch up with the driver and leave the accelerating phase of the cavity, this is called dephasing. The dephasing length is the distance over which electrons leave the acceleration phase.
+In the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma medium at a group velocity smaller than $c$. The electrons slowly catch up with the driver and leave the accelerating phase of the cavity, hence called dephasing.
 
 The relativistic electrons are moving close to the speed of light ($\beta_e \rightarrow 1$) whilst the plasma wave moves at a velocity $\beta_p$:
 \begin{equation}
@@ -785,14 +765,86 @@ The relativistic electrons are moving close to the speed of light ($\beta_e \rig
 \end{equation}
 where $n_e$ is the electron and $n_c$ the critical density.
 
-Using this one can estimate the time it takes the electrons to move out of the acceleration phase of the wave, half the length of the plasma wave:
+Using this one can estimate the time it takes the electrons to move out of the acceleration phase of the wave sizing half the length of the plasma wave:
 \begin{equation}
 t_d = \frac{\lambda_p}{2c\left(\beta_e-\beta_p\right)}\approx \frac{\lambda_p}{c} \frac{n_c}{n_e}.
 \end{equation}
-The dephasing length is then 
+
+The distance over which electrons leave the acceleration phase, the dephasing length $L_{dp}$, is hence
 \begin{equation}
 L_{dp} = \lambda_p \frac{n_c}{n_e}.
 \end{equation}
+
+Since a higher plasma density slows the laser pulse down more, the dephasing length decreases as well.
+
+Both dephasing and depletion limit the acceleration length based on a similar scaling. Whilst the depletion length can be extended by using a more intense laser pulse, the dephasing length at a constant plasma density remains a fixed limitation. Solutions to overcome this limit include, for instance, increasing the density either gradually or abruptly to rephase the electrons and/or employ multiple lasers and acceleration stages injecting the electron bunch into the accelerating phase of the new wakefield. The latter is experimentally significantly more challenging.
+
+\subsection{Maximum Energy Gain}
+
+Wakefield cavities support several orders of magnitude higher electric fields than conventional RF cavities. For a 3D non-linear wake the maximum electric field supported is given by
+\begin{equation}
+E_{max} = \sqrt{a_0} m_e c \omega_p/e.
+\end{equation}
+A higher electron density results in a larger amount of charge separated and hence a stronger electric field which is desirable for our accelerator.
+
+The maximum energy gain is the optimised product of the electric field and the acceleration distance.
+Combining our knowledge of the electric field, which increases with density, and the limiting factors for the acceleration length dephasing and depletion, which decrease with density, the maximum energy gain $W_{max}$ for a 3D non-linear wake is given by \cite{Lu2006}
+\begin{equation}
+\boxed{W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.}
+\end{equation}
+
+This gives the counter-intuitive result that one has to choose low plasma densities (corresponding to lower field gradients) to accelerate particles to higher energies. In addition, this means that one has to balance the between high charge (requiring high $n_e$) and high peak energy. To solve this dilemma and optimise charge and energy, a variety of injection mechanisms (internal \cite{Faure2006,Geddes2008,Pak2010,Buck2013} and external \cite{Hidding2012b,Steinke2016}) have been proposed. 
+
+
+\subsection{Injection Mechanisms}
+
+In order to inject electrons of different quality a variety of techniques have been developed, some of which will be introduced in the following.
+The schemes are only examples and are found in a wide variety and frequently combined to optimise the output of the accelerator for the specific purpose.
+There is not a perfect injection scheme for every purpose but the requirements of the final electron beam the group aspires to guides the efforts to design the targetry to trigger injection in a fashion that would produce such a beam or radiation.
+
+In some cases a well defined beam of reproducible narrow energy spread is of importance, in other situations a high charge beam producing copious amounts of radiation outweighs the requirements of energy spread or reproducibility.
+
+\subsubsection{Wave breaking}
+
+Self injection
+
+\subsubsection{Medium based}
+
+Instead of relying on the evolution of the laser pulse and subsequent wavebreaking, the properties of the atoms and molecules can provide electrons.
+Higher Z gases bind electrons strongly and require higher field strengths to release them. When the intense laser pulse passes through it triggers an increased rate of tunnel ionisation near the centre of the pulse. The released electrons are trapped and subsequently accelerated.
+The duration over which electrons are released and hence the energy spread relies on the intensity of the laser pulse and its evolution.
+In smaller laser systems ionisation injection has produced narrow energy spread beams of reproducible charge and quality. This is due to a short time over which the laser pulse reaches the necessary intensity before expanding or losing energy.
+In more powerful laser systems the required intensities can be upheld over much longer durations resulting in large amounts of charge but also a large energy spread as electrons are being injected and accelerated continuously.
+A typical medium for this scheme is helium with a few percent dopant of nitrogen.
+
+More recently, interest into gas targets forming larger clusters of molecules have become the subject of research. In some cases Van-der-Waals forces lead to clustering of molecules when a gas in cooled down, for instance in a supersonic gas jet. These clusters are rich sources of electrons and are in some cases even overdense but of size smaller than a skin depth, allowing the laser to propagate but releasing their electrons similarly as in ionisation injection into the accelerating cavity. The slightly different dynamic of the forces in a cluster involving Coulomb explosions and a density structuring of the medium results in interesting guiding properties of the laser. The exact physics of this interaction is still subject to research but it appears to be distinct to ionisation injection.
+
+\subsubsection{Density Modulations}
+
+The accelerating structure in a wakefield depends on the complex interplay of the driving laser pulse and its evolution in interaction with the surrounding medium. An evident handle onto the shape and behaviour of the cavity is the plasma density as $r_b \sim \sqrt{n_e}$ and similarly dephasing and depletion are linked to the density.
+
+
+
+- Downramp
+- Upramp
+
+- Shock injection
+
+\subsubsection{Laser-assisted}
+
+Instead of solely relying on the interaction of medium and laser, research efforts have explored the option of using a second laser to trigger injection or to modify the density profile.
+
+Plasma Torch: here an intense laser is passing the a plasma with high-Z dopant in transversal direction before the primary laser pulse. The additional ionisation based on the same principle as ionisation injection results in a density profile similar as in shock injection but does not rely on a physical shock and is tunable in space and time.
+
+Trojan Horse:
+
+Colliding pulse:
+
+\subsubsection{External injection}
+
+A final example of injection mechanisms is providing an electron beam from a different source and coupling it into the cavity of an LWFA accelerator. Whilst the other mechanisms make LWFA the source and accelerator of electrons, here the cavity is focused around accelerating and in some cases to modify the phase space of the given beam. Electron sources could either be a conventional accelerator structure, for instance an RF-gun, or another LWFA stage.
+
+The clear challenge of this ansatz is the spatio-temporal overlap required to successfully inject external electrons with LWFA-LWFA and Conventional-LWFA coupling coming with different challenges.
 
 \section{Radiation Production}
 
