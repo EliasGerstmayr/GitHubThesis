@@ -1452,15 +1452,25 @@ Deviations from a head-on collision have to be considered and also introduce a s
 \EliasComm{How does radiation reaction compare to the ponderomotive force? It scales with $1/\gamma$ so it is less important in this context but what does it mean?}
 
 The previous sections left out the effect of radiation losses onto the equation of motion of charged particles.
-Charged particles emit radiation when being accelerated. The charged particle emitting the radiation loses the energy associated with the photon and is knocked back, adhering to momentum and energy conservation rules. This is called radiation reaction or radiation friction.
-Radiation reaction is a very fundamental problem of physics and a universally accepted description does not exist. Each description only exists in a certain limit and is an approximation valid within those limits.
+Charged particles emit radiation when being accelerated. The charged particle emitting the radiation loses the energy associated with the photon and is knocked back, adhering to momentum and energy conservation rules. This is called radiation reaction (RR) or radiation friction.
+Radiation reaction is a very fundamental problem of physics, but surprisingly a universally accepted description does not exist thus far. Each description only exists in a certain limit and is an approximation valid within those limits, but breaks down in extreme conditions. High field QED is a suitable environment to test the limits of these models.
+\vspace{\baselineskip}
 
-In many cases the radiation losses are small or occur over longer spans of time which means they can be ignored or the detailed physics of radiation reaction is not important. In storage rings of large accelerator and collider facilities radiation losses pose a significant problem as they limit the maximum energy the particles can be accelerated to. The exact dynamics of radiation reaction and the influence on the equation of motion of the particles is not very significant. It suffices to add the average energy lost over the a turn in the storage ring to prop up the system.
+Whilst the emission of radiation is ubiquitous, in many cases radiation losses are small or occur over longer spans of time which means they can be ignored or the detailed physics of radiation reaction is not important. In storage rings of large accelerator and collider facilities radiation losses pose a significant problem as they limit the maximum energy the particles can be accelerated to. The exact dynamics of radiation reaction and the influence on the equation of motion of the particles is not very significant. It suffices to add the average energy lost over the a turn in the storage ring to prop up the system.
 
-Radiation reaction effects become more significant in extreme conditions where ultra-relativistic particles interact with light: in astrophysical phenomena.
-These conditions are re-constructed in accelerator facilities interacting ultra-relativistic particles with laser pulses. Radiation reaction was measured, for instance, at SLAC and first measurements have been undertaken at non-conventional accelerators such as the Astra-Gemini laser system at the Central Laser Facility in the UK. This work is part of this thesis.
+Radiation reaction effects become more significant in extreme conditions where ultra-relativistic particles interact with light: in astrophysical phenomena relativistic particle jets of GeV, TeV or PeV level are frequently observed. Interacting with the ubiquitous CMB inverse Compton scattering provides a high energy background radiation.
+These conditions are re-constructed in laser and accelerator facilities interacting ultra-relativistic particles with laser pulses. Radiation reaction was measured, for instance, at SLAC (REF E144) and first measurements have been undertaken at non-conventional accelerators such as the Astra-Gemini laser system at the Central Laser Facility in the UK. This work is part of this thesis.
+\vspace{\baselineskip}
 
-\EliasComm{What is the difference between radiation reaction and Compton scattering? Radiation reaction is the force acting on the electron influencing its equation of motion. Inverse Compton scattering is a process for which we can calculate the cross section and emission spectrum. Radiation reaction also appears in synchrotrons but there they do not modify the equation of motion in a short time duration. The impact of the change in motion due to an external field is minimal compared to the formation time. Every photon emission from an electron results in a knockback, a transfer of motion conserving momentum and energy. The physics of these processes varies.}
+In this section a selection of radiation reaction models are motivated and introduced. Since this is a fundamental problem a variety of different approaches have been tried, but the author will restrict this section to the most commonly discussed models which are also relevant to this work.
+
+Firstly, the first intuitive approach to radiation reaction is explored: simply adding an external force $m \ddot{x}$ to the equation of motion. In covariant form this is the Lorentz-Abraham-Dirac force or short LAD. This set of solutions results in pathological solutions or so-called runaway solutions with self-acceleration and unphysically requiring knowledge of the future.
+
+Secondly, a first self-consistent solution is presented: the Landau-Lifschitz model (LL). This model does not have pathological runaway solutions and employs retarded potentials resulting in the right causality. The Landau-Lifschitz model is a perturbation model for $F_{RR} \ll F_{Lorentz}$ and hence is valid only within this limit. For large RR forces the LL model provides unphysical solutions, in particular it predicts the emission of radiation greater than its own total energy.
+
+After discussing these classical approaches to radiation reaction, finally, a model based on a quantum picture is introduced. Here an electron passing through a high intensity field can either be described by a series of individual multi-photon Feynman diagrams or as electron in a dressed state, the Furry picture. The latter is appropriate in the context of high-field QED. We find that the quantum picture provides two corrections to the classical picture: one is the adjustment of the radiation spectrum and power eliminating the unphysical emission of radiation larger than the electron energy by introducing a cutoff. This reduction of emitted power can be parametrised by the Gauntt factor and applied to the LL model as a continuation into the high-field regime, resulting in a semi-classical model with classical equations of motion but an emission power adjusted to the quantum picture. The other adjustment is the introduction of stochasticity. The quantum world is inherently non-deterministic and bound to probabilities. One initial state does not always end up in the same final state even if the boundary conditions are identical. This results in interesting phenomena including a hardening of the photon spectrum and a widening of the electron energy spread.
+
+However, even the model presented is derived within a framework relying on approximations. In this case it is the local constant field approximation (LCFA) which assumes that during the formation time of the photon the electric field does not change significantly. For an extremely intense oscillating electromagnetic field, for instance an intense laser field, this might not always be true and even this model might have its limitations.
 
 \subsection{Radiation reaction: classical runaway solutions}
 
@@ -1484,7 +1494,7 @@ The equation of motion then reads
 m(\mathbf{\dot{v}}-\tau \mathbf{\ddot{v}}) = \mathbf{F}_{ext}.
 \end{equation}
 
-This equation of motion, sometimes referred to as Abraham-Lorentz equation, depends on the second derivative of the velocity in time which results in so-called runaway solutions.
+This equation of motion, sometimes referred to as Abraham-Lorentz equation, depends on the second derivative of the velocity in time which results in runaway solutions.
 For a vanishing external force, we obtain two solutions for $\mathbf{\dot{v}}$:
 \begin{equation}
 \mathbf{\dot{v}}(t) = 0 \,or\, \mathbf{a}e^{t/\tau}.
@@ -1498,6 +1508,8 @@ The relativistic generalisation was found by Dirac renormalising in 4-space. The
 
 
 \EliasComm{Jackson seems to be in cgs. Make sure you know which unit system you work in.}
+
+\EliasComm{Despite the runaway solution: if one ignores this solution tree, are the predictions feasible?}
 
 \subsection{Self-consistent classical description: Landau-Lifschitz}
 
@@ -1513,6 +1525,7 @@ Problems: energy loss can exceed initial energy. Stochasticity not included.
 Quantum parameter eta and chi. $\eta = E_{RF}/E_{crit}$
 
 Limit when quantum effects become more important: energy loss comparable to rest mass of the electron?
+This is at the same time also the limit of validity of the LL model, when the force becomes comparable to the Lorentz force.
 
 With high confidence we know that we require a quantum description of this process.
 There are several ways to solve some of the issues of the classical Landau-Lifschitz description.
@@ -1525,7 +1538,7 @@ Corrections regarding spectrum of radiation (cut-off).
 
 Stochasticity.
 
-Semi-classical approach using Gaunt factor.
+Semi-classical approach using Gaunt factor (power!).
 
 \begin{equation}
 g(\eta) = \frac{\int_0^{\eta/2} F(\eta, \chi) \mathrm{d}\chi}{\int_0 F_{cl}\left(\frac{4\chi}{3\eta^2}\right)} = \frac{3 \sqrt{3}}{2 \pi \eta^2} \int_0^{\eta/2} F(\eta,\chi) \mathrm{d}\chi. 
@@ -1541,13 +1554,13 @@ Assuming local constant cross field approximation (LCFA).
 Formation time, coherence time.
 What is the force in this picture? How does it compare to ponderomotive force?
 
+Adjustment of the emission spectrum (comparison)
 
+Adjustment of the electron spectrum in interaction: cooling versus heating term.
 
 Cooling of spectra versus competing processes.
 
 \section{Pair Production and Annihilation}
-
-\EliasComm{Might not be necessary if I don't really write about BW.}
 
 Pairs are easily annihilated in radiactive substances for low energy positrons cancelling out with ambient electrons.
 At higher energies the cross section decreases.
@@ -1555,15 +1568,6 @@ At higher energies the cross section decreases.
 \subsection{Pair annihilation}
 
 \subsection{Bethe Heitler process}
-
-\subsection{Trident process}
-
-\subsection{Linear Breit Wheeler}
-
-\subsection{Nonlinear Breit Wheeler}
-
-\subsection{A side note: photon-photon scattering}
-
 
 There are different ways to create pairs:
 Bethe Heitler: 
@@ -1573,6 +1577,13 @@ O. Pike:
 \frac{d \sigma_{\gamma Z}}{dE_+}(\omega,x) = -\frac{1}{\bar x^2}\frac{d\sigma_{eZ}}{d\omega}(-\omega,x)
 \end{equation}
 
+\subsection{Trident process}
+
+Multi-step process.
+
+\subsection{Linear Breit Wheeler}
+
+
 Linear and nonlinear Breit-Wheeler: two or more photons interact to produce one pair.
 
 \begin{figure}[h]
@@ -1580,8 +1591,6 @@ Linear and nonlinear Breit-Wheeler: two or more photons interact to produce one 
 \includegraphics[width=0.4\columnwidth]{feyn_BW1.pdf}\includegraphics[width=0.4\columnwidth]{feyn_BW2.pdf}
 \caption{Feynman diagrams for Breit-Wheeler pair production. Time axis from left to right.}
 \end{figure}
-
-Schwinger pair production: The external electric field is so strong that virtual electron-positron pairs can be accelerated to relativistic energies within a Compton wavelength and made real.
 
 
 Explain why X-ray and Gamma interaction is suitable:
@@ -1616,7 +1625,25 @@ A thermal distribution
 n_\gamma = \frac{2\chi(3)}{\pi^2 \lambda^3} \left(\frac{k_B T}{m_e c^2}\right)^3
 \end{equation} 
 
+\subsection{Nonlinear Breit Wheeler}
 
 Nonlinear Breit Wheeler 
+Seen at SLAC E144.
 
-Photon-photon scattering
+\subsection{Schwinger limit}
+
+Schwinger pair production: The external electric field is so strong that virtual electron-positron pairs can be accelerated to relativistic energies within a Compton wavelength and made real.
+
+\section{A side note: Other High-field phenomena}
+
+High-field QED is an exciting area of research. Where there is an extremely intense laser pulse exciting physics happens: light becomes matter, the vacuum interacts with the laser and the vacuum gives birth to matter.
+
+\subsection{Photon-Photon scattering}
+Discussing high-field phenomena and the limit where pair production becomes feasible a short note on photon-photon scattering appears appropriate.
+Where a large density of photons are at the same place, at high intensities, as required for the Schwinger limit, the probability for photons to scatter from other photons becomes significant.
+
+Photons can scatter from other photons mediated by virtual electron-positron pairs. This is not a tree-level diagram but involves at least 4 vertices reducing its probability to virtually zero. At high intensities the coupling increases and these higher order diagrams can contribute significantly.
+
+\subsection{Vacuum birefringence}
+
+An intense laser pulse propagating through vacuum will also experience a modification. As the quantum vacuum is everything but void it also carries a refractive index and birefringence capacities. At the high-field limit these effects are expected to become visible.
