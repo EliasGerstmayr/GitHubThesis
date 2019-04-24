@@ -7,16 +7,42 @@ The advent of particle accelerators unveiled fundamental physics, new particles 
 
 \subsection{Conventional Accelerators}
 
+Charged particles, electromagnetic fields to accelerate and guide particles.
+Static fields to start with and then RF based cavities.
+
+Large machines reaching TEV REF and GEV for electrons and protons. Application ranges from fundamental physics to cancer therapy.
+The machines have to grow further and further to reach higher energies as the energy is path times electric field. The electric field is limited by the breakdown of the cavities and hence the accelerator has to become larger.
+
+
+
 \subsection{Plasma-based Accelerators}
 
+Plasmas are already broken-down material and can support much higher field gradients.
+As a result the size can be much smaller.
 
+Already proposed decades ago (TAJIMA REF) it was proposed to use an intense laser pulse to set up a density wave within a plasma.
+The propagating charge separation moving at a group velocity close to the speed of light would then act as accelerating cavity.
+This is wakefield acceleration. Results from the previous years: reaching up to several GeV and despite not reaching energies of the large accelerators progress is being made.
+
+Limitations of LWFA are pump depletion and dephasing.
+To overcome use stages.
+
+Alternatively, use PWFA, drive a plasma wave using a particle bunch.
 \EliasComm{Plots to show energy versus year, energy spread and type of injection and whether it holds to the scaling laws.}
+
+Properties of electrons:
+Short pulse duration.
 
 \section{Light Sources}
 
 \subsection{Conventional Light Sources (Gen)}
 
 Particle accelerators are traditionally also the source of bright radiation.
+Based on their brightness the light sources are classified into generations.
+
+Light sources are synchrotrons, large scale particle accelerators. KeV X-rays can be produced from relatively compact X-ray tubes.
+
+\subsection{Plasma-based light sources}
 
 Laser wakefield accelerators are the source of a variable and tunable radiation source covering the few keV to 100 MeV range.
 Wakefields are producing hard X-ray radiation through betatron radiation.
@@ -32,36 +58,53 @@ Source size, time duration are unique properties.
 High energy radiation sources are rare on earth. Typically found in astrophysical phenomena, where these kinds of processes are more dominant as well. Inverse Compton scattering is a common sight there. Hard radiation in wakefields can be produced from several sources. Betatron radiation through amplified oscillation, bremsstrahlung, inverse Compton scattering, nonlinear inverse Compton scattering. Also several applications from imaging hard materials, nuclear processes, QED processes will require a diagnostics applicable over a whole bandwidth. New QED experiments reaching hundreds of MeV gamma radiation will have to rely on a shape-independent diagnostics and we have shown that this is necessary to distinguish models. Higher energy accelerators facilities will generate harder radiation as well and need to diagnose it.
 
 
-Light sources are synchrotrons, large scale particle accelerators. KeV X-rays can be produced from relatively compact X-ray tubes.
-
 Diagnostics:
 Absorption X-rays
 X-rays via filter packs, K-edges, crystals
 converter targets and spectral measurement
 differentially damped spectrum
 
+\section{Radiation Reaction}
+
+An electron that is being accelerated will radiate and hence loses energy and momentum in the process: this loss of energy and momentum or the related force the electron feels is referred to as radiation friction or radiation reaction (RR).
+
+Light sources ubiquitous and essential for modern advances but still we do not understand the fundamental process of radiation reaction.
+RR becomes important in extreme scenarios when electrons lose a significant fractions of their initial energy. In astrophysical processes this happens via nonlinear inverse Compton scattering of ultra-relativistic particles interacting with the Cosmic Microwave Background CMB.
+In most scenarios on Earth weak RR is prominent which means the average energy loss becomes evident but the microscopic changes in the equation of motion are not of relevance.
+
 \section{High field interactions and QED}
 
 Radiation Reaction, Breit-Wheeler
 
+Quantumelectrodynamics or short QED is one of the simplest yet most elegant field theories in the quantum world.
+Over the decades it has correctly predicted phenomena and cross-sections to a point where no question of its validity are asked.
+
+Due to the small coupling constant $\alpha \ll 1$ in low intensity scenarios only diagrams at lowest order contribute and cross-sections can hence be calculated analytically to a very high accuracy. Higher orders $\alpha^2, \alpha^3$ and so on vanish, whereas in QCD the coupling constant is close to unity and hence numerous diagrams have to be considered.
+
+However, to test a theory one has to find the limits of its description. For QED the new interesting regime are high field interactions where laser fields reach intensities approaching the critical field of QED. In these scenarios classical descriptions start to break down and 
+
+In this work two phenomena will be approached in an experiment setting.
+First, the linear Breit-Wheeler process. This pair-production mechanism is the last tree-level diagram of QED that has not been distinctively observed in an experiment. The cross-section 
+
 
 \section{Thesis Outline}
 
-Following this introduction the author will introduce some theoretical concepts and experimental methods relevant to this work.
+This thesis covers the generation of different kinds of highly energetic radiation using a wakefield accelerator and high intensity lasers, and discusses the application of these radiation sources ranging from phase contrast imaging to probing fundamental quantum effects. 
 
-2. theory
-3. Experimental Methods 
-4. some simulation stuff used in most of the results chapters
+Following this introduction the author will introduce some Theoretical Concepts in Chapter 2 and Experimental Methods in Chapter 3 underlying this work.
 
-
-Results Chapters: High energy radiation from wakefield accelerators and their application
+Then the chapters containing the results of this thesis follow in Chapters 5-8:
 
 \begin{enumerate}
 \setcounter{enumi}{4}
-\item \textbf{Hard Betatron Radiation from dual shock structure} Electrons travelling in a wakefield transitioning through two density spikes experienced an increase of transverse oscillations resulting in an enhancement of measured betatron radiation. The dual shock structure was induced by introducing a blade into the supersonic gas flow of a helium gas jet. This radiation source could be used to image high-Z materials that can not be penetrated by standard betatron radiation. At the same time this opens up the possibility to explore this regime further and increase the brightness of the source even further.
-\item \textbf{linear Inverse Compton Scattering} Electrons from a wakefield accelerator were collided with a strongly defocused laser pulse generating gamma radiation from linear inverse Compton Scattering. (and development of dual-axis gamma spectrometer)
-\item \textbf{Nonlinear Inverse Compton Scattering and Radiation Reaction} By scattering a tightly focused high intensity laser pulse from a relativistic electron beam and generating gamma radiation from nonlinear Inverse Compton Scattering, it was possible to measure radiation reaction in an experiment. (as gateway to measuring and diagnosing radiation reaction)
-\item \textbf{Linear Breit-Wheeler Process and Bremsstrahlung source} A dual laser setup is used to produce a thermal X-ray source and a gamma beam from bremsstrahlung in an attempt to measure the elusive linear Breit-Wheeler process. (or using a wakefield-based Bremsstrahlung source and a laser-solid interaction X-ray source to measure linear BW)
+\item \textbf{Hard Betatron Radiation from dual shock features:}\\
+Electrons travelling in a wakefield transitioning through two density spikes experienced an increase of transverse oscillations resulting in an enhancement of measured betatron radiation reaching hundreds of $\mathrm{keV}$. The dual shock structure was induced by introducing a blade into the supersonic gas flow of a helium gas jet. This radiation source could be used to image high-Z materials that can not be penetrated by standard betatron radiation. At the same time this opens up the possibility to explore this regime further and increase the brightness of the source even further.
+\item \textbf{Linear Inverse Compton Scattering:}\\
+Highly relativistic electrons from a wakefield accelerator were collided with a defocused laser pulse at $a_0 \sim 0.3$ generating gamma radiation from linear inverse Compton Scattering in the few $\mathrm{MeV}$ range. A novel gamma-spectrometer design that allows measuring the response of the detector from two sides was fielded for the first time. 
+\item \textbf{Nonlinear Inverse Compton Scattering and Radiation Reaction:}\\
+By scattering a tightly focused high intensity laser pulse from a relativistic electron beam and generating gamma radiation from nonlinear Inverse Compton Scattering, it was possible to measure radiation reaction in an experiment. The energy loss of the electron beam and the spectrum of the radiation was used to diagnose radiation reaction. In particular a statistical analysis of the electron beam fluctuations and its impact on the significance of the results is presented.
+\item \textbf{Bremsstrahlung source and the Linear Breit-Wheeler Process:}\\
+A dual laser setup is used to produce a thermal X-ray source and a gamma beam from bremsstrahlung in an attempt to measure the elusive linear Breit-Wheeler process. 
 \end{enumerate}
 
 \EliasComm{Put a plot of the photon energy ranges illuminated in the different result sections.}
