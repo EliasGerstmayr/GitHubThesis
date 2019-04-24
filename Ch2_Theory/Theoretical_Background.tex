@@ -930,9 +930,10 @@ with $\alpha$ the fraction of energy contained in the FWHM of the laser focal sp
 
 In order to inject electrons of different quality a variety of techniques have been developed, some of which will be introduced in the following.
 The schemes are only examples and are found in a wide variety and frequently combined to optimise the output of the accelerator for the specific purpose.
-There is not a perfect injection scheme for every purpose but the requirements of the final electron beam the group aspires to guides the efforts to design the targetry to trigger injection in a fashion that would produce such a beam or radiation.
+There is not single perfect injection scheme that fits every purpose but the requirements of the final electron beam the group aspires to guides the efforts to design the targetry to trigger injection in a fashion that would produce such a beam or radiation. Unwanted injection mechanisms are usually suppressed if necessary.
 
 In some cases a well defined beam of reproducible narrow energy spread is of importance, in other situations a high charge beam producing copious amounts of radiation outweighs the requirements of energy spread or reproducibility.
+
 
 \subsubsection{Self-Injection}
 
@@ -961,9 +962,8 @@ In some cases smaller perturbations in the plasma might also result in something
 Opposite to downramp injection a positive density gradient will lead to a decrease in the size of the bubble. This is not suitable to capture electrons but it moves the centre of the cavity closer to the laser pulse and hence moves the accelerating phase. This can be used to rephase electrons and increase the length over which electrons are in an accelerating phase if they have reached dephasing at a lower density already.
 
 Whilst the previous examples were longer ramps in gradients or small perturbation large changes in density will lead to a large change in the bubble size and hence can be used for injection.
-Such a sharp density transition has been realised in experiment by several groups employing a blade, wire 
-- Shock injection
-At low 
+Such a sharp density transition has been realised in experiment by several groups employing a blade or wire to perturb the gas flow of a supersonic gas jet and to create a shock. This is called shock injection.
+In experiments the right position and angle of such a shock front has shown to be able to produce high quality electron beams with low energy spread as the injection is localised.
 
 
 \subsubsection{Laser-assisted}
@@ -972,9 +972,9 @@ Instead of solely relying on the interaction of medium and laser, research effor
 
 Plasma Torch: here an intense laser is passing the a plasma with high-Z dopant in transversal direction before the primary laser pulse. The additional ionisation based on the same principle as ionisation injection results in a density profile similar as in shock injection but does not rely on a physical shock and is tunable in space and time.
 
-Trojan Horse:
+Trojan Horse: a laser is brought to focus in the accelerating phase of the cavity. The laser only reaches a sufficiently high intensity near focus to trigger increased tunnel-ionisation and injection. Due to the small volume the focus occupies in space and time the expected phase space of the electrons is also small.
 
-Colliding pulse:
+Colliding pulse: a second laser counter-propagates with the main driving laser pulse. For the duration of the spatio-temporal overlap of both laser pulses the combined laser fields allow for ionisation injection to take place.
 
 \subsubsection{External injection}
 
@@ -990,7 +990,9 @@ The classical relativistic description requires using retarded Lienard-Wiechert 
 
 The following sections will concern the radiation of an electron in an external magnetic field, constant or alternating, resulting in synchrotron radiation and undulator/wiggler radiation. This has close ties to betatron radiation which is stimulated by particles oscillating in an electrostatic field whilst accelerating in the transverse direction. Finally, the focus will lie on the interaction of electrons with atoms when generating bremsstrahlung or electrons in laser fields performing Compton scattering.
 
-LWFA is able to produce a wide range of radiation especially in the X-ray regime ranging from typical betatron radiation up to the tens of keV energy up to hard enhanced betatron in the 100s of keV to gamma radiation from bremsstrahlung and Compton scattering events leading to hundreds of MeV.
+LWFA is able to produce a wide range of radiation especially in the X-ray regime ranging from typical betatron radiation up to the tens of keV energy up to hard enhanced betatron in the 100s of keV to gamma radiation from bremsstrahlung and Compton scattering events leading to hundreds of MeV. it is not only able to cover a large bandwidth of energies but also manages to vary the character of the radiation emitted from broadband synchrotron-like radiation to sharply peaked harmonics.
+
+Similarly as a wakefield cavity has analogies with conventional accelerator structures, radiation from conventional machines (synchrotrons, insertion devices) show similarities with wakefield and laser wigglers. The common denominator is the equation of motion and the character of the emitted radiation depending on the strength of the wiggler.
 
 \subsection{Synchrotron Radiation}
 
@@ -1007,26 +1009,11 @@ We can take this periodic equation of motion and integrate to obtain a spectrum.
 
 Scalings: Power scales to the power of 4?
 
-Insertion devices:
-Instead of bending magnets on one big circular trajectory, force the bunch to oscillate strongly while moving through a series of magnets of alternating polarisation. 
-
-Strongest acceleration at the turning points.
-Cone related to gamma factor of electrons.
 
 \begin{figure}
 \includegraphics[width=.5\columnwidth]{synchrotron_classical.png}
 \caption{Synchrotron radiation.}
 \end{figure}
-
-Wiggler parameter: wiggler and undulator regime.
-
-Coherent and incoherent radiation.
-
-This is using the magnetic (!) field!
-
-\begin{equation}
-K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c}
-\end{equation}
 
 
 based on Jon Wood and Jackson:
@@ -1078,9 +1065,42 @@ Equation for on- and off-axis synchrotron
 \caption{Synchrotron radiation.}
 \end{figure}
 
+To harvest and direct the radiation of an accelerated relativistic electron more efficiently a set of alternating magnets is used. The electron oscillates and emits radiation preferentially at the turning points as the acceleration is the strongest there and in a forwards-pointing cone with a diameter proportional to $1/\gamma$.
+
+The rapid change of direction in the field and hence forced trajectory of the electron in transversal direction results in a change of effective Lorentz factor in the forward direction.
+
 \begin{equation}
 \left\langle\gamma\right\rangle \approx \frac{\gamma}{\sqrt{1 + 0.5 K^2}}
 \end{equation}
+
+Commonly two regimes are identified based on the wiggler parameter:
+
+\begin{equation}
+K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c}
+\end{equation}
+
+For $K \ll 1$ it is called undulator regime, large $K \gg 1$ indicate the wiggler regime.
+In the wiggler regime the divergence of the cone is larger and the radiation has a large bandwidth.
+In the undulator regime the radiation is strongly collimated and interference can occur resulting in single harmonics being emitted.
+
+Constructive interference with harmonics of wavelength:
+
+\begin{equation}
+\lambda = \frac{\lambda_u}{2 n \gamma^2} \left( 1+ \frac{K^2}{2} + \gamma^2 \theta^2\right)
+\end{equation}
+
+If an electron beam of sufficient quality is inserted in a very long undulator the emitted radiation and the electron beam are able to interact and modulate resulting in the emission of coherent radiation. This is observed in free-electron lasers.
+
+The equations introduced for synchrotron radiation work similarly for wiggler radiation. The reference to the bending radius is usually replaced by an expression including the magnet periodicity or the $K$ parameter.
+
+
+For a wiggler this becomes:
+\begin{equation}
+\omega_c \sim \frac{3}{2} \gamma^2 K k_u c
+\end{equation}
+
+\EliasComm{Include explicit equations here.}
+
 
 \subsection{Betatron Radiation}
 
@@ -1116,14 +1136,9 @@ where this energy parameter indicates when approximately half the energy radiate
 The oscillation of the particles and hence the emission of radiation can be enhanced in wakefield experiments by tailoring the wavefront \cite{Mangles2009} or by using different injection mechanisms.
 In LWFA betatron radiation typically reaches the soft X-ray regime of a few to tens of keV.
 
-Difference here is that we use an quasi-electrostatic field instead of a magnetic field!
-
-
-\EliasComm{be more extensive and also include comments about absorption in gases).}
+Difference here is that we use an quasi-electrostatic field instead of a magnetic field, but radiation from a synchrotron, an insertion device (wiggler) and betatron radiation share a common description rooted in the equation of motion (figure-of-eight motion) even though using different field structures and $K$ parameters.
 
 \EliasComm{Include some synchrotron equations}
-
-\EliasComm{Include bits about off-axis injection and polarisation.}
 
 \EliasComm{Include an image of betatron oscillations.}
 
@@ -1168,6 +1183,10 @@ For $\hbar \omega << E$
 \begin{equation}
 \frac{d^2 \chi_R}{d \omega d \Omega_\gamma} = \left[\frac{3}{2 \pi} \gamma^2 \frac{(1+\gamma^4 \theta^4)}{(1+\gamma^2 \theta^2)^4}\right] \cdot \frac{d \chi_R}{d \omega}
 \end{equation}
+
+This means that for highly relativistic electron the emitted radiation is emitted in a narrow forwards-pointing cone. The energy of the emitted radiation is cut off at the energy of the electron.
+
+Bremsstrahlung from relativistic electrons are hence a decent source of broadband high energy gamma radiation.
 
 \EliasComm{Add an explicit plot of the spectrum}
 \subsection{Compton Scattering}
@@ -1287,7 +1306,7 @@ Laser wiggler. Electric field component, later on at high intensities the magnet
 
 \EliasComm{need new ICS visualisation.}
 
-In inverse Compton scattering (ICS) a relativistic electron scatters with one (linear ICS) or multiple photons (non-linear ICS). Whilst in Compton scattering (CS)  momentum is transferred from the photon to the electron (heating), resulting in a longer wavelength of the scattered photon, in ICS the photon gains energy (hence inverse Compton scattering) as it experiences a relativistic Doppler shift.
+In inverse Compton scattering (ICS) a relativistic electron scatters with one (linear ICS) or multiple photons (non-linear ICS). Whilst in Compton scattering (CS)  momentum is transferred from the photon to the electron (heating), resulting in a longer wavelength of the scattered photon, in ICS the photon gains energy (hence inverse Compton scattering) as it experiences a relativistic Doppler shift. In a different picture this is again a wiggler, this time a laser wiggler making the electrons oscillate with a $K$ parameter of the normalised vector potential $a_0$. In the linear regime this value is $a_0 < 1$ and hence harmonics are emitted similarly as in an undulator.
 
 The photon energies accessible with sufficiently relativistic particles is multiple orders of magnitude higher. In all optical Compton sources \cite{TaPhuoc2012a} relativistic electrons of several hundreds of $\mathrm{MeV}$ have been collided with high-intensity laser pulses, producing tunable X-rays in the $\mathrm{keV}$ \cite{TaPhuoc2012a,Powers2014,Khrennikov2015} to $\mathrm{MeV}$ \cite{Chen2013a,Sarri2014} range with pulse durations of the order of tens of femtoseconds and a micron-scale source size.
 
@@ -1354,6 +1373,8 @@ Due to the relativistic boost the energy of the photons will look as if $2\gamma
 
 \subsection{Nonlinear Inverse Compton Scattering}
 
+In nonlinear ICS the $a_0$ of the laser pulse is larger than unity. On the microscopic level this allows for several photons to interact with one electron at a time resulting in higher harmonics being emitted. In a classical picture the electrons perform a figure-of-eight motion due to the intense laser pulse which gives rise to harmonics. This is another parallel to the description of electrons in insertion devices. Similarly as when moving from the undulator regime with distinct harmonics to the wiggler regime with large bandwidth, here also the $K$ parameter linked to $a_0$ increases and rapidly gives rise to hundreds of harmonics forming a smooth synchrotron-like radiation spectrum.
+
 \begin{equation}
 n\gamma_L + e^- \longrightarrow \gamma + e^-.
 \end{equation}
@@ -1386,8 +1407,7 @@ We solved the equation of motion previously and it follows the relativistic Dopp
 \omega' = \gamma \omega (1-\beta \cos(\theta)) \approx \omega (1+\gamma^2 \theta^2)/2\gamma
 \end{equation}
 
-Secondly, energy is being transferred from this fundamental radiation at $\omega$ to higher order harmonics $\omega_1 = n\omega$, when multiple photons upconvert to one higher energy photon. Since this is a free electron process the harmonics are not restricted to either odd or even numbers but cover both.
-Fourier analysis.
+Secondly, energy is being transferred from this fundamental radiation at $\omega$ to higher order harmonics $\omega_1 = n\omega$, when multiple photons upconvert to one higher energy photon. Since this is a free electron process the harmonics are not restricted to either odd or even numbers but cover both. Classically, the radiation pattern is calculated using Fourier analysis.
 
 The angular distribution of each component is distinct and symmetric, with odd harmonics showing a maximum on-axis and (n-1)/2 lobes on either side and even harmonics having a minimum on-axis and n/2 side-maxima on either side.
 
@@ -1398,7 +1418,6 @@ The angular distribution of each component is distinct and symmetric, with odd h
 \end{figure}
 
 \EliasComm{make a plot for the spectrum and correct this spectrum to reflect the spectrum in the lab frame or make notable that this is in the rest frame. Maybe compare the two.}
-
 
 In the highly nonlinear regime $a_0 \gg 1$ the number of harmonics increases by a factor $a_0^3$ (REF). At the same time each harmonic is spread out due to the longitudinal component which now dominates the electron motion.
 
@@ -1449,14 +1468,12 @@ Deviations from a head-on collision have to be considered and also introduce a s
 
 \section{Radiation Reaction}
 
-\EliasComm{How does radiation reaction compare to the ponderomotive force? It scales with $1/\gamma$ so it is less important in this context but what does it mean?}
-
 The previous sections left out the effect of radiation losses onto the equation of motion of charged particles.
 Charged particles emit radiation when being accelerated. The charged particle emitting the radiation loses the energy associated with the photon and is knocked back, adhering to momentum and energy conservation rules. This is called radiation reaction (RR) or radiation friction.
 Radiation reaction is a very fundamental problem of physics, but surprisingly a universally accepted description does not exist thus far. Each description only exists in a certain limit and is an approximation valid within those limits, but breaks down in extreme conditions. High field QED is a suitable environment to test the limits of these models.
 \vspace{\baselineskip}
 
-Whilst the emission of radiation is ubiquitous, in many cases radiation losses are small or occur over longer spans of time which means they can be ignored or the detailed physics of radiation reaction is not important. In storage rings of large accelerator and collider facilities radiation losses pose a significant problem as they limit the maximum energy the particles can be accelerated to. The exact dynamics of radiation reaction and the influence on the equation of motion of the particles is not very significant. It suffices to add the average energy lost over the a turn in the storage ring to prop up the system.
+Whilst the emission of radiation is ubiquitous, in many cases radiation losses are small or occur over longer spans of time which means they can be ignored or the detailed physics of radiation reaction is not important. In storage rings of large accelerator and collider facilities radiation losses pose a significant problem as they limit the maximum energy the particles can be accelerated to. The exact dynamics of radiation reaction and the influence on the equation of motion of the particles is not very significant. It suffices to add the average energy lost over the a turn in the storage ring to prop up the system. This is sometimes referred to as weak radiation reaction.
 
 Radiation reaction effects become more significant in extreme conditions where ultra-relativistic particles interact with light: in astrophysical phenomena relativistic particle jets of GeV, TeV or PeV level are frequently observed. Interacting with the ubiquitous CMB inverse Compton scattering provides a high energy background radiation.
 These conditions are re-constructed in laser and accelerator facilities interacting ultra-relativistic particles with laser pulses. Radiation reaction was measured, for instance, at SLAC (REF E144) and first measurements have been undertaken at non-conventional accelerators such as the Astra-Gemini laser system at the Central Laser Facility in the UK. This work is part of this thesis.
@@ -1466,11 +1483,11 @@ In this section a selection of radiation reaction models are motivated and intro
 
 Firstly, the first intuitive approach to radiation reaction is explored: simply adding an external force $m \ddot{x}$ to the equation of motion. In covariant form this is the Lorentz-Abraham-Dirac force or short LAD. This set of solutions results in pathological solutions or so-called runaway solutions with self-acceleration and unphysically requiring knowledge of the future.
 
-Secondly, a first self-consistent solution is presented: the Landau-Lifschitz model (LL). This model does not have pathological runaway solutions and employs retarded potentials resulting in the right causality. The Landau-Lifschitz model is a perturbation model for $F_{RR} \ll F_{Lorentz}$ and hence is valid only within this limit. For large RR forces the LL model provides unphysical solutions, in particular it predicts the emission of radiation greater than its own total energy.
+Secondly, a first self-consistent solution is presented: the Landau-Lifschitz model (LL). This model does not have pathological runaway solutions and employs retarded potentials resulting in the right causality. The Landau-Lifschitz model is a perturbation model for $F_{RR} \ll F_{Lorentz}$ and hence is valid only within this limit. For large RR forces the LL model gives rise to unphysical solutions, in particular it predicts the emission of radiation greater than its own total energy.
 
-After discussing these classical approaches to radiation reaction, finally, a model based on a quantum picture is introduced. Here an electron passing through a high intensity field can either be described by a series of individual multi-photon Feynman diagrams or as electron in a dressed state, the Furry picture. The latter is appropriate in the context of high-field QED. We find that the quantum picture provides two corrections to the classical picture: one is the adjustment of the radiation spectrum and power eliminating the unphysical emission of radiation larger than the electron energy by introducing a cutoff. This reduction of emitted power can be parametrised by the Gauntt factor and applied to the LL model as a continuation into the high-field regime, resulting in a semi-classical model with classical equations of motion but an emission power adjusted to the quantum picture. The other adjustment is the introduction of stochasticity. The quantum world is inherently non-deterministic and bound to probabilities. One initial state does not always end up in the same final state even if the boundary conditions are identical. This results in interesting phenomena including a hardening of the photon spectrum and a widening of the electron energy spread.
+After discussing these classical approaches to radiation reaction, finally, a model based on a quantum picture is introduced. Here an electron passing through a high intensity field can either be described by a series of individual multi-photon Feynman diagrams or as an electron in a dressed state, the Furry picture. The latter is appropriate in the context of high-field QED. We find that the quantum picture provides two important corrections to the classical picture: one is the adjustment of the radiation spectrum and power eliminating the unphysical emission of radiation larger than the electron energy by introducing a cutoff. This reduction of emitted power can be parametrised by the Gauntt factor and applied to the LL model as a continuation into the high-field regime, resulting in a semi-classical model with classical equations of motion but an emission power adjusted to the quantum picture. The other adjustment is the introduction of stochasticity. The quantum world is inherently non-deterministic and bound to probabilities. One initial state does not always end up in the same final state even if the boundary conditions are identical. This results in interesting phenomena including a hardening of the photon spectrum and a widening of the electron energy spread.
 
-However, even the model presented is derived within a framework relying on approximations. In this case it is the local constant field approximation (LCFA) which assumes that during the formation time of the photon the electric field does not change significantly. For an extremely intense oscillating electromagnetic field, for instance an intense laser field, this might not always be true and even this model might have its limitations.
+However, even the model presented is derived within a framework relying on approximations. In this case this is the local constant field approximation (LCFA) which assumes that during the formation time of the photon the electric field does not change significantly. For an extremely intense oscillating electromagnetic field, for instance an intense laser field, this might not always be true and even this model might have its limitations. The LCFA is introduced and its potential limitations are shown as motivation for future research.
 
 \subsection{Radiation reaction: classical runaway solutions}
 
@@ -1514,23 +1531,39 @@ The relativistic generalisation was found by Dirac renormalising in 4-space. The
 \subsection{Self-consistent classical description: Landau-Lifschitz}
 
 A first self-consistent solution to including radiation reaction into a classical model was achieved by Landau and Lifschitz (REF).
-LL solution is a perturbation and means the radiation reaction force has to be small compared to the Lorentz force and a suitable frame of reference has to be found to make this valid. In some cases energy conservation might be violated.
+LL solution is a perturbation and means the radiation reaction force has to be small compared to the Lorentz force and a suitable frame of reference has to be found to make this valid. In some cases energy conservation might be violated in an abruptly changing EM field.
 
 Problems: energy loss can exceed initial energy. Stochasticity not included.
+
+In EM four vector form (from REF Bulanov LAD vs LL):
+
+\begin{equation}
+g^\mu = \frac{2e^3}{3m_e c^3} \left\lbrace   \frac{\partial F^{\mu \nu}}{\partial x^\lambda} u_\nu u_\lambda - \frac{e}{m_e c^2} \left[ F^{\mu \lambda} F_{\nu \lambda} u^\nu - \left(F_{\nu\lambda}u^\lambda\right} \left( F^{\nu\kappa}u_\kappa\right)u^\mu \right]   \right\rbrace
+\end{equation}
+
+In 3-dim.
+
+\begin{equation}
+\mathbf{F} = \frac{2e^3}{3m_e c^3 \sqrt{1-\frac{v^2}{c^2}}} \left\lbrace \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{E} + \frac{1}{c} \left[ \mathbf{v} \times \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{B} \right] \right\rbrace +\\
++ \frac{2e^4}{3m^2_e c^4}\left\lbrace \mathbf{E}\times\mathbf{B} + \frac{1}{c} ( \mathbf{B} \times (\mathbf{B} \times \mathbf{v})) + \frac{1}{c} \mathbf{E} (\mathbf{v} \cdot \mathbf{E}) \right\rbrace - \\
+- \frac{2e^4}{3m^2_e c^5 \left( 1-\frac{v^2}{c^2}\right)} \mathbf{v} \left\lbrace\left( \mathbf{E} + \frac{1}{c} \mathbf{v} \times \mathbf{B}\right)^2 - \frac{1}{c^2} (\mathbf{v} \cdot \mathbf{E})^2 \right\rbrace
+\end{equation}
+
+This is an effective model and the violation of energy conservation is possible.
 
 \subsection{Quantum picture and corrections}
 \EliasComm{Furry picture, treating the laser field as classical external field.}
 
-
-Quantum parameter eta and chi. $\eta = E_{RF}/E_{crit}$
-
 Limit when quantum effects become more important: energy loss comparable to rest mass of the electron?
 This is at the same time also the limit of validity of the LL model, when the force becomes comparable to the Lorentz force.
+
+Quantum parameter eta and chi. $\eta = E_{RF}/E_{crit}$
+Critical field for quantum electrodynamics $E_{crit} = 1.38 \times 10^{18}\,\mathrm{V m^{-1}}$
+The field in the rest frame becomes important in relation to the critical field. This is somewhat similar to the approximation that the field be much smaller than the Lorentz force.
 
 With high confidence we know that we require a quantum description of this process.
 There are several ways to solve some of the issues of the classical Landau-Lifschitz description.
 
-Critical field for quantum electrodynamics $E_{crit} = 1.38 \times 10^{18}\,\mathrm{V m^{-1}}$
 
 REFS: Chris Ridgers JoP
 
@@ -1573,17 +1606,17 @@ This section aims to explain how matter annihilates and inversely matter can be 
 
 \subsection{Pair annihilation}
 
-The annihilation of electron-positron pairs is commonly found in radioactive decays:
+The annihilation of electron-positron pairs is commonly found in radioactive decays following this simple equation:
 \begin{equation}
 e^+ + e^- \longrightarrow 2 \gamma.
 \end{equation}
-Matter and antimatter meet and annihilate into pure energy converting the rest mass of both particles into photons. In radioactive decays relatively slow pairs collide and the emitted gamma rays are coincident emitted at 180 degrees. This is used in radio-isotope therapy to localise the tumour.
+Matter and antimatter meet and annihilate into pure energy converting the rest mass of both particles into photons. In radioactive decays relatively slow pairs collide and the emitted gamma rays are coincident emitted at 180 degrees in the centre-of-mass frame. This is used in radio-isotope therapy to localise the tumour.
 
-Kinematics:
+\subsubsection{Kinematics}
 An electron-positron pair at rest, i.e. total momentum was zero before the interaction. This means that the 2 gamma photons will leave (in that frame) back-to-back.
 These photons carry away the same energy. Deviations can be found once the electron and positron carry a kinetic energy.
 
-Cross section:
+\subsubsection{Cross section}
 \begin{equation}
 \sigma_{e^+ e^-} = \frac{\pi r^2_e}{2} (1-\beta^2) \left[ (3-\beta^4) ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right]. 
 \end{equation}
@@ -1615,7 +1648,7 @@ Linear and nonlinear Breit-Wheeler: two or more photons interact to produce one 
 
 
 Explain why X-ray and Gamma interaction is suitable:
-Need to overcome threshold for interaction. Cross section needs to be directed and hence we need one of the photons to be at much higher energy.
+Need to overcome threshold for interaction. Cross section needs to be directed and hence we need one of the photons to be at much higher energy. Beaming!
 
 Annihilation
 \begin{equation}
@@ -1640,11 +1673,6 @@ $s = (E^*/m_e c^2)^2 = E_{\gamma 1} E_{\gamma 2} (1-\cos\phi)/2 m^2_e c^4, \beta
 For head-on collision $\theta = \pi \rightarrow s = E_1 E_2/m^2_e c^4$ and for $\theta = \pi/2 \rightarrow s = E_1 E_2/2m^2_e c^4$.
 The threshold is $s > 1$.
 
-A thermal distribution
-
-\begin{equation}
-n_\gamma = \frac{2\chi(3)}{\pi^2 \lambda^3} \left(\frac{k_B T}{m_e c^2}\right)^3
-\end{equation} 
 
 \subsection{Nonlinear Breit Wheeler}
 
