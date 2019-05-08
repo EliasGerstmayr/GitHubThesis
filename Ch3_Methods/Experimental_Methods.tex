@@ -280,7 +280,7 @@ The most common diagnostics for a typical wakefield experiment setup are shadowg
 
 \subsection{Shadowgraphy}
 
-In a shadowgraphy light is shone through a transparent medium and then imaged onto a camera chip. Modulations in the density are visible in form of a change in refractive index: less dense areas are brighter while darker areas indicate higher densities. This shadow image or shadowgram is a useful tool to see features in plasmas, such as a plasma channel, resulting from density perturbations. Whilst features become very clear, the absolute density itself can not be derived from a single projection without further reference.
+In a shadowgraphy light is shone through a transparent medium and then imaged onto a camera chip. Modulations in the density are visible in form of a change in refractive index: less dense areas are brighter while darker areas indicate higher densities. This shadow image or shadowgram is a useful tool to see features in plasmas, such as a plasma channel, resulting from density perturbations. Whilst features become very clear, the absolute density itself can not be derived from a single projection without further reference. Since shadowgrams are sensitive to gradients, the outline of features are very well defined and small objects are highly visible, e.g. shocks.
 \vspace{\baselineskip}
 \EliasComm{Some comment on refractive index and how shadowgraphy really works and which order of density perturbation it refers to.}
 In a LWFA set-up a shadowgraphy can be achieved by using a secondary laser beam, commonly called `the probe', passing transversely to the laser axis through the plasma. In addition, it has to be timed with the main beam to capture interesting features. If the probe pulse is too early, there will be no plasma channel and if too late the channel will have expanded already and blurred out on the image. The imaging system includes one or multiple lenses, depending on the path of the light, magnification desired and so on. 
@@ -291,6 +291,7 @@ In a LWFA set-up a shadowgraphy can be achieved by using a secondary laser beam,
 \caption{Example of a shadowgram taken on an experiment run at TA2 (Central Laser Facility, RAL) in Spring 2016. The image shows a plasma channel produced by the Astra laser pulse in a gas cell of $3\,\mathrm{mm}$ length filled with helium. The density is relatively high leading to strong scattering and filamentation of the channel.}
 \end{figure}
 
+
 \begin{figure}
 \centering
 \includegraphics[width=0.8\columnwidth]{Shadowgraphy.png}
@@ -298,6 +299,16 @@ In a LWFA set-up a shadowgraphy can be achieved by using a secondary laser beam,
 \end{figure}
 
 If one wants to capture smaller and volatile features like a bubble itself, a very short pulse duration ($\sim 10\,\mathrm{fs}$) for the probe pulse is required and the set-up described has to be complemented by a microscope objective \cite{Buck2011,Savert2015}.
+
+
+From Jason's thesis:
+
+For small changes in ray displacement the relative change in local beam intensity is
+
+\begin{equation}
+\frac{I(x,y,L) - I_0}{I_0} = - L\nabla^2 \int \log \eta (x,y,z) \mathrm{d}z
+\end{equation}
+
 
 \subsection{Interferometry}
 
@@ -330,7 +341,10 @@ In experiment, a shadowgraphy can simply be achieved by splitting off a beam fro
 \caption{Example of an interferometry image: plasma channel in a $2.8\,\mathrm{mm}$ long gas cell filled with hydrogen at a high density. The laser propagated from the right to the left. The fringe shift at the entry hole indicates an up-ramp in the density profile.}
 \end{figure}
 
-
+\begin{equation}
+\Delta \phi(y,z) = \frac{2\pi}{\lambda} \int^\infty_{-\infty} (\eta(r,z) - 1) \mathrm{d}x
+\end{equation}
+and for $n_e \ll n_c$, $\eta \approx 1 - n_e/(2n_c)$.
 
 Alternatively, to setting up two different beam paths, one as reference and one probing the interaction region (see figure \ref{Methods:Figs:Interferometer:MachZehnder:Normal}), in some cases it is possible to use only the beam going through the region of interest.
 This is an option if the field of view of the probing beam has well known regions that are not affected by the perturbation investigated, just like a reference beam. In this case the entire interferometer is set up after the interaction point and the beams are shifted so that the event region of the one beam overlaps with the static part of the second beam (compare figure \ref{Methods:Figs:Interferometer:MachZehnder:Normal} with figure \ref{Methods:Figs:Interferometer:MachZehnder:Compact}).
