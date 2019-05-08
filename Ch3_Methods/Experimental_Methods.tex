@@ -357,6 +357,10 @@ This is an option if the field of view of the probing beam has well known region
 
 \subsection{Self emission of the plasma}
 
+Another much simpler and qualitative way to diagnose the plasma is done by imaging the self-emission or recombination light.
+This shows the formation of a channel and the presence of any strong features or simply that the laser reaches the gas target and a plasma is present.
+Due to the longer timescale of recombination (microseconds) this is not an ultrafast diagnostic.
+
 Measuring the self emission of the plasma channel. Pretty Pic. Top view on channel. Less quantitative or ultrashort diagnostic. Recombination light. Depends on the plasma.
 
 \newpage
@@ -371,7 +375,7 @@ One possible beam profile diagnostics is a scintillating screen, e.g. lanex, tha
 Combined with an absolute calibration of the detected signal to the charge the beam profile can also give detail about the total charge of the beam, also including particles that are out of range of the magnetic spectrometer. However, it does not give any information about the spectrum of energies and how the charge is distributed amongst those energies.
 \vspace{\baselineskip}
 
-The electrons are emitted with a momentum distribution that is dominated by the component in the direction of the laser propagation. Additional transverse components are present, for instance visible in betatron oscillations, and lead to a divergence of the beam, typically a few $\mathrm{mrad}$.
+The electrons are emitted with a momentum distribution that is typically dominated by the component in the direction of the laser propagation. Additional transverse components are present, for instance visible in betatron oscillations, and lead to a divergence of the beam, typically a few $\mathrm{mrad}$.
 To estimate the divergence one can work with a simple geometric relation and the spot size of the beam at the beam profile. A long propagation distance before the profile measurement increases the accuracy of the measurement.
 
 Assume a point source that propagates and diverges over a distance $d$ until it is detected at the beam profile, now extending to a circle of radius $r$. If $d \gg r$, then the small angle approximation holds:
@@ -385,9 +389,13 @@ where $\theta$ denotes the divergence, equivalent to the ratio of forwards to tr
 
 The pointing fluctuations of the beam can be estimated similarly if one suspects mainly an angular jitter. In reality the pointing will be related to a combination of translation and rotation.
 
+To obtain an absolute number the screen has to be spatially calibrated. This includes the relative angle of screen and camera.
+A regular grid, for instance printed on some paper, can be used as spatial reference to evaluate this. The angle of the screen relative to the beam is also important. One way to compensate both is to place the screen at 45 degrees to the beam and the camera looking at 45 degrees as well restoring the right dimensions.
+Sometimes a thin layer of aluminium foil is added at the back as protection against laser light.
+
 \subsection{Electron Energy Spectrometer}
 
-The energy of electrons in wakefield experiments can be determined in experiment using an electron energy spectrometer based on magnetic dispersion. The electrons are deflected using a dipole magnet and detected on a scintillating screen.
+The energy of electrons in wakefield experiments can be determined in experiment using an electron energy spectrometer based on magnetic dispersion. The electrons are deflected using a dipole magnet and are detected on a scintillating LANEX screen.
 
 In order to understand the fundamental relations this method is based on, the motion of a single electron in a homogeneous magnetic field is considered and analytically solved in the case of an electron passing through a region of a homogeneous magnetic field of finite extent, but without considering fringe fields or gradients. In reality, the magnetic fields are measured or simulated and particle tracked using numerical methods.
 \vspace{\baselineskip}
@@ -425,8 +433,6 @@ and then expressing this into parameters we can measure in experiment we reach
 In a typical LWFA experiment $p_\perp$ will be dominated by the component in the laser propagation axis, i.e. if the propagation axis were z, $|\mathbf{p_\perp}| \approx p_z$. 
 
 
-
-
 The energy of the relativistic electrons are commonly measured by a spectrometer based on magnetic dispersion. In most wakefield setups at laser facilities or universities the relativistic charged particle beam is deflected by the field of a dipole magnet. In experiments located at conventional accelerator facilities the beam is often diverted and re-imaged using a series of dipole and quadrupole magnets. 
 Finally, a scintillator screen, e.g. lanex, is positioned in the beam path and imaged by a camera. When all parameters, magnet strength, propagation distance, particle mass etc. are well-known, each position on the screen in the dispersion axis can be associated to an energy.
 \vspace{\baselineskip}
@@ -460,7 +466,7 @@ The other approach is backtracking but this is more complicated.
 
 If one has a fiudicial no explicit features in the beam are required as the fiudicial will become that feature. However, the positions have to be measured to a high precision to be able to distinguish sensible pointing shifts.
 
-Either methods can be used to deconvolve the spectrum and iteratively find the real energy spectrum udnerlying the measured distribution. More screens can increase the accuracy but the scattering of the beam passing through lanex becomes quite evident and distinct features blur out when drifting further because of this.
+Either methods can be used to deconvolve the spectrum and iteratively find the real energy spectrum underlying the measured distribution. More screens can increase the accuracy but the scattering of the beam passing through lanex becomes quite evident and distinct features blur out when drifting further because of this.
 
 \EliasComm{Add an image for deconvolution.}
 
