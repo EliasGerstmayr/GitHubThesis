@@ -58,50 +58,46 @@ Another alternative is combining several separately amplified laser pulses eithe
 
 \subsection{Focal Spot Camera}
 
-In the context of LWFA the laser is focused down to reach high enough intensities to drive a wake and to guide itself over a long range. The second application in this context is using the laser as scatterer which also requires focusing the beam down to a small volume with high energy density.
+In LWFA a short-pulse laser is focused down to reach high enough intensities to drive a wake, but has to guide itself over a long range at the same time. In parts of this work a second laser is used as scatterer for inverse Compton scattering or as X-ray heater.
 
-A CCD camera is used to image the focal spot and characterise its size and energy content. Due to the small size of the focal spot, typically around 30 to 50 microns or around few microns, microscope objectives are employed.
+For each of these applications it is important to characterise the the size and energy distribution of the focal spot. In combination with a measurement of the pulse shape this provides an intensity map of the laser pulse at focus.
 
-The focal spot camera is a diagnostic to characterise the focal spot of the laser. A special microscope objective magnifies and images the focal spot onto a camera chip. The energy distribution, shape and size of the focal spot has been shown to be a crucial factor to couple energy from the laser pulse to the wake. Also the position of the focus, i.e. the point of highest intensity, is important to know in order to reach the non-linear regime and to correctly analyse the situation in experiment realistically.
-In the context of colliding-pulse experiment the shape of the focal spot of the scattering laser is also of interest as a precise knowledge of the wavefront and intensity distribution is required for an accurate model of the interaction.
+In this work a CCD camera, an AVT Manta, is coupled to a near infrared (NIR) apochromatic microscope objective (depending on the application Mutotoyo X10 or X20) to image the focal spot. 
 
-Due to the high intensity of the lasers in use usually the focal spot of a weaker beam, i.e. before compression, before final amplification etc., is imaged to avoid damaging the equipment. The energy of the actual focal spot on shot is then scaled from the low power image.
+As the exact size of the focal spot is important, the focal spot camera has to be spatially calibrated. Carefully measuring the distances between the components of the optical system and knowing about their properties might not be accurate enough. Alternatively, the camera can image an object of well-defined spatial extent. A typically tool are USAF targets provided by Thorlabs, available in transmissive or negative, with a range of line sets of different dimensions. Knowing the pixel size of the camera one can then relate the width of the lines to a conversion factor from pixels to microns, for instance. Another approach is placing a grid of known dimensions into the collimated laser beam. Multiple copies of the focal spot will appear at a fixed separation. 
+
+Having calibrated the camera spatially one can then image the focal spot. Typically a thin wire (50-75 microns) is used to fix the focal plane to a well-defined position. An example of a focal spot from a beam focused with an f/40 optic is shown in figure XXXX.
+
+In addition to a spatial calibration, a focal spot analysis requires a few more steps before estimating the spot size and intensity.
+Firstly, the background has to be removed. For this purpose a series of images without the laser (dark field) are averaged over and then subtracted from the focal spot image. A median filter can also be used to account for individual hot pixels on the camera.
+Now the remaining signal should be mainly the laser and the highest pixel values are at the centre of the focal spot.
+Taking the maximum pixel value and fitting an ellipse to half of this value, the FWHM size of the spot is estimated.
+The area of the focal spot, ignoring smaller deviations from an ellipse, is then $A = \pi a b$, where $a$ and $b$ are the two axes.
+Comparing the pixel counts within the FWHM contour against the pixel counts in the total beam (if the background subtraction was successful the total counts on the image should suffice), one can then put a number on the fraction of energy contained in the FWHM of the beam. This number is important as a lot of energy in the beam will not efficiently drive a wake or scatter well if most of the energy is in the outer wings of the beam.
+
+Due to the high intensity of the lasers the focal spot of a weaker beam, i.e. before compression, before final amplification etc., is imaged to avoid damaging the equipment. The energy of the actual focal spot on shot is then scaled from the low power image.
 A direct measurement of the actual focus at typical intensities used in wakefield experiments is very challenging and has to the knowledge of the author not been achieved so far. Recent attempts involved the full 3D characterisation of the wavefront of the collimated laser beam by applying an asymmetric Mach-Zehnder interferometer and scanning the entire beam profile over hundreds of shots (see TERMITES REF). 
 
-\EliasComm{Present typical focal spot analysis. How much energy is in spot?}
+Knowing about the total energy in the beam and combining this with a measurement of the pulse shape (e.g. using a FROG), the number of pixel counts in the spot can be related to an intensity in the beam.
+The focal spot in figure XXX for instance has a size of XXXXXXX. The FROG analysis reveals a peak power of XXX TW. Combined this gives a peak $a_0 = 2$. 
 
-Spatial Calibration
-
-As the exact size of the focal spot is important, the focal spot camera is spatially calibrated. This can be done by carefully measuring the distances between the components of the optical system and knowing about their properties. Alternatively, the camera can be used to image an object of well-defined spatial extent. A typically used tool are USAF targets provided by Thorlabs. Knowing the pixel size of the camera one can then relate the width of the lines to a real spatial extent.
-
-Estimating the focal spot size
-
-Having calibrated the camera spatially one can then image the focal spot. Typically a thin wire is used to fix the focal plane to a well-defined position.
-There are various ways to approach the problem. One can take the maximum value of the distribution and find the boundary when the value drops to half of that value or whatever threshold one decides on. Fitting an ellipse to it one can then find the spatial dimensions.
-
-Estimating energy contained in the FWHM
-
-Comparing the number of counts in the ellipse with the counts on the image, one can estimate how much of the total energy of the beam is contained within the focal spot.
-
-Under the assumption that the intensity is proportional to counts on the CCD, knowing the energy contained in the beam and its pulse duration one can then calculate the intensity of the laser pulse. 
-
-All of this is done under a lower intensity version of the beam as a high intensity laser pulse would damage the camera and optics.
-
+Ideally, a series of several focal spots, even hundreds, are taken to incorporate fluctuations in the shape of the spot but also to characterise the typical spatial fluctuations over time.
 
 \subsection{Wavefront Sensor and Adaptive Optics}
 
-The wavefront of a laser can be distorted by aberrations in the system, thermal effects, or others.
-Aberrations or other inhomogeneities impose and additional limit on the minimum size of the focal spot and hence the maximum intensity.
+Characterising a focal spot might indicate that the spot is relatively large or deformed, and is not reaching sufficiently high intensities.
+The wavefront of a laser can be distorted by aberrations in the system, thermal effects, or other factors.
+Aberrations or other inhomogeneities impose an additional limit on the minimum size of the focal spot and hence the maximum intensity.
 
-A trained eye can spot the different aberrations when looking at the focal spot and attempt to find the source (e.g. wrong angle onto off-axis parabola can introduce astigmatism).
+A trained eye can spot the different aberrations when looking at the focal spot and attempt to identify the source (e.g. wrong angle onto off-axis parabola can introduce astigmatism, too tightly fixed mirrors adds trefoil and so on), and fix it.
 Another method is using a wavefront sensor in combination with an adaptive optic (AO) or a more simple deformable mirror to flatten the wavefront.
-In this work a Shack-Hartmann sensor or company HASO was used. This type of wavefront sensor is an array of microlenses.
+In this work a Shack-Hartmann sensor (HASO) was used. This type of wavefront sensor is an array of microlenses.
 
 In combination with an adaptive optic a software can deduce a map of which change in the mirror relates to what kind of change in the wavefront. Having characterised this the mirror can be used to flatten the wavefront iteratively and on top of that also manually add aberrations if one wishes to do so.
 
 A HASO observes the temporally integrated wavefront profile of the laser pulse. Spatio-temporal couplings are not visible and have to be diagnosed differently.
 
-Using this method one can attempt to optimise the wavefront as such to reach a diffraction limited focus.
+Using this method one can attempt to optimise the wavefront to reach a diffraction limited focus.
 \EliasComm{Add picture.}
 
 \subsection{Timing Diagnostics}
