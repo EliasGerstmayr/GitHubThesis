@@ -2,7 +2,7 @@
 
 The following chapter introduces a selection of experimental methods and techniques relevant in the context of the laser wakefield acceleration (LWFA) experiments presented in the course of this work. The author aims to cover the three main ingredients of an LWFA experiment: high-intensity lasers, gas targetry and diagnostics for particles and secondary radiation.
 
-The chapter starts by introducing high-intensity lasers, the main tool to drive and probe the plasma wave, how to describe a laser and how to diagnose it in experiment. It continues with a section on the technique of chirped-pulse amplification (CPA) \cite{Strickland1985}, a key development that enabled the realisation of high-intensity lasers now reaching peak intensities in excess of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$ (REF: Bahk 2004, Optics Letters 29) and heading for $10^{23}\,\mathrm{W}\,\mathrm{cm}^{-2}$ with the next generation of laser facilities. A breakthrough Donn Strickland and Gerard Mourou were awarded the Nobel Prize in physics for in 2018.
+The chapter starts by introducing high-intensity lasers and a brief outline of chirped-pulse amplification (CPA), the main tool to drive and probe the plasma wave, and how to diagnose it in experiment.
 
 The chapter then continues with a section on gas targets used in LWFA experiments focusing on targetry that is specifically relevant to the results presented later in this work.
 
@@ -31,7 +31,6 @@ CPA opened up the relativistic regime at intensities of around $10^{17}-10^{18}\
 \subsection{Chirped-pulse amplification (CPA)}
 
 In laser amplification a laser pulse passes once (single pass) or multiple times (multipass) through an amplifier medium, called the laser gain medium, and is amplified in the process. To generate ultrashort pulses a large bandwith gain medium is required in order to amplify continuously over a large frequency domain. A popular choice are lasers based on titanium-doped sapphire (Ti:Sa) as gain medium due to their large bandwidth and tunability. At short pulse durations and high intensities non-linear effects such as relativistic self-guiding start to occur, leading to a local increase of the field strength. At very high field strengths the gain medium starts to ionize and in turn to take damage: amplification of these short pulse lasers is limited by this breakdown. Further amplification can then only be achieved if the beam is expanded for which then a larger gain medium becomes necessary. This limitation was overcome or at least pushed further by the invention of chirped-pulse amplification (CPA) \cite{Strickland1985} based on a technique employed in radar technology.
-\EliasComm{Add explicit number for damage threshold.}
 \vspace{\baselineskip}
 
 CPA takes advantage of the fact that short laser pulses are not monochromatic but a spectrum. This is a necessary property for the pulse to have a short duration, an evident feature when considering the Fourier transformation.
@@ -39,13 +38,11 @@ CPA takes advantage of the fact that short laser pulses are not monochromatic bu
 CPA exploits this fact and stretches the pulse in time using sets of refraction gratings: depending on the frequency of the light it will be refracted differently, extending or shortening the path relative to other frequencies. A pair or a couple of grating pairs can in this way stretch the pulse with a dependence on wavelength: the pulse is `chirped'. In the pioneering work of Strickland and Mourou a long glass fibre was used to stretch the pulse coupled to a grating to compress it again \cite{Strickland1985}. The energy density of the stretched pulse is now much lower than before and the pulse in total can be amplified to much higher intensities without damaging or saturating the gain medium. In the next step, a set of gratings reverse the process and compress the pulse, achieving a high intensity but also an ultrashort pulse duration that is ideal for LWFA.
 \vspace{\baselineskip}
 
-\EliasComm{Add a picture of a chirped pulse?}
 
 However, even with CPA the amplification achievable is finite as it is not useful to stretch the laser pulse arbitrarily much to lower the energy density and an ordinary gain medium as amplifier will reach its limits again as soon as the stretched pulse reaches the ionisation threshold. In addition, the gratings have to withstand these high intensities when recombining the stretched pulse and hence have to have a high damage threshold. An improved chirped-pulse amplification scheme to push this boundary even further is the so called optical parameter chirped-pulse amplification (OPCPA) scheme. The normal amplifier crystal is substituted by a non-linear medium. The laser pulse deposits only a fraction of energy of the amount in ordinary laser gain media as it works via a parametric process, which allows to pump this medium with even higher powers.
 
 Another alternative is combining several separately amplified laser pulses either incoherently or coherently (add references REF).
 
-\EliasComm{What is the largest amplifier crystal available so far?}
 
 \begin{figure}
 \centering
@@ -98,7 +95,6 @@ In combination with an adaptive optic a software can deduce a map of which chang
 A HASO observes the temporally integrated wavefront profile of the laser pulse. Spatio-temporal couplings are not visible and have to be diagnosed differently.
 
 Using this method one can attempt to optimise the wavefront to reach a diffraction limited focus.
-\EliasComm{Add picture.}
 
 \subsection{Timing Diagnostics}
 
@@ -253,7 +249,7 @@ This can be resolved by designing the gas cell accordingly and use appropriate m
 
 Just as 3D printing methods have been considered for gas jets \cite{Jolly2012} researchers have demonstrated that this is also possible and feasible for gas cell designs \cite{Vargas2014}.
 
-\subsection{Types of Gas}
+\subsection{Choice of Gas}
 
 The properties and the behaviour of the plasma accelerator depend on the medium the laser propagates in. Tailoring the density profile or the gas in use can force the evolution of the bubble and inject electrons before wave-breaking. An easy handle is the choice of gas as it requires little engineering, but can have a significant impact on the injection mechanism in the wakefield accelerator.
 \vspace{\baselineskip}
