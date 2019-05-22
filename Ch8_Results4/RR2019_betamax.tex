@@ -23,6 +23,26 @@ The LANEX screens are imaged by Andor Neo cameras and the electron energies can 
 
 The radiation propagates approximately on laser axis and unperturbed through the magnet in the chamber. On laser-axis a beam block of 10-12 layers of standard kitchen aluminium foil of thickness $10.1 \pm 0.2 \,\mathrm{\mu m}$ is attached to the kevlar-kapton window. Hard X-rays continue to propagate through the aluminium beam block and the vacuum window, the LANEX screen that also covers the axis and then hit a 45x45 array of 1 mm x 1 mm x 10 mm scintillating caesium-iodide crystals that record the beam profile of the radiation burst. Harder radiation propagates another XX DISTANCE before hitting another array of caesium-idodide crystals (see Methods for dual axis spectrometer). The emission of caesium-iode crystals is imaged by Andor iXon cameras.
 
+\section{Density profile}
+
+In the shadowgraphy features become very clear. Close to the centre (how many mms in?) two shock fronts appear. They are visible in figure XX due to their dark shading. The shadowgraphy is measuring the second spatial derivative of the refractive index.
+
+The interferometry can be used to estimate a density but the fringe spacing might be too corse to resolve the jump in density.
+
+The optical imaging of the gas jet (called pretty pic) shows the self-emission/recombination light from the plasm channel. The two shocks and their angled structure become evident. In some cases even a third shock becomes visible.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\columnwidth]{20190211r008s065_PrettyPicSnap.png}\includegraphics[width=0.4\columnwidth]{20190211r008s063_Probe_Slim.jpg}
+\caption{Pretty pic and shadowgraphy.}
+\end{figure}
+
+
+\section{Shadowgraphy: Shock Position and Stability}
+
+Estimate the variation and shape of the shocks and whether they impact the occurrence of hard betatron radiation. Why not on every shot?
+Correlation between occurrence and shock position.
+
 
 \section{Electron Spectra}
 
@@ -54,33 +74,66 @@ Waterfall plot of shots for that part and the scan.
 
 In and out of dispersion plane divergence.
 
-\section{Density profile}
+Another dataset to look at will be from shock injection. This will act as a reference dataset to correlate the background radiation generated from bremsstrahlung. The advantage of this dataset is that the beams are fairly reproducible in terms of charge and energy.
+The character of the electrons from shock injection varies drastically from blade position and shot-by-shot and makes it harder to find a clear correlation.
 
-In the shadowgraphy features become very clear. Close to the centre (how many mms in?) two shock fronts appear. They are visible in figure XX due to their dark shading. The shadowgraphy is measuring the second spatial derivative of the refractive index.
+Using a well defined beam facilitates finding trends and use those to filter out `expected' signals on the gamma-ray diagnostics and identify the less energetic betatron trace underneath.
 
-The interferometry can be used to estimate a density but the fringe spacing might be too corse to resolve the jump in density.
+Comparing both sets of beams:
+shock injection typically charges around XX pC which is larger than for ionisation injection at XX pC in this experiment.
+The shock injection electrons also show much more intricate substructure and features which reflect the violent injection and bubble evolution when traversing sudden density changes.
 
-The optical imaging of the gas jet (called pretty pic) shows the self-emission/recombination light from the plasm channel. The two shocks and their angled structure become evident. In some cases even a third shock becomes visible.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.4\columnwidth]{20190211r008s065_PrettyPicSnap.png}\includegraphics[width=0.4\columnwidth]{20190211r008s063_Probe_Slim.jpg}
-\caption{Pretty pic and shadowgraphy.}
-\end{figure}
-
+Maximum energies, reliability. Divergence. Shot-to-shot fluctuations.
+Change of energies and beam shape with change of blade position.
+Can this be linked to the position of the shock fronts?
 
 \section{Gamma Profile and Gamma SpecSignal}
 
-\subsection{Gamma Profile Divergence}
-
-\subsection{Background treatment for Gamma Spec}
-
 In contrast to the previous chapters, the signal is comparatively low as there is less energy in the beam and less flux. Due to the divergent nature of the radiation the signal is spread out over the detector and is not constraint to a fine but bright line. On top of that the electron beams as discussed above show high charge and hence produce a lot of background signal. This makes the extraction of an accurate X-ray or gamma energy estimate challenging. We have to treat the data for an energy dependent bremsstrahlung background. In the ideal case this is being done on an individual crystal basis. Not doing this would result in a clear overestimate and skewing of the assumption. Hundreds of keV radiation from betatron radiation or suddenly tens of MeV indicate very different physics and need to be addressed differently.
 
-\section{Shadowgraphy: Shock Position and Stability}
+\subsection{Correlating Electron Energy and Gamma Signal for Reference Data}
 
-Estimate the variation and shape of the shocks and whether they impact the occurrence of hard betatron radiation. Why not on every shot?
-Correlation between occurrence and shock position.
+Using the shock injection dataset we check the correlation of the electron beam energy (second moment) and the total signal on the gamma diagnostics.
+The electrons are dispersed and produce a shower of bremsstrahlung which will scale as most radiative processes with the charge and energy squared of the e-beam. If the underlying signal on the gamma diagnostics is consistent with this scaling the origin is clearly linked.
+New effects (e.g. the hard betatron radiation we suspect) would lie on top of this expected signal level.
+
+The signal on gamma profile (GP) are simply the total counts on the profile stack recorded on each shot.
+
+\begin{figure}
+\centerin
+\includegraphics[width=0.8\columnwidth]{Betamax_IJ_E2_Gamma_Correlations.png}
+\caption{Correlating $E^2$ with the signal on gamma detectors.}
+\end{figure}
+
+As we can see the there is a linear trend between the electron beam energy and the signal detected on the gamma profile screen. The correlation holds further for both views of the gamma spectrometer but decreases the further into the stack the radiation penetrates. This is consistent with the response of the detector to expected energies: for few to tens of MeV the majority of the energy will be deposited in the front with an exponential decay towards the second half of the detector. That means that the expected signal variations with charge will be small and merge with other noise.
+
+As one would also expect the signal levels of GP and both gamma spectrometer axes correlate very well: the radiation that makes it through the coating, the aluminium beam block and so on is hard enough to deposit energy in the GP and several layers. The radiation we expect is bremsstrahlung.
+
+This correlation also works similarly on a 2D map for all crystals of the two gamma spectrometer views.
+
+\begin{figure}
+\centerin
+\includegraphics[width=0.8\columnwidth]{Betamax_IJ_E2_Gamma_Correlations2D.png}
+\caption{Correlating $E^2$ with the signal on gamma detectors.}
+\end{figure}
+
+One striking feature that also becomes evident when looking at the raw images is that light travels further into the stack at the edges. This might be due to insufficient light shielding on the sides and `cross-talk'.
+
+For the future analysis we should focus on the central parts of the stack only.
+
+\subsection{Correlating Electron Energy and Gamma Signal for Shock Injection.}
+
+The correlations are a bit weaker for shock injection and the z-position scans of the interesting data set.
+There seems to be a general underlying trend but there are a few outliers which we will look at closer.
+
+Using the correlation from the ionisation injection set (our reference) we subtract the expected radiation levels from the gamma detectors.
+We also attempt to do this crystal by crystal for the spectrometer to filter out non-betatron related responses.
+Check if this makes sense or if something changed somehow.
+
+Do bright shots correlate/coincide with the position of the shock front?
+Compare trends and subtract if possible the expected signal.
+
+
 
 \section{Estimating the spectrum via attenuation}
 
