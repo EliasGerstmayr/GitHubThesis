@@ -4,7 +4,7 @@
 
 Last tree-level diagram that was not measured.
 
-Why this scenario? Need to high energy photons to overcome the threshold. Using an asymmetric distribution the resulting particle momentum is strongly directed.
+Why this scenario? Need to high energy photons to overcome the threshold. Using an asymmetric distribution the resulting particle momentum is strongly directed. There are also other processes that produce positrons and they have to be separated out.
 
 In this case we use a thermal X-ray source coupled to a gamma ray:
 
@@ -14,18 +14,16 @@ n_\gamma = \frac{2\chi(3)}{\pi^2 \lambda^3} \left(\frac{k_B T}{m_e c^2}\right)^3
 
 Coupled to a Bremsstrahlung source (high gamma!).
 
-In nonlinear BW one could use a Bremsstrahlung source coupled to a very intense laser.
-
 \section{Experiment Setup}
 
 Maybe also a Blender diagram of the setup.
 
-The experiment layout follows the similar principle as the previous Astra Gemini campaigns described in the previous chapters: the first (South) laser arm is focused down by an f/40 OAP and is used to drive a laser wakefield accelerator. The second (North) laser arm is used to provide a scattering source.
+The experiment layout follows the similar principle as the Astra Gemini campaigns described in the previous chapters: the first (South) laser arm is focused down by an f/40 OAP and is used to drive a laser wakefield accelerator. The second (North) laser arm is used to provide a scattering source.
 
 The North beam in this experiment is not compressed to its usual 40-45 fs duration but is stretched to around 60 ps. A phase plate also smoothens and enlargens the focal spot to several millimetres size. This beam is then incident onto a tape drive with Germanium dots, producing a plasma emitting a thermal bath of X-rays at a second interaction point, called secondary target chamber centre (SCC). This is the first component for the two-photon interaction. The X-ray source is diagnosed by an X-ray pinhole camera measuring the flux and the source size, and by a camera attached to a crystal measuring the spectrum of the X-rays in a certain spectral range.
 
 The South beam focal spot reaches a spot size and intensity of NUMBERS.
-The gas target is a variable length aluminium gas cell filled with helium or helium with nitrogen as a dopant.
+The gas target is a variable length aluminium gas cell (mostly 17.5 mm) filled helium and nitrogen as a dopant (2 percent).
 The gas cell has been developed by Nelson Lopes.
 
 The remaining laser beam exiting the cell is disposed of by a tape drive that acts as a plasma mirror.
@@ -41,31 +39,59 @@ Typical Spectra. Characterised before and after data shots. Electrons themselves
 
 The electron beam is dispersed either by the IC magnet onto a screen on the bottom with a typical cutoff or by the large aperture Jena magnet. Both are imaged by Andor Neo cameras and suitable objectives.
 
-The typical maximum electron energy from electrons with ionisation or self-injection. The peak has an energy spread. Long tail down to...
+The typical maximum electron energy from electrons with ionisation. The peak has an energy spread. Long tail down to...
 Charge calibration.
 
 Correcting for viewing angle.
+
+Charge varies from ... pC to ... pC depending on the day and performance of the laser.
+
+Stability and so on.
+
+\begin{figure}
+\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs.png}\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs.png}
+\caption{Left: 2D example of spectrum. Right:  Lineouts for electron spectra.}
+\end{figure}
 
 \section{Bremsstrahlung Characterisation - Spectral Measurement Gamma Rays}
 
 RAL stack with spectral measurement and plastic. GEANT.
 
-Gamma Profile.
+Used in experiment was mainly bismuth 1 mm. This is to balance the need for a decent amount of gamma rays and the divergence of the resulting beam.
+Show that the responses for all electron spectra is fairly similar in simulations and the resulting spectra vary mostly at a low photon level and high energies.
+The experimental results also show only small variations which is consistent with simulations.
+
+Does the flux vary as much as the electron charge?
+
+This means the detector is not suitable to discriminate a spectrum to such detail and also is not suitable to deduce a gamma spectrum independent of assuming its shape.
+
+Here some estimates from Robbie whether this change in flux is affecting the number of BW pairs or not.
+If not, this is somewhat a description that the detector is not sensitive enough but it does not matter.
+If it is somewhat important, it becomes crucial to develop a spectrometer that is sensitive to these photons.
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs_examples.png}\includegraphics[width=.5\columnwidth]{2018QED_GammaSpec_simspec.png}
+\caption{Left: Representative extreme examples of electron spectra. Right: Resulting gamma spectrum based on GEANT simulations.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs.png}\includegraphics[width=.5\columnwidth]{2018QED_GammaSpec_simresp.png}
+
+\includegraphics[width=.5\columnwidth]{2018QED_GammaSpec_expresp.png}\includegraphics[width=.5\columnwidth]{2018QED_GammaSpec_Average_expsim.png}
+
+\caption{Left: Lineouts for most electron spectra. Right: Simulated detector responses. BLeft: Experimental responses. BRight: Comparison average responses.}
+\end{figure}
 
 
-Different materials. Tungsten (W), Bismuth (Bi) and PTFE.
+\section{Future Outlook: A gamma spectrometer to discriminate high energy photons}
 
-\section{X-ray spectra}
-
-Germanium targets heated by picosecond laser.
-Emission of the plasma plume.
-
-Spectra and source size as measured by X-ray diagnostics.
-
-\section{TimePix Analysis}
-
-\section{Analysis Procedure}
-
+Here some ideas and simulations on how to improve the gamma spectrometer design to determine more accurately the spectrum.
 
 
 \section{Conclusion}
+
+LWFA dual laser setup to produce BW pairs.
+
+Stability and robustness of gamma/X-ray source.
+Limits of gamma spectrometer design and potential improvements.
