@@ -30,6 +30,11 @@ The laser drives a wakefield and accelerates an electron bunch injected via ioni
 The electrons are dispersed vertically by a XX NUMBERS permanent dipole magnet onto a scintillating lanex screen to measure their energy and charge. A motorised stage with high-Z foils of different thicknesses can be driven into the path of the electrons and act as converter foils. This interaction produces copious amounts of directed bremsstrahlung in propagation direction and stops most of the electrons in the process. A tungsten collimator reduces the emitted gamma-ray burst to its central part which is close to collimated. This reduces noise generated further downstream by pre-emptively converting the excess of gamma rays into positrons (which are dispersed and dumped by the dipole magnet). A thick block of tungsten also blocks the direct line of sight to the Ge target drive. Only a collimated bright burst of gamma-rays from bremsstrahlung are incident on the second interaction point, providing the second component for the two-photon interaction.
 \vspace{\baselineskip}
 
+\begin{figure}
+\includegraphics[width=.9\columnwidth]{BW2018_render_V2.png}
+\caption{Sketch of the experiment setup.}
+\end{figure}
+
 The gamma ray burst propagates almost unperturbed by the interaction through a kapton-kevlar window. At air a stack of CsI crystals measures the transverse profile of the gamma-ray signal and another larger stack of crystals measures the decay of the signal in propagation direction to deduce the spectrum.
 \vspace{\baselineskip}
 
@@ -63,19 +68,25 @@ The energy of the beams and the charge was stable to within XX some numbers here
 
 \section{Bremsstrahlung Characterisation - Spectral Measurement Gamma Rays}
 
-RAL stack with spectral measurement and plastic. GEANT.
+Electrons characterised in the previous section are converted to a burst of gamma rays by inserting a high-Z converter foil in the beam path, in this context mainly 1 mm of bismuth. This is to balance the need for a decent amount of gamma rays and a low divergence of the resulting beam.
 
-Used in experiment was mainly bismuth 1 mm. This is to balance the need for a decent amount of gamma rays and the divergence of the resulting beam.
-Show that the responses for all electron spectra is fairly similar in simulations and the resulting spectra vary mostly at a low photon level and high energies.
-The experimental results also show only small variations which is consistent with simulations.
+The detector used to measure the spectrum of this gamma flux is a stack of scintillating crystals as described in Methods imaged by an Andor iXon camera.
+RAL stack with spectral measurement and plastic, gamma profile in the path.
 
+The produced spectrum can be simulated using the electron spectra characterised earlier. GEANT. Typical gamma spectra produced are shown in FIGURE XX. Show that the responses for all electron spectra is fairly similar in simulations and the resulting spectra vary mostly at a low photon level and high energies.
+The response of the detector only results in small variations.
+
+The experimental results also show only small variations which is consistent with simulations. The systematic offset is including the viewing angle, efficiency of crystals and so on.
 Does the flux vary as much as the electron charge?
+Stability of gamma flux?
 
+The response is not sensitive to such highly energetic radiation.
 This means the detector is not suitable to discriminate a spectrum to such detail and also is not suitable to deduce a gamma spectrum independent of assuming its shape.
 
-Here some estimates from Robbie whether this change in flux is affecting the number of BW pairs or not.
-If not, this is somewhat a description that the detector is not sensitive enough but it does not matter.
-If it is somewhat important, it becomes crucial to develop a spectrometer that is sensitive to these photons.
+Fitting a shape (exponential spectra) of certain criticial energy.
+Put some brightness or so?
+
+
 
 \begin{figure}
 \centering
@@ -84,6 +95,7 @@ If it is somewhat important, it becomes crucial to develop a spectrometer that i
 \end{figure}
 
 \begin{figure}
+\centering
 \includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs.png}\includegraphics[width=.5\columnwidth]{2018QED_GammaSpec_simresp.png}
 
 \includegraphics[width=.5\columnwidth]{2018QED_GammaSpec_expresp.png}\includegraphics[width=.5\columnwidth]{2018QED_GammaSpec_Average_expsim.png}
@@ -91,11 +103,35 @@ If it is somewhat important, it becomes crucial to develop a spectrometer that i
 \caption{Left: Lineouts for most electron spectra. Right: Simulated detector responses. BLeft: Experimental responses. BRight: Comparison average responses.}
 \end{figure}
 
+\section{Cross section and Gamma Flux}
+
+Cross section using number of photons. How many photons above a threshold and how is this affected?
+
+Here some estimates from Robbie whether this change in flux is affecting the number of BW pairs or not.
+If not, this is somewhat a description that the detector is not sensitive enough but it does not matter.
+If it is somewhat important, it becomes crucial to develop a spectrometer that is sensitive to these photons.
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{2018QED_BWXsec.png}
+\caption{BW cross section.}
+\end{figure}
+
 
 \section{Future Outlook: A gamma spectrometer to discriminate high energy photons}
 
 Here some ideas and simulations on how to improve the gamma spectrometer design to determine more accurately the spectrum.
 
+
+Ideas: Insert different materials?
+Check cross sections.
+Pair spectrometer works at which energies?
+Is there a compact way to measure this?
+Would this also be of advantage for radiation reaction? 
+
+The elongation of the signal for the dual axis spectrometer was to measure the decay at higher resolution. However, most of the decay happens early in the crystal and the length of the detector only produces uncertainties and problems to consider when extracting the signal.
+A cut off at reasonable crystal length using heavier materials could help.
+Test in GEANT for range of gamma photons what the output is after a certain number of photons. A thicker lead piece could cancel out lower energies and ensure the higher energy tail is considered properly.
 
 \section{Conclusion}
 
