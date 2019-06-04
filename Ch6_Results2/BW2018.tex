@@ -37,11 +37,12 @@ A final simulation section addresses this issue and proposes changes to the dete
 The aim of this experimental setup is to produce and measure Breit-Wheeler pairs. For this purpose high energy gamma rays are collided with a thermal X-ray source. In this scenario the South arm of the Gemini laser provides the gamma source, the North beam the X-ray bath.
 \vspace{\baselineskip}
 
-The North beam in this experiment is not compressed to its usual 40-45 fs duration but is stretched to around 60 ps. The beam is focused down using an f/2 OAP but a phase plate smoothens and enlargens the focal spot to several millimetres size. This beam is then incident onto a tape drive with Germanium dots, producing a plasma emitting a thermal bath of X-rays at a second interaction point, called secondary target chamber centre (SCC). This is the first component for the two-photon interaction. The X-ray source is diagnosed by an X-ray pinhole camera measuring the flux and the source size, and by a camera attached to a crystal measuring the spectrum of the X-rays in a certain spectral range.
+The North beam in this experiment is not compressed to its usual 40-45 fs duration but is stretched to around 40 ps FWHM to effectively heat the solid target. The beam is focused down using an f/2 OAP but a phase plate smoothens and enlargens the focal spot to several millimetres size providing a smooth and homogeneous spot at the target. This beam is then incident onto a tape drive with Germanium dots, producing a plasma that emits a thermal bath of X-rays at a second interaction point, called secondary target chamber centre (SCC). This is the first component for the two-photon interaction. The X-ray source is diagnosed by an X-ray pinhole camera measuring the flux and the source size, and by a camera attached to a crystal measuring the spectrum of the X-rays in a certain spectral range.
 \vspace{\baselineskip}
 
-The South laser is focused down by an f/40 OAP onto the edge of a 17.5 mm length gas cell target filled with helium and 2 percent nitrogen. The average spot size was around XX NUMBERS at XX NUMBERS energy on target (limited by the damage threshold of the mirrors), corresponding to a normalised vector potential $a_0$ of XX NUMBERS.
-The laser drives a wakefield and accelerates an electron bunch injected via ionisation injection to relativistic energies. The remaining laser exiting the cell is disposed of by a tape drive that acts as a plasma mirror.
+The South laser is focused down by an f/40 OAP onto the edge of a 17.5 mm length gas cell target filled with helium and 2 percent nitrogen. The typical average spot size was around XX NUMBERS at XX NUMBERS energy on target (limited by the damage threshold of the mirrors), corresponding to a normalised vector potential $a_0$ of XX NUMBERS (just about 1). The energy was limited by the damage threshold of the mirrors.
+The laser drives a wakefield and accelerates an electron bunch injected via ionisation injection to relativistic energies. The remaining laser exiting the cell is disposed of by a kapton tape drive that acts as a plasma mirror.
+\vspace{\baselineskip}
 
 The electrons are dispersed vertically by a XX NUMBERS permanent dipole magnet onto a scintillating lanex screen to measure their energy and charge. A motorised stage with high-Z foils of various thickness can be driven into the path of the electrons and act as converter foils. This interaction produces copious amounts of directed bremsstrahlung in propagation direction and stops most of the electrons in the process. A tungsten collimator reduces the emitted gamma-ray burst to its central part which is close to collimated. This reduces noise generated further downstream by pre-emptively converting the excess of gamma rays into positrons (which are dispersed and dumped by the dipole magnet). A thick block of tungsten also blocks the direct line of sight to the Ge target drive. Only a collimated bright burst of gamma-rays from bremsstrahlung are incident on the second interaction point, providing the second component for the two-photon interaction.
 \vspace{\baselineskip}
@@ -53,26 +54,30 @@ The electrons are dispersed vertically by a XX NUMBERS permanent dipole magnet o
 
 \EliasComm{Add some photos of the setup to give an idea of how crowded the setup was. Include the magnet laser photo.}
 
-The gamma ray burst propagates almost unperturbed by the interaction through a kapton-kevlar window. At air a stack of CsI crystals measures the transverse profile of the gamma-ray signal and another larger stack of crystals measures the decay of the signal in propagation direction to deduce the spectrum.
+The gamma ray burst propagates almost unperturbed by the interaction through a kapton-kevlar window. At air a stack of CsI crystals in an aluminium casing measures the transverse profile of the gamma-ray signal and another larger stack of crystals measures the decay of the signal in propagation direction to deduce the spectrum. Both scintillator arrays are imaged by sensitive Andor iXon cameras equipped with suitable objectives.
 \vspace{\baselineskip}
 
 Potential electron-positron pairs from this interaction propagate preferably in the propagation direction of the gamma-ray burst. The pairs enter the field of a large aperture permanent dipole magnet that disperses the electrons and positrons horizontally in opposite directions, leaving the vacuum through the same wide kapton-kevlar window, where they are then caught by one magnet on each side that bend the electrons or positrons respectively onto single-particle detectors.
 \vspace{\baselineskip}
 
-This chapter will focus on the characterisation of the electron spectra and the gamma-ray signal. The single-particle detectors, the exact shielding setup and the characterisation of the X-ray source are hence not further elaborated in more detail.
+This chapter will focus on the characterisation of the electron spectra and the gamma-ray signal. The single-particle detectors, the exact shielding setup and the characterisation of the X-ray source are hence not further elaborated in more detail. This information can be found in references REF FUTURE?
 
 \section{Electron Spectra Measurement}
 
 In this experiment the energy of relativistic electrons is converted into directed and highly energetic bremsstrahlung.
-Whenever bremsstrahlung is produced from a converter target, the spectrum of the electrons can not be measured as they are almost entirely stopped by the high-Z material. The electron spectra, their charge and stability are characterised before and after data runs attempting BW production.
+Whenever bremsstrahlung is produced from a converter target, the spectrum of the electrons can not be measured simultaneously as they are almost entirely stopped by the high-Z material in order to produce an as high as possible flux of gamma rays. The electron spectra, their charge and stability are characterised before and after data runs attempting BW production. The gamma signal is measured during the BW data runs and both are linked together.
 
 The electron beam is dispersed by the a permanent dipole magnet onto a scintillating lanex screen. Electrons with energy below XX NUMBERS hit the yoke of the magnet and can hence not be measured on the lanex screen. The screen is imaged with an Andor Neo camera equipped with a TV lens and suitable filters to reduce ambient laser light.
 \vspace{\baselineskip}
 
 Raw images of typical electron signals are seen in FIGURE XX, lineouts of electron spectra on an energy axis can be seen in FIGURE XX.
-The electrons produced with ionisation injection in this context have a large energy spread from continuous injection reaching maximum energies of about XX. The performance of the accelerator varies from day to day but typically either an almost flat spectrum up to XX MeV or a distinct peak at XX MEV was produced (see figure). Depending on the day the average charge was XX pC which is relatively low for the Gemini laser but might be linked to the limited energy on-target that could be delivered.
+The electrons produced with ionisation injection in this context have a large energy spread from continuous injection reaching maximum energies of around 800 MeV in best conditions. The performance of the accelerator varies from day to day but typically either an almost flat spectrum up to 800 MeV or a distinct peak at 400 MEV was produced (see figure). Depending on the day the average charge was 10's of pC which is relatively low for the Gemini laser but might be linked to the limited energy on-target that could be delivered. The response and the imaging system was cross-calibrated with an image plate providing an absolute calibration of the images.
+\vspace{\baselineskip}
 
-The energy of the beams and the charge was stable to within XX some numbers here.
+The performance of the accelerator varied from day to day and is characterised accordingly.
+The measured quantities are charge, energy, divergence and pointing of the beams along with the stability of these quantities from shot to shot.
+
+Main shot days were the 6th, 9th and 10th. Compare the charge, mean and max energy as well as the pointing.
 
 Differences in energy and charge over the days and runs.
 Differences in pointing and divergences.
@@ -94,10 +99,41 @@ How many shots. These shots were taken before data runs.
 \caption{Electron charge and energy over shot days.}
 \end{figure}
 
-Main shot days were the 6th, 9th and 10th. Compare the charge, mean and max energy as well as the pointing.
+Main shot days were the 6th, 9th and 10th April. Compare the charge, mean and max energy as well as the pointing.
 
-It turns out that the charge and stability in terms of pointing was the best on the 6th of May.
+It turns out that the charge and stability in terms of pointing was the best on the 6th of April.
 The energy was also significantly higher.
+
+The results of the analysis are seen in figure XXXX with the relevant numbers in table XXXX.
+
+
+\begin{table}
+\centering
+\begin{tabular}{l|l|l|l|l|l|l}
+Date & Run & Charge & Max Energy & Divergence & Pointing & Nshots\\ \hline \hline
+5 & 2 & $20 \pm 10.8$ & $599 \pm 57$ & $3.14 \pm 0.75$ & 1.25 & X\\ \hline
+6 & 1 & $26.26 \pm 3.8$ & $709 \pm 46$ & $2.26 \pm 0.29$ & 0.62 & X\\ \hline
+9 & 1 & $14.73 \pm 5.5$ & $565 \pm 43$ & $2.5 \pm 0.72$ & 0.93 & X\\ 
+9 & 4 & $7.7 \pm 4.4$ & $551 \pm 16$ & $1.7\pm 0.31$ & 0.81 & X\\ \hline
+10 & 1 & $11.55 \pm 2.7$ & $511 \pm 19$ & $2.84 \pm 0.93$ & 0.9 & X\\ 
+10 & 2 & $15.24 \pm 5.1$ & $512 \pm 26$ & $2.3 \pm 0.52$ & 0.5 & X\\ 
+10 & 3 & $9.56 \pm 3.5$ & $535 \pm 21$ & $2.82 \pm 0.91$ & 1.55 & X
+\end{tabular}
+\caption{Details on runs. Electron characteristica.}
+\end{table}
+
+The charge, energy, divergence and pointing varies from day to day and in some cases the performance even degraded over the course of the day.
+Seeing in the figures it appears that the electrons on the 6th were in particular better in various dimensions:
+The charge is close to doubled with respect to other days and relatively stable. The maximum energy is increased by 100-200 MeV than on other days.
+At the same time a decent divergence at a stable level is paired with a good pointing stability of smaller than 1 mrad, which is not the optimum but a very good value in the subset of data taken.
+
+The shape of the spectra (see average spectra) shows a distinct peak at few hundred MeV and a tail in some cases extending to 500-550 MeV on most days and in case of the 6th even up to 800 MeV.
+
+\section{Gamma Profile Assessment}
+
+Look at gamma profile and see that from day to day the alignment changes.
+
+Show that the 6th had the ideal alignment based on this.
 
 \section{Bremsstrahlung Characterisation - Spectral Measurement Gamma Rays}
 
@@ -107,24 +143,34 @@ Electrons characterised in the previous section are converted to a burst of gamm
 
 \EliasComm{Add a plot showing the raw data from GammaSpec for different converters.}
 
-The detector used to measure the spectrum of this gamma flux is a stack of scintillating crystals as described in Methods imaged by an Andor iXon camera.
-RAL stack with spectral measurement and plastic, gamma profile in the path.
+The tungsten collimator only lets radiation through an aperture of XX NUMBER. In addition the thick tungsten block aims to half the signal to block any gamma rays from hitting the Ge target drive. The alignment of these components will change from day to day based on human error.
+\vspace{\baselineskip}
 
-The produced spectrum can be simulated using the electron spectra characterised earlier. GEANT. Typical gamma spectra produced are shown in FIGURE XX. Show that the responses for all electron spectra is fairly similar in simulations and the resulting spectra vary mostly at a low photon level and high energies.
+The detector used to measure the spectrum of this gamma flux is a stack of scintillating crystals as described in Methods imaged by an Andor iXon camera.
+RAL stack with spectral measurement and plastic, gamma profile in the path. 
+
+Signal extraction.
+
+Simulating response of detectors using GEANT.
+
+Correcting using brems.
+
+Correlating Gamma profile and spec counts. No change in response for those detectors.
+
+Seeing not really much change in experimental response.
+Give a number on critical energy. Any idea of brightness (absolute number?).
+
+The response is not sensitive to such highly energetic radiation or the number of photons is much lower and hence the response is based on that.
+This means the detector is not suitable to discriminate a spectrum to such detail and also is not suitable to deduce a gamma spectrum independent of assuming its shape.
+
+The produced spectrum can be simulated using the electron spectra characterised earlier. GEANT. Typical gamma spectra produced are shown in FIGURE XX. 
+Show that the responses for all electron spectra is fairly similar in simulations and the resulting spectra vary mostly at a low photon level and high energies.
 The response of the detector only results in small variations.
-Is there a change in relative energy deposited in gamma profile and the entire spectrometer stack?
 
 The experimental results also show only small variations which is consistent with simulations. The systematic offset is including the viewing angle, efficiency of crystals and so on.
 Does the flux vary as much as the electron charge? (for the shots with W block, collimator and converter in the correlation is washed out and there is no clear indication that these things are linked).
 Stability of gamma flux?
 Does this correlate with the gamma profile stack? It almost perfectly linearly correlates with the gamma profile stack and hence the hope that the gamma spectrometer would give additional information is not confirmed. Could check what the simulations say about the ratio of signal expected.
-
-The response is not sensitive to such highly energetic radiation or the number of photons is much lower and hence the response is based on that.
-This means the detector is not suitable to discriminate a spectrum to such detail and also is not suitable to deduce a gamma spectrum independent of assuming its shape.
-
-Fitting a shape (exponential spectra) of certain criticial energy.
-Put some brightness or so?
-
 
 
 \begin{figure}
@@ -142,14 +188,10 @@ Put some brightness or so?
 \caption{Left: Lineouts for most electron spectra. Right: Simulated detector responses. BLeft: Experimental responses. BRight: Comparison average responses.}
 \end{figure}
 
-The response barely changes but the energy spectrum of the gamma rays varies from day to day.
-Depending on the day the electron energy is lower and hence the high energy tail will reach higher energies.
-
-
 What is the statistical variation of the signal on each day. Use the electron spectra to put a number onto this.
 Use plot of relative and absolute number of photons above a threshold. Sum them up and also sum up number times energy as indicator for high energy photons.
 
-\EliasComm{Insert plots here.}
+
 
 \section{Cross section and Gamma Flux}
 
