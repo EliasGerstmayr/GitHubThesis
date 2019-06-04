@@ -57,7 +57,7 @@ The electrons are dispersed vertically by a XX NUMBERS permanent dipole magnet o
 The gamma ray burst propagates almost unperturbed by the interaction through a kapton-kevlar window. At air a stack of CsI crystals in an aluminium casing measures the transverse profile of the gamma-ray signal and another larger stack of crystals measures the decay of the signal in propagation direction to deduce the spectrum. Both scintillator arrays are imaged by sensitive Andor iXon cameras equipped with suitable objectives.
 \vspace{\baselineskip}
 
-Potential electron-positron pairs from this interaction propagate preferably in the propagation direction of the gamma-ray burst. The pairs enter the field of a large aperture permanent dipole magnet that disperses the electrons and positrons horizontally in opposite directions, leaving the vacuum through the same wide kapton-kevlar window, where they are then caught by one magnet on each side that bend the electrons or positrons respectively onto single-particle detectors.
+Potential electron-positron pairs from this interaction propagate preferably in the propagation direction of the gamma-ray burst. The pairs enter the field of a large aperture permanent dipole magnet that disperses the electrons and positrons horizontally in opposite directions, leaving the vacuum through the same wide kapton-kevlar window, where they are then caught by one magnet on each side that bend the electrons or positrons respectively onto single-particle detectors. The single-particle detectors are CsI arrays attached to sensitive CCD cameras and two layers of TimePix silicon detectors.
 \vspace{\baselineskip}
 
 This chapter will focus on the characterisation of the electron spectra and the gamma-ray signal. The single-particle detectors, the exact shielding setup and the characterisation of the X-ray source are hence not further elaborated in more detail. This information can be found in references REF FUTURE?
@@ -135,6 +135,10 @@ Look at gamma profile and see that from day to day the alignment changes.
 
 Show that the 6th had the ideal alignment based on this.
 
+Show the pointing varies and the total alignment.
+
+Show the gamma yield is varying from day to day but not as much as the electron charge which indicates that the alignment is washing out any correlation.
+
 \section{Bremsstrahlung Characterisation - Spectral Measurement Gamma Rays}
 
 \EliasComm{Add some raw data and examples from analysis.}
@@ -148,6 +152,7 @@ The tungsten collimator only lets radiation through an aperture of XX NUMBER. In
 
 The detector used to measure the spectrum of this gamma flux is a stack of scintillating crystals as described in Methods imaged by an Andor iXon camera.
 RAL stack with spectral measurement and plastic, gamma profile in the path. 
+\vspace{\baselineskip}
 
 Signal extraction.
 
@@ -162,13 +167,14 @@ Give a number on critical energy. Any idea of brightness (absolute number?).
 
 The response is not sensitive to such highly energetic radiation or the number of photons is much lower and hence the response is based on that.
 This means the detector is not suitable to discriminate a spectrum to such detail and also is not suitable to deduce a gamma spectrum independent of assuming its shape.
+\vspace{\baselineskip}
 
 The produced spectrum can be simulated using the electron spectra characterised earlier. GEANT. Typical gamma spectra produced are shown in FIGURE XX. 
 Show that the responses for all electron spectra is fairly similar in simulations and the resulting spectra vary mostly at a low photon level and high energies.
 The response of the detector only results in small variations.
 
 The experimental results also show only small variations which is consistent with simulations. The systematic offset is including the viewing angle, efficiency of crystals and so on.
-Does the flux vary as much as the electron charge? (for the shots with W block, collimator and converter in the correlation is washed out and there is no clear indication that these things are linked).
+Does the flux vary as much as the electron charge? (for the shots with W block, collimator and converter in the correlation is washed out and there is no clear indication that these things are linked). Add some plots for that as well.
 Stability of gamma flux?
 Does this correlate with the gamma profile stack? It almost perfectly linearly correlates with the gamma profile stack and hence the hope that the gamma spectrometer would give additional information is not confirmed. Could check what the simulations say about the ratio of signal expected.
 
@@ -191,7 +197,9 @@ Does this correlate with the gamma profile stack? It almost perfectly linearly c
 What is the statistical variation of the signal on each day. Use the electron spectra to put a number onto this.
 Use plot of relative and absolute number of photons above a threshold. Sum them up and also sum up number times energy as indicator for high energy photons.
 
+Provide a plot with numbers on fluctuation of number of photons to expect in total and in particular above a threshold and how that varies shot-to-shot and day by day.
 
+Provide some plots from the GEANT simulation.
 
 \section{Cross section and Gamma Flux}
 
@@ -205,6 +213,7 @@ This is the part about the shot-to-shot fluctuations.
 Using the new spectra with photons only up to a certain energy. 
 
 Put a plot average fraction of photons above an energy on a plot.
+\vspace{\baselineskip}
 
 \begin{figure}
 \centering
@@ -224,6 +233,10 @@ The part about the additional photons on the 6th should be discussed here as wel
 By how much, assuming an X-ray spectrum, do we expect the total cross section to rise with a change in gamma spectrum as estimated from day to day?
 How much more likely is seeing electron-positron pairs based on this?
 
+Make a simple equation basing this on one Xray photon energy (1.5 keV) and put a threshold on the photons we need from the gamma source.
+Then see how much the cross section increases and check if it increases by more than the general exponential spectrum.
+Be clear that a proper calculation needs to convolve the X-ray spectra, gamma spectra, efficiencies and so on.
+
 \section{Discussion of results of BW analysis}
 
 Here a brief discussion of the findings of the complete BW analysis and if there was any sign of BW, reference publications that came out of this and so on.
@@ -237,18 +250,31 @@ Check cross sections.
 Pair spectrometer works at which energies?
 Is there a compact way to measure this?
 Would this also be of advantage for radiation reaction? 
+\vspace{\baselineskip}
 
 The elongation of the signal for the dual axis spectrometer was to measure the decay at higher resolution. However, most of the decay happens early in the crystal and the length of the detector only produces uncertainties and problems to consider when extracting the signal.
 A cut off at reasonable crystal length using heavier materials could help.
 Test in GEANT for range of gamma photons what the output is after a certain number of photons. A thicker lead piece could cancel out lower energies and ensure the higher energy tail is considered properly.
 
 The problem is that in some scenarios the number of photons at higher energies is much lower and the signal is swamped. Having two parts, one to determine the overall critical energy, and a second one only looking at the high energy behind some shielding, would be an option.
+\vspace{\baselineskip}
+
+Show that the problem is the following:
+above 10's of MeV the cross section for pair production increases and is relatively flat over long time. What happens is that gammas convert into electrons which convert into gammas in showers and so on. In most cases a high number of low few MeV gamma rays is present and the main indicator for the initial energy is how many times these showers continue to proceed and where they deposit energy.
+
+The approach to check how we can distinguish things beyond the peak of the main number of photons is using GEANT and checking the input gamma, electrons and positrons and see how the distribution evolves going through the profile stack and the gamma spectrometer.
+Based on this decide on a tactic to have a third part (in addition to profile, critical energy measurement) which allows separately to look at just very high energies and see for a selected energy band if the flux changes. This could be adjusted and optimised for certain energies.
+If this does not work, point out that there are alternative designs based on pair spectrometers including magnets which might be a better option.
+
+
 
 \section{Conclusion}
 
 LWFA dual laser setup to produce BW pairs. Some indication that we saw pairs consistent with the experiment conditions at the optimum.
+\vspace{\baselineskip}
 
 Stability and robustness of gamma/X-ray source to a certain degree.
+\vspace{\baselineskip}
 
 Limits of gamma spectrometer design and potential improvements.
 An improved detector design presented in this chapter.
