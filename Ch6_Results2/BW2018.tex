@@ -31,12 +31,15 @@ A final simulation section addresses this issue and proposes changes to the dete
 
 \section{Experiment Setup}
 
+\subsubsection{General Aim and Location}
 The aim of this experimental setup is to produce and measure Breit-Wheeler pairs. For this purpose high energy gamma rays are collided with a thermal X-ray source. In this scenario the South arm of the Gemini laser provides the gamma source, the North beam the X-ray bath.
 \vspace{\baselineskip}
 
+\subsubsection{North beam and X-ray source}
 The North beam in this experiment is not compressed to its usual 40-45 fs duration but is stretched to around 40 ps FWHM to effectively heat the solid target. The beam is focused down using an f/2 off-axis parabola (OAP) but a phase plate smoothens and enlargens the focal spot to about $75\,\mathrm{\mu m} \times 210\,\mathrm{\mu m}$ size providing a smooth and homogeneous spot at the target. This beam is then incident onto a $25\,\mathrm{\mu m}$ kapton tape with etched holes reducing the thickness to $5\,\mathrm{mu m}$ and coated with $100\,\mathrm{nm}$ thick germanium (Ge) dots, producing a plasma plume that emits a thermal bath of X-rays at the interaction point. By moving the tape drive a new Ge target is provided on each shot. This is the first component for the two-photon interaction. The X-ray source is diagnosed by an X-ray pinhole camera measuring the flux and the source size, and by a second camera attached to a crystal measuring the spectrum of the X-rays on the spectral range of the line emission of Ge (around 1.5 keV).
 \vspace{\baselineskip}
 
+\subsubsection{South beam, electrons and Gamma source}
 The South laser is focused down by a $6\,\mathrm{mm}$ focal length f/40 OAP onto the edge of a 17.5 mm length gas cell target filled with helium and 2 percent nitrogen at an average electron density of XX NUMBER. The typical average spot size was around $44\,\mathrm{mu m} \times 53\,\mathrm{\mu m}$ at $5.51\pm 0.64\,\mathrm{J}$ energy on target at a pulse duration of XX NUMBER FS THIS WAS NOT MEASURED? IF SO $45 \pm 5\,\mathrm{fs}$, peak intensity $I_0 = 2.75 \times 10^{18} \,\mathrm{W/cm^3}$ corresponding to a normalised vector potential $a_0 = 1.13$ (this is based on focal spots from the 28th March and Matt's analysis). The energy was limited by the damage threshold of the mirrors in the focusing beam.
 The laser drives a wakefield and accelerates electrons injected via ionisation injection REF HERE to relativistic energies. The remaining laser exiting the cell is disposed of by a replenishable kapton tape that acts as a plasma mirror (REF).
 \vspace{\baselineskip}
@@ -57,6 +60,7 @@ Another larger stack of $XX \times XX$ CsI crystals measures the decay of the si
 Both scintillator arrays are imaged by sensitive Andor iXon cameras equipped with suitable objectives.
 \vspace{\baselineskip}
 
+\subsubsection{Chicane and Single Particle Detectors}
 Potential electron-positron pairs from this interaction propagate preferably in the propagation direction of the gamma-ray burst. The pairs enter the field of a large aperture permanent dipole magnet of XX FIELD STRENGTH NUMBER that disperses the electrons and positrons horizontally in opposite directions, leaving the vacuum through the same wide kapton-kevlar window. The aperture of the magnet produces a low energy cutoff at about 220 MeV CHECK NUMBER ESPECIALLY BECAUSE OF WINDOW which is a slightly larger acceptance range than the vacuum window would provide. The dispersed electrons and positrons are then caught by an oppositely polarised permanent magnet of FIELD STRENGTH XX NUMBER on each side that bends the electrons or positrons respectively onto a set of shielded single-particle detectors. The single-particle detectors are CsI arrays attached to sensitive CCD cameras and two layers of TimePix silicon detectors.
 \vspace{\baselineskip}
 
@@ -64,6 +68,7 @@ This chapter will focus on the characterisation of the electron spectra and the 
 
 \section{Electron Spectra Measurement}
 
+\subsubsection{Application of Electrons in this context and need for characterisation}
 In this experiment the energy of relativistic electrons is converted into directed and highly energetic bremsstrahlung.
 Whenever bremsstrahlung is produced from a converter target, the spectrum of the electrons can not be measured simultaneously as they are almost entirely stopped by the high-Z material in order to produce an as high as possible flux of gamma rays. The electron spectra, their charge and stability hence have to be characterised without the converter target and not during BW data runs. The gamma signal, however, is measured during the BW data runs and both are linked together.
 \vspace{\baselineskip}
@@ -76,10 +81,12 @@ The electron beam is dispersed by the a permanent dipole magnet onto a scintilla
 \caption{Montage of electron spectra (screen raw).}
 \end{figure}
 
+\subsubsection{Raw images and general note on processing data}
 Raw images of typical electron signals are seen in FIGURE XX, lineouts of electron spectra on an energy axis can be seen in FIGURE XX.
 The images are treated for background and are projective transformed to account for the image distortion from the viewing angle. Space to energy calibration based on a field map. See Methods for more details.
 \vspace{\baselineskip}
 
+\subsubsection{General overview and shape of beams}
 The performance of the accelerator varied from day to day and is characterised separately for each day, in some cases the performance even degraded over the course of the day.
 The measured quantities are charge, energy, divergence and pointing of the beams along with the stability (standard deviation) of these quantities from shot to shot.
 Due to the variations from day to day only shot days and electron data from days where BW data was taken is being considered.
@@ -91,6 +98,7 @@ An overview of the quantities is given in TABLE XX NUMBER and plotted in a compa
 General overview and shape:
 The electrons produced with ionisation injection in this context have a large energy spread from continuous injection reaching maximum energies of around 800 MeV in best conditions. The performance of the accelerator varies from day to day but typically either an almost flat spectrum up to 800 MeV or a distinct peak at 400 MEV was produced (see figure). Depending on the day the average charge was 10's of pC which is relatively low for the Gemini laser but might be linked to the limited energy on-target that could be delivered. The response and the imaging system was cross-calibrated with an image plate providing an absolute calibration of the images.
 
+\subsubsection{Investigation of main quantities and variation on the days}
 Comparison for different days along with stability.
 
 Conclusion about the days.
@@ -131,18 +139,11 @@ Date & Run & Charge & Max Energy & Divergence & Pointing & Nshots\\ \hline \hlin
 
 
 
-\section{Gamma Profile Assessment}
-
-Look at gamma profile and see that from day to day the alignment changes.
-
-Show that the 6th had the ideal alignment based on this.
-
-Show the pointing varies and the total alignment.
-
-Show the gamma yield is varying from day to day but not as much as the electron charge which indicates that the alignment is washing out any correlation.
 
 \section{Bremsstrahlung Targets and Detector Response}
 
+
+\subsubsection{General bits on the diagnostic, signal extraction and characterisation}
 \EliasComm{Add some raw data and examples from analysis.}
 
 Electrons characterised in the previous section are converted to a burst of gamma rays by inserting a high-Z converter foil in the beam path, in this context mainly 1 mm of bismuth. This is to balance the need for a decent amount of gamma rays and a low divergence of the resulting beam. Thick targets result in the highest yield but the beam is more divergent and more signal will be cut out by the collimator etc. and more noise is to be expected.
@@ -164,6 +165,8 @@ Signal extraction. Show an example.
 Selecting the crystals and get a pixelated response.
 \vspace{\baselineskip}
 
+\subsubsection{GEANT simulation and correction factors using bremsstrahlung}
+
 Simulating response of detectors using GEANT.
 Monoenergetic photons in a different range and present the response curves.
 \vspace{\baselineskip}
@@ -178,6 +181,7 @@ Seeing that this is very linear the results from gamma profile assessment are st
 This is not useful to distinguish energies.
 \vspace{\baselineskip}
 
+\subsubsection{Choice of converter material, overview on materials, yield vs. divergence consideration}
 
 The options were 2 mm and 4 mm tungsten, 0.5 and 1 mm bismuth (see 23.3.18 run 2).
 \EliasComm{Make a plot: yield vs. divergence}
@@ -188,10 +192,28 @@ From the lab book the summary was:
 0.5 mm bismuth: less divergent than the tungsten, fewer counts, sometimes similar peak counts but only on axis
 1 mm bismuth: more divergent than 0.5 mm bismuth but less than tungsten. High yield on axis, sometimes even more concentrated than 2 mm tungsten.
 
+\subsubsection{Discussion if the choice was right also considering collimator/Wblock view}
+
+\section{Gamma Profile Assessment}
+
+
+\subsubsection{Brief look at gamma profile and correlation of counts. Show change in alignment/pointing.}
+Look at gamma profile and see that from day to day the alignment changes.
+
+Show that the 6th had the ideal alignment based on this.
+
+Show the pointing varies and the total alignment.
+
+Show the gamma yield is varying from day to day but not as much as the electron charge which indicates that the alignment is washing out any correlation.
+
+\EliasComm{Might just be incorporated as side note in the next section.}
+
 \section{Performance and Stability of the Bremsstrahlung Source}
 
 This part is about the spectra on the BW data days.
 \vspace{\baselineskip}
+
+\subsubsection{Detector response in experiment, shot to shot and day by day}
 
 Seeing not really much change in experimental response.
 Give a number on critical energy. Any idea of brightness (absolute number?).
@@ -202,6 +224,14 @@ Absolute calibrations for gamma profile is possible but might be harder for gamm
 The response is not sensitive to such highly energetic radiation or the number of photons is much lower and hence the response is based on that.
 This means the detector is not suitable to discriminate a spectrum to such detail and also is not suitable to deduce a gamma spectrum independent of assuming its shape. Luckily bremsstrahlung is well understood. It is essential to have many reference electron shots. Also a lesson for the future to take data in between.
 \vspace{\baselineskip}
+
+\subsubsection{General critical energy fitting}
+
+\subsubsection{Comparison yield per day with and without blocks}
+
+\subsubsection{Simulated spectra from Electrons and variation in resulting gamma spectra}
+
+\subsubsection{Characterisation of fluctuations and lack of change in response}
 
 The produced spectrum can be simulated using the electron spectra characterised earlier. GEANT. Typical gamma spectra produced are shown in FIGURE XX. 
 Show that the responses for all electron spectra is fairly similar in simulations and the resulting spectra vary mostly at a low photon level and high energies.
@@ -247,6 +277,8 @@ Provide some plots from the GEANT simulation (visualisation).
 
 \section{Impact of Spectral Fluctuations on the total BW cross section}
 
+\subsubsection{Simple calculation on impact on the total cross section based on the GEANT spectra}
+
 Cross section using number of photons. How many photons above a threshold and how is this affected?
 
 Here some estimates from Robbie whether this change in flux is affecting the number of BW pairs or not.
@@ -283,21 +315,9 @@ Multiply the curve for 1.5 keV with the gamma spectra to get the total cross sec
 This approach is just a simple calculation to demonstrate the difference we expect.
 Of course one also has to fold in the X-ray spectrum over a wider energy range along with other factors like higher noise levels due to the increased charge and so on.
 
-\section{Results of the Breit-Wheeler Analysis}
-
-\EliasComm{Here a brief discussion of the findings of the complete BW analysis and if there was any sign of BW, reference publications that came out of this and so on.}
-
-How much to talk about different parts?
-Single particle detectors, tungsten blob, TimePix?
-
-There are some positron particles, noise etc..
-Positrons can be created from Bethe-Heitler, wall apertures, windows and so on.
-
-Decision on whether it is significant or not.
-
-
 \section{Future Outlook: A gamma spectrometer to discriminate high energy photons}
 
+\subsubsection{Explanation why detector is not sensitive to the changes seen in the simulated spectra}
 Here some ideas and simulations on how to improve the gamma spectrometer design to determine more accurately the spectrum.
 
 Ideas: Insert different materials?
@@ -317,9 +337,26 @@ The problem is that in some scenarios the number of photons at higher energies i
 Show that the problem is the following:
 above 10's of MeV the cross section for pair production increases and is relatively flat over long time. What happens is that gammas convert into electrons which convert into gammas in showers and so on. In most cases a high number of low few MeV gamma rays is present and the main indicator for the initial energy is how many times these showers continue to proceed and where they deposit energy.
 
+\subsubsection{Based on problem present ideas to make the detector more sensitive along with GEANT simulations.}
+
 The approach to check how we can distinguish things beyond the peak of the main number of photons is using GEANT and checking the input gamma, electrons and positrons and see how the distribution evolves going through the profile stack and the gamma spectrometer.
 Based on this decide on a tactic to have a third part (in addition to profile, critical energy measurement) which allows separately to look at just very high energies and see for a selected energy band if the flux changes. This could be adjusted and optimised for certain energies.
 If this does not work, point out that there are alternative designs based on pair spectrometers including magnets which might be a better option.
+
+
+\section{Results of the Breit-Wheeler Analysis}
+
+
+\subsubsection{Discussion of how this work fits in the big picture of the complete BW analysis}
+\EliasComm{Here a brief discussion of the findings of the complete BW analysis and if there was any sign of BW, reference publications that came out of this and so on.}
+
+How much to talk about different parts?
+Single particle detectors, tungsten blob, TimePix?
+
+There are some positron particles, noise etc..
+Positrons can be created from Bethe-Heitler, wall apertures, windows and so on.
+
+Decision on whether it is significant or not.
 
 
 

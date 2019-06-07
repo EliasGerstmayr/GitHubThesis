@@ -2,6 +2,7 @@
 
 \section{Motivation}
 
+\subsubsection{What is betatron good for and why is brightness desirable}
 Betatron radiation as interesting source due to short pulse duration, brightness and broad bandwidth. Small source size makes it suitable for phase contrast imaging and warm dense matter studies to probe transitions in matter states. It can also be used for XANES studies.
 
 Over the years a variety of handles have been found to manipulate the accelerating structure of a wakefield and use this to enhance radiation produced through the oscillation of trapped and accelerated electrons.
@@ -12,19 +13,25 @@ This work presents another example where a combination of shock injection and ti
 
 \section{Experimental Setup}
 
+\subsubsection{General Experiment overview}
 The following experiment was performed at the Astra Gemini laser facility in early 2019. This dataset only used one of the two laser arms available at Gemini.
 
+\subsubsection{South beam, electrons and gas target}
 The laser is focused with an f/40 off-axis parabola onto the edge of a 15 mm conical supersonic helium gas jet. The laser is linearly polarised in the horizontal plane. The pulse duration of the laser was measured to be $61\,\mathrm{fs}$ with an energy on target on average of $12.5 \pm 0.2\,\mathrm{J}$ reaching a peak power of $195\,\mathrm{TW}$. The focal spot had the size $48.6 \times 39.2\,\mathrm{\mu m}$. This results in a normalised vector potential $a_0$ of $1.88$. A razor blade with motorised translation and rotation motion can be introduced into the gas flow to induce a shock. The gas flow is characterised by a transverse optical probe split off from the main beam ending in a shadowgraphy and a Mach-Zehnder interferometry. A DSLR camera is imaging the recombination light of the plasma channel from the side and another camera, also used for aligning the gas target and the razor blade, is imaging the channel from the top. For this dataset the tip of the blade was driven in from the side the laser was propagating into the plasma up to around XX MM into the gas jet.
 
+\subsubsection{Electron characterisation}
 Relativistic electrons accelerated through LWFA and radiation produced travel further downstream through a XX NUMBER sized hole in another off-axis parabola at 300 mm distance that is used in another dataset as part of a colliding pusle experiment. The laser and electron beam are centred onto the hole and do not interact with the optics. It presents, however, an aperture to high divergence radiation beyond XX NUMBER DIVERGENCE.
 
 The electrons are then being dispersed by a large aperture magnet with field strength XX TESLA in the horizontal plane. Electrons of energies up to 200 MeV hit the inside of the yoke. The fan of electrons leaves the vacuum chamber through a wide kevlar-kapton window ($580 \times 70\,\mathrm{mm}$, $25\,\mathrm{\mu m}$ kapton, $375\,\mathrm{\mu m}$ kevlar) and passes through a scintillating Biomax LANEX screen that covers the window from the outside up including the laser axis. Radiation signal on axis can then be used to obtain an on-shot axis reference. The electrons then propagate further in air and pass through another regular LANEX screen after about XX METER distance and are then being dumped into a combined plastic-lead wall.
 The LANEX screens are imaged by Andor Neo cameras and the electron energies can be deduced by measuring the field strength and the distances of the magnet and screens carefully.
 
+\subsubsection{Characterisation of radiation}
 The radiation propagates approximately on laser axis and unperturbed through the magnet in the chamber. On laser-axis a beam block of 10-12 layers of standard kitchen aluminium foil of thickness $10.1 \pm 0.2 \,\mathrm{\mu m}$ is attached to the kevlar-kapton window. Hard X-rays continue to propagate through the aluminium beam block and the vacuum window, the LANEX screen that also covers the axis and then hit a 45x45 array of 1 mm x 1 mm x 10 mm scintillating caesium-iodide crystals that record the beam profile of the radiation burst. Harder radiation propagates another XX DISTANCE before hitting another array of caesium-idodide crystals (see Methods for dual axis spectrometer). The emission of caesium-iode crystals is imaged by Andor iXon cameras.
 
 \section{Density profile}
 
+
+\subsubsection{Show density retrievals from Interferometry}
 In the shadowgraphy features become very clear. Close to the centre (how many mms in?) two shock fronts appear. They are visible in figure XX due to their dark shading. The shadowgraphy is measuring the second spatial derivative of the refractive index.
 
 The interferometry can be used to estimate a density but the fringe spacing might be too corse to resolve the jump in density.
@@ -40,12 +47,16 @@ The optical imaging of the gas jet (called pretty pic) shows the self-emission/r
 
 \section{Shadowgraphy: Shock Position and Stability}
 
+\subsubsection{Measure shock position and stability from shadowgraphy images}
+
 Estimate the variation and shape of the shocks and whether they impact the occurrence of hard betatron radiation. Why not on every shot?
 Correlation between occurrence and shock position.
 
 
 \section{Electron Spectra}
 
+
+\subsubsection{General description of electrons over different range. In particular at double shock position.}
 The shape of the electron spectra vary from shot to shot but are mainly high charge beams up to 1.2 GeV. Large oscillations become apparent in some cases whereas in some cases the main oscillation clearly happens in the magnet dispersion direction which is also the laser polarisation axis of the driving laser beam.
 
 The total charge in the beams is hundreds of pC with around 60 pC in the higher energy regime.
@@ -72,6 +83,8 @@ Waterfall plot of shots for that part and the scan.
 \end{figure}
 
 
+\subsubsection{Closer look at betamax electrons interms of divergence, charge and stability}
+
 In and out of dispersion plane divergence.
 
 Another dataset to look at will be from shock injection. This will act as a reference dataset to correlate the background radiation generated from bremsstrahlung. The advantage of this dataset is that the beams are fairly reproducible in terms of charge and energy.
@@ -82,16 +95,21 @@ Using a well defined beam facilitates finding trends and use those to filter out
 Comparing both sets of beams:
 shock injection typically charges around XX pC which is larger than for ionisation injection at XX pC in this experiment.
 The shock injection electrons also show much more intricate substructure and features which reflect the violent injection and bubble evolution when traversing sudden density changes.
-
+\subsubsection{Any correlation of electron properties with shock position?}
 Maximum energies, reliability. Divergence. Shot-to-shot fluctuations.
 Change of energies and beam shape with change of blade position.
 Can this be linked to the position of the shock fronts?
 
 \section{Gamma Profile and Gamma SpecSignal}
 
+\subsubsection{Gamma Profile Description and Data Extraction}
 In contrast to the previous chapters, the signal is comparatively low as there is less energy in the beam and less flux. Due to the divergent nature of the radiation the signal is spread out over the detector and is not constraint to a fine but bright line. On top of that the electron beams as discussed above show high charge and hence produce a lot of background signal. This makes the extraction of an accurate X-ray or gamma energy estimate challenging. We have to treat the data for an energy dependent bremsstrahlung background. In the ideal case this is being done on an individual crystal basis. Not doing this would result in a clear overestimate and skewing of the assumption. Hundreds of keV radiation from betatron radiation or suddenly tens of MeV indicate very different physics and need to be addressed differently.
+\subsubsection{Gamma Spec Description and Data Extraction}
+\subsubsection{Gamma Spec general treatment and simulations (brems) for 2D correction factor.}
 
 \subsection{Correlating Electron Energy and Gamma Signal for Reference Data}
+
+\subsubsection{General signal on Gamma profile and correlation to expected signal (QE2 fit from null data for bremsstrahlung)}
 
 Using the shock injection dataset we check the correlation of the electron beam energy (second moment) and the total signal on the gamma diagnostics.
 The electrons are dispersed and produce a shower of bremsstrahlung which will scale as most radiative processes with the charge and energy squared of the e-beam. If the underlying signal on the gamma diagnostics is consistent with this scaling the origin is clearly linked.
@@ -104,6 +122,7 @@ The signal on gamma profile (GP) are simply the total counts on the profile stac
 \includegraphics[width=0.8\columnwidth]{Betamax_IJ_E2_Gamma_Correlations.png}
 \caption{Correlating $E^2$ with the signal on gamma detectors.}
 \end{figure}
+\subsubsection{General signal on Gamma spectrometer and correlation to expected signal (QE2 fit from null data for bremsstrahlung)}
 
 As we can see the there is a linear trend between the electron beam energy and the signal detected on the gamma profile screen. The correlation holds further for both views of the gamma spectrometer but decreases the further into the stack the radiation penetrates. This is consistent with the response of the detector to expected energies: for few to tens of MeV the majority of the energy will be deposited in the front with an exponential decay towards the second half of the detector. That means that the expected signal variations with charge will be small and merge with other noise.
 
@@ -123,6 +142,8 @@ For the future analysis we should focus on the central parts of the stack only.
 
 \subsection{Correlating Electron Energy and Gamma Signal for Shock Injection.}
 
+\subsubsection{Check signal levels when subtracting expected signals}
+
 The correlations are a bit weaker for shock injection and the z-position scans of the interesting data set.
 There seems to be a general underlying trend but there are a few outliers which we will look at closer.
 
@@ -133,10 +154,15 @@ Check if this makes sense or if something changed somehow.
 Do bright shots correlate/coincide with the position of the shock front?
 Compare trends and subtract if possible the expected signal.
 
+\subsubsection{Correlation of bright or extra signal with shock position?}
 
 
 \section{Estimating the spectrum via attenuation}
 
+\subsubsection{Estimate lower bound on transmitted radiation from materials.}
+
+
+\subsubsection{Analyse filter pack data and further restrict the limit.}
 Estimating the lower limit for radiation that can propagate all the way to the gamma spectrum stack.
 
 Materials the X-rays propagate through:
@@ -180,7 +206,7 @@ Comments:
 \item  The stack is sensitive to radiation > 100 keV hardening per layer by maybe another 10 keV.
 \end{itemize}
 
-
+\subsubsection{Use filter method to fit critical energy}
 This gives us a bit of a lower limit saying it is at least betatron as usual 15-25 keV, and on some shots we seem to be in excess of 30 keV, so harder than usual.
 
 I will add the materials in the GEANT simulation and run again mono-energetic gammas to then sum them up in the shape of a synchrotron spectrum as fit parameter.
@@ -195,6 +221,7 @@ The divergence of the beams is in most cases smaller than the (visible) aperture
 
 \section{GEANT simulations for the gamma detector}
 
+\subsubsection{Check if GEANT simulations are applicable and if they match transmission.}
 Monoenergetic photons are run through GEANT simulations considering the materials in the pathway.
 The response of the detectors are being plotted or better the energy deposited in each crystal. It is assumed that the energy deposited linearly translates into a response of the detector.
 
@@ -233,6 +260,8 @@ Fitting the simulated synchrotron to the measured signal.
 
 \section{Enhancement of betatron radiation: theories}
 
+\subsubsection{Try to explain how enhancement could have happened (KT Phuoc or tilted shock)}
+
 From the electron energy spectrum the expected radiation would be of order 30 keV (critical energy) for a betatron radius of ...
 To achieve a hardening of a factor of 10 the radius has to be increased by that same factor. The density crunch could be squeezing the electrons together giving them a strong transversal component due to the strong focusing fields reaching higher levels.
 The tilted density scheme as described in other work would lead to a motion in the vertical direction (judging from the shadowgraphy images) hence enhancing oscillations preferentially in that axis. In some instances a strong preference in the polarisation direction is indicated which means a laser evolution and hence bubble evolution enhances existing oscillations instead of forcing a new one.
@@ -250,5 +279,7 @@ E_c = \frac{3}{4c}\gamma^2 \omega^2_p r_\beta
 Here the parameters are around $\gamma = 2000$. The plasma density $n_e = 1.5 \times 10^{18}\,\mathrm{cm^{-3}}$. The free parameter is now the betatron radius $r_\beta$. Depending on the part of the electron spectrum the required $r_\beta$ is of order XX NUMBER. 
 
 \section{EPOCH/PIC Simulations}
+
+\subsubsection{Present simulations to confirm or disprove either theory}
 
 \section{Conclusion}
