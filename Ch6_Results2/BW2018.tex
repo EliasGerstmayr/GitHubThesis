@@ -36,11 +36,11 @@ The aim of this experimental setup is to produce and measure Breit-Wheeler pairs
 \vspace{\baselineskip}
 
 \subsubsection{North beam and X-ray source}
-The North beam in this experiment is not compressed to its usual 40-45 fs duration but is stretched to around 40 ps FWHM to effectively heat the solid target. The beam is focused down using an f/2 off-axis parabola (OAP) but a phase plate smoothens and enlargens the focal spot to about $75\,\mathrm{\mu m} \times 210\,\mathrm{\mu m}$ size providing a smooth and homogeneous spot at the target. This beam is then incident onto a $25\,\mathrm{\mu m}$ kapton tape with etched holes reducing the thickness to $5\,\mathrm{mu m}$ and coated with $100\,\mathrm{nm}$ thick germanium (Ge) dots, producing a plasma plume that emits a thermal bath of X-rays at the interaction point. By moving the tape drive a new Ge target is provided on each shot. This is the first component for the two-photon interaction. The X-ray source is diagnosed by an X-ray pinhole camera measuring the flux and the source size, and by a second camera attached to a crystal measuring the spectrum of the X-rays on the spectral range of the line emission of Ge (around 1.5 keV).
+The North beam in this experiment is not compressed to its usual 40-45 fs duration but is stretched to around 40 ps FWHM to effectively heat the solid target. The beam is focused down using an f/2 off-axis parabola (OAP) but a phase plate smoothens and enlargens the focal spot to about $75\,\mathrm{\mu m} \times 210\,\mathrm{\mu m}$ size providing a smooth and homogeneous spot at the target. This beam is then incident onto a $25\,\mathrm{\mu m}$ kapton tape with etched holes reducing the thickness to $5\,\mathrm{\mu m}$ and coated with $100\,\mathrm{nm}$ thick germanium (Ge) dots, producing a plasma plume that emits a thermal bath of X-rays at the interaction point. By moving the tape drive a new Ge target is provided on each shot. This is the first component for the two-photon interaction. The X-ray source is diagnosed by an X-ray pinhole camera measuring the flux and the source size, and by a second camera attached to a crystal measuring the spectrum of the X-rays on the spectral range of the line emission of Ge (around 1.5 keV).
 \vspace{\baselineskip}
 
 \subsubsection{South beam, electrons and Gamma source}
-The South laser is focused down by a $6\,\mathrm{mm}$ focal length f/40 OAP onto the edge of a 17.5 mm length gas cell target filled with helium and 2 percent nitrogen at an average electron density of XX NUMBER. The typical average spot size was around $44\,\mathrm{mu m} \times 53\,\mathrm{\mu m}$ at $5.51\pm 0.64\,\mathrm{J}$ energy on target at a pulse duration of XX NUMBER FS THIS WAS NOT MEASURED? IF SO $45 \pm 5\,\mathrm{fs}$, peak intensity $I_0 = 2.75 \times 10^{18} \,\mathrm{W/cm^3}$ corresponding to a normalised vector potential $a_0 = 1.13$ (this is based on focal spots from the 28th March and Matt's analysis). The energy was limited by the damage threshold of the mirrors in the focusing beam.
+The South laser is focused down by a $6\,\mathrm{mm}$ focal length f/40 OAP onto the edge of a 17.5 mm length gas cell target filled with helium and 2 percent nitrogen at an average electron density of XX NUMBER. The typical average spot size was around $44\,\mathrm{\mu m} \times 53\,\mathrm{\mu m}$ at $5.51\pm 0.64\,\mathrm{J}$ energy on target at a pulse duration of XX NUMBER FS THIS WAS NOT MEASURED? IF SO $45 \pm 5\,\mathrm{fs}$, peak intensity $I_0 = 2.75 \times 10^{18} \,\mathrm{W/cm^3}$ corresponding to a normalised vector potential $a_0 = 1.13$ (this is based on focal spots from the 28th March and Matt's analysis). The energy was limited by the damage threshold of the mirrors in the focusing beam.
 The laser drives a wakefield and accelerates electrons injected via ionisation injection REF HERE to relativistic energies. The remaining laser exiting the cell is disposed of by a replenishable kapton tape that acts as a plasma mirror (REF).
 \vspace{\baselineskip}
 
@@ -118,7 +118,7 @@ The shape of the spectra (see average spectra) shows a distinct peak at few hund
 
 \begin{figure}
 \includegraphics[width=.9\columnwidth]{2018QED_Espec_Variations.png}
-\caption{Electron charge and energy over shot days.}
+\caption{Electron charge and energy over shot days. Could leave out the 5th as it is not a shot day.}
 \end{figure}
 
 
@@ -135,7 +135,7 @@ Date & Run & Charge & Max Energy & Divergence & Pointing & Nshots\\ \hline \hlin
 10 & 2 & $15.24 \pm 5.1$ & $512 \pm 26$ & $2.3 \pm 0.52$ & 0.5 & 6\\ 
 10 & 3 & $9.56 \pm 3.5$ & $535 \pm 21$ & $2.82 \pm 0.91$ & 1.55 & 21
 \end{tabular}
-\caption{Details on runs. Electron characteristica.}
+\caption{Details on runs. Electron characteristica. Could leave out the 5th as it is not a shot day.}
 \end{table}
 
 
@@ -184,8 +184,7 @@ This is not useful to distinguish energies.
 
 \subsubsection{Choice of converter material, overview on materials, yield vs. divergence consideration}
 
-The options were 2 mm and 4 mm tungsten, 0.5 and 1 mm bismuth (see 23.3.18 run 2).
-\EliasComm{Make a plot: yield vs. divergence}
+The options were 2 mm and 4 mm tungsten, 0.5 and 1 mm bismuth (see 23.3.18 run 2) on 0.5 mm PTFE (!?).
 
 From the lab book the summary was:
 2 mm tungsten: divergent and high yield.
@@ -199,6 +198,28 @@ From the lab book the summary was:
 \includegraphics[width=.5\columnwidth]{2018QED_ConverterGSpec_Yield.png}\includegraphics[width=.5\columnwidth]{2018QED_TimePixNoise.png}
 \caption{Left: Gamma Spec yield. Right: Noise on TimePix.}
 \end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=.9\columnwidth]{2018QED_Converter_YieldVDiv}
+\caption{Gamma Profile Yield and divergence. Use mrad instead of mm for FWHM and present a combined plot for x and y axis. The distance to gamma profile from the converter target is about 3.4 m. So 20/3.4 for a full angle, so less than 3 mrad half angle for 0.5 mm bismuth and so on.}
+\end{figure}
+
+From the analysis we can see that the divergence and yield is for each material larger when the solid target is thicker, i.e. the measured gamma yield is higher for 1 mm of bismuth than for 0.5 mm, and higher for 4 mm than for 2 mm of tungsten, and similarly for the divergence.
+Comparing the bismuth targets and the tungsten we also observe that the yield does not increase much more from bismuth 1 mm to any of the tungsten targets whilst preserving a better divergence. This indicates that most of the electrons already transferred all or a large fraction of their energy into gamma radiation and more material mainly leads to scattering and showers of radiation.
+Give numbers: only few percent increase in yield for a divergence increase of 10-15 percent.
+
+What is the size of the X-ray source and how large is the gamma beam at that point?
+The North beam acting as a heater focuses down to a spot of $75\,\mathrm{\mu m} \times 210\,\mathrm{\mu m}$, plus minus defocusing terms.
+This leads to the formation of a plasma plume that then heats things. Do we have any pinhole measurements that indicate the source size?
+The distance from the converter to the interaction point is XX NUMBER. Also consider pointing etc., so better base this on noise and not source overlap. The difference is only 10 percent at 3.4 mm.
+
+We want a low divergence bright gamma flash (high yield) to stimulate reactions but also to reduce the noise. In particular dangerous noise are particles produced close to the axis. A too divergent gamma ray beam could produce these pairs that resemble a real signal.
+
+The TimePix results show the level of noise measured for the different converters. It shows that, despite having a similar yield as 1 mm bismuth, the noise levels are much higher.
+
+Hence, 1 mm bismuth appears to be the best choice in this case combining low divergence, high yield and low noise.
+
 
 \subsubsection{Discussion if the choice was right also considering collimator/Wblock view}
 
