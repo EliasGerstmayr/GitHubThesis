@@ -209,10 +209,14 @@ From the analysis we can see that the divergence and yield is for each material 
 Comparing the bismuth targets and the tungsten we also observe that the yield does not increase much more from bismuth 1 mm to any of the tungsten targets whilst preserving a better divergence. This indicates that most of the electrons already transferred all or a large fraction of their energy into gamma radiation and more material mainly leads to scattering and showers of radiation.
 Give numbers: only few percent increase in yield for a divergence increase of 10-15 percent.
 
-What is the size of the X-ray source and how large is the gamma beam at that point?
+
+\subsubsection{Discussion if the choice was right also considering collimator/Wblock view}
+
+What is the size of the X-ray source and how large is the gamma beam at that point? Already 6 mm or so.
 The North beam acting as a heater focuses down to a spot of $75\,\mathrm{\mu m} \times 210\,\mathrm{\mu m}$, plus minus defocusing terms.
 This leads to the formation of a plasma plume that then heats things. Do we have any pinhole measurements that indicate the source size?
-The distance from the converter to the interaction point is XX NUMBER. Also consider pointing etc., so better base this on noise and not source overlap. The difference is only 10 percent at 3.4 mm.
+The distance from the converter to the interaction point is XX NUMBER. Also consider pointing etc., so better base this on noise and not source overlap. The difference is only 10 percent at 3.4 mm. The gamma beam is bigger than the X-ray bath.
+However, the collimator is positioned 180 mm away from the converter target. It is 100 mm long and has an inner diameter of 2 mm. This permits a free field of view of 1 mm / 0.28 m = 3.57 mrad half angle. The effective field of view is slightly larger with some radiation penetrating the last mm's of the collimator walls. This is just about or a bit smaller than the average divergence using the collimator. The tungsten targets have a larger divergence and will produce noise which will outweigh the additional yield. This is all without taking into consideration pointing.
 
 We want a low divergence bright gamma flash (high yield) to stimulate reactions but also to reduce the noise. In particular dangerous noise are particles produced close to the axis. A too divergent gamma ray beam could produce these pairs that resemble a real signal.
 
@@ -220,8 +224,6 @@ The TimePix results show the level of noise measured for the different converter
 
 Hence, 1 mm bismuth appears to be the best choice in this case combining low divergence, high yield and low noise.
 
-
-\subsubsection{Discussion if the choice was right also considering collimator/Wblock view}
 
 \section{Gamma Profile Assessment}
 
@@ -352,6 +354,11 @@ This approach is just a simple calculation to demonstrate the difference we expe
 Of course one also has to fold in the X-ray spectrum over a wider energy range along with other factors like higher noise levels due to the increased charge and so on.
 
 What angle are we assuming? There will be a range of photon angles but what is the design main angle?
+According to an Evernote note (X-ray diagnostics survey by BK I assume) the angle was roughly 40 degrees, so main axis is 140 degrees but with a large spread of relative angles I would assume. If the beam has good emittance (or if there is a different term for gamma beams) then the divergence will determine the range of angles. The collimator lets through 3.57 mrad half angle which is 0.2 degrees, so the main range of angles will come from the X-ray source.
+
+The closer to angle is to head-on collision to more the peak of the cross-section shifts towards lower gamma energies. 
+If the X-ray spectrum is mainly centred around 1.5 keV the additional 800 MeV does not have an impact.
+If the full X-ray spectrum (for instance Morton simulations) are included then a large pool of X-rays are available at lower energies to be paired up with the high energy photons of 600-800 MeV.
 
 \section{Future Outlook: A gamma spectrometer to discriminate high energy photons}
 
