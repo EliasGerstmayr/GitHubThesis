@@ -138,8 +138,11 @@ Date & Run & Charge & Max Energy & Divergence & Pointing & Nshots\\ \hline \hlin
 \caption{Details on runs. Electron characteristica. Could leave out the 5th as it is not a shot day.}
 \end{table}
 
+\section{Gamma Profile Diagnostic}
 
+\subsubsection{General Description of diagnostic and how to extract data.}
 
+\subsubsection{Field of view and calibration.}
 
 \section{Bremsstrahlung Targets and Detector Response}
 
@@ -148,8 +151,8 @@ Date & Run & Charge & Max Energy & Divergence & Pointing & Nshots\\ \hline \hlin
 \EliasComm{Add some raw data and examples from analysis.}
 
 Electrons characterised in the previous section are converted to a burst of gamma rays by inserting a high-Z converter foil in the beam path, in this context mainly 1 mm of bismuth. This is to balance the need for a decent amount of gamma rays and a low divergence of the resulting beam. Thick targets result in the highest yield but the beam is more divergent and more signal will be cut out by the collimator etc. and more noise is to be expected.
-
 \vspace{\baselineskip}
+
 
 \EliasComm{Add a plot showing the raw data from GammaSpec for different converters.}
 
@@ -201,9 +204,16 @@ From the lab book the summary was:
 
 \begin{figure}
 \centering
-\includegraphics[width=.9\columnwidth]{2018QED_Converter_YieldVDiv}
+\includegraphics[width=.9\columnwidth]{2018QED_Converter_YieldVDiv.png}
 \caption{Gamma Profile Yield and divergence. Use mrad instead of mm for FWHM and present a combined plot for x and y axis. The distance to gamma profile from the converter target is about 3.4 m. So 20/3.4 for a full angle, so less than 3 mrad half angle for 0.5 mm bismuth and so on.}
 \end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{2018QED_Converter_YieldvNoise.png}\includegraphics[width=.5\columnwidth]{2018QED_Converter_DivvNoise.png}
+\caption{Left: Gamma Spec yield. Right: Noise on TimePix.}
+\end{figure}
+
 
 From the analysis we can see that the divergence and yield is for each material larger when the solid target is thicker, i.e. the measured gamma yield is higher for 1 mm of bismuth than for 0.5 mm, and higher for 4 mm than for 2 mm of tungsten, and similarly for the divergence.
 Comparing the bismuth targets and the tungsten we also observe that the yield does not increase much more from bismuth 1 mm to any of the tungsten targets whilst preserving a better divergence. This indicates that most of the electrons already transferred all or a large fraction of their energy into gamma radiation and more material mainly leads to scattering and showers of radiation.
@@ -225,24 +235,10 @@ The TimePix results show the level of noise measured for the different converter
 Hence, 1 mm bismuth appears to be the best choice in this case combining low divergence, high yield and low noise.
 
 
-\section{Gamma Profile Assessment}
+\subsubsection{The electron regime (plasma density) was also right in terms of yield and divergence.}
+We tested the converter targets for two different electron regimes (70 mbar and 90 mbar backing pressure), where the higher densities were more divergent.
+We operated at the lower regime, later on at an intermediate backing pressure but related to an increase in leak.
 
-
-\subsubsection{Brief look at gamma profile and correlation of counts. Show change in alignment/pointing.}
-Look at gamma profile and see that from day to day the alignment changes.
-
-Show that the 6th had the ideal alignment based on this.
-
-Show the pointing varies and the total alignment.
-
-Show the gamma yield is varying from day to day but not as much as the electron charge which indicates that the alignment is washing out any correlation.
-
-\EliasComm{Might just be incorporated as side note in the next section.}
-
-\section{Performance and Stability of the Bremsstrahlung Source}
-
-This part is about the spectra on the BW data days.
-\vspace{\baselineskip}
 
 \subsubsection{Detector response in experiment, shot to shot and day by day}
 
@@ -303,6 +299,25 @@ Provide some plots from the GEANT simulation (visualisation).
 \includegraphics[width=.5\columnwidth]{2018QED_GSpec_Variations.png}
 \caption{Variations of gamma signal (based on GEANT simulations).}
 \end{figure}
+
+\section{Gamma Profile Assessment}
+
+
+\subsubsection{Brief look at gamma profile and correlation of counts. Show change in alignment/pointing.}
+Look at gamma profile and see that from day to day the alignment changes.
+
+Show that the 6th had the ideal alignment based on this.
+
+Show the pointing varies and the total alignment.
+
+Show the gamma yield is varying from day to day but not as much as the electron charge which indicates that the alignment is washing out any correlation.
+
+\EliasComm{Might just be incorporated as side note in the next section.}
+
+\section{Performance and Stability of the Bremsstrahlung Source}
+
+This part is about the spectra on the BW data days.
+\vspace{\baselineskip}
 
 
 

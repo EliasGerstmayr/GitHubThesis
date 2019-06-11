@@ -183,44 +183,48 @@
 \contentsline {subsubsection}{Raw images and general note on processing data}{161}{section*.215}
 \contentsline {subsubsection}{General overview and shape of beams}{163}{section*.216}
 \contentsline {subsubsection}{Investigation of main quantities and variation on the days}{163}{section*.217}
-\contentsline {section}{\numberline {8.4}Bremsstrahlung Targets and Detector Response}{165}{section.8.4}
-\contentsline {subsubsection}{General bits on the diagnostic, signal extraction and characterisation}{165}{section*.221}
-\contentsline {subsubsection}{GEANT simulation and correction factors using bremsstrahlung}{166}{section*.225}
-\contentsline {subsubsection}{Choice of converter material, overview on materials, yield vs. divergence consideration}{166}{section*.226}
-\contentsline {subsubsection}{Discussion if the choice was right also considering collimator/Wblock view}{167}{section*.229}
-\contentsline {section}{\numberline {8.5}Gamma Profile Assessment}{168}{section.8.5}
-\contentsline {subsubsection}{Brief look at gamma profile and correlation of counts. Show change in alignment/pointing.}{168}{section*.230}
-\contentsline {section}{\numberline {8.6}Performance and Stability of the Bremsstrahlung Source}{169}{section.8.6}
-\contentsline {subsubsection}{Detector response in experiment, shot to shot and day by day}{169}{section*.232}
-\contentsline {subsubsection}{General critical energy fitting}{169}{section*.233}
-\contentsline {subsubsection}{Comparison yield per day with and without blocks}{169}{section*.234}
-\contentsline {subsubsection}{Simulated spectra from Electrons and variation in resulting gamma spectra}{169}{section*.235}
-\contentsline {subsubsection}{Characterisation of fluctuations and lack of change in response}{169}{section*.236}
-\contentsline {section}{\numberline {8.7}Impact of Spectral Fluctuations on the total BW cross section}{170}{section.8.7}
-\contentsline {subsubsection}{Simple calculation on impact on the total cross section based on the GEANT spectra}{170}{section*.240}
-\contentsline {section}{\numberline {8.8}Future Outlook: A gamma spectrometer to discriminate high energy photons}{174}{section.8.8}
-\contentsline {subsubsection}{Explanation why detector is not sensitive to the changes seen in the simulated spectra}{174}{section*.243}
-\contentsline {subsubsection}{Based on problem present ideas to make the detector more sensitive along with GEANT simulations.}{175}{section*.244}
-\contentsline {section}{\numberline {8.9}Results of the Breit-Wheeler Analysis}{175}{section.8.9}
-\contentsline {subsubsection}{Discussion of how this work fits in the big picture of the complete BW analysis}{175}{section*.245}
-\contentsline {section}{\numberline {8.10}Conclusion}{176}{section.8.10}
-\contentsline {chapter}{\numberline {9}Conclusion}{177}{chapter.9}
-\contentsline {section}{\numberline {9.1}Current Research and Future Directions}{177}{section.9.1}
-\contentsline {chapter}{\numberline {10}Appendix}{178}{chapter.10}
-\contentsline {section}{\numberline {10.1}Notation and Glossary}{178}{section.10.1}
-\contentsline {section}{\numberline {10.2}Nabla Operator and Vector Identities}{178}{section.10.2}
-\contentsline {section}{\numberline {10.3}Maxwell's equations}{178}{section.10.3}
-\contentsline {section}{\numberline {10.4}Relativistic Transformations}{179}{section.10.4}
-\contentsline {section}{\numberline {10.5}Radiation Integrals}{179}{section.10.5}
-\contentsline {section}{\numberline {10.6}Feynman diagrams and convention}{180}{section.10.6}
-\contentsline {subsection}{\numberline {10.6.1}Mandelstam variables}{180}{subsection.10.6.1}
-\contentsline {subsection}{\numberline {10.6.2}Trace Identities}{180}{subsection.10.6.2}
-\contentsline {subsection}{\numberline {10.6.3}Calculating Matrix Elements from Feynman diagrams}{180}{subsection.10.6.3}
-\contentsline {section}{\numberline {10.7}Derivation Klein-Nishina equation}{180}{section.10.7}
-\contentsline {section}{\numberline {10.8}Derivation linear Breit-Wheeler cross section}{182}{section.10.8}
-\contentsline {section}{\numberline {10.9}Bessel Functions}{182}{section.10.9}
-\contentsline {section}{\numberline {10.10}Scintillators}{182}{section.10.10}
-\contentsline {subsection}{\numberline {10.10.1}CsI(Tl)}{183}{subsection.10.10.1}
-\contentsline {subsection}{\numberline {10.10.2}LYSO}{183}{subsection.10.10.2}
-\contentsline {subsection}{\numberline {10.10.3}LANEX}{183}{subsection.10.10.3}
-\contentsline {chapter}{\numberline {11}References}{184}{chapter.11}
+\contentsline {section}{\numberline {8.4}Gamma Profile Diagnostic}{165}{section.8.4}
+\contentsline {subsubsection}{General Description of diagnostic and how to extract data.}{165}{section*.221}
+\contentsline {subsubsection}{Field of view and calibration.}{165}{section*.222}
+\contentsline {section}{\numberline {8.5}Bremsstrahlung Targets and Detector Response}{165}{section.8.5}
+\contentsline {subsubsection}{General bits on the diagnostic, signal extraction and characterisation}{165}{section*.223}
+\contentsline {subsubsection}{GEANT simulation and correction factors using bremsstrahlung}{166}{section*.227}
+\contentsline {subsubsection}{Choice of converter material, overview on materials, yield vs. divergence consideration}{166}{section*.228}
+\contentsline {subsubsection}{Discussion if the choice was right also considering collimator/Wblock view}{168}{section*.232}
+\contentsline {subsubsection}{The electron regime (plasma density) was also right in terms of yield and divergence.}{169}{section*.233}
+\contentsline {subsubsection}{Detector response in experiment, shot to shot and day by day}{169}{section*.234}
+\contentsline {subsubsection}{General critical energy fitting}{170}{section*.235}
+\contentsline {subsubsection}{Comparison yield per day with and without blocks}{170}{section*.236}
+\contentsline {subsubsection}{Simulated spectra from Electrons and variation in resulting gamma spectra}{170}{section*.237}
+\contentsline {subsubsection}{Characterisation of fluctuations and lack of change in response}{170}{section*.238}
+\contentsline {section}{\numberline {8.6}Gamma Profile Assessment}{171}{section.8.6}
+\contentsline {subsubsection}{Brief look at gamma profile and correlation of counts. Show change in alignment/pointing.}{171}{section*.242}
+\contentsline {section}{\numberline {8.7}Performance and Stability of the Bremsstrahlung Source}{172}{section.8.7}
+\contentsline {section}{\numberline {8.8}Impact of Spectral Fluctuations on the total BW cross section}{172}{section.8.8}
+\contentsline {subsubsection}{Simple calculation on impact on the total cross section based on the GEANT spectra}{172}{section*.244}
+\contentsline {section}{\numberline {8.9}Future Outlook: A gamma spectrometer to discriminate high energy photons}{175}{section.8.9}
+\contentsline {subsubsection}{Explanation why detector is not sensitive to the changes seen in the simulated spectra}{175}{section*.247}
+\contentsline {subsubsection}{Based on problem present ideas to make the detector more sensitive along with GEANT simulations.}{176}{section*.248}
+\contentsline {section}{\numberline {8.10}Results of the Breit-Wheeler Analysis}{176}{section.8.10}
+\contentsline {subsubsection}{Discussion of how this work fits in the big picture of the complete BW analysis}{176}{section*.249}
+\contentsline {section}{\numberline {8.11}Conclusion}{177}{section.8.11}
+\contentsline {chapter}{\numberline {9}Conclusion}{178}{chapter.9}
+\contentsline {section}{\numberline {9.1}Current Research and Future Directions}{178}{section.9.1}
+\contentsline {chapter}{\numberline {10}Appendix}{179}{chapter.10}
+\contentsline {section}{\numberline {10.1}Notation and Glossary}{179}{section.10.1}
+\contentsline {section}{\numberline {10.2}Nabla Operator and Vector Identities}{179}{section.10.2}
+\contentsline {section}{\numberline {10.3}Maxwell's equations}{179}{section.10.3}
+\contentsline {section}{\numberline {10.4}Relativistic Transformations}{180}{section.10.4}
+\contentsline {section}{\numberline {10.5}Radiation Integrals}{180}{section.10.5}
+\contentsline {section}{\numberline {10.6}Feynman diagrams and convention}{181}{section.10.6}
+\contentsline {subsection}{\numberline {10.6.1}Mandelstam variables}{181}{subsection.10.6.1}
+\contentsline {subsection}{\numberline {10.6.2}Trace Identities}{181}{subsection.10.6.2}
+\contentsline {subsection}{\numberline {10.6.3}Calculating Matrix Elements from Feynman diagrams}{181}{subsection.10.6.3}
+\contentsline {section}{\numberline {10.7}Derivation Klein-Nishina equation}{181}{section.10.7}
+\contentsline {section}{\numberline {10.8}Derivation linear Breit-Wheeler cross section}{183}{section.10.8}
+\contentsline {section}{\numberline {10.9}Bessel Functions}{183}{section.10.9}
+\contentsline {section}{\numberline {10.10}Scintillators}{183}{section.10.10}
+\contentsline {subsection}{\numberline {10.10.1}CsI(Tl)}{184}{subsection.10.10.1}
+\contentsline {subsection}{\numberline {10.10.2}LYSO}{184}{subsection.10.10.2}
+\contentsline {subsection}{\numberline {10.10.3}LANEX}{184}{subsection.10.10.3}
+\contentsline {chapter}{\numberline {11}References}{185}{chapter.11}
