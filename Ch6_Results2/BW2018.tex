@@ -80,16 +80,18 @@ Potential electron-positron pairs from the photon-photon interaction are emitted
 
 
 
-\section{Bremsstrahlung Targets}
+\section{Bremsstrahlung Converter Targets}
 
 
 The gamma signal depends strongly on the properties of the electron beam in terms of energy, brightness, divergence and pulse duration.
 However, the choice of converter material is also crucial and needs to be optimised for this specific purpose.
 In this case we want to efficiently convert the electron beam in a narrow beam of gamma rays whilst also maintaining a low level of noise from secondary radiation and particles. To reduce the noise level several components are used to cut down the gamma signal, more specifically of interest is the tungsten collimator that was briefly mentioned in the overview of the experiment setup.
 
-The collimator 
+The collimator properties ...
 
 As indicator for gamma yield and divergence we will rely on the gamma profile monitor. An example of a gamma signal with and without collimator is shown in Figure XX.
+
+Despite the low divergence and using the collimator the gamma source is expected to be much larger than the X-ray source (due to the distances).
 
 \subsubsection{Data examples and extraction for Gamma Profile}
 
@@ -99,26 +101,47 @@ As indicator for gamma yield and divergence we will rely on the gamma profile mo
 
 \subsubsection{Choice of converter material, overview on materials, yield vs. divergence consideration}
 
-The options were 2 mm and 4 mm tungsten, 0.5 and 1 mm bismuth mounted on 0.5 mm PTFE.
+As choices of materials we decided on tungsten and bismuth as they both are high-Z materials which means energy can be efficiently converted to radiation within thinner targets resulting in less scattering and divergence. The aim is to find the ideal combination where most or all of the electron energy is transferred into radiation at a low divergence and high flux.
 
-From the lab book the summary was:
-2 mm tungsten: divergent and high yield.
-4 mm tungsten: more divergent and more yield (depending on shot)
-0.5 mm bismuth: less divergent than the tungsten, fewer counts, sometimes similar peak counts but only on axis
-1 mm bismuth: more divergent than 0.5 mm bismuth but less than tungsten. High yield on axis, sometimes even more concentrated than 2 mm tungsten.
+The options were 2 mm and 4 mm tungsten, 0.5 and 1 mm bismuth mounted on 0.5 mm PTFE, all on a motorised linear stage that allows switching between the materials or no converter material at all.
+\vspace{\baselineskip}
 
+The quantities we measure are the total counts on the gamma profile monitor (yield) and the width of the gamma signal in terms of the FWHM in the vertical and horizontal axis. This is being tested for all 4 converter targets in two electron regimes (one higher energy less charge from lower density plasma, the other higher charge but lower energy from a high density plasma). 10 shots were taken at each configuration (backing pressure A, converter 1...).
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=.5\columnwidth]{2018QED_ConverterGSpec_Yield.png}\includegraphics[width=.5\columnwidth]{2018QED_TimePixNoise.png}
-\caption{Left: Gamma Spec yield. Right: Noise on TimePix.}
-\end{figure}
+The results can be seen in Figure \ref{BW:fig:converter_yield_v_div}.
+\vspace{\baselineskip}
+
+From the results we can see a couple of trends. The divergence and yield for each material is larger when the solid target is thicker, i.e. the measured gamma yield is higher for 1 mm of bismuth than for 0.5 mm, and higher for 4 mm than for 2 mm of tungsten, and similarly so for the divergence.
+This makes sense since more material leads to more scattering and hence an increased divergence. At the same time it indicates that more energy is converted into photons.
+
+At the same time we see that the higher charge but lower energy electrons provide a lower yield of gamma rays at higher divergences. This also appears to be sensible as the initial divergence of the electrons is higher. The yield might be connected to the scaling of the radiated energy which is quadratically whilst the photon number relies only linearly on the electron charge. A higher energy even at slightly lower charge can provide a higher yield.
+
+Comparing the bismuth and the tungsten targets we see that the divergence for bismuth is in general lower than for tungsten. This is probably related to the thinner targetry. Bismuth has a higher Z number and can provide a similar conversion efficiency at lower scattering rates.
+We also observe that the yield does not increase much more from bismuth 1 mm to any of the tungsten targets whilst preserving a better divergence. This indicates that most of the electrons already transferred all or a large fraction of their energy into gamma radiation and more material mainly leads to scattering and showers of radiation. The yield of bismuth increases by around 50 percent from 0.5 to 1 mm thickness. This also coincides with a faint electron signal on the spectrometer screens and confirms that somewhere around those thicknesses most of the electron energy is converted to radiation.
+
+Another brief result can be seen in Figure \ref{BW:figs:converter_pointing}. Here the pointing stability of the gamma signal is shown. There is some scatter but most of the targets operate at a comparable level and do not show a clear trend. This makes sense, as the general pointing mainly depends on the electron pointing and should not depend on the material.
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=.5\columnwidth]{2018QED_ConverterGSpec_Yield.png}\includegraphics[width=.5\columnwidth]{2018QED_TimePixNoise.png}
+%\caption{Left: Gamma Spec yield. Right: Noise on TimePix.}
+%\end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[width=.9\columnwidth]{2018QED_Converter_YieldVDiv.png}
 \caption{Gamma Profile Yield and divergence. Use mrad instead of mm for FWHM and present a combined plot for x and y axis. The distance to gamma profile from the converter target is about 3.4 m. So 20/3.4 for a full angle, so less than 3 mrad half angle for 0.5 mm bismuth and so on.}
+\label{BW:fig:converter_yield_v_div}
 \end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{2018QED_GConverter_PointingMM.png}\includegraphics[width=.5\columnwidth]{2018QED_GConverter_PointingSigma.png}
+\caption{Left: Centroid position on detector in mm, coordinate zero point is the bottom left corner of the detector. Right: Standard deviation of pointing fluctuation from mean value in mrad.}
+\label{BW:figs:converter_pointing}
+\end{figure}
+
+
 
 \begin{figure}
 \centering
@@ -126,24 +149,12 @@ From the lab book the summary was:
 \caption{Left: Gamma Spec yield. Right: Noise on TimePix.}
 \end{figure}
 
-
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{2018QED_SignalNoise_Transmission.png}\includegraphics[width=.5\columnwidth]{2018QED_SignalNoise_AbsTransmission.png}
 \caption{Left: Gamma Spec yield. Right: Noise on TimePix.}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{2018QED_GConverter_PointingMM.png}\includegraphics[width=.5\columnwidth]{2018QED_GConverter_PointingSigma.png}
-\caption{Left: Centroid position on detector in mm, coordinate zero point is the bottom left corner of the detector. Right: Standard deviation of pointing fluctuation from mean value in mrad.}
-\end{figure}
-
-
-
-From the analysis we can see that the divergence and yield is for each material larger when the solid target is thicker, i.e. the measured gamma yield is higher for 1 mm of bismuth than for 0.5 mm, and higher for 4 mm than for 2 mm of tungsten, and similarly for the divergence.
-Comparing the bismuth targets and the tungsten we also observe that the yield does not increase much more from bismuth 1 mm to any of the tungsten targets whilst preserving a better divergence. This indicates that most of the electrons already transferred all or a large fraction of their energy into gamma radiation and more material mainly leads to scattering and showers of radiation.
-Give numbers: only few percent increase in yield for a divergence increase of 10-15 percent.
 
 
 \subsubsection{Discussion if the choice was right also considering collimator/Wblock view}
