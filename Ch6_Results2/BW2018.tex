@@ -12,7 +12,7 @@ Whilst the pair annihilation process is easily measured in radioactive decays as
 
 \begin{figure}
 \includegraphics[width=.9\columnwidth]{2018QED_Chicane.JPG}
-\caption{In pursuit of creating matter from light. View upstream on the gamma-ray axis through the magnetic chicane that is designed to transport electron-positron pairs from BW to the single particle detectors.}
+\caption{In pursuit of creating matter from light. Photo taken during the experiment campaign aimed at measuring the BW process at the Gemini facility in 2018. View upstream on the gamma-ray axis through the magnetic chicane that is designed to transport electron-positron pairs from BW to single particle detectors.}
 \end{figure}
 
 High energy radiation in the keV range can be produced from highly relativistic electrons, for instance at XFELs and synchrotron sources using bending magnets and insertion devices. An alternative thermal X-ray source can be provided by sufficiently heating solid targets, for instance hohlraums or foils.
@@ -75,85 +75,11 @@ Both CsI arrays are imaged by sensitive Andor iXon cameras equipped with suitabl
 
 Potential electron-positron pairs from the photon-photon interaction are emitted preferably in the propagation direction of the gamma-ray burst. The pairs enter the field of a large aperture permanent dipole magnet of XX FIELD STRENGTH NUMBER that disperses the electrons and positrons horizontally in opposite directions, leaving the vacuum through the the other two kapton apertures at the end of the target chamber. The aperture of the magnet produces a low energy cutoff at about 220 MeV CHECK NUMBER ESPECIALLY BECAUSE OF WINDOW which is a slightly larger acceptance range than the vacuum window would provide. The dispersed electrons and positrons are then caught by an oppositely polarised permanent magnet of FIELD STRENGTH XX NUMBER on each side that bends the electrons or positrons respectively onto a narrow aperture in a lead-shielded enclosure and onto a set of single-particle detectors. The single-particle detectors are CsI arrays attached to sensitive CCD cameras. In addition, there are two TimePix silicon detectors in front of the CsI array on the positron side.
 
-\EliasComm{Will there be a comment on the potential RSI here?}
-
-\section{Electron Spectra Measurement}
-
-\subsubsection{Application of Electrons in this context and need for characterisation}
-
-In this experiment the energy of relativistic electrons is converted into directed and highly energetic bremsstrahlung.
-Whenever bremsstrahlung is produced from a converter target, the spectrum of the electrons can not be measured simultaneously as they are almost entirely stopped by the high-Z material in order to produce a high flux of gamma rays. 
-
-Hence, the electron spectra are characterised without the converter target before and after full BW data runs instead. The gamma signal, on the other hand, is measured during the BW data runs.
-\vspace{\baselineskip}
-
-
-\begin{figure}
-\includegraphics[width=.9\columnwidth]{2018QED_ElecSpecs_montage.jpg}
-\caption{Examples of raw electron spectra acquired on the experiment. The spectra are on a linear spatial scale, where the top is closer to the beam axis, i.e. indicates higher electron energies. Replace this by one row of raw and processed images or maybe even just one row of example spectra on a linear energy scale.}
-\label{BW:figs:elec_raw}
-\end{figure}
-
-\subsubsection{Raw images and general note on processing data}
-
-Raw images of typical electron signals on the lanex are seen in Figure \ref{BW:figs:elec_raw}.
-The images are treated for background and are projective transformed to account for the image distortion caused by the relative angle of camera and screen. By measuring the field components of the magnet and the distances accurately the spatial scale on the lanex screen is related to the energy of the electrons. The captured scintillation light is cross-calibrated with an image plate to obtain a number for the absolute charge of the beam. A more detailed description of the intermediate steps is found in the Methods section.
-\vspace{\baselineskip}
-
-\subsubsection{General overview and shape of beams}
-The performance of the accelerator varied from day to day and is characterised separately for each day, in some cases the performance even degraded over the course of the day.
-The measured quantities are charge, energy, divergence and pointing of the beams along with the stability (standard deviation) of these quantities from shot to shot.
-Due to the variations from day to day only shot days and electron data from days where BW data was taken is being considered.
-The relevant shot days were the 6th, 9th and 10th but will for simplicity be referred to as days 1, 2 and 3 in this context. 
-\vspace{\baselineskip}
-
-An overview of the quantities is given in TABLE XX NUMBER and plotted in a comparative way in figure XX NUMBER.
-
-General overview and shape:
-The electrons produced with ionisation injection in this context have a large energy spread from continuous injection reaching maximum energies of around 800 MeV in best conditions. The performance of the accelerator varies from day to day but typically either an almost flat spectrum up to 800 MeV or a distinct peak at 400 MEV was produced (see figure). Depending on the day the average charge was 10's of pC which is relatively low for the Gemini laser but might be linked to the limited energy on-target that could be delivered. The response and the imaging system was cross-calibrated with an image plate providing an absolute calibration of the images.
-
-\subsubsection{Investigation of main quantities and variation on the days}
-Comparison for different days along with stability.
-
-Conclusion about the days.
-
-Seeing in the figures it appears that the electrons on the 6th were in particular better in various dimensions:
-The charge is close to doubled with respect to other days and relatively stable. The maximum energy is increased by 100-200 MeV than on other days.
-At the same time a decent divergence at a stable level is paired with a good pointing stability of smaller than 1 mrad, which is not the optimum but a very good value in the subset of data taken.
-
-The shape of the spectra (see average spectra) shows a distinct peak at few hundred MeV and a tail in some cases extending to 500-550 MeV on most days and in case of the 6th even up to 800 MeV.
-
-
-\begin{figure}
-\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs.png}\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs_average}
-\caption{Left: 2D example of spectrum. Right:  Lineouts for electron spectra (maybe waterfall?). Maybe average spectra for day with shaded errorbars.}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=.9\columnwidth]{2018QED_Espec_Variations.png}
-\caption{Electron charge and energy over shot days. Could leave out the 5th as it is not a shot day.}
-\end{figure}
+\EliasComm{Will there be a comment on the potential RSI here? This will depend on the status and progress of this work.}
 
 
 
-\begin{table}
-\centering
-\begin{tabular}{l|l|l|l|l|l|l}
-Date & Run & Charge & Max Energy & Divergence & Pointing & Nshots\\ \hline \hline
-5 & 2 & $20 \pm 10.8$ & $599 \pm 57$ & $3.14 \pm 0.75$ & 1.25 & 32\\ \hline
-6 & 1 & $26.26 \pm 3.8$ & $709 \pm 46$ & $2.26 \pm 0.29$ & 0.62 & 10\\ \hline
-9 & 1 & $14.73 \pm 5.5$ & $565 \pm 43$ & $2.5 \pm 0.72$ & 0.93 & 18\\ 
-9 & 4 & $7.7 \pm 4.4$ & $551 \pm 16$ & $1.7\pm 0.31$ & 0.81 & 12\\ \hline
-10 & 1 & $11.55 \pm 2.7$ & $511 \pm 19$ & $2.84 \pm 0.93$ & 0.9 & 22\\ 
-10 & 2 & $15.24 \pm 5.1$ & $512 \pm 26$ & $2.3 \pm 0.52$ & 0.5 & 6\\ 
-10 & 3 & $9.56 \pm 3.5$ & $535 \pm 21$ & $2.82 \pm 0.91$ & 1.55 & 21
-\end{tabular}
-\caption{Details on runs. Electron characteristica. Could leave out the 5th as it is not a shot day.}
-\end{table}
-
-
-
-\section{Bremsstrahlung Targets and Detector Response}
+\section{Bremsstrahlung Targets}
 
 
 \subsubsection{Data examples and extraction for Gamma Profile}
@@ -161,7 +87,7 @@ Date & Run & Charge & Max Energy & Divergence & Pointing & Nshots\\ \hline \hlin
 
 \subsubsection{Choice of converter material, overview on materials, yield vs. divergence consideration}
 
-The options were 2 mm and 4 mm tungsten, 0.5 and 1 mm bismuth (see 23.3.18 run 2) on 0.5 mm PTFE (!?).
+The options were 2 mm and 4 mm tungsten, 0.5 and 1 mm bismuth mounted on 0.5 mm PTFE.
 
 From the lab book the summary was:
 2 mm tungsten: divergent and high yield.
@@ -226,6 +152,89 @@ Hence, 1 mm bismuth appears to be the best choice in this case combining low div
 \subsubsection{The electron regime (plasma density) was also right in terms of yield and divergence.}
 We tested the converter targets for two different electron regimes (70 mbar and 90 mbar backing pressure), where the higher densities were more divergent.
 We operated at the lower regime, later on at an intermediate backing pressure but related to an increase in leak.
+
+
+
+\section{Characterisation of Electron Spectra for BW shot days}
+
+\subsubsection{Application of electrons in this context and need for characterisation}
+
+In this experiment the energy of relativistic electrons is converted into directed and highly energetic bremsstrahlung.
+Whenever bremsstrahlung is produced from a converter target, the spectrum of the electrons can not be measured simultaneously as they are almost entirely stopped by the high-Z material in order to produce a high flux of gamma rays. 
+
+Hence, the electron spectra are characterised without the converter target before and after full BW data runs instead. The gamma signal, on the other hand, is measured during the BW data runs.
+\vspace{\baselineskip}
+
+The relevant shot days were the 6th, 9th and 10th May, hence the analysis of the electron spectra will focus particularly on these days.
+
+\begin{figure}
+\includegraphics[width=.9\columnwidth]{2018QED_ElecSpecs_montage.jpg}
+\caption{Examples of raw electron spectra acquired on the experiment. The spectra are on a linear spatial scale, where the top is closer to the beam axis, i.e. indicates higher electron energies. Replace this by one row of raw and processed images or maybe even just one row of example spectra on a linear energy scale. Or just one spectrum with linear energy scale plus lineout in both dimensions to show where quantities come from.}
+\label{BW:figs:elec_raw}
+\end{figure}
+
+\subsubsection{Raw images and general note on processing data}
+
+Raw images of typical electron signals on the lanex are seen in Figure \ref{BW:figs:elec_raw}.
+The images are treated for background and are projective transformed to account for the image distortion caused by the relative angle of camera and screen. By measuring the field components of the magnet and the distances accurately the spatial scale on the lanex screen is related to the energy of the electrons. The captured scintillation light is cross-calibrated with an image plate to obtain a number for the absolute charge of the beam. A more detailed description of the intermediate steps is found in the Methods section.
+\vspace{\baselineskip}
+
+\subsubsection{Investigation of main quantities and variation on the days}
+
+The performance of the wakefield accelerator can vary from day to day and is hence characterised separately for each of the relevant shot day, in some cases several datasets taken at different times were available.
+
+The key quantities of interest to characterise the electron beam with and to then compare the shot days with each other are charge, energy, divergence, pointing and the stability of those properties from shot to shot.
+\vspace{\baselineskip}
+
+An overview of these quantities describing the accelerator performance for the relevant days are presented in Table \ref{BW:tables:elec_days} and again in a more graphic comparison in Figure \ref{BW:figs:elec_variations}. The lineouts for the average electron spectra for those days are shown in Figure \ref{BW:figs:elec_average_spec}.
+\vspace{\baselineskip}
+
+In general, 
+... large energy spread as typical for ionisation injection at Gemini, no quasi-mono
+... lower energy than typically (related to energy on-target)
+... performance comparable 9th and 10th with plateau up to 550 MeV or so
+... on the 6th the signal extends to 700 MeV and quite stable.
+
+Looking at the key quantities:
+... charge was higher on the 6th at XX 25 pC pm.
+... energy as mentioned
+... divergence similar levels but more stable over the dataset and at the lower end
+... similar properties for the pointing
+
+
+
+\begin{figure}
+%\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs.png}
+\includegraphics[width=.9\columnwidth]{2018QED_ElecSpecs_average}
+\caption{Average spectra for the relevant shot days, 6th (blue), 9th (purple) and 10th (green). The spectra are normalised to charge and are not representative (SHOULD MAKE THIS NOT NORMALISED ACTUALLY) of relative differences. The shaded areas indicate 1 standard deviation from the average spectrum.}
+\label{BW:figs:elec_average_spec}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=.9\columnwidth]{2018QED_Espec_Variations.png}
+\caption{Average electron charge, energy, divergence and pointing on the relevant shot days. The error bars indicate 1 standard deviation from the average value. XXXX Could leave out the 5th as it is not a shot day.}
+\label{BW:figs:elec_variations}
+\end{figure}
+
+
+
+\begin{table}
+\centering
+\begin{tabular}{l|l|l|l|l|l|l}
+Date & Run & Charge & Max Energy & Divergence & Pointing & Nshots\\ \hline \hline
+5 & 2 & $20 \pm 10.8$ & $599 \pm 57$ & $3.14 \pm 0.75$ & 1.25 & 32\\ \hline
+6 & 1 & $26.26 \pm 3.8$ & $709 \pm 46$ & $2.26 \pm 0.29$ & 0.62 & 10\\ \hline
+9 & 1 & $14.73 \pm 5.5$ & $565 \pm 43$ & $2.5 \pm 0.72$ & 0.93 & 18\\ 
+9 & 4 & $7.7 \pm 4.4$ & $551 \pm 16$ & $1.7\pm 0.31$ & 0.81 & 12\\ \hline
+10 & 1 & $11.55 \pm 2.7$ & $511 \pm 19$ & $2.84 \pm 0.93$ & 0.9 & 22\\ 
+10 & 2 & $15.24 \pm 5.1$ & $512 \pm 26$ & $2.3 \pm 0.52$ & 0.5 & 6\\ 
+10 & 3 & $9.56 \pm 3.5$ & $535 \pm 21$ & $2.82 \pm 0.91$ & 1.55 & 21
+\end{tabular}
+\caption{Details on runs. Electron characteristica. XXXX Could leave out the 5th as it is not a shot day.}
+\label{BW:tables:elec_days}
+\end{table}
+
+
 
 
 \section{Spectral Analysis of the Gamma Signal}
