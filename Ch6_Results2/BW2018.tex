@@ -87,11 +87,15 @@ The gamma signal depends strongly on the properties of the electron beam in term
 However, the choice of converter material is also crucial and needs to be optimised for this specific purpose.
 In this case we want to efficiently convert the electron beam in a narrow beam of gamma rays whilst also maintaining a low level of noise from secondary radiation and particles. To reduce the noise level several components are used to cut down the gamma signal, more specifically of interest is the tungsten collimator that was briefly mentioned in the overview of the experiment setup.
 
-The collimator properties ...
+The collimator permits a free field of view of $7.14\,\mathrm{mrad}$ full angle. The effective field of view is slightly larger with some radiation penetrating the last mm's of the collimator walls. 
 
 As indicator for gamma yield and divergence we will rely on the gamma profile monitor. An example of a gamma signal with and without collimator is shown in Figure XX.
 
 Despite the low divergence and using the collimator the gamma source is expected to be much larger than the X-ray source (due to the distances).
+What is the size of the X-ray source and how large is the gamma beam at that point? Already 6 mm or so.
+The North beam acting as a heater focuses down to a spot of $75\,\mathrm{\mu m} \times 210\,\mathrm{\mu m}$, plus minus defocusing terms.
+This leads to the formation of a plasma plume that then heats things. Do we have any pinhole measurements that indicate the source size?
+The distance from the converter to the interaction point is XX NUMBER. Also consider pointing etc., so better base this on noise and not source overlap. The difference is only 10 percent at 3.4 mm. The gamma beam is bigger than the X-ray bath.
 
 \subsubsection{Data examples and extraction for Gamma Profile}
 
@@ -105,6 +109,8 @@ As choices of materials we decided on tungsten and bismuth as they both are high
 
 The options were 2 mm and 4 mm tungsten, 0.5 and 1 mm bismuth mounted on 0.5 mm PTFE, all on a motorised linear stage that allows switching between the materials or no converter material at all.
 \vspace{\baselineskip}
+
+\EliasComm{Maybe write down bremsstrahlung equation here to explain the trends.}
 
 The quantities we measure are the total counts on the gamma profile monitor (yield) and the width of the gamma signal in terms of the FWHM in the vertical and horizontal axis. This is being tested for all 4 converter targets in two electron regimes (one higher energy less charge from lower density plasma, the other higher charge but lower energy from a high density plasma). 10 shots were taken at each configuration (backing pressure A, converter 1...).
 
@@ -143,6 +149,34 @@ Another brief result can be seen in Figure \ref{BW:figs:converter_pointing}. Her
 
 
 
+
+
+\subsubsection{Throughput Collimator for Flux}
+
+Considering the collimator and the measured divergences of the gamma rays, we can now estimate what fraction of the gamma burst will make it through the collimator. A more divergent beam will lose more intensity but if it comes with higher yield it might still prevail.
+
+We will use the measured FWHM values and model the intensity profile after a Gaussian. We will also assume perfect alignment, hence ignore pointing for now, as the pointing is in the same ballpark for the converters and does not depend on the material.
+
+Bismuth 0.5 mm has a lower divergence and most of its energy makes it through in terms of fraction based on the initial input, followed by 1 mm bismuth. If weighed by the total flux of photons related to that converter the higher yield of the thicker bismuth target increases the flux. The 2 mm W target provides a similar throughput (in absolute numbers) as the thin bismuth target, the thicker W target reaches close to similar levels as 1 mm bismuth but not fully.
+
+From this perspective 1 mm bismuth appears to be the right candidate.
+
+\EliasComm{Add a bar chart on pure yield and throughput.}
+
+\subsubsection{Noise Considerations}
+
+
+We want a low divergence bright gamma flash (high yield) to stimulate reactions but also to reduce the noise. In particular dangerous noise are particles produced close to the axis. A too divergent gamma ray beam could produce these pairs that resemble a real signal. This is why we use the collimator.
+
+The TimePix results show the level of noise measured for the different converters. It shows that, despite having a similar yield as 1 mm bismuth, the noise levels are much higher. 
+The yield is correlated with noise and so is the divergence. More photons produce more noise and more divergent beams interact with more matter and apertures, producing more noise.
+
+On that scale 1 mm bismuth combines lower noise levels with high yields. Only 0.5 mm bismuth performs better in terms of signal to noise but at cost of lower yields. Assuming that the introduction of the collimator will get rid of most divergence related noise 1 mm bismuth is a better choice as it preserves high flux.
+
+\EliasComm{Introduce TimePix and what the numbers mean.}
+\EliasComm{Need appropriate legend for all data points or combine them.}
+\EliasComm{Fit some lines to support the linear trends?}
+
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{2018QED_Converter_YieldvNoise.png}\includegraphics[width=.5\columnwidth]{2018QED_Converter_DivvNoise.png}
@@ -156,25 +190,15 @@ Another brief result can be seen in Figure \ref{BW:figs:converter_pointing}. Her
 \end{figure}
 
 
+\subsubsection{Summary and Decision on Material}
 
-\subsubsection{Discussion if the choice was right also considering collimator/Wblock view}
+Best flux throughput for 1 mm bismuth. Noise is also lower although the levels will change for collimator and W block conditions.
+1 mm bismuth also takes care of all electrons and potentially reduces noise from inside the collimator (dispersed remaining electrons).
 
-What is the size of the X-ray source and how large is the gamma beam at that point? Already 6 mm or so.
-The North beam acting as a heater focuses down to a spot of $75\,\mathrm{\mu m} \times 210\,\mathrm{\mu m}$, plus minus defocusing terms.
-This leads to the formation of a plasma plume that then heats things. Do we have any pinhole measurements that indicate the source size?
-The distance from the converter to the interaction point is XX NUMBER. Also consider pointing etc., so better base this on noise and not source overlap. The difference is only 10 percent at 3.4 mm. The gamma beam is bigger than the X-ray bath.
-However, the collimator is positioned 180 mm away from the converter target. It is 100 mm long and has an inner diameter of 2 mm. This permits a free field of view of 1 mm / 0.28 m = 3.57 mrad half angle. The effective field of view is slightly larger with some radiation penetrating the last mm's of the collimator walls. This is just about or a bit smaller than the average divergence using the collimator. The tungsten targets have a larger divergence and will produce noise which will outweigh the additional yield. This is all without taking into consideration pointing.
+Electron regime intermediate (low density but backing pressure had to be increased due to leak). Higher energy is more preferable than a bit more charge and higher initial divergence.
 
-We want a low divergence bright gamma flash (high yield) to stimulate reactions but also to reduce the noise. In particular dangerous noise are particles produced close to the axis. A too divergent gamma ray beam could produce these pairs that resemble a real signal.
+In theory, even thinner target and higher Z would be favourable (as long as all electrons are converted) but Bi is the last non-radioactive material.
 
-The TimePix results show the level of noise measured for the different converters. It shows that, despite having a similar yield as 1 mm bismuth, the noise levels are much higher.
-
-Hence, 1 mm bismuth appears to be the best choice in this case combining low divergence, high yield and low noise.
-
-
-\subsubsection{The electron regime (plasma density) was also right in terms of yield and divergence.}
-We tested the converter targets for two different electron regimes (70 mbar and 90 mbar backing pressure), where the higher densities were more divergent.
-We operated at the lower regime, later on at an intermediate backing pressure but related to an increase in leak.
 
 
 
