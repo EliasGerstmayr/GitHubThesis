@@ -55,7 +55,7 @@ The South laser is focused down by a $6\,\mathrm{m}$ focal length f/40 OAP onto 
 The laser drives a wakefield and accelerates electrons, injected predominantly via ionisation injection REF HERE, to relativistic energies. The remaining laser exiting the cell is disposed of by a replenishable kapton tape that acts as a plasma mirror (REF).
 \vspace{\baselineskip}
 
-The electrons are dispersed vertically by a permanent dipole magnet of integrated field strength $\int B dx = 0.4\,\mathrm{Tm}$ onto a scintillating LANEX screen measuring their energy and charge. The yoke of the magnet is blocking the dispersed path of lower energy electrons and as a result the outgoing spectrum has a low energy cutoff at about $300\,\mathrm{MeV}$. The screen is imaged by an Andor Neo camera equipped with a TV lens and a bandpass filter around $546 \pm 10\,\mathrm{nm}$ XX IS THIS CORRECT?. A motorised stage with high-Z foils of various thicknesses can be driven into the path of the electrons and act as bremsstrahlung converter foils. This interaction produces copious amounts of directed bremsstrahlung in propagation direction and stops most of the electrons in the process. Since divergent gamma rays are likely to collide with components and apertures producing particles near axis with comparable properties as the BW pairs, a tungsten collimator of length $100 mm$, inner diameter $2\,\mathrm{mm}$ and outer diameter $20 mm$ is employed to reduce the emitted gamma-ray burst to its central part at low divergence. The exit of the collimator is placed at 280 mm distance from the converter target and hence apertures the beam down to a field of view of $2\,\mathrm{mm}/0.28\,\mathrm{m} = 7.14\,\mathrm{mrad}$. In addition, a thick block of tungsten obstructs the direct line of sight from the converter target to the Ge target drive. Only a collimated bright burst of gamma-rays from bremsstrahlung is incident on the interaction point, providing the second component for the two-photon interaction.
+The electrons are dispersed vertically by a permanent dipole magnet of integrated field strength $\int B dx = 0.4\,\mathrm{Tm}$ onto a scintillating LANEX screen measuring their energy and charge. The yoke of the magnet is blocking the dispersed path of lower energy electrons and as a result the outgoing spectrum has a low energy cutoff at about $300\,\mathrm{MeV}$. The screen is imaged by an Andor Neo camera equipped with a TV lens and a bandpass filter around $546 \pm 10\,\mathrm{nm}$ XX IS THIS CORRECT?. A motorised stage with high-Z foils of various thicknesses can be driven into the path of the electrons and act as bremsstrahlung converter foils. This interaction produces copious amounts of directed bremsstrahlung in propagation direction and stops most of the electrons in the process. Since divergent gamma rays are likely to collide with components and apertures producing particles near axis with comparable properties as the BW pairs, a tungsten collimator of length $100\,\mathrm{mm}$, inner diameter $2\,\mathrm{mm}$ and outer diameter $20\,\mathrm{mm}$ is employed to reduce the emitted gamma-ray burst to its central part at low divergence. The exit of the collimator is placed at 280 mm distance from the converter target and hence apertures the beam down to a field of view of $2\,\mathrm{mm}/0.28\,\mathrm{m} = 7.14\,\mathrm{mrad}$. In addition, a thick block of tungsten obstructs the direct line of sight from the converter target to the Ge target drive. Only a collimated bright burst of gamma-rays from bremsstrahlung is incident on the interaction point, providing the second component for the two-photon interaction.
 \vspace{\baselineskip}
 
 \begin{figure}
@@ -74,7 +74,7 @@ Both CsI arrays are imaged by sensitive Andor iXon cameras equipped with suitabl
 
 \subsubsection{Chicane and Single Particle Detectors}
 
-Potential electron-positron pairs from the photon-photon interaction are emitted preferably in the propagation direction of the gamma-ray burst. The pairs enter the field of a large aperture permanent dipole magnet of XX FIELD STRENGTH NUMBER that disperses the electrons and positrons horizontally in opposite directions, leaving the vacuum through the the other two kapton apertures at the end of the target chamber. The aperture of the magnet produces a low energy cutoff at about 220 MeV CHECK NUMBER ESPECIALLY BECAUSE OF WINDOW which is a slightly larger acceptance range than the vacuum window would provide. The dispersed electrons and positrons are then caught by an oppositely polarised permanent magnet of FIELD STRENGTH XX NUMBER on each side that bends the electrons or positrons respectively onto a narrow aperture in a lead-shielded enclosure and onto a set of single-particle detectors. The single-particle detectors are CsI arrays attached to sensitive CCD cameras. In addition, there are two TimePix silicon detectors in front of the CsI array on the positron side.
+Potential electron-positron pairs from the photon-photon interaction are emitted preferably in the propagation direction of the gamma-ray burst. The pairs enter the field of a large aperture permanent dipole magnet of XX FIELD STRENGTH NUMBER that disperses the electrons and positrons horizontally in opposite directions, leaving the vacuum through the the other two kapton apertures at the end of the target chamber. The aperture of the magnet produces a low energy cutoff at about 220 MeV CHECK NUMBER ESPECIALLY BECAUSE OF WINDOW AND UPPER CUTOFF which is a slightly larger acceptance range than the vacuum window would provide. The dispersed electrons and positrons are then caught by an oppositely polarised permanent magnet of FIELD STRENGTH XX NUMBER on each side that bends the electrons or positrons respectively onto a narrow aperture in a lead-shielded enclosure and onto a set of single-particle detectors. The single-particle detectors are CsI arrays attached to sensitive CCD cameras. In addition, there are two TimePix silicon detectors in front of the CsI array on the positron side.
 
 \EliasComm{Will there be a comment on the potential RSI here? This will depend on the status and progress of this work.}
 
@@ -160,6 +160,13 @@ We will use the measured FWHM values and model the intensity profile after a Gau
 Bismuth 0.5 mm has a lower divergence and most of its energy makes it through in terms of fraction based on the initial input, followed by 1 mm bismuth. If weighed by the total flux of photons related to that converter the higher yield of the thicker bismuth target increases the flux. The 2 mm W target provides a similar throughput (in absolute numbers) as the thin bismuth target, the thicker W target reaches close to similar levels as 1 mm bismuth but not fully.
 
 From this perspective 1 mm bismuth appears to be the right candidate.
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{2018QED_GProfile_CollimatorIN_example.png}\includegraphics[width=.5\columnwidth]{2018QED_GProfile_CollimatorOUT_example.png}
+\caption{Examples of gamma profile with converter in and out for divergence field of view.}
+\end{figure}
+
 
 \EliasComm{Add a bar chart on pure yield and throughput.}
 
@@ -271,7 +278,7 @@ Looking at the key quantities:
 \begin{table}
 \centering
 \begin{tabular}{r|r|r|r|r|r|r}
-Date & Run & Charge [pC] & Max Energy [MeV] & Divergence [mrad] & Pointing [mrad] & Nshots\\ \hline \hline
+Date & Run & Charge [pC] & $E_{max}$ [MeV] & $\theta$ [mrad] & $\Delta_{centroid}$ [mrad] & $N_{shots}$\\ \hline \hline
 %5 & 2 & $20 \pm 10.8$ & $599 \pm 57$ & $3.14 \pm 0.75$ & 1.25 & 32\\ \hline
 6 & 1 & $26.26 \pm 3.8$ & $709 \pm 46$ & $2.26 \pm 0.29$ & 0.62 & 10\\ \hline
 9 & 1 & $14.73 \pm 5.5$ & $565 \pm 43$ & $2.5 \pm 0.72$ & 0.93 & 18\\ 
@@ -362,8 +369,8 @@ Stability of gamma flux?
 
 \begin{figure}
 \centering
-\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs_examples.png}\includegraphics[width=.5\columnwidth]{2018QED_GammaSpec_simspec.png}
-\caption{Left: Representative extreme examples of electron spectra from one day. Right: Resulting gamma spectrum based on GEANT simulations. Maybe show an average with shaded error bars instead.}
+\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs_examples2.png}\includegraphics[width=.5\columnwidth]{2018QED_GammaSpec_simspec2.png}
+\caption{Left: Representative extreme examples of electron spectra from one day. Right: Resulting gamma spectrum based on GEANT simulations. Maybe show an average with shaded error bars instead. Add a third electron spectrum and gamma result for the other extreme.}
 \end{figure}
 
 Add the differences from day to day somewhere as well as comparison.
@@ -377,6 +384,7 @@ Add the differences from day to day somewhere as well as comparison.
 \caption{Left: Lineouts for most electron spectra. Right: Simulated detector responses. BLeft: Experimental responses. BRight: Comparison average responses.}
 \end{figure}
 
+
 What is the statistical variation of the signal on each day. Use the electron spectra to put a number onto this.
 Use plot of relative and absolute number of photons above a threshold. Sum them up and also sum up number times energy as indicator for high energy photons.
 
@@ -387,7 +395,9 @@ Provide some plots from the GEANT simulation (visualisation).
 \begin{figure}
 \centering
 \includegraphics[trim={7.5cm 0 6.5cm 0}, clip, width=1.0\columnwidth]{2018QED_GSpec_Variations.png}
-\caption{Variations of gamma signal (based on GEANT simulations).}
+
+\includegraphics[width = 0.9\columnwidth]{2018QED_GEANT_AvGSpec.png}
+\caption{Variations of gamma signal (based on GEANT simulations). Average gamma spectrum (not scaled by yield). Make this one 4 plot panel.}
 \end{figure}
 
 
@@ -414,18 +424,24 @@ Using the new spectra with photons only up to a certain energy.
 Put a plot average fraction of photons above an energy on a plot.
 \vspace{\baselineskip}
 
+
 \begin{figure}
 \centering
-\includegraphics[width=.5\columnwidth]{BWxsection.png}\includegraphics[width=.5\columnwidth]{BWxsection_2D.png}
-\includegraphics[width=.9\columnwidth]{BW_Xsec_NxNg.png}
+\includegraphics[width=.5\columnwidth]{BWxsection2.png}\includegraphics[width=.5\columnwidth]{BWxsection_2D.png}
 \caption{BW cross section at a fixed and variable X-ray photon energy.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=.9\columnwidth]{BW_Xsec_NxNg.png}
+\caption{BW cross section for experimental gamma and X-ray spectra with photon numbers.}
 \end{figure}
 
 
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{2018QED_Xsec_VariationAvDay.png}\includegraphics[width=.5\columnwidth]{2018QED_Xsec_VariationMorton.png}
-\caption{Day to day fluctuation of relative total cross section: Left using the measured X-ray spectra (average per day) with limited energy window. Right: using Morton simulations over a larger energy window.}
+\caption{Day to day fluctuation of relative total cross section: Left using the measured X-ray spectra (average per day) with limited energy window. Right: using Morton simulations over a larger energy window. Add data points for different relative photon-photon angle.}
 \end{figure}
 
 The part about the additional photons on the 6th should be discussed here as well.
@@ -442,6 +458,10 @@ The key question is how the X-ray spectrum evolves around the right energies and
 
 Multiply the curve for 1.5 keV with the gamma spectra to get the total cross section. Then multiply this with the respective average charge to get an estimate how much more likely it would be to see a positron.
 
+\begin{equation}
+N_{BW, day}|_{theta} \sim \int N_{ph, X} (E_{X}) N_{ph, \gamma} (E_{\gamma}) \sigma_{BW} (E_{X}, E_{\gamma}, \theta) \mathrm{d}E_{\gamma}\mathrm{d}E_{X}
+\end{equation}
+
 This approach is just a simple calculation to demonstrate the difference we expect.
 Of course one also has to fold in the X-ray spectrum over a wider energy range along with other factors like higher noise levels due to the increased charge and so on.
 
@@ -451,6 +471,9 @@ According to an Evernote note (X-ray diagnostics survey by BK I assume) the angl
 The closer to angle is to head-on collision to more the peak of the cross-section shifts towards lower gamma energies. 
 If the X-ray spectrum is mainly centred around 1.5 keV the additional 800 MeV does not have an impact.
 If the full X-ray spectrum (for instance Morton simulations) are included then a large pool of X-rays are available at lower energies to be paired up with the high energy photons of 600-800 MeV.
+
+
+Maybe a comment about designing your experiment such that parts of the X-ray spectrum we can not measure are being blocked by material such that the gamma components we can not resolve are not impacting on the cross section. The angle is also a handle on equalising the cross section across the window of gamma energies such that few high energy photons still access the same pool of photons and the cross section is low.
 
 \section{Future Outlook: A gamma spectrometer to discriminate high energy photons}
 
