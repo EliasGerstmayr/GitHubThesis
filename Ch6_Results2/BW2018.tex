@@ -176,42 +176,50 @@ Based on these results 1 mm bismuth appears to be the best suited candidate for 
 When inserting the W collimator and thick block to reduce the noise levels, the number of gamma rays that make it to the detectors is decreased significantly. This makes it more difficult to characterise how the noise at the single particle detectors (SPDs) scales as the range is limited.
 
 Using the same setup we are now looking at noise events reaching the SPDs, in this case only one of the TimePix detectors, and how it correlates with divergence and yield. Our hypothesis is that a more divergent gamma ray beam will interact with more components and apertures in the beam path, generating radiation and particles that are closely related to the BW signal and will because of this resemblance be detected by the SPDs.
+Method and numbers provided by B. Kettle looking at the TimePix and finding events that look like particles, will be called clusters.
 \vspace{\baselineskip}
 
-Figure XX shows a plot of the total counts on the gamma detector (yield) agains the number of registered particle events or `clusters' on the TimePix detector.
+Figure \ref{BW:figs:converter_noise_div_yield} shows a plot of the total counts on the gamma detector (yield) against the number of registered particle events or `clusters' on the TimePix detector, and how the divergence is related to those noise events.
 
-The TimePix results show the level of noise measured for the different converters. It shows that, despite having a similar yield as 1 mm bismuth, the noise levels are much higher. 
-The yield is correlated with noise and so is the divergence. More photons produce more noise and more divergent beams interact with more matter and apertures, producing more noise.
+Linear trend of yield and noise on TimePix.
 
-On that scale 1 mm bismuth combines lower noise levels with high yields. Only 0.5 mm bismuth performs better in terms of signal to noise but at cost of lower yields. Assuming that the introduction of the collimator will get rid of most divergence related noise 1 mm bismuth is a better choice as it preserves high flux.
+W data points lie on one straight line. Bi events are parallel or lower gradient, in general less noise for comparable yields.
 
-\EliasComm{Introduce TimePix and what the numbers mean.}
+For each material a thicker target results in more divergence. More divergence results in more noise.
+
+Looking at yield over the number of clusters, the bismuth targets perform the best when looking at fraction of flux transmitted through the collimator.
+A thinner target produces less noise and bismuth provides a decent yield.
+
+When scaling the y-axis to the absolute flux transmitted we see again that 1 mm bismuth performs similarly well as 4 mm of tungsten in terms of transmitted flux. However, we see that the ratio of yield to noise is better for bismuth due to the lower divergence.
+
+The collimator will cut out the more divergent parts of the beam, so the noise levels will be comparable but this comes for free on top of the best transmission. 
+
+
 \EliasComm{Need appropriate legend for all data points or combine them.}
 \EliasComm{Fit some lines to support the linear trends?}
 
 \begin{figure}
 \centering
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.5\columnwidth]{2018QED_Converter_YieldvNoise.png}\includegraphics[trim={5cm 0 5cm 0}, clip, width=.5\columnwidth]{2018QED_Converter_DivvNoise.png}
-\caption{Left: Gamma Spec yield. Right: Noise on TimePix.}
+\caption{Left: Gamma Spec yield against particle-like cluster events on the TimePix detector. Right: Divergence of the gamma ray beam against noise events on the TimePix detector..}
+\label{BW:figs:converter_noise_div_yield}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.5\columnwidth]{2018QED_SignalNoise_Transmission.png}\includegraphics[trim={5cm 0 5cm 0}, clip, width=.5\columnwidth]{2018QED_SignalNoise_AbsTransmission.png}
-\caption{Left: Gamma Spec yield. Right: Noise on TimePix.}
+\caption{Left: yield over noise against estimated fraction of transmitted flux through the collimator aperture. Right: Yield over noise against estimated throughout of flux through the collimator.}
 \end{figure}
 
 
 \subsubsection{Summary and Decision on Material}
 
 Best flux throughput for 1 mm bismuth. Noise is also lower although the levels will change for collimator and W block conditions.
-1 mm bismuth also takes care of all electrons and potentially reduces noise from inside the collimator (dispersed remaining electrons).
+1 mm bismuth also removes all electrons and potentially reduces noise from inside the collimator (dispersed remaining electrons).
 
 Electron regime intermediate (low density but backing pressure had to be increased due to leak). Higher energy is more preferable than a bit more charge and higher initial divergence.
 
-In theory, even thinner target and higher Z would be favourable (as long as all electrons are converted) but Bi is the last non-radioactive material.
-
-
+In theory, even thinner target and higher Z would be favourable (as long as all electrons are converted) but Bi is the readily available material on the periodic table.
 
 
 \section{Characterisation of Electron Spectra for BW shot days}
