@@ -80,7 +80,7 @@ Potential electron-positron pairs from the photon-photon interaction are emitted
 
 
 
-\section{Bremsstrahlung Converter Targets}
+\section{Characterisation of Bremsstrahlung Converter Targets}
 
 
 The gamma signal depends strongly on the properties of the electron beam in terms of energy, brightness, divergence and pulse duration.
@@ -197,6 +197,7 @@ The collimator will cut out the more divergent parts of the beam, so the noise l
 
 \EliasComm{Need appropriate legend for all data points or combine them.}
 \EliasComm{Fit some lines to support the linear trends?}
+\EliasComm{Add a plot to show before collimator and after for noise to show it works but that it also reduces the signal significantly (of expected order of magnitude?)}
 
 \begin{figure}
 \centering
@@ -232,7 +233,7 @@ Whenever bremsstrahlung is produced from a converter target, the spectrum of the
 Hence, the electron spectra are characterised without the converter target before and after full BW data runs instead. The gamma signal, on the other hand, is measured during the BW data runs.
 \vspace{\baselineskip}
 
-The relevant shot days were the 6th, 9th and 10th May, hence the analysis of the electron spectra will focus particularly on these days.
+The relevant shot days were the 6th, 9th and 10th May, hence the analysis of the electron spectra and their characterisation will focus particularly on these days.
 
 \begin{figure}
 \centering
@@ -258,15 +259,24 @@ An overview of these quantities describing the accelerator performance for the r
 \vspace{\baselineskip}
 
 In general, 
+
 ... large energy spread as typical for ionisation injection at Gemini, no quasi-mono
+
 ... lower energy than typically (related to energy on-target)
+
 ... performance comparable 9th and 10th with plateau up to 550 MeV or so
+
 ... on the 6th the signal extends to 700 MeV and quite stable.
 
+
 Looking at the key quantities:
+
 ... charge was higher on the 6th at XX 25 pC pm.
+
 ... energy as mentioned
+
 ... divergence similar levels but more stable over the dataset and at the lower end
+
 ... similar properties for the pointing
 
 
@@ -307,7 +317,7 @@ Date & Run & Charge [pC] & $E_{max}$ [MeV] & $\theta$ [mrad] & $\Delta_{centroid
 
 
 
-\section{Spectral Analysis of the Gamma Signal}
+\section{Characterisation of the Gamma Signal}
 
 \subsubsection{General bits on the diagnostic, signal extraction and characterisation}
 \EliasComm{Add some raw data and examples from analysis.}
@@ -331,16 +341,25 @@ Signal extraction. Show an example.
 Selecting the crystals and get a pixelated response.
 \vspace{\baselineskip}
 
+\subsubsection{Yield of gamma spectrometer and profile}
 
-\subsubsection{Detector response in experiment, shot to shot and day by day}
+Show yield and variations of this per day.
 
-Seeing not really much change in experimental response.
-Give a number on critical energy. Any idea of brightness (absolute number?).
-The curves are fairly similar. Might see an overall change in the spectrum but everything within a crystal. Check if there is a difference between the days.
-Absolute calibrations for gamma profile is possible but might be harder for gamma spectrometer due to the components in between.
-\vspace{\baselineskip}
+Show correlation of gamma profile and spectrometer yield, meaning we can use either as indicator for yield.
 
-The response is not sensitive to such highly energetic radiation or the number of photons is much lower and hence the response is based on that.
+Look at yield with and without block (is the correlation to the electron charge more pronounced?).
+
+
+\subsubsection{Detector response in experiment}
+
+Look at the detector response in general (without corrections)
+
+Get a better background subtraction done to avoid a fluctuation low signal tail.
+
+Maybe make a plot of average spectra. Do they have a slight change in peak?
+
+It seems that despite the change in spectra, the response is not changing as much.
+
 This means the detector is not suitable to discriminate a spectrum to such detail and also is not suitable to deduce a gamma spectrum independent of assuming its shape. Luckily bremsstrahlung is well understood. It is essential to have many reference electron shots. Also a lesson for the future to take data in between.
 \vspace{\baselineskip}
 
@@ -362,11 +381,9 @@ This is not useful to distinguish energies.
 
 
 
-\subsubsection{General critical energy fitting}
-
-\subsubsection{Comparison yield per day with and without blocks}
-
 \subsubsection{Simulated spectra from Electrons and variation in resulting gamma spectra}
+
+
 
 \subsubsection{Characterisation of fluctuations and lack of change in response}
 
@@ -414,12 +431,11 @@ Provide some plots from the GEANT simulation (visualisation).
 \end{figure}
 
 
-\section{Performance and Stability of the Bremsstrahlung Source}
+\subsubsection{General critical energy fitting for the spectra}
 
-This part is about the spectra on the BW data days.
-\vspace{\baselineskip}
+Using the results from the correction curve, now try to use a fitting routine based on brems spectra to give some kind of critical energy for the spectra.
 
-
+See whether there is a change in energy over the days. Based on the qualitative measurements the fitting parameter should only change marginally over the days.
 
 \section{Impact of Spectral Fluctuations on the total BW cross section}
 
@@ -513,7 +529,7 @@ The problem is that in some scenarios the number of photons at higher energies i
 Show that the problem is the following:
 above 10's of MeV the cross section for pair production increases and is relatively flat over long time. What happens is that gammas convert into electrons which convert into gammas in showers and so on. In most cases a high number of low few MeV gamma rays is present and the main indicator for the initial energy is how many times these showers continue to proceed and where they deposit energy.
 
-\subsubsection{Based on problem present ideas to make the detector more sensitive along with GEANT simulations.}
+\subsubsection{Based on problem present ideas to make the detector more sensitive along with GEANT simulations or other alternatives.}
 
 The approach to check how we can distinguish things beyond the peak of the main number of photons is using GEANT and checking the input gamma, electrons and positrons and see how the distribution evolves going through the profile stack and the gamma spectrometer.
 Based on this decide on a tactic to have a third part (in addition to profile, critical energy measurement) which allows separately to look at just very high energies and see for a selected energy band if the flux changes. This could be adjusted and optimised for certain energies.
@@ -545,4 +561,8 @@ Stability and robustness of gamma/X-ray source to a certain degree.
 \vspace{\baselineskip}
 
 Limits of gamma spectrometer design and potential improvements.
-An improved detector design presented in this chapter.
+An improved detector design presented in this chapter or alternatively show:
+- that electrons from LWFA are not as stable in every scenario
+- but it can be mitigated by using bremsstrahlung which varies only a bit depending on the spectral shape
+- that it is very hard to measure small fluctuations in high energy radiation at the scale of 100s of MeV
+- but that choosing the right collision geometry this effect can also be mitigated or by allowing only a small window of energies for the X-ray spectrum
