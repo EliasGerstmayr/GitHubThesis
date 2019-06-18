@@ -1,9 +1,10 @@
 \chapter{First Measurements of Radiation Reaction at Astra Gemini}
 
 
+\EliasComm{This section is quite old and should be mostly replaced by the Overleaf document I prepared for the RAL report. Most of the numbers are in there as well, in particular on the electron statistics as well as up-to-date drawings.}
 
 
-In the following section the author describes the experimental setup and some of the key findings of an experimental campaign performed at the Astra Gemini laser system at the Central Laser Facility (CLF) in late 2015. In this experiment a highly relativistic electron bunch, accelerated through laser wakefield acceleration (LWFA), was collided with an intense laser pulse. This consists the first published measurement of radiation reaction in an LWFA setup (REF PRX Cole).
+In the following section the author describes the experiment setup and some of the key findings of an experimental campaign performed at the Astra Gemini laser system at the Central Laser Facility (CLF) in late 2015. In this experiment a highly relativistic electron bunch, accelerated through laser wakefield acceleration (LWFA), was collided with an intense laser pulse. This consists the first published measurement of radiation reaction in an LWFA setup (REF PRX Cole).
 \vspace{\baselineskip}
 
 After a brief introduction to place this work into context, the author will describe the experiment setup, then characterise the electron spectrum and the signal on the gamma-ray detector for the shots without the scattering beam (`beam off'). These act as references for the colliding beam shots. Then these references will be compared to the shots with colliding beam shots and a clear deviation from those and an agreement with radiation reaction models is shown.
@@ -14,14 +15,14 @@ Finally, the author compares these results with another measurement of radiation
 \vspace{\baselineskip}
 The work presented within this chapter represent excerpts of analysis work done by the author, mainly related to process the data into a format which facilitates further analysis including the subtraction of background, correcting images for relative tilts in the optical systems used in experiment, scanning through data sets, identifying promising cases and categorising them by assigning characteristic quantities to them.
 
-Other parts of the analysis, in particular the retrieval of the gamma spectrum of the inverse Compton signal, were performed by Jason Cole (Imperial College London) and Keegan Behm (University of Michigan). Their contributions will be acknowledged and indicated as such at the relevant parts of this chapter.
+Other parts of the analysis, in particular the retrieval of the gamma spectrum of the inverse Compton signal, were performed by Jason Cole and will be indicated as such in the course of this chapter.
 
 \section{Motivation}
 
 Colliding-pulse experiments using LWFA have been successfully performed by different groups over the past years, gradually improving the control over the process and increasing the energies of the electrons and the radiation generated \cite{TaPhuoc2012a,Chen2013a,Khrennikov2015,Powers2014,Sarri2014}.
 An indicator for the progress of these experiments, in terms of laser intensity and electron energy at the point of interaction, is the X-ray or gamma-ray spectrum produced through relativistic inverse Compton scattering (ICS) (REF). In the case of ICS, the scattered photons are Doppler-shifted and re-emitted at a higher energy depending on the electron energy and the intensity of the laser field (see Theory REF for further details). Higher electron energies result in a stronger shift of the radiation, leading to a hardening of the spectrum and a corresponding energy loss of the electrons (REF). A more intense laser field enables non-linear interactions and increases the number of photons interacting with the electrons (REF). The energy of the radiation is maximised in a head-on collision due to the Lorenz boost.
 \EliasComm{add references but also talk about harmonics...}
-\EliasComm{somewhere mention the efforts of the community to collide an accelerator beam and the success of the SLAC experiment. What is the difference here? They predominantly had linear ICS.}
+\EliasComm{somewhere mention the efforts of the community to collide an accelerator beam and the success of the SLAC experiment. What is the difference here?}
 \vspace{\baselineskip}
 
 In earlier experiments, a single laser pulse was used to accelerate electrons to relativistic energies and to scatter the electrons after reflecting the beam from a plasma mirror (e.g. tape \cite{TaPhuoc2012a}). In such a setup the laser beam and the electrons are timed intrinsically. A close to normal overdense plasma surface will then be able to overlap the laser beam and the electron bunch spatially. In \cite{TaPhuoc2012a} electrons of an energy around $100\,\mathrm{MeV}$ were collided at a laser intensity of $a_0 \approx 1.2$. The radiation measured was broadband and reached up to $100\mathrm{s}\,\mathrm{keV}$. A lower energy spread and tunability was demonstrated at slightly lower electron energies and laser intensities in \cite{Powers2014} and\cite{Khrennikov2015}.
@@ -63,40 +64,46 @@ The experiment described in the following was performed at the dual $300\,\mathr
 \end{figure}
 \EliasComm{add labels to the sketch.}
 
-The first part of the experiment is typical a LWFA setup. The laser beam is focused by an f/40 spherical mirror with focal length 6 m onto the leading edge of a 15 mm conical supersonic helium gas jet target. Electrons are accelerated via laser wakefield acceleration (LWFA) and propagate further downstream where they are dispersed by a permanent dipole magnet of integrated field strength $\int B \mathrm{d}x = 0.4\,\mathrm{Tm}$ onto a scintillating LANEX screen to measure their spectrum. The screen is imaged by an Andor Neo camera. The typical \textsc{fwhm} focal spot size of the driving laser pulse was $37 \times 49 \,\mathrm{\mu m}$ with an energy on target of around $(8.6 \pm 0.6)\,\mathrm{J}$, which corresponds to $a_0 = 1.9 \pm 0.1$. The electron density of the target was around $(3.7 \pm 0.4) \times 10^{18} \,\mathrm{cm}^{-3}$. PULSE DURATION, PEAK POWER XX NUMBER.
+The first part of the experiment is typical a LWFA setup. The laser beam is focused by an f/40 spherical mirror with focal length 6 m onto the leading edge of a 15 mm conical supersonic helium gas jet target. Electrons are accelerated via laser wakefield acceleration (LWFA) and propagate further downstream in the direction of the laser propagation. The typical \textsc{fwhm} focal spot size of the driving laser pulse was $37 \times 49 \,\mathrm{\mu m}$ with an energy on target of around $(8.6 \pm 0.6)\,\mathrm{J}$, which corresponds to $a_0 = 1.9 \pm 0.1$. The electron density of the target was around $(3.7 \pm 0.4) \times 10^{18} \,\mathrm{cm}^{-3}$.
 \vspace{\baselineskip}
 
-The second beam is focused down tightly onto the opposite edge of the gas jet using an f/2 off-axis parabola (OAP) to scatter from the electron bunch accelerated by the first laser, generating a bright burst of gamma rays from inverse Compton scattering (ICS). As this beam counter-propagates with the electron bunch, designed for a head-on collision, the focusing optic lies in the beam path of the first laser beam, the gamma rays and the electron trajectory. In order to enable their propagation, a hole, several $\mathrm{mm}$ XXX NUMBER in diameter, was added in the centre of the parabola used for the North beam. In addition, a plastic ring of XX NUMBER DIAMETER protecting the optics and the laser chain upstream from laser light scattered in an interaction with the plasma. The combined loss of reflective surface leads to a decrease in intensity of the beam of around $16\%$. The energy on target was typically $(10 \pm 0.6)\,\mathrm{J}$ focused into a spot of FWHM size of $2.4 \times 2.8\,\mathrm{\mu m}$, corresponding to peak $a_0 = 24.7 \pm 0.7$. PULSE DURATION PEAK POWER XX NUMBER
-
-The collimated cone of gamma rays propagates without perturbation through the hole of the f/2 OAP, the aperture of the dipole magnet and through a kapton vacuum window into air. There the gamma rays are incident onto a stack of $33 \times 47$ caesium-iodide (CsI) crystals, each $4.8\,\mathrm{mm} \times 4.8\,\mathrm{mm} \times 50\,\mathrm{mm}$, that is imaged by an Andor iXon camera and used to measure the spectrum of the high energy radiation. 
+The second beam is focused down tightly onto the opposite edge of the gas jet using an f/2 off-axis parabola to scatter from the bunch of electrons accelerated by the first laser, generating a bright burst of gamma rays from inverse Compton scattering (ICS). The energy on target was typically $(10 \pm 0.6)\,\mathrm{J}$ focused into a spot of FWHM size of $2.4 \times 2.8\,\mathrm{\mu m}$, corresponding to peak $a_0 = 24.7 \pm 0.7$. As this beam counter-propagates with the electron bunch, the focusing optic lies in the beam path of the first beam and the electron trajectory. In order to enable their propagation a hole, several $\mathrm{mm}$ in diameter, was added in the centre of the parabola used for the North beam. This leads to a decrease in intensity of the beam of around $16\%$.
 \vspace{\baselineskip}
 
-\EliasComm{Does the value for $a_0$ already include the energy loss due to the hole in the parabola?}
-
-
-\EliasComm{This will be moved to the comparison chapter: Gas cell targets have sometimes produced superior results from gas jets using the same laser system (Poder v Kneip, Osterhoff, \cite{Kuschel2018}) in terms of charge, shot-to-shot stability and maximum energy gain.
+Gas cell targets have sometimes produced superior results from gas jets using the same laser system (Poder v Kneip, Osterhoff, \cite{Kuschel2018}) in terms of charge, shot-to-shot stability and maximum energy gain.
 However, some of the most stable LWFA sources have been achieved using gas jet targets (Faure Nature 2006) and the open geometry allows for diagnostic access, colliding pulse experiments as well as a route to high repetition rate operation.
-The variety of gas targets and their performance makes it difficult to compare gas cells and jets in general with each other. Comparisons can in most cases only be done between individual specimens and conclusions drawn from such a comparison might only be valid in this limited context. }
+The variety of gas targets and their performance makes it difficult to compare gas cells and jets in general with each other. Comparisons can in most cases only be done between individual specimens and conclusions drawn from such a comparison might only be valid in this limited context. 
+
+\EliasComm{add pulse duration.}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{quantumness_contour_block8.png}
+\caption{`Quantumness parameter' $\eta$ \cite{Blackburn2014} for given laser intensity and electron energy in terms of the relativistic Lorentz factor $\gamma$. The contour lines show which parameters are required to reach a certain value of $\eta$. The green box indicates roughly which regimes are realistically within reach at the Astra Gemini laser.}
+\end{figure}
 
 
-
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.8\columnwidth]{quantumness_contour_block8.png}
-%\caption{`Quantumness parameter' $\eta$ \cite{Blackburn2014} for given laser intensity and electron energy in terms of the relativistic Lorentz factor $%\gamma$. The contour lines show which parameters are required to reach a certain value of $\eta$. The green box indicates roughly which regimes are realistically within reach at the Astra Gemini laser.}
-%\end{figure}
-
-
-The two laser beams were overlapped in space and in time using spatial interferometry: a knife-edge prism was used to reflect both counterpropagating laser beams by 90 degrees collinearly onto a CCD camera chip equipped with a x10 microscope objective. The different radii of curvature of the f/40 and f/2 beams results in the formation of interference fringes when the laser pulses overlap in both space and time. Once the fringes appeared, their visibility was optimised. The precision of the pulse overlap is around $\pm 30\,\mathrm{fs}$. Unfortunately, the overlapping the beams both in time and space at one point in time does not guarantee that they remain overlapped. Some studies by Oxford REF indicate that drifts exist in the system and the necessary precision of the alignment is only held for about half an hour.
+The two laser beams were overlapped in space in time by using spatial interferometry: a knife-edge prism was used to reflect both counterpropagating beams by 90 degrees collinearly onto a CCD camera chip equipped with a x10 microscope objective. The different radii of curvature of the f/40 and f/2 beams resulted in the formation of interference fringes when the laser pulses overlapped in time. Once the fringes appeared, their visibility was optimised. The precision of the pulse overlap is around $\pm 30\,\mathrm{fs}$. Unfortunately, the overlapping the beams both in time and space at one point in time does not guarantee that they remain overlapped. Some studies by Oxford REF indicate that drifts exist in the system and the necessary precision of the alignment is only held for about half an hour.
 \vspace{\baselineskip}
 
+The main diagnostics utilised in this experiment can be divided into two parts:
+\vspace{\baselineskip}
 
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=0.8\columnwidth]{scintillator.JPG}
-%\caption{Scintillator array used in experiment. The CsI crystals are encased in an aluminium casing approximately $220\,\mathrm{mm}$ deep and $150\,\mathrm{mm}$ high with crystals  and an array of in total. The scintillator was placed into the beam axis, the short side facing the beam enabling the radiation to travel as long as possible through the array. The holed side (diameter of holes around $5\,\mathrm{mm}$ each) was imaged using a scientific camera.}
-%\end{figure}
+Firstly, the particle diagnostics, in this case an electron energy spectrometer. In this experiment electrons were accelerated to relativistic energies. A permanent dipole magnet of field strength NUMBER dispersed the electrons according to their energy, where higher energetic electrons are deflected less than lower energetic ones (see Theory). A scintillating slanex creen in a certain distance from the magnet and tilted by $45$ degrees to the laser axis was used to detect the dispersed electrons, where again electrons closer to the laser axis are more energetic. The lanex screen was imaged from the top by a camera on the roof of the vacuum chamber.
+\vspace{\baselineskip}
 
+Secondly, the radiation or gamma-ray diagnostic: several meters NUMBER from the interaction point on laser axis an array of scintillator crystals (caesium iodide CsI, doped with thallium) was placed. Incoming photons would penetrate the stack whilst depositing energy in the crystals, in a characteristic distribution related to the spectrum. The photons emitted from the scintillator were then detected by another camera. A photograph of the crystal stack is provided in figure NUMBER REF.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\columnwidth]{scintillator.JPG}
+\caption{Scintillator array used in experiment. The CsI crystals are encased in an aluminium casing approximately $220\,\mathrm{mm}$ deep and $150\,\mathrm{mm}$ high with crystals each $4.8\,\mathrm{mm} \times 4.8\,\mathrm{mm} \times 50\,\mathrm{mm}$ and an array of $33 \times 47$ in total. The scintillator was placed into the beam axis, the short side facing the beam enabling the radiation to travel as long as possible through the array. The holed side (diameter of holes around $5\,\mathrm{mm}$ each) was imaged using a scientific camera.}
+\end{figure}
+
+\EliasComm{regarding the scintillator stack, add some dimensions to the figure.}
+\EliasComm{add some comment on timing being off.}
+
+\EliasComm{maybe talk here about some raw data.}
 
 \section{Characterisation of the Electron Spectrum}
 
@@ -308,9 +315,9 @@ The expected number of hits is $4 - 5$ (we saw 4 in the experiment)
 
 I calculate the beam size assuming the ebeam behaves like a gaussian beam
 so 
-$w_{ebeam} = ebeam_{waist} * \sqrt( 1 + (z_{ebeam}/(zR_{ebeam}) )^2)$
+$w_{ebeam} = ebeam_waist * \sqrt( 1 + (z_{ebeam}/(zR_{ebeam}) )^2)$
 and 
-$zR_{ebeam} = ebeam_{waist}/divergence_{ebeam}$
+$zR_ebeam = ebeam_waist/divergence_ebeam$
 
 \section{Indicators of radiation reaction in the electron spectrum}
 
