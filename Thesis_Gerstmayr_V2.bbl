@@ -10,11 +10,6 @@ Z.~Z. Latypov, S.~E. Kupriyanov, and N.~N. Tunitskii.
 \newblock {Ionizing Collisions of Electrons with Ions and Atoms}.
 \newblock {\em Sov. Phys. JETP}, 19(3), 1964.
 
-\bibitem{Perelomov1966}
-A.~M. Perelomov, V.~S. Popov, and M.V.~V. Terent'ev.
-\newblock {Ionization of atoms in an alternating electrical field}.
-\newblock {\em Sov. Phys. JETP}, 23(5):924, 1966.
-
 \bibitem{Reiss1970}
 Howard~R. Reiss.
 \newblock {Semiclassical electrodynamics of bound systems in intense fields}.
@@ -54,8 +49,10 @@ C~G~R Geddes, C~S Toth, J~{Van Tilborg}, E~Esarey, C~B Schroeder, D~Bruhwiler,
 \newblock {\em Nature}, 431(7008):538--541, 2004.
 
 \bibitem{Leemans2006}
-W.~P. Leemans, B.~Nagler, A.~J. Gonsalves, Cs. T{\'{o}}th, K.~Nakamura,
-  C.~G.R.~R. Geddes, E.~Esarey, C.~B. Schroeder, and S.~M. Hooker.
+C.~B. Schroeder, A.~J. Gonsalves, C.~G.R.~R. Geddes, B.~Nagler, S.~M. Hooker,
+  E.~Esarey, W.~P. Leemans, Cs. T{\'{o}}th, K.~Nakamura, B.~Nagler, A.~J.
+  Gonsalves, Cs. T{\'{o}}th, K.~Nakamura, C.~G.R.~R. Geddes, E.~Esarey, C.~B.
+  Schroeder, and S.~M. Hooker.
 \newblock {GeV electron beams from a centimetre-scale accelerator}.
 \newblock {\em Nature Physics}, 2(10):696--699, 2006.
 
@@ -73,20 +70,19 @@ Hyung~Taek Kim, Ki~Hong Pae, Hyuk~Jin Cha, I.~Jong Kim, Tae~Jun Yu, Jae~Hee
   dual-stage laser-wakefield accelerator pumped by petawatt laser pulses}.
 \newblock {\em Physical Review Letters}, 111(16):165002, 2013.
 
+\bibitem{Lu2006}
+W.~Lu, M.~Tzoufras, C.~Joshi, F.~S. Tsung, W.~B. Mori, J.~Vieira, R.~A.
+  Fonseca, and L.~O. Silva.
+\newblock {Generating multi-GeV electron bunches using single stage laser
+  wakefield acceleration in a 3D nonlinear regime}.
+\newblock {\em Physical Review Special Topics - Accelerators and Beams},
+  10(6):061301, 2007.
+
 \bibitem{Faure2006}
 J.~Faure, C.~Rechatin, A.~Norlin, A.~Lifschitz, Y.~Glinec, and V.~Malka.
 \newblock {Controlled injection and acceleration of electrons in plasma
   wakefields by colliding laser pulses.}
 \newblock {\em Nature}, 444(7120):737--739, dec 2006.
-
-\bibitem{Geddes2008}
-C~G~R Geddes, D~L Bruhwiler, J~R Cary, W~B Mori, J-L Vay, S~F Martins,
-  T~Katsouleas, E~Cormier-Michel, W~M Fawley, C~Huang, X~Wang, B~Cowan, V~K
-  Decyk, E~Esarey, R~a Fonseca, W~Lu, P~Messmer, P~Mullowney, K~Nakamura,
-  K~Paul, G~R Plateau, C~B Schroeder, L~O Silva, C~Toth, F~S Tsung, M~Tzoufras,
-  T~Antonsen, J~Vieira, and W~P Leemans.
-\newblock {Computational studies and optimization of wakefield accelerators}.
-\newblock {\em Journal of Physics: Conference Series}, 125:012002, 2008.
 
 \bibitem{Pak2010}
 A.~Pak, K.~A. Marsh, S.~F. Martins, W.~Lu, W.~B. Mori, and C.~Joshi.
@@ -95,8 +91,10 @@ A.~Pak, K.~A. Marsh, S.~F. Martins, W.~Lu, W.~B. Mori, and C.~Joshi.
 \newblock {\em Physical Review Letters}, 104(2):1--4, 2010.
 
 \bibitem{Buck2013}
-A.~Buck, J.~Wenz, J.~Xu, K.~Khrennikov, K.~Schmid, M.~Heigoldt, J.~M.
-  Mikhailova, M.~Geissler, B.~Shen, F.~Krausz, S.~Karsch, and L.~Veisz.
+S.~Karsch, J.~Xu, M.~Geissler, J.~Wenz, L.~Veisz, J.~M. Mikhailova, F.~Krausz,
+  A.~Buck, K.~Khrennikov, K.~Schmid, B.~Shen, M.~Heigoldt, J.~Wenz, J.~Xu,
+  K.~Khrennikov, K.~Schmid, M.~Heigoldt, J.~M. Mikhailova, M.~Geissler,
+  B.~Shen, F.~Krausz, S.~Karsch, and L.~Veisz.
 \newblock {Shock-Front Injector for High-Quality Laser-Plasma Acceleration}.
 \newblock {\em Physical Review Letters}, 110(18):185006, 2013.
 
@@ -106,14 +104,6 @@ B.~Hidding, G.~Pretzler, J.~B. Rosenzweig, T.~K{\"{o}}nigstein, D.~Schiller,
 \newblock {Ultracold electron bunch generation via plasma photocathode emission
   and acceleration in a beam-driven plasma blowout}.
 \newblock {\em Physical Review Letters}, 108(3):1--5, 2012.
-
-\bibitem{Lu2006}
-W.~Lu, M.~Tzoufras, C.~Joshi, F.~S. Tsung, W.~B. Mori, J.~Vieira, R.~A.
-  Fonseca, and L.~O. Silva.
-\newblock {Generating multi-GeV electron bunches using single stage laser
-  wakefield acceleration in a 3D nonlinear regime}.
-\newblock {\em Physical Review Special Topics - Accelerators and Beams},
-  10(6):061301, 2007.
 
 \bibitem{Mangles2009}
 S.~P.~D. Mangles, G.~Genoud, S.~Kneip, M.~Burza, K.~Cassou, B.~Cros, N.~P.
@@ -160,20 +150,21 @@ G.~Sarri, D.~J. Corvan, W.~Schumaker, J.M.~M. Cole, A.~{Di Piazza}, H.~Ahmed,
 \newblock {\em Physical Review Letters}, 113(22):224801, nov 2014.
 
 \bibitem{Seryi2015}
-A~Seryi.
-\newblock {\em {Unifying Physics of Accelerators, Lasers and Plasma}},
-  volume~69.
-\newblock 2015.
-
-\bibitem{Strickland1985}
-Donna Strickland and Gerard Mourou.
-\newblock {Compression of amplified chirped optical pulses}.
-\newblock {\em Optics Communications}, 55(6):447--449, oct 1985.
+Andrei Seryi.
+\newblock {\em {Unifying Physics of Accelerators, Lasers and PlasmaUnifying
+  Physics of Accelerators, Lasers and Plasma , Andrei Seryi, CRC Press, 2016.
+  {\$}89.95 (288 pp.). ISBN 978-1-4822-4058-0 Buy at Amazon}}, volume~69.
+\newblock 2016.
 
 \bibitem{Maiman1960}
 T.~H. Maiman.
 \newblock {Stimulated optical radiation in Ruby}.
 \newblock {\em Nature}, 187(4736):493--494, 1960.
+
+\bibitem{Strickland1985}
+Donna Strickland and Gerard Mourou.
+\newblock {Compression of amplified chirped optical pulses}.
+\newblock {\em Optics Communications}, 55(6):447--449, oct 1985.
 
 \bibitem{DiPiazza2012}
 A.~{Di Piazza}, C.~M{\"{u}}ller, K.~Z. Hatsagortsyan, C.~H. Keitel, C.~Muller,
@@ -190,7 +181,8 @@ S.~C. Wilks, A.~B. Langdon, T.~E. Cowan, M.~Roth, M.~Singh, S.~Hatchett, M.~H.
 \newblock {\em Physics of Plasmas}, 8(2):542--549, 2001.
 
 \bibitem{Maksimchuk2000}
-a~Maksimchuk, S~Gu, K~Flippo, D~Umstadter, Vy~Bychenkov, and A.~Yu Bychenkov.
+A~Maksimchuk, S~Gu, K~Flippo, D~Umstadter, Vy~Bychenkov, A.~Yu Bychenkov,
+  Vy~Bychenkov, and A.~Yu Bychenkov.
 \newblock {Forward ion acceleration in thin films driven by a high-intensity
   laser}.
 \newblock {\em Physical review letters}, 84(18):4108--11, 2000.
@@ -199,13 +191,6 @@ a~Maksimchuk, S~Gu, K~Flippo, D~Umstadter, Vy~Bychenkov, and A.~Yu Bychenkov.
 S.~Semushin and V.~Malka.
 \newblock {High density gas jet nozzle design for laser target production}.
 \newblock {\em Review of Scientific Instruments}, 72(7):2961--2965, 2001.
-
-\bibitem{Nakamura2007}
-K.~Nakamura, B.~Nagler, Ca~T{\'{o}}th, C.~G.R.~R Geddes, C.~B. Schroeder,
-  E.~Esarey, W.~P. Leemans, A.~J. Gonsalves, and S.~M. Hooker.
-\newblock {GeV electron beams from a centimeter-scale channel guided laser
-  wakefield accelerator}.
-\newblock In {\em Physics of Plasmas}, volume~14, pages 1--21, 2007.
 
 \bibitem{Hagena1972}
 O.~F. Hagena.
@@ -218,13 +203,13 @@ W. P.~P Leemans, A. J.~J Gonsalves, H-S H.-S. Mao, K.~Nakamura,
   C.~Benedetti, C. B.~B Schroeder, Cs. T{\'{o}}th, J.~Daniels, D. E.~E
   Mittelberger, S. S.~S Bulanov, J-L J.-L. Vay, C. G. R. G~R Geddes, and
   E.~Esarey.
-\newblock {Multi-GeV Electron Beams from Capillary-Discharge-Guided Subpetawatt
-  Laser Pulses in the Self-Trapping Regime}.
-\newblock {\em Physical Review Letters}, 113(24):245002, dec 2014.
+\newblock {Multi-GeV electron beams from capillary-discharge-guided subpetawatt
+  laser pulses in the self-trapping regime.}
+\newblock {\em Physical review letters}, 113(24):245002, dec 2014.
 
 \bibitem{Desforges2014}
 F.G.~G. Desforges, M.~Hansson, J.~Ju, L.~Senje, T.L.~L. Audet,
-  S.~Dobosz-Dufr{\'{e}}noy, a.~Persson, O.~Lundh, C.-G.~G. Wahlstr{\"{o}}m, and
+  S.~Dobosz-Dufr{\'{e}}noy, A.~Persson, O.~Lundh, C.-G.~G. Wahlstr{\"{o}}m, and
   B.~Cros.
 \newblock {Reproducibility of electron beams from laser wakefield acceleration
   in capillary tubes}.
@@ -251,15 +236,6 @@ S~W Jolly, Z~He, C~Mcguffey, W~Schumaker, K~Krushelnick, S~W Jolly, Z~He,
 Ronald Bracewell.
 \newblock {\em {The Fourier Transform and its Applications}}.
 \newblock McGraw-Hill, 1978.
-
-\bibitem{Pollock2011}
-B.~B. Pollock, C.~E. Clayton, J.~E. Ralph, F.~Albert, A.~Davidson, L.~Divol,
-  C.~Filip, S.~H. Glenzer, K.~Herpoldt, W.~Lu, K.~A. Marsh, J.~Meinecke, W.~B.
-  Mori, A.~Pak, T.~C. Rensink, J.~S. Ross, J.~Shaw, G.~R. Tynan, C.~Joshi, and
-  D.~H. Froula.
-\newblock {Demonstration of a narrow energy spread, {\~{}}0.5GeV electron beam
-  from a two-stage laser wakefield accelerator}.
-\newblock {\em Physical Review Letters}, 107(4):1--4, 2011.
 
 \bibitem{Osterhoff2008}
 J~Osterhoff, A~Popp, Zs~Major, B~Marx, T~P Rowlands-Rees, M~Fuchs, M~Geissler,
@@ -321,17 +297,48 @@ S.~Agostinelli, J.~Allison, K.~Amako, J.~Apostolakis, H.~Araujo, P.~Arce,
   Accelerators, Spectrometers, Detectors and Associated Equipment},
   506(3):250--303, 2003.
 
-\bibitem{Goorley2012}
-T.~Goorley, M.~James, T.~Booth, F.~Brown, J.~Bull, L.~J. Cox, J.~Durkee,
-  J.~Elson, M.~Fensin, R.~A. Forster, J.~Hendricks, H.~G. Hughes, R.~Johns,
-  B.~Kiedrowski, R.~Martz, S.~Mashnik, G.~McKinney, D.~Pelowitz, R.~Prael,
-  J.~Sweezy, L.~Waters, T.~Wilcox, and T.~Zukaitis.
-\newblock {Initial MCNP6 Release Overview}.
-\newblock {\em Nuclear Technology}, 180(3):298--315, 2012.
+\bibitem{Tsai2018}
+Hai-En~En Tsai, Kelly~K. Swanson, Sam~K. Barber, Remi Lehe, Hann-Shin~Shin Mao,
+  Daniel~E. Mittelberger, Sven Steinke, Kei Nakamura, Jeroen {Van Tilborg},
+  Carl Schroeder, Eric Esarey, Cameron G.R.~R. Geddes, Wim Leemans, and
+  Jeroen~Van Tilborg.
+\newblock {Control of quasi-monoenergetic electron beams from laser-plasma
+  accelerators with adjustable shock density profile}.
+\newblock {\em Physics of Plasmas}, 25(4):043107, apr 2018.
+
+\bibitem{Poder2018}
+K.~Poder, M.~Tamburini, G.~Sarri, A.~{Di Piazza}, S.~Kuschel, C.~D. Baird,
+  K.~Behm, S.~Bohlen, J.~M. Cole, D.~J. Corvan, M.~Duff, E.~Gerstmayr, C.~H.
+  Keitel, K.~Krushelnick, S.~P.D. Mangles, P.~McKenna, C.~D. Murphy,
+  Z.~Najmudin, C.~P. Ridgers, G.~M. Samarin, D.~R. Symes, A.~G.R. Thomas,
+  J.~Warwick, and M.~Zepf.
+\newblock {Experimental Signatures of the Quantum Nature of Radiation Reaction
+  in the Field of an Ultraintense Laser}.
+\newblock {\em Physical Review X}, 8(3):031004, jul 2018.
+
+\bibitem{Cole2018}
+Jason~M Cole, Daniel~R Symes, Nelson~C Lopes, Jonathan~C Wood, Kristjan Poder,
+  Saleh Alatabi, Stanley~W Botchway, Peta~S Foster, Sarah Gratton, Sara
+  Johnson, Christos Kamperidis, Olena Kononenko, Michael {De Lazzari},
+  Charlotte A~J Palmer, Dean Rusby, Jeremy Sanderson, Michael Sandholzer,
+  Gianluca Sarri, Zsombor Szoke-Kovacs, Lydia Teboul, James~M Thompson,
+  Jonathan~R Warwick, Henrik Westerberg, Mark~A Hill, Dominic~P Norris, Stuart
+  P~D Mangles, and Zulfikar Najmudin.
+\newblock {High-resolution $\mu$CT of a mouse embryo using a compact
+  laser-driven X-ray betatron source}.
+\newblock {\em Proceedings of the National Academy of Sciences}, page
+  201802314, jun 2018.
+
+\bibitem{Kuschel2018}
+S~Kuschel, M~B Schwab, M~Yeung, D~Hollatz, A~Seidel, W~Ziegler, A~S{\"{a}}vert,
+  M~C Kaluza, and M~Zepf.
+\newblock {Controlling the Self-Injection Threshold in Laser Wakefield
+  Accelerators}.
+\newblock {\em Physical Review Letters}, 121, 2018.
 
 \bibitem{Blackburn2014}
 T.~G. Blackburn, C.~P. Ridgers, J.~G. Kirk, and A.~R. Bell.
-\newblock {Quantum Radiation Reaction in Laser-Electron-Beam Collisions}.
-\newblock {\em Physical Review Letters}, 112(1):015001, jan 2014.
+\newblock {Quantum radiation reaction in laser-electron-beam collisions}.
+\newblock {\em Physical Review Letters}, 112(1):1--5, jan 2014.
 
 \end{thebibliography}

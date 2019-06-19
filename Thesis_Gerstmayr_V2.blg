@@ -4,61 +4,66 @@ The top-level auxiliary file: Thesis_Gerstmayr_V2.aux
 A level-1 auxiliary file: Ch1_Introduction/Introduction.aux
 A level-1 auxiliary file: Ch2_Theory/Theoretical_Background.aux
 A level-1 auxiliary file: Ch3_Methods/Experimental_Methods.aux
-A level-1 auxiliary file: Ch4_Results1/RR2015.aux
-A level-1 auxiliary file: Ch5_Results2/BW2018.aux
-A level-1 auxiliary file: Ch6_Results3/RR2019_linICS.aux
-A level-1 auxiliary file: Ch7_Results4/RR2019_betamax.aux
-A level-1 auxiliary file: Ch8_Conclusion/Conclusions.aux
-A level-1 auxiliary file: Ch9_Appendix/Appendix.aux
+A level-1 auxiliary file: Ch4_Simulations/GEANT.aux
+A level-1 auxiliary file: Ch8_Results4/RR2019_betamax.aux
+A level-1 auxiliary file: Ch7_Results3/RR2019_linICS.aux
+A level-1 auxiliary file: Ch5_Results1/RR2015.aux
+A level-1 auxiliary file: Ch6_Results2/BW2018.aux
+A level-1 auxiliary file: Ch9_Conclusion/Conclusions.aux
+A level-1 auxiliary file: Ch10_Appendix/Appendix.aux
 A level-1 auxiliary file: bu.aux
 The style file: unsrt.bst
-Database file #1: PhD_wakefield_2.bib
+Database file #1: PhD_wakefield_June19.bib
+Warning--I didn't find a database entry for "Perelomov1966"
+Warning--I didn't find a database entry for "Geddes2008"
+Warning--I didn't find a database entry for "Nakamura2007"
 Warning--I didn't find a database entry for "Spence2001"
 Warning--I didn't find a database entry for "Semushin2001a"
+Warning--I didn't find a database entry for "Pollock2011"
 Warning--I didn't find a database entry for "Rousse2004"
+Warning--I didn't find a database entry for "Goorley2012"
 Warning--can't use both volume and number fields in Seryi2015
 Warning--empty publisher in Seryi2015
-Warning--can't use both volume and number fields in Nakamura2007
 Warning--empty journal in Osterhoff2013
-You've used 46 entries,
+You've used 45 entries,
             1791 wiz_defined-function locations,
-            773 strings with 18401 characters,
-and the built_in function-call counts, 15402 in all, are:
-= -- 920
-> -- 1629
-< -- 3
-+ -- 561
-- -- 515
-* -- 1623
-:= -- 2851
-add.period$ -- 138
-call.type$ -- 46
-change.case$ -- 44
+            779 strings with 19190 characters,
+and the built_in function-call counts, 15347 in all, are:
+= -- 905
+> -- 1660
+< -- 2
++ -- 571
+- -- 526
+* -- 1618
+:= -- 2849
+add.period$ -- 135
+call.type$ -- 45
+change.case$ -- 43
 chr.to.int$ -- 0
-cite$ -- 50
-duplicate$ -- 417
-empty$ -- 1004
-format.name$ -- 515
-if$ -- 2998
+cite$ -- 48
+duplicate$ -- 418
+empty$ -- 968
+format.name$ -- 526
+if$ -- 2984
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 48
-newline$ -- 233
-num.names$ -- 46
-pop$ -- 66
+int.to.str$ -- 45
+missing$ -- 47
+newline$ -- 228
+num.names$ -- 45
+pop$ -- 65
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 151
+skip$ -- 167
 stack$ -- 0
-substring$ -- 773
-swap$ -- 55
-text.length$ -- 3
+substring$ -- 738
+swap$ -- 65
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 110
-width$ -- 48
-write$ -- 504
-(There were 7 warnings)
+warning$ -- 3
+while$ -- 104
+width$ -- 47
+write$ -- 492
+(There were 11 warnings)
