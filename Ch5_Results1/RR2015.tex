@@ -3,15 +3,26 @@
 \section{Motivation}
 
 \subsubsection{General merits of ICS}
-In relativistic inverse Compton scattering (ICS) one (linear) or multiple photons (non-linear) scatter from a relativistic electron. The scattered photons experience a relativistic Doppler-shift and are re-emitted in a narrow cone in the direction of the electron propagation carrying a higher energy based on the electron energy and the intensity of the laser field. The emitted photon energy, $E_{photon}'$, is maximised in a head-on collision: $E_{photon}' \sim 4 \gamma^2 E_{photon}$ (see Theory REF for further details). Higher electron energies result in a stronger shift of the radiation, leading to a hardening of the spectrum and an increase of the corresponding energy loss the electrons experience (REF). A more intense laser field ($a_0 > 1$) enables non-linear interactions and increases the number of photons interacting at once with an electron (REF), resulting in the generation of $\sim a^3_0$ higher harmonics but also redshifting and broadening of the spectrum. As a result the rapidly increasing number of higher harmonics blend together to form a broadband synchrotron-like spectrum.
+In relativistic inverse Compton scattering (ICS) one (linear) or multiple (non-linear) photons scatter from a relativistic electron. The scattered photons experience a relativistic Doppler-shift and are re-emitted in a narrow cone of divergence $\sim 1/\gamma$ in the direction of the electron propagation carrying a higher energy based on the electron energy and the intensity of the laser field. The emitted photon energy, $E_{ph}'$, is maximised in a head-on collision: $E_{ph}' \sim 4 \gamma^2 E_{ph}$ (see Theory REF for further details). Higher electron energies result in a stronger shift of the radiation, leading to a hardening of the spectrum and an increase of the corresponding energy loss the electrons experience (REF). A more intense laser field ($a_0 > 1$), on the other hand, enables non-linear interactions and increases the number of photons interacting at once with an electron (REF), resulting in the generation of $\sim a^3_0$ higher harmonics but also redshifting and broadening of the spectrum. As a result the rapidly increasing number of higher harmonics blend together to form a broadband synchrotron-like spectrum.
 
 This provides a promising route to generate bright burst of high energy radiation reaching 100's of keV or even MeV photon energy, suitable to image high-Z objects and stimulate nuclear transitions, even at small-scale facilities.
 In addition, the high photon energies offer the opportunity to measure the effect of radiation reaction, if the emitted photon carries an energy comparable to the energy of the electron.
+\vspace{\baselineskip}
 
+\subsubsection{Motivation Radiation Reaction}
+
+Radiation reaction is a fundamental problem. The self-field of the electron.
+
+Electrons emitting radiation is ubiquitous but still in most applications today the self-force does not reach significant levels and its impact on the equation of motion is negligible.
+
+Radiation reaction is important in extreme conditions as they can be found in astrophysical environments, quasars, jets of relativistic particles scattering from the microwave background and limiting the energy of particles, just as the gamma rays from ICS interact with the CMB to produce electron-positron pairs from BW.
+
+Synchrotrons today suffer from radiation losses but slowly over long periods. At future facilities, especially electrons, will suffer from so high energy losses that radiation reaction might also become a significant problem.
+
+\subsubsection{ICS using LWFA}
 Over the past years, groups linked to LWFA research have in particular investigated the merits of ICS as at these laser facilities a relativistic electron beam and an intense laser is conveniently housed together, and both are `intrinsically' timed to each other.
 \vspace{\baselineskip}
 
-\subsubsection{ICS using LWFA}
 Colliding-pulse or ICS experiments using LWFA have been successfully performed by different groups over the past years, gradually improving the control over the process, increasing the energies of the electrons and the laser intensities involved, and subsequently the radiation generated \cite{TaPhuoc2012a,Chen2013a,Khrennikov2015,Powers2014,Sarri2014}.
 The energy of the produced radiation is a good indicator for the continuing progress of these experiments. More specifically of interest for measuring radiation reaction is the quantum non-linearity parameter, $\eta = 2\gamma E_L/E_{crit}$, that indicates the strength of the electric field of the photon in the rest frame of the electron relative to the critical electric field of QED, $E_{crit}$.
 \vspace{\baselineskip}
@@ -86,7 +97,7 @@ A sketch of the experiment is shown in Figure \ref{RR15:figs:setup_sketch}.
 \centering
 \includegraphics[width=0.8\columnwidth]{Exp_setup_render_RR2.png}
 \caption{Conceptual sketch of the experiment setup rendered with Blender.
-Based on a sketch made by J. Cole (Imperial College) and adapted for this work and found similar in REF SPECTROMETER. 
+Based on a sketch made by J. Cole (Imperial College) and adapted for this work and for\cite{Behm2018}. 
 %From left to right: a high intensity laser beam (red) focused with a f40 spherical mirror generates up to $\mathrm{GeV}$-scale electrons in a gas jet (LWFA). A second laser beam (red) is focused down tightly at the edge of the gas jet by an f2 off-axis parabola to scatter the electron beam shortly after it leaves the jet. The electrons (blue) are being dispersed by a dipole magnet and detected on a scintillating lanex screen (grey). Finally, gamma rays (green) propagate through a vacuum kapton-window and a lead aperture onto a stack of scintillating CsI crystals that are imaged by a camera.
 }
 \label{RR15:figs:setup_sketch}
@@ -277,7 +288,7 @@ Base this on jitter data. Monte-Carlo simulations and define overlap threshold.
 Beam size of electrons similar to Gaussian beam?
 
 
-$w_{e} (z) = w_{e,0} * \sqrt{( 1 + (z_{e}/(z_{R,e}) )^2)}$\\
+$w_{e} (z) = w_{e,0} \sqrt{( 1 + (z_{e}/(z_{R,e}) )^2)}$\\
 and \\
 $z_{R,e} = w_{e,0}/\theta_{e}$
 
@@ -291,7 +302,7 @@ The spectral analysis of the gamma-ray signal was first performed by Jason Cole 
 
 In this process the scintillator response was modelled using the Monte-Carlo codes Geant4 \cite{Agostinelli2003} and MCNP \cite{Goorley2012} to retrieve the energy spectrum of the gamma radiation. The on-shot synchrotron-like spectrum and the shift of the cut-off edge in the electron spectrum were then combined to constrain the parameter space (normalised laser vector potential $a_0$ and electron energy) at the interaction, relying on a range of models.
 
-A paper on the design of the detector and the analysis of the spectrum has been published (REF Keegan paper).
+A paper on the design of the detector and the analysis of the spectrum has been published \cite{Behm2018}.
 
 
 \section{Estimating Intensity at Interaction}
@@ -299,7 +310,7 @@ A paper on the design of the detector and the analysis of the spectrum has been 
 
 The lower intensity is actually easily explained. The timing of the beams was done using spatial interferometry. The visibility of fringes was optimised which means that both laser pulses are timed to arrive within $30\,\mathrm{fs}$ of each other. This timing is true for both laser pulses travelling through vacuum. What we are actually aiming to time is the arrival of the scattering beam and the electron beam which is trailing behind the driving laser pulse. To estimate the intensity of the laser pulse at the interaction we have now to consider the delay of the laser pulse as it is travelling through a medium (plasma) to the point of injection and then, assuming that the electrons relatively quickly reaching a velocity close to the speed of light, the relative delay of the laser pulse and the electron beam. This delay is around half a plasma wavelength SEE REFS.
 
-For the delay induced through the South beam travelling through a medium we use the group velocity $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$, which is the standard nonlinear group velocity in media minus the etching velocity (called front velocity in REF DEcker 1996 Phys Plasmas). The distance that the North beam travels in vacuum during the time the South beam travels through a medium of thickness $d$ is $d'=d c/v_f$. The new collision point is now
+For the delay induced through the South beam travelling through a medium we use the group velocity $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$, which is the standard non-linear group velocity in media minus the etching velocity (called front velocity in REF DECKER 1996 Phys Plasmas). The distance that the North beam travels in vacuum during the time the South beam travels through a medium of thickness $d$ is $d'=d c/v_f$. The new collision point is now
 
 \begin{equation}
 \delta z_1 = 0.5 (d c/v_f - d) = d/2 (1/(1-3/2 n_e/n_c) -1) \approx (1+3/2 n_e/n_c -1) = \frac{3d}{4}\frac{n_e}{n_c}
@@ -342,8 +353,7 @@ The injection point varies depending on the evolution of the laser pulse and has
 Figure \ref{Results:Figs:NullColl:Montage} shows the visual data taken of the gamma ray detector (upper row) and the electron spectrometer (bottom row) with scatterer and driver (right) or driver only (left). A montage like figure \ref{Results:Figs:NullColl:Montage} can be a helpful tool to spot stark differences and features in a first step.
 
 
-In the previous section we found a selection criterion to determine which shots were successful. The brightest CsI signals are found in shots NUMBERS. These four shots are selected accordingly and match roughly the statistics from the section on the relative jitter of the electron beam and the colliding laser pulse.
-
+In the previous section we decided on a selection criterion to determine which shots were successful. The brightest CsI signals are found in shots NUMBERS. These four shots are selected accordingly and match roughly the statistics from the section on the relative jitter of the electron beam and the colliding laser pulse.
 
 This method allows us to identify successful collisions independently from the electron signal which is due to its strong fluctuations less convincing by itself.
 
@@ -358,14 +368,14 @@ This method allows us to identify successful collisions independently from the e
 \end{figure}
 
 
-From figure NUMBER HERE. We see that the electron spectral feature varies quite a bit over the course of the shots but that all shots selected using our criterion have low electron energies. The probability for this, assuming a normal distribution as derived in the previous section, is around NUMBERS HERE for one shot but NUMBER TO THE FOUR for all four of them to occur. If we are sufficiently convinced that these low electron energies are equivalent to energy loss from our mean, we can estimate the conditions at the interaction. For an electron energy of CHECK NUMBER $550\,\mathrm{MeV}$ we require a laser intensity of $a_0 \approx 10$. This is much lower than the peak intensity of our laser pulse.
+From figure NUMBER HERE. We see that the electron spectral feature varies quite a bit over the course of the shots but that all shots selected using our criterion have low electron energies. The probability for this, assuming a normal distribution as derived in the previous section, is around NUMBERS HERE for one shot but NUMBER TO THE FOUR for all four of them to occur. If we are sufficiently convinced that these low electron energies are equivalent to energy loss from our mean, we can estimate the conditions at the interaction. For an electron energy of CHECK NUMBER $550\,\mathrm{MeV}$ we require a laser intensity of $a_0 \approx 10$. This is much lower than the peak intensity of our laser pulse, which matches our estimate of the actual collision conditions.
 \EliasComm{Add a plot for the spectral information.}
 \EliasComm{At least indicate which model was used to first draw this conclusion. The ballpark will be similar. Semi-classical or LL?}
 A look at the spectral information of the gamma-ray detector confirms these parameters. The spectrum recorded roughly matches this. We can from both sides narrow down the exact conditions at the interaction.
 \vspace{\baselineskip}
 
 Both measurements (gamma-rays and electron energy loss) seem to be indicating the conditions.
-If we plot the electron spectrum (assuming post-interaction) against the critical energy of the gamma-ray spectrum, we see that they correlate negatively. This again supports the hypothesis that we are looking at ICS with radiation reaction. In a different mechanism after the measurement, like Bremsstrahlung, we would have expected a positive correlation (a harder spectrum for higher energies). The fact that we see a negative correlation confirms our suspicion that the energy loss is converted into a gamma-ray signal.
+If we plot the electron spectrum (assuming post-interaction) against the critical energy of the gamma-ray spectrum, we see that they correlate negatively. This again supports the hypothesis that we are looking at ICS with radiation reaction. The background signal from bremsstrahlung, for instance, emits the radiation after the electron spectrometer and hence we would expect a positive correlation (a harder spectrum for higher energies). The fact that we see a negative correlation confirms our suspicion that the energy loss is converted into a gamma-ray signal before the measurement.
 
 Now here some part about the models and how they relate, how the plot is made but this is all Jason's and Tom Blackburn's work and should be referenced as such.
 
@@ -412,7 +422,7 @@ The second laser is focused down at about 1 cm downstream of the exit of the gas
 \label{RR15:figs:exp_sketch_Poder}
 \end{figure}
 
-Both lasers were synchronised to about $40$ fs accuracy using spectral interferometry as described in more detail in (REF CORVAN).
+Both lasers were synchronised to about $40$ fs accuracy using spectral interferometry \cite{Corvan2016}.
 \vspace{\baselineskip}
 
 The electrons accelerated via LWFA are dispersed by a dipole magnet of integrated field strength $\int B(x) \mathrm{d}x \approx 0.15 \,\mathrm{Tm}$ onto a scintillating LANEX screen.
