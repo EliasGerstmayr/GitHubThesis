@@ -182,11 +182,11 @@ An example is shown in Figure \ref{Results:Figs:Edge:ShotsNull}.
 The second key diagnostic to show a signature of radiation reaction is the gamma-ray detector.
 
 
-In addition to radiation from ICS produced in the interaction of electrons and laser photons, the dispersed electrons will emit broadband bremsstrahlung when interacting with matter in their trajectory, particularly high-Z materials such as the vacuum chamber walls. The radiation is in a spectral range comparable with the expected ICS signal and is also measured by the gamma-ray detectors. The main source of bremsstrahlung, the chamber roof, is located off-axis and a large fraction can be shielded efficiently by blocking the direct line of sight with sufficient lead. The remaining measured signal on the detectors is expected to follow a scaling proportional to the square of the energy energy and charge of the electron bunch as the total energy emitted  through the bremsstrahlung process by an electron follows a $\gamma^2$ (REF). The total energy deposited in the crystals converts linearly into scintillation light at an efficiency of $\approx 5 \times 10^4 \,\mathrm{MeV}^{-1}$. We then expect the following relation for the detected bremsstrahlung signal, $S_{BG}$:
+In addition to radiation from ICS produced in the interaction of electrons and laser photons, the dispersed electrons will emit broadband bremsstrahlung when interacting with matter in their trajectory, particularly high-Z materials such as the vacuum chamber walls. The radiation is in a spectral range comparable with the expected ICS signal and is also measured by the gamma-ray detectors. The main source of bremsstrahlung, the chamber roof, is located off-axis and a large fraction can be shielded efficiently by blocking the direct line of sight with sufficient lead. The remaining measured signal on the detectors is expected to follow a scaling proportional to the square of the energy energy and charge of the electron bunch as the total energy emitted  through the bremsstrahlung process by an electron follows a $\gamma^2$ (see Theory). The total energy deposited in the crystals converts linearly into scintillation light at an efficiency of $\approx 5 \times 10^4 \,\mathrm{MeV}^{-1}$ (REF). We then expect the following relation for the detected bremsstrahlung signal on the camera chip, $S_{BG}$:
 \begin{equation}
 S_{BG} = c_{BG} \int (\mathrm{d}N_e /\mathrm{d}\gamma)\,\gamma^2 \mathrm{d}\gamma = c_{BG} Q \left\langle \gamma^2 \right\rangle,
 \end{equation}
-where $c_{BG}$ is a constant that encapsulates all the complicated details such as conversion efficiencies of electron energy to photons, photons depositing their energy in the crystals, energy to scintillator photons, viewing angle, collection efficiency, quantum efficiencies and so on. $\mathrm{d}N_e/\mathrm{d}\gamma$ is the charge distribution of the measured electron spectrum, $Q = \int \mathrm{d}N_e/\mathrm{d}\gamma \mathrm{d}\gamma$ the total charge and $\gamma$ is the Lorentz factor of the electrons. 
+where $c_{BG}$ is a constant that encapsulates all the complicated details such as conversion efficiencies of electron energy to photons, photons depositing their energy in the crystals, energy to scintillator photons, viewing angle, collection efficiency, quantum efficiencies and so on. $\mathrm{d}N_e/\mathrm{d}\gamma$ is the charge distribution of the measured electron spectrum, $Q = \int (\mathrm{d}N_e/\mathrm{d}\gamma) \mathrm{d}\gamma$ the total charge and $\gamma$ is the Lorentz factor of the electrons. 
 \vspace{\baselineskip}
 
 %\begin{figure}
@@ -199,7 +199,8 @@ where $c_{BG}$ is a constant that encapsulates all the complicated details such 
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{ElecQ2_CsI_Correlation.pdf}\includegraphics[width=0.5\columnwidth]{DCsI_sigma.pdf}
-\caption{Left: The total energy of the electron beam squared (x-axis) vs. the number of CsI counts (y-axis) which is proportional to the energy of the photons. The photon energy radiated by the electrons is proportional to $\gamma^2$ which in turn is proportional to $E^2$. Hence, a linear relationship should be visible. As to be seen in the diagram, the shots with colliding beam off (red) are fitted well with a linear function whilst the data points for the collisions do not seem to fit on the same curve in many cases. This motivates that there seems to be a different process to take place when the colliding laser pulse is turned on. It can also be seen that the CsI counts for collision shots are scattered a lot, which could be related to different overlaps of laser pulse and electron beam resulting in a different range of radiation produced. Right: Shots in the order performed in experiment versus the gamma detector signal above the expected background signal according to the $E^2$-scaling described previously. The red dots are representing the reference shots with the driver beam only, whilst the blue dots are the collision shots with driver and scatterer. Especially shots 4,5,6 and 8 stand out remarkably above the background. The last few shots on the other hand seemed to have missed completely which could be related to a drift in alignment over time.}
+\caption{Left: Squared energy of the electron beam vs. the signal strength on the gamma detector in pixel counts. The reference shots without scattering beam are indicated in blue with a regression line. In orange shots with both laser beams on. Right: Shot number against the deviation from the expected gamma signal using the difference of the signal from the blue regression line on the left plot.}
+%\caption{Left: The total energy of the electron beam squared (x-axis) vs. the number of CsI counts (y-axis) which is proportional to the energy of the photons. The photon energy radiated by the electrons is proportional to $\gamma^2$ which in turn is proportional to $E^2$. Hence, a linear relationship should be visible. As to be seen in the diagram, the shots with colliding beam off (red) are fitted well with a linear function whilst the data points for the collisions do not seem to fit on the same curve in many cases. This motivates that there seems to be a different process to take place when the colliding laser pulse is turned on. It can also be seen that the CsI counts for collision shots are scattered a lot, which could be related to different overlaps of laser pulse and electron beam resulting in a different range of radiation produced. Right: Shots in the order performed in experiment versus the gamma detector signal above the expected background signal according to the $E^2$-scaling described previously. The red dots are representing the reference shots with the driver beam only, whilst the blue dots are the collision shots with driver and scatterer. Especially shots 4,5,6 and 8 stand out remarkably above the background. The last few shots on the other hand seemed to have missed completely which could be related to a drift in alignment over time.}
 \label{Results:Figs:NullColl:DeltaCsIVsSigmaE2+CsIVsE2}
 \end{figure}
 
@@ -216,7 +217,7 @@ S_{ICS} = c_{ICS} a_0^2  \int  (\mathrm{d}N_e /\mathrm{d}\gamma)\, \gamma^2 \mat
 and the potential combined signal, $S_{total}$, would then accordingly be:
 
 \begin{equation}
-S_{total} = c_{BG} \int  (\mathrm{d}N_e /\mathrm{d}\gamma)\, \gamma^2 \mathrm{d} \gamma + c_{ICS} a_0^2  \int ( \mathrm{d}N_e /\mathrm{d}\gamma)\, \gamma^2 \mathrm{d} \gamma,
+S_{total} = S_{BG} + S_{ICS} = c_{BG} \int  (\mathrm{d}N_e /\mathrm{d}\gamma)\, \gamma^2 \mathrm{d} \gamma + c_{ICS} a_0^2  \int ( \mathrm{d}N_e /\mathrm{d}\gamma)\, \gamma^2 \mathrm{d} \gamma,
 \end{equation}
 where now $c_{ICS}$ encapsulates all the complex physics of coupling constants, cross sections and so on. In this case $c_{ICS}$ is strictly speaking not a constant as the conditions of the interaction vary strongly due to the changing overlap of the laser pulse and the electron beam. The better the overlap and the higher the intensity at that interaction, the stronger the ICS signal and the easier to distinguish from the background Bremsstrahlung it will be. In addition, whilst we expect all of the electrons to produce bremsstrahlung, only a variable fraction of electrons will interact with the laser pulse.
 \vspace{\baselineskip}
@@ -225,18 +226,19 @@ If we now add the shots to the same plot with the beam on, we see that those sho
 
 To qualify how much above the background these are, it is more useful to look at the ICS signal mainly by subtracting the expected bremsstrahlung background from the signal:
 \begin{equation}
-S_{ICS} = S_{total} - c_{BG} Q \left\langle\gamma^2\right\rangle.
+S_{ICS} = S_{total} - S_{BG}.
 \end{equation}
 
 We then calculate for each of the reference data points the relative difference to the calculated regression line and characterise their behaviour statistically. Assuming a random normal distribution we calculate the standard deviation of the system.
-In figure NUMBER PLOT FOR SIGNAL ABOVE... we now see the shots lined up with their actual shot number versus the CsI signal above the expected signal from the bremsstrahlung background. The y-axis now encapsulates the information of the gamma signal and the electron spectrum.
-As we can see most of the shots follow the expected trend very well, some are a few standard deviations above but 4 shots are clearly more than 5 sigma (based on a normal distribution the probability for one shot to be above 5 sigma is $< 0.00001\%$) above the signal and we will consider this. The jitter of the electron beam and the laser pulse will be characterised later to check if a success quote of 4 out of 10 is matching our system.
+In Figure \ref{Results:Figs:NullColl:DeltaCsIVsSigmaE2+CsIVsE2} we now see the shots lined up with their actual shot number versus the gamma signal above the expected signal from the bremsstrahlung background. The y-axis now encapsulates the information of both the gamma signal and the electron spectrum.
+As we can see most of the shots follow the expected trend very well, some are a few standard deviations above but 4 shots are clearly more than 5 sigma (based on a normal distribution the probability for one shot to be above 5 sigma is $< 0.00001\%$) above the signal. The number of potentially successful collisions matches the jitter of the electron beam and the laser pulse as characterised by J. Cole and C. Baird for \cite{Cole2018}.
 
-Hence, this method allows identifying successful collisions, but on the other hand also enables us to identify collisions where ICS was negligible or not occurring at all. We continued the campaign by defocusing the scattering beam and translate the beam relative to the electron beam. The signal on most of these shots is much lower but they were all taken with the scattering beam on. Not all shots result in successful collisions or interactions that modify the spectrum significantly. The gamma signal now enables us to identify shots without significant interactions and add them to the pool of reference shots to further characterise the electron variations.
+Hence, this method allows identifying successful collisions, but on the other hand enables us to also identify collisions where ICS was negligible or not occurring at all. We continued the campaign by defocusing the scattering beam and translate the beam relative to the electron beam. The signal on most of these shots is much lower but they were all taken with the scattering beam on. Not all shots result in successful collisions or interactions that modify the spectrum significantly. The gamma signal now enables us to identify shots without significant interactions and add them to the pool of reference shots to further characterise the electron variations.
 
 
 \section{Statistical Analysis of Electron Spectra}
 
+\subsubsection{Motivation}
 In the previous sections we showed that by using both the electron spectrum and the gamma ray signal successful collisions can be identified. After identifying successful collisions the next step is quantifying whether there was a change in the gamma spectrum and whether there was a measurable amount of energy loss visible in the electron spectrum.
 
 
@@ -247,28 +249,34 @@ In the previous sections we showed that by using both the electron spectrum and 
 \label{fig:Cole_drift_raw}
 \end{figure}
 
-To put an accurate number on the energy loss we have to take into account the intrinsic variations of the electron source. In this section the author will present a statistical analysis of the shots without the scattering beam on, characterising the typical electron spectrum and the extent of its fluctuations. These shots will be from now on referred to as reference data or null shots. This is crucial to separate the energy loss of the electron beam from the variations of the source itself.
+To put an accurate number on the energy loss we have to take into account the intrinsic variations of the electron source and correlations to other fluctuating variables such as laser energy. In this section the author will present a statistical analysis of the shots without the scattering beam on or where ICS was judged to be negligible, characterising the typical electron spectrum and the extent of its fluctuations. These shots will be from now on referred to as reference data or null shots. 
 
-The set of electron spectra presented in Figure XX NUMBER was taken as immediate reference data for the two-beam interactions. This data set is relatively limited to 23 shots, 10 of which are reference data.
+The set of electron spectra presented in Figure \ref{Results:Figs:NullColl:DeltaCsIVsSigmaE2+CsIVsE2} is the interesting data set including potential high-intensity interactions. This data set is relatively limited to 23 shots, 10 of which are reference data.
 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\columnwidth]{Cole_LaserTime_Corr.pdf}\includegraphics[width=0.5\columnwidth]{ElecEdge_raster_drift_Laser_Corr.pdf}
-\caption[]{Fluctuation of the laser energy over 2 hours of taking data. The time period does not cover the entire range of the data set as the diagnostic measuring the laser energy failed after 7 pm. The correlation coefficient is -0.11 and the confidence interval for the slope of the linear regression includes negative and positive values. This indicates that there is no real correlation of the two parameters, and the laser energy fluctuated around a constant mean. Right: Laser energy on the shots with the respective drift-corrected relative energy shift. A weak positive correlation was found but at a very low level (correlation coefficient $\sim 0.35$). This was hence not used in the following analysis.{\color{red}is the line and error bar correct. the error bars suggests a reasonably strong correlation?}}
+\caption[]{Left: Driver laser energy over a 2 hour window. The actual data set extends further but the laser energy meter does not cover the entire time. The correlation coefficient is -0.11 and the confidence interval for the slope of the linear regression includes negative and positive values. This indicates that there is no real correlation of the two parameters, and the laser energy fluctuated around a constant mean. Right: Laser energy on the shots with the respective drift-corrected relative energy shift. A weak positive correlation was found but at a very low level (correlation coefficient $\sim 0.35$). This was hence not used in the following analysis.{\color{red}is the line and error bar correct. the error bars suggests a reasonably strong correlation?}}
 \end{figure}
 
 
+\subsubsection{Identify additional shots}
+
 However, a small sample size (10) is not sufficient to draw reliable conclusions on the general character of the fluctuations. A larger data set from the same day at comparable conditions is taken into consideration. 
 
-In contrast to the 10 reference shots where the scattering beam was turned off, the subsequent shots had at any point both beams on. However, using the gamma-ray signal as indication for overlap, we selected shots that very closely (within one standard deviation) matched the expected trend of bremsstrahlung and made a new data set based on these reference shots. A significant interaction that would modify the spectrum would result in significant amount of additional radiation. This new data set consists of additional 89 shots. 
+In contrast to the 10 reference shots where the scattering beam was turned off, the scattering beam was on for almost all subsequent shots. However, using the gamma-ray signal as indication for overlap, we selected shots that very closely (within one standard deviation) matched the expected trend of bremsstrahlung and made a new data set based on these reference shots. A significant interaction that would modify the spectrum would result in significant amount of additional radiation and is then discarded. This new data set consists of additional 89 shots. 
 \vspace{\baselineskip}
+
+\subsubsection{Check correlation with laser energy}
 
 We can check if this correlates with laser energy. There appears to be a positive correlation but only at lower confidence. The correlation coefficient is around 0.35 and the confidence interval for the slope encloses only very small gradients of order few percent over 4 J energy range (whereas the standard deviation is already scattered at 8 percent). When looking at the smaller dataset the gradient confidence interval even encloses zero which indicates no correlation. This all indicates that this was not a very important factor in this context and we will hence ignore this factor in our analysis. 
 \EliasComm{Expand this bit to justify points more}
 \vspace{\baselineskip}
 
-When tracing the time the data was taken against the electron energy of the spectral feature a slow drift in the mean energy becomes apparent (see Figure \ref{fig:Cole_drift_raw}). The laser energy does not drift over the time period indicated and only fluctuates (see Figure 3). This speaks against self-injection which scales with the laser energy (REF) and is consistent with the hypothesis that the high charge component of the spectrum is injected through shock injection and that shocks were generated due to (progressing) damage in the gas nozzle.  It seems to degrade and moves the shock closer to the leading edge of the gas target, increasing the acceleration length and energy over time.
+\subsubsection{Temporal Drifts}
+
+When tracing the time the data was taken against the electron energy of the spectral feature a slow drift in the mean energy becomes apparent (see Figure \ref{fig:Cole_drift_raw}). The laser energy does not drift over the time period indicated and only fluctuates (see Figure REF NUMBER). This speaks against dominance of self-injection which scales with the laser energy (REF) and is consistent with the hypothesis that the high charge component of the spectrum is injected through shock injection and that shocks were generated due to (progressing) damage in the gas nozzle.  It seems to degrade and moves the shock closer to the leading edge of the gas target, increasing the acceleration length and energy over time. At the same time the average laser energy remains fairly stable.
 
 \begin{figure}[h]
 \centering
@@ -312,10 +320,54 @@ Estimate collision probability here.
 \fi
 
 
+\section{Indicators of radiation reaction in the electron spectrum}
 
-\section{Estimating Intensity at Interaction}
+\subsubsection{Recap}
+After having now characterised the electron spectra and the expected gamma signal, we can now more closely look at potential indicators of radiation reaction.
+
+\begin{figure}[h]
+\centering
+\includegraphics[height=0.25\columnwidth]{20151217r002_NullGroup.jpg}
+\includegraphics[height=0.25\columnwidth]{20151217r002_CollGroup.jpg}
+\includegraphics[height=0.25\columnwidth]{up_arrows.jpg}
+\caption{Images of the gamma ray spectrometer (upper row) and electron spectrometer (bottom row) at shots with the colliding laser beam off (left) and on (right), using a constant colour scale. The shots with the colliding beam show bright signals on the scintillator array whilst the electron energies remain fairly similar throughout.}
+\label{Results:Figs:NullColl:Montage}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\columnwidth]{ElectronSpectra2.pdf}
+\caption{Waterfall plot from paper. Figure 4. Sort out licence or make myself.}
+\end{figure}
+
+To summarise, the dataset we investigate more closely consists of 13 shots with both beams on and 10 reference shots without the second scatterer beam.
+Figure \ref{Results:Figs:NullColl:Montage} shows a montage of the raw data of the two relevant diagnostics, the electron spectrometer (bottom row) and the gamma-ray detector (top row) for reference shots (left) and dual-beam collisions (right). The electron spectrometer and the gamma-detector images are on the same colour scales respectively. The line-outs of the integrated and normalised electron spectra are also shown for convenience in Figure XX, along with a dotted line indicating the position of the distinct spectral feature.
+\vspace{\baselineskip}
+
+The electron source has some intrinsic variations that make singling out a successful collision based on lower energy less convincing.
+Hence, in section XX we decided on a selection criterion based on the signal on the gamma detector coupled to the electron beam energy to determine which shots were successful. 4 shots with a gamma signal 5 standard deviations or more above the expected background were identified. The bright burst of gamma rays lights up the CsI gamma detector as seen on the montages in Figure \ref{Results:Figs:NullColl:Montage}. The 4 bright shots are also indicated in Figure XX in red.
+\vspace{\baselineskip}
 
 
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{DCsI_sigma_v_ElecEdge.pdf}\includegraphics[width=0.5\columnwidth]{RR15_GammaSpec_OnOff.png}
+\caption{Left: Position of the low-energy edges (x-axis) versus the gamma ray signal above the expected radiation background (y-axis) in units of standard deviation from the reference mean. Reference shots are shown in red and collision shots in blue. The edge positions are very scattered under both conditions with the majority of the collision shots exhibiting higher edges. The brightest gamma ray signals on collision seem to coincide with a low position of the edge. Right: Critical energy of gamma spectra for beam on and off.}
+\label{Results:Figs:Edge:PosVsCsI}
+\end{figure}
+
+\subsubsection{Statistical Significance of 4 successful shots and spectrum}
+
+From Figure NUMBER HERE. We see that the electron spectral feature varies quite a bit over the course of the shots but that all shots selected using our criterion have low electron energies. The probability for this, assuming a normal distribution as derived in the previous section, is around NUMBERS HERE for one shot but NUMBER TO THE FOUR for all four of them to occur. If we are sufficiently convinced that these low electron energies are equivalent to energy loss from our mean, we can estimate the conditions at the interaction. For an electron energy of CHECK NUMBER $550\,\mathrm{MeV}$ we require a laser intensity of $a_0 \approx 10$ using PRX THOMAS 2012. This is much lower than the peak intensity of our laser pulse.
+\vspace{\baselineskip}
+
+A second angle at confirming the experiment conditions is the gamma spectrum. Jason Cole (Imperial College) and Keegan Behm (Michigan University) performed this analysis first and provided the results. More details on the analysis can be found in the Methods chapter or in \cite{Behm2018} outlining the modelling and analysis procedure applied in this specific case.
+In Figure XX we see that the critical energy of the gamma spectrum is relatively stable around 45 MeV for all collision shots. A significant fraction of radiation seems to be emitted in all cases (relative to the background) and skew the energy estimate to this average number. If we relate these numbers to the electron beam measured, we can from both sides narrow down the exact conditions at the interaction.
+\vspace{\baselineskip}
+
+Both measurements (gamma-rays and electron energy loss) seem to be indicating that the laser intensity was more in a ballpark of $a_0 \approx 10$ instead of the peak intensities of close to $a_0 \sim 25$ we aimed for.
+
+\subsubsection{Explaining lower intensity}
 The lower intensity is actually easily explained. The timing of the beams was done using spatial interferometry. The visibility of fringes was optimised which means that both laser pulses are timed to arrive within $30\,\mathrm{fs}$ of each other. This timing is true for both laser pulses travelling through vacuum. What we are actually aiming to time is the arrival of the scattering beam and the electron beam which is trailing behind the driving laser pulse. To estimate the intensity of the laser pulse at the interaction we have now to consider the delay of the laser pulse as it is travelling through a medium (plasma) to the point of injection and then, assuming that the electrons relatively quickly reaching a velocity close to the speed of light, the relative delay of the laser pulse and the electron beam. This delay is around half a plasma wavelength SEE REFS.
 
 For the delay induced through the South beam travelling through a medium we use the group velocity $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$, which is the standard non-linear group velocity in media minus the etching velocity (called front velocity in REF DECKER 1996 Phys Plasmas). The distance that the North beam travels in vacuum during the time the South beam travels through a medium of thickness $d$ is $d'=d c/v_f$. The new collision point is now
@@ -343,59 +395,25 @@ N is number of plasma periods between f/40 and electron bunch.
 This amount of defocus then reaches an average intensity of NUMBER 10 instead of the peak intensity of close to 25 possible in this setup. A variation of overlap and the electron energy will then result in an accidental scan of our conditions.
 
 The injection point varies depending on the evolution of the laser pulse and has to be measured separately. Shock injection could provide a definite and known injection location. The position of the shock could be measured by an optical probe on-shot.
-
-\section{Indicators of radiation reaction in the electron spectrum}
-
-\begin{figure}[h]
-\centering
-\includegraphics[height=0.25\columnwidth]{20151217r002_NullGroup.jpg}
-\includegraphics[height=0.25\columnwidth]{20151217r002_CollGroup.jpg}
-\includegraphics[height=0.25\columnwidth]{up_arrows.jpg}
-\caption{Images of the gamma ray spectrometer (upper row) and electron spectrometer (bottom row) at shots with the colliding laser beam off (left) and on (right), using a constant colour scale. The shots with the colliding beam show bright signals on the scintillator array whilst the electron energies remain fairly similar throughout.}
-\label{Results:Figs:NullColl:Montage}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\columnwidth]{ElectronSpectra2.pdf}
-\caption{Waterfall plot from paper. Figure 4. Sort out licence or make myself.}
-\end{figure}
-
-
-Figure \ref{Results:Figs:NullColl:Montage} shows the visual data taken of the gamma ray detector (upper row) and the electron spectrometer (bottom row) with scatterer and driver (right) or driver only (left). A montage like figure \ref{Results:Figs:NullColl:Montage} can be a helpful tool to spot stark differences and features in a first step.
-
-
-In the previous section we decided on a selection criterion to determine which shots were successful. The brightest CsI signals are found in shots NUMBERS. These four shots are selected accordingly and match roughly the statistics from the section on the relative jitter of the electron beam and the colliding laser pulse.
-
-This method allows us to identify successful collisions independently from the electron signal which is due to its strong fluctuations less convincing by itself.
-
-
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\columnwidth]{DCsI_sigma_v_ElecEdge.pdf}\includegraphics[width=0.5\columnwidth]{RR15_GammaSpec_OnOff.png}
-\caption{Left: Position of the low-energy edges (x-axis) versus the gamma ray signal above the expected radiation background (y-axis) in units of standard deviation from the reference mean. Reference shots are shown in red and collision shots in blue. The edge positions are very scattered under both conditions with the majority of the collision shots exhibiting higher edges. The brightest gamma ray signals on collision seem to coincide with a low position of the edge. Right: Critical energy of gamma spectra for beam on and off.}
-\label{Results:Figs:Edge:PosVsCsI}
-\end{figure}
-
-
-From figure NUMBER HERE. We see that the electron spectral feature varies quite a bit over the course of the shots but that all shots selected using our criterion have low electron energies. The probability for this, assuming a normal distribution as derived in the previous section, is around NUMBERS HERE for one shot but NUMBER TO THE FOUR for all four of them to occur. If we are sufficiently convinced that these low electron energies are equivalent to energy loss from our mean, we can estimate the conditions at the interaction. For an electron energy of CHECK NUMBER $550\,\mathrm{MeV}$ we require a laser intensity of $a_0 \approx 10$ using PRX THOMAS 2012. This is much lower than the peak intensity of our laser pulse, which matches our estimate of the actual collision conditions.
-A look at the spectral information of the gamma-ray detector confirms these parameters. The spectrum recorded roughly matches this. We can from both sides narrow down the exact conditions at the interaction.
 \vspace{\baselineskip}
 
-Both measurements (gamma-rays and electron energy loss) seem to be indicating the conditions.
+With this knowledge of the focal spot size and the timing fluctuations, we can also estimate the number of collisions we expect.
+This has been done by Jason Cole (Imperial College) and Chris Baird (York) by inserting the jitter in time and space of the electron beam and the laser, in one case running a simple Monte-Carlo simulation, in the second case building this on the amount of overlap achieved in PIC simulations.
+
+The number of successful collisions was of order 3-4 shots which is in the ballpark of our 4 successful collisions.
+\vspace{\baselineskip}
+
+
+\subsubsection{Agreement with models}
+
+After having now narrowed down the conditions at the interaction, confirmed that the frequency of the interactions and the selected shots appear to match up, we can now look at the detailed relations of these shots and how they line up with actual models.
+
+
 If we plot the electron spectrum (assuming post-interaction) against the critical energy of the gamma-ray spectrum, we see that they correlate negatively. This again supports the hypothesis that we are looking at ICS with radiation reaction. The background signal from bremsstrahlung, for instance, emits the radiation after the electron spectrometer and hence we would expect a positive correlation (a harder spectrum for higher energies). The fact that we see a negative correlation confirms our suspicion that the energy loss is converted into a gamma-ray signal before the measurement.
 
 Now here some part about the models and how they relate, how the plot is made but this is all Jason's and Tom Blackburn's work and should be referenced as such.
+The on-shot synchrotron-like spectrum and the shift of the cut-off edge in the electron spectrum were then combined to constrain the parameter space (normalised laser vector potential $a_0$ and electron energy) at the interaction, relying on a range of models.
 
-Geant simulations and so forth.
-
-The spectral analysis of the gamma-ray signal was first performed by Jason Cole (Imperial College) and Keegan Behm (Michigan University).
-
-In this process the scintillator response was modelled using the Monte-Carlo codes Geant4 \cite{Agostinelli2003} and MCNP \cite{Goorley2012} to retrieve the energy spectrum of the gamma radiation. The on-shot synchrotron-like spectrum and the shift of the cut-off edge in the electron spectrum were then combined to constrain the parameter space (normalised laser vector potential $a_0$ and electron energy) at the interaction, relying on a range of models.
-
-A paper on the design of the detector and the analysis of the spectrum has been published \cite{Behm2018}.
 
 
 \begin{figure}[h]
@@ -413,13 +431,21 @@ An analysis how much more data we would require to make a conclusion beyond the 
 \vspace{\baselineskip}
 
 In addition it becomes clear that the difference between a fully stochastic quantum model and a semi-classical model is not very visible in this case. There is in indication that the models depart at higher energy losses, i.e. higher laser intensities but it would also require a higher electron energy. This slow departure from each other in contrast to the relatively distinct classical model is founded in the electron observable which is the energy loss from a characterised mean. When looking at the mean energy loss for the quantum and the semi-classical model it becomes evident that by definition the values are identical. Even though the energy loss of the spectral feature is not the same thing it closely relates to the mean energy loss. A more sensitive observable that behaves very differently for both models is the variance of the spectrum or the shape of the spectrum. This will be closer illuminated in the next section. 
+\vspace{\baselineskip}
 
-\EliasComm{Also remember that eta is not a constant in the interaction}
+Finally, it should be noted that the interaction is more complicated. 
+Knowledge of exact on-shot laser profile in time and space.
+Knowledge of the electron beam properties in time and space, chirp.
+Variation of spatial and temporal overlap.
+Eta is not constant over the course of the interaction due to defocusing, energy loss, chirp in the beam, energy spread.
+Also modelling constraints in the theory (LCFA).
 
 \section{Comparing Results Poder and Cole}
 
-In this experiment the models were not distinguishable. A second measurement was taken in Poder et al. but without measurement of the spectrum.
-Comparing the stability of the sources to indicate whether a gas cell is more suitable in the future than a gas jet. Shock injection versus self injection.
+In the framework of the data set presented first indications of differences in the models become evident, but a definite discrimination is not within its reach. More data, stability, higher electron energies, laser intensities and additional observables could enable this as part of a future precision measurement.
+
+The author will attempt to indicate the importance of a stable electron source in the following section by comparing the data set presented with a second measurement of radiation reaction taken at the same facility and published in Poder et al \cite{Poder2018}. For this purpose, the electron spectra of the second experiment are included in a statistical analysis as well.
+In this context, the choice of targetry (gas jet vs gas cell), injection mechanisms and diagnostics will also be discussed.
 
 \subsubsection{Experimental setup}
 
@@ -466,7 +492,7 @@ The typical electron spectrum produced can be seen in Figure \ref{fig:Poder_espe
 Due to the lack of such a distinct feature, the characteristic number for each spectra of this experiment will now be the cut-off energy, which is as in \cite{Poder2018} defined as the energy at which the spectral intensity reaches 10 percent of its peak value.
 \vspace{\baselineskip}
 
-In this case the only injection mechanism considered is self-injection. This process typically scales with the laser energy (REF), which is also confirmed in Figure \ref{fig:Poder_laser_corr}. The laser energy of the wakefield driver scales well linearly with the cut-off energy of the spectrum. The correlation coefficient is $0.9$. The linear fit follows the equation $\epsilon_{cutoff} = 0.07\,\mathrm{GeV/J} \times E_{laser} + 0.57\,\mathrm{GeV}$.
+In this case, the only injection mechanism considered is self-injection. This process typically scales with the laser energy (REF), which is also confirmed in Figure \ref{fig:Poder_laser_corr}. The laser energy of the wakefield driver scales well linearly with the cut-off energy of the spectrum. The correlation coefficient is $0.9$. The linear fit follows the equation $\epsilon_{cutoff} = 0.07\,\mathrm{GeV/J} \times E_{laser} + 0.57\,\mathrm{GeV}$.
 
 After scaling the spectra according to the linear relation found in Figure \ref{fig:Poder_laser_corr}, we can analyse the spectra similarly as before and see that this spectrum also follows a normal distribution. The standard deviation of the cut-off energy distribution is $\sigma_{Poder} = 0.035$, so 95 percent of the expected energies will fall within $\pm 7\,\%$ of the mean energy.
 
@@ -520,39 +546,56 @@ If we want to compare different models of radiation reaction based on this energ
 In some cases, however, even an increased level of confidence and more data is not resulting in an improved distinction of different models of radiation reaction. As seen in recent publications REFS HERE RIDGERS, measuring the difference between classical and models including some form of quantum corrections can be done based on the energy loss due to the reduced emission power in quantum systems (REF).
 
 When trying to distinguish fully stochastic quantum models and a semi-classical model which includes a reduced emission power matched to the quantum model (Gaunt-factor), but uses a deterministic equation of motion, the emitted power is matched by definition and hence not a suitable figure of distinction. 
-Instead, the shape of the spectral distribution, e.g. variance of the entire spectrum (not only of the energy of the spectral feature), becomes more important and another factor to discriminate the two, but again would require a certain level and measure of stability. The stability of the spectral shape can, for instance, be quantified in terms of the energy dependent variance of the spectra in question. 
+Instead, the shape of the spectral distribution, e.g. variance of the entire spectrum (not only of the energy of the spectral feature), becomes more important and another factor to discriminate the two, but again would require a certain level of stability and suitable measure of it. The stability of the spectral shape can, for instance, be quantified in terms of the energy dependent variance of the spectra in question. 
 
-The total variance normalised to the energy range considered for the average gas jet data from Cole et al. is $1.5\times 10^{-7}$ whereas the result for Poder et al. is $1.98 \times 10^{-8}$. The energy dependent variance can be seen in Figure \ref{fig:comparison_especs} represented by the shaded error bars and in Figure \ref{fig:comparison_varianceLog} separately on a logarithmic scale. The base level of the variance is relatively low for the Poder data and decreases for high energies. For the Cole data especially the position of the characteristic feature, crucial for the two-beam measurements, appears prone to fluctuations. This makes the data set less suitable to track changes in the variance induced by radiation reaction. If the fluctuation is of similar amplitude or larger than the differences expected from the models, a definite distinction of a semi-classical and a fully stochastic quantum model at these conditions would then be very challenging, even with access to a larger data set.
+The total variance normalised to the energy range considered for the average gas jet data from Cole et al. is $1.5\times 10^{-7}$ whereas the result for Poder et al. is $1.98 \times 10^{-8}$. The energy dependent variance can be seen in Figure \ref{fig:comparison_especs} represented by the shaded error bars and in Figure \ref{fig:comparison_varianceLog} separately on a logarithmic scale. The base level of the variance is relatively low for the Poder data and decreases for high energies. For the Cole data especially the position of the characteristic feature, crucial for the two-beam measurements, appears prone to fluctuations. This makes the data set less suitable to track changes in the variance induced by radiation reaction. If the fluctuation is of similar amplitude or larger than the differences expected from the models, a definite distinction of a semi-classical and a fully stochastic quantum model at these conditions would then be very challenging, even with access to a larger data set. In Poder et al. a comparison of spectral shapes and attribution to models has qualitatively been indicated. However, due to the lack of a spectral measurement of the radiation and the large parameter space of unknowns, for instance spatio-temporal structure of the electron beam, more observables are required to definitively explain the differences in the measured electron spectra.
+\vspace{\baselineskip}
 
 This line of thought has been explored more explicitly and in more detail in REF C ARRAN PPCF, SPIE 2019. The aim of these publications is to indicate which experimental observables are suited to discriminate different models of radiation reaction and to give an estimate on the number of shots one would require in an experiment taking fluctuations into account.
 
-It looks like the gas cell is a better target and the energy dependencies can be easier related to laser energy etc. If the shock injection would be improved a stable injection point would be key to maintain interaction conditions. Using profile and spectral measurements together.
 
-In this case the gas jet was inferior in terms of stability but C ARRAN indicates that we require low energy spread beams. Literature shows that these are achievable through shock injection. Ideally a more stable low energy spread beam would be suited to discriminate quantum and non-quantum models.
+\subsubsection{Summary}
+
+From this analysis it appears that a gas cell is a better target and the energy dependencies can be easier correlated and factored out. On the other hand, the distinct feature and injection point of the electrons from shock-injection could be useful to maintain similar conditions over longer time. If the injection mechanism could be improved in terms of stability by a factor 2, it could outweigh the benefits of the gas cell.
+In addition, REF C ARRAN indicates that low energy spread beams of suitable stability are in particular favourable for measurements of radiation reaction as they reduce the requirements for higher electron and laser energies. Literature shows that these are achievable through shock injection. Ideally a more stable low energy spread beam would be suited to discriminate quantum and non-quantum models.
+
+Finally, a detailed knowledge of the exact interaction conditions is crucial and removes further uncertainty.
+A gamma-profile arrangement as set up in Poder et al. allows a relatively model-independent measurement of the interaction intensity, whilst a spectral measurement of the ICS radiation might help to discriminate a classical radiation reaction model from quantum models that lead to a reduced emission power. Using both diagnostics on future experiments could greatly improve the understanding of the interaction and as a result improve confidence in modelling.
+
 
 \section{Conclusion}
 
 \subsubsection{Radiation Reaction}
 
-Radiation reaction was measured in an all-optical setup for the first time by colliding a relativistic electron beam from LWFA with a tightly focused laser beam of $a_0 \approx 10$. 
+Radiation reaction was measured in an all-optical setup for the first time by colliding a tightly focused laser beam of $a_0 \approx 10$ with a relativistic electron beam from LWFA of energy $\sim 500\,\mathrm{MeV}$ \cite{Cole2018} and up to $2\,\mathrm{GeV}$ \cite{Poder2018}. 
 
-Could not distinguish different models but measured radiation reaction.
+In \cite{Cole2018} the critical energy of the radiation reached an excess of $30\,\mathrm{MeV}$, the highest recorded gamma-ray energies from an all-optical setup at the time of the publication.
 
-Beam quality to be improved.
+The measurements indicated first differences in the models of radiation reaction, but were not significant to definitively distinguish them.
+\vspace{\baselineskip}
+
+Successful high-intensity collisions are signalled by bright bursts of gamma radiation recorded on the gamma detectors.
+The expected radiation background from bremsstrahlung was found by correlating the electron spectra and the signal on the gamma-detector on shots without ICS. This characterisation helped singling out 4 particularly intense interactions that were considered in more detail.
+\vspace{\baselineskip}
+
+The energy of the electron spectra on those 4 selected shots was found to be lower on average than on the other shots.
+By performing a statistical analysis of a larger set of electron spectra, investigating dependencies on other parameters such as slow drifts and laser energy, the likelihood of seeing these lower energies was estimated and deemed significant.
+\vspace{\baselineskip}
+
+This information was combined with a spectral analysis of the gamma signal\footnote{performed by Jason Cole (Imperial College) and Keegan Behm} to confirm the conditions at the interaction from two avenues. The results are compatible with models including radiation reaction, but do not deviate enough in these experimental conditions to express a definite preference for a certain model.
+\vspace{\baselineskip}
+
+In the course of this analysis the stability of the accelerator and laser parameters were found to be of crucial importance to make more significant measurements of radiation reaction in the future. The importance of complementary measurements and observables is also very important as each angle narrows down the experimental uncertainties to focus on uncertainties introduced by modelling and theory.
 
 \subsubsection{Statistical analysis of electron spectra}
 
-The author presented a statistical analysis of electron spectra from two similar experiments aimed at measuring radiation reaction, but using different gas targets. Two correlating factors, a slow drift in mean energy in case of Cole and the laser energy in case of Poder, were identified and considered in this analysis. The electron spectra from the Poder et al. campaign were more stable in terms of stability in energy and variance. The spectra did not only reach higher energies but the standard deviation of the energies were by a factor of $2$ more stable. The 2 sigma width of their distribution was $\pm 15\,\%$ for Cole and $\pm 7\,\%$ for Poder, which means that 95 percent of shots were expected to fall within this range. The variance of the spectrum was also more stable in the case of Poder et al. being 10 times lower than for the electron spectra observed in Cole et al.. Stable energy and shape of spectra is important.
+The author then presented a comparative statistical analysis of electron spectra from both experiments aimed at measuring radiation reaction to demonstrate the differences at this explicit example. Two correlating factors, a slow drift in mean energy in case of Cole and the laser energy in case of Poder, were identified and considered in this analysis. The electron spectra from the Poder et al. campaign were more stable in terms of stability in energy and variance. The spectra did not only reach higher energies but the standard deviation of the energies were by a factor of $2$ more stable. The 2 sigma width of their distribution was $\pm 15\,\%$ for Cole and $\pm 7\,\%$ for Poder, which means that 95 percent of shots were expected to fall within this range. The variance of the spectrum was also more stable in the case of Poder et al. being 10 times lower than for the electron spectra observed in Cole et al..
 
-\subsubsection{Crucial Lessons}
-
-Reproducibility is key to measure subtle changes in spectra.
-A solid statistical analysis of the intrinsic fluctuations of the system, if it can not be neutralised by other measurements, is key to the analysis but also as decision helper how many data points are required in the end.
-Taking references seriously is important for future measurements and the confidence in them.
-A proper statistical analysis can help to estimate the number of data shots and references required to make firm statements, for instance in this case to distinguish different models.
+Whilst the stability of the electron source was superior in Poder et al., the use of gas jet targets in conjunction with shock injection offer benefits in terms of stability of the injection point and the prospect of low energy spread electron beams that could facilitate discriminating radiation reaction models (REF CARRAN).
 
 \subsubsection{Future ambitions and projects}
 
 The expertise gained in these previous experiments paired with the technological capacities of the Astra-Gemini laser make it a realistic ambition to collide electrons at even higher relativistic energies ($\sim 2 \mathrm{GeV}$) and more intense laser fields ($a_0 \approx 25$) even at current laser facilities, expecting a gamma-ray spectrum with a critical energy close to $100\,\mathrm{MeV}$. These would enable probing radiation reaction as the energy loss due to the emission of radiation becomes significant in relation to the initial electron energy -- possibly even reaching a regime where QED effects become relevant as the `quantumness' parameter $\eta$, indicating how much the interaction is dominated by QED effects \cite{Blackburn2014} (maybe another REF), approaches values close to $1$. In this regime we even expect gamma rays to combine with laser photons to produce electron-positron pairs.
+At the same time, this work in conjunction with C ARRAN REF indicates that by improving the electron beam quality differences in models can be measured even at comparable laser and electron energies, giving future experiments at Gemini or comparable laser facilities the opportunity to bridge the gap between these first measurements of radiation reaction and the future projects being worked on at the next generation experiments.
 
 Future experiments at conventional facilities SFQED, LUX but also at high intensity laser facilities at even more non-linear conditions at CORELS (Gwangju), ELI pillars, Munich (FOR), maybe Gemini again, will be able to take precision measurements.
