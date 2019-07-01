@@ -8,8 +8,29 @@ The chapter then continues with a section on gas targets used in LWFA experiment
 
 Finally, the author discusses techniques used to diagnose the plasma, the interaction of the laser with the plasma as well as particles and radiation generated in the process.
 
+\section{The Astra-Gemini laser and Target Area 3}
 
-\section{Laser Systems and Diagnostics}
+All of the experimental results were acquired at Target Area 3 using the Astra-Gemini laser of the Central Laser Facility (CLF) at the Rutherford-Appleton Laboratory (RAL), UK.
+\vspace{\baselineskip}
+
+The titanium-sapphire doped (Ti:Sa) Gemini laser provides two beams up to every 20 seconds with central wavelength $800\,\mathrm{nm}$, a compressed pulse duration of $45\,\mathrm{fs}$ \textsc{fwhm} and up to $15\,\mathrm{J}$ energy on each arm, making it a dual-beam 300-TW laser facility on paper. The pulse duration can be adjusted using a Dazzler or if a ps scale laser pulse is required the gratings can be de-optimised on purpose.
+\vspace{\baselineskip}
+
+The target area Gemini supplies with the lasers is housed in a concrete bunker with lead door. 
+In the target area, named Target Area 3 or short TA3, the two beams enter the main vacuum chamber through separate pipes in the ceiling. Sapphire gate valves separate the vacuum chamber, often at air, from the compressor vacuum upstairs, and are only opened when the vacuum reaches sufficient quality.
+
+The aluminium main chamber is roughly sized XX times XX times XX and equipped with an aluminium breadboard.
+The laser beam lines, diagnostics etc. are freely designed and adjusted from each experiment to another.
+
+The limiting factor is the space to use long-focal-length optics a folding mirror is required. The energy is limited by the damage threshold of these mirrors.
+In addition, limiting factors in the laser chain make this laser system efficiently something closer to 200-TW.
+
+
+
+\section{Laser Diagnostics}
+
+\iffalse
+
 
 Since the experimental realisation of the laser \cite{Maiman1960} it has taken an indispensable role in a wide range of fields covering communication, construction, navigation, medicine, pharmaceuticals, machining, defense, numerous applications in science and innovation and more. 
 
@@ -28,7 +49,7 @@ CPA opened up the relativistic regime at intensities of around $10^{17}-10^{18}\
 \vspace{\baselineskip}
 
 
-\subsection{Chirped-pulse amplification (CPA)}
+%\subsection{Chirped-pulse amplification (CPA)}
 
 In laser amplification a laser pulse passes once (single pass) or multiple times (multipass) through an amplifier medium, called the laser gain medium, and is amplified in the process. To generate ultrashort pulses a large bandwith gain medium is required in order to amplify continuously over a large frequency domain. A popular choice are lasers based on titanium-doped sapphire (Ti:Sa) as gain medium due to their large bandwidth and tunability. At short pulse durations and high intensities non-linear effects such as relativistic self-guiding start to occur, leading to a local increase of the field strength. At very high field strengths the gain medium starts to ionize and in turn to take damage: amplification of these short pulse lasers is limited by this breakdown. Further amplification can then only be achieved if the beam is expanded for which then a larger gain medium becomes necessary. This limitation was overcome or at least pushed further by the invention of chirped-pulse amplification (CPA) \cite{Strickland1985} based on a technique employed in radar technology.
 \vspace{\baselineskip}
@@ -53,7 +74,16 @@ Another alternative is combining several separately amplified laser pulses eithe
 
 \footnotetext{Graphic taken from Wikipedia: \url{https://en.wikipedia.org/wiki/Chirped\_pulse\_amplification}}
 
-\subsection{Focal Spot Camera}
+\fi
+
+
+
+\subsection{Laser Energy Measurement}
+
+\subsection{Frequency-resolved optical gating (FROG)}
+
+
+\subsection{Focal Spot Analysis}
 
 In LWFA a short-pulse laser is focused down to reach high enough intensities to drive a wake, but has to guide itself over a long range at the same time. In parts of this work a second laser is used as scatterer for inverse Compton scattering or as X-ray heater.
 
@@ -96,14 +126,14 @@ A HASO observes the temporally integrated wavefront profile of the laser pulse. 
 
 Using this method one can attempt to optimise the wavefront to reach a diffraction limited focus.
 
-\subsection{Timing Diagnostics}
+\section{Dual Beam Timing Diagnostics}
 
 In experiments involving two or more pulsed laser beams the beams have to be timed to each other within their combined pulse duration.
 Depending on the accuracy required different techniques can help measure the difference in timing, correct and monitor it over extended periods of time.
 
 Photodiodes, spatial and spectral interferometry are introduced. Other methods, e.g. cross-correlator, were not introduced as they were not used in experiment. However, they are suitable and have their validity.
 
-\subsubsection{Diode Timing}
+\subsection{Diode Timing}
 
 Silicon photodiodes are a useful and easy-to-use tool to measure the temporal separation of light signals on a nano- to picosecond scale.
 Rise and fall times for fast diodes are few tens of picoseconds placing the peak of the distribution within ~10 ps using an appropriate oscilloscope. 
@@ -118,7 +148,7 @@ Dead reckoning.
 
 Limitations in vacuum.
 
-\subsubsection{Spatial Interferometry}
+\subsection{Spatial Interferometry}
 
 A more sensitive method is relying on spatial interferometry of the laser beams. If both laser pulses are overlapped in space and time within their combined pulse duration both beams can interfere. For that purpose both beams have to have the same polarisation. The fringes are coupled to the relative angle, radii of curvature and the visibility relies on the relative intensities.
 
@@ -133,7 +163,7 @@ How to combine the beams depends on the experiment geometry. In this case the be
 Different radii of curvature. Show example. The visibility is indicator for better overlap. It does not give an absolute number but a binary overlapped signal.
 The lower limit is around 20 fs.
 
-\subsubsection{Spectral Interferometry}
+\subsection{Spectral Interferometry}
 
 Two identically chirped pulses are being spectrally dispersed using a grating. The individual spectral components can overlap and the coherence length is greatly increased as $L \sim 1/\Delta \lambda$.
 
@@ -148,7 +178,7 @@ This could simply be a spectrometer with suitable grating.
 The fringes now depend on the temporal separation of the beams in the dispersive direction.
 This means an absolute number can be deduced by the fringes instead of a single overlap signal. This diagnostic is also able to track changes in absolute terms and suitable to track changes in timing over extended time periods.
 
-\subsubsection{Necessary Considerations for Timing Beams}
+\subsection{Necessary Considerations for Timing Beams}
 
 Timing two beams to each other down to the femtosecond level comes with challenges and considerations.
 
@@ -364,7 +394,7 @@ Measuring the self emission of the plasma channel. Pretty Pic. Top view on chann
 
 \section{Particle Diagnostics}
 
-\subsection{Electron Beam Profile}
+\subsection{Beam Profile Monitor}
 
 One possible beam profile diagnostics is a scintillating screen, e.g. lanex, that is positioned in the unperturbed electron beam, i.e. without dispersion. It  measures the shot-to-shot pointing fluctuation (motion of the centroid) and the divergence in both axes of the electron beam accelerated in experiment. 
 
@@ -389,7 +419,7 @@ To obtain an absolute number the screen has to be spatially calibrated. This inc
 A regular grid, for instance printed on some paper, can be used as spatial reference to evaluate this. The angle of the screen relative to the beam is also important. One way to compensate both is to place the screen at 45 degrees to the beam and the camera looking at 45 degrees as well restoring the right dimensions.
 Sometimes a thin layer of aluminium foil is added at the back as protection against laser light.
 
-\subsection{Magnetic Electron Energy Spectrometer}
+\subsection{Magnetic Energy Spectrometer}
 
 The energy of electrons in wakefield experiments can be determined in experiment using an electron energy spectrometer based on magnetic dispersion. The electrons are deflected using a dipole magnet and are detected on a scintillating LANEX screen.
 
@@ -466,7 +496,7 @@ Either methods can be used to deconvolve the spectrum and iteratively find the r
 
 \EliasComm{Add an image for deconvolution.}
 
-\subsection{Charge Measurement}
+\subsection{Absolute Charge Measurement}
 
 Absolute charge measurements are challenging in an EMP rich enviroment as intense laser-plasma interactions.
 ICT Turbos have been attempted to be used in laser facilities but have only been successfully applied in facilities based on conventional facilities.
