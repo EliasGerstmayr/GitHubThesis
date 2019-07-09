@@ -18,16 +18,14 @@ The titanium-sapphire-doped (Ti:Sa) Gemini laser with central wavelength $800\,\
 
 In the context of the experiments presented in this work typically two types of geometries are of relevance:
 
-Firstly, a long-focal-length geometry using either an f/40 spherical mirror or OAP with $f = 6\,\mathrm{m}$ to provide an intense laser pulse $a_0 > 1$ with a long Rayleigh length to drive LWFA. Due to the long focal length and the restricted size of the target area the beam is about halfway through the focusing process `folded'/reflected back. Unfortunately, this means that the usable energy in this laser arm is limited by the damage threshold of these `folding' mirrors, which is highly dependent on the actual beam quality, beam size before focus and at the mirrors, cleanliness and the quality of the coating.
+Firstly, a long-focal-length geometry using either an f/40 spherical mirror or OAP with $f = 6\,\mathrm{m}$ to provide an intense laser pulse $a_0 > 1$ with a long Rayleigh length to efficiently drive LWFA. Due to the long focal length and the restricted size of the target area the beam is about halfway through the focusing process `folded'/reflected back. Unfortunately, this means that the usable energy in this laser arm is limited by the damage threshold of these `folding' mirrors, which is highly dependent on the actual beam quality, beam size before focus and at the mirrors, cleanliness and the quality of the coating.
 
 The second geometry is the short-focal-length scatterer which is typically an f/2 OAP with $f = 300\,\mathrm{mm}$ which is also available with a central fitted hole for the case of head-on counter-propagating geometries. 
 
 In all geometries deformable mirrors/adaptive optics are used to optimise the wavefront.
 \vspace{\baselineskip}
 
-In addition to its full-power capabilities a continuous-wave (CW) mode for alignment and a low power pulsed mode at 10 Hz repetition rate are available as well.
-
-\EliasComm{Provide a sketch of a full experiment drawing (colour 3D)}
+In addition to its full-power capabilities a continuous-wave (CW) mode for alignment and a low power pulsed mode at 10 Hz repetition rate (XX ENERGY FOR LOW AND MEDIUM POWER) are available as well.
 
 
 \section{Laser Diagnostics}
@@ -83,31 +81,38 @@ Another alternative is combining several separately amplified laser pulses eithe
 
 \subsection{Laser Energy Measurement}
 
-At Gemini the laser energies are measured by cross-calibrating the counts on a camera looking at the transmitted beam through an HR optic with a Gentec calorimeter. The Gentec is also used to then measure the throughput of the compressor and the energy reaching TCC.
+At Gemini the laser energies is measured on every shot by collecting the transmitted light through the back of an HR mirror in the laser area and imaging it onto a CCD camera chip. The integrated number of counts are calibrated using a Gentec laser meter and the filtering is adjusted for different power modes.
 
-A typical compressor throughout is 60-70 percent.
+A Gentec is also used to measure the reflectivity of the compressor gratings and the energy effectively reaching the interaction point.
+
+A typical compressor throughput is 60-70 percent.
 
 \subsection{Laser Pulse Duration Measurement}
 
-Can be measured using autocorrelator, SPIDER, FROG, for instance.
+At Gemini Frequency-resolved optical gating (FROG) is used to measure the pulse duration of the laser and characterise its temporal intensity profile.
+A FROG trace can be taken on every shot by using the through HR mirrors transmitted beam in the laser area. A dazzler can be used to fine-tune the pulse profile.
 
-At Gemini a FROG is used.
-
-The Frequency-resolved optical gating (FROG) is a diagnostic to measure the intensity and spectral phase of ultrashort laser pulses as for instance present at Gemini ($\sim 40\,\mathrm{fs}$). The setup is comparable to an autocorrelator and is optically gated by combining two beams in a non-linear medium. Typically SHG is the non-linear medium of choice. The produced SH radiation is then spectrally resolved (hence frequency-resolved) and provides information about the spectral phase.
+The FROG is a diagnostic to measure the intensity and spectral phase of ultrashort laser pulses as for instance present at Gemini ($\sim 40\,\mathrm{fs}$). The setup is comparable to an autocorrelator and is optically gated by combining two beams in a non-linear medium. Typically SHG is the non-linear medium of choice. The produced SH radiation is then spectrally resolved (hence frequency-resolved) and provides information about the spectral phase.
 \vspace{\baselineskip}
 
-At Gemini a FROG trace can be taken on every shot using beams transmitted through HR mirrors.
+More details found in Matthew Streeter's thesis (REF thesis) and FROG BOOK TREBONI REF.
 
-More details found in FROG BOOK TREBONI? MJV STREETER's THESIS.
+Other diagnostics that can be used to measure the pulse duration are the SPIDER or an autocorrelator, but they are not single-shot diagnostics.
 
 \subsection{Focal Spot Characterisation}
 
 In LWFA a short-pulse laser is focused down to reach high enough intensities to drive a wake, but has to guide itself over a long range at the same time. In parts of this work a second laser is used as scatterer for inverse Compton scattering or as an X-ray heater.
 
-For each of these applications it is important to characterise the the size and energy distribution of the focal spot. In combination with a measurement of the pulse shape, for instance using a FROG measurement, this provides an intensity map of the laser pulse at focus.
+For each of these applications it is important to optimise and characterise the size and spatial energy distribution of the focal spot. Combining this with a measurement of the pulse shape, for instance using a FROG, provides then an intensity map of the laser pulse at focus.
 \vspace{\baselineskip}
 
-In this work a CCD camera, an AVT Manta, is coupled to a near infrared (NIR) apochromatic long-working-distance microscope objective (depending on the application Mutotoyo X10 or X20 magnification) to image the spot at its focal plane. 
+In this work a CCD camera, an AVT Manta, is coupled to a near infrared (NIR) infinity-corrected apochromatic long-working-distance microscope objective (depending on the application Mitotoyo X10 or X20 magnification) to image the spot at its focal plane. 
+A thin metal wire $10's \,\mathrm{\mu m}$ is used to help defining a focal plane.
+\vspace{\baselineskip}
+
+Due to the high intensity Gemini can reach the beam alignment and also the characterisation of the focal spot are performed with the CW mode or the attenuated low-power pulsed beam. Assuming the focal plane and general character of the spot remains the same, the energy of the actual focal spot on shot is then scaled from the low power image.
+
+A real direct measurement of the actual focus at typical intensities used in wakefield experiments is very challenging. Recent attempts involved the full 3D characterisation of the wavefront of the collimated laser beam by applying an asymmetric Mach-Zehnder interferometer and scanning the entire beam profile over hundreds of shots (see TERMITES REF) or using a gas jet ionisation (REF HERE). 
 
 \subsubsection{Spatial calibration}
 
@@ -126,38 +131,36 @@ As the exact size of the focal spot is important, the focal spot camera has to b
 
 \subsubsection{Treatment}
 
-Having calibrated the camera spatially one can then image the focal spot. A thin wire (50-75 microns) can be used to fix the focal plane to a well-defined position. An example of a focal spot from a beam focused with an f/40 optic is shown in figure XXXX.
+In addition to a spatial calibration, the images for a focal spot analysis require some background removal: 
+A series of images without any laser are taken (dark field) and averaged over to be then subtracted from the actual focal spot image. 
+Then a median filter can be used to account for individual hot pixels on the camera.
 
-In addition to a spatial calibration, a focal spot analysis requires a few more steps before estimating the spot size and intensity.
-Firstly, the background has to be removed. For this purpose a series of images without the laser (dark field) are averaged over and then subtracted from the focal spot image. A median filter can also be used to account for individual hot pixels on the camera.
-Now the remaining signal should be mainly the laser and the highest pixel values are at the centre of the focal spot.
-Taking the maximum pixel value and fitting an ellipse to half of this value, the FWHM size of the spot is estimated.
+The remaining signal should be mainly the laser spot and the highest pixel values are at the centre of the focal spot.
+Taking the maximum pixel value and fitting an ellipse to area reaching half of this value, the \textsc{fwhm} size of the spot is estimated.
 The area of the focal spot, ignoring smaller deviations from an ellipse, is then $A = \pi a b$, where $a$ and $b$ are the two axes.
-Comparing the pixel counts within the FWHM contour against the pixel counts in the total beam (if the background subtraction was successful the total counts on the image should suffice), one can then put a number on the fraction of energy contained in the FWHM of the beam. This number is important as a lot of energy in the beam will not efficiently drive a wake or scatter well if most of the energy is in the outer wings of the beam which will not be guided and diffract.
-
-Due to the high intensity of the lasers the focal spot of a weaker beam, i.e. before compression, before final amplification etc., is imaged to avoid damaging the equipment. The energy of the actual focal spot on shot is then scaled from the low power image.
-A real direct measurement of the actual focus at typical intensities used in wakefield experiments is very challenging and has to the knowledge of the author not been achieved so far. Recent attempts involved the full 3D characterisation of the wavefront of the collimated laser beam by applying an asymmetric Mach-Zehnder interferometer and scanning the entire beam profile over hundreds of shots (see TERMITES REF) or use a gas jet ionisation (REF HERE). 
+Comparing the pixel counts within the \textsc{fwhm} contour against the pixel counts in the total beam, one can then quantify the fraction of energy contained in the \textsc{fwhm} the beam. A high fraction is important as the wings of the beam decreases the peak intensity and will not be guided in the wakefield accelerator, is hence lost.
 
 \subsubsection{Intensity and a0}
 
 Knowing about the total energy in the beam and combining this with a measurement of the pulse shape (e.g. using a FROG), the number of pixel counts in the spot can be related to an intensity in the beam.
-The focal spot in figure XXX for instance has a size of XXXXXXX. The FROG analysis reveals a peak power of XXX TW. Combined this gives a peak $a_0 = 2$. 
+The focal spot in figure XXX for instance has a size of XXXXXXX. The FROG analysis indicates a peak power of XXX TW. Combined this gives a peak $a_0 = 2$. 
 
 Ideally, a series of several focal spots, even hundreds, are taken to incorporate fluctuations in the shape of the spot but also to characterise the typical spatial fluctuations over time.
 
 \subsection{Wavefront Sensor and Adaptive Optics}
 
 Real laser beams tend to have a series of imperfections attributed to them due to the gain medium, diffraction, dirt or damage on optics, misalignments and so on.
-However, too many aberrations or distortions in the beam prevent it from focusing down to a diffraction-limited spot but result in energy being distributed in wings and less energy being contained within a small spot. This means that the intensity reached is lower and a lot of energy is not efficiently used in the process.  Aberrations or other inhomogeneities impose an additional limit on the minimum size of the focal spot and hence the maximum intensity achievable.
+Too many aberrations or distortions in the beam prevent it from focusing down to a diffraction-limited ideal spot and result in energy being distributed in wings instead of merging to a small spot. As a consequence the final peak intensity reached is lower and a large fraction of energy is not efficiently used in the process. 
 \vspace{\baselineskip}
 
-In addition to ensuring that the beam propagation and source is as close to ideal as possible, one can use a special camera, a wavefront sensor, to characterise the wavefront of the beam. In combination with a deformable mirror or an adaptive optic (AO) a software can deduce a map of which change in the mirror relates to what kind of change in the wavefront. Having characterised this the mirror can be used to flatten the wavefront iteratively to correct for the wavefront errors which makes consequent modelling easier, matching to simulations, and enables reaching a diffraction limited focus at higher intensities.
-On the other hand, other applications might benefit from additional aberrations and this method can actively add those.
-E.g. astigmatism for radiation reaction (Baird), wavefront tilt for betatron radiation (Mangles).
+In addition to ensuring that the beam propagation and source is as close to ideal as possible, one can use a special camera, a wavefront sensor, to characterise the wavefront of the beam. In conjunction with a deformable mirror or an adaptive optic (AO) a software can derive a map relating changes in the mirror to changes in the wavefront. Using this map or `interaction matrix' the mirror can be applied to flatten the wavefront iteratively correcting for wavefront errors which makes consequent modelling easier, matching to simulations, and enables reaching a diffraction limited focus at higher intensities.
+On the other hand, this also gives control to add aberrations and tailor the wavefront to specific applications that might benefit from this, e.g. astigmatism for radiation reaction (Baird), wavefront tilt for betatron radiation (Mangles).
 \vspace{\baselineskip}
 
 In this work a Shack-Hartmann sensor (HASO) was used. This type of wavefront sensor is an array of microlenses.
 A HASO observes the temporally integrated wavefront profile of the laser pulse. Spatio-temporal couplings are not visible and have to be diagnosed differently, for instance by characterising the behaviour of the beam near its focus or by measuring the focus separately for different temporal slices (using narrow interference filters).
+
+One adaptive optic was an ILAO (mechanical motors, large stroke), the other one is a piezo-activated AO made by Chris Hooker at RAL.
 
 
 \section{Dual-Beam Timing Diagnostics}
@@ -171,14 +174,12 @@ Photodiodes, spatial and spectral interferometry are introduced. This is not an 
 At Gemini both laser beams originate from the same source (oscillator) and are hence `intrinsically' synchronised, which means that they are emitted/triggered at the same time, underlie the same jitter but do not shift relative to each other at the point of emission. However, this does not mean that both beams are automatically synchronised at the point of interaction, since the arms take different pathways through the amplification and compression stage, and then finally follow different beam lines within the target chamber. The longer their separate paths the larger the potential impact of, for instance, vibrations and thermal effects can be. Incredibly small changes can cumulatively make a significant impact on the $\mathrm{fs}$-scale synchronisation required in some of the challenging experiments attempted at Gemini.
 \vspace{\baselineskip}
 
-`Timing' two beams means in this case that the relative path lengths are adjusted to compensate for the measured difference in the time of arrival at the interaction point. At Gemini larger distances (ns) require moving optics physically to extend the beam path, smaller distances are finely adjusted by using a linear translation stage that adds or removes path length in double-pass at few femtosecond precision.
+`Timing' two beams means in this case that the relative path lengths are adjusted to compensate for the measured difference in the time of arrival at the interaction point. At Gemini larger distances (few ns's or metres in distance) require moving optics physically to extend the beam path, smaller distances are finely adjusted by using a linear translation stage that adds or removes path length in double-pass at few femtosecond (micrometre) precision.
 
 \subsection{Diode Timing}
 
 Photodiodes are a useful and easy-to-use tool to measure the temporal separation of light signals on a nano- to picosecond scale.
-Rise and fall times for fast diodes are few tens of picoseconds placing the peak of the distribution within ~10 ps using an appropriate oscilloscope. 
-
-\EliasComm{Add a picture and scope image.}
+Rise and fall times for fast diodes are few tens of picoseconds placing the peak of the distribution within $\sim10\,\mathrm{ps}$ using an appropriate oscilloscope. 
 
 Both laser pulses have to be overlapped at the designated point in space and the signals combined onto the diode. Alternatively, an object at the crossing point can be used to scatter both beams to send a more diffuse signal to the diode. This is a suitable method if the extent of the scattering object is negligible on the order of the accuracy of the method.
 \vspace{\baselineskip}
@@ -280,7 +281,7 @@ The refractive index of air at standard temperature and pressure for 800 nm is $
 
 \begin{align}
 \Delta t &= \frac{d}{c} \left( \eta_{air} - \eta_{0}\right),\nonumber\\
-\Delta t  &\approx 0.9\,\mathrm{ps} \times \frac{d}{1,\mathrm{m}},
+\Delta t  &\approx 0.9\,\mathrm{ps} \times \frac{d}{1\,\mathrm{m}},
 \end{align}
 
 which means every metre of path length that is being shifted from air to vacuum will add $0.9\,\mathrm{ps}$ of time delay.
@@ -292,38 +293,65 @@ At Gemini the driver beam typically covers a path of over 10 m distance as it in
 \subsubsection{Gate valves}
 
 As another step in the pump-down process at Gemini is opening the gate valves that separate the target chamber, which is often at air or lower quality vacuum, from the relatively permanent and high quality vacuum of the laser compressors (two separate compressors).
-Once the vacuum in the target chamber reaches a sufficient quality and the turbo pumps are running, the gate valves are opened.
-The gate valves at Gemini are made out of sapphire glass but is of different thickness on each arm, see RAL report 2005 D Carroll and CD Murphy. Difference around $60 \pm 3\,\mathrm{\mu m}$.
+Once the vacuum in the target chamber reaches a sufficient quality and the turbo pumps are engaged, the gate valves are opened.
+The gate valves at Gemini are made out of sapphire glass but are of different thickness on each arm, see RAL report 2005 D Carroll and CD Murphy REF. The difference in thickness is around $60 \pm 3\,\mathrm{\mu m}$.
 
 The refractive index is 1.75 and 1.76 in ordinary and extraordinary axis at 800 nm. This means removing the gate valves will shift the relative time of arrival again by $150\,\mathrm{fs}$.
 
 
 \subsubsection{Attenuation}
 
-The previous two examples can be cross-checked by repeating some of the timing procedures, for instance spatial interferometry, after the pump-down and adding the correction factors.
+The previous two examples can be cross-checked by repeating some of the timing procedures, for instance using spatial interferometry after the pump-down, add the correction factors and optimise the interference pattern again.
 
-In some cases, however, material might be inserted asymmetrically to attenuate the beams. At Gemini glass slides are available to attenuate beams by a factor $\sim 100$ and will be used in conjunction with polarisers and waveplates to improve the contrast of the interference pattern.
+In some cases, however, material might be inserted asymmetrically to attenuate the beams. At Gemini glass slides are available to attenuate beams by a factor $\sim 100$ and are used in conjunction with polarisers and waveplates to improve the contrast of the interference pattern.
 The attenuators are $2\,\mathrm{mm}$ thick fused silica glass slides at 45 degrees with refractive index $\eta = 1.4533$\footnote{NIST ref or so} REF, introducing a $4.24\,\mathrm{ps}$ delay per attenuator (up to 2 per beam). In this setup the attenuators are identical and if an equal number are used per beam no measurable change in relative time of arrival is witnessed. An asymmetric number requires adjustments and in general if materials are inserted, it should be checked whether they might influence the time of arrival.
 \vspace{\baselineskip}
 
-Recently, the attenuators at Gemini have been matched with `compensator plates' that will be in the beam path when the attenuators are not. The compensator plates and the attenuators are matched, such that introducing an attenuator should not change the delay at all and asymmetric attenuation also would not change the relative delay. The accuracy of this setup, however, also has to be investigated and quantified.
+Recently, the attenuators at Gemini have been matched with `compensator plates' that will be in the beam path when the attenuators are removed. The compensator plates and the attenuators are matched, such that introducing an attenuator should not change the delay at all and asymmetric attenuation also would not change the relative delay. The accuracy of this setup, however, also has to be investigated and quantified.
 
 \subsubsection{Laser-Laser to Beam-Laser Timing}
 
 So far the considerations and methods have been aimed at ensuring the temporal overlap of two laser pulses, taking into account changes introduced by pump-down procedures or attenuation.
 
-Finally, we want to highlight what to consider when wanting to time a laser to an electron bunch produced through LWFA.
+Finally, we want to highlight what to consider when aiming to synchronise a laser pulse to an electron bunch accelerated through LWFA.
 
 One has to consider several factors:
 
-The driver beam propagates through a plasma and is hence slower relative to the in vacuum-timing procedure: it will arrive later at the interaction point than measured previously.
+The driver beam propagates through a plasma and is hence slower relative to the in vacuum-timing procedure: it will arrive later at the interaction point than measured previously in vacuum.
 
 The electrons are injected after a certain distance of propagation. After injection they quickly reach a velocity close to the speed of light.
 
 As time window for the relative timing of the driver pulse and the electron bunch we can estimate: the bunch trails between a half to one plasma wavelength behind the laser pulse due to the bubble size if in the first bubble or N times that for the Nth bucket.
 If the electrons are close to dephasing the lower limit is a close indicator.
+\vspace{\baselineskip}
 
-Otherwise it becomes important to know the point of injection, calculate the distance the laser pulse propagated in plasma and take this as total delay (as the electrons are moving just as fast as the laser in vacuum from thereon forwards). For this purpose measuring injection radiation or forcing radiation at a designated point (shock injection) becomes very useful.
+THIS IS FROM RR2015 CHAPTER, NEEDS TO BE ADJUSTED OR REMOVED THERE OR HERE.
+
+For the delay induced through the South beam travelling through a medium we use the group velocity, $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$, which is the non-linear group velocity in media reduced by the etching velocity (called front velocity in REF DECKER 1996 Phys Plasmas). The distance that the North beam travels in vacuum during the time the South beam travels through a medium of thickness $d$ is $d'=d c/v_f$. The new collision point for the two laser pulses is now shifted by
+
+\begin{equation}
+\delta z_1 = \frac{1}{2} \left(d \frac{c}{v_f} - d\right) = \frac{d}{2} \left(\left(1-\frac{3}{2} \frac{n_e}{n_c}\right)^{-1} -1\right) \approx \frac{d}{2}\left(1+\frac{3}{2} \frac{n_e}{n_c} -1\right) = \frac{3d}{4}\frac{n_e}{n_c}.
+\end{equation} 
+
+The electrons trail behind the South laser pulse around N plasma wavelengths (the factor half indicates that the collision will occur midway):
+\begin{equation}
+\delta z_2 = 0.5 N \lambda_p = 0.5 N \frac{2 \pi c}{\omega_p} = 0.5 N \frac{2 \pi c}{\omega} \frac{\omega}{\omega_p} = 0.5 \lambda_0 \sqrt{\frac{n_c}{n_e}}.
+\end{equation}
+
+The electron-laser collision then occurs at $\delta z$ from the laser-laser vacuum timing:
+
+\begin{equation}
+\delta z = \frac{3d}{4} \frac{n_e}{n_c} + N \frac{\lambda_0}{2}\sqrt{\frac{n_c}{n_e}},
+\end{equation}
+where $d$ is the distance of injection point from front of gas jet
+$N$ is number of plasma periods between f/40 and electron bunch.
+
+\EliasComm{Add picture to indicate the steps and the different delays.}
+
+END OF PART TAKEN FROM RR2015 CHAPTER
+\vspace{\baselineskip}
+
+This shows that knowing the point of injection becomes important. Alternatively, calculate the distance the laser pulse propagated in plasma and take this as total delay (as the electrons are moving just as fast as the laser in vacuum from thereon forwards). For this purpose measuring injection radiation or forcing radiation at a designated point (shock injection) becomes very useful.
 
 However, this assumes that the electron bunch does not have a spatio-temporal extent which is typical for LWFA beams with long tails and potentially energy-time chirp. Short, localised injections will lead to low energy spread but also short bunches that will localise the beam further. This is also a property shock injection can facilitate.
 \vspace{\baselineskip}
@@ -342,33 +370,34 @@ Whilst it is of utmost importance to minimise these effects by investing in clim
 
 \section{Gas Targets}
 
-In laser-wakefield acceleration (LWFA) the laser pulse propagates through the plasma and sets up a density modulation. To permit this propagation the density of the medium has to be below a certain threshold. This threshold is the critical density $n_c = m_e \epsilon_0 \omega^2/e^2$. A medium with electron density $n_e < n_c$ is referred to as `underdense'. At $\lambda = 800\,\mathrm{nm}$ these are typically gaseous targets. `Overdense', i.e. targets with a density higher as the critical density, are mostly solid or liquid targets in the context of Ti:Sa lasers. They are preferrably used for ion acceleration schemes (e.g. (Target Normal) Sheath Acceleration (TNSA) \cite{Wilks2001,Maksimchuk2000}) or to generate X-rays. 
-
-For high intensity (HI) lasers with peak intensities around $10^{17}-10^{18}\,\mathrm{W\,cm^{-2}}$ relativistic effects that change the critical density locally and can in some cases prevent the laser pulse from propagating become important. This effect is the principle of plasma mirrors which helps reducing the pre-pulse of the laser pulse and to improve the contrast. For LWFA experiments, however, densities well below $n_c$ are required. 
+In laser-wakefield acceleration (LWFA) the laser pulse propagates through the plasma and sets up a density modulation. To permit this propagation the density of the medium has to be below the critical density, $n_c = m_e \epsilon_0 \omega^2/e^2$. A medium with electron density $n_e < n_c$ is referred to as `underdense'. At $\lambda = 800\,\mathrm{nm}$ these are typically gaseous targets. `Overdense', i.e. targets with a density higher as the critical density, are mostly solid or liquid targets in the context of Ti:Sa lasers. They are preferrably used for ion acceleration schemes (e.g. (Target Normal) Sheath Acceleration (TNSA) \cite{Wilks2001,Maksimchuk2000}) or to generate X-rays (REF). In LWFA experiments, however, densities well below $n_c$ are required. 
 \vspace{\baselineskip}
 
-Gas and liquid targets offer the advantage of being used in high-repetition experiments as they can be destroyed and replenished in a short amount of time without significant re-alignment and debris production. The limiting factors are the performance of the vacuum system, the time it takes the gas flow to reach equilibrium, the durability of nozzles/casings etc. and the repetition rate of the laser system in use. Facilities like FLASHForward that have in principle the capabilities and the ambition to operate at MHz repetition rate even have to consider ion and plasma dynamics and scintillation times for detectors.
+Gas and liquid targets offer the advantage of being used in high-repetition experiments as they can be destroyed and replenished in a short amount of time without significant re-alignment and debris production. The limiting factors are the performance of the vacuum system, the time it takes the gas flow to reach equilibrium, the durability of nozzles/casings etc. and the repetition rate of the laser system in use. Facilities like FLASHForward that have in principle the capabilities and the ambition to operate at MHz repetition rate (REF) even have to consider ion and plasma dynamics and scintillation times for detectors.
 \vspace{\baselineskip}
 
 Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001}, gas cells or capillaries \cite{Leemans2006,Nakamura2007} and capillary targets with a pre-ionised plasma (using an electric discharge) \cite{Spence2001}. In some cases several targets of the same or different type or combined and staged together to achieve more favourable results.
-However, even within those types of targetry a large variety exists, each target tailored to different applications and purposes. 
+However, even within those types of targetry a large variety exists, with each target being tailored to a different application and purpose. 
 
-As listing and explaining all those different targets would be a hopeless task, the author will limit himself to focus on examples of gas jet and cell specimen relevant to the work presented later in this thesis.
+The target size, i.e. the distance the laser pulse has to propagate through the medium, has to be matched with the laser in use, considering depletion and dephasing lengths to optimise the particle and radiation output, and to use the energy of the laser pulse to its fullest.
+
+
+As listing and explaining all those different targets would be a hopeless task, the author will limit himself to focus on examples of gas jet and cell specimen relevant to the work presented within the course of this thesis.
 
 \subsection{Gas Jets}
 
 \subsubsection{General}
-The burst of gas produced when forcing gas with high backing pressure through a small orifice at the bottom of a diverging cone is in the context of this work related to as gas jet.
-If the measurements of the cone are chosen correctly at a high enough backing pressure, the flow detaches and becomes supersonic.
-Supersonic gas jets are able to produce relatively smooth flat-top density profiles with short density ramps on both sides.
+The flow of gas produced when forcing it with high backing pressure through a small orifice at the bottom of a diverging cone is in the context of this work related to as gas jet.
+If the measurements of the cone are chosen correctly at a high enough backing pressure, the flow detaches and becomes supersonic (REF SEMUSHIN).
+Supersonic gas jets are able to produce relatively smooth flat-top density profiles with short density ramps on both sides, suitable for LWFA.
 
 The density of the gas jet is controlled by varying the backing pressure of the gas line, where higher pressure results in higher densities. When comparing nozzles of the same type in different sizes, larger nozzles require higher backing pressures to reach the same densities as smaller nozzles. For supersonic flat-top profiles the density slowly decreases above the nozzle. The actual density profile and gas flow depends on the specific design and manufacturing.
 \vspace{\baselineskip}
 
-The expanding gas cools down and in some cases can lead to the formation of clusters held together by the Van-der-Waals force between the atoms or molecules \cite{Hagena1972}. Clusters are being investigated as gas targets with potentially higher charge or beam stability as in self-injection. Suprasonic flows on the other hand might be useful for other applications including the production of betatron radiation. 
+The expanding gas cools down and in some cases can lead to the formation of clusters held together by the Van-der-Waals force between the atoms or molecules \cite{Hagena1972}. Clusters are being investigated as gas targets with potentially higher charge or beam stability as in self-injection (REF). Suprasonic flows on the other hand might be useful for other applications including the production of betatron radiation (REF). 
 \vspace{\baselineskip}
 
-Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. However, experimental results are less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014} and stability \cite{Desforges2014,Osterhoff2013} to set-ups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible. ALSO MENTION MAX ENERGY FROM JET (4GEV CORELS)
+Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. However, experimental results are less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014} and stability \cite{Desforges2014,Osterhoff2013} to set-ups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible. ALSO MENTION MAX ENERGY FROM JET (4 GEV CORELS)
 \vspace{\baselineskip}
 
 \begin{figure}
@@ -377,24 +406,22 @@ Gas jets provide a relatively easy target, diverse in shape and comparatively st
 \caption{Nozzle sketch, distances in mm. MAKE OWN SKETCH AND WITH RELEVANT NUMBERS}
 \end{figure}
 
-The nozzle size, i.e. the distance the laser pulse has to propagate through the medium, has to be matched with the laser in use, considering depletion and dephasing lengths to optimise the particle and radiation output, and to use the energy of the laser pulse to its fullest.
-
 Different geometries and sizes are being used depending on the application: for instance conical and rectangular, completely flat or double cones, diverging or converging. Different nozzle types and sizes have advantages for certain applications, producing density profiles for enable specific injection mechanisms, provide a fairly smooth flat-top profile \cite{Semushin2001a} and so on.
 The diversity of nozzle designs also lead to the idea of using 3D printing methods for fast prototyping and tailoring the nozzles to the specific needs of the experiment \cite{Jolly2012}.
 
-The material applied is generally a type of metal, varying from aluminium to steel or brass. In the case of \cite{Jolly2012} plastic was used for prototyping. Manufacture errors or deterioration over long run times can have an impact on the gas flow and will lead to deviations from idealised hydrodynamic simulations. Hence nozzles (and other gas targets as well) are usually characterised, i.e. their gas flow is analysed, either before or after an experiment to account for deviations from the ideal simulation properties in hydrodynamic codes like FLASH. The density can, for instance, be determined using an interferometry set-up and Abel inversion \cite{Bracewell1978}. In case of clustered media Rayleigh-scattering can be used to determine the cluster size and density.
+The material applied is frequently a type of metal, varying from aluminium to steel or brass, in order to withstand the high laser intensities and the plasma heat. In the case of \cite{Jolly2012} plastic was used for prototyping. Manufacture errors or deterioration over long run times can have an impact on the gas flow and will lead to deviations from idealised hydrodynamic simulations. Hence nozzles (and other gas targets as well) are usually characterised, i.e. their gas flow is analysed, either before or after an experiment to account for deviations from the ideal simulation properties in hydrodynamic codes like FLASH. The density can, for instance, be determined using an interferometry set-up and Abel inversion \cite{Bracewell1978}. In case of clustered media Rayleigh-scattering can be used to determine the cluster size and density.
 \vspace{\baselineskip}
 
 
 \begin{figure}
 \centering
 \includegraphics[height=0.35\columnwidth]{GasCell_Example_cut.png}\includegraphics[height=0.35\columnwidth]{conical_nozzle_prettypic.jpg}
-\caption{Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionized by the laser and lights up. Picture taken at Gemini, Central Laser Facility, in December 2015. }
+\caption{Gas targets in action. Right: Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionized by the laser and lights up. Picture taken at Gemini, Central Laser Facility, in December 2015. Left: Gas Cell}
 \end{figure}
 
 \subsubsection{Experimental Implementation}
 
-The gas nozzles used in experiment are conical aluminium nozzles designed to produce supersonic gas flows. Orifice size is 1 mm wide and diverges over a certain height to its maximum diameter.
+The gas nozzles used in experiment are conical aluminium nozzles designed to produce supersonic gas flows. Orifice size, $D_{crit}$ in drawing, is 1 mm wide and diverges over a certain height to its maximum diameter.
 
 In Chapter a conical nozzle with $1\,\mathrm{mm}$ orifice diverges over $19.7\,\mathrm{mm}$ to its maximum diameter of $15\,\mathrm{mm}$\footnote{designed by Stuart Mangles, Imperial College}.
 In Chapter a conical nozzle with $1\,\mathrm{mm}$ orifice diverges over $23.3\,\mathrm{mm}$ to its maximum diameter of $15\,\mathrm{mm}$\footnote{designed by Stefan Kneip, Imperial College}.
@@ -405,9 +432,11 @@ The nozzles were operated at few to 100 bar backing pressures, typically at elec
 
 To tailor the density profile even more groups have inserted thin objects into the supersonic gas flow to induce a shock front. The shock introduces a sharp density transition in the density profile which can be used to trigger a localised injection event in LWFA referred to as shock injection.
 
-Here some references for wire, silicon, blade etc.
+Here some references for wire, silicon, blade etc., alternatively using two gas jets (REF REF REF).
 
 In the experiments a steel blade of dimensions XXX was mounted on a long arm attached to a rotation and translation stage.
+
+\EliasComm{Provide pic.}
 
 
 \subsection{Gas Cells}
@@ -419,18 +448,22 @@ Variable length is possible and with several stages in one cell to tailor the de
 
 In general, gas cells have shown to be able to provide relatively uniform density profiles, stable even at low densities and -- even though harder to design, manufacture, to set up and align -- to be a very feasible option to achieve great reproducible results \cite{Osterhoff2008}.
 
-In contrast to gas jets, the alignment is more involved as the orientation of the gas cell is crucial to make sure the laser pulse propagates through the entire cell, also in order to avoid damaging the gas cell and in consequence deteriorate the performance and possibly damage other components through debris. Depending on the size of the laser beam and the gas cell even careful alignment can lead to deterioration of components, especially at the entry and exit holes if the laser beam is too large, jitters or defocuses in interaction with the plasma.
+In contrast to gas jets, the alignment of cell require more precision as the orientation of the gas cell is crucial to make sure the laser pulse propagates through the entire cell, also in order to avoid damaging the gas cell and in consequence deteriorate the performance and possibly damage other components through debris. Depending on the size of the laser beam and the gas cell even careful alignment can lead to deterioration of components, especially at the entry and exit holes if the laser beam is too large, jitters or defocuses in interaction with the plasma.
 
 Gas cells have been very successfully used by several research teams reaching energies up to the multi-GeV level in a single stage \cite{Leemans2014}.
 \vspace{\baselineskip}
 
+\EliasComm{Provide pic of damaged cell?}
+
 A disadvantage, in addition to the factors mentioned previously, is the potential reduction in field of view due to the enclosing shell of the gas cell. This might make taking data from optical diagnostics like side-scattering more challenging.
 This can be resolved by designing the gas cell accordingly and use appropriate materials that allow probing and withstand the experimental conditions. However, more careful planning is required in advance to design the gas cell and put appropriate maintenance and alignment procedures in place.
-Debris can coat the glass windows and reduce the efficiency of optical diagnostics.
+Debris can coat the glass windows and reduce the efficiency of optical diagnostics over time.
 \vspace{\baselineskip}
 
 Just as 3D printing methods have been considered for gas jets \cite{Jolly2012} researchers have demonstrated that this is also possible and feasible for gas cell designs \cite{Vargas2014} CITE ALEC THOMAS PAPERS 3D PRINTED DESIGNS.
 \vspace{\baselineskip}
+
+\EliasComm{Provide pic of gas cell?}
 
 \subsubsection{Experimental Implementation}
 
@@ -441,7 +474,7 @@ In Chapter XX a variable length aluminium gas cell was used reaching lengths XX 
 The properties and the behaviour of the plasma accelerator depend on the medium the laser propagates in. Tailoring the density profile or the gas in use can force the evolution of the bubble and inject electrons before wave-breaking. An easy handle is the choice of gas as it requires little engineering, but can have a significant impact on the injection mechanism in the wakefield accelerator.
 \vspace{\baselineskip}
 
-The author will mention three examples of gases each related to a different injection mechanism introduced earlier, but similarly as there is a variety of different target designs other media are used as well.
+The author will mention three examples of gases each related to a different injection mechanism introduced earlier in the Theory section, but similarly as there is a variety of different target designs other media are used as well.
 \vspace{\baselineskip}
 
 The first example is helium. At typical laser intensities in the context of LWFA helium is fully ionised and at first approximation the laser pulse propagates through a homogeneous medium. While propagating through the medium the laser pulse and the bubble evolve, the laser self-focuses, the wake becomes strongly non-linear and wave-breaking occurs, resulting in electrons being injected into the bubble: this is called self-injection as this mechanism is purely based on the evolution of the bubble in the plasma. This mechanism, however, is hence strongly coupled to the properties of the laser and its evolution in the plasma. Helium is one of the most frequently used gases in LWFA (REF).
@@ -451,11 +484,15 @@ Another gas that is fully ionised at these intensities is hydrogen. The downside
 The second example is nitrogen. Electrons in higher-Z gases like nitrogen are bound more strongly than in helium or hydrogen. At typical laser intensities used in LWFA nitrogen cannot be fully ionised and outer electrons are only released at peak intensities of the laser pulse. This behaviour is utilised in ionisation injection. Here a gas with a low ionisation threshold, e.g. helium, is doped with a high-Z gas, e.g. nitrogen. In this case helium would allow the laser pulse to propagate and to drive a wake. The high-Z gas would result in a release of additional electrons at the peak fields of the laser pulse which are then trapped and accelerated (REF).
 \vspace{\baselineskip}
 
-The third example is methane. When being cooled down some gases start to form clusters held together by the Van-der-Waals force. These clusters are compounds ranging in size from tens to several hundreds of molecules, and locally increase the density, in some cases beyond the critical density, with respect to remaining unclustered background medium (REF). This is comparable to nanparticle-assisted injection mechanisms (REF).
+The third example is methane. When being cooled down some gases start to form clusters held together by the Van-der-Waals force. These clusters are compounds ranging in size from tens to several hundreds of molecules, and locally increase the density, in some cases beyond the critical density, with respect to remaining un-clustered background medium (REF). This is comparable to nanparticle-assisted injection mechanisms (REF).
 
 Injection mechanism similar to ionisation injection. Laser pulse evolution is different.
 Enhanced stability and charge but theory is subject to present research.
+\vspace{\baselineskip}
 
+In Chapters XX RR19lin, RR19betamax helium was used in a gas jet with a blade.
+
+In Chapter XX BW18 helium with nitrogen dopant was used (ionisation injection).
 
 \section{Characterising Gas Targets}
 
@@ -693,20 +730,54 @@ To decide whether a radiation source is suitable for certain applications, a tho
 The following tools were used in the context of the author's work for this purpose.
 \fi
 
+
+\subsubsection{Motivation}
+
+In the following chapters various arrays of scintillator arrays (in this case caesium-iodide doped with thallium, CsI(Tl)) are emplyed to measure the spectrum of gamma radiation from various sources (bremsstrahlung, linear and non-linear inverse Compton scattering and hard betatron radiation).
+
+In the soft and hard X-ray regime spectra can be deduced by comparing the transmission of the radiation through various materials with characteristic K-absorption edges or relying on crystal reflections matching the Bragg-condition or a combination of both.
+For these conditions a good knowledge of the material properties and the positioning of the crystal and cameras is essential.
+The energy-dependent transmission through the material is related to an interplay of different mechanisms (Compton scattering, Rayleigh scattering, photoelectric effect, pair production and so on). The sum of these cross sections can be combined and found in specific repositories.
+
+At higher X-ray energies entering the gamma regime $\hbar \omega \rightarrow 1\,\mathrm{MeV}$ K-edges to effectively distinguish spectral bands become rarer and most materials become more transparent, as a consequence the resolving a full spectrum becomes challenging. At the same time pair production becomes possible and more likely with increasing energy.
+A detector interacting with such high energetic gamma-radiation is now faced with energy deposition by the radiation itself and secondary particles and radiation. An extended detector can mitigate this effect by forcing pair production in an earlier part of the detector and performing an again well resolved measurement in a second part of the detector. The complex interplay of pair production and energy deposition from secondary sources requires numerical solutions calculating the cross-sections for various processes dynamically throughout the interaction with the detector. This is where GEANT or other Monte Carlo based simulation codes come into play.
+
+At the few MeV level the spectrum of the generated electron-positron pairs scales directly with the energy of the gamma radiation interacting with the matter. Measuring the spectrum of these particles, for instance with a magnetic electron spectrometer, and comparing the results with a simulation result can then be used to deduce a gamma spectrum.
+
+The spectrum of the pairs, however, becomes less sensitive to the energy of the gamma-radiation at higher (tens of MeV) energies. An alternative method to measure such a hard spectrum is tracking the energy deposition of radiation and secondary sources throughout an array of scintillator material until it decays.
+This method has the advantage of being variable and viable for the few MeV level and much harder radiation.
+
+Simulations linked to this technique are outlined in this work and are then applied to experimental data in the following chapters to measure radiation from different materials in a range of hundreds of keV to hundred MeV (over three orders of magnitude).
+
+
 \subsection{Crystal Spectrometer}
 
 Bragg condition and crystal, CCD camera.
 Applicable in any range accessible using lattice constants. Energy range depends on detector size, distance and lattice properties.
 
 Bent crystals can be used for focusing and larger spectral range.
+HAPG HOPG.
+
+Used in experiment described in Chapter XX NUMBER QED BW.
 
 \EliasComm{Add pic similar to Brendan's XANES paper?}
+\EliasComm{Example pic of spectral measurement.}
 
 \subsection{Pinhole Camera}
 
 Pinhole camera.
 
 Measures source size and indicator for total X-ray flux.
+
+CCD Chip, pinhole of right material on tube to shield noise, source. Relative distances determine the magnification (geometric magnification).
+
+Used on the experiment described in Chapter XX.
+
+Double pinhole, one with 5 um aluminium and one with 6 um PET filtering. The pinhole itself is made of 25 um Ta.
+
+Alignment can be done by adding a spike on the front, point it at the interaction point and then carefully removing it at the end.
+
+\EliasComm{Add pic of signal and the pinhole.}
 
 \subsection{Filter Packs}
 
@@ -721,9 +792,12 @@ Direct (CCD) or indirect detection (with scintillator) Andor iKon.
 \caption{Quantum efficiency Andor Direct Detection (REF), AXES, REPLACE PLOT and change in signal shape for transmissions detected using a direct CCD camera on Laue 2017 for synchrotron spectra of critical energy up to 100 keV. Note the logarithmic scale.}
 \end{figure}
 
-
-
 When X-rays increase in energy the quantum efficiency of the CCD chip decreases, so energies beyond 100 keV are not measured.
+
+More details on the extraction procedure can be found in Jon Wood's thesis.
+
+Was not used on the experiments described but on other experiments the author was involved in.
+To motivate why other indirect detection methods are required and this method becomes less sensitive at higher energies.
 
 \EliasComm{Maybe don't go into detail and just refer to Jon Wood's thesis.}
 \EliasComm{Show Quantum Efficiency of an Andor iKon camera to show that it is not sensitive to higher energies whilst at the same time the materials all go transparent and flatten out.}
@@ -733,11 +807,20 @@ When X-rays increase in energy the quantum efficiency of the CCD chip decreases,
 
 Once the energies reach the gamma-ray regime (> 1 MeV), even using an indirect-detection camera on axis becomes infeasible as photons will decay into secondary particles and radiation that will shower the camera and reduce its lifetime.
 
-Relying on indirect detection then becomes necessary. Using an array or a screen of scintillator. The shape of the profile is interesting as it allows deduction of the source. In this context it gives insight into the properties of the electrons (their divergence, propagation and so on). In case of ICS this also gives an idea of interaction intensity and polarisation of the beam.
+Relying on indirect detection then becomes necessary. Using an array or a screen of scintillator. The shape of the profile is interesting as it allows deduction of the source (SEE REF). In this context it gives insight into the properties of the electrons (their divergence, propagation and so on). In case of ICS this also gives an idea of interaction intensity and polarisation of the beam.
 To measure the divergence in both axes and as measurement of the intensity.
+
+The energy deposited in an energy range (GIVE GEANT SIM FOR 10-XX MEV) is proportional to the energy of the radiation.
 
 \subsubsection{Experimental Implementation}
 
+
+
+In these experiments caesium-iodide doped with thallium is used frequently due to its high light yield. LANEX has typically a better spatial resolution but the energy deposition in the thin screens, especially at gamma-ray energies, is not sufficient to produce a lot of signal. Long CsI crystals give a pixelated response. LYSO also comes at a decent resolution but the light yield is lower. It is a fast scintillator but at lower repetition rates as at Gemini, this is not necessary and the noise levels can not be gated away.
+
+Different profile screens were used in the experiments. The details can be found in Table XX NUMBER REF.
+
+The scintillators emit around 546 nm of radiation which is ideal for CCD chips. Andor iXon cameras (sensitive chips) are used to image the scintillators.
 
 \begin{table}
 \centering
@@ -745,25 +828,42 @@ To measure the divergence in both axes and as measurement of the intensity.
 Name & Crystals & Crystal Dimension & Front Plate & Divider\\ \hline \hline
 QUB & $20 \times 20$ & $2 \times 2 \times 20$ & Al 10 mm & Al 0.1 mm\\
 Jena & $45 \times 45$ & $1 \times 1 \times 10$ & TiO2 0.5 mm & TiO2 0.2 mm\\
-DESY & $30 \times 30$ & $1.5 \times 1.5 \times 10$ & Epoxy 0.5 mm & Epoxy 0.2 mm
+DESY & $30 \times 30$ & $1.5 \times 1.5 \times 10$ & Epoxy 0.5 mm & Epoxy 0.2 mm\\
+RAL & $47 \times 33$ & $5 \times 5 \times 50$ & None & Al 1 mm
 \end{tabular}
 \caption{Different CsI profile stacks}
 \end{table}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{JenaProfile.jpg}
+\caption{Examples of profiles}
+\end{figure}
+
+\subsubsection{Absolute Calibration}
+
+The smaller profile stacks can also be calibrated by using a radioactive source since the stack mainly consists of crystals.
+A Na or Cs source can be used at the standard measurement conditions. The energy emission is known. If one assumes that all energy is absorbed by the detector the light yield is related to energy deposited.
 
 \subsection{Gamma-ray Converter Spectrometer}
 
 At gamma-ray energies above 1 MeV one photon can generate a pair of electron-positron pairs when scattering on matter. The spectrum of the generated electrons and positrons are linked to the energy of the gamma photon. Based on this principle one method to measure the gamma spectrum is using a sheet of high-Z material to convert the gamma rays into matter and then measure the spectrum of these particles in a magnetic spectrometer (REF).
 
 This works well for several MeV radiation but becomes less sensitive at higher energies (REF?) when the energy spectrum of the generated particles becomes less sensitive to the photon energy.
-\EliasComm{Add an image.}
+\EliasComm{Add an image of a potential setup and cross sections.}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\columnwidth]{CsI_MassAttenuation.png}
+\caption{Mass attenuation of CsI. REPLACE WITH OWN PLOT.}
+\end{figure}
+
 
 \subsection{Gamma-ray Scintillator Arrays}
 
-\EliasComm{Add image of cross sections to indicate why Compton spectrometer is not reliable above a certain energy of tens of MeV.}
 
 One method to detect and characterise X-rays is using blocks or slaps of scintillating material extending in the propagation direction of the radiation or perpendicular to it, depending on what aspect of the radiation one is interested in. The response of the material, i.e. how photons or particles deposit energy and how the scintillator reacts, is then modelled using Monte-Carlo codes, e.g. GEANT4 \cite{Agostinelli2003} or MCNP \cite{Goorley2012}, and compared to the response measured. In general, the penetration depth and the energy deposited in the crystals are proportional to the energy of the radiation transmitted. To discriminate the spectrum even further, different materials can be overlaid as the response varies from material to material. This might be more complicated for very high energetic gamma rays as the cross section is almost identical for most materials at the MeV scale.
 
-In contrast to other transmission studies the energy deposition and transmission is less linear but involves decays of photons into matter and those cascading back to photons. This means the signal will not follow a simple Beer's law but will require numerical solving and simulation via GEANT4 considering Bethe-Heitler processes etc.
+In contrast to other transmission studies at photon energies above few MeV the energy deposition and transmission is less linear but involves decays of photons into matter and those cascading back to photons. This means the signal will not follow a simple Beer's law but will require numerical solving and simulation via GEANT4 considering Bethe-Heitler processes etc, to then estimate how long the cascades go on for.
 
 
 
@@ -774,6 +874,15 @@ In contrast to other transmission studies the energy deposition and transmission
 
 
 \subsubsection{Experimental Implementation}
+
+
+Examples of stacks used in experiments: 
+
+RAL with steel plate in RR2015 (Chapter XX),
+
+RAL without steel and with PTFE in BW2018 (Chapter XX), 
+
+dual axis stack in Chapter XX and XX RR2019.
 
 \begin{table}
 \centering
@@ -793,24 +902,6 @@ Dual & $10 \times 70$ & $5 \times 5 \times 50$ mm & Al 2 mm & Plastic X mm
 \end{figure}
 
 \section{Gamma-ray Spectral Retrieval}
-\subsection{Motivation}
-
-
-In the following chapters various arrays of scintillator arrays (in this case caesium-iodide doped with thallium, CsI(Tl)) are emplyed to measure the spectrum of gamma radiation from various sources (bremsstrahlung, linear and non-linear inverse Compton scattering and hard betatron radiation).
-
-In the soft and hard X-ray regime spectra can be deduced by comparing the transmission of the radiation through various materials with characteristic K-absorption edges or relying on crystal reflections matching the Bragg-condition or a combination of both.
-For these conditions a good knowledge of the material properties and the positioning of the crystal and cameras is essential.
-The energy-dependent transmission through the material is related to an interplay of different mechanisms (Compton scattering, Rayleigh scattering, photoelectric effect, pair production and so on). The sum of these cross sections can be combined and found in specific repositories.
-
-At higher X-ray energies entering the gamma regime $\hbar \omega \rightarrow 1\,\mathrm{MeV}$ K-edges to effectively distinguish spectral bands become rarer and most materials become more transparent, as a consequence the resolving a full spectrum becomes challenging. At the same time pair production becomes possible and more likely with increasing energy.
-A detector interacting with such high energetic gamma-radiation is now faced with energy deposition by the radiation itself and secondary particles and radiation. An extended detector can mitigate this effect by forcing pair production in an earlier part of the detector and performing an again well resolved measurement in a second part of the detector. The complex interplay of pair production and energy deposition from secondary sources requires numerical solutions calculating the cross-sections for various processes dynamically throughout the interaction with the detector. This is where GEANT or other Monte Carlo based simulation codes come into play.
-
-At the few MeV level the spectrum of the generated electron-positron pairs scales directly with the energy of the gamma radiation interacting with the matter. Measuring the spectrum of these particles, for instance with a magnetic electron spectrometer, and comparing the results with a simulation result can then be used to deduce a gamma spectrum.
-
-The spectrum of the pairs, however, becomes less sensitive to the energy of the gamma-radiation at higher (tens of MeV) energies. An alternative method to measure such a hard spectrum is tracking the energy deposition of radiation and secondary sources throughout an array of scintillator material until it decays.
-This method has the advantage of being variable and viable for the few MeV level and much harder radiation.
-
-Simulations linked to this technique are outlined in this work and are then applied to experimental data in the following chapters to measure radiation from different materials in a range of hundreds of keV to hundred MeV (over three orders of magnitude).
 
 
 \subsection{Simulation Code and Functionality}
@@ -854,7 +945,7 @@ The front side of the detector is XX m away from the source of the radiation, si
 Now individual photons with ranging energy from 10 keV to 500 MeV are launched from the source point and the energy deposited in the crystals is being recorded. Each energy step is simulated 10.000 to 100.000 times and then averaged to obtain an average energy deposited per photon of this energy.
 
 The results from these simulation can be seen in figure ADD HERE. Photon energies up to ENERGY are almost completely absorbed, backscattered and rarely transmitted. At around 200 keV suddenly a large amount of radiation is being absorbed. This indicates a material characteristic absorption edge.
-This means that whilst for the majority of the enegry ranges the CsI profile will give a good indication as energy times flux is monotonic increasing and somewhat linear for the two regimes of interest. In the regime of hundreds of keV we have to consider that a lot of energy will be absorped in the front layer and we have to check how this behaves further downstream in the next detector.
+This means that whilst for the majority of the energy ranges the CsI profile will give a good indication as energy times flux is monotonic increasing and somewhat linear for the two regimes of interest. In the regime of hundreds of keV we have to consider that a lot of energy will be absorbed in the front layer and we have to check how this behaves further downstream in the next detector.
 
 \begin{figure}
 \centering
@@ -870,6 +961,11 @@ The scintillator stack used in the first results chapter is described in these p
 It is a 33x47 crystal array of crystals with face dimension 5 mm x 5 mm and length 10 mm. The crystals are spaced by aluminium (Thickness) and a plate is holding the crystals in place on their face. The holes are circular and cover some part of the face. In Poder publication this stack was used as a profile measurement. In this work the array is arranged such that the radiation penetrates further into the array of crystals (see figure). The radiation is expected to decay more and more while propagating deeper into the stack. The front plate is covered by several mms of steel which can also be replaced by a plastic layer.
 
 The stack was defined as described in the simulation and looks like this in the viewer (ADD FIGURE).
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{EdepGEANTStack.png}
+\caption{Simulation results: energy deposited per photon in an extended stack, mono-energetic.}
+\end{figure}
 
 
 The simulation range as before.
