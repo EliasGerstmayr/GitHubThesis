@@ -239,7 +239,7 @@ These measurements were done using the pulsed low power beam at Gemini.
 
 \subsection{Spectral Interferometry}
 
-In spectral interferometry two identically chirped pulses are spectrally dispersed using a grating and the individual spectral components overlap and interfere. Due to the dispersion the coherence length is greatly increased as $L \sim { }^1/_{\Delta \lambda}$ and the interference pattern is visible over a much larger time window than for spatial interferometry.
+In spectral interferometry two identically chirped pulses are spectrally dispersed using a grating and the individual spectral components overlap and interfere. Due to the dispersion the coherence length is greatly increased as $L \sim \Delta \lambda^{-1}$ and the interference pattern is visible over a much larger time window than for spatial interferometry.
 
 Visible over hundreds of femtoseconds and hence over a much larger time duration than for spatial interferometry, tens to hundred picoseconds.
 
@@ -654,7 +654,7 @@ The angular deflection of a particle in this case can be solved analytically usi
 \centering
 \includegraphics[width=0.5\columnwidth]{elecspec.png}
 \includegraphics[width=0.9\columnwidth]{TrackingFigMangles2015.png}
-\caption{Visualisation of an electron deflected in a homogeneous circular magnetic field (grey) with radius $r_b$. The larger green circle indicates the Larmor radius, determining the electron trajectory (blue) from the point of entry into the field (A) to its exit point (C) resulting in a total deflection $\theta$.}
+\caption{Visualisation of an electron deflected in a homogeneous circular magnetic field (grey) with radius $r_b$. The larger green circle indicates the Larmor radius, determining the electron trajectory (blue) from the point of entry into the field (A) to its exit point (C) resulting in a total deflection $\theta$. Bottom: Example of particle tracking through a three-piece magnet for electrons of -X, 0 and +X MRAD pointing.}
 \end{figure}
 
 Drawing the circular field region for the magnetic field and the electron entering the field, one can then graphically indicate its Larmor radius, equivalent to its expected motion for the region with the constant B-field. The angles in this constellation are determined using the trigonometric relation that the angles in a triangle have to add up to $\pi$:
@@ -757,6 +757,14 @@ The energy-dependent transmission through the material is related to an interpla
 At higher X-ray energies entering the gamma regime $\hbar \omega \rightarrow 1\,\mathrm{MeV}$ K-edges to effectively distinguish spectral bands become rarer and most materials become more transparent, as a consequence the resolving a full spectrum becomes challenging. At the same time pair production becomes possible and more likely with increasing energy (see cross section PLOT XX REF).
 
 At the few MeV level the spectrum of the generated electron-positron pairs scales directly with the energy of the gamma radiation interacting with the matter (REF). Measuring the spectrum of these particles, for instance with a magnetic electron spectrometer, and comparing the results with a simulation result can then be used to deduce a gamma spectrum (REF GIANLUCA SARRI).
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\columnwidth]{XsecCsI.png}
+\caption{Mass attenuation of CsI.}
+\end{figure}
+
 
 The spectrum of the pairs, however, becomes less sensitive to the energy of the gamma-radiation at higher (tens of MeV) energies (XSEC XX PIC REF). An alternative method to measure such a hard spectrum is tracking the energy deposition of radiation and secondary sources throughout an array of scintillator material until it decays.
 This method has the advantage of being variable and viable for the few MeV level and much harder radiation.
@@ -909,7 +917,7 @@ If we look at this in terms of relative energy deposited per photon, so in other
 \subsubsection{Absolute Calibration}
 
 The smaller profile stacks can also be calibrated by using a radioactive source since the stack mainly consists of crystals.
-A Na or Cs source can be used at the standard measurement conditions. The energy emission is well known. If one assumes that all energy is absorbed by the detector the light yield is related to energy deposited. The disadvantage to real calorimeters is that due to the spacers not all energy deposited is deposited in crystals and converted into signal.
+A Na or Cs source can be used at the standard measurement conditions. The energy emission is well known. If one assumes that all energy is absorbed by the detector the light yield is related to energy deposited. The disadvantage to real calorimeters is that due to a non-zero transmission through the material and due to the spacers not all energy deposited is deposited within crystals and converted into signal.
 
 
 
@@ -926,12 +934,6 @@ The Compton spectrometer becomes a pair spectrometer and the signal-to-noise rat
 \caption{Compton spectrometer.}
 \end{figure}
 
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\columnwidth]{XsecCsI.png}
-\caption{Mass attenuation of CsI.}
-\end{figure}
 
 
 \subsection{Gamma-ray Scintillator Arrays}
@@ -972,24 +974,57 @@ Dual & $10 \times 70$ & $5 \times 5 \times 50$ mm & Al 2 mm & Plastic X mm
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\columnwidth]{scintillator.jpg}
-\includegraphics[width=.5\columnwidth]{ScreenshotGEANT_DualAxis_Side.png}
-\includegraphics[width=.5\columnwidth]{ScreenshotGEANT_DualAxisStack.png}
-\caption{Examples of arrays}
+\includegraphics[height=0.3\columnwidth]{scintillator.jpg}\includegraphics[trim={3cm 0 15cm 0}, clip, height=0.3\columnwidth]{Screenshot_GEANT4_RALStack.png}
+\includegraphics[angle=-90, totalheight=0.5\columnwidth]{DualAxis_assembly.JPG}\includegraphics[angle=-90, totalheight=0.5\columnwidth]{ScreenshotGEANT_DualAxis_Side.png}\includegraphics[angle=-90, totalheight=0.5\columnwidth]{ScreenshotGEANT_DualAxisStack.png}
+\caption{Examples of arrays and their GEANT representation.}
 \end{figure}
+
+
+The stacks are positioned such that the crystals separately trace the energy deposition in longitudinal direction of the gamma-ray beam.
+
+The stacks are imaged using an Andor iXon camera equipped with a suitable objective and bandpass filters to filter out stray light.
+
+An example of detector images taken are shown in Figure XX NUMBER.
+
+\begin{figure}
+\centering
+\includegraphics[angle=-90, width=0.5\columnwidth]{CsI_shotexemp.jpg}
+\includegraphics[angle=-90, width=0.5\columnwidth]{dualaxis_example.png}
+\caption{Example CsI array signal.}
+\end{figure}
+
 
 \subsubsection{Background subtraction}
 
-\subsubsection{Scaling with Brems?}
+In case of a collimated signal as in Figure XX where only a part of the image is  occupied one can put a mask over the signal area and then fit a smooth surface to the remaining image. This takes care of gradients in the chip and background noise.
+
+For setups that have more signal on the chips, a `quiet' corner can be used to estimate the background and subtract the average pixel value. A median filter can be used to smoothen out the image and remove hot pixels.
+
+\EliasComm{Insert figure here of RR15 signal example, removed mask and estimated background surface.}
 
 \subsubsection{Individual Crystal Extraction}
 
+\begin{figure}
+\centering
+\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample.png}
+\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample_Int.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample_Int.png}
+\caption{Example CsI array signal. Maybe add integrated spectra with and without single crystal extraction.}
+\end{figure}
+
+The real measurement is the energy deposition in the crystals along the longitudinal axis. Due to the spacers there is non-signal area.
+We can mark the position of the crystals as they do not move from shot to shot. Take the average value of each of the crystals.
+
+Width is the angular divergence.
+
+Here some estimate why slight angle is not important for spectral retrieval. Thickness of crystal and typical pointing/divergence.
+
 \subsubsection{Stitching together dual-axis?}
 
-\section{Gamma-ray Spectral Retrieval}
+In case of the dual axis detector, the detector is so long that only a part of it is being imaged. The parts are combined by using references.
+The signal levels are not adjusted and are done as part of the correction factor.
 
 
-\subsection{Simulation Code and Functionality}
+\subsubsection{Simulation Code and Functionality}
 
 The at CERN developed GEANT code is a Monte Carlo code incorporating most known and well measured cross-sections for fundamental particle/light-matter interactions.
 
@@ -1001,8 +1036,33 @@ It was also assumed that the energy deposited within the scintillator crystals i
 The code was used to simulate the response of various configurations of scintillator crystals and materials used in experiment, and also to simulate the bremsstrahlung spectrum from electrons interacting with slabs of material and the respective response of detectors to this secondary radiation.
 
 
+\subsubsection{Bremsstrahlung simulations}
 
-\subsection{Energy Deposition in an extended scintillator array}
+One potential application is measuring hard bremsstrahlung from a source. Bremsstrahlung is very well understood as a process and is only mildly dependent on the shape of the electron spectrum, although large energy fluctuations will make a difference. This also turns out to be a good way to calibrate a detector and in experiment spot differences in crystal efficiency, flaws in the imaging system and so on.
+
+As seen in Figure XX there are brighter pixels, these pixels often remain brighter or less due to the quality of the crystal.
+
+In this simulation realistic (average) electron spectra measured in the respective experiment were launched at a converter foil at distance...
+The material of the converter foil and the thickness was varied. The electrons are after their interaction dispersed by a magnetic field such that they do not interact with the detector. 
+
+Measuring conversion of electrons into bremsstrahlung and response for experiment factors.
+
+Compare measured bremsstrahlung detector response with simulations and correct this factor.
+
+This gives a correction factor encapsulating viewing angles and crystal variations and so on.
+\EliasComm{Add figure of experimental spectrum, sim spectrum and correction factor.}
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{Example_BremsGEANT_ElecInput.png}\includegraphics[width=.5\columnwidth]{Example_GSpecGEANT_GammaSpec.png}
+\includegraphics[width=.5\columnwidth]{Example_GSpec_ExpSim.png}\includegraphics[width=.5\columnwidth]{Example_GSpecGEANT_Corr.png}
+\caption{Correction factor XXX CHANGE PLOT.}
+\end{figure}
+
+
+
+
+\subsubsection{Mono-energetic response}
+
 
 The scintillator stack used in the first results chapter is described in these publications (REFS).
 It is a 33x47 crystal array of crystals with face dimension 5 mm x 5 mm and length 10 mm. The crystals are spaced by aluminium (Thickness) and a plate is holding the crystals in place on their face. The holes are circular and cover some part of the face. In Poder publication this stack was used as a profile measurement. In this work the array is arranged such that the radiation penetrates further into the array of crystals (see figure). The radiation is expected to decay more and more while propagating deeper into the stack. The front plate is covered by several mms of steel which can also be replaced by a plastic layer.
@@ -1010,7 +1070,7 @@ It is a 33x47 crystal array of crystals with face dimension 5 mm x 5 mm and leng
 The stack was defined as described in the simulation and looks like this in the viewer (ADD FIGURE).
 \begin{figure}
 \centering
-\includegraphics[width=.5\columnwidth]{EdepGEANTStack.png}
+\includegraphics[width=.5\columnwidth]{EdepGEANTStack.png}\includegraphics[width=.5\columnwidth]{EdepMax_Cases.pdf}
 \caption{Simulation results: energy deposited per photon in an extended stack, mono-energetic.}
 \end{figure}
 
@@ -1026,7 +1086,8 @@ The peak of this distribution moves further into the stack with increasing energ
 The energy conversion is of order.... percent.
 
 
-\subsection{Comparison of scintillator array responses}
+
+\subsubsection{Comparison of scintillator array responses}
 
 The described detectors (dual axis, single axis and profile) were combined in different ways and the cover plate for one of the detectors was changed to see the change in response.
 This is using the simulation data as described in the previous sections but comparing the response to each other.
@@ -1038,28 +1099,9 @@ As expected adding more material or higher density materials forces earlier atte
 Adding a profile detector has the same effect as adding a steel plate. The plastic spacers seem to have the effect that the peak propagates slower within the stack even though it starts quite deep in already. The main effect is carried by the dense scintillator material.
 
 
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{EdepMax_Cases.pdf}
-\caption{Comparison simulation results.}
-\end{figure}
 
 
-\subsection{Angular dependence of responses}
-
-The along the transverse direction integrated response remains unchanged for a source merely translated in a direction.
-Does it change within a realistically expected range of angles?
-
-Running simulations with sources and angles. Does the response curves for one energy change with change of angle?
-
-If not that means that we can take slices of the response to measure the differential spectrum.
-
-The 2D array of crystals allows to also obtain an angular response from the detector which could be used to deduce the angular spectrum of the radiation. Even a monoenergetic beam will break up in secondary radiation, scatter and shower particles into the detector resulting in a certain spatial extent of the response. The width of that response is an upper limit to the divergence of the radiation, but a thin scintillator screen is a better indicator due to the scattering and pair showers. 
-
-One screen, however, is unable to tell us anything about an angular structure and spectrum. Does the spectrometer react differently to a global angular pointing of the beam? these simulations indicate the opposite. The realistic angular changes are of order of mrads which is smaller than a crystal over the size of the stack, meaning even at an angle the response is fairly limited to the same crystal rows. Integrated the response looks almost identical.
-
-
-\subsection{Combining responses to spectra}
+\subsubsection{Combining responses to spectra}
 
 The simulations so far have assumed individual photons at a defined energy. The response functions and the energy deposition was averaged over the number of photons (10.000 to 100.000 per energy).
 
@@ -1067,19 +1109,16 @@ In an experiment, however, perfectly monoenergetic photon sources are not to be 
 
 This means that in principle a backwards transformation should be possible to invert the matrix and immediately gain a spectrum from experimental data from this process. Previous work, however, indicated that this process does not perform well due to noise in the experiment meaning the problem is ill-posed and the inversion proces does not converge. Instead a spectrum is assumed an a range of parameters used to vary this spectrum. The experimental data and the range of responses can then be compared using a least-square fit. This technique requires an input spectrum and a good knowledge of the spectrum expected. Especially in a transient regime where spectral shapes are expected to change this does not perform well.
 
-\subsection{Bremsstrahlung simulations}
 
-One potential application is measuring hard bremsstrahlung from a source. Bremsstrahlung is very well understood as a process and is only mildly dependent on the shape of the electron spectrum, although large energy fluctuations will make a difference. This also turns out to be a good way to calibrate a detector and in experiment spot differences in crystal efficiency, flaws in the imaging system and so on.
+Explain more about matrix multiplication.
 
-In this simulation monoenergetic electrons were launched at a converter foil at distance...
-The material of the converter foil and the thickness was varied. The electrons are after their interaction dispersed by a magnetic field such that they do not interact with the detector. 
+Diagram: VECTOR MATRIX THEN INTERPOLATE THEN GET WEIGHT FROM EXPONENTIAL FUNCTION OR ANY SPECTRAL FUNCTION AND MULTIPLY WITH RESPONSE MATRIX.
 
-Measuring conversion of electrons into bremsstrahlung (efficiency) and response for experiment factors.
 
-Correction factor
 
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{compvert.png}
-\caption{Correction factor XXX CHANGE PLOT.}
-\end{figure}
+\subsubsection{Determining spectrum by fitting}
+
+Assemble spectra by matrix multiplication assuming a certain shape, then use the combined response (weighed by the spectrum) as guesses.
+Use a least square fit to compare that to the experimental data (corrected with the brems factor) to then nail down a one-parameter critical energy or similar.
+
+\EliasComm{Add here 2D contour plot showing the parameter fit (amplitude and critical energy).}
