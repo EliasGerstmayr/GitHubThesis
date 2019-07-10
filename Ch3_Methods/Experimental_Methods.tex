@@ -27,6 +27,12 @@ In all geometries deformable mirrors/adaptive optics are used to optimise the wa
 
 In addition to its full-power capabilities a continuous-wave (CW) mode for alignment and a low power pulsed mode at 10 Hz repetition rate (XX ENERGY FOR LOW AND MEDIUM POWER) are available as well.
 
+\begin{figure}
+\centering
+\includegraphics[width=.8\columnwidth]{chamber1.jpg}
+\caption{Photo of the Gemini TA3 vacuum chamber. PhD student to scale.}
+\end{figure}
+
 
 \section{Laser Diagnostics}
 
@@ -224,6 +230,12 @@ Both beams were reaching the interaction point at 180 degrees from each other. O
 The contrast of the interference pattern was adjusted by equalising the relative brightness of the beams with a combination of adjusting the distance of the camera to the prism edge taking advantage of the different focal lengths and by adjusting the rotation angle of the polariser as the beams are cross-polarised.
 
 These measurements were done using the pulsed low power beam at Gemini.
+
+\begin{figure}
+\centering
+\includegraphics[width=.9\columnwidth]{RR19_TCC.png}
+\caption{RR19 TCC with spatial interferometry setup.}
+\end{figure}
 
 \subsection{Spectral Interferometry}
 
@@ -500,7 +512,7 @@ In wakefield experiments a variety of optical diagnostics can be used to gain an
 
 The most common diagnostics used on the wakefield experiments the author was involved in are shadowgraphy and interferometry to measure the plasma density at interaction and see features of the plasma channel. Similarly the recombination light or self-emission of the plasma provide useful insights.
 
-Other examples of diagnostics that the author came into contact with during his work and that can help characterising the plasma and the laser-plasma interaction are post-interaction laser-diagnostics to measure shifts in the laser frequency, guiding, focusing, energy content etc. of the laser pulse and Raman side-scattering satellites to deduce the electron density at lower intensity interactions.
+Other examples of diagnostics that the author came into contact with during his work and that can help characterising the plasma and the laser-plasma interaction are post-interaction laser-diagnostics to measure shifts in the laser frequency, guiding, focusing, energy content etc. of the laser pulse and Raman side-scattering satellites to deduce the electron density at lower intensity interactions (REFs REF?).
 
 
 
@@ -534,12 +546,12 @@ For small changes in ray displacement the relative change in local beam intensit
 
 \subsubsection{Experimental Implementation}
 
-In the LWFA experiments the author describes in this work a shadowgraphy was achieved by passing a secondary laser beam transversely through the ionised gas target. The `probe', as it is commonly referred to, is the through an HR mirror transmitted component of the main driver beam that is then telescoped down to the approximate size of the required field view. The probe beam has to be timed with the main beam to arrive at the plasma at a similar time as the main beam to capture interesting features. If the probe pulse is too early, there will no plasma channel will have been formed and if too late the channel will have expanded already and does not represent the conditions of the wakefield accurately. The imaging system includes one or multiple lenses, depending on the path of the light, magnification desired and so on. Working with high intensities the B-integral and the damage threshold of the optics also needs to be considered as the beam will focus down in some part of the imaging system.
+In the LWFA experiments the author describes in this work a shadowgraphy was achieved by passing a secondary laser beam transversely through the ionised gas target. The `probe', as it is commonly referred to, is the through an HR mirror transmitted component of the main driver beam that is then telescoped down to the approximate size of the required field view. The beam path of the probe beam has to be matched to the main beam in order to arrive at the plasma at a similar time as the main beam to capture interesting features. If the probe pulse is too early, there will no plasma channel will have been formed and if too late the channel will have expanded already and does not represent the conditions of the wakefield accurately. The imaging system includes one or multiple lenses, depending on the path of the light, magnification desired and so on. Working with high intensities the B-integral and the damage threshold of the optics also needs to be considered as the beam will focus down eventually in some part of the imaging system.
 
 An example of a shadowgraphy image in an experiment is shown in Figure XX NUMBER. It shows the inside of a gas cell filled with a high density gas leading to filamentation of the plasma channel (coming from the right side). If one looks closely it also reveals a plasma channel beyond the wall indicating a gentle ramp due to leaking gas.
 \vspace{\baselineskip}
 
-If one wants to capture smaller and volatile features like a bubble itself, a very short pulse duration ($\sim 10\,\mathrm{fs}$) for the probe pulse is required and the set-up described has to be complemented by a microscope objective \cite{Buck2011,Savert2015}. This represents a more direct measurement of the in-situ plasma conditions the laser and the wake experience (see for instance REF KUSCHEL).
+If one wants to capture smaller and more volatile features like the wake itself, a very short pulse duration ($\sim 10\,\mathrm{fs}$) for the probe pulse is required and the set-up described has to be complemented by a microscope objective \cite{Buck2011,Savert2015}. This represents a more direct measurement of the in-situ plasma conditions the laser and the wake experience (see for instance REF KUSCHEL, REF SAEVERT, REF FIRST BUBBLE MEASUREMENT).
 
 
 \subsection{Interferometry}
@@ -582,7 +594,7 @@ Due to this geometry the interferometer can be set up as an extension to an exis
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\columnwidth]{Interferometry_example_cut.jpg}
-\caption{Example of an interferometry image: plasma channel in a $2.8\,\mathrm{mm}$ long gas cell filled with hydrogen at a high density. The laser propagated from the right to the left. The fringe shift at the entry hole indicates an up-ramp in the density profile.}
+\caption{Example of an interferometry image: plasma channel in a $2.8\,\mathrm{mm}$ long gas cell filled with hydrogen at a high density. The laser propagated from the right to the left. The fringe shift at the entry hole indicates an up-ramp in the density profile. CONSIDER USING THE FULL IMAGE SHOWING BOTH CHANNELS.}
 \end{figure}
 
 
@@ -595,15 +607,15 @@ Due to the longer timescale of recombination (microseconds) this is typically no
 However, in other experiments plasma emissions have been used to achieve the temporal overlap of an electron beam and a laser (see plasma afterglow BERNHARD REF).
 
 
-
-
 \section{Particle Diagnostics}
 
 \subsection{Beam Profile Monitor}
 
-A beam profile diagnostics used commonly at Gemini is a scintillating LANEX screen that is placed in the undispersed electron beam. It measures the shot-to-shot pointing fluctuation (motion of the centroid) and the divergence in both axes of the electron beam (width of the centroid) accelerated in experiment. If coupled to a grid or suitable mask it can also be used to determine the emittance of the beam (REF).
+A beam profile diagnostics used commonly at Gemini is a scintillating LANEX screen that is placed in the undispersed electron beam. It measures the shot-to-shot pointing fluctuation (motion of the centroid), the divergence in both axes (width of the centroid) and the charge of the electron beam (brightness of scintillation signal) accelerated in experiment. If coupled to a grid or suitable mask it can also be used to determine the emittance of the beam (REF).
 
-Combined with an absolute calibration of the detected signal to the charge the beam profile can also give detail about the total charge contained in the electron bunch, also including particles that are out of range of the magnetic spectrometer. However, it does not give any information about the spectral distribution of the charge.
+\EliasComm{Add pics here: Sketch divergence measurement. Pic from eprofile staging using a grid.}
+
+Combined with an absolute charge calibration or accurate characterisation of the imaging system the detected scintillation signal can be related to the absolute charge in the electron bunch, also including particles that are out of range of the magnetic spectrometer. However, it does not give any information about the spectral distribution of the charge.
 \vspace{\baselineskip}
 
 In LWFA the electrons are emitted with a momentum distribution that is typically dominated by the component in the direction of the laser propagation. Additional transverse components are present, for instance visible in betatron oscillations, and lead to a divergence of the beam, typically a few $\mathrm{mrad}$.
@@ -625,7 +637,7 @@ One way to compensate both is to place the screen at 45 degrees to the beam and 
 
 \subsection{Magnetic Energy Spectrometer}
 
-The energy of electrons in wakefield experiments can be determined in experiment using an electron energy spectrometer based on magnetic dispersion. The electrons are deflected using a dipole magnet and are detected on a scintillating LANEX screen.
+The energy of electrons in wakefield experiments can be determined in experiment using a spectrometer based on magnetic dispersion. The electrons are deflected using a dipole magnet and are detected on a scintillating LANEX screen.
 
 In order to understand the fundamental relations this method is based on, the motion of a single electron in a homogeneous magnetic field is considered and analytically solved in the case of an electron passing through a region of a homogeneous magnetic field of finite extent, but without considering fringe fields or gradients. In reality, the magnetic fields are measured or simulated and particle tracked using numerical methods.
 \vspace{\baselineskip}
@@ -671,10 +683,10 @@ In a typical LWFA experiment $p_\perp$ will be dominated by the component in the
 \end{figure}
 
 The correct assignment of the position on the screen to the correct electron energy is achieved by measuring the position of all components (lanex screen, magnet, TCC) and mapping the magnet field strength accurately, for instance using a Hall probe, and then running a particle tracking code with these details.
-Each pixel has a certain error bar on its associated energy as the divergence of the electron beam, an offset at source or shot-to-shot pointing fluctuations could lead to different positions at the same electron energy.
+Each pixel has a certain error bar on its associated energy as the divergence of the electron beam (instrument function), an offset at source or shot-to-shot pointing fluctuations could lead to different positions at the same electron energy (pointing). The energy resolution is determined by the strength of the magnetic field, the drift length, the intrinsic spatial resolution of the scintillator and the spatial resolution of the imaging system. XX GIVE TYPICAL NUMBER FOR EXPERIMENT?
 \vspace{\baselineskip}
 
-A second lanex screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations or an overall pointing to achieve a more accurate determination of the energy. See Kris Poder's thesis for more details on this REF and two screen REF PAPER.
+A second LANEX screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations or an overall pointing to achieve a more accurate determination of the energy, but could introduce additional scattering. See Kris Poder's thesis for more details on this REF and two screen REF PAPER.
 
 The width of the electron trace in the non-dispersion direction can be used to determine the divergence of the beam (in the non-dispersion axis) and cross-checked with the spectrum of the betatron radiation or a beam profile monitor.
 \vspace{\baselineskip}
@@ -705,7 +717,7 @@ Either methods can be used to deconvolve the spectrum and iteratively find the r
 Absolute charge measurements are challenging in an EMP rich environment as near intense laser-plasma interactions.
 
 Commonly, LANEX or other scintillators imaged by optical CCD cameras are used to measure the electron spectrum and charge.
-However, obtaining an absolute charge calibration requires a very detailed knowledge of the efficiencies of the scintillator material, imaging system, quantum efficiency of the detector chip etc. Typically, phosphorescent image plates (WHAT ARE THEY MADE OF) are used instead to achieve an absolute calibration.
+However, obtaining an absolute charge calibration requires a very detailed knowledge of the efficiencies of the scintillator material, imaging system, quantum efficiency of the detector chip and so on (REF REF). Typically, phosphorescent image plates (WHAT ARE THEY MADE OF) are used instead to achieve an absolute calibration (REF).
 
 In the experiments described image plate was attached to the back of the electron spectrometer screen and left in the beam path for several shots. After removing the image plate again they are left to decay over a certain period before then being analysed using a scanner. The accumulated signature on the image plates was then overlapped with the corresponding scintillator images taken with the optical cameras to obtain a conversion factor of pixel counts to charge. The scattering and damping of the imaging plate has to be considered and its heightened sensitivity which might result in additional background noise on the imaging plate due to its large dynamic range.
 
@@ -719,9 +731,12 @@ Other technology being used are ICT, but they have to be shielded properly as el
 ADD A REFERENCE THAT DESCRIBES THE PROCEDURE IN MORE DETAIL, ON ABSOLUTE CALIBRATION.
 
 
+
+
+
 \section{X-ray and Gamma-ray Diagnostics}
 
-Wakefield acceleration has not only demonstrated to be a feasible tool to accelerate electrons to a GeV scale, but has also been shown to be a useful source for X-rays of remarkable brightness, e.g. by the means of betatron radiation \cite{Rousse2004} STEFAN KNEIP REF or also as a tunable all-optical Compton-source \cite{TaPhuoc2012a} and bremsstrahlung source (REF EG S CIPICCIA JAP111 2012 or GLINEC PRL 2005).
+Wakefield acceleration has not only demonstrated to be a feasible tool to accelerate electrons to a GeV scale, but has also been shown to be a useful source of X-rays of remarkable brightness by the means of betatron radiation \cite{Rousse2004} STEFAN KNEIP REF, as a tunable all-optical Compton-source \cite{TaPhuoc2012a} and as bremsstrahlung source (REF EG S CIPICCIA JAP111 2012 or GLINEC PRL 2005). In addition, using LWFA electron beams for FEL operations is being investigated (REF REF).
 
 The following section addresses different diagnostics to characterise high-energy radiation produced using an LWFA source, laser-solid interactions or laser-electron interactions.
 
@@ -733,22 +748,23 @@ The following tools were used in the context of the author's work for this purpo
 
 \subsubsection{Motivation}
 
-In the following chapters various arrays of scintillator arrays (in this case caesium-iodide doped with thallium, CsI(Tl)) are emplyed to measure the spectrum of gamma radiation from various sources (bremsstrahlung, linear and non-linear inverse Compton scattering and hard betatron radiation).
+In the following chapters various arrays of scintillator arrays (in this case caesium-iodide doped with thallium, CsI(Tl)) are employed to measure the spectrum of gamma radiation from various sources (bremsstrahlung, linear and non-linear inverse Compton scattering and hard betatron radiation).
 
-In the soft and hard X-ray regime spectra can be deduced by comparing the transmission of the radiation through various materials with characteristic K-absorption edges or relying on crystal reflections matching the Bragg-condition or a combination of both.
+In the soft and hard X-ray regime spectra can be deduced by comparing the transmission of the radiation through various materials with characteristic K-absorption edges (REF), Ross filter pairs (REF) or relying on crystal reflections matching the Bragg-condition (REF) or a combination of both.
 For these conditions a good knowledge of the material properties and the positioning of the crystal and cameras is essential.
-The energy-dependent transmission through the material is related to an interplay of different mechanisms (Compton scattering, Rayleigh scattering, photoelectric effect, pair production and so on). The sum of these cross sections can be combined and found in specific repositories.
+The energy-dependent transmission through the material is related to an interplay of different mechanisms (Compton scattering, Rayleigh scattering, photoelectric effect, pair production and so on). The sum of these cross sections can be combined and found in specific repositories (REF NIST).
 
-At higher X-ray energies entering the gamma regime $\hbar \omega \rightarrow 1\,\mathrm{MeV}$ K-edges to effectively distinguish spectral bands become rarer and most materials become more transparent, as a consequence the resolving a full spectrum becomes challenging. At the same time pair production becomes possible and more likely with increasing energy.
-A detector interacting with such high energetic gamma-radiation is now faced with energy deposition by the radiation itself and secondary particles and radiation. An extended detector can mitigate this effect by forcing pair production in an earlier part of the detector and performing an again well resolved measurement in a second part of the detector. The complex interplay of pair production and energy deposition from secondary sources requires numerical solutions calculating the cross-sections for various processes dynamically throughout the interaction with the detector. This is where GEANT or other Monte Carlo based simulation codes come into play.
+At higher X-ray energies entering the gamma regime $\hbar \omega \rightarrow 1\,\mathrm{MeV}$ K-edges to effectively distinguish spectral bands become rarer and most materials become more transparent, as a consequence the resolving a full spectrum becomes challenging. At the same time pair production becomes possible and more likely with increasing energy (see cross section PLOT XX REF).
 
-At the few MeV level the spectrum of the generated electron-positron pairs scales directly with the energy of the gamma radiation interacting with the matter. Measuring the spectrum of these particles, for instance with a magnetic electron spectrometer, and comparing the results with a simulation result can then be used to deduce a gamma spectrum.
+At the few MeV level the spectrum of the generated electron-positron pairs scales directly with the energy of the gamma radiation interacting with the matter (REF). Measuring the spectrum of these particles, for instance with a magnetic electron spectrometer, and comparing the results with a simulation result can then be used to deduce a gamma spectrum (REF GIANLUCA SARRI).
 
-The spectrum of the pairs, however, becomes less sensitive to the energy of the gamma-radiation at higher (tens of MeV) energies. An alternative method to measure such a hard spectrum is tracking the energy deposition of radiation and secondary sources throughout an array of scintillator material until it decays.
+The spectrum of the pairs, however, becomes less sensitive to the energy of the gamma-radiation at higher (tens of MeV) energies (XSEC XX PIC REF). An alternative method to measure such a hard spectrum is tracking the energy deposition of radiation and secondary sources throughout an array of scintillator material until it decays.
 This method has the advantage of being variable and viable for the few MeV level and much harder radiation.
 
 Simulations linked to this technique are outlined in this work and are then applied to experimental data in the following chapters to measure radiation from different materials in a range of hundreds of keV to hundred MeV (over three orders of magnitude).
 
+A detector interacting with such high energetic gamma-radiation is now faced with energy deposition by the radiation itself and secondary particles and radiation. An extended detector can mitigate this effect by forcing pair production in an earlier part of the detector and performing an again well resolved measurement in a second part of the detector. The complex interplay of pair production and energy deposition from secondary sources requires numerical solutions calculating the cross-sections for various processes dynamically throughout the interaction with the detector. The extended detector acts as an imperfect calorimeter with some energy resolution. This is where GEANT or other Monte Carlo based simulation codes come into play.
+\EliasComm{Add plot for XSEC but also an energy plot i}
 
 \subsection{Crystal Spectrometer}
 
@@ -756,9 +772,21 @@ Bragg condition and crystal, CCD camera.
 Applicable in any range accessible using lattice constants. Energy range depends on detector size, distance and lattice properties.
 
 Bent crystals can be used for focusing and larger spectral range.
-HAPG HOPG.
+HAPG HOPG with mosaicity.
+
+Bragg's law
+
+\begin{equation}
+n \lambda = 2 d \sin \theta
+\end{equation}
+
+Energy spread based on initial divergence.
+
+Efficiency needs to include reflectivity of crystal, filtering, quantum efficiency and so on. Thermal noise.
 
 Used in experiment described in Chapter XX NUMBER QED BW.
+
+\EliasComm{Refer to BK's thesis.}
 
 \EliasComm{Add pic similar to Brendan's XANES paper?}
 \EliasComm{Example pic of spectral measurement.}
@@ -777,7 +805,11 @@ Double pinhole, one with 5 um aluminium and one with 6 um PET filtering. The pin
 
 Alignment can be done by adding a spike on the front, point it at the interaction point and then carefully removing it at the end.
 
+By comparing the transmission of the two spots (using a double pinhole) gives an estimate how much energy is in one band and another, especially if the K-edges are chosen correctly.
+
 \EliasComm{Add pic of signal and the pinhole.}
+
+\EliasComm{Refer to BK's thesis.}
 
 \subsection{Filter Packs}
 
@@ -807,70 +839,113 @@ To motivate why other indirect detection methods are required and this method be
 
 Once the energies reach the gamma-ray regime (> 1 MeV), even using an indirect-detection camera on axis becomes infeasible as photons will decay into secondary particles and radiation that will shower the camera and reduce its lifetime.
 
-Relying on indirect detection then becomes necessary. Using an array or a screen of scintillator. The shape of the profile is interesting as it allows deduction of the source (SEE REF). In this context it gives insight into the properties of the electrons (their divergence, propagation and so on). In case of ICS this also gives an idea of interaction intensity and polarisation of the beam.
-To measure the divergence in both axes and as measurement of the intensity.
+Relying on indirect detection with an off-axis camera or detector then becomes necessary. 
+In experiment this has been an array of scintillator material normal to the beam axis and imaged by a camera.
 
-The energy deposited in an energy range (GIVE GEANT SIM FOR 10-XX MEV) is proportional to the energy of the radiation.
+This enables measuring the shape of the profile is interesting as it allows deduction of the source (SEE REF). In this context it gives insight into the properties of the electrons (their divergence, propagation and so on). 
+The profile is also an indicator the the intensity of the interaction in non-linear ICS and carries the imprint of the interacting electron beam within it.
+It is hence a useful diagnostic to not only confirm an interaction took place but also to characterise the conditions at the interaction.
+
 
 \subsubsection{Experimental Implementation}
 
-
-
-In these experiments caesium-iodide doped with thallium is used frequently due to its high light yield. LANEX has typically a better spatial resolution but the energy deposition in the thin screens, especially at gamma-ray energies, is not sufficient to produce a lot of signal. Long CsI crystals give a pixelated response. LYSO also comes at a decent resolution but the light yield is lower. It is a fast scintillator but at lower repetition rates as at Gemini, this is not necessary and the noise levels can not be gated away.
+In these experiments caesium-iodide doped with thallium is used frequently due to its high light yield. LANEX has typically a better spatial resolution due to its fine grain size ($\sim 100\,\mathrm{\mu m}$) but the energy deposition in the thin screens, especially at gamma-ray energies, is not sufficient to produce a lot of signal. Long CsI crystals give a pixelated response. LYSO also comes at a decent resolution but the light yield is lower. It is a fast scintillator but at lower repetition rates as at Gemini, this is not necessary and the noise levels can not be gated away as it is too close.
 
 Different profile screens were used in the experiments. The details can be found in Table XX NUMBER REF.
 
-The scintillators emit around 546 nm of radiation which is ideal for CCD chips. Andor iXon cameras (sensitive chips) are used to image the scintillators.
+The scintillators emit around 546 nm (XX NUMBER) of radiation which is ideal for CCD chips. Andor iXon cameras (sensitive chips) are used to image the scintillators close to normal or using a mirror. A bandpass filter can be used to reduce the noise.
 
-\begin{table}
+\begin{table}[h]
 \centering
-\begin{tabular}{l|l|l|l|l}
-Name & Crystals & Crystal Dimension & Front Plate & Divider\\ \hline \hline
-QUB & $20 \times 20$ & $2 \times 2 \times 20$ & Al 10 mm & Al 0.1 mm\\
-Jena & $45 \times 45$ & $1 \times 1 \times 10$ & TiO2 0.5 mm & TiO2 0.2 mm\\
-DESY & $30 \times 30$ & $1.5 \times 1.5 \times 10$ & Epoxy 0.5 mm & Epoxy 0.2 mm\\
-RAL & $47 \times 33$ & $5 \times 5 \times 50$ & None & Al 1 mm
+\begin{tabular}{l|l|l|r|r}
+Name & Crystals & Crystal Dimension & Front Plate & Dividerr\\ \hline \hline
+QUB & $20 \times 20$ & $2 \times 2 \times 20$ mm & Al 10 mm & Al 0.1 mm\\
+Jena & $45 \times 45$ & $1 \times 1 \times 10$ mm & TiO2 0.5 mm & TiO2 0.2 mm\\
+DESY & $30 \times 30$ & $1.5 \times 1.5 \times 10$ mm & Epoxy 0.5 mm & Epoxy 0.2 mm\\
+RAL & $47 \times 33$ & $5 \times 5 \times 50$ mm & None & Al 1 mm
 \end{tabular}
 \caption{Different CsI profile stacks}
 \end{table}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\columnwidth]{JenaProfile.jpg}
-\caption{Examples of profiles}
+\includegraphics[height=0.5\columnwidth]{JenaProfile.jpg}\includegraphics[height=.5\columnwidth]{ScreenshotGEANT_JenaStack.png}
+\caption{Examples of profile along with GEANT representation.}
 \end{figure}
+
+\subsubsection{GEANT simulations showing energy deposition}
+
+\EliasComm{Add a figure on energy deposition using GEANT REF for MeV range and on the other hand absorption using Henke.}
+RESULT: The energy deposited in an energy range (GIVE GEANT SIM FOR 10-XX MEV) is proportional to the energy of the radiation.
+
+\EliasComm{Add comment on GEANT code in general, REF GEANT, mention Jason's and Kris' input.}
+
+When planning to use such a detector as measurement of the total energy of the radiation one has to keep in mind that this is not a calorimeter in the gamma regime as radiation is bound to be transmitted through the stack. However, it is expected that the energy deposited per photon will vary and of course the number of photons will leave their trace on this detector.
+
+The response is simulated using GEANT:
+The detector in the simulation:
+the detector assembled in the simulation is based on a CsI stack used in some experiments and provided by the Helmholtz Institut in Jena.
+It consists of 45 x 45 CsI(Tl) crystals of face dimension 1 mm x 1 mm and a thickness of 10 mm. The crystals are spaced by a 0.2 mm layer of TiO2 and the front side has another layer of TiO2 of 0.5 mm which holds the entire stack together.
+
+The stack was defined as such in the simulation and it can be seen in Figure ADD HERE.
+
+
+The front side of the detector is XX m away from the source of the radiation, similarly to experiment conditions, hence being in general able to cover plus minus NUMBER divergence from a point source if centred along the same axis.
+
+Now individual photons with ranging energy from 10 keV to 500 MeV are launched from the source point and the energy deposited in the crystals is being recorded. Each energy step is simulated 10.000 to 100.000 times and then averaged to obtain an average energy deposited per photon of this energy.
+
+The results from these simulation can be seen in figure ADD HERE. Photon energies up to ENERGY are almost completely absorbed, backscattered and rarely transmitted. At around 200 keV suddenly a large amount of radiation is being absorbed. This indicates a material characteristic absorption edge.
+This means that whilst for the majority of the energy ranges the CsI profile will give a good indication as energy times flux is monotonic increasing and somewhat linear for the two regimes of interest. In the regime of hundreds of keV we have to consider that a lot of energy will be absorbed in the front layer and we have to check how this behaves further downstream in the next detector.
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{Edep_JenaStack.pdf}\includegraphics[width=.5\columnwidth]{Edep_JenaStack_rel.pdf}
+\caption{Simulation results: energy deposited per photon in a profile stack. Replace this by 10's MeV plot as GEANT is not performing too well at low keV levels and the 250 keV peak might be a fluke.}
+\end{figure}
+
+If we look at this in terms of relative energy deposited per photon, so in other words energy deposited over energy of the photon, this does not look like a sharp edge but merely a steady decrease in energy deposited relative to the total photon energy. Scattering cross sections typically decrease with increase in energy and this goes along the same lines.
+
 
 \subsubsection{Absolute Calibration}
 
 The smaller profile stacks can also be calibrated by using a radioactive source since the stack mainly consists of crystals.
-A Na or Cs source can be used at the standard measurement conditions. The energy emission is known. If one assumes that all energy is absorbed by the detector the light yield is related to energy deposited.
+A Na or Cs source can be used at the standard measurement conditions. The energy emission is well known. If one assumes that all energy is absorbed by the detector the light yield is related to energy deposited. The disadvantage to real calorimeters is that due to the spacers not all energy deposited is deposited in crystals and converted into signal.
+
+
 
 \subsection{Gamma-ray Converter Spectrometer}
 
-At gamma-ray energies above 1 MeV one photon can generate a pair of electron-positron pairs when scattering on matter. The spectrum of the generated electrons and positrons are linked to the energy of the gamma photon. Based on this principle one method to measure the gamma spectrum is using a sheet of high-Z material to convert the gamma rays into matter and then measure the spectrum of these particles in a magnetic spectrometer (REF).
+At gamma-ray energies above $2m_e c^2 \approx 1\,\mathrm{MeV}$ one photon can generate a pair of electron-positron pairs when scattering from matter using the electric field of the nucleus or the valence electrons as interaction partners. The maximum energy of the generated electrons and positrons are determined by the energy of the gamma photon, the overall spectrum is close to exponential (SEE THEORY INSERT REF, BETHE HEITLER). Based on this principle one method to measure the gamma spectrum is using a sheet of high-Z material to convert the gamma rays into matter and then measure the spectrum of these particles in a magnetic spectrometer (REF).
 
-This works well for several MeV radiation but becomes less sensitive at higher energies (REF?) when the energy spectrum of the generated particles becomes less sensitive to the photon energy.
-\EliasComm{Add an image of a potential setup and cross sections.}
+In the range of few to maybe 30 MeV the cross section rises rapidly (SEE FIGURE XX NUMBER) compensating for the fewer pairs at higher energies and making this a feasible spectrometer to resolve the full spectrum in this range (SEE GIANLUCA DESIGNS HERE. DJ CORVAN REV SCI 85 (2014)). At higher energies the cross-section flattens which means that the contribution to the total production of pair equalises over all energies but due to the exponential spectrum of the pairs produced very few pairs at the maximum photon energies are produced.
+The Compton spectrometer becomes a pair spectrometer and the signal-to-noise ratio and sensitivities become more important, meaning more space is required to resolve those energies since the higher energy pairs now require stronger magnets, more drift and need to clear away from the noisy axis.
+ 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\columnwidth]{CsI_MassAttenuation.png}
-\caption{Mass attenuation of CsI. REPLACE WITH OWN PLOT.}
+\includegraphics[width=0.7\columnwidth]{CorvanSpectrometer.png}
+\caption{Compton spectrometer.}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\columnwidth]{XsecCsI.png}
+\caption{Mass attenuation of CsI.}
 \end{figure}
 
 
 \subsection{Gamma-ray Scintillator Arrays}
 
 
-One method to detect and characterise X-rays is using blocks or slaps of scintillating material extending in the propagation direction of the radiation or perpendicular to it, depending on what aspect of the radiation one is interested in. The response of the material, i.e. how photons or particles deposit energy and how the scintillator reacts, is then modelled using Monte-Carlo codes, e.g. GEANT4 \cite{Agostinelli2003} or MCNP \cite{Goorley2012}, and compared to the response measured. In general, the penetration depth and the energy deposited in the crystals are proportional to the energy of the radiation transmitted. To discriminate the spectrum even further, different materials can be overlaid as the response varies from material to material. This might be more complicated for very high energetic gamma rays as the cross section is almost identical for most materials at the MeV scale.
+One method to detect and characterise X-rays is using blocks or slabs of scintillating material extending in the propagation direction of the radiation or perpendicular to it, depending on what aspect of the radiation one is interested in. The response of the material, i.e. how photons or particles deposit energy and how the scintillator reacts, is then modelled using Monte-Carlo codes, e.g. GEANT4 \cite{Agostinelli2003} or MCNP \cite{Goorley2012}, and compared to the response measured. In general, the penetration depth and the energy deposited in the crystals are proportional to the energy of the radiation transmitted. To discriminate the spectrum even further, different materials can be overlaid as the response varies from material to material. This might be more complicated for very high energetic gamma rays as the cross section is almost identical for most materials at the MeV scale.
 
-In contrast to other transmission studies at photon energies above few MeV the energy deposition and transmission is less linear but involves decays of photons into matter and those cascading back to photons. This means the signal will not follow a simple Beer's law but will require numerical solving and simulation via GEANT4 considering Bethe-Heitler processes etc, to then estimate how long the cascades go on for.
-
-
+In contrast to other transmission studies, at photon energies above few MeV the energy deposition and transmission is less linear but involves decays of photons into matter and those cascading back to photons. This means the signal will not follow a simple Beer's law but will require numerical solving and simulation via GEANT4 considering Bethe-Heitler processes etc, to then estimate how long the cascades go on for before falling off.
 
 \EliasComm{Deeper explanation of the setup and how the spectrum is being retrieved. Reference Keegan's paper.}
 \EliasComm{Provide picture of the arrays.}
+Problem of this is that energy deposition happens over similar range for all parts, so something similar to calorimeters is not feasible either. Solutions would require much more space and are less compact.
 
-\EliasComm{Problem of this is that energy deposition happens over similar range for all parts, so something similar to calorimeters is not feasible either. Solutions would require much more space and are less compact.}
+As seen in FIGURE XX NUMBER the cross section flattens out and most of the produced pairs will due to their exponential energy spectrum lie in lower energies. This means that using a stack like this will give more of an average spectrum and requires an assumed shape as this detector would not be sensitive to smaller changes.
 
 
 \subsubsection{Experimental Implementation}
@@ -898,8 +973,18 @@ Dual & $10 \times 70$ & $5 \times 5 \times 50$ mm & Al 2 mm & Plastic X mm
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{scintillator.jpg}
+\includegraphics[width=.5\columnwidth]{ScreenshotGEANT_DualAxis_Side.png}
+\includegraphics[width=.5\columnwidth]{ScreenshotGEANT_DualAxisStack.png}
 \caption{Examples of arrays}
 \end{figure}
+
+\subsubsection{Background subtraction}
+
+\subsubsection{Scaling with Brems?}
+
+\subsubsection{Individual Crystal Extraction}
+
+\subsubsection{Stitching together dual-axis?}
 
 \section{Gamma-ray Spectral Retrieval}
 
@@ -916,44 +1001,6 @@ It was also assumed that the energy deposited within the scintillator crystals i
 The code was used to simulate the response of various configurations of scintillator crystals and materials used in experiment, and also to simulate the bremsstrahlung spectrum from electrons interacting with slabs of material and the respective response of detectors to this secondary radiation.
 
 
-\subsection{Energy Deposition in one scintillation layer}
-
-In some experiments an additional and separate array of crystals was posititoned before the main detector to measure the profile of the gamma ray burst.
-This gives information about the divergence of the beam but also in some way the number of photons and energy contained in the burst of radiation.
-How well this scales with the actual total energy is subject to the energy range and the processes involved and was to be investigated as well.
-
-The profile is also an indicator the the intensity of the interaction in non-linear ICS and carries the imprint of the interacting electron beam within it.
-It is hence a useful diagnostic to not only confirm an interaction took place but also to characterise the conditions at the interaction.
-
-When planning to use such a detector as measurement of the total energy of the radiation one has to keep in mind that this is not a calorimeter in the gamma regime as radiation is bound to be transmitted through the stack. However, it is expected that the energy deposited per photon will vary and of course the number of photons will leave their trace on this detector.
-
-
-The detector in the simulation:
-the detector assembled in the simulation is based on a CsI stack used in some experiments and provided by the Helmholtz Institut in Jena.
-It consists of 45 x 45 CsI(Tl) crystals of face dimension 1 mm x 1 mm and a thickness of 10 mm. The crystals are spaced by a 0.2 mm layer of TiO2 and the frontside has another layer of TiO2 of 0.5 mm which keeps the entire stack together.
-
-The stack was defined as such in the simulation and it can be seen in figure ADD HERE.
-
-\begin{figure}
-\centering
-\includegraphics[width=.3\columnwidth]{ScreenshotGEANT_JenaStack.png}
-\caption{Simulated stack.}
-\end{figure}
-
-The front side of the detector is XX m away from the source of the radiation, similarly to experiment conditions, hence being in general able to cover plus minus NUMBER divergence from a point source if centred along the same axis.
-
-Now individual photons with ranging energy from 10 keV to 500 MeV are launched from the source point and the energy deposited in the crystals is being recorded. Each energy step is simulated 10.000 to 100.000 times and then averaged to obtain an average energy deposited per photon of this energy.
-
-The results from these simulation can be seen in figure ADD HERE. Photon energies up to ENERGY are almost completely absorbed, backscattered and rarely transmitted. At around 200 keV suddenly a large amount of radiation is being absorbed. This indicates a material characteristic absorption edge.
-This means that whilst for the majority of the energy ranges the CsI profile will give a good indication as energy times flux is monotonic increasing and somewhat linear for the two regimes of interest. In the regime of hundreds of keV we have to consider that a lot of energy will be absorbed in the front layer and we have to check how this behaves further downstream in the next detector.
-
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{Edep_JenaStack.pdf}\includegraphics[width=.5\columnwidth]{Edep_JenaStack_rel.pdf}
-\caption{Simulation results: energy deposited per photon in a profile stack.}
-\end{figure}
-
-If we look at this in terms of relative energy deposited per photon, so in other words energy deposited over energy of the photon, this does not look like a sharp edge but merely a steady decrease in energy deposited relative to the total photon energy. Scattering cross sections typically decrease with increase in energy and this goes along the same lines.
 
 \subsection{Energy Deposition in an extended scintillator array}
 
@@ -977,19 +1024,6 @@ At higher photon energies a peak becomes apparent. This is due to the production
 The peak of this distribution moves further into the stack with increasing energy. This might be due to more energy being available to the pairs, more pairs being produced per photon and so on.
 
 The energy conversion is of order.... percent.
-
-
-\subsection{Energy Deposition in an extended scintillator array in two directions}
-
-Similarly as before an array of crystals continuing in the penetration direction of the radiation is being modelled. This time the orientation of the stacks is changing from layer to layer. In addition the stack is longer in the propagation direction and spaced by plastic instead of aluminium and lacks a thick steel plate as cover. As radiation is in these situations very collimated the detector is elongated to enable resolving the full decay process, also at higher energies.
-The lower Z spacers and front plate also is supposed to help make use of this extra length and space out the decay.
-
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{ScreenshotGEANT_DualAxis_Side.png}
-\includegraphics[width=.5\columnwidth]{ScreenshotGEANT_DualAxisStack.png}
-\caption{Simulated stack: dual axis}
-\end{figure}
 
 
 \subsection{Comparison of scintillator array responses}
@@ -1033,10 +1067,6 @@ In an experiment, however, perfectly monoenergetic photon sources are not to be 
 
 This means that in principle a backwards transformation should be possible to invert the matrix and immediately gain a spectrum from experimental data from this process. Previous work, however, indicated that this process does not perform well due to noise in the experiment meaning the problem is ill-posed and the inversion proces does not converge. Instead a spectrum is assumed an a range of parameters used to vary this spectrum. The experimental data and the range of responses can then be compared using a least-square fit. This technique requires an input spectrum and a good knowledge of the spectrum expected. Especially in a transient regime where spectral shapes are expected to change this does not perform well.
 
-\subsection{Model-independent unfolding algorithm}
-
-To overcome the assumption of a well-known shape we have to resort to an algorithm based on Bayes-Theorem to find a spectrum independent of any presumption. In the case of some results to follow later for linear inverse Compton scattering the electron spectrum is expected to remain unperturbed while the laser pulse is strongly defocused and is also not expected to vary its intensity much. Under these conditions this method can be fielded and compared to the linear theory.
-
 \subsection{Bremsstrahlung simulations}
 
 One potential application is measuring hard bremsstrahlung from a source. Bremsstrahlung is very well understood as a process and is only mildly dependent on the shape of the electron spectrum, although large energy fluctuations will make a difference. This also turns out to be a good way to calibrate a detector and in experiment spot differences in crystal efficiency, flaws in the imaging system and so on.
@@ -1045,3 +1075,11 @@ In this simulation monoenergetic electrons were launched at a converter foil at 
 The material of the converter foil and the thickness was varied. The electrons are after their interaction dispersed by a magnetic field such that they do not interact with the detector. 
 
 Measuring conversion of electrons into bremsstrahlung (efficiency) and response for experiment factors.
+
+Correction factor
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{compvert.png}
+\caption{Correction factor XXX CHANGE PLOT.}
+\end{figure}
