@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  4 JUL 2019 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  12 JUL 2019 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -32035,7 +32035,7 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.421 \includegraphics
-                      [width=0.9\columnwidth]{EcritvsEf.pdf}
+                      [width=0.7\columnwidth]{EcritvsEf.pdf}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -32051,11 +32051,11 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 9 in font nullfont!
+Missing character: There is no 7 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.421 \includegraphics[width=0.9\columnwidth]
+l.421 \includegraphics[width=0.7\columnwidth]
                                              {EcritvsEf.pdf}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -32064,7 +32064,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.421 \includegraphics[width=0.9\columnwidth]
+l.421 \includegraphics[width=0.7\columnwidth]
                                              {EcritvsEf.pdf}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -44203,7 +44203,7 @@ or  <return>  to continue without it.
 
 ! Undefined control sequence.
 l.542 \includegraphics
-                      [width=0.8\columnwidth]{Comparison_Variance_Log.pdf}
+                      [width=0.5\columnwidth]{Comparison_Variance_Log.pdf}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -44218,7 +44218,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.542 \includegraphics[
-                       width=0.8\columnwidth]{Comparison_Variance_Log.pdf}
+                       width=0.5\columnwidth]{Comparison_Variance_Log.pdf}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -44231,11 +44231,11 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 8 in font nullfont!
+Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.542 \includegraphics[width=0.8\columnwidth]
+l.542 \includegraphics[width=0.5\columnwidth]
                                              {Comparison_Variance_Log.pdf}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -44244,7 +44244,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.542 \includegraphics[width=0.8\columnwidth]
+l.542 \includegraphics[width=0.5\columnwidth]
                                              {Comparison_Variance_Log.pdf}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -44267,7 +44267,7 @@ Missing character: There is no n in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.542 ...aphics[width=0.8\columnwidth]{Comparison_
+l.542 ...aphics[width=0.5\columnwidth]{Comparison_
                                                   Variance_Log.pdf}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
