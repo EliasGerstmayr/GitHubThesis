@@ -1,5 +1,16 @@
 \chapter{Theory}
 
+This chapter lays the theoretical groundwork to understand the research presented in the Results chapters later in this work, addressing laser wakefield acceleration, radiation production from charged particles and the fundamental processes of radiation reaction and Breit-Wheeler pair production.
+
+First, fundamental single particle motions are derived that are related to the motion of electrons in wakefield accelerators but also consist the basis for the working of a magnetic spectrometer.
+
+Secondly, the propagation of a laser in a medium and its non-linear evolution, in particular plasmas, is discussed as this paves the way for the third section on laser wakefield acceleration.
+
+Then, radiation production from electrons in different scenarios is discussed, starting with radiation in synchrotrons and insertion devices, then drawing the parallel to betatron radiation produced in wakefield acceleration and the radiation emitted in a laser wiggler, namely inverse Compton scattering in moderately and highly intense laser fields.
+
+This leads over to the topic of radiation reaction, the knockback force a particle experienced when emitting a photon, that can be investigated through inverse Compton geometries.
+
+Finally, other fundamental high-field processes as pair production from different mechanisms and future research topics are discussed.
 
 \section{Single particle motion in an EM field}
 
@@ -90,9 +101,9 @@ which gives us
 \ddot{p_y}  &= - \left(\frac{qB}{\gamma m}\right)^2 p_y.
 \end{align}
 \end{subequations}
-This can be solved by a periodic motion of type $p_x(t) = C \sin(\omega t) + D \cos(\omega t)$ with $\omega = qB/\gamma m$. 
+This can be solved by a periodic motion of type $p_x(t) = C \sin(\omega t) + D \cos(\omega t)$ with $\omega = qB/\gamma m$. The dotted variables indicate the time derivatives with $\dot{p} = \mathrm{d}p/\mathrm{d}t$ and $\ddot{p}=\mathrm{d}^2p/\mathrm{d}^2t$.
 
-$\mathbf{p_\perp}$ be the momentum vector of the particle perpendicular to the magnetic field lines and $\mathbf{p_\parallel}$ the component parallel to the magnetic field (z). Assume initial conditions $p_x(t=0) = |\mathbf{p_\perp}| = p_\perp$ and $p_y(t=0)=0$. We obtain these equations for the momenta:
+$\mathbf{p_\perp}$ be the momentum vector of the particle perpendicular to the magnetic field lines and $\mathbf{p_\parallel}$ the component parallel to the magnetic field (z). If we assume initial conditions $p_x(t=0) = |\mathbf{p_\perp}| = p_\perp$ and $p_y(t=0)=0$, we obtain for the momenta:
 
 \begin{subequations}
 \begin{align}
@@ -364,9 +375,11 @@ where $\gamma_0 \beta_0$ are the initial conditions.
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{betatron_traj.png}
-\caption{Particle trajectory of an electron using the initial conditions INSERT HERE, an accelerating gradient of NUMBER and XXXXX.}
+\caption{Particle trajectory of an electron using the initial conditions INSERT HERE, an accelerating gradient of NUMBER and XXXXX. Used same numbers and notations as Jon but somehow the plot scales differently. REPLACE.}
 \end{figure}
 
+
+\EliasComm{Based on Jon Wood's thesis.}
 Combining both results and keeping the same assumptions:
 
 \begin{equation}
@@ -518,7 +531,7 @@ Plasmas are frequently referred to as the `4th state of matter' in addition to t
 
 In the context of this work the process of forming a plasma is usually set equal to ionising a medium consisting of neutral atoms or molecules by applying an electric field in shape of an intense laser pulse. The resulting collection of unbound electrons and ions is a plasma. After a certain time the electrons will return to the ionic cores of the atoms and back again to a bound energy state emitting any excess energy in form of radiation in the process. This is called recombination and the emitted radiation recombination light.
 
-There are different mechanisms through which an oscillating laser field ionises a gas. In addition to single photon ionisation, there is multi-photon ionisation \cite{Keldysh1965}, where one electron is excited by absorbing multiple photons before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}.
+There are different mechanisms through which an oscillating laser field ionises a gas. In single and multi-photon ionisation \cite{Keldysh1965}, one electron is excited by absorbing one or multiple photons, respectively, before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}.
 
 The dominant ionisation mechanism is indicated by the Keldysh parameter $\gamma_K$ considering the strength of the electric field $E$ relative to the binding potential $V$ and the frequency of the oscillating field $\omega$:
 \begin{equation}
@@ -624,7 +637,7 @@ and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{omegap_lambdap_density.pdf}
-\caption{Plasma frequency and wavelength as function of plasma density.}
+\caption{Plasma frequency and wavelength as function of plasma density. A PLOT OF SLAB DISPLACEMENT NEXT TO THIS.}
 \end{figure}
 
 A typical regime wakefield accelerators in the context of this work operate in is at an electron density of around $10^{18}\,\mathrm{cm^{-3}}$. This corresponds to a plasma frequency of $5.6 \times 10^{13} \,\mathrm{Hz}$ or a plasma wavelength of $\lambda_p \approx 33\,\mathrm{\mu m}$.
@@ -700,7 +713,8 @@ f/40: &w_0 = 28.8\, \mathrm{\mu m}; z_R = 3200\, \mathrm{\mu m}\\
 \end{align*}
 
 
-However, real laser beams in experiments are typically not Gaussian but mostly flat-top beams. In addition, changes in the wave front, curvature profile, spatio-temporal couplings and so on consist further deviations from an ideal beam.
+However, real laser beams in experiments are typically not Gaussian but mostly flat-top beams. In addition, changes in the wave front, curvature profile, spatio-temporal couplings and so on consist further deviations from an ideal beam. These are commonly expressed in terms of the parameter $M^2$, with the minimum spot size being the ideal diffraction-limited spot size times $M^2$.
+
 
 \subsection{Laser Propagation in Plasma}
 
@@ -710,7 +724,7 @@ Consider a quasi-neutral plasma (charge density $\rho \approx 0$) with a current
 \nabla^2 \mathbf{E} = - \mu e n_e \frac{\partial \mathbf{v}}{\partial t} + \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2}.
 \end{equation}
 
-The acceleration of the electrons is due to the electric field of the wave, i.e. $\partial \mathbf{v}/\partial t = -e\mathbf{E}/m_e$. Now using the solution for a plane wave with $\mathbf{E} = \mathbf{E_0} \exp \left[i (\mathbf{k}\cdot\mathbf{r} - \omega t) \right]$ the dispersion relation is given by $\omega = c k \left(1-\left(\frac{\omega_p}{\omega}\right)^2\right)^{-1/2}$, and hence the group velocity $v_g$ and the phase velocity $v_p$ are given by:
+The acceleration of the electrons is due to the electric field of the wave, i.e. $\partial \mathbf{v}/\partial t = -e\mathbf{E}/m_e$. Now using the solution for a plane wave with $\mathbf{E} = \mathbf{E_0} \exp \left[i (\mathbf{k}\cdot\mathbf{r} - \omega t) \right]$ the dispersion relation is given by $\omega = c k \left[1-\left(\frac{\omega_p}{\omega}\right)^2\right]^{-1/2}$, and hence the group velocity $v_g$ and the phase velocity $v_p$ are given by:
 
 \begin{align}
 v_p &= \frac{\omega}{k} = \frac{c}{\sqrt{1-\left(\frac{\omega_p}{\omega}\right)^2}},\\
@@ -841,7 +855,7 @@ The pulse duration after propagating is hence
 \end{equation}
 where the rate of compression is $n_0/(2 c n_c)$.
 $l$ is the length over which the electron density increases from $0$ to $n_0$.
-\EliasComm{Add here parts from Jason's thesis.}
+\EliasComm{Add here more details, can find parts in Jason's thesis.}
 
 \section{Laser Wakefield Acceleration}
 
@@ -856,12 +870,11 @@ In laser wakefield acceleration (LWFA) a short ($\sim 30-50\,\mathrm{fs}$) and i
 \begin{figure}
 \centering
 \includegraphics[width=0.9\columnwidth]{wakefield_plot.png}
-\caption{Visualisation of the laser wakefield acceleration (LWFA) scheme\protect\footnotemark using simulation data. The high-intensity laser pulse (red) travels at almost the speed of light through the plasma (blue), displacing the electrons in its way and driving a wave. The displaced electrons stream back in the wake of the pulse (white arrow) due to the Coulomb attraction. The area of low electron density and the high density regions (green) form strong accelerating fields (orange-red) in the longitudinal direction.}
+\caption{Visualisation of the laser wakefield acceleration (LWFA) scheme\protect\footnotemark using simulation data. The high-intensity laser pulse (red) travels at almost the speed of light through the plasma (blue), displacing the electrons in its way and driving a wave. The displaced electrons stream back in the wake of the pulse (white arrow) due to the Coulomb attraction. The area of low electron density and the high density regions (green) form strong accelerating fields (orange-red) in the longitudinal direction. THIS IS JASON's PLOT, REPLACE BY OWN PLOT, EG PIC VISUALISATION?}
 \end{figure}
 
 \footnotetext{Image taken from Jason Cole's PhD thesis (Imperial College,2015).}
 
-\EliasComm{make own plot for LWFA.}
 
 
 
@@ -880,6 +893,7 @@ L_{pd} = 2 \epsilon \left(\frac{a_0}{\delta}\right)^2 \frac{n_c}{n_e} \lambda_p.
 \end{equation}
 
 Higher densities lead to faster etching away of the pulse, whilst reducing the plasma density allows sustaining the accelerating structure over longer distances.
+\EliasComm{Write whether it is 1D, 3D...}
 
 \subsection{Dephasing}
 
@@ -900,6 +914,7 @@ The distance over which electrons leave the acceleration phase, the dephasing le
 \begin{equation}
 L_{dp} = \lambda_p \frac{n_c}{n_e}.
 \end{equation}
+\EliasComm{Write whether it is 1D, 3D...}
 
 Since a higher plasma density slows the laser pulse down more, the dephasing length decreases as well.
 
@@ -907,7 +922,7 @@ Both dephasing and depletion limit the acceleration length based on a similar sc
 
 \subsection{Maximum Energy Gain}
 
-Wakefield cavities support several orders of magnitude higher electric fields than conventional RF cavities. For a 3D non-linear wake the maximum electric field supported is given by
+Wakefield cavities support several orders of magnitude higher electric fields than conventional RF cavities. For a 3D non-linear wake the maximum electric field supported is given by (REF)
 \begin{equation}
 E_{max} = \sqrt{a_0} m_e c \omega_p/e.
 \end{equation}
@@ -946,7 +961,7 @@ In 3D in the nonlinear regime particles can cross trajectories without wavebreak
 \subsubsection{Medium based}
 
 Instead of relying on the evolution of the laser pulse and subsequent wavebreaking, the properties of the atoms and molecules can provide electrons.
-Higher Z gases bind electrons strongly and require higher field strengths to release them. When the intense laser pulse passes through it triggers an increased rate of tunnel ionisation near the centre of the pulse. The released electrons are trapped and subsequently accelerated.
+Higher-Z gases bind electrons strongly and require higher field strengths to release them. When the intense laser pulse passes through it triggers an increased rate of tunnel ionisation near the centre of the pulse. The released electrons are trapped and subsequently accelerated.
 The duration over which electrons are released and hence the energy spread relies on the intensity of the laser pulse and its evolution.
 In smaller laser systems ionisation injection has produced narrow energy spread beams of reproducible charge and quality. This is due to a short time over which the laser pulse reaches the necessary intensity before expanding or losing energy.
 In more powerful laser systems the required intensities can be upheld over much longer durations resulting in large amounts of charge but also a large energy spread as electrons are being injected and accelerated continuously.
@@ -963,6 +978,8 @@ This can be done by decreasing the density. A scheme for this is downramp inject
 
 In some cases smaller perturbations in the plasma might also result in something similar by making the size of the bubble oscillate briefly capturing some electrons. This was used in KUSCHEL REF to explain injection events before the self-ionisation threshold in gas jets.
 
+\EliasComm{Make an overview plot to demonstrate a few of the schemes?}
+
 Opposite to downramp injection a positive density gradient will lead to a decrease in the size of the bubble. This is not suitable to capture electrons but it moves the centre of the cavity closer to the laser pulse and hence moves the accelerating phase. This can be used to rephase electrons and increase the length over which electrons are in an accelerating phase if they have reached dephasing at a lower density already.
 
 Whilst the previous examples were longer ramps in gradients or small perturbation large changes in density will lead to a large change in the bubble size and hence can be used for injection.
@@ -970,7 +987,7 @@ Such a sharp density transition has been realised in experiment by several group
 In experiments the right position and angle of such a shock front has shown to be able to produce high quality electron beams with low energy spread as the injection is localised.
 
 
-\subsubsection{Laser-assisted}
+\subsubsection{Laser-assisted Injection}
 
 Instead of solely relying on the interaction of medium and laser, research efforts have explored the option of using a second laser to trigger injection or to modify the density profile.
 
@@ -980,7 +997,7 @@ Trojan Horse: a laser is brought to focus in the accelerating phase of the cavit
 
 Colliding pulse: a second laser counter-propagates with the main driving laser pulse. For the duration of the spatio-temporal overlap of both laser pulses the combined laser fields allow for ionisation injection to take place.
 
-\subsubsection{External injection}
+\subsubsection{Injection of an external beam}
 
 A final example of injection mechanisms is providing an electron beam from a different source and coupling it into the cavity of an LWFA accelerator. Whilst the other mechanisms make LWFA the source and accelerator of electrons, here the cavity is focused around accelerating and in some cases to modify the phase space of the given beam. Electron sources could either be a conventional accelerator structure, for instance an RF-gun, or another LWFA stage.
 
@@ -1024,7 +1041,7 @@ based on Jon Wood and Jackson:
 Solving the equations that gives
 
 \begin{equation}
-\frac{d^2 I}{d\omega d\Omega} = \frac{e^2}{12 \pi^3 c \epsilon_0} (\frac{\omega \rho}{c})^2 (\gamma^{-2} + \theta^2)^2 [K_{2/3}^2 (\psi) + \frac{\theta^2}{(1/\gamma^2)+\theta^2}K_{1/3}^2(\psi)]
+\frac{d^2 I}{d\omega d\Omega} = \frac{e^2}{12 \pi^3 c \epsilon_0} \left(\frac{\omega \rho}{c}\right)^2 (\gamma^{-2} + \theta^2)^2 \left[K_{2/3}^2 (\psi) + \frac{\theta^2}{(1/\gamma^2)+\theta^2}K_{1/3}^2(\psi)\right]
 \end{equation}
 
 \begin{equation}
@@ -1305,7 +1322,7 @@ Laser wiggler. Electric field component, later on at high intensities the magnet
 \begin{figure}
 \centering
 \includegraphics[width=0.8\columnwidth]{ICS_Jason.png}
-\caption{Visualisation of inverse Compton scattering (ICS). A relativistic electron is counter-propagated with a laser pulse which gains energy from the interaction due to the relativistic Doppler-effect. Graphics by Jason Cole (Imperial College).}
+\caption{Visualisation of inverse Compton scattering (ICS). A relativistic electron is counter-propagated with a laser pulse which gains energy from the interaction due to the relativistic Doppler-effect. Graphics by Jason Cole (Imperial College). REPLACE VISUALISATION BY OWN.}
 \end{figure}
 
 \EliasComm{need new ICS visualisation.}
@@ -1367,13 +1384,13 @@ The photons are boosted by $(2\gamma)^2$ to an energy $E_{f,max} = 2 \gamma E'_f
 
 The calculation of the cross section follows the same scheme, relying on the quantum-corrected Klein-Nishina equation using the angles and energies in the electron rest frame. The angles corresponding to the cross sections and the solid angles, however, have to be transformed in a similar way.
 
-At $\gamma >> 1$ we will assume that the collisions are always head-on, such that $\sigma' = \sigma$ and we need to only change the solid angle.
+At $\gamma \gg 1$ we will assume that the collisions are always head-on, such that $\sigma' = \sigma$ and we need to only change the solid angle.
 Due to the relativistic boost the energy of the photons will look as if $2\gamma$ higher and we will be in the regime where the Klein-Nishina equation already indicates a headlight effect of the radiation being preferably emitted in forwards direction.
 
 
-\EliasComm{add some parts here from Jason's calculations.}
 
 \EliasComm{add plot for relativistic kinematics.}
+\EliasComm{at $a_0 < 1$ but close to 1 already higher harmonics etc., so not purely first order.}
 
 \subsection{Nonlinear Inverse Compton Scattering}
 
@@ -1397,7 +1414,7 @@ Relativistic kinematics is identical for one or several photons as many incoming
 E'_f = \frac{n E'_i}{1+\frac{n E'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
 
-At laser intensities reaching an relativistic regime $a_0 ~ 0.1$ the equation of motion of the electron starts deviating from a simple up-and-down oscillation due to a longitudinal component. The electrons start performing a figure-of-eight motion with a longitudinal component increasing with $a_0$.
+At laser intensities reaching an relativistic regime $a_0 \sim 0.1$ the equation of motion of the electron starts deviating from a simple up-and-down oscillation due to a longitudinal component. The electrons start performing a figure-of-eight motion with a longitudinal component increasing with $a_0$.
 This additional component has two effects:
 Firstly, the modification of the equation of motion leads to a redshifting of the spectrum. The energy of the Doppler-shifted radiation is damped to 
 \begin{equation}
@@ -1474,13 +1491,13 @@ Deviations from a head-on collision have to be considered and also introduce a s
 
 The previous sections left out the effect of radiation losses onto the equation of motion of charged particles.
 Charged particles emit radiation when being accelerated. The charged particle emitting the radiation loses the energy associated with the photon and is knocked back, adhering to momentum and energy conservation rules. This is called radiation reaction (RR) or radiation friction.
-Radiation reaction is a very fundamental problem of physics, but surprisingly a universally accepted description does not exist thus far. Each description only exists in a certain limit and is an approximation valid within those limits, but breaks down in extreme conditions. High field QED is a suitable environment to test the limits of these models.
+Radiation reaction is a very fundamental problem of physics, but surprisingly a universally accepted description does not exist thus far (REF). Each description only exists in a certain limit and is an approximation valid within those limits, but breaks down in extreme conditions (REF). High field QED is a suitable environment to test the limits of these models (REF).
 \vspace{\baselineskip}
 
-Whilst the emission of radiation is ubiquitous, in many cases radiation losses are small or occur over longer spans of time which means they can be ignored or the detailed physics of radiation reaction is not important. In storage rings of large accelerator and collider facilities radiation losses pose a significant problem as they limit the maximum energy the particles can be accelerated to. The exact dynamics of radiation reaction and the influence on the equation of motion of the particles is not very significant. It suffices to add the average energy lost over the a turn in the storage ring to prop up the system. This is sometimes referred to as weak radiation reaction.
+Whilst the emission of radiation is ubiquitous, in many cases radiation losses are small or occur over longer spans of time which means they can be ignored or the detailed physics of radiation reaction is not important. In storage rings of large accelerator and collider facilities radiation losses pose a significant problem as they limit the maximum energy the particles can be accelerated to. The exact dynamics of radiation reaction and the influence on the equation of motion of the particles is not very significant. It suffices to add the average energy lost over the a turn in the storage ring to prop up the system. This is sometimes referred to as weak radiation reaction (REF).
 
-Radiation reaction effects become more significant in extreme conditions where ultra-relativistic particles interact with light: in astrophysical phenomena relativistic particle jets of GeV, TeV or PeV level are frequently observed. Interacting with the ubiquitous CMB inverse Compton scattering provides a high energy background radiation.
-These conditions are re-constructed in laser and accelerator facilities interacting ultra-relativistic particles with laser pulses. Radiation reaction was measured, for instance, at SLAC (REF E144) and first measurements have been undertaken at non-conventional accelerators such as the Astra-Gemini laser system at the Central Laser Facility in the UK. This work is part of this thesis.
+Radiation reaction effects become more significant in extreme conditions where ultra-relativistic particles interact with light: in astrophysical phenomena relativistic particle jets of GeV, TeV or PeV level are frequently observed. Interacting with the ubiquitous CMB inverse Compton scattering provides a high energy background radiation (REF).
+These conditions are re-constructed in laser and accelerator facilities interacting ultra-relativistic particles with laser pulses. Radiation reaction was measured, for instance, at SLAC (REF E144), and at the LHC (REF ULRIK CRYSTALS) and first measurements have been undertaken at non-conventional accelerators such as the Astra-Gemini laser system at the Central Laser Facility in the UK (REF COLE, REF PRX). This work is part of this thesis (see Chapter XX RR).
 \vspace{\baselineskip}
 
 In this section a selection of radiation reaction models are motivated and introduced. Since this is a fundamental problem a variety of different approaches have been tried, but the author will restrict this section to the most commonly discussed models which are also relevant to this work.
@@ -1682,6 +1699,10 @@ The threshold is $s > 1$.
 
 Nonlinear Breit Wheeler 
 Seen at SLAC E144.
+
+Many photons interacting with one to generate pairs.
+
+\EliasComm{Do not go into detail here as we are not investigating the non-linear process here.}
 
 \subsection{Schwinger limit}
 
