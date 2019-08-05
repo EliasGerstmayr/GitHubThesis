@@ -18,6 +18,7 @@
 \usepackage{epigraph} % this is to add quotes at the beginning of chapters
 \usepackage{bibunits}
 \usepackage{empheq}
+\usepackage{nameref}
 
 \newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
 
@@ -25,16 +26,17 @@
 \usepackage{color}
 \newcommand{\EliasComm}[1]{\todo[inline,color=blue!40]{EG: #1}}
 
+\newcommand{\fcite}[1]{\footnote{\cite{#1}}}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
 \fancyhead{}
-\fancyhead[RO,LE]{Thesis Title}
+\fancyhead[RO,LE]{Energetic Radiation from Wakefield Acceleration and its Applications}
 \fancyfoot{}
 \fancyfoot[LE,RO]{\thepage}
 \fancyfoot[LO,CE]{Chapter \thechapter}
-\fancyfoot[CO,RE]{Author Name}
+\fancyfoot[CO,RE]{Elias Gerstmayr}
 
 %\DeclareUnicodeCharacter{00A0}{ }
 %\DeclareUnicodeCharacter{00A0}{~}
@@ -51,9 +53,6 @@
 %\usepackage[automark]{scrlayer-scrpage} % package to customise the headers and footers
 %\pagestyle{scrheadings}
 %\clearscrheadfoot
-
-
-
 
 \usepackage{cancel}
 \usepackage[final]{feynmp}
