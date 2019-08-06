@@ -252,7 +252,7 @@ Shock injection has been observed by other groups introducing a blade (REF \cite
 
 \begin{figure}
 \centering
-\includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{ElecEdge_Example.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=.9\columnwidth]{ElecEdge_Example.png}
 \caption{Lineout of an electron spectrum (red) normalised to its peak charge. The x-axis indicates the electron energy in $\mathrm{MeV}$ and is cut off at $800\,\mathrm{MeV}$ as high energy features will not be further investigated. The blue line is the first derivative of the spectrum with a sharp peak at the edge-like spectral feature around $600\,\mathrm{MeV}$. A circle indicates the determined position of the spectral feature.}
 \label{Results:Figs:Edge:ShotsNull}
 \end{figure}
@@ -320,8 +320,6 @@ Continuing with the assumption of a normal distribution we can assign probabilit
 
 The smaller sub-set of data including the high-intensity interactions was taken in a time span of $\sim 30\,$ minutes.
 
-\EliasComm{is it possible to put an error bar on the KDE? Might be a lot of statistics involved. Stuart suggests bootstrapping.}
-
 
 \section{Retrieval of gamma spectra}
 
@@ -352,9 +350,9 @@ In addition to the brighter signal this now confirms again a different process. 
 \label{Results:Figs:Gamma:OnOff}
 \end{figure}
 
-\section{Indicators of radiation reaction in the electron spectrum}
+\section{Evidence of radiation reaction in the collision}
 
-\subsubsection{Recap}
+\subsubsection{Summary of results so far}
 After having now characterised the electron spectra and the expected gamma signal, we can now look more closely at the identified successful collisions and potential indicators of radiation reaction.
 
 \begin{figure}[h]
@@ -398,33 +396,42 @@ In Figure XX we see that the critical energy of the gamma spectrum is relatively
 
 Both measurements (gamma-rays and electron energy loss) seem to be indicating that the laser intensity was around $a_0 \approx 10$ instead of the peak intensities of close to $a_0 \sim 25$ reached by the laser.
 
-\subsubsection{Explaining lower intensity}
-The lower intensity is actually easily explained. The timing of the beams was done using spatial interferometry. The visibility of fringes was optimised which means that both laser pulses are timed to arrive within $30\,\mathrm{fs}$ of each other. This timing is valid for both laser pulses travelling through vacuum. What we are actually aiming to time is the arrival of the scattering beam and the electron beam which is trailing behind the driving laser pulse. To estimate the intensity of the laser pulse at the interaction we have now to consider the delay of the laser pulse as it is travelling through a medium (plasma) to the point of injection and then, assuming that the electrons relatively quickly reaching a velocity close to the speed of light, the relative delay of the laser pulse and the electron beam. This delay is around half a plasma wavelength SEE REFS.
+\subsubsection{Explaining lower laser intensity at the interaction}
 
-For the delay induced through the South beam travelling through a medium we use the group velocity $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$, which is the standard non-linear group velocity in media minus the etching velocity (called front velocity in REF DECKER 1996 Phys Plasmas). The distance that the North beam travels in vacuum during the time the South beam travels through a medium of thickness $d$ is $d'=d c/v_f$. The new collision point is now
+The intensity of the laser pulse is significantly lower than the peak $a_0$ achievable in this geometry. This indicates XX.
+
+The two laser pulses were synchronised at vacuum using spatial interferometry to an estimated accuracy of $30\,\mathrm{fs}$. This timing is only valid if both laser pulses travel through vacuum. In a shooting scenario, however, the driving laser pulse propagates through plasma to accelerate electrons via LWFA. The propagation in a medium reduces the group velocity of the laser pulse and delays its arrival relative to the vacuum timing.
+In addition, we are trying to overlap the scattering beam with the electrons accelerated by the driver pulse, not the driver itself. The LWFA electron bunch trails behind the driving laser pulse and arrives even later at the interaction point. Since the scattering beam arrives before both at its focal plane and the designated interaction point, the real collision will occur beyond this point and at a slightly defocused spot size. 
+To estimate the intensity of the laser pulse at the interaction we have to determine the real collision point and the size of the scattering beam at this plane. 
+\vspace{\baselineskip}
+
+The following analysis is based on Jason Cole's work for \cite{Cole2018}.
+We assume that the laser pulse travels through the plasma at the standard non-linear group velocity reduced by the etching velocity, $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$ (called front velocity in REF DECKER 1996 Phys Plasmas). Given a medium of thickness $d$ the laser pulse of the scattering beam travels in the same time a distance  $d'=d c/v_f > d$.
+
+Both laser pulses now meet a distance $\delta z_1$ past the focal plane of the scattering beam:
 
 \begin{equation}
-\delta z_1 = \frac{1}{2} (d \frac{c}{v_f} - d) = \frac{d}{2} (1/(1-\frac{3}{2} \frac{n_e}{n_c}) -1) \approx \frac{d}{2}(1+\frac{3}{2} \frac{n_e}{n_c} -1) = \frac{3d}{4}\frac{n_e}{n_c}
+\delta z_1 = \frac{1}{2} \left(d \frac{c}{v_f} - d\right) = \frac{d}{2} \left(1/\left(1-\frac{3}{2} \frac{n_e}{n_c}\right) -1\right) \approx \frac{d}{2}\left(1+\frac{3}{2} \frac{n_e}{n_c} -1\right) = \frac{3d}{4}\frac{n_e}{n_c}.
 \end{equation} 
 
-The electrons trail behind the South laser pulse around N plasma wavelengths (the factor half are as the collision happens midway):
+The electrons in turn trail behind the driving laser pulse around N plasma wavelengths and meet the scattering pulse midway:
 \begin{equation}
-\delta z_2 = 0.5 N \lambda_p = 0.5 N \frac{2 \pi c}{\omega_p} = 0.5 N \frac{2 \pi c}{\omega} \frac{\omega}{\omega_p} = 0.5 \lambda_0 \sqrt{\frac{n_c}{n_e}}
+\delta z_2 = \frac{1}{2} N \lambda_p = \frac{1}{2} N \frac{2 \pi c}{\omega_p} = \frac{1}{2} N \frac{2 \pi c}{\omega} \frac{\omega}{\omega_p} = N \frac{\lambda_0}{2} \sqrt{\frac{n_c}{n_e}}
 \end{equation}
 
-As total delay we can estimate
-ADD EQUATION HERE FOR DELAY AND A DRAWING TO SHOW THIS MORE CAREFULLY.
+If we assume that the acceleration is close to its dephasing limit, $N = 1/2$.
+Under these assumptions the electron bunch and the scattering beam meet at $\delta z$ distance from the intended collision point.
 
 \begin{equation}
 \delta z = \frac{3d}{4} \frac{n_e}{n_c} + N \frac{\lambda_0}{2}\sqrt{\frac{n_c}{n_e}},
 \end{equation}
-where d is the distance of injection point from front of gas jet
-N is number of plasma periods between f/40 and electron bunch.
-
-\EliasComm{Maybe add a little sketch to indicate where all these delays come from.}
-
-This amount of defocus then reaches an average intensity of NUMBER 10 instead of the peak intensity of close to 25 possible in this setup. A variation of overlap and the electron energy will then result in an accidental scan of our conditions. We also expect that the injection point varies depending on the evolution of the laser pulse.
+where in this context $d$ is the distance of the injection point from the front of the gas jet.
 \vspace{\baselineskip}
+
+For a density of XX ...
+This amount of defocus then reaches an average intensity of NUMBER 12 instead of the peak intensity of close to 25 possible in this setup. We expect that the injection point varies depending on the evolution of the laser pulse on top of timing jitter. The fluctuation of relative timing and spatial overlap then results in a spread of interaction conditions.
+
+\subsubsection{Estimating Collision Probability based on Jitter}
 
 With the knowledge of the focal spot size at the interaction and realistic timing fluctuations, we can estimate the number of expected collisions in these conditions.
 This has been done by Jason Cole (Imperial College) and Chris Baird (York) by inserting the jitter in time and space of the electron beam and the laser, in one case running a simple Monte-Carlo simulation, in the second case building this on the amount of overlap achieved in PIC simulations.
@@ -462,12 +469,11 @@ An analysis how much more data we would require to make a conclusion beyond the 
 In addition it becomes clear that the difference between a fully stochastic quantum model and a semi-classical model is not very visible in this case. There is in indication that the models depart at higher energy losses, i.e. higher laser intensities but it would also require a higher electron energy. This slow departure from each other in contrast to the relatively distinct classical model is founded in the electron observable which is the energy loss from a characterised mean. When looking at the mean energy loss for the quantum and the semi-classical model it becomes evident that by definition the values are identical. Even though the energy loss of the spectral feature is not the same thing it closely relates to the mean energy loss. A more sensitive observable that behaves very differently for both models is the variance of the spectrum or the shape of the spectrum. This will be closer illuminated in the next section. 
 \vspace{\baselineskip}
 
-\section{Comparing Results Poder and Cole}
+\section{Electron beam stability and model distinction}
 
 In the framework of the data set presented first indications of differences in the models become evident, but a definite discrimination is not within its reach. More data, stability, higher electron energies, laser intensities and additional observables could enable this as part of a future precision measurement.
 
-The author will attempt to indicate the importance of a stable electron source in the following section by comparing the data set presented with a second measurement of radiation reaction taken at the same facility and published in Poder et al \cite{Poder2018}. For this purpose, the electron spectra of the second experiment are included in a statistical analysis as well.
-In this context, the choice of targetry (gas jet vs gas cell), injection mechanisms and diagnostics will also be discussed.
+The following section will highlight the importance of a stable electron source by comparing the data set presented (Cole et al. \cite{Cole2018}) with a second measurement of radiation reaction, performed at the same facility using a gas cell target (Poder et al. \cite{Poder2018}). For this purpose, the electron spectra of the second experiment undergo a statistical analysis similarly as described before.
 
 \subsubsection{Experimental setup}
 
@@ -493,11 +499,11 @@ Both lasers were synchronised to about $40$ fs accuracy using spectral interfero
 \vspace{\baselineskip}
 
 The electrons accelerated via LWFA are dispersed by a dipole magnet of integrated field strength $\int B(x) \mathrm{d}x \approx 0.15 \,\mathrm{Tm}$ onto a scintillating LANEX screen.
-The gamma rays from ICS are recorded by the same CsI stack as described previously, but this time rotated such that the long side of the crystals is oriented in the longitudinal direction. The stack acts as a profile screen instead of a spectral measurement and the brightness of the recorded scintillation light is proportional to the total energy deposited in the crystal stack REF HERE.
+The gamma rays from ICS are measured by the same scintillator stack as described previously, but this time it is rotated such that the long side of the crystals is oriented in the longitudinal direction. The stack acts as a profile screen instead of a spectrometer and the brightness of the measured scintillation light is proportional to the total energy deposited in the crystal stack REF HERE.
 
 \subsubsection{Characterisation of Electron Spectra}
 
-The typical electron spectrum produced can be seen in Figure \ref{fig:Poder_espec_example}. The average shape is an exponential spectrum reaching energies in excess of $1.5\,\mathrm{GeV}$. At the lower end the spectrum is cut off at around $400\,\mathrm{MeV}$ due to limitations in the magnetic electron spectrometer setup. The spectra from the gas cell originate from self-injection and lack a sharp distinctive feature comparable to the spectral edge described in the previous section related to shock injection. This data set consists of 19 shots.
+A typical electron spectrum produced from the gas cell target can be seen in Figure \ref{fig:Poder_espec_example}. The average shape is an exponential spectrum reaching energies in excess of $1.5\,\mathrm{GeV}$. At the lower end the spectrum is cut off at around $400\,\mathrm{MeV}$ due to limitations in the magnetic electron spectrometer setup. The spectra from the gas cell originate from self-injection and lack a consistent distinctive feature comparable to the spectral edge described in the previous section related to shock injection. The data set considered consists of 19 shots.
 
 \begin{figure}
 \centering
@@ -506,12 +512,12 @@ The typical electron spectrum produced can be seen in Figure \ref{fig:Poder_espe
 \label{fig:Poder_espec_example}
 \end{figure}
 
-Due to the lack of such a distinct feature, the characteristic number for each spectra of this experiment will now be the cut-off energy, which is as in \cite{Poder2018} defined as the energy at which the spectral intensity reaches 10 percent of its peak value.
+The characteristic number assignted to each spectrum is the cut-off energy, which is as in \cite{Poder2018} defined as the energy at which the spectral intensity reaches 10 percent of its peak value.
 \vspace{\baselineskip}
 
-In this case, the only injection mechanism considered is self-injection. This process typically scales with the laser energy (REF), which is also confirmed in Figure \ref{fig:Poder_laser_corr}. The laser energy of the wakefield driver scales well linearly with the cut-off energy of the spectrum. The correlation coefficient is $0.9$. The linear fit follows the equation $\epsilon_{cutoff} = 0.07\,\mathrm{GeV/J} \times E_{laser} + 0.57\,\mathrm{GeV}$.
+In this case, the only injection mechanism considered is self-injection. This process typically scales with the laser energy (REF), which is also confirmed in Figure \ref{fig:Poder_laser_corr}. The laser energy of the wakefield driver scales well linearly with the cut-off energy of the spectrum. The correlation is very strong at a correlation coefficient of $0.9$. The linear fit follows the equation $\epsilon_{cutoff} = 0.07\,\mathrm{GeV/J} \times E_{laser} + 0.57\,\mathrm{GeV}$.
 
-After scaling the spectra according to the linear relation found in Figure \ref{fig:Poder_laser_corr}, we can analyse the spectra similarly as before and see that this spectrum also follows a normal distribution. The standard deviation of the cut-off energy distribution is $\sigma_{Poder} = 0.035$, so 95 percent of the expected energies will fall within $\pm 7\,\%$ of the mean energy.
+After scaling the spectra according to the linear relation found in Figure \ref{fig:Poder_laser_corr}, we can analyse again the `intrinsic' fluctuations of the source. The distribution of cut-off energies in terms of $\Delta E/E$ follow a normal distribution after removing the correlation with the laser energy. The standard deviation of the cut-off energy distribution is $\sigma_{Poder} = 0.035$, so 95 percent of the expected energies will fall within $\pm 7\,\%$ of the mean energy.
 
 \begin{figure}[h]
 \centering
@@ -543,14 +549,23 @@ The averaged spectra from the two experiments are shown in Figure \ref{fig:compa
 
 The spread of cut-off energies for the gas cell data is narrower than the spread of energies of the edge feature produced with the gas jet target. The shaded areas in Figure \ref{fig:comparison_histo} indicate the $\pm 2$ sigma or 95 percent confidence intervals (assuming a normal distribution). The Poder data has a typical fluctuation of the cut-off energy of around 7 percent. The spectral feature from the gas jet varies with 15 percent by around the double amount. 
 
-\subsubsection{Discussion}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{Comparison_Variance_Log.pdf}
+\caption[]{Energy-dependent variance of the average spectra in introduced in figure 8. In blue the data taken on the experiment related to Cole et al., in green to Poder et al.. The total variance for Cole et al. was $1.5 \times 10^{-7}$ and $1.98 \times 10^{-8}$ in the case of Poder et al..}
+\end{figure}\label{fig:comparison_varianceLog}
+
+Also discuss the variance of the spectra in this section.
+
+\subsubsection{Relevance for measurements of radiation reaction}
 
 This means that if our observable is coupled to the energy of the electrons we will require a certain number of shots based on the typical variability of the source to say with a degree of confidence that a signal beyond this has been recorded. If we couple this with the probability to even collide two beams at all, the number of required additional shots increases by a significant amount.
 \vspace{\baselineskip}
 
 To put this into context: in \cite{Cole2018} 4 successful collisions were identified by consulting the gamma-ray detector signal which showed a bright signal, $5-10$ standard deviations above the expected background. The energies of these 4 successful collisions were about $15\,\%$ below the mean of the reference distribution. The cumulative probability for a normal distribution with standard deviation $\sigma_{Cole} = 0.077$ to see one shot with a relative deviation of the energy from the mean of $10\,\%$ or more is roughly $10\,\%$. 
 
-For an individual shot this probability is non-negligible, but it holds in combination with the gamma-ray signal and over the $4$ collisions to confirm that this is to some extent as low due to radiation reaction. The cumulative probability for a normal distribution with standard deviation $\sigma_{Poder}=0.035$ on the other hand for the same scenario is only $0.2\,\%$ and holds the test by itself at a level of confidence equivalent to 2.7 as many shots at $\sigma_{Cole}$. At a repetition rate of $0.05\,\mathrm{Hz}$ (1 shot/20 s), typical for the Astra Gemini laser, a scan of 100 shots at $\sigma_{Poder}$ would take under 30 minutes, but would extend to $1.5$ hours to reach the same level of confidence. At this extended time-scale, however, even small drifts in alignment and timing can affect the reproducibility of the interaction conditions which requires few microns and femtoseconds precision and as a result call the validity of measurements into question. In addition, we have to factor in the potential deterioration of the gas target and laser performance over the course of the experiment. Tim can become a crucial factor in experiments that require such a high level of complexity and sensitivity.
+For an individual shot this probability is non-negligible, but it holds in combination with the gamma-ray signal and over the $4$ collisions to confirm that this is to some extent as low due to radiation reaction. The cumulative probability for a normal distribution with standard deviation $\sigma_{Poder}=0.035$ on the other hand for the same scenario is only $0.2\,\%$ and holds the test by itself at a level of confidence equivalent to 2.7 as many shots at $\sigma_{Cole}$. At a repetition rate of $0.05\,\mathrm{Hz}$ (1 shot/20 s), typical for the Astra Gemini laser, a scan of 100 shots at $\sigma_{Poder}$ would take under 30 minutes, but would extend to $1.5$ hours to reach the same level of confidence. At this extended time-scale, however, even small drifts in alignment and timing can affect the reproducibility of the interaction conditions which requires few microns and femtoseconds precision and as a result call the validity of measurements into question. In addition, we have to factor in the potential deterioration of the gas target and laser performance over the course of the experiment. Time can become a crucial factor in experiments that require such a high level of complexity and sensitivity.
 \vspace{\baselineskip}
 
 However, the error on the mean of the electron energy also propagates further into the estimate of the interaction conditions. If we manage to sustain the experiment conditions over the course of the experiment (spatio-temporal overlap, intensity of interaction, laser parameters and so on), the energy of the unperturbed electron beam is fluctuating according to a normal distribution and the energy of the post-interaction electron beam will follow the same normal distribution but shifted down by the average energy loss. For now we will ignore the potential cooling or heating effects of radiation reaction on the distribution function. In this scenario at a constant energy loss of $15\,\%$, we will measure a range of deviations from the unperturbed mean energy which we will call `energy loss', which is in reality the energy loss superimposed onto the normal distribution. The standard deviation of the Cole data $\sigma_{Cole}$ is half the size of the total energy loss, whereas for $\sigma_{Poder}$ it halves to $25\,\%$, which is still a significant range of values most of the measurements will show. That means that there is a significant error on the estimated energy loss for each measurement and a second diagnostic narrowing down the conditions at the interaction, for instance a spectral measurement of the gamma radiation, becomes imperative.
@@ -558,11 +573,6 @@ However, the error on the mean of the electron energy also propagates further in
 If we want to compare different models of radiation reaction based on this energy loss, an increased stability of the electron energy will help in two ways: firstly, the expected phase space of post-interaction energies for each model of radiation reaction at a fixed confidence level decreases, which might reduce the overlap of different models. Secondly, if the initial electron energy is sampled from a narrower distribution the error on that measurement decreases as well, reducing its footprint in phase space again.
 \vspace{\baselineskip}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.5\columnwidth]{Comparison_Variance_Log.pdf}
-\caption[]{Energy-dependent variance of the average spectra in introduced in figure 8. In blue the data taken on the experiment related to Cole et al., in green to Poder et al.. The total variance for Cole et al. was $1.5 \times 10^{-7}$ and $1.98 \times 10^{-8}$ in the case of Poder et al..}
-\end{figure}\label{fig:comparison_varianceLog}
 
 In some cases, however, even an increased level of confidence and more data is not resulting in an improved distinction of different models of radiation reaction. As seen in recent publications REFS HERE RIDGERS, measuring the difference between classical and models including some form of quantum corrections can be done based on the energy loss due to the reduced emission power in quantum systems (REF).
 
