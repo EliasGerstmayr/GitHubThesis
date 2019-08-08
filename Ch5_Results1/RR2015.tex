@@ -134,7 +134,7 @@ The narrow cone of gamma rays from ICS propagates through the hole of the f/2 OA
 \iffalse
 The stack is 33 crystals high and 47 crystals deep, each crystal $5\,\mathrm{mm} \times 5\,\mathrm{mm} \times 50\,\mathrm{mm}$, with the $5\,\mathrm{mm}\,\times\,5\,\mathrm{mm}$ sides facing to the side with respect to the gamma-ray axis and being imaged by an Andor iXon camera. The crystals are spaced by $1\,\mathrm{mm}$ aluminium dividers and the front side of the stack is fortified by a $9$-$\mathrm{mm}$-thick steel plate.
 \fi
-The entire stack is housed and shielded in a lead enclosure with a circular aperture of $15\,\mathrm{mm}$ diameter, corresponding to an acceptance angle of $\sim 0.7\,\mathrm{mrad}$ at $\sim 2.2\,\mathrm{m}$ from the interaction point.
+The entire stack is housed and shielded in a lead enclosure with a circular aperture of $15\,\mathrm{mm}$ diameter, corresponding to an acceptance angle of $\sim 6.8\,\mathrm{mrad}$ at $\sim 2.2\,\mathrm{m}$ from the interaction point.
 \vspace{\baselineskip}
 
 The two laser beams are overlapped in space and time using spatial interferometry: a reflective protected-aluminium 90-degree knife-edge prism is placed at the interaction point and reflects both counter-propagating laser beams collinearly onto a CCD camera chip equipped with a X10 long-working-distance microscope objective. Since the laser beams are cross-polarised, a polariser is added on a motorised rotation stage to enable interference. Varying the rotation of the polariser gives control over the relative brightness of the beams. The different radii of curvature of the f/40 and f/2 beams result in the formation of a circular interference pattern when the laser pulses overlap in both space and time. The overlap is then further improved by optimising the visibility of the fringes to a precision of around $\pm 30\,\mathrm{fs}$. More details on this technique can be found in \nameref{Chap:Methods}. 
@@ -159,6 +159,16 @@ To identify successful collisions we compare the radiation yield from the electr
 
 The electrons will emit broadband bremsstrahlung with photon energies potentially reaching photon energies up to the maximum electron energy when interacting with matter in their trajectory. Especially high-Z materials such as the vacuum chamber walls are efficient converters. This radiation is in a spectral range comparable with the expected ICS signal and is also measured by the gamma-ray detectors. The electrons are dispersed upwards and collide with the roof of the aluminium vacuum chamber producing the main source of bremsstrahlung. It is located off-axis and a large fraction is shielded efficiently by blocking the direct line of sight with sufficient amounts of lead. This reduces the total background signal on the detector and improves the signal-to-noise ratio, but also allows a spectral retrieval of the bremsstrahlung component as it now only enters the stack from one defined side.
 \vspace{\baselineskip}
+
+\begin{figure}[h]
+\centering
+\includegraphics[height=0.25\columnwidth]{20151217r002_NullGroup.jpg}
+\includegraphics[height=0.25\columnwidth]{20151217r002_CollGroup.jpg}
+\includegraphics[height=0.25\columnwidth]{up_arrows.jpg}
+\caption{Images of the gamma ray spectrometer (upper row) and electron spectrometer (bottom row) at shots with the colliding laser beam off (left) and on (right), using a constant colour scale. The shots with the colliding beam show bright signals on the scintillator array whilst the electron energies remain fairly similar throughout.}
+\label{Results:Figs:NullColl:Montage}
+\end{figure}
+
 
 The energy emitted through bremsstrahlung by a relativistic electron is proportional to its energy squared (REF and see \nameref{Chap:Theory}). The total energy deposited in the caesium-iodide crystals of the gamma spectrometer converts linearly into scintillation light at an efficiency of $\approx 5 \times 10^4 \,\mathrm{MeV}^{-1}$ (REF). The total yield of the detected bremsstrahlung signal on the camera chip, $S_{BG}$, should then follow this relation:
 \begin{equation}
@@ -243,8 +253,8 @@ To estimate the energy loss accurately we have to take the intrinsic variations 
 
 \begin{figure}
 \centering
-\includegraphics[angle=-90, width=0.8\columnwidth]{Espec_RR15ColeExample.png}
-\caption[]{Example of a typical electron spectrum. The in dispersion and divergence axis integrated spectrum is shown on the respective axes. ROTATE image in Matlab to make sure the axes are readable.}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{Example_RR15Cole.png}
+\caption[]{Example of a typical electron spectrum. The in dispersion and divergence axis integrated spectrum is shown on the respective axes. }
 \label{fig:Cole_espec_example}
 \end{figure}
 
@@ -259,7 +269,7 @@ Shock injection has been observed by other groups introducing a blade (REF \cite
 
 \begin{figure}
 \centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=.9\columnwidth]{ElecEdge_Example.png}
+\includegraphics[trim={4.6cm 0 5cm 0}, clip, width=.9\columnwidth]{ElecEdge_Example.png}
 \caption{Lineout of an electron spectrum (red) normalised to its peak charge. The x-axis indicates the electron energy in $\mathrm{MeV}$ and is cut off at $800\,\mathrm{MeV}$ as high energy features will not be further investigated. The blue line is the first derivative of the spectrum with a sharp peak at the edge-like spectral feature around $600\,\mathrm{MeV}$. A circle indicates the determined position of the spectral feature. CHANGE STYLE AS THIS LOOKS A BIT OFF.}
 \label{Results:Figs:Edge:ShotsNull}
 \end{figure}
@@ -334,7 +344,18 @@ Any deviation in energy $\Delta E$ from this slow drifting mean now represents a
 Continuing with the assumption of a normal distribution we can assign probabilities to observing certain energies. The standard deviation of this distribution is $\sigma_{Cole} = 0.077$ or $7.7\%$. In other words this we expect 68 percent of all shots to have a value of $\Delta E/E$ between $\pm 7.7\,\%$ ($1\,\sigma_{Cole}$), 95 percent between $\pm 15.4\,\%$ ($2\,\sigma_{Cole}$) and so on. 
 
 
+\subsubsection{Electron spectra in the collision data set}
 
+\EliasComm{Here a comment on the low shots. Give mean and standard deviation for high collision shots.}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\columnwidth]{ElectronSpectra2.pdf}
+\caption{Waterfall plot from paper. Figure 4. Sort out licence or make myself.}
+\end{figure}
+
+
+Identified collisions have lower electron energy. Probability.
 
 
 \section{Retrieval of gamma spectra}
@@ -346,8 +367,8 @@ This has been done first by Jason Cole (Imperial College) and Keegan Behm (Michi
 
 \begin{figure}
 \centering
-\includegraphics[angle=-90, width=0.8\columnwidth]{Espec_RR15ColeExample_CsI.png}
-\caption[]{Example of a gamma-detector signal.}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{Example_RR15Cole_CsI.png}
+\caption[]{Example of gamma-detector signal. The gamma rays propagate from the left into the stack and deposit their energy. Higher energy radiation penetrates the stack deeper. The y-axis indicates divergence.}
 \label{fig:Cole_gamma_example}
 \end{figure}
 
@@ -376,20 +397,8 @@ In addition to the brighter signal this now confirms again a different process. 
 \subsubsection{Summary of results so far}
 After having now characterised the electron spectra and the expected gamma signal, we can now look more closely at the identified successful collisions and potential indicators of radiation reaction.
 
-\begin{figure}[h]
-\centering
-\includegraphics[height=0.25\columnwidth]{20151217r002_NullGroup.jpg}
-\includegraphics[height=0.25\columnwidth]{20151217r002_CollGroup.jpg}
-\includegraphics[height=0.25\columnwidth]{up_arrows.jpg}
-\caption{Images of the gamma ray spectrometer (upper row) and electron spectrometer (bottom row) at shots with the colliding laser beam off (left) and on (right), using a constant colour scale. The shots with the colliding beam show bright signals on the scintillator array whilst the electron energies remain fairly similar throughout.}
-\label{Results:Figs:NullColl:Montage}
-\end{figure}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\columnwidth]{ElectronSpectra2.pdf}
-\caption{Waterfall plot from paper. Figure 4. Sort out licence or make myself.}
-\end{figure}
+
 
 To summarise, the dataset we investigate more closely consists of 13 shots with both beams on and 10 reference shots without the second scatterer beam.
 Figure \ref{Results:Figs:NullColl:Montage} shows a montage of the raw data of the two relevant diagnostics, the electron spectrometer (bottom row) and the gamma-ray detector (top row) for reference shots (left) and dual-beam collisions (right). The electron spectrometer and the gamma-detector images are on the same colour scales respectively. The line-outs of the integrated and normalised electron spectra are also shown for convenience in Figure XX, along with a dotted line indicating the position of the distinct spectral feature.
@@ -479,7 +488,9 @@ The on-shot synchrotron-like spectrum and the shift of the cut-off edge in the e
 \caption[]{Adjusted from Figure 9 in \cite{Cole2018}.
 }
 \end{figure}
-Some comments on the actual models?
+
+
+\EliasComm{Explanation of models}
 \vspace{\baselineskip}
 
 Some comments on the theory contours.
@@ -504,7 +515,7 @@ The experimental setup in \cite{Poder2018} is very similar to the experiment des
 \begin{figure}[h]
 \centering 
 \includegraphics[width=0.9\columnwidth]{ExpSetup_Poder.pdf}%\includegraphics[width=0.9\columnwidth]{ExpSetup_GasJet_MagnetOnly.pdf}
-\caption[]{Conceptual sketch of the experimental setup as used on the radiation reaction campaign \cite{Poder2018} . Adapted from Figure XX in \cite{Cole2018}.
+\caption[]{Conceptual sketch of the experimental setup as used on the radiation reaction campaign \cite{Poder2018}. Adapted from Figure XX in \cite{Cole2018}.
 %(from left to right): a laser pulse (in red) is focused by an f/40 spherical mirror onto the entrance of a gas target (gas jet or gas cell). The intense laser pulse drives a wakefield and accelerates electrons (blue) to relativistic energies. A second laser is focused with an f/2 off-axis parabola onto the exit of the gas target scattering the electrons and emitting a bright flash of gamma rays (green) from inverse Compton scattering. A permanent dipole magnet is used to disperse and characterise the energy of the electron beam on a scintillating LANEX screen. The gamma rays propagate through a kapton vacuum window (orange) onto a stack of caesium-iodide (CsI) crystals. The sketch is based on work by J. M. Cole, Imperial College, for \cite{Cole2018}.}
 }
 \label{RR15:figs:exp_sketch_Poder}
@@ -528,7 +539,7 @@ A typical electron spectrum produced from the gas cell target can be seen in Fig
 
 \begin{figure}
 \centering
-\includegraphics[angle=-90, width=0.8\columnwidth]{Espec_RR15PoderExample.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{Example_RR15Poder.png}
 \caption[]{Example of a typical electron spectrum.}
 \label{fig:Poder_espec_example}
 \end{figure}
