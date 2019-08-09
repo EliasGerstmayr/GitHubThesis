@@ -586,7 +586,8 @@ The spread of cut-off energies for the gas cell data is narrower than the spread
 \centering
 \includegraphics[width=0.5\columnwidth]{Comparison_Variance_Log.pdf}
 \caption[]{Energy-dependent variance of the average spectra in introduced in figure 8. In blue the data taken on the experiment related to Cole et al., in green to Poder et al.. The total variance for Cole et al. was $1.5 \times 10^{-7}$ and $1.98 \times 10^{-8}$ in the case of Poder et al..}
-\end{figure}\label{fig:comparison_varianceLog}
+\label{fig:comparison_varianceLog}
+\end{figure}
 
 Also discuss the variance of the spectra in this section.
 
@@ -597,10 +598,22 @@ This means that if our observable is coupled to the energy of the electrons we w
 
 To put this into context: in \cite{Cole2018} 4 successful collisions were identified by consulting the gamma-ray detector signal which showed a bright signal, $5-10$ standard deviations above the expected background. The energies of these 4 successful collisions were about $15\,\%$ below the mean of the reference distribution. The cumulative probability for a normal distribution with standard deviation $\sigma_{Cole} = 0.077$ to see one shot with a relative deviation of the energy from the mean of $10\,\%$ or more is roughly $10\,\%$. 
 
+
 For an individual shot this probability is non-negligible, but it holds in combination with the gamma-ray signal and over the $4$ collisions to confirm that this is to some extent as low due to radiation reaction. The cumulative probability for a normal distribution with standard deviation $\sigma_{Poder}=0.035$ on the other hand for the same scenario is only $0.2\,\%$ and holds the test by itself at a level of confidence equivalent to 2.7 as many shots at $\sigma_{Cole}$. At a repetition rate of $0.05\,\mathrm{Hz}$ (1 shot/20 s), typical for the Astra Gemini laser, a scan of 100 shots at $\sigma_{Poder}$ would take under 30 minutes, but would extend to $1.5$ hours to reach the same level of confidence. At this extended time-scale, however, even small drifts in alignment and timing can affect the reproducibility of the interaction conditions which requires few microns and femtoseconds precision and as a result call the validity of measurements into question. In addition, we have to factor in the potential deterioration of the gas target and laser performance over the course of the experiment. Time can become a crucial factor in experiments that require such a high level of complexity and sensitivity.
 \vspace{\baselineskip}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{Histo_Cole_RR.pdf}\includegraphics[width=0.5\columnwidth]{Histo_Poder_RR.pdf}
+\caption[]{.}
+\end{figure}
 
 However, the error on the mean of the electron energy also propagates further into the estimate of the interaction conditions. If we manage to sustain the experiment conditions over the course of the experiment (spatio-temporal overlap, intensity of interaction, laser parameters and so on), the energy of the unperturbed electron beam is fluctuating according to a normal distribution and the energy of the post-interaction electron beam will follow the same normal distribution but shifted down by the average energy loss. For now we will ignore the potential cooling or heating effects of radiation reaction on the distribution function. In this scenario at a constant energy loss of $15\,\%$, we will measure a range of deviations from the unperturbed mean energy which we will call `energy loss', which is in reality the energy loss superimposed onto the normal distribution. The standard deviation of the Cole data $\sigma_{Cole}$ is half the size of the total energy loss, whereas for $\sigma_{Poder}$ it halves to $25\,\%$, which is still a significant range of values most of the measurements will show. That means that there is a significant error on the estimated energy loss for each measurement and a second diagnostic narrowing down the conditions at the interaction, for instance a spectral measurement of the gamma radiation, becomes imperative.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{Nshots_5sigma_RR.pdf}
+\caption[]{.}
+\end{figure}
 
 If we want to compare different models of radiation reaction based on this energy loss, an increased stability of the electron energy will help in two ways: firstly, the expected phase space of post-interaction energies for each model of radiation reaction at a fixed confidence level decreases, which might reduce the overlap of different models. Secondly, if the initial electron energy is sampled from a narrower distribution the error on that measurement decreases as well, reducing its footprint in phase space again.
 \vspace{\baselineskip}
@@ -613,6 +626,12 @@ Instead, the shape of the spectral distribution, e.g. variance of the entire spe
 
 The total variance normalised to the energy range considered for the average gas jet data from Cole et al. is $1.5\times 10^{-7}$ whereas the result for Poder et al. is $1.98 \times 10^{-8}$. The energy dependent variance can be seen in Figure \ref{fig:comparison_especs} represented by the shaded error bars and in Figure \ref{fig:comparison_varianceLog} separately on a logarithmic scale. The base level of the variance is relatively low for the Poder data and decreases for high energies. For the Cole data especially the position of the characteristic feature, crucial for the two-beam measurements, appears prone to fluctuations. This makes the data set less suitable to track changes in the variance induced by radiation reaction. If the fluctuation is of similar amplitude or larger than the differences expected from the models, a definite distinction of a semi-classical and a fully stochastic quantum model at these conditions would then be very challenging, even with access to a larger data set. In Poder et al. a comparison of spectral shapes and attribution to models has qualitatively been indicated. However, due to the lack of a spectral measurement of the radiation and the large parameter space of unknowns, for instance spatio-temporal structure of the electron beam, more observables are required to definitively explain the differences between the observed electron spectra and predictions of various models.
 \vspace{\baselineskip}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{Nshots_5sigma_RR_a0_20.pdf}\includegraphics[width=0.5\columnwidth]{Nshots_5sigma_RR_a0_range.pdf}
+\caption[]{.}
+\end{figure}
 
 This line of thought has been explored more explicitly and in more detail in REF C ARRAN PPCF, SPIE 2019. The aim of these publications is to indicate which experimental observables are suited to discriminate different models of radiation reaction and to give an estimate on the number of shots one would require in an experiment taking fluctuations into account.
 \vspace{\baselineskip}
