@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  11 AUG 2019 14:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  11 AUG 2019 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2505,47 +2505,51 @@ page
 File: pics/Ch5_Results1/Nshots_5sigma_RR.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Nshots_5sigma_RR.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Nshots_5sigma_RR.pdf  used on input 
-line 642.
+line 650.
 (pdftex.def)             Requested size: 364.19664pt x 226.21262pt.
- [176 <./pics/Ch5_Results1/Nshots_5sigma_RR.pdf>]
-<pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf, id=4416, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf, id=4359, 581.77347pt x 361.35pt>
 
 File: pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf  used on 
-input line 664.
+input line 662.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-<pics/Ch5_Results1/Nshots_5sigma_RR_a0_range.pdf, id=4417, 581.77347pt x 361.35
+<pics/Ch5_Results1/Nshots_5sigma_RR_a0_range.pdf, id=4360, 581.77347pt x 361.35
 pt>
 File: pics/Ch5_Results1/Nshots_5sigma_RR_a0_range.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Nshots_5sigma_RR_a0_range.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Nshots_5sigma_RR_a0_range.pdf  used 
-on input line 664.
+on input line 662.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
- [177 <./pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf> <./pics/Ch5_Results1/Nsh
-ots_5sigma_RR_a0_range.pdf
+ [176] [177 <./pics/Ch5_Results1/Nshots_5sigma_RR.pdf> <./pics/Ch5_Results1/Nsh
+ots_5sigma_RR_a0_20.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch5_Results1/Nshots_5
+sigma_RR_a0_20.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+> <./pics/Ch5_Results1/Nshots_5sigma_RR_a0_range.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch5_Results1/Nshots_5
 sigma_RR_a0_range.pdf): PDF inclusion: multiple pdfs with page group included i
 n a single page
->] [178] [179]) [180]
+>] [178] [179]) [180] [181]
 \openout2 = `Ch6_Results2/BW2018.aux'.
 
  (./Ch6_Results2/BW2018.tex
 Chapter 7.
-[181
+[182
 
 
 
 ]
-<pics/Ch6_Results2/2018QED_Chicane.JPG, id=4535, 2601.72pt x 1734.48pt>
+<pics/Ch6_Results2/2018QED_Chicane.JPG, id=4538, 2601.72pt x 1734.48pt>
 File: pics/Ch6_Results2/2018QED_Chicane.JPG Graphic file (type jpg)
 <use pics/Ch6_Results2/2018QED_Chicane.JPG>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Chicane.JPG  used on input l
 ine 15.
 (pdftex.def)             Requested size: 318.66946pt x 212.44258pt.
- [182 <./pics/Ch6_Results2/2018QED_Chicane.JPG>] [183] [184]
-<pics/Ch6_Results2/BW2018_render_V3_annotated3.png, id=4557, 1926.19624pt x 757
+ [183 <./pics/Ch6_Results2/2018QED_Chicane.JPG>] [184] [185]
+<pics/Ch6_Results2/BW2018_render_V3_annotated3.png, id=4560, 1926.19624pt x 757
 .83125pt>
 File: pics/Ch6_Results2/BW2018_render_V3_annotated3.png Graphic file (type png)
 
@@ -2553,13 +2557,13 @@ File: pics/Ch6_Results2/BW2018_render_V3_annotated3.png Graphic file (type png)
 Package pdftex.def Info: pics/Ch6_Results2/BW2018_render_V3_annotated3.png  use
 d on input line 64.
 (pdftex.def)             Requested size: 455.24408pt x 179.10796pt.
- [185 <./pics/Ch6_Results2/BW2018_render_V3_annotated3.png>]
+ [186 <./pics/Ch6_Results2/BW2018_render_V3_annotated3.png>]
 Overfull \hbox (14.74321pt too wide) in paragraph at lines 84--84
 []\OT1/cmr/bx/n/17.28 Characterisation of Bremsstrahlung Con-verter Tar-
  []
 
-[186]
-<pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png, id=4574, 492.8412
+[187]
+<pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png, id=4578, 492.8412
 5pt x 396.48125pt>
 File: pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png Graphic file 
 (type png)
@@ -2567,7 +2571,7 @@ File: pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png Graphic file
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_exampl
 e.png  used on input line 97.
 (pdftex.def)             Requested size: 227.62204pt x 183.12166pt.
-<pics/Ch6_Results2/2018QED_GProfile_CollimatorOUT_example.png, id=4575, 482.803
+<pics/Ch6_Results2/2018QED_GProfile_CollimatorOUT_example.png, id=4579, 482.803
 76pt x 393.47pt>
 File: pics/Ch6_Results2/2018QED_GProfile_CollimatorOUT_example.png Graphic file
  (type png)
@@ -2575,9 +2579,9 @@ File: pics/Ch6_Results2/2018QED_GProfile_CollimatorOUT_example.png Graphic file
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GProfile_CollimatorOUT_examp
 le.png  used on input line 97.
 (pdftex.def)             Requested size: 227.62204pt x 185.50128pt.
- [187 <./pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png> <./pics/C
-h6_Results2/2018QED_GProfile_CollimatorOUT_example.png>] [188]
-<pics/Ch6_Results2/2018QED_Converter_YieldVDiv.png, id=4591, 2007.5pt x 1003.75
+ [188 <./pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png> <./pics/C
+h6_Results2/2018QED_GProfile_CollimatorOUT_example.png>] [189]
+<pics/Ch6_Results2/2018QED_Converter_YieldVDiv.png, id=4594, 2007.5pt x 1003.75
 pt>
 File: pics/Ch6_Results2/2018QED_Converter_YieldVDiv.png Graphic file (type png)
 
@@ -2585,7 +2589,7 @@ File: pics/Ch6_Results2/2018QED_Converter_YieldVDiv.png Graphic file (type png)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Converter_YieldVDiv.png  use
 d on input line 142.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/2018QED_GConverter_PointingMM.png, id=4593, 2007.5pt x 1003.
+<pics/Ch6_Results2/2018QED_GConverter_PointingMM.png, id=4596, 2007.5pt x 1003.
 75pt>
 File: pics/Ch6_Results2/2018QED_GConverter_PointingMM.png Graphic file (type pn
 g)
@@ -2593,7 +2597,7 @@ g)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GConverter_PointingMM.png  u
 sed on input line 150.
 (pdftex.def)             Requested size: 227.62204pt x 132.37595pt.
-<pics/Ch6_Results2/2018QED_GConverter_PointingSigma.png, id=4595, 2007.5pt x 10
+<pics/Ch6_Results2/2018QED_GConverter_PointingSigma.png, id=4598, 2007.5pt x 10
 03.75pt>
 File: pics/Ch6_Results2/2018QED_GConverter_PointingSigma.png Graphic file (type
  png)
@@ -2601,17 +2605,17 @@ File: pics/Ch6_Results2/2018QED_GConverter_PointingSigma.png Graphic file (type
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GConverter_PointingSigma.png
   used on input line 150.
 (pdftex.def)             Requested size: 227.62204pt x 132.60568pt.
- [189 <./pics/Ch6_Results2/2018QED_Converter_YieldVDiv.png (PNG copy)> <./pics/
+ [190 <./pics/Ch6_Results2/2018QED_Converter_YieldVDiv.png (PNG copy)> <./pics/
 Ch6_Results2/2018QED_GConverter_PointingMM.png (PNG copy)> <./pics/Ch6_Results2
 /2018QED_GConverter_PointingSigma.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_AbsTransmission.png, id=4605, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/2018QED_AbsTransmission.png, id=4608, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/2018QED_AbsTransmission.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_AbsTransmission.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_AbsTransmission.png  used on
  input line 171.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
- [190 <./pics/Ch6_Results2/2018QED_AbsTransmission.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_Converter_YieldvNoise_fits.png, id=4616, 2007.5pt x 
+ [191 <./pics/Ch6_Results2/2018QED_AbsTransmission.png (PNG copy)>]
+<pics/Ch6_Results2/2018QED_Converter_YieldvNoise_fits.png, id=4619, 2007.5pt x 
 1003.75pt>
 File: pics/Ch6_Results2/2018QED_Converter_YieldvNoise_fits.png Graphic file (ty
 pe png)
@@ -2619,7 +2623,7 @@ pe png)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Converter_YieldvNoise_fits.p
 ng  used on input line 207.
 (pdftex.def)             Requested size: 227.62204pt x 132.37595pt.
-<pics/Ch6_Results2/2018QED_Converter_DivvNoise.png, id=4618, 2007.5pt x 1003.75
+<pics/Ch6_Results2/2018QED_Converter_DivvNoise.png, id=4621, 2007.5pt x 1003.75
 pt>
 File: pics/Ch6_Results2/2018QED_Converter_DivvNoise.png Graphic file (type png)
 
@@ -2627,7 +2631,7 @@ File: pics/Ch6_Results2/2018QED_Converter_DivvNoise.png Graphic file (type png)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Converter_DivvNoise.png  use
 d on input line 207.
 (pdftex.def)             Requested size: 227.62204pt x 132.60568pt.
-<pics/Ch6_Results2/2018QED_SignalNoise_Transmission.png, id=4620, 2007.5pt x 10
+<pics/Ch6_Results2/2018QED_SignalNoise_Transmission.png, id=4623, 2007.5pt x 10
 03.75pt>
 File: pics/Ch6_Results2/2018QED_SignalNoise_Transmission.png Graphic file (type
  png)
@@ -2635,7 +2639,7 @@ File: pics/Ch6_Results2/2018QED_SignalNoise_Transmission.png Graphic file (type
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_SignalNoise_Transmission.png
   used on input line 214.
 (pdftex.def)             Requested size: 227.62204pt x 132.37595pt.
-<pics/Ch6_Results2/2018QED_SignalNoise_AbsTransmission.png, id=4622, 2007.5pt x
+<pics/Ch6_Results2/2018QED_SignalNoise_AbsTransmission.png, id=4625, 2007.5pt x
  1003.75pt>
 File: pics/Ch6_Results2/2018QED_SignalNoise_AbsTransmission.png Graphic file (t
 ype png)
@@ -2643,15 +2647,15 @@ ype png)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_SignalNoise_AbsTransmission.
 png  used on input line 214.
 (pdftex.def)             Requested size: 227.62204pt x 132.60568pt.
-<pics/Ch6_Results2/2018QED_YieldvNoise_CollIN.png, id=4624, 2007.5pt x 1003.75p
+<pics/Ch6_Results2/2018QED_YieldvNoise_CollIN.png, id=4627, 2007.5pt x 1003.75p
 t>
 File: pics/Ch6_Results2/2018QED_YieldvNoise_CollIN.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_YieldvNoise_CollIN.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_YieldvNoise_CollIN.png  used
  on input line 221.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
- [191 <./pics/Ch6_Results2/2018QED_Converter_YieldvNoise_fits.png (PNG copy)> <
-./pics/Ch6_Results2/2018QED_Converter_DivvNoise.png (PNG copy)>] [192 <./pics/C
+ [192 <./pics/Ch6_Results2/2018QED_Converter_YieldvNoise_fits.png (PNG copy)> <
+./pics/Ch6_Results2/2018QED_Converter_DivvNoise.png (PNG copy)>] [193 <./pics/C
 h6_Results2/2018QED_SignalNoise_Transmission.png (PNG copy)> <./pics/Ch6_Result
 s2/2018QED_SignalNoise_AbsTransmission.png (PNG copy)> <./pics/Ch6_Results2/201
 8QED_YieldvNoise_CollIN.png (PNG copy)>]
@@ -2659,31 +2663,31 @@ Overfull \hbox (0.31468pt too wide) in paragraph at lines 237--237
 []\OT1/cmr/bx/n/17.28 Characterisation of Elec-tron Spec-tra for BW shot
  []
 
-<pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg, id=4640, 1269.74374pt x 1086.
+<pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg, id=4644, 1269.74374pt x 1086.
 0575pt>
 File: pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg Graphic file (type jpg)
 <use pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg  used 
 on input line 251.
 (pdftex.def)             Requested size: 409.71689pt x 350.44557pt.
-[193] [194 <./pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg>]
-<pics/Ch6_Results2/2018QED_ElecSpecs_average.png, id=4654, 2007.5pt x 1003.75pt
+[194] [195 <./pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg>]
+<pics/Ch6_Results2/2018QED_ElecSpecs_average.png, id=4657, 2007.5pt x 1003.75pt
 >
 File: pics/Ch6_Results2/2018QED_ElecSpecs_average.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_ElecSpecs_average.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_ElecSpecs_average.png  used 
 on input line 269.
 (pdftex.def)             Requested size: 409.71689pt x 227.41154pt.
-<pics/Ch6_Results2/2018QED_Espec_Variations.png, id=4656, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/2018QED_Espec_Variations.png, id=4659, 2007.5pt x 1003.75pt>
 
 File: pics/Ch6_Results2/2018QED_Espec_Variations.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_Espec_Variations.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Espec_Variations.png  used o
 n input line 276.
 (pdftex.def)             Requested size: 455.24408pt x 283.95811pt.
- [195 <./pics/Ch6_Results2/2018QED_ElecSpecs_average.png (PNG copy)>] [196 <./p
-ics/Ch6_Results2/2018QED_Espec_Variations.png (PNG copy)>] [197]
-<pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png, id=4683, 574.145pt x 353.32
+ [196 <./pics/Ch6_Results2/2018QED_ElecSpecs_average.png (PNG copy)>] [197 <./p
+ics/Ch6_Results2/2018QED_Espec_Variations.png (PNG copy)>] [198]
+<pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png, id=4686, 574.145pt x 353.32
 pt>
 File: pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png Graphic file (type png)
 
@@ -2691,34 +2695,34 @@ File: pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png Graphic file (type png)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png  use
 d on input line 406.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png, id=4684, 574.145pt x 353.32p
+<pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png, id=4687, 574.145pt x 353.32p
 t>
 File: pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png  used
  on input line 406.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
-<pics/Ch6_Results2/2018QED_ElecSpecs.png, id=4685, 574.145pt x 353.32pt>
+<pics/Ch6_Results2/2018QED_ElecSpecs.png, id=4688, 574.145pt x 353.32pt>
 File: pics/Ch6_Results2/2018QED_ElecSpecs.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_ElecSpecs.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_ElecSpecs.png  used on input
  line 414.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_simresp.png, id=4686, 580.1675pt x 353.32p
+<pics/Ch6_Results2/2018QED_GammaSpec_simresp.png, id=4689, 580.1675pt x 353.32p
 t>
 File: pics/Ch6_Results2/2018QED_GammaSpec_simresp.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GammaSpec_simresp.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_simresp.png  used 
 on input line 414.
 (pdftex.def)             Requested size: 227.62204pt x 138.6191pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_expresp.png, id=4687, 580.1675pt x 353.32p
+<pics/Ch6_Results2/2018QED_GammaSpec_expresp.png, id=4690, 580.1675pt x 353.32p
 t>
 File: pics/Ch6_Results2/2018QED_GammaSpec_expresp.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GammaSpec_expresp.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_expresp.png  used 
 on input line 416.
 (pdftex.def)             Requested size: 227.62204pt x 138.6191pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png, id=4688, 574.145pt x 3
+<pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png, id=4691, 574.145pt x 3
 53.32pt>
 File: pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png Graphic file (type
  png)
@@ -2726,40 +2730,40 @@ File: pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png Graphic file (type
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png
   used on input line 416.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
-<pics/Ch6_Results2/2018QED_GSpec_Variations.png, id=4689, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/2018QED_GSpec_Variations.png, id=4692, 2007.5pt x 1003.75pt>
 
 File: pics/Ch6_Results2/2018QED_GSpec_Variations.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GSpec_Variations.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GSpec_Variations.png  used o
 n input line 431.
 (pdftex.def)             Requested size: 455.24408pt x 283.95811pt.
-<pics/Ch6_Results2/2018QED_GEANT_AvGSpec.png, id=4691, 849.1725pt x 626.34pt>
+<pics/Ch6_Results2/2018QED_GEANT_AvGSpec.png, id=4694, 849.1725pt x 626.34pt>
 File: pics/Ch6_Results2/2018QED_GEANT_AvGSpec.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GEANT_AvGSpec.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GEANT_AvGSpec.png  used on i
 nput line 433.
 (pdftex.def)             Requested size: 409.71689pt x 302.20715pt.
- [198 <./pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png> <./pics/Ch6_Results
+ [199 <./pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png> <./pics/Ch6_Results
 2/2018QED_GammaSpec_simspec2.png>]
-<pics/Ch6_Results2/BWxsection2.png, id=4700, 848.16875pt x 720.6925pt>
+<pics/Ch6_Results2/BWxsection2.png, id=4704, 848.16875pt x 720.6925pt>
 File: pics/Ch6_Results2/BWxsection2.png Graphic file (type png)
 <use pics/Ch6_Results2/BWxsection2.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWxsection2.png  used on input line 
 454.
 (pdftex.def)             Requested size: 227.62204pt x 193.4129pt.
-<pics/Ch6_Results2/BWxsection_2D.png, id=4701, 974.64125pt x 907.39pt>
+<pics/Ch6_Results2/BWxsection_2D.png, id=4705, 974.64125pt x 907.39pt>
 File: pics/Ch6_Results2/BWxsection_2D.png Graphic file (type png)
 <use pics/Ch6_Results2/BWxsection_2D.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWxsection_2D.png  used on input lin
 e 454.
 (pdftex.def)             Requested size: 227.62204pt x 211.9075pt.
-<pics/Ch6_Results2/BW_Xsec_NxNg.png, id=4702, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/BW_Xsec_NxNg.png, id=4706, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BW_Xsec_NxNg.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_Xsec_NxNg.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_Xsec_NxNg.png  used on input line
  460.
 (pdftex.def)             Requested size: 455.24408pt x 264.76721pt.
-<pics/Ch6_Results2/2018QED_Xsec_VariationAvDay.png, id=4704, 501.875pt x 401.5p
+<pics/Ch6_Results2/2018QED_Xsec_VariationAvDay.png, id=4708, 501.875pt x 401.5p
 t>
 File: pics/Ch6_Results2/2018QED_Xsec_VariationAvDay.png Graphic file (type png)
 
@@ -2767,7 +2771,7 @@ File: pics/Ch6_Results2/2018QED_Xsec_VariationAvDay.png Graphic file (type png)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Xsec_VariationAvDay.png  use
 d on input line 467.
 (pdftex.def)             Requested size: 227.62204pt x 182.10077pt.
-<pics/Ch6_Results2/2018QED_Xsec_VariationMorton.png, id=4705, 521.95pt x 402.50
+<pics/Ch6_Results2/2018QED_Xsec_VariationMorton.png, id=4709, 521.95pt x 402.50
 375pt>
 File: pics/Ch6_Results2/2018QED_Xsec_VariationMorton.png Graphic file (type png
 )
@@ -2775,34 +2779,34 @@ File: pics/Ch6_Results2/2018QED_Xsec_VariationMorton.png Graphic file (type png
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Xsec_VariationMorton.png  us
 ed on input line 467.
 (pdftex.def)             Requested size: 227.62204pt x 175.5299pt.
- [199 <./pics/Ch6_Results2/2018QED_ElecSpecs.png> <./pics/Ch6_Results2/2018QED_
+ [200 <./pics/Ch6_Results2/2018QED_ElecSpecs.png> <./pics/Ch6_Results2/2018QED_
 GammaSpec_simresp.png> <./pics/Ch6_Results2/2018QED_GammaSpec_expresp.png> <./p
-ics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png>] [200 <./pics/Ch6_Result
+ics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png>] [201 <./pics/Ch6_Result
 s2/2018QED_GSpec_Variations.png (PNG copy)> <./pics/Ch6_Results2/2018QED_GEANT_
-AvGSpec.png>] [201 <./pics/Ch6_Results2/BW_Xsec_NxNg.png (PNG copy)> <./pics/Ch
+AvGSpec.png>] [202 <./pics/Ch6_Results2/BW_Xsec_NxNg.png (PNG copy)> <./pics/Ch
 6_Results2/BWxsection2.png> <./pics/Ch6_Results2/BWxsection_2D.png>]
-[202 <./pics/Ch6_Results2/2018QED_Xsec_VariationAvDay.png> <./pics/Ch6_Results2
+[203 <./pics/Ch6_Results2/2018QED_Xsec_VariationAvDay.png> <./pics/Ch6_Results2
 /2018QED_Xsec_VariationMorton.png>]
-<pics/Ch6_Results2/CsI_MassAttenuation.png, id=4738, 283.7802pt x 190.311pt>
+<pics/Ch6_Results2/CsI_MassAttenuation.png, id=4741, 283.7802pt x 190.311pt>
 File: pics/Ch6_Results2/CsI_MassAttenuation.png Graphic file (type png)
 <use pics/Ch6_Results2/CsI_MassAttenuation.png>
 Package pdftex.def Info: pics/Ch6_Results2/CsI_MassAttenuation.png  used on inp
 ut line 507.
 (pdftex.def)             Requested size: 409.71689pt x 274.7939pt.
- [203 <./pics/Ch6_Results2/CsI_MassAttenuation.png>]
-<pics/Ch6_Results2/CombinedSpecSketch.png, id=4746, 745.78625pt x 411.5375pt>
+ [204 <./pics/Ch6_Results2/CsI_MassAttenuation.png>]
+<pics/Ch6_Results2/CombinedSpecSketch.png, id=4749, 745.78625pt x 411.5375pt>
 File: pics/Ch6_Results2/CombinedSpecSketch.png Graphic file (type png)
 <use pics/Ch6_Results2/CombinedSpecSketch.png>
 Package pdftex.def Info: pics/Ch6_Results2/CombinedSpecSketch.png  used on inpu
 t line 534.
 (pdftex.def)             Requested size: 409.71689pt x 226.08887pt.
- [204 <./pics/Ch6_Results2/CombinedSpecSketch.png>] [205]) [206]
+ [205 <./pics/Ch6_Results2/CombinedSpecSketch.png>] [206]) [207]
 \openout2 = `Ch9_Conclusion/Conclusions.aux'.
 
 
 (./Ch9_Conclusion/Conclusions.tex
 Chapter 8.
-) [207
+) [208
 
 
 
@@ -2811,11 +2815,11 @@ Chapter 8.
 
  (./Ch10_Appendix/Appendix.tex
 Chapter 9.
-[208
+[209
 
 
 
-] [209]
+] [210]
 File: pics/Ch2_Theory/Compton_Feyn1.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Compton_Feyn1.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/Compton_Feyn1.pdf  used on input line 
@@ -2826,7 +2830,7 @@ File: pics/Ch2_Theory/Compton_Feyn2.pdf Graphic file (type pdf)
 Package pdftex.def Info: pics/Ch2_Theory/Compton_Feyn2.pdf  used on input line 
 116.
 (pdftex.def)             Requested size: 182.09485pt x 124.66046pt.
- [210] [211]) [212] [213]
+ [211] [212]) [213] [214]
 \openout3 = `bu.aux'.
 
  (./Thesis_Gerstmayr_V2.bbl
@@ -2836,36 +2840,14 @@ Package pdftex.def Info: pics/Ch2_Theory/Compton_Feyn2.pdf  used on input line
 
 
 Chapter 10.
-[214
+[215
 
 
 
 ]
 Missing character: There is no Ì in font cmr12!
 Missing character: There is no ˆ in font cmr12!
- [215]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ‰ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ‰ in font cmr12!
  [216]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ‰ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ‰ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ‰ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ‰ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ‰ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ‰ in font cmr12!
@@ -2891,9 +2873,31 @@ Missing character: There is no ‰ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ‰ in font cmr12!
- [218] [219]) 
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+ [218]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+ [219] [220]) 
 AED: lastpage setting LastPage
-[220]
+[221]
 
 Package nag Warning: 1 complaints in total.
 
@@ -2910,7 +2914,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
 Package rerunfilecheck Info: File `Thesis_Gerstmayr_V2.out' has not changed.
 (rerunfilecheck)             Checksum: 58B9CC1E4923774E17442D86D6DA4D0B;12360.
 Package rerunfilecheck Info: File `Thesis_Gerstmayr_V2.brf' has not changed.
-(rerunfilecheck)             Checksum: B238063077DA78529EC028C9484B6F37;4006.
+(rerunfilecheck)             Checksum: A45615675FDF179CEB73DEE52279C1F0;4006.
 
 
 LaTeX Warning: There were undefined references.
@@ -2918,8 +2922,8 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
  ) 
 Here is how much of TeX's memory you used:
- 36885 strings out of 492639
- 739405 string characters out of 6129301
+ 36886 strings out of 492639
+ 739413 string characters out of 6129301
  803412 words of memory out of 5000000
  38867 multiletter control sequences out of 15000+600000
  551272 words of font info for 165 fonts, out of 8000000 for 9000
@@ -2950,9 +2954,9 @@ dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on Thesis_Gerstmayr_V2.pdf (220 pages, 34358730 bytes).
+Output written on Thesis_Gerstmayr_V2.pdf (221 pages, 34359849 bytes).
 PDF statistics:
- 5199 PDF objects out of 6186 (max. 8388607)
- 999 named destinations out of 1000 (max. 500000)
+ 5202 PDF objects out of 6186 (max. 8388607)
+ 1000 named destinations out of 1000 (max. 500000)
  31474 words of extra memory for PDF output out of 35830 (max. 10000000)
 
