@@ -535,7 +535,7 @@ The gamma rays from ICS are measured by the same scintillator stack as described
 
 \subsubsection{Characterisation of Electron Spectra}
 
-A typical electron spectrum produced from the gas cell target can be seen in Figure \ref{fig:Poder_espec_example}. The average shape is an exponential spectrum reaching energies in excess of $1.5\,\mathrm{GeV}$. At the lower end the spectrum is cut off at around $400\,\mathrm{MeV}$ due to limitations in the magnetic electron spectrometer setup. The spectra from the gas cell originate from self-injection and lack a consistent distinctive feature comparable to the spectral edge described in the previous section related to shock injection. The data set considered consists of 19 shots.
+A typical electron spectrum produced from the gas cell target can be seen in Figure \ref{fig:Poder_espec_example}. The average shape is an exponential spectrum reaching energies in excess of $1.5\,\mathrm{GeV}$. At the lower end the spectrum is cut off at around $400\,\mathrm{MeV}$ due to limitations in the magnetic electron spectrometer setup. The spectra from the gas cell originate from self-injection and lack a consistent sharp feature comparable to the spectral edge described in the previous section related to shock injection. The data set considered consists of 19 shots.
 
 \begin{figure}
 \centering
@@ -544,10 +544,10 @@ A typical electron spectrum produced from the gas cell target can be seen in Fig
 \label{fig:Poder_espec_example}
 \end{figure}
 
-The characteristic number assignted to each spectrum is the cut-off energy, which is as in \cite{Poder2018} defined as the energy at which the spectral intensity reaches 10 percent of its peak value.
+The characteristic number assigned to each spectrum is the cut-off energy, which is as in \cite{Poder2018} defined as the energy at which the spectral intensity reaches 10 percent of its peak value.
 \vspace{\baselineskip}
 
-In this case, the only injection mechanism considered is self-injection. This process typically scales with the laser energy (REF), which is also confirmed in Figure \ref{fig:Poder_laser_corr}. The laser energy of the wakefield driver scales well linearly with the cut-off energy of the spectrum. The correlation is very strong at a correlation coefficient of $0.9$. The linear fit follows the equation $\epsilon_{cutoff} = 0.07\,\mathrm{GeV/J} \times E_{laser} + 0.57\,\mathrm{GeV}$.
+The cut-off energy of the spectrum scales linearly with the energy in the driver beam (see Figure \ref{fig:Poder_laser_corr}). The linear correlation is very strong at a correlation coefficient of $0.9$. The linear fit follows the equation $\epsilon_{cutoff} = 0.07\,\mathrm{GeV/J} \times E_{laser} + 0.57\,\mathrm{GeV}$.
 
 After scaling the spectra according to the linear relation found in Figure \ref{fig:Poder_laser_corr}, we can analyse again the `intrinsic' fluctuations of the source. The distribution of cut-off energies in terms of $\Delta E/E$ follow a normal distribution after removing the correlation with the laser energy. The standard deviation of the cut-off energy distribution is $\sigma_{Poder} = 0.035$, so 95 percent of the expected energies will fall within $\pm 7\,\%$ of the mean energy.
 
@@ -569,7 +569,7 @@ By factoring out known correlations of the spectra, scaling them accordingly (sl
 \caption[]{Averaged and scaled electron spectra for data from Cole (blue) and Poder (green). The spectra are normalised to a total charge of 1. The error bars indicate the energy dependent variance of the spectra.}\label{fig:comparison_especs}
 \end{figure}
 
-The averaged spectra from the two experiments are shown in Figure \ref{fig:comparison_especs}. The spectra were processed as outlined before and then averaged over all available data shots. The spectra are normalised by their total charge such that the integral of each spectrum is set to 1. As seen the typical energy reached in the gas cell from Poder et al. is significantly higher by at least a factor two for the majority of the charge distribution. The shaded error bar region around the scaled spectra indicates the standard deviation of the averaged spectrum at that particular energy. The higher electron energy also enables a potentially higher $\eta$ parameter in an interaction as it scales linearly with the electron energy.
+The scaled and averaged spectra from the two experiments are shown in Figure \ref{fig:comparison_especs}. The spectra were processed as outlined before and then averaged over all available data shots. The spectra are normalised by their total charge such that the integral of each spectrum is set to 1. Typical energy reached in the gas cell from Poder et al. is significantly higher by at least a factor two for the majority of the charge distribution. The higher electron energy also enables a potentially higher $\eta$ parameter in an interaction as $\eta \propto \gamma$. The shaded region around the scaled spectra indicates the standard deviation of the averaged spectrum at that particular energy. The energy-dependent variances are also shown in Figure \ref{fig:comparison_varianceLog} on a logarithmic y-axis. The variations for the data taken with the gas jet is in particular strong around the important position of the spectral edge and the variance reaches a 10-times higher peak and total value.
 \vspace{\baselineskip}
 
 \begin{figure}
@@ -579,8 +579,8 @@ The averaged spectra from the two experiments are shown in Figure \ref{fig:compa
 \end{figure}
 
 
-The spread of cut-off energies for the gas cell data is narrower than the spread of energies of the edge feature produced with the gas jet target. The shaded areas in Figure \ref{fig:comparison_histo} indicate the $\pm 2$ sigma or 95 percent confidence intervals (assuming a normal distribution). The Poder data has a typical fluctuation of the cut-off energy of around 7 percent. The spectral feature from the gas jet varies with 15 percent by around the double amount. 
-
+The spread of cut-off energies for the gas cell data is narrower than the spread of energies of the edge feature produced with the gas jet target. The shaded areas in Figure \ref{fig:comparison_histo} indicate the $\pm 2$ sigma or 95 percent confidence intervals based on a normal distribution. The Poder data has a typical fluctuation of the cut-off energy of around 7 percent. The spectral feature from the gas jet varies with 15 percent by around the double amount. 
+\vspace{\baselineskip}
 
 \begin{figure}
 \centering
@@ -589,17 +589,22 @@ The spread of cut-off energies for the gas cell data is narrower than the spread
 \label{fig:comparison_varianceLog}
 \end{figure}
 
-Also discuss the variance of the spectra in this section.
+The gas cell data from Poder et al. is superior in terms of energy stability (cut-off for gas cell, spectral feature for gas jet) and stability of the spectral shape (variance).
 
 \subsubsection{Relevance for measurements of radiation reaction}
 
-Energy loss through LL given by THOMAS PRX 2012
+Based on the statistical analysis of the electron spectra from both runs, we want to investigate now how these fluctuations affect the confidence in the identification of radiation reaction effects in the electron spectra.
+
+For this purpose we sample electron energies from two normal distributions with the same mean energy $\epsilon = 550\,\mathrm{MeV}$ and the measured standard deviations $\sigma_{Cole} = 7.7\%$ and $\sigma_{Poder} = 3.5\%$.
+
+We then calculate the energy loss for the sampled electron energies based on the Landau-Lifschitz model using an analytic expression given in THOMAS PRX 2012:
 
 \begin{equation}
-\frac{\Delta \gamma}{\gamma_0} = \frac{\sqrt{\pi/2}\tau_0 t_L \omega_0^2 \gamma_0 a_0^2}{1+\sqrt{\pi/2 \tau_0 t_L \omega_0^2 \gamma_0 a_0^2}}
+\frac{\Delta \gamma}{\gamma_0} = \frac{\sqrt{\pi/2}\tau_0 t_L \omega_0^2 \gamma_0 a_0^2}{1+\sqrt{\pi/2 \tau_0 t_L \omega_0^2 \gamma_0 a_0^2}},
 \end{equation}
 
-$\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, pulse duration $t_L = 45\,\mathrm{fs}$, wavelength be $\lambda = 8--\,\mathrm{nm}$.
+where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, the pulse duration $t_L = 45\,\mathrm{fs}$, the wavelength be $\lambda = 800\,\mathrm{nm}$.
+\vspace{\baselineskip}
 
 \begin{figure}
 \centering
@@ -607,19 +612,30 @@ $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, pulse duration $t_L
 \caption[]{.}
 \end{figure}
 
-Z-test:
+
+The histograms in Figure XX show the the sampled electron energies, which remain unperturbed when ignoring radiation reaction and are labelled with `RR off'. The post-interaction distribution of energies (orange) is calculated using EQUATION XX for $a_0 = 8$ which is the lower end of the estimated interaction intensity in \cite{Cole2018}. For both `RR on' distributions the mean energy has shifted down by more than $50\,\mathrm{MeV}$ and the width of the normal distribution is reduced. EQUATION XX predicts a higher absolute energy loss for higher initial electron energies which over the entire spectrum leads to a cooling and reduction of the spread of energies. Due to the larger initial spread of sampled energies, the overlap of the initial and final distribution is larger for the Cole case. This intuitively tells us that it will be more challenging in case COLE than case PODER to confidently identify whether a measured electron spectrum was produced from a model without radiation reaction, `RR off', and for instance from a LL-RR model.
+\vspace{\baselineskip}
+
+To quantify this, we perform a statistical Z-test (REF).
+The parameter Z indicates the confidence at which two distributions can be distinguished from each other and is equivalent to a $\sigma$ confidence level. It is calculated by comparing the mean and the standard deviation on the mean for two distributions:
 
 \begin{equation}
-Z = \frac{\bar{X_1} - \bar{X_2}}{\sqrt{\sigma_{X_1}^2 - \sigma_{X_2}^2}}
+Z = \frac{\bar{X_1} - \bar{X_2}}{\sqrt{\sigma_{X_1}^2 + \sigma_{X_2}^2}},
 \end{equation}
 
-$\sigma_X = \sigma/\sqrt{n}$ is standard deviation on the mean.
+where $\sigma_X = \sigma/\sqrt{n}$ is standard deviation on the mean. X1 and sigma1 are the $\epsilon = 550\,\mathrm{MeV}$ and $\sigma_{Cole}$ or $\sigma_{Poder}$, respectively. The mean and standard deviation is calculated from the post-interaction distribution.
 
-We assume an equal number of collisions and reference data $n$. If the collision likelihood is 1 in 3, the total number of shots is then $4n$.
+If we assume a fixed relation of number of successful collisions and reference shots, we can estimate the number of shots we would require to distinguish a `no RR' from a 'LL-RR' distribution at a confidence of Z sigma. In the case of an equal number of successful collisions and reference shots, the minimum number of shots required is given by
 
 \begin{equation}
-n = Z^2 \frac{\sigma_1^2 + \sigma_2^2}{(\bar{X_1}-\bar{X_2})^2}
+n = Z^2 \frac{\sigma_1^2 + \sigma_2^2}{(\bar{X_1}-\bar{X_2})^2}.
 \end{equation}
+
+In an experiment we also have to consider that only 1 in X shots with both beams will result in a successful collisions. In this case it was estimated to be a 1 in 3 chance, so the total number of shots would then be $4n$. We also assumed that we can identify successful collisions using the method described at the beginning of this chapter.
+
+
+For this and $Z=5$ the number of collisions shots is then XX for Cole and XX for Poder.
+
 
 \begin{figure}
 \centering
@@ -627,8 +643,10 @@ n = Z^2 \frac{\sigma_1^2 + \sigma_2^2}{(\bar{X_1}-\bar{X_2})^2}
 \caption[]{.}
 \end{figure}
 
-For $5\sigma$ confidence $Z = 5$.
 
+
+For $5\sigma$ confidence $Z = 5$.
+If the collision likelihood is 1 in 3, the total number of shots is then $4n$.
 Use determined standard deviations and normal distribution of electron energies from the two datasets.
 Based on those values, sample energies and calculate the energy after an interaction for the $a_0$ measured in experiment.
 From these samples estimate the mean energy and standard deviation of the distribution after the interaction.
@@ -637,6 +655,9 @@ Use the Z-test to compare both distributions and estimate how likely it is to as
 
 See that for the same mean energy the change in standard deviation affects how much overlap both distributions have and the likelihood of misattributing them. At the conditions for Cole we need of XX 15 NUMBER shots to reach a 5 sigma confidence that this is a distribution from radiation reaction.
 For Poder at the same relative standard deviation would need of factor 10 fewer shots. At the current Poder conditions (energy) one shot would be sufficient under the assumption that the electron beam itself is characterised well enough. At $a_0 = 20$ both conditions are sufficient to quickly distinguish models within a shot, even for relatively large energy fluctuations of 10 percent.
+
+This means that at lower intensities and energies the fluctuations are quite important to distinguish no RR and RR models, but that at sufficiently high intensities and energies this becomes less important.
+Gas jet can be used to interact at higher intensities, so the lower stability is not an issue. For more distinct models, might be more challenging, but see C ARRAN. Discuss advantages of using a gas jet, shock injection and so on.
 
 \begin{figure}
 \centering
