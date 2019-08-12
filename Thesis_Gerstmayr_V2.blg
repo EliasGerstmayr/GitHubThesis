@@ -4,7 +4,6 @@ The top-level auxiliary file: Thesis_Gerstmayr_V2.aux
 A level-1 auxiliary file: Ch1_Introduction/Introduction.aux
 A level-1 auxiliary file: Ch2_Theory/Theoretical_Background.aux
 A level-1 auxiliary file: Ch3_Methods/Experimental_Methods.aux
-A level-1 auxiliary file: Ch4_Simulations/GEANT.aux
 A level-1 auxiliary file: Ch8_Results4/RR2019_betamax.aux
 A level-1 auxiliary file: Ch7_Results3/RR2019_linICS.aux
 A level-1 auxiliary file: Ch5_Results1/RR2015.aux
@@ -13,57 +12,104 @@ A level-1 auxiliary file: Ch9_Conclusion/Conclusions.aux
 A level-1 auxiliary file: Ch10_Appendix/Appendix.aux
 A level-1 auxiliary file: bu.aux
 The style file: unsrt.bst
-Database file #1: PhD_wakefield_June19.bib
+Database file #1: GammaDet.bib
+Database file #2: Facilities.bib
+Database file #3: Wakefield.bib
+Database file #4: ICSRR.bib
+Warning--I didn't find a database entry for "Keldysh1965"
+Warning--I didn't find a database entry for "Latypov1964"
 Warning--I didn't find a database entry for "Perelomov1966"
+Warning--I didn't find a database entry for "Reiss1970"
+Warning--I didn't find a database entry for "Esarey2009"
+Warning--I didn't find a database entry for "Mangles2016"
+Warning--I didn't find a database entry for "Mangles2004"
+Warning--I didn't find a database entry for "Faure2004"
+Warning--I didn't find a database entry for "Geddes2004"
+Warning--I didn't find a database entry for "Leemans2006"
+Warning--I didn't find a database entry for "Steinke2016"
+Warning--I didn't find a database entry for "Kim2013"
+Warning--I didn't find a database entry for "Lu2006"
+Warning--I didn't find a database entry for "Faure2006"
 Warning--I didn't find a database entry for "Geddes2008"
+Warning--I didn't find a database entry for "Pak2010"
+Warning--I didn't find a database entry for "Buck2013"
+Warning--I didn't find a database entry for "Hidding2012b"
+Warning--I didn't find a database entry for "Mangles2009"
+Warning--I didn't find a database entry for "TaPhuoc2012a"
+Warning--I didn't find a database entry for "Powers2014"
+Warning--I didn't find a database entry for "Khrennikov2015"
+Warning--I didn't find a database entry for "Chen2013a"
+Warning--I didn't find a database entry for "Sarri2014"
+Warning--I didn't find a database entry for "Seryi2015"
+Warning--I didn't find a database entry for "Wilks2001"
+Warning--I didn't find a database entry for "Maksimchuk2000"
+Warning--I didn't find a database entry for "Semushin2001"
 Warning--I didn't find a database entry for "Nakamura2007"
 Warning--I didn't find a database entry for "Spence2001"
+Warning--I didn't find a database entry for "Hagena1972"
+Warning--I didn't find a database entry for "Leemans2014"
+Warning--I didn't find a database entry for "Desforges2014"
+Warning--I didn't find a database entry for "Osterhoff2013"
 Warning--I didn't find a database entry for "Semushin2001a"
+Warning--I didn't find a database entry for "Jolly2012"
+Warning--I didn't find a database entry for "Bracewell1978"
 Warning--I didn't find a database entry for "Pollock2011"
+Warning--I didn't find a database entry for "Osterhoff2008"
+Warning--I didn't find a database entry for "Vargas2014"
+Warning--I didn't find a database entry for "Kuschel2018"
+Warning--I didn't find a database entry for "Buck2011"
+Warning--I didn't find a database entry for "Savert2015"
 Warning--I didn't find a database entry for "Rousse2004"
+Warning--I didn't find a database entry for "Agostinelli2003"
 Warning--I didn't find a database entry for "Goorley2012"
-Warning--can't use both volume and number fields in Seryi2015
-Warning--empty publisher in Seryi2015
-Warning--empty journal in Osterhoff2013
-You've used 48 entries,
+Warning--I didn't find a database entry for "Cole2018"
+Warning--I didn't find a database entry for "Corvan2016"
+Warning--I didn't find a database entry for "Corvan2014"
+Too many commas in name 1 of "C. Arran,J. M. Cole,E. Gerstmayr,T. G. Blackburn,S. P. D. Mangles,C. P. Ridgers" for entry Arran2019_RR_SPIE
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "C. Arran,J. M. Cole,E. Gerstmayr,T. G. Blackburn,S. P. D. Mangles,C. P. Ridgers" for entry Arran2019_RR_SPIE
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "C. Arran,J. M. Cole,E. Gerstmayr,T. G. Blackburn,S. P. D. Mangles,C. P. Ridgers" for entry Arran2019_RR_SPIE
+while executing---line 944 of file unsrt.bst
+You've used 53 entries,
             1791 wiz_defined-function locations,
-            801 strings with 20405 characters,
-and the built_in function-call counts, 16429 in all, are:
-= -- 970
-> -- 1771
-< -- 2
-+ -- 609
-- -- 561
-* -- 1737
-:= -- 3046
-add.period$ -- 144
-call.type$ -- 48
-change.case$ -- 46
+            931 strings with 21841 characters,
+and the built_in function-call counts, 18789 in all, are:
+= -- 1180
+> -- 1871
+< -- 3
++ -- 642
+- -- 589
+* -- 1908
+:= -- 3366
+add.period$ -- 160
+call.type$ -- 53
+change.case$ -- 53
 chr.to.int$ -- 0
-cite$ -- 51
-duplicate$ -- 445
-empty$ -- 1041
-format.name$ -- 561
-if$ -- 3196
+cite$ -- 53
+duplicate$ -- 559
+empty$ -- 1250
+format.name$ -- 589
+if$ -- 3778
 int.to.chr$ -- 0
-int.to.str$ -- 48
-missing$ -- 50
-newline$ -- 243
-num.names$ -- 48
-pop$ -- 68
+int.to.str$ -- 53
+missing$ -- 53
+newline$ -- 268
+num.names$ -- 53
+pop$ -- 70
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 176
+skip$ -- 272
 stack$ -- 0
-substring$ -- 808
-swap$ -- 68
-text.length$ -- 2
+substring$ -- 1071
+swap$ -- 132
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 111
-width$ -- 50
-write$ -- 525
-(There were 11 warnings)
+warning$ -- 0
+while$ -- 119
+width$ -- 55
+write$ -- 585
+(There were 3 error messages)
