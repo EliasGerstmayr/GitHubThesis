@@ -1,4 +1,5 @@
 \chapter{First Measurements of Radiation Reaction at Astra Gemini}
+\label{Chap:RR15}
 
 \section{Experimental Motivation}
 
@@ -6,6 +7,7 @@
 In relativistic inverse Compton scattering (ICS) one (linear) or multiple (non-linear) photons scatter from a relativistic electron ($\epsilon/m_e c^2 = \gamma \gg 1$). The scattered photons experience a relativistic Doppler-shift and are re-emitted in a narrow cone of divergence $\sim 1/\gamma$ in the direction of the electron propagation, carrying a higher energy based on the electron energy and the intensity of the laser field. The emitted photon energy, $E_{ph}'$, is maximised in a head-on collision: $E_{ph}' = 2 \gamma^2 (1-\cos\theta)E_{ph}$ (see \nameref{Chap:Theory} for further details or e.g. \cite{Esarey1993_NT,Lau2003_NT}). Higher electron energies result in a stronger shift of the radiation, leading to a hardening of the spectrum and an increase of the corresponding energy loss the electrons experience. A more intense laser field ($a_0 > 1$), on the other hand, enables non-linear interactions and increases the number of photons interacting at once with an electron, resulting in the generation of $\sim a^3_0$ higher harmonics  but also redshifting and broadening of the spectrum. As a result the rapidly increasing number of higher harmonics blend together to form a broadband synchrotron-like spectrum.
 
 ICS provides a promising route to generate bright burst of high energy radiation reaching 100's of keV or even MeV photon energy, suitable for medical and imaging applications (also of high-Z objects) and to stimulate nuclear transitions, even at small-scale facilities \cite{Albert2016_APP}.
+It also provides a useful tool to measure beam properties \cite{Kramer2018_Gamma}, including polarisation \cite{Baylac2002_POL,Barber1993_POL}.
 In addition, the high photon energies offer the opportunity to directly observe the energy loss, if the emitted photon carries an energy comparable to the energy of the electron, and to measure the effect of radiation reaction on the beam dynamics itself when the electric field in the rest frame of the electron approaches the critical field of QED, $E_{crit}$. Classical descriptions of radiation reaction exhibit the unphysical prediction of an unbounded emission spectrum, i.e. energy loss higher than the initial energy of the electron is allowed.
 \vspace{\baselineskip}
 
@@ -14,7 +16,6 @@ In addition, the high photon energies offer the opportunity to directly observe 
 In LWFA the intense laser driver is intrinsically synchronised to the relativistic electron beam that trails behind it, which makes LWFA well suited to study inverse Compton scattering at high intensities.
 \vspace{\baselineskip}
 
-
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\columnwidth]{RR2015_Gmax_thiswork.pdf}
@@ -22,14 +23,13 @@ In LWFA the intense laser driver is intrinsically synchronised to the relativist
 \caption{Comparison of all-optical ICS experiments using LWFA. The circles (cyan) indicate one-beam experiments that use a plasma mirror to reflect the LWFA driver beam and scatter off the electron bunch it accelerated before. The triangles (blue and green) indicate experiments that used two laser beams, one to accelerate electrons from LWFA and one separate laser to scatter off them. Top: Maximum gamma energies measured and their year of publication. Bottom: Electron energies and laser intensities in recent ICS experiments using LWFA.}
 \end{figure}
 
-
 Colliding-pulse or ICS experiments using LWFA have been successfully performed by different groups over the past years, gradually improving the control over the process, increasing the laser intensities and the energies of the electrons involved, and subsequently of the radiation generated \cite{TaPhuoc2012_ICS,Chen2013_ICS,Liu2014_ICS,Powers2014_ICS,Sarri2014_ICS,Khrennikov2015_ICS, Yan2017_ICS, Shaw2017_ICS}. 
 The energy and the tunability of the produced radiation is a good indicator for the continuing progress of these experiments. More specifically of interest for measuring radiation reaction is the quantum non-linearity parameter, $\eta = 2\gamma E_L/E_{crit}$ \cite{Ritus1985_QRR,Bell2008_PairsEta}, that indicates the strength of the electric field of the laser in the rest frame of the electron relative to the critical electric field of QED, $E_{crit}$.
 \vspace{\baselineskip}
 
 \subsubsection{Inverse Compton Scattering using a plasma mirror}
 
-A single intense laser pulse can be used to accelerate electrons to relativistic energies via LWFA and to scatter the electrons after backreflecting the laser from a close-to-normal plasma mirror (e.g. tape \cite{TaPhuoc2012_ICS}). In this geometry the laser beam and the electrons are timed intrinsically. In \cite{TaPhuoc2012_ICS} electrons of an energy $\sim 100\,\mathrm{MeV}$ were collided at a laser intensity of $a_0 \approx 1.2$ (weakly non-linear). The radiation measured was a broadband X-ray spectrum and reached up to $100'\mathrm{s}\,\mathrm{keV}$ photon energies. A lower electron energy spread and tunability was demonstrated at slightly lower electron energies and laser intensities in \cite{Powers2014_ICS} and\cite{Khrennikov2015_ICS}. In \cite{Tsai2015_ICS} a low energy spread electron beam of up to $90\,\mathrm{MeV}$ was scattered at a laser intensity $a_0 \approx 1.2$, producing an X-ray spectrum peaked at $180\,\mathrm{keV}$. 
+A single intense laser pulse can be used to accelerate electrons to relativistic energies via LWFA and to scatter the electrons after backreflecting the laser from a close-to-normal plasma mirror \cite{Kapteyn1991_PM} (e.g. tape \cite{TaPhuoc2012_ICS}). In this geometry the laser beam and the electrons are timed intrinsically. In \cite{TaPhuoc2012_ICS} electrons of an energy $\sim 100\,\mathrm{MeV}$ were collided at a laser intensity of $a_0 \approx 1.2$ (weakly non-linear). The radiation measured was a broadband X-ray spectrum and reached up to $100'\mathrm{s}\,\mathrm{keV}$ photon energies. A lower electron energy spread and tunability was demonstrated at slightly lower electron energies and laser intensities in \cite{Powers2014_ICS} and\cite{Khrennikov2015_ICS}. In \cite{Tsai2015_ICS} a low energy spread electron beam of up to $90\,\mathrm{MeV}$ was scattered at a laser intensity $a_0 \approx 1.2$, producing an X-ray spectrum peaked at $180\,\mathrm{keV}$. 
 By now the highest recorded gamma-ray energies from ICS in LWFA using this scheme have reported in \cite{Shaw2017_ICS} reaching up to $85 \,\mathrm{MeV}$ photon energies in a collision with electrons at energies up to $2\,\mathrm{GeV}$.
 \vspace{\baselineskip}
 
@@ -51,20 +51,20 @@ In \cite{Sarri2014_ICS} electrons at an energy of $400 \, \mathrm{MeV}$ were suc
 \subsubsection{Future LWFA Studies on Inverse Compton Scattering and Radiation Reaction}
 
 Future laser facilities will be able to perform ICS studies at even higher electron energies and laser intensities.
-Several PW laser systems have already or are soon to commence their operation, with some existing laser systems being upgraded to the PW-level as well (ELI-NP \cite{Gales2018_ELINP}, ELI-Beamlines \cite{Weber2017_ELIBeamlines}, EPACS (no REF), HERCULES \cite{Yanovsky2008_HERCULES}, Apollon \cite{Zou2015_Apollon}, SULF \cite{Li2017_SULF}, BELLA, XCELS). At this point, QED studies are already considered for the 100 PW regime \cite{Shen2018_SULF}. 
-Maximum electron energies from LWFA on the other hand have reached the multi-GeV regime (REF CoRels, Leemans 4 GeV, Poder multi-GeV) with up to 8 GeV recently \cite{Gonsalves2019_GEV}.
+Several PW laser systems have already or are soon to commence their operation, with some existing laser systems being upgraded to the PW-level as well (ELI-NP \cite{Gales2018_ELINP}, ELI-Beamlines \cite{Weber2017_ELIBeamlines}, EPACS (no REF), HERCULES \cite{Yanovsky2008_HERCULES}, Apollon \cite{Zou2015_Apollon}, SULF \cite{Li2017_SULF}, BELLA, XCELS,CALA). At this point, QED studies are already considered for the 100 PW regime \cite{Shen2018_SULF}. 
+Maximum electron energies from LWFA on the other hand have reached the multi-GeV regime \cite{Kim2013_GEV,Leemans2014_GEV} with up to 8 GeV recently \cite{Gonsalves2019_GEV}.
 
-Combining both opens up a wide variety of research topics in the strongly non-linear quantum regime probing radiation reaction (REF), photon-photon scattering (REF) and pair production from the Breit-Wheeler mechanism (REF) or by approaching the Schwinger limit (REF). The high laser intensities will also enable studies of vacuum birefringence \cite{King2016_VB}.
+Combining both opens up a wide variety of research topics in the strongly non-linear quantum regime probing radiation reaction\cite{Blackburn2014_QRR}, photon-photon scattering \cite{Enterria2013_PhPh} and pair production from the Breit-Wheeler mechanism \cite{Pike2014_BW,Blackburn2017_pairs} or by reaching supercritical field strenghts \cite{Blackburn2019_SUPER}. The high laser intensities will also enable studies of vacuum birefringence \cite{King2016_VB}.
 
 Considering the cost and variety of facilities, it is important to investigate the limitations of current all-optical ICS setups, the feasibility of future measurements and explore potential ways to improve them \cite{Samarin2017_RR}.
 
 \subsubsection{Inverse Compton Scattering at conventional accelerator facilities}
 
-Inverse Compton Scattering has been employed at conventional accelerator facilities for some time as well, but at much lower laser intensities to measure the beam polarisation (polarimetry, e.g. \cite{Baylac2002_POL,Barber1993_POL}), in particular in the context of (de)polarisation of beams due to the Sokolov-Ternov effect (\cite{SokolovTernov1964_POL,Baier1967_POL}).
+Inverse Compton Scattering has been employed at conventional accelerator facilities for some time as well, but at much lower laser intensities to measure the beam polarisation (polarimetry, e.g. \cite{Baylac2002_POL,Barber1993_POL}), in particular in the context of (de)polarisation of beams due to the Sokolov-Ternov effect\cite{SokolovTernov1964_POL,Baier1967_POL}.
 
 As the field of applications for large-scale accelerators widens and the access to 10 TW laser systems and even commercially available PW-class lasers becomes easier, conventional accelerators combine their high-quality relativistic particle beams with intense laser pulses.
 At XFELs, for instance, this is interesting for the study of warm dense matter states and HEDP, involving pump-probe measurements, where X-rays from an insertion device probe matter structures and changes in them in interaction with a laser.
-In the wake of increasing interest in measuring QED phenomena in laser interactions, ICS has also moved into the focus of conventional accelerator facilities. New dedicated projects continue where the seminal E144 experiment at SLAC left off in the 90s (46 GeV electron beam with laser $a_0 \sim 0.3$, \cite{Bula1996_RR,Burke1997_RR}) with LUXE at the X-FEL Hamburg \cite{Burkart2019_LUXE},CALA Munich, SFQED at FACET-II (30 TW, 13 GeV XX NUMBERS?). Whilst the high-quality beams at these facilities are superior to LWFA studies in terms of charge, energy and energy stability, these projects are facing other challenges due to significant amount of background noise in the accelerator tunnels, and typically longer and larger electron bunch sizes resulting in a significant overlay from linear scattering events in an ICS setup.
+In the wake of increasing interest in measuring QED phenomena in laser interactions, ICS has also moved into the focus of conventional accelerator facilities. New dedicated projects continue where the seminal E144 experiment at SLAC left off in the 90s (46 GeV electron beam with laser $a_0 \sim 0.3$, \cite{Bula1996_RR,Burke1997_RR}) with LUXE at the X-FEL Hamburg \cite{Burkart2019_LUXE}, SFQED at FACET-II (30 TW, 13 GeV XX NUMBERS?). Whilst the high-quality beams at these facilities are superior to LWFA studies in terms of charge, energy and energy stability, these projects are facing other challenges due to significant amount of background noise in the accelerator tunnels, and typically longer and larger electron bunch sizes resulting in a significant overlay from linear scattering events in an ICS setup.
 
 Another measurement of radiation reaction was performed at the LHC \cite{Wistisen2018_RR}, however using positrons and planar channeling in crystals instead of ICS.
 
@@ -194,6 +194,14 @@ S_{total} = S_{BG} + S_{ICS} = c_{BG} \int  \left[\mathrm{d}N_e /\mathrm{d}\gamm
 
 In Figure \ref{Results:Figs:NullColl:DeltaCsIVsSigmaE2+CsIVsE2} we now compare experimental data for shots with and without the scattering beam similarly as before in Figure \ref{Results:Figs:NullColl:DeltaCsIVsSigmaE2Null}. The shots with the scattering beam (orange) are more spread than the shots without the colliding beam (blue). Some of the data points with the colliding beam follow the linear relationship determined for the reference data relatively well and indicate poor overlap. A few shots exhibit a much higher detector signal than predicted by the fit for an electron spectrum of comparable charge and energy. This indicates good overlap.
 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{ElecQ2_CsI_Correlation.pdf}\includegraphics[width=0.5\columnwidth]{DCsI_sigma.pdf}
+\caption{Left: Squared energy of the electron beam vs. the signal strength on the gamma detector in pixel counts. The reference shots without scattering beam are indicated in blue with a regression line. In orange shots with both laser beams on. Right: Shot number against the deviation from the expected gamma signal using the difference of the signal from the blue regression line on the left plot.}
+\label{Results:Figs:NullColl:DeltaCsIVsSigmaE2+CsIVsE2}
+\end{figure}
+
 To quantify how much higher the detected signal is than predicted by the background fit, it is more useful to look at the difference of measured to expected signal, i.e. by subtracting the expected bremsstrahlung background from the total signal to extract the ICS contribution:
 \begin{equation}
 S_{ICS} = S_{total} - c_{BG}Q\left\langle\gamma^2\right\rangle,
@@ -210,12 +218,6 @@ For shots without the scattering beam the ICS signal $S_{ICS}$ determined by thi
 S_{ICS, norm} = \frac{S_{ICS,rel}}{\sigma_{BG}}
 \end{equation}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.5\columnwidth]{ElecQ2_CsI_Correlation.pdf}\includegraphics[width=0.5\columnwidth]{DCsI_sigma.pdf}
-\caption{Left: Squared energy of the electron beam vs. the signal strength on the gamma detector in pixel counts. The reference shots without scattering beam are indicated in blue with a regression line. In orange shots with both laser beams on. Right: Shot number against the deviation from the expected gamma signal using the difference of the signal from the blue regression line on the left plot.}
-\label{Results:Figs:NullColl:DeltaCsIVsSigmaE2+CsIVsE2}
-\end{figure}
 
 In Figure \ref{Results:Figs:NullColl:DeltaCsIVsSigmaE2+CsIVsE2} the shots are lined up in the order their data was taken in the experiment. The normalised signal above expected background, $S_{ICS, norm}$, is indicated on the y-axis. The y-axis now encapsulates the information of both the gamma signal and the electron spectrum.
 As we can see most of the shots follow the expected trend within 2 standard deviations, with some exceeding the signal. 4 shots show a signal more than 5 standard deviations higher signal than expected from background. Based on a normal distribution the probability for one shot to be as bright as 5 standard deviations above the mean background is 1 in 3500000, which is very unlikely and hence a suitable confirmation that we have identified 4 successful collisions. 
@@ -317,12 +319,13 @@ We can check if the remaining fluctuations correlate with laser energy. There ap
 
 \subsubsection{Intrinsic statistical fluctuations}
 
-Any deviation in energy $\Delta E$ from this slow drifting mean now represents a characteristic intrinsic fluctuation of the accelerator. In Figure XX NUMBER a histogram of relative differences in energies, $\Delta E/E$, is shown, along with an estimate of the underlying density distribution using a Kernel Density Estimate (KDE) and a Gaussian fit. The Gaussian fit agrees with the 99 percent confidence interval of the KDE, but there seems to be a slight skew of the distribution.
+Any deviation in energy $\Delta E$ from this slow drifting mean now represents a characteristic intrinsic fluctuation of the accelerator. In Figure \ref{RR:fig:ElecDEE_histo} a histogram of relative differences in energies, $\Delta E/E$, is shown, along with an estimate of the underlying density distribution using a Kernel Density Estimate (KDE) and a Gaussian fit. The Gaussian fit agrees with the 99 percent confidence interval of the KDE, but there seems to be a slight skew of the distribution.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\columnwidth]{ElecEdge_DE_drift_histo_errors.pdf}
 \caption[]{Histogram of relative deviation of the spectral edge energy from the expected slowly varying mean ($\Delta E/E$). The total distribution is overlaid with a KDE, its $95\%$ confidence intervals and a Gaussian distribution (orange). The shaded area indicates a 2 sigma (95\%) confidence interval assuming a normal distribution.}
+\label{RR:fig:ElecDEE_histo}
 \end{figure}
 
 Continuing with the assumption of a normal distribution we can assign probabilities to observing certain energies. The standard deviation of this distribution is $\sigma_{Cole} = 0.077$ or $7.7\%$. In other words this we expect 68 percent of all shots to have a value of $\Delta E/E$ between $\pm 7.7\,\%$ ($1\,\sigma_{Cole}$), 95 percent between $\pm 15.4\,\%$ ($2\,\sigma_{Cole}$) and so on. 
@@ -487,11 +490,11 @@ In addition it becomes clear that the difference between a fully stochastic quan
 
 \section{Electron beam stability and model distinction}
 
-Data shows agreement with models including radiation reaction. Due to the low number of shots the confidence levels are low. In addition, there seems to be a first sign of stress between how well it agrees with certain models. A definite discrimination of radiation reaction models is not possible at this point. More data, stability, higher electron energies, laser intensities and additional observables could enable this as part of a future precision measurement.
+The experimental results show agreement with models including radiation reaction. Due to the low number of shots the confidence levels are low. In addition, there seems to be a first sign of stress between how well it agrees with certain models. A definite discrimination of radiation reaction models is not possible at this point. More data, stability, higher electron energies, laser intensities and additional observables could enable this as part of a future precision measurement.
 
 The following section will investigate the stability of gas targets used in two measurements of radiation reaction at Gemini under similar experiment conditions. One is the already presented data from a gas jet (Cole et al. \cite{Cole2018_RR}), the second is from a gas cell target (Poder et al. \cite{Poder2018_RR}). For this purpose, the electron spectra of the second experiment undergo a statistical analysis similarly as described before.
 
-The results from the statistical analysis are then being used to estimate how many shots would be required to achieve 5 sigma confidence for either data set. This is used to indicate what kind of gas target is preferable.
+The results from the statistical analysis are then being used to estimate how many shots would be required to achieve $5\sigma$ confidence for either data set. This is used to indicate what kind of gas target is preferable.
 
 \subsubsection{Experimental setup}
 
@@ -501,7 +504,7 @@ The experimental setup in \cite{Poder2018_RR} is very similar to the experiment 
 \begin{figure}[h]
 \centering 
 \includegraphics[width=0.9\columnwidth]{ExpSetup_Poder.pdf}%\includegraphics[width=0.9\columnwidth]{ExpSetup_GasJet_MagnetOnly.pdf}
-\caption[]{Conceptual sketch of the experimental setup as used on the radiation reaction campaign \cite{Poder2018_RR}. Adapted from Figure XX in \cite{Cole2018_RR}.
+\caption[]{Conceptual sketch of the experimental setup as used on the radiation reaction campaign \cite{Poder2018_RR}. Adapted from Figure 1 in \cite{Cole2018_RR}.
 %(from left to right): a laser pulse (in red) is focused by an f/40 spherical mirror onto the entrance of a gas target (gas jet or gas cell). The intense laser pulse drives a wakefield and accelerates electrons (blue) to relativistic energies. A second laser is focused with an f/2 off-axis parabola onto the exit of the gas target scattering the electrons and emitting a bright flash of gamma rays (green) from inverse Compton scattering. A permanent dipole magnet is used to disperse and characterise the energy of the electron beam on a scintillating LANEX screen. The gamma rays propagate through a kapton vacuum window (orange) onto a stack of caesium-iodide (CsI) crystals. The sketch is based on work by J. M. Cole, Imperial College, for \cite{Cole2018}.}
 }
 \label{RR15:figs:exp_sketch_Poder}
@@ -513,7 +516,7 @@ The first laser is focused by an f/40 spherical mirror to a spot of \textsc{fwhm
 The focal plane of the colliding laser was positioned approximately 1 cm downstream from the exit of the gas cell. The focusing optic was the identical f/2 OAP with a central hole as in the previously described setup. The energy on-target was measured to be $(8.8 \pm 0.7)\,\mathrm{J}$, already taking into account the loss in intensity due to the hole, at a \textsc{fwhm} pulse duration of $42\pm 3 \,\mathrm{fs}$. The intensity at the interaction point was $a_0\approx 10$ at a spot size \textsc{fwhm} $7\,\mathrm{\mu m}$.
 \vspace{\baselineskip}
 
-Both lasers were synchronised to about $40$ fs accuracy using spectral interferometry \cite{Corvan2016}.
+Both lasers were synchronised to about $40$ fs accuracy using spectral interferometry \cite{Corvan2016_TIMING}.
 \vspace{\baselineskip}
 
 The electrons accelerated via LWFA are dispersed by a dipole magnet of integrated field strength $\int B(x) \mathrm{d}x \approx 0.15 \,\mathrm{Tm}$ onto a scintillating LANEX screen.
@@ -530,7 +533,7 @@ A typical electron spectrum produced from the gas cell target can be seen in Fig
 \label{fig:Poder_espec_example}
 \end{figure}
 
-The characteristic number assigned to each spectrum is the cut-off energy, which is as in \cite{Poder2018_RR} defined as the energy at which the spectral intensity reaches 10 percent of its peak value.
+The value characterising each spectrum is the cut-off energy, which is in \cite{Poder2018_RR} defined as the energy at which the spectral intensity reaches 10 percent of its peak value.
 \vspace{\baselineskip}
 
 The cut-off energy of the spectrum scales linearly with the energy in the driver beam (see Figure \ref{fig:Poder_laser_corr}). The linear correlation is very strong at a correlation coefficient of $0.9$. The linear fit follows the equation $\epsilon_{cutoff} = 0.07\,\mathrm{GeV/J} \times E_{laser} + 0.57\,\mathrm{GeV}$.
@@ -555,7 +558,7 @@ By factoring out known correlations of the spectra, scaling them accordingly (sl
 \caption[]{Averaged and scaled electron spectra for data from Cole (blue) and Poder (green). The spectra are normalised to a total charge of 1. The error bars indicate the energy dependent variance of the spectra.}\label{fig:comparison_especs}
 \end{figure}
 
-The scaled and averaged spectra from the two experiments are shown in Figure \ref{fig:comparison_especs}. The spectra were processed as outlined before and then averaged over all available data shots. The spectra are normalised by their total charge such that the integral of each spectrum is set to 1. Typical energy reached in the gas cell from Poder et al. is significantly higher by at least a factor two for the majority of the charge distribution. The higher electron energy also enables a potentially higher $\eta$ parameter in an interaction as $\eta \propto \gamma$. The shaded region around the scaled spectra indicates the standard deviation of the averaged spectrum at that particular energy. The energy-dependent variances are also shown in Figure \ref{fig:comparison_varianceLog} on a logarithmic y-axis. The variations for the data taken with the gas jet is in particular strong around the important position of the spectral edge and the variance reaches a 10-times higher peak and total value.
+The scaled and averaged spectra from the two experiments are shown in Figure \ref{fig:comparison_especs}. The spectra were processed as outlined before and then averaged over all available data shots. The lineouts are normalised by their total charge such that the integral of each spectrum is set to 1. Typical energy reached in the gas cell from Poder et al. is significantly higher by at least a factor two for the majority of the charge distribution. The higher electron energy also enables a potentially higher $\eta$ parameter in an interaction as $\eta \propto \gamma$. The shaded region around the scaled spectra indicates the standard deviation of the averaged spectrum at that particular energy. The energy-dependent variances are also shown in Figure \ref{fig:comparison_varianceLog} on a logarithmic y-axis. The variations for the data taken with the gas jet is in particular strong around the important position of the spectral edge and the variance reaches a 10-times higher peak and total value.
 \vspace{\baselineskip}
 
 \begin{figure}
@@ -565,18 +568,19 @@ The scaled and averaged spectra from the two experiments are shown in Figure \re
 \end{figure}
 
 
-The spread of cut-off energies for the gas cell data is narrower than the spread of energies of the edge feature produced with the gas jet target. The shaded areas in Figure \ref{fig:comparison_histo} indicate the $\pm 2$ sigma or 95 percent confidence intervals based on a normal distribution. The Poder data has a typical fluctuation of the cut-off energy of around 7 percent. The spectral feature from the gas jet varies with 15 percent by around the double amount. 
+The spread of cut-off energies for the gas cell data is narrower than the spread of energies of the edge feature produced with the gas jet target. The shaded areas in Figure \ref{fig:comparison_histo} indicate the $\pm 2\sigma$ or 95 percent confidence intervals based on a normal distribution. The Poder data has a typical fluctuation of the cut-off energy of around 7 percent. The spectral feature from the gas jet varies with 15 percent by the double amount. 
 \vspace{\baselineskip}
 
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{Comparison_Variance_Log.pdf}
-\caption[]{Energy-dependent variance of the average spectra in introduced in figure 8. In blue the data taken on the experiment related to Cole et al., in green to Poder et al.. The total variance for Cole et al. was $1.5 \times 10^{-7}$ and $1.98 \times 10^{-8}$ in the case of Poder et al..}
+\caption[]{Energy-dependent variance of the average spectra in introduced in Figure \ref{fig:comparison_especs}. In blue the data taken on the experiment related to Cole et al., in green to Poder et al.. The total variance for Cole et al. was $1.5 \times 10^{-7}$ and $1.98 \times 10^{-8}$ in the case of Poder et al..}
 \label{fig:comparison_varianceLog}
 \end{figure}
 
 The gas cell data from Poder et al. is superior in terms of energy stability (cut-off for gas cell, spectral feature for gas jet) and stability of the spectral shape (variance).
 
+\FloatBarrier
 \subsubsection{Relevance for measurements of radiation reaction}
 
 Based on the statistical analysis of the electron spectra from both runs, we want to investigate now how these fluctuations affect the confidence in the identification of radiation reaction effects in the electron spectra.
@@ -592,10 +596,10 @@ We then calculate the energy loss for the sampled electron energies based on the
 where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, the pulse duration $t_L = 45\,\mathrm{fs}$, the wavelength be $\lambda = 800\,\mathrm{nm}$.
 \vspace{\baselineskip}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.5\columnwidth]{Histo_Cole_RR.pdf}\includegraphics[width=0.5\columnwidth]{Histo_Poder_RR.pdf}
-\caption[]{.}
+\caption[]{Electron energies sampled from normal distributions with standard deviation $\sigma_{Cole}$ (left, blue) and $\sigma_{Poder}$ (right, green), and the calculated post-interaction energy distribution due to radiation reaction (orange) at $a_0=8$.}
 \end{figure}
 
 
@@ -646,7 +650,7 @@ Gas jet can be used to interact at higher intensities, so the lower stability ca
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{Nshots_5sigma_RR_a0_20.pdf}\includegraphics[width=0.5\columnwidth]{Nshots_5sigma_RR_a0_range.pdf}
-\caption[]{.}\label{RR:fig:a020_matrix}
+\caption[]{Left: Minimum number of shots. Right:}\label{RR:fig:a020_matrix}
 \end{figure}
 
 Caveats for this analysis: the energy loss was calculated using the Landau-Lifschitz radiation reaction force. At higher intensities the energy loss in quantum models is reduced scaled by the Gaunt factor. This means the shift in energy is smaller. At the same time the stochasticity of a full quantum model might increase the standard deviation of the final distribution (it will probably still cool down but not as much as currently). This means that if we want this to be an estimate `no RR' to RR including the other models, we will require more shots than estimated for LL which will predict higher energy losses.

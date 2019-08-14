@@ -12,19 +12,20 @@ A level-1 auxiliary file: Ch9_Conclusion/Conclusions.aux
 A level-1 auxiliary file: Ch10_Appendix/Appendix.aux
 A level-1 auxiliary file: bu.aux
 The style file: unsrt.bst
-Database file #1: GammaDet.bib
-Database file #2: Facilities.bib
-Database file #3: Wakefield.bib
-Database file #4: ICSRR.bib
+Database file #1: General.bib
+Database file #2: Theses.bib
+Database file #3: LaserDiags.bib
+Database file #4: GammaDet.bib
+Database file #5: Betatron.bib
+Database file #6: Facilities.bib
+Database file #7: Wakefield.bib
+Database file #8: ICSRR.bib
 Warning--I didn't find a database entry for "Keldysh1965"
 Warning--I didn't find a database entry for "Latypov1964"
 Warning--I didn't find a database entry for "Perelomov1966"
 Warning--I didn't find a database entry for "Reiss1970"
 Warning--I didn't find a database entry for "Esarey2009"
 Warning--I didn't find a database entry for "Mangles2016"
-Warning--I didn't find a database entry for "Mangles2004"
-Warning--I didn't find a database entry for "Faure2004"
-Warning--I didn't find a database entry for "Geddes2004"
 Warning--I didn't find a database entry for "Leemans2006"
 Warning--I didn't find a database entry for "Steinke2016"
 Warning--I didn't find a database entry for "Kim2013"
@@ -35,12 +36,8 @@ Warning--I didn't find a database entry for "Pak2010"
 Warning--I didn't find a database entry for "Buck2013"
 Warning--I didn't find a database entry for "Hidding2012b"
 Warning--I didn't find a database entry for "Mangles2009"
-Warning--I didn't find a database entry for "TaPhuoc2012a"
-Warning--I didn't find a database entry for "Powers2014"
-Warning--I didn't find a database entry for "Khrennikov2015"
-Warning--I didn't find a database entry for "Chen2013a"
-Warning--I didn't find a database entry for "Sarri2014"
 Warning--I didn't find a database entry for "Seryi2015"
+Warning--I didn't find a database entry for "Ribeyre2016_GammaGamma"
 Warning--I didn't find a database entry for "Wilks2001"
 Warning--I didn't find a database entry for "Maksimchuk2000"
 Warning--I didn't find a database entry for "Semushin2001"
@@ -51,65 +48,53 @@ Warning--I didn't find a database entry for "Leemans2014"
 Warning--I didn't find a database entry for "Desforges2014"
 Warning--I didn't find a database entry for "Osterhoff2013"
 Warning--I didn't find a database entry for "Semushin2001a"
-Warning--I didn't find a database entry for "Jolly2012"
 Warning--I didn't find a database entry for "Bracewell1978"
 Warning--I didn't find a database entry for "Pollock2011"
-Warning--I didn't find a database entry for "Osterhoff2008"
 Warning--I didn't find a database entry for "Vargas2014"
-Warning--I didn't find a database entry for "Kuschel2018"
-Warning--I didn't find a database entry for "Buck2011"
-Warning--I didn't find a database entry for "Savert2015"
 Warning--I didn't find a database entry for "Rousse2004"
 Warning--I didn't find a database entry for "Agostinelli2003"
 Warning--I didn't find a database entry for "Goorley2012"
-Warning--I didn't find a database entry for "Cole2018"
-Warning--I didn't find a database entry for "Corvan2016"
-Warning--I didn't find a database entry for "Corvan2014"
-Too many commas in name 1 of "C. Arran,J. M. Cole,E. Gerstmayr,T. G. Blackburn,S. P. D. Mangles,C. P. Ridgers" for entry Arran2019_RR_SPIE
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "C. Arran,J. M. Cole,E. Gerstmayr,T. G. Blackburn,S. P. D. Mangles,C. P. Ridgers" for entry Arran2019_RR_SPIE
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "C. Arran,J. M. Cole,E. Gerstmayr,T. G. Blackburn,S. P. D. Mangles,C. P. Ridgers" for entry Arran2019_RR_SPIE
-while executing---line 944 of file unsrt.bst
-You've used 53 entries,
+Warning--I didn't find a database entry for "Bulla1996_RR"
+Warning--empty journal in Heitler1954_BH
+You've used 96 entries,
             1791 wiz_defined-function locations,
-            931 strings with 21841 characters,
-and the built_in function-call counts, 18789 in all, are:
-= -- 1180
-> -- 1871
-< -- 3
-+ -- 642
-- -- 589
-* -- 1908
-:= -- 3366
-add.period$ -- 160
-call.type$ -- 53
-change.case$ -- 53
+            1145 strings with 31581 characters,
+and the built_in function-call counts, 30734 in all, are:
+= -- 2009
+> -- 2866
+< -- 4
++ -- 991
+- -- 895
+* -- 2995
+:= -- 5480
+add.period$ -- 289
+call.type$ -- 96
+change.case$ -- 87
 chr.to.int$ -- 0
-cite$ -- 53
-duplicate$ -- 559
-empty$ -- 1250
-format.name$ -- 589
-if$ -- 3778
+cite$ -- 97
+duplicate$ -- 971
+empty$ -- 2158
+format.name$ -- 895
+if$ -- 6236
 int.to.chr$ -- 0
-int.to.str$ -- 53
-missing$ -- 53
-newline$ -- 268
-num.names$ -- 53
-pop$ -- 70
+int.to.str$ -- 96
+missing$ -- 95
+newline$ -- 483
+num.names$ -- 96
+pop$ -- 149
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 272
+skip$ -- 443
 stack$ -- 0
-substring$ -- 1071
-swap$ -- 132
-text.length$ -- 3
+substring$ -- 1741
+swap$ -- 207
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 119
-width$ -- 55
-write$ -- 585
-(There were 3 error messages)
+warning$ -- 1
+while$ -- 199
+width$ -- 98
+write$ -- 1052
+(There were 36 warnings)
