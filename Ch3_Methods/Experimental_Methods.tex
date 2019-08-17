@@ -26,11 +26,11 @@ In the context of the experiments presented in this work typically two types of 
 
 Firstly, a long-focal-length geometry using either an f/40 spherical mirror or OAP with $f = 6\,\mathrm{m}$ to provide an intense laser pulse $a_0 > 1$ with a long Rayleigh length to efficiently drive LWFA. Due to the long focal length and the restricted size of the target area the beam is about halfway through the focusing process `folded'/reflected back. Unfortunately, this means that the usable energy in this laser arm is limited by the damage threshold of these `folding' mirrors, which is highly dependent on the actual beam quality, beam size before focus and at the mirrors, cleanliness and the quality of the coating.
 
-The second geometry is the short-focal-length scatterer which is typically an f/2 OAP with $f = 300\,\mathrm{mm}$ which is also available with a central fitted hole for the case of head-on counter-propagating geometries. 
+The second geometry is the short-focal-length scatterer which is typically an f/2 OAP with focal length $f = 300\,\mathrm{mm}$ which is also available with a central fitted hole for the case of head-on counter-propagating geometries. 
 
-In all geometries deformable mirrors/adaptive optics are used to optimise the wavefront.
+In all geometries deformable mirrors/adaptive optics are used in conjunction with a wavefront sensor to optimise the wavefront.
 
-In addition to its full-power capabilities a continuous-wave (CW) mode for alignment and a low power pulsed mode at 10 Hz repetition rate (XX ENERGY FOR LOW AND MEDIUM POWER) are available as well.
+In addition to its full-power capabilities, a continuous-wave (CW) mode for alignment and a low power pulsed mode at 10 Hz repetition rate (XX ENERGY FOR LOW AND MEDIUM POWER) are available as well.
 
 
 \section{Laser Diagnostics}
@@ -86,21 +86,21 @@ Another alternative is combining several separately amplified laser pulses eithe
 
 \subsection{Laser Energy Measurement}
 
-At Gemini the laser energies is measured on every shot by collecting the transmitted light through the back of an HR mirror in the laser area and imaging it onto a CCD camera chip. The integrated number of counts are calibrated using a Gentec laser meter and the filtering is adjusted for different power modes.
+At Gemini the laser energies is measured on every shot by collecting the transmitted light through the back of a highly-reflective dielectric mirror in the laser area and imaging it onto a CCD camera chip. The integrated number of counts are calibrated using a Gentec laser meter and the filtering is adjusted for different power modes.
 
-A Gentec is also used to measure the reflectivity of the compressor gratings and the energy effectively reaching the interaction point.
+A Gentec is also used to measure the reflectivity of the compressor gratings and the energy reaching the interaction point.
 
-The typical compressor throughput at Gemini is 60-70 percent.
+The typical compressor throughput measured at Gemini is between 60 to 70 percent.
 
 \subsection{Laser Pulse Duration Measurement}
 
-At Gemini Frequency-resolved optical gating (FROG) is used to measure the pulse duration of the laser and characterise its temporal intensity profile.
+At Gemini Frequency-resolved optical gating (FROG) \cite{FROG} is used to measure the pulse duration of the laser and characterise its temporal intensity profile.
 A FROG trace can be taken on every shot by using the through HR mirrors transmitted beam in the laser area. A dazzler can be used to fine-tune the pulse profile.
 
 The FROG is a diagnostic to measure the intensity and spectral phase of ultrashort laser pulses as for instance present at Gemini ($\sim 40\,\mathrm{fs}$). The setup is comparable to an autocorrelator and is optically gated by combining two beams in a non-linear medium. Typically SHG is the non-linear medium of choice. The produced SH radiation is then spectrally resolved (hence frequency-resolved) and provides information about the spectral phase.
 \vspace{\baselineskip}
 
-More details found in Matthew Streeter's thesis \cite{StreeterThesis} and \cite{FROG}.
+More details can be found in \cite{FROG} or, for instance, also in Matthew Streeter's PhD thesis \cite{StreeterThesis}.
 
 Other diagnostics that can be used to measure the pulse duration are the SPIDER or an autocorrelator, but they are not single-shot diagnostics.
 
@@ -874,6 +874,7 @@ This enables measuring the shape of the profile is interesting as it allows dedu
 The profile is also an indicator the the intensity of the interaction in non-linear ICS and carries the imprint of the interacting electron beam within it.
 It is hence a useful diagnostic to not only confirm an interaction took place but also to characterise the conditions at the interaction.
 
+\EliasComm{Reference REF UMSTADTER AO?}
 
 \subsubsection{Experimental Implementation}
 
@@ -950,217 +951,12 @@ A Na or Cs source can be used at the standard measurement conditions. The energy
 
 At gamma-ray energies above $2m_e c^2 \approx 1\,\mathrm{MeV}$ one photon can generate a pair of electron-positron pairs when scattering from matter using the electric field of the nucleus or the valence electrons as interaction partners. The maximum energy of the generated electrons and positrons are determined by the energy of the gamma photon, the overall spectrum is close to exponential (SEE THEORY INSERT REF, BETHE HEITLER). Based on this principle one method to measure the gamma spectrum is using a sheet of high-Z material to convert the gamma rays into matter and then measure the spectrum of these particles in a magnetic spectrometer (REF).
 \EliasComm{Need to rework this part since it is not just pair production but also Compton scattering.}
-In the range of few to maybe 30 MeV the cross section rises rapidly (SEE FIGURE XX NUMBER) compensating for the fewer pairs at higher energies and making this a feasible spectrometer to resolve the full spectrum in this range (SEE GIANLUCA DESIGNS HERE. DJ CORVAN REV SCI 85 (2014)). At higher energies the cross-section flattens which means that the contribution to the total production of pair equalises over all energies but due to the exponential spectrum of the pairs produced very few pairs at the maximum photon energies are produced.
+In the range of few to maybe 30 MeV the cross section rises rapidly (SEE FIGURE XX NUMBER) compensating for the fewer pairs at higher energies and making this a feasible spectrometer to resolve the full spectrum in this range \cite{Corvan2014_Gamma}. At higher energies the cross-section flattens which means that the contribution to the total production of pair equalises over all energies but due to the exponential spectrum of the pairs produced very few pairs at the maximum photon energies are produced.
 The Compton spectrometer becomes a pair spectrometer and the signal-to-noise ratio and sensitivities become more important, meaning more space is required to resolve those energies since the higher energy pairs now require stronger magnets, more drift and need to clear away from the noisy axis.
  
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{CorvanSpectrometer.png}
-\caption{Compton spectrometer AS TAKEN FROM CORVAN REF. PERMISSION IS FREE BUT REQUIRES TO SUBMIT FORM}
+\caption{Sketch of a Compton spectrometer design. Reprinted from \cite{Corvan2014_Gamma}, with the permission of AIP Publishing.}
 \end{figure}
 
-
-
-\subsection{Gamma-ray Scintillator Arrays}
-
-
-One method to detect and characterise X-rays is using blocks or slabs of scintillating material extending in the propagation direction of the radiation or perpendicular to it, depending on what aspect of the radiation one is interested in. The response of the material, i.e. how photons or particles deposit energy and how the scintillator reacts, is then modelled using Monte-Carlo codes, e.g. GEANT4 \cite{Agostinelli2003} or MCNP \cite{Goorley2012}, and compared to the response measured. In general, the penetration depth and the energy deposited in the crystals are proportional to the energy of the radiation transmitted. To discriminate the spectrum even further, different materials can be overlaid as the response varies from material to material. This might be more complicated for very high energetic gamma rays as the cross section is almost identical for most materials at the MeV scale.
-
-In contrast to other transmission studies, at photon energies above few MeV the energy deposition and transmission is less linear but involves decays of photons into matter and those cascading back to photons. This means the signal will not follow a simple Beer's law but will require numerical solving and simulation via GEANT4 considering Bethe-Heitler processes etc, to then estimate how long the cascades go on for before falling off.
-
-\EliasComm{Deeper explanation of the setup and how the spectrum is being retrieved. Reference Keegan's paper.}
-\EliasComm{Provide picture of the arrays.}
-Problem of this is that energy deposition happens over similar range for all parts, so something similar to calorimeters is not feasible either. Solutions would require much more space and are less compact.
-
-As seen in FIGURE XX NUMBER the cross section flattens out and most of the produced pairs will due to their exponential energy spectrum lie in lower energies. This means that using a stack like this will give more of an average spectrum and requires an assumed shape as this detector would not be sensitive to smaller changes.
-
-
-\subsubsection{Experimental Implementation}
-
-
-Examples of stacks used in experiments: 
-
-RAL with steel plate in RR2015 (Chapter XX),
-
-RAL without steel and with PTFE in BW2018 (Chapter XX), 
-
-dual axis stack in Chapter XX and XX RR2019.
-
-\begin{table}
-\centering
-\begin{tabular}{l|l|l|l|l}
-Name & Crystals & Crystal Dimension & Front Plate & Divider\\ \hline \hline
-RAL & $47 \times 33$ & $5 \times 5 \times 50$ mm & Steel 9 mm & Al 1 mm\\
-RAL & $47 \times 33$ & $5 \times 5 \times 50$ mm & PTFE 1 mm & Al 1 mm\\
-Dual & $10 \times 70$ & $5 \times 5 \times 50$ mm & Al 2 mm & Plastic X mm
-\end{tabular}
-\caption{Different CsI spec stacks}
-\end{table}
-
-\begin{figure}
-\centering
-\includegraphics[height=0.3\columnwidth]{scintillator.jpg}\includegraphics[trim={3cm 0 15cm 0}, clip, height=0.3\columnwidth]{Screenshot_GEANT4_RALStack.png}
-\includegraphics[angle=-90, totalheight=0.5\columnwidth]{DualAxis_assembly.JPG}\includegraphics[angle=-90, totalheight=0.5\columnwidth]{ScreenshotGEANT_DualAxis_Side.png}\includegraphics[angle=-90, totalheight=0.5\columnwidth]{ScreenshotGEANT_DualAxisStack.png}
-\caption{Examples of arrays and their GEANT representation.}
-\end{figure}
-
-
-The stacks are positioned such that the crystals separately trace the energy deposition in longitudinal direction of the gamma-ray beam.
-
-The stacks are imaged using an Andor iXon camera equipped with a suitable objective and bandpass filters to filter out stray light.
-
-An example of detector images taken are shown in Figure XX NUMBER.
-
-\begin{figure}
-\centering
-\includegraphics[angle=-90, width=0.5\columnwidth]{CsI_shotexemp.jpg}
-\includegraphics[angle=-90, width=0.5\columnwidth]{dualaxis_example.png}
-\caption{Example CsI array signal.}
-\end{figure}
-
-
-\subsubsection{Background subtraction}
-
-In case of a collimated signal as in Figure XX where only a part of the image is  occupied one can put a mask over the signal area and then fit a smooth surface to the remaining image. This takes care of gradients in the chip and background noise.
-
-For setups that have more signal on the chips, a `quiet' corner can be used to estimate the background and subtract the average pixel value. A median filter can be used to smoothen out the image and remove hot pixels.
-
-\EliasComm{Insert figure here of RR15 signal example, removed mask and estimated background surface.}
-
-\subsubsection{Individual Crystal Extraction}
-
-\begin{figure}
-\centering
-\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample.png}
-\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample_Int.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample_Int.png}
-\caption{Example CsI array signal. Maybe add integrated spectra with and without single crystal extraction.}
-\end{figure}
-
-The real measurement is the energy deposition in the crystals along the longitudinal axis. Due to the spacers there is non-signal area.
-We can mark the position of the crystals as they do not move from shot to shot. Take the average value of each of the crystals.
-
-Width is the angular divergence.
-
-Here some estimate why slight angle is not important for spectral retrieval. Thickness of crystal and typical pointing/divergence.
-
-\subsubsection{Stitching together dual-axis}
-
-In case of the dual axis detector, the detector is so long that only a part of it is being imaged. The parts are combined by using references.
-The signal levels are not adjusted and are done as part of the correction factor.
-
-The references from the images are used to mark a suitable line where crystal rows overlap.
-
-Based on the reference ruler the number of rows can be assigned.
-
-The scintillation signal with individual crystal extraction is shown.
-
-Signal levels will be different.
-
-Side on and top were imaged simultaneously to make full use of the chip. Only one part can be in focus and the stitching together adds complexity.
-
-\begin{figure}
-\centering
-\includegraphics[height=.5\columnwidth]{DualAxisFrontExample.png}\includegraphics[height=.5\columnwidth]{DualAxisRearExample.png}
-\includegraphics[width=1.0\columnwidth]{DualAxisCrystalExtrExample.png}
-\caption{Dual axis images.}
-\end{figure}
-
-
-\subsubsection{Simulation Code and Functionality}
-
-The at CERN developed GEANT code is a Monte Carlo code incorporating most known and well measured cross-sections for fundamental particle/light-matter interactions.
-
-The specific simulation code for GEANT used is strongly based on work by Jason Cole (Imperial College) who in turn benefitted from input by Kristjan Poder (formerly Imperial College, now at DESY in Hamburg).
-
-In this case the code was used to simulate the energy deposited in an array of scintillator crystals by individual X-ray photons or in other word to simulate the response of the detector. It was assumed that multi-photon processes and photon-photon interactions would be negligible and hence tracking individual photons through the detector and simply adding the respective detector response would be sufficient.
-It was also assumed that the energy deposited within the scintillator crystals is linearly related to the light yield of the scintillator, i.e. the number of fluorescence photons emitted, and independent of the process of energy deposition. Above a certain threshold this appears to be true (REF).
-
-The code was used to simulate the response of various configurations of scintillator crystals and materials used in experiment, and also to simulate the bremsstrahlung spectrum from electrons interacting with slabs of material and the respective response of detectors to this secondary radiation.
-
-
-\subsubsection{Bremsstrahlung simulations}
-
-One potential application is measuring hard bremsstrahlung from a source. Bremsstrahlung is very well understood as a process and is only mildly dependent on the shape of the electron spectrum, although large energy fluctuations will make a difference. This also turns out to be a good way to calibrate a detector and in experiment spot differences in crystal efficiency, flaws in the imaging system and so on.
-
-As seen in Figure XX there are brighter pixels, these pixels often remain brighter or less due to the quality of the crystal.
-
-In this simulation realistic (average) electron spectra measured in the respective experiment were launched at a converter foil at distance...
-The material of the converter foil and the thickness was varied. The electrons are after their interaction dispersed by a magnetic field such that they do not interact with the detector. 
-
-Measuring conversion of electrons into bremsstrahlung and response for experiment factors.
-
-Compare measured bremsstrahlung detector response with simulations and correct this factor.
-
-This gives a correction factor encapsulating viewing angles and crystal variations and so on.
-\EliasComm{Add figure of experimental spectrum, sim spectrum and correction factor.}
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{Example_BremsGEANT_ElecInput.png}\includegraphics[width=.5\columnwidth]{Example_GSpecGEANT_GammaSpec.png}
-\includegraphics[width=.5\columnwidth]{Example_GSpec_ExpSim.png}\includegraphics[width=.5\columnwidth]{Example_GSpecGEANT_Corr.png}
-\caption{Correction factor XXX CHANGE PLOT.}
-\end{figure}
-
-
-
-
-\subsubsection{Mono-energetic response}
-
-
-The scintillator stack used in the first results chapter is described in these publications (REFS).
-It is a 33x47 crystal array of crystals with face dimension 5 mm x 5 mm and length 10 mm. The crystals are spaced by aluminium (Thickness) and a plate is holding the crystals in place on their face. The holes are circular and cover some part of the face. In Poder publication this stack was used as a profile measurement. In this work the array is arranged such that the radiation penetrates further into the array of crystals (see figure). The radiation is expected to decay more and more while propagating deeper into the stack. The front plate is covered by several mms of steel which can also be replaced by a plastic layer.
-
-The stack was defined as described in the simulation and looks like this in the viewer (ADD FIGURE).
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{EdepGEANTStack.png}\includegraphics[width=.5\columnwidth]{EdepMax_Cases.pdf}
-\caption{Simulation results: energy deposited per photon in an extended stack, mono-energetic.}
-\end{figure}
-
-
-The simulation range as before.
-
-The response of the detector is being shown in FIGURES.
-As one can see the deposited energy falls off exponentially with the crystal depth as one expects from Beer's Law.
-At higher photon energies a peak becomes apparent. This is due to the production of electron-positron pairs in a QED shower which then in turn deposit energy or scatter generating secondary radiation themselves which then decays exponentially as well.
-
-The peak of this distribution moves further into the stack with increasing energy. This might be due to more energy being available to the pairs, more pairs being produced per photon and so on.
-
-The energy conversion is of order.... percent.
-
-
-
-\subsubsection{Comparison of scintillator array responses}
-
-The described detectors (dual axis, single axis and profile) were combined in different ways and the cover plate for one of the detectors was changed to see the change in response.
-This is using the simulation data as described in the previous sections but comparing the response to each other.
-
-RAL stack with steel and plastic and gamma profile in front.
-Dual axis array. Dependence of peak from materials in between, mainly front plate. Shifts depending on that.
-
-As expected adding more material or higher density materials forces earlier attenuation and pair production (as the cross-section increases).
-Adding a profile detector has the same effect as adding a steel plate. The plastic spacers seem to have the effect that the peak propagates slower within the stack even though it starts quite deep in already. The main effect is carried by the dense scintillator material.
-
-
-
-
-\subsubsection{Combining responses to spectra}
-
-The simulations so far have assumed individual photons at a defined energy. The response functions and the energy deposition was averaged over the number of photons (10.000 to 100.000 per energy).
-
-In an experiment, however, perfectly monoenergetic photon sources are not to be found. Even deeply linear inverse Compton scattering undergoes a broadening from various sources. To restore the response of a realistic spectrum the simulated responses are being added up and weighted according to the shape of the spectrum. This assumes that photon-photon interactions or multi-photon interactions are negligible and that each photon travelling unperturbed and isolated for all practical purposes. This adding up of spectra can mathematically easily be performed by applying a matrix multiplication: the matrix contains the responses of a range of photon energies and multiplying it with a vector containing the weighting for each photon energy results in the detector response of a full spectrum.
-
-This means that in principle a backwards transformation should be possible to invert the matrix and immediately gain a spectrum from experimental data from this process. Previous work, however, indicated that this process does not perform well due to noise in the experiment meaning the problem is ill-posed and the inversion proces does not converge. Instead a spectrum is assumed an a range of parameters used to vary this spectrum. The experimental data and the range of responses can then be compared using a least-square fit. This technique requires an input spectrum and a good knowledge of the spectrum expected. Especially in a transient regime where spectral shapes are expected to change this does not perform well.
-
-
-Explain more about matrix multiplication.
-
-Diagram: VECTOR MATRIX THEN INTERPOLATE THEN GET WEIGHT FROM EXPONENTIAL FUNCTION OR ANY SPECTRAL FUNCTION AND MULTIPLY WITH RESPONSE MATRIX.
-
-
-
-\subsubsection{Determining spectrum by fitting}
-
-Assemble spectra by matrix multiplication assuming a certain shape, then use the combined response (weighed by the spectrum) as guesses.
-Use a least square fit to compare that to the experimental data (corrected with the brems factor) to then nail down a one-parameter critical energy or similar.
-
-\EliasComm{Add here 2D contour plot showing the parameter fit (amplitude and critical energy).}
