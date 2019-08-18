@@ -44,7 +44,7 @@ A sketch of the principal setup is shown in Figure XX. Examples of detector imag
 \caption{Examples of arrays.}
 \end{figure}
 
-In Chapter \ref{Chap:RR15}, a $47 \times 33$ (longitudinal $\times$ transverse) array of crystals in an aluminium casing was used (see Figure XX)\footnote{Designed and built by Rob Clarke, CLF.}. The crystals were separated by $1\,\mathrm{mm}$ thick light-tight aluminium spacers. The array is held together on the sides by 1 mm aluminium plate, on one side solid, on the other 5 mm diameter holes are cut out over the crystal faces to allow the scintillation light to escape. The aluminium spacers and the backplate reflect the light and direct the flow of photons towards the only open side. The front side of the stack that the radiation is first incident on is fortified with a $9\,\mathrm{mm}$ thick steel plate.
+In Chapter \ref{Chap:RR15}, a $47 \times 33$ (longitudinal $\times$ transverse) array of crystals in an aluminium casing was used\footnote{Designed and built by Rob Clarke, CLF.} (see Figure XX). The crystals were separated by $1\,\mathrm{mm}$ thick light-tight aluminium spacers. The array is held together on the sides by 1 mm aluminium plate, on one side solid, on the other 5 mm diameter holes are cut out over the crystal faces to allow the scintillation light to escape. The aluminium spacers and the backplate reflect the light and direct the flow of photons towards the only open side. The front side of the stack that the radiation is first incident on is fortified with a $9\,\mathrm{mm}$ thick steel plate.
 \vspace{\baselineskip}
 
 In Chapter \ref{Chap:BW}, the same scintillator array was used, but the thick steel front plate was replaced by a 1 mm layer of plastic (PTFE). In this setup another layer of CsI was used as profile screen which shifts the decay curve in the stack. The replacement of the front plate shifts this back again. A more detailed discussion on this is performed later.
@@ -102,7 +102,8 @@ In Chapters \ref{Chap:linICS} and \ref{Chap:BW} the signal occupies large parts 
 \begin{figure}
 \centering
 \includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample.png}
-\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample_Int.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample_Int.png}
+\includegraphics[width=1.0\columnwidth]{DualAxisCrystalExtrExample.png}
+%\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample_Int.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample_Int.png}
 \caption{Example CsI array signal. Maybe add integrated spectra with and without single crystal extraction.}
 \end{figure}
 
@@ -113,11 +114,33 @@ This gives us pixel counts in a crystal versus transverse and longitudinal cryst
 The shape of the decay in longitudinal direction is characteristic for the spectral content, whereas the transverse dimension indicates the angular divergence, hence the width of the crystal determines the spatial resolution.
 
 
+
+\subsubsection{Resolving spatial dimensions}
+
+In the transverse direction the detector indicates the divergence of the beam. For a symmetric source either transverse direction is equivalent and by using a stack that always integrates signal in the same transverse axis is sufficient.
+
+One example of a fairly symmetric signal is shown in Figure XX. On the left is a CsI profile screen that shows the profile of the radiation, on the right the uncorrected response of the dual axis scintillator array in both axes. The spatial resolution of the stack is relatively poor, so we can only say it covers 1-2 rows of crystals, on both sides.
+
+Pointing of the source in the vertical will move it in the horizontally integrated axis and vice versa. However, the profile screen has a much better resolution and is better suited for this.
+
 \begin{figure}
 \centering
-\includegraphics[width=1.0\columnwidth]{DualAxisCrystalExtrExample.png}
+\includegraphics[height=0.2\columnwidth]{ICS_ProfileExample.png}\includegraphics[height=0.2\columnwidth]{ICS_SpecExample.png}
+
+\includegraphics[height=0.2\columnwidth]{Betamax_ProfileExample.png}\includegraphics[height=0.2\columnwidth]{Betamax_SpecExample.png}
 \caption{Dual axis images.}
 \end{figure}
+
+
+
+If we have an asymmetric source that is elongated in one direction, the two views will reflect this as well. In Figure XX we see the elongated signal on the profile screen that is stretched in the horizontal. This was produced by a particularly bright burst of hard betatron radiation. The view integrating vertically shows the broad signal in the first rows. The view integrating along the horizontal axis sees a much more localised signal peak in one row as most of the energy is deposited by one crystal. 
+
+The spatial resolution of the profile screen is better but this enables a spectral analysis of different parts of the beams separately, and tracking the ellipticity of the decay. This is not further investigated in this context, but this a proof-of-principle that this detector is able to resolve the different dimensions and that the spectral retrieval can be done independently. 
+
+Previous results indicate that the ellipticity of the source can be used in ICS experiments to infer the intensity at the interaction in a model-independent way (REF BLACKBURN, UMSTADTER). Further studies indicate that the spectral distribution across the profile, on the other hand, is another observable that could help discriminating models of radiation reaction. This detector could be used for such a measurement in the future.
+
+
+
 
 \subsubsection{Correction curve using bremsstrahlung}
 
@@ -140,11 +163,11 @@ A well understood mechanism with spectrum covering a decent range is bremsstrahl
 In experiment electrons are accelerated using LWFA. The electrons are characterised. A foil of known material and thickness is then inserted into the path of the electrons. In the interaction bremsstrahlung is produced and the response of the gamma detector is recorded. 
 Depending on the thickness and choice of material the exact procedure changes a bit.
 
-In Chapter \ref{Chap:RR15} a 9 mm thick piece of lead was used as converter target. Electron energy is efficiently converted into radiation and a bright wide signal that covers the entire detector is produced. However, the electron energy can not be measured on-shot as the electrons are completely stopped. Instead the electron spectra and their fluctuations were characterised beforehand and an average spectrum was chosen as input for the corresponding GEANT simulation. Since the process is only weakly dependent on the spectral shape, this method is reasonable.
+In Chapter \ref{Chap:RR15}, a 9 mm thick piece of lead was used as converter target. Electron energy is efficiently converted into radiation and a bright wide signal that covers the entire detector is produced. However, the electron energy can not be measured on-shot as the electrons are completely stopped. Instead the electron spectra and their fluctuations were characterised beforehand and an average spectrum was chosen as input for the corresponding GEANT simulation. Since the process is only weakly dependent on the spectral shape, this method is reasonable.
 
-\EliasComm{What did I used for BW?}
+\EliasComm{What did I used for BW? Probably bismuth etc.}
 
-In Chapter \ref{Chap:linICS} 0.5 mm of PTFE were used as converter, which mainly just scatters the relativistic electrons and affects their spectrum very little, and the electrons can be measured on-shot. GEANT simulations have also confirmed that the impact on the e-beam is negligible. The radiation produced from this converter target is emitted in a narrow cone and covers maybe one row of crystals instead of the entire detector. This might require taking a range of shots to ensure sufficient coverage of all significant rows over the course of the dataset. This is particularly important if the assembled array and the setup is not very homogeneous. 
+In Chapter \ref{Chap:linICS} 1.6 mm of PTFE were used as converter, which mainly just scatters the relativistic electrons and affects their spectrum very little, and the electrons can be measured on-shot. GEANT simulations have also confirmed that the impact on the e-beam is negligible. The radiation produced from this converter target is emitted in a narrow cone and covers maybe one row of crystals instead of the entire detector. This might require taking a range of shots to ensure sufficient coverage of all significant rows over the course of the dataset. This is particularly important if the assembled array and the setup is not very homogeneous. 
 The exact on-shot electron spectra can then be used in GEANT to obtain a detector response that is more accurate than the one from the average spectrum.
 
 The divergent and bright signal is very useful for a homogeneous detector. For an inhomogeneous detector it is better to take enough data for all rows.
@@ -184,9 +207,6 @@ R_{corr}(i,j) = R_{exp}(i,j) c_{corr} (i,j).
 %\includegraphics[angle=-90, totalheight=0.5\columnwidth]{ScreenshotGEANT_DualAxis_Side.png}
 
 
-
-
-
 \subsubsection{Bremsstrahlung background estimate}
 
 Bremsstrahlung is a useful tool to calibrate the detector. However, it can also constitutes a physical noise source on the setups presented.
@@ -201,26 +221,23 @@ In Chapter \ref{Chap:RR15} a bright signal of inverse Compton scattering is prod
 
 In Chapter \ref{Chap:linICS} radiation from linear inverse Compton scattering is measured. The signal is bright but the energy is lower than in the previous cases. The bremsstrahlung noise contributes to a skewing of the distribution.
 
+In a naive attempt electrons of a range of energy were simulated in an interaction with 1 mm aluminium and the detector response was recorded. The 
+combined response based on the electron spectra measured did not align in any way with the simulations. This indicates that the noise production and directionality are more complicated. 
+
+Instead a range of non-collision or other radiation source shots was selected and their experimental response measured. Their total brightness scales linearly with QE2 of the electrons measured. In case of linear ICS the spectrum is unperturbed.
+
+Measured a range of background brems and averaged over normalised spectra. This shape was then taken and scaled according to the linear relationship found in the QE2 fit. The response was then subtracted from the detector response.
 
 
-... make background measurements and align with QE2 and scale accordingly
-
-\EliasComm{Need to check if this aligns.}
-
-\EliasComm{Need to check average brems response.}
-
-... check if this aligns with simulations of chamber material bremsstrahlung and if so, scale that with QE2 and weighted by the measured electron spectrum
-
-
-\subsubsection{Detector response for mono-energetic gamma rays}
+\subsubsection{Detector response for gamma-ray spectra}
 
 Since we now have a background-subtracted detector response and we determined a method to account for deviations from an idealised detector, we can now consider fitting a spectrum.
 
 To make this method very generalised, we will devise a method that works for different types of radiation sources with a different spectral shape.
 
 We will run the simulations similarly as before for the bremsstrahlung calibration, but now for mono-energetic gamma rays covering few to hundreds of MeV. The change in response in terms of energy deposition per longitudinal crystal row can be seen in Figure XX for up to 500 MeV gamma rays. Whereas for lower X-ray energies we expect an exponential decay in materials following Beer`s law, the detector response outlines a peak followed by a decay, moving further into the stack with higher energies. This is due to radiation cascading into showers of particles which then deposit energy. The position of this peak is hence an indicator of the length of this cascading and the energy of the radiation. It can be shifted by using lighter materials as dividers, placing additional material in front of the stack and adjusting the front plate.
-Figure XX shows the position of the peak energy deposition for different energies for a few geometries varying the separation material and the front plate or profile screen.
-The stack was defined as described in the simulation and looks like this in the viewer (ADD FIGURE).
+Figure XX shows the position of the peak energy deposition for different energies for a few geometries varying the separation material and the front plate or profile screen. By adding more materials before the stack, we shift the peak to earlier crystals as we trigger cascades earlier. By using less dense materials we delay the peak to later crystals or are able to stretch out the signal over a wider range.
+
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{EdepGEANTStack.png}\includegraphics[width=.5\columnwidth]{EdepMax_Cases.pdf}
@@ -233,12 +250,6 @@ The stack was defined as described in the simulation and looks like this in the 
 \EliasComm{Maybe compare lower energies with higher energies to show the shape changes.}
 
 \EliasComm{Change peak determination by smoothing out or so? Make the plot look less spiky.}
-
-... show that we can stretch out and compress this using more or less dense material in between
-
-... examples are with aluminium or plastic spacers, using gamma profile in front or steel plate/PTFE
-
-
 
 
 We now have a simulated energy deposition for a range of incoming photon energies in terms of energy deposition (assuming this is linear to light output) for crystals in longitudinal direction for a given photon energy. For each energy $E_i$ we get a array of deposited energies $\mathbf{R_i}$ in crystals $C_1$ to $C_n$ 
@@ -295,26 +306,17 @@ so the sum of responses for crystal $i$ for all energies weighted by the spectru
 
 Using this matrix multiplication and provided the grid is extensive and fine enough, any sort of spectral shape with relative weighting can be used to determine the response of the detector.
 
+Since this is a matrix operation, in theory one can invert the experimental result to extract the spectrum. Unfortunately, this is an ill posed problem due to the noise and the low sensitivity to smaller changes in the spectral shape makes this impossible by itself. We can assume a spectral shape, calculate the response for a range of parameters and find the best fit, for instance using a least-square fit. If we have another measurement of the spectrum, for instance using pair production, we can further constrain the spectral response.
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{GSpecFit_Example2D.png}
+\caption{Placeholder: XX FIGURE 2D PLOT AND FITTING.}
+\end{figure}
 
 
+In Figure XX we see for example the photon distribution of an exponential spectrum which also describes the high-energy tail end of a synchrotron spectrum (for instance applicable to Chapter \ref{Chap:RR15}. The simulated detector response is given, along with a well suited mono-energetic response which indicates the similarity of spectra despite originating from very different sources.
+
+In Figure XX we see how this simulated response is fitted to experimental data and a 2D least-square fit aimed at finding the best match by varying the amplitude and critical energy of the spectrum.
 
 
-... give example of an exponential spectrum or synchrotron
-
-... in theory can invert the experimental result to extract the spectrum but ill posed due to noise and low sensitivity to smaller changes, so not possible and need to constrain it with another measurement or know the spectral input
-
-... in reality do a least-square fit to the experimental (corrected) data (varying amplitude and `critical energy' or similar parameter)
-
-\EliasComm{Show 2D contour plot for this.}
-
-
-
-\subsubsection{Two-axis response and shapes}
-
-... here explaining that the two-axis scintillator stack is also working
-
-... show that we see from both sides the decay curves (similar) for bremsstrahlung (symmetric)
-
-... show that for an elongated signal will produce in one axis a distinct central decay and a stretched in the other axis
-
-\EliasComm{ADD FIGURE: two views for two different scenarios (brems vs. betamax)}
