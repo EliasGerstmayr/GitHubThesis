@@ -6,11 +6,16 @@
 
 ... overlapping in time and space helps for studies of nonlinearity
 
+... being used as laser wire
+
+... imaging capabilities
+
+... testing timing etc. for other experiment
+
 \section{Experimental Setup}
 
 This experiment was performed at the Astra Gemini facility in early 2019 using both laser arms of the dual laser beam facility.
 A sketch of the relevant components of the setup are shown in Figure \ref{LinICS:Fig:SetupBlend}.
-\vspace{\baselineskip}
 
 \begin{figure}
 \centering
@@ -27,14 +32,14 @@ The first laser pulse is focused with an f/40 off-axis parabola onto the edge of
 
 The exit of the gas jet was positioned $\sim 14\,\mathrm{mm}$ below the beam axis. A steel razor blade is introduced into the gas flow $\sim 4\,\mathrm{mm}$ above the jet at $- 32.4\pm 0.3^\circ$ angle in vertical direction relative to the laser axis to produce a shock front. The electron density without the shock feature was $1.5 \times 10^{18}\,\mathrm{cm}^{-3}$.
 
-The gas target was characterised on-shot by a transverse probe used as shadowgraphy and coupled to a Mach-Zehnder interferometry to determine the density. The beam was sourced from the transmission of the main beam through the first mirror, then re-collimated using an f/7 OAP and a lens to size XXX.
+The gas target was characterised on-shot by a transverse probe, split from the main driver beam, used as shadowgraphy and coupled to a Mach-Zehnder interferometer to determine the density. 
 The pathways are matched and a delay slide gives independent control over the timing.
 
-The gas target and recombination light of the plasma channel are also imaged by a Canon DSLR camera and a CCD chip from the top (Top View).
+The gas target and recombination light of the plasma channel are also imaged by a Canon DSLR camera from the side and a CCD camera from the roof of the chamber.
 
 \subsubsection{North beam}
 
-The second laser pulse is focused down tightly by an f/2 off-axis parabola (OAP) at the opposite of the gas jet in a geometry for head-on collisions. The f/2 OAP has a 21-mm-diameter hole in the centre to allow the electrons and radiation from ICS to propagate through. A round piece of plastic with radius $28\,\mathrm{mm}$ is also fitted around the hole to protect the optic from scattered light from the first laser. This reduces the on-target intensity by 16 degrees assuming a perfect top-hat laser profile. To protect the optic from potential debris a thin plastic layer with anti-reflective coating with a hole is attached to the OAP mount. The minimum spot size reached was about XX NUMBER, which translates into a peak normalised vector potential of $a_0$ ~ NUMBER (400 micron at interaction). The laser is linearly polarised in the vertical plane. The beam can be defocused to larger spot sizes which makes an interaction less intense.
+The second laser pulse is focused down tightly by an f/2 off-axis parabola (OAP) at the opposite of the gas jet in a geometry for head-on collisions. The f/2 OAP has a 21-mm-diameter hole in the centre to allow the electrons and radiation from ICS to propagate through. A round piece of plastic with radius $28\,\mathrm{mm}$ is also fitted around the hole to protect the optic from scattered light from the first laser. This reduces the on-target intensity by 16 degrees assuming a perfect top-hat laser profile. To protect the optic from potential debris a thin plastic layer with anti-reflective coating with a hole is attached to the OAP mount. The minimum spot size reached was about XX NUMBER, which translates into a peak normalised vector potential of $a_0$ ~ NUMBER (400 micron at interaction). In the dataset presented, the beam size is defocused at about 400 micron size diameter, which translates into XX a0 at the interaction. The laser is linearly polarised in the vertical plane.
 
 \subsubsection{Two-beam timing}
 
@@ -46,66 +51,144 @@ The in-chamber transmitted beams are also used as pointing references.
 
 \subsubsection{Particle and Radiation diagnostics}
 
-The radiation and the electrons propagate through the hole in the f/2 OAP into a large aperture ($\sim 10\,\mathrm{cm} \times 60\,\mathrm{cm}$ ) permanent dipole magnet\footnote{designed by Dominik Hollatz (Jena)} of integrated magnet field $\int B(x) \mathrm{d}x = 0.35\,\mathrm{Tm}$. A linear translation stage carrying high-Z metal converter targets can be driven into the beam path to intercept the electron beam and to produce gamma radiation from bremsstrahlung. Targets were tungsten, bismuth on PTFE XX CHECK THESE BITS.
+The radiation and the electrons propagate through the hole in the f/2 OAP into a large aperture ($\sim 10\,\mathrm{cm} \times 60\,\mathrm{cm}$ ) permanent dipole magnet\footnote{designed by Dominik Hollatz (Jena)} of integrated magnet field $\int B(x) \mathrm{d}x = 0.35\,\mathrm{Tm}$. A linear translation stage carrying high-Z metal converter targets (bismuth, tungsten) can be driven into the beam path to intercept the electron beam and to produce gamma radiation from bremsstrahlung. As alternative a low-Z 1.6 mm thick PTFE target is available, too, to allow synchronous electron and gamma-ray measurements.
+
 The electrons are dispersed spectrally in the horizontal plane and leave the vacuum chamber through a two-layer vacuum window\footnote{designed and tested by Mechanical Engineering CLF, in particular Daniel Treverrow.} of dimensions $580 \,\mathrm{mm} \times 70\,\mathrm{mm}$. The inside layer is $25\,\mathrm{\mu m}$ of kapton with $375\,\mathrm{\mu m}$ of kevlar to provide additional mechanical stability and a fibre layer that holds as failsafe.
 A scintillating LANEX screen placed just after the window measures the spectrum with very little scattering from the window due to the short drift distance. A second LANEX screen measures the spectrum about 1 m further downstream and can be used to account for pointing of the beam.
-The electron spectrum is cut off at around 200 MeV as lower energetic electrons hit the yoke of the magnet and do not make out of the magnet.
-Both screens are imaged by Andor Neo cameras with a third camera looking at a smaller part of the first screen.
+The electron spectrum is cut off at around 200 MeV due to the limiting aperture of the magnet: lower energetic electrons collide with the yoke from the inside and do not leave the magnet
+.
+Both screens are imaged by Andor Neo cameras with a third camera looking at a smaller region of interest on the first screen.
 \vspace{\baselineskip}
 
-The radiation propagates straight through the aperture of the magnet, an $120\,\mathrm{\mu m}$ aluminium beam block and the kevlar-kapton window. Bright radiation is also captured by the first LANEX screen as it extends beyond the axis. A scintillating stack of caesium-iodide (CsI) crystals is measuring the profile of the radiation at the plane of the second LANEX screen (two on top of each other? EXACT DIMENSIONS DESY AND JENA). Another long stack of crystals can be used to retrieve the spectrum of the radiation (DUAL AXIS DIMENSIONS), both imaged by Andor iXon cameras. Both diagnostics are described in more detail in the Methods section and their GEANT modelling in the simulations chapter.
+The radiation propagates straight through the aperture of the magnet, then through a $120\,\mathrm{\mu m}$ aluminium beam block and the kevlar-kapton window. Bright radiation is also captured by the first LANEX screen as it extends beyond the axis. A scintillating stack of caesium-iodide (CsI) crystals is measuring the profile of the radiation at the plane of the second LANEX screen (two on top of each other? EXACT DIMENSIONS DESY AND JENA). Another long stack of crystals can be used to retrieve the spectrum of the radiation (DUAL AXIS DIMENSIONS), both imaged by Andor iXon cameras. Both diagnostics are described in more detail in the Methods section and their GEANT modelling in the simulations chapter.
 
 \section{Characterising Electron Spectra}
 
-... Variety of electron spectra in terms of maximum energy and energy spread
+The electron spectra measured in this experiment were produced by producing a shock in the supersonic gas flow.
 
-... different injection mechanisms as well (have some interactions with self-injection or ionisation injection)
+The spectra have a wide range of shapes, maximum energy and energy spread. Some examples of 100's of electron spectra used in the collisions are provided in Figure XX. The properties and the irregularity of the results is somewhat different to previous shock injection results at less powerful laser systems, all at the same blade position. This will be addressed in a separate publication.
+
+Maximum energies are at around 1.3 GeV, with energies varying to 800 MeV.
+
+CHARGE XX? is relatively high and ionisation injection/self injection on the same laser system and the same experiment have produced less charge XX NUMBER.
+
+DIVERGENCE CHECK DISTANCE.
+
+
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Example_Espec_CollisionMontage.png}
+\caption{Example Especs, not in shooting order.}
+\end{figure}
+
+
+
 
 \section{Linear ICS and Nonlinearity}
 
-... Use some of the examples and calculate the response according to linear ICS
+Based on energy and a raster scan the size of the laser is 400 um. This gives us an a0 of XX which is well below 1.
 
-... show linear ICS equation
+Given intensity of the interaction, we propose linear ICS as mechanism with an unperturbed electron beam.
 
-... also given in Theory.
+Based that this is at a0 << 1, we will for now ignore non-linear effects.
+Linear ICS in a head-on collision scenario predicts that photons will be emitted in a narrow 1/gamma cone at 
 
 \begin{equation}
-E_{ph}' = 2\gamma^2 (1-\cos\theta) E_{ph}
+E_{ph}' =4\gamma^2 E_{ph}
 \end{equation}
 
-... Discuss the variety of those 
+For a Ti:Sa system at 1.55 eV central photon energy this converts XX into XX, see Figure XX.
+\EliasComm{Make plot of Ephoton against electron energy}
 
-... Now for a range of $a_0$ show what the impact of nonlinearity would be in terms of broadening, redshift, harmonic
+Treat this as a 1-to-1 mapping of the spectra.
+Using some of the examples shown in the previous section and the linear ICS spectrum (assuming over the energy range radiation is produced equally).
 
-... maybe for one example add a plot of linear, weakly and moderately non-linear (based on redshift and harmonics)
+Check whether the cross section is very energy-dependent. I think it is a constant Thomson cross section and just the angle changes.
 
+
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Example_Espec_CollisionICSMontage.png}
+\caption{Example Espec to ICS radiation. Maybe replace this with one main plot and different X-axis (one for electron energy, second for photon energy, plot second harmonic in red/other colour matching second x-axis.}
+\end{figure}
+
+For the first harmonic this gives in some cases narrow-energy radiation of 35 MeV with 4 MeV.
+In other case this gives broadband radiation of few to 20 MeV radiation which is of interest for industrial applications.
+
+In reality range of angles due to focusing effect and divergent electron beam.
+
+In this regime nonlinear effects are not important and can be neglected.
+
+For future experiments, this setup is in principle able to produce high-intensity interactions.
+
+For this purpose, now for a range of $a_0$ show what the impact of nonlinearity would be in terms of broadening, redshift, harmonic.
+Show an example of linear with weakly and moderately non-linear (based on redshift and harmonics)
+\begin{figure}
+\centering
+\includegraphics[width=1.0\columnwidth]{PlaceHolder_perturbedResponse.png}
+\caption{This is to indicate change in response.}
+\end{figure}
 
 \section{Spectral Retrieval for linear ICS}
 
 ... show the profile screen and gamma spec raw data
 
-... link this to Methods and briefly say a few things on the simulations and the fitting
 
+To measure the spectrum a CsI stack was used. The simulation of the detector response and the experimental calibration was done as described in Methods XX. In this case the spectral fitting is performed by assuming a 1-to-1 mapping of the spectra. As a comparison a mono-energetic photon is used to see a similar response.
 ... how to decide on successful collisions? Is that something too early to mention in this Chapter?
 
 ... use the linear spectra for the examples to fit to the response
 
-... try to perturb with nonlinearity and see whether it finds better, give estimate of $a_0$
+... show that mono-energetic is also a good fit, so the response is dominated by the highest counts of photons, so without knowing the input is difficult
+
+
+
+... try to perturb with nonlinearity and see whether it finds better, give estimate of $a_0$ (not good)
+.. try to see when it would start to become visible and estimate an intensity (this could be used as intensity estimate, which it will be used for in the other section).
+
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\columnwidth]{PlaceHolder_perturbedResponse.png}
+\caption{This is for real experimental data.}
+\end{figure}
 
 ... energy deposition in one line? For linear ICS this should be fairly straightforward.
 
+... peak energy for the lot?
 
 \section{Using ICS as electron diagnostics}
 
-... ICS is acting as laser wire and gives pointing reference on each shot
+ICS is a useful source of radiation. In the linear regime and at these energies the beam is not perturbed and the energy loss is small compared to the energy of the electrons. For instance, a 1200 MeV electron beam emitting one photon loses at most 34 MeV, which is less than 3 percent, well below the measurement accuracy.
 
-... this is something Dominik Hollatz (Jena) is working on
+Since it does not perturb the electron beam and only interacts with some electrons due to the low photon density, ICS has been used previously as beam diagnostic as laser wire in recognition of a physical wire.
+Due to the Lorentz boost radiation in ICS is emitted in a narrow forward cone and is hence dominated by the bunch itself. This means a head-on collision is acting similarly to an electron profile screen and represents a longitudinal integration of the transverse shape. In contrast to a profile lanex screen this does not scatter the beam (or only a small fraction). This could be used as pointing reference whenever the beam is expanded and an overlap is guaranteed.
 
-... screen covering the axis with lanex
+This is something Dominik Hollatz (Jena) is working on, analysis pending for FUTURE REF PUB
 
-... second screen on plane with CsI profile screen to see reference/laser axis
+On one hand this can be used as on-shot pointing reference if the lanex is placed in the same plane or it can be correlated, to know where the beam axis is.
 
-...in linear regime divergence is 1/gamma from the scattering process and will be in direction of the electron beam (so more reliable than a betatron reference)
+In addition, this is more reliably telling us the pointing than betatron radiation. We can use this to characterise the beam.
+
+We compare divergence on espec screen and in the same axis on profile screen (dispersion direction is horizontal). This should match up (check distances).
+
+Let us consider a few interesting shots (20190208r015s212 with double bits, sligthly tilted shots, 20190208r015s037 for oscillations indicative only in one axis).
+
+For now we assume naively that the integrated spectrum will then correspond to the horizontally integrated signal on the CsI profile screen. There is a slight weighting factor as the higher energy radiation will deposit more energy (convert Espec to ICS, then find linear scale for energy deposition to restore the shape).
+
+We see that a small beam with some off-axis charge is recognised by the screen.
+
+We see that a beam with large oscillations shows up as elongated profile which implies that it does not oscillate much in the other direction.
+
+We see that a slightly bent beam shows up as tilted ellipse which indicates that the kink in the beam is in two dimensions.
+
+These examples show that it can reveal, given enough energy and homogeneous illumination and spatial resolution, some information about the properties of the electron beam beyond the dispersion axis without perturbation.
+
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Example_LaserWire.png}
+\caption{Laser Wire example Espec and Gamma Profile for off-axis charge.}
+\end{figure}
 
 
 
