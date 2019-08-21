@@ -54,13 +54,18 @@ The in-chamber transmitted beams are also used as pointing references.
 The radiation and the electrons propagate through the hole in the f/2 OAP into a large aperture ($\sim 10\,\mathrm{cm} \times 60\,\mathrm{cm}$ ) permanent dipole magnet\footnote{designed by Dominik Hollatz (Jena)} of integrated magnet field $\int B(x) \mathrm{d}x = 0.35\,\mathrm{Tm}$. A linear translation stage carrying high-Z metal converter targets (bismuth, tungsten) can be driven into the beam path to intercept the electron beam and to produce gamma radiation from bremsstrahlung. As alternative a low-Z 1.6 mm thick PTFE target is available, too, to allow synchronous electron and gamma-ray measurements.
 
 The electrons are dispersed spectrally in the horizontal plane and leave the vacuum chamber through a two-layer vacuum window\footnote{designed and tested by Mechanical Engineering CLF, in particular Daniel Treverrow.} of dimensions $580 \,\mathrm{mm} \times 70\,\mathrm{mm}$. The inside layer is $25\,\mathrm{\mu m}$ of kapton with $375\,\mathrm{\mu m}$ of kevlar to provide additional mechanical stability and a fibre layer that holds as failsafe.
-A scintillating LANEX screen placed just after the window measures the spectrum with very little scattering from the window due to the short drift distance. A second LANEX screen measures the spectrum about 1 m further downstream and can be used to account for pointing of the beam.
-The electron spectrum is cut off at around 200 MeV due to the limiting aperture of the magnet: lower energetic electrons collide with the yoke from the inside and do not leave the magnet
-.
+A scintillating LANEX screen placed just after the window measures the spectrum with very little scattering from the window due to the short drift distance. This is $1.61\,\mathrm{m}$ from the interaction point. A second LANEX screen measures the spectrum $700\,\mathrm{mm}$ further downstream and can be used to account for pointing of the beam.
+The electron spectrum is cut off at around 200 MeV due to the limiting aperture of the magnet: lower energetic electrons collide with the yoke from the inside and do not leave the magnet.
 Both screens are imaged by Andor Neo cameras with a third camera looking at a smaller region of interest on the first screen.
 \vspace{\baselineskip}
 
 The radiation propagates straight through the aperture of the magnet, then through a $120\,\mathrm{\mu m}$ aluminium beam block and the kevlar-kapton window. Bright radiation is also captured by the first LANEX screen as it extends beyond the axis. A scintillating stack of caesium-iodide (CsI) crystals is measuring the profile of the radiation at the plane of the second LANEX screen at XX DISTANCE, details can be found in METHODS XX JENA STACK. XX DISTANCE DOWNSTREAM Another long stack of crystals can be used to retrieve the spectrum of the radiation (DUAL AXIS DIMENSIONS), both imaged by Andor iXon cameras. Both diagnostics are described in more detail in the Methods section and their GEANT modelling in the simulations chapter.
+\vspace{\baselineskip}
+
+
+The aperture of the magnet permits a field-of-view of $79\,\mathrm{mrad}$ (10cm/1.26m) and is hence less limiting than the OAP hole. On the laser axis a beam block of $10-12$ layers of standard kitchen aluminium foil of thickness $10.1 \pm 0.2 \,\mathrm{\mu m}$ each is attached to the kevlar-kapton window. Hard X-rays continue to propagate through the aluminium beam block and the vacuum window (permitting a FOV of $70/1.61 = 43.4 mrad$ , the LANEX screen that also covers the axis and are then after $700\,\mathrm{mm}$ incident on a $45 \times 45$ array of $1\,\mathrm{mm} \times 1\,\mathrm{mm} \times 10 \,\mathrm{mm}$ scintillating caesium-iodide crystals coated in $TiO_2$ that record the beam profile of the radiation burst. The top part of the stack is centred on the beam axis. The total stack covers $54.2/2.31 = 23.4\,\mathrm{mrad}$. A second $30 \times 30$ stack of  $1.5\,\mathrm{mm} \times 1.5\,\mathrm{mm} \times 10 \,\mathrm{mm}$ CsI crystals is placed on top of the other one, covering another $51.2\,\mathrm{mm}$ or $22.2\,\mathrm{mrad}$. Harder radiation propagates another $704\,\mathrm{mm}$ before hitting another array of caesium-idodide crystals (see Methods for dual axis spectrometer) with an aluminium front-plate that are arranged in longitudinal direction to measure the spectrum of the radiation. The front part of the spectrometer then catches $XX/3m$ FOV. The emission of the caesium-iodide crystals is imaged by Andor iXon cameras.
+
+
 
 \section{Characterising Electron Spectra}
 
@@ -157,6 +162,8 @@ To measure the spectrum a CsI stack was used. The simulation of the detector res
 
 ... peak energy for the lot?
 
+... in this energy range a converter gamma spectrometer would work very well (depending on the converter Li or so?)
+
 \section{Using ICS as electron diagnostics}
 
 ICS is a useful source of radiation. In the linear regime and at these energies the beam is not perturbed and the energy loss is small compared to the energy of the electrons. For instance, a 1200 MeV electron beam emitting one photon loses at most 34 MeV, which is less than 3 percent, well below the measurement accuracy.
@@ -191,5 +198,15 @@ These examples show that it can reveal, given enough energy and homogeneous illu
 \end{figure}
 
 
+This is also of interest as we know from PUBLICATION A0 (WITH OR WITHOUT TOM BLACKBURN) that we can infer a0 from the ellipticity of the gamma signal. If we can properly characterise the fluctuations in the pointing and ellipticity, we can also be reassured about which portion is due to source size and which is due to intensity.
+
+
+... estimate what kind of intensity we would require if used the beam more economically.
+
+... spatial resolution is 1 mm over 2.31 m, so 0.43 mrad. In theory can magnify geometrically.
+
+... scattering? Does MeV radiation scatter significantly through these thin and low Z materials?
+
+... are the intensities matching up?
 
 \section{Conclusion}

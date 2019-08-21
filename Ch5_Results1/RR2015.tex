@@ -33,7 +33,7 @@ A single intense laser pulse can be used to accelerate electrons to relativistic
 By now the highest recorded gamma-ray energies from ICS in LWFA using this scheme have reported in \cite{Shaw2017_ICS} reaching up to $85 \,\mathrm{MeV}$ photon energies in a collision with electrons at energies up to $2\,\mathrm{GeV}$.
 \vspace{\baselineskip}
 
-Whilst this technique avoids issues with timing and overlap, the intensity of the laser pulse is limited as it is partly depleted when interacting with the electron bunch after driving a wake and is typically not tightly focused. At the same time the acceleration can not be pushed to its depletion limit as the laser pulse has to remain intense enough for a suitable interaction. Further problems might arise as controlling or measuring the wavefront of the depleted laser pulse is challenging. The electrons will also produce radiation from bremsstrahlung when passing through the plasma mirror, which overlays the ICS signal, although in \cite{Tsai2015_ICS} the measured signal was deemed to be insignificant.
+Whilst this technique avoids issues with timing and overlap, the intensity of the laser pulse is limited as it is partly depleted when interacting with the electron bunch after driving a wake and is typically not tightly focused. At the same time the acceleration can not be pushed to its depletion limit as the laser pulse has to remain intense enough for a suitable interaction. Further problems might arise as controlling or measuring the wavefront of the depleted laser pulse is challenging. The electrons will also produce radiation from bremsstrahlung when passing through the plasma mirror, which overlays the ICS signal, although in \cite{Tsai2015_ICS} the measured signal was claimed to be insignificant.
 These details are important for a detailed measurement of radiation reaction, but might be secondary concerns if a well-defined spectrum is not crucial for the application.
 At facilities housing the next generation of real PW-class lasers, the reflective scheme will still be able to yield very promising results to probe radiation reaction.
 
@@ -93,7 +93,7 @@ Considering a larger dataset the statistical fluctuations of the spectral featur
 Then key results from the analysis of the gamma spectra, first performed by Jason Cole (Imperial College London) and Keegan Behm (University of Michigan), are introduced. The spectra are deduced by simulating the response of an extended CsI scintillator stack to gamma radiation and comparing this to the measured signal. Details on the analysis can be found in \cite{Behm2018_Gamma},\cite{Cole2018_RR} or also in the \nameref{Chap:Methods} Chapter of this thesis.
 
 The critical energy of the gamma spectrum is significantly higher on shots without the scattering laser as the detector response is dominated by bremsstrahlung. The critical energies of the 4 identified collisions are anti-correlated with the electron energy, all below $500\,\mathrm{MeV}$ which is not consistent with radiation produced after measuring the energy of the electron beam.
-The chance for this to occur is 1 in 3000. This supports further that we have measured radiation reaction.
+The chance for this to occur is 1 in 3000. This supports the hypothesis further that we have measured radiation reaction.
 \vspace{\baselineskip}
 
 Combining all of the previous results, we can confidently state that we successfully collided the electron beam with the laser pulse and that radiation reaction was measured. The inferred energy loss and the corresponding gamma spectra are placed in the context of different radiation reaction models. The measurements are in general agreement with models including energy loss from radiation reaction. At the $1 \sigma$ confidence level the data points agree better with the models including quantum corrections, but at these experiment parameters and uncertainties the models with and without quantum corrections overlap strongly.
@@ -220,7 +220,7 @@ S_{ICS, norm} = \frac{S_{ICS,rel}}{\sigma_{BG}}
 
 
 In Figure \ref{Results:Figs:NullColl:DeltaCsIVsSigmaE2+CsIVsE2} the shots are lined up in the order their data was taken in the experiment. The normalised signal above expected background, $S_{ICS, norm}$, is indicated on the y-axis. The y-axis now encapsulates the information of both the gamma signal and the electron spectrum.
-As we can see most of the shots follow the expected trend within 2 standard deviations, with some exceeding the signal. 4 shots show a signal more than 5 standard deviations higher signal than expected from background. Based on a normal distribution the probability for one shot to be as bright as 5 standard deviations above the mean background is 1 in 3500000, which is very unlikely and hence a suitable confirmation that we have identified 4 successful collisions. 
+As we can see most of the shots follow the expected trend within 2 standard deviations, with some exceeding the signal. 4 shots show a signal more than 5 standard deviations higher signal than expected from background. Based on a normal distribution the probability for one shot to be as bright as 5 standard deviations above the mean background is 1 in 3,500,000. This is very unlikely and hence a suitable confirmation that we have identified 4 successful collisions. 
 
 This method not only allows the identification of successful collisions, but on the other hand enables us to also identify collisions where ICS was negligible if the signal aligns well enough with the background estimate. 
 
@@ -415,20 +415,20 @@ Both measurements (gamma-rays and electron energy loss) seem to be indicating th
 
 \subsubsection{Explaining lower laser intensity at the interaction}
 
-The intensity of the laser pulse is significantly lower than the peak $a_0$ achievable in this geometry. This indicates XX.
+The intensity of the laser pulse is significantly lower than the peak $a_0$ achievable in this geometry. Since the energy calibration are reliable, this indicates a spatio-temporal offset and that the interaction is not occurring at the focal plane of the laser.
 
 The two laser pulses were synchronised at vacuum using spatial interferometry to an estimated accuracy of $30\,\mathrm{fs}$. This timing is only valid if both laser pulses travel through vacuum. In a shooting scenario, however, the driving laser pulse propagates through plasma to accelerate electrons via LWFA. The propagation in a medium reduces the group velocity of the laser pulse and delays its arrival relative to the vacuum timing.
 In addition, we are trying to overlap the scattering beam with the electrons accelerated by the driver pulse, not the driver itself. The LWFA electron bunch trails behind the driving laser pulse and arrives even later at the interaction point. Since the scattering beam arrives before both at its focal plane and the designated interaction point, the real collision will occur beyond this point and at a slightly defocused spot size. 
 To estimate the intensity of the laser pulse at the interaction we have to determine the real collision point and the size of the scattering beam at this plane. 
 \vspace{\baselineskip}
 
-The following analysis is based on Jason Cole (Imperial College) for \cite{Cole2018_RR}.
+The following analysis is explicitly deriving Equation 2 in \cite{Cole2018_RR} and is based on work by Jason Cole (Imperial College).
 We assume that the laser pulse travels through the plasma at the standard non-linear group velocity reduced by the etching velocity, $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$ (called front velocity in \cite{Decker1996_FV}). Given a medium of thickness $d$ the laser pulse of the scattering beam travels in the same time a distance  $d'=d c/v_f > d$.
 
 Both laser pulses now meet a distance $\delta z_1$ past the focal plane of the scattering beam:
 
 \begin{equation}
-\delta z_1 = \frac{1}{2} \left(d \frac{c}{v_f} - d\right) = \frac{d}{2} \left(1/\left(1-\frac{3}{2} \frac{n_e}{n_c}\right) -1\right) \approx \frac{d}{2}\left(1+\frac{3}{2} \frac{n_e}{n_c} -1\right) = \frac{3d}{4}\frac{n_e}{n_c}.
+\delta z_1 = \frac{1}{2} \left(d \frac{c}{v_f} - d\right) = \frac{d}{2} \left(\left(1-\frac{3}{2} \frac{n_e}{n_c}\right)^{-1} -1\right) \approx \frac{d}{2}\left(1+\frac{3}{2} \frac{n_e}{n_c} -1\right) = \frac{3d}{4}\frac{n_e}{n_c}.
 \end{equation} 
 
 The electrons in turn trail behind the driving laser pulse around N plasma wavelengths and meet the scattering pulse midway:
@@ -445,7 +445,7 @@ Under these assumptions the electron bunch and the scattering beam meet at $\del
 where in this context $d$ is the distance of the injection point from the front of the gas jet.
 \vspace{\baselineskip}
 
-For a density of XX ...
+For an electron density of $3.7 \times 10^{18}\,\mathrm{cm}^{-3}$.
 This amount of defocus then reaches an average intensity of NUMBER 12 instead of the peak intensity of close to 25 possible in this setup. We expect that the injection point varies depending on the evolution of the laser pulse on top of timing jitter. The fluctuation of relative timing and spatial overlap then results in a spread of interaction conditions.
 
 \subsubsection{Estimating Collision Probability based on Jitter}
@@ -529,7 +529,7 @@ A typical electron spectrum produced from the gas cell target can be seen in Fig
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{Example_RR15Poder.png}
-\caption[]{Example of a typical electron spectrum.}
+\caption[]{Example of a typical electron spectrum taken on this experiment. The distinct lines in the spectrum are edges of a second layer of lanex.}
 \label{fig:Poder_espec_example}
 \end{figure}
 
