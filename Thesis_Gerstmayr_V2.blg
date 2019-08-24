@@ -4,7 +4,7 @@ The top-level auxiliary file: Thesis_Gerstmayr_V2.aux
 A level-1 auxiliary file: Ch1_Introduction/Introduction.aux
 A level-1 auxiliary file: Ch2_Theory/Theoretical_Background.aux
 A level-1 auxiliary file: Ch3_Methods/Experimental_Methods.aux
-A level-1 auxiliary file: Ch8_Results4/RR2019_betamax.aux
+A level-1 auxiliary file: Ch4_Simulations/Gamma_Spectrometer.aux
 A level-1 auxiliary file: Ch7_Results3/RR2019_linICS.aux
 A level-1 auxiliary file: Ch5_Results1/RR2015.aux
 A level-1 auxiliary file: Ch6_Results2/BW2018.aux
@@ -37,7 +37,6 @@ Warning--I didn't find a database entry for "Buck2013"
 Warning--I didn't find a database entry for "Hidding2012b"
 Warning--I didn't find a database entry for "Mangles2009"
 Warning--I didn't find a database entry for "Seryi2015"
-Warning--I didn't find a database entry for "Ribeyre2016_GammaGamma"
 Warning--I didn't find a database entry for "Wilks2001"
 Warning--I didn't find a database entry for "Maksimchuk2000"
 Warning--I didn't find a database entry for "Semushin2001"
@@ -54,47 +53,46 @@ Warning--I didn't find a database entry for "Vargas2014"
 Warning--I didn't find a database entry for "Rousse2004"
 Warning--I didn't find a database entry for "Agostinelli2003"
 Warning--I didn't find a database entry for "Goorley2012"
-Warning--I didn't find a database entry for "Bulla1996_RR"
 Warning--empty journal in Heitler1954_BH
-You've used 96 entries,
+You've used 99 entries,
             1791 wiz_defined-function locations,
-            1145 strings with 31581 characters,
-and the built_in function-call counts, 30734 in all, are:
-= -- 2009
-> -- 2866
+            1157 strings with 32209 characters,
+and the built_in function-call counts, 31553 in all, are:
+= -- 2063
+> -- 2940
 < -- 4
-+ -- 991
-- -- 895
-* -- 2995
-:= -- 5480
-add.period$ -- 289
-call.type$ -- 96
-change.case$ -- 87
++ -- 1017
+- -- 918
+* -- 3073
+:= -- 5632
+add.period$ -- 298
+call.type$ -- 99
+change.case$ -- 89
 chr.to.int$ -- 0
-cite$ -- 97
-duplicate$ -- 971
-empty$ -- 2158
-format.name$ -- 895
-if$ -- 6236
+cite$ -- 100
+duplicate$ -- 996
+empty$ -- 2217
+format.name$ -- 918
+if$ -- 6400
 int.to.chr$ -- 0
-int.to.str$ -- 96
-missing$ -- 95
-newline$ -- 483
-num.names$ -- 96
-pop$ -- 149
+int.to.str$ -- 99
+missing$ -- 97
+newline$ -- 498
+num.names$ -- 99
+pop$ -- 153
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 443
+skip$ -- 451
 stack$ -- 0
-substring$ -- 1741
-swap$ -- 207
+substring$ -- 1786
+swap$ -- 210
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 199
-width$ -- 98
-write$ -- 1052
-(There were 36 warnings)
+while$ -- 204
+width$ -- 101
+write$ -- 1085
+(There were 34 warnings)

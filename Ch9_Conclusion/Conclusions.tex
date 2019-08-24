@@ -1,6 +1,7 @@
 
 \chapter{Conclusion}
 
+\section{Summary of Results}
 
 ... LWFA is versatile radiation source (betatron, linear ICS, non-linear ICS, bremsstrahlung)
 
@@ -37,6 +38,15 @@
 ... combining the spectral measurement with the electron statistical analysis and other observables we can do better measurements of RR, even at existing sub-PW facilities
 
 
+
+\section{Experimental Setup for Future RR campaign}
+
+... reaching a regime where QED effects become relevant as the `quantumness' parameter $\eta$, indicating how much the interaction is dominated by QED effects \cite{Bell2008_PairsEta,Blackburn2014_QRR}, approaches values close to $1$. In this regime we expect gamma rays to be produced early in the interaction that can then combine with the copious amounts of laser photons available to produce electron-positron pairs \cite{Blackburn2017_pairs}.
+... At the same time, this work in conjunction with \cite{Arran2019_RR_PPCF,Arran2019_RR_SPIE} indicates that by improving the electron beam quality differences in models can be measured even at comparable laser and electron energies, giving future experiments at Gemini or comparable laser facilities the opportunity to bridge the gap between these first measurements of radiation reaction and the future projects being worked on at the next generation experiments.
+
+Future experiments at conventional facilities SFQED (SLAC), LUXE (Hamburg), Cala (Munich) but also at high intensity laser facilities at even more non-linear conditions at CORELS (Gwangju), ELI pillars, Munich (FOR), maybe Gemini again, EPAC, APOLLON will be able to take precision measurements.		
+
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\columnwidth]{RR20_ExpSetup.png}
@@ -44,9 +54,13 @@
 \label{Concl:Fig:FutureExp}
 \end{figure}
 
+
+
+
+
 ... all set for another attempt, for instance using a setup as shown in Figure \ref{Concl:Fig:FutureExp}.
 
-\EliasComm{Make plot (Blender) of a future experiment setup including all the new diagnostics and indicating role of components. Interesting measurements (draw up new experiment plan basically, same as before plus another gamma detector).}
+\EliasComm{Make plot (Blender) of a future experiment setup including all the new diagnostics and indicating role of components. Interesting measurements (draw up new experiment plan basically, same as before plus another gamma detector). Somewhat like a proposal for a new experiment? Challenges and experience answers?}
 
 \subsubsection{Interaction Point (TCC)}
 
@@ -103,6 +117,8 @@
 
 ... single particle CsI measurement
 
+... tungsten blob for positron calibration?
+
 \subsubsection{Laser diagnostics}
 
 ... on-shot spectral interferometry timing
@@ -111,6 +127,47 @@
 
 ... on-shot energy measurement
 
-... control over polarisation and measuring diagnostic
+... control over polarisation (has been fielded as well) and measuring diagnostic (this has been fielded)
+
+... waveplate on rotary plate
 
 ... focal spot cameras
+
+\subsubsection{Designing a full setup}
+
+... decide whether this would be just RR or if it actually would make sense to do this for a BW setup as well to round things off.
+Most of the diagnostics would work both ways.
+
+.. however, the BW setup does not require an a0 measurement and dual-axis resolution. The important part could be the improved spectral measurement, but if we mitigate the targetry, this would be okay. Maybe we can argue that the setup is already quite complicated. Here it would be better to leave the back-end constant (shielding and noise is a sensitive issue), but improve the signal by using more charge (could consider shock injection if the control is better as the charge is much higher than in the case of self- and ionisation injection PROVIDE SOME NUMBERS FROM LINEAR ICS AS DIRECT COMPARISON).
+
+.. mitigate effects:
+
+... X-rays can only be measured in a narrow window (700eV), so cut out the signal under the measurement as before using plastic tape
+
+... above we need to be sure how the spectrum behaves. It is hard to cut above but not below.
+
+... a second X-ray camera to measure a part of the higher energy spectrum. Would it be enough without overlap (can't do overlap unfortunately...), would there be an issue with higher orders?
+
+... is resolution or range more important? How much further away would we have to be to measure the full range?
+
+... is the range of angles a problem? If so, can we add a spatial collimator also for the tape target (would produce noise again...)
+
+\subsubsection{Procedure}
+
+.. raster scan and analysis of data?
+
+... or is this too specific?
+
+\subsubsection{Measurement goals}
+
+... measurement goal and requirements/challenges?
+
+... a0 measurements and polarisation dependency
+
+... discriminating radiation reaction and no radiation reaction to 5 sigma (using a stable charge beam and at 1.2 GeV at least)
+
+... estimate number of shots based on previous estimate
+
+... discriminate semi-classical and stochastic measurement by look at change in energy width (requires narrow energy spread and stability, see C ARRAN RESULTS)
+
+... measuring pair production: need 2 GeV at least, so need longer target, and high intensity so can not use cell.
