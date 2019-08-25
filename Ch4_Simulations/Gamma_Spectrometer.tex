@@ -49,7 +49,7 @@ In the experiments described in this thesis, three versions of longitudinally ex
 \begin{figure}
 \centering
 \includegraphics[width=0.8\columnwidth]{render_closeup_whitebg.png}
-\caption{Sketch of setup}
+\caption{Sketch of a gamma spectrometer setup in an experiment. The gamma rays (green) traverse from the left a vacuum window (orange) and then in air through a lead collimator onto an array of scintillators (yellow) housed in a casing. The stack is predominantly extended in the longitudinal direction but also has one transverse dimension it resolves. A camera directly images the open side of the scintillators. }
 \end{figure}
 
 The $5 \times 5\,\mathrm{mm}$ sides of the crystals facing in transverse direction relative to the propagation of the radiation are imaged by CCD cameras, in this case Andor iXon cameras equipped with suitable objectives and bandpass filters to filter out stray light were used. Andor iXon cameras are very sensitive and allow for high gain, but require efficient light shielding to make use of this feature. Ideally the imaging is without significant aberrations and use the chip efficiently normal imaging is favoured as the collection efficiency will be better, also without mirrors is better but better mirror than camera in the beam path.
@@ -61,7 +61,7 @@ A sketch of the principal setup is shown in Figure XX. Examples of detector imag
 \begin{figure}
 \centering
 \includegraphics[height=0.3\columnwidth]{scintillator.jpg}\includegraphics[height=0.3\columnwidth]{DualAxis_assembly.JPG}
-\caption{Examples of arrays.}
+\caption{Photographs of scintillator arrays used in experiments. Left: RAL stack. Right: Dual-axis long stack.}
 \end{figure}
 
 In Chapter \ref{Chap:RR15}, a $47 \times 33$ (longitudinal $\times$ transverse) array of crystals in an aluminium casing was used\footnote{Designed and built by Rob Clarke, CLF.} (see Figure XX left). The crystals were separated by $1\,\mathrm{mm}$ thick light-tight aluminium spacers. The array is held together on the sides by 1 mm aluminium plate, on one side solid, on the other 4 mm diameter holes are cut out over the crystal faces to allow the scintillation light to escape. The aluminium spacers and the backplate reflect the light and direct the flow of photons towards the only open side. The front side of the stack that the radiation is first incident on is fortified with a $9\,\mathrm{mm}$ thick steel plate.
@@ -75,7 +75,7 @@ In Chapter \ref{Chap:BW}, the same scintillator array was used, but the thick st
 \centering
 \includegraphics[angle=-90, width=0.5\columnwidth]{CsI_shotexemp.jpg}
 \includegraphics[angle=-90, width=0.5\columnwidth]{dualaxis_example.png}
-\caption{Example CsI array signal.}
+\caption{Examples of raw response recorded on CsI scintillator arrays. Top: Taken with RAL stack and lead collimator. Bottom: Imaging one side of the dual-axis stack without collimator setup.}
 \end{figure}
 
 
@@ -123,10 +123,12 @@ In Chapters \ref{Chap:linICS} and \ref{Chap:BW} the signal occupies large parts 
 
 \begin{figure}
 \centering
-\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample.png}
-\includegraphics[width=1.0\columnwidth]{DualAxisCrystalExtrExample.png}
+%\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample.png}
+%\includegraphics[width=1.0\columnwidth]{DualAxisCrystalExtrExample.png}
 %\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample_Int.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample_Int.png}
-\caption{Example CsI array signal. Maybe add integrated spectra with and without single crystal extraction.}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.8\columnwidth]{CrystalExtract_Example_Full.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.8\columnwidth]{CrystalExtract_Example_Pixelated.png}
+\caption{Example CsI array signal. Individual crystal extraction and pixelated detector belows.}
 \end{figure}
 
 Even with efficient filling of the field of view, the crystals emitting the interesting signal only occupy a fraction of the total image.
@@ -207,7 +209,7 @@ c_{corr}(i,j) = \frac{R_{sim}(i,j)}{R_{exp}(i,j)}.
 \end{equation}
 \begin{figure}
 \centering
-\includegraphics[width=.5\columnwidth]{Example_BremsGEANT_ElecInput.png}\includegraphics[width=.5\columnwidth]{Example_GSpecGEANT_GammaSpec.png}
+%\includegraphics[width=.5\columnwidth]{Example_BremsGEANT_ElecInput.png}\includegraphics[width=.5\columnwidth]{Example_GSpecGEANT_GammaSpec.png}
 \includegraphics[width=.5\columnwidth]{Example_GSpec_ExpSim.png}\includegraphics[width=.5\columnwidth]{Example_GSpecGEANT_Corr.png}
 \caption{Correction factor XXX CHANGE PLOT.}
 \end{figure}
@@ -216,6 +218,8 @@ This correction factor now accounts for deviations in the efficiency independent
 To improve the confidence this can also be done for several shots and averaged over it, but bremsstrahlung is very stable.
 
 In Chapter \ref{Chap:RR15} the circular filter holder that was placed in front of the objective was leading to a `vignetting' of the image. Figure 3d in \cite{Behm2018_Gamma} shows the related correction curve which roughly outlines a U-shape to account for the decrease in light due to the vignetting.
+
+... either do least square fit or do fit from the top which then is more likely to give the U-shape in our case as well.
 
 If the detector is moved or the imaging is being changed, the procedure has to be repeated.
 
