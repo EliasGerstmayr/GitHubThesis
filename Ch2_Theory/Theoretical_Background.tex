@@ -1,15 +1,15 @@
 \chapter{Theory}
 \label{Chap:Theory}
 
-This chapter lays the theoretical groundwork to understand the research presented in the Results chapters later in this work, addressing laser wakefield acceleration, radiation production from charged particles and the fundamental processes of radiation reaction and Breit-Wheeler pair production.
+This Chapter lays the theoretical groundwork to understand the research presented later in this work, addressing laser wakefield acceleration, radiation production from charged particles and the fundamental processes of radiation reaction and pair production.
 
-First, fundamental single particle motions are derived that are related to the motion of electrons in wakefield accelerators but also consist the basis for the working of a magnetic spectrometer.
+Firstly, the equation of motion of charged single particles in electromagnetic fields is derived. It forms the basis for understanding the properties of electrons accelerated in wakefield accelerators, measuring their energy in magnetic spectrometers and calculating the radiation they emit in interaction with electromagnetic fields.
 
-Secondly, the propagation of a laser in a medium and its non-linear evolution, in particular plasmas, is discussed as this paves the way for the third section on laser wakefield acceleration.
+Secondly, the propagation of a laser in a medium and its non-linear evolution, in particular plasmas, are discussed. This paves the way for the third section on laser wakefield acceleration where basic properties like maximum energy and injection mechanisms are introduced.
 
-Then, radiation production from electrons in different scenarios is discussed, starting with radiation in synchrotrons and insertion devices, then drawing the parallel to betatron radiation produced in wakefield acceleration and the radiation emitted in a laser wiggler, namely inverse Compton scattering in moderately and highly intense laser fields.
+Then, radiation production from electrons in different scenarios is discussed, starting with radiation in synchrotrons and insertion devices, then drawing the parallel to betatron radiation produced in wakefield acceleration and the radiation emitted in a laser wiggler, namely relativistic inverse Compton scattering (ICS) in moderately (linear ICS) and highly intense laser fields (non-linear ICS).
 
-This leads over to the topic of radiation reaction, the knockback force a particle experienced when emitting a photon, that can be investigated through inverse Compton geometries.
+This leads over to the topic of radiation reaction, the knock-back force a particle experiences when emitting a photon. One suitable tool to investigate radiation reaction is relativistic inverse Compton scattering.
 
 Finally, other fundamental high-field processes as pair production from different mechanisms and future research topics are discussed.
 
@@ -28,7 +28,7 @@ To obtain the equation of motion (EoM) we use the Euler-Lagrange equation
 \frac{\mathrm{d}}{\mathrm{d}t} \frac{\partial L}{\partial \mathbf{v}} - \frac{\partial L}{\partial \mathbf{r}} = 0.
 \end{equation}
 
-With $\mathbf{A} = \mathbf{A}(\mathbf{r},t)$, $\Phi = \Phi(\mathbf{r},t)$ and $\gamma^{-1} = \sqrt{1-(v/c)^2}$ and applying the Euler-Lagrange equation this becomes
+Using $\mathbf{A} = \mathbf{A}(\mathbf{r},t)$, $\Phi = \Phi(\mathbf{r},t)$, $\gamma^{-1} = \sqrt{1-(v/c)^2}$ and this becomes
 
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t} \left[\mathbf{p}+q\mathbf{A}\right]-\left[q\nabla\left( \mathbf{A} \cdot \mathbf{v}\right) - q\nabla \Phi \right] = 0,
@@ -132,15 +132,15 @@ The motion of the electron consists of two decoupled motions: one at the constan
 
 \subsection{Electron motion in a monochromatic plane EM wave}
 
-This is based on Alec Thomas' thesis \cite{ThomasThesis}.
+This derivation is based on Alec Thomas' thesis \cite{ThomasThesis}.
 
-Taking the equation of motion (EoM) in terms of the potentials $\mathbf{A}$ and $\Phi$ as given in equation \eqref{Theory:Eqns:EoMLorentz} on page \pageref{Theory:Eqns:EoMLorentz}:
+Writing the equation of motion (EoM) in terms of the potentials $\mathbf{A}$ and $\Phi$ as in Equation \eqref{Theory:Eqns:EoMLorentz} on page \pageref{Theory:Eqns:EoMLorentz} gives:
 
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} = q\left(\mathbf{v} \times \nabla \times \mathbf{A}-\frac{\partial \mathbf{A}}{\partial t} - \nabla \Phi\right).
 \end{equation}
 
-Now using the convective derivative and the vector identity $\mathbf{v} \cdot \nabla \mathbf{p} = (\nabla \mathbf{p})\cdot\mathbf{v} - \mathbf{v} \times (\nabla\times\mathbf{p})$ again, the total time derivative of the momentum expands:
+Now using the convective derivative and the vector identity $\mathbf{v} \cdot \nabla \mathbf{p} = (\nabla \mathbf{p})\cdot\mathbf{v} - \mathbf{v} \times (\nabla\times\mathbf{p})$ again, the total time derivative of the momentum expands to
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} = \frac{\partial\mathbf{p}}{\partial t} +(\nabla\mathbf{p})\cdot\mathbf{v} - \mathbf{v}\times(\nabla\times\mathbf{p}).
 \end{equation}
@@ -150,21 +150,23 @@ With this result the EoM becomes
 \frac{\partial\mathbf{p}}{\partial t} +(\nabla\mathbf{p})\cdot\mathbf{v} - \mathbf{v}\times(\nabla\times\mathbf{p}) &= q\left(\mathbf{v} \times \nabla \times \mathbf{A}-\frac{\partial \mathbf{A}}{\partial t} - \nabla \Phi\right),\nonumber\\
 \frac{\partial}{\partial t}\left(\mathbf{p}+q\mathbf{A}\right) +(\nabla\mathbf{p})\cdot\mathbf{v} - \mathbf{v}\times\left(\nabla\times\left(\mathbf{p}+q\mathbf{A}\right)\right) &= - q\nabla \Phi,\nonumber\\
 \frac{\partial}{\partial t}\mathbf{u} +(\nabla\mathbf{p})\cdot\mathbf{v} - \mathbf{v}\times\left(\nabla\times\mathbf{u}\right) &= - q\nabla \Phi,
+\label{Theory:Eqns:EoMLaserAT}
 \end{align}
 where in the last step we introduced the canonical momentum $\mathbf{u} = \mathbf{p} + q\mathbf{A}$.
 
 We can express $(\nabla\mathbf{p})\cdot \mathbf{v}$ as follows
 \begin{equation}
 (\nabla\mathbf{p})\cdot \mathbf{v} = \frac{1}{m\gamma} \nabla (p^2/2) = \frac{1}{m\gamma}\nabla(\gamma^2/2) = m c^2 \nabla \gamma.
+\label{Theory:Eqns:nablaDotV}
 \end{equation}
 
-We can substitute by this result in the previous equation:
+Substituting $(\nabla\mathbf{p})\cdot \mathbf{v}$ in Equation \eqref{Theory:Eqns:EoMLaserAT} by the expression in Equation \eqref{Theory:Eqns:nablaDotV}, we obtain
 \begin{equation}
 \frac{\partial}{\partial t}\mathbf{u} = \mathbf{v}\times\left(\nabla\times\mathbf{u}\right) - \nabla \left(q\Phi + \gamma mc^2\right).
+\label{Theory:Eqns:partialtU}
 \end{equation}
 
 Taking the curl of this equation results in:
-
 \begin{equation}
 \frac{\partial}{\partial t}\nabla\times\mathbf{u} = \nabla\times\left[\mathbf{v}\times\left(\nabla\times\mathbf{u}\right)\right],
 \end{equation}
@@ -172,17 +174,17 @@ where the second term disappeared as the curl of a gradient is always zero.
 
 This equation shows that if $\nabla \times \mathbf{u}$ is zero initially, it will remain so always. The condition is satisfied, for instance, for a plasma at rest before the laser pulse arrives.
 
-Assuming this conditions our previous equation simplifies to
+Assuming this condition our Equation \eqref{Theory:Eqns:partialtU} simplifies to
 \begin{equation}
 \frac{\partial}{\partial t}\mathbf{u} = - \nabla \left(q\Phi + \gamma mc^2\right).
 \end{equation}
 
-For a medium close to vacuum or an unperturbed plasma one one can assume $\Phi = 0$, resulting in:
+For a medium close to vacuum or an unperturbed plasma one can assume $\Phi = 0$, resulting in:
 \begin{equation}
 \frac{\partial}{\partial t}\mathbf{u} =  -\nabla\gamma mc^2.
 \end{equation}
 
-In the case of an infinite plane wave the transversal gradient $\nabla_\perp$ is zero.
+In the case of an infinite plane wave the transverse gradient $\nabla_\perp$ is zero.
 
 This means we obtain two separate components:
 \begin{subequations}
@@ -200,7 +202,7 @@ For the parallel spatial component $z$ consider the substitution $z = ct$ for li
 \frac{\partial}{\partial t}(cp_z - \gamma mc^2) = 0.
 \end{equation}
 
-Assuming an unperturbed stationary plasma, the initial conditions are $\gamma(t=0) = 1$ and $p_z(t=0) = 0$ and integrating the previous equation gives:
+Assuming an unperturbed stationary plasma, the initial conditions are $\gamma(t=0) = 1$ and $p_z(t=0) = 0$. Integrating the previous equation gives:
 \begin{equation}
 c p_z+ mc^2 = \gamma mc^2.
 \end{equation}
@@ -213,7 +215,6 @@ p_z = \frac{1}{2} mc a^2,
 where $a^2 = p^2_\perp$.
 
 We now have
-
 \begin{subequations}
 \begin{align}
 p_x &= mc a_x,\\
@@ -223,7 +224,6 @@ p_z &= \frac{1}{2} mc a^2.
 \end{subequations}
 
 Using $\mathbf{p} = \gamma m \mathbf{v}$ this can be written as:
-
 \begin{subequations}
 \begin{align}
 \frac{\gamma}{c} \frac{\mathrm{d}x}{\mathrm{d}t} &= a_x,\\
@@ -233,7 +233,6 @@ Using $\mathbf{p} = \gamma m \mathbf{v}$ this can be written as:
 \end{subequations}
 
 Changing from $t$ to proper time $\tau$, we transform via $\mathrm{d}\tau = \gamma^{-1}\mathrm{d}t$, simply giving the equation of motions in term of $\tau$:
-
 \begin{subequations}
 \begin{align}
 \frac{1}{c}\frac{\mathrm{d}x}{\mathrm{d}\tau} &= a_x,\\
@@ -266,7 +265,6 @@ Using this explicit vector potential:
 \end{subequations}
 
 and integrating the equation of motions, results in:
-
 \begin{subequations}
 \begin{align}
 x(\xi) &= \frac{a_0}{k}\sin(\xi),\\
@@ -435,10 +433,9 @@ Using the canonical momentum $\mathbf{u} = \mathbf{p} - \mathbf{a}$ the time der
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u} &= c\nabla\phi - \frac{1}{\gamma} c \nabla \frac{\mathbf{a}^2}{2}-c\nabla\mathbf{a}\cdot\frac{\mathbf{u}}{\gamma}.
 \end{align}
 
-In the scenario of an electromagnetic pulse at high frequency $\omega$ of long pulse duration $\tau \gg { }^1/_\omega$ and sufficiently large spot size $w \gg 1/|k|$ in terms of the fast oscillations, fast and slow dynamics can be treated separately.
+In the scenario of an electromagnetic pulse at high frequency $\omega$ of long pulse duration $\tau \gg 1/\omega$ and sufficiently large spot size $w \gg 1/|k|$ in terms of the fast oscillations, fast and slow dynamics can be treated separately.
 
 When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear order $\mathbf{a}$ and the potential $\phi$ amount to zero:
-
 \begin{equation}
 \boxed{\left\langle\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u}\right\rangle \sim -\left\langle\frac{1}{\gamma}c\nabla\frac{\mathbf{a}^2}{2}\right\rangle,}
 \end{equation}
@@ -515,20 +512,20 @@ Whilst this balance might locally not be true at every moment in time, the mobil
 \end{equation}
 where $\epsilon_0$ is the dielectric constant, $k_B$ the Boltzmann constant and $T_e$ the electron temperature. 
 
-The formation of Debye-spheres is an example of a collective response of the plasma to a small perturbation. In a plasma particles can act together on macroscopic scales through long range electromagnetic forces to form instabilities and waves. Even small imbalances can give rise to a significant response of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, introducing electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces.
+The formation of Debye-spheres is an example of a collective response of the plasma to a small perturbation. In a plasma particles can act together on macroscopic scales through long range electromagnetic forces to form instabilities and waves. Even small imbalances can stimulate a significant response of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, introducing electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces.
 
 
 \subsection{Plasma Formation}
 
-In the context of this work the process of forming a plasma is usually set equal to ionising a medium consisting of neutral atoms or molecules by applying an electric field in shape of an intense laser pulse. The resulting collection of unbound electrons and ions is a plasma. After a certain time the electrons will return to the ionic cores of the atoms and back again to a bound energy state emitting any excess energy in form of radiation in the process. This is called recombination and the emitted radiation recombination light.
+In the context of this work, the process of forming a plasma is usually set equal to ionising a medium consisting of neutral atoms or molecules by applying an electric field in shape of an intense laser pulse. The resulting collection of unbound electrons and ions is a plasma. After a certain time the electrons will return to the ionic cores of the atoms and back again to a bound energy state emitting any excess energy in form of radiation in the process. This is called recombination and the emitted radiation recombination light.
 
-There are different mechanisms through which an oscillating laser field ionises a gas. In single and multi-photon ionisation \cite{Keldysh1965}, one electron is excited by absorbing one or multiple photons, respectively, before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966}.
+There are different mechanisms through which an oscillating laser field ionises a gas. In single and multi-photon ionisation \cite{Keldysh1965_ION}, one electron is excited by absorbing one or multiple photons, respectively, before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964_ION}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966_ION}.
 
 The dominant ionisation mechanism is indicated by the Keldysh parameter $\gamma_K$ considering the strength of the electric field $E$ relative to the binding potential $V$ and the frequency of the oscillating field $\omega$:
 \begin{equation}
 \gamma_K = \omega \frac{\sqrt{2 m_e V}}{eE}.
 \end{equation}
-At $\gamma_K \gg 1$ multiphoton ionisation dominates, whereas for small $\gamma_K < 0.5$ tunnel ionization is expected to be important. If the electric field is larger than the binding Coulomb potential, the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970}.
+At $\gamma_K \gg 1$ multiphoton ionisation dominates, whereas for small $\gamma_K < 0.5$ tunnel ionization is expected to be important. If the electric field is larger than the binding Coulomb potential, the atom is immediately ionised: this is called barrier-suppression ionisation \cite{Reiss1970_ION}.
 
 \iffalse
 \begin{figure}
@@ -557,7 +554,7 @@ I = \frac{c\epsilon_0^3 \pi^2 V^4_e}{2e^6 Z^2} \approx 4 \times 10^{9} \left(\fr
 \end{equation}
 
 For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
-The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low $Z$ gases. Higher $Z$ gases like nitrogen are not as easily fully ionised: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. The gas might then reach higher degrees of ionisation only at peak fields of the laser either through full barrier suppression or by triggering an increased tunnelling rate: this is taken advantage of in an injection method for wakefields called `ionisation injection' \cite{McGuffey2010_ION,Pak2010_ION}. Partially ionised plasmas are more complex systems as one has to consider, for instance, ionisation effects, absorption of X-rays, weaker fields, dampening of particles, scattering and so on.
+The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low-$Z$ gases. Higher-$Z$ gases like nitrogen are not as easily fully ionised: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. The gas might then reach higher degrees of ionisation only at peak fields of the laser either through full barrier suppression or by triggering an increased tunnelling rate: this is taken advantage of in an injection method for wakefields called `ionisation injection' \cite{McGuffey2010_ION,Pak2010_ION}. Partially ionised plasmas are more complex systems as one has to consider, for instance, ionisation effects, absorption of X-rays, weaker fields, dampening of particles, scattering and so on.
 
 \iffalse
 \begin{table}
@@ -598,18 +595,16 @@ Assume a uniform and neutral plasma, i.e. $n_e = Z n_i = n_{e0}$, where $n_e$ is
 Now consider displacing a slab of charge in an arbitrary direction defining an axis that we will call X.
 
 Starting with Gauss' Law:
-
 \begin{equation}
 \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} = \frac{\partial E_x}{\partial x},
 \end{equation}
-where we used that the displacement is only along $x$, simplifying the nabla operator to a spatial derivative in $x$.
+where we used that the displacement is only along $x$, simplifying the Nabla operator to a spatial derivative in $x$.
 
 We assume a uniform plasma so the charge density is a constant $\rho = e n_{e0}$. Integrating the previous equation then gives a constant factor times the displacement X:
 \begin{align}
 E_x = \frac{1}{\epsilon_0} \int^x_0 \rho (x') dx' + E_x(0) &= \frac{e n_{e0}}{\epsilon_0} X,\nonumber\\
 E &= \frac{e n_{e0}}{\epsilon_0} X.
 \end{align}
-
 
 If we now consider a force based on this field, we immediately see that this is equivalent to the equation of motion of a harmonic oscillator: 
 
@@ -618,7 +613,6 @@ m_e \frac{\mathrm{d}^2 X}{\mathrm{d}t^2} = - \frac{e^2 n_e}{\epsilon_0} X = - \o
 \end{equation}
 
 with the (plasma) frequency
-
 \begin{equation}
 \boxed{\omega_p = \sqrt{\frac{n_{e0} e^2}{\epsilon_0 m_e}},}
 \end{equation}
@@ -628,10 +622,10 @@ and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{omegap_lambdap_density.pdf}
-\caption{Plasma frequency and wavelength as function of plasma density. A PLOT OF SLAB DISPLACEMENT NEXT TO THIS.}
+\caption{Plasma frequency (blue) and wavelength (red) as function of plasma density.}
 \end{figure}
 
-A typical regime wakefield accelerators in the context of this work operate in is at an electron density of around $10^{18}\,\mathrm{cm^{-3}}$. This corresponds to a plasma frequency of $5.6 \times 10^{13} \,\mathrm{Hz}$ or a plasma wavelength of $\lambda_p \approx 33\,\mathrm{\mu m}$.
+A typical regime wakefield accelerators in the context of this work operate in is at an electron density of around $10^{18}-10^{19}\,\mathrm{cm^{-3}}$. This corresponds to a plasma frequency of $(5.6 - 17.7) \times 10^{13} \,\mathrm{Hz}$ or a plasma wavelength of $\lambda_p \approx 33-10\,\mathrm{\mu m}$.
 
 \subsection{Laser Propagation in Vacuum}
 
@@ -684,7 +678,6 @@ R(z) = z \left[1+\left(\frac{z_R}{z}\right)^2\right].
 The wavefront is strongly curved around the focus $z < z_R$ and slowly flattens out at $z \gg z_R$. The difference of in radii of curvature for beams with different Rayleigh length can be used in spatial interferometry applied in the context of synchronising two laser pulses in time.
 
 $\zeta$ is called the Guoy phase and is an additional phase term that changes signs once the Gaussian mode passes through its focus.
-
 
 When focusing down a beam with an optic, for instance an off-axis parabola or spherical mirror, the ratio of the focal length $f$ and the beam diameter $d$ is a useful quantity as it indicates how tightly a beam is focussed. It is called the f-number $f_\# = f/d$ and is in shorthand typically written as $f/2$ for $f_\# = 2$, $f/40$ for $f_\# = 40$ and so on.
 Expressing some of the previous quantities in terms of the f-number 

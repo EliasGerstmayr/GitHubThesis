@@ -21,9 +21,7 @@ Database file #6: Facilities.bib
 Database file #7: Wakefield.bib
 Database file #8: ICSRR.bib
 Database file #9: Sims.bib
-Warning--I didn't find a database entry for "Keldysh1965"
-Warning--I didn't find a database entry for "Latypov1964"
-Warning--I didn't find a database entry for "Perelomov1966"
+Database file #10: Ionisation.bib
 Warning--I didn't find a database entry for "Reiss1970"
 Warning--I didn't find a database entry for "Esarey2009"
 Warning--I didn't find a database entry for "Mangles2016"
@@ -54,45 +52,45 @@ Warning--I didn't find a database entry for "Vargas2014"
 Warning--I didn't find a database entry for "Rousse2004"
 Warning--I didn't find a database entry for "Goorley2012"
 Warning--empty journal in Heitler1954_BH
-You've used 100 entries,
+You've used 103 entries,
             1791 wiz_defined-function locations,
-            1162 strings with 34177 characters,
-and the built_in function-call counts, 33428 in all, are:
-= -- 2086
-> -- 3323
+            1177 strings with 34565 characters,
+and the built_in function-call counts, 34041 in all, are:
+= -- 2140
+> -- 3349
 < -- 4
-+ -- 1145
-- -- 1045
-* -- 3344
-:= -- 6047
-add.period$ -- 301
-call.type$ -- 100
-change.case$ -- 90
++ -- 1155
+- -- 1052
+* -- 3392
+:= -- 6149
+add.period$ -- 310
+call.type$ -- 103
+change.case$ -- 93
 chr.to.int$ -- 0
-cite$ -- 101
-duplicate$ -- 1005
-empty$ -- 2243
-format.name$ -- 1045
-if$ -- 6706
+cite$ -- 104
+duplicate$ -- 1031
+empty$ -- 2304
+format.name$ -- 1052
+if$ -- 6838
 int.to.chr$ -- 0
-int.to.str$ -- 100
-missing$ -- 98
-newline$ -- 503
-num.names$ -- 100
-pop$ -- 154
+int.to.str$ -- 103
+missing$ -- 101
+newline$ -- 518
+num.names$ -- 103
+pop$ -- 157
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 453
+skip$ -- 463
 stack$ -- 0
-substring$ -- 1813
-swap$ -- 211
+substring$ -- 1853
+swap$ -- 214
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 206
-width$ -- 103
-write$ -- 1096
-(There were 33 warnings)
+while$ -- 212
+width$ -- 106
+write$ -- 1129
+(There were 30 warnings)
