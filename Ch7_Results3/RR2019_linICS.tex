@@ -109,16 +109,22 @@ The properties and the irregularity of the results at one fixed blade (and shock
 \label{linICS:Figs:Elec_example}
 \end{figure}
 
+
+
 In some cases the electron beam shows signatures of strong vertical oscillations which indicate potential to act as a bright betatron source. In other cases beams with narrow energy spread at 1 GeV are produced. 
 
-Over the course of a 499 shot dataset the maximum energy of the electron beam is about $923\pm206\,\mathrm{MeV}$ with some beams reaching up to 1.3 GeV. 
-\EliasComm{Make a histogram maximum energy.}
-\EliasComm{Make histogram vertical pointing.}
+Over the course of a 484 shot dataset the maximum energy of the electron beam is about $910\pm177\,\mathrm{MeV}$ with some beams reaching up to 1.3 GeV. 
+
 \EliasComm{make histogram energy spread.}
 \EliasComm{Make histogram divergence?}
-\EliasComm{Make histogram charge?}
 
-The charge of the beam varies in particular due to the varying length of the bunch (spectrally) at $199 \pm 102\,\mathrm{pC}$.
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Charge_MaxE_Histograms.png}
+\caption{Electron properties histogram.}
+\label{linICS:Figs:Elec_histogram}
+\end{figure}
+The charge of the beam varies in particular due to the varying length of the bunch (spectrally) at $202 \pm 100\,\mathrm{pC}$.
 
 The divergence of the beam is $2.4\pm 1.4\,\mathrm{mrad}$.
 
@@ -379,12 +385,6 @@ This is also of interest as we know from PUBLICATION A0 (WITH OR WITHOUT TOM BLA
 
 \subsection{Beam Pointing}
 
-In addition, this is more reliably telling us the pointing than betatron radiation. We can use this to characterise the beam.
-
-\EliasComm{Pointing correlated?}
-
-\EliasComm{Pointing of beams related?}
-
-On one hand this can be used as on-shot pointing reference if the lanex is placed in the same plane or it can be correlated, to know where the beam axis is.
+The FWHM spatial features are well resolved and the spatial calibration is likely to be right. Somehow in general the pointing seems to be non-correlated. This is odd as the FWHM matches and indicates that we interact with the entire beam. There could be a slight different weighting of the energy deposition. Or the pointing changes throughout (if the interaction is inside within the bubble), but then FWHM would change also.
 
 \section{Conclusion}

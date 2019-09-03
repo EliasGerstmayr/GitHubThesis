@@ -4,15 +4,24 @@
 
 \section{Motivation and Introduction}
 
-The Breit-Wheeler (BW) process is the inverse process of the more commonly observed pair annihilation, where an electron and a positron decay into two photons. In BW, two (linear BW) or more (non-linear BW) photons combine to produce an electron-positron pair - in other words matter is created from light. The linear BW process is represented by a simple tree-level Feynman diagram. However, despite its simplicity it is the last tree-level diagram of QED that has not been definitively observed in isolation in vacuum, i.e. without the presence of other particles or external fields.
+The Breit-Wheeler (BW) process is the inverse process of the more commonly observed pair annihilation, where an electron and a positron decay into two photons. In the BW process, two (linear) or more (non-linear) photons combine to produce an electron-positron pair --- in other words matter is created from light. The linear Breit-Wheeler process is represented by a simple tree-level Feynman diagram. However, despite its simplicity it is the last tree-level diagram of QED that has not been definitively observed in isolation in vacuum, i.e. without the presence of other particles or external fields.
 \vspace{\baselineskip}
+
+\EliasComm{SM: leave non-linear BW example in and also add LEP/LHC measurements on elastic and inelastic photon-photon scattering.}
 \iffalse
 its pure form
-The non-linear process, on the other hand, has been measured and confirmed previously as part of the E144 experiment at SLAC in the `90s where an ultrarelativistic electron beam of $46.6\,\mathrm{GeV}$ energy was scattered with an intense laser pulse $a_0 \sim 0.3$, resulting in highly energetic gamma photons from inverse Compton scattering \cite{Bula1996_RR,Burke1997_RR}. These gamma photons in turn interacted with $n \approx 5$ laser photons to produce electron-positron pairs. At intensities above $a_0 > 0.2$ the researchers detected $69 \pm 9$ positrons after XX SHOTS NUMBER that match the momentum profile for the non-linear Breit-Wheeler process and the Trident process.
+The non-linear process, on the other hand, has been measured and confirmed previously as part of the E144 experiment at SLAC in the `90s where an ultrarelativistic electron beam of $46.6\,\mathrm{GeV}$ energy was collided with an intense laser pulse $a_0 \sim 0.3$, resulting in highly energetic gamma photons from inverse Compton scattering \cite{Bula1996_RR,Burke1997_RR}. These gamma photons in turn interacted with $n \approx 5$ laser photons to produce electron-positron pairs. At intensities above $a_0 > 0.2$ the researchers detected $69 \pm 9$ positrons after XX SHOTS NUMBER that match the momentum profile for the non-linear Breit-Wheeler process and the Trident process.
 \vspace{\baselineskip}
 \fi
 
-Pair annihilation is easily measured in radioactive decays as its cross section is very high at low energies ($\sigma \propto E^{-1}$) and an abundance of electrons in ordinary matter provides an abundance of partners for positrons to annihilate with. Pair creation from radiation, on the other hand, requires high energy photons and/or a very high photon density, for instance a tightly focused laser, to overcome the production threshold of twice the electron rest mass energy $2m_e c^2 \approx 1\,\mathrm{MeV}$ and an excess of energy to provide the generated pair with sufficient momentum. However, delivering two bright photon sources at suitable energies at the same location is very challenging and hence mainly mediated pair production processes in presence of a background field have been measured instead \cite{Heitler1954_BH,Chen2009_BH,Sarri2015_pairs,Bula1996_RR}.
+\begin{figure}
+\centering
+\includegraphics[width=.9\columnwidth]{QED_TreeDiagrams_OPike.jpg}
+\caption{O. Pike Tree level diagrams.}
+\end{figure}
+
+Pair annihilation is easily measured in radioactive decays as its cross section is very high at low energies ($\sigma \propto E^{-1}$) and an abundance of electrons in ordinary matter provides an abundance of attractive partners for positrons to annihilate with. Pair creation from radiation, on the other hand, requires high energy photons and/or a very high photon density, for instance a tightly focused laser, to overcome the production threshold of twice the electron rest mass energy $2m_e c^2 \approx 1\,\mathrm{MeV}$ and an excess of energy to provide the generated pair with sufficient momentum. However, delivering two bright photon sources at suitable energies at the same location is very challenging and hence mainly mediated pair production processes in presence of a background field have been measured instead \cite{Heitler1954_BH,Chen2009_BH,Sarri2015_pairs,Bula1996_RR}.
+\EliasComm{SM: partners attract. Threshold in zero momentum frame. EG: Frame is irrelevant?}
 \vspace{\baselineskip}
 
 \begin{figure}
@@ -22,11 +31,16 @@ Pair annihilation is easily measured in radioactive decays as its cross section 
 \end{figure}
 
 High energy radiation in the $\mathrm{keV}$ range can be produced from highly relativistic electrons, for instance at XFELs and synchrotron sources using bending magnets and insertion devices, and equivalently in plasma accelerators through betatron radiation. A thermal X-ray source can be provided by sufficiently heating solid targets, for instance hohlraums or foils (REF).
+\EliasComm{Thermal needs to be changed as we are looking at line emission.}
 
 Directed energetic gamma radiation can be generated by passing electrons through solid material to produce bremsstrahlung (REF) or relying on inverse Compton scattering (REF).
 \vspace{\baselineskip}
 
-In the experiment presented in this work, two lasers are used to provide simultaneously an X-ray and a gamma-ray source to overcome the mass threshold and to produce electron-positron pairs from the linear Breit-Wheeler process. The conceptual idea is based on \cite{Pike2014_BW,PikeThesis}. The asymmetric distribution of the photon energies means that produced pairs will be strongly directed along the gamma-ray axis and easier to separate from noise. This is referred to as pair beaming \cite{Ribeyre2018_BW}.
+\EliasComm{SM: Add some details on O. Pike's design.}
+\EliasComm{SM: Add some details on sqrt(s) and cross section. Maybe figure comparing it to the annihilation cross section.}
+
+In the experiment presented here, two lasers are used to provide simultaneously an X-ray and a gamma-ray source to overcome the mass threshold and to produce electron-positron pairs from the linear Breit-Wheeler process. The conceptual idea is based on \cite{Pike2014_BW,PikeThesis}. The asymmetric distribution of the photon energies means that produced pairs will be strongly directed along the gamma-ray axis and easier to separate from noise. This is referred to as pair beaming \cite{Ribeyre2018_BW}.
+\EliasComm{Directionality also means smaller detector needed.}
 
 The X-rays are generated by heating a solid germanium target, emitting an X-ray spectrum peaked at $1.5\,\mathrm{keV}$ (L-shell emission). The gamma ray source is produced by bremsstrahlung from LWFA electrons \cite{Glinec2005_Brems}.
 
@@ -34,35 +48,38 @@ The X-rays are generated by heating a solid germanium target, emitting an X-ray 
 
 ... Exp setup
 
-... optimise yield
-
-... optimise noise 
-
 ... characterise electrons
 
-.. check gammas related
+... gammas optimise yield
 
-.. check variations on days
+...gammas optimise noise 
 
-... analyse the impact on the BW cross-section
+.. check fluctuation in spectrum gammas based on electron fluctuations
 
-.. Final work/future work: new detector and estimate what needed to improve resolution
+... analyse the impact on the BW cross-section, fluctuations
+
+.. Final work/future work
 
 The following sections will outline the experiment setup aimed at measuring the linear Breit-Wheeler process, and take the reader through some of the data taken during the experimental campaign and the considerations relevant for its analysis.
 
 The description of the experiment setup will convince the reader immediately of the complexity of this project and will also make it evident that a large number of researchers is required to tackle this challenge, with responsibilities for different parts of the design, execution and analysis of various diagnostics being shared amongst its contributors. 
-
+\SMComm{Maybe state explicitly that this is what you are focusing on because that is one of the main things you did in terms of data analysis }
 This chapter will focus on the characterisation of the electron beam and the gamma ray source produced with it, their impact on the BW cross section, and variability on and between different shot days. In particular, the choice of converter targets for the bremsstrahlung production and the sensitivity of the spectral measurement of the gamma rays are discussed.
 
 In some parts there are references to X-ray spectra, diagnostics for single particle detection (SPD), beam transport for the produced pairs, and signal-to-noise ratios, but this will not be covered in extensive detail. It is pursued and will be presented in some form by other colleagues and exceeds the scope of this thesis. Explicit contributions by fellow colleagues will be highlighted as such if they are used in the course of this work. 
 
 Nonetheless, a brief section at the end will attempt to place this work in the context of the full analysis of this campaign, summarise its findings and relevance for the project, and direct the reader to relevant publications for further information.
 
+\SMComm{this chapter will refer to analysis from diagnostics where the author has not directly contributed to the analysis, such as..., }
+\SMComm{Relevant pubs?}
+
 \section{Experimental Setup}
 
 The experiment was performed at the dual 300 TW Ti:Sa Gemini laser at the Central Laser Facility, UK, in early 2018.
-The aim of this setup is to produce and to measure electron-positron pairs from the linear BW process. For this purpose, high-energy gamma rays are collided with a X-ray source from a hot plasma. The South arm of the Gemini laser provides the gamma source, the North beam the X-rays.
+The aim of this setup is to produce and to measure electron-positron pairs from the linear Breit-WHeeler process. For this purpose, high-energy gamma rays are collided with a X-ray source from a hot plasma. The South arm of the Gemini laser provides the gamma source, the North beam the X-rays.
 A sketch of the setup is provided in Figure \ref{BW:fig:exp_sketch}.
+
+\SMComm{Use past tense.}
 
 \begin{figure}
 \centering
@@ -75,15 +92,22 @@ A sketch of the setup is provided in Figure \ref{BW:fig:exp_sketch}.
 \subsubsection{North beam and X-ray source}
 
 In this experiment, the North beam is temporally not fully compressed to its usual $45\,\mathrm{fs}$ duration but is stretched to a pulse duration of $40\,\mathrm{ps}$ \textsc{fwhm} in order to effectively heat a solid target. The beam is focused by an f/2 off-axis parabola (OAP) with a phase plate (REF) in the collimated beam that smooths and also increases the size of the focal spot to an ellipse of about $75\,\mathrm{\mu m} \times 210\,\mathrm{\mu m}$. The target is a $25\,\mathrm{\mu m}$ thick kapton tape with etched holes reduced to $5\,\mathrm{\mu m}$ thickness. The thinned out parts of the tape are coated with $100\,\mathrm{nm}$ thick germanium (Ge) dots\footnote{Target and fabrication techniques were developed by the Target Fabrication Division at the Central Laser Facility, in particular Sam Astbury and Chris Spindloe.}. When the germanium is heated, it produces a plasma plume that emits X-rays with a distinct peak at $1.5\,\mathrm{keV}$ due to an L-shell emission (REF). The motion of the tape drive is motorised\footnote{The tape drive was designed and built by Brendan Kettle (Imperial College).} and a fresh Ge target is provided on each shot. 
+\SMComm{Focal spot size North?}
+\SMComm{Need to be clear that the xray region is the rear side of the foil, through the plastic.  We are not shooting through the plume}
 
 The X-ray source is diagnosed by a pinhole camera measuring the flux and the source size. A camera attached to a crystal measures the spectrum of the X-rays in a $\sim 700\,\mathrm{eV}$ window from just under $1.3\,\mathrm{keV}$ to $2\,\mathrm{keV}$ including the L-shell emission of Ge at $1.5\,\mathrm{keV}$. Both cameras are back-illuminated deep-depletion X-ray in-vacuum CCD cameras (Andor DX420-BR-DD).
 The X-ray source is the first component for the two-photon interaction. 
+\SMComm{What do you mean by L shell ?  The cold transitions in Germanium around here are the M-L transitions.  
+
+Things do change with temperature, for example as the Ge becomes ionised, the inner shells are more tightly bound shifting the emission lines to higher energy.  But I am fairly sure it is the ML band we are looking at.}
 
 \subsubsection{South beam, electrons and gamma source}
 
 The South laser is focused down by a $6\,\mathrm{m}$ focal length f/40 OAP onto the edge of a $17.5\,\mathrm{mm}$ long gas cell target\footnote{Variable gas cell from 1 to 20 mm, designed and built by Nelson Lopes (Imperial College/IST).} filled with helium and 2 percent nitrogen at an average electron density of XX NUMBER. The typical average spot size is $44\,\mathrm{\mu m} \times 53\,\mathrm{\mu m}$ at $5.51\pm 0.64\,\mathrm{J}$ energy on target at a pulse duration of $45 \pm 5\,\mathrm{fs}$, peak intensity $I_0 = 2.75 \times 10^{18} \,\mathrm{W/cm^3}$ corresponding to a normalised vector potential $a_0 = 1.13$. The energy on target was limited by the damage threshold of the mirrors in the focusing beam.
 The laser drives a wakefield and accelerates electrons, injected predominantly via ionisation injection \cite{McGuffey2010_ION,Pak2010_ION}, to relativistic energies. The remaining laser exiting the cell is disposed of by another replenishable kapton tape that acts as a plasma mirror \cite{Kapteyn1991_PM}.
 \vspace{\baselineskip}
+\SMComm{No need to redo analysis - just cite that Matt did it, unless you want to double check.  }
+\SMComm{How sure about predominant ionisation injection.}
 
 The electrons are dispersed vertically by a permanent dipole magnet of integrated field strength $\int B dx = 0.4\,\mathrm{Tm}$ onto a scintillating LANEX screen measuring their energy and charge. The yoke of the magnet is blocking the path of dispersed lower energy electrons and as a result the outgoing spectrum has a low energy cut-off at about $300\,\mathrm{MeV}$. The screen is imaged by an Andor Neo camera equipped with an objective and a bandpass filter transmitting $546 \pm 10\,\mathrm{nm}$. A motorised stage with high-Z foils of various thicknesses can be driven into the path of the electrons and the foils act as bremsstrahlung converters (REF). This interaction produces copious amounts of directed bremsstrahlung in propagation direction and stops most of the electrons in the process (REF). Divergent gamma rays are likely to collide with components and apertures along the beam axis producing leptons with comparable properties as the BW pairs. A tungsten collimator of length $100\,\mathrm{mm}$, inner diameter $2\,\mathrm{mm}$ and outer diameter $20\,\mathrm{mm}$ is employed to reduce the emitted gamma-ray cone to its central part at low divergence in order to reduce noise. The exit of the collimator is placed at $280\,\mathrm{mm}$ distance from the converter target and apertures the beam down to a field of view of $2\,\mathrm{mm}/0.28\,\mathrm{m} = 7.14\,\mathrm{mrad}$. In addition, a thick block of tungsten obstructs the direct line of sight from the converter target to the Ge target drive, bisecting the signal to avoid gamma rays the kapton tape and producing pairs in the process. Only a collimated bright `half moon' of gamma rays from bremsstrahlung is incident on the interaction point, providing the second component for the two-photon interaction.
 \vspace{\baselineskip}
@@ -99,6 +123,103 @@ The arrays are described in more detail in the \nameref{Chap:Methods}.
 \subsubsection{Magnetic Chicane and Single Particle Detectors}
 
 Potential electron-positron pairs from the photon-photon interaction are emitted preferably in the propagation direction of the gamma-ray burst. The pairs enter the field of the permanent large aperture ($\sim 10\,\mathrm{cm}$ gap) dipole magnet with integrated field $\int B (x) \mathrm{d}x =0.35\,\mathrm{Tm}$ that disperses the electrons and positrons horizontally in opposite directions and sends them through the two kapton slits at the end of the target chamber into air. The yoke of the magnet produces a low energy cut-off at about 220 MeV CHECK NUMBER ESPECIALLY BECAUSE OF WINDOW AND UPPER CUT-OFF which is a slightly larger acceptance range than the vacuum window would provide. A lead wall further cuts down the spectrum to a 500-600 MeV window XX CHECK. The dispersed electrons and positrons XX WHICH ENERGY RANGE XX are then caught by an oppositely polarised permanent magnet\footnote{The design of the magnets and the chicane as well as the supervision of the magnet assembly and positioning was performed by D. Hollatz (Jena).} of field strength $B\sim 0.5\,\mathrm{T}$ on each side that bends the electrons or positrons, respectively, onto a narrow aperture of a lead-shielded enclosure and onto a set of single-particle detectors that are housed within. On each arm a CsI array attached to a sensitive CCD camera (PICO) acts as as a single-particle detector\footnote{Developed by Jena.} with additional two TimePix silicon detectors\footnote{Provided by the Medipix Collaboration, CERN} on the positron side.
+
+
+
+\section{Characterisation of Electron Spectra}
+
+\subsubsection{Application of electrons in this context and need for characterisation}
+
+In this experiment the energy of relativistic electrons from LWFA is converted into directed and highly energetic bremsstrahlung.
+Whenever the bremsstrahlung is produced using a converter target, the spectrum of the electrons can not be measured simultaneously as they are almost entirely stopped by the high-Z material in order to produce a high flux of gamma rays. 
+
+Hence, the electron spectra are characterised without the converter target before and after full BW data runs instead. The gamma signal, on the other hand, is measured during the BW data runs.
+\vspace{\baselineskip}
+
+The relevant shot days were the 6th, 9th and 10th May, hence the analysis of the electron spectra and their characterisation will focus particularly on these days.
+
+\begin{figure}
+\centering
+\includegraphics[width=.9\columnwidth]{2018QED_ElecSpecs_montage.jpg}
+\caption{Examples of raw electron spectra acquired on the experiment. The spectra are on a linear spatial scale, where the top is closer to the beam axis, i.e. indicates higher electron energies. Replace this by one row of raw and processed images or maybe even just one row of example spectra on a linear energy scale. Or just one spectrum with linear energy scale plus lineout in both dimensions to show where quantities come from.}
+\label{BW:figs:elec_raw}
+\end{figure}
+
+\subsubsection{Raw images and general note on processing data}
+
+Raw images of typical electron spectra measured on the LANEX screen are shown in Figure \ref{BW:figs:elec_raw}.
+The images are treated for background and image distortions caused by the relative angle of camera and screen. By measuring the field components of the magnet and the distances accurately the spatial scale on the LANEX screen is related to the energy of the electrons. The captured scintillation light is cross-calibrated with image plate measurements to obtain an absolute number for charge of the beam. A more detailed description of the procedure is found in the Methods section.
+\vspace{\baselineskip}
+
+\subsubsection{Investigation of main quantities and variation on the days}
+
+
+
+\begin{figure}
+%\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs.png}
+\centering
+\includegraphics[trim={2cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_ElecSpecs_average}
+\caption{Average spectra for the relevant shot days, 6th (blue), 9th (purple) and 10th (green). The spectra are normalised to charge and are not representative (SHOULD MAKE THIS NOT NORMALISED ACTUALLY) of relative differences. The shaded areas indicate 1 standard deviation from the average spectrum.}
+\label{BW:figs:elec_average_spec}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[trim={7.5cm 0 6.5cm 0}, clip, width=1.0\columnwidth]{2018QED_Espec_Variations.png}
+\caption{Average electron charge, energy, divergence and pointing on the relevant shot days. The error bars indicate 1 standard deviation from the average value.}
+\label{BW:figs:elec_variations}
+\end{figure}
+
+
+The performance of the wakefield accelerator can vary from day to day and is hence characterised separately for each of the relevant shot day, in some cases several datasets were taken on one day.
+
+The key quantities of interest to characterise the electron beam with and to then compare the shot days with each other are charge, energy, divergence, pointing and the stability of those properties from shot to shot.
+\vspace{\baselineskip}
+
+An overview of these quantities describing the accelerator performance for the relevant days are presented in Table \ref{BW:tables:elec_days} and again in a more graphic comparison in Figure \ref{BW:figs:elec_variations}. The lineouts for the average electron spectra for those days are shown in Figure \ref{BW:figs:elec_average_spec}.
+\vspace{\baselineskip}
+
+
+
+
+\begin{table}
+\centering
+\begin{tabular}{r|r|r|r|r|c|r}
+Date & Run & Charge [pC] & $E_{max}$ [MeV] & $\theta$ [mrad] & $\sigma_X$ [mrad] & $N_{shots}$\\ \hline \hline
+%5 & 2 & $20 \pm 10.8$ & $599 \pm 57$ & $3.14 \pm 0.75$ & 1.25 & 32\\ \hline
+6 & 1 & $26.26 \pm 3.8$ & $709 \pm 46$ & $2.26 \pm 0.29$ & 0.62 & 10\\ \hline
+9 & 1 & $14.73 \pm 5.5$ & $565 \pm 43$ & $2.5 \pm 0.72$ & 0.93 & 18\\ 
+9 & 4 & $7.7 \pm 4.4$ & $551 \pm 16$ & $1.7\pm 0.31$ & 0.81 & 12\\ \hline
+10 & 1 & $11.55 \pm 2.7$ & $511 \pm 19$ & $2.84 \pm 0.93$ & 0.90 & 22\\ 
+10 & 2 & $15.24 \pm 5.1$ & $512 \pm 26$ & $2.3 \pm 0.52$ & 0.50 & 6\\ 
+10 & 3 & $9.56 \pm 3.5$ & $535 \pm 21$ & $2.82 \pm 0.91$ & 1.55 & 21
+\end{tabular}
+\caption{Details on runs. Electron properties. Divergence $\theta$, Pointing $\sigma_X$.}
+\label{BW:tables:elec_days}
+\end{table}
+
+
+
+In general, 
+
+... large energy spread as typical for ionisation injection at Gemini, no quasi-mono
+
+... lower energy than typically (related to energy on-target)
+
+... performance comparable 9th and 10th with plateau up to 550 MeV or so
+
+... on the 6th the signal extends to 700 MeV and quite stable.
+
+
+Looking at the key quantities:
+
+... charge was higher on the 6th at XX 25 pC pm.
+
+... energy as mentioned
+
+... divergence similar levels but more stable over the dataset and at the lower end
+
+... similar properties for the pointing
 
 
 
@@ -251,103 +372,6 @@ In theory, even thinner target and higher Z would be favourable (as long as all 
 The trends confirm that we need the collimator and W block. We also see that the yield over noise improves.
 
 
-\section{Characterisation of Electron Spectra for BW shot days}
-
-\subsubsection{Application of electrons in this context and need for characterisation}
-
-In this experiment the energy of relativistic electrons from LWFA is converted into directed and highly energetic bremsstrahlung.
-Whenever the bremsstrahlung is produced using a converter target, the spectrum of the electrons can not be measured simultaneously as they are almost entirely stopped by the high-Z material in order to produce a high flux of gamma rays. 
-
-Hence, the electron spectra are characterised without the converter target before and after full BW data runs instead. The gamma signal, on the other hand, is measured during the BW data runs.
-\vspace{\baselineskip}
-
-The relevant shot days were the 6th, 9th and 10th May, hence the analysis of the electron spectra and their characterisation will focus particularly on these days.
-
-\begin{figure}
-\centering
-\includegraphics[width=.9\columnwidth]{2018QED_ElecSpecs_montage.jpg}
-\caption{Examples of raw electron spectra acquired on the experiment. The spectra are on a linear spatial scale, where the top is closer to the beam axis, i.e. indicates higher electron energies. Replace this by one row of raw and processed images or maybe even just one row of example spectra on a linear energy scale. Or just one spectrum with linear energy scale plus lineout in both dimensions to show where quantities come from.}
-\label{BW:figs:elec_raw}
-\end{figure}
-
-\subsubsection{Raw images and general note on processing data}
-
-Raw images of typical electron spectra measured on the LANEX screen are shown in Figure \ref{BW:figs:elec_raw}.
-The images are treated for background and image distortions caused by the relative angle of camera and screen. By measuring the field components of the magnet and the distances accurately the spatial scale on the LANEX screen is related to the energy of the electrons. The captured scintillation light is cross-calibrated with image plate measurements to obtain an absolute number for charge of the beam. A more detailed description of the procedure is found in the Methods section.
-\vspace{\baselineskip}
-
-\subsubsection{Investigation of main quantities and variation on the days}
-
-
-
-\begin{figure}
-%\includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs.png}
-\centering
-\includegraphics[trim={2cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_ElecSpecs_average}
-\caption{Average spectra for the relevant shot days, 6th (blue), 9th (purple) and 10th (green). The spectra are normalised to charge and are not representative (SHOULD MAKE THIS NOT NORMALISED ACTUALLY) of relative differences. The shaded areas indicate 1 standard deviation from the average spectrum.}
-\label{BW:figs:elec_average_spec}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[trim={7.5cm 0 6.5cm 0}, clip, width=1.0\columnwidth]{2018QED_Espec_Variations.png}
-\caption{Average electron charge, energy, divergence and pointing on the relevant shot days. The error bars indicate 1 standard deviation from the average value.}
-\label{BW:figs:elec_variations}
-\end{figure}
-
-
-The performance of the wakefield accelerator can vary from day to day and is hence characterised separately for each of the relevant shot day, in some cases several datasets were taken on one day.
-
-The key quantities of interest to characterise the electron beam with and to then compare the shot days with each other are charge, energy, divergence, pointing and the stability of those properties from shot to shot.
-\vspace{\baselineskip}
-
-An overview of these quantities describing the accelerator performance for the relevant days are presented in Table \ref{BW:tables:elec_days} and again in a more graphic comparison in Figure \ref{BW:figs:elec_variations}. The lineouts for the average electron spectra for those days are shown in Figure \ref{BW:figs:elec_average_spec}.
-\vspace{\baselineskip}
-
-
-
-
-\begin{table}
-\centering
-\begin{tabular}{r|r|r|r|r|c|r}
-Date & Run & Charge [pC] & $E_{max}$ [MeV] & $\theta$ [mrad] & $\sigma_X$ [mrad] & $N_{shots}$\\ \hline \hline
-%5 & 2 & $20 \pm 10.8$ & $599 \pm 57$ & $3.14 \pm 0.75$ & 1.25 & 32\\ \hline
-6 & 1 & $26.26 \pm 3.8$ & $709 \pm 46$ & $2.26 \pm 0.29$ & 0.62 & 10\\ \hline
-9 & 1 & $14.73 \pm 5.5$ & $565 \pm 43$ & $2.5 \pm 0.72$ & 0.93 & 18\\ 
-9 & 4 & $7.7 \pm 4.4$ & $551 \pm 16$ & $1.7\pm 0.31$ & 0.81 & 12\\ \hline
-10 & 1 & $11.55 \pm 2.7$ & $511 \pm 19$ & $2.84 \pm 0.93$ & 0.90 & 22\\ 
-10 & 2 & $15.24 \pm 5.1$ & $512 \pm 26$ & $2.3 \pm 0.52$ & 0.50 & 6\\ 
-10 & 3 & $9.56 \pm 3.5$ & $535 \pm 21$ & $2.82 \pm 0.91$ & 1.55 & 21
-\end{tabular}
-\caption{Details on runs. Electron properties. Divergence $\theta$, Pointing $\sigma_X$.}
-\label{BW:tables:elec_days}
-\end{table}
-
-
-
-In general, 
-
-... large energy spread as typical for ionisation injection at Gemini, no quasi-mono
-
-... lower energy than typically (related to energy on-target)
-
-... performance comparable 9th and 10th with plateau up to 550 MeV or so
-
-... on the 6th the signal extends to 700 MeV and quite stable.
-
-
-Looking at the key quantities:
-
-... charge was higher on the 6th at XX 25 pC pm.
-
-... energy as mentioned
-
-... divergence similar levels but more stable over the dataset and at the lower end
-
-... similar properties for the pointing
-
-
-
 
 
 \section{Characterisation of the Gamma Signal}
@@ -454,6 +478,11 @@ Using the results from the correction curve, now try to use a fitting routine ba
 
 See whether there is a change in energy over the days. Based on the qualitative measurements the fitting parameter should only change marginally over the days.
 
+
+
+\section{Characterisation X-ray spectra}
+
+
 \section{Impact of Spectral Fluctuations on the total BW cross section}
 
 \subsubsection{Simple calculation on impact on the total cross section based on the GEANT spectra}
@@ -495,7 +524,7 @@ If the full X-ray spectrum (for instance Morton simulations) are included then a
 
 The X-ray yield was higher on the XXth whilst the gamma yield and energy was higher on the 6th. These fluctuations balance each other out and the collisional geometry further mitigates the fluctuation.
 
-
+\iffalse
 \section{Future Outlook: A gamma spectrometer to discriminate high energy photons}
 
 Here some ideas and simulations on how to improve the gamma spectrometer design to determine the spectrum more accurately.
@@ -547,13 +576,8 @@ Use gamma profile as converter or even the vacuum window (less divergence) and t
 \includegraphics[width=.9\columnwidth]{CombinedSpecSketch.png}
 \caption{Combined design.}
 \end{figure}
+\fi
 
-\subsubsection{Point out how to mitigate fluctuations if not measurable.}
-
-A comment about designing your experiment such that parts of the X-ray spectrum we can not measure are being blocked by material such that the gamma components we can not resolve are not impacting on the cross section. The angle is also a handle on equalising the cross section across the window of gamma energies such that few high energy photons still access the same pool of photons and the cross section is low.
-
-Flaw of wakefield accelerator are the intrinsic fluctuations of the electron beam. Better stability by improving the e-beam but for instance by using bremsstrahlung we already cut out some of the uncertainty. See simulations that show that fluctuations in the spectral shape are not impacting the overall gamma spectrum much. 
-If we now tailor the X-rays accordingly and choose the angle of the collision appropriately we can mitigate the impact of these fluctuations (maybe at a marginal cost of produced positrons) and have more stable conditions at the experiment.
 
 
 \section{Results of the Breit-Wheeler Analysis}
@@ -591,6 +615,13 @@ Maybe:
 
 
 \section{Conclusion}
+
+
+A comment about designing your experiment such that parts of the X-ray spectrum we can not measure are being blocked by material such that the gamma components we can not resolve are not impacting on the cross section. The angle is also a handle on equalising the cross section across the window of gamma energies such that few high energy photons still access the same pool of photons and the cross section is low.
+
+Flaw of wakefield accelerator are the intrinsic fluctuations of the electron beam. Better stability by improving the e-beam but for instance by using bremsstrahlung we already cut out some of the uncertainty. See simulations that show that fluctuations in the spectral shape are not impacting the overall gamma spectrum much. 
+If we now tailor the X-rays accordingly and choose the angle of the collision appropriately we can mitigate the impact of these fluctuations (maybe at a marginal cost of produced positrons) and have more stable conditions at the experiment.
+
 
 LWFA dual laser setup to produce BW pairs. Some indication that we saw pairs consistent with the experiment conditions at the optimum.
 \vspace{\baselineskip}
