@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  4 SEP 2019 20:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  5 SEP 2019 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -517,22 +517,31 @@ Package etexcmds Info: Could not find \expanded.
 LaTeX Info: Redefining \ref on input line 355.
 LaTeX Info: Redefining \pageref on input line 355.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/todonotes/todonotes.sty
-Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
-Package: todonotes 2012/07/25
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
+\c@r@tfl@t=\count295
+\rotFPtop=\skip67
+\rotFPbot=\skip68
+\rot@float@box=\box54
+\rot@mess@toks=\toks23
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks23
-\XKV@tempa@toks=\toks24
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
 )
-\XKV@depth=\count295
+\XKV@depth=\count296
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -557,14 +566,14 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks25
+\pgfutil@everybye=\toks26
 \pgfutil@tempdima=\dimen194
 \pgfutil@tempdimb=\dimen195
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box54
+\pgfutil@abb=\box55
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -577,12 +586,12 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks26
-\pgfkeys@temptoks=\toks27
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks28
+\pgfkeys@tmptoks=\toks29
 ))
 \pgf@x=\dimen196
 \pgf@y=\dimen197
@@ -594,13 +603,13 @@ ode.tex
 \pgf@yc=\dimen259
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count296
-\c@pgf@countb=\count297
-\c@pgf@countc=\count298
-\c@pgf@countd=\count299
-\t@pgf@toka=\toks29
-\t@pgf@tokb=\toks30
-\t@pgf@tokc=\toks31
+\c@pgf@counta=\count297
+\c@pgf@countb=\count298
+\c@pgf@countc=\count299
+\c@pgf@countd=\count300
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -618,8 +627,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count300
-\pgfsyssoftpath@bigbuffer@items=\count301
+\pgfsyssoftpath@smallbuffer@items=\count301
+\pgfsyssoftpath@bigbuffer@items=\count302
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -632,11 +641,11 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen260
-\pgfmath@count=\count302
-\pgfmath@box=\box55
-\pgfmath@toks=\toks32
-\pgfmath@stack@operand=\toks33
-\pgfmath@stack@operation=\toks34
+\pgfmath@count=\count303
+\pgfmath@box=\box56
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -657,7 +666,7 @@ code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count303
+\c@pgfmathroundto@lastzeros=\count304
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -692,10 +701,10 @@ File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box56
-\pgf@hbox=\box57
-\pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count304
+\pgfpic=\box57
+\pgf@hbox=\box58
+\pgf@layerbox@main=\box59
+\pgf@picture@serial@count=\count305
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -730,7 +739,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen284
-\pgf@sys@shading@range@num=\count305
+\pgf@sys@shading@range@num=\count306
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -739,7 +748,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box59
+\pgfexternal@startupbox=\box60
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -756,7 +765,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box60
+\pgfnodeparttextbox=\box61
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -783,8 +792,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen287
 \pgffor@skip=\dimen288
-\pgffor@stack=\toks35
-\pgffor@toks=\toks36
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -793,7 +802,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count306
+\pgf@plot@mark@count=\count307
 \pgfplotmarksize=\dimen289
 )
 \tikz@lastx=\dimen290
@@ -802,23 +811,23 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@lastysaved=\dimen293
 \tikzleveldistance=\dimen294
 \tikzsiblingdistance=\dimen295
-\tikz@figbox=\box61
-\tikz@figbox@bg=\box62
-\tikz@tempbox=\box63
-\tikz@tempbox@bg=\box64
-\tikztreelevel=\count307
-\tikznumberofchildren=\count308
-\tikznumberofcurrentchild=\count309
-\tikz@fig@count=\count310
+\tikz@figbox=\box62
+\tikz@figbox@bg=\box63
+\tikz@tempbox=\box64
+\tikz@tempbox@bg=\box65
+\tikztreelevel=\count308
+\tikznumberofchildren=\count309
+\tikznumberofcurrentchild=\count310
+\tikz@fig@count=\count311
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count311
-\pgfmatrixcurrentcolumn=\count312
-\pgf@matrix@numberofcolumns=\count313
+\pgfmatrixcurrentrow=\count312
+\pgfmatrixcurrentcolumn=\count313
+\pgf@matrix@numberofcolumns=\count314
 )
-\tikz@expandcount=\count314
+\tikz@expandcount=\count315
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -828,28 +837,24 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count315
+\c@@todonotes@numberoftodonotes=\count316
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip67
-\f@nch@O@elh=\skip68
-\f@nch@O@erh=\skip69
-\f@nch@O@olh=\skip70
-\f@nch@O@orh=\skip71
-\f@nch@O@elf=\skip72
-\f@nch@O@erf=\skip73
-\f@nch@O@olf=\skip74
-\f@nch@O@orf=\skip75
+\f@nch@headwidth=\skip69
+\f@nch@O@elh=\skip70
+\f@nch@O@erh=\skip71
+\f@nch@O@olh=\skip72
+\f@nch@O@orh=\skip73
+\f@nch@O@elf=\skip74
+\f@nch@O@erf=\skip75
+\f@nch@O@olf=\skip76
+\f@nch@O@orf=\skip77
 )
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 39.
-
-
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 41.
+less on input line 40.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
@@ -858,6 +863,10 @@ less on input line 42.
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 43.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 44.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
@@ -880,8 +889,8 @@ Package: cancel 2013/04/12 v2.2 Cancel math terms
 (/usr/local/texlive/2018/texmf-dist/tex/latex/feynmf/feynmp.sty
 Package: feynmp 1996/12/02 v1.08 LaTeX/MetaPost Feynman Diagram Package (ohl)
 \@outfmf=\write5
-\fmfbuf@=\toks37
-\c@fmfgraph=\count316
+\fmfbuf@=\toks38
+\c@fmfgraph=\count317
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
@@ -928,13 +937,13 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen296
-\Hy@linkcounter=\count317
-\Hy@pagecounter=\count318
+\Hy@linkcounter=\count318
+\Hy@pagecounter=\count319
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count319
+\Hy@SavedSpaceFactor=\count320
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -956,7 +965,7 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count320
+\c@Hy@tempcnt=\count321
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -964,7 +973,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen297
-\Fld@menulength=\count321
+\Fld@menulength=\count322
 \Field@Width=\dimen298
 \Fld@charsize=\dimen299
 Package hyperref Info: Hyper figures OFF on input line 6396.
@@ -976,17 +985,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count322
-\c@Item=\count323
-\c@Hfootnote=\count324
+\Hy@abspage=\count323
+\c@Item=\count324
+\c@Hfootnote=\count325
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count325
-\c@bookmark@seq@number=\count326
-\Hy@SectionHShift=\skip76
+\Fld@listcount=\count326
+\c@bookmark@seq@number=\count327
+\Hy@SectionHShift=\skip78
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
@@ -1010,31 +1019,31 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 (./Ch9_Conclusion/Conclusions.aux) (./Ch10_Appendix/Appendix.aux) (./bu.aux))
 \openout1 = `Thesis_Gerstmayr_V2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 99.
 Package nag Info: Command \frontmatter not defined, skipping amendment on input
- line 98.
+ line 99.
 Package nag Info: Command \mainmatter not defined, skipping amendment on input 
-line 98.
+line 99.
 Package nag Info: Command \backmatter not defined, skipping amendment on input 
-line 98.
+line 99.
 Package nag Info: Command \RaggedLeft not defined, skipping amendment on input 
-line 98.
+line 99.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
- line 98.
+ line 99.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1072,17 +1081,17 @@ Package nag Info: Command \RaggedRight not defined, skipping amendment on input
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
+\scratchcounter=\count328
 \scratchdimen=\dimen300
-\scratchbox=\box65
-\nofMPsegments=\count328
-\nofMParguments=\count329
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count330
+\scratchbox=\box66
+\nofMPsegments=\count329
+\nofMParguments=\count330
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count331
 \MPscratchDim=\dimen301
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
-\everyMPtoPDFconversion=\toks39
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
+\everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1100,7 +1109,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 98.
+LaTeX Info: Redefining \microtypecontext on input line 99.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1124,34 +1133,35 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 98.
+(lastpage)             ! on input line 99.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 98.
+loading the todonotes package. on input line 99.
 
-\AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring ON on input line 98.
-LaTeX Info: Redefining \ref on input line 98.
-LaTeX Info: Redefining \pageref on input line 98.
-LaTeX Info: Redefining \nameref on input line 98.
+\AtBeginShipoutBox=\box67
+Package hyperref Info: Link coloring ON on input line 99.
+LaTeX Info: Redefining \ref on input line 99.
+LaTeX Info: Redefining \pageref on input line 99.
+LaTeX Info: Redefining \nameref on input line 99.
 (./Thesis_Gerstmayr_V2.out) (./Thesis_Gerstmayr_V2.out)
 \@outlinefile=\write6
 \openout6 = `Thesis_Gerstmayr_V2.out'.
 
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 98.
+t line 99.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 98.
+t line 99.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 98.
+line 99.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 98.
+line 99.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1163,11 +1173,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 <pics/Imperial_2_Pantones.jpg, id=626, 564.60938pt x 148.30406pt>
 File: pics/Imperial_2_Pantones.jpg Graphic file (type jpg)
 <use pics/Imperial_2_Pantones.jpg>
-Package pdftex.def Info: pics/Imperial_2_Pantones.jpg  used on input line 107.
+Package pdftex.def Info: pics/Imperial_2_Pantones.jpg  used on input line 108.
 (pdftex.def)             Requested size: 273.14922pt x 71.7486pt.
 
 
-Package nag Warning: figure with no \caption on input line 108.
+Package nag Warning: figure with no \caption on input line 109.
 
 [1
 
@@ -2540,197 +2550,197 @@ ine 31.
 (pdftex.def)             Requested size: 318.66946pt x 212.44258pt.
  [182 <./pics/Ch6_Results2/QED_TreeDiagrams_OPike.jpg>] [183 <./pics/Ch6_Result
 s2/2018QED_Chicane.JPG>]
-<pics/Ch6_Results2/BW2018_render_V3_annotated3.png, id=4932, 1926.19624pt x 757
-.83125pt>
-File: pics/Ch6_Results2/BW2018_render_V3_annotated3.png Graphic file (type png)
-
-<use pics/Ch6_Results2/BW2018_render_V3_annotated3.png>
-Package pdftex.def Info: pics/Ch6_Results2/BW2018_render_V3_annotated3.png  use
-d on input line 89.
-(pdftex.def)             Requested size: 455.24408pt x 179.10796pt.
- [184] [185 <./pics/Ch6_Results2/BW2018_render_V3_annotated3.png>] [186] [187]
-<pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg, id=4978, 1269.74374pt x 1086.
+<pics/Ch6_Results2/BW2018_render_V4_annotated.png, id=4932, 1927.2pt x 1084.05p
+t>
+File: pics/Ch6_Results2/BW2018_render_V4_annotated.png Graphic file (type png)
+<use pics/Ch6_Results2/BW2018_render_V4_annotated.png>
+Package pdftex.def Info: pics/Ch6_Results2/BW2018_render_V4_annotated.png  used
+ on input line 89.
+(pdftex.def)             Requested size: 692.6886pt x 389.62914pt.
+ [184] [185 <./pics/Ch6_Results2/BW2018_render_V4_annotated.png>] [186] [187]
+<pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg, id=4975, 1269.74374pt x 1086.
 0575pt>
 File: pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg Graphic file (type jpg)
 <use pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg  used 
-on input line 147.
+on input line 145.
 (pdftex.def)             Requested size: 409.71689pt x 350.44557pt.
-<pics/Ch6_Results2/2018QED_ElecSpecs_average_V2.png, id=4979, 2007.5pt x 1003.7
+ [188]
+<pics/Ch6_Results2/2018QED_ElecSpecs_average_V2.png, id=4985, 2007.5pt x 1003.7
 5pt>
 File: pics/Ch6_Results2/2018QED_ElecSpecs_average_V2.png Graphic file (type png
 )
 <use pics/Ch6_Results2/2018QED_ElecSpecs_average_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_ElecSpecs_average_V2.png  us
-ed on input line 167.
+ed on input line 165.
 (pdftex.def)             Requested size: 409.71689pt x 227.41154pt.
-<pics/Ch6_Results2/2018QED_Espec_AllVarBar.png, id=4981, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/2018QED_Espec_AllVarBar.png, id=4987, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/2018QED_Espec_AllVarBar.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_Espec_AllVarBar.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Espec_AllVarBar.png  used on
- input line 174.
+ input line 172.
 (pdftex.def)             Requested size: 455.24408pt x 279.02638pt.
- [188] [189 <./pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg>] [190 <./pics/C
-h6_Results2/2018QED_ElecSpecs_average_V2.png (PNG copy)> <./pics/Ch6_Results2/2
-018QED_Espec_AllVarBar.png (PNG copy)>]
-Overfull \hbox (14.74321pt too wide) in paragraph at lines 235--235
+ [189 <./pics/Ch6_Results2/2018QED_ElecSpecs_montage.jpg>] [190 <./pics/Ch6_Res
+ults2/2018QED_ElecSpecs_average_V2.png (PNG copy)> <./pics/Ch6_Results2/2018QED
+_Espec_AllVarBar.png (PNG copy)>]
+Overfull \hbox (14.74321pt too wide) in paragraph at lines 233--233
 []\OT1/cmr/bx/n/17.28 Characterisation of Bremsstrahlung Con-verter Tar-
  []
 
-<pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png, id=5005, 492.8412
+<pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png, id=5004, 492.8412
 5pt x 396.48125pt>
 File: pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png Graphic file 
 (type png)
 <use pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_exampl
-e.png  used on input line 248.
+e.png  used on input line 246.
 (pdftex.def)             Requested size: 227.62204pt x 183.12166pt.
-<pics/Ch6_Results2/2018QED_GProfile_CollimatorOUT_example.png, id=5006, 482.803
+<pics/Ch6_Results2/2018QED_GProfile_CollimatorOUT_example.png, id=5005, 482.803
 76pt x 393.47pt>
 File: pics/Ch6_Results2/2018QED_GProfile_CollimatorOUT_example.png Graphic file
  (type png)
 <use pics/Ch6_Results2/2018QED_GProfile_CollimatorOUT_example.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GProfile_CollimatorOUT_examp
-le.png  used on input line 248.
+le.png  used on input line 246.
 (pdftex.def)             Requested size: 227.62204pt x 185.50128pt.
 [191]
 
 LaTeX Warning: Reference `BW:fig:converter_yield_v_div' on page 192 undefined o
-n input line 268.
+n input line 266.
 
-<pics/Ch6_Results2/2018QED_Converter_Yield.png, id=5012, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/2018QED_Converter_Yield.png, id=5010, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/2018QED_Converter_Yield.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_Converter_Yield.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Converter_Yield.png  used on
- input line 272.
+ input line 270.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/2018QED_Converter_Divergence.png, id=5014, 2007.5pt x 1003.7
+[192 <./pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png> <./pics/Ch
+6_Results2/2018QED_GProfile_CollimatorOUT_example.png>]
+<pics/Ch6_Results2/2018QED_Converter_Divergence.png, id=5019, 2007.5pt x 1003.7
 5pt>
 File: pics/Ch6_Results2/2018QED_Converter_Divergence.png Graphic file (type png
 )
 <use pics/Ch6_Results2/2018QED_Converter_Divergence.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Converter_Divergence.png  us
-ed on input line 287.
+ed on input line 285.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-[192 <./pics/Ch6_Results2/2018QED_GProfile_CollimatorIN_example.png> <./pics/Ch
-6_Results2/2018QED_GProfile_CollimatorOUT_example.png>]
-<pics/Ch6_Results2/2018QED_GConverter_Pointing.png, id=5024, 2007.5pt x 1003.75
+ [193 <./pics/Ch6_Results2/2018QED_Converter_Yield.png (PNG copy)>]
+<pics/Ch6_Results2/2018QED_GConverter_Pointing.png, id=5029, 2007.5pt x 1003.75
 pt>
 File: pics/Ch6_Results2/2018QED_GConverter_Pointing.png Graphic file (type png)
 
 <use pics/Ch6_Results2/2018QED_GConverter_Pointing.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GConverter_Pointing.png  use
-d on input line 317.
+d on input line 315.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
- [193 <./pics/Ch6_Results2/2018QED_Converter_Yield.png (PNG copy)>] [194 <./pic
-s/Ch6_Results2/2018QED_Converter_Divergence.png (PNG copy)> <./pics/Ch6_Results
-2/2018QED_GConverter_Pointing.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_AbsTransmission_V2.png, id=5040, 2007.5pt x 1003.75p
+ [194 <./pics/Ch6_Results2/2018QED_Converter_Divergence.png (PNG copy)>]
+<pics/Ch6_Results2/2018QED_AbsTransmission_V2.png, id=5038, 2007.5pt x 1003.75p
 t>
 File: pics/Ch6_Results2/2018QED_AbsTransmission_V2.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_AbsTransmission_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_AbsTransmission_V2.png  used
- on input line 335.
+ on input line 333.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
- [195 <./pics/Ch6_Results2/2018QED_AbsTransmission_V2.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V2.png, id=5051, 2007.5pt x 10
+ [195 <./pics/Ch6_Results2/2018QED_GConverter_Pointing.png (PNG copy)>]
+<pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V2.png, id=5050, 2007.5pt x 10
 03.75pt>
 File: pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V2.png Graphic file (type
  png)
 <use pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V2.png
-  used on input line 371.
+  used on input line 369.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/2018QED_YieldvNoise_CollIN_V2.png, id=5053, 2007.5pt x 1003.
+<pics/Ch6_Results2/2018QED_YieldvNoise_CollIN_V2.png, id=5052, 2007.5pt x 1003.
 75pt>
 File: pics/Ch6_Results2/2018QED_YieldvNoise_CollIN_V2.png Graphic file (type pn
 g)
 <use pics/Ch6_Results2/2018QED_YieldvNoise_CollIN_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_YieldvNoise_CollIN_V2.png  u
-sed on input line 386.
+sed on input line 384.
 (pdftex.def)             Requested size: 409.71689pt x 236.72366pt.
-<pics/Ch6_Results2/2018QED_Yield_CollIN.png, id=5055, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/2018QED_Yield_CollIN.png, id=5054, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/2018QED_Yield_CollIN.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_Yield_CollIN.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Yield_CollIN.png  used on in
-put line 394.
+put line 392.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/2018QED_NoiseOverYield_CollIN.png, id=5057, 2007.5pt x 1003.
+<pics/Ch6_Results2/2018QED_NoiseOverYield_CollIN.png, id=5056, 2007.5pt x 1003.
 75pt>
 File: pics/Ch6_Results2/2018QED_NoiseOverYield_CollIN.png Graphic file (type pn
 g)
 <use pics/Ch6_Results2/2018QED_NoiseOverYield_CollIN.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_NoiseOverYield_CollIN.png  u
-sed on input line 402.
+sed on input line 400.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
- [196] [197 <./pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V2.png (PNG copy
-)> <./pics/Ch6_Results2/2018QED_YieldvNoise_CollIN_V2.png (PNG copy)>] [198 <./
-pics/Ch6_Results2/2018QED_Yield_CollIN.png (PNG copy)> <./pics/Ch6_Results2/201
-8QED_NoiseOverYield_CollIN.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_GSGP_Corr.png, id=5078, 2007.5pt x 1003.75pt>
+ [196 <./pics/Ch6_Results2/2018QED_AbsTransmission_V2.png (PNG copy)>] [197 <./
+pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V2.png (PNG copy)> <./pics/Ch6_
+Results2/2018QED_YieldvNoise_CollIN_V2.png (PNG copy)>] [198 <./pics/Ch6_Result
+s2/2018QED_Yield_CollIN.png (PNG copy)> <./pics/Ch6_Results2/2018QED_NoiseOverY
+ield_CollIN.png (PNG copy)>]
+<pics/Ch6_Results2/2018QED_GSGP_Corr.png, id=5076, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/2018QED_GSGP_Corr.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GSGP_Corr.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GSGP_Corr.png  used on input
- line 448.
+ line 446.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
  [199] [200 <./pics/Ch6_Results2/2018QED_GSGP_Corr.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png, id=5100, 574.145pt x 353.32
+<pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png, id=5098, 574.145pt x 353.32
 pt>
 File: pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png Graphic file (type png)
 
 <use pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png  use
-d on input line 494.
+d on input line 492.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png, id=5101, 574.145pt x 353.32p
+<pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png, id=5099, 574.145pt x 353.32p
 t>
 File: pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png  used
- on input line 494.
+ on input line 492.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
-<pics/Ch6_Results2/2018QED_ElecSpecs.png, id=5102, 574.145pt x 353.32pt>
+<pics/Ch6_Results2/2018QED_ElecSpecs.png, id=5100, 574.145pt x 353.32pt>
 File: pics/Ch6_Results2/2018QED_ElecSpecs.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_ElecSpecs.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_ElecSpecs.png  used on input
- line 502.
+ line 500.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_simresp.png, id=5103, 580.1675pt x 353.32p
+<pics/Ch6_Results2/2018QED_GammaSpec_simresp.png, id=5101, 580.1675pt x 353.32p
 t>
 File: pics/Ch6_Results2/2018QED_GammaSpec_simresp.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GammaSpec_simresp.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_simresp.png  used 
-on input line 502.
+on input line 500.
 (pdftex.def)             Requested size: 227.62204pt x 138.6191pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_expresp.png, id=5104, 580.1675pt x 353.32p
+<pics/Ch6_Results2/2018QED_GammaSpec_expresp.png, id=5102, 580.1675pt x 353.32p
 t>
 File: pics/Ch6_Results2/2018QED_GammaSpec_expresp.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GammaSpec_expresp.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_expresp.png  used 
-on input line 504.
+on input line 502.
 (pdftex.def)             Requested size: 227.62204pt x 138.6191pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png, id=5105, 574.145pt x 3
+<pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png, id=5103, 574.145pt x 3
 53.32pt>
 File: pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png Graphic file (type
  png)
 <use pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png
-  used on input line 504.
+  used on input line 502.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
-<pics/Ch6_Results2/2018QED_GSpec_Variations_V2.png, id=5106, 2007.5pt x 1003.75
+<pics/Ch6_Results2/2018QED_GSpec_Variations_V2.png, id=5104, 2007.5pt x 1003.75
 pt>
 File: pics/Ch6_Results2/2018QED_GSpec_Variations_V2.png Graphic file (type png)
 
 <use pics/Ch6_Results2/2018QED_GSpec_Variations_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GSpec_Variations_V2.png  use
-d on input line 519.
+d on input line 517.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png, id=5108, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png, id=5106, 2007.5pt x 1003.75pt>
 
 File: pics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png  used o
-n input line 521.
+n input line 519.
 (pdftex.def)             Requested size: 409.71689pt x 204.85112pt.
  [201 <./pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png> <./pics/Ch6_Results
 2/2018QED_GammaSpec_simspec2.png>]
@@ -2739,67 +2749,65 @@ ammaSpec_simresp.png> <./pics/Ch6_Results2/2018QED_GammaSpec_expresp.png> <./pi
 cs/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png>] [203 <./pics/Ch6_Results
 2/2018QED_GSpec_Variations_V2.png (PNG copy)> <./pics/Ch6_Results2/2018QED_GEAN
 T_AvGSpec_V2.png (PNG copy)>]
-<pics/Ch6_Results2/BW_XraySpec_AvDay.png, id=5129, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/BW_XraySpec_AvDay.png, id=5128, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BW_XraySpec_AvDay.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_XraySpec_AvDay.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_XraySpec_AvDay.png  used on input
- line 541.
+ line 539.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/BW_XraySpec_Morton.png, id=5131, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/BW_XraySpec_Morton.png, id=5130, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BW_XraySpec_Morton.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_XraySpec_Morton.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_XraySpec_Morton.png  used on inpu
-t line 543.
+t line 541.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/BW_XraySpec_AvDay_Yield.png, id=5133, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/BW_XraySpec_AvDay_Yield.png, id=5132, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BW_XraySpec_AvDay_Yield.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_XraySpec_AvDay_Yield.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_XraySpec_AvDay_Yield.png  used on
- input line 549.
+ input line 547.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
- [204
-
-] [205 <./pics/Ch6_Results2/BW_XraySpec_AvDay.png (PNG copy)> <./pics/Ch6_Resul
-ts2/BW_XraySpec_Morton.png (PNG copy)>]
-<pics/Ch6_Results2/BWxsection2.png, id=5147, 848.16875pt x 720.6925pt>
+ [204] [205 <./pics/Ch6_Results2/BW_XraySpec_AvDay.png (PNG copy)> <./pics/Ch6_
+Results2/BW_XraySpec_Morton.png (PNG copy)>]
+<pics/Ch6_Results2/BWxsection2.png, id=5146, 848.16875pt x 720.6925pt>
 File: pics/Ch6_Results2/BWxsection2.png Graphic file (type png)
 <use pics/Ch6_Results2/BWxsection2.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWxsection2.png  used on input line 
-578.
+576.
 (pdftex.def)             Requested size: 227.62204pt x 193.4129pt.
-<pics/Ch6_Results2/BWxsection_2D.png, id=5148, 974.64125pt x 907.39pt>
+<pics/Ch6_Results2/BWxsection_2D.png, id=5147, 974.64125pt x 907.39pt>
 File: pics/Ch6_Results2/BWxsection_2D.png Graphic file (type png)
 <use pics/Ch6_Results2/BWxsection_2D.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWxsection_2D.png  used on input lin
-e 578.
+e 576.
 (pdftex.def)             Requested size: 227.62204pt x 211.9075pt.
-<pics/Ch6_Results2/BW_Xsec_NxNg.png, id=5149, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/BW_Xsec_NxNg.png, id=5148, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BW_Xsec_NxNg.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_Xsec_NxNg.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_Xsec_NxNg.png  used on input line
- 584.
+ 582.
 (pdftex.def)             Requested size: 455.24408pt x 264.76721pt.
-<pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr.png, id=5151, 2007.5pt x 10
+<pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr.png, id=5150, 2007.5pt x 10
 03.75pt>
 File: pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr.png Graphic file (type
  png)
 <use pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr.png
-  used on input line 591.
+  used on input line 589.
 (pdftex.def)             Requested size: 364.19664pt x 211.81989pt.
-<pics/Ch6_Results2/BWXsec_Angles_MortonCorrYieldCorr.png, id=5153, 2007.5pt x 1
+<pics/Ch6_Results2/BWXsec_Angles_MortonCorrYieldCorr.png, id=5152, 2007.5pt x 1
 003.75pt>
 File: pics/Ch6_Results2/BWXsec_Angles_MortonCorrYieldCorr.png Graphic file (typ
 e png)
 <use pics/Ch6_Results2/BWXsec_Angles_MortonCorrYieldCorr.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWXsec_Angles_MortonCorrYieldCorr.pn
-g  used on input line 593.
+g  used on input line 591.
 (pdftex.def)             Requested size: 364.19664pt x 211.81989pt.
-<pics/Ch6_Results2/BWXsec_Angles_AvDay.png, id=5155, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/BWXsec_Angles_AvDay.png, id=5154, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BWXsec_Angles_AvDay.png Graphic file (type png)
 <use pics/Ch6_Results2/BWXsec_Angles_AvDay.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWXsec_Angles_AvDay.png  used on inp
-ut line 595.
+ut line 593.
 (pdftex.def)             Requested size: 364.19664pt x 211.81989pt.
 
 [206 <./pics/Ch6_Results2/BW_XraySpec_AvDay_Yield.png (PNG copy)>] [207 <./pics
@@ -2827,7 +2835,7 @@ Chapter 7.
 
 
 ]
-<pics/RR20_ExpSetup.png, id=5200, 1927.2pt x 1084.05pt>
+<pics/RR20_ExpSetup.png, id=5199, 1927.2pt x 1084.05pt>
 File: pics/RR20_ExpSetup.png Graphic file (type png)
 <use pics/RR20_ExpSetup.png>
 Package pdftex.def Info: pics/RR20_ExpSetup.png  used on input line 52.
@@ -2984,31 +2992,31 @@ AED: lastpage setting LastPage
 
 Package nag Warning: 5 complaints in total.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 320.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 320.
 (./Thesis_Gerstmayr_V2.aux (./Ch1_Introduction/Introduction.aux)
 (./Ch2_Theory/Theoretical_Background.aux)
 (./Ch3_Methods/Experimental_Methods.aux)
 (./Ch4_Simulations/Gamma_Spectrometer.aux) (./Ch7_Results3/RR2019_linICS.aux)
 (./Ch5_Results1/RR2015.aux) (./Ch6_Results2/BW2018.aux)
 (./Ch9_Conclusion/Conclusions.aux) (./Ch10_Appendix/Appendix.aux) (./bu.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 320.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 320.
 Package rerunfilecheck Info: File `Thesis_Gerstmayr_V2.out' has not changed.
 (rerunfilecheck)             Checksum: B1D81C3CE1703E8F7A6533C49C75B03F;11741.
 Package rerunfilecheck Info: File `Thesis_Gerstmayr_V2.brf' has not changed.
-(rerunfilecheck)             Checksum: DA54A59AB360E3A89E8A93E0B14BF910;10837.
+(rerunfilecheck)             Checksum: 02F7DB6D68D62D61B2DCFF75BF6DC34C;10837.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 320.
  ) 
 Here is how much of TeX's memory you used:
- 37412 strings out of 492639
- 749541 string characters out of 6129301
- 808164 words of memory out of 5000000
- 39362 multiletter control sequences out of 15000+600000
+ 37471 strings out of 492639
+ 750345 string characters out of 6129301
+ 808367 words of memory out of 5000000
+ 39419 multiletter control sequences out of 15000+600000
  550838 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,20n,82p,1878b,918s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3036,9 +3044,9 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf
 ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on Thesis_Gerstmayr_V2.pdf (234 pages, 28951392 bytes).
+Output written on Thesis_Gerstmayr_V2.pdf (234 pages, 29165053 bytes).
 PDF statistics:
- 5796 PDF objects out of 6186 (max. 8388607)
- 1044 named destinations out of 1200 (max. 500000)
+ 5795 PDF objects out of 6186 (max. 8388607)
+ 1043 named destinations out of 1200 (max. 500000)
  29449 words of extra memory for PDF output out of 29859 (max. 10000000)
 
