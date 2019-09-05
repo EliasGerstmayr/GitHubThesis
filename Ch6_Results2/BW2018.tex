@@ -4,123 +4,114 @@
 
 \section{Motivation and Introduction}
 
-The Breit-Wheeler (BW) process is the inverse process of the more commonly observed pair annihilation, where an electron and a positron decay into two photons. In the BW process, two (linear) or more (non-linear) photons combine to produce an electron-positron pair --- in other words matter is created from light. The linear Breit-Wheeler process is represented by a simple tree-level Feynman diagram. However, despite its simplicity it is the last tree-level diagram of QED that has not been definitively observed in isolation in vacuum, i.e. without the presence of other particles or external fields.
+The Breit-Wheeler process is the inverse process of the more commonly observed Dirac annihilation, where an electron and a positron decay into two photons, and is particularly relevant for the field of high-energy astrophysics (REF RUFFINI PHYS REP 2010). In the Breit-Wheeler mechanism, two (linear) or more (non-linear) photons combine to produce an electron-positron pair --- in other words matter is created from light. The linear Breit-Wheeler process is the simplest mechanism by which photons can create matter and is one of the most fundamental interactions of quantum electrodynamics (QED) that can be represented by minimally-sized Feynman diagrams (see Figure \ref{BW:Figs:OPike_TreeDiagrams}). However, despite its simplicity it is the last of these fundamental interaction that has not been definitively observed in isolation in vacuum, i.e. without the presence of other particles or external fields.
 \vspace{\baselineskip}
 
-\SMComm{leave non-linear BW example in and also add LEP/LHC measurements on elastic and inelastic photon-photon scattering.}
+The non-linear Breit-Wheeler process, on the other hand, has been measured and confirmed previously as part of the E144 experiment at SLAC in the `90s where an ultrarelativistic electron beam of $46.6\,\mathrm{GeV}$ energy was collided with an intense laser pulse $a_0 \sim 0.3$, resulting in highly energetic gamma photons from inverse Compton scattering \cite{Bula1996_RR,Burke1997_RR}. These gamma photons in turn interacted with $n \approx 7$ laser photons to produce electron-positron pairs (REF COMPLETE QED THEORY OF TRIDENT HU PRL 2010). The researchers detected about 100 positrons that match the momentum profile for products from the non-linear Breit-Wheeler and the Trident process over the course of 22,000 laser shots.
 
-\iffalse
-its pure form
-The non-linear process, on the other hand, has been measured and confirmed previously as part of the E144 experiment at SLAC in the `90s where an ultrarelativistic electron beam of $46.6\,\mathrm{GeV}$ energy was collided with an intense laser pulse $a_0 \sim 0.3$, resulting in highly energetic gamma photons from inverse Compton scattering \cite{Bula1996_RR,Burke1997_RR}. These gamma photons in turn interacted with $n \approx 5$ laser photons to produce electron-positron pairs. At intensities above $a_0 > 0.2$ the researchers detected $69 \pm 9$ positrons after XX SHOTS NUMBER that match the momentum profile for the non-linear Breit-Wheeler process and the Trident process.
+Similarly few events have been measured for other photon-photon interactions without background fields, for instance at the Large Hadron Collider (LHC): the ATLAS collaboration reported on 13 candidate events for light-light scattering in heavy-ion collisions (REF NATURE PHYS 13 (2017), ENTERRIA, DA SILVERIA PRL111). Inelastic photon-photon interactions were, for instance, measured by the OPAL Collaboration at LEP (EUROPEAN PHYSICAL JOURNAL C TOTAL HADRONIC CROSS-SECTION OAP 2000).
 \vspace{\baselineskip}
-\fi
 
 \begin{figure}
 \centering
 \includegraphics[width=.9\columnwidth]{QED_TreeDiagrams_OPike.jpg}
-\caption{O. Pike Tree level diagrams.}
+\caption{Overview of theoretical fundamental QED processes shown in their Feynman representation along with the year the process was validated experimentally. Each of the processes has been observed in experiment, with exception of the Breit-Wheeler pair production, and either theoretical or experimental work related to them has been rewarded with a Nobel prize. Taken from REF O PIKE.}
+\label{BW:Figs:OPike_TreeDiagrams}
 \end{figure}
 
-Pair annihilation is easily measured in radioactive decays as its cross section is very high at low energies ($\sigma \propto E^{-1}$) and an abundance of electrons in ordinary matter provides an abundance of attractive partners for positrons to annihilate with. Pair creation from radiation, on the other hand, requires high energy photons and/or a very high photon density, for instance a tightly focused laser, to overcome the production threshold of twice the electron rest mass energy $2m_e c^2 \approx 1\,\mathrm{MeV}$ and an excess of energy to provide the generated pair with sufficient momentum. However, delivering two bright photon sources at suitable energies at the same location is very challenging and hence mainly mediated pair production processes in presence of a background field have been measured instead \cite{Heitler1954_BH,Chen2009_BH,Sarri2015_pairs,Bula1996_RR}.
-\SMComm{SM: partners attract. Threshold in zero momentum frame.}
-\EliasComm{Frame is irrelevant? Centre of mass energy.}
+Pair annihilation is easily measured in radioactive decays as its cross section is very high at low energies ($\sigma_{e^+ e^-} \propto 1/E$) and an abundance of electrons in ordinary matter provides an abundance of attractive partners for positrons to annihilate with. Pair creation from radiation, on the other hand, requires high energy photons and/or a very high photon density, for instance a tightly focused laser, to overcome the production threshold of a centre-of-mass energy, $\sqrt{s_{\gamma \gamma}}$, twice the electron rest mass energy $2m_e c^2 \approx 1\,\mathrm{MeV}$ and an excess of energy to provide the created pair with sufficient momentum to avoid an immediate decay. However, delivering two bright photon sources at suitable energies at the same location is very challenging and hence mainly mediated pair production processes in presence of a background field have been measured instead \cite{Heitler1954_BH,Chen2009_BH,Sarri2015_pairs,Bula1996_RR}. The relative quantities of the Breit-Wheeler and annihilation cross-sections are related by $\sigma_{\gamma \gamma} = 2\beta^2 \sigma_{e^+e^-}$, where $\beta = \sqrt{1-1/s}$ (see Figure \ref{BW:figs:BW_Dirac_Xsec}).
 \vspace{\baselineskip}
 
 \begin{figure}
 \centering
-\includegraphics[width=.7\columnwidth]{2018QED_Chicane.JPG}
-\caption{In pursuit of creating matter from light. Photo taken during the experiment campaign aimed at measuring the linear Breit-Wheeler process at the Gemini facility in 2018. View upstream on the gamma-ray axis, indicated by a green alignment laser, through the magnetic chicane that is designed to transport generated electron-positron pairs from the Breit-Wheeler process to single particle detectors.}
+\includegraphics[trim={5.5cm 0 6.0cm 0}, clip, width=1.0\columnwidth]{BWD_Xsec.png}
+\caption{Breit-Wheeler and Dirac cross section as function of the centre-of-mass energy $\sqrt{s}$. For $s\rightarrow 1$ the pair production cross section falls to zero whilst the annihilation cross section diverges. The maximum value of the Breit-Wheeler cross section coincides with the energy at which both cross sections are equal.}
+\label{BW:figs:BW_Dirac_Xsec}
 \end{figure}
 
-High energy radiation in the $\mathrm{keV}$ range can be produced from highly relativistic electrons, for instance at XFELs and synchrotron sources using bending magnets and insertion devices, and equivalently in plasma accelerators through betatron radiation. A thermal X-ray source can be provided by sufficiently heating solid targets, for instance hohlraums or foils (REF).
-\EliasComm{Thermal needs to be changed as we are looking at line emission.}
+High energy radiation in the $\mathrm{keV}$ range can be produced from highly relativistic electrons, for instance at XFELs and synchrotron sources using bending magnets and insertion devices, and equivalently in plasma accelerators through betatron radiation. Another approach is to sufficiently heat solid targets, for instance hohlraums (PIKE REF) or burn-through foils (EDWARDS EUROPHYSICS LETT 1990 REF), with a laser.
 
 Directed energetic gamma radiation can be generated by passing electrons through solid material to produce bremsstrahlung (REF) or relying on inverse Compton scattering (REF).
 \vspace{\baselineskip}
 
-\SMComm{Add some details on O. Pike's design.}
-\SMComm{Add some details on sqrt(s) and cross section. Maybe figure comparing it to the annihilation cross section.}
+In 2014, Pike et al. \cite{Pike2014_BW} proposed to measure the linear Breit-Wheeler process by combining a low-divergence ($\theta \sim ln(\gamma)/\gamma$) bremsstrahlung source, consisting of a GeV-class electron beam generated by a high-intensity laser and a gold foil, with a blackbody radiation field formed in a hohlraum which is heated by a high-energy laser. For $1\times 10^9$ electrons at 2 GeV, a 5 mm thick gold foil and a 1 cm hohlraum at 400 eV, the researchers predicted up to $1\times10^5$ pairs to be generated from the linear Breit-Wheeler process. The asymmetry of the energies produced by the two photon sources results in an emission of pairs in the direction of the higher energetic gamma ray beam. This is referred to as pair beaming \cite{Ribeyre2018_BW}, which in principal allows the extraction and measurement of all pairs produced, better separation of signal and noise, and using smaller detectors.
 
-In the experiment presented here, two lasers are used to provide simultaneously an X-ray and a gamma-ray source to overcome the mass threshold and to produce electron-positron pairs from the linear Breit-Wheeler process. The conceptual idea is based on \cite{Pike2014_BW,PikeThesis}. The asymmetric distribution of the photon energies means that produced pairs will be strongly directed along the gamma-ray axis and easier to separate from noise. This is referred to as pair beaming \cite{Ribeyre2018_BW}.
-\EliasComm{Directionality also means smaller detector needed.}
-\EliasComm{Cone of angle $ln(\gamma)/\gamma$ plus electron divergence, so $<10$ mrad?}
+\begin{figure}
+\centering
+\includegraphics[width=.7\columnwidth]{2018QED_Chicane.JPG}
+\caption{In pursuit of creating matter from light. Photo taken during the experiment campaign aimed at measuring the linear Breit-Wheeler process at the Gemini facility in 2018. View upstream on the gamma-ray axis, indicated by a green alignment laser, through the magnetic chicane that is designed to transport generated electron-positron pairs from the Breit-Wheeler process to designated single particle detectors.}
+\end{figure}
 
-The X-rays are generated by heating a solid germanium target, emitting an X-ray spectrum peaked at $1.5\,\mathrm{keV}$ (L-shell emission). The gamma ray source is produced by bremsstrahlung from LWFA electrons \cite{Glinec2005_Brems}.
+The experiment presented here is based on this proposed layout \cite{Pike2014_BW,PikeThesis}: two lasers are employed to provide simultaneously an X-ray and a gamma-ray source to overcome the mass threshold and to produce electron-positron pairs from the linear Breit-Wheeler process. The gamma rays are produced, as proposed, by bremsstrahlung from LWFA electrons \cite{Glinec2005_Brems}, but in this instance typically at electrons energies $\epsilon_e < 1\,\mathrm{GeV}$. As converter the higher-Z metal bismuth (Bi) is used which allows reducing the material thickness with respect to the proposed gold foil at comparable conversion efficiency. Instead of using a high-energy laser and a hohlraum, a replenishable burn-through foil germanium target in conjunction with another high-intensity laser is used, producing an X-ray spectrum with emission lines peaked around $1.5\,\mathrm{keV}$. This balances out the lower gamma-ray energy and a narrow bandwidth spectrum constrains the interaction conditions.
+Using a replenishable foil target and a high-intensity instead of a high-energy laser also allows making use of high repetition rate systems.
+By removing the X-ray target from the beam axis we also reduce the production of Bethe-Heitler pairs of gamma rays interaction with solids.
 
 \section{Chapter Outline}
 
-... Exp setup
+This Chapter relates to an experimental campaign aimed at measuring the linear Breit-Wheeler process conducted at the Astra Gemini laser system in Spring 2018. Two high-intensity lasers are used to provide provide a highly energetic gamma radiation and an X-ray source that combined exceed the production threshold of a centre-of-mass energy of $\sqrt{s} = 1$.
 
-... characterise electrons
+The experiment can be divided in three major components: the gamma-ray source, the X-ray source and the single particle detectors.
 
-... gammas optimise yield
+This work focuses on the commission, characterisation and considerations related to the gamma-ray source. This is the main contribution of the author to the overall analysis of the experimental data.
+In some parts this Chapter will refer to analysis from diagnostics related to the other two areas where the author has not directly contributed to the analysis itself.
 
-...gammas optimise noise 
+The X-ray data has been analysed by Cary Colgan (Imperial College). Data related to the single particle detectors has been analysed by Brendan Kettle (Imperial College) and Guillermo Marrero Samarin (QUB) with significant contribution from Dominik Hollatz (Jena) for the magnetic chicane.
+\vspace{\baselineskip}
 
-.. check fluctuation in spectrum gammas based on electron fluctuations
+In this experiment, the gamma-ray source is produced by bremsstrahlung from LWFA electrons traversing a solid target.
+The properties of electrons from LWFA determine the properties of the radiation produced, but LWFA electrons underlie intrinsic fluctuations and properties vary from experiment to experiment. Hence, the electron properties are first characterised in general and more specifically its variation in performance for three shot days. The properties of interest are charge, electron energy, divergence and pointing stability.
 
-... analyse the impact on the BW cross-section, fluctuations
+Secondly, the electron beam is used to produce radiation from bremsstrahlung. The properties of radiation that the electron beam can produce are investigated for two different density regimes of the accelerator and two converter materials at different thicknesses. The performance of the source in its different configurations is scrutinised and optimised in terms of `useful' yield and signal-to-noise ratio.
 
-.. Final work/future work
+Based on the conclusions of the bremsstrahlung survey and its optimisation, the gamma source is characterised for the three shot days. The characterisation of the electron spectra for these shot days are used to validate the response of the gamma spectrometer.
 
-The following sections will outline the experiment setup aimed at measuring the linear Breit-Wheeler process, and take the reader through some of the data taken during the experimental campaign and the considerations relevant for its analysis.
+Then, the measured spectra of the X-ray source, analysed by C. Colgan (Imperial College) and its performance for the shot days are presented.
 
-The description of the experiment setup will convince the reader immediately of the complexity of this project and will also make it evident that a large number of researchers is required to tackle this challenge, with responsibilities for different parts of the design, execution and analysis of various diagnostics being shared amongst its contributors. 
-\SMComm{Maybe state explicitly that this is what you are focusing on because that is one of the main things you did in terms of data analysis }
-This chapter will focus on the characterisation of the electron beam and the gamma ray source produced with it, their impact on the BW cross section, and variability on and between different shot days. In particular, the choice of converter targets for the bremsstrahlung production and the sensitivity of the spectral measurement of the gamma rays are discussed.
+Combining the characterisation of the gamma-ray source and the X-ray source the impact of the varying performance on the total Breit-Wheeler cross section for the three shot days is analysed and discussed.
 
-In some parts there are references to X-ray spectra, diagnostics for single particle detection (SPD), beam transport for the produced pairs, and signal-to-noise ratios, but this will not be covered in extensive detail. It is pursued and will be presented in some form by other colleagues and exceeds the scope of this thesis. Explicit contributions by fellow colleagues will be highlighted as such if they are used in the course of this work. 
+Then, briefly the overall status of the analysis is summarised to give context.
 
-Nonetheless, a brief section at the end will attempt to place this work in the context of the full analysis of this campaign, summarise its findings and relevance for the project, and direct the reader to relevant publications for further information.
-
-\SMComm{this chapter will refer to analysis from diagnostics where the author has not directly contributed to the analysis, such as..., }
-\SMComm{Relevant pubs?}
+Finally, as conclusion the results of this analysis are used to suggest improvements for a future measurement.
 
 \section{Experimental Setup}
 
 The experiment was performed at the dual 300 TW Ti:Sa Gemini laser at the Central Laser Facility, UK, in early 2018.
-The aim of this setup is to produce and to measure electron-positron pairs from the linear Breit-WHeeler process. For this purpose, high-energy gamma rays are collided with a X-ray source from a hot plasma. The South arm of the Gemini laser provides the gamma source, the North beam the X-rays.
-A sketch of the setup is provided in Figure \ref{BW:fig:exp_sketch}.
+The aim of this setup is to produce and to measure electron-positron pairs from the linear Breit-Wheeler process. For this purpose, high-energy bremsstrahlung gamma-rays produced by LWFA electrons were collided with X-rays from a heated burn-through foil. The South arm of the Gemini laser provided the gamma source, the North beam the X-rays.
+A sketch of the experimental setup is shown in Figure \ref{BW:fig:exp_sketch}.
 
 \SMComm{Use past tense.}
 
 \begin{sidewaysfigure}
 \centering
 \includegraphics[width=1.0\columnwidth]{BW2018_render_V4_annotated.png}%{BW2018_render_V3_annotated3.png}
-\caption{Sketch of the experiment setup indicating the main components.}
+\caption{Sketch of the experimental setup indicating its main components. From left to right: The first laser pulse (left, red) is focused by an f/40 OAP into a gas cell target (blue), producing an electron beam (blue) via LWFA leaving the cell on the right side. The remainders of the laser pulse are removed after the cell by a kapton tape acting as plasma mirror (orange). The electron beam passes through the tape traverses a metal converter target producing gamma radiation from bremsstrahlung (green) in forward-direction. A tungsten (W) collimator removes the divergent components of the radiation and a thick W block shields the direct line of sight to the X-ray target further downstream. When the converter (and the collimator) are not in the path of the electron beam, it is characterised by a magnetic spectrometer using a permanent dipole magnet. A second laser (red) is focused onto a kapton tape with germanium (Ge) dots (orange) act as source of X-rays (green) that are characterised by a crystal spectrometer and a pinhole camera (turquoise). Positrons produced in the interaction of the X-rays and gamma-rays propagate downstream and are directed through a magnetic chicane and onto single particle detectors (brown). The gamma-rays are measured by a gamma profile detector and a gamma spectrometer (gold).}
 \label{BW:fig:exp_sketch}
 \end{sidewaysfigure}
 
 \subsubsection{North beam and X-ray source}
 
-In this experiment, the North beam is temporally not fully compressed to its usual $45\,\mathrm{fs}$ duration but is stretched to a pulse duration of $40\,\mathrm{ps}$ \textsc{fwhm} in order to effectively heat a solid target. The beam is focused by an f/2 off-axis parabola (OAP) with a phase plate (REF) in the collimated beam that smooths and also increases the size of the focal spot to an ellipse of about $75\,\mathrm{\mu m} \times 210\,\mathrm{\mu m}$. The target is a $25\,\mathrm{\mu m}$ thick kapton tape with etched holes reduced to $5\,\mathrm{\mu m}$ thickness. The thinned out parts of the tape are coated with $100\,\mathrm{nm}$ thick germanium (Ge) dots\footnote{Target and fabrication techniques were developed by the Target Fabrication Division at the Central Laser Facility, in particular Sam Astbury and Chris Spindloe.}. When the germanium is heated, it produces a plasma plume that emits X-rays with a distinct peak at $1.5\,\mathrm{keV}$ due to an L-shell emission (REF). The motion of the tape drive is motorised\footnote{The tape drive was designed and built by Brendan Kettle (Imperial College).} and a fresh Ge target is provided on each shot. 
+In this experiment, the North beam was temporally detuned to a pulse duration of $40\,\mathrm{ps}$ \textsc{fwhm} in order to effectively heat a solid target. The beam was focused by an f/2 off-axis parabola (OAP) with a phase plate (REF) in the collimated beam that smooths and also increases the size of the focal spot to an ellipse of about $75\,\mathrm{\mu m} \times 210\,\mathrm{\mu m}$. The target is a $25\,\mathrm{\mu m}$ thick kapton tape with etched holes reduced to $5\,\mathrm{\mu m}$ thickness. The thinned out parts of the tape are coated with $100\,\mathrm{nm}$ thick germanium (Ge) dots\footnote{Target and fabrication techniques were developed by the Target Fabrication Division at the Central Laser Facility, in particular Sam Astbury and Chris Spindloe.}. When the germanium is heated, it produces a plasma plume that faces the focusing optic and emits X-rays with distinct emission lines around $1.5\,\mathrm{keV}$(REF). To reach the interaction region the X-rays have to pass through the tape which filters some of the low energy components. The motion of the tape drive is motorised\footnote{The tape drive was designed and built by Brendan Kettle (Imperial College).} and a fresh Ge target is provided on each shot. 
 \SMComm{Focal spot size North?}
-\SMComm{Need to be clear that the xray region is the rear side of the foil, through the plastic.  We are not shooting through the plume}
 
-The X-ray source is diagnosed by a pinhole camera measuring the flux and the source size. A camera attached to a crystal measures the spectrum of the X-rays in a $\sim 700\,\mathrm{eV}$ window from just under $1.3\,\mathrm{keV}$ to $2\,\mathrm{keV}$ including the L-shell emission of Ge at $1.5\,\mathrm{keV}$. Both cameras are back-illuminated deep-depletion X-ray in-vacuum CCD cameras (Andor DX420-BR-DD).
+The X-ray source is diagnosed by a pinhole camera measuring the flux and the source size. A crystal spectrometer measures the spectrum of the X-rays that do not pass through the tape in a $\sim 700\,\mathrm{eV}$ window from just under $1.3\,\mathrm{keV}$ to $2\,\mathrm{keV}$ including the emission lines around $1.5\,\mathrm{keV}$. Both cameras are back-illuminated deep-depletion X-ray in-vacuum CCD cameras (Andor DX420-BR-DD).
 The X-ray source is the first component for the two-photon interaction. 
-\SMComm{What do you mean by L shell ?  The cold transitions in Germanium around here are the M-L transitions.  
-
-Things do change with temperature, for example as the Ge becomes ionised, the inner shells are more tightly bound shifting the emission lines to higher energy.  But I am fairly sure it is the ML band we are looking at.}
 
 \subsubsection{South beam, electrons and gamma source}
 
-The South laser is focused down by a $6\,\mathrm{m}$ focal length f/40 OAP onto the edge of a $17.5\,\mathrm{mm}$ long gas cell target\footnote{Variable gas cell from 1 to 20 mm, designed and built by Nelson Lopes (Imperial College/IST).} filled with helium and 2 percent nitrogen at an average electron density of XX NUMBER. The typical average spot size is $44\,\mathrm{\mu m} \times 53\,\mathrm{\mu m}$ at $5.51\pm 0.64\,\mathrm{J}$ energy on target at a pulse duration of $45 \pm 5\,\mathrm{fs}$, peak intensity $I_0 = 2.75 \times 10^{18} \,\mathrm{W/cm^3}$ corresponding to a normalised vector potential $a_0 = 1.13$. The energy on target was limited by the damage threshold of the mirrors in the focusing beam.
-The laser drives a wakefield and accelerates electrons, injected predominantly via ionisation injection \cite{McGuffey2010_ION,Pak2010_ION}, to relativistic energies. The remaining laser exiting the cell is disposed of by another replenishable kapton tape that acts as a plasma mirror \cite{Kapteyn1991_PM}.
-\vspace{\baselineskip}
-\SMComm{No need to redo analysis - just cite that Matt did it, unless you want to double check.  }
-\SMComm{How sure about predominant ionisation injection.}
-
-The electrons are dispersed vertically by a permanent dipole magnet of integrated field strength $\int B dx = 0.4\,\mathrm{Tm}$ onto a scintillating Lanex screen measuring their energy and charge. The yoke of the magnet is blocking the path of dispersed lower energy electrons and as a result the outgoing spectrum has a low energy cut-off at about $300\,\mathrm{MeV}$. The screen is imaged by a cooled 16-bit CCD camera (Andor Neo) equipped with an objective and a bandpass filter transmitting $546 \pm 10\,\mathrm{nm}$. High-Z foils of various thicknesses are mounted on a motorised linear stage and can be driven into the path of the electrons to act as bremsstrahlung converters (REF). This interaction produces copious amounts of directed bremsstrahlung in propagation direction and stops most of the electrons in the process (REF). Divergent gamma rays are likely to collide with components and apertures along the beam axis producing leptons with comparable properties as the BW pairs. A tungsten collimator of length $100\,\mathrm{mm}$, inner diameter $2\,\mathrm{mm}$ and outer diameter $20\,\mathrm{mm}$ is employed to reduce the emitted gamma-ray cone to its central part at low divergence in order to reduce noise. The exit of the collimator is placed at $280\,\mathrm{mm}$ distance from the converter target and apertures the beam down to a field of view of $2\,\mathrm{mm}/0.28\,\mathrm{m} = 7.14\,\mathrm{mrad}$. In addition, a thick block of tungsten obstructs the direct line of sight from the converter target to the Ge target drive, bisecting the signal to avoid gamma rays the kapton tape and producing pairs in the process. Only a collimated bright `half moon' of gamma rays from bremsstrahlung is incident on the interaction point, providing the second component for the two-photon interaction.
+The South laser is focused down by a $6\,\mathrm{m}$ focal length f/40 OAP onto the edge of a $17.5\,\mathrm{mm}$ long gas cell target\footnote{Variable gas cell from 1 to 20 mm, designed and built by Nelson Lopes (Imperial College/IST).} filled with helium and 2 percent nitrogen at an electron density of XX NUMBER. The typical average spot size is $44\,\mathrm{\mu m} \times 53\,\mathrm{\mu m}$ at $5.51\pm 0.64\,\mathrm{J}$ energy on target at a pulse duration of $45 \pm 5\,\mathrm{fs}$, peak intensity $I_0 = 2.75 \times 10^{18} \,\mathrm{W/cm^3}$ corresponding to a normalised vector potential $a_0 = 1.13$. The energy on target was limited by the damage threshold of the mirrors in the focusing beam.
+The laser drives a wakefield and accelerates electrons to relativistic energies. The remaining laser exiting the cell is disposed of by another replenishable kapton tape that acts as a plasma mirror \cite{Kapteyn1991_PM}.
 \vspace{\baselineskip}
 
-The gamma-ray burst propagates almost unperturbed by the interaction through the aperture of a lead wall, which shields noise generated around the interaction point, and then through a large aperture dipole magnet. It then passes through the central one out of three $125\,\mathrm{\mu m}$ thick kapton windows at the end of the chamber into air. The flange holds three apertures spanned with kapton, with a central $80\,\mathrm{mm}$ diameter circular aperture and two slits of dimensions $150\,\mathrm{mm}\,\times\, 35\,\mathrm{mm}$ flanking it on either side. 
+The electrons are dispersed downwards by a permanent dipole magnet of integrated field strength $\int B dx = 0.4\,\mathrm{Tm}$ onto a scintillating Lanex screen measuring their energy and charge. The yoke of the magnet was blocking the path of dispersed electrons with energy below $300\,\mathrm{MeV}$ which results in a corresponding low-energy cut-off of the spectral measurement on the Lanex screen. The screen is imaged by a cooled 16-bit CCD camera (Andor Neo) equipped with an objective and a bandpass filter transmitting $546 \pm 10\,\mathrm{nm}$. High-Z foils of various thicknesses are mounted on a motorised linear stage and can be driven into the path of the electrons to act as bremsstrahlung converters (REF). This interaction produces copious amounts of directed bremsstrahlung in propagation direction and stops most of the electrons in the process (REF). Divergent gamma rays are likely to collide with components and apertures along the beam axis producing leptons with comparable properties as the BW pairs. A tungsten collimator of length $100\,\mathrm{mm}$, inner diameter $2\,\mathrm{mm}$ and outer diameter $20\,\mathrm{mm}$ is employed to reduce the emitted gamma-ray cone to its central part at low divergence in order to reduce noise. The exit of the collimator is placed at $280\,\mathrm{mm}$ distance from the converter target and apertures the beam down to a field of view of $2\,\mathrm{mm}/0.28\,\mathrm{m} = 7.14\,\mathrm{mrad}$. In addition, a thick block of tungsten obstructs the direct line of sight from the converter target to the Ge target drive, bisecting the signal to avoid gamma rays hitting the kapton tape and producing Bethe-Heitler pairs in the process. Only a collimated bright `half moon' of gamma rays from bremsstrahlung is incident on the interaction point, providing the second component for the two-photon interaction.
+\vspace{\baselineskip}
+
+
+The gamma-ray beam propagates largely unperturbed by the interaction through the aperture of a lead wall, which shields noise generated around the interaction point, and then through a large aperture dipole magnet. It then passes through the central one out of three $125\,\mathrm{\mu m}$ thick kapton windows at the end of the chamber into air. The flange holds three apertures spanned with kapton, with a central $80\,\mathrm{mm}$ diameter circular aperture and two slits of dimensions $150\,\mathrm{mm}\,\times\, 35\,\mathrm{mm}$ flanking it on either side. 
 
 At air, a stack of $20 \times 20$ caesium-iodide (CsI) crystals of dimensions $2\,\mathrm{mm}\,\times\,2\mathrm{mm}\,\times\,20\,\mathrm{mm}$, each individually wrapped in aluminium foil ($\sim 15-20\,\mathrm{\mu m}$) and held together in a $1\,\mathrm{cm}$ thick aluminium casing, measures the transverse profile and yield of the gamma-ray signal. The total transverse area is $40\,\mathrm{mm}\times 40\,\mathrm{mm}$ which corresponds to an acceptance angle of $11.8\,\mathrm{mrad}$ based on a distance of $3.39\,\mathrm{m}$ measured from the converter targets to the profile screen. 
 Another larger stack of $33 \times 47$ CsI crystals doped with thallium each of dimensions $5\,\mathrm{mm}\, \times\, 5\,\mathrm{mm}\,\times\,50\,\mathrm{mm}$ and spaced by $1\,\mathrm{mm}$ aluminium spacers measures the decay of the signal in propagation direction to deduce the spectrum. 
 Both CsI arrays are imaged by sensitive Andor iXon cameras equipped with suitable objectives and bandpass filters.
 The arrays are described in more detail in the \nameref{Chap:Methods}.
-\vspace{\baselineskip}
 
 \subsubsection{Magnetic Chicane and Single Particle Detectors}
 
@@ -206,18 +197,20 @@ C & 3 & $9.56 \pm 3.5$ & $535 \pm 21$ & $2.82 \pm 0.91$ & 1.55 & 21
 
 In general, 
 
-... large energy spread as typical for ionisation injection at Gemini, no quasi-mono
+... large energy spread as typical for ionisation injection at Gemini (REF), no quasi-monoenergetic features (REF)
 
 ... lower energy than typically (related to energy on-target)
 
-... performance comparable 9th and 10th with plateau up to 550 MeV or so
+... lower charge than other days
 
-... on the 6th the signal extends to 700 MeV and quite stable.
+... performance comparable days B and C with plateau up to 550 MeV
+
+... on day A spectrum extends to 700 MeV and quite stable.
 
 
 Looking at the key quantities:
 
-... charge was higher on the 6th at XX 25 pC pm.
+... charge was higher on A at XX 25 pC pm.
 
 ... energy as mentioned
 
@@ -233,12 +226,12 @@ Looking at the key quantities:
 \section{Characterisation of Bremsstrahlung Converter Targets}
 
 
-The gamma beam depends strongly on the properties of the electron beam in terms of energy, brightness, divergence and pulse duration, but is also shaped by the choice of the converter material.
-In this case, the aim is the efficient conversion of the electron beam into a narrow cone of gamma rays whilst also maintaining a low level of noise from secondary radiation and particles. To reduce the noise level several tools are used to cut down specific components of the gamma signal, particularly of interest is the collimator that was mentioned in the overview of the experiment setup.
+The properties of the gamma-ray beam depend strongly on the properties of the electron beam in terms of energy, brightness, divergence and pulse duration, but is also shaped by the choice of the converter material.
+In this case, the aim is the efficient conversion of the electron beam into a narrow cone of gamma rays while also maintaining a low level of noise from secondary radiation and particles. To reduce the noise level several tools are used to cut down specific components of the gamma signal, particularly of interest is the collimator that was mentioned in the overview of the experiment setup.
 
-The $10\,\mathrm{mm}$ long tungsten collimator efficiently blocks even highly energetic radiation. Its aperture permits a field of view of $7.14 \pm 0.1 \,\mathrm{mrad}$ full angle.
+The $100\,\mathrm{mm}$ long tungsten collimator efficiently blocks even highly energetic radiation. Its aperture permits a field of view of $7.14 \pm 0.1 \,\mathrm{mrad}$ full angle.
 
-As indicator for gamma yield and divergence we will rely on the gamma profile monitor. An example of a gamma signal with and without collimator is shown in Figure \ref{BW:figs:Gprofile_collimator_INOUT}. The circular shadow seen on the profile monitor matches the predicted field of view (GIVE NUMBER HERE AS COMPARISON).
+We measure the yield and divergence with the gamma profile monitor. An example of a gamma signal with and without collimator is shown in Figure \ref{BW:figs:Gprofile_collimator_INOUT}. The circular shadow seen on the profile monitor matches the predicted field of view (GIVE NUMBER HERE AS COMPARISON).
 
 
 \begin{figure}
@@ -248,7 +241,7 @@ As indicator for gamma yield and divergence we will rely on the gamma profile mo
 \label{BW:figs:Gprofile_collimator_INOUT}
 \end{figure}
 
-Despite its low divergence the collimated gamma will be around $6.2\pm 0.1\,\mathrm{mm}$ wide at the interaction point, about $865\pm 4.5\,\mathrm{mm}$ downstream from the converter target. The X-ray source is much closer to the interaction point and will be smaller at around XX MM NUMBER.
+Despite its low divergence the collimated gamma beam will be around $6.2\pm 0.1\,\mathrm{mm}$ wide at the interaction point, $865\pm 4.5\,\mathrm{mm}$ downstream from the converter target. The X-ray source is much closer to the interaction point and will be smaller at around XX MM NUMBER.
 The spatial overlap of both photon sources is hence guaranteed on each shot. The temporal overlap is also secured as the North beam is a $40\,\mathrm{ps}$ long heater and timing fluctuations at Gemini have been measured to be of order of 10's of $\mathrm{fs}$ REF HERE.
 
 As a result the aim is to now optimise the yield of gamma photons to interact with the ambient X-ray bath.
@@ -257,6 +250,22 @@ As a result the aim is to now optimise the yield of gamma photons to interact wi
 
 As choices of materials we decided on tungsten (W) and bismuth (Bi) as they both are high-Z materials, which means energy can be efficiently converted to radiation within thinner targets resulting in less scattering and divergence. Both materials are also readily available and easy to handle. 
 The aim is to find the ideal combination where most or all of the electron energy is transferred into radiation at a low divergence and high yield.
+
+
+\begin{table}
+\centering
+\begin{tabular}{r|r|r|r|r|r}
+Material & Z & Density [g/cc] & Radiation Length [mm] & Thickness [mm] & Thickness [X0] \\ \hline \hline
+Tungsten (W) & 74 &  19.3 & 3.504 & 4 & 1.14\\
+ & & &  & 2 & 0.57\\ \hline
+Bismuth (Bi) & 83 & 9.747 & 6.454 & 1 & 0.15\\
+& & & & 0.5 & 0.08
+\end{tabular}
+\caption{Overview of bremsstrahlung converter targets}
+\label{BW:tables:brems_converters}
+\end{table}
+
+
 
 More specifically, $2\,\mathrm{mm}$ and $4\,\mathrm{mm}$ tungsten, $0.5$ and $1\,\mathrm{mm}$ bismuth were mounted on $0.5\,\mathrm{mm}$ plastic (PTFE), all on a motorised linear stage that allows switching between the materials or removing the converter targets from the beam path completely.
 \vspace{\baselineskip}
@@ -268,7 +277,7 @@ The results can be seen in Figure \ref{BW:fig:converter_yield_v_div}.
 \begin{figure}
 \centering
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_Converter_Yield.png}
-\caption{Yield}
+\caption{Total measured gamma yield of the gamma-ray beam at two accelerator configurations (low and high electron densities) for tungsten (W, red) and bismuth (Bi, yellow). The values for the thin and the thick targets are shown by the thin and thick bars, respectively.}
 \end{figure}
 
 
@@ -283,7 +292,7 @@ Bremstrahlung \sim Z^2 N(E) E^2
 \begin{figure}
 \centering
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_Converter_Divergence.png}
-\caption{Divergence}
+\caption{FWHM divergence of the gamma-ray beam at two accelerator configurations (low and high electron densities) for tungsten (W, red) and bismuth (Bi, yellow). The values for the thin and the thick targets are shown by the thin and thick bars, respectively.}
 \end{figure}
 
 Comparing the bismuth and the tungsten targets we see that the divergence for bismuth is in general lower than for tungsten. This is probably related to the thinner target. Bismuth has a higher Z-number and can provide a similar conversion efficiency at lower scattering rates.
@@ -313,7 +322,7 @@ Another result can be seen in Figure \ref{BW:figs:converter_pointing}. Here the 
 \begin{figure}
 \centering
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_GConverter_Pointing.png}
-\caption{Pointing.}
+\caption{Pointing of the gamma-ray beam at two accelerator configurations (low and high electron densities) for tungsten (W, red) and bismuth (Bi, yellow). The values for the thin and the thick targets are shown by the thin and thick bars, respectively.}
 \label{BW:figs:converter_pointing}
 \end{figure}
 
@@ -331,7 +340,7 @@ Based on these results 1 mm bismuth appears to be the best suited candidate for 
 \begin{figure}
 \centering
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_AbsTransmission_V2.png}
-\caption{Bar chart transmission through collimator. Maybe add plasma to labels. Change y label to something more concise.}
+\caption{Estimated transmitted yield through the collimator assuming a field of view of 7.14 mrad at two accelerator configurations (low and high electron densities) for tungsten (W, red) and bismuth (Bi, yellow). The values for the thin and the thick targets are shown by the thin and thick bars, respectively.}
 \label{BW:fig:abs_transmission}
 \end{figure}
 
@@ -342,6 +351,14 @@ When inserting the W collimator and thick W block to reduce the noise levels, th
 
 Using the same setup, we are now looking at noise events reaching the SPDs, in this case only one of the TimePix detectors\footnote{Method and numbers provided by B. Kettle looking at the TimePix and finding events that look like particles, will be called clusters.}, and how it correlates with the divergence and yield of the gamma-ray signal. Our hypothesis is that a more divergent gamma-ray beam will interact with more components and apertures in the beam path, generating radiation and particles that are closely related to the BW signal and will because of this resemblance be detected by the SPDs.
 \vspace{\baselineskip}
+
+\SMComm{The positrons produced by the BW process are detected by the timepix3 detectors. These are sensitive to gamma rays and charged particles over a wide range of energies.  The shape of the tracks in the detector allows some events to be excluded. For example, low energy charged particles produce wiggly tracks, high energy particles or gammas produce straight tracks, the length of which provides information about the angle of incidence.  As positrons transported from the collision point enter the detectors within a specific range  of angles, this can be used to exclude some high energy events.  Events which are not excluded are “candidate events”.
+
+Gamma rays  can interact with material in the chamber (eg the magnets, the second lead collimator) and produce positrons via the BH process that have similar characteristics (energy, angle into the chicane) so that they are indistinguishable from BW positrons on the detector.  Gammas striking the vacuum windows can also scatter into the detector at the angle corresponding to a candidate event.  
+
+ We might expect that the number of these noise events will depend on the gamma yield, the following section examines this.... 
+
+}
 
 Figure \ref{BW:figs:converter_noise_div_yield} shows a plot of the total counts on the gamma detector (yield) against the number of registered particle events or `clusters' on the TimePix detector, and how the divergence is related to those noise events.
 
@@ -390,7 +407,7 @@ Looking at Figure \ref{BW:fig:Yield_with_Coll} we see that introducing the colli
 \begin{figure}
 \centering
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_Yield_CollIN.png}
-\caption{Total yield after inserting collimator.}
+\caption{Total measured gamma yield at two accelerator configurations (low and high electron densities) for tungsten (W, red) and bismuth (Bi, yellow). In turquoise the gamma yield measured using the thick bismuth target and the collimator in the beam path. The values for the thin and the thick targets are shown by the thin and thick bars, respectively.}
 \label{BW:fig:Yield_with_Coll_bar}
 \end{figure}
 
@@ -398,7 +415,7 @@ Looking at Figure \ref{BW:fig:Yield_with_Coll} we see that introducing the colli
 \begin{figure}
 \centering
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_NoiseOverYield_CollIN.png}
-\caption{Noise after inserting collimator.}
+\caption{Fitted gradient for Noise/Yield from Figure XX at two accelerator configurations (low and high electron densities) for tungsten (W, red) and bismuth (Bi, yellow). In turquoise the gradient fitted for the data using the thick bismuth target and the collimator in the beam path.}
 \label{BW:fig:Yield_with_NoiseColl_bar}
 \end{figure}
 
@@ -517,9 +534,10 @@ Provide some plots from the GEANT simulation (visualisation).
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_GSpec_Variations_V2.png}
 
 \includegraphics[width = 0.9\columnwidth]{2018QED_GEANT_AvGSpec_V2.png}
-\caption{Variations of gamma signal (based on GEANT simulations). Average gamma spectrum (not scaled by yield). Make this one 4 plot panel.}
+\caption{Variations of gamma signal for the shot days. Top: Gamma-ray yield measured and relative number of photons above 400 MeV(based on GEANT simulations using the average electron spectra measured for those days). Bottom: Average gamma spectra for different shot days. Spectral shape based on GEANT simulations using average electron spectra for those days and scaled by the relative yield measured for the days.}
 \end{figure}
 
+\EliasComm{Absolute numbers for photons? Absolute calibration for yield?}
 
 \subsubsection{General critical energy fitting for the spectra}
 
@@ -539,13 +557,13 @@ See whether there is a change in energy over the days. Based on the qualitative 
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{BW_XraySpec_AvDay.png}
 
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{BW_XraySpec_Morton.png}
-\caption{X-ray spectra.}
+\caption{X-ray spectra. Top: X-ray spectra measured with the crystal spectrometer for different shot days. Bottom: X-ray spectrum simulated by Morton REF (blue) and filtered by plastic (red).}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{BW_XraySpec_AvDay_Yield.png}
-\caption{X-ray Yield.}
+\caption{Total X-ray yield as measured by the crystal spectrometer for the shot days.}
 \end{figure}
 
 
