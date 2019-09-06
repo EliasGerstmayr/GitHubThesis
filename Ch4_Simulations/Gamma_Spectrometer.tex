@@ -35,7 +35,7 @@ The gamma-ray detector presented here is an array of scintillating crystals that
 \begin{figure}
 \centering
 \includegraphics[width=0.8\columnwidth]{render_closeup_whitebg_annotated.png}
-\caption{Sketch of a gamma spectrometer setup in an experiment. The gamma rays (green) traverse from the left a vacuum window (orange) and then at air through a lead collimator onto an array of scintillators (yellow) housed in a casing. The stack is predominantly extended in the longitudinal direction but also has one transverse dimension it resolves. A camera directly images the open side of the scintillators.}
+\caption[Sketch of a gamma spectrometer setup in an experiment.]{Sketch of a gamma spectrometer setup in an experiment. The gamma rays (green) traverse from the left a vacuum window (orange) and then at air through a lead collimator onto an array of scintillators (yellow) housed in a casing. The stack is predominantly extended in the longitudinal direction but also has one transverse dimension it resolves. A camera directly images the open side of the scintillators.}
 \label{Methods:Figs:SketchGammaSpec}
 \end{figure}
 
@@ -50,7 +50,7 @@ In the experiments described in this thesis, two different scintillator stack de
 \begin{figure}
 \centering
 \includegraphics[height=0.3\columnwidth]{scintillator.jpg}\includegraphics[height=0.3\columnwidth]{DualAxis_assembly.JPG}
-\caption{Photographs of scintillator arrays used in experiments. Left: RAL stack. Right: Dual-axis long stack.}
+\caption[Photographs of scintillator arrays used in experiments.]{Photographs of scintillator arrays used in experiments. Left: RAL stack. Right: Dual-axis long stack.}
 \label{Methods:Figs:CsI_Stacks}
 \end{figure}
 
@@ -66,7 +66,7 @@ In Chapter \ref{Chap:BW}, the same scintillator array as in Chapter \ref{Chap:RR
 \centering
 \includegraphics[angle=-90, width=0.5\columnwidth]{CsI_shotexemp.png}
 \includegraphics[angle=-90, width=0.5\columnwidth]{dualaxis_example.png}
-\caption{Examples of raw response recorded on CsI scintillator arrays. Top: Taken with RAL stack and lead collimator. Round circles due to aperture in the steel plate. Bottom: Imaging one side of the front dual-axis stack without collimator setup and extended stack.}
+\caption[Examples of raw response recorded on CsI scintillator arrays.]{Examples of raw response recorded on CsI scintillator arrays. Top: Taken with RAL stack and lead collimator. Round circles due to aperture in the steel plate. Bottom: Imaging one side of the front dual-axis stack without collimator setup and extended stack.}
 \label{Methods:Figs:CsI_shotexemp}
 \end{figure}
 
@@ -89,7 +89,7 @@ RAL & \ref{Chap:RR15}, RR & $47 \times 33$ & Steel 9 mm & Al 1 mm\\
 RAL & \ref{Chap:BW}, BW & $47 \times 33$ & PTFE 1 mm & Al 1 mm\\
 Dual & \ref{Chap:linICS}, linICS & $10 \times 70$ & Al 2 mm & Nylon 0.5 mm
 \end{tabular}
-\caption{Overview of scintillator arrays used in the experiments discussed in this thesis and their properties, namely the array size, divider and front plate material. All crystals used are made of caesium-iodide doped with thallium with the dimensions $5 \times 5 \times 50$ mm.}
+\caption[Overview of specific scintillator arrays used in experiments.]{Overview of scintillator arrays used in the experiments discussed in this thesis and their properties, namely the array size, divider and front plate material. All crystals used are made of caesium-iodide doped with thallium with the dimensions $5 \times 5 \times 50$ mm.}
 \label{Methods:GSpec:Table}
 \end{table}
 
@@ -103,7 +103,7 @@ The foundation for the specific GEANT code used for this work was laid by Jason 
 \begin{figure}
 \centering
 \includegraphics[trim={3cm 0 15cm 0}, clip, height=0.3\columnwidth]{Screenshot_GEANT4_RALStack.png}\includegraphics[height=0.3\columnwidth]{ScreenshotGEANT_DualAxisStack.png}
-\caption{GEANT representations of the two scintillator arrays used in the experiments.}
+\caption[GEANT representations of the two scintillator arrays used in the experiments]{GEANT representations of the two scintillator arrays used in the experiments without their outer casing. The cyan blocks indicate the caesium-idodide crystals and the energy deposited in those volumes is recorded as detector response. Divider materials, front- and end plates are indicated in white. Photos of the stacks are shown in Figure \ref{Methods:Figs:CsI_Stacks}.}
 \end{figure}
 
 In this code of order $10^{5}$ individual photons or electrons are simulated one after another, assuming collective or multi-photon/-particle processes are negligible, such that individual photon responses can be combined cumulatively.
@@ -112,7 +112,6 @@ The code measures the energy deposition in the scintillator material and does no
 
 The specific experiment geometries are reconstructed in GEANT including the detector geometry and materials in the pathway as well as distances measured in the experiment. The electrons and gamma rays are emitted from a point source and low divergence, close to an idealised pencil beam.
 In this case the code was used to simulate the energy deposited in an array of scintillator crystals by individual gamma-ray photons or in other words to simulate the response of the detector.
-
 
 \subsubsection{Image processing}
 
@@ -148,7 +147,7 @@ In Chapters \ref{Chap:linICS} and \ref{Chap:BW} the signal occupies large parts 
 %\includegraphics[width=1.0\columnwidth]{DualAxisCrystalExtrExample.png}
 %\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample_Int.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample_Int.png}
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.5\columnwidth]{CrystalExtract_Example_Full.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.5\columnwidth]{CrystalExtract_Example_Pixelated.png}
-\caption{Example CsI array signal. Individual crystal extraction and pixelated detector belows.}
+\caption[Response of a scintillator stack as measured by the detector and its pixellated response.]{Response produced by an LWFA bremsstrahlung source measured using the dual-axis spectrometer stack. The radiation enters the stack from the left side and propagates to the right. Left: Image of the scintillator stack after image processing. The black rectangles indicate the regions of interest where the crystals are located. The dark regions in between are where the spacers are. Right: Corresponding pixellated response retrieved from the image on the left by integrating over the regions indicated by the rectangles.}
 \end{figure}
 
 Even with efficient filling of the field of view, the crystals emitting the scintillation light only occupy a fraction of the total image for the stacks considered.
@@ -212,7 +211,7 @@ A foil of known material and thickness is then inserted into the path of the und
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{Example_BremsGEANT_ElecInput.png}\includegraphics[width=.5\columnwidth]{Example_GSpecGEANT_GammaSpec.png}
-\caption{Left:Two examples of electron spectra measured in an experiment and used as input for GEANT bremsstrahlung simulation. Right: Corresponding simulated bremsstrahlung produced using 1 mm of bismuth as converter material.}
+\caption[Example of simulated bremsstrahlung spectrum using electron spectra measured in experiment.]{Left: Two examples of electron spectra measured in an experiment that are used as input for GEANT bremsstrahlung simulation. Right: Corresponding simulated bremsstrahlung spectrum produced using 1 mm of bismuth as converter material. The spectrum is normalised by the number of electrons simulated.}
 \label{Methods:Figs:GEANTGamma_Elec}
 \end{figure}
 
@@ -227,7 +226,6 @@ The exact on-shot electron spectra can then be used in GEANT to obtain a detecto
 After obtaining the experimental detector response and the response from the related GEANT simulation, we can compare both.
 In Figure XX an example of an experimentally measured and a simulation result for one detector row is presented. We see that the simulated response is very smooth in comparison to the response in experiment. The peaks in the experimental data are results of the varying light efficiency of the crystals (intrinsic of the crystals and the setup). 
 By dividing the simulated response by the experimentally measured response we obtain a correction factor, $c_{corr}$, for each crystal in the array of $(i,j)$ crystals:
-
 \begin{equation}
 c_{corr}(i,j) = \frac{R_{sim}(i,j)}{R_{exp}(i,j)}.
 \end{equation}
@@ -235,7 +233,7 @@ c_{corr}(i,j) = \frac{R_{sim}(i,j)}{R_{exp}(i,j)}.
 \centering
 %\includegraphics[width=.5\columnwidth]{Example_BremsGEANT_ElecInput.png}\includegraphics[width=.5\columnwidth]{Example_GSpecGEANT_GammaSpec.png}
 \includegraphics[width=.5\columnwidth]{Example_GSpec_ExpSim.png}\includegraphics[width=.5\columnwidth]{Example_GSpecGEANT_Corr.png}
-\caption{Left: Measured experimental response of the detector for bremsstrahlung (blue) and the corresponding simulated response (orange). Right: Correction factor for the crystal rows obtained by dividing the two curves on the right.}
+\caption[Determining a correction factor to match the in GEANT simulated and measured detector response.]{Left: Measured experimental response of the detector for bremsstrahlung (blue) and the corresponding in GEANT simulated response curve (orange). Both curves are normalised to their maximum value. Right: Correction factor for the crystal rows obtained by dividing the simulated by the experimentally measured detector response.}
 \end{figure}
 
 This correction factor now accounts for deviations in the efficiency independently of its origin (e.g. imaging setup, intrinsic crystal efficiency).
@@ -249,11 +247,9 @@ In Chapter \ref{Chap:RR15} the circular filter holder that was placed in front o
 
 
 The `corrected' response, $R_{corr}$, is then being obtained by multiplying the experimental response of crystal $(i,j)$ in the array, $R_{exp}(i,j)$, by the corresponding correction factor $c_{corr}(i,j)$:
-
 \begin{equation}
 R_{corr}(i,j) = R_{exp}(i,j) c_{corr} (i,j).
 \end{equation}
-
 
 \subsubsection{Detector response for gamma-ray spectra}
 
@@ -268,7 +264,7 @@ Figure \ref{Methods:Figs:GSpec_GEANT} (right) shows the longitudinal crystal of 
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{EdepGEANTStack.png}\includegraphics[width=.5\columnwidth]{EdepMax_Cases.pdf}
-\caption{GEANT simulations for detector response of BW detector with GP. Left: energy deposited (y-axis) in longitudinal crystal row (x-axis) per photon of variable energy (c-axis) from 1 to 500 MeV. Right: Longitudinal crystal with maximum energy deposition with respect to the energy of the incoming photon for different detector configurations.}
+\caption[Simulated detector response to mono-energetic photons and different detector setups.]{Left: Detector response to mono-energetic gamma-rays as simulated in GEANT, using a setup as in Chapter XX. The energy deposited per photon from energies 10 to 500 MeV is shown as function of the longitudinal crystal row. The photon energy is encoded in the colour axis from low (black) to high (white). The energy deposition curve rises to a maximum and then decays further into the stack. Right: Position of the maximum of the response curve as a function of photon energy for different experimental setups.}
 \label{Methods:Figs:GSpec_GEANT}
 \end{figure}
 
@@ -287,7 +283,6 @@ We now simulated the energy deposition for a range of incoming photon energies i
 where $R_{ij}$ is the energy deposited in crystal $j$ by a photon of energy $E_i$.
 
 We can expand this to a matrix of energies in one direction and energy deposition in a particular longitudinal row. To reduce the number of simulations we require, we can interpolate the detector response on a finer grid of photon energies, filling in energies between the simulated photon energies. The energy deposition is normalised such that it represents the energy deposited by one single photon of the respective energy. If we do this for $m$ different photon energies for a longitudinal array of $n$ crystals, we obtain an $m \times n$-sized matrix $\mathbf{R}$:
-
 \begin{eqnarray}
 \mathbf{R} = & \bordermatrix{\text{}&C_1&C_2&\ldots &C_n\cr
                 E_1&R_{11} &  R_{12}  & \ldots & R_{1n}\cr
@@ -302,7 +297,6 @@ Each row is the individual contribution of one photon at a defined energy and by
 This can also be expressed more generally in terms of a matrix multiplication.
 
 Define a vector $\mathbf{N}$ of length $m$. Each entry be the number of photons or relative weight $N_i$ of energy $E_i$ in an arbitrary gamma spectrum.
-
 \begin{eqnarray}
 \mathbf{N} = & \bordermatrix{\text{}&E_1&E_2&\ldots &E_m\cr
                &N_{1} &  N_{2}  & \ldots & N_{m}} 
@@ -321,7 +315,6 @@ Multiplying the vector $\mathbf{N}$ containing the spectral information of the g
 \end{eqnarray}
 
 Each entry of $\mathbf{S}$ is then
-
 \begin{equation}
 S_i = \sum_{j=1}^{m} R_{ij} N_j,
 \end{equation}
@@ -333,7 +326,6 @@ Provided we have access to a sufficiently populated matrix spanning finely a wid
 Since this is a matrix operation, in theory one can invert an experimental detector response to obtain the input spectrum. Unfortunately, this is an ill posed problem due to the noise and the low sensitivity to smaller changes in the spectral shape, which makes inversion an unsuitable technique. Instead we have to assume a spectral shape as primer, calculate the response for a range of parameters and find the best fit to the experimentally measured response, for instance using a least-square fit. 
 
 Other work has shown that the gamma spectrum can be retrieved without assumption of the spectral shape if a second measurement is performed, for instance using a Compton or pair spectrometer (REF).
-
 
 \subsubsection{Resolving spatial features}
 
@@ -348,13 +340,12 @@ We can use a profile screen as described previously to measure the profile of th
 
 One example of a symmetric signal is shown in Figure \ref{Methods:Figs:Spatial} (top). On the left is the signal measured with a gamma profile screen that shows the profile of the radiation, on the right the uncorrected response of the dual axis scintillator array in both axes, integrating vertically (middle panel) and horizontally (right), respectively . We see that the spatial resolution of the spectrometer stack is poor compared to the profile screen. The transverse crystal row with the bright line indicates the pointing of the centroid and a shift of the position of the source will move the centroid on the profile screen but also on the two views of the spectrometer.
 
-
 \begin{figure}
 \centering
 \includegraphics[trim={2.8cm 0 3cm 0}, clip, height=0.25\columnwidth]{GammaProfile_Brems_example.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.25\columnwidth]{GSpec_Example_Spatial_Brems_Top.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.25\columnwidth]{GSpec_Example_Spatial_Brems_Side.png}
 
 \includegraphics[trim={2.8cm 0 3cm 0}, clip, height=0.25\columnwidth]{GammaProfile_Betamax_example.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.25\columnwidth]{GSpec_Example_Spatial_Betamax_Top.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.25\columnwidth]{GSpec_Example_Spatial_Betamax_Side.png}
-\caption{Gamma Profile screen (left) and corresponding pixellated detector response from integrated vertically (middle) and horizontally (right) for symmetric bremsstrahlung source (top) and extended betatron radiation (bottom). The transverse crystal indicates pointing and in case of the extended source also the spatial extent of the source.}
+\caption[Dual-axis detector response to symmetric and asymmetric gamma sources.]{Gamma signal measured in experiment with a gamma profile screen (left) and the corresponding pixellated detector response of the dual-axis scintillator stack. Two views of the array, integrated vertically (middle) and horizontally (right), are shown for a symmetric bremsstrahlung source (top) and elongation betatron radiation (bottom). The transverse crystal (y-axis) indicates pointing and the spatial extent of the source. The symmetric source produces a comparable response in views. The betatron source produces a narrow response in the horizontally integrated axis as most energy is deposited in a single crystal, whereas its response is spread widely in the other axis.}
 \label{Methods:Figs:Spatial}
 \end{figure}
 

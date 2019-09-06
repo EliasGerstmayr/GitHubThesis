@@ -193,6 +193,12 @@ Rise and fall times for fast diodes are few tens of picoseconds placing the peak
 Both laser pulses have to be overlapped at the designated point in space and the signals combined onto the diode. Alternatively, an object at the crossing point can be used to scatter both beams to send a more diffuse signal to the diode. This is a suitable method if the extent of the scattering object is negligible on the order of the accuracy of the method.
 \vspace{\baselineskip}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{PhotoDiode_BW.jpg}
+\caption{Photodiode.}
+\end{figure}
+
 In the experiments at the Astra Gemini laser the fast EOT-4000 GaAs photodetector with a rise/fall time of $< 30\,\mathrm{ps}$\footnote{Details can be found on the Electro-Optics website. www.eotech.com} was used in conjunction with a Lecroy WaveMaster 8XXZi-B oscilloscope ($>13\,\mathrm{GHz}$)\footnote{More details on Lecroy XX WEBSITE XX}. This limits the resolution of the signal to about XXX PS. The accuracy of the difference measurement is per measurement is a few picoseconds. If several measurements at different separations (using a delay stage to delay one laser arm) are taken the error can be reduced to an accuracy of XXX PS.
 \vspace{\baselineskip}
 
@@ -223,8 +229,6 @@ Due to the large bandwidth of the Ti:Sa laser pulses used in this context the co
 
 As we see the interference fringes rely on a phase difference between the two laser pulses. The main contributor for two timed spectrally identical laser pulses are a relative angle or different radii of curvature.
 The experiments presented combine a short focal length optics with a longer focal length beam line and hence perfect alignment can be aspired to as the interference pattern will be clearly visible due to the stark difference of the radii of curvature of, for instance, and f/40 and f/2 at the relevant point.
-
-
 
 \subsubsection{Experimental Implementation}
 
@@ -270,8 +274,6 @@ One built by Nicolas Bourgeois, the other one by Matt Streeter based on Rob Shal
 
 \EliasComm{Add pictures from the Staging19 campaign.}
 
-
-
 \subsection{Considerations for Timing Beams}
 
 Synchronising two laser beams to each other or a laser with an electron beam in an experiment down to the femtosecond level comes with many challenges and considerations.
@@ -286,7 +288,6 @@ Typical examples at Gemini are moving from air to vacuum (pumping down the vacuu
 
 The refractive index, $\eta_0$, of vacuum is $\eta_0 = 1$.
 The refractive index of air at standard temperature and pressure for 800 nm is $\eta_{air} = 1.00027$ (REF NIST)\footnote{add REF here.}
-
 \begin{align}
 \Delta t &= \frac{d}{c} \left( \eta_{air} - \eta_{0}\right),\nonumber\\
 \Delta t  &\approx 0.9\,\mathrm{ps} \times \frac{d}{1\,\mathrm{m}},
@@ -392,8 +393,6 @@ The diversity of nozzle designs also lead to the idea of using 3D printing metho
 To tailor the density profile even more groups have inserted thin objects into the supersonic gas flow to induce a shock front. The shock introduces a sharp density transition in the density profile which can be used to trigger a localised injection event in LWFA referred to as shock injection (REF REF REF).
 
 The material applied is frequently a type of metal, varying from aluminium to steel or brass, in order to withstand the high laser intensities and the plasma heat. In the case of \cite{Jolly2012_3DJET} plastic was used for prototyping. Manufacture errors or deterioration over long run times can have an impact on the gas flow and will lead to deviations from idealised hydrodynamic simulations. Hence nozzles (and other gas targets as well) are usually characterised, i.e. their gas flow is analysed, either before or after an experiment to account for deviations from the ideal simulation properties in hydrodynamic codes like FLASH. The density can, for instance, be determined using an interferometry setup and Abel inversion \cite{Bracewell1978}.% In case of clustered media Rayleigh-scattering can be used to determine the cluster size and density.
-\vspace{\baselineskip}
-
 
 \begin{figure}
 \centering
@@ -419,7 +418,6 @@ The nozzles were operated at 70 to 100 bar backing pressures, typically at elect
 
 \subsection{Gas Cells}
 
-\subsubsection{General}
 Gas cells are compartments that are filled with gas and that have a small exit and entry hole. Due to the enclosed volume less gas and hence backing pressure is required to reach comparable densities as gas jets. 
 
 Variable length is possible and with several stages in one cell to tailor the density profile for different injection mechanisms \cite{Pollock2011}.
@@ -485,10 +483,6 @@ Other examples of diagnostics that are used to characterise the plasma and the l
 
 \subsection{Shadowgraphy}
 
-
-\subsubsection{General}
-
-
 In a shadowgraphy light is shone through a transparent medium and then imaged onto a camera chip. Gradients in the density translate in gradients in the refractive index leading to light refracting and accumulating in boundaries making outlines highly visible. Because of this shadow images or shadowgrams are a useful tool to see features, such as the edges of a plasma channel or a shock front. Whilst features become very clear, the absolute density itself can not be derived from a single projection without further reference.
 \vspace{\baselineskip}
 
@@ -497,7 +491,7 @@ In a shadowgraphy light is shone through a transparent medium and then imaged on
 \includegraphics[width=0.75\columnwidth]{Shadowgraphy.png}
 \caption{Sketch of how shadowgraphy works. Using Ollie's and George's code. Adapt to show in 3D how a density spike would act.}
 \end{figure}
-From Jason's thesis \cite{ColeThesis}:
+From Jason Cole's PhD thesis \cite{ColeThesis}:
 
 For small changes in ray displacement the relative change in local beam intensity is
 
@@ -515,7 +509,7 @@ An example of a shadowgraphy image in an experiment is shown in Figure XX NUMBER
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.75\columnwidth]{Interferometry_Shadowgraphy.pdf}
-\caption{Example of a shadowgram (top) and an interferometry image taken on an experiment run at TA2 (Central Laser Facility, RAL) in Spring 2016. The image shows a plasma channel produced by the Astra laser pulse in a gas cell of $3\,\mathrm{mm}$ length filled with helium. The density is relatively high leading to strong scattering and filamentation of the channel.}
+\caption[Example of a shadowgraphy and an interferometry image taken in an experiment at TA2.]{Example of a shadowgram (top) and an interferometry image taken on an experiment run at TA2 (Central Laser Facility, RAL) in Spring 2016. The image shows a plasma channel produced by the Astra laser pulse in a gas cell of $3\,\mathrm{mm}$ length filled with helium. Both diagnostics also indicate a lower density plasma outside of the cell ramping up in density towards the entry pinhole. The density is relatively high leading to strong scattering and filamentation of the channel, which is in particularly visible in the shadowgram.}
 \end{figure}
 
 If one wants to capture smaller and more volatile features like the wake itself, a very short pulse duration ($\sim 10\,\mathrm{fs}$) for the probe pulse is required \cite{Siminos2016_FASTSHADOW} and the setup has to be complemented by a microscope objective \cite{Buck2011_BUBBLE,Savert2015_BUBBLE} to resolve the small features. This represents a more direct measurement of the in-situ plasma conditions the laser and the wake experience (see also \cite{Kuschel2018_SELF}).
@@ -531,7 +525,6 @@ In interferometry two beams are overlapped with a phase difference resulting in 
 \Delta \phi(y,z) = \frac{2\pi}{\lambda} \int^\infty_{-\infty} (\eta(r,z) - 1) \mathrm{d}x
 \end{equation}
 and for $n_e \ll n_c$, $\eta \approx 1 - n_e/(2n_c)$.
-\vspace{\baselineskip}
 
 \iffalse
 \begin{figure}[h]
@@ -556,8 +549,6 @@ On the experiments described a Mach-Zehnder interferometer was used, but with a 
 \vspace{\baselineskip}
 
 Due to this geometry the interferometer can be set up as an extension to an existing shadowgraphy imaging system. It constitutes a complementary and very useful tool to the shadowgraphy. Whilst the shadowgraphy is useful to identify features in the medium, the interferometry image can give absolute numbers for the phase shift translating into the electron densities of the target by applying Abel inversion if one assumes cylindrical symmetry \cite{Bracewell1978} (see Jason Cole's thesis for more details).
-
-
 
 \subsection{Self emission of the plasma}
 
@@ -623,7 +614,7 @@ The angular deflection of a particle in this case can be solved analytically usi
 \centering
 \includegraphics[height=0.3\columnwidth]{elecspec.png}\includegraphics[height=0.3\columnwidth]{Espec_shotexemp.jpg}
 \includegraphics[width=0.75\columnwidth]{TrackingFigMangles2015.png}
-\caption{Visualisation of an electron deflected in a homogeneous circular magnetic field (grey) with radius $r_b$. The larger green circle indicates the Larmor radius, determining the electron trajectory (blue) from the point of entry into the field (A) to its exit point (C) resulting in a total deflection $\theta$. Bottom: Example of particle tracking through a three-piece magnet for electrons of -X, 0 and +X MRAD pointing.}
+\caption[Visualisation of an electron deflected in a homogeneous magnetic field and ]{Visualisation of an electron deflected in a homogeneous circular magnetic field (grey) with radius $r_b$. The larger green circle indicates the Larmor radius, determining the electron trajectory (blue) from the point of entry into the field (A) to its exit point (C) resulting in a total deflection $\theta$. Bottom: Example of particle tracking through a three-piece magnet for electrons of -X, 0 and +X MRAD pointing.}
 \end{figure}
 
 Drawing the circular field region for the magnetic field and the electron entering the field, one can then graphically indicate its Larmor radius, equivalent to its expected motion for the region with the constant B-field. The angles in this constellation are determined using the trigonometric relation that the angles in a triangle have to add up to $\pi$:
@@ -764,7 +755,7 @@ By comparing the transmission of the two spots (using a double pinhole) gives an
 \centering
 \includegraphics[width=0.9\columnwidth]{PinholeCamera.png}
 \includegraphics[width=0.9\columnwidth]{20180326r001s002_PinholeCam.jpg}
-\caption{Pinhole Cam Example Image. Replace this by integrated images to indicate the spot size and spectral content?}
+\caption[Example of pinhole camera image.]{Top: Sketch of a pinhole camera. Bottom: Example of a double pinhole camera image taken on a recent experimental campaign. The pinholes were filtered differently, such that the pinholes measure the flux in different spectral intervals.}
 \end{figure}
 
 \EliasComm{Refer to BK's thesis \cite{KettleThesis}.}
@@ -793,7 +784,7 @@ Used in experiment described in Chapter \ref{Chap:BW}.
 \centering
 \includegraphics[width=0.5\columnwidth]{CrystalSpecCamera.png}
 \includegraphics[width=0.9\columnwidth]{CrystalSpec.pdf}
-\caption{Crystal Spec Example Image, K-Edge from aluminium filter. X-axis is dispersion direction..}
+\caption[Sketch of a crystal spectrometer setup.]{Top: Sketch of a crystal spectrometer setup. X-rays are dispersed onto a CCD chip. Bottom: Example of a spectrum measured in a crystal spectrometer setup. The X-rays are dispersed spectrally in the x-axis with distinct emission lines. The central part is filtered with aluminium, resulting in a sharp cut-off due to the K-edge, which can be used as calibration.}
 \end{figure}
 
 \EliasComm{Refer to BK's thesis \cite{KettleThesis}}
@@ -871,7 +862,7 @@ In these experiments caesium-iodide doped with thallium is used frequently due t
 \begin{figure}
 \centering
 \includegraphics[height=0.3\columnwidth]{JenaProfile.jpg}\includegraphics[height=.3\columnwidth]{ScreenshotGEANT_JenaStack.png}\includegraphics[height=0.3\columnwidth]{20190208r015s036_GammaProfile_crop.jpg}
-\caption{Examples of profile along with GEANT representation. Example of gamma profile from experiment.}
+\caption[Scintillator profile screen, photograph, GEANT representation and measured gamma signal.]{Example of a scintillator stack used as profile screen in experiment. Photograph of the scintillator screen (left) along its GEANT representation (middle) and gamma signal measured with the stack in experiment (right).}
 \end{figure}
 
 Different profile screens were used in the experiments. The details can be found in Table XX NUMBER REF.
@@ -888,7 +879,7 @@ Jena & $45 \times 45$ & $1 \times 1 \times 10$ mm & TiO2 0.5 mm & TiO2 0.2 mm\\
 DESY & $30 \times 30$ & $1.5 \times 1.5 \times 10$ mm & Epoxy 0.5 mm & Epoxy 0.2 mm\\
 RAL & $47 \times 33$ & $5 \times 5 \times 50$ mm & None & Al 1 mm
 \end{tabular}
-\caption{Different CsI profile stacks}
+\caption[Overview of CsI profile screens used in experiments.]{Overview of caesium-iodide crystal stacks used in experiments as profile screens.}
 \end{table}
 
 The photons go through the entire thickness of 10 mm CsI, so background subtraction from random noise was not a large concern. The signal is strong, also due to the high light yield of CsI at cost of spatial resolution (1mm crystals). The crystal outlines themselves and the overall array act as spatial reference as their symmetry is well known. A close to normal orientation is preferable to discourage mixing and again a normal imaging is ideal as well, resulting in very little post-processing being required.
@@ -945,6 +936,6 @@ The Compton spectrometer becomes a pair spectrometer and the signal-to-noise rat
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{CorvanSpectrometer.png}
-\caption{Sketch of a Compton spectrometer design. Reprinted from \cite{Corvan2014_Gamma}, with the permission of AIP Publishing.}
+\caption[Sketch of a Compton spectrometer as proposed in \cite{Corvan2014_Gamma}.]{Sketch of a Compton spectrometer design: gamma rays enter the setup from the left side and enter a block of lithium, releasing electrons through Compton scattering and depending on the energy also electron-positron pairs. A magnetic field disperses electron and positrons onto detector screens. Reprinted from \cite{Corvan2014_Gamma}, with the permission of AIP Publishing.}
 \end{figure}
 
