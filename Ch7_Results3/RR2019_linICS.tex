@@ -1,6 +1,6 @@
 \chapter{Linear Inverse Compton Scattering at Astra Gemini}
 \label{Chap:linICS}
-\section{Motivation}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \section{Motivation}
 
 ... what is radiation of variable bandwidth in the 10 MeV range good for?
 
@@ -51,14 +51,14 @@ A sketch of the relevant components of the setup are shown in Figure \ref{LinICS
 \begin{figure}
 \centering
 \includegraphics[width=0.9\columnwidth]{GeminiShock2019_ExpBlend_V1_Aug20_annotated.png}
-\caption{Sketch of experiment setup.}
+\caption[Sketch of experimental setup to measure radiation from linear inverse Compton scattering.]{Sketch of the experimental setup aimed to measure radiation from linear inverse Compton scattering. The first laser pulse (red, left) is focused down by an f/40 OAP into a gas jet and accelerates electrons (blue) from LWFA, where the density perturbation induced by the blade affects the injection mechanism. A second laser is focused down by an f/2 OAP and counter-propagates with the electron beam performing linear inverse Compton scattering. Gamma radiation produced in the interaction (green) is emitted in the propagation direction of the electron beam and is measured downstream by a scintillating profile screen and a stack of scintillating crystals used as spectrometer (right). A converter target behind the f/2 OAP can be used to convert the electron beam via bremsstrahlung into an energetic calibration source for the gamma diagnostics. The electrons are dispersed horizontally by a permanent dipole magnet onto a set of lanex screens. The accelerator, the interaction point and the magnet are in vacuum, whereas the measurement screens and gamma diagnostics are located at air separated by a thin vacuum window (orange).} 
 \label{LinICS:Fig:SetupBlend}
 \end{figure}
 
 
 \subsubsection{Laser wakefield accelerator}
 
-The driver beam for the wakefield accelerator is focused with an f/40 off-axis parabola (OAP) onto the edge of a 15 mm conical supersonic helium gas jet. The measured pulse duration was $61\,\mathrm{fs}$ \textsc{fwhm} with an average energy on-target of $12.5 \pm 0.2\,\mathrm{J}$, reaching a peak power of $195\,\mathrm{TW}$. The size of the focal spot measures $48.6 \times 39.2\,\mathrm{\mu m}$ \textsc{fwhm}, amounting to a peak normalised vector potential of $a_0 = 1.88$ in vacuum. The laser is polarised in the horizontal plane.
+The driver beam for the wakefield accelerator is focused by an f/40 off-axis parabola (OAP) onto the edge of a 15 mm conical supersonic helium gas jet. The measured pulse duration was $61\,\mathrm{fs}$ \textsc{fwhm} with an average energy on-target of $12.5 \pm 0.2\,\mathrm{J}$, reaching a peak power of $195\,\mathrm{TW}$. The size of the focal spot measures $48.6 \times 39.2\,\mathrm{\mu m}$ \textsc{fwhm}, amounting to a peak normalised vector potential of $a_0 = 1.88$ in vacuum\footnote{The focal spot and FROG analysis was conducted by Matthew Streeter (Imperial College)}. The laser is polarised in the horizontal plane.
 \vspace{\baselineskip}
 
 The exit of the gas nozzle was positioned $14\,\mathrm{mm}$ below the beam axis. A steel razor blade is introduced $1.2\,\mathrm{mm}$ into the gas flow and $4\,\mathrm{mm}$ above the nozzle edge at $- 32.4\pm 0.3^\circ$ angle in vertical direction relative to the laser axis to produce a shock front. The electron density without the shock feature was $1.5 \times 10^{18}\,\mathrm{cm}^{-3}$, with an increase in density of XX times.
@@ -70,122 +70,110 @@ The gas target and recombination light of the plasma channel are imaged by a Can
 
 \subsubsection{Scattering beam}
 
-A second laser pulse is focused down tightly by an f/2 off-axis parabola (OAP) at the opposite edge of the gas jet in a geometry for head-on collisions. The f/2 OAP has a 21-mm-diameter hole in the centre to allow the electrons and radiation from ICS to propagate through. A round piece of plastic with radius $28\,\mathrm{mm}$ is also fitted around the hole to protect the optic from scattered light from the first laser. This reduces the on-target intensity by 16 degrees assuming a perfect top-hat laser profile. To protect the optic from potential debris a thin plastic layer with anti-reflective coating with a suitable hole (`pellicle') is attached to the OAP mount. The on-shot energy of the laser is $9.73\pm 0.15\,\mathrm{J}$ which reduces to $8.17\pm0.13\,\mathrm{J}$ with the hole. In the dataset presented, the beam size is defocused at about 400 micron size diameter, which translates into $a_0 \sim 0.28$ at the interaction. The laser is linearly polarised in the vertical plane.
+A second laser pulse is focused by an f/2 off-axis parabola (OAP) at the opposite edge of the gas jet in a geometry for head-on collisions. The f/2 OAP has a 21-mm-diameter hole in the centre to allow the electrons and radiation from ICS to propagate through. A round piece of plastic with radius $28\,\mathrm{mm}$ is also fitted around the hole to protect the optic from scattered light from the first laser. This reduces the on-target intensity by 16 degrees assuming a perfect top-hat laser profile. To protect the optic from potential debris a thin plastic layer with anti-reflective coating with a suitable hole (`pellicle') is attached to the OAP mount. The on-shot energy of the laser is $9.73\pm 0.15\,\mathrm{J}$ which reduces to $8.17\pm0.13\,\mathrm{J}$ with the hole. In the dataset presented, the beam size is defocused to a spot of about 400$\mu m$ diameter, which translates into $a_0 \sim 0.28$ at the interaction. The laser is linearly polarised in the vertical plane.
 
 \subsubsection{Two-beam timing}
 
-Both beams are timed to each other using spatial interferometry. A 90-degree dielectric knife-edge prism (Thorlabs) was inserted at the interaction point, deflecting both beams collinearly onto the CCD chip of a camera. Due to the different radii of curvature of both beams near the focus of the f/2 beam, a circular interference pattern emerges when the beams are overlapped in space and time. The timing procedure is explained in more details in the \nameref{Chap:Methods}.
+Both beams are timed to each other using spatial interferometry. A 90-degree dielectric knife-edge prism (Thorlabs) was inserted at the interaction point, deflecting both beams collinearly onto the CCD chip of a camera. Due to the different radii of curvature of both beams, especially near the focus of the f/2 beam, a circular interference pattern emerges when the beams are overlapped in space and time. The timing procedure is explained in more details in the \nameref{Chap:Methods}.
 
 \subsubsection{Particle and Radiation diagnostics}
 
-The radiation and the electrons propagate through the hole in the f/2 OAP into a large aperture ($\sim 10\,\mathrm{cm} \times 60\,\mathrm{cm}$) permanent dipole magnet\footnote{designed by Dominik Hollatz (Jena)} of integrated magnet field $\int B(x) \mathrm{d}x = 0.35\,\mathrm{Tm}$. A linear translation stage carrying high-Z metal converter targets (bismuth, tungsten) can be driven into the beam path to intercept the electron beam and to produce gamma radiation from bremsstrahlung to calibrate the gamma-ray diagnostics in this experiment. As alternative a low-Z PTFE target of thickness $1.6$ mm is mounted on the same stage to allow synchronous electron and gamma-ray measurements.
+The radiation and the electrons propagate through the hole in the f/2 OAP into a large aperture ($10\,\mathrm{cm} \times 30\,\mathrm{cm}$) permanent dipole magnet\footnote{designed, and assembly and positioning supervised by Dominik Hollatz (Jena)} of integrated magnet field $\int B(x) \mathrm{d}x = 0.35\,\mathrm{Tm}$. High-Z metal converter targets (bismuth, tungsten) are mounted on a motorised linear stage and can be driven into the beam path to intercept the electron beam and to produce gamma radiation from bremsstrahlung to calibrate the gamma-ray diagnostics in this experiment. As alternative a low-Z plastic (PTFE) target of thickness $1.6$ mm is mounted on the same stage to allow synchronous electron and gamma-ray measurements.
 
-The electrons are dispersed spectrally in the horizontal plane and leave the vacuum chamber through a two-layer wide-aperture vacuum window\footnote{designed and tested by Mechanical Engineering CLF, in particular Daniel Treverrow.} of dimensions $580 \,\mathrm{mm} \times 70\,\mathrm{mm}$. The first layer facing the vacuum is $25\,\mathrm{\mu m}$ of Kapton followed by $375\,\mathrm{\mu m}$ of Kevlar to provide additional mechanical stability and fibre support that holds as fail-safe.
-A scintillating Lanex screen placed just after the window measures the spectrum of the dispersed electron beam. Due to the light material of the window and the short distance from the window to the screen, the electron beam is only little affected by small-angle scattering. The screen is at $1.61\,\mathrm{m}$ distance downstream of the interaction point. A second Lanex screen measures the spectrum $700\,\mathrm{mm}$ further downstream ($2.31\,\mathrm{m}$ from the interaction point) and can in conjunction with the first screen be used to account for a pointing of the beam (REF).
+The electrons are dispersed spectrally in the horizontal plane and leave the vacuum chamber through a two-layer wide-aperture vacuum window\footnote{designed and tested by the Mechanical Engineering Division at the CLF, in particular Daniel Treverrow.} of dimensions $580 \,\mathrm{mm} \,\times\, 70\,\mathrm{mm}$. The layer facing the vacuum consists of $25\,\mathrm{\mu m}$ of Kapton, the outside layer is $375\,\mathrm{\mu m}$ of Kevlar providing additional mechanical stability and fibre support that acts as fail-safe. A scintillating Lanex screen placed just after the window measures the spectrum of the dispersed electron beam. Due to the light material of the window and the short distance from the window to the screen, the electron beam is only little affected by small-angle scattering. The screen is at $1.61\,\mathrm{m}$ distance downstream of the interaction point. 
+%A second Lanex screen measures the spectrum $700\,\mathrm{mm}$ further downstream ($2.31\,\mathrm{m}$ from the interaction point) and can in conjunction with the first screen be used to account for a pointing of the beam (REF).
 The electron spectrum is cut off at $220$ MeV due to the limiting aperture of the magnet as lower energetic electrons collide with the yoke from the inside and do not leave the magnet.
-Both screens are imaged by cooled 16-bit CCD cameras (Andor Neo) equipped with objectives and bandpass filters. A third camera images a small region of interest on the first screen.
+The screen is imaged by a cooled 16-bit CCD camera (Andor Neo) equipped with objectives and bandpass filters. %A third camera images a small region of interest on the first screen.
 \vspace{\baselineskip}
 
-Radiation traverses the magnet on the laser axis, then passes through a $120\,\mathrm{\mu m}$ aluminium laser beam block and the Kevlar-Kapton window. Bright radiation in the right bandwidth is also captured by the first Lanex screen as it extends beyond the axis. A $45 \times 45$ array of $1\,\mathrm{mm} \times 1\,\mathrm{mm} \times 10 \,\mathrm{mm}$ scintillating caesium-iodide (CsI) crystals coated in $TiO_2$  measures the profile of the radiation at the plane of the second Lanex screen, which is placed $700\,\mathrm{mm}$ downstream from the first screen. The stack covers a field of view corresponding to cone with half angle $11.7\,\mathrm{mrad}$. Including the coating the spatial resolution is then $1.2\,\mathrm{mm}/2.31\,\mathrm{m} = 0.52\,\mathrm{mrad}$. A scintillation signal produced by radiation on the first Lanex screen and the CsI profile screen can be used as on-shot reference for the laser axis for the electron spectrometer screens. Another $704\,\mathrm{mm}$ further downstream another elongated array of CsI crystals is positioned to measure the spectrum of the gamma radiation. Both stacks, the profile screen and the spectrometer, are imaged using cooled 14-bit EMCCD cameras (Andor iXons). Both diagnostics are described in more detail in the Methods section along with how their response is simulated in the Monte-Carlo code GEANT4.
+Radiation traverses the magnet on the laser axis, then passes through a $120\,\mathrm{\mu m}$ aluminium laser beam block and the Kevlar-Kapton window. Bright radiation in the right bandwidth is also captured by the Lanex screen as it extends beyond the axis. A $45 \times 45$ array of $1\,\mathrm{mm} \times 1\,\mathrm{mm} \times 10 \,\mathrm{mm}$ scintillating caesium-iodide (CsI) crystals coated in $TiO_2$  measures the profile of the radiation $700 \pm 1\,\mathrm{mm}$ downstream from the plane of the Lanex screen. The stack covers a field of view corresponding to a cone with half angle $11.7\,\mathrm{mrad}$. The spatial resolution including the coating separating the individual crystals is then $1.2\,\mathrm{mm}/2.31\,\mathrm{m} = 0.52\,\mathrm{mrad}$. %A scintillation signal produced by radiation on the first Lanex screen and the CsI profile screen can be used as on-shot reference for the laser axis for the electron spectrometer screens. 
+$704 \pm 1\,\mathrm{mm}$ further downstream from the profile screen another elongated array of CsI crystals is positioned to measure the spectrum of the gamma radiation. Both stacks, the profile screen and the spectrometer, are imaged using cooled 14-bit EMCCD cameras (Andor iXons). Both diagnostics are described in more detail in the \nameref{Chap:Methods} section.
 
 \iffalse
 The aperture of the magnet permits a field-of-view of $79\,\mathrm{mrad}$ (10cm/1.26m) and is hence less limiting than the OAP hole. On the laser axis a beam block of $10-12$ layers of standard kitchen aluminium foil of thickness $10.1 \pm 0.2 \,\mathrm{\mu m}$ each is attached to the Kevlar-Kapton window. Hard X-rays continue to propagate through the aluminium beam block and the vacuum window (permitting a FOV of $70/1.61 = 43.4 mrad$ , the LANEX screen that also covers the axis and are then after $700\,\mathrm{mm}$ incident on a $45 \times 45$ array of $1\,\mathrm{mm} \times 1\,\mathrm{mm} \times 10 \,\mathrm{mm}$ scintillating caesium-iodide crystals coated in $TiO_2$ that record the beam profile of the radiation burst. The top part of the stack is centred on the beam axis. The total stack covers $54.2/2.31 = 23.4\,\mathrm{mrad}$. A second $30 \times 30$ stack of  $1.5\,\mathrm{mm} \times 1.5\,\mathrm{mm} \times 10 \,\mathrm{mm}$ CsI crystals is placed on top of the other one, covering another $51.2\,\mathrm{mm}$ or $22.2\,\mathrm{mrad}$. Harder radiation propagates another $704\,\mathrm{mm}$ before hitting another array of caesium-idodide crystals (see Methods for dual axis spectrometer) with an aluminium front-plate that are arranged in longitudinal direction to measure the spectrum of the radiation. The front part of the spectrometer then catches $XX/3m$ FOV. The emission of the caesium-iodide crystals is imaged by Andor iXon cameras.
 \fi
 
-
 \section{Characterisation of Electron Spectra}
-
-The electron spectra measured in this experiment were produced by producing a shock in the supersonic gas flow. To characterise the electron beams we will rely only on the first electron spectrometer screen and ignore potential fluctuations in the energy due to pointing variations. The image processing of the data is not further elaborated here but can be found in XX THESIS JASON KRIS XX METHODS.
-
-In the dataset considered in this Chapter the properties of the electron beam vary strongly from shot-to-shot and produce beams of a wide range of shapes, maximum energy and energy spread. A few examples of electron spectra from the relevant dataset are provided in Figure \ref{linICS:Figs:Elec_example}.
-
-The properties and the irregularity of the results at one fixed blade (and shock) position is not consistent with results from other laser systems where shock injection was used to produce reproducible electron beams with narrow energy spread. This will not be resolved as part of this Chapter and is beyond the scope of this thesis, but will be addressed in a separate publication (PENDING MATT?).
-\vspace{\baselineskip}
 
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Example_Espec_CollisionMontage.png}
-\caption{Example Especs, not in shooting order.}
+\caption{Examples of electron spectra measured in the experiment. The y-axis is the dispersion axis and shows the energy, the x-axis indicates the divergence. The colour scale indicates the amount of charge in the beams and is fixed for all plots.}
 \label{linICS:Figs:Elec_example}
 \end{figure}
 
+The LWFA electron spectra generated in this experiment were injected by inducing density perturbations in the supersonic gas flow using a steel blade. The spectrum is measured by a magnetic spectrometer coupled to a scintillating Lanex screen. The image processing of the data is not further elaborated here but can be found in XX THESIS JASON KRIS XX METHODS.
 
+We consider a dataset of 386 shots with electron beams, taken at constant backing pressure of the gas jet and a fixed position of the blade. Nonetheless, the properties of the electron beams vary strongly from shot-to-shot and produce beams of a wide range of shapes, maximum energy and energy spread. A few examples of electron spectra from the relevant dataset are provided in Figure \ref{linICS:Figs:Elec_example}. 
+The spectral length of the beams varies strongly with some starting below the measurement threshold of 220 MeV with significant amount of charge all the way up to 1 GeV. In other instances, narrow energy spread beams at 1 GeV are measured. In some cases the electron beam shows signatures of strong transverse oscillations which indicate potential to act as a bright betatron source.
+For now we ignored potential fluctuations in the retrieved energy due to variations in the beam pointing and assume that the divergence of the beam in the dispersion direction is negligible.
 
-In some cases the electron beam shows signatures of strong vertical oscillations which indicate potential to act as a bright betatron source. In other cases beams with narrow energy spread at 1 GeV are produced. 
-
-Over the course of a 484 shot dataset the maximum energy of the electron beam is about $910\pm177\,\mathrm{MeV}$ with some beams reaching up to 1.3 GeV. 
-
-\EliasComm{make histogram energy spread.}
-\EliasComm{Make histogram divergence?}
+The striking variability of the electrons produced in this dataset at seemingly fixed experiment conditions are not consistent with experimental results reported from other LWFA experiments at smaller laser systems using shock injection as method. These setups typically provide reproducible electron beams with narrow energy spread. An explanation of this behaviour is beyond the scope of this thesis and is not being developed within this work, but will be addressed in the future (SEE TALK EAAC).
+\vspace{\baselineskip}
 
 \begin{figure}
 \centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Charge_MaxE_Histograms.png}
-\caption{Electron properties histogram.}
+\includegraphics[trim={6cm 0 6cm 0}, clip, width=1.0\columnwidth]{linICS_ElectronProperties_Histograms.png}
+\caption[Histogram of fluctuations in the electron beam properties in this dataset.]{Histograms showing the fluctuations of electron properties in course of this dataset (386 shots). Top left: Total charge of the electron beams measured from 220 MeV upwards. Top right: Maximum electron energy, defined as energy at which the spectral intensity falls to 10 percent of its peak value. Bottom left: FWHM Vertical divergence (non-dispersion axis) in mrad. Bottom right: Beam pointing fluctuation in mrad from the mean position. }
 \label{linICS:Figs:Elec_histogram}
 \end{figure}
-The charge of the beam varies in particular due to the varying length of the bunch (spectrally) at $202 \pm 100\,\mathrm{pC}$.
 
-The divergence of the beam is $2.4\pm 1.4\,\mathrm{mrad}$.
+The maximum energy of the electron beam, here defined as the energy when the spectral intensity reaches 10 percent of its peak value, was measured to be $944\pm139\,\mathrm{MeV}$, with some shots reaching up to 1.3 GeV. The charge of the beam varied in particular due to the varying spectral range of the bunch with a mean of $239 \pm 92\,\mathrm{pC}$. Histograms of the maximum energies and beam charges measured for this dataset are shown in Figure \ref{linICS:Figs:Elec_histogram}.
+The divergence of the beams was measured to be $2.7\pm 2.5\,\mathrm{mrad}$ and the vertical position of the beam centroid was fluctuating by $2.2\,\mathrm{mrad}$.
+\vspace{\baselineskip}
 
-Since the electron beams vary strongly in their character, the radiation they produce in an interaction will also vary.
-In order to study their behaviour more systematically we will categorise the electron beams based on the spectral length of the bunches and their energy. We can then investigate the radiation produced by comparable electron beams and try to understand the scattering process, without the overlaying strong variations of the beam parameters.
+The wide range of electron beams produced in this setup is interesting in the context of linear ICS. Since the properties of the beams this accelerator is able to produce vary strongly, the radiation they produce in a well-defined linear ICS interaction will also vary significantly. This means that this accelerator is in principle also able to produce a wide range of radiation spectra from broadband to strongly peaked radiation. 
 
 
 \section{Gamma spectra from linear inverse Compton scattering}
 
-\subsection{Estimating Spectrum}
 
-The normalised vector potential is:
-
+A photon of energy $E_{ph}$ that is scattered from a relativistic electron is Doppler up-shifted due to the relativistic Lorentz boost. After an interaction shifts to an energy $E_{ph}'$ (REF):
 \begin{equation}
-a_0 \approx 0.85 \lambda [\mu m] \sqrt{I [10^{18} cm^{-2}]}
+E_{ph}' = E_{ph}\frac{2(1-\beta\cos \theta)\gamma^2}{1+a^2_0/2 + \gamma^2 \theta^2_0} = \frac{4\gamma^2}{1+a^2_0/2 + \gamma^2 \theta^2_0},
+\label{linICS:eqns:full_linICS}
 \end{equation}
+where $\beta$ is XXX, $\theta$ the angle between the electron and the incoming photon, $a_0$ is the normalised vector potential and $\theta_0$ is XX.
 
-The electron beams shown above were collided with at an intensity of $a_0 < 0.3$, which is sufficiently below 1 such that we can justify describing this interaction via purely linear ICS. We can estimate the emitted radiation to be described by the following equation:
+The electron beams shown above were collided with at an intensity of $a_0 < 0.3$. This is sufficiently below $a_0 = 1$ such that we can ignore the production of higher harmonics and only consider the fundamental harmonic from linear ICS (REF). Since also $a^2_0 \ll 1$ we can also ignore the term $a^2_0/2$ in the denominator, which accounts for red-shifting of the radiation when the longitudinal component of the electron motion becomes significant (see \nameref{Chap:Theory} for figure-of-eight motion). The electron beams are in most cases confined to a divergence cone of few milliradians. For a $4\,\mathrm{mrad}$ beam the difference introduced by the electron angles assuming a collimated light source is less than 0.001 percent, which means that we can ignore broadening from electron angles as well.
 
-\begin{equation}
-E_{ph}' = E_{ph}\frac{2(1+\beta\cos \theta)\gamma^2}{1+a^2_0/2 + \gamma^2 \theta^2_0} = \frac{4\gamma^2}{1+a^2_0/2 + \gamma^2 \theta^2_0}
-\end{equation}
+For a f/2 beam the angle between the outer rays is up to 14.04 degrees which could result in a 3 percent spread in energy. Since we are only interacting with a small solid angle of the beam (few microns of 400) the rays are approximately collinear and we can ignore the this factor as well.
 
-For a $4\,\mathrm{mrad}$ beam the difference through the electron angles for a collimated light source is less than 0.001 percent, so we can ignore this effect.
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=.5\columnwidth]{Egamma_ICS.png}
+\caption[Gamma energy produced in scattering a 1.55 eV photon with a relativistic electron beam in a head-on collision.]{Gamma energy produced in scattering a 1.55 eV photon with a relativistic electron beam in a head-on collision.}
+\end{figure}
 
-For a f/2 beam the range of angles is up to 14.04 degrees but since we are interacting with a small subset of the beam (few microns of 400, the angle should be taken as constant but it could vary by up to 3 percent, which again is not a large change and we will again neglect this factor.
+Linear ICS theory predicts that in a head-on collision scattered photons will be emitted in a narrow cone of divergence $\sim 1/\gamma$, such that we will also ignore off-axis contributions.
 
-The Rayleigh length for f/2 beam is $2.5 \lambda f^2_\#$, so 8um.
-To reach 400um, we have to propagate the beam by 800um from the focal plane. This is of order 100 $z_R$ and we can assume that we are in the near field of the laser and that we have a homogeneous flat top profile we interact with.
-
-Linear ICS in a head-on collision scenario predicts that photons will be emitted in a narrow 1/gamma cone ($\gamma = 1750$ for 900 MeV, so 0.6 mrad).
-For a head-on collision, $a_0 << 1$ and small observation angles this simplifies then to
+Combining these assumptions and considering a head-on collision ($\theta = 180^\circ$) Equation \eqref{linICS:eqns:full_linICS} above simplifies to
 
 \begin{equation}
 E_{ph}' =4\gamma^2 E_{ph}.
 \end{equation}
 
-This also does not perturb the electron beam since
+For $\gamma \sim 1750$ and $a_0 = 0.3$
 
 \begin{equation}
-\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c} << 1.
+\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c} \ll 1,
 \end{equation}
+which indicates that radiation reaction effects are negligible and the interaction with the laser pulse does not perturb the electron beam significantly as a whole (REF ALEC THOMAS AND FELICIE).
 
-For a Ti:Sa system at 1.55 eV central photon energy this converts XX into XX, see Figure XX.
-\EliasComm{Make plot of Ephoton against electron energy to indicate range of energies achievable.}
+For a Ti:Sa system at central wavelength 800 nm, as used at Gemini, the corresponding energy carried by an individual photon amounts to 1.55 eV. Based on the simplified Equation above, this gives us a quadratic one-to-one mapping of the electron energy to a corresponding gamma-ray energy (see Figure XX for a visualisation). 
+\vspace{\baselineskip}
+
+Since the properties of the electron beam measured in this experiment vary strongly, we also expect the spectrum of the radiation produced from linear ICS to follow this behaviour. In this scenario the cross section is independent of the electron energy and the shape of the electron beam is hence preserved in the gamma spectrum. Two examples of electron spectra and the with Equation XX calculated corresponding gamma-ray spectra are shown in Figure XX. One electron beam is spectrally very broad with significant spectral intensity spread from 200 to 1000 MeV, resulting in a gamma-ray spectrum from few to XX MeV. The other beam is strongly peaked at 1.2 GeV with narrow energy spread, which has the potential to be a narrow energy spread gamma-ray source around 35 MeV.
 
 
 \begin{figure}
 \centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Example_Espec_CollisionICSMontage.png}
-\caption{Example Espec to ICS radiation. Maybe replace this with one main plot and different X-axis (one for electron energy, second for photon energy, plot second harmonic in red/other colour matching second x-axis.}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Example_Espec_ICS.png}
+\caption{Example of an electron spectrum. The to the electron energies corresponding gamma-ray energies are indicated in a second x-axis on the top.}
 \end{figure}
 
-For the first harmonic this gives in some cases narrow-energy radiation of 35 MeV with 4 MeV.
-In other case this gives broadband radiation of few to 20 MeV radiation which is of interest for industrial applications.
 
-
-For future experiments, this setup is in principle able to produce high-intensity interactions.
-
-
-\subsection{Fitting data}
+\subsection{Measuring the spectrum}
 
 
 ... show the profile screen and gamma spec raw data
@@ -197,21 +185,45 @@ To measure the spectrum a CsI stack was used. The simulation of the detector res
 
 ... show that mono-energetic is also a good fit, so the response is dominated by the highest counts of photons, so without knowing the input is difficult
 
+... show for a spectrum the relative contribution to the yield.
+
 \begin{figure}
 \centering
-\includegraphics[width=0.5\columnwidth]{linICS_GSpec_FittingEx1}\includegraphics[width=0.5\columnwidth]{linICS_GSpec_FittingEx1}
-\caption{Show two fitting examples and electron spectra, along with mono spectral fit.}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{GammaProfile_Espec_20190211r006s106.png}
+
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.5\columnwidth]{GammaSpec_Side_Fit_20190211r006s106.png}
+\caption{Fitted mono-energetic response: 18.5 MeV or 15.5 MeV. Average energy 15.9 MeV.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{GammaProfile_Espec_20190208r015s037.png}
+
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.5\columnwidth]{GammaSpec_Side_Fit_20190208r015s037.png}
+\caption{Fitted mono-energetic response: 12.5 MeV. Average energy 12.1 MeV}
 \end{figure}
 
 
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{GammaProfile_Espec_20190211r006s107.png}
 
-\subsection{Nonlinearity}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.5\columnwidth]{GammaSpec_Side_Fit_20190211r006s107.png}
+\caption{Fitted mono-energetic response: 11 MeV. Average energy 11.4 MeV}
+\end{figure}
+
+
+\subsubsection{Nonlinearity}
 
 
 For this purpose, now for a range of $a_0$ show what the impact of nonlinearity would be in terms of broadening, redshift, harmonic.
 Show an example of linear with weakly and moderately non-linear (based on redshift and harmonics)
 ... try to perturb with nonlinearity and see whether it finds better, give estimate of $a_0$ (not good)
 .. try to see when it would start to become visible and estimate an intensity (this could be used as intensity estimate, which it will be used for in the other section).
+
+... use this in radiation reaction studies to move from linear to non-linear (before ellipticity becomes important)
+
+
 
 \begin{figure}
 \centering
@@ -221,80 +233,79 @@ Show an example of linear with weakly and moderately non-linear (based on redshi
 
 
 
-\subsection{Limits}
+\section{Number of photons scattered}
 
-... in this energy range a converter gamma spectrometer would work very well (depending on the converter Li or so?)
+Based on the conditions in the experiment, we can assume that the interaction is correctly described by linear ICS theory.
+
+For linear ICS the number of photons produced in an interaction can be estimated by (REF Felicie and Alec's paper)
+
+\begin{equation}
+N_X = \frac{\sigma_T}{\pi w^2_0} N_L N_e,
+\end{equation}
+where $\sigma_T = 6.65 \times 10^{-25}\,\mathrm{m}^{-2}$ the Thomson scattering cross-section, $N_e$ the number of electrons involved, $N_L$ the number of laser photons and $w_0$ the waist size. The cross-section and the total number of photons produced is independent of the electron and photon energy.
+
+The Rayleigh length for an f/2 beam is approximately $2.5 \lambda f^2_\# \approx 8\,\mathrm{\mu m}$.
+At a diameter of 400um the beam is 800um away from the focal plane, which corresponds to 100 $z_R$. At this plane we can assume that we are in the near-field of the laser and we find a homogeneous flat top profile to interact with. 
+Since we are in the near-field of the laser the size of the electron beam is not important as we can assume a homogeneous photon density for each electron. We will also ignore angles and focusing effects, and assume that the entire electron beam interacts with a static photon field.
+
+From our electron analysis we know the number of electrons in each beam. Assuming a homogeneous perfect flat-top laser profile we estimate the photon density using the on-shot energy measurement and the laser beam size:
+
+\begin{align}
+N_X &= \frac{\sigma_T}{\pi w^2_0} \left[\frac{E_J}{E_{ph}} \frac{\pi w^2_0}{\pi r^2}\right] \left[\frac{Q}{e}\right],\\ \nonumber
+&= \frac{\sigma_T}{\pi r^2}\left[ \frac{E}{E_{ph}}\right] \left[ \frac{Q}{e}\right],
+\end{align}
+where $E_J$ is the total laser energy, $E_{ph}$ the energy of a single photon and $r$ the radius of the beam at the plane of the interaction. The region of the interaction defined by the electron beam size $w_0$ cancels out.
 
 
+In useful units we can write
 
-\section{Gamma yield from scattering}
+\begin{equation}
+N_X = 5.32 \times 10^{10}\times  E [J] \times Q [100pC] \times \left(r[\mu m]\right)^{-2}.
+\end{equation}
+
+Using this Equation we estimate for the conditions in the experiment ($E_J = 9.73\pm0.15$,$Q=239\pm92pC$ and $r=200um$) that $(1.3 \pm 0.5) \times 10^{7}$ photons are scattered. This is of similar order of magnitude as reported for bright betatron sources (Chen and Kneip), but from the previous section we expect to reach 1000-times higher photon energies due to the Lorentz boost. 
+
+The energy scale used in this experiment is maybe not economical, considering the large extent of the beam and the small electron beam size.
+The same signal level could be achieved by reducing the total beam energy and reducing the beam size, keeping the photon density fixed. Moving from $200$ to $25um$ beam radius, a factor of 8, the corresponding energy could be reduced by a factor 64. Using an f/2 optic, we would be more than 10 Rayleigh lengths away from the focus and we might be in a near-field scenario again, keeping the beam large enough to interact at all times within a stable system.
+
+\section{Energy-dependent response}
+
+We calculated the spectrum and the number of photons produced.
+
+There is a difference in the yield measured by a physical detector and the energy emitted. The scintillator profiles used are not perfect calorimeters so not all of the radiation is absorbed but only a variable fraction of it. The energy deposited in the stack can be simulated using GEANT. This is shown in Figure XX. Between 1 and 15 MeV the energy deposition increases steadily before slowing down but still increasing by 70 percent over the energy range. This means if we want to estimate the total number of photons we have to take this into account.
+
+This is similar behaviour as usually cited for Lanex, where few MeV particles deposit most of their energy whereas at relativistic energies the deposition is almost flat. A variable energy deposition means that a profile screen has different properties.
+
+Using the simulated result as a lookup-table for energy deposition and relating the photon energy to the electron energy, we can calculate the energy deposition as follows:
+
+\begin{equation}
+<E_{dep} (\gamma) > N_X = \int E_{dep} (\gamma) \frac{\sigma}{\pi \omega^2_0} N_L \frac{\mathrm{d}N_e}{\mathrm{d}\gamma}\mathrm{d}\gamma,
+\end{equation}
+which becomes in particular important when the electron spectrum changes strongly as it does in this case.
 
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.5\columnwidth]{Egamma_ICS.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.5\columnwidth]{Edep_Jena_1_100_MeV.png}
-\caption{Left: Radiation produced in head-on ICS collision for different electron energies. Right: Energy deposition per photon in stack.}
+
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Example_Espec_ICS_Edep.png}
+\caption[Energy-dependent yield on detector.]{Left: Radiation produced in head-on ICS collision for different electron energies. Right: Photon energy deposition per photon in stack. Bottom: Example electron spectrum along with gamma-ray energy on a relative scale. Comparison with relative contribution to the measured yield.}
 \end{figure}
 
-In the previous section we confirmed that the spectra are within some bound one-to-one mappings of the electron spectrum.
+\EliasComm{Absolute calibration: For the parameters above we get $2.6 \pm 1.4 \times 10^{7}$ photons above 1 MeV for electrons above 220 MeV.
 
-Estimate the number of photons produced in an interactions (REF Felicie and Alec's paper)
-
-\begin{equation}
-N_X = \frac{\sigma}{\pi w^2_0} N_L N_e,
-\end{equation}
-where $\sigma_T = 6.65 \times 10^{-25}\,\mathrm{m}^{-2}$ the Thomson scattering cross-section. Since we are in the near-field of the laser the size of the electron beam is not important as we can assume a homogeneous photon density for each electron.
-
-Estimate $N_L$. For average $a_0 \sim 0.3$ and photon energy $1.55\,\mathrm{eV}$, intensity XX, we get N photons per micron squared.
-So X number of photons for a 100 pC beam?
-
-Ignore temporal structure as focusing effects are negligible and we just assume a constant field.
-
-\begin{equation}
-N_X = \frac{\sigma}{\pi w^2_0} \left[\frac{E}{E_{ph}} \frac{\pi w^2_0}{\pi r^2}\right] \left[\frac{Q}{e}\right]
-\end{equation}
-
-\begin{equation}
-N_X = \frac{\sigma}{\pi r^2} \frac{E}{E_{ph}}
-\end{equation}
-
-So in useful units
-
-\begin{equation}
-N_X = 5.32 \times 10^{10} E [J] Q [100pC] r[\mu m]^{-2}
-\end{equation}
-
-For 10 Joules, 100 pC and 200 um radius we then get $1.33 \times 10^{7}$ photons which is of similar order as betatron sources (Chen and Kneip), but reaching 1000-times higher energies. The source size is determined by the size of the electron beam at the interaction (anywhere between few microns to where they are). HAVE TO CHECK BUT IS THE SOURCE SIZE MAYBE NOT IMPORTANT BECAUSE WE ARE USING THE VIRTUAL ELECTRON SOURCE? DOES THAT MEAN WE CAN LET THE BEAM EXPAND IF OUR BEAM IS INTENSE ENOUGH AND GUARANTEE OVERLAP EASILY?
-
-For the parameters above we get $2.6 \pm 1.4 \times 10^{7}$ photons above 1 MeV for electrons above 220 MeV.
-
-The average maximum energy is $923 \pm 206$ which translates at head-on collision into a peak gamma radiation of $20 \pm 10\,\mathrm{MeV}$.
-
-
-... propose equation for total yield
-
-... use that for the successful collisions and see whether it fits the trend
-
-We have a relationship for energy of the radiation times energy deposition in the gamma profile from GEANT
-
-How much does this change in terms of energy deposition per electron or charge over 100 MeV or so?
-What is the `contrast' of this method?
-
-So we expect the energy deposition to be 
-
-\begin{equation}
-E_{dep} (\gamma) N_X = \int E_{dep} (\gamma) \frac{\sigma}{\pi \omega^2_0} N_L \frac{\mathrm{d}N_e}{\mathrm{d}\gamma}\mathrm{d}\gamma,
-\end{equation}
-
-Check if that aligns with results in terms of trends.
-
-Check if the absolute calibration is of any use to estimate the numbers.
-
-PROPOSE HOW MUCH SMALLER WE COULD GO IN TERMS OF ENERGY AND SPOT SIZE AND WHAT KIND OF LASER COULD BE USE NOT TO SCAN BUT TO DO SINGLE-SHOT MEASUREMENTS.
-
-MAYBE USE LONG FOCUSING OR THAT REDUCES ACCURACY IN TERMS OF FOCAL POINT.
-
+Check if the absolute calibration is of any use to estimate the numbers.}
 
 \section{ICS as electron beam diagnostic}
+
+Since the mechanism of linear ICS is understood very well in this regime, we can attempt using it to diagnose properties of the electron beam.
+
+The laser pulse is interacting with the electron beam close to normal. Since the cross-section is energy-independent, we can assume that each part of the beam contributes a comparable number of photons to the total radiation emitted, under the caveat that the measured yield might vary due to the change in energy. This means this could act as non-invasive beam profile screen. In LWFA experiments a Lanex screen or different scintillator is used to measure the divergence and beam pointing of the undispersed electron beam. Placing a screen in the beam path, however, leads to small angle scattering of the electron beam and blurs out the beam, in particular for longer propagation distances. A different method is using a wire as position monitor in the beam path. This mainly gives a general pointing reference and when moved transversely can be used as measurement of the beam size at that plane, requiring shot-to-shot stability. This has also been done using linear ICS with a tightly focused laser pulse, also referred to as laser wire, as a sufficiently high photon density is required for a decent signal.
+
+We present a single-shot on-shot beam profile measurement.
+
+We will investigate how well spatial features in the vertical non-dispersed axis on the electron spectrometer screen relates to the measurement.
+This also includes divergence.
+We then use this method to investigate the dispersed axis.
 
 \subsection{Resolving spatial features}
 
@@ -310,13 +321,40 @@ Due to the Lorentz boost radiation in ICS is emitted in a narrow forward cone an
 \caption{Laser Wire example Espec and Gamma Profile for off-axis charge.}
 \end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_LaserWire_Examples_Ring.png}
+\caption{Laser Wire example Espec and Gamma Profile for off-axis charge.}
+\end{figure}
+
 For lower energy spread we can ignore change in response of the detector to higher energies.
 
 \begin{figure}
 \centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.8\columnwidth]{linICS_example_MatchingIntensities.png}
-\caption{Intensity check.}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_Mono.png}
+
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Example_ICSEdepElecProfile_Intensity.png}
+\caption[]{Intensity check.}
 \end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_Tilt.png}
+
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Example_ICSEdepElecProfile_Intensity_2.png}
+\caption[]{Intensity check.}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_Wing.png}
+
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Example_ICSEdepElecProfile_Intensity_3.png}
+\caption[]{Intensity check.}
+\end{figure}
+
 
 We see that a beam with large oscillations shows up as elongated profile which implies that it does not oscillate much in the other direction.
 
@@ -326,6 +364,18 @@ These examples show that it can reveal, given enough energy and homogeneous illu
 
 
 ... estimate what kind of intensity we would require if used the beam more economically.
+
+
+How much does this change in terms of energy deposition per electron or charge over 100 MeV or so?
+What is the `contrast' of this method?
+
+PROPOSE HOW MUCH SMALLER WE COULD GO IN TERMS OF ENERGY AND SPOT SIZE AND WHAT KIND OF LASER COULD BE USE NOT TO SCAN BUT TO DO SINGLE-SHOT MEASUREMENTS.
+
+MAYBE USE LONG FOCUSING OR THAT REDUCES ACCURACY IN TERMS OF FOCAL POINT.
+
+
+
+
 
 \subsubsection{Matching up features}
 
@@ -338,33 +388,30 @@ Using something with two features. Seeing that this does not seem to line up, th
 
 \subsection{2D divergence measurements}
 
-By comparing the divergence from the screen and the gamma profile (assuming laser parameter, can we say something?)
-
-... profile tells us about spatial things and also a bit energy due to yield
 
 
-\begin{figure}
-\centering
-\includegraphics[width=1.0\columnwidth]{linICS_FWHM_Y_Espec_GP_2.png}
-\caption{Clear correlation of FWHM.}
-\end{figure}
 
-The divergences of the gamma rays and the electrons are strongly related.
-We expect them to linearly relate to each other. We integrate over the entire beam, so different parts will contribute differently, but for now let us assume overall the beam energies are roughly of the same order of magnitude.
+
+
+Using the gamma profile screen we can measure the divergence of the gamma beam. Radiation from linear ICS is emitted in a narrow cone of divergence $1/\gamma \sqrt{N_0}$. Since the electron beam also has its own divergence the measured divergence is an addition of both. 
 
 \begin{equation}
 \theta_f = \theta_e + 1/(\gamma N^{1/2}_0)
 \end{equation}
 with laser oscillations $N_0 = 10$.
+Different parts of the beam contribute differently to the total gamma profile signal, but we will ignore this for now. To start with we will also assume that we have a constant $\gamma$ as changing the energy from 500 MeV to 1000 MeV would change the divergence from 0.32 to 0.16 mrad, so this is a small factor especially given the spatial resolution is of order 0.52 mrad. 
+In Figure XX we compare the divergence of electron beam in non-dispersion direction (vertical) with the corresponding FWHM divergence measured with the gamma profile screen. We see that with some scattering the data follows a linear relationship. The slope of the fitted line is 1, which indicates that this is the electron component and our spatial calibrations work out well. The deviations from the line are then related to energy fluctuations, spatial resolution and measurement errors, for instance.The values are scattered around the fit parameter which could be a combination of change in energy (ESTIMATE ERRORS 0.2 mrad), FWHM fit error XX, and limited spatial resolution. The standard deviation from the fit is 0.81 mrad which is just around what the spatial resolution and the change of energy would provide. 
 
-This means changing the energy from 500 MeV to 1000 MeV would change the divergence from 0.32 to 0.16 mrad, so this is a small factor especially given the spatial resolution is of order 0.52 mrad. So in general this should correlate.
+\begin{figure}
+\centering
+\includegraphics[width=1.0\columnwidth]{linICS_FWHM_Y_Espec_GP_2.png}
+\caption{Clear correlation of FWHM at correlation coefficient 0.63.}
+\end{figure}
 
-Seeing Figure XX we see that the FWHM values in the non-dispersion direction correlate well at a slope of 1 (ERROR). This means that the spatial calibration is good and the two match up as expected. The y-axis value is 1.4 mrad. The values are scattered around the fit parameter which could be a combination of change in energy (ESTIMATE ERRORS 0.2 mrad), FWHM fit error XX, and limited spatial resolution. The standard deviation from the fit is 0.81 mrad which is just around what the spatial resolution and the change of energy would provide.
-
-The additional 1.4 mrad require 250 MeV and times 2, which is not the case in all situations, so not sure where this is coming from.
+The y-axis contribution is 1.4 mrad require 250 MeV and times 2, which is not the case in all situations, so not sure where this is coming from.
 \vspace{\baselineskip}
 
-Independently of the origin, we can use this to estimate the electron divergence from this fit, and solving the previous equation:
+Independently of the origin, we can use this to estimate the electron divergence in the dispersion-axis from this fit, and solving the previous equation:
 
 \begin{equation}
 \theta_e = \theta_\gamma - C
@@ -377,14 +424,31 @@ This induces an error bar on the energy measurement, but on average the assumpti
 There are also examples where the electron beam has a high ellipticity and one could either over- or underestimate the properties.
 
 By dividing the electron beam divergences, the calculated and the measured quantity, we obtain a value for the ellipticity.
-It is $1.05\pm 0.7$. Add a histogram for this. Which means that on average the value is 1 but there are oscillations.
+It is $1.03\pm 0.5$. Add a histogram for this. Which means that on average the value is 1 but there are oscillations.
 
 
-This is also of interest as we know from PUBLICATION A0 (WITH OR WITHOUT TOM BLACKBURN) that we can infer a0 from the ellipticity of the gamma signal. If we can properly characterise the fluctuations in the pointing and ellipticity, we can also be reassured about which portion is due to source size and which is due to intensity.
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_ElectronFWHM_Ellipticity.png}
+\caption[]{Ellipticity (X over Y).}
+\end{figure}
+
+
+Ellipticity is not perfectly related due to measurement errors but also due to using a constant offset for all despite varying energy. There is also indication that not everything is interacting at all times, so the real divergence might be underestimated.
+
+This is also of interest as we know from PUBLICATION A0 (WITH OR WITHOUT TOM BLACKBURN) that we can infer a0 from the ellipticity of the gamma signal. If we can properly characterise the fluctuations in the pointing and ellipticity, we can also be reassured about which portion is due to source size and which is due to intensity. It is important to measure the divergence in two axes for this application.
 
 
 \subsection{Beam Pointing}
 
 The FWHM spatial features are well resolved and the spatial calibration is likely to be right. Somehow in general the pointing seems to be non-correlated. This is odd as the FWHM matches and indicates that we interact with the entire beam. There could be a slight different weighting of the energy deposition. Or the pointing changes throughout (if the interaction is inside within the bubble), but then FWHM would change also.
+
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Espec_GP_Pointing.png}
+\caption[]{Pointing.}
+\end{figure}
+
+Beam pointing only correlated by 0.15, which is only very weakly. Maybe this is related to the inverted spectra as well. Looking at shadowgraphy, we are likely to interact within the plasma and hence the beam is developing and oscillations lead to inversion?
 
 \section{Conclusion}

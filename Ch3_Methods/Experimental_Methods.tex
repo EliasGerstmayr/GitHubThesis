@@ -121,6 +121,10 @@ Due to the high intensity Gemini can reach the beam alignment and also the chara
 
 A real direct measurement of the actual focus at typical intensities used in wakefield experiments is very challenging. Recent attempts involved the full 3D characterisation of the wavefront of the collimated laser beam by applying an asymmetric Mach-Zehnder interferometer and scanning the entire beam profile over hundreds of shots \cite{TERMITES} or using a gas jet ionisation (REF HERE). 
 
+\begin{equation}
+a_0 \approx 0.85 \lambda [\mu m] \sqrt{I [10^{18} cm^{-2}]}
+\end{equation}
+
 
 \subsubsection{Image Processing}
 
@@ -318,20 +322,15 @@ Recently, the attenuators at Gemini have been matched with `compensator plates' 
 
 \subsubsection{Laser-Laser to Beam-Laser Timing}
 
-So far the considerations and methods have been aimed at ensuring the temporal overlap of two laser pulses, taking into account changes introduced by pump-down procedures or attenuation.
-
-Finally, we want to highlight what to consider when aiming to synchronise a laser pulse to an electron bunch accelerated through LWFA.
-
-One has to consider several factors:
-
-The driver beam propagates through a plasma and is hence slower relative to the in vacuum-timing procedure: it will arrive later at the interaction point than measured previously in vacuum.
-
-The electrons are injected after a certain distance of propagation. After injection they quickly reach a velocity close to the speed of light.
-
-As time window for the relative timing of the driver pulse and the electron bunch we can estimate: the bunch trails between a half to one plasma wavelength behind the laser pulse due to the bubble size if in the first bubble or N times that for the Nth bucket.
-If the electrons are close to dephasing the lower limit is a close indicator.
+So far the considerations and methods have been aimed at ensuring the temporal overlap of two laser pulses, taking into account changes introduced by pump-down procedures or attenuation. Finally, we want to highlight what to consider when aiming to synchronise a laser pulse to an electron bunch accelerated through LWFA, relative to a laser-laser synchronisation.
 \vspace{\baselineskip}
 
+In LWFA, the driver beam propagates through a plasma and is hence slower relative to the in vacuum-timing procedure: it will arrive later at the interaction point than measured previously in vacuum.
+
+The electrons are injected after a certain distance of propagation. After injection they quickly reach a velocity close to the speed of light, from when the electrons and the second laser pulse travel at approximately the same velocity.
+
+For the relative offset of the driver pulse and the electron bunch we can estimate that the bunch trails in the Nth bubble behind the laser pulse between N/2 to N plasma wavelengths, the accelerating to zero phase region of the bubble. If the electrons are close to dephasing and in the first bubble, the laser-electron offset is 1/2 $\lambda_p$.
+\vspace{\baselineskip}
 
 This shows that knowing the point of injection becomes important. Alternatively, calculate the distance the laser pulse propagated in plasma and take this as total delay (as the electrons are moving just as fast as the laser in vacuum from thereon forwards). For this purpose measuring injection radiation or forcing radiation at a designated point (shock injection) becomes very useful.
 
