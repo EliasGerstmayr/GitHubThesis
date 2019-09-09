@@ -20,6 +20,7 @@
 \usepackage{empheq}
 \usepackage{nameref}
 \usepackage{rotating}
+\usepackage{ifthen}
 
  
 %\usepackage{helvet}
@@ -37,11 +38,17 @@
 \pagestyle{fancy}
 
 \fancyhead{}
-\fancyhead[RO,LE]{Energetic Radiation from Wakefield Acceleration and its Applications}
-\fancyfoot{}
-\fancyfoot[LE,RO]{\thepage}
-\fancyfoot[LO,CE]{Chapter \thechapter}
-\fancyfoot[CO,RE]{}
+\fancyhead[R]{\ifthenelse{\isodd{\value{page}}}{}{\rightmark}}
+\fancyhead[L]{\ifthenelse{\isodd{\value{page}}}{\leftmark}{}}
+\fancyfoot[C]{\thepage}
+%\fancyhead[ER]{\rightmark}
+%\fancyhead[OL]{\rightmark}
+%\fancyhead[RO,LE]{Energetic Radiation from Wakefield Acceleration and its Applications}
+%\fancyfoot[CE]{}
+%\fancyfoot[LE,RO]{}
+%\fancyfoot[LO,CE]{Chapter \thechapter}
+%\fancyfoot[CO,RE]{}
+%\fancyfoot[EC,OC]{\thepage}
 
 %\DeclareUnicodeCharacter{00A0}{ }
 %\DeclareUnicodeCharacter{00A0}{~}

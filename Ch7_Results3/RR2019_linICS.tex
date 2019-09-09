@@ -1,4 +1,4 @@
-\chapter{Linear Inverse Compton Scattering at Astra Gemini}
+\chapter[Linear ICS at Astra Gemini]{Linear Inverse Compton Scattering at Astra Gemini}
 \label{Chap:linICS}
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     \section{Motivation}
 
@@ -98,7 +98,7 @@ The aperture of the magnet permits a field-of-view of $79\,\mathrm{mrad}$ (10cm/
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Example_Espec_CollisionMontage.png}
-\caption{Examples of electron spectra measured in the experiment. The y-axis is the dispersion axis and shows the energy, the x-axis indicates the divergence. The colour scale indicates the amount of charge in the beams and is fixed for all plots.}
+\caption[Examples of electron spectra measured in the experiment.]{Examples of electron spectra measured in the experiment. The y-axis is the dispersion axis and shows the energy, the x-axis indicates the divergence. The colour scale indicates the amount of charge in the beams and is fixed for all plots.}
 \label{linICS:Figs:Elec_example}
 \end{figure}
 
@@ -169,7 +169,7 @@ Since the properties of the electron beam measured in this experiment vary stron
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{Example_Espec_ICS.png}
-\caption{Example of an electron spectrum. The to the electron energies corresponding gamma-ray energies are indicated in a second x-axis on the top.}
+\caption[Example of an electron spectrum with corresponding calculated ICS spectrum.]{Example of an electron spectrum. The to the electron energies corresponding gamma-ray energies are indicated in a second x-axis on the top.}
 \end{figure}
 
 
@@ -251,14 +251,12 @@ Since we are in the near-field of the laser the size of the electron beam is not
 From our electron analysis we know the number of electrons in each beam. Assuming a homogeneous perfect flat-top laser profile we estimate the photon density using the on-shot energy measurement and the laser beam size:
 
 \begin{align}
-N_X &= \frac{\sigma_T}{\pi w^2_0} \left[\frac{E_J}{E_{ph}} \frac{\pi w^2_0}{\pi r^2}\right] \left[\frac{Q}{e}\right],\\ \nonumber
-&= \frac{\sigma_T}{\pi r^2}\left[ \frac{E}{E_{ph}}\right] \left[ \frac{Q}{e}\right],
+N_X &= \frac{\sigma_T}{\pi w^2_0} &\left[\frac{E_J}{E_{ph}} \frac{\pi w^2_0}{\pi r^2}\right] &\left[\frac{Q}{e}\right],\\ \nonumber
+&= \frac{\sigma_T}{\pi r^2}&\left[ \frac{E}{E_{ph}}\right]& \left[ \frac{Q}{e}\right],
 \end{align}
 where $E_J$ is the total laser energy, $E_{ph}$ the energy of a single photon and $r$ the radius of the beam at the plane of the interaction. The region of the interaction defined by the electron beam size $w_0$ cancels out.
 
-
 In useful units we can write
-
 \begin{equation}
 N_X = 5.32 \times 10^{10}\times  E [J] \times Q [100pC] \times \left(r[\mu m]\right)^{-2}.
 \end{equation}
@@ -279,7 +277,7 @@ This is similar behaviour as usually cited for Lanex, where few MeV particles de
 Using the simulated result as a lookup-table for energy deposition and relating the photon energy to the electron energy, we can calculate the energy deposition as follows:
 
 \begin{equation}
-<E_{dep} (\gamma) > N_X = \int E_{dep} (\gamma) \frac{\sigma}{\pi \omega^2_0} N_L \frac{\mathrm{d}N_e}{\mathrm{d}\gamma}\mathrm{d}\gamma,
+\langle E_{dep} (\gamma) \rangle N_X = \int E_{dep} (\gamma) \frac{\sigma}{\pi \omega^2_0} N_L \frac{\mathrm{d}N_e}{\mathrm{d}\gamma}\mathrm{d}\gamma,
 \end{equation}
 which becomes in particular important when the electron spectrum changes strongly as it does in this case.
 
@@ -324,7 +322,7 @@ Due to the Lorentz boost radiation in ICS is emitted in a narrow forward cone an
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_LaserWire_Examples_Ring.png}
-\caption{Laser Wire example Espec and Gamma Profile for off-axis charge.}
+\caption[Examples of gamma profile measurements and corresponding electron spectra.]{Examples of gamma profile measurements and corresponding electron spectra.}
 \end{figure}
 
 For lower energy spread we can ignore change in response of the detector to higher energies.
