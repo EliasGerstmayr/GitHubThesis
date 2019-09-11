@@ -12,36 +12,37 @@
 
 ... testing timing etc. for other experiment
 
+
 \section{Chapter Outline}
 
-... Experimental Setup
+Linear ICS can be used as non-invasive beam diagnostic. This has been shown and is being considered. Usually using a focused beam to produce enough yield, but this assumes a stable source. Beams from LWFA have intrinsic fluctuations and a single-shot measurement is more desirable.
+The fluctuations are in terms of pointing, divergence, energy, energy spread, shape and so on. In standard setups typically we measure the electron beam energy using a magnetic spectrometer. This gives us spatial information in the non-dispersion direction but destroys the component in the dispersion direction. We can introduce a spatial screen in the undispersed beam path to measure the 2D divergence and the pointing but the material will lead to scattering of the beam which blurs out the beam for the energy measurement. This also requires shielding the detector from laser light, which will scatter the beam more or if we use a plasma mirror this adds complexity. If we are interested in radiation production from linear ICS the screen and the tape will produce bremsstrahlung, which skews the data and makes a spectral retrieval difficult.
 
-... characterise electron beam and properties
+We present linear ICS as non-invasive beam diagnostics that provides us with 2D divergence and pointing data. The spectral resolution of the profile tells us more about the shape of the electron beam, its ellipticity and so on.
 
-... correlate yield and Espec energy
-... estimate number of photons one would produce
+This is useful for radiation reaction experiments that require us to have a good knowledge and characterisation of the beam parameters in 3D (temporal as well). Intensity measurements rely on an ellipticity of a non-linear ICS signal, but without knowing or having characterised the fluctuations of the beam ellipticity we do not know how likely this was an intense interaction. Linear ICS also provides an avenue to overlap the beam easily at low intensities and then use the scanning method as proposed as beam diagnostics to close in onto the position of the beam.
 
-... spectral retrieval
+A transverse probe and second view (top view) with high magnification can help to maintain overlap.
 
-... use ICS as e-beam diagnostic: 
+We start by introducing the electron beam parameters and properties in this experiment. We are using shock injection in a wild and very varying regime producing a wide range of electron beams which in turn are expected to produce a wide range of radiation and also produces interesting spatial features that we can image.
 
-... correlate pointing in vertical and show good agreement
+We then estimate the experiment conditions and what kind of radiation we expect in an interaction. Based on this and the electron characterisation we then calculate the total yield and compare this to the yield of betatron measurements. 
 
-... same for divergence
+We then retrieve the spectrum and compare how well this fits.
 
-... show horizontal pointing should also be reliable and indicate the errors this would introduce for the error
+Then we use the profile measurement to compare the electron spectrometer with the gamma profile measurements. 
+We see that the profile changes with the electron beam.
+We first look at the pointing. This does not correlate so well.
+We then investigate the divergence. This correlates well within an error range which is related to spatial resolution and the energy range as well.
+We now look at the spatial features. We find examples where we have off-axis contributions with features, visible in both.
+For instance elliptical beams, several beamlets, tilt of the beam and several beams and how they are oriented in space. 
+However, the beam seems inverted and the pointing does not match. Estimate how much intensity difference this would require. Seems unrealistic. We interact in plasma, maybe oscillation and momentum. Momentum unrealistic as consistently inverted. Oscillation matches as we interact half a betatron wavelength inside, intensity low. Data with beam outside interacting..
+We can not see these things just using the electron spectrometer.
+We can use this to diagnose the beam better on-shot, to estimate beam sizes, if we have a good spectral measurement to estimate intensity, better for low energy spread beams, to characterise shape and to then go for radiation reaction.
 
-... show some examples of the beam profile and using this an non-intrusive method and show examples
+The overlap can be done to a certain stability but we can use optical response by two transverse views. Use the probe and main beam timing.
+If counter-propagating we also relatively safely interact, especially using a defocused beam. Then raster scan and intensify.
 
-... features visible on spectrometer screen (narrow energy)
-
-... slight tilt
-
-... oscillation in one axis
-
-... do intensities match up?
-
-... how do the intensities affect the measurement?
 
 \section{Experimental Setup}
 
@@ -70,7 +71,7 @@ The gas target and recombination light of the plasma channel are imaged by a Can
 
 \subsubsection{Scattering beam}
 
-A second laser pulse is focused by an f/2 off-axis parabola (OAP) at the opposite edge of the gas jet in a geometry for head-on collisions. The f/2 OAP has a 21-mm-diameter hole in the centre to allow the electrons and radiation from ICS to propagate through. A round piece of plastic with radius $28\,\mathrm{mm}$ is also fitted around the hole to protect the optic from scattered light from the first laser. This reduces the on-target intensity by 16 degrees assuming a perfect top-hat laser profile. To protect the optic from potential debris a thin plastic layer with anti-reflective coating with a suitable hole (`pellicle') is attached to the OAP mount. The on-shot energy of the laser is $9.73\pm 0.15\,\mathrm{J}$ which reduces to $8.17\pm0.13\,\mathrm{J}$ with the hole. In the dataset presented, the beam size is defocused to a spot of about 400$\mu m$ diameter, which translates into $a_0 \sim 0.28$ at the interaction. The laser is linearly polarised in the vertical plane.
+A second laser pulse is focused by an f/2 off-axis parabola (OAP) at the opposite edge of the gas jet in a geometry for head-on collisions. The f/2 OAP has a 21-mm-diameter hole in the centre to allow the electrons and radiation from ICS to propagate through. A round piece of plastic with radius $28\,\mathrm{mm}$ is also fitted around the hole to protect the optic from scattered light from the first laser. This reduces the on-target intensity by 16 degrees assuming a perfect top-hat laser profile. To protect the optic from potential debris a thin plastic layer with anti-reflective coating with a suitable hole (`pellicle') is attached to the OAP mount. The on-shot energy of the laser is $9.73\pm 0.15\,\mathrm{J}$ which reduces to $8.17\pm0.13\,\mathrm{J}$ with the hole. In the dataset presented, the beam size is defocused to a spot of about $400\pm50\,\mathrm{\mu m}$ diameter, which translates into $a_0 \sim 0.28$ at the interaction. The laser is linearly polarised in the vertical plane.
 
 \subsubsection{Two-beam timing}
 
@@ -261,10 +262,11 @@ In useful units we can write
 N_X = 5.32 \times 10^{10}\times  E [J] \times Q [100pC] \times \left(r[\mu m]\right)^{-2}.
 \end{equation}
 
-Using this Equation we estimate for the conditions in the experiment ($E_J = 9.73\pm0.15$,$Q=239\pm92pC$ and $r=200um$) that $(1.3 \pm 0.5) \times 10^{7}$ photons are scattered. This is of similar order of magnitude as reported for bright betatron sources (Chen and Kneip), but from the previous section we expect to reach 1000-times higher photon energies due to the Lorentz boost. 
+Using this Equation we estimate for the conditions in the experiment ($E_J = 9.73\pm0.15$,$Q=239\pm92pC$ and $r=200um$) that $(1.3 \pm 0.5) \times 10^{7}$ photons are scattered. This is of similar order of magnitude as reported for bright betatron sources (REF REF Chen and Kneip), but from the previous section we expect to reach 1000-times higher photon energies due to the Lorentz boost. Since pulse duration comparable, this means brightness is higher.
 
 The energy scale used in this experiment is maybe not economical, considering the large extent of the beam and the small electron beam size.
-The same signal level could be achieved by reducing the total beam energy and reducing the beam size, keeping the photon density fixed. Moving from $200$ to $25um$ beam radius, a factor of 8, the corresponding energy could be reduced by a factor 64. Using an f/2 optic, we would be more than 10 Rayleigh lengths away from the focus and we might be in a near-field scenario again, keeping the beam large enough to interact at all times within a stable system.
+The same signal level could be achieved by reducing the total beam energy and reducing the beam size, keeping the photon density fixed. Moving from $200$ to $25um$ beam radius, a factor of 8, the corresponding energy could be reduced by a factor 64. Using an f/2 optic, we would be more than 10 Rayleigh lengths away from the focus and we might be in a near-field scenario again, keeping the beam large enough to interact at all times within a stable system. We would want to have a beam that is very flat and does not introduce features. Consider smooth focus, maybe phase plate.
+Is longer Rayleigh length useful (aperture beam down, do not change optic).
 
 \section{Energy-dependent response}
 
@@ -291,7 +293,9 @@ which becomes in particular important when the electron spectrum changes strongl
 
 \EliasComm{Absolute calibration: For the parameters above we get $2.6 \pm 1.4 \times 10^{7}$ photons above 1 MeV for electrons above 220 MeV.
 
-Check if the absolute calibration is of any use to estimate the numbers.}
+Check if the absolute calibration is of any use to estimate the numbers.
+
+Absolute calibration using Cs137 source.}
 
 \section{ICS as electron beam diagnostic}
 
@@ -304,6 +308,74 @@ We present a single-shot on-shot beam profile measurement.
 We will investigate how well spatial features in the vertical non-dispersed axis on the electron spectrometer screen relates to the measurement.
 This also includes divergence.
 We then use this method to investigate the dispersed axis.
+
+
+\subsection{2D divergence measurements}
+
+
+
+
+
+
+Using the gamma profile screen we can measure the divergence of the gamma beam. Radiation from linear ICS is emitted in a narrow cone of divergence $1/\gamma \sqrt{N_0}$. Since the electron beam also has its own divergence the measured divergence is an addition of both. 
+
+\begin{equation}
+\theta_f = \theta_e + 1/(\gamma N^{1/2}_0)
+\end{equation}
+with laser oscillations $N_0 = 10$.
+Different parts of the beam contribute differently to the total gamma profile signal, but we will ignore this for now. To start with we will also assume that we have a constant $\gamma$ as changing the energy from 500 MeV to 1000 MeV would change the divergence from 0.32 to 0.16 mrad, so this is a small factor especially given the spatial resolution is of order 0.52 mrad. 
+In Figure XX we compare the divergence of electron beam in non-dispersion direction (vertical) with the corresponding FWHM divergence measured with the gamma profile screen. We see that with some scattering the data follows a linear relationship. The slope of the fitted line is 1, which indicates that this is the electron component and our spatial calibrations work out well. The deviations from the line are then related to energy fluctuations, spatial resolution and measurement errors, for instance.The values are scattered around the fit parameter which could be a combination of change in energy (ESTIMATE ERRORS 0.2 mrad), FWHM fit error XX, and limited spatial resolution. The standard deviation from the fit is 0.81 mrad which is just around what the spatial resolution and the change of energy would provide. 
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\columnwidth]{linICS_FWHM_Y_Espec_GP_2.png}
+\caption{Clear correlation of FWHM at correlation coefficient 0.63.}
+\end{figure}
+
+The y-axis contribution is 1.4 mrad require 250 MeV and times 2, which is not the case in all situations, so not sure where this is coming from.
+\vspace{\baselineskip}
+
+Independently of the origin, we can use this to estimate the electron divergence in the dispersion-axis from this fit, and solving the previous equation:
+
+\begin{equation}
+\theta_e = \theta_\gamma - C
+\end{equation}
+
+For the same dataset this gives us an electron divergence of $2.2 \pm 1.4\,\mathrm{mrad}$ in the dispersion direction. In comparison it is $2.2 \pm 0.6\,\mathrm{mrad}$ in the other axis, which is very similar. 
+
+This induces an error bar on the energy measurement, but on average the assumption that the divergence is symmetric would be close.
+
+There are also examples where the electron beam has a high ellipticity and one could either over- or underestimate the properties.
+
+By dividing the electron beam divergences, the calculated and the measured quantity, we obtain a value for the ellipticity.
+It is $1.03\pm 0.5$. Add a histogram for this. Which means that on average the value is 1 but there are oscillations.
+
+
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_ElectronFWHM_Ellipticity.png}
+\caption[]{Ellipticity (X over Y).}
+\end{figure}
+
+
+Ellipticity is not perfectly related due to measurement errors but also due to using a constant offset for all despite varying energy. There is also indication that not everything is interacting at all times, so the real divergence might be underestimated.
+
+This is also of interest as we know from PUBLICATION A0 (WITH OR WITHOUT TOM BLACKBURN) that we can infer a0 from the ellipticity of the gamma signal. If we can properly characterise the fluctuations in the pointing and ellipticity, we can also be reassured about which portion is due to source size and which is due to intensity. It is important to measure the divergence in two axes for this application.
+
+
+\subsection{Beam Pointing}
+
+The FWHM spatial features are well resolved and the spatial calibration is likely to be right. Somehow in general the pointing seems to be non-correlated. This is odd as the FWHM matches and indicates that we interact with the entire beam. There could be a slight different weighting of the energy deposition. Or the pointing changes throughout (if the interaction is inside within the bubble), but then FWHM would change also.
+
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Espec_GP_Pointing.png}
+\caption[]{Pointing.}
+\end{figure}
+
+Beam pointing only correlated by 0.15, which is only very weakly. Maybe this is related to the inverted spectra as well. Looking at shadowgraphy, we are likely to interact within the plasma and hence the beam is developing and oscillations lead to inversion?
+
+
 
 \subsection{Resolving spatial features}
 
@@ -373,6 +445,13 @@ MAYBE USE LONG FOCUSING OR THAT REDUCES ACCURACY IN TERMS OF FOCAL POINT.
 
 
 
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{GammaProfile_Espec_20190208r015s092.png}
+\caption[]{Another spatial example.}
+\end{figure}
+
+
 
 
 \subsubsection{Matching up features}
@@ -383,70 +462,41 @@ Using something with two features. Seeing that this does not seem to line up, th
 
 \EliasComm{Intensity profile?}
 
+\subsubsection{Explaining inversion}
 
-\subsection{2D divergence measurements}
+Potential reasons:
+
+... Fluctuations in intensity. Use some examples and show how much more intensity is required to make up for this change in intensity
+
+... Since interacting in plasma the beams have some momentum, which then indicates which direction the radiation goes. Draw out the options: would be spread from outside to inside, but is it concentrated only in one angular direction. Also estimate transverse momentum.
+
+... the beam is not perturbing the plasma much and we have half a betatron wavelength behind us to flip sides in any case. Estimate ranges and provide inversion and non-inversion samples.
 
 
-
-
-
-
-Using the gamma profile screen we can measure the divergence of the gamma beam. Radiation from linear ICS is emitted in a narrow cone of divergence $1/\gamma \sqrt{N_0}$. Since the electron beam also has its own divergence the measured divergence is an addition of both. 
-
-\begin{equation}
-\theta_f = \theta_e + 1/(\gamma N^{1/2}_0)
-\end{equation}
-with laser oscillations $N_0 = 10$.
-Different parts of the beam contribute differently to the total gamma profile signal, but we will ignore this for now. To start with we will also assume that we have a constant $\gamma$ as changing the energy from 500 MeV to 1000 MeV would change the divergence from 0.32 to 0.16 mrad, so this is a small factor especially given the spatial resolution is of order 0.52 mrad. 
-In Figure XX we compare the divergence of electron beam in non-dispersion direction (vertical) with the corresponding FWHM divergence measured with the gamma profile screen. We see that with some scattering the data follows a linear relationship. The slope of the fitted line is 1, which indicates that this is the electron component and our spatial calibrations work out well. The deviations from the line are then related to energy fluctuations, spatial resolution and measurement errors, for instance.The values are scattered around the fit parameter which could be a combination of change in energy (ESTIMATE ERRORS 0.2 mrad), FWHM fit error XX, and limited spatial resolution. The standard deviation from the fit is 0.81 mrad which is just around what the spatial resolution and the change of energy would provide. 
-
-\begin{figure}
-\centering
-\includegraphics[width=1.0\columnwidth]{linICS_FWHM_Y_Espec_GP_2.png}
-\caption{Clear correlation of FWHM at correlation coefficient 0.63.}
-\end{figure}
-
-The y-axis contribution is 1.4 mrad require 250 MeV and times 2, which is not the case in all situations, so not sure where this is coming from.
-\vspace{\baselineskip}
-
-Independently of the origin, we can use this to estimate the electron divergence in the dispersion-axis from this fit, and solving the previous equation:
+Betatron wavelength:
 
 \begin{equation}
-\theta_e = \theta_\gamma - C
+\lambda_\beta = \lambda_p \sqrt{2\gamma}
 \end{equation}
 
-For the same dataset this gives us an electron divergence of $2.2 \pm 1.4\,\mathrm{mrad}$ in the dispersion direction. In comparison it is $2.2 \pm 0.6\,\mathrm{mrad}$ in the other axis, which is very similar. 
+with plasma wavelength
 
-This induces an error bar on the energy measurement, but on average the assumption that the divergence is symmetric would be close.
+\begin{equation}
+\lambda_p = n_e ...
+\end{equation}
 
-There are also examples where the electron beam has a high ellipticity and one could either over- or underestimate the properties.
-
-By dividing the electron beam divergences, the calculated and the measured quantity, we obtain a value for the ellipticity.
-It is $1.03\pm 0.5$. Add a histogram for this. Which means that on average the value is 1 but there are oscillations.
-
-
-\begin{figure}
-\centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_ElectronFWHM_Ellipticity.png}
-\caption[]{Ellipticity (X over Y).}
-\end{figure}
+The angle of the electrons is determined by the position in the oscillation. The largest component is going in z direction. There is a smaller transverse component. At the return point it is parallel (so the emission of the radiation should appear to be sent forward). In any other case there should be a component in positive or negative transverse direction. Naively if we assume a half betatron length of 800 um and a betatron radius of 1 micron, the ratio of $p_T$ and $p_z$ is 1:800, so we are talking about an average pointing of 1.25 mrad. This is a variation spatially of 2 mm. However, we are usually encountering at least four times that for the inversion. Do we have examples of other electron beams that are not doing that?
 
 
-Ellipticity is not perfectly related due to measurement errors but also due to using a constant offset for all despite varying energy. There is also indication that not everything is interacting at all times, so the real divergence might be underestimated.
 
-This is also of interest as we know from PUBLICATION A0 (WITH OR WITHOUT TOM BLACKBURN) that we can infer a0 from the ellipticity of the gamma signal. If we can properly characterise the fluctuations in the pointing and ellipticity, we can also be reassured about which portion is due to source size and which is due to intensity. It is important to measure the divergence in two axes for this application.
+\subsubsection{Raster scan}
 
+Use this to establish relative positioning.
 
-\subsection{Beam Pointing}
+Use this as preparation for non-linear ICS and RR.
 
-The FWHM spatial features are well resolved and the spatial calibration is likely to be right. Somehow in general the pointing seems to be non-correlated. This is odd as the FWHM matches and indicates that we interact with the entire beam. There could be a slight different weighting of the energy deposition. Or the pointing changes throughout (if the interaction is inside within the bubble), but then FWHM would change also.
+Easier overlap, especially at shallow angles.
 
-\begin{figure}
-\centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Espec_GP_Pointing.png}
-\caption[]{Pointing.}
-\end{figure}
-
-Beam pointing only correlated by 0.15, which is only very weakly. Maybe this is related to the inverted spectra as well. Looking at shadowgraphy, we are likely to interact within the plasma and hence the beam is developing and oscillations lead to inversion?
+Use transverse diagnostics for position and then raster scan.
 
 \section{Conclusion}

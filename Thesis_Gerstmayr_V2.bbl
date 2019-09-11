@@ -5,25 +5,6 @@ D.~J. Corvan, G.~Sarri, and M.~Zepf.
 \newblock Design of a compact spectrometer for high-flux mev gamma-ray beams.
 \newblock {\em Review of Scientific Instruments}, 85(6):065119, 2014.
 
-\bibitem{Cole2018_RR}
-J~M Cole, K~T Behm, E~Gerstmayr, T~G Blackburn, J~C Wood, C~D Baird, M~J Duff,
-  C~Harvey, A~Ilderton, A~S Joglekar, K~Krushelnick, S~Kuschel, M~Marklund,
-  P.~McKenna, C~D Murphy, K~Poder, C~P Ridgers, G~M Samarin, G~Sarri, D~R
-  Symes, A.~G.R. Thomas, J~Warwick, M~Zepf, Z~Najmudin, and S.~P.D. Mangles.
-\newblock {Experimental Evidence of Radiation Reaction in the Collision of a
-  High-Intensity Laser Pulse with a Laser-Wakefield Accelerated Electron Beam}.
-\newblock {\em Physical Review X}, 8(1):11020, 2018.
-
-\bibitem{Behm2018_Gamma}
-K~T Behm, J~M Cole, A~S Joglekar, E~Gerstmayr, J~C Wood, C~D Baird, T~G
-  Blackburn, M~Duff, C~Harvey, A~Ilderton, S~Kuschel, S~P~D Mangles,
-  M~Marklund, P~Mckenna, C~D Murphy, Z~Najmudin, K~Poder, C~P Ridgers, G~Sarri,
-  G~M Samarin, D~Symes, J~Warwick, M~Zepf, K~Krushelnick, and A~G~R Thomas.
-\newblock {A spectrometer for ultrashort gamma-ray pulses with photon energies
-  greater than 10 MeV}.
-\newblock {\em Citation: Review of Scientific Instruments}, 89(11):113303, nov
-  2018.
-
 \bibitem{ThomasThesis}
 Alexander George~Roy Thomas.
 \newblock {\em Studies of laser propagation and mono-energetic electron beam
@@ -50,6 +31,11 @@ Z.~Z. Latypov, S.~E. Kupriyanov, and N.~N. Tunitskii.
 A.~M. Perelomov, V.~S. Popov, and M.V.~V. Terent'ev.
 \newblock {Ionization of atoms in an alternating electrical field}.
 \newblock {\em Sov. Phys. JETP}, 23(5):924, 1966.
+
+\bibitem{Reiss1970_ION}
+Howard~R. Reiss.
+\newblock {Semiclassical electrodynamics of bound systems in intense fields}.
+\newblock {\em Physical Review A}, 1(3), 1970.
 
 \bibitem{McGuffey2010_ION}
 C.~McGuffey, A.~G.~R. Thomas, W.~Schumaker, T.~Matsuoka, V.~Chvykov, F.~J.
@@ -177,6 +163,15 @@ Tobias~N. Wistisen, Antonino Di~Piazza, Helge~V. Knudsen, and Ulrik~I.
   crystals.
 \newblock {\em Nature Communications}, 9(1):795, 2018.
 
+\bibitem{Cole2018_RR}
+J~M Cole, K~T Behm, E~Gerstmayr, T~G Blackburn, J~C Wood, C~D Baird, M~J Duff,
+  C~Harvey, A~Ilderton, A~S Joglekar, K~Krushelnick, S~Kuschel, M~Marklund,
+  P.~McKenna, C~D Murphy, K~Poder, C~P Ridgers, G~M Samarin, G~Sarri, D~R
+  Symes, A.~G.R. Thomas, J~Warwick, M~Zepf, Z~Najmudin, and S.~P.D. Mangles.
+\newblock {Experimental Evidence of Radiation Reaction in the Collision of a
+  High-Intensity Laser Pulse with a Laser-Wakefield Accelerated Electron Beam}.
+\newblock {\em Physical Review X}, 8(1):11020, 2018.
+
 \bibitem{Poder2018_RR}
 K.~Poder, M.~Tamburini, G.~Sarri, A.~{Di Piazza}, S.~Kuschel, C.~D. Baird,
   K.~Behm, S.~Bohlen, J.~M. Cole, D.~J. Corvan, M.~Duff, E.~Gerstmayr, C.~H.
@@ -234,12 +229,13 @@ D.~J. Corvan, T.~Dzelzainis, C.~Hyland, G.~Nersisyan, M.~Yeung, M.~Zepf, and
   focussed laser pluses.
 \newblock {\em Opt. Express}, 24(3):3127--3136, Feb 2016.
 
-\bibitem{Jolly2012_3DJET}
-S.~W. Jolly, Z.~He, C.~McGuffey, W.~Schumaker, K.~Krushelnick, and A.~G.~R.
-  Thomas.
-\newblock Stereolithography based method of creating custom gas density profile
-  targets for high intensity laser-plasma experiments.
-\newblock {\em Review of Scientific Instruments}, 83(7):073503, 2012.
+\bibitem{Leemans2014_GEV}
+W.~P. Leemans, A.~J. Gonsalves, H.-S. Mao, K.~Nakamura, C.~Benedetti, C.~B.
+  Schroeder, Cs. T\'oth, J.~Daniels, D.~E. Mittelberger, S.~S. Bulanov, J.-L.
+  Vay, C.~G.~R. Geddes, and E.~Esarey.
+\newblock Multi-gev electron beams from capillary-discharge-guided subpetawatt
+  laser pulses in the self-trapping regime.
+\newblock {\em Phys. Rev. Lett.}, 113:245002, Dec 2014.
 
 \bibitem{Osterhoff2008_CELL}
 J.~Osterhoff, A.~Popp, Zs. Major, B.~Marx, T.~P. Rowlands-Rees, M.~Fuchs,
@@ -249,41 +245,30 @@ J.~Osterhoff, A.~Popp, Zs. Major, B.~Marx, T.~P. Rowlands-Rees, M.~Fuchs,
   laser-wakefield acceleration in a steady-state-flow gas cell.
 \newblock {\em Phys. Rev. Lett.}, 101:085002, Aug 2008.
 
+\bibitem{Kim2013_GEV}
+Hyung~Taek Kim, Ki~Hong Pae, Hyuk~Jin Cha, I~Jong Kim, Tae~Jun Yu, Jae~Hee
+  Sung, Seong~Ku Lee, Tae~Moon Jeong, and Jongmin Lee.
+\newblock Enhancement of electron energy to the multi-gev regime by a
+  dual-stage laser-wakefield accelerator pumped by petawatt laser pulses.
+\newblock {\em Phys. Rev. Lett.}, 111:165002, Oct 2013.
+
+\bibitem{Jolly2012_3DJET}
+S.~W. Jolly, Z.~He, C.~McGuffey, W.~Schumaker, K.~Krushelnick, and A.~G.~R.
+  Thomas.
+\newblock Stereolithography based method of creating custom gas density profile
+  targets for high intensity laser-plasma experiments.
+\newblock {\em Review of Scientific Instruments}, 83(7):073503, 2012.
+
+\bibitem{Faure2006_STABLEJET}
+J.~Faure, C.~Rechatin, A.~Norlin, A.~Lifschitz, Y.~Glinec, and V.~Malka.
+\newblock Controlled injection and acceleration of electrons in plasma
+  wakefields by colliding laser pulses.
+\newblock {\em Nature}, 444(7120):737--739, 2006.
+
 \bibitem{Bulanov1997_SELF}
 S.~V. Bulanov, F.~Pegoraro, A.~M. Pukhov, and A.~S. Sakharov.
 \newblock Transverse-wake wave breaking.
 \newblock {\em Phys. Rev. Lett.}, 78:4205--4208, Jun 1997.
-
-\bibitem{Hagena1972_CLUSTER}
-O.~F. Hagena and W.~Obert.
-\newblock Cluster formation in expanding supersonic jets: Effect of pressure,
-  temperature, nozzle size, and test gas.
-\newblock {\em The Journal of Chemical Physics}, 56(5):1793--1802, 1972.
-
-\bibitem{Cho2018_NANO}
-Myung~Hoon Cho, Vishwa~Bandhu Pathak, Hyung~Taek Kim, and Chang~Hee Nam.
-\newblock Controlled electron injection facilitated by nanoparticles for laser
-  wakefield acceleration.
-\newblock {\em Scientific Reports}, 8(1):16924, 2018.
-
-\bibitem{Alexeev2003_CLUSTERGUIDE}
-I.~Alexeev, T.~M. Antonsen, K.~Y. Kim, and H.~M. Milchberg.
-\newblock Self-focusing of intense laser pulses in a clustered gas.
-\newblock {\em Phys. Rev. Lett.}, 90:103402, Mar 2003.
-
-\bibitem{Kumarappan2005_CLUSTERGUIDE}
-V.~Kumarappan, K.~Y. Kim, and H.~M. Milchberg.
-\newblock Guiding of intense laser pulses in plasma waveguides produced from
-  efficient, femtosecond end-pumped heating of clustered gases.
-\newblock {\em Phys. Rev. Lett.}, 94:205004, May 2005.
-
-\bibitem{Chen2013_CLUSTERX}
-L.~M. Chen, W.~C. Yan, D.~Z. Li, Z.~D. Hu, L.~Zhang, W.~M. Wang, N.~Hafz, J.~Y.
-  Mao, K.~Huang, Y.~Ma, J.~R. Zhao, J.~L. Ma, Y.~T. Li, X.~Lu, Z.~M. Sheng,
-  Z.~Y. Wei, J.~Gao, and J.~Zhang.
-\newblock Bright betatron x-ray radiation from a laser-driven-clustering gas
-  target.
-\newblock {\em Scientific Reports}, 3:1912 EP --, 05 2013.
 
 \bibitem{Siminos2016_FASTSHADOW}
 E~Siminos, S~Skupin, A~SÃ€vert, J~M Cole, S~P~D Mangles, and M~C Kaluza.
@@ -305,6 +290,18 @@ A.~S\"avert, S.~P.~D. Mangles, M.~Schnell, E.~Siminos, J.~M. Cole, M.~Leier,
 \newblock Direct observation of the injection dynamics of a laser wakefield
   accelerator using few-femtosecond shadowgraphy.
 \newblock {\em Phys. Rev. Lett.}, 115:055002, Jul 2015.
+
+\bibitem{ManglesThesis}
+Stuart Peter~David Mangles.
+\newblock {\em Measurements of relativistic electrons from intense laser-plasma
+  interactions}.
+\newblock PhD thesis, Imperial College London (University of London), 2005.
+
+\bibitem{PoderThesis}
+Kristjan Poder.
+\newblock {\em Characterisation of self-guided laser wakefield accelerators to
+  multi-GeV energies}.
+\newblock PhD thesis, Imperial College London, 2016.
 
 \bibitem{KettleThesis}
 Brendan Kettle.
@@ -348,6 +345,16 @@ S.~Agostinelli, J.~Allison, K.~Amako, J.~Apostolakis, H.~Araujo, P.~Arce,
 \newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
   Accelerators, Spectrometers, Detectors and Associated Equipment}, 506(3):250
   -- 303, 2003.
+
+\bibitem{Behm2018_Gamma}
+K~T Behm, J~M Cole, A~S Joglekar, E~Gerstmayr, J~C Wood, C~D Baird, T~G
+  Blackburn, M~Duff, C~Harvey, A~Ilderton, S~Kuschel, S~P~D Mangles,
+  M~Marklund, P~Mckenna, C~D Murphy, Z~Najmudin, K~Poder, C~P Ridgers, G~Sarri,
+  G~M Samarin, D~Symes, J~Warwick, M~Zepf, K~Krushelnick, and A~G~R Thomas.
+\newblock {A spectrometer for ultrashort gamma-ray pulses with photon energies
+  greater than 10 MeV}.
+\newblock {\em Citation: Review of Scientific Instruments}, 89(11):113303, nov
+  2018.
 
 \bibitem{Esarey1993_NT}
 Eric Esarey, Sally~K. Ride, and Phillip Sprangle.
@@ -515,21 +522,6 @@ Baifei Shen, Zhigang Bu, Jiancai Xu, Tongjun Xu, Liangliang Ji, Ruxin Li, and
   free electron laser beam.
 \newblock {\em Plasma Physics and Controlled Fusion}, 60(4):044002, feb 2018.
 
-\bibitem{Kim2013_GEV}
-Hyung~Taek Kim, Ki~Hong Pae, Hyuk~Jin Cha, I~Jong Kim, Tae~Jun Yu, Jae~Hee
-  Sung, Seong~Ku Lee, Tae~Moon Jeong, and Jongmin Lee.
-\newblock Enhancement of electron energy to the multi-gev regime by a
-  dual-stage laser-wakefield accelerator pumped by petawatt laser pulses.
-\newblock {\em Phys. Rev. Lett.}, 111:165002, Oct 2013.
-
-\bibitem{Leemans2014_GEV}
-W.~P. Leemans, A.~J. Gonsalves, H.-S. Mao, K.~Nakamura, C.~Benedetti, C.~B.
-  Schroeder, Cs. T\'oth, J.~Daniels, D.~E. Mittelberger, S.~S. Bulanov, J.-L.
-  Vay, C.~G.~R. Geddes, and E.~Esarey.
-\newblock Multi-gev electron beams from capillary-discharge-guided subpetawatt
-  laser pulses in the self-trapping regime.
-\newblock {\em Phys. Rev. Lett.}, 113:245002, Dec 2014.
-
 \bibitem{Gonsalves2019_GEV}
 A.~J. Gonsalves, K.~Nakamura, J.~Daniels, C.~Benedetti, C.~Pieronek, T.~C.~H.
   de~Raadt, S.~Steinke, J.~H. Bin, S.~S. Bulanov, J.~van Tilborg, C.~G.~R.
@@ -640,12 +632,6 @@ S.~Corde, K.~Ta~Phuoc, G.~Lambert, R.~Fitour, V.~Malka, A.~Rousse, A.~Beck, and
 \newblock Femtosecond x rays from laser-plasma accelerators.
 \newblock {\em Rev. Mod. Phys.}, 85:1--48, Jan 2013.
 
-\bibitem{PoderThesis}
-Kristjan Poder.
-\newblock {\em Characterisation of self-guided laser wakefield accelerators to
-  multi-GeV energies}.
-\newblock PhD thesis, Imperial College London, 2016.
-
 \bibitem{Schmid2010_shock}
 K.~Schmid, A.~Buck, C.~M.~S. Sears, J.~M. Mikhailova, R.~Tautz, D.~Herrmann,
   M.~Geissler, F.~Krausz, and L.~Veisz.
@@ -684,6 +670,23 @@ C.~D. Decker, W.~B. Mori, K.‐C. Tzeng, and T.~Katsouleas.
   plasmas.
 \newblock {\em Physics of Plasmas}, 3(5):2047--2056, 1996.
 
+\bibitem{Baier1991_GAUNT}
+VN~Baier, VM~Katkov, and VM~Strakhovenko.
+\newblock Quasiclassical theory of radiation and pair creation in crystals at
+  high energy.
+\newblock {\em Radiation Effects and Defects in Solids}, 122(2):527--556, 1991.
+
+\bibitem{Shen1972_STRAGGLING}
+C.~S. Shen and D.~White.
+\newblock Energy straggling and radiation reaction for magnetic bremsstrahlung.
+\newblock {\em Phys. Rev. Lett.}, 28:455--459, Feb 1972.
+
+\bibitem{HarShemesh2012_INTENSITY}
+Omri Har-Shemesh and Antonino~Di Piazza.
+\newblock Peak intensity measurement of relativistic lasers via nonlinear
+  thomson scattering.
+\newblock {\em Opt. Lett.}, 37(8):1352--1354, Apr 2012.
+
 \bibitem{Bulanov2011_LL}
 Sergei~V. Bulanov, Timur~Zh. Esirkepov, Masaki Kando, James~K. Koga, and
   Stepan~S. Bulanov.
@@ -691,6 +694,13 @@ Sergei~V. Bulanov, Timur~Zh. Esirkepov, Masaki Kando, James~K. Koga, and
   in the ultrarelativistic electron interaction with electromagnetic wave
   (exact solutions).
 \newblock {\em Phys. Rev. E}, 84:056605, Nov 2011.
+
+\bibitem{Baird2019_RR}
+C~D Baird, C~D Murphy, T~G Blackburn, A~Ilderton, S~P~D Mangles, M~Marklund,
+  and C~P Ridgers.
+\newblock Realising single-shot measurements of quantum radiation reaction in
+  high-intensity lasers.
+\newblock {\em New Journal of Physics}, 21(5):053030, may 2019.
 
 \bibitem{Heitler1954_BH}
 Walter Heitler.

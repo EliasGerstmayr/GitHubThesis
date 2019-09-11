@@ -377,7 +377,7 @@ The expanding gas cools down and in some cases can lead to the formation of clus
 \vspace{\baselineskip}
 \fi
 
-Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. However, experimental results are less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014} and stability \cite{Desforges2014,Osterhoff2013} to setups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible. ALSO MENTION MAX ENERGY FROM JET (4 GEV CORELS) \cite{Kim2013}
+Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. However, experimental results are less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014_GEV} and stability \cite{Desforges2014,Osterhoff2013,Osterhoff2008_CELL} to setups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible. ALSO MENTION MAX ENERGY FROM JET (4 GEV CORELS) \cite{Kim2013_GEV}
 \vspace{\baselineskip}
 
 \begin{figure}
@@ -439,7 +439,7 @@ Just as 3D printing methods have been considered for gas jets \cite{Jolly2012_3D
 \vspace{\baselineskip}
 
 Gas cell targets have sometimes produced superior results from gas jets using the same laser system (Poder v Kneip, Osterhoff, \cite{Kuschel2018_SELF}) in terms of charge, shot-to-shot stability and maximum energy gain.
-However, some of the most stable LWFA sources have been achieved using gas jet targets (Faure Nature 2006) and the open geometry allows for diagnostic access and colliding pulse experiments as well as a route to high repetition rate operation.
+However, some of the most stable LWFA sources have been achieved using gas jet targets \cite{Faure2006_STABLEJET} and the open geometry allows for diagnostic access and colliding pulse experiments as well as a route to high repetition rate operation.
 The variety of gas targets, their performance and the performance of the specific laser system make it difficult to compare gas cells and jets in general with each other. Comparisons can in most cases only be done between individual specimens and conclusions drawn from such a comparison might only be valid in this limited context. 
 
 \subsubsection{Experimental Implementation}
@@ -547,7 +547,7 @@ and for $n_e \ll n_c$, $\eta \approx 1 - n_e/(2n_c)$.
 On the experiments described a Mach-Zehnder interferometer was used, but with a little twist: in this version one single beam passes through the gas target and is then afterwards split up. Both copies carry the same information and the phase shifts, but typically only a fraction of the gas is ionised forming a channel and the remaining neutral gas is used as reference by shifting the copies relative to each other perpendicular to the laser axis.
 \vspace{\baselineskip}
 
-Due to this geometry the interferometer can be set up as an extension to an existing shadowgraphy imaging system. It constitutes a complementary and very useful tool to the shadowgraphy. Whilst the shadowgraphy is useful to identify features in the medium, the interferometry image can give absolute numbers for the phase shift translating into the electron densities of the target by applying Abel inversion if one assumes cylindrical symmetry \cite{Bracewell1978} (see Jason Cole's PhD thesis \cite{Cole_Thesis} for more details).
+Due to this geometry the interferometer can be set up as an extension to an existing shadowgraphy imaging system. It constitutes a complementary and very useful tool to the shadowgraphy. Whilst the shadowgraphy is useful to identify features in the medium, the interferometry image can give absolute numbers for the phase shift translating into the electron densities of the target by applying Abel inversion if one assumes cylindrical symmetry \cite{Bracewell1978} (see Jason Cole's PhD thesis \cite{ColeThesis} for more details).
 
 \subsection{Self emission of the plasma}
 
@@ -588,7 +588,7 @@ Assume a point source that propagates and diverges over a distance $d$ until it 
 where $\theta$ denotes the divergence, equivalent to the ratio of forwards to transverse momentum, $p_\parallel/p_\perp$.
 \vspace{\baselineskip}
 
-The pointing fluctuations of the beam can be estimated similarly if one suspects mainly an angular jitter. In reality the pointing will be related to a combination of translation and rotation.
+The pointing fluctuations of the beam can be estimated similarly if one suspects mainly an angular jitter. In reality the pointing will be related to a combination of translation and rotation, where a transverse displacement of the beam is typically of order $\sim \mu m$ and will then over the course of a drift be dominated by the angular displacement.
 
 To obtain an absolute number for the divergence and pointing the screen has to be spatially calibrated. This includes characterising the relative angle of screen, camera and laser axis.
 A regular grid of known dimensions, for instance printed on some paper, can be used as spatial reference to evaluate the relative angle of camera and screen. The angle of the screen relative to the beam has to be measured separately. 
@@ -601,7 +601,7 @@ The energy of electrons in wakefield experiments can be determined in experiment
 In order to understand the fundamental relations this method is based on, the motion of a single electron in a homogeneous magnetic field is considered and analytically solved in the case of an electron passing through a region of a homogeneous magnetic field of finite extent, but without considering fringe fields or gradients. In reality, the magnetic fields are measured or simulated and particle tracked using numerical methods.
 \vspace{\baselineskip}
 
-Consider an external magnetic field restricted to a circle of radius $r_b$ embedded in an otherwise completely field-free region. The following derivation is based on Stuart Mangles' (Imperial College) PhD thesis.
+Consider an external magnetic field restricted to a circle of radius $r_b$ embedded in an otherwise completely field-free region. The following derivation is based on Stuart Mangles' (Imperial College) PhD thesis \cite{ManglesThesis}.
 \begin{align}
 \mathbf{B} &= B \mathbf{e_z} \, &r \leq r_b,\nonumber \\
 &= \mathbf{0} &r > r_b
@@ -647,14 +647,14 @@ The correct assignment of the position on the screen to the correct electron ene
 Each pixel has a certain error bar on its associated energy as the divergence of the electron beam (instrument function), an offset at source or shot-to-shot pointing fluctuations could lead to different positions at the same electron energy (pointing). The energy resolution is determined by the strength of the magnetic field, the drift length, the intrinsic spatial resolution of the scintillator (for Lanex $\sim 100\,\mathrm{\mu m}$ REF) and the spatial resolution of the imaging system. 
 \vspace{\baselineskip}
 
-A second Lanex screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations or an overall pointing to achieve a more accurate determination of the energy, but could introduce additional scattering. See Kris Poder's thesis for more details on this REF and two screen REF PAPER.
+A second Lanex screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations or an overall pointing to achieve a more accurate determination of the energy, but could introduce additional scattering. See Kristjan Poder's PhD thesis \cite{PoderThesis} for more details on this or for instance REF TWO SCREENS.
 
 The width of the electron trace in the non-dispersion direction can be used to determine the divergence of the beam (in the non-dispersion axis) and cross-checked with the spectrum of the betatron radiation or a beam profile monitor.
 \vspace{\baselineskip}
 
 In addition to measuring the distances and the magnetic field, the imaging system for the scintillator screen has to be characterised.
 This requires transforming the optical image (projective transform), spatially calibrate the image and translate from spatial to energy axis.
-More details on the typical procedure can be found, for instance, in Jason Cole's or Kristjan Poder's PhD thesis \cite{Cole_Thesis, Poder_Thesis}
+More details on the typical procedure can be found, for instance, in Jason Cole's or Kristjan Poder's PhD thesis \cite{ColeThesis, PoderThesis}
 
 In all Chapters Lanex (standard and Biomax) are used in conjunction with Andor Neo cameras.
 
@@ -828,12 +828,12 @@ Direct (CCD) or indirect detection (with scintillator) Andor iKon.
 
 When X-rays increase in energy the quantum efficiency of the CCD chip decreases, so energies beyond 100 keV are not measured.
 
-More details on the extraction procedure can be found in Jon Wood's thesis \cite{WoodThesis}.
+More details on the extraction procedure can be found in Jonathan Wood's PhD thesis \cite{WoodThesis}.
 
 Was not used on the experiments described in this work but other relevant experiments.
 To motivate why other indirect detection methods are required and this method becomes less sensitive at higher energies.
 
-If we assume only absorption following Beer's law, the signal through a filter on the camera including quantum efficiencies (QE) etc. (taken from Jon Wood's thesis \cite{WoodThesis})
+If we assume only absorption following Beer's law, the signal through a filter on the camera including quantum efficiencies (QE) etc. (taken from Jonathan Wood's PhD thesis \cite{WoodThesis})
 
 \begin{equation}
 Y_i = A \int^{E_{max}}_{E_{min}} E \,S(E) \,Q(E) \,T_i(E) \,\mathrm{d}E

@@ -62,28 +62,74 @@ Future experiments at conventional facilities SFQED (SLAC), LUXE (Hamburg), Cala
 
 \EliasComm{Make plot (Blender) of a future experiment setup including all the new diagnostics and indicating role of components. Interesting measurements (draw up new experiment plan basically, same as before plus another gamma detector). Somewhat like a proposal for a new experiment? Challenges and experience answers?}
 
-\subsubsection{Interaction Point (TCC)}
 
-... f/40 laser at maximum energy possible
+\subsection{Wakefield driver beam}
 
-... f/2 (holey) at edge of gas target at maximum intensity possible, tight spot
+Use again an f/40 geometry with a wakefield driver at maximum energy possible.
 
-... gas jet target to allow debris-free high-intensity interaction
-
-... blade in gas jet for shock injection to produce high charge beams with narrow energy spread
-
-... shock injection to fix timing
-
-... transverse probe to see shock and diagnose density
-
-... transverse probe to have visual confirmation of timing (relative, use probe) and overlap, high magnification for overlap
-
-... top view to have visual confirmation of transverse position (high mag)
-
-... spatial interferometry (prism)
+In Chapter XX used XX J and managed to get beams. Shock injection is less dependent on exact pulse evolution, so more robust in that sense.
+Use adaptive optic. More intensity might be able to drive further and increase energy. 
 
 
-\subsubsection{post-TCC}
+\subsection{Scattering beam}
+
+As before use an f/2 OAP as this allows tight focusing to a spot of similar dimensions as the electron beam. Shorter focal lengths will not work with incoming beam etc. Off-axis can be done but might render our alignment and raster method not as suitable anymore.
+
+Holey parabola will require again protection of the optics, also against debris and scattered light.
+
+Loss in energy for the hole is very similar to loss when going off-axis. Focus close to the target (will be explained later).
+Maximum energy as possible, at Gemini at 45 fs XX J, was not possible before.
+
+Adaptive optic and wavefront measurement.
+
+Waveplate to change polarisation would be useful to investigate dependence on polarisation but also for intensity measurements.
+
+Beam dump.
+
+\subsection{Laser diagnostics}
+
+On-shot far field pointing to be able to distinguish collisions and probability on basis of on-shot data. Also identify drifts in the alignment. Commissioned for the first time properly in Chapter XX.
+On-shot energy measurements are also important but also done already.
+
+We require on-shot timing diagnostics, ideally spectral interferometry. This has been fielded in the setup described in Chapter XX, but needs confirmation of validity (upstairs and downstairs), analysis pending (OR WAS THIS STAGING)?.
+
+Focal spot cameras to optimise the spots, wavefront measurement important as well.
+
+Polarisation diagnostic as well important to confirm.
+
+
+
+\subsection{Interaction Point (TCC)}
+
+The gas target would be a gas jet, as concluded in Chapter \ref{Chap:RR15}, as it allows debris-free high-intensity interaction and open access for diagnostics, which is more favourable than the potential increases shot-to-shot stability of a gas cell target. It has been shown in Chapter \ref{Chap:linICS} that we can shoot very high above the nozzle and still produce suitable electron beams.
+
+Introducing a shock front on purpose in Chapter \ref{Chap:linICS} produced comparable electron beams as in \ref{Chap:RR15}. The beams were of high charge and electrons were measured consistently over 100s of shots. Shock injection also showed the potential to produce high-charge narrow-energy-spread beams at the 1 GeV level at few percent energy spread. The reproducibility of these beams has to be improved and is ongoing research. However, the potential for these beams is favourable especially to distinguish models.
+A shock injected beam is also expected to have a fixed injection point and hence constant relative timing to the driver beam at the interaction.
+
+Potential to maybe extend the length of the gas jet to increase the energy. Although depends on mechanism for the short bunches, might be straight shock and not dephasing.
+
+The gas jet will be diagnosed with a shadowgraphy and interferometry setup to determine the density profile, but also to identify interesting features in the channel and use TIMING OVERLAP FRINGES PROBE. This gives visual confirmation of the transverse position and overlap and timing.
+This has been successfully demonstrated in Chapter XX.
+HIGH MAG FOR FUTURE CAMPAIGNS.
+
+ULTRASHORT PROBE FOR FUTURE TO MONITOR OVERLAP? (REF SAVERT)
+
+The self-emission of the plasma is also imaged from two axes. This helps to monitor potential drifts in the alignment.
+HIGH MAG FOR FUTURE CAMPAIGNS.
+
+
+RELATIVE TIMING? 
+Top view is used to position the prism along with the high mag etc. The angle of the prism needs to be fixed properly. Is there a way to improve overlap? We got the on-shot spectral interferometry working. Is there a way to gate some gas reaction?
+
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\columnwidth]{GasJetCloseUp_Combo.pdf}
+\caption[Close-up sketch of gas jet and diagnostics to characterise the plasma.]{Close-up sketch of gas jet and diagnostics to characterise the plasma. A transverse probe is used to obtain a shadowgram and an interferometry image. The self-emission of the plasma is imaged from the side and the top.}
+\end{figure}
+
+
+\subsection{post-TCC}
 
 ... converter targets for calibrations
 
@@ -93,9 +139,16 @@ Future experiments at conventional facilities SFQED (SLAC), LUXE (Hamburg), Cala
 
 ... thick lead to allow for full saturation
 
-... magnet spectrometer (here use wide apertured horizontal)
+... tungsten blob target for calibration of positron detectors
 
-... thin kevlar-kapton window
+... bremsstrahlung targets have been investigated in detail in Chapter \ref{Chap:BW} along with the positron calibration and the magnetic chicane
+
+\subsection{Particle diagnostic setup}
+
+
+... magnet spectrometer (here use wide apertured horizontal to avoid production of pairs, although holey f/2 has small aperture)
+
+... thin kevlar-kapton window to reduce secondary production and scattering of the main beam
 
 ... first lanex screen high sensitivity right at the window to minimise scattering
 
@@ -105,60 +158,46 @@ Future experiments at conventional facilities SFQED (SLAC), LUXE (Hamburg), Cala
 
 ... second lanex further down in one plane with gamma profile to allow for reference. double screen to increase energy resolution
 
-... gamma profile at the front of CsI spectrometer (or needed as converter?). Needed for a0 measurement
-
-... dual-axis CsI spectrometer to measure spectrum and potentially 2D spectral measurement
-
-... screens above and below stack to capture converted particles
-
 ... magnetic chicane for single particles in high intensity interaction
 
 ... TimePix for tracking and background measurement
 
 ... single particle CsI measurement
 
-... tungsten blob for positron calibration?
+\subsection{Gamma diagnostics}
 
-\subsubsection{Laser diagnostics}
 
-... on-shot spectral interferometry timing
 
-... on shot far-field pointing
+... gamma profile at the front of CsI spectrometer (or needed as converter?). Needed for a0 measurement
 
-... on-shot energy measurement
+... dual-axis CsI spectrometer to measure spectrum and potentially 2D spectral measurement
 
-... control over polarisation (has been fielded as well) and measuring diagnostic (this has been fielded)
+... screens above and below stack to capture converted particles
 
-... waveplate on rotary plate
 
-... focal spot cameras
 
-\subsubsection{Designing a full setup}
 
-... decide whether this would be just RR or if it actually would make sense to do this for a BW setup as well to round things off.
-Most of the diagnostics would work both ways.
+\subsection{Designing a full setup}
 
-.. however, the BW setup does not require an a0 measurement and dual-axis resolution. The important part could be the improved spectral measurement, but if we mitigate the targetry, this would be okay. Maybe we can argue that the setup is already quite complicated. Here it would be better to leave the back-end constant (shielding and noise is a sensitive issue), but improve the signal by using more charge (could consider shock injection if the control is better as the charge is much higher than in the case of self- and ionisation injection PROVIDE SOME NUMBERS FROM LINEAR ICS AS DIRECT COMPARISON).
+... Only RR setup (do the BW setup by itself in the discussion of that chapter)
 
-.. mitigate effects:
-
-... X-rays can only be measured in a narrow window (700eV), so cut out the signal under the measurement as before using plastic tape
-
-... above we need to be sure how the spectrum behaves. It is hard to cut above but not below.
-
-... a second X-ray camera to measure a part of the higher energy spectrum. Would it be enough without overlap (can't do overlap unfortunately...), would there be an issue with higher orders?
-
-... is resolution or range more important? How much further away would we have to be to measure the full range?
-
-... is the range of angles a problem? If so, can we add a spatial collimator also for the tape target (would produce noise again...)
-
-\subsubsection{Procedure}
+\subsection{Procedure}
 
 .. raster scan and analysis of data?
 
 ... or is this too specific?
 
-\subsubsection{Measurement goals}
+\subsection{Measurement goals}
+
+\subsubsection{Intensity Measurement using ellipse}
+\subsubsection{Polarisation dependency Intensity}
+\subsubsection{High confidence No RR-RR Comparison}
+\subsubsection{Precision Measurement of RR at high-intensities }
+\subsubsection{Very high-intensity collisions with pair production}
+\subsubsection{Very high-intensity collisions with spin polarisation measurement}
+\subsubsection{Spectral Measurement increased accuracy}
+\subsubsection{Double-differential Gamma spectrum}
+
 
 ... measurement goal and requirements/challenges?
 
@@ -166,8 +205,33 @@ Most of the diagnostics would work both ways.
 
 ... discriminating radiation reaction and no radiation reaction to 5 sigma (using a stable charge beam and at 1.2 GeV at least)
 
-... estimate number of shots based on previous estimate
+... estimate number of shots based on previous estimate (using NO RR RR COMPARISON)
 
 ... discriminate semi-classical and stochastic measurement by look at change in energy width (requires narrow energy spread and stability, see C ARRAN RESULTS)
 
+\EliasComm{Add figure here like shown in EAAC talk including my plot on no RR RR.}
+
 ... measuring pair production: need 2 GeV at least, so need longer target, and high intensity so can not use cell.
+
+\EliasComm{Check if polarisation measurement possible.}
+
+\EliasComm{Check if pair production realistic.}
+
+\EliasComm{Intensity measurement.}
+
+\EliasComm{Accurate spectral measurement using double-differential measurement (tungsten wire on a stage?)}
+
+\EliasComm{Characterisation of the phase space, beam profile and fluctuations. Check if a scan in timing can give us a scan through betatron oscillations.}
+
+\EliasComm{Precision measurement of radiation reaction including energy spread cooling and energy loss.}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\columnwidth]{CARRAN_PLACEHOLDER.png}
+
+\includegraphics[width=0.5\columnwidth]{CARRAN_Nmin.png}\includegraphics[width=0.5\columnwidth]{CARRAN_SingleShotConfidence.png}
+
+\caption{Chris Arran's simulations including a dot for our best electron beams and show that these would be suitable for radiation reaction. Maybe just take picture from paper and reference (ask for permission).}
+\end{figure}
+
+\section{Final Remarks}
