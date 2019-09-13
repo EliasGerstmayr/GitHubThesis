@@ -5,7 +5,7 @@
 
 The previous Chapters showed that electrons from LWFA can act as a versatile radiation source, producing highly energetic and collimated gamma radiation with ultrashort pulse duration and small source size: in Chapter \ref{Chap:linICS} narrow and broadband radiation in the 10s of MeV range was produced in linear inverse Compton scattering, in Chapter \ref{Chap:RR15} broadband synchrotron-like radiation with critical energies up to 40 MeV were generated from nonlinear inverse Compton scattering. In Chapter \ref{Chap:BW} a broadband bremsstrahlung was commissioned and optimised using different materials. Another high-energy radiation source is betatron radiation (typically 10s of keV critical energies) but this has not been discussed further in this thesis. MAKE A PLOT OF SPECTRA OF RADIATION PRODUCIBLE AT GEMINI USING AN LWFA SOURCE. SHOWN IN FIGURE XX.
 \EliasComm{Make a plot of gamma radiation spectra to show the bandwidth and spectral shapes.}
-All these radiation sources were measured with an array of scintillating crystals acting as gamma spectrometer as fielded successfully for the first time for \cite{Cole2018_RR} \cite{Behm2018_Gamma}, also showing the versatile applicability of this detector. It was also shown that this detector requires a spectral shape as primer and we require further diagnostics as described in REF TWO DIAG DECONVOLUTION UNFOLDING REF, which is desirable in some cases to measure intensity or contribution of high energy components (REF).
+All these radiation sources were measured with an array of scintillating crystals acting as gamma spectrometer as fielded successfully for the first time for \cite{Cole2018_RR} \cite{Behm2018_Gamma}, also showing the versatile applicability of this detector. It was also shown that this detector requires a spectral shape as primer and we require further diagnostics as described in REF TWO DIAG DECONVOLUTION UNFOLDING REF, which is desirable in some cases to measure intensity or contribution of high energy components for accurate cross section for fundamental processes like BW (REF), intensity measurements based on harmonics (REF) or model distinction to see hardening of spectrum in ICS (REF).
 
 The production of radiation and the radiation itself were also shown to be versatile and have different applications. Radiation has applications for imaging, medical and nuclear applications. Here we focused on the application of high energy radiation in the context of QED studies, more particularly radiation reaction and a photon-photon collider producing matter.
 \vspace{\baselineskip}
@@ -38,11 +38,11 @@ We have shown that the gamma-ray yield on shots with and without scattering beam
 
 We have shown that the radiation profile in a linear ICS case gives us additional characterisation and information of the electron beam that the spectrometer screen is not giving and this would enable us to measure these beams statistically as well.
 The characterisation of the ellipticity is also helpful to distinguish ellipticity from beam deformation from intensity perturbations.
-This capability also enables us to measure at good resolution the intensity at the interaction point following previous results (model-independent a0 measurement, otherwise UMSTADTER REF IF NO REFERENCE FROM T BLACKBURN YET). Also allows to characterise the 2D pointing and divergence development without producing scattering. Can calibrate the source and establish interaction conditions in the meantime. Can see development from non-linear to linear.
+This capability also enables us to measure at good resolution the intensity at the interaction point following previous results (model-independent a0 measurement, otherwise \cite{HarShemesh2012_INTENSITY,Yan2017_ICS} UMSTADTER REF IF NO REFERENCE FROM T BLACKBURN YET). Also allows to characterise the 2D pointing and divergence development without producing scattering. Can calibrate the source and establish interaction conditions in the meantime. Can see development from non-linear to linear.
 
 We fielded a gamma spectrometer based on an array of scintillator crystals to measure the gamma radiation. Assuming an input spectrum this worked well and was used to constrain the interaction intensity on shot. It was also used in other energy ranges and is good if the overall spectrum is known. A more detailed spectral retrieval would be favourable for the future. In Chapter XX we also fielded a dual-axis array that allows observing the longitudinal decay from two transverse dimensions at the same time. This might have interesting implications for measurements in the future. The different calibrations to account for deviations in simulated and measured response were developed as well.
 
-Combining the spectral and electron data the experiment conditions were constrained further and the measurement of radiation reaction was successful and statistically significant, with agreement with RR models and stronger agreement with quantum models. Further data is required but statistical analysis is helpful. Another observable for the future would be energy spread. This has been investigated in C ARRAN.
+Combining the spectral and electron data the experiment conditions were constrained further and the measurement of radiation reaction was successful and statistically significant, with agreement with RR models and stronger agreement with quantum models. Further data is required but statistical analysis is helpful. Another observable for the future would be energy spread. This has been investigated in \cite{Arran2019_RR_PPCF,Arran2019_RR_SPIE}.
 
 We fielded a magnetic chicane to isolate positrons in Chapter \ref{Chap:BW} and tracked particles for noise discrimination using TimePix3 detectors and measured particles on a single-particle counting CsI array. This shows us the shielding and detector capabilities enable us to measure single particles produced in an event and that we are able to distinguish those from noise. This would be of interest in a very intense interaction where in a second step non-linear BW. This gives us a threshold for intensity.
 We were able to calibrate these diagnostics by converting gamma radiation into pairs by inserting converter materials in the beam path.
@@ -52,7 +52,7 @@ Combining these results we have a suitable electron beam source, the means to ov
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\columnwidth]{RR20_ExpSetup.png}
+\includegraphics[width=0.8\columnwidth]{RR20_ExpSetup_V12Sep.png}
 \caption{Future experiment layout incorporating lessons learned.}
 \label{Concl:Fig:FutureExp}
 \end{figure}
@@ -65,43 +65,13 @@ A proposed experiment layout based on the experiments described in the previous 
 
 
 
-\subsection{Wakefield driver beam}
+\subsection{Laser Wakefield Accelerator}
 
 Use again an f/40 geometry with a wakefield driver at maximum energy possible.
 
 In Chapter XX used XX J and managed to get beams. Shock injection is less dependent on exact pulse evolution, so more robust in that sense.
 Use adaptive optic. More intensity might be able to drive further and increase energy. 
 
-
-\subsection{Scattering beam}
-
-As before use an f/2 OAP as this allows tight focusing to a spot of similar dimensions as the electron beam. Shorter focal lengths will not work with incoming beam etc. Off-axis can be done but might render our alignment and raster method not as suitable anymore.
-
-Holey parabola will require again protection of the optics, also against debris and scattered light.
-
-Loss in energy for the hole is very similar to loss when going off-axis. Focus close to the target (will be explained later).
-Maximum energy as possible, at Gemini at 45 fs XX J, was not possible before.
-
-Adaptive optic and wavefront measurement.
-
-Waveplate to change polarisation would be useful to investigate dependence on polarisation but also for intensity measurements.
-
-Beam dump.
-
-\subsection{Laser diagnostics}
-
-On-shot far field pointing to be able to distinguish collisions and probability on basis of on-shot data. Also identify drifts in the alignment. Commissioned for the first time properly in Chapter XX.
-On-shot energy measurements are also important but also done already.
-
-We require on-shot timing diagnostics, ideally spectral interferometry. This has been fielded in the setup described in Chapter XX, but needs confirmation of validity (upstairs and downstairs), analysis pending (OR WAS THIS STAGING)?.
-
-Focal spot cameras to optimise the spots, wavefront measurement important as well.
-
-Polarisation diagnostic as well important to confirm.
-
-
-
-\subsection{Interaction Point (TCC)}
 
 The gas target would be a gas jet, as concluded in Chapter \ref{Chap:RR15}, as it allows debris-free high-intensity interaction and open access for diagnostics, which is more favourable than the potential increases shot-to-shot stability of a gas cell target. It has been shown in Chapter \ref{Chap:linICS} that we can shoot very high above the nozzle and still produce suitable electron beams.
 
@@ -119,8 +89,6 @@ The self-emission of the plasma is also imaged from two axes. This helps to moni
 HIGH MAG FOR FUTURE CAMPAIGNS.
 
 
-RELATIVE TIMING? 
-Top view is used to position the prism along with the high mag etc. The angle of the prism needs to be fixed properly. Is there a way to improve overlap? We got the on-shot spectral interferometry working. Is there a way to gate some gas reaction?
 
 
 \begin{figure}
@@ -129,73 +97,107 @@ Top view is used to position the prism along with the high mag etc. The angle of
 \caption[Close-up sketch of gas jet and diagnostics to characterise the plasma.]{Close-up sketch of gas jet and diagnostics to characterise the plasma. A transverse probe is used to obtain a shadowgram and an interferometry image. The self-emission of the plasma is imaged from the side and the top.}
 \end{figure}
 
+\subsection{Scattering Beam and Overlap}
 
-\subsection{post-TCC}
 
-... converter targets for calibrations
+As before use an f/2 OAP as this allows tight focusing to a spot of similar dimensions as the electron beam. Shorter focal lengths will not work with incoming beam etc. Off-axis can be done but might render our alignment and raster method not as suitable anymore.
 
-... 1.6 mm PTFE for narrow emission and on-shot measurement of electron spectra
+Holey parabola will require again protection of the optics, also against debris and scattered light.
 
-... bismuth for efficient conversion
+Loss in energy for the hole is very similar to loss when going off-axis. Focus close to the target (will be explained later).
+Maximum energy as possible, at Gemini at 45 fs XX J, was not possible before.
 
-... thick lead to allow for full saturation
+Adaptive optic and wavefront measurement.
 
-... tungsten blob target for calibration of positron detectors
+Waveplate to change polarisation would be useful to investigate dependence on polarisation but also for intensity measurements.
 
-... bremsstrahlung targets have been investigated in detail in Chapter \ref{Chap:BW} along with the positron calibration and the magnetic chicane
+Beam dump.
+
+
+On-shot far field pointing to be able to distinguish collisions and probability on basis of on-shot data. Also identify drifts in the alignment. Commissioned for the first time properly in Chapter XX.
+On-shot energy measurements are also important but also done already.
+
+We require on-shot timing diagnostics, ideally spectral interferometry. This has been fielded in the setup described in Chapter XX, but needs confirmation of validity (upstairs and downstairs), analysis pending (OR WAS THIS STAGING)?.
+
+Focal spot cameras to optimise the spots, wavefront measurement important as well.
+
+Polarisation diagnostic as well important to confirm.
+
+RELATIVE TIMING? 
+Top view is used to position the prism along with the high mag etc. The angle of the prism needs to be fixed properly. Is there a way to improve overlap? We got the on-shot spectral interferometry working. Is there a way to gate some gas reaction?
 
 \subsection{Electron beam diagnostics}
 
+Electron beam measurement using a magnetic spectrometer (permanent dipole magnet). As we are interested in knowing the energy and spread of the beam accurately, we use a dual screen setup. A thin window (kevlar kapton) helps to reduce the scattering and producing secondaries. The first screen can be close to the window which reduces scattering and eases the access (simplifies charge calibration).
+A second camera can be used to take a high resolution image in a region of interest but requires sufficient filtering.
 
-... magnet spectrometer (here use wide apertured horizontal to avoid production of pairs, although holey f/2 has small aperture)
+By covering the beam axis (radiation axis) with a high sensitivity Lanex we can obtain an on-shot radiation reference to make the measurement more accurate.
+The second screen was in line with the gamma profile screen which also gives a reference and makes analysis easier.
+Could use fiudicials as used in other experiments to increase the energy resolution (REF). Need to calculate and positioning has to be very accurate (Dominik).
 
-... thin kevlar-kapton window to reduce secondary production and scattering of the main beam
+By interacting with the whole beam we do not require high dynamic range.
 
-... first lanex screen high sensitivity right at the window to minimise scattering
+A profile screen can be used as well to characterise the pointing and beam size in general, but would be good to use linear ICS from then onwards.
 
-... covering axis to get some kind of reference
-
-... magnetic field to separate particles generated in window/beam block etc. Has to disperse vertically
-
-... second lanex further down in one plane with gamma profile to allow for reference. double screen to increase energy resolution
-
-
+Also thought about placing a screen inside the magnet to measure the lower energy band, but the signal was quite low.
 
 \subsection{Radiation diagnostics}
 
-... X-ray measurement
+Gamma profile to measure the profile of radiation. This can be used to measure the intensity at the interaction due to elongation. This has been used successfully in Chapter \ref{Chap:BW} and in more detail in Chapter \ref{Chap:linICS}.
 
-... gamma profile at the front of CsI spectrometer (or needed as converter?). Needed for a0 measurement
+Gamma spectrometer to measure spectrum as done in Chapter \ref{Chap:BW} and \ref{Chap:RR15}. If possible could apply the dual-axis stack as used in Chapter XX (but not further elaborated there, see METHODS). The detectors can be calibrated with a series bremsstrahlung sources as investigated in Chapter XX, covering low-Z plastic targets to measure electron beam and gamma radiation simultaneously, but also high-Z to produce a divergent and high yield signal to cover the entire signal. The dual-axis stack also requires some improvements in terms of arrangement, light shielding and divider materials.
 
-... dual-axis CsI spectrometer to measure spectrum and potentially 2D spectral measurement
+The spectrometer stack in general also requires some improvements if we want to measure spectra more accurately and resolve small changes in the spectrum. One idea proposed is combining the response of the scintillator stack with another detector measurement, a Compton- and pair spectrometer. Here the gamma-rays traverse a solid material (for instance the vacuum window or something more dense) and produces electrons from Compton scattering and at high enough energies also pairs of electrons and positrons. Using a magnet they can be separated and spectrally resolved. Here we would disperse them vertically as the main beam is already dispersed horizontally and would be too noisy, the positron levels need to be kept low, so vertical. This could be a feasible option but would require balancing the distances for the gamma profile screen, the measurements screens, the gamma spectrometer (field of views) and also consider materials and perturbations. Light and signal levels also have to be considered. We require both arms to distinguish Compton and pair processes but this might be a space constraint, also producing noise from other sources.
 
-... screens above and below stack to capture converted particles
+\begin{figure}
+\centering
+\includegraphics[width=0.9\columnwidth]{LCFACam_CloseUp.png}
+\caption{Measuring LCFA with crystal spectrometer setup.}
+\end{figure}
 
+In Chapter \ref{Chap:BW}, we also used a crystal spectrometer setup in vacuum to measure radiation at around 1.5 keV produced from a burn-through foil heated by a laser. In the context of radiation reaction, lower energy X-rays are also of interest. Derivations in the locally constant field approximation (LCFA) and models beyond this deviate in particular at lower energies (infrared divergence). Lower energies are emitted at larger divergences, so measuring low energy X-rays at high divergences would be suitable to test the approximation. Including a polarisation dependence will help distinguishing signal. Due to the low energy it is necessary to measure the X-rays inside, but at the same time can not be too close to the axis to avoid laser damage and to interfere with the electron beam and the gamma radiation.
 
 \subsection{Single Particle Diagnostics}
 
-... magnetic chicane for single particles in high intensity interaction
+In high-intensity interactions with sufficiently energetic electrons the gamma rays produced in nonlinear ICS can merge with multiple laser photons to produce pairs from nonlinear BW and other pair production processes. The pairs are produced, similarly as in Chapter \ref{Chap:BW} in the direction of the electron beam, and due to the low number of particles (ESTIMATE) we require a detector that is able to measure down to the single particle level. In Chapter \ref{Chap:BW} we presented such a setup. A magnetic chicane is separating the right energy band of particles. Shielding reduces the noise from stray particles onto the detectors and allow sensitivity to single particle level. Large aperture magnets help reducing the chance of producing pairs from scattered radiation and particles close to the axis, which then make it to the detector plane through the chicanes. We have to investigate if an on-axis f/2 holey parabola makes any sense or will produce too much noise (FOVs). Tracking layers help to discriminate against noise and identify particle species. For this we used silicon-based, fast TimePix3 detectors. Absolute calibration of single particle detectors enables identification of correct particles. This has been shown in Chapter \ref{Chap:BW}.
+The magnets were also tested for electron beams using an identical set of magnets, so the fields are nicely mapped.
+We have also shown that we can use the Bethe-Heitler process to calibrate our chicane system, by inserting a high-Z material in the path of gamma-rays to calibrate the effective yield we can measure (tungsten blob).
 
-... TimePix for tracking and background measurement
+\subsection{Experiment Objectives}
 
-... single particle CsI measurement
+Objective, conditions required, observables, improvements needed or optional, benefit for overall experiment?
 
-\subsection{Procedure}
+\subsubsection{On-shot interaction intensity}
 
-.. raster scan and analysis of data?
+Measuring the interaction intensity of electrons and laser pulse.
 
-... or is this too specific?
+Requires high-intensity interactions.
 
-\subsection{Measurement goals}
+Requires low-intensity characterisation of the electron beam.
 
-\subsubsection{Intensity Measurement using ellipse}
-\subsubsection{Polarisation dependency Intensity}
+Requires gamma profile screen of sufficient field of view and spatial resolution.
+
+Requires camera imaging the screen, here 14-bit EMCCD (Andor iXon).
+
+This can help to constrain the experiment conditions and narrows down the model.
+
+Optional rotating polarisation and changing from linear to circular.
+
+Also ideally measurement of polarisation.
+
+Varying intensity and electron beam intensity.
+
 \subsubsection{High confidence No RR-RR Comparison}
+
+
+
 \subsubsection{Precision Measurement of RR at high-intensities }
 \subsubsection{Very high-intensity collisions with pair production}
 \subsubsection{Very high-intensity collisions with spin polarisation measurement}
 \subsubsection{Spectral Measurement increased accuracy}
 \subsubsection{Double-differential Gamma spectrum}
+\subsubsection{LCFA low X-ray measurement}
+
 
 
 ... measurement goal and requirements/challenges?

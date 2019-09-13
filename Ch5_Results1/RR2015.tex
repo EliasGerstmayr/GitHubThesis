@@ -83,7 +83,7 @@ After an outline of the experimental setup, such a method to identify successful
 
 The chapter continues with an analysis of the measured electron spectra of this dataset. The electron spectra consistently exhibit a distinct spectral feature in shape of a sharp edge-like fall-off in charge at around $\sim 550\,\mathrm{MeV}$. The intrinsic fluctuations of the electron source are characterised in a statistical analysis after removing correlations.
 
-Then key results from the analysis of the gamma spectra, first performed by Jason Cole (Imperial College London) and Keegan Behm (University of Michigan), are introduced. The spectra are inferred by fitting the with GEANT \cite{GEANT} simulated response of the detector, a stack of scintillating caesium-iodide (CsI) crystals, to the signal measured in experiment. Details of the analysis can be found in \cite{Behm2018_Gamma,Cole2018_RR} or also in the \nameref{Chap:Methods} Chapter of this thesis.
+Then key results from the analysis of the gamma spectra, first performed by Jason Cole (Imperial College London) and Keegan Behm (University of Michigan), are introduced. The spectra are inferred by fitting the with GEANT \cite{GEANT4} simulated response of the detector, a stack of scintillating caesium-iodide (CsI) crystals, to the signal measured in experiment. Details of the analysis can be found in \cite{Behm2018_Gamma,Cole2018_RR} or also in the \nameref{Chap:Methods} Chapter of this thesis.
 
 Combining all of the previous results, the measurements are compared to different models of radiation reaction to explore whether they are in agreement.
 \vspace{\baselineskip}
@@ -261,8 +261,8 @@ An exemplary electron spectrum as measured on the experiment is shown in Figure 
 A detailed description of the treatment of the raw data (background subtractions, image transformations, tracking etc.) is not expanded here and can either be found in \nameref{Chap:Methods} or for instance \cite{ColeThesis}.
 
 The characteristic electron spectrum consists of two components (see Figure \ref{RR15:Fig:Cole_espec_example_EdgeShotsNull} and \ref{Results:Figs:NullColl:Montage}): one is a low charge but high energy tail reaching $800-1000\,\mathrm{MeV}$, the other part contains a high charge at lower energy that falls off rapidly at an edge-like spectral feature at around $550\,\mathrm{MeV}$. The electron spectrum is cut off at $250\,\mathrm{MeV}$ due to limitations in the spectrometer setup. 
-The high energy component resembles spectra from self-injection \cite{Bulanov1997_SELF} measured at Gemini before (see for instance \cite{PoderThesis}). The high charge component with the distinct spectral feature is consistent with shock injection \cite{Schmid2010_shock} caused by either the nozzle design or potential damage to it (see also Chapter \ref{Chap:linICS}). The shock fronts are visible on an optical image seen in Figure \ref{RR15:figs:prettypic} along with the damage on the nozzle. 
-Shock injection has been observed by other groups introducing a blade \cite{Schmid2010_shock,Buck2013_shock,Tsai2018_shock} or a wire \cite{Burza2013_shock} into the supersonic gas flow to generate a shock front.
+The high energy component resembles spectra from self-injection \cite{Bulanov1997_SELF} measured at Gemini before (see for instance \cite{PoderThesis}). The high charge component with the distinct spectral feature is consistent with shock injection \cite{Schmid2010_SHOCK} caused by either the nozzle design or potential damage to it (see also Chapter \ref{Chap:linICS}). The shock fronts are visible on an optical image seen in Figure \ref{RR15:figs:prettypic} along with the damage on the nozzle. 
+Shock injection has been observed by other groups introducing a blade \cite{Schmid2010_SHOCK,Buck2013_SHOCK,Swanson2017_SHOCK,Tsai2018_SHOCK} or a wire \cite{Burza2013_SHOCK} into the supersonic gas flow to generate a shock front.
 
 
 
@@ -307,7 +307,7 @@ The correlation coefficient for the driver laser energy over time is $-0.11$, an
 
 Self-injection depends strongly on the evolution of the laser in the medium and hence on the performance of the laser. If the mean electron energy increases over time without changes to the laser properties and energy, changes in the medium can be suspected to have caused this drift.
 
-The appearance of the high charge component of the spectrum is consistent with other electron beams injected through shock features at Gemini (see Chapter \ref{Chap:linICS}). The shock could be generated due to a damage in the gas nozzle (see Figure \ref{RR15:figs:prettypic}) or intrinsically due to its design. The drifting mean is consistent with a shock shifting position closer to the leading edge of the gas target, increasing the acceleration length and energy over time. This behaviour typical for shock injection has been observed at lower intensities at other laser systems, typically though producing narrow energy spread beams \cite{Schmid2010_shock,Buck2013_shock,Tsai2018_shock}. The self-emission of the plasma appears to show some structuring which could indicate density modulations (see Figure \ref{RR15:figs:prettypic}). Unfortunately, there is no optical probe data, e.g. from a shadowgraphy or interferometry, to provide conclusive evidence in form of density measurements for this theory. Progressing damage to the nozzle material could provide the seed for a shifting shock position.
+The appearance of the high charge component of the spectrum is consistent with other electron beams injected through shock features at Gemini (see Chapter \ref{Chap:linICS}). The shock could be generated due to a damage in the gas nozzle (see Figure \ref{RR15:figs:prettypic}) or intrinsically due to its design. The drifting mean is consistent with a shock shifting position closer to the leading edge of the gas target, increasing the acceleration length and energy over time. This behaviour typical for shock injection has been observed at lower intensities at other laser systems, typically though producing narrow energy spread beams \cite{Schmid2010_SHOCK,Buck2013_SHOCK,Tsai2018_SHOCK}. The self-emission of the plasma appears to show some structuring which could indicate density modulations (see Figure \ref{RR15:figs:prettypic}). Unfortunately, there is no optical probe data, e.g. from a shadowgraphy or interferometry, to provide conclusive evidence in form of density measurements for this theory. Progressing damage to the nozzle material could provide the seed for a shifting shock position.
 
 \begin{figure}[h]
 \centering
@@ -422,7 +422,7 @@ For this work the spectral retrieval has been conducted by Jason Cole (Imperial 
 More details on the procedure can be found in \cite{Cole2018_RR,Behm2018_Gamma} and also in the \nameref{Chap:Methods} as this technique is used in different variations to infer the spectra of high energy radiation in other experiments presented throughout this thesis (see Chapter \ref{Chap:linICS} and \ref{Chap:BW}).
 \vspace{\baselineskip}
 
-The gamma spectra were inferred by analysing the signal on the gamma detector, a stack of scintillating caesium-iodide crystals (see \nameref{Chap:Methods}), and comparing the shape of the energy deposition throughout the detector with the in GEANT \cite{GEANT} simulated detector response.
+The gamma spectra were inferred by analysing the signal on the gamma detector, a stack of scintillating caesium-iodide crystals (see \nameref{Chap:Methods}), and comparing the shape of the energy deposition throughout the detector with the in GEANT \cite{GEANT4} simulated detector response.
 
 An example of the experimentally measured raw detector signal is shown in Figure \ref{fig:Cole_gamma_example}.
 \vspace{\baselineskip}
@@ -680,7 +680,7 @@ However, whilst the gas cell produced more stable and higher energetic electron 
 
 Close at the exit the electron beam is still very small $\sim \mathrm{\mu m}$ and a tightly focused laser spot can interact with a large fraction of the beam, at a comparable intensity. These interactions are then likely to occur in a parameter space where $N_{min}=1$ again.
 If the laser focus is larger than the electron beam, the interaction can be reduced to a 1D problem which simplifies the modelling process. Gas jets have in the past produced very stable electron beams with narrow energy spread \cite{Faure2006_STABLEJET} and have also reached energies beyond $1\,\mathrm{GeV}$ (REF), which indicates that the performance of this target was maybe not representative of what is achievable to-date. 
-In addition, using a gas jet would allow us to use shock injection as mechanism which has the potential of producing high-charge beams with narrow energy spread \cite{Buck2013_shock}, and would also constrain the injection point and as a result the relative timing.
+In addition, using a gas jet would allow us to use shock injection as mechanism which has the potential of producing high-charge beams with narrow energy spread \cite{Buck2013_SHOCK}, and would also constrain the injection point and as a result the relative timing.
 
 In summary, it appears that the benefits of using a gas jet target outweigh in principle the stability of the electron beams produced with this gas cell and are hence recommended to be used in future studies.
 \vspace{\baselineskip}

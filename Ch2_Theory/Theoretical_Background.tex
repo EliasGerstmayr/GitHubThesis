@@ -702,7 +702,6 @@ Consider a quasi-neutral plasma (charge density $\rho \approx 0$) with a current
 \end{equation}
 
 The acceleration of the electrons is due to the electric field of the wave, i.e. $\partial \mathbf{v}/\partial t = -e\mathbf{E}/m_e$. Now using the solution for a plane wave with $\mathbf{E} = \mathbf{E_0} \exp \left[i (\mathbf{k}\cdot\mathbf{r} - \omega t) \right]$ the dispersion relation is given by $\omega = c k \left[1-\left(\frac{\omega_p}{\omega}\right)^2\right]^{-1/2}$, and hence the group velocity $v_g$ and the phase velocity $v_p$ are given by:
-
 \begin{align}
 v_p &= \frac{\omega}{k} = \frac{c}{\sqrt{1-\left(\frac{\omega_p}{\omega}\right)^2}},\\
 v_g &= \frac{\partial\omega_L}{\partial k} = c \sqrt{1-\left(\frac{\omega_p}{\omega}\right)^2},
@@ -836,9 +835,9 @@ $l$ is the length over which the electron density increases from $0$ to $n_0$.
 
 \section{Laser Wakefield Acceleration}
 
-A good and comprehensive overview on this topic explaining the fundamental physics is given in \cite{Esarey2009}, a more recent overview on the progress and status of experiments in the laser wakefield community can be found in \cite{Mangles2016}.
+A good and comprehensive overview on this topic explaining the fundamental physics is given in \cite{Esarey2009_LPA_Review}, a more recent overview on the progress and status of experiments in the laser wakefield community can be found in \cite{Mangles2016_LPA_Review}.
 
-In laser wakefield acceleration (LWFA) a short ($\sim 30-50\,\mathrm{fs}$) and intense laser pulse travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way using the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake with strong longitudinal accelerating fields. This is commonly referred to as the non-linear regime or also the `bubble' regime, where particles can be trapped and accelerated to relativistic energies. The `bubble' regime and the acceleration of quasi-monoenergetic electrons at $100s$ of $\mathrm{MeV} $ has first been reported in 2004 \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}. By now maximum electron energies via LWFA have reached the multi-GeV level in one \cite{Leemans2006} (REF new BELLA paper) or two stages \cite{Steinke2016,Kim2013_GEV}.
+In laser wakefield acceleration (LWFA) a short ($\sim 30-50\,\mathrm{fs}$) and intense laser pulse travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way using the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake with strong longitudinal accelerating fields. This is commonly referred to as the non-linear regime or also the `bubble' regime, where particles can be trapped and accelerated to relativistic energies. The `bubble' regime and the acceleration of quasi-monoenergetic electrons at $100s$ of $\mathrm{MeV} $ has first been reported in 2004 \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}. By now maximum electron energies via LWFA have reached the multi-GeV level in one \cite{Leemans2006_GEV,Leemans2014_GEV} or two stages \cite{Steinke2016_STAGING,Kim2013_GEV}.
 \vspace{\baselineskip}
 
 
@@ -906,12 +905,12 @@ E_{max} = \sqrt{a_0} m_e c \omega_p/e.
 A higher electron density results in a larger amount of charge separated and hence a stronger electric field which is desirable for our accelerator.
 
 The maximum energy gain is the optimised product of the electric field and the acceleration distance.
-Combining our knowledge of the electric field, which increases with density, and the limiting factors for the acceleration length dephasing and depletion, which decrease with density, the maximum energy gain $W_{max}$ for a 3D non-linear wake is given by \cite{Lu2006}
+Combining our knowledge of the electric field, which increases with density, and the limiting factors for the acceleration length dephasing and depletion, which decrease with density, the maximum energy gain $W_{max}$ for a 3D non-linear wake is given by \cite{LuThesis,Lu2007_3DWAKE}
 \begin{equation}
 \boxed{W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.}
 \end{equation}
 
-This gives the counter-intuitive result that one has to choose low plasma densities (corresponding to lower field gradients) to accelerate particles to higher energies. In addition, this means that one has to balance the between high charge (requiring high $n_e$) and high peak energy. To solve this dilemma and optimise charge and energy, a variety of injection mechanisms (internal \cite{Faure2006_STABLEJET,Geddes2008,Pak2010,Buck2013_SHOCK} and external \cite{Hidding2012b,Steinke2016}) have been proposed. 
+This gives the counter-intuitive result that one has to choose low plasma densities (corresponding to lower field gradients) to accelerate particles to higher energies. In addition, this means that one has to balance the between high charge (requiring high $n_e$) and high peak energy. To solve this dilemma and optimise charge and energy, a variety of injection mechanisms (internal \cite{Faure2006_STABLEJET,Geddes2008_STABLE,Pak2010_ION,Buck2013_SHOCK} and external \cite{Deng2019_TROJAN,Steinke2016_STAGING}) have been proposed. 
 
 \subsection{Trapping}
 
@@ -920,7 +919,7 @@ There is a condition to determine which electrons remain inside the cavity and d
 \begin{equation}
 \frac{\alpha P}{P_c} > \frac{1}{16} \left[ln\left(\frac{2n_c}{3n_e}\right) - 1 \right]^3,
 \end{equation}
-with $\alpha$ the fraction of energy contained in the FWHM of the laser focal spot, $P$ the laser power.
+with $\alpha$ the fraction of energy contained in the \textsc{fwhm} of the laser focal spot, $P$ the laser power.
 
 \subsection{Injection Mechanisms and Accelerator Tailoring}
 
@@ -974,7 +973,7 @@ Plasma Torch: here an intense laser is passing the a plasma with high-Z dopant i
 
 Trojan Horse: a laser is brought to focus in the accelerating phase of the cavity. The laser only reaches a sufficiently high intensity near focus to trigger increased tunnel-ionisation and injection. Due to the small volume the focus occupies in space and time the expected phase space of the electrons is also small.
 
-\EliasComm{REF RECENT NATURE.}
+\EliasComm{REF RECENT NATURE. \cite{Deng2019_TROJAN}}
 
 Colliding pulse: a second laser counter-propagates with the main driving laser pulse. For the duration of the spatio-temporal overlap of both laser pulses the combined laser fields allow for ionisation injection to take place.
 
@@ -1020,7 +1019,7 @@ Scalings: Power scales to the power of 4?
 \end{figure}
 
 
-based on Jon Wood and Jackson:
+based on Jon Wood \cite{WoodThesis} and Jackson \cite{Jackson}:
 Solving the equations that gives
 
 \begin{equation}
@@ -1137,7 +1136,7 @@ The radiation generated follows the on-axis synchrotron radiation with a critica
 where this energy parameter indicates when approximately half the energy radiated above and below this value.
 \vspace{\baselineskip}
 
-The oscillation of the particles and hence the emission of radiation can be enhanced in wakefield experiments by tailoring the wavefront \cite{Mangles2009} or by using different injection mechanisms.
+The oscillation of the particles and hence the emission of radiation can be enhanced in wakefield experiments by tailoring the wavefront \cite{Mangles2009_BETATRON} or by using different injection mechanisms.
 In LWFA betatron radiation typically reaches the soft X-ray regime of a few to tens of keV.
 
 Difference here is that we use an quasi-electrostatic field instead of a magnetic field, but radiation from a synchrotron, an insertion device (wiggler) and betatron radiation share a common description rooted in the equation of motion (figure-of-eight motion) even though using different field structures and $K$ parameters.
@@ -1182,7 +1181,7 @@ for $\hbar \omega < E$.
 
 The number of photons hence scales quadratically with the $Z$ of the converter target used. Higher yield however comes at the cost of spatial resolution and a wider cone of radiation due to scattering in the material. There is a term proportional to $Z$ from electron-electron bremsstrahlung or in other words electrons from the beam interacting with the Z shell electrons of the atom. As the nucleus-electron interaction scales with $Z^2$ is becomes negligible for high-Z materials.
 
-For $\hbar \omega << E$
+For $\hbar \omega \ll E$
 
 \begin{equation}
 \frac{d^2 \chi_R}{d \omega d \Omega_\gamma} = \left[\frac{3}{2 \pi} \gamma^2 \frac{(1+\gamma^4 \theta^4)}{(1+\gamma^2 \theta^2)^4}\right] \cdot \frac{d \chi_R}{d \omega}
@@ -1319,7 +1318,7 @@ In addition to all-optical schemes, it has also been proposed to combine convent
 
 The results of a ICS experiment via LWFA at the Astra Gemini facility in the UK are presented later in this report. 
 
-ICS has been widely used in the conventional accelerator community to measure the spin-polarisation of beams.
+ICS has been widely used in the conventional accelerator community to measure the spin-polarisation of beams, laser wire (beam diagnostics) REF.
 
 \subsubsection{Kinematics}
 
@@ -1528,7 +1527,7 @@ First attempts to simply add radiation reaction as a force onto the Lorentz-forc
 The relativistic generalisation was found by Dirac renormalising in 4-space. The result is referred to as Lorentz-Abraham-Dirac equation (LAD).
 
 
-\EliasComm{Jackson seems to be in cgs. Make sure you know which unit system you work in.}
+\EliasComm{Jackson \cite{Jackson} seems to be in cgs. Make sure you know which unit system you work in.}
 
 \EliasComm{Despite the runaway solution: if one ignores this solution tree, are the predictions feasible?}
 
@@ -1558,7 +1557,7 @@ This is an effective model and the violation of energy conservation is possible.
 \subsection{Quantum picture and corrections}
 \EliasComm{Furry picture, treating the laser field as classical external field.}
 
-Alec says that quantum radiation reaciton is the overall recoil experienced by an electron undergoing multiple simultaneous incoherent photon emission events.
+Alec says that quantum radiation reaction is the overall recoil experienced by an electron undergoing multiple simultaneous incoherent photon emission events.
 
 Limit when quantum effects become more important: energy loss comparable to rest mass of the electron?
 This is at the same time also the limit of validity of the LL model, when the force becomes comparable to the Lorentz force.
@@ -1588,13 +1587,12 @@ Semi-classical approach using Gaunt factor (power!).
 g(\eta) = \frac{\int_0^{\eta/2} F(\eta, \chi) \mathrm{d}\chi}{\int_0 F_{cl}\left(\frac{4\chi}{3\eta^2}\right)} = \frac{3 \sqrt{3}}{2 \pi \eta^2} \int_0^{\eta/2} F(\eta,\chi) \mathrm{d}\chi. 
 \end{equation}
 
-Fit for function is (Baier 1991):
-
+Fit for function is \cite{Baier1991_GAUNT}:
 \begin{equation}
 g(\eta) \approx \left(1 + 4.8(1+\eta)ln(1+1.7\eta)+2.44\eta^2\right)^{-2/3}.
 \end{equation}
 
-Assuming local constant cross field approximation (LCFA).
+Assuming local constant cross field approximation \cite{Ritus1985_QRR} (LCFA).
 Formation time, coherence time.
 What is the force in this picture? How does it compare to ponderomotive force?
 
@@ -1606,9 +1604,9 @@ Cooling of spectra versus competing processes.
 
 \subsection{Measuring radiation reaction}
 
-Inverse Compton Scattering
+Inverse Compton Scattering \cite{Cole2018_RR,Poder2018_RR}
 
-Planar channeling in crystals
+Planar channeling in crystals \cite{Wistisen2018_RR}
 
 \section{Pair Production and Annihilation}
 

@@ -20,75 +20,57 @@ Database file #5: Betatron.bib
 Database file #6: Facilities.bib
 Database file #7: Wakefield.bib
 Database file #8: ICSRR.bib
-Database file #9: Sims.bib
-Database file #10: Ionisation.bib
-Warning--I didn't find a database entry for "Esarey2009"
-Warning--I didn't find a database entry for "Mangles2016"
-Warning--I didn't find a database entry for "Leemans2006"
-Warning--I didn't find a database entry for "Steinke2016"
-Warning--I didn't find a database entry for "Kim2013"
-Warning--I didn't find a database entry for "Lu2006"
-Warning--I didn't find a database entry for "Faure2006"
-Warning--I didn't find a database entry for "Geddes2008"
-Warning--I didn't find a database entry for "Pak2010"
-Warning--I didn't find a database entry for "Buck2013"
-Warning--I didn't find a database entry for "Hidding2012b"
-Warning--I didn't find a database entry for "Mangles2009"
-Warning--I didn't find a database entry for "Seryi2015"
-Warning--I didn't find a database entry for "Wilks2001"
-Warning--I didn't find a database entry for "Maksimchuk2000"
-Warning--I didn't find a database entry for "Semushin2001"
-Warning--I didn't find a database entry for "Nakamura2007"
-Warning--I didn't find a database entry for "Spence2001"
-Warning--I didn't find a database entry for "Desforges2014"
-Warning--I didn't find a database entry for "Osterhoff2013"
-Warning--I didn't find a database entry for "Semushin2001a"
-Warning--I didn't find a database entry for "Bracewell1978"
-Warning--I didn't find a database entry for "Pollock2011"
-Warning--I didn't find a database entry for "Leemans2014"
-Warning--I didn't find a database entry for "Vargas2014"
-Warning--I didn't find a database entry for "Rousse2004"
-Warning--I didn't find a database entry for "Goorley2012"
+Database file #9: ICS_Diag.bib
+Database file #10: Sims.bib
+Database file #11: Ionisation.bib
+Database file #12: Xrays.bib
+Database file #13: IonAcc.bib
+Warning--empty school in LuThesis
+Warning--can't use both volume and number fields in Seryi2015
+Warning--empty publisher in Seryi2015
+Warning--empty journal in Shalloo_GEMINIDRIFT
+Warning--empty year in Shalloo_GEMINIDRIFT
+Warning--can't use both volume and number fields in Nakamura2007_GEVGUIDED
 Warning--empty journal in Heitler1954_BH
-You've used 105 entries,
+You've used 143 entries,
             1791 wiz_defined-function locations,
-            1187 strings with 34602 characters,
-and the built_in function-call counts, 34223 in all, are:
-= -- 2179
-> -- 3324
-< -- 4
-+ -- 1148
-- -- 1043
-* -- 3391
-:= -- 6171
-add.period$ -- 316
-call.type$ -- 105
-change.case$ -- 94
+            1357 strings with 44701 characters,
+and the built_in function-call counts, 45612 in all, are:
+= -- 2915
+> -- 4398
+< -- 8
++ -- 1520
+- -- 1377
+* -- 4514
+:= -- 8227
+add.period$ -- 429
+call.type$ -- 143
+change.case$ -- 129
 chr.to.int$ -- 0
-cite$ -- 106
-duplicate$ -- 1046
-empty$ -- 2333
-format.name$ -- 1043
-if$ -- 6879
+cite$ -- 150
+duplicate$ -- 1397
+empty$ -- 3148
+format.name$ -- 1377
+if$ -- 9155
 int.to.chr$ -- 0
-int.to.str$ -- 105
-missing$ -- 102
-newline$ -- 528
-num.names$ -- 105
-pop$ -- 160
+int.to.str$ -- 143
+missing$ -- 141
+newline$ -- 717
+num.names$ -- 143
+pop$ -- 223
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 470
+skip$ -- 601
 stack$ -- 0
-substring$ -- 1872
-swap$ -- 216
-text.length$ -- 4
+substring$ -- 2459
+swap$ -- 268
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 218
-width$ -- 108
-write$ -- 1151
-(There were 28 warnings)
+warning$ -- 7
+while$ -- 306
+width$ -- 146
+write$ -- 1562
+(There were 7 warnings)
