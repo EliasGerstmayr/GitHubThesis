@@ -280,7 +280,7 @@ More material leads to more scattering and an increase in divergence. At the sam
 We see that the electrons produced in a higher density plasma (higher charge, lower energy) provide a lower yield of gamma rays at higher divergences. This also appears to be sensible as the initial divergence of the electrons is higher. The yield scales quadratically with the electron energy whilst the photon number relies only linearly on the electron charge. A higher energy electron beam, even at slightly lower charge, can hence provide a higher yield.
 
 \begin{equation}
-Bremstrahlung Energy \sim Z^2 N(E) E^2
+\boxed{Bremstrahlung Energy \sim Z^2 N(E) E^2}
 \end{equation}
 \begin{figure}
 \centering
@@ -392,7 +392,7 @@ Looking at Figure \ref{BW:fig:Yield_with_Coll} we see that introducing the colli
 
 \begin{figure}
 \centering
-\includegraphics[trim={3.8cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_YieldvNoise_CollIN_V2.png}
+\includegraphics[trim={3.5cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_YieldvNoise_CollIN_V2.png}
 \caption[Noise as a function of gamma-ray yield with the collimator in the beam path. ]{Noise as a function of gamma-ray yield with the collimator in the beam path. The noise-yield gradients for tungsten and bismuth are indicated as comparison.}
 \label{BW:fig:Yield_with_Coll}
 \end{figure}
@@ -527,7 +527,7 @@ Provide some plots from the GEANT simulation (visualisation).
 \centering
 \includegraphics[trim={4.9cm 0 5cm 0}, clip, width=.9\columnwidth]{2018QED_GSpec_Variations_V2.png}
 
-\includegraphics[width = 0.9\columnwidth]{2018QED_GEANT_AvGSpec_V2.png}
+\includegraphics[trim={4.9cm 0 5cm 0}, clip, width = 0.9\columnwidth]{2018QED_GEANT_AvGSpec_V2.png}
 \caption{Variations of gamma signal for the shot days. Top: Gamma-ray yield measured and relative number of photons above 400 MeV(based on GEANT simulations using the average electron spectra measured for those days). Bottom: Average gamma spectra for different shot days. Spectral shape based on GEANT simulations using average electron spectra for those days and scaled by the relative yield measured for the days.}
 \end{figure}
 
@@ -609,7 +609,7 @@ Based on the measured X-ray spectrum (measured and simulation), estimated fluctu
 The number of pairs produced from BW scales something like this
 
 \begin{equation}
-N_{BW, day}|_{theta} \sim \int \frac{N_{ph, X}}{\mathrm{d}E_{X}} \frac{N_{ph, \gamma}}{\mathrm{d}E_{\gamma}} \sigma_{BW} (E_{X}, E_{\gamma}, \theta) \mathrm{d}E_{\gamma}\mathrm{d}E_{X}
+\boxed{N_{BW, day}|_{theta} \sim \int \frac{N_{ph, X}}{\mathrm{d}E_{X}} \frac{N_{ph, \gamma}}{\mathrm{d}E_{\gamma}} \sigma_{BW} (E_{X}, E_{\gamma}, \theta) \mathrm{d}E_{\gamma}\mathrm{d}E_{X}}
 \end{equation}
 
 The main angle between the two sources is about 140 degrees (XX ERROR ON THIS?). However, in general we have to fold in the angular distribution of both photon sources. The collimator has a field of view of $7.14 \pm 0.1 \,\mathrm{mrad}$ or $\pm 0.2^\circ$ from the main axis. The main contribution of angular spreads comes from the X-ray source.

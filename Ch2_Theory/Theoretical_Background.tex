@@ -117,7 +117,7 @@ z(t) &= \frac{p_{z,0}}{\gamma m} t
 
 The radius of the circular motion of the electron is called the Larmor radius $r_L$. It depends on the total momentum in the x-y plane and the magnetic field strength $B$: 
 \begin{equation}
-r_{L} = |\mathbf{p}_\perp|/eB,
+\boxed{r_{L} = |\mathbf{p}_\perp|/eB,}
 \end{equation}
 where $e$ is the charge of the electron and $\mathbf{p}_\perp$ is the component of the momentum vector $\mathbf{p}$ that is perpendicular to the field component of the magnetic field.
 \vspace{\baselineskip}
@@ -421,7 +421,6 @@ resulting in
 \end{equation}
 
 Using the canonical momentum $\mathbf{u} = \mathbf{p} - \mathbf{a}$ the time derivative can now be re-written and we can also substitute $\mathbf{v} = \mathbf{p}/\gamma = (\mathbf{u}+\mathbf{a})/\gamma$:
-
 \begin{align}
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u} &= c\nabla\phi - (c\nabla\mathbf{a})\cdot\frac{(\mathbf{u}+\mathbf{a})}{\gamma},\nonumber\\
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u} &= c\nabla\phi - \frac{1}{\gamma} c \nabla \frac{\mathbf{a}^2}{2}-c\nabla\mathbf{a}\cdot\frac{\mathbf{u}}{\gamma}.
@@ -1492,7 +1491,7 @@ After discussing these classical approaches to radiation reaction, finally, a mo
 
 However, even the model presented is derived within a framework relying on approximations. In this case this is the local constant field approximation (LCFA) which assumes that during the formation time of the photon the electric field does not change significantly. For an extremely intense oscillating electromagnetic field, for instance an intense laser field, this might not always be true and even this model might have its limitations. The LCFA is introduced and its potential limitations are shown as motivation for future research.
 
-\subsection{Radiation reaction: classical runaway solutions}
+\subsection{Lorentz-Abraham-Dirac Equation (LAD)}
 
 This section is based on Jackson. \cite{Jackson}
 One intuitive way to derive an expression for radiation reaction is considering conservation of energy. It is well known that accelerated charges emit radiation which is fairly well characterised in the context of synchrotrons, other circular accelerators or undulator setups. The emitted power follows the Larmor power formula
@@ -1531,7 +1530,7 @@ The relativistic generalisation was found by Dirac renormalising in 4-space. The
 
 \EliasComm{Despite the runaway solution: if one ignores this solution tree, are the predictions feasible?}
 
-\subsection{Self-consistent classical description: Landau-Lifschitz}
+\subsection{Classical Landau-Lifschitz (LL) Description}
 
 A first self-consistent solution to including radiation reaction into a classical model was achieved by Landau and Lifschitz (REF).
 LL solution is a perturbation and means the radiation reaction force has to be small compared to the Lorentz force and a suitable frame of reference has to be found to make this valid. In some cases energy conservation might be violated in an abruptly changing EM field.
@@ -1546,11 +1545,11 @@ g^\mu = \frac{2e^3}{3m_e c^3} \left\lbrace   \frac{\partial F^{\mu \nu}}{\partia
 
 In 3-dim.
 
-\begin{equation}
+\begin{align*}
 \mathbf{F} = \frac{2e^3}{3m_e c^3 \sqrt{1-\frac{v^2}{c^2}}} \left\lbrace \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{E} + \frac{1}{c} \left[ \mathbf{v} \times \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{B} \right] \right\rbrace +\\
 + \frac{2e^4}{3m^2_e c^4}\left\lbrace \mathbf{E}\times\mathbf{B} + \frac{1}{c} ( \mathbf{B} \times (\mathbf{B} \times \mathbf{v})) + \frac{1}{c} \mathbf{E} (\mathbf{v} \cdot \mathbf{E}) \right\rbrace - \\
 - \frac{2e^4}{3m^2_e c^5 \left( 1-\frac{v^2}{c^2}\right)} \mathbf{v} \left\lbrace\left( \mathbf{E} + \frac{1}{c} \mathbf{v} \times \mathbf{B}\right)^2 - \frac{1}{c^2} (\mathbf{v} \cdot \mathbf{E})^2 \right\rbrace
-\end{equation}
+\end{align*}
 
 This is an effective model and the violation of energy conservation is possible.
 
@@ -1572,7 +1571,7 @@ There are several ways to solve some of the issues of the classical Landau-Lifsc
 Estimate relative magnitude (LL)
 
 \begin{equation}
-\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c}
+\boxed{\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c}}
 \end{equation}
 
 REFS: Chris Ridgers JoP \cite{Ridgers2017_QRR}
@@ -1589,7 +1588,7 @@ g(\eta) = \frac{\int_0^{\eta/2} F(\eta, \chi) \mathrm{d}\chi}{\int_0 F_{cl}\left
 
 Fit for function is \cite{Baier1991_GAUNT}:
 \begin{equation}
-g(\eta) \approx \left(1 + 4.8(1+\eta)ln(1+1.7\eta)+2.44\eta^2\right)^{-2/3}.
+\boxed{g(\eta) \approx \left(1 + 4.8(1+\eta)ln(1+1.7\eta)+2.44\eta^2\right)^{-2/3}.}
 \end{equation}
 
 Assuming local constant cross field approximation \cite{Ritus1985_QRR} (LCFA).
@@ -1610,7 +1609,7 @@ Planar channeling in crystals \cite{Wistisen2018_RR}
 
 \section{Pair Production and Annihilation}
 
-Pairs are easily annihilated in radiactive substances for low energy positrons cancelling out with ambient electrons.
+Pairs are easily annihilated in radioactive substances for low energy positrons cancelling out with ambient electrons.
 At higher energies the cross section decreases.
 Add the relation from O. Pike's thesis \cite{PikeThesis} ($\sigma \sim 2 \beta^2 \sigma$ relating annihilation and pair production?
 
@@ -1705,6 +1704,9 @@ Schwinger pair production: The external electric field is so strong that virtual
 High-field QED is an exciting area of research. Where there is an extremely intense laser pulse exciting physics happens: light becomes matter, the vacuum interacts with the laser and the vacuum gives birth to matter.
 
 \subsection{Photon-Photon scattering}
+
+Elastic and inelastic. Mention results from LEP and LHC.
+
 Discussing high-field phenomena and the limit where pair production becomes feasible a short note on photon-photon scattering appears appropriate.
 Where a large density of photons are at the same place, at high intensities, as required for the Schwinger limit, the probability for photons to scatter from other photons becomes significant.
 

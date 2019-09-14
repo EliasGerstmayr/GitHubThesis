@@ -49,8 +49,8 @@
 \BOOKMARK [2][-]{subsection.2.4.6}{Linear Inverse Compton Scattering}{section.2.4}% 49
 \BOOKMARK [2][-]{subsection.2.4.7}{Nonlinear Inverse Compton Scattering}{section.2.4}% 50
 \BOOKMARK [1][-]{section.2.5}{Radiation Reaction}{chapter.2}% 51
-\BOOKMARK [2][-]{subsection.2.5.1}{Radiation reaction: classical runaway solutions}{section.2.5}% 52
-\BOOKMARK [2][-]{subsection.2.5.2}{Self-consistent classical description: Landau-Lifschitz}{section.2.5}% 53
+\BOOKMARK [2][-]{subsection.2.5.1}{Lorentz-Abraham-Dirac Equation \(LAD\)}{section.2.5}% 52
+\BOOKMARK [2][-]{subsection.2.5.2}{Classical Landau-Lifschitz \(LL\) Description}{section.2.5}% 53
 \BOOKMARK [2][-]{subsection.2.5.3}{Quantum picture and corrections}{section.2.5}% 54
 \BOOKMARK [2][-]{subsection.2.5.4}{Measuring radiation reaction}{section.2.5}% 55
 \BOOKMARK [1][-]{section.2.6}{Pair Production and Annihilation}{chapter.2}% 56
@@ -134,27 +134,29 @@
 \BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 134
 \BOOKMARK [1][-]{section.7.1}{Summary of Results}{chapter.7}% 135
 \BOOKMARK [1][-]{section.7.2}{Experimental Setup for Future RR campaign}{chapter.7}% 136
-\BOOKMARK [2][-]{subsection.7.2.1}{Laser Wakefield Accelerator}{section.7.2}% 137
-\BOOKMARK [2][-]{subsection.7.2.2}{Scattering Beam and Overlap}{section.7.2}% 138
-\BOOKMARK [2][-]{subsection.7.2.3}{Electron beam diagnostics}{section.7.2}% 139
-\BOOKMARK [2][-]{subsection.7.2.4}{Radiation diagnostics}{section.7.2}% 140
-\BOOKMARK [2][-]{subsection.7.2.5}{Single Particle Diagnostics}{section.7.2}% 141
-\BOOKMARK [2][-]{subsection.7.2.6}{Experiment Objectives}{section.7.2}% 142
-\BOOKMARK [1][-]{section.7.3}{Final Remarks}{chapter.7}% 143
-\BOOKMARK [0][-]{chapter.8}{Appendix}{}% 144
-\BOOKMARK [1][-]{section.8.1}{Notation and Glossary}{chapter.8}% 145
-\BOOKMARK [1][-]{section.8.2}{Nabla Operator and Vector Identities}{chapter.8}% 146
-\BOOKMARK [1][-]{section.8.3}{Maxwell's equations}{chapter.8}% 147
-\BOOKMARK [1][-]{section.8.4}{Relativistic Transformations}{chapter.8}% 148
-\BOOKMARK [1][-]{section.8.5}{Radiation Integrals}{chapter.8}% 149
-\BOOKMARK [1][-]{section.8.6}{Feynman diagrams and convention}{chapter.8}% 150
-\BOOKMARK [2][-]{subsection.8.6.1}{Mandelstam variables}{section.8.6}% 151
-\BOOKMARK [2][-]{subsection.8.6.2}{Trace Identities}{section.8.6}% 152
-\BOOKMARK [2][-]{subsection.8.6.3}{Calculating Matrix Elements from Feynman diagrams}{section.8.6}% 153
-\BOOKMARK [1][-]{section.8.7}{Derivation Klein-Nishina equation}{chapter.8}% 154
-\BOOKMARK [1][-]{section.8.8}{Derivation linear Breit-Wheeler cross section}{chapter.8}% 155
-\BOOKMARK [1][-]{section.8.9}{Bessel Functions}{chapter.8}% 156
-\BOOKMARK [1][-]{section.8.10}{Scintillators}{chapter.8}% 157
-\BOOKMARK [2][-]{subsection.8.10.1}{CsI\(Tl\)}{section.8.10}% 158
-\BOOKMARK [2][-]{subsection.8.10.2}{LANEX}{section.8.10}% 159
-\BOOKMARK [0][-]{chapter.9}{References}{}% 160
+\BOOKMARK [2][-]{subsection.7.2.1}{Main Objectives}{section.7.2}% 137
+\BOOKMARK [2][-]{subsection.7.2.2}{Laser Wakefield Accelerator}{section.7.2}% 138
+\BOOKMARK [2][-]{subsection.7.2.3}{Scattering Beam}{section.7.2}% 139
+\BOOKMARK [2][-]{subsection.7.2.4}{Spatial and temporal Overlap}{section.7.2}% 140
+\BOOKMARK [2][-]{subsection.7.2.5}{Electron beam diagnostics}{section.7.2}% 141
+\BOOKMARK [2][-]{subsection.7.2.6}{Electron beam profile}{section.7.2}% 142
+\BOOKMARK [2][-]{subsection.7.2.7}{Electron spectrometer}{section.7.2}% 143
+\BOOKMARK [2][-]{subsection.7.2.8}{Radiation diagnostics}{section.7.2}% 144
+\BOOKMARK [2][-]{subsection.7.2.9}{Single Particle Diagnostics}{section.7.2}% 145
+\BOOKMARK [2][-]{subsection.7.2.10}{Experimental Measurements}{section.7.2}% 146
+\BOOKMARK [1][-]{section.7.3}{Final Remarks}{chapter.7}% 147
+\BOOKMARK [0][-]{chapter.8}{Appendix}{}% 148
+\BOOKMARK [1][-]{section.8.1}{Notation and Glossary}{chapter.8}% 149
+\BOOKMARK [1][-]{section.8.2}{Nabla Operator and Vector Identities}{chapter.8}% 150
+\BOOKMARK [1][-]{section.8.3}{Maxwell's equations}{chapter.8}% 151
+\BOOKMARK [1][-]{section.8.4}{Relativistic Transformations}{chapter.8}% 152
+\BOOKMARK [1][-]{section.8.5}{Bessel Functions}{chapter.8}% 153
+\BOOKMARK [1][-]{section.8.6}{Radiation Integrals}{chapter.8}% 154
+\BOOKMARK [1][-]{section.8.7}{Feynman diagrams and convention}{chapter.8}% 155
+\BOOKMARK [2][-]{subsection.8.7.1}{Mandelstam variables}{section.8.7}% 156
+\BOOKMARK [2][-]{subsection.8.7.2}{Trace Identities}{section.8.7}% 157
+\BOOKMARK [2][-]{subsection.8.7.3}{Calculating Matrix Elements from Feynman diagrams}{section.8.7}% 158
+\BOOKMARK [1][-]{section.8.8}{Cross sections for fundamental QED processes}{chapter.8}% 159
+\BOOKMARK [2][-]{subsection.8.8.1}{Derivation Klein-Nishina equation}{section.8.8}% 160
+\BOOKMARK [2][-]{subsection.8.8.2}{Derivation linear Breit-Wheeler cross section}{section.8.8}% 161
+\BOOKMARK [0][-]{chapter.9}{References}{}% 162

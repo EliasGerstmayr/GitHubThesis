@@ -32,45 +32,45 @@ Warning--empty journal in Shalloo_GEMINIDRIFT
 Warning--empty year in Shalloo_GEMINIDRIFT
 Warning--can't use both volume and number fields in Nakamura2007_GEVGUIDED
 Warning--empty journal in Heitler1954_BH
-You've used 143 entries,
+You've used 148 entries,
             1791 wiz_defined-function locations,
-            1357 strings with 44701 characters,
-and the built_in function-call counts, 45612 in all, are:
-= -- 2915
-> -- 4398
-< -- 8
-+ -- 1520
-- -- 1377
-* -- 4514
-:= -- 8227
-add.period$ -- 429
-call.type$ -- 143
-change.case$ -- 129
+            1384 strings with 45881 characters,
+and the built_in function-call counts, 47026 in all, are:
+= -- 3011
+> -- 4510
+< -- 9
++ -- 1559
+- -- 1411
+* -- 4637
+:= -- 8472
+add.period$ -- 444
+call.type$ -- 148
+change.case$ -- 134
 chr.to.int$ -- 0
-cite$ -- 150
-duplicate$ -- 1397
-empty$ -- 3148
-format.name$ -- 1377
-if$ -- 9155
+cite$ -- 155
+duplicate$ -- 1450
+empty$ -- 3265
+format.name$ -- 1411
+if$ -- 9455
 int.to.chr$ -- 0
-int.to.str$ -- 143
-missing$ -- 141
-newline$ -- 717
-num.names$ -- 143
-pop$ -- 223
+int.to.str$ -- 148
+missing$ -- 146
+newline$ -- 742
+num.names$ -- 148
+pop$ -- 233
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 601
+skip$ -- 623
 stack$ -- 0
-substring$ -- 2459
-swap$ -- 268
-text.length$ -- 8
+substring$ -- 2534
+swap$ -- 279
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 306
-width$ -- 146
-write$ -- 1562
+while$ -- 317
+width$ -- 151
+write$ -- 1617
 (There were 7 warnings)

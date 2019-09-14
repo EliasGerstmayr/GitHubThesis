@@ -152,7 +152,7 @@ The electrons will emit broadband bremsstrahlung with photon energies extending 
 
 The total energy emitted through bremsstrahlung by a relativistic electron is proportional to its energy squared (e.g. \cite{Jackson} and see \nameref{Chap:Theory}). The total energy deposited in the caesium-iodide crystals of the gamma spectrometer is assumed to convert linearly into scintillation light \cite{Frlez2000_CsI} at an efficiency of $\approx 5 \times 10^4 \,\mathrm{MeV}^{-1}$. The total yield of the detected bremsstrahlung signal on the camera chip, $S_{BG}$, should then follow this relation:
 \begin{equation}
-S_{BG} = c_{BG} \int_{\gamma_{min}}^{\gamma_{max}} \left[\mathrm{d}N_e /\mathrm{d}\gamma\right]\,\gamma^2 \mathrm{d}\gamma = c_{BG} Q \left\langle \gamma^2 \right\rangle,
+\boxed{S_{BG} = c_{BG} \int_{\gamma_{min}}^{\gamma_{max}} \left[\mathrm{d}N_e /\mathrm{d}\gamma\right]\,\gamma^2 \mathrm{d}\gamma = c_{BG} Q \left\langle \gamma^2 \right\rangle,}
 \end{equation}
 where $c_{BG}$ is a constant that encapsulates the complicated details of the interaction and the experimental setup that should remain the same over the course of the shots, such as the conversion efficiencies of electron energy to bremsstrahlung photons, photons depositing their energy in the detector crystals, number of photons emitted from the scintillator per energy deposited, viewing angle of the camera, collection efficiency of the imaging system and quantum efficiency of the camera. $\mathrm{d}N_e/\mathrm{d}\gamma$ is the charge distribution of the measured electron spectrum, $Q = \int (\mathrm{d}N_e/\mathrm{d}\gamma) \mathrm{d}\gamma$ the total charge and $\gamma$ is the relativistic Lorentz factor of the electrons. It was also assumed that other sources of background (dark field, stray light on the camera etc.) are removed efficiently and do not need to be included in this equation. By measuring the total counts (yield) on the gamma detector and the electron spectrum, one can then determine $c_{BG}$ experimentally.
 \vspace{\baselineskip}
@@ -178,7 +178,7 @@ Figure \ref{Results:Figs:NullColl:DeltaCsIVsSigmaE2Null} shows the relation of e
 On shots with a successful collision with the scattering beam, a burst of gamma rays from inverse Compton scattering (ICS) will be produced. At the detector the signal is then a combination of bremsstrahlung as without the scattering beam, following the same relation with slope $c_{BG}$, and the ICS signature. The emitted energy of the ICS radiation and hence the resulting detector signal, $S_{ICS}$, is also proportional to $\gamma^2$ similarly as for the bremsstrahlung process but also scales with the normalised vector potential $a_0$ in interaction with an electron with energy $\gamma$, valid for $\gamma a_0^2 < 4.4 \times 10^5$ \cite{Thomas2012_LL,Corde2013_Rad}:
 
 \begin{equation}
-S_{ICS} = c_{ICS} \int  a_0^2 (\gamma) \left[\mathrm{d}N_e /\mathrm{d}\gamma\right]\, \gamma^2 \mathrm{d} \gamma,
+\boxed{S_{ICS} = c_{ICS} \int  a_0^2 (\gamma) \left[\mathrm{d}N_e /\mathrm{d}\gamma\right]\, \gamma^2 \mathrm{d} \gamma,}
 \end{equation}
 
 where now $c_{ICS}$ similarly encapsulates all the complex physics of coupling constants, the imaging system, cross sections and conversion efficiencies. In this case the value of $a_0$ at the interaction is not constant from shot to shot as a varying overlap of the laser pulse and the electron beam will result in changing interaction conditions. $a_0$ can also vary throughout the interaction if the duration of the interaction is comparable to the time it takes for the laser pulse to pass through its focus, either due to a short Rayleigh length or long electron bunches (REF FOCUS AND REF CHIRP IF PUBLISHED). The better the overlap and the higher the intensity at the interaction, the stronger the ICS signal and the easier to distinguish will it be from the background bremsstrahlung. In addition, whilst we expect all of the electrons to produce bremsstrahlung, only a variable fraction of electrons will interact with the laser pulse. If the laser pulse is larger than the electron beam, the variation in intensity the electrons experience will be reduced.
@@ -224,9 +224,12 @@ For shots without the scattering beam the ICS signal, $S_{ICS}$, determined by t
 S_{ICS, norm} = \frac{S_{ICS,rel}}{\sigma_{BG}}
 \end{equation}
 
-
 In Figure \ref{Results:Figs:NullColl:DeltaCsIVsSigmaE2+CsIVsE2} the shots are presented in the order their data was taken in the experiment. The normalised signal above expected background, $S_{ICS, norm}$, is indicated on the y-axis, which now encapsulates the information of both the gamma signal and the electron spectrum.
 As we can see most of the shots follow the expected trend within 2 standard deviations (shaded blue area), with some exceeding this. 4 shots show a signal more than 5 standard deviations higher than expected from background measurements (shots in shaded orange area). Based on a normal distribution the probability for one shot to be as bright as 5 standard deviations above the mean background is 1 in 3,500,000. This is very unlikely and hence a suitable confirmation that these are successful collisions. 
+
+\begin{equation}
+\boxed{S_{ICS, norm} [\sigma_{BG}] > 5 \longrightarrow \mathrm{Succesful\,Collision}}
+\end{equation}
 
 This method not only allows the identification of successful collisions, but on the other hand also enables us to identify collisions where ICS was negligible on dual-beam shots if the normalised excess signal is for instance within one standard deviation of zero. 
 
@@ -322,7 +325,7 @@ We split the varying components into two parts: one is random noise fluctuating 
 
 After removing the slow drift from the data, we can check if the remaining fluctuations correlate with the on-shot laser energy. There appears to be a positive correlation but only at a coefficient of 0.35 across the entire dataset and even lower for the potential high-intensity dataset. The confidence interval of the regression encloses only very small gradients of few percent over 4 J energy range, whereas the standard deviation of a scatter around this line would be at least 8 percent. When looking at dataset including the high-intensity interactions the $95\%$ confidence interval for the regression even encloses zero which indicates no significant correlation and we will hence ignore this factor in our analysis. 
 
-\subsubsection{Intrinsic statistical fluctuations}
+\subsubsection{Intrinsic statistical fluctuations of the accelerator}
 
 Any deviation in energy $\Delta E$ from this slow drifting mean now represents a characteristic intrinsic fluctuation of the accelerator. In Figure \ref{RR:fig:ElecDEE_histo} a histogram of relative differences in energies, $\Delta E/E$, is shown, along with an estimate of the underlying density distribution using a Kernel Density Estimate (KDE) and a Gaussian fit. The Gaussian fit agrees with the $99\%$ confidence interval of the KDE, but there seems to be a slight skew of the distribution.
 
@@ -368,7 +371,7 @@ We then solve for the normalised vector potential
 a_0 = \sqrt{\left[ \frac{\Delta \gamma/\gamma_0}{1-\Delta\gamma/\gamma_0}\right] \frac{1}{\sqrt{\pi/2} \tau_0 t_L \omega^2_0 \gamma_0} }.
 \end{equation}
 
-For an $80\,\mathrm{MeV}$ energy loss from the mean of 550 MeV down to 470 MeV, for instance, we obtain an $a_0$ of 8.9.
+For an $80\,\mathrm{MeV}$ energy loss from the mean of 550 MeV down to 470 MeV, for instance, we obtain $a_0 = 8.9$.
 This is lower than the estimated peak intensity of $a_0 \sim 25$ reachable at the focus of the laser, based on the measured laser energy and the focal spot characterised in the experiment. This mismatch will be investigated in the following section.
 
 \section{Estimating the laser intensity at the interaction}
@@ -400,26 +403,26 @@ If we assume that the acceleration is close to its dephasing limit, $N = 1/2$.
 Under these assumptions the electron bunch and the scattering beam meet at $\delta z$ distance from the intended collision point.
 
 \begin{equation}
-\delta z = \frac{3d}{4} \frac{n_e}{n_c} + N \frac{\lambda_0}{2}\sqrt{\frac{n_c}{n_e}},
+\boxed{\delta z = \frac{3d}{4} \frac{n_e}{n_c} + N \frac{\lambda_0}{2}\sqrt{\frac{n_c}{n_e}},}
 \end{equation}
 where in this context $d$ is the distance of the injection point from the front of the gas jet.
 \vspace{\baselineskip}
 
-For a normal distribution of $\pm 30$fs of the relative temporal jitter and by sampling from a uniform distribution for the injection point $d$ between $0$ and $10',\mathrm{mm}$, the intensity expected at the interaction averaged over an area of $10\,\mathrm{mu m}^2$, the estimated size of the electron beam and its spatial shot-to-shot fluctuations, reaches $a_0 = 12 \pm 1$.
+For a normal distribution of $\pm 30$fs of the relative temporal jitter and by sampling from a uniform distribution for the injection point $d$ between $0$ and $10\,\mathrm{mm}$, the intensity expected at the interaction averaged over an area of $10\,\mathrm{\mu m}^2$, the estimated size of the electron beam and its spatial shot-to-shot fluctuations, reaches $a_0 = 12 \pm 1$.
 
 \subsubsection{Estimating Collision Probability based on Jitter}
 
 With knowledge of the approximate focal spot size at the interaction and realistic spatio-temporal fluctuations, we can estimate the number of successful collisions we would expect under these conditions.
 
-These calculations have been performed by Jason Cole (Imperial College) and Chris Baird (York) by running Monte-Carlo simulations based on the spatio-temporal shot-to-shot jitter measured in the experiment and estimating the amount of radiation produced for different overlaps using PIC simulations.
+These calculations have been performed by Jason Cole (Imperial College) and Chris Baird (York) by running Monte-Carlo simulations based on the spatio-temporal shot-to-shot jitter measured in the experiment and estimating the amount of radiation produced for different overlaps using particle-in-cell (PIC) simulations.
 
-It was estimated that 1 in 3 collisions would under these circumstances be on average successful, which closely matches the observed 4 in 13 successful collisions in this experiment.
+It was estimated that 1 in 3 ($\sim 33\%)$ collisions would under these circumstances be on average successful, which closely matches the observed 4 in 13 ($\sim 31\%$) successful collisions in this experiment.
 
 \section{Gamma spectra with and without interaction}
 \label{Chap:RR:Sec:GammaSpec}
 
 For this work the spectral retrieval has been conducted by Jason Cole (Imperial College) and Keegan Behm (Michigan University), and their results will be presented in this context.
-More details on the procedure can be found in \cite{Cole2018_RR,Behm2018_Gamma} and also in the \nameref{Chap:Methods} as this technique is used in different variations to infer the spectra of high energy radiation in other experiments presented throughout this thesis (see Chapter \ref{Chap:linICS} and \ref{Chap:BW}).
+More details on the procedure can be found in \cite{Cole2018_RR,Behm2018_Gamma} and also in the \nameref{Chap:Methods} as this technique is used in different variations to infer the spectra of high energy radiation in the other two experiments presented throughout this thesis (see Chapter \ref{Chap:linICS} and \ref{Chap:BW}).
 \vspace{\baselineskip}
 
 The gamma spectra were inferred by analysing the signal on the gamma detector, a stack of scintillating caesium-iodide crystals (see \nameref{Chap:Methods}), and comparing the shape of the energy deposition throughout the detector with the in GEANT \cite{GEANT4} simulated detector response.
@@ -429,7 +432,7 @@ An example of the experimentally measured raw detector signal is shown in Figure
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{CsIFit_ColePaper.pdf}\includegraphics[width=0.5\columnwidth]{OnOff_Temp_DCsI.pdf}
-\caption[Gamma-ray spectra for collision and non-collision shots.]{Left: Fitted detector response with critical energies for exemplary shots with scattering beam on and off, from \cite{Cole2018_RR}. Right: Fitted critical energies (y-axis) vs. yield on the gamma detectors above expected background (x-axis) with the $\pm 2\sigma$ interval for the background (blue shaded) and $>5\sigma$ indicating successful collisions (shaded orange).}
+\caption[Gamma-ray spectra for collision and non-collision shots.]{Left: Fitted detector response with critical energies for exemplary shots with scattering beam on and off, from \cite{Cole2018_RR}. Right: Fitted critical energies $\epsilon_{crit}$(y-axis) as function of the yield on the gamma detectors above expected background (x-axis) with the $\pm 2\sigma$ interval for the background (blue shaded) and $>5\sigma$ indicating successful collisions (shaded orange).}
 \label{Results:Figs:Gamma:OnOff_OnOffCole}
 \end{figure}
 
@@ -513,13 +516,13 @@ The red contour is generated using a semi-classical model. Here the equation of 
 
 Finally, the blue contour indicates the parameter space most likely to be occupied by interactions correctly described by a full quantum model which includes the stochastic nature of emissions in the interaction, derived in the locally constant field approximation \cite{Ritus1985_QRR}. It closely aligns with the semi-classical model as the average emission power is by definition matched. However, at lower final energies, i.e. more intense interactions, the contour starts to separate towards higher critical energies which is an indicator of a phenomena called `straggling', where an electron propagates through the laser pulse for relatively long before finally emitting one individual high energy photon \cite{Shen1972_STRAGGLING}. This only occurs when the stochastic nature of the process is considered and leads then to a spectral hardening of the emitted radiation.
 
-For both the semi-classical and the full quantum model the local constant field approximation (LCFA) was used \cite{Ritus1985_QRR}.
+For both the semi-classical and the full quantum model the local constant field approximation (LCFA) was used in the derivation \cite{Ritus1985_QRR}.
 \vspace{\baselineskip}
 
 The measurements related to the 4 successful collisions are consistent with models that include energy losses from radiation reaction (all contours except green). The no-RR (green) contour does not overlap with any of the measurements, and the results could only be part of a no-RR description if the intensity is lowered to about $a_0 = 5$ and the contours are extended to $2\sigma$. The negative correlation of the data points along with the confidence in the experimental uncertainties make this very unlikely.
 
 On a $1\sigma$ level it appears that the data points are in better agreement with models including quantum corrections (semi-classical and quantum model, red and blue) than with the purely classical LL description (orange). To improve the confidence we would require more data points, interactions at higher intensities and electron energies or use a different set of observables that is more sensitive to differences in the models \cite{Ridgers2017_QRR}.
-A model-independent technique to determine $a_0$ at the interaction \cite{HarShemesh2012_INTENSITY,Yan2017_ICS}(REF BLACKBURN IF PUBLISHED THEN) would also help to constrain the experimental conditions further, which in turn helps further separating experimental from model uncertainties.
+A model-independent technique to determine $a_0$ at the interaction on-shot \cite{HarShemesh2012_INTENSITY,Yan2017_ICS}(REF BLACKBURN IF PUBLISHED THEN) would also help to constrain the experimental conditions further, which in turn helps further separating experimental from model uncertainties.
 
 \section{Electron beam stability and model distinction for future measurements}
 
@@ -560,7 +563,7 @@ The gamma rays from ICS are measured by the same scintillator stack as described
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{Example_RR15Poder.png}
-\caption[Example of a typical electron spectrum measured on the Poder radiation reaction campaign.]{Example of a typical electron spectrum taken on this experiment. The distinct lines in the spectrum are edges of a second layer of lanex.}
+\caption[Example of a typical electron spectrum measured on the Poder radiation reaction campaign.]{Example of a typical electron spectrum taken on this experiment. The distinct lines in the spectrum are the edges of a second layer of Lanex that was placed on the main screen to increase the yield.}
 \label{fig:Poder_espec_example}
 \end{figure}
 An exemplary electron spectrum produced from the gas cell target can be seen in Figure \ref{fig:Poder_espec_example}. The average shape is an exponential spectrum reaching energies in excess of $1.5\,\mathrm{GeV}$. At the lower end the spectrum is cut off at around $400\,\mathrm{MeV}$ due to limitations in the magnetic electron spectrometer setup. The spectra from the gas cell originate from self-injection and lack a consistent sharp feature comparable to the spectral edge described in the previous section related to shock injection. The distinct lines visible in Figure \ref{fig:Poder_espec_example} are a result of stacking several Lanex layers to enhance the light yield. The change of intensity and the spatial features are removed in course of the analysis. The data set considered consists of 19 shots.
@@ -643,7 +646,7 @@ where $\sigma_X = \sigma/\sqrt{n}$ is standard deviation on the mean. $\overline
 If we assume a fixed relation of number of successful collisions and reference shots, we can estimate the number of shots we would require to distinguish a `no RR' from a 'LL-RR' distribution at a confidence of Z sigma. In the case of an equal number of successful collisions and reference shots, the minimum number of shots required is given by
 
 \begin{equation}
-N_{min} = Z^2 \frac{\sigma_1^2 + \sigma_2^2}{(\overline{\mu}_1-\overline{\mu}_2)^2}.
+\boxed{N_{min} = Z^2 \frac{\sigma_1^2 + \sigma_2^2}{(\overline{\mu}_1-\overline{\mu}_2)^2}.}
 \end{equation}
 
 In an experiment we also have to consider that only 1 in X shots with both beams will result in a successful collisions. In this case it was estimated to be a 1 in 3 chance, so the total number of shots would then be $4 \times N_{min}$ or in general terms $(1+X)N_{min}$ shots. We assume that we can identify successful collisions using the method described at the beginning of this chapter, and that we know the intensity at the interaction which remains constant for now throughout the dataset. 
