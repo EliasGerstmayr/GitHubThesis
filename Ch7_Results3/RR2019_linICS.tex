@@ -178,6 +178,35 @@ Shock angle can be estimated. Since the shock position does not move the same di
 \end{figure}
 
 
+
+\section{Laser raster scan}
+
+Some flaw in alignment (Note in lab book stating prism cam was misplaced, changed angle in prism, camera position and maybe did not follow procedure to the end).
+
+The following allows re-establish the conditions and finding the overlap in any case (similar as used for aligning gas cell targets).
+
+In laser wire techniques the electron beam is fixed in space (due to imaging setups) and the laser is moved to establish the size of the electron beam.
+
+Here we moved the laser beam to establish the size of the laser beam at the interaction to find the relative position (centre) to then move onto non-linear ICS and radiation reaction studies. The overlap is easier with large beams and at shallow angles (high f-numbers).
+
+We used the transverse diagnostics (shadowgraphy and top view) to monitor the general overlap and drifts.
+
+For a fixed relative timing position, we translate the beam using the OAP translation in 50 micron steps. We take 5 shots at each position. If two positions in a row show no collisions (identified by integrating over the gamma profile image, in experiment visual confirmation) we accept this is the end of the beam.
+
+See MONTAGE.
+
+We see that the extent of the beam is of order 400 microns plus minus 50 microns, the step size. This could be refined but since we were aiming for high-intensity interactions we did not do this.
+
+At 400 microns diameter the hole in the beam is of order 50 microns. Is this visible? Could also be misaligned in the other axis.
+
+Ideally would do a scan in X- and Y to establish the centre of the beam (map out the hole). Then move a step in time and repeat the procedure. This is a method that requires high repetition rate systems but especially at late nights this method is a visual confirmation and is better than a blind raster scan and the binary mode. Also know conditions much better.
+
+After moving a step in time confirm whether the beam is larger or smaller, this then should get you straight away to the right position. Ideally a high magnification shadowgraphy could help with the alignment (short pulse duration or chirped probe?).
+
+Unfortunately, in this experiment a lens in the beam expander upstream in the laser chain of the scattering beam broke and this procedure was not completed.
+
+In addition, we have to consider that especially low f-number OAPs as this the offset potentially introduces astigmatism and the spot has to be optimised if the position deviates much from the optimised position.
+
 \section{Gamma spectra from linear inverse Compton scattering}
 
 
@@ -203,7 +232,7 @@ Linear ICS theory predicts that in a head-on collision scattered photons will be
 Combining these assumptions and considering a head-on collision ($\theta = 180^\circ$) Equation \eqref{linICS:eqns:full_linICS} above simplifies to
 
 \begin{equation}
-E_{ph}' =4\gamma^2 E_{ph}.
+E_X = E_{ph}' =4\gamma^2 E_{ph}.
 \end{equation}
 
 For $\gamma \sim 1750$ and $a_0 = 0.3$
@@ -211,7 +240,7 @@ For $\gamma \sim 1750$ and $a_0 = 0.3$
 \begin{equation}
 \psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c} \ll 1,
 \end{equation}
-which indicates that radiation reaction effects are negligible and the interaction with the laser pulse does not perturb the electron beam significantly (REF ALEC THOMAS AND FELICIE).
+which indicates that radiation reaction effects are negligible and the interaction with the laser pulse does not perturb the electron beam significantly \cite{Albert2016_APP}.
 
 For a Ti:Sa system at central wavelength 800 nm, as used at Gemini, the corresponding energy carried by an individual photon amounts to 1.55 eV. Based on the simplified Equation above and also ignoring the bandwidth of the laser, we then obtain a quadratic one-to-one mapping of the electron energy to a corresponding gamma-ray energy (see Figure \ref{linICS:fig:ElecEToEgamma}). 
 \vspace{\baselineskip}
@@ -230,7 +259,7 @@ Since the properties of the electron beam measured in this experiment vary stron
 
 Based on the conditions in the experiment, we can assume that the interaction is correctly described by linear ICS theory (REF).
 
-In this case the number of photons scattered in an interaction or the number of produced gamma-rays, $N_X$, is simply given by the Thomson scattering cross-section (REF Felicie and Alec's paper)
+In this case the number of photons scattered in an interaction or the number of produced gamma-rays, $N_X$, is simply given by the Thomson scattering cross-section \cite{Albert2016_APP} REF
 
 \begin{equation}
 \boxed{N_X = \frac{\sigma_T}{\pi w^2_0} N_L N_e,}
@@ -249,13 +278,13 @@ where $E_J$ is the total laser energy, $E_{ph}$ the energy of a single photon an
 
 In useful units we can write
 \begin{equation}
-\boxed{N_X = 5.32 \times 10^{10}\times  E [J] \times Q [100pC] \times \left(r[\mu m]\right)^{-2}.}
+\boxed{N_X = 5.32 \times 10^{10}\times  E [J] \times Q [100pC] \times r[\mu m]^{-2}.}
 \end{equation}
 
-Using this Equation we estimate for the conditions in the experiment ($E_J = 9.73\pm0.15$,$Q=239\pm92pC$ and $r=200um$) that $(1.3 \pm 0.5) \times 10^{7}$ photons are scattered. This is of similar order of magnitude as reported for bright betatron sources (REF REF Chen and Kneip), with a comparable pulse duration and source size. From our previous analysis we, however, expect to emit 1000-times higher photon energies due to the Lorentz boost. We expect that we are able to measure this order of magnitude of photons in this energy range.
+Using this Equation we estimate for the conditions in the experiment ($E_J = 9.73\pm0.15$,$Q=239\pm92\,\mathrm{pC}$ and $r=200\,\mathrm{\mu m}$) that $(1.3 \pm 0.5) \times 10^{7}$ photons are scattered. This is of similar order of magnitude as reported for bright betatron sources \cite{Kneip2010_BETATRON} CHEN BETATRON REF, with a comparable pulse duration and source size. From our previous analysis we, however, expect to emit 1000-times higher photon energies due to the Lorentz boost. We expect that we are able to measure this order of magnitude of photons in this energy range.
 \vspace{\baselineskip}
 
-However, considering the experimental parameters it becomes clear that a linear Compton source can be achieved in a much more economical way by scaling down the energy and the beam size at the interaction whilst still preserving a permanent overlap within the shot-to-shot fluctuations of the laser and the accelerator. We can achieve the same number of scattered photons by keeping the photon density fixed. Moving from a beam radius of $200$ to $25um$, a factor of 8, the corresponding energy in the scattering beam could be reduced by a factor of 64, so around $150mJ$. Using an $f/2$ optic as before, this plane would be more than 10 Rayleigh lengths away from the focal plane and we might still be in the near-field of the laser, where the profile is flat and smooth, such that any change in response reflects the electron beam property. At the same time this keeps the beam large enough to interact at all times with the micron sized electron beam also considering relative pointing fluctuations. 
+However, considering the experimental parameters it becomes clear that a linear Compton source can be achieved in a much more economical way by scaling down the energy and the beam size at the interaction whilst still preserving a permanent overlap within the shot-to-shot fluctuations of the laser and the accelerator. We can achieve the same number of scattered photons by keeping the photon density fixed. Moving from a beam radius of $200$ to $25\,\mathrm{\mu m}$, a factor of 8, the corresponding energy in the scattering beam could be reduced by a factor of 64, so around $150mJ$. Using an $f/2$ optic as before, this plane would be more than 10 Rayleigh lengths away from the focal plane and we might still be in the near-field of the laser, where the profile is flat and smooth, such that any change in response reflects the electron beam property. At the same time this keeps the beam large enough to interact at all times with the micron sized electron beam also considering relative pointing fluctuations. 
 The beam size will also be large enough to minimise the impact of angle variations on the source parameters.
 
 \section{Energy-dependent response}
@@ -281,7 +310,7 @@ which becomes in particular important when the electron spectrum covers a wide e
 \caption[Energy-dependent yield on detector.]{Left: Radiation produced in head-on ICS collision for different electron energies. Right: Photon energy deposition per photon in stack. Bottom: Example electron spectrum along with gamma-ray energy on a relative scale. Comparison with relative contribution to the measured yield.}
 \end{figure}
 
-We calibrate the yield of the detector with a radioactive source using caesium 137 (Cs137). Based on the Equation above and this calibration we estimate $2.6 \pm 1.4 \times 10^{7}$ photons above 1 MeV for electrons above 220 MeV (what energy range, which spectrum).
+We calibrate the yield of the detector with a radioactive source using caesium 137 (Cs137). Based on the Equation above and this calibration we estimate $2.6 \pm 1.4 \times 10^{7}$ photons above 1 MeV for electrons above 220 MeV (what energy range, which spectrum XX WHICH SHOT).
 
 This also means that different parts of the beam contribute less or more to the measured profile. We see in Figure XX an example electron spectrum, its related gamma spectrum and the relative contributions in terms of total energy deposition. This means that the response of a detector will in this case be dominated by the high energy peak and the lower energy electrons and their radiation contribution is suppressed. If one is mainly interested in the properties of the high-energy electrons this is of advantage, as one would be in radiation reaction studies.
 
@@ -425,6 +454,8 @@ The FWHM spatial features are well resolved and the spatial calibration is likel
 Beam pointing only correlated by 0.15, which is only very weakly. Maybe this is related to the inverted spectra as well. Looking at shadowgraphy, we are likely to interact within the plasma and hence the beam is developing and oscillations lead to inversion?
 
 
+We are interacting relatively far into the channel and the pointing of the beam still develops. In particular the total integrated beam is used to indicate the pointing which can change due to oscillations.
+
 
 \subsection{Resolving spatial features}
 
@@ -516,6 +547,12 @@ Using something with two features. Seeing that this does not seem to line up, th
 
 Potential reasons:
 
+Two reasons
+
+EITHER beam is there and emits
+
+OR beam is on other side and is pointing downwards
+
 ... Fluctuations in intensity. Use some examples and show how much more intensity is required to make up for this change in intensity
 
 ... Since interacting in plasma the beams have some momentum, which then indicates which direction the radiation goes. Draw out the options: would be spread from outside to inside, but is it concentrated only in one angular direction. Also estimate transverse momentum.
@@ -538,15 +575,12 @@ with plasma wavelength
 The angle of the electrons is determined by the position in the oscillation. The largest component is going in z direction. There is a smaller transverse component. At the return point it is parallel (so the emission of the radiation should appear to be sent forward). In any other case there should be a component in positive or negative transverse direction. Naively if we assume a half betatron length of 800 um and a betatron radius of 1 micron, the ratio of $p_T$ and $p_z$ is 1:800, so we are talking about an average pointing of 1.25 mrad. This is a variation spatially of 2 mm. However, we are usually encountering at least four times that for the inversion. Do we have examples of other electron beams that are not doing that?
 
 
+Due to shock injection we might be in a fixed phase (downwards) so we are measuring the momentum component.
 
-\subsubsection{Raster scan}
+Hard to say as there are not as many shots with clear features like these.
 
-Use this to establish relative positioning.
+Result: definitely interact outside of the plasma if want to measure properties of the frozen beam. Otherwise consider scanning more in time to see any developments. Shock injection (if fixed phase) could be a useful method to scan through the oscillation (if unperturbing).
 
-Use this as preparation for non-linear ICS and RR.
 
-Easier overlap, especially at shallow angles.
-
-Use transverse diagnostics for position and then raster scan.
 
 \section{Conclusion}

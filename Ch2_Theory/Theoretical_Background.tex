@@ -275,29 +275,29 @@ The electron is performing a periodic oscillation around the z-axis, whilst the 
 \subsection{Electron in a cylindrically symmetric electric field}
 
 The previously discussed case of a particle in a homogeneous magnetic field corresponds to the motion in a magnetic electron spectrometer or the deflection of charged particles in a circular accelerator.
-We will now discuss the motion of an electron in a cylindrically symmetric electric field. This resembles the case of an electron in a plasma channel.
+We will now discuss the motion of an electron in a cylindrically symmetric electric field which resembles the case of an electron in a plasma channel.
+This derivation is based on Jonathan Wood's PhD thesis (Imperial College) \cite{WoodThesis}.
 
 Assume a relativistic electron moving in the longitudinal direction and an electric field that is cylindrically symmetric around the propagation axis.
-
-As previously we will use a Lagrangian. We ignore any vector potential contributions and only use a scalar potential.
+We ignore any vector potential contributions and only use a scalar potential.
 
 The Lagrangian of this scenario is described by
-
 \begin{equation}
-L(\mathbf{r},\mathbf{v},t) = - m_e c^2 \gamma^{-1} - q \Phi
+L(\mathbf{r},\mathbf{v},t) = - m_e c^2 \gamma^{-1} - q \Phi,
 \end{equation}
 where $\Phi$ is the scalar potential describing the electrostatic field of the channel.
 
 The scalar potential is the solution matching the radially/cylindrically symmetric Poisson equation
 
 \begin{equation}
-\frac{1}{r} \frac{\partial}{\partial r} \left(r \frac{\partial \phi}{\partial r}\right) = \frac{- e (n_0 - n_e)}{\epsilon_0}
+\frac{1}{r} \frac{\partial}{\partial r} \left(r \frac{\partial \phi}{\partial r}\right) = \frac{- e (n_0 - n_e)}{\epsilon_0},
 \end{equation}
 
-The solution is 
+with the solution 
 \begin{equation}
-\phi = -\frac{(n_0 - n_e) e r^2}{4 \epsilon_0}
+\phi = -\frac{(n_0 - n_e) e r^2}{4 \epsilon_0},
 \end{equation}
+where $n_0$ is the ion charge density and $n_e$ the electron density in the channel. 
 
 In the extreme case of a completely evacuated channel, $n_e \rightarrow 0$, $\phi = -n_0 er^2/(4\epsilon_0)$.
 
@@ -306,49 +306,75 @@ As before $\mathbf{E} = - \nabla \phi$ and in this case $E_r = - \partial_r \phi
 The equation of motion for the radial component is then
 
 \begin{equation}
-\frac{d}{dt} \mathbf{p} = - \frac{e^2 n_0}{2 \epsilon_0} r
+\frac{d}{dt} \mathbf{p} = - \frac{e^2 n_0}{2 \epsilon_0} r.
 \end{equation}
 
-Assume there is no axial acceleration field, and the radial component of the velocity is small compared to $c$ and the longitudinal component be close to $c$: $\dot{\gamma}$ is then close to zero. $\mathbf{p} = \gamma m_e \mathbf{\dot{r}}$
+Assume there is no axial acceleration field, the radial component of the velocity is small compared to $c$ and the longitudinal component is close to $c$: $\dot{\gamma}$ is then close to zero. $\mathbf{p} = \gamma m_e \mathbf{\dot{r}}$
 
 The equation then takes the shape of a harmonic oscillator
 
 \begin{equation}
-\ddot{r} = - \frac{e^2 n_0}{2\epsilon_0 m_e \gamma} r = - \omega_\beta^2 r
+\ddot{r} = - \frac{e^2 n_0}{2\epsilon_0 m_e \gamma} r = - \omega_\beta^2 r,
 \end{equation}
 
-with a frequency we will call the betatron frequency $\omega_\beta$.
+with a frequency we will call the betatron frequency, $\omega_\beta$, which is related to the plasma frequency, $\omega_p$, by $\omega_\beta = \omega_p/\sqrt{2\gamma}$. The plasma frequency will be derived in a later section.
 
+As this is the standard harmonic oscillator equation, it follows a solution of shape
 
-\EliasComm{Treat second-order motion and find it follows a figure-of-eight motion!}
+\begin{equation}
+r(t) = A \cos (\omega_\beta t + \varphi),
+\end{equation}
+and with initial conditions $r(t=0) = r_\beta$ and $\dot{r}(t=0) = 0$, we obtain
+\begin{equation}
+r(t) = r_\beta \cos(\omega\beta t),
+\end{equation}
+where $r_\beta$ is the amplitude of the oscillation, also referred to as the betatron radius.
+\vspace{\baselineskip}
+
+If we continue with the assumption $\dot{\gamma} = 0$, this requires $\beta^2 = \beta^2_r + \beta^2_z = const.$. This gives us $\beta_z = \sqrt{\beta^2 - \beta^2_r} \approx \beta (1-\beta^2/2)$, where we used a Taylor expansion and $\beta \approx 1$. If we use the solution for $r(t)$ derived above and $\beta_r = \dot{r}/c$ and $\sin^2 x = (1-\cos 2\theta)/2$, we obtain:
+
+\begin{equation}
+\beta_z \approx \beta \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right) + \beta \frac{r^2_\beta \omega^2_\beta}{4c^2} \cos (2 \omega_\beta t).
+\end{equation}
+
+Integrating this with the initial condition $z(t=0) = z_0$
+
+\begin{equation}
+\frac{z}{c} \approx \frac{z_0}{c} + \beta \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right) t + \beta \frac{r^2_\beta \omega_\beta}{8c^2}\sin(2\omega_\beta t),
+\end{equation}
+
+where we identify the drift velocity $\beta c \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right)$ and in the moving frame the familiar figure-of-eight motion again.
+
 
 \subsection{Electron in a cylindrically symmetric electric field with axial field}
 
+Now we add will add a constant axial field in the longitudinal (direction of electron propagation) to the previous case. This comes closer to the reality of a laser wakefield accelerator where electrons experience focusing and accelerating fields at the same time. Significant parts of this derivation are again based on Jonathan Wood's PhD thesis \cite{WoodThesis}.
 
-Now in addition to the previous case we will add an axial field in the longitudinal (direction of electron propagation). This comes closer to the reality of a laser wakefield accelerator where electrons experience focusing and accelerating fields at the same time.
 The electric field component shall now be $E_z$, with $z$ being the longitudinal axis.
-This gives us an extra term $\frac{\partial \phi}{\partial z} = - E_z$.
+This gives us the extra term $\frac{\partial \phi}{\partial z} = - E_z$.
 
-The Euler-Lagrangian now has two equations of motions.
+The Euler-Lagrangian now has two non-trivial equations of motions.
 
-Firstly, as before
+First, as before
 \begin{equation}
-\frac{d}{dt} (\gamma m_e \dot{r}) = \frac{\partial }{\partial r} L = -\frac{e^2 n_0}{2\epsilon_0} r
+\frac{d}{dt} (\gamma m_e \dot{r}) = \frac{\partial }{\partial r} L = -\frac{e^2 n_0}{2\epsilon_0} r,
+\label{Theory:Eq:EoM_Rad_Ax_R}
 \end{equation}
 
-Secondly the z-component
+and, second, the z-component
 \begin{equation}
 \frac{d}{dt} (\gamma m_e \dot{z}) = \frac{\partial }{\partial z} L = e E_z = const.
+\label{Theory:Eq:EoM_Rad_Ax_Z}
 \end{equation}
 
-This time the change in momentum in time is not negligible and we have to expand the brackets.
+The change in momentum is now not negligible any more, $\dot{\gamma}\neq 0$, and we have to expand the brackets on the left-hand side of Equations \eqref{Theory:Eq:EoM_Rad_Ax_R} and \eqref{Theory:Eq:EoM_Rad_Ax_Z}.
 
-Radial component:
+The radial component is then
 \begin{equation}
-\dot{\gamma}m_e \dot{r} + \gamma m_e \ddot{r} = - \frac{e^2 n_0}{2 \epsilon_0} r
+\dot{\gamma}m_e \dot{r} + \gamma m_e \ddot{r} = - \frac{e^2 n_0}{2 \epsilon_0} r.
 \end{equation}
 
-Axial component is equal to a constant so simply by integrating
+The axial component is equal to a constant so we can simply integrate
 \begin{equation}
 \gamma m_e \dot{z} = - e E_z t + const.
 \end{equation}
@@ -357,42 +383,39 @@ If we assume that the electron is highly relativistic $\dot{z} \rightarrow c$, s
 
 \begin{equation}
 \gamma \beta_z \approx \gamma = - \frac{e E_z t}{m_e c} + \gamma_0 \beta_0,
+\label{Theory:Eq:EoM_Rad_Ax_Gamma}
 \end{equation}
 
 where $\gamma_0 \beta_0$ are the initial conditions.
 
 \begin{figure}
 \centering
-\includegraphics[width=.5\columnwidth]{betatron_traj.png}
-\caption{Particle trajectory of an electron using the initial conditions INSERT HERE, an accelerating gradient of NUMBER and XXXXX. Used same numbers and notations as Jon but somehow the plot scales differently. REPLACE.}
+\includegraphics[width=.8\columnwidth]{betatron_traj.pdf}
+\caption[Particle trajectory of an electron in a cylindrically symmetric electric field with a constant axial accelerating field.]{Particle trajectory of an electron in a cylindrically symmetric electric field with a constant axial accelerating field as described in Equation \eqref{Theory:Eqs:EoM_Betatron} as a function of propagation distance.}
+\label{Theory:Figs:BetatronMotion}
 \end{figure}
 
-
-Based on Jon Wood's thesis \cite{WoodThesis}
-Combining both results and keeping the same assumptions:
+Inserting the result from Equation \eqref{Theory:Eq:EoM_Rad_Ax_Gamma} into Equation \eqref{Theory:Eq:EoM_Rad_Ax_R}, we obtain the differential equation
 
 \begin{equation}
-eE_z \dot{r} + (eE_z t + \gamma_0 \beta_0 m_e c) \ddot{r} = - \frac{e^2 n_0 c}{2 \epsilon_0} r
+eE_z \dot{r} + (eE_z t + \gamma_0 \beta_0 m_e c) \ddot{r} = - \frac{e^2 n_0 c}{2 \epsilon_0} r,
 \end{equation}
-
-Abbreviating some terms....
-
+which we can write as 
 \begin{equation}
-(At + B) \ddot{r} + A \dot{r} + C r = 0
+(At + B) \ddot{r} + A \dot{r} + C r = 0,
 \end{equation}
+by using the abbreviations $A = eE_z$, $B = \gamma_0 \beta_0 m_e c$ and $C = e^2 n_0 c/2\epsilon_0$.
 
-\begin{equation}
-r(t) = \frac{\pi \sqrt{CB}}{A} r_{\beta 0} \left[ J_1 \left( 2 \sqrt{CB}/A \right) Y_0 \left(2 \sqrt{C (B+At)}/A\right) - Y_1 \left(2\sqrt{CB}/A\right)J_0\left(2\sqrt{C(B+At)}/A\right)\right]
-\end{equation}
-with the initial conditions $r(t=0) = r_{\beta 0}$ and $\dot{r}(t=0) = 0$. 
-\vspace{\baselineskip}
-
-The oscillations quickly lose amplitude and frequency to a settled value as the electron gains momentum and hence inertia.
-
-
-\subsection{Electron in a periodically alternating magnetic field}
-
-This is the scenario of an electron in an insertion device. The electron follows a figure-of-eight motion.
+The solution of this is then (REF ESAREY 2002?):
+\begin{subequations}
+\begin{empheq}[box=\widefbox]{align}
+r(t) = \frac{\pi \sqrt{CB}}{A} r_{\beta 0} \Biggl[ &J_1 \left( 2 \sqrt{CB}/A \right) Y_0 \left(2 \sqrt{C (B+At)}/A\right) \\  \nonumber
+&- Y_1 \left(2\sqrt{CB}/A\right)J_0\left(2\sqrt{C(B+At)}/A\right)\Biggr],
+\end{empheq}
+\label{Theory:Eqs:EoM_Betatron}
+\end{subequations}
+with the initial conditions $r(t=0) = r_{\beta 0}$ and $\dot{r}(t=0) = 0$, and BESSEL FUNCTION EXPLANATION.
+This is motion is shown in Figure \ref{Theory:Figs:BetatronMotion}. We see that the oscillations quickly lose amplitude and fall to a settled value, whereas the wavelength of the oscillations increases as the electron gains momentum and inertia.
 
 \subsection{Ponderomotive Force}
 
@@ -400,7 +423,7 @@ In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates t
 
 The following relativistic derivation of the ponderomotive force is based on Alec Thomas' PhD thesis \cite{ThomasThesis}.
 
-We start with the Euler-Lagrange equations after plugging in the Lagrangian in terms of the potentials $\mathbf{A}$ and $\Phi$ as given as intermediate step in equation \eqref{Theory:Eqns:EoMLorentzRaw} on page \pageref{Theory:Eqns:EoMLorentzRaw}:
+We start with the Euler-Lagrange equations after inserting the Lagrangian in terms of the potentials $\mathbf{A}$ and $\Phi$ as given as intermediate step in equation \eqref{Theory:Eqns:EoMLorentzRaw} on page \pageref{Theory:Eqns:EoMLorentzRaw}:
 
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t} \left[\mathbf{p}+q\mathbf{A}\right]-\left[q\nabla\left( \mathbf{A} \cdot \mathbf{v}\right) - q\nabla \Phi \right] = 0.
@@ -434,6 +457,7 @@ When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear 
 \end{equation}
 which is the ponderomotive force $\mathbf{F}_p$ on on a single electron. Since $\mathbf{F}_p \sim \nabla \left\langle\mathbf{a}^2\right\rangle$, this implies $\mathbf{F}_p \sim \nabla \left\langle I\right\rangle$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
 
+On the other hand, the ponderomotive force is suppressed for ultrarelativistic particles as $1/\gamma \ll 1$ as considered in relativistic inverse Compton scattering geometries as used in studies of radiation reaction (see Chapter \ref{Chap:RR15} and \cite{Cole2018_RR,Poder2018_RR}).
 
 \iffalse
 As the force is essential for the understanding of LWFA it will be derived in the following.
@@ -578,7 +602,7 @@ $N^{6+} \rightarrow N^{7+} $ & $667.0$ & $1.6 \times 10^{19}$
 \end{table}
 \fi
 
-\subsection{The Plasma Frequency}
+\subsection{Plasma Frequency}
 
 The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced. It constitutes the typical time scale and the corresponding plasma wavelength $\lambda_p$ the typical length scale of the medium.
 \vspace{\baselineskip}
@@ -651,27 +675,32 @@ $w(z)$ is the waist size of the Gaussian beam at position $z$ and indicates the 
 \begin{equation}
 w(z) = w_0 \sqrt{1+ \left(\frac{z}{z_R}\right)^2},
 \end{equation}
-where $w_0$ is the waist size at focus $z=0$ and $z_R$ the Rayleigh length defined as 
+where $w_0$ is the waist size at focus, $z=0$, and $z_R$ is the Rayleigh length defined as 
 \begin{equation}
-z_R = \frac{\pi w^2_0}{\lambda},
+z_R = \frac{\pi w^2_0}{\lambda}.
 \end{equation}
-and is the distance over which a Gaussian beam expands from $w_0$ to $\sqrt{2}w_0$ and is hence an indicator for how quickly a beam diverges or in other words over which distance it maintains an intensity close to its maximum.
+$z_R$ is the distance over which a Gaussian beam expands from $w_0$ to $\sqrt{2}w_0$ and is hence an indicator for how quickly a beam diverges or in other words over which distance it maintains an intensity close to its maximum.
 
-Assuming the beam is a Gaussian in both time and space the intensity is given by
+Assuming the beam is a Gaussian in both time and space the intensity at the focal plane $z = 0$ is given by
 \begin{equation}
-I(r,t) = I_0 \exp\left( -\frac{2 r^2}{w^2_0}\right) \exp\left(-\frac{2 t^2}{\tau^2}\right),
+I(r,t) = I_0 \exp\left( -\frac{2 r^2}{w^2_0}\right) \exp\left(-\frac{2 t^2}{\tau^2}\right).
 \end{equation}
-\EliasComm{This equation is from Jon's thesis \cite{WoodThesis}, but I am missing the z component here. Has to be reviewed. This is at focus.}
+
+The intensity is commonly expressed in terms of the normalised vector potential $a_0$
+
+\begin{equation}
+a_0 = 0.856 \sqrt{\frac{I [W/cm^2] \lambda^2 [\mu m^2]}{10^{18} W/cm^2 \mu m}}.
+\end{equation}
 
 $R(z)$ is the radius of curvature of the wavefront
 \begin{equation}
 R(z) = z \left[1+\left(\frac{z_R}{z}\right)^2\right].
 \end{equation}
-The wavefront is strongly curved around the focus $z < z_R$ and slowly flattens out at $z \gg z_R$. The difference of in radii of curvature for beams with different Rayleigh length can be used in spatial interferometry applied in the context of synchronising two laser pulses in time.
+The wavefront is strongly curved around the focus $z < z_R$ and flattens out for $z \gg z_R$. The difference in radii of curvature for beams with different Rayleigh length can be used in spatial interferometry applied in the context of synchronising two laser pulses in time.
 
 $\zeta$ is called the Guoy phase and is an additional phase term that changes signs once the Gaussian mode passes through its focus.
 
-When focusing down a beam with an optic, for instance an off-axis parabola or spherical mirror, the ratio of the focal length $f$ and the beam diameter $d$ is a useful quantity as it indicates how tightly a beam is focussed. It is called the f-number $f_\# = f/d$ and is in shorthand typically written as $f/2$ for $f_\# = 2$, $f/40$ for $f_\# = 40$ and so on.
+When focusing a beam with an optic, for instance an off-axis parabola or spherical mirror, the ratio of the focal length $f$ and the beam diameter $d$ is a useful quantity as it indicates how tightly a beam is focussed. It is called the f-number $f_\# = f/d$ and is in shorthand typically written as $f/2$ for $f_\# = 2$, $f/40$ for $f_\# = 40$ and so on.
 Expressing some of the previous quantities in terms of the f-number 
 \begin{equation}
 w_0 = \frac{2 \sqrt{2}}{\pi} \lambda f_\# \approx 0.9 \lambda f_\#
@@ -681,15 +710,7 @@ and the distance over which laser stays intense
 z_R = \frac{\pi w^2_0}{\lambda} \approx 2.5 \lambda f^2_\#.
 \end{equation}
 
-In the context of this work a Ti:Sa laser at $\lambda = 800\,\mathrm{nm}$ and these two f-numbers are relevant:
-
-\begin{align*}
-f/2: &w_0 = 1.4\, \mathrm{\mu m}; z_R = 8.1 \,\mathrm{\mu m}\\
-f/40: &w_0 = 28.8\, \mathrm{\mu m}; z_R = 3200\, \mathrm{\mu m}\\
-\end{align*}
-
-
-However, real laser beams in experiments are typically not Gaussian but mostly flat-top beams. In addition, changes in the wave front, curvature profile, spatio-temporal couplings and so on consist further deviations from an ideal beam. These are commonly expressed in terms of the parameter $M^2$, with the minimum spot size being the ideal diffraction-limited spot size times $M^2$.
+However, real laser beams in experiments are typically not Gaussian but mostly flat-top beams. In addition, changes in the wave front, curvature profile, spatio-temporal couplings and so on consist further deviations from an ideal beam. These are commonly expressed in terms of the parameter $M^2$, with the minimum spot size being the ideal diffraction-limited spot size times $M^2$ and $M^2 > 1$.
 
 
 \subsection{Laser Propagation in Plasma}
@@ -786,7 +807,7 @@ where $P_c$ is the critical power or minimum power required to outweigh diffract
 
 Balancing both terms the laser pulse remains focused over several Rayleigh lengths. This is referred to as self-guiding as it enables guiding without external guiding structures.
 
-In the `blowout' regime a highly intense laser pulse completely clears the laser axis from electrons forming a cavity of radius $R_b$, the blowout radius. This cavity is void of electrons $n_e = 0$ and no focusing occurs. In this case the guided spot size is matched to $R_b$ as smaller spots diffract and larger spots are focused again:
+In the `bubble' regime a highly intense laser pulse completely clears the laser axis from electrons forming a cavity of radius $R_b$, the bubble radius. This cavity is void of electrons $n_e = 0$ and no focusing occurs. In this case the guided spot size is matched to $R_b$ as smaller spots diffract and larger spots are focused again (REF):
 
 \begin{equation}
 R_b = 2 \sqrt{a_0} \frac{c}{\omega_p}.
