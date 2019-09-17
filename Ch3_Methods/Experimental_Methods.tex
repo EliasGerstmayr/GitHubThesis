@@ -4,17 +4,17 @@
 The following Chapter introduces a selection of experimental methods and techniques relevant in the context of the laser wakefield acceleration (LWFA) experiments. The three main ingredients of an LWFA experiment will be covered: a high-intensity laser, gas targetry and diagnostics for particles and secondary radiation.
 
 %The chapter starts by introducing high-intensity lasers and a brief outline of chirped-pulse amplification (CPA), the main tool to drive and probe the plasma wave, and how to diagnose it in experiment.
-The Chapter starts by introducing the Gemini laser system, the dual-beam high-intensity laser used to conduct the experiments in this work, and how to diagnose the laser.
+The Chapter starts by introducing the Gemini laser system, the dual-beam high-intensity laser used to conduct the experiments in this work, and diagnostics to characterise the laser.
 
 It then continues with a section on gas targets used in LWFA experiments, focusing on targetry that is specifically relevant to the experiments discussed later.
 
 Finally, the techniques used to diagnose the plasma, the interaction of the laser with the plasma as well as particles and radiation generated in the process are introduced.
 
-A review \cite{Downer2018_DiagnosticReview}
+A more comprehensive review of diagnostics is provided in \cite{Downer2018_DiagnosticReview}.
 
 \section{The Astra-Gemini laser and Target Area 3}
 
-All of the experimental results presented in this work were acquired at Target Area 3 (TA3) using the Astra-Gemini laser of the Central Laser Facility (CLF) at the Rutherford-Appleton Laboratory (RAL), UK.
+All of the experimental results presented in this work were acquired at Target Area 3 (TA3) using the Astra-Gemini laser \cite{Hooker2006_Gemini,Hooker2008_Gemini} of the Central Laser Facility (CLF) at the Rutherford-Appleton Laboratory (RAL), UK.
 
 The titanium-sapphire-doped (Ti:Sa) Gemini laser with central wavelength $800\,\mathrm{nm}$ provides two beams every 20 seconds at a compressed pulse duration of down to $40\,\mathrm{fs}$ and up to $10\,\mathrm{J}$ energy on each arm. The collimated beams that enter the target chamber have a diameter of $\sim 150\,\mathrm{mm}$ with a flat-top intensity profile and are focused down either with a spherical mirror or off-axis parabolas (OAPs). Adaptive optics (AOs) are deployed on both laser arms in conjunction with wavefront sensors to remove aberrations and flatten the wavefront.
 
@@ -28,11 +28,9 @@ In the context of the LWFA experiments discussed later typically two types of ge
 \end{figure}
 \fi
 
-Firstly, a long-focal-length geometry using either an f/40 spherical mirror or OAP with $f = 6\,\mathrm{m}$ to provide an intense laser pulse $a_0 > 1$ with a long Rayleigh length to efficiently drive LWFA. Due to the long focal length and the restricted size of the target area the beam has to be reflected or `folded' at least once during the focusing process, in recent setups about halfway between optic and focal plane. Unfortunately, this means that the usable energy in this laser arm is limited by the damage threshold of these `folding' mirrors, which is highly dependent on the actual beam quality, beam size before focus and at the mirrors, cleanliness and the quality of the coating.
+First, a long-focal-length geometry using either an $f/40$ spherical mirror or an OAP with $f = 6\,\mathrm{m}$ to provide an intense laser pulse $a_0 > 1$ with a long Rayleigh length, $z_R$, to efficiently drive LWFA over long distances. Due to the long focal length and the limited size of the Target Area the beam has to be reflected or `folded' at least once during the focusing process, in recent setups about halfway between optic and focal plane. Unfortunately, this means that the usable maximum energy in this laser arm is limited by the damage threshold of these `folding' mirrors or in other words the fluence the mirrors can sustain. The threshold at which damage occurs depends on several factors, including the beam quality and beam size, the quality of the mirror coating and cleanliness of the chamber.
 
-The second geometry is the short-focal-length scatterer which is typically an f/2 OAP with focal length $f = 300\,\mathrm{mm}$ which is also available with a central fitted hole for the case of head-on counter-propagating geometries. 
-
-In all geometries deformable mirrors/adaptive optics are used in conjunction with a wavefront sensor to optimise the wavefront.
+The second geometry is the short-focal-length scatterer which is typically an $f/2$ OAP with focal length $f = 300\,\mathrm{mm}$ which is also available with a central fitted hole for the case of head-on counter-propagating geometries. 
 
 In addition to its full-power capabilities, a continuous-wave (CW) mode for alignment and a low power pulsed mode at 10 Hz repetition rate are available as well.
 
@@ -53,7 +51,7 @@ In physics, the push towards higher intensities and shorter pulse durations allo
 %At the beginnings of the experimental work in the field of wakefield acceleration, high intensity short pulse lasers as the ones that achieved the breakthrough for LWFA in 2004 (quasi-monoenergetic electrons in the MeV regime \cite{Mangles2004,Faure2004,Geddes2004}) were not available.
 %Restricted by the breakdown threshold of the amplification crystals the pulse duration and intensity were limited. In order to still drive wakes creative acceleration schemes were developed to compensate the lack of more powerful short-pulse lasers. Examples are for instance the beat wave plasma accelerator \cite{Tajima1979} or the self-modulated plasma accelerator.
 
-With the advent of short pulse terrawatt systems after the invention of chirped pulse amplification (CPA) \cite{Strickland1985}, wakefield acceleration achieved a breakthrough reaching the non-linear regime, sometimes referred to as the `blowout' or `bubble' regime, and the production of quasi-monoenergetic electrons in the MeV regime \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}.
+With the advent of short pulse terrawatt systems after the invention of chirped pulse amplification (CPA) \cite{Strickland1985}, wakefield acceleration achieved a breakthrough reaching the highly non-linear regime, referred to as the `bubble' regime, and the production of quasi-monoenergetic electrons in the MeV regime \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}.
 CPA opened up the relativistic regime at intensities of around $10^{17}-10^{18}\,\mathrm{W}\,\mathrm{cm}^{-2}$, where electrons accelerate to relativistic velocities within a single laser period leading to interesting effects like relativistic self-focusing which is also used to achieve longer guiding in LWFA. Even intensities of $10^{21} \,\mathrm{W}\,\mathrm{cm}^{-2}$ are within reach where QED corrections become relevant and phenomena like radiation reaction (classical and quantum), multi-photon Compton scattering or even the quantum vacuum itself can be investigated. The current record exceeds a peak intensity of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and laser systems pushing this even further by orders of magnitude are being planned or built already, as for instance the facilities of the Extreme Light Infrastructure (ELI) REFERENCE HERE or the proposed upgrade of the Vulcan laser at the Central Laser Facility in the UK (REF).
 \EliasComm{Some doubling in this paragraph}
 \vspace{\baselineskip}
@@ -90,23 +88,24 @@ Another alternative is combining several separately amplified laser pulses eithe
 
 \subsection{Laser Energy Measurement}
 
-At Gemini the laser energies are measured on every shot by collecting the transmitted light through the back of a highly-reflective dielectric mirror in the laser area and imaging it onto a CCD camera chip. The integrated number of counts is calibrated using a Gentec laser energy meter and the filtering is adjusted for different power modes.
+At Gemini, the laser energies are measured on every shot by collecting the transmitted light through the back of a highly-reflective dielectric mirror in the laser area and imaging it onto a CCD camera chip. The integrated number of counts is calibrated using a Gentec laser energy meter and the filtering is adjusted for different power modes.
 
 A Gentec is also used to measure the reflectivity of the compressor gratings, typically between 60 ad 70 percent, and the energy reaching the interaction point.
 
 \subsection{Laser Pulse Duration Measurement}
 
-At Gemini Frequency-resolved optical gating (FROG) \cite{FROG} is used to measure the pulse duration of the laser and characterise its temporal intensity profile.
-A FROG trace can be taken on every shot by using the through HR mirrors transmitted beam in the laser area.
+At Gemini, frequency-resolved optical gating (FROG) \cite{FROG} is used to measure the pulse duration of the laser and characterise its temporal intensity profile.
+A FROG trace can be taken on every shot by using the through high-reflective dielectric mirrors transmitted beam in the laser area.
 
-The FROG is a diagnostic to measure the intensity and spectral phase of ultrashort laser pulses as for instance present at Gemini ($\sim 40\,\mathrm{fs}$). The setup is comparable to an autocorrelator and is optically gated by combining two beams in a non-linear medium. Typically SHG is the non-linear medium of choice. The produced SH radiation is then spectrally resolved (hence frequency-resolved) and provides information about the spectral phase.
+The FROG is a diagnostic to measure the intensity and spectral phase of ultrashort laser pulses as present at Gemini ($\sim 40\,\mathrm{fs}$). The setup is similar to an autocorrelator and is optically gated by combining two beams in a non-linear medium. Typically a second-harmonic-generation (SHG) crystal is the non-linear medium of choice. The produced second-harmonic (SH) radiation is then spectrally resolved (hence frequency-resolved) and provides information about the spectral phase.
 
 More details can be found in \cite{FROG} or, for instance, also in Matthew Streeter's PhD thesis \cite{StreeterThesis}.
-\vspace{\baselineskip}
+%\vspace{\baselineskip}
 
-A dazzler (REF) can be used to fine-tune the pulse profile.
 
-Other diagnostics that can be used to measure the pulse duration are the SPIDER (REF) or an autocorrelator (REF), but they are not single-shot diagnostics and require scans.
+%A dazzler (REF) can be used to fine-tune the pulse profile.
+
+%Other diagnostics that can be used to measure the pulse duration are the SPIDER (REF) or an autocorrelator (REF), but they are not single-shot diagnostics and require scans.
 
 \subsection{Focal Spot Characterisation}
 
@@ -115,7 +114,7 @@ In LWFA a short-pulse laser is focused down to reach high enough intensities to 
 For each of these applications it is important to optimise and characterise the size and spatial energy distribution of the focal spot. Combining this with a measurement of the temporal pulse shape, for instance using a FROG, then provides an intensity map of the laser pulse at focus.
 \vspace{\baselineskip}
 
-In this work a CCD camera, an AVT Manta (DETAIL), is coupled to a near infrared (NIR) infinity-corrected apochromatic long-working-distance microscope objective (depending on the application Mitotoyo X10 or X20 magnification) to image the spot at its focal plane. 
+In this work a CCD camera (AVT Manta G-033B) is coupled to a near infrared (NIR) infinity-corrected apochromatic long-working-distance microscope objective (depending on the application Mitotoyo X10 or X20 magnification) to image the spot at its focal plane. 
 A thin metal wire of $10's-100 \,\mathrm{\mu m}$ width is used to help defining a focal plane.
 \vspace{\baselineskip}
 
@@ -169,7 +168,7 @@ Too many aberrations or distortions in the beam prevent it from focusing down to
 \vspace{\baselineskip}
 
 In addition to ensuring that the beam propagation and source is as close to ideal as possible, one can use a wavefront sensor to characterise the wavefront of the beam. In conjunction with a deformable mirror or an adaptive optic (AO) a software can derive a map relating changes in the mirror to changes in the wavefront. Using this map or `interaction matrix' the mirror can be applied to flatten the wavefront iteratively correcting for wavefront errors which makes consequent modelling easier, matching to simulations, and enables reaching a diffraction limited focus at higher intensities.
-On the other hand, this also gives control to add aberrations and tailor the wavefront to specific applications that might benefit from this, e.g. astigmatism for radiation reaction \cite{Baird2019_RR}, wavefront tilt for betatron radiation (REF Mangles).
+On the other hand, this also gives control to add aberrations and tailor the wavefront to specific applications that might benefit from this, e.g. astigmatism for on-shot reference measurements in radiation reaction studies \cite{Baird2019_RR}, wavefront tilt to enhance the emission of betatron radiation \cite{Mangles2009_BETATRON}.
 \vspace{\baselineskip}
 
 In this work a Shack-Hartmann sensor (HASO DETAILS REF) was used. This type of wavefront sensor consists of an array of microlenses.
@@ -180,16 +179,16 @@ One adaptive optic was an ILAO (mechanical motors, large stroke) made by the Fre
 
 \section{Dual-Beam Timing Diagnostics}
 
-In experiments involving two or more pulsed laser beams, for instance pump-probe or colliding-pulse experiments, the beams require spatial and temporal synchronisation down to the ps or even fs level.
-Depending on the accuracy required different techniques can help measure the difference in timing, correct and monitor it over extended periods of time.
+In experiments involving two or more pulsed laser beams, for instance pump-probe or colliding-pulse experiments, the beams require spatial and temporal synchronisation down to the $ps$ or even $fs$ level.
+Depending on the accuracy required different techniques can help measure the difference in timing, as well as correct and monitor the synchronisation over extended periods of time.
 
-Photodiodes, spatial and spectral interferometry are introduced. This is not an exhaustive list and other methods, e.g. cross-correlator, are not introduced as they were not used explicitly in the experiments presented\footnote{There is a cross-correlator that was built and used by Nicolas Bourgeois, CLF}.
+Photodiodes, spatial and spectral interferometry are introduced. This is not an exhaustive list and other methods, e.g. cross-correlator, are not introduced as they were not used explicitly in the experiments presented.
 \vspace{\baselineskip}
 
 At Gemini both laser beams originate from the same source (oscillator) and are hence `intrinsically' synchronised, which means that they are emitted/triggered at the same time, underlie the same jitter but do not shift relative to each other at the point of emission. However, this does not mean that both beams are automatically synchronised at the point of interaction, since the arms take different pathways through the amplification and compression stage, and then finally follow different beam lines within the target chamber. The longer their separate paths the larger the potential impact of, for instance, vibrations and thermal effects can be. Incredibly small changes can cumulatively make a significant impact on the $\mathrm{fs}$-scale synchronisation required in some of the challenging experiments attempted at Gemini.
 \vspace{\baselineskip}
 
-`Timing' two beams means in this case that the relative path lengths are adjusted to compensate for the measured difference in the time of arrival at the interaction point. At Gemini larger distances (few ns's or metres in distance) require moving optics physically to extend the beam path, smaller distances are finely adjusted by using a linear translation stage that adds or removes path length in double-pass at few femtosecond (micrometre) precision.
+`Timing' two beams means in this case that the relative path lengths are adjusted to compensate for the measured difference in the time of arrival at the interaction point. At Gemini larger distances (few nanoseconds or metres in distance) require moving optics physically to extend the beam path, smaller distances are finely adjusted by using a linear translation stage that adds or removes path length in double-pass at few femtosecond (micrometre) precision. This stage is on the `split-and-delay' (SAD) table in the LA3 laser area. The linear stage is a Newport XXX REF.
 
 \subsection{Diode Timing}
 
@@ -205,10 +204,11 @@ Both laser pulses have to be overlapped at the designated point in space and the
 \caption{Photodiode.}
 \end{figure}
 
-In the experiments at the Astra Gemini laser the fast EOT-4000 GaAs photodetector with a rise/fall time of $< 30\,\mathrm{ps}$\footnote{Details can be found on the Electro-Optics website. www.eotech.com} was used in conjunction with a Lecroy WaveMaster 8XXZi-B oscilloscope ($>13\,\mathrm{GHz}$)\footnote{More details on Lecroy XX WEBSITE XX}. This limits the resolution of the signal to about XXX PS. The accuracy of the difference measurement is per measurement is a few picoseconds. If several measurements at different separations (using a delay stage to delay one laser arm) are taken the error can be reduced to an accuracy of XXX PS.
+In the experiments at the Gemini laser the fast EOT-4000 GaAs photodetector with a rise/fall time of $< 30\,\mathrm{ps}$\footnote{Details can be found on the Electro-Optics website. www.eotech.com} was used in conjunction with a Lecroy WaveMaster 813Zi-B oscilloscope ($>13\,\mathrm{GHz}$)\footnote{More details on Lecroy XX WEBSITE XX}. This limits the resolution of the signal to about XXX PS. The accuracy of the difference measurement is per measurement is a few picoseconds. If several measurements at different separations (using a delay stage to delay one laser arm) are taken the error can be reduced to an accuracy of XXX PS.
 \vspace{\baselineskip}
 
 The detectors were only used at air and are not compatible for vacuum use.
+\EliasComm{This is also as we need short and thin cables to make use of the fast oscilloscope and this would not work with a feedthrough.}
 
 \subsection{Spatial Interferometry}
 
@@ -308,7 +308,7 @@ At Gemini the driver beam typically covers a path of over 10 m distance as it in
 
 Another step in the pump-down process at Gemini is opening the gate valves that separate the target chamber, which is often at air or lower quality vacuum, from the relatively permanent and high quality vacuum of the laser compressors (two separate compressors).
 Once the vacuum in the target chamber reaches a sufficient quality and the turbo pumps are engaged, the gate valves are opened.
-The gate valves at Gemini are made out of sapphire glass but are of different thickness on each arm, see RAL report 2005 D Carroll and CD Murphy REF. The difference in thickness is around $60 \pm 3\,\mathrm{\mu m}$.
+The gate valves at Gemini are made out of sapphire glass but are of different thickness on each arm \cite{GEMINI_GATEVALVES}. The difference in thickness is around $60 \pm 3\,\mathrm{\mu m}$.
 
 The refractive index is 1.75 and 1.76 in ordinary and extraordinary axis at 800 nm. This means removing the gate valves will shift the relative time of arrival again by $150\,\mathrm{fs}$.
 
@@ -339,9 +339,9 @@ This shows that knowing the point of injection becomes important. Alternatively,
 However, this assumes that the electron bunch does not have a spatio-temporal extent which is typical for LWFA beams with long tails and potentially energy-time chirp. Short, localised injections will lead to low energy spread but also short bunches that will localise the beam further. This is also a property shock injection can facilitate.
 \vspace{\baselineskip}
 
-Another example of electron-laser timing, but in the context of PWFA, is the plasma afterglow (Hidding REF HERE).
+Another example of electron-laser timing, but in the context of PWFA, is the plasma afterglow \cite{Scherkl2019_PLASMAAFTERGLOW}.
 At FACET-I a conventional accelerator provides the electron bunch, so the timing can not be performed in the same way.
-By overlapping the electric field of the electron bunch and a laser in a gas jet, one can infer from the ionisation rates when both were overlapped in time and space.
+By overlapping the electric field of the electron bunch and a laser in a gas jet, one can infer from the ionisation rates when both were overlapped in time and space. This has been used for \cite{Deng2019_TROJAN}
 
 \subsubsection{Drifts in Timing}
 
@@ -368,7 +368,7 @@ As listing and explaining all those different targets would be a hopeless task, 
 \subsection{Gas Jets}
 
 The flow of gas produced when forcing it with high backing pressure through a small orifice at the bottom of a diverging cone is in the context of this work related to as gas jet.
-If the measurements of the cone are chosen correctly at a high enough backing pressure, the flow detaches and becomes supersonic (REF SEMUSHIN).
+If the measurements of the cone are chosen correctly at a high enough backing pressure, the flow detaches and becomes supersonic \cite{Semushin2001_GASJETS}
 Supersonic gas jets are able to produce relatively smooth flat-top density profiles with short density ramps on both sides, suitable for LWFA.
 
 The density of the gas jet is controlled by varying the backing pressure of the gas line, where higher pressure results in higher densities. When comparing nozzles of the same type in different sizes, larger nozzles require higher backing pressures to reach the same densities as smaller nozzles. For supersonic flat-top profiles the density slowly decreases above the nozzle. The actual density profile and gas flow depends on the specific design and manufacturing.
@@ -440,7 +440,7 @@ Debris can coat the glass windows and reduce the efficiency of optical diagnosti
 Just as 3D printing methods have been considered for gas jets \cite{Jolly2012_3DJET} researchers have demonstrated that this is also a promising route to design and build \cite{Vargas2014_3DCELL,Hussein2019_MICROSTRUCTURES}.
 \vspace{\baselineskip}
 
-Gas cell targets have sometimes produced superior results from gas jets using the same laser system (Poder v Kneip, Osterhoff REF, \cite{Kuschel2018_SELF}) in terms of charge, shot-to-shot stability and maximum energy gain.
+Gas cell targets have sometimes produced superior results from gas jets using the same laser system (Poder v Kneip, \cite{Osterhoff2008_CELL} \cite{Kuschel2018_SELF}) in terms of charge, shot-to-shot stability and maximum energy gain.
 However, some of the most stable LWFA sources have been achieved using gas jet targets \cite{Faure2006_STABLEJET} and the open geometry allows for diagnostic access and colliding pulse experiments as well as a route to high repetition rate operation.
 The variety of gas targets, their performance and the performance of the specific laser system make it difficult to compare gas cells and jets in general with each other. Comparisons can in most cases only be done between individual specimens and conclusions drawn from such a comparison might only be valid in this limited context. 
 
@@ -518,31 +518,23 @@ If one wants to capture smaller and more volatile features like the wake itself,
 
 \subsection{Interferometry}
 
-\subsubsection{General}
 
-In interferometry two beams are overlapped with a phase difference resulting in an interference pattern. Usually one beam will act as the unperturbed reference, the second beam will image capture the perturbation of interest at the interaction point. Starting from the original interference pattern, the interference fringes will shift as the second beam collects phase shifts when propagating through the interaction region. Phase shifts can occur, for instance, due to density modulations.
+In interferometry two beams are overlapped with a phase difference resulting in an interference pattern. Usually one beam will act as the unperturbed reference, the second beam will image capture the perturbation of interest at the interaction point. Starting from the original interference pattern, the interference fringes will shift as the second beam collects phase shifts when propagating through the interaction region. Phase shifts can occur, for instance, due to density modulations \cite{Kaluza2019_ULTRAFAST}:
 
 \begin{equation}
 \Delta \phi(y,z) = \frac{2\pi}{\lambda} \int^\infty_{-\infty} (\eta(r,z) - 1) \mathrm{d}x
 \end{equation}
 and for $n_e \ll n_c$, $\eta \approx 1 - n_e/(2n_c)$.
 
-\iffalse
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\columnwidth]{MachZehnder_standard.pdf}
-\caption{Sketch of a Mach-Zehnder interferometer setup. The probe beam enters from the left and is split up with a beam splitter into two beams: one enters the vacuum chamber and the target, for instance a gas jet, the second beam is guided on a path of the same length without perturbation and is then reunited with the first beam to be imaged onto a camera chip.}
-\label{Methods:Figs:Interferometer:MachZehnder:Normal}
-\end{figure}
+\begin{equation}
+\Delta \phi(y_0) = \frac{\pi}{n_c \lambda} \int^\infty_{-\infty} n_e (x, y_0) \mathrm{d}x = \frac{2 \pi}{n_c \lambda} \int^R_{y_0} \frac{n_e (r) r}{\sqrt{r^2 - y^2_0}}\mathrm{d}r,
+\end{equation}
+substituting $x = \sqrt{r^2 -y^2_0}$ and $\mathrm{d}r = r \mathrm{d}r/\sqrt{r^2 - y^2_0}$.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\columnwidth]{MachZehnder_Second.pdf}
-\caption{Mach-Zehnder setup in experiment using just one beam. The beam is split up after the interaction and so overlapped that the the part that interacted with the beam is overlapped with an unperturbed part of the beam.}
-\label{Methods:Figs:Interferometer:MachZehnder:Compact}
-\end{figure}
-\fi
-
+Assuming radial symmetry the plasma density $n_e (r)$ is then inferred using an Abel inversion \cite{FOURIER}:
+\begin{equation}
+e_e (r) = - \frac{n_c \lambda}{\pi^2}\int^R_r \frac{\mathrm{d}}{\mathrm{d}r}\Delta \phi(y) \frac{\mathrm{d}y}{\sqrt{y^2 - r^2}}
+\end{equation}
 
 \subsubsection{Experimental Implementation}
 
@@ -869,12 +861,12 @@ The scintillators emit around 546 nm (XX NUMBER) of radiation which is ideal for
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l|l|l|r|r}
-Name & Crystals & Crystal Dimension & Front Plate & Divider\\ \hline \hline
-QUB & $20 \times 20$ & $2 \times 2 \times 20$ mm & Al 10 mm & Al 0.1 mm\\
-Jena & $45 \times 45$ & $1 \times 1 \times 10$ mm & TiO2 0.5 mm & TiO2 0.2 mm\\
-DESY & $30 \times 30$ & $1.5 \times 1.5 \times 10$ mm & Epoxy 0.5 mm & Epoxy 0.2 mm\\
-RAL & $47 \times 33$ & $5 \times 5 \times 50$ mm & None & Al 1 mm
+\begin{tabular}{l|l|l|l|r|r}
+Name & Chapter &Crystals & Crystal Dimension & Front Plate & Divider\\ \hline \hline
+QUB & \ref{Chap:BW}, BW & $20 \times 20$ & $2 \times 2 \times 20$ mm & Al 10 mm & Al 0.1 mm\\
+Jena & \ref{Chap:linICS}, linICS & $45 \times 45$ & $1 \times 1 \times 10$ mm & TiO2 0.5 mm & TiO2 0.2 mm\\
+DESY & \ref{Chap:linICS}, linICS & $30 \times 30$ & $1.5 \times 1.5 \times 10$ mm & Epoxy 0.5 mm & Epoxy 0.2 mm\\
+RAL & \ref{Chap:RR15}, RR & $47 \times 33$ & $5 \times 5 \times 50$ mm & None & Al 1 mm
 \end{tabular}
 \caption[Overview of CsI profile screens used in experiments.]{Overview of caesium-iodide crystal stacks used in experiments as profile screens.}
 \end{table}

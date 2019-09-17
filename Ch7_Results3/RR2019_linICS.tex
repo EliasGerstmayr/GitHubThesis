@@ -61,7 +61,7 @@ The driver beam for the wakefield accelerator is focused by an $f/40$ off-axis p
 
 The exit of the gas nozzle was positioned $14\,\mathrm{mm}$ below the beam axis to avoid damage from the second, more divergent laser cone. A steel razor blade is introduced $4\,\mathrm{mm}$ above the nozzle edge at $- 32.4\pm 0.3^\circ$ angle in vertical direction relative to the laser axis to produce a shock front. The tip of the blade is inserted $1.2\,\mathrm{mm}$ into the gas flow from the same side that the driver beam enters from. 
 The gas target was characterised on-shot by a transverse optical probe synchronised with the driver beam ending in a shadowgraphy and a Mach-Zehnder interferometry setup.
-The interferometrically determined electron density\footnote{The interferometry data was evaluated by Cary Colgan (Imperial College)} without inserting the blade was $(1.4 \pm 0.2) \times 10^{18}\,\mathrm{cm}^{-3}$. When inserting the blade the density profile exhibits a sharp peak in density reaching about $(2.4 \pm 0.2) \times 10^{18}\,\mathrm{cm}^{-3}$, twice the ambient density\footnote{The plasma densities were interferometrically measured by a transvere optical probe.}.
+The interferometrically determined electron density\footnote{The interferometry data was evaluated by Cary Colgan (Imperial College)} without inserting the blade was $(1.4 \pm 0.2) \times 10^{18}\,\mathrm{cm}^{-3}$. When inserting the blade the density profile exhibits a sharp peak in density reaching about $(2.4 \pm 0.2) \times 10^{18}\,\mathrm{cm}^{-3}$, twice the ambient density.
 
 The gas target and the recombination light emitted by the plasma channel are imaged by a Canon DSLR camera from the side and a CCD camera from the roof of the chamber.
 
@@ -71,7 +71,7 @@ A second laser pulse is focused by an $f/2$ off-axis parabola (OAP) at the oppos
 
 \subsubsection{Two-beam timing}
 
-Both laser beams are synchronised to each other using spatial interferometry \cite{Cole2018_RR}. A 90-degree dielectric knife-edge prism (Thorlabs MRAK25-E03) was inserted at the interaction point, deflecting both beams collinearly onto the CCD chip of a camera (AVT Manta G-033B) equipped with a X10 long working distance infinity-corrected microscope objective. Due to the different radii of curvature of both beams, especially near the focus of the $f/2$ beam, a circular interference pattern emerges when the beams are overlapped in space and time. The timing procedure is explained in more detail in the \nameref{Chap:Methods}.
+Both laser beams are synchronised to each other using spatial interferometry \cite{Cole2018_RR}. A 90-degree dielectric knife-edge prism (Thorlabs MRAK25-E03) was inserted at the interaction point, deflecting both beams collinearly onto the CCD chip of a camera (AVT Manta G-033B) equipped with a X10 long-working-distance infinity-corrected microscope objective. Due to the different radii of curvature of both beams, especially near the focus of the $f/2$ beam, a circular interference pattern emerges when the beams are overlapped in space and time. The timing procedure is explained in more detail in the \nameref{Chap:Methods}.
 
 \subsubsection{Particle and Radiation diagnostics}
 
@@ -181,6 +181,29 @@ Shock angle can be estimated. Since the shock position does not move the same di
 
 \section{Laser raster scan}
 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{RasterScan_Shadowgraphy_CloseUp.pdf}
+\caption{Shadowgraphy}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[trim={8cm 2.5cm 6cm 2.5cm}, clip, width=1.0\columnwidth]{linICS_RasterScan_GammaProfile_Montage.png}
+\caption{Montage of raster scan Gamma Profile.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[trim={4.5cm 0 5cm 0}, clip, width=.9\columnwidth]{linICS_Raster_WaistSize.png}
+\caption{Raster scan idea.}
+\end{figure}
+
+
+
+
 Some flaw in alignment (Note in lab book stating prism cam was misplaced, changed angle in prism, camera position and maybe did not follow procedure to the end).
 
 The following allows re-establish the conditions and finding the overlap in any case (similar as used for aligning gas cell targets).
@@ -207,15 +230,17 @@ Unfortunately, in this experiment a lens in the beam expander upstream in the la
 
 In addition, we have to consider that especially low f-number OAPs as this the offset potentially introduces astigmatism and the spot has to be optimised if the position deviates much from the optimised position.
 
+This allows us to estimate the size of the beam, somewhat inverse laser wire where we scan the laser which is smaller than the electron beam to establish its size.
+
 \section{Gamma spectra from linear inverse Compton scattering}
 
 
 A photon of energy $E_{ph}$ that is scattered from a relativistic electron is Doppler up-shifted due to the relativistic Lorentz boost. After an interaction shifts to an energy $E_{X}$ given by (REF):
 \begin{equation}
-E_{X} = E_{ph}\frac{2(1-\beta\cos \theta)\gamma^2}{1+a^2_0/2 + \gamma^2 \theta^2_0} = \frac{4\gamma^2}{1+a^2_0/2 + \gamma^2 \theta^2_0},
+E_{X} = E_{ph}\frac{2(1-\cos \theta)\gamma^2}{1+a^2_0/2 + \gamma^2 \theta^2_0} = \frac{4\gamma^2}{1+a^2_0/2 + \gamma^2 \theta^2_0},
 \label{linICS:eqns:full_linICS}
 \end{equation}
-where $\beta$ is XXX, $\theta$ the angle between the electron and the incoming photon, $a_0$ is the normalised vector potential and $\theta_0$ is XX.
+where $\theta$ the angle between the electron and the incoming photon, $a_0$ is the normalised vector potential and $\theta_0$ is XX.
 
 The electron beams shown earlier (first dataset) were collided with a laser pulse at an intensity of $a_0 < 0.3$. This is sufficiently below $a_0 = 1$ such that we can ignore the production of higher harmonic radiation and only consider the fundamental harmonic from linear ICS (REF). Since also $a^2_0 \ll 1$ we can also ignore the term $a^2_0/2$ in the denominator, which accounts for red-shifting of the radiation when the longitudinal component of the electron motion becomes significant (see \nameref{Chap:Theory} for `figure-of-eight motion'). The electron beams are in most cases confined to a divergence cone of few milliradians. For a $4\,\mathrm{mrad}$ beam the difference introduced by the electron angles in the $\cos\theta$ term assuming a collimated light source is less than $0.001\%$, which means that we can ignore a broadening of the spectrum from electron angles as well.
 
@@ -284,7 +309,7 @@ In useful units we can write
 Using this Equation we estimate for the conditions in the experiment ($E_J = 9.73\pm0.15$,$Q=239\pm92\,\mathrm{pC}$ and $r=200\,\mathrm{\mu m}$) that $(1.3 \pm 0.5) \times 10^{7}$ photons are scattered. This is of similar order of magnitude as reported for bright betatron sources \cite{Kneip2010_BETATRON} CHEN BETATRON REF, with a comparable pulse duration and source size. From our previous analysis we, however, expect to emit 1000-times higher photon energies due to the Lorentz boost. We expect that we are able to measure this order of magnitude of photons in this energy range.
 \vspace{\baselineskip}
 
-However, considering the experimental parameters it becomes clear that a linear Compton source can be achieved in a much more economical way by scaling down the energy and the beam size at the interaction whilst still preserving a permanent overlap within the shot-to-shot fluctuations of the laser and the accelerator. We can achieve the same number of scattered photons by keeping the photon density fixed. Moving from a beam radius of $200$ to $25\,\mathrm{\mu m}$, a factor of 8, the corresponding energy in the scattering beam could be reduced by a factor of 64, so around $150mJ$. Using an $f/2$ optic as before, this plane would be more than 10 Rayleigh lengths away from the focal plane and we might still be in the near-field of the laser, where the profile is flat and smooth, such that any change in response reflects the electron beam property. At the same time this keeps the beam large enough to interact at all times with the micron sized electron beam also considering relative pointing fluctuations. 
+However, considering the experimental parameters it becomes clear that a linear Compton source can be achieved in a much more economical way by scaling down the energy and the beam size at the interaction whilst still preserving a permanent overlap within the shot-to-shot fluctuations of the laser and the accelerator. We can achieve the same number of scattered photons by keeping the photon density fixed. Moving from a beam radius of $200$ to $25\,\mathrm{\mu m}$, a factor of 8, the corresponding energy in the scattering beam could be reduced by a factor of 64, so around $150\,\mathrm{mJ}$. Using an $f/2$ optic as before, this plane would be more than 10 Rayleigh lengths, $z_R$, away from the focal plane and we might still be in the near-field of the laser, where the profile is flat and smooth, such that any change in response reflects the electron beam property. At the same time this keeps the beam large enough to interact at all times with the micron sized electron beam also considering relative pointing fluctuations. 
 The beam size will also be large enough to minimise the impact of angle variations on the source parameters.
 
 \section{Energy-dependent response}
@@ -377,6 +402,24 @@ Show an example of linear with weakly and moderately non-linear (based on redshi
 
 \section{ICS as electron beam diagnostic}
 
+
+... homogeneous
+
+... linear
+
+... little broadening
+
+... constant or consistent overlap 
+
+... no radiation reaction
+
+... non-invasive
+
+... this makes it a suitable diagnostic of the beam
+
+... other tools
+
+
 Since the mechanism of linear ICS is understood very well in this regime, we can attempt using it to diagnose properties of the electron beam.
 
 The laser pulse is interacting with the electron beam close to normal. Since the cross-section is energy-independent, we can assume that each part of the beam contributes a comparable number of photons to the total radiation emitted, under the caveat that the measured yield might vary due to the change in energy. This means this could act as non-invasive beam profile screen. In LWFA experiments a Lanex screen or different scintillator is used to measure the divergence and beam pointing of the undispersed electron beam. Placing a screen in the beam path, however, leads to small angle scattering of the electron beam and blurs out the beam, in particular for longer propagation distances. A different method is using a wire as position monitor in the beam path. This mainly gives a general pointing reference and when moved transversely can be used as measurement of the beam size at that plane, requiring shot-to-shot stability. This has also been done using linear ICS with a tightly focused laser pulse, also referred to as laser wire, as a sufficiently high photon density is required for a decent signal.
@@ -388,12 +431,7 @@ This also includes divergence.
 We then use this method to investigate the dispersed axis.
 
 
-\subsection{2D divergence measurements}
-
-
-
-
-
+\subsection{Divergence}
 
 Using the gamma profile screen we can measure the divergence of the gamma beam. Radiation from linear ICS is emitted in a narrow cone of divergence $1/\gamma \sqrt{N_0}$. Since the electron beam also has its own divergence the measured divergence is an addition of both. 
 
@@ -559,6 +597,26 @@ OR beam is on other side and is pointing downwards
 
 ... the beam is not perturbing the plasma much and we have half a betatron wavelength behind us to flip sides in any case. Estimate ranges and provide inversion and non-inversion samples.
 
+\begin{figure}
+\centering
+\includegraphics[width=0.6\columnwidth]{linICS_Inversion_Sketch.pdf}
+\caption{Inversion Sketch (Replace)}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\columnwidth]{RR19_02_11_r008_17-24_Average_density_cm3.png}
+\caption{Density Placeholder}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\columnwidth]{linICS_Inversion_Sketch_Bubble.pdf}
+\caption{Inversion Sketch (Replace)}
+\end{figure}
+
 
 Betatron wavelength:
 
@@ -580,6 +638,8 @@ Due to shock injection we might be in a fixed phase (downwards) so we are measur
 Hard to say as there are not as many shots with clear features like these.
 
 Result: definitely interact outside of the plasma if want to measure properties of the frozen beam. Otherwise consider scanning more in time to see any developments. Shock injection (if fixed phase) could be a useful method to scan through the oscillation (if unperturbing).
+
+\EliasComm{Add density profile from Cary, maybe increase in density leads to focusing of the beam, so we are inverted.}
 
 
 
