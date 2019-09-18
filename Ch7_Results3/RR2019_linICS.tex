@@ -198,7 +198,7 @@ For a Ti:Sa laser system at central wavelength 800 nm, as used at Gemini, the co
 Since the properties of the electron beam measured in this experiment vary strongly, we also expect the spectrum of the radiation produced from linear ICS to follow this behaviour. In this scenario the cross section is independent of the electron energy (REF) and the spectral shape of the electron beam is then preserved in the gamma spectrum. Two examples of electron spectra and the with Equation \ref{linICS:Eqs:SimpleLinICSEX} calculated corresponding gamma-ray spectra are shown in Figure \ref{linICS:fig:ElecEToEgamma_Examples}. One electron beam is spectrally very broad (red) with significant spectral intensity spread from below the measurement threshold of 220 Mev up to 1200 MeV, resulting in a gamma-ray spectrum from few to $35$ MeV. The other beam (blue) is strongly peaked at just under $1.2$ GeV with narrow energy spread of $< 10\%$, which has the potential to be converted into a narrow energy spread gamma-ray source centred at $34$ MeV.
 
 
-\section{Number of photons scattered}
+\section{Number of scattered photons}
 
 Based on the conditions in the experiment and the inferred intensity at the interaction, we can assume that the interaction is correctly described by linear ICS theory (REF).
 
@@ -249,7 +249,6 @@ However, whilst the cross-section for an interaction is independent of energy an
 This is behaviour is a bit different to the behaviour usually cited for Lanex, where few MeV particles deposit most of their energy whereas at relativistic energies the deposition is almost flat throughout.
 
 Using the simulated result as a lookup-table for energy deposition and relating the photon energy to the electron energy, we can calculate the total energy deposition for a given electron spectrum as follows:
-
 \begin{equation}
 \boxed{\langle E_{dep} (\gamma) \rangle N_X = \int E_{dep} (\gamma) \frac{\sigma}{\pi \omega^2_0} N_L \frac{\mathrm{d}N_e}{\mathrm{d}\gamma}\mathrm{d}\gamma,}
 \label{linICS:Eqs:Edep_YIELD}
@@ -285,7 +284,6 @@ The following Figures XX show different examples of electron spectra along with 
 In all three examples the response based on the linear ICS estimate fits the experimental data well and we find a corresponding response for a mono-energetic photon that closely follows the same response curve. 
 This means that within the sensitivity of this detector our assumptions about the radiation spectrum were correct and we are seeing spectra consistent with linear inverse Compton scattering. We are able to produce these measurements for different spectral shapes.
 We also find that the response of the detector is in these cases well reproduced by a mono-energetic fit which reflects the weighted mean energy of the emitted radiation, or the dominant component of the radiation.
-\vspace{\baselineskip}
 
 \begin{figure}
 \centering
@@ -343,14 +341,14 @@ All of this combined indicates that linear inverse Compton scattering in this re
 Linear ICS is already being used as beam diagnostics to determine the beam size (REF), emittance (REF) or polarisation (REF) of electron beams at conventional and plasma-based accelerators. However, this is typically a multi-shot diagnostics that involves scans, similar to the laser raster scan we presented earlier, to determine the properties as the laser has to be focused tightly in order to produce a measurable yield of gamma-rays.
 
 We propose to use the emission of the radiation in conjunction with the gamma profile screen as single-shot beam profile measurements.
-Similarly as a standard beam profile as used frequently on laser wakefield experiments (REF) this would have the potential to provide us with detail of beam pointing (REF) and the divergence in both transverse axes (REF). A standard beam profile screen would in this case not be suitable as we are actively avoiding placing material in the beam path as this would produce on-axis bremsstrahlung which due to its high energy will make diagnosing the ICS spectrum challenging. A beam profile monitor (Lanex for instance) would also require a static laser beam dump for the wakefield driver beam or a plasma mirror, both of which will produce bremsstrahlung. In addition, the physical screen and any kind of other material to remove the driver laser beam will affect the electron beam due to bremsstrahlung energy loss and scattering, and is hence not non-invasive.
+Similarly as a standard beam profile as used frequently on laser wakefield experiments (REF) this would have the potential to provide us with detail of beam pointing (REF) and the divergence in both transverse axes (REF). A standard beam profile screen would in this case not be suitable as we are actively avoiding placing material in the beam path as this would produce on-axis bremsstrahlung which due to its high energy will make diagnosing the ICS spectrum challenging. A beam profile monitor (Lanex for instance) would also require a static laser beam dump for the wakefield driver beam or a plasma mirror, both of which will produce bremsstrahlung. In addition, the physical screen and any kind of other material to remove the driver laser beam will affect the electron beam due to bremsstrahlung energy loss and scattering, and is hence not non-invasive. 
+Finally, electron beams, if no additional beam transport is used, are dispersed early in the beam line to avoid large uncertainties in energy due to the divergence. As a result beam profile measurements of the non-dispersed beam have to be conducted close to the accelerator which means the spatial resolution is limited and scattering will propagate long distances which reduces the beam quality. An early non-invasive measurement would benefit from a better spatial resolution as it can be propagated indefinitely to increase the spatial resolution via geometric magnification.
 
 The magnetic electron spectrometer used in this experiment already gives pointing and divergence but only in the non-dispersion direction and we do not know accurately if the divergence is symmetric in both axes and if the beam points in the dispersion axis, which affects the accuracy of the energy inferred from the spectrometer setup. This can be inferred from the two-screen setup (REF) also used in this experiment but requires enough space for the beam to drift and expand and smaller changes are not measurable due to the scattering induced due to vacuum windows and the Lanex screens themselves.
 
 This measurement promises to measure the beam pointing and divergence without impacting the measurement. Especially as tool to characterise the fluctuations of the electron beam en route to high-intensity interactions this seems particularly of interest. In highly non-linear ICS the interaction becomes invasive due to energy loss in the electron beam (REF), but here the deformation of the emitted radiation gives in turn additional information about the intensity at the interaction point using the same setup.
 
 We will in the following explore the feasibility of this diagnostic.
-
 
 \subsection{Divergence}
 
@@ -400,51 +398,79 @@ Measuring the beam divergence and characterising its properties is of great inte
 
 \subsection{Beam Pointing}
 
+Along with the divergence the beam pointing is typically one of the main quantities measured with a beam profile monitor (REF). The global pointing of the beam results in an error in the inferred beam energy that is typically larger than the beam divergence (REF). Whereas the divergence can be inferred from the electron spectrometer screen in one dimension and then for the other assuming symmetry, without a beam profile monitor the pointing requires then multiple spectrometer screens.
+
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Espec_GP_Pointing.png}
 \caption[Vertical beam pointing of the gamma beam and the electron beam.]{Vertical beam pointing (position of the beam centroid) in mrad measured on the gamma profile screen as function of the relative beam pointing of the electron beam. Both are expected to correlate well linearly as the radiation is emitted in the direction of the electron beam, but the correlation coefficient only amounts to -0.15.}
+\label{linICS:Figs:Pointing}
 \end{figure}
 
+Due to the relativistic energies of the electron beam the emission of the gamma-ray beam in linear ICS occurs in the propagation direction of the electron beam and is a reflection of its momentum vector. The centroid beam pointing, as in the relative deviation from a reference point on a screen, is shown in Figure \ref{linICS:Figs:Pointing}: on the y-axis the vertical pointing of the gamma beam as measured on the gamma profile screen and on the x-axis the vertical pointing of the electron beam as measured with the electron spectrometer screen. Surprisingly, both quantities do not seem to be correlated. The linear correlation coefficient is -0.15 which hints towards a negative correlation but in general shows very little correlation between quantities that should be aligned.
+
+Since we are interacting the laser pulse with the electron beam in the plasma we can suspect that the beam pointing is still changing throughout the remaining plasma and as a result this does not tell us much about the final beam properties. This indicates that if we want to use this as a useful on-shot diagnostic, we have to move the interaction plane outside of the plasma.
 
 \subsection{Resolving spatial features}
 
-WOULD HAVE TO SCAN TO GET THE SPATIAL COMPONENT TO THEN GET EMITTANCE.
+The previous sections have shown that the gamma beam measured on the profile screen can be used to infer the divergence of the electron beam and is hence in some way changing its shape with the electron beam as characterised with the electron spectrometer. There is an indication in the un-correlated beam pointing data that there is a discrepancy between the electron beam measured on the electron spectrometer and the beam interacting with the laser pulse in the plasma. Here we are now investigating what the gamma profile measurement can tell us qualitatively about the spatial properties of the electron beam at the example of particularly noteworthy electron beams.
+\vspace{\baselineskip}
 
-Since it does not perturb the electron beam and only interacts with some electrons due to the low photon density, ICS has been used previously as beam diagnostic as laser wire in recognition of a physical wire.
-Due to the Lorentz boost radiation in ICS is emitted in a narrow forward cone and is hence dominated by the bunch itself. This means a head-on collision is acting similarly to an electron profile screen and represents a longitudinal integration of the transverse shape. In contrast to a profile lanex screen this does not scatter the beam (or only a small fraction). This could be used as pointing reference whenever the beam is expanded and an overlap is guaranteed.
-
-
+In Figure \ref{linICS:Figs:LaserWireExamples_Montage} a montage of electron beams measured in the dataset along with the corresponding gamma beam profile measured with the scintillating stack. We see that the shape of the radiation profile varies in line with distinct features in the electron beam. 
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_2.png}
-\caption{Laser Wire example Espec and Gamma Profile for off-axis charge.}
+\caption[Montage of example electron spectra and corresponding gamma profile measurements.]{Montage of example electron spectra and corresponding gamma profile measurements. The left column of panels and the centre-right column include gamma profile measurements corresponding to the electron spectra shown to their right. For the gamma profile measurements the x- and y-axes indicate the divergence in those directions in mrad. The colour scale indicates the number of pixel counts on the camera and is proportional to the scintillation light emitted by the stack which in turn is proportional to the energy deposited. The curves on the x- and y-axis are the onto the respective axis projected image at fixed maximum height across all panels. For the electron beam the x-axis is the dispersion axis and indicates the electron energy in MeV. The y-axis indicates the vertical divergence. The in the dispersion axis and the divergence axis integrated spectra are shown on the respective axis. The colour scale indicates the charge per MeV per mrad divergence.}
+\label{linICS:Figs:LaserWireExamples_Montage}
 \end{figure}
+
 
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_LaserWire_Examples_Ring.png}
-\caption[Examples of gamma profile measurements and corresponding electron spectra.]{Examples of gamma profile measurements and corresponding electron spectra.}
+\caption[Example of a highly divergent electron beam and the corresponding ring-like gamma emission.]{Example of a highly divergent electron beam at $\epsilon < 500$ MeV (right) and the corresponding gamma-ray emission measured on the profile screen. Due to the high-divergence the gamma radiation extends beyond the profile screen onto a second scintillator stack placed on top. }
+\label{linICS:Figs:LaserWireExamples_Ring}
 \end{figure}
 
-For lower energy spread we can ignore change in response of the detector to higher energies.
 
+\begin{figure}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{GammaProfile_Espec_20190208r015s092.png}
+\caption[Example of two electron beamlets.]{Example of two vertically separated beamlets measured on the electron spectrometer (right) and their corresponding gamma-ray signal on the beam profile (left). The gamma}
+\label{linICS:Figs:LaserWireExamples_Beamlets}
+\end{figure}
+
+The example on the top left of the Figure, for instance, shows an electron beam with distinct oscillations in the vertical axis. This is accompanied by an elongated gamma profile measurement. This indicates that the oscillations are predominantly in the vertical direction and that the elongation of the beam is less pronounced in the dispersion direction.
+
+The example on the top right shows an electron beam that is tilted in the vertical direction. The gamma beam also indicates a vertical offset, but also shows that the tilt is not only in the vertical but also in the horizontal axis. 
+
+Similarly the other examples show how varied the gamma profile signal is as much as the electron beam varies from shot to shot.
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_Mono.png}
 
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Example_ICSEdepElecProfile_Intensity.png}
-\caption[]{Intensity check.}
+\caption[Narrow energy spread beam with small off-axis features.]{Narrow energy spread beam with small off-axis features. Matching up the integrated profiles from electron spectrometer and gamma profile.}
+\label{linICS:Figs:LaserWireExamples_IntensityMatch_Mono}
 \end{figure}
+Looking at some examples a bit more close-up we see in Figure \ref{linICS:Figs:LaserWireExamples_Ring} a highly divergent electron beam around 450 MeV energy. On the electron spectrometer image the electrons are mainly seen concentrated in one point with a straight line in the vertical direction. The gamma profile screen reveals a highly divergent ring-like radiation pattern with a central beam which does not become directly evident from the spectrometer screen.
 
+Figure \ref{linICS:Figs:LaserWireExamples_Beamlets} shows two in the vertical direction separated beamlets at similar energies. The corresponding gamma-ray beam measured with the profile (left) shows that the beams are not only separated vertically but also in the horizontal axis.
+\vspace{\baselineskip}
+
+Based on these examples we can convince ourselves that, between the successful divergence measurements and the uncorrelated beam pointing, the radiation profiles are capable of reproducing spectral features we see in the electron spectra and are able to provide us additional insight into the composition of the electron beam that is hidden in the dispersion direction of the electron beam.
 
 \begin{figure}
 \centering
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_Tilt.png}
 
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Example_ICSEdepElecProfile_Intensity_2.png}
-\caption[]{Intensity check.}
+\caption[Tilted electron beam.]{With energy tilted electron beam corresponding to vertically but also horizontally tilted beam. Matching up the integrated profiles from electron spectrometer and gamma profile.}
+\label{linICS:Figs:LaserWireExamples_IntensityMatch_Tilt}
 \end{figure}
+
+
+In addition to this qualitative insight we want to see whether the shape of integrated electron spectra and the corresponding gamma profile measurement relates to each other. In Figures \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Mono}, \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Tilt} and \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Wing}, three examples are shown. This time the gamma profile measurement and the electron spectrum is complemented by a third panel that shows the onto the y-axis projected gamma profile and electron spectrum in comparison. The first obvious difference are the consistently broader profiles of the gamma-ray measurements which we expected as the radiation profile is a sum of the electron beam divergence and the emission cone. The gamma signal seems to be very good to show spectral changes over a broader range. In Figure \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Mono} the position of the secondary peak seems to be at the in right position in terms of divergence but the amplitude is much larger. The should er visible in the electron profile seems to disappear or is not reproduced as  the stack ends at this point. Comparing the gamma beam and the electron spectrum it seems to look like we are matching up the wrong components. This seems to confirm itself in Figures \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Tilt} and \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Wing}, where now more distinctively the regions of higher energy deposition and lower energy deposition seem to be inverted to the vertical charge distribution in the electron spectra. The features are in general harder to see in the electron profile but especially the shape of the decay on both sides in Figure \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Wing} seems to indicate that the inverted gamma profile signal matches the electron profile better. This will be investigated further in the following.
 
 
 \begin{figure}
@@ -452,38 +478,9 @@ For lower energy spread we can ignore change in response of the detector to high
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_Wing.png}
 
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Example_ICSEdepElecProfile_Intensity_3.png}
-\caption[]{Intensity check.}
+\caption[Elongated electron beam with off-axis wing at lower energies and corresponding shape in the gamma profile. ]{Elongated electron beam with off-axis wing at lower energies and corresponding shape in the gamma profile. Matching up the integrated profiles from electron spectrometer and gamma profile.}
+\label{linICS:Figs:LaserWireExamples_IntensityMatch_Wing}
 \end{figure}
-
-
-We see that a beam with large oscillations shows up as elongated profile which implies that it does not oscillate much in the other direction.
-
-We see that a slightly bent beam shows up as tilted ellipse which indicates that the kink in the beam is in two dimensions.
-
-These examples show that it can reveal, given enough energy and homogeneous illumination and spatial resolution, some information about the properties of the electron beam beyond the dispersion axis without perturbation.
-
-
-... estimate what kind of intensity we would require if used the beam more economically.
-
-
-How much does this change in terms of energy deposition per electron or charge over 100 MeV or so?
-What is the `contrast' of this method?
-
-PROPOSE HOW MUCH SMALLER WE COULD GO IN TERMS OF ENERGY AND SPOT SIZE AND WHAT KIND OF LASER COULD BE USE NOT TO SCAN BUT TO DO SINGLE-SHOT MEASUREMENTS.
-
-MAYBE USE LONG FOCUSING OR THAT REDUCES ACCURACY IN TERMS OF FOCAL POINT.
-
-
-
-\begin{figure}
-\centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{GammaProfile_Espec_20190208r015s092.png}
-\caption[]{Another spatial example.}
-\end{figure}
-
-Trying to match up intensities. Assume that the divergences have to match up (scale x-axis accordingly and y-axis).
-
-Using something with two features. Seeing that this does not seem to line up, there is a brighter side-lobe for some reason, also more distinct. This must be due to the crystal structure, even Gaussian filter makes this more distinct. Can average this out. Maybe variation in intensity. Using this example as the energies are all comparable. Increase in intensity by 50 percent, which would still mean $a_0 < 0.4$. This would realistically only be possible if the electron beam is expanded such that it can see variations in intensity.
 
 
 
@@ -497,7 +494,11 @@ However, there seems to consistently an `inversion' of the vertical position of 
 There are several possible explanations for this:
 
 If we assume that the electron beam diverges away from its centre, consider the possibility that the gamma signal is not inverted but just of not-representative brightness. Taking into account the number of photons produced from Equation XX, we require a variation of intensity or photon density across the electron bunch to reproduce an emission profile as in Figure XX. Alternatively the change in relative energy deposition depending on the radiation produced has to be very large. In Figure XX for instance, the bright spot could be related to the increase in energy. However, the change in energy deposition is much more subtle than the change in the charge distribution. Considering a change in intensity we have to keep in mind that we interact with the electron beam in plasma. Here the electron beam is of size $\mu m$ (REF) and transverse offsets, mainly as part of betatron oscillations, are typically also of order $r_\beta \sim \mu m$. For the example in Figure XX if we assume a linear gradient across the profile from low intensity to high intensity, we require a difference of a factor of XXX to first match and then invert the brightness scale. Over the scale of few microns this seems very unlikely, particularly in the near-field of the laser beam.
-
+\begin{figure}
+\centering
+\includegraphics[width=0.9\columnwidth]{linICS_Inversion_Sketch_V2.pdf}
+\caption{Inversion Sketch (Replace)}
+\end{figure}
 This leads to the next hypothesis which is that since we are interacting relatively far into the plasma the electron beam is still evolving and the transverse components still perform betatron oscillations. The betatron wavelength is given by
 \begin{equation}
 \lambda_\beta = \lambda_p \sqrt{2\gamma},
@@ -510,30 +511,34 @@ In this case for density XXX the plasma wavelength is XX and the betatron wavele
 
 Finally, the evolution of the wakefield could still point us into the right direction. The density profile measured interferometrically\footnote{Cary Colgan.} indicates a density spike at the edge of the channel. In this case we are shooting at 14 mm above the nozzle which is uncharacteristically high and supersonic nozzles are typically optimised for operation of a few mm above to guarantee a nice density plateau. The density profile is developing spikes at the edges, also without blade, at this height. A density up-ramp is associated to an increase in the focusing force the electrons experience in the bubble (REF). A long and high enough increase will force the electrons in any betatron phase back towards the axis and will turn their momentum vector to the centre. Density up-ramps have been proposed for rephasing and focusing of beams (REF). If the interaction occurs before the electrons moved another betatron phase to change sides then the interaction would produce an inverted gamma signal and a fixed betatron phase due to the focusing of the fields. The density profile is expected to remain roughly the same so the timing of the focusing would also be fixed, this seems more likely. 
 
+
+
+
 \begin{figure}
 \centering
 \includegraphics[width=0.6\columnwidth]{RR19_02_11_r008_17-24_Average_density_cm3.png}
-\caption{Density Placeholder}
+\caption[Interferometrically measured electron density of the plasma channel.]{Electron density in electrons per cm-3 in the plasma channel across the gas jet from 0 to 15 mm as measured interferometrically for a range of shots with the blade at the leading edge an without the scattering beam.}
 \end{figure}
-
 
 \begin{figure}
 \centering
 \includegraphics[width=0.9\columnwidth]{linICS_Inversion_Sketch_Bubble.pdf}
-\caption{Inversion Sketch (Replace)}
+\caption[Sketch of how the momentum vectors of electrons at different phases in their betatron oscillations will be affected by a density transition.]{Sketch of how the momentum vectors of electrons at different phases in their betatron oscillations will be affected by a density transition. Following their oscillation first a density up-ramp leads to an increase of focusing fields which slowly directs the momentum vectors towards the centre as the electrons are pulled back stronger which increases further with density. The oscillations are now occurring at a new matched betatron wavelength. As the density decreases again, for instance at the end of the accelerator the focusing forces vanish and the electron beam diverges away from the axis.}
 \end{figure}
 
 At this stage a more extensive study and in particular a scan in timing or interaction plane would help to understand this behaviour better.
 At the same time this indicates an interesting application of this diagnostic to investigate the beam dynamics in the plasma towards the end of the accelerator. Assuming the laser beam does not perturb the plasma significantly and both lasers arrive within a sufficiently small time window such that the ion motion does not become important. 
 We can then use scans in time to investigate the orientation of the momentum vectors in the bubble as it approaches the end of the accelerator and determine when and how the freezing of the structures and the divergence of the beam is frozen into its structure. We could also use this to follow potential betatron oscillations through the accelerator giving us a snapshot of the beam dynamics at a given time.
 
-On the other hand, in order to be a useful diagnostics for the beam parameters of the final electron beam and in order to be a useful pointing diagnostics or similar we have to be sure that we interact with the electron beam outside the plasma where the beam has fully evolved and does not change its shape, pointing or orientation anymore.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.6\columnwidth]{linICS_Inversion_Sketch.pdf}
-\caption{Inversion Sketch (Replace)}
-\end{figure}
+On the other hand, in order to be a useful diagnostics for the beam parameters of the final electron beam and in order to be a useful pointing diagnostics or similar we have to be sure that we interact with the electron beam outside the plasma where the beam has fully evolved and does not change its shape, pointing or orientation any more.
 
 
 \section{Conclusion}
+
+In this Chapter we presented experimental results from linear inverse Compton scattering. We succeeded in colliding a relativistic electron beam from shock injection with a low intensity laser pulse producing consistently over hundreds of shots measurable gamma beams with radiation spectra consistent with linear inverse Compton scattering. Due to the variability of the electron beams produced in this setup the spectra of the gamma beams has been shown to vary from narrow-band 30 MeV radiation to broadband few to 30 MeV photon energies.
+
+We also described a multi-shot procedure to estimate the laser beam size at the interaction and indicated how this can be used in a future radiation reaction study as alignment procedure to succeed in high-intensity laser collisions and to diagnose the interaction conditions.
+
+We then discussed the application of linear inverse Compton scattering and in particular measuring the radiation profile as single-shot non-invasive electron beam diagnostic replacing a traditional beam profile and avoiding multi-shot techniques like the laser-wire.
+The divergence measured from the gamma profile screen and the divergence of the electron beam in the non-dispersion axis were shown to be consistent with each other and the gamma profile measurement was then used to infer the ellipticity of the electron beam.
+The analysis of the more detailed relation of the shape of the electron beam and the generated radiation indicated that the electron beam still evolved after the interaction resulting in a change in a global beam pointing and pointing of individual off-axis beamlets, which in particularly resulted in a relative to the vertical electron spectrum axis inverted gamma beam measurement. Linear ICS interactions hence promise to be an interesting diagnostic to study the beam dynamics at the end of the wakefield accelerator and study how the beam evolves until it freezes and diverges. This indicates that if this was to become a useful diagnostic of the final beam properties, the interaction plane has to be positioned outside of the plasma. The profile measurement also promises to become a useful tools in radiation reaction studies to determine the intensity at the interaction, but this also emphasises that the interaction has to occur at the end of the accelerator to allow for meaningful correlations.
