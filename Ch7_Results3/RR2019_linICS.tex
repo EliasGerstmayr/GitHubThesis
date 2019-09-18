@@ -186,6 +186,7 @@ Shock angle can be estimated. Since the shock position does not move the same di
 \centering
 \includegraphics[width=0.8\columnwidth]{RasterScan_Shadowgraphy_CloseUp.pdf}
 \caption{Shadowgraphy}
+\label{linICS:Figs:ShadowgraphyRaster}
 \end{figure}
 
 
@@ -193,44 +194,36 @@ Shock angle can be estimated. Since the shock position does not move the same di
 \centering
 \includegraphics[trim={8cm 2.5cm 6cm 2.5cm}, clip, width=1.0\columnwidth]{linICS_RasterScan_GammaProfile_Montage.png}
 \caption{Montage of raster scan Gamma Profile.}
+\label{linICS:Figs:GammaProfileRaster}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[trim={4.5cm 0 5cm 0}, clip, width=.9\columnwidth]{linICS_Raster_WaistSize.png}
 \caption{Raster scan idea.}
+\label{linICS:Figs:RasterTemporalTranslationIdea}
 \end{figure}
 
 
 
+We followed an alignment procedure to overlap the two laser beams in space and time using a photodiode and spatial interferometry in a low power mode. The scattering beam is focusing into the plasma and is visible on the transverse (horizontal plane) shadowgraphy diagnostic (see Figure \ref{linICS:Figs:ShadowgraphyRaster}, left side) also showing the plasma channel from the wakefield driver beam and the shock leading to the injection of electrons into the wakefield accelerator. Another camera is used to image the self-emission of the plasma from the vertical plane (top view).
 
-Some flaw in alignment (Note in lab book stating prism cam was misplaced, changed angle in prism, camera position and maybe did not follow procedure to the end).
+On full-power shots with both laser beams and an electron beam produced in the wakefield accelerator, we consistently measured a bright circular or oval signal on the gamma profile screen. The consistency of the collisions indicates that the laser beam is larger than the electron beam and any fluctuations in the relative position of scattering beam and electron beam.
 
-The following allows re-establish the conditions and finding the overlap in any case (similar as used for aligning gas cell targets).
+To establish the transverse size of the scattering laser pulse at the interaction point, we translated the beam in one transverse axis by translating the position of the $f/2$ OAP while keeping the parameters for the wakefield driver beam fixed. At each OAP position we took 5 full-power shots with both laser beams firing and an electron beam being measured. More shots were taken if one of the lasers failed to shoot or no electron beam was measured. The response of the gamma profile screen was recorded and the number of visible bright signals was noted down. The OAP was then translated by 50 microns and the procedure was repeated. In Figure \ref{linICS:Figs:GammaProfileRaster} a montage of the gamma profile screens at each position of a horizontal scan in the OAP position is shown. The relative position from the centre is shown on the x-axis. If there were no bright signals observed on the gamma profile screen for two consecutive OAP positions, this was deemed to be the end of the beam and defined the total extent of the laser beam with an error including the step size of the position scan and the fluctuation of the relative pointing.
 
-In laser wire techniques the electron beam is fixed in space (due to imaging setups) and the laser is moved to establish the size of the electron beam.
+We assume that we can position the centre of the scattering beam onto the centroid of the electron beam position by moving the OAP to the central position between the outermost OAP positions with measured signal on-shot. We can then repeat the procedure in the second transverse dimension to make sure that the electron beam and the scattering laser are centred onto each other in two dimensions. To increase the accuracy of this procedure we could repeat a scan in the first transverse dimension afterwards, which follows a similar procedure as the alignment procedures used by the group to align the pinhole in a gas cell target to the wakefield driver beam. This `raster scan' also follows a similar idea as the `laser wire' where a scattering beam is focused onto an electron beam that is larger than the focus at the plane of the interaction. By translating the laser in the a transverse axis and by measuring an X-ray signal from inverse Compton scattering or the absence of it, the size of the electron beam at the plane along with other beam properties can be determined. In this case, the electron beam is much smaller than the laser beam. Even though we translate the laser pulse here as well, the electron beam is now the probe and reveals the size of the laser beam at the interaction plane.
 
-Here we moved the laser beam to establish the size of the laser beam at the interaction to find the relative position (centre) to then move onto non-linear ICS and radiation reaction studies. The overlap is easier with large beams and at shallow angles (high f-numbers).
+In the raster scan presented in Figure \ref{linICS:Figs:GammaProfileRaster} the interaction region and hence, following our argument, the combined size of the laser beam and the electron beam along with variations in the relative beam pointing is $400\pm50 \,\mu m$. At a on-target energy of XX this amounts to an $a_0$ and $a_0$ without the hole. For a $f/2$ geometry this also indicates that the interaction occurs at XX distance from the focal plane. Since we originally placed the interaction of both laser pulses by spatial interferometry at the edge of the gas jet (left hand side in Figure \ref{linICS:Figs:ShadowgraphyRaster} we assume that we are in a plane before the focal plane. In either case the interaction occurs in the plasma, so we can assume that the electron beam is only $\sim \mu m$ in size and pointing variations are mainly due to betatron oscillations $r_\beta \sim \mu m$ and global fluctuations in the laser pointing. Since the $f/2$ beam is very stable in terms of beam pointing, the raster scan mainly reflects the dimensions of the scattering beam.
 
-We used the transverse diagnostics (shadowgraphy and top view) to monitor the general overlap and drifts.
+The gas jet expands from its nozzle opening diameter of 15 mm to a length of approximately 17.XXX mm (measured by the length of the plasma channel on the shadowgraphy). This means based on this scan the interaction point is defined as intended by the alignment procedure, the inner edge of the gas nozzle, but the gas jet has expanded. In addition, the focal plane of the laser has changed. We have to keep in mind that translating the OAP in longitudinal direction does not change the intensity of the interaction at first order as we shift the interaction plane along with the intensity plane when doing so. If we want to change the intensity at the interaction we have to change the relative delay of the two laser pulses.
+In brief, shifting the longitudinal OAP position and the focal plane in space only changes the plane of interaction at roughly the same intensity, whereas shifting the delay of the beams shifts both the interaction plane and the intensity. The mismatch of the interaction plane and the focal plane might be due to a misunderstanding of these two mechanisms and we mistakenly `compensated' for the shift in focus and fixed the interaction plane, rather than the intensity at the interaction.
 
-For a fixed relative timing position, we translate the beam using the OAP translation in 50 micron steps. We take 5 shots at each position. If two positions in a row show no collisions (identified by integrating over the gamma profile image, in experiment visual confirmation) we accept this is the end of the beam.
+By identifying the centre of the beam and its relative position in the focusing beam we can translate the relative timing such that we move the interaction from this plane to a different plane, for instance close to the focus by the estimated distance to the focal plane. The relative timing of the beams is here changed by removing or adding delay in a double-pass delay stage in the laser area (SAD). This idea is shown in Figure \ref{linICS:Figs:RasterTemporalTranslationIdea}. By repeating the raster scan procedure we can establish if we moved the relative timing in the right direction or if we are on the wrong side of the focal plane. The consistency of interactions is also an indicator of the size of the beam.
 
-See MONTAGE.
+Unfortunately, at this point the final step of overlapping the interaction region with a region of high-intensity in the laser pulse a lens in the beam expander telescope of the scattering beam broke and we were not able to continue the campaign with dual-beam shots and collisions.
 
-We see that the extent of the beam is of order 400 microns plus minus 50 microns, the step size. This could be refined but since we were aiming for high-intensity interactions we did not do this.
-
-At 400 microns diameter the hole in the beam is of order 50 microns. Is this visible? Could also be misaligned in the other axis.
-
-Ideally would do a scan in X- and Y to establish the centre of the beam (map out the hole). Then move a step in time and repeat the procedure. This is a method that requires high repetition rate systems but especially at late nights this method is a visual confirmation and is better than a blind raster scan and the binary mode. Also know conditions much better.
-
-After moving a step in time confirm whether the beam is larger or smaller, this then should get you straight away to the right position. Ideally a high magnification shadowgraphy could help with the alignment (short pulse duration or chirped probe?).
-
-Unfortunately, in this experiment a lens in the beam expander upstream in the laser chain of the scattering beam broke and this procedure was not completed.
-
-In addition, we have to consider that especially low f-number OAPs as this the offset potentially introduces astigmatism and the spot has to be optimised if the position deviates much from the optimised position.
-
-This allows us to estimate the size of the beam, somewhat inverse laser wire where we scan the laser which is smaller than the electron beam to establish its size.
+Nonetheless, this technique has worked very well in this scenario and we were able to show consistent overlap in space and time and a good control over the timing and spatial translations. Based on this raster scan we were also able to determine the intensity of the laser pulse at the interaction.
 
 \section{Gamma spectra from linear inverse Compton scattering}
 
