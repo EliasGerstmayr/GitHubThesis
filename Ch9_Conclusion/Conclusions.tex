@@ -1,5 +1,5 @@
-
 \chapter{Conclusion}
+\label{Chap:Conclusion}
 
 \section{Summary of Results}
 
@@ -24,35 +24,24 @@ A procedure to align and overlap the laser and electron beam and maintain the al
 
 \section{Experimental Setup for Future RR campaign}
 
-Different diagnostics and techniques were fielded in the experiments presented in Chapters \ref{Chap:linICS},\ref{Chap:RR15} and \ref{Chap:BW}. These components are useful in the context of future radiation reaction measurements:
+\subsection{Motivation}
 
-We are able to produce a high-charge electron beam with the potential to be a narrow-energy spread beam (shock injection, Chapter \ref{Chap:linICS}) with fixed injection point. 
+\begin{itemize}
+\item managed to get some measurements of radiation reaction but low confidence
+\item would want to make precision measurement to distinguish the models, using other observables
+\item want to interact at even higher intensities to produce pairs
+\end{itemize}
 
-We have also shown overlap temporally and spatially the electron beam and the laser pulse.
-We have shown that we have enough control over the laser to overlap an electron beam (size micron, bunch duration 15 fs or so REF) with a defocused laser pulse (around 400um) over the course of 100s of shots and remain in time. Improvements of the area. For high-intensity collisions we managed to achieve overlap only over few shots but in almost 1/3 of the time which is consistent with the fluctuations of laser and electron beam measured.
-On a different campaign also measured laser pointing and relative timing. Analysis pending.
-
-We have shown that the spatial overlap can be monitored or is facilitated over longer periods of time if we have visual confirmation using a transverse diagnostics from two projections to correct for alignment drifts.
-
-We have shown that a statistical characterisation of the electron beam can be done and that these are normally (randomly) distributed after removing correlations.
-We were able to measure energy loss from radiation reaction and that the statistical analysis helped estimating the likelihood.
-
-We have shown that the gamma-ray yield on shots with and without scattering beam can be used to identify successful collisions in an inverse Compton scattering (ICS) setup. 
-
-We have shown that the radiation profile in a linear ICS case gives us additional characterisation and information of the electron beam that the spectrometer screen is not giving and this would enable us to measure these beams statistically as well.
-The characterisation of the ellipticity is also helpful to distinguish ellipticity from beam deformation from intensity perturbations.
-This capability also enables us to measure at good resolution the intensity at the interaction point following previous results (model-independent a0 measurement, otherwise \cite{HarShemesh2012_INTENSITY,Yan2017_ICS} NO REFERENCE FROM T BLACKBURN YET). Also allows to characterise the 2D pointing and divergence development without producing scattering. Can calibrate the source and establish interaction conditions in the meantime. Can see development from non-linear to linear.
-
-We fielded a gamma spectrometer based on an array of scintillator crystals to measure the gamma radiation. Assuming an input spectrum this worked well and was used to constrain the interaction intensity on shot. It was also used in other energy ranges and is good if the overall spectrum is known. A more detailed spectral retrieval would be favourable for the future. In Chapter XX we also fielded a dual-axis array that allows observing the longitudinal decay from two transverse dimensions at the same time. This might have interesting implications for measurements in the future. The different calibrations to account for deviations in simulated and measured response were developed as well.
-
-Combining the spectral and electron data the experiment conditions were constrained further and the measurement of radiation reaction was successful and statistically significant, with agreement with RR models and stronger agreement with quantum models. Further data is required but statistical analysis is helpful. Another observable for the future would be energy spread. This has been investigated in \cite{Arran2019_RR_PPCF,Arran2019_RR_SPIE}.
-
-We fielded a magnetic chicane to isolate positrons in Chapter \ref{Chap:BW} and tracked particles for noise discrimination using TimePix3 detectors and measured particles on a single-particle counting CsI array. This shows us the shielding and detector capabilities enable us to measure single particles produced in an event and that we are able to distinguish those from noise. This would be of interest in a very intense interaction where in a second step non-linear BW. This gives us a threshold for intensity.
-We were able to calibrate these diagnostics by converting gamma radiation into pairs by inserting converter materials in the beam path.
-\vspace{\baselineskip}
-
-Combining these results we have a suitable electron beam source, the means to overlap an intense laser pulse with this electron beam in space and time over extended periods of time at several occasions, the diagnostics to measure and characterise radiation emitted and beam fluctuations. We know how to use these to constrain the interaction parameters and identified useful observables to distinguish in low number of shots different models of radiation reaction. This allows us to perform better measurements, precision measurements of radiation reaction at existing sub-PW facilities, in particular again at Gemini. Considering the limitations at this facility we can propose an experiment layout. 
-
+What we have done so far
+\begin{itemize}
+\item shown we can overlap beams in space and time
+\item shown overlap over 100s of shots at low intensity
+\item shown that this can be used as beam diagnostics
+\item have a technique to go from there to high-intensity collisions
+\item shown we were able to perform high-intensity collisions
+\item were able to determine statistical confidence by measuring the gamma-ray spectrum and the electron spectrum simultaneously radiation reaction
+\item identified parameters which are most suitable for high-precision studies 
+\end{itemize} \cite{Arran2019_RR_PPCF,Arran2019_RR_SPIE}.
 
 
 \begin{sidewaysfigure}
@@ -62,16 +51,44 @@ Combining these results we have a suitable electron beam source, the means to ov
 \label{Concl:Fig:FutureExp}
 \end{sidewaysfigure}
 
+What could then be possible in realistic terms (calculate eta)
+\begin{itemize}
+\item Use beam as achieved, maybe assume we can boost it to 2 GeV
+\item Assume we can get $a_0 = 10$ safely, what can be done with 25
+\item what is the real peak intensity?
+\item table for different energies and eta
+\end{itemize}
+
+
 We might be able to reach a regime where QED effects become relevant as the `quantumness' parameter $\eta$, indicating how much the interaction is dominated by QED effects \cite{Bell2008_PairsEta,Blackburn2014_QRR}, approaches values close to $1$. In this regime we expect gamma rays to be produced early in the interaction that can then combine with the copious amounts of laser photons available to produce electron-positron pairs \cite{Blackburn2017_pairs}. At the same time, this work in conjunction with \cite{Arran2019_RR_PPCF,Arran2019_RR_SPIE} indicates that by improving the electron beam quality differences in models can be measured even at comparable laser and electron energies, giving future experiments at Gemini or comparable laser facilities the opportunity to bridge the gap between these first measurements of radiation reaction and the future projects being worked on at the next generation experiments.
 
 Future experiments at conventional facilities SFQED (SLAC), LUXE (Hamburg), Cala (Munich) but also at high intensity laser facilities at even more non-linear conditions at CORELS (Gwangju), ELI pillars, Munich (FOR), maybe Gemini again, EPAC, APOLLON will be able to take precision measurements.		
 
 A proposed experiment layout based on the experiments described in the previous Chapters is shown in Figure \ref{Concl:Fig:FutureExp} and is outlined in more detail in the next sections, describing the requirements and ideas with the reference to the corresponding chapter where this diagnostic or technique was fielded and shown to be useful.
 
+\begin{itemize}
+\item for each area make a table to summarise what has been fielded and what is proposed as new
+\end{itemize}
 
 \subsection{Main Objectives}
 
+\begin{itemize}
+\item Successful high-intensity collisions $N>100$ at $a_0 \sim 10$
+\item Precision study of radiation reaction phenomena 
+\item Very high-intensity collisions at $a_0 > 20$
+\end{itemize}
+
+
 \subsection{Laser Wakefield Accelerator}
+
+
+\begin{itemize}
+\item Focusing geometry
+\item polarisation
+\item Targetry and injection
+\item Diagnostic for laser
+\item Diagnostic for plasms
+\end{itemize}
 
 As now firmly established for wakefield experiments at Gemini, we propose an f/40 long-focusing geometry to drive a wakefield accelerator. We emphasise that we aim to deliver the maximum possible energy on-target which means increasing the beam size to its maximum on the folding mirrors to lower the fluence. On next-generation facilities this might be a lesser problem as experimental areas might provide enough space to avoid folding the beam. The folding geometry also fixes the polarisation of the laser to horizontal.
 
@@ -105,7 +122,23 @@ Multiple probes, chirped pulse as temporally resolved probe (will add a lot of c
 
 Low energy spread beams (shock injection, but also \cite{Wang2013_GEV_FIUDICIAL} and see Chapter \ref{Chap:linICS})
 
+
+
+
+We are able to produce a high-charge electron beam with the potential to be a narrow-energy spread beam (shock injection, Chapter \ref{Chap:linICS}) with fixed injection point. 
+
+
 \subsection{Scattering Beam}
+
+
+\begin{itemize}
+\item Geometry (hole or not)
+\item Beam propagation
+\item Optics and noise consideration
+\item Polarisation
+\item ellipticity 
+\item estimate $\eta$
+\end{itemize}
 
 As fielded successfully in Chapters \ref{Chap:linICS} and \ref{Chap:RR15}, we propose the use of an f/2 OAP which allows tight focusing to a spot of similar dimensions as the electron beam at the exit of the accelerator. We also propose to keep the head-on geometry as used so far which requires a central hole in the parabola. 
 Loss in energy for the hole is very similar to loss when going off-axis. Focus close to the target (will be explained later). We hope to use the maximum energy possible which from the standpoint of optics not be a problem. This would allow us reaching intensities at focus in excess of $a_0 = 20$ at 45 fs pulse duration, which combined with a 1.3 GeV electron beam brings us to CHI ETA XX NUMBER and if we manage to increase the electron beam energy to 2 GeV to CHI ETA XX NUMBER.
@@ -135,15 +168,22 @@ We require on-shot timing diagnostics, ideally spectral interferometry. This has
 RELATIVE TIMING? 
 Top view is used to position the prism along with the high mag etc. The angle of the prism needs to be fixed properly. Is there a way to improve overlap? We got the on-shot spectral interferometry working. Is there a way to gate some gas reaction?
 
-spatial interferometry at TCC \cite{Cole2018_RR}
+\begin{itemize}
+\item worked well so far:
+\item photo diode (also in vacuum to avoid pump-down procedures?)
+\item  spatial interferometry at TCC \cite{Cole2018_RR}
+\item  spectral interferometry at TCC \cite{Corvan2016_TIMING}
+\item  on-shot timing, as done at Gemini \cite{Shalloo_GEMINIDRIFT}
+\item  Shock injection to fix laser-electron offset.
+\item  Finding alignment using raster scan as described in Chapter \ref{Chap:linICS}
+\item  outside plasma, other effects like fringes or plasma afterglow to consider?
+\end{itemize}
 
-spectral interferometry at TCC \cite{Corvan2016_TIMING}
 
-on-shot timing, as done at Gemini \cite{Shalloo_GEMINIDRIFT}
+We have also shown overlap temporally and spatially the electron beam and the laser pulse.
+We have shown that we have enough control over the laser to overlap an electron beam (size micron, bunch duration 15 fs or so REF) with a defocused laser pulse (around 400um) over the course of 100s of shots and remain in time. Improvements of the area. For high-intensity collisions we managed to achieve overlap only over few shots but in almost 1/3 of the time which is consistent with the fluctuations of laser and electron beam measured.
+On a different campaign also measured laser pointing and relative timing. Analysis pending.
 
-Shock injection to fix laser-electron offset.
-
-Finding alignment using raster scan as described in Chapter \ref{Chap:linICS}
 
 \subsection{Electron beam diagnostics}
 
@@ -173,12 +213,28 @@ The second screen in Chapter \ref{Chap:linICS} was in line with the gamma profil
 
 The energy measurement is cut off at 220 MeV due to the aperture of the magnet. It might be interesting to measure the full spectrum, which could be achieved by placing a Lanex screen inside onto the yoke. Scintillators lose efficiency in magnets, so this might provide only a low signal and will also be hard to calibrate in absolute numbers.
 
+
+We have shown that a statistical characterisation of the electron beam can be done and that these are normally (randomly) distributed after removing correlations.
+We were able to measure energy loss from radiation reaction and that the statistical analysis helped estimating the likelihood.
+
 \subsection{Radiation diagnostics}
 
 \subsubsection{Gamma Profile}
 
 Gamma profile to measure the profile of radiation. This can be used to measure the intensity at the interaction due to elongation. This has been used successfully in Chapter \ref{Chap:BW} and in more detail in Chapter \ref{Chap:linICS}.
 
+
+We have shown that the radiation profile in a linear ICS case gives us additional characterisation and information of the electron beam that the spectrometer screen is not giving and this would enable us to measure these beams statistically as well.
+The characterisation of the ellipticity is also helpful to distinguish ellipticity from beam deformation from intensity perturbations.
+This capability also enables us to measure at good resolution the intensity at the interaction point following previous results (model-independent a0 measurement, otherwise \cite{HarShemesh2012_INTENSITY,Yan2017_ICS} NO REFERENCE FROM T BLACKBURN YET). Also allows to characterise the 2D pointing and divergence development without producing scattering. Can calibrate the source and establish interaction conditions in the meantime. Can see development from non-linear to linear.
+
+\begin{itemize}
+\item scintillating screen
+\item spatial diagnostic
+\item intensity diagnostic
+\item calculate field of view required for $a_0 = 25$ interactions
+\item spatial resolution required?
+\end{itemize}
 
 \subsubsection{Gamma Spectrometer}
 
@@ -189,6 +245,15 @@ Gamma spectrometer to measure spectrum as done in Chapter \ref{Chap:BW} and \ref
 \caption{Gamma detectors as proposed for a future campaign. Gamma profile and (dual-axis) gamma spectrometer as used before to measure profile and intensity. A new, not yet fielded, addition would be the converter spectrometer separating produced pairs and Compton electrons using a magnet and measuring these to increase the sensitivity of the spectrometer setup.}
 \end{figure}
 The spectrometer stack in general also requires some improvements if we want to measure spectra more accurately and resolve small changes in the spectrum. One idea proposed is combining the response of the scintillator stack with another detector measurement, a Compton- and pair spectrometer. Here the gamma-rays traverse a solid material (for instance the vacuum window or something more dense) and produces electrons from Compton scattering and at high enough energies also pairs of electrons and positrons. Using a magnet they can be separated and spectrally resolved. Here we would disperse them vertically as the main beam is already dispersed horizontally and would be too noisy, the positron levels need to be kept low, so vertical. This could be a feasible option but would require balancing the distances for the gamma profile screen, the measurements screens, the gamma spectrometer (field of views) and also consider materials and perturbations. Light and signal levels also have to be considered. We require both arms to distinguish Compton and pair processes but this might be a space constraint, also producing noise from other sources.
+
+\begin{itemize}
+\item gamma spectrometer to estimate spectrum
+\item dual-axis could be useful and fielded
+\item want to improve resolution, so maybe combine with converter
+\item has to be balanced with gamma profile position, calculate dispersion needed, noise from aperture and so on
+\end{itemize}
+
+We fielded a gamma spectrometer based on an array of scintillator crystals to measure the gamma radiation. Assuming an input spectrum this worked well and was used to constrain the interaction intensity on shot. It was also used in other energy ranges and is good if the overall spectrum is known. A more detailed spectral retrieval would be favourable for the future. In Chapter XX we also fielded a dual-axis array that allows observing the longitudinal decay from two transverse dimensions at the same time. This might have interesting implications for measurements in the future. The different calibrations to account for deviations in simulated and measured response were developed as well.
 
 \subsubsection{X-ray Crystal Spectrometer}
 
@@ -213,7 +278,14 @@ In Chapter \ref{Chap:BW}, we used a crystal spectrometer setup in vacuum to meas
 \caption{Overview. Need to work this over and also include somewhere whether we already fielded diagnostics or not.}
 \end{figure}
 
-
+\begin{itemize}
+\item motivation LCFA
+\item angular distribution, calculate feasibility based on laser and gamma-ray divergence
+\item polarisation dependence
+\item what kind of angle or crystal would we require?
+\item shielding or signal-to-noise?
+\item inside chamber?
+\end{itemize}
 
 
 
@@ -237,8 +309,29 @@ We have also shown that we can use the Bethe-Heitler process to calibrate our ch
 \end{figure}
 
 
-\subsection{Experimental Measurements}
 
+We fielded a magnetic chicane to isolate positrons in Chapter \ref{Chap:BW} and tracked particles for noise discrimination using TimePix3 detectors and measured particles on a single-particle counting CsI array. This shows us the shielding and detector capabilities enable us to measure single particles produced in an event and that we are able to distinguish those from noise. This would be of interest in a very intense interaction where in a second step non-linear BW. This gives us a threshold for intensity.
+We were able to calibrate these diagnostics by converting gamma radiation into pairs by inserting converter materials in the beam path.
+
+
+\begin{itemize}
+\item when required? motivate energies and intensities (Tom B)
+\item fielded before
+\item symmetric setup
+\item calibration with main e-beam
+\item calibration with tungsten blob
+\item why require a magnetic chicane?
+\item noise levels
+\item detectors: SPD
+\item tracking layers
+\item coincidence measurement possible?
+\end{itemize}
+
+\subsection{Detailed Experimental Measurements}
+
+\begin{itemize}
+\item provide each sub-goal with a table that shows what is required, or optional, what is feasible and fielded and what is new (and where fielded Chap)
+\end{itemize}
 Objective, conditions required, observables, improvements needed or optional, benefit for overall experiment?
 
 \subsubsection{On-shot interaction intensity}
