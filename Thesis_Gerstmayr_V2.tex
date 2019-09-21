@@ -35,7 +35,9 @@
 \usepackage{color}
 \newcommand{\EliasComm}[1]{\todo[inline,color=blue!40]{EG: #1}}
 \newcommand{\SMComm}[1]{\todo[inline,color=green!40]{SM: #1}}
-
+\newcommand{\addref}{\todo[color=red!40]{REF}}
+\newcommand{\addlink}{\todo[color=yellow!40]{LINK}}
+\newcommand{\addnum}{\todo[color=orange!40]{LINK}}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -264,6 +266,9 @@ Cole RR PRX, Poder RR PRX, Keegan Gamma KSI, Amina imaging, Brendan XANES (soon 
 
 \newpage
 
+\listoftodos
+
+\newpage
 
 \chapter*{Acknowledgments}
 \addcontentsline{toc}{chapter}{Acknowledgements}  
@@ -285,11 +290,12 @@ Thanks to family. To parents.
 \chapter*{Role of the Author}
 \addcontentsline{toc}{chapter}{Role of the Author}  
 
+\EliasComm{Review Role of Author (DTAO TAO)}
 The success of experiments at high-power laser facilities depend on the contributions of many.
 The experimental results presented in this work were obtained during experimental campaigns at the Gemini laser facility at the Central Laser Facility (CLF), Rutherford Appleton Laboratory (RAL), Oxfordshire, UK. These results are product of XX collaborative effort and would not have been possible without the support of laser scientists, engineers etc. contributions of many.
 The analysis was conducted by the author unless acknowledged or indicated otherwise.
 
-The specific role of the author and contributions of other researches in the context of the experimental campaigns of which the results are presented in the Chapters were as follows:
+The specific role of the author and contributions of other researchers in the context of the experimental campaigns of which the results are presented in the Chapters were as follows:
 \begin{itemize}
 \item Chapter \ref{Chap:linICS}: The author lead the planning and coordination of the project from the approval of the proposal to its execution. On the experiment, the author was the Target Area Operator (TAO) together with Matthew Streeter and Brendan Kettle, overseeing XX commissioning XX implementing XX. After the experiment the author coordinated the distribution of the data sets. Cary Colgan set up the transverse probe and analysed the interferometry data.
 

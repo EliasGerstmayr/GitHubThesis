@@ -12,11 +12,14 @@ Then, radiation production from electrons in different scenarios is discussed, s
 This leads over to the topic of radiation reaction, the knock-back force a particle experiences when emitting a photon. One suitable tool to investigate radiation reaction is relativistic inverse Compton scattering.
 
 Finally, other fundamental high-field processes as pair production from different mechanisms and future research topics are discussed.
+
+\EliasComm{Once full structure is clear, revise this.}
+
 \newpage
 
 \section{Single particle motion in an EM field}
 
-The Lagrangian for a relativistic particle in an electromagnetic field with the potentials $\Phi$ and $\mathbf{A}$ is given by (REF)
+The Lagrangian for a relativistic particle in an electromagnetic field with the potentials $\Phi$ and $\mathbf{A}$ is given by \addref (REF)
 
 \begin{equation}
 L(\mathbf{r},\mathbf{v},t) = - mc^2 \gamma^{-1}+q \mathbf{v}\cdot\mathbf{A} - q \Phi,
@@ -77,7 +80,7 @@ Consider the motion of a single electron in a homogeneous magnetic field extendi
 \end{subequations}
 in terms of the relativistic momentum $\mathbf{p} = \gamma m \mathbf{v}$
 
-Note that in this case the purely magnetic Lorentz force does not do any work. The instantaneous rate of work (power) is $P = \mathbf{F} \cdot \mathbf{v}$, where the force $\mathbf{F}$ is through virtue of the cross product always orthogonal to $\mathbf{v}$ and the dot product vanishes.
+Note that in this case the purely magnetic Lorentz force does not do any work. The instantaneous rate of work (power) is $P = \mathbf{F} \cdot \mathbf{v}$, where the force $\mathbf{F}$ is by virtue of the cross product always orthogonal to $\mathbf{v}$ and the dot product vanishes.
 
 We choose the coordinate system such that $\mathbf{B} = (0,0,B)^t = B e_z$. The momentum vector is simply $\mathbf{p} = (p_x,p_y,p_z)^t$.
 This then gives us the differential equations:
@@ -147,7 +150,7 @@ With this result the EoM becomes
 \frac{\partial}{\partial t}\mathbf{u} +(\nabla\mathbf{p})\cdot\mathbf{v} - \mathbf{v}\times\left(\nabla\times\mathbf{u}\right) &= - q\nabla \Phi,
 \label{Theory:Eqns:EoMLaserAT}
 \end{align}
-where in the last step we introduced the canonical momentum $\mathbf{u} = \mathbf{p} + q\mathbf{A}$.
+where we introduced in the last step the canonical momentum $\mathbf{u} = \mathbf{p} + q\mathbf{A}$.
 
 We can express $(\nabla\mathbf{p})\cdot \mathbf{v}$ as follows
 \begin{equation}
@@ -165,7 +168,7 @@ Taking the curl of this equation results in:
 \begin{equation}
 \frac{\partial}{\partial t}\nabla\times\mathbf{u} = \nabla\times\left[\mathbf{v}\times\left(\nabla\times\mathbf{u}\right)\right],
 \end{equation}
-where the second term disappeared as the curl of a gradient is always zero.
+where the second term disappeared as the curl of a gradient is always zero (REF)\addref.
 
 This equation shows that if $\nabla \times \mathbf{u}$ is zero initially, it will remain so always. The condition is satisfied, for instance, for a plasma at rest before the laser pulse arrives.
 
@@ -288,7 +291,7 @@ L(\mathbf{r},\mathbf{v},t) = - m_e c^2 \gamma^{-1} - q \Phi,
 \end{equation}
 where $\Phi$ is the scalar potential describing the electrostatic field of the channel.
 
-The scalar potential is the solution matching the radially/cylindrically symmetric Poisson equation
+The scalar potential is the solution matching the radial Poisson equation in cylindrical symmetry
 
 \begin{equation}
 \frac{1}{r} \frac{\partial}{\partial r} \left(r \frac{\partial \phi}{\partial r}\right) = \frac{- e (n_0 - n_e)}{\epsilon_0},
@@ -300,17 +303,17 @@ with the solution
 \end{equation}
 where $n_0$ is the ion charge density and $n_e$ the electron density in the channel. 
 
-In the extreme case of a completely evacuated channel, $n_e \rightarrow 0$, $\phi = -n_0 er^2/(4\epsilon_0)$.
+In the limit of a completely evacuated channel, $n_e \rightarrow 0$, $\phi = -n_0 er^2/(4\epsilon_0)$.
 
 As before $\mathbf{E} = - \nabla \phi$ and in this case $E_r = - \partial_r \phi$.
 
 The equation of motion for the radial component is then
 
 \begin{equation}
-\frac{d}{dt} \mathbf{p} = - \frac{e^2 n_0}{2 \epsilon_0} r.
+\frac{d}{dt} \mathbf{p} = - \frac{e^2 n_0}{2 \epsilon_0} r,
 \end{equation}
-
-Assume there is no axial acceleration field, the radial component of the velocity is small compared to $c$ and the longitudinal component is close to $c$: $\dot{\gamma}$ is then close to zero. $\mathbf{p} = \gamma m_e \mathbf{\dot{r}}$
+with $\mathbf{p} = \gamma m_e \mathbf{\dot{r}}$.
+Assume there is no axial acceleration field, the radial component of the velocity is small compared to $c$ and the longitudinal component is close to $c$: $\dot{\gamma}$ is then close to zero. 
 
 The equation then takes the shape of a harmonic oscillator
 
@@ -318,7 +321,7 @@ The equation then takes the shape of a harmonic oscillator
 \ddot{r} = - \frac{e^2 n_0}{2\epsilon_0 m_e \gamma} r = - \omega_\beta^2 r,
 \end{equation}
 
-with a frequency we will call the betatron frequency, $\omega_\beta$, which is related to the plasma frequency, $\omega_p$, by $\omega_\beta = \omega_p/\sqrt{2\gamma}$. The plasma frequency will be derived in a later section.
+with a frequency we will call the betatron frequency, $\omega_\beta$, which is related to the plasma frequency, $\omega_p$, by $\omega_\beta = \omega_p/\sqrt{2\gamma}$. The plasma frequency will be derived in a later section\addlink.
 
 As this is the standard harmonic oscillator equation, it follows a solution of shape
 
@@ -327,12 +330,12 @@ r(t) = A \cos (\omega_\beta t + \varphi),
 \end{equation}
 and with initial conditions $r(t=0) = r_\beta$ and $\dot{r}(t=0) = 0$, we obtain
 \begin{equation}
-r(t) = r_\beta \cos(\omega\beta t),
+r(t) = r_\beta \cos(\omega_\beta t),
 \end{equation}
 where $r_\beta$ is the amplitude of the oscillation, also referred to as the betatron radius.
 \vspace{\baselineskip}
 
-If we continue with the assumption $\dot{\gamma} = 0$, this requires $\beta^2 = \beta^2_r + \beta^2_z = const.$. This gives us $\beta_z = \sqrt{\beta^2 - \beta^2_r} \approx \beta (1-\beta^2/2)$, where we used a Taylor expansion and $\beta \approx 1$. If we use the solution for $r(t)$ derived above and $\beta_r = \dot{r}/c$ and $\sin^2 x = (1-\cos 2\theta)/2$, we obtain:
+If we continue with the assumption $\dot{\gamma} = 0$, this requires $\beta^2 = \beta^2_r + \beta^2_z = const.$. This gives us $\beta_z = \sqrt{\beta^2 - \beta^2_r} \approx \beta (1-\beta^2/2)$, where we used a Taylor expansion and $\beta \approx 1$. If we use the solution for $r(t)$ derived above, $\beta_r = \dot{r}/c$ and $\sin^2 x = (1-\cos 2\theta)/2$, we obtain:
 \begin{equation}
 \beta_z \approx \beta \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right) + \beta \frac{r^2_\beta \omega^2_\beta}{4c^2} \cos (2 \omega_\beta t).
 \end{equation}
@@ -348,7 +351,7 @@ where we identify the drift velocity $\beta c \left(1-\frac{r^2_\beta \omega^2_\
 
 \subsection{Electron in a cylindrically symmetric electric field with axial field}
 
-Now we add will add a constant axial field in the longitudinal (direction of electron propagation) to the previous case. This comes closer to the reality of a laser wakefield accelerator where electrons experience focusing and accelerating fields at the same time. Significant parts of this derivation are again based on Jonathan Wood's PhD thesis \cite{WoodThesis}.
+Now we add will add a constant axial field in the longitudinal (direction of electron propagation) to the previous case. This comes closer to the reality of a laser wakefield accelerator where electrons experience radial focusing and axial accelerating fields at the same time. Significant parts of this derivation are again based on Jonathan Wood's PhD thesis \cite{WoodThesis}.
 
 The electric field component shall now be $E_z$, with $z$ being the longitudinal axis.
 This gives us the extra term $\frac{\partial \phi}{\partial z} = - E_z$.
@@ -374,7 +377,7 @@ The radial component is then
 \dot{\gamma}m_e \dot{r} + \gamma m_e \ddot{r} = - \frac{e^2 n_0}{2 \epsilon_0} r.
 \end{equation}
 
-The axial component is equal to a constant so we can simply integrate
+The axial component is equal to a constant, so we can simply integrate
 \begin{equation}
 \gamma m_e \dot{z} = - e E_z t + const.
 \end{equation}
@@ -391,7 +394,7 @@ where $\gamma_0 \beta_0$ are the initial conditions.
 \begin{figure}
 \centering
 \includegraphics[width=.8\columnwidth]{betatron_traj.pdf}
-\caption[Particle trajectory of an electron in a cylindrically symmetric electric field with a constant axial accelerating field.]{Particle trajectory of an electron in a cylindrically symmetric electric field with a constant axial accelerating field as described in Equation \eqref{Theory:Eqs:EoM_Betatron} as a function of propagation distance.}
+\caption[Particle trajectory of an electron in a cylindrically symmetric electric field with a constant axial accelerating field.]{Particle trajectory of an electron in a cylindrically symmetric electric field with a constant axial accelerating field as described in Equation \eqref{Theory:Eqs:EoM_Betatron} as a function of propagation distance. \EliasComm{Give density used, add second density and add second x-axis for time.}}
 \label{Theory:Figs:BetatronMotion}
 \end{figure}
 
@@ -406,7 +409,7 @@ which we can write as
 \end{equation}
 by using the abbreviations $A = eE_z$, $B = \gamma_0 \beta_0 m_e c$ and $C = e^2 n_0 c/2\epsilon_0$.
 
-The solution of this is then (REF ESAREY 2002?):
+The solution of this is then (REF ESAREY 2002?\addref):
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
 r(t) = \frac{\pi \sqrt{CB}}{A} r_{\beta 0} \Biggl[ &J_1 \left( 2 \sqrt{CB}/A \right) Y_0 \left(2 \sqrt{C (B+At)}/A\right) \\  \nonumber
@@ -416,14 +419,15 @@ r(t) = \frac{\pi \sqrt{CB}}{A} r_{\beta 0} \Biggl[ &J_1 \left( 2 \sqrt{CB}/A \ri
 \end{subequations}
 with the initial conditions $r(t=0) = r_{\beta 0}$ and $\dot{r}(t=0) = 0$, and BESSEL FUNCTION EXPLANATION.
 This is motion is shown in Figure \ref{Theory:Figs:BetatronMotion}. We see that the oscillations quickly lose amplitude and fall to a settled value, whereas the wavelength of the oscillations increases as the electron gains momentum and inertia.
+\EliasComm{Explanation why we require Bessel functions?}
 
 \subsection{Ponderomotive Force}
 
-In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates through an underdense plasma, expels electrons in its way and drives a wave. The driving force is the so-called ponderomotive force which is proportional to the gradient of the laser intensity. 
+In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates through an underdense plasma, expels electrons in its way and drives a wave\addref. The driving force is the so-called ponderomotive force which is proportional to the gradient of the laser intensity. 
 
 The following relativistic derivation of the ponderomotive force is based on Alec Thomas' PhD thesis \cite{ThomasThesis}.
-
-We start with the Euler-Lagrange equations after inserting the Lagrangian in terms of the potentials $\mathbf{A}$ and $\Phi$ as given as intermediate step in equation \eqref{Theory:Eqns:EoMLorentzRaw} on page \pageref{Theory:Eqns:EoMLorentzRaw}:
+\EliasComm{Would it be more appropriate to write Alexander?}
+We start with the Euler-Lagrange equations after inserting the Lagrangian in terms of the potentials $\mathbf{A}$ and $\Phi$ as given as intermediate step in Equation \eqref{Theory:Eqns:EoMLorentzRaw} on page \pageref{Theory:Eqns:EoMLorentzRaw}:
 
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t} \left[\mathbf{p}+q\mathbf{A}\right]-\left[q\nabla\left( \mathbf{A} \cdot \mathbf{v}\right) - q\nabla \Phi \right] = 0.
@@ -455,9 +459,9 @@ When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear 
 \begin{equation}
 \boxed{\left\langle\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u}\right\rangle \sim -\left\langle\frac{1}{\gamma}c\nabla\frac{\mathbf{a}^2}{2}\right\rangle,}
 \end{equation}
-which is the ponderomotive force $\mathbf{F}_p$ on on a single electron. Since $\mathbf{F}_p \sim \nabla \left\langle\mathbf{a}^2\right\rangle$, this implies $\mathbf{F}_p \sim \nabla \left\langle I\right\rangle$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
+which is the ponderomotive force $\mathbf{F}_p$ acting on a single electron. Since $\mathbf{F}_p \sim \nabla \left\langle\mathbf{a}^2\right\rangle$, this implies $\mathbf{F}_p \sim \nabla \left\langle I\right\rangle$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
 
-On the other hand, the ponderomotive force is suppressed for ultrarelativistic particles as $1/\gamma \ll 1$ as considered in relativistic inverse Compton scattering geometries as used in studies of radiation reaction (see Chapter \ref{Chap:RR15} and \cite{Cole2018_RR,Poder2018_RR,Burke1997_RR,Bula1996_RR}).
+On the other hand, the ponderomotive force is suppressed for ultrarelativistic particles as $1/\gamma \ll 1$ as considered in relativistic inverse Compton scattering geometries as used in studies of radiation reaction (see Chapters \ref{Chap:LinICS}, \ref{Chap:RR15} and \cite{Cole2018_RR,Poder2018_RR,Burke1997_RR,Bula1996_RR}).
 
 \iffalse
 As the force is essential for the understanding of LWFA it will be derived in the following.
@@ -604,7 +608,7 @@ $N^{6+} \rightarrow N^{7+} $ & $667.0$ & $1.6 \times 10^{19}$
 
 \subsection{Plasma Frequency}
 
-The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced (REF KRUER OR SO). It constitutes the typical time scale and the corresponding plasma wavelength $\lambda_p$ the typical length scale of the medium.
+The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced (REF KRUER OR SO\addref). It constitutes the typical time scale and the corresponding plasma wavelength $\lambda_p$ the typical length scale of the medium.
 \vspace{\baselineskip}
 
 Assume a uniform and neutral plasma, i.e. $n_e = Z n_i = n_{e0}$, where $n_e$ is the electron number density, $Z$ the charge number of the ions, $n_i$ the ion number density, and the initial electric field be $\mathbf{E} = \mathbf{0}$.
@@ -641,7 +645,7 @@ and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
 \caption{Plasma frequency (blue) and wavelength (red) as function of plasma density.}
 \end{figure}
 
-A typical regime wakefield accelerators in the context of this work operate in is at an electron density of around $10^{18}-10^{19}\,\mathrm{cm^{-3}}$. This corresponds to a plasma frequency of $(5.6 - 17.7) \times 10^{13} \,\mathrm{Hz}$ or a plasma wavelength of $\lambda_p \approx 33-10\,\mathrm{\mu m}$.
+A typical regime wakefield accelerator in the context of this work operates at an electron density of around $10^{18}-10^{19}\,\mathrm{cm^{-3}}$. This corresponds to a plasma frequency of $(5.6 - 17.7) \times 10^{13} \,\mathrm{Hz}$ or a plasma wavelength of $\lambda_p \approx 33-10\,\mathrm{\mu m}$.
 
 \subsection{Laser Propagation in Vacuum}
 
@@ -668,7 +672,7 @@ For an in x-direction linearly-polarised electric field moving in $z$ the soluti
 \begin{equation}
 \mathbf{E}(r,z,t) = E_0 \frac{w_0}{w(z)} \exp\left(-\frac{r^2}{w(z)^2}\right) \exp\left[-i(kz-\omega t)-i k\frac{r^2}{2 R(z)} + i \zeta (z)\right]\mathbf{\hat{x}}.
 \end{equation}
-This family of solutions is referred to as Gaussian modes and the physical properties of the beam are captured in the different parameters of the wave function. The function $\mathbf{E}$ describes a beam converging from $z < 0$ at a size $w(z)$ onto a minimum at $z = 0$ achieving the highest energy field strengths before diverging again for $z > 0$.
+This family of solutions is referred to as Gaussian modes and the physical properties of the beam are captured in the different parameters of the wave function. The function $\mathbf{E}$ describes a beam converging from $z < 0$ at a size $w(z)$ onto a minimum at $z = 0$ achieving the highest field strengths before diverging again for $z > 0$.
 \vspace{\baselineskip}
 
 $w(z)$ is the waist size of the Gaussian beam at position $z$ and indicates the transverse size of the beam when the intensity drops to $1/e^2$ of its maximum:
@@ -685,7 +689,7 @@ Assuming the beam is a Gaussian in both time and space the intensity at the foca
 \begin{equation}
 I(r,t) = I_0 \exp\left( -\frac{2 r^2}{w^2_0}\right) \exp\left(-\frac{2 t^2}{\tau^2}\right).
 \end{equation}
-
+\EliasComm{Maybe explicitly say how intensity is calculated.}
 The intensity is commonly expressed in terms of the normalised vector potential $a_0$
 
 \begin{equation}
@@ -703,9 +707,9 @@ $\zeta$ is called the Guoy phase and is an additional phase term that changes si
 When focusing a beam with an optic, for instance an off-axis parabola or spherical mirror, the ratio of the focal length $f$ and the beam diameter $d$ is a useful quantity as it indicates how tightly a beam is focussed. It is called the f-number $f_\# = f/d$ and is in shorthand typically written as $f/2$ for $f_\# = 2$, $f/40$ for $f_\# = 40$ and so on.
 Expressing some of the previous quantities in terms of the f-number 
 \begin{equation}
-w_0 = \frac{2 \sqrt{2}}{\pi} \lambda f_\# \approx 0.9 \lambda f_\#
+w_0 = \frac{2 \sqrt{2}}{\pi} \lambda f_\# \approx 0.9 \lambda f_\#,
 \end{equation}
-and the distance over which laser stays intense
+and the distance over which a laser pulse remains intense
 \begin{equation}
 z_R = \frac{\pi w^2_0}{\lambda} \approx 2.5 \lambda f^2_\#.
 \end{equation}
@@ -738,7 +742,7 @@ v_g &= \frac{\partial\omega}{\partial k} \approx c \left(1 - \frac{1}{2}\frac{\o
 \begin{figure}
 \centering
 \includegraphics[width= 0.5\columnwidth ]{GroupVelocity_density.pdf}\includegraphics[width=0.5\columnwidth]{critical_density.pdf}
-\caption[Group velocity at different densities and critical densities for different laser wavelengths.]{Left: Group velocity at different densities for photons of wavelength $\lambda = 0.8\,\mathrm{mu}$ (blue) and $10\,\mathrm{\mu}$ (orange) in units of the vacuum speed of light (indicated in green). The red dotted line shows the density at which the group velocity reaches zero, called the critical density. Right: Critical density for wavelengths up to $2 \mu m$ (blue). The critical density corresponding to a central wavelength of $0.8 \mu m$, as for the commonly used titanium-doped sapphire (Ti:Sa) lasers, is marked in red on the graph. The region above the critical density (blue line) is called overdense, below underdense.}
+\caption[Group velocity at different densities and critical densities for different laser wavelengths.]{Left: Group velocity at different densities for photons of wavelength $\lambda = 0.8\,\mathrm{\mu}$ (blue) and $10\,\mathrm{\mu}$ (orange) in units of the vacuum speed of light (indicated in green). The red dotted line shows the density at which the group velocity reaches zero, called the critical density. Right: Critical density for wavelengths up to $2 \mu m$ (blue). The critical density corresponding to a central wavelength of $0.8 \mu m$, as for the commonly used titanium-doped sapphire (Ti:Sa) lasers, is marked in red on the graph. The region above the critical density (blue line) is called overdense, below underdense.}
 \end{figure}
 
 The group velocity reaches zero for $\omega_p = \omega$, where $\omega_p$ is the plasma frequency, derived in the previous section and given by $\omega_p = (n_e e^2/\epsilon_0 m_e)^{1/2}$. Solving this for the density, we obtain a relation for the critical density:
@@ -766,9 +770,9 @@ where $\gamma_\perp = 1 + \frac{1}{2}a^2_0$.
 
 Taking into consideration local modifications of the plasma density, laser frequency and laser intensity
 \begin{align}
-n &= n_0 + \frac{\delta n}{n_0} n_0\\
-\omega_L &= \omega_0 + \frac{\delta \omega_L}{\omega_0} \omega_0\\
-\left\langle \gamma \right\rangle &= 1+ \frac{a^2_0}{4}
+n &= n_0 + \frac{\delta n}{n_0} n_0,\\
+\omega_L &= \omega_0 + \frac{\delta \omega_L}{\omega_0} \omega_0,\\
+\left\langle \gamma \right\rangle &= 1+ \frac{a^2_0}{4},
 \end{align}
 
 the nonlinear refractive index then becomes
@@ -877,10 +881,12 @@ Experimental evidence \cite{Murphy2006_PHOTONACC}
 
 As diagnostic for the wakefield dynamics \cite{Dias1998_PHOTONACC}
 
+\EliasComm{Need to write this out.}
+
 \section{Laser Wakefield Acceleration}
 
 
-In laser wakefield acceleration (LWFA) a short (10`s fs) and intense laser pulse (NUMBER) travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way using the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake with strong longitudinal accelerating fields. This is commonly referred to as the non-linear regime or also the `bubble' regime, where particles can be trapped and accelerated to relativistic energies. The `bubble' regime and the acceleration of quasi-monoenergetic electrons at $100s$ of $\mathrm{MeV} $ have first been reported in 2004 \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}. By now maximum electron energies via LWFA have reached the multi-GeV level in one \cite{Leemans2006_GEV,Leemans2014_GEV} or two stages \cite{Steinke2016_STAGING,Kim2013_GEV}.
+In laser wakefield acceleration (LWFA) a short (10`s fs) and intense laser pulse (NUMBER\addnum) travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way using the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake with strong longitudinal accelerating fields. This is commonly referred to as the non-linear regime or also the `bubble' regime, where particles can be trapped and accelerated to relativistic energies. The `bubble' regime and the acceleration of quasi-monoenergetic electrons at $100s$ of $\mathrm{MeV} $ have first been reported in 2004 \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}. By now maximum electron energies via LWFA have reached the multi-GeV level in one \cite{Leemans2006_GEV,Leemans2014_GEV}\addref or two stages \cite{Steinke2016_STAGING,Kim2013_GEV}.
 
 A good and comprehensive overview on this topic explaining the fundamental physics is given in \cite{Esarey2009_LPA_Review}, a more recent overview on the progress and status of experiments in the laser wakefield community can be found in \cite{Mangles2016_LPA_Review}.
 
@@ -893,6 +899,8 @@ A good and comprehensive overview on this topic explaining the fundamental physi
 \caption{Visualisation of the laser wakefield acceleration (LWFA) scheme\protect\footnotemark using simulation data. The high-intensity laser pulse (red) travels at almost the speed of light through the plasma (blue), displacing the electrons in its way and driving a wave. The displaced electrons stream back in the wake of the pulse (white arrow) due to the Coulomb attraction. The area of low electron density and the high density regions (green) form strong accelerating fields (orange-red) in the longitudinal direction. THIS IS JASON's PLOT, REPLACE BY OWN PLOT, EG PIC VISUALISATION?}
 \end{figure}
 
+\missingfigure[figwidth=6cm]{LWFA Visualisation}
+
 \footnotetext{Image taken from Jason Cole's PhD thesis \cite{ColeThesis}.}
 
 
@@ -901,6 +909,7 @@ Depletion and Dephasing.
 
 \subsection{Wavebreaking}
 
+\EliasComm{Needs writing out.}
 Electron trajectories cross and wave becomes incoherent.
 
 The maximum electric field that can be sustained by a plasma 
@@ -911,9 +920,9 @@ E_0(V/m) = 96 \sqrt{n_0 (cm^-3)}
 
 This is referred to as the cold non-relativistic wave breaking limit.
 
-(REF DAWSON)
+(REF DAWSON)\addref
 
-(REF ESAREY REV MOD 2009)
+(REF ESAREY REV MOD 2009)\addref
 Nonlinear plasma waves can exceed this value. The 1D relativistic, non-linear maximum field sustained by a periodic plasma wave is then given by
 
 \begin{equation}
@@ -922,7 +931,7 @@ E_{WB} = \sqrt{2(\gamma_p -1)} E_0,
 where in the 1D low-intensity limit $\gamma_p \approx \omega/\omega_p$.
 
 \subsection{Bubble regime}
-
+\EliasComm{Needs writing out.}
 A short and relativistic laser pulse fully expels the electrons in its way. The pure ion cavity left behind is approximately a spherical `bubble' of radius
 \begin{equation}
 \boxed{R_b = 2 \sqrt{a_0} \frac{c}{\omega_p}.}
@@ -953,7 +962,7 @@ In order to trap electrons from the ambient plasma in the bubble of the wakefiel
 \frac{c \sqrt{\ln (2\gamma^2_{ph}-1)}}{\omega_p r_b} <= \frac{1}{2},
 \end{equation}
 where $\gamma_{ph} = \omega/\omega_p$
-
+\EliasComm{Needs writing out.}
 \cite{Mangles2012_SELF}
 \begin{equation}
 \frac{\alpha P}{P_c} > \frac{1}{16} \left[\ln\left(\frac{2n_c}{3n_e}\right) - 1 \right]^3,
@@ -969,21 +978,22 @@ As the laser pulse propagates through the plasma it slowly loses energy through 
 v_{etch} = \frac{\omega^2_p}{\omega^2_0} c.
 \end{equation}
 
-The wakefield phase velocity or front velocity $v_f$ is then given by the group velocity reduced by the etch velocity $v_{etch}$ 
+The wakefield phase velocity or front velocity, $v_f$, is then given by the group velocity reduced by the etch velocity, $v_{etch}$,
 
 \begin{equation}
-v_f = v_g - v_{etch} \approx c \left( 1-\frac{3}{2}\frac{\omega^2_p}{\omega^2}\right).
+\boxed{v_f = v_g - v_{etch} \approx c \left( 1-\frac{3}{2}\frac{\omega^2_p}{\omega^2}\right).}
 \end{equation}
 
 After a certain distance, the pump-depletion length $L_{pd}$, the pulse is not intense enough any more to drive a stable wave with sufficient field gradients - the cavity collapses. The depletion length in the 3D bubble regime is given by \cite{Lu2007_3DWAKE}
 \begin{equation}
-\boxed{L_{pd} = \frac{\omega^2}{\omega^2_p}\frac{\omega_p}{k_p}\tau}
+\boxed{L_{pd} = \frac{\omega^2}{\omega^2_p}\frac{\omega_p}{k_p}\tau.}
 \end{equation}
 
-Higher densities lead to faster etching away of the pulse, whilst reducing the plasma density allows sustaining the accelerating structure over longer distances.
+Higher electron densities lead to faster etching away of the pulse, whilst reducing the density allows sustaining the accelerating structure over longer distances.
+
 \subsection{Dephasing}
 
-In the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma medium at a group velocity smaller than $c$. The electrons slowly catch up with the driver and leave the accelerating phase of the cavity, hence called dephasing.
+In the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma medium at a group velocity smaller than $c$. As a result the electrons slowly catch up with the driver and leave the accelerating phase of the cavity, hence called dephasing.
 
 The relativistic electrons are moving close to the speed of light ($\beta_e \rightarrow 1$) whilst the plasma wave moves at a velocity $\beta_p$:
 \begin{equation}
@@ -1032,21 +1042,23 @@ Combining our knowledge of the electric field, which increases with density, and
 \boxed{W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.}
 \end{equation}
 
-This gives the counter-intuitive result that one has to choose low plasma densities (corresponding to lower field gradients) to accelerate particles to higher energies. In addition, this means that one has to balance the between high charge (requiring high $n_e$) and high peak energy. To solve this dilemma and optimise charge and energy, a variety of injection mechanisms (internal \cite{Faure2006_STABLEJET,Geddes2008_STABLE,Pak2010_ION,Buck2013_SHOCK} and external \cite{Deng2019_TROJAN,Steinke2016_STAGING}) have been proposed. 
+This gives the counter-intuitive result that one has to choose low plasma densities (corresponding to lower field gradients) to accelerate particles to higher energies. In addition, this means that one has to balance between high beam charge (requiring high $n_e$) and high peak energy. To solve this dilemma and optimise charge and energy, a variety of injection mechanisms (internal \cite{Faure2006_STABLEJET,Geddes2008_STABLE,Pak2010_ION,Buck2013_SHOCK} and external \cite{Deng2019_TROJAN,Steinke2016_STAGING}) have been proposed. 
 
 
 \subsection{Injection Mechanisms and Accelerator Tailoring}
 
 In order to inject electrons of different quality a variety of techniques have been developed, some of which will be introduced in the following.
 The schemes are only examples and are found in a wide variety and frequently combined to optimise the output of the accelerator for the specific purpose.
-There is no single perfect injection scheme that fits every application but the requirements of the final electron beam the group aspires to guides the efforts to design the targetry to trigger injection in a fashion that would produce such a beam or radiation. Unwanted injection mechanisms are usually suppressed if necessary (REF).
+There is no single perfect injection scheme that fits every application but the requirements on the beam properties guide the target design and choice of injection mechanism. Unwanted injection mechanisms are usually suppressed if necessary (REF)\addref.
 
-In some cases a well defined beam of reproducible narrow energy spread is of importance (REF), in other situations a high charge beam producing copious amounts of radiation outweighs the requirements of energy spread or reproducibility (REF).
+In some cases a well defined beam of reproducible narrow energy spread is of importance (REF)\addref, in other situations a high charge beam producing copious amounts of radiation outweighs the requirements of energy spread or reproducibility (REF)\addref.
 
+\EliasComm{Is this very important or maybe move to Methods?}
 
 \subsubsection{Self-Injection}
 
 In linear 1D case this is wavebreaking.
+\EliasComm{Explain better.}
 
 In 3D in the non-linear regime particles can cross trajectories without wavebreaking (REF). If the electrons have a sufficient momentum component in the propagation direction of the electron fulfilling the trapping conditions they are picked up and accelerated. This is called self-injection as the evolution of the laser pulse and the bubble cause the injection.
 
@@ -1074,13 +1086,14 @@ In some cases smaller perturbations in the plasma might also result in something
 
 Opposite to downramp injection a positive density gradient will lead to a decrease in the size of the bubble. This is not suitable to capture electrons but it moves the centre of the cavity closer to the laser pulse and hence moves the accelerating phase. This can be used to rephase electrons and increase the length over which electrons are in an accelerating phase if they have reached dephasing at a lower density already (REF).
 
-Whilst the previous examples were longer ramps in gradients (REF) or small perturbation large changes in density (REF) will lead to a large change in the bubble size and hence can be used for injection \cite{Schmid2010_SHOCK}.
-Such a sharp density transition has been realised in experiment by several groups employing a blade (REF) or wire (REF) to perturb the gas flow of a supersonic gas jet and to create a shock. This is called shock injection.
-In experiments the right position and angle of such a shock front has shown to be able to produce high quality electron beams with low energy spread (REF) as the injection is localised (REF).
+Whilst the previous examples were longer ramps in gradients (REF)\addref or small perturbation large changes in density (REF)\addref will lead to a large change in the bubble size and hence can be used for injection \cite{Schmid2010_SHOCK}.
+Such a sharp density transition has been realised in experiment by several groups employing a blade (REF)\addref or wire (REF)\addref to perturb the gas flow of a supersonic gas jet and to create a shock. This is called shock injection.
+In experiments the right position and angle of such a shock front has shown to be able to produce high quality electron beams with low energy spread (REF)\addref as the injection is localised (REF)\addref.
 
 
 \subsubsection{Laser-assisted Injection}
 
+\EliasComm{Write out. Maybe move to Methods.}
 Instead of solely relying on the interaction of medium and laser, research efforts have explored the option of using a second laser to trigger injection or to modify the density profile.
 
 Plasma Torch \cite{Wittig2015_PLASMATORCH}: here an intense laser is passing the a plasma with high-Z dopant in transversal direction before the primary laser pulse. The additional ionisation based on the same principle as ionisation injection results in a density profile similar as in shock injection but does not rely on a physical shock and is tunable in space and time.
@@ -1092,21 +1105,22 @@ Colliding pulse \cite{Esarey1997_COLLIDINGPULSE}: a second laser counter-propaga
 
 \subsubsection{Injection of an external beam}
 
-A final example of injection mechanisms is providing an electron beam from a different source and coupling it into the cavity of an LWFA accelerator (REF). Whilst the other mechanisms make LWFA the source and accelerator of electrons, here the cavity is focused around accelerating and in some cases to modify the phase space of the given beam (REF). Electron sources could either be a conventional accelerator structure, for instance an RF-gun, or another LWFA stage.
+A final example of injection mechanisms is providing an electron beam from a different source and coupling it into the cavity of an LWFA accelerator (REF)\addref. Whilst the other mechanisms make LWFA the source and accelerator of electrons, here the cavity is focused around accelerating and in some cases to modify the phase space of the given beam (REF)\addref. Electron sources could either be a conventional accelerator structure, for instance an RF-gun, or another LWFA stage.
 
 The clear challenge of this ansatz is the spatio-temporal overlap required to successfully inject external electrons with LWFA-LWFA and Conventional-LWFA coupling coming with different challenges.
 
 \section{Radiation Production}
 
+\EliasComm{Change this intro.}
 Charged particles always then produce radiation when they are being accelerated.
 
 The classical relativistic description requires using retarded Lienard-Wiechert potentials to account appropriately for causality. The trajectories of the electrons were solved at the beginning of this chapter and have to then be integrated over to obtain the spectrum and power emitted.
 Classically this is being done using Fourier analysis.
-
+\EliasComm{Necessary?}
 The following sections will concern the radiation of an electron in an external magnetic field, constant or alternating, resulting in synchrotron radiation and undulator/wiggler radiation. This has close ties to betatron radiation which is stimulated by particles oscillating in an electrostatic field whilst accelerating in the transverse direction. Finally, the focus will lie on the interaction of electrons with atoms when generating bremsstrahlung or electrons in laser fields performing Compton scattering.
 
 LWFA is able to produce a wide range of radiation especially in the X-ray regime ranging from typical betatron radiation up to the tens of keV energy up to hard enhanced betatron in the 100s of keV to gamma radiation from bremsstrahlung and Compton scattering events leading to hundreds of MeV. it is not only able to cover a large bandwidth of energies but also manages to vary the character of the radiation emitted from broadband synchrotron-like radiation to sharply peaked harmonics.
-
+\EliasComm{Also THz radiation, transition radiation and so on. We are focusing on high-energy radiation.}
 Similarly as a wakefield cavity has analogies with conventional accelerator structures, radiation from conventional machines (synchrotrons, insertion devices) show similarities with wakefield and laser wigglers. The common denominator is the equation of motion and the character of the emitted radiation depending on the strength of the wiggler.
 
 A good overview over the topic is given by \cite{Albert2016_APP}.
@@ -1114,6 +1128,7 @@ A good overview over the topic is given by \cite{Albert2016_APP}.
 \subsection{Synchrotron Radiation}
 
 \EliasComm{Draw parallel (see Jackson on undulator equation) to figure of eight motion and hence ICS/Betatron/harmonics.}
+\EliasComm{Need to write this down coherently.}
 
 In a synchrotron a charged bunch is constantly redirected to remain on a circular orbit. This redirection is an acceleration and hence results in the emission of radiation.
 
@@ -1165,7 +1180,7 @@ Spectrum (angularly integrated)
 \end{equation}
 
 Equation for on- and off-axis synchrotron
-
+\EliasComm{There seems to be some doubling.}
 \begin{equation}
 \frac{d^2 I}{dEd\Omega} = \frac{3e^2}{16\pi^3 \hbar c \epsilon_0} \gamma^2 \frac{E^2}{E_c^2} (1+\gamma^2 \theta^2)^2 [K_{2/3}^2(\psi) + \frac{\gamma^2 \theta^2}{1+\gamma^2 \theta^2} K_{1/3}^2 (\psi)]
 \end{equation}
@@ -1175,14 +1190,14 @@ Equation for on- and off-axis synchrotron
 \end{equation}
 
 \subsection{Undulator and Wiggler Radiation}
-
+\EliasComm{Write down coherently.}
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{wiggler_offaxis.png}
 \caption{Synchrotron radiation.}
 \end{figure}
 
-To harvest and direct the radiation of an accelerated relativistic electron more efficiently a set of alternating magnets is used. The electron oscillates and emits radiation preferentially at the turning points as the acceleration is the strongest there and in a forwards-pointing cone with a diameter proportional to $1/\gamma$.
+To harvest and direct the radiation of an accelerated relativistic electron more efficiently a set of alternating magnets is used. The electron oscillates and emits radiation preferentially at the turning points as the acceleration is the strongest there and in a forwards-pointing cone with a diameter proportional to $1/\gamma$.\addref
 
 The rapid change of direction in the field and hence forced trajectory of the electron in transversal direction results in a change of effective Lorentz factor in the forward direction.
 
@@ -1190,7 +1205,7 @@ The rapid change of direction in the field and hence forced trajectory of the el
 \left\langle\gamma\right\rangle \approx \frac{\gamma}{\sqrt{1 + 0.5 K^2}}
 \end{equation}
 
-Commonly two regimes are identified based on the wiggler parameter:
+Commonly two regimes are identified based on the wiggler parameter:\addref
 
 \begin{equation}
 K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c}
@@ -1224,12 +1239,12 @@ For a wiggler this becomes:
 Just as the evacuated `bubble' in a wakefield accelerates particles in a similar way as conventional RF cavities would, the generation of X-rays draws another parallel in conventional devices.
 \vspace{\baselineskip}
 
-Due to initial transverse momentum on injection, and the focusing and defocusing fields of the cavity, electrons start to oscillate around the central axis. 
+Due to initial transverse momentum on injection, and the focusing and defocusing fields of the cavity, electrons start to oscillate around the central axis\addref. 
 The electrons oscillate at the so-called betatron frequency $\omega_\beta$
 \begin{equation}
 \omega_\beta = \omega_p / \sqrt{2 \gamma},
 \end{equation}
-which depends on the plasma frequency $\omega_p$ and the energy of the electrons here given by the relativistic Lorentz factor $\gamma$.
+which depends on the plasma frequency $\omega_p$ and the energy of the electrons, here given by the relativistic Lorentz factor $\gamma$.
 
 Similarly to electrons in an insertion device (undulator or wiggler) these oscillations lead to the emission of radiation in a narrow forward pointing cone due to the relativistic forward momentum of the particles.
 Not surprisingly, the equations describing both processes are very similar.
@@ -1244,19 +1259,22 @@ The radiation generated follows the on-axis synchrotron radiation with a critica
 \begin{equation}
 \boxed{E_c = \frac{3}{4} \hbar \gamma^2 \omega^2_p r_\beta / c,}
 \end{equation}
-where this energy parameter indicates when approximately half the energy radiated above and below this value.
+where this energy parameter indicates when approximately half the energy radiated above and below this value\addref.
+\EliasComm{Explain this better.}
 \vspace{\baselineskip}
 
-The oscillation of the particles and hence the emission of radiation can be enhanced in wakefield experiments by tailoring the wavefront \cite{Mangles2009_BETATRON} or by using different injection mechanisms.
+The oscillation of the particles and hence the emission of radiation can be enhanced in wakefield experiments by tailoring the wavefront \cite{Mangles2009_BETATRON} or by using different injection mechanisms\addref.
 In LWFA betatron radiation typically reaches the soft X-ray regime of a few to tens of keV.
+\EliasComm{Maybe show energy increase can be done by increasing energy, plasma frequency or betatron radius.}
 
 Difference here is that we use an quasi-electrostatic field instead of a magnetic field, but radiation from a synchrotron, an insertion device (wiggler) and betatron radiation share a common description rooted in the equation of motion (figure-of-eight motion) even though using different field structures and $K$ parameters.
 
 \EliasComm{Include some synchrotron equations}
-
+\EliasComm{Figure of eight motion?}
 
 \subsection{Bremsstrahlung}
 \EliasComm{See O. Pike thesis \cite{PikeThesis}.}
+\EliasComm{Write a coherent story: bremsstrahlung is produced when charged particles interact with nucleons and electrons in solid materials. Equations given XXX and XXX. Show total yield depends in certain limit for a fixed material on $E^2$.}
 \begin{equation}
 Z + e^- \longrightarrow Z + e^- + \gamma.
 \end{equation}
@@ -1295,12 +1313,12 @@ For $\hbar \omega \ll E$
 This means that for highly relativistic electron the emitted radiation is emitted in a narrow forwards-pointing cone. The energy of the emitted radiation is cut off at the energy of the electron.
 
 Bremsstrahlung from relativistic electrons are hence a decent source of broadband high energy gamma radiation.
-
+\missingfigure[figwidth=6cm]{Plot of spectrum.}
 \EliasComm{Add an explicit plot of the spectrum}
 \subsection{Compton Scattering}
-
+\EliasComm{Classical as in standard?}
 Classical Compton scattering describes the inelastic scattering of a photon off an electron which is at rest or close to it. Here the photon loses energy to the electron, hence this is called inelastic. In some conventions this interaction might still be referred to as elastic as energy is transferred into kinetic energy from one particle to another and is not dissipated in terms of heat or deformation. The fully elastic process in the low energy limit is Thomson scattering where the incoming photon does not lose any significant amount of energy in the process.
-
+\EliasComm{Thomson is classical limit of Compton.}
 The reaction can be written as follows:
 
 \begin{equation}
@@ -1313,6 +1331,8 @@ The reaction can be written as follows:
 \includegraphics[width=0.4\columnwidth]{Compton_Feyn1.pdf}\includegraphics[width=0.4\columnwidth]{Compton_Feyn2.pdf}
 \caption{Feynman diagrams for Compton scattering. Time axis from left to right. s- and u-channel.}
 \end{figure}
+
+\EliasComm{s- and u-channels maybe not good description.}
 
 \subsubsection{Kinematics}
 
@@ -1403,7 +1423,7 @@ The emission spectrum of Compton scattering at low photon energies is symmetric 
 \EliasComm{Add a low energy differential cross section and spectrum here.}
 
 \subsection{Linear Inverse Compton Scattering}
-
+\EliasComm{Write down coherently. Maybe just inverse Compton and then describe linear and non-linear case.}
 Laser wiggler. Electric field component, later on at high intensities the magnetic field becomes important as well.
 
 \begin{figure}
@@ -1452,6 +1472,7 @@ where $\alpha'$ is the difference between the incident and outgoing angle. As fo
 \caption{Boost and reference frames.}
 \end{figure}
 \EliasComm{Make own illustration of kinematics and boosted frame. (This is a screenshot from some slides, will make own illustration)}
+\missingfigure[figwidth=6cm]{Boosted inverse ICS.}
 
 \begin{equation}
 \cos \alpha' = \mathbf{n'_f} \cdot \mathbf{n'_i} = \cos \theta'_i \cos \theta'_f + \sin \theta'_i \sin \theta'_f \cos(\phi'_i - \phi'_f)
@@ -1472,9 +1493,9 @@ The photons are boosted by $(2\gamma)^2$ to an energy $E_{f,max} = 2 \gamma E'_f
 The calculation of the cross section follows the same scheme, relying on the quantum-corrected Klein-Nishina equation using the angles and energies in the electron rest frame. The angles corresponding to the cross sections and the solid angles, however, have to be transformed in a similar way.
 
 At $\gamma \gg 1$ we will assume that the collisions are always head-on, such that $\sigma' = \sigma$ and we need to only change the solid angle.
-Due to the relativistic boost the energy of the photons will look as if $2\gamma$ higher and we will be in the regime where the Klein-Nishina equation already indicates a headlight effect of the radiation being preferably emitted in forwards direction.
+Due to the relativistic boost the energy of the photons will look as if $2\gamma$ higher and we will be in the regime where the Klein-Nishina equation already indicates a headlight effect of the radiation being preferentially emitted in forwards direction.
 
-
+\EliasComm{Maybe combine bits.}
 
 \EliasComm{add plot for relativistic kinematics.}
 \EliasComm{at $a_0 < 1$ but close to 1 already higher harmonics etc., so not purely first order.}
@@ -1482,7 +1503,7 @@ Due to the relativistic boost the energy of the photons will look as if $2\gamma
 \subsection{Nonlinear Inverse Compton Scattering}
 
 In nonlinear ICS the $a_0$ of the laser pulse is larger than unity. On the microscopic level this allows for several photons to interact with one electron at a time resulting in higher harmonics being emitted. In a classical picture the electrons perform a figure-of-eight motion due to the intense laser pulse which gives rise to harmonics. This is another parallel to the description of electrons in insertion devices. Similarly as when moving from the undulator regime with distinct harmonics to the wiggler regime with large bandwidth, here also the $K$ parameter linked to $a_0$ increases and rapidly gives rise to hundreds of harmonics forming a smooth synchrotron-like radiation spectrum.
-
+\EliasComm{Maybe too fast here. References?}
 \begin{equation}
 n\gamma_L + e^- \longrightarrow \gamma + e^-.
 \end{equation}
@@ -1524,17 +1545,18 @@ The angular distribution of each component is distinct and symmetric, with odd h
 \includegraphics[width=.5\columnwidth]{ICS_Redshift.png}\includegraphics[width=.5\columnwidth]{ICS_Redshift2.png}
 \caption{Redshift of the fundamental harmonic.}
 \end{figure}
+\EliasComm{Red-shift etc. re-do and explain. Maybe move all of this to single-photon interactions or combine.}
 
 \EliasComm{make a plot for the spectrum and correct this spectrum to reflect the spectrum in the lab frame or make notable that this is in the rest frame. Maybe compare the two.}
 
-In the highly nonlinear regime $a_0 \gg 1$ the number of harmonics increases by a factor $a_0^3$ (REF ESAREY RIDE SPRANGLE PRE 1993) $n_c \approx 3 a^3_0/4$. At the same time each harmonic is spread out due to the longitudinal component which now dominates the electron motion.
+In the highly nonlinear regime $a_0 \gg 1$ the number of harmonics increases by a factor $a_0^3$ (REF ESAREY RIDE SPRANGLE PRE 1993)\addref $n_c \approx 3 a^3_0/4$. At the same time each harmonic is spread out due to the longitudinal component which now dominates the electron motion.
 
 The high number of harmonics (hundreds!) and the redshifting of each component transforms the spectrally very peaked spectrum to a broadband source resembling a synchrotron spectrum.
 
 This means to reach higher photon energies a more intense laser is not necessarily the best option as the redshifting appears rapidly along with the harmonics. A more energetic electron provides a redshift-free upshift. If one wants a close to monoenergetic spectrum on top of that linear Compton scattering in the limit $a_0 \rightarrow 0$ is more suitable.
 
 \subsubsection{Cross-Section}
-
+\EliasComm{Write down Coherently..}
 Volkov state, Furry picture, dressed states.
 
 Infinite series of diagrams in this set.
@@ -1576,6 +1598,7 @@ Deviations from a head-on collision have to be considered and also introduce a s
 
 \section{Radiation Reaction}
 
+
 The previous sections left out the effect of radiation losses onto the equation of motion of charged particles.
 Charged particles emit radiation when being accelerated. The charged particle emitting the radiation loses the energy associated with the photon and is knocked back, adhering to momentum and energy conservation rules. This is called radiation reaction (RR) or radiation friction.
 Radiation reaction is a very fundamental problem of physics, but surprisingly a universally accepted description does not exist thus far (REF). Each description only exists in a certain limit and is an approximation valid within those limits, but breaks down in extreme conditions (REF). High field QED is a suitable environment to test the limits of these models (REF).
@@ -1586,6 +1609,8 @@ Whilst the emission of radiation is ubiquitous, in many cases radiation losses a
 Radiation reaction effects become more significant in extreme conditions where ultra-relativistic particles interact with light: in astrophysical phenomena relativistic particle jets of GeV, TeV or PeV level are frequently observed. Interacting with the ubiquitous CMB inverse Compton scattering provides a high energy background radiation (REF).
 These conditions are re-constructed in laser and accelerator facilities interacting ultra-relativistic particles with laser pulses. Radiation reaction was measured, for instance, at SLAC \cite{Bula1996_RR,Burke1997_RR}, and at the LHC \cite{Wistisen2018_RR} and first measurements have been undertaken at non-conventional accelerators such as the Astra-Gemini laser system at the Central Laser Facility in the UK \cite{Cole2018_RR,Poder2018_RR}. This work is part of this thesis (see Chapter \ref{Chap:RR15}, \nameref{Chap:RR15}).
 \vspace{\baselineskip}
+
+\EliasComm{Maybe re-think the structure: energy loss is fundamental but not important for equation of motion. If it becomes significant we consider the radiation reaction force. Especially in multi-photon interactions important. Important in astrophysics and also future accelerators.}
 
 In this section a selection of radiation reaction models are motivated and introduced. Since this is a fundamental problem a variety of different approaches have been tried, but the author will restrict this section to the most commonly discussed models which are also relevant to this work.
 
@@ -1636,13 +1661,15 @@ The relativistic generalisation was found by Dirac renormalising in 4-space. The
 
 \EliasComm{Despite the runaway solution: if one ignores this solution tree, are the predictions feasible?}
 
+\EliasComm{Explicitly write out LAD.}
+
 \subsection{Classical Landau-Lifschitz (LL) Description}
 
-A first self-consistent solution to including radiation reaction into a classical model was achieved by Landau and Lifschitz (REF).
+A first self-consistent solution to including radiation reaction into a classical model was achieved by Landau and Lifschitz (REF)\addref.
 LL solution is a perturbation and means the radiation reaction force has to be small compared to the Lorentz force and a suitable frame of reference has to be found to make this valid. In some cases energy conservation might be violated in an abruptly changing EM field.
 
 Problems: energy loss can exceed initial energy. Stochasticity not included.
-
+\EliasComm{Write out coherently}
 In EM four vector form \cite{Bulanov2011_LADLL}:
 
 \begin{equation}
@@ -1661,6 +1688,7 @@ This is an effective model and the violation of energy conservation is possible.
 
 \subsection{Quantum picture and corrections}
 \EliasComm{Furry picture, treating the laser field as classical external field.}
+\EliasComm{Multi-photon not equal to multi-photon.}
 
 Alec says that quantum radiation reaction is the overall recoil experienced by an electron undergoing multiple simultaneous incoherent photon emission events.
 
@@ -1709,12 +1737,14 @@ Cooling of spectra versus competing processes.
 
 \subsection{Measuring radiation reaction}
 
+\EliasComm{Maybe not in too much detail as this is more Methods than Theory. Maybe need high fields and high energies, either accelerator (conventional or plasma) and laser or high fields in crystal lattices.}
+
 Inverse Compton Scattering \cite{Cole2018_RR,Poder2018_RR}
 
 Planar channeling in crystals \cite{Wistisen2018_RR}
 
 \section{Pair Production and Annihilation}
-
+\EliasComm{Change intro, not questions. Proposed by Dirac.}
 Pairs are easily annihilated in radioactive substances for low energy positrons cancelling out with ambient electrons.
 At higher energies the cross section decreases.
 Add the relation from O. Pike's thesis \cite{PikeThesis} ($\sigma \sim 2 \beta^2 \sigma$ relating annihilation and pair production?
@@ -1805,8 +1835,10 @@ Many photons interacting with one to generate pairs.
 
 Schwinger pair production: The external electric field is so strong that virtual electron-positron pairs can be accelerated to relativistic energies within a Compton wavelength and made real.
 
-\section{A side note: Other High-field phenomena}
+\EliasComm{Difficult to reach fields, but in the rest frame of a relativistic electron.}
 
+\section{A side note: Other High-field phenomena}
+\EliasComm{Better intro, say other phenomena can also be reached with these facilities.}
 High-field QED is an exciting area of research. Where there is an extremely intense laser pulse exciting physics happens: light becomes matter, the vacuum interacts with the laser and the vacuum gives birth to matter.
 
 \subsection{Photon-Photon scattering}
