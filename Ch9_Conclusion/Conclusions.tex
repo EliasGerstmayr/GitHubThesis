@@ -66,9 +66,14 @@ Future experiments at conventional facilities SFQED (SLAC), LUXE (Hamburg), Cala
 
 A proposed experiment layout based on the experiments described in the previous Chapters is shown in Figure \ref{Concl:Fig:FutureExp} and is outlined in more detail in the next sections, describing the requirements and ideas with the reference to the corresponding chapter where this diagnostic or technique was fielded and shown to be useful.
 
+
+
 \begin{itemize}
 \item for each area make a table to summarise what has been fielded and what is proposed as new
 \end{itemize}
+
+\EliasComm{Outlook: LCFA, Narozhny conjecture!}
+\EliasComm{Motivate again what the difference is we can make in contrast to conventional accelerators at this stage and measurements in crystals (limited non-linearity, LCFA might break down differently).}
 
 \subsection{Main Objectives}
 
@@ -128,6 +133,25 @@ Low energy spread beams (shock injection, but also \cite{Wang2013_GEV_FIUDICIAL}
 We are able to produce a high-charge electron beam with the potential to be a narrow-energy spread beam (shock injection, Chapter \ref{Chap:linICS}) with fixed injection point. 
 
 
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|l|l|l|c}
+Diagnostic & Observable & Setup & Comment & Fielded?\\ \hline \hline
+Shadowgraphy & Channel & Probe & Leakage, Timing & \cmark \\
+Shadowgraphy II & Channel & Probe & Leakage, Timing & \cmark/\xmark \\
+Shadowgraphy HM & Channel & Probe & Leakage, Timing & \xmark \\
+Shadowgraphy FASTHM & Channel & Probe & Leakage, Timing, Fast & \xmark \\
+Interferometry & Density & Probe & Leakage, Timing & \cmark \\
+Self-Emission & Channel & Probe & Top View & \cmark \\
+Self-Emission HM & Channel & Probe & Top View & \xmark \\
+\end{tabular}
+\caption[Overview of plasma diagnostics.]{Overview of plasma diagnostics.}
+\end{table}
+
+
+
 \subsection{Scattering Beam}
 
 
@@ -160,33 +184,63 @@ The fluctuation of the laser, expected to be small due to the short focal length
 
 \subsection{Spatial and temporal Overlap}
 
-On-shot far field pointing to be able to distinguish collisions and probability on basis of on-shot data. Also identify drifts in the alignment. Commissioned for the first time properly in Chapter XX.
-On-shot energy measurements are also important but also done already.
-
-We require on-shot timing diagnostics, ideally spectral interferometry. This has been fielded in the setup described in Chapter XX, but needs confirmation of validity (upstairs and downstairs), analysis pending (OR WAS THIS STAGING)?.
-
-RELATIVE TIMING? 
-Top view is used to position the prism along with the high mag etc. The angle of the prism needs to be fixed properly. Is there a way to improve overlap? We got the on-shot spectral interferometry working. Is there a way to gate some gas reaction?
 
 \begin{itemize}
-\item worked well so far:
 \item photo diode (also in vacuum to avoid pump-down procedures?)
 \item  spatial interferometry at TCC \cite{Cole2018_RR}
 \item  spectral interferometry at TCC \cite{Corvan2016_TIMING}
-\item  on-shot timing, as done at Gemini \cite{Shalloo_GEMINIDRIFT}
-\item  Shock injection to fix laser-electron offset.
+\item  on-shot timing, as done at Gemini \cite{Shalloo_GEMINIDRIFT}, upstairs, downstairs, analysis pending (staging)
+\item on-shot pointing reference (done on staging)
+\item  Shock injection to fix laser-electron offset and short bunches, calculate fluctuations from shock fluctuations.
 \item  Finding alignment using raster scan as described in Chapter \ref{Chap:linICS}
-\item  outside plasma, other effects like fringes or plasma afterglow to consider?
+\item  outside plasma, other effects like fringes or plasma afterglow \cite{Scherkl2019_PLASMAAFTERGLOW} to consider? only mJ laser required but match and remove driver laser, tune via shuttering?
+\item opto-electric (calibrate laser-electron offset, which then can be used in conjunction with spectral interferometry on-shot, find delay via some shuttering)? \cite{Cavalieri2005_EOS,Yan2000_EOS} GaP sample?
+\item another ICS source (estimate brightness required)
+\item fast transverse probe (shadowgraphy)
+\item fast transverse probe also gives polarogram?
+\item probe or top view with high mag?
+\item improvements to prism setup and actual overlap (wire at end of gas jet, if shooting very far away?)
 \end{itemize}
 
 
-We have also shown overlap temporally and spatially the electron beam and the laser pulse.
-We have shown that we have enough control over the laser to overlap an electron beam (size micron, bunch duration 15 fs or so REF) with a defocused laser pulse (around 400um) over the course of 100s of shots and remain in time. Improvements of the area. For high-intensity collisions we managed to achieve overlap only over few shots but in almost 1/3 of the time which is consistent with the fluctuations of laser and electron beam measured.
-On a different campaign also measured laser pointing and relative timing. Analysis pending.
+\begin{table}[h]
+\centering
+\begin{tabular}{l|l|l|l|c}
+Diagnostic & Accuracy & Setup & Mode & Fielded?\\ \hline \hline
+Photodetector & ps & Fast diode and Oscilloscope & LP & \cmark \\
+Spatial Interferometry & fs & Prism and camera & LP & \cmark \\
+Spectral interferometry & ps & grating and camera/spectrometer & LP/FP & \cmark \\
+Transverse Probe & ps/fs & Shadowgraphy/Scatter & FP & \cmark/\xmark\\
+Opto-electric & fs & Crystal and Probe & FP & \xmark
+\end{tabular}
+\caption[Overview of timing diagnostics.]{Overview of timing diagnostics.}
+\end{table}
+
+Estimate laser-electron jitter:
+
+\begin{itemize}
+\item for self-injection using front velocity or dephasing length?
+\item fluctuation for measured variation in shock position assuming fixed injection point
+\item fix the ofset
+\end{itemize}
 
 
 \subsection{Electron beam diagnostics}
 
+
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|l|l|l|c}
+Diagnostic & Observable & Setup & Comment & Fielded?\\ \hline \hline
+Beam Profile & Profile & Lanex & Undispersed, scatter & \cmark \\
+Spectrometer I & Energy & Magnet, Lanex & Dispersed, scatter & \cmark \\
+Spectrometer II & Energy & Magnet, Lanex & Dispersed, scatter & \cmark \\
+Fiudicials & Reference & Wires & Scatter, block, noise & \cmark/\xmark
+\end{tabular}
+\caption[Overview of electron beam diagnostics.]{Overview of electron beam diagnostics.}
+\end{table}
 
 \subsubsection{Electron beam profile}
 
@@ -234,6 +288,28 @@ This capability also enables us to measure at good resolution the intensity at t
 \item intensity diagnostic
 \item calculate field of view required for $a_0 = 25$ interactions
 \item spatial resolution required?
+\end{itemize}
+
+
+Estimate required spatial dimensions of the gamma profile screen as follow:
+
+\begin{itemize}
+\item the radiation emitted is $\theta \sim a_0/\gamma$ for a half angle or variance $\sigma = a_0/4\gamma$
+\item this adding up with an initial electron beam divergence of $theta_e$
+\item and a typical beam pointing fluctuation of $\sigma_e$
+\item assume the extreme case of $a_0 = 25$ and $1$ GeV
+\item this gives $12.7 mrad$, is this full or half angle?
+\item initial divergence around 3 mrad
+\item pointing around 1 mrad
+\item need around 17 mrad
+\item ignore source size
+\item if full angle then at same plane as this time (2.31 m), we are at 39.3 mm
+\item if double then suddenly 87.8 mm, so need larger stack
+\item at the same time spatial resolution as is now is important
+\item if single angle then one stack (well centred), otherwise need double sized and would prefer to have full view
+\item since we have seen signals of order 10 mm already, probably more like 90 mm in total
+\item stacking different stacks is not ideal due to different responses
+\item need to consider window sizes for these kind of measurements and noise production at the hole?
 \end{itemize}
 
 \subsubsection{Gamma Spectrometer}
