@@ -425,8 +425,7 @@ This is motion is shown in Figure \ref{Theory:Figs:BetatronMotion}. We see that 
 
 In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates through an underdense plasma, expels electrons in its way and drives a wave\addref. The driving force is the so-called ponderomotive force which is proportional to the gradient of the laser intensity. 
 
-The following relativistic derivation of the ponderomotive force is based on Alec Thomas' PhD thesis \cite{ThomasThesis}.
-\EliasComm{Would it be more appropriate to write Alexander?}
+The following relativistic derivation of the ponderomotive force is based on \cite{ThomasThesis}.
 We start with the Euler-Lagrange equations after inserting the Lagrangian in terms of the potentials $\mathbf{A}$ and $\Phi$ as given as intermediate step in Equation \eqref{Theory:Eqns:EoMLorentzRaw} on page \pageref{Theory:Eqns:EoMLorentzRaw}:
 
 \begin{equation}
@@ -461,7 +460,7 @@ When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear 
 \end{equation}
 which is the ponderomotive force $\mathbf{F}_p$ acting on a single electron. Since $\mathbf{F}_p \sim \nabla \left\langle\mathbf{a}^2\right\rangle$, this implies $\mathbf{F}_p \sim \nabla \left\langle I\right\rangle$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
 
-On the other hand, the ponderomotive force is suppressed for ultrarelativistic particles as $1/\gamma \ll 1$ as considered in relativistic inverse Compton scattering geometries as used in studies of radiation reaction (see Chapters \ref{Chap:LinICS}, \ref{Chap:RR15} and \cite{Cole2018_RR,Poder2018_RR,Burke1997_RR,Bula1996_RR}).
+On the other hand, the ponderomotive force is suppressed for ultrarelativistic particles as $1/\gamma \ll 1$ as considered in relativistic inverse Compton scattering geometries as used in studies of radiation reaction (see Chapters \ref{Chap:linICS}, \ref{Chap:RR15} and \cite{Cole2018_RR,Poder2018_RR,Burke1997_RR,Bula1996_RR}).
 
 \iffalse
 As the force is essential for the understanding of LWFA it will be derived in the following.
@@ -1091,23 +1090,6 @@ Such a sharp density transition has been realised in experiment by several group
 In experiments the right position and angle of such a shock front has shown to be able to produce high quality electron beams with low energy spread (REF)\addref as the injection is localised (REF)\addref.
 
 
-\subsubsection{Laser-assisted Injection}
-
-\EliasComm{Write out. Maybe move to Methods.}
-Instead of solely relying on the interaction of medium and laser, research efforts have explored the option of using a second laser to trigger injection or to modify the density profile.
-
-Plasma Torch \cite{Wittig2015_PLASMATORCH}: here an intense laser is passing the a plasma with high-Z dopant in transversal direction before the primary laser pulse. The additional ionisation based on the same principle as ionisation injection results in a density profile similar as in shock injection but does not rely on a physical shock and is tunable in space and time.
-
-Trojan Horse \cite{Hidding2012_TROJAN,Deng2019_TROJAN}: a laser is brought to focus in the accelerating phase of the cavity. The laser only reaches a sufficiently high intensity near focus to trigger increased tunnel-ionisation and injection. Due to the small volume the focus occupies in space and time the expected phase space of the electrons is also small.
-
-Colliding pulse \cite{Esarey1997_COLLIDINGPULSE}: a second laser counter-propagates with the main driving laser pulse. For the duration of the spatio-temporal overlap of both laser pulses the combined laser fields allow for ionisation injection to take place.
-
-
-\subsubsection{Injection of an external beam}
-
-A final example of injection mechanisms is providing an electron beam from a different source and coupling it into the cavity of an LWFA accelerator (REF)\addref. Whilst the other mechanisms make LWFA the source and accelerator of electrons, here the cavity is focused around accelerating and in some cases to modify the phase space of the given beam (REF)\addref. Electron sources could either be a conventional accelerator structure, for instance an RF-gun, or another LWFA stage.
-
-The clear challenge of this ansatz is the spatio-temporal overlap required to successfully inject external electrons with LWFA-LWFA and Conventional-LWFA coupling coming with different challenges.
 
 \section{Radiation Production}
 
@@ -1735,14 +1717,6 @@ Adjustment of the electron spectrum in interaction: cooling versus heating term.
 
 Cooling of spectra versus competing processes.
 
-\subsection{Measuring radiation reaction}
-
-\EliasComm{Maybe not in too much detail as this is more Methods than Theory. Maybe need high fields and high energies, either accelerator (conventional or plasma) and laser or high fields in crystal lattices.}
-
-Inverse Compton Scattering \cite{Cole2018_RR,Poder2018_RR}
-
-Planar channeling in crystals \cite{Wistisen2018_RR}
-
 \section{Pair Production and Annihilation}
 \EliasComm{Change intro, not questions. Proposed by Dirac.}
 Pairs are easily annihilated in radioactive substances for low energy positrons cancelling out with ambient electrons.
@@ -1783,7 +1757,7 @@ O. Pike:
 
 Multi-step process.
 
-\subsection{Linear Breit Wheeler}
+\subsection{Breit Wheeler pair production}
 
 
 Linear and nonlinear Breit-Wheeler: two or more photons interact to produce one pair.
@@ -1822,7 +1796,7 @@ For head-on collision $\theta = \pi \rightarrow s = E_1 E_2/m^2_e c^4$ and for $
 The threshold is $s > 1$.
 
 
-\subsection{Nonlinear Breit Wheeler}
+\subsubsection{Nonlinear Breit Wheeler}
 
 Nonlinear Breit Wheeler 
 Seen at SLAC E144 \cite{Bula1996_RR,Burke1997_RR}
@@ -1836,20 +1810,3 @@ Many photons interacting with one to generate pairs.
 Schwinger pair production: The external electric field is so strong that virtual electron-positron pairs can be accelerated to relativistic energies within a Compton wavelength and made real.
 
 \EliasComm{Difficult to reach fields, but in the rest frame of a relativistic electron.}
-
-\section{A side note: Other High-field phenomena}
-\EliasComm{Better intro, say other phenomena can also be reached with these facilities.}
-High-field QED is an exciting area of research. Where there is an extremely intense laser pulse exciting physics happens: light becomes matter, the vacuum interacts with the laser and the vacuum gives birth to matter.
-
-\subsection{Photon-Photon scattering}
-
-Elastic and inelastic. Mention results from LEP and LHC.
-
-Discussing high-field phenomena and the limit where pair production becomes feasible a short note on photon-photon scattering appears appropriate.
-Where a large density of photons are at the same place, at high intensities, as required for the Schwinger limit, the probability for photons to scatter from other photons becomes significant.
-
-Photons can scatter from other photons mediated by virtual electron-positron pairs. This is not a tree-level diagram but involves at least 4 vertices reducing its probability to virtually zero. At high intensities the coupling increases and these higher order diagrams can contribute significantly.
-
-\subsection{Vacuum birefringence}
-
-An intense laser pulse propagating through vacuum will also experience a modification. As the quantum vacuum is everything but void it also carries a refractive index and birefringence capacities. At the high-field limit these effects are expected to become visible.

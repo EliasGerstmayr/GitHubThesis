@@ -144,6 +144,8 @@ By driving out the first electron spectrometer magnet in the system and translat
 
 \section{Characterisation of Electron Spectra}
 
+\EliasComm{Maybe make structure: Characterisation of Electron Spectra for 2 regimes. Then commission gamma source, then characterise those electrons and then gamma source?}
+
 In this experiment the energy of relativistic electrons from LWFA is converted into directed and highly energetic bremsstrahlung \cite{Glinec2005_Brems}.
 Whenever the bremsstrahlung is produced using a converter target, the spectrum of the electrons can not be measured simultaneously as they are almost entirely stopped by the high-Z material in order to produce a high yield of gamma rays. 
 
@@ -222,7 +224,8 @@ We measure the yield and divergence with the gamma profile monitor. An example o
 \caption[Gamma profile measurements with collimator in and out.]{Examples of gamma profile measurements of the bremsstrahlung source with the tungsten collimator in (right) and out (left). The x-axis indicates the divergence in the horizontal direction, the y-axis in the vertical axis.}
 \label{BW:figs:Gprofile_collimator_INOUT}
 \end{figure}
-
+\EliasComm{Discussion size and overlap in time and space?}
+\EliasComm{GEANT sim of collimator?}
 Despite its low divergence the collimated gamma beam will be around $6.2\pm 0.1\,\mathrm{mm}$ wide at the interaction point, $865\pm 4.5\,\mathrm{mm}$ downstream from the converter target. The X-ray source is much closer to the interaction point and will be smaller at around XX MM NUMBER\addnum.
 The spatial overlap of both photon sources is hence guaranteed on each shot. The temporal overlap is also secured as the North beam is a $40\,\mathrm{ps}$ long heater and timing fluctuations at Gemini have been measured to be of order of 10's of $\mathrm{fs}$ \cite{Shalloo_GEMINIDRIFT}.
 
@@ -320,6 +323,8 @@ Another result can be seen in Figure \ref{BW:figs:converter_pointing}. Here the 
 
 \subsubsection{Throughput Collimator for Yield}
 
+\EliasComm{Need to write this out.}
+
 Considering the collimator and the measured divergences of the gamma rays, we can now estimate what fraction of the gamma signal that will make it through the collimator. A more divergent beam will lose more intensity but if it comes with higher yield it might still prevail.
 
 We will use the measured \textsc{fwhm} divergence values and model the intensity profile after a Gaussian. We will also assume perfect alignment and ignore pointing for now as it is in the same ballpark for the converters and should not depend on the material.
@@ -337,7 +342,7 @@ Based on these results 1 mm bismuth appears to be the best suited candidate for 
 
 
 \subsubsection{Noise Considerations}
-
+\EliasComm{Need to write this out.}
 The positrons produced by the BW process are detected by the timepix3 detectors. These are sensitive to gamma rays and charged particles over a wide range of energies.  The shape of the tracks in the detector allows some events to be excluded. For example, low energy charged particles produce wiggly tracks, high energy particles or gammas produce straight tracks, the length of which provides information about the angle of incidence.  As positrons transported from the collision point enter the detectors within a specific range  of angles, this can be used to exclude some high energy events.  Events which are not excluded are “candidate events”.
 
 Gamma rays  can interact with material in the chamber (eg the magnets, the second lead collimator) and produce positrons via the BH process that have similar characteristics (energy, angle into the chicane) so that they are indistinguishable from BW positrons on the detector.  Gammas striking the vacuum windows can also scatter into the detector at the angle corresponding to a candidate event.  
@@ -404,7 +409,7 @@ Looking at Figure \ref{BW:fig:Yield_with_Coll} we see that introducing the colli
 \end{figure}
 
 \subsubsection{Summary and Decision on Material}
-
+\EliasComm{Need to write this out.}
 Best flux throughput for 1 mm bismuth. Noise is also lower although the levels will change for collimator and W block conditions.
 1 mm bismuth also removes all electrons and potentially reduces noise from inside the collimator (dispersed remaining electrons).
 
@@ -418,9 +423,7 @@ The trends confirm that we need the collimator and W block. We also see that the
 \EliasComm{Do I need to run a Monte-Carlo simulation?}
 
 
-\section{Characterisation of the Gamma Signal}
-
-\subsubsection{Yield of gamma spectrometer and profile on the different days}
+\section{Characterisation of Gamma Spectra}
 
 
 \begin{figure}
@@ -429,46 +432,23 @@ The trends confirm that we need the collimator and W block. We also see that the
 \caption[Linear correlation of gamma spectrometer and profile yield.]{Gamma spectrometer yield as a function of gamma profile yield for an example run. Both correlate well linearly.}
 \end{figure}
 
-
-\subsubsection{Detector response in experiment}
-
-Look at the detector response in general (without corrections)
-
-Get a better background subtraction done to avoid a fluctuation low signal tail.
-
-Maybe make a plot of average spectra. Do they have a slight change in peak?
-
-It seems that despite the change in spectra, the response is not changing as much.
-
-This means the detector is not suitable to discriminate a spectrum to such detail and also is not suitable to deduce a gamma spectrum independent of assuming its shape. Luckily bremsstrahlung is well understood. It is essential to have many reference electron shots. Also a lesson for the future to take data in between.
-
-Simulating response of detectors using GEANT.
-Monoenergetic photons in a different range and present the response curves.
-\vspace{\baselineskip}
-
-
-Correlating Gamma profile and spec counts. No change in response for those detectors.
-Seeing that this is very linear the results from gamma profile assessment are still or again valid.
-This is not useful to distinguish energies.
-
-
-The produced spectrum can be simulated using the electron spectra characterised earlier. GEANT. Typical gamma spectra produced are shown in FIGURE XX. 
-Show that the responses for all electron spectra is fairly similar in simulations and the resulting spectra vary mostly at a low photon level and high energies.
-The response of the detector only results in small variations.
-\vspace{\baselineskip}
-
-The experimental results also show only small variations which is consistent with simulations. The systematic offset is including the viewing angle, efficiency of crystals and so on.
-Does the flux vary as much as the electron charge? (for the shots with W block, collimator and converter in the correlation is washed out and there is no clear indication that these things are linked). Add some plots for that as well.
-Stability of gamma flux?
+\begin{itemize}
+\item Electron spectra
+\item Show simulation of spectra
+\item show response does not change
+\item show experimental response also does not change
+\item use measured Gamma spec to show yield/show gamma profile and gamma spec yield are equivalent
+\item use electron spectra performance to predict average spectrum 
+\item extra energy fluctuation
+\end{itemize}
 
 
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{2018QED_ElecSpecs_examples2.png}\includegraphics[width=.5\columnwidth]{2018QED_GammaSpec_simspec2.png}
-\caption[Example electron spectra and corresponding in GEANT simulated gamma spectra.]{Left: Representative extreme examples of electron spectra from one day. Right: Resulting gamma spectrum based on GEANT simulations. Maybe show an average with shaded error bars instead. Add a third electron spectrum and gamma result for the other extreme.}
+\caption[Example electron spectra and corresponding in GEANT simulated gamma spectra.]{Left: Representative extreme examples of electron spectra from one day. Right: Resulting gamma spectrum based on GEANT simulations. Maybe show an average with shaded error bars instead. }
 \end{figure}
 
-Add the differences from day to day somewhere as well as comparison.
 
 \begin{figure}
 \centering
@@ -480,12 +460,7 @@ Add the differences from day to day somewhere as well as comparison.
 \end{figure}
 
 
-What is the statistical variation of the signal on each day. Use the electron spectra to put a number onto this.
-Use plot of relative and absolute number of photons above a threshold. Sum them up and also sum up number times energy as indicator for high energy photons.
 
-Provide a plot with numbers on fluctuation of number of photons to expect in total and in particular above a threshold and how that varies shot-to-shot and day by day.
-
-Provide some plots from the GEANT simulation (visualisation).
 
 \begin{figure}
 \centering
@@ -496,7 +471,7 @@ Provide some plots from the GEANT simulation (visualisation).
 \end{figure}
 
 
-
+\EliasComm{Exp data error bar, can not measure response. Show simulated response and experimental does not change for the extreme examples. Use electron spectrum to characterise things.}
 
 
 

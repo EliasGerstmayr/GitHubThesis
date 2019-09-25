@@ -12,21 +12,14 @@ Finally, the techniques used to diagnose the plasma, the interaction of the lase
 \EliasComm{Change intro, maybe more focus on radiation diagnostics.}
 A more comprehensive review of diagnostics is provided in \cite{Downer2018_DiagnosticReview}.
 
-\section{The Astra-Gemini laser and Target Area 3}
+\section{The Gemini laser system}
 
 All of the experimental results presented in this work were acquired at Target Area 3 (TA3) using the Astra-Gemini laser \cite{Hooker2006_Gemini,Hooker2008_Gemini} of the Central Laser Facility (CLF) at the Rutherford-Appleton Laboratory (RAL), UK.
 
-The titanium-sapphire-doped (Ti:Sa) Gemini laser with central wavelength $800\,\mathrm{nm}$ provides two beams every 20 seconds at a compressed pulse duration of down to $40\,\mathrm{fs}$ and up to $10\,\mathrm{J}$ energy on each arm. The collimated beams that enter the target chamber have a diameter of $\sim 150\,\mathrm{mm}$ with a flat-top intensity profile and are focused down either with a spherical mirror or off-axis parabolas (OAPs). Adaptive optics (AOs) are deployed on both laser arms in conjunction with wavefront sensors to remove aberrations and flatten the wavefront.
+The titanium-sapphire-doped Gemini laser with central wavelength $800\,\mathrm{nm}$ provides two beams every 20 seconds at a compressed pulse duration of down to $40\,\mathrm{fs}$ and up to $10\,\mathrm{J}$ energy on each arm. The collimated beams that enter the target chamber have a diameter of $\sim 150\,\mathrm{mm}$ with a flat-top intensity profile and are focused down either with a spherical mirror or off-axis parabolas (OAPs). Adaptive optics (AOs) are deployed on both laser arms in conjunction with wavefront sensors to remove aberrations and flatten the wavefront.
+\EliasComm{Titanium sapphire, is it sapphire doped with titanium?}
 
 In the context of the LWFA experiments discussed later typically two types of geometries are of relevance at Gemini:
-
-\iffalse
-\begin{figure}
-\centering
-\includegraphics[width=.75\columnwidth]{chamber1.jpg}
-\caption{Photo of the Gemini TA3 vacuum chamber. PhD student to scale.}
-\end{figure}
-\fi
 
 First, a long-focal-length geometry using either an $f/40$ spherical mirror or an OAP with $f = 6\,\mathrm{m}$ to provide an intense laser pulse $a_0 > 1$ with a long Rayleigh length, $z_R$, to efficiently drive LWFA over long distances. Due to the long focal length and the limited size of the Target Area the beam has to be reflected or `folded' at least once during the focusing process, in recent setups about halfway between optic and focal plane. Unfortunately, this means that the usable maximum energy in this laser arm is limited by the damage threshold of these `folding' mirrors or in other words the fluence the mirrors can sustain. The threshold at which damage occurs depends on several factors, including the beam quality and beam size, the quality of the mirror coating and cleanliness of the chamber.
 
@@ -36,54 +29,6 @@ In addition to its full-power capabilities, a continuous-wave (CW) mode for alig
 \EliasComm{Review}
 
 \section{Laser Diagnostics}
-
-\iffalse
-
-
-Since the experimental realisation of the laser \cite{Maiman1960} it has taken an indispensable role in a wide range of fields covering communication, construction, navigation, medicine, pharmaceuticals, machining, defense, numerous applications in science and innovation and more. 
-
-The advent of chirped pulse amplification (CPA) \cite{Strickland1985} enabled the generation of short and intense laser pulses paving the way for precision machining, medical tools used in cornea and heart surgeries, but also multi-photon science, non-linear optics and in the context of this work the wakefield acceleration in the so-called 'bubble' or 'blowout' regime, generating a directed relativistic quasi-monoenergetic electrons from a laser-plasma interaction.
-
-In physics, the push towards higher intensities and shorter pulse durations allows us to understand matter more and more and how it interacts with light on a fundamental level, opening up a field of interesting new phenomena and applications to investigate \cite{DiPiazza2012}.
-\EliasComm{What was the role of the laser in physics?}
-\vspace{\baselineskip}
-
-%At the beginnings of the experimental work in the field of wakefield acceleration, high intensity short pulse lasers as the ones that achieved the breakthrough for LWFA in 2004 (quasi-monoenergetic electrons in the MeV regime \cite{Mangles2004,Faure2004,Geddes2004}) were not available.
-%Restricted by the breakdown threshold of the amplification crystals the pulse duration and intensity were limited. In order to still drive wakes creative acceleration schemes were developed to compensate the lack of more powerful short-pulse lasers. Examples are for instance the beat wave plasma accelerator \cite{Tajima1979} or the self-modulated plasma accelerator.
-
-With the advent of short pulse terrawatt systems after the invention of chirped pulse amplification (CPA) \cite{Strickland1985}, wakefield acceleration achieved a breakthrough reaching the highly non-linear regime, referred to as the `bubble' regime, and the production of quasi-monoenergetic electrons in the MeV regime \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}.
-CPA opened up the relativistic regime at intensities of around $10^{17}-10^{18}\,\mathrm{W}\,\mathrm{cm}^{-2}$, where electrons accelerate to relativistic velocities within a single laser period leading to interesting effects like relativistic self-focusing which is also used to achieve longer guiding in LWFA. Even intensities of $10^{21} \,\mathrm{W}\,\mathrm{cm}^{-2}$ are within reach where QED corrections become relevant and phenomena like radiation reaction (classical and quantum), multi-photon Compton scattering or even the quantum vacuum itself can be investigated. The current record exceeds a peak intensity of $10^{22}\,\mathrm{W}\,\mathrm{cm}^{-2}$ and laser systems pushing this even further by orders of magnitude are being planned or built already, as for instance the facilities of the Extreme Light Infrastructure (ELI) REFERENCE HERE or the proposed upgrade of the Vulcan laser at the Central Laser Facility in the UK (REF).
-\EliasComm{Some doubling in this paragraph}
-\vspace{\baselineskip}
-
-
-%\subsection{Chirped-pulse amplification (CPA)}
-
-In laser amplification a laser pulse passes once (single pass) or multiple times (multipass) through an amplifier medium, called the laser gain medium, and is amplified in the process. To generate ultrashort pulses a large bandwith gain medium is required in order to amplify continuously over a large frequency domain. A popular choice are lasers based on titanium-doped sapphire (Ti:Sa) as gain medium due to their large bandwidth and tunability. At short pulse durations and high intensities non-linear effects such as relativistic self-guiding start to occur, leading to a local increase of the field strength. At very high field strengths the gain medium starts to ionize and in turn to take damage: amplification of these short pulse lasers is limited by this breakdown. Further amplification can then only be achieved if the beam is expanded for which then a larger gain medium becomes necessary. This limitation was overcome or at least pushed further by the invention of chirped-pulse amplification (CPA) \cite{Strickland1985} based on a technique employed in radar technology.
-\vspace{\baselineskip}
-
-CPA takes advantage of the fact that short laser pulses are not monochromatic but a spectrum. This is a necessary property for the pulse to have a short duration, an evident feature when considering the Fourier transformation.
-
-CPA exploits this fact and stretches the pulse in time using sets of refraction gratings: depending on the frequency of the light it will be refracted differently, extending or shortening the path relative to other frequencies. A pair or a couple of grating pairs can in this way stretch the pulse with a dependence on wavelength: the pulse is `chirped'. In the pioneering work of Strickland and Mourou a long glass fibre was used to stretch the pulse coupled to a grating to compress it again \cite{Strickland1985}. The energy density of the stretched pulse is now much lower than before and the pulse in total can be amplified to much higher intensities without damaging or saturating the gain medium. In the next step, a set of gratings reverse the process and compress the pulse, achieving a high intensity but also an ultrashort pulse duration that is ideal for LWFA.
-\vspace{\baselineskip}
-
-
-However, even with CPA the amplification achievable is finite as it is not useful to stretch the laser pulse arbitrarily much to lower the energy density and an ordinary gain medium as amplifier will reach its limits again as soon as the stretched pulse reaches the ionisation threshold. In addition, the gratings have to withstand these high intensities when recombining the stretched pulse and hence have to have a high damage threshold. An improved chirped-pulse amplification scheme to push this boundary even further is the so called optical parameter chirped-pulse amplification (OPCPA) scheme. The normal amplifier crystal is substituted by a non-linear medium. The laser pulse deposits only a fraction of energy of the amount in ordinary laser gain media as it works via a parametric process, which allows to pump this medium with even higher powers.
-
-Another alternative is combining several separately amplified laser pulses either incoherently or coherently (add references REF).
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.8\columnwidth]{Chirped_pulse_amplification.png}
-\caption{Schematic layout of a CPA system\protect\footnotemark. The initial short pulse is sent through a grating which disperses the spectrum of the pulse and stretches it, resulting in a longer pulse with a monotonic frequency shift throughout: the pulse is chirped. The pulse with lower power is amplified and re-compressed in another set of gratings to a short and high-power pulse.}
-\end{figure}
-
-
-\footnotetext{Graphic taken from Wikipedia: \url{https://en.wikipedia.org/wiki/Chirped\_pulse\_amplification}}
-
-\fi
-
 
 
 \subsection{Laser Energy Measurement}
@@ -101,13 +46,8 @@ A FROG trace can be taken on every shot by using the through high-reflective die
 
 The FROG is a diagnostic to measure the intensity and spectral phase of ultrashort laser pulses as present at Gemini ($\sim 40\,\mathrm{fs}$). The setup is similar to an autocorrelator and is optically gated by combining two beams in a non-linear medium. Typically a second-harmonic-generation (SHG) crystal is the non-linear medium of choice. The produced second-harmonic (SH) radiation is then spectrally resolved (hence frequency-resolved) and provides information about the spectral phase.
 
-More details can be found in \cite{FROG} or, for instance, also in Matthew Streeter's PhD thesis \cite{StreeterThesis}.
-%\vspace{\baselineskip}
+More details can be found in \cite{FROG} or, for instance, also in \cite{StreeterThesis}.
 
-
-%A dazzler (REF) can be used to fine-tune the pulse profile.
-
-%Other diagnostics that can be used to measure the pulse duration are the SPIDER (REF) or an autocorrelator (REF), but they are not single-shot diagnostics and require scans.
 
 \subsection{Focal Spot Characterisation}
 
@@ -122,7 +62,7 @@ A thin metal wire of $10's-100 \,\mathrm{\mu m}$ width is used to help defining 
 
 Due to the high intensity Gemini can reach the beam alignment and also the characterisation of the focal spot are performed with the CW mode or the attenuated low-power pulsed beam. Assuming the focal plane and general character of the spot remains the same, the energy of the actual focal spot on shot is then scaled from the low power image.
 
-A real direct measurement of the actual focus at typical intensities used in wakefield experiments is very challenging. Recent attempts involved the full 3D characterisation of the wavefront of the collimated laser beam by applying an asymmetric Mach-Zehnder interferometer and scanning the entire beam profile over hundreds of shots \cite{TERMITES} or using a gas jet ionisation (REF HERE). 
+A real direct measurement of the actual focus at typical intensities used in wakefield experiments is very challenging. Recent attempts involved the full 3D characterisation of the wavefront of the collimated laser beam by applying an asymmetric Mach-Zehnder interferometer and scanning the entire beam profile over hundreds of shots \cite{TERMITES} or using a gas jet ionisation (REF HERE)\addref. 
 
 \begin{equation}
 a_0 \approx 0.85 \lambda [\mu m] \sqrt{I [10^{18} cm^{-2}]}
@@ -476,7 +416,7 @@ In Chapter \ref{Chap:BW}, helium with nitrogen dopant was used (ionisation injec
 
 In Chapter \ref{Chap:RR15}, helium was used in a gas jet, indications of self-injection and shock-injection.
 
-\section{Characterising Gas Targets}
+\subsection{Characterising Gas Targets}
 
 In wakefield experiments a variety of optical diagnostics can be used to gain an insight into the behaviour of the laser pulse in the plasma, the wake itself or the injection mechanisms.
 
@@ -484,7 +424,7 @@ The most common diagnostics used on the wakefield experiments in this work are s
 
 Other examples of diagnostics that are used to characterise the plasma and the laser-plasma interaction are post-interaction laser-diagnostics to measure shifts in the laser frequency, guiding, focusing, energy content etc. of the laser pulse and Raman side-scattering satellites to deduce the electron density at lower intensity interactions (REFs REF?).
 
-\subsection{Shadowgraphy}
+\subsubsection{Shadowgraphy}
 
 In a shadowgraphy light is shone through a transparent medium and then imaged onto a camera chip. Gradients in the density translate in gradients in the refractive index leading to light refracting and accumulating in boundaries making outlines highly visible. Because of this shadow images or shadowgrams are a useful tool to see features, such as the edges of a plasma channel or a shock front. Whilst features become very clear, the absolute density itself can not be derived from a single projection without further reference.
 \vspace{\baselineskip}
@@ -502,8 +442,6 @@ For small changes in ray displacement the relative change in local beam intensit
 \frac{I(x,y,L) - I_0}{I_0} = - L\nabla^2 \int \log \eta (x,y,z) \mathrm{d}z
 \end{equation}
 
-\subsubsection{Experimental Implementation}
-
 In the LWFA experiments related to this work a shadowgraphy was achieved by passing a secondary laser beam transversely through the ionised gas target. The `probe', as it is commonly referred to, is the through an HR mirror transmitted component of the main driver beam that is then telescoped down to the approximate size of the required field view. The beam path of the probe beam has to be matched to the main beam in order to arrive at the plasma at a similar time as the main beam to capture interesting features. If the probe pulse is too early, there will no plasma channel will have been formed and if too late the channel will have expanded already and does not represent the conditions of the wakefield accurately. The imaging system includes one or multiple lenses, depending on the path of the light, magnification desired and so on. Working with high intensities the B-integral and the damage threshold of the optics also needs to be considered as the beam will focus down eventually in some part of the imaging system.
 
 An example of a shadowgraphy image in an experiment is shown in Figure XX NUMBER. It shows the inside of a gas cell filled with a high density gas leading to filamentation of the plasma channel (coming from the right side). If one looks closely it also reveals a plasma channel beyond the wall indicating a gentle ramp due to leaking gas.
@@ -518,7 +456,7 @@ An example of a shadowgraphy image in an experiment is shown in Figure XX NUMBER
 If one wants to capture smaller and more volatile features like the wake itself, a very short pulse duration ($\sim 10\,\mathrm{fs}$) for the probe pulse is required \cite{Siminos2016_FASTSHADOW} and the setup has to be complemented by a microscope objective \cite{Buck2011_BUBBLE,Savert2015_BUBBLE} to resolve the small features. This represents a more direct measurement of the in-situ plasma conditions the laser and the wake experience (see also \cite{Kuschel2018_SELF}).
 
 
-\subsection{Interferometry}
+\subsubsection{Interferometry}
 
 
 In interferometry two beams are overlapped with a phase difference resulting in an interference pattern. Usually one beam will act as the unperturbed reference, the second beam will image capture the perturbation of interest at the interaction point. Starting from the original interference pattern, the interference fringes will shift as the second beam collects phase shifts when propagating through the interaction region. Phase shifts can occur, for instance, due to density modulations \cite{Kaluza2019_ULTRAFAST}:
@@ -538,14 +476,13 @@ Assuming radial symmetry the plasma density $n_e (r)$ is then inferred using an 
 e_e (r) = - \frac{n_c \lambda}{\pi^2}\int^R_r \frac{\mathrm{d}}{\mathrm{d}r}\Delta \phi(y) \frac{\mathrm{d}y}{\sqrt{y^2 - r^2}}
 \end{equation}
 
-\subsubsection{Experimental Implementation}
 
 On the experiments described a Mach-Zehnder interferometer was used, but with a little twist: in this version one single beam passes through the gas target and is then afterwards split up. Both copies carry the same information and the phase shifts, but typically only a fraction of the gas is ionised forming a channel and the remaining neutral gas is used as reference by shifting the copies relative to each other perpendicular to the laser axis.
 \vspace{\baselineskip}
 
 Due to this geometry the interferometer can be set up as an extension to an existing shadowgraphy imaging system. It constitutes a complementary and very useful tool to the shadowgraphy. Whilst the shadowgraphy is useful to identify features in the medium, the interferometry image can give absolute numbers for the phase shift translating into the electron densities of the target by applying Abel inversion if one assumes cylindrical symmetry \cite{FOURIER} (see Jason Cole's PhD thesis \cite{ColeThesis} for more instructive details).
 
-\subsection{Self emission of the plasma}
+\subsubsection{Self emission of the plasma}
 
 Another much simpler and qualitative way to diagnose the plasma is done by imaging the self-emission or recombination light.
 This shows the formation of a channel and the presence of any strong features or simply that the laser reaches the gas target and a plasma is present.
@@ -553,40 +490,7 @@ Due to the longer timescale of recombination (microseconds) this is typically no
 
 However, in other experiments plasma emissions have been used to achieve the temporal overlap of an electron beam and a laser (see plasma afterglow \cite{Scherkl2019_PLASMAAFTERGLOW}).
 
-\section{Particle Diagnostics}
-
-\subsection{Beam Profile Monitor}
-
-A beam profile diagnostics used commonly at Gemini is a scintillating Lanex screen that is placed in the undispersed electron beam. It measures the shot-to-shot pointing fluctuation (motion of the centroid), the divergence in both axes (width of the centroid) and the charge of the electron beam (brightness of scintillation signal) accelerated in experiment. If coupled to a grid or suitable mask it can also be used to determine the emittance of the beam (REF).
-
-Combined with an absolute charge calibration or accurate characterisation of the imaging system the detected scintillation signal can be related to the absolute charge in the electron bunch, also including particles that are out of range of the magnetic spectrometer. However, it does not give any information about the spectral distribution of the charge.
-\vspace{\baselineskip}
-
-In LWFA the electrons are emitted with a momentum distribution that is typically dominated by the component in the direction of the laser propagation. Additional transverse components are present, for instance visible in betatron oscillations, and lead to a divergence of the beam, typically a few $\mathrm{mrad}$.
-To estimate the divergence one can work with a simple geometric relation and the spot size of the beam at the beam profile. A long propagation distance before the profile measurement increases the accuracy of the measurement.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.8\columnwidth]{SmallAngles.pdf}
-\includegraphics[width=0.4\columnwidth]{Eprofile_Lightson_Example.jpg}\includegraphics[width=0.4\columnwidth]{Eprofile_Grid_Example.jpg}
-\caption{Eprofile example with grid. Left: reference, right: eprofile signal with grid.}
-\end{figure}
-
-Assume a point source that propagates and diverges over a distance $d$ until it is detected at the beam profile, now extending to a circle of radius $r$. If $d \gg r$, then the small angle approximation holds:
-
-\begin{equation}
-\tan \theta \approx \sin \theta \approx \theta, \quad \sin \theta = \frac{r}{d} \longrightarrow \theta \approx \frac{r}{d},
-\end{equation}
-where $\theta$ denotes the divergence, equivalent to the ratio of forwards to transverse momentum, $p_\parallel/p_\perp$.
-\vspace{\baselineskip}
-
-The pointing fluctuations of the beam can be estimated similarly if one suspects mainly an angular jitter. In reality the pointing will be related to a combination of translation and rotation, where a transverse displacement of the beam is typically of order $\sim \mu m$ and will then over the course of a drift be dominated by the angular displacement.
-
-To obtain an absolute number for the divergence and pointing the screen has to be spatially calibrated. This includes characterising the relative angle of screen, camera and laser axis.
-A regular grid of known dimensions, for instance printed on some paper, can be used as spatial reference to evaluate the relative angle of camera and screen. The angle of the screen relative to the beam has to be measured separately. 
-One way to compensate both is to place the screen at 45 degrees to the beam and the camera looking at 45 degrees as well restoring the right dimensions.
-
-\subsection{Magnetic Energy Spectrometer}
+\section{Magnetic Energy Spectrometer}
 
 The energy of electrons in wakefield experiments can be determined in experiment using a spectrometer based on magnetic dispersion. The electrons are deflected using a dipole magnet and are detected on a scintillating Lanex screen.
 
@@ -627,14 +531,6 @@ and then expressing this into parameters we can measure in experiment we reach
 In a typical LWFA experiment $p_\perp$ will be dominated by the component in the laser propagation axis, i.e. if the propagation axis were z, $|\mathbf{p_\perp}| \approx p_z$. 
 \vspace{\baselineskip}
 
-\iffalse
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.75\columnwidth]{ExpSetup_GasJet_MagnetOnly.pdf}
-\caption{Sketch of a typical spectrometer setup in a LWFA experiment (left). The relativistic electron (blue) beam enters the dipole magnet (grey) and is dispersed onto the lanex screen according to its energy. Higher energies are deflected less than lower energies. The image on the right is an example of a spectrum taken on an experiment. The high energies are on the bottom of the spectrum decrease with height upwards.}
-\end{figure}
-\fi
-
 The correct assignment of the position on the screen to the correct electron energy is achieved by measuring the position of all components (lanex screen, magnet, TCC) and mapping the magnet field strength accurately, for instance using a Hall probe, and then running a particle tracking code with these details.
 Each pixel has a certain error bar on its associated energy as the divergence of the electron beam (instrument function), an offset at source or shot-to-shot pointing fluctuations could lead to different positions at the same electron energy (pointing). The energy resolution is determined by the strength of the magnetic field, the drift length, the intrinsic spatial resolution of the scintillator (for Lanex $\sim 100\,\mathrm{\mu m}$ REF) and the spatial resolution of the imaging system. 
 \vspace{\baselineskip}
@@ -649,21 +545,6 @@ This requires transforming the optical image (projective transform), spatially c
 More details on the typical procedure can be found, for instance, in Jason Cole's or Kristjan Poder's PhD thesis \cite{ColeThesis, PoderThesis}
 
 In all Chapters Lanex (standard and Biomax) are used in conjunction with Andor Neo cameras.
-
-\iffalse
-%\subsubsection{Multiple screens and deconvolution}
-
-In a magnetic spectrometer electrons are being dispersed in one axis and the spectrum can be deduced from the fan of electrons and the position at a detector screen. Whereas the spatial extent in the non-dispersion direction tells us the divergence of the beam in that axis as it is approximately unperturbed, the divergence of the beam in the dispersion direction is convolved with the magnetic dispersion. At the same time an overall pointing of the beam could lead to an overestimate or underestimate of the actual energy. In order to be able to correct for these factors several points of reference are required. The source position has to be known along with two more measurements. This could be two screens or a spatial feature (fiudicial) and one screen.
-A simple symmetry assumption mainly allows adding an error bar to the maximum energy within a reasonable limit.
-
-Two screen tracking: forwards or backwards method.
-Run tracking with a variety of angles for identical energies. Check what energy estimate each screen gives at a distinct feature. See if there are any deviations, try the next angle and find the least square fit.
-The other approach is backtracking but this is more complicated.
-
-If one has a fiudicial no explicit features in the beam are required as the fiudicial will become that feature. However, the positions have to be measured to a high precision to be able to distinguish sensible pointing shifts.
-
-Either methods can be used to deconvolve the spectrum and iteratively find the real energy spectrum underlying the measured distribution. More screens can increase the accuracy but the scattering of the beam passing through lanex becomes quite evident and distinct features blur out when drifting further because of this.
-\fi
 
 \subsection{Absolute Charge Measurement}
 
@@ -685,149 +566,7 @@ ADD A REFERENCE THAT DESCRIBES THE PROCEDURE IN MORE DETAIL, ON ABSOLUTE CALIBRA
 
 
 
-\section{X-ray and Gamma-ray Diagnostics}
-
-Wakefield acceleration has not only demonstrated to be a feasible tool to accelerate electrons to a GeV scale, but has also been shown to be a useful source of X-rays of remarkable brightness by the means of betatron radiation \cite{Rousse2004_BETATRON,Kneip2010_BETATRON}, as a tunable all-optical Compton-source \cite{TaPhuoc2012_ICS} and as bremsstrahlung source \cite{Glinec2005_Brems,Cipiccia2012_Brems}. In addition, using LWFA electron beams for FEL operations has become an active field of research itself (REF REF).
-
-The following section addresses different diagnostics to characterise high-energy radiation produced using an LWFA source, laser-solid, laser-electron and electron-solid interactions.
-
-\subsubsection{Motivation for variety of diagnostics}
-
-In the following chapters various arrays of scintillator arrays (in this case caesium-iodide doped with thallium, CsI(Tl)) are employed to measure the spectrum of gamma radiation from various sources (bremsstrahlung, linear and non-linear inverse Compton scattering and hard betatron radiation).
-
-
-In the soft and hard X-ray regime spectra can be deduced by comparing the transmission of the radiation through various materials with characteristic K-absorption edges (REF), Ross filter pairs (REF) or relying on crystal reflections matching the Bragg-condition (REF) or a combination of both.
-For these conditions a good knowledge of the material properties and the positioning of the crystal and cameras is essential.
-The energy-dependent transmission through the material is related to an interplay of different mechanisms (Compton scattering, Rayleigh scattering, photoelectric effect, pair production and so on). The sum of these cross sections can be combined and found in specific repositories (REF NIST).
-
-At higher X-ray energies entering the gamma regime $\hbar \omega \rightarrow 1\,\mathrm{MeV}$ K-edges to effectively distinguish spectral bands become rarer and most materials become more transparent, as a consequence resolving a full spectrum becomes challenging. At the same time incoherent scattering becomes more dominant and pair production becomes possible, with increasing likelihood at higher energies (see cross section PLOT XX REF).
-\begin{figure}
-\centering
-\includegraphics[width=0.5\columnwidth]{XsecCsI.png}\includegraphics[width=0.5\columnwidth]{XsecLi.png}
-\caption{Mass attenuation of CsI (left) and Li (right).}
-\end{figure}
-
-At the few MeV level the spectrum of the generated electron-positron pairs scales directly with the energy of the gamma radiation interacting with the matter through Compton scattering (incoherent scattering) and pair production (REF). Measuring the spectrum of these particles, for instance with a magnetic spectrometer setup, and comparing the results with a simulation result can then be used to deduce a gamma spectrum \cite{Corvan2014_Gamma}. This works particularly well for low-Z materials as lithium (see PLOT) where the cross section for incoherent scattering dominates but also varies whilst the pair production cross section also strongly varies giving the diagnostic additional sensitivity.
-
-\EliasComm{I checked and kevlar (so kapton will be very similar) has similar cross section for processes in the MeV range, so the vacuum window could act as converter.}
-
-The spectrum of the pairs, however, becomes less sensitive to the energy of the gamma-radiation at higher (tens of MeV) energies (XSEC XX PIC REF). An alternative method to measure such a hard spectrum is tracking the energy deposition of radiation and secondary sources throughout an array of scintillator material until it decays, effectively measuring the length and shape of the cascade.
-This method has the advantage of being variable and viable for the few MeV level and much harder radiation.
-
-Simulations linked to this technique are outlined in this work and are then applied to experimental data in the following chapters to measure radiation from different materials in a range of hundreds of keV to hundred MeV (over three orders of magnitude).
-
-A detector interacting with such high energetic gamma-radiation is now faced with energy deposition by the radiation itself and secondary particles and radiation. An extended detector can mitigate this effect by forcing pair production in an earlier part of the detector and performing an again well resolved measurement in a second part of the detector. The complex interplay of pair production and energy deposition from secondary sources requires numerical solutions calculating the cross-sections for various processes dynamically throughout the interaction with the detector. The extended detector acts as an imperfect calorimeter with some energy resolution. This is where GEANT4 \cite{GEANT4} or other Monte Carlo based simulation codes come into play (e.g. \cite{MCNP}).
-
-\subsection{Pinhole Camera}
-
-A pinhole camera is a relatively simple diagnostic that allows measuring the source size and estimate the flux of an X-ray source.
-
-CCD Chip, pinhole of right material on tube to shield noise, source. Relative distances determine the magnification (geometric magnification).
-
-geometric magnification M: distance camera to source
-\begin{equation}
-M = \frac{d_{cam-pin}}{d_{source-pin}}
-\end{equation}
-
-
-Used on the experiment described in Chapter XX.
-
-Double pinhole, one with 5 um aluminium and one with 6 um PET filtering. The pinhole itself is made of 25 um Ta.
-X-ray cameras used are DX420-BR-DD Andor in-vacuum cameras with XX times XX chips each XX times XX microns. These are sensitive to X-rays, see QE curves XX REF. Quite often with beryllium window or filtering in front of the chip.
-
-Alignment can be done by adding a spike on the front, point it at the interaction point and then carefully removing it at the end.
-
-By comparing the transmission of the two spots (using a double pinhole) gives an estimate how much energy is in one band and another, especially if the K-edges are chosen correctly.
-\begin{figure}
-\centering
-\includegraphics[width=0.9\columnwidth]{PinholeCamera.png}
-\includegraphics[width=0.9\columnwidth]{20180326r001s002_PinholeCam.jpg}
-\caption[Example of pinhole camera image.]{Top: Sketch of a pinhole camera. Bottom: Example of a double pinhole camera image taken on a recent experimental campaign. The pinholes were filtered differently, such that the pinholes measure the flux in different spectral intervals.}
-\end{figure}
-
-\EliasComm{Refer to BK's thesis \cite{KettleThesis}.}
-
-
-\subsection{Crystal Spectrometer}
-
-Bragg condition and crystal, CCD camera.
-Applicable in any range accessible using lattice constants. Energy range depends on detector size, distance and lattice properties.
-
-Bent crystals can be used for focusing and larger spectral range.
-HAPG HOPG with mosaicity to increase reflectivity.
-
-Bragg's law
-
-\begin{equation}
-n \lambda = 2 d \sin \theta
-\end{equation}
-
-Energy spread/error on the camera based on initial divergence.
-
-Efficiency needs to include reflectivity of crystal, filtering, quantum efficiency and so on. Thermal noise.
-
-Used in experiment described in Chapter \ref{Chap:BW}.
-\begin{figure}
-\centering
-\includegraphics[width=0.5\columnwidth]{CrystalSpecCamera.png}
-\includegraphics[width=0.9\columnwidth]{CrystalSpec.pdf}
-\caption[Sketch of a crystal spectrometer setup.]{Top: Sketch of a crystal spectrometer setup. X-rays are dispersed onto a CCD chip. Bottom: Example of a spectrum measured in a crystal spectrometer setup. The X-rays are dispersed spectrally in the x-axis with distinct emission lines. The central part is filtered with aluminium, resulting in a sharp cut-off due to the K-edge, which can be used as calibration.}
-\end{figure}
-
-\EliasComm{Refer to BK's thesis \cite{KettleThesis}}
-
-Andor DX420 in-vacuum cameras (since we are looking at very fine resolution and low energies).
-
-Pixel size for the cameras and typical filtering.
-
-REF BK thesis, sketch also based on one of his sketches.
-
-Applications for XANES measurements due to good resolution \cite{Kettle2019_XANES}.
-
-The K-edge of a filter can be used to get an on-shot energy reference to calibrate the image. Two different materials would make this even clearer.
-The sharpness of the edge could be an indicator of energy spread/divergence impact. Few eV resolution.
-
-See FIGURE REF for example of a spectrum taken on an experiment. Spectral lines and K-edge from aluminium filter.
-
-In this range the accurate knowledge of the filtering (micron thickness) is crucial as this is the few keV range.
-
-Have to use in-vacuum as going through a window would result in cut-out of the relevant signal.
-
-\subsection{Filter Packs}
-
-Typically used for X-ray measurements on LWFA experiments (betatron radiation) are filter packs or arrays of materials of varying K-edge over the range of X-ray energies expected. By comparison of the transmission through the materials and assuming a spectral shape, the spectrum can be estimated. The profile of the radiation is also measured but has to be corrected for when comparing the transmissions.
-
-Direct (CCD) or indirect detection (with scintillator) Andor iKon.
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\columnwidth]{filter_pack_sketch.pdf}
-\caption{Sketch of a typical betatron setup.}
-\end{figure}
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.3\columnwidth]{FilterPack.png}\includegraphics[width=0.3\columnwidth]{FilterPackX.png}
-%\includegraphics[width=0.3\columnwidth]{QE_BR_DD.png}\includegraphics[width=0.3\columnwidth]{DeltaEcrit.png}
-\caption{Images of filter packs.}
-\end{figure}
-
-When X-rays increase in energy the quantum efficiency of the CCD chip decreases, so energies beyond 100 keV are not measured.
-
-More details on the extraction procedure can be found in Jonathan Wood's PhD thesis \cite{WoodThesis}.
-
-Was not used on the experiments described in this work but other relevant experiments.
-To motivate why other indirect detection methods are required and this method becomes less sensitive at higher energies.
-
-If we assume only absorption following Beer's law, the signal through a filter on the camera including quantum efficiencies (QE) etc. (taken from Jonathan Wood's PhD thesis \cite{WoodThesis})
-
-\begin{equation}
-Y_i = A \int^{E_{max}}_{E_{min}} E \,S(E) \,Q(E) \,T_i(E) \,\mathrm{d}E
-\end{equation}
-
-Then minimise (least square) the transmissions for a spectrum S(E).
+\section{Gamma-ray Diagnostics}
 
 \subsection{Gamma-ray Scintillator Profile}
 
@@ -911,18 +650,4 @@ If we look at this in terms of relative energy deposited per photon, so in other
 The smaller profile stacks can also be calibrated by using a radioactive source since the stack mainly consists of crystals.
 A Na or Cs source can be used at the standard measurement conditions. The energy emission is well known. If one assumes that all energy is absorbed by the detector the light yield is related to energy deposited. The disadvantage to real calorimeters is that due to a non-zero transmission through the material and due to the spacers not all energy deposited is deposited within crystals and converted into signal.
 
-
-
-\subsection{Gamma-ray Converter Spectrometer}
-
-At gamma-ray energies above $2m_e c^2 \approx 1\,\mathrm{MeV}$ one photon can generate a pair of electron-positron pairs when scattering from matter using the electric field of the nucleus or the valence electrons as interaction partners. The maximum energy of the generated electrons and positrons are determined by the energy of the gamma photon, the overall spectrum is close to exponential (SEE THEORY INSERT REF, BETHE HEITLER). Based on this principle one method to measure the gamma spectrum is using a sheet of high-Z material to convert the gamma rays into matter and then measure the spectrum of these particles in a magnetic spectrometer (REF).
-\EliasComm{Need to rework this part since it is not just pair production but also Compton scattering.}
-In the range of few to maybe 30 MeV the cross section rises rapidly (SEE FIGURE XX NUMBER) compensating for the fewer pairs at higher energies and making this a feasible spectrometer to resolve the full spectrum in this range \cite{Corvan2014_Gamma}. At higher energies the cross-section flattens which means that the contribution to the total production of pair equalises over all energies but due to the exponential spectrum of the pairs produced very few pairs at the maximum photon energies are produced.
-The Compton spectrometer becomes a pair spectrometer and the signal-to-noise ratio and sensitivities become more important, meaning more space is required to resolve those energies since the higher energy pairs now require stronger magnets, more drift and need to clear away from the noisy axis.
- 
-\begin{figure}
-\centering
-\includegraphics[width=0.5\columnwidth]{CorvanSpectrometer.png}
-\caption[Sketch of a Compton spectrometer design.]{Sketch of a Compton spectrometer design: gamma rays enter the setup from the left side and enter a block of lithium, releasing electrons through Compton scattering and depending on the energy also electron-positron pairs. A magnetic field disperses electron and positrons onto detector screens. Reprinted from \cite{Corvan2014_Gamma}, with the permission of AIP Publishing.}
-\end{figure}
 
