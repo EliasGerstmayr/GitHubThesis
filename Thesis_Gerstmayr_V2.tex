@@ -73,20 +73,21 @@
 \usepackage[section]{placeins}
 
 \usepackage{cancel}
-\usepackage[final]{feynmp}
-\DeclareGraphicsRule{*}{mps}{*}{}
-\makeatletter
-\def\endfmffile{%
-	\fmfcmd{\p@rcent\space the end.^^J%
-			end.^^J%
-			endinput;}%
-	\if@fmfio
-		\immediate\closeout\@outfmf
-	\fi
-	\ifnum\pdfshellescape=\@ne
-		\immediate\write18{mpost \thefmffile}%
-	\fi}
-\makeatother
+
+%\usepackage[final]{feynmp}
+%\DeclareGraphicsRule{*}{mps}{*}{}
+%\makeatletter
+%\def\endfmffile{%
+%	\fmfcmd{\p@rcent\space the end.^^J%
+%			end.^^J%
+%			endinput;}%
+%	\if@fmfio
+%		\immediate\closeout\@outfmf
+%	\fi
+%	\ifnum\pdfshellescape=\@ne
+%		\immediate\write18{mpost \thefmffile}%
+%	\fi}
+%\makeatother
 
 
 \usepackage[colorlinks=true, citecolor=blue, linkcolor = black, pdfborder={0 0 0},backref=page]{hyperref}
@@ -275,9 +276,6 @@ The specific role of the author and contributions of other researchers in the co
 \end{itemize}
 
 
-
-
-
 \vspace*{\fill}
 
 
@@ -288,8 +286,6 @@ The specific role of the author and contributions of other researchers in the co
 \include{Ch3_Methods/Experimental_Methods}
 
 \include{Ch4_Simulations/Gamma_Spectrometer}
-
-%\include{Ch8_Results4/RR2019_betamax}
 
 \include{Ch7_Results3/RR2019_linICS}
 

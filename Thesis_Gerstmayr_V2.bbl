@@ -5,6 +5,28 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Di~Piazza et~al.(2018)Di~Piazza, Tamburini, Meuren, and
+  Keitel]{DiPiazza2018_LCFA}
+A.~Di~Piazza, M.~Tamburini, S.~Meuren, and C.~H. Keitel.
+\newblock Implementing nonlinear compton scattering beyond the
+  local-constant-field approximation.
+\newblock \emph{Phys. Rev. A}, 98:\penalty0 012134, Jul 2018.
+\newblock \doi{10.1103/PhysRevA.98.012134}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.98.012134}.
+
+\bibitem[Pike(2017)]{PikeThesis}
+Oliver~James Pike.
+\newblock \emph{Particle Interactions in High-Temperature Plasmas}.
+\newblock Springer, 2017.
+
+\bibitem[Jackson(1999)]{Jackson}
+J.~D. Jackson.
+\newblock Classical electrodynamics, 3rd ed.
+\newblock \emph{American Journal of Physics}, 67\penalty0 (9):\penalty0
+  841--842, 1999.
+\newblock \doi{10.1119/1.19136}.
+\newblock URL \url{https://doi.org/10.1119/1.19136}.
+
 \bibitem[Danson et~al.(2019)Danson, Haefner, Bromage, Butcher, Chanteloup,
   Chowdhury, Galvanauskas, Gizzi, Hein, Hillier, et~al.]{Danson2019_PWLASERS}
 Colin~N Danson, Constantin Haefner, Jake Bromage, Thomas Butcher,
@@ -106,14 +128,6 @@ A.~Pak, K.~A. Marsh, S.~F. Martins, W.~Lu, W.~B. Mori, and C.~Joshi.
 \newblock \emph{Phys. Rev. Lett.}, 104:\penalty0 025003, Jan 2010.
 \newblock \doi{10.1103/PhysRevLett.104.025003}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.104.025003}.
-
-\bibitem[Jackson(1999)]{Jackson}
-J.~D. Jackson.
-\newblock Classical electrodynamics, 3rd ed.
-\newblock \emph{American Journal of Physics}, 67\penalty0 (9):\penalty0
-  841--842, 1999.
-\newblock \doi{10.1119/1.19136}.
-\newblock URL \url{https://doi.org/10.1119/1.19136}.
 
 \bibitem[Mori(1997)]{Mori1997_NONLINEARPLASMA}
 WB~Mori.
@@ -415,11 +429,6 @@ Felicie Albert and Alec~GR Thomas.
 \newblock \emph{Plasma Physics and Controlled Fusion}, 58\penalty0
   (10):\penalty0 103001, 2016.
 
-\bibitem[Pike(2017)]{PikeThesis}
-Oliver~James Pike.
-\newblock \emph{Particle Interactions in High-Temperature Plasmas}.
-\newblock Springer, 2017.
-
 \bibitem[Peskin and Schroeder(2018)]{PeskinSchroeder}
 Michael~E Peskin and Daniel~V Schroeder.
 \newblock \emph{An introduction to quantum field theory}.
@@ -589,15 +598,6 @@ G~Pariente, V~Gallet, A~Borot, O~Gobert, and F~Qu{\'e}r{\'e}.
   beams.
 \newblock \emph{Nature Photonics}, 10\penalty0 (8):\penalty0 547, 2016.
 
-\bibitem[Baird et~al.(2019)Baird, Murphy, Blackburn, Ilderton, Mangles,
-  Marklund, and Ridgers]{Baird2019_RR}
-Christopher~David Baird, Chris~Dominic Murphy, TG~Blackburn, A~Ilderton, SPD
-  Mangles, M~Marklund, and Christopher~Paul Ridgers.
-\newblock Realising single-shot measurements of quantum radiation reaction in
-  high-intensity lasers.
-\newblock \emph{New Journal of Physics}, 21\penalty0 (5):\penalty0 053030,
-  2019.
-
 \bibitem[Mangles et~al.(2009)Mangles, Genoud, Kneip, Burza, Cassou, Cros,
   Dover, Kamperidis, Najmudin, Persson, et~al.]{Mangles2009_BETATRON}
 SPD Mangles, Guillaume Genoud, S~Kneip, Matthias Burza, K~Cassou, B~Cros,
@@ -611,16 +611,6 @@ SPD Mangles, Guillaume Genoud, S~Kneip, Matthias Burza, K~Cassou, B~Cros,
 D.C. Carroll and C.~D. Murphy.
 \newblock Measurement of the difference in the gemini gate valve windows
   thickness by its effect on timing between the north and south beams.
-
-\bibitem[Scherkl et~al.(2019)Scherkl, Knetsch, Heinemann, Sutherland, Habib,
-  Karger, Ullmann, Beaton, Kirwan, Manahan,
-  et~al.]{Scherkl2019_PLASMAAFTERGLOW}
-Paul Scherkl, Alexander Knetsch, Thomas Heinemann, Andrew Sutherland,
-  Ahmad~Fahim Habib, Oliver Karger, Daniel Ullmann, Andrew Beaton, Gavin
-  Kirwan, Grace Manahan, et~al.
-\newblock Plasma-photonic spatiotemporal synchronization of relativistic
-  electron and laser beams.
-\newblock \emph{arXiv preprint arXiv:1908.09263}, 2019.
 
 \bibitem[Shalloo et~al.()Shalloo, Arran, Cheung, Corner, Holloway, Walczak,
   Hooker, Booth, Chekhlov, Gregory, et~al.]{Shalloo_GEMINIDRIFT}
@@ -808,6 +798,16 @@ Malte~C Kaluza.
 \newblock Ultrafast plasma imaging.
 \newblock In \emph{Laser-Driven Sources of High Energy Particles and
   Radiation}, pages 165--185. Springer, 2019.
+
+\bibitem[Scherkl et~al.(2019)Scherkl, Knetsch, Heinemann, Sutherland, Habib,
+  Karger, Ullmann, Beaton, Kirwan, Manahan,
+  et~al.]{Scherkl2019_PLASMAAFTERGLOW}
+Paul Scherkl, Alexander Knetsch, Thomas Heinemann, Andrew Sutherland,
+  Ahmad~Fahim Habib, Oliver Karger, Daniel Ullmann, Andrew Beaton, Gavin
+  Kirwan, Grace Manahan, et~al.
+\newblock Plasma-photonic spatiotemporal synchronization of relativistic
+  electron and laser beams.
+\newblock \emph{arXiv preprint arXiv:1908.09263}, 2019.
 
 \bibitem[Mangles(2005)]{ManglesThesis}
 Stuart Peter~David Mangles.
@@ -1359,6 +1359,15 @@ Sergei~V. Bulanov, Timur~Zh. Esirkepov, Masaki Kando, James~K. Koga, and
 \newblock \doi{10.1103/PhysRevE.84.056605}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevE.84.056605}.
 
+\bibitem[Baird et~al.(2019)Baird, Murphy, Blackburn, Ilderton, Mangles,
+  Marklund, and Ridgers]{Baird2019_RR}
+Christopher~David Baird, Chris~Dominic Murphy, TG~Blackburn, A~Ilderton, SPD
+  Mangles, M~Marklund, and Christopher~Paul Ridgers.
+\newblock Realising single-shot measurements of quantum radiation reaction in
+  high-intensity lasers.
+\newblock \emph{New Journal of Physics}, 21\penalty0 (5):\penalty0 053030,
+  2019.
+
 \bibitem[Breit and Wheeler(1934)]{BreitWheeler1934_BW}
 Gregory Breit and John~A Wheeler.
 \newblock Collision of two light quanta.
@@ -1642,15 +1651,6 @@ X~Yan, AM~MacLeod, WA~Gillespie, GMH Knippels, D~Oepts, AFG van~der Meer, and
   pulses.
 \newblock \emph{Physical Review Letters}, 85\penalty0 (16):\penalty0 3404,
   2000.
-
-\bibitem[Di~Piazza et~al.(2018)Di~Piazza, Tamburini, Meuren, and
-  Keitel]{DiPiazza2018_LCFA}
-A.~Di~Piazza, M.~Tamburini, S.~Meuren, and C.~H. Keitel.
-\newblock Implementing nonlinear compton scattering beyond the
-  local-constant-field approximation.
-\newblock \emph{Phys. Rev. A}, 98:\penalty0 012134, Jul 2018.
-\newblock \doi{10.1103/PhysRevA.98.012134}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.98.012134}.
 
 \bibitem[Del~Sorbo et~al.(2017)Del~Sorbo, Seipt, Blackburn, Thomas, Murphy,
   Kirk, and Ridgers]{DelSorbo2017_SPIN}
