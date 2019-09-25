@@ -1,6 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Thesis_Gerstmayr_V2.aux
+The style file: unsrtnat.bst
 A level-1 auxiliary file: Ch1_Introduction/Introduction.aux
 A level-1 auxiliary file: Ch2_Theory/Theoretical_Background.aux
 A level-1 auxiliary file: Ch3_Methods/Experimental_Methods.aux
@@ -10,74 +11,76 @@ A level-1 auxiliary file: Ch5_Results1/RR2015.aux
 A level-1 auxiliary file: Ch6_Results2/BW2018.aux
 A level-1 auxiliary file: Ch9_Conclusion/Conclusions.aux
 A level-1 auxiliary file: Ch10_Appendix/Appendix.aux
-A level-1 auxiliary file: bu.aux
-The style file: unsrt.bst
-Database file #1: General.bib
-Database file #2: Theses.bib
-Database file #3: Plasma.bib
-Database file #4: SPD.bib
-Database file #5: LaserDiags.bib
-Database file #6: GammaDet.bib
-Database file #7: Betatron.bib
-Database file #8: Facilities.bib
-Database file #9: Wakefield.bib
-Database file #10: ICSRR.bib
-Database file #11: ICS_Diag.bib
-Database file #12: Sims.bib
-Database file #13: Ionisation.bib
-Database file #14: Xrays.bib
-Database file #15: BW_Astro.bib
-Database file #16: IonAcc.bib
+Reallocated field_info (elt_size=4) to 10432 items from 5000.
+Database file #1: ICS_Diag.bib
+Database file #2: General.bib
+Database file #3: Theses.bib
+Database file #4: Plasma.bib
+Database file #5: SPD.bib
+Database file #6: LaserDiags.bib
+Database file #7: GammaDet.bib
+Database file #8: Betatron.bib
+Database file #9: Facilities.bib
+Database file #10: Wakefield.bib
+Database file #11: Sims.bib
+Database file #12: Ionisation.bib
+Database file #13: Xrays.bib
+Database file #14: IonAcc.bib
+Database file #15: ICSRR.bib
+Database file #16: BW_Astro.bib
 Warning--empty school in LuThesis
 Warning--can't use both volume and number fields in Seryi2015
 Warning--empty publisher in Seryi2015
 Warning--empty journal in GEMINI_GATEVALVES
 Warning--empty year in GEMINI_GATEVALVES
+Warning--empty year in GEMINI_GATEVALVES
 Warning--empty journal in Shalloo_GEMINIDRIFT
 Warning--empty year in Shalloo_GEMINIDRIFT
+Warning--empty year in Shalloo_GEMINIDRIFT
 Warning--can't use both volume and number fields in Nakamura2007_GEVGUIDED
+Warning--empty journal in Pollock2011_MULTISTAGE
 Warning--can't use both volume and number fields in Dirac1930_Annihilation
 Warning--can't use both volume and number fields in Klemperer1934_Annihilation
 Warning--empty journal in Heitler1954_BH
-You've used 200 entries,
-            1791 wiz_defined-function locations,
-            1694 strings with 58177 characters,
-and the built_in function-call counts, 61569 in all, are:
-= -- 4081
-> -- 5592
-< -- 17
-+ -- 1941
-- -- 1741
-* -- 5919
-:= -- 10964
-add.period$ -- 605
-call.type$ -- 200
-change.case$ -- 185
-chr.to.int$ -- 0
-cite$ -- 211
-duplicate$ -- 1974
-empty$ -- 4463
-format.name$ -- 1741
-if$ -- 12511
-int.to.chr$ -- 0
-int.to.str$ -- 200
-missing$ -- 198
-newline$ -- 1002
-num.names$ -- 200
-pop$ -- 326
+You've used 194 entries,
+            2481 wiz_defined-function locations,
+            1937 strings with 59288 characters,
+and the built_in function-call counts, 98163 in all, are:
+= -- 6614
+> -- 8892
+< -- 64
++ -- 3182
+- -- 2790
+* -- 9829
+:= -- 17481
+add.period$ -- 765
+call.type$ -- 194
+change.case$ -- 374
+chr.to.int$ -- 190
+cite$ -- 208
+duplicate$ -- 3728
+empty$ -- 6888
+format.name$ -- 3024
+if$ -- 19435
+int.to.chr$ -- 5
+int.to.str$ -- 195
+missing$ -- 193
+newline$ -- 1154
+num.names$ -- 582
+pop$ -- 1286
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 194
 quote$ -- 0
-skip$ -- 846
+skip$ -- 2017
 stack$ -- 0
-substring$ -- 3409
-swap$ -- 386
-text.length$ -- 17
+substring$ -- 3504
+swap$ -- 522
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 11
-while$ -- 434
-width$ -- 203
-write$ -- 2191
-(There were 11 warnings)
+type$ -- 1337
+warning$ -- 14
+while$ -- 617
+width$ -- 0
+write$ -- 2870
+(There were 14 warnings)

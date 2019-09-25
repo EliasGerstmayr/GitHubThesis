@@ -187,40 +187,6 @@ The contrast of the interference pattern was adjusted by equalising the relative
 
 These measurements were done using the pulsed low power beam at Gemini.
 
-\subsection{Spectral Interferometry}
-
-In spectral interferometry two identically chirped pulses are spectrally dispersed using a grating and the individual spectral components overlap and interfere. Due to the dispersion the coherence length is greatly increased as $L \sim \Delta \lambda^{-1}$ and the interference pattern is visible over a much larger time window than for spatial interferometry.
-
-Visible over hundreds of femtoseconds and hence over a much larger time duration than for spatial interferometry, tens to hundred picoseconds.
-
-A grating is required coupled to a detector, e.g. CCD camera.
-This could simply be a spectrometer with suitable grating \cite{Corvan2016_TIMING}.
-
-\begin{align*}
-S(\omega) &= |FT[E_N (t) + E_S (t +\Delta \tau)]|^2\\
-&= |\tilde{E}_N(\omega)|^2 + |\tilde{E}_S(\omega)|^2 + 2 |\tilde{E}_N(\omega) \tilde{E}_S(\omega)|\cos(\omega \Delta \tau + \phi_N(\omega) - \phi_S(\omega))
-\end{align*}
-
-The fringes now depend on the temporal separation of the beams in the dispersive direction.
-This means an absolute number for the temporal separation can be acquired instead of a single binary signal for the overlap. 
-This diagnostic is also able to track changes in absolute terms and suitable to track changes in timing over extended time periods.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.8\columnwidth]{Fringes_specTA3_exp.jpg}
-\includegraphics[width=0.8\columnwidth]{Fringes_specLA3_exp.jpg}
-\caption{Fringes from TA3 and LA3.}
-\end{figure}
-
-
-\subsubsection{Experimental Implementation}
-
-Off-shot diagnostic combining the beams onto a grating and a CCD chip.
-
-Using leakage beams at two locations in Gemini. Then combine into imaging spectrometer.
-One built by Nicolas Bourgeois, the other one by Matt Streeter based on Rob Shalloo (RAL Report).
-
-\EliasComm{Add pictures from the Staging19 campaign.}
 
 \subsection{Considerations for Timing Beams}
 

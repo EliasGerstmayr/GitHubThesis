@@ -1,10 +1,13 @@
-\UseRawInputEncoding
-
 \RequirePackage[l2tabu, orthodox]{nag}
 
-\pdfobjcompresslevel=0
-\pdfminorversion=4 
+%\pdfobjcompresslevel=0
+%\pdfminorversion=4 
 \documentclass[12pt, oneside]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[numbers,compress]{natbib}
+\bibliographystyle{unsrtnat}
 
 \usepackage{amsmath}
 \usepackage[a4paper,width=160mm, top=15mm,bottom=15mm,includeheadfoot]{geometry}
@@ -16,7 +19,7 @@
 \usepackage{lastpage}
 \usepackage{subcaption}
 \usepackage{epigraph} % this is to add quotes at the beginning of chapters
-\usepackage{bibunits}
+%\usepackage{bibunits}
 \usepackage{empheq}
 \usepackage{nameref}
 \usepackage{rotating}
@@ -26,8 +29,6 @@
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
 
- 
-%\usepackage{helvet}
 
 \newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
 
@@ -63,14 +64,11 @@
 %\DeclareUnicodeCharacter{308}{"}
 
 %\usepackage{feynmf}
-\usepackage{cite}
-%\usepackage[numbers,compress]{natbib}
+%\usepackage{cite}
 \usepackage[font={it}]{caption} % package to customise caption fonts
 \usepackage[nottoc,numbib]{tocbibind} % This is to enable titles for table of contents, references etc.
-\setlength{\headheight}{27.1pt}%{1.1\baselineskip}
-%\usepackage[automark]{scrlayer-scrpage} % package to customise the headers and footers
-%\pagestyle{scrheadings}
-%\clearscrheadfoot
+\setlength{\headheight}{27.1pt}
+
 
 \usepackage[section]{placeins}
 
@@ -91,9 +89,6 @@
 \makeatother
 
 
-%\ofoot{\pagemark}
-%\ohead{\headmark}
-
 \usepackage[colorlinks=true, citecolor=blue, linkcolor = black, pdfborder={0 0 0},backref=page]{hyperref}
 \usepackage{cleveref}
 
@@ -105,6 +100,7 @@
     \fi}
 
 \numberwithin{equation}{section}
+
 
 
 \graphicspath{{pics/}{pics/Ch1_Introduction/}{pics/Ch2_Theory/}{pics/Ch3_Methods/}{pics/Ch4_Simulations/}{pics/Ch5_Results1/}{pics/Ch6_Results2/}{pics/Ch7_Results3/}{pics/Ch8_Results4/}{pics/Ch9_Conclusion/}}
@@ -227,34 +223,6 @@ Johann Wolfgang von Goethe -- Faust. Der Trag\"odie erster Teil.
 %\textbf{Publications}
 %\end{center}
 
-\iffalse
-\chapter*{Publications}
-
-The following publications contain work presented in this thesis:
-\vspace{\baselineskip}
-results from RR2: betamax (not before submission), dream beam (submission before thesis submission?), gamma spec (not before submission), LICS (realistically not before submission), BW2018 (realistically not before submission)
-
-The author contributed to the following publications during the course of his PhD:
-
-Cole RR PRX, Poder RR PRX, Keegan Gamma KSI, Amina imaging, Brendan XANES (soon to be submitted), Savio Cluster paper (soon to be submitted), PPCF CP Ridgers/Arran special issue, SPIE Arran, Joel chirp? (soon to be submitted), Roman SPIE special issue, BW RSI (before submission?), BW Robbie (before submission?), Matt Transformer (soon to be submitted), Strathy rings (?)
-
-% bibunit to list our publications
-\begin{bibunit}
-\renewcommand{\bibsection}{}%{\large \textbf{\begin{center}
-%Publications
-%\end{center}}}
-\makeatletter
-\renewcommand\@biblabel[1]{#1.}
-\makeatother
-\def\bibfont{\small}
- 
-%list all the references in the publications bibtex file
-\nocite{*}
-\putbib[mypub]
-\end{bibunit}
-
-\vspace*{\fill}
-\fi
 
 \newpage
 
@@ -335,8 +303,8 @@ The specific role of the author and contributions of other researchers in the co
 
 \clearpage
 \renewcommand{\bibname}{References}
-\bibliography{General,Theses,Plasma,SPD,LaserDiags,GammaDet,Betatron,Facilities,Wakefield,ICSRR,ICS_Diag,Sims,Ionisation,Xrays,BW_Astro,IonAcc}
-\bibliographystyle{unsrt}
+\bibliography{ICS_Diag,General,Theses,Plasma,SPD,LaserDiags,GammaDet,Betatron,Facilities,Wakefield,Sims,Ionisation,Xrays,IonAcc,ICSRR,BW_Astro}%}{}
+%\bibliographystyle{unsrt}
 
 \end{document}
 
