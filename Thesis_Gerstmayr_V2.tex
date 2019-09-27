@@ -10,6 +10,7 @@
 \bibliographystyle{unsrtnat}
 
 \usepackage{amsmath}
+\usepackage{bm}
 \usepackage[a4paper,width=160mm, top=15mm,bottom=15mm,includeheadfoot]{geometry}
 \usepackage{graphicx}
 \usepackage[onehalfspacing]{setspace}
@@ -28,9 +29,15 @@
 \usepackage{pifont}% http://ctan.org/pkg/pifont
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
-
+\usepackage[table]{xcolor}
 
 \newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
+
+% Table customization
+\setlength{\arrayrulewidth}{0.5mm}
+%\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+
 
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{color}
