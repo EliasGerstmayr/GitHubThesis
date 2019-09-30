@@ -6,7 +6,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage[numbers,compress]{natbib}
+\usepackage[numbers,sort&compress]{natbib}
 \bibliographystyle{unsrtnat}
 
 \usepackage{amsmath}
@@ -44,9 +44,10 @@
 \newcommand{\EliasComm}[1]{\todo[inline,color=blue!40]{EG: #1}}
 \newcommand{\SMComm}[1]{\todo[inline,color=green!40]{SM: #1}}
 \newcommand{\addref}{\todo[color=red!40]{REF}}
+\newcommand{\adderr}{\todo[color=red!40]{ERROR}}
 \newcommand{\addlink}{\todo[color=yellow!40]{LINK}}
 \newcommand{\addnum}{\todo[color=orange!40]{NUM}}
-
+\renewcommand{\floatpagefraction}{.8}%
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
