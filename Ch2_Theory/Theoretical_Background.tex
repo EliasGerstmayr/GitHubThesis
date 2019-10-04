@@ -1457,7 +1457,7 @@ Secondly, a first self-consistent solution is presented: the Landau-Lifschitz mo
 
 After discussing these classical approaches to radiation reaction, finally, a model based on a quantum picture is introduced. Here an electron passing through a high intensity field can either be described by a series of individual multi-photon Feynman diagrams or as an electron in a dressed state, the Furry picture. The latter is appropriate in the context of high-field QED. We find that the quantum picture provides two important corrections to the classical picture: one is the adjustment of the radiation spectrum and power eliminating the unphysical emission of radiation larger than the electron energy by introducing a cut-off. This reduction of emitted power can be parametrised by the Gaunt factor and applied to the LL model as a continuation into the high-field regime, resulting in a semi-classical model with classical equations of motion but an emission power adjusted to the quantum picture. The other adjustment is the introduction of stochasticity. The quantum world is inherently non-deterministic and bound to probabilities. One initial state does not always end up in the same final state even if the boundary conditions are identical. This results in interesting phenomena including a hardening of the photon spectrum and a widening of the electron energy spread.
 
-However, even the model presented is derived within a framework relying on approximations. In this case this is the local constant field approximation (LCFA) which assumes that during the formation time of the photon the electric field does not change significantly. For an extremely intense oscillating electromagnetic field, for instance an intense laser field, this might not always be true and even this model might have its limitations. The LCFA is introduced and its potential limitations are shown as motivation for future research.
+However, even the model presented is derived within a framework relying on approximations. In this case this is the local constant field approximation (LCFA) which assumes that during the formation time of the photon the electric field does not change significantly. For an extremely intense oscillating electromagnetic field, for instance an intense laser field, this might not always be true and even this model might have its limitations \cite{DiPiazza2018_LCFA}. The LCFA is introduced and its potential limitations are shown as motivation for future research.
 
 \subsection{Lorentz-Abraham-Dirac Equation (LAD)}
 
@@ -1498,7 +1498,18 @@ The relativistic generalisation was found by Dirac renormalising in 4-space. The
 
 \EliasComm{Despite the runaway solution: if one ignores this solution tree, are the predictions feasible?}
 
-\EliasComm{Explicitly write out LAD.}
+
+Lorentz-Abraham-Dirac (LAD) equation in terms of the four-acceleration  \cite{Bulanov2011_LADLL,DiPiazza2012_ICS}:
+
+\begin{equation}
+m \frac{\mathrm{d}u^\mu}{\mathrm{d}s} = e F^{\mu\nu} u_\nu + \frac{2}{3} e^2 \left(\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}s^2} + \frac{\mathrm{d}u^\nu}{\mathrm{d}s}\frac{du_\nu}{\mathrm{d}s}u^\mu\right),
+\end{equation}
+
+with the radiation friction force
+
+\begin{equation}
+g^\mu = \frac{2e^2}{3c} \left[\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}s^2} - u^\mu \left(\frac{\mathrm{d}u^\nu}{\mathrm{d}s}\right)\left(\frac{\mathrm{d}u_\nu}{\mathrm{d}s}\right)\right].
+\end{equation}
 
 \subsection{Classical Landau-Lifschitz (LL) Description}
 
@@ -1506,7 +1517,8 @@ A first self-consistent solution to including radiation reaction into a classica
 LL solution is a perturbation and means the radiation reaction force has to be small compared to the Lorentz force and a suitable frame of reference has to be found to make this valid. In some cases energy conservation might be violated in an abruptly changing EM field.
 
 Problems: energy loss can exceed initial energy. Stochasticity not included.
-\EliasComm{Write out coherently}
+
+
 In EM four vector form \cite{Bulanov2011_LADLL}:
 
 \begin{equation}
@@ -1653,12 +1665,38 @@ The threshold is $s > 1$.
 
 \subsubsection{Nonlinear Breit Wheeler}
 
-Nonlinear Breit Wheeler 
-Seen at SLAC E144 \cite{Bula1996_RR,Burke1997_RR}
+Nonlinear Breit Wheeler measured at SLAC E144 \cite{Bula1996_RR,Burke1997_RR}
 
 Many photons interacting with one to generate pairs.
 
 \EliasComm{Do not go into detail here as we are not investigating the non-linear process here.}
+
+\subsection{Vacuum polarisation}
+
+Photon-photon scattering
+
+\cite{DiPiazza2012_ICS}:
+
+for $\eta = k_1k_2/m^2$:
+
+$\eta \ll 1$:
+\begin{equation}
+\sigma_{\gamma\gamma \rightarrow \gamma\gamma} = \frac{973}{81000\pi}\alpha^4 \lambda^2_C \eta^3
+\end{equation}
+
+$\eta \gg 1$:
+\begin{equation}
+\sigma_{\gamma\gamma \rightarrow \gamma\gamma} = \frac{1}{\pi}\left[\frac{108}{5} + \frac{13}{2}\pi^2 - 8 \pi^2 \zeta(3) +\frac{148}{225}\pi^4-24\zeta(5)\right]\alpha^4\lambda^2_C \frac{1}{\eta}
+\end{equation}
+
+or in terms of the center-of-momentum energy $\omega^\ast$:
+\begin{equation}
+\sigma_{\gamma\gamma\rightarrow\gamma\gamma} [\mathrm{cm}^2] =
+\begin{cases}
+7.4 \times 10^{-66} (\omega^\ast [\mathrm{eV}])^6 & \mathrm{for } \omega^\ast \ll m,\\
+5.4 \times 10^{-36}/(\omega^\ast [\mathrm{GeV}])^2 & \mathrm{for } \omega^\ast \gg m.
+\end{cases}
+\end{equation}
 
 \subsection{Schwinger limit}
 

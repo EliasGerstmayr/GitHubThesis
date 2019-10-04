@@ -1,3 +1,5 @@
+\appendix
+
 \chapter{Appendix}
 
 \section{Notation and Glossary}
@@ -174,6 +176,48 @@ Replacing $p \cdot k = m \omega$ and $p \cdot k' = m\omega'$
 
 
 
-\section{Correlation}
+\section{Statistics}
+
 
 \subsection{Linear correlation coefficient}
+
+The Pearson correlation coefficient for two random variables and $N$ data points is defined as:
+\begin{equation}
+\rho(A, B) = \frac{1}{N-1} \sum_{i=1}^N \left( \frac{A_i-\mu_A}{\sigma_A}\right)^\ast \left(\frac{B_i-\mu_B}{\sigma_B}\right)
+\end{equation}
+or 
+\begin{equation}
+\rho(A, B) = \frac{\mathrm{cov}(A,B)}{\sigma_A \sigma_B}
+\end{equation}
+
+The correlation coefficient is a measure of the linear dependence of the two variables.
+
+REFS: MATLAB and FISHER STATS 1958, KENDALL ADVANCED 1979, PRESS NUMERICAL 1992
+
+
+\subsection{Normal Distribution}
+
+Gaussian probability density function
+\begin{equation}
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{\frac{-(x-\mu)^2}{2\sigma^2}}
+\end{equation}
+
+With cumulative distribution 
+
+\begin{equation}
+p = F(x) = \frac{1}{\sigma\sqrt{2\pi}}\int_{-\inf}^x e^{\frac{-(t-\mu)^2}{2\sigma^2}}\mathrm{d}t
+\end{equation}
+
+Standard normal cumulative distribution function
+
+\begin{equation}
+\Phi(x) = \frac{1}{2} \left[ 1 - \mathrm{erf}\left(-\frac{x}{\sqrt{2}}\right)\right]
+\end{equation}
+
+\subsection{Kernel Density Estimate}
+
+MATLAB:
+
+\begin{equation}
+\hat{f}_h(x) = \frac{1}{nh}\sum_{i=1}^n K\left(\frac{x-x_i}{h}\right)
+\end{equation}
