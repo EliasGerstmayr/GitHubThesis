@@ -11,7 +11,7 @@ A level-1 auxiliary file: Ch5_Results1/RR2015.aux
 A level-1 auxiliary file: Ch6_Results2/BW2018.aux
 A level-1 auxiliary file: Ch9_Conclusion/Conclusions.aux
 A level-1 auxiliary file: Ch10_Appendix/Appendix.aux
-Reallocated field_info (elt_size=4) to 11110 items from 5000.
+Reallocated field_info (elt_size=4) to 11292 items from 5000.
 Database file #1: ICS_Diag.bib
 Database file #2: General.bib
 Database file #3: Theses.bib
@@ -43,45 +43,45 @@ Warning--can't use both volume and number fields in Dirac1930_Annihilation
 Warning--can't use both volume and number fields in Klemperer1934_Annihilation
 Warning--empty journal in Heitler1954_BH
 Warning--can't use both volume and number fields in Fedotov2017_NAROZHNY
-You've used 235 entries,
+You've used 242 entries,
             2354 wiz_defined-function locations,
-            2135 strings with 68553 characters,
-and the built_in function-call counts, 93557 in all, are:
-= -- 7920
-> -- 2004
-< -- 203
-+ -- 904
-- -- 452
-* -- 4821
-:= -- 9874
-add.period$ -- 795
-call.type$ -- 235
+            2179 strings with 70820 characters,
+and the built_in function-call counts, 96194 in all, are:
+= -- 8136
+> -- 2067
+< -- 208
++ -- 932
+- -- 466
+* -- 4947
+:= -- 10154
+add.period$ -- 817
+call.type$ -- 242
 change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 248
-duplicate$ -- 8899
-empty$ -- 8403
-format.name$ -- 648
-if$ -- 22123
+cite$ -- 255
+duplicate$ -- 9155
+empty$ -- 8644
+format.name$ -- 669
+if$ -- 22750
 int.to.chr$ -- 0
-int.to.str$ -- 235
-missing$ -- 1793
-newline$ -- 1348
-num.names$ -- 235
-pop$ -- 2848
+int.to.str$ -- 242
+missing$ -- 1846
+newline$ -- 1386
+num.names$ -- 242
+pop$ -- 2936
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3829
+skip$ -- 3937
 stack$ -- 0
-substring$ -- 5427
-swap$ -- 6517
-text.length$ -- 203
+substring$ -- 5564
+swap$ -- 6699
+text.length$ -- 208
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 692
-width$ -- 238
-write$ -- 2624
+while$ -- 710
+width$ -- 245
+write$ -- 2698
 (There were 13 warnings)
