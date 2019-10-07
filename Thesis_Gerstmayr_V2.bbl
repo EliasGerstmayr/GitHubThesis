@@ -676,6 +676,14 @@ K.~Poder.
 \newblock Ph.D. thesis, Imperial College London, 2016.
 \newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.733125}
 
+\bibitem{Clayton2010_ION}
+C.~E. Clayton et~al.
+\newblock \enquote{Self-Guided Laser Wakefield Acceleration beyond 1 GeV Using
+  Ionization-Induced Injection}.
+\newblock \emph{Phys. Rev. Lett.}, 105, (2010), p. 105003.
+\newblock \doi{10.1103/PhysRevLett.105.105003}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.105.105003}
+
 \bibitem{Soloviev2011_TWOSCREEN}
 A.~A. Soloviev et~al.
 \newblock \enquote{{Two-screen single-shot electron spectrometer for laser
@@ -814,12 +822,33 @@ H.-E. Tsai et~al.
 \newblock \emph{Physics of Plasmas}, 25, (2018), p. 043107.
 \newblock \doi{10.1063/1.5023694}.
 
+\bibitem{Alley1996_LaserWire}
+R.~Alley et~al.
+\newblock \enquote{A laser-based beam profile monitor for the SLC/SLD
+  interaction region}.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, 379,
+  (1996), pp. 363--365.
+
+\bibitem{Leemans1996_ICS_BeamTransLong}
+W.~Leemans et~al.
+\newblock \enquote{X-ray based subpicosecond electron bunch characterization
+  using 90 Thomson scattering}.
+\newblock \emph{Physical review letters}, 77, (1996), p. 4182.
+
 \bibitem{Okugi1999_WireScanner_Emittance}
 T.~Okugi et~al.
 \newblock \enquote{Evaluation of extremely small horizontal emittance}.
 \newblock \emph{Phys. Rev. ST Accel. Beams}, 2, (1999), p. 022801.
 \newblock \doi{10.1103/PhysRevSTAB.2.022801}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.2.022801}
+
+\bibitem{Sakai2001_BeamSize}
+H.~Sakai et~al.
+\newblock \enquote{Measurement of an electron beam size with a laser wire beam
+  profile monitor}.
+\newblock \emph{Physical Review Special Topics-Accelerators and Beams}, 4,
+  (2001), p. 022801.
 
 \bibitem{Honda2005_ICS_LaserWire}
 Y.~Honda et~al.
@@ -870,6 +899,21 @@ L.~M. Chen et~al.
   laser-driven-clustering gas target}.
 \newblock \emph{Scientific Reports}, 3.
 \newline\urlprefix\url{https://doi.org/10.1038/srep01912}
+
+\bibitem{HarShemesh2012_INTENSITY}
+O.~Har-Shemesh and A.~D. Piazza.
+\newblock \enquote{Peak intensity measurement of relativistic lasers via
+  nonlinear Thomson scattering}.
+\newblock \emph{Opt. Lett.}, 37, (2012), pp. 1352--1354.
+\newblock \doi{10.1364/OL.37.001352}.
+\newline\urlprefix\url{http://ol.osa.org/abstract.cfm?URI=ol-37-8-1352}
+
+\bibitem{Yan2017_ICS}
+W.~Yan et~al.
+\newblock \enquote{{High-order multiphoton Thomson scattering}}.
+\newblock \emph{Nature Photonics}, 11, (2017), pp. 514--520.
+\newblock \doi{10.1038/nphoton.2017.100}.
+\newline\urlprefix\url{http://dx.doi.org/10.1038/nphoton.2017.100}
 
 \bibitem{Esarey1993_NT}
 E.~Esarey, S.~K. Ride, and P.~Sprangle.
@@ -933,13 +977,6 @@ C.~Liu et~al.
 \newblock \enquote{Generation of 9 MeV $\gamma$-rays by all-laser-driven
   Compton scattering with second-harmonic laser light}.
 \newblock \emph{Optics letters}, 39, (2014), pp. 4132--4135.
-
-\bibitem{Yan2017_ICS}
-W.~Yan et~al.
-\newblock \enquote{{High-order multiphoton Thomson scattering}}.
-\newblock \emph{Nature Photonics}, 11, (2017), pp. 514--520.
-\newblock \doi{10.1038/nphoton.2017.100}.
-\newline\urlprefix\url{http://dx.doi.org/10.1038/nphoton.2017.100}
 
 \bibitem{Shaw2017_ICS}
 J.~Shaw et~al.
@@ -1238,14 +1275,6 @@ C.~S. Shen and D.~White.
 \newblock \doi{10.1103/PhysRevLett.28.455}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.28.455}
 
-\bibitem{HarShemesh2012_INTENSITY}
-O.~Har-Shemesh and A.~D. Piazza.
-\newblock \enquote{Peak intensity measurement of relativistic lasers via
-  nonlinear Thomson scattering}.
-\newblock \emph{Opt. Lett.}, 37, (2012), pp. 1352--1354.
-\newblock \doi{10.1364/OL.37.001352}.
-\newline\urlprefix\url{http://ol.osa.org/abstract.cfm?URI=ol-37-8-1352}
-
 \bibitem{Corvan2016_TIMING}
 D.~J. Corvan et~al.
 \newblock \enquote{Optical measurement of the temporal delay between two
@@ -1536,14 +1565,6 @@ B.~Bergmann et~al.
 \newblock \enquote{3D track reconstruction capability of a silicon hybrid
   active pixel detector}.
 \newblock \emph{The European Physical Journal C}, 77, (2017), p. 421.
-
-\bibitem{Clayton2010_ION}
-C.~E. Clayton et~al.
-\newblock \enquote{Self-Guided Laser Wakefield Acceleration beyond 1 GeV Using
-  Ionization-Induced Injection}.
-\newblock \emph{Phys. Rev. Lett.}, 105, (2010), p. 105003.
-\newblock \doi{10.1103/PhysRevLett.105.105003}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.105.105003}
 
 \bibitem{Kneip2009_GEV}
 S.~Kneip et~al.
