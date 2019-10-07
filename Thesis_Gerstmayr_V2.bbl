@@ -116,6 +116,11 @@ A.~Pak et~al.
 \newblock \doi{10.1103/PhysRevLett.104.025003}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.104.025003}
 
+\bibitem{Kruer}
+W.~Kruer.
+\newblock \emph{The physics of laser plasma interactions}.
+\newblock CRC Press, 2018.
+
 \bibitem{Mori1997_NONLINEARPLASMA}
 W.~Mori.
 \newblock \enquote{The physics of the nonlinear optics of plasmas at
@@ -709,6 +714,65 @@ K.~T. Behm et~al.
 \newblock \doi{10.1063/1.5056248}.
 \newline\urlprefix\url{http://aip.scitation.org/toc/rsi/89/11}
 
+\bibitem{Nakano2001_ICSNuclear}
+T.~Nakano et~al.
+\newblock \enquote{Multi-GeV laser-electron photon project at SPring-8}.
+\newblock \emph{Nuclear Physics A}, 684, (2001), pp. 71--79.
+
+\bibitem{Chouffani2006_ICS_BeamParam}
+K.~Chouffani et~al.
+\newblock \enquote{Determination of electron beam parameters by means of
+  laser-Compton scattering}.
+\newblock \emph{Phys. Rev. ST Accel. Beams}, 9, (2006), p. 050701.
+\newblock \doi{10.1103/PhysRevSTAB.9.050701}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.9.050701}
+
+\bibitem{Utsunomiya2014_ICS_BeamEnergy}
+H.~Utsunomiya et~al.
+\newblock \enquote{Energy calibration of the NewSUBARU storage ring for laser
+  Compton-scattering gamma rays and applications}.
+\newblock \emph{IEEE Transactions on Nuclear Science}, 61, (2014), pp.
+  1252--1258.
+
+\bibitem{Sakai2002_ICS_LaserWire}
+H.~Sakai et~al.
+\newblock \enquote{Performance studies of a laser wire beam profile monitor}.
+\newblock \emph{Japanese journal of applied physics}, 41, (2002), p. 6398.
+
+\bibitem{Barber1993_POL}
+D.~Barber et~al.
+\newblock \enquote{The HERA polarimeter and the first observation of electron
+  spin polarization at HERA}.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, 329,
+  (1993), pp. 79--111.
+
+\bibitem{Baylac2002_POL}
+M.~Baylac et~al.
+\newblock \enquote{First electron beam polarization measurements with a Compton
+  polarimeter at Jefferson Laboratory}.
+\newblock \emph{Physics Letters B}, 539, (2002), pp. 8--12.
+
+\bibitem{Weber2018_POL}
+G.~Weber et~al.
+\newblock \enquote{{Compton polarimetry using double-sided segmented x-ray
+  detectors}}.
+\newblock \emph{Journal of Physics: Conference Series}, 583.
+\newblock \doi{10.1088/1742-6596/583/1/012041}.
+\newline\urlprefix\url{http://iopscience.iop.org/article/10.1088/1742-6596/583/1/012041/pdf}
+
+\bibitem{Golovin2016_ICS_BeamEmittance}
+G.~Golovin et~al.
+\newblock \enquote{Intrinsic beam emittance of laser-accelerated electrons
+  measured by x-ray spectroscopic imaging}.
+\newblock \emph{Scientific reports}, 6, (2016), p. 24622.
+
+\bibitem{Kramer2018_Gamma}
+J.~Kr{\"a}mer et~al.
+\newblock \enquote{Making spectral shape measurements in inverse Compton
+  scattering a tool for advanced diagnostic applications}.
+\newblock \emph{Scientific reports}, 8, (2018), p. 1398.
+
 \bibitem{Moller1932_Moller}
 C.~M{\o}ller.
 \newblock \enquote{Zur theorie des durchgangs schneller elektronen durch
@@ -757,11 +821,6 @@ T.~Okugi et~al.
 \newblock \doi{10.1103/PhysRevSTAB.2.022801}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.2.022801}
 
-\bibitem{Sakai2002_ICS_LaserWire}
-H.~Sakai et~al.
-\newblock \enquote{Performance studies of a laser wire beam profile monitor}.
-\newblock \emph{Japanese journal of applied physics}, 41, (2002), p. 6398.
-
 \bibitem{Honda2005_ICS_LaserWire}
 Y.~Honda et~al.
 \newblock \enquote{Upgraded laser wire beam profile monitor}.
@@ -774,18 +833,6 @@ A.~Jochmann et~al.
 \newblock \enquote{High resolution energy-angle correlation measurement of hard
   x rays from laser-Thomson backscattering}.
 \newblock \emph{Physical review letters}, 111, (2013), p. 114803.
-
-\bibitem{Golovin2016_ICS_BeamEmittance}
-G.~Golovin et~al.
-\newblock \enquote{Intrinsic beam emittance of laser-accelerated electrons
-  measured by x-ray spectroscopic imaging}.
-\newblock \emph{Scientific reports}, 6, (2016), p. 24622.
-
-\bibitem{Kramer2018_Gamma}
-J.~Kr{\"a}mer et~al.
-\newblock \enquote{Making spectral shape measurements in inverse Compton
-  scattering a tool for advanced diagnostic applications}.
-\newblock \emph{Scientific reports}, 8, (2018), p. 1398.
 
 \bibitem{Weingartner2012_BUNCH}
 R.~Weingartner et~al.
@@ -873,11 +920,6 @@ G.~Baldwin and G.~Klaiber.
 \newblock \enquote{X-ray yield curves for $\gamma$- n reactions}.
 \newblock \emph{Physical Review}, 73, (1948), p. 1156.
 
-\bibitem{Nakano2001_ICSNuclear}
-T.~Nakano et~al.
-\newblock \enquote{Multi-GeV laser-electron photon project at SPring-8}.
-\newblock \emph{Nuclear Physics A}, 684, (2001), pp. 71--79.
-
 \bibitem{Bosco2008_LW}
 A.~Bosco et~al.
 \newblock \enquote{A two-dimensional laser-wire scanner for electron
@@ -885,20 +927,6 @@ A.~Bosco et~al.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
   Accelerators, Spectrometers, Detectors and Associated Equipment}, 592,
   (2008), pp. 162--170.
-
-\bibitem{Baylac2002_POL}
-M.~Baylac et~al.
-\newblock \enquote{First electron beam polarization measurements with a Compton
-  polarimeter at Jefferson Laboratory}.
-\newblock \emph{Physics Letters B}, 539, (2002), pp. 8--12.
-
-\bibitem{Barber1993_POL}
-D.~Barber et~al.
-\newblock \enquote{The HERA polarimeter and the first observation of electron
-  spin polarization at HERA}.
-\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 329,
-  (1993), pp. 79--111.
 
 \bibitem{Liu2014_ICS}
 C.~Liu et~al.

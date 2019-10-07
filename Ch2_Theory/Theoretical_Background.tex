@@ -131,7 +131,6 @@ The motion of the electron consists of two decoupled motions: one at the constan
 \subsection{Electron motion in a monochromatic plane EM wave}
 
 This derivation is based on \cite{ThomasThesis}.
-
 Writing the equation of motion (EoM) in terms of the potentials $\mathbf{A}$ and $\Phi$ as in Equation \eqref{Theory:Eqns:EoMLorentz} on page \pageref{Theory:Eqns:EoMLorentz} gives:
 
 \begin{equation}
@@ -280,7 +279,7 @@ The electron is performing a periodic oscillation around the z-axis, whilst the 
 
 The previously discussed case of a particle in a homogeneous magnetic field corresponds to the motion in a magnetic electron spectrometer or the deflection of charged particles in a circular accelerator.
 We will now discuss the motion of an electron in a cylindrically symmetric electric field which resembles the case of an electron in a plasma channel.
-This derivation is based on Jonathan Wood's PhD thesis (Imperial College) \cite{WoodThesis}.
+This derivation is based on \cite{WoodThesis}.
 
 Assume a relativistic electron moving in the longitudinal direction and an electric field that is cylindrically symmetric around the propagation axis.
 We ignore any vector potential contributions and only use a scalar potential.
@@ -607,7 +606,7 @@ $N^{6+} \rightarrow N^{7+} $ & $667.0$ & $1.6 \times 10^{19}$
 
 \subsection{Plasma Frequency}
 
-The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced (REF KRUER OR SO\addref). It constitutes the typical time scale and the corresponding plasma wavelength $\lambda_p$ the typical length scale of the medium.
+The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced \cite{Kruer}. It constitutes the typical time scale and the corresponding plasma wavelength $\lambda_p$ the typical length scale of the medium.
 \vspace{\baselineskip}
 
 Assume a uniform and neutral plasma, i.e. $n_e = Z n_i = n_{e0}$, where $n_e$ is the electron number density, $Z$ the charge number of the ions, $n_i$ the ion number density, and the initial electric field be $\mathbf{E} = \mathbf{0}$.
@@ -806,7 +805,7 @@ w^2_0 a^2_0 &= 32 \frac{c^2}{\omega^2_p},\nonumber\\
 w_0 &= \frac{\sqrt{32}}{a_0} \frac{c}{\omega_p}
 \end{align}
 
-and expressing this in terms of laser power\cite{Sprangle1987_SELFFOCUS}
+and expressing this in terms of laser power \cite{Sprangle1987_SELFFOCUS}
 \begin{equation}
 \boxed{P_c \approx 17 \frac{\omega^2_0}{\omega^2_p} \,\mathrm{GW} = 17 \frac{n_c}{n_e} \, \mathrm{GW},}
 \end{equation}
@@ -1484,7 +1483,11 @@ m(\mathbf{\dot{v}}-\tau \mathbf{\ddot{v}}) = \mathbf{F}_{ext}.
 This equation of motion, sometimes referred to as Abraham-Lorentz equation, depends on the second derivative of the velocity in time which results in runaway solutions.
 For a vanishing external force, we obtain two solutions for $\mathbf{\dot{v}}$:
 \begin{equation}
-\mathbf{\dot{v}}(t) = 0 \,or\, \mathbf{a}e^{t/\tau}.
+\mathbf{\dot{v}}(t) = 
+\begin{cases}
+\mathbf{0} \\
+\mathbf{a}e^{t/\tau}.
+\end{cases}
 \end{equation}
 
 $\mathbf{a}$ is the acceleration at $t = 0$. If $\mathbf{a} \neq 0$ we run into trouble.
