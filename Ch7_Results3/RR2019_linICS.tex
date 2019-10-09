@@ -2,6 +2,9 @@
 \label{Chap:linICS}
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     \section{Motivation}
 
+\EliasComm{Think of more motivation that does not overlap too much with RR chapter, maybe focus more on diagnostics and specific examples. For radiation reaction studies beam parameters, ellipticity, polarisation etc. are important.}
+\EliasComm{In general, measurement of intensity are also relevant.}
+
 Linear Inverse Compton scattering is used widely in conventional accelerators as high-energy radiation source to study nuclear processes \cite{Nakano2001_ICSNuclear} and as beam diagnostic to measure the beam energy \cite{Chouffani2006_ICS_BeamParam,Utsunomiya2014_ICS_BeamEnergy}, position \cite{Sakai2002_ICS_LaserWire}, emittance \cite{Sakai2002_ICS_EMITTANCE}, polarisation \cite{Barber1993_POL,Baylac2002_POL,Weber2018_POL} and other properties of the particle beam.
 
 More recently it has also found application in laser wakefield accelerators as X-ray source for imaging applications, for instance of high-Z materials \cite{Banerjee2015_ICS_RADIOGRAPHY}, and since it inherits the ultrafast nature of the LWFA electron beam \cite{Lundh2011_BUNCH} it also has potential as X-ray probe for fast processes like laser-driven shocks in materials or structural transitions such as non-thermal melting \cite{Albert2016_APP}.
@@ -57,6 +60,8 @@ A second laser pulse was focused by an $f/2$ off-axis parabola (OAP) at the oppo
 Both laser beams were synchronised to each other in vacuum to an accuracy of $\pm30\,\mathrm{fs}$ using spatial interferometry \cite{Cole2018_RR}. A 90-degree dielectric knife-edge prism (Thorlabs MRAK25-E03) was inserted at the interaction point, deflecting both beams collinearly onto the CCD chip of a camera (AVT Manta G-033B) equipped with a $\times10$ long-working-distance infinity-corrected microscope objective (Mitutoyo NIR). Due to the different radii of curvature of both beams, especially near the focus of the $f/2$ beam, a circular interference pattern emerges when the beams are overlapped in space and time. The timing procedure is explained in more detail in Section \ref{Methods:Sec:DualBeamTiming} of the \nameref{Chap:Methods}.
 
 \subsubsection{Particle and Radiation diagnostics}
+
+\EliasComm{If I am not using both views, should I mention this here?}
 
 The radiation, the remaining driver laser and the electrons propagate through the hole in the $f/2$ OAP into a large aperture [$10\,\mathrm{cm} \times 30\,\mathrm{cm}$ (vertical $\times$ horizontal)] permanent dipole magnet\footnote{designed, and assembly and positioning supervised by Dominik Hollatz (Jena)} of integrated magnetic field strength $\int B(x) \mathrm{d}x = 0.35\,\mathrm{Tm}$. 
 The electrons are dispersed in the horizontal plane and electrons of energy lower than 220 MeV collide with the yoke of the magnet resulting in an effective low-energy cut-off. The dispersed beam leaves the vacuum chamber through a two-layer wide-aperture vacuum window\footnote{designed and tested by the Mechanical Engineering Division at the CLF, in particular Daniel Treverrow.} of dimensions $580 \,\mathrm{mm} \,\times\, 70\,\mathrm{mm}$ (horizontal $\times$ vertical). The layer facing the vacuum consists of $25\,\mathrm{\upmu m}$ of Kapton, the outside layer is $375\,\mathrm{\upmu m}$ of Kevlar (chemical equation $C_{14} H_{14} N_2 O_4$, density $\rho = 1.44\,\mathrm{g/cm}^3$ \cite{Kevlar}) providing additional mechanical stability and fibre support that acts as mechanical fail-safe. A scintillating sensitive Lanex screen (Kodak Biomax) is placed just after the window, at $1.61\,\mathrm{m}$ distance downstream of the interaction point, to measure the spectrum of the dispersed electron beam. The screen also extends beyond the laser and radiation axis. The light and thin material of the window and the short distance to the Lanex screen minimises the impact of multiple small-angle scattering on the measurement \cite{Moller1932_Moller,Bethe1953_Moliere}.
@@ -158,6 +163,7 @@ In brief, shifting the longitudinal OAP position and the focal plane in space on
 \caption[Waist size of a Gaussian laser beam focusing with an $f/2$ optic as a function of distance from the focal plane.]{Waist size of a Gaussian laser beam focusing with an $f/2$ optic as a function of distance from the focal plane. By establishing the size of the laser beam with a raster scan one can then adjust the relative arrival time of the electron beam and the laser pulse to move the interaction plane into the high-intensity focus. If one moves the delay in the wrong direction, one will then see a larger beam at lower intensity which can be confirmed by another raster scan before then moving to the right relative timing for high-intensity collisions.}
 \label{linICS:Figs:RasterTemporalTranslationIdea}
 \end{figure}
+\EliasComm{Add some features to Figure 4.8.}
 
 \subsubsection{Laser raster scan as tool to achieving high-intensity interactions}
 
@@ -306,6 +312,7 @@ The with the gamma profile screen estimated number of photons, $N_{X,\gamma}$, i
 The dataset we analyse consists of two parts, here referred to simply as \textsc{a} and \textsc{b}: \textsc{b} includes the laser raster scan as presented in Section \ref{Chap:linICS:Sec:RasterScan} with an estimated average intensity of $a_0 \sim 0.3$ at a laser beam radius of $r = 200\pm50\,\mathrm{\upmu m}$. In dataset \textsc{a} the beam size was not determined through the raster scan technique and the exact beam diameter is for now unknown, but based on the consistency of laser-electron interactions we infer [$r \gg w_0$]. Dataset \textsc{a} is shown in blue in Figure \ref{linICS:Figs:NxNxEXP_Plot} and \textsc{b} in purple, whereas a green line indicates where $N_{X,\gamma} = N_{X,0}$.
 The data points from \textsc{b} are systematically lower than estimated with $N_{X,0}$ and $N_{X,\gamma}$ being linearly correlated at a coefficient of $0.49$, whereas \textsc{a} is on average higher with more scatter and a lower correlation coefficient of $0.27$. The ratio of the $N_{X,\gamma}$ to the predicted value (green line) is shown in a histogram in Figure \ref{linICS:Figs:NxNxEXP_Plot_Histo}, where the same colours again represent the same datasets.
 The average ratio for the data from the laser raster scan (\textsc{b}) is $0.53\pm0.28$, where the error is the statistical error and not the measurement error of the technique. The estimated number of photons for this part of the dataset was $4.08\pm1.03\times10^7$ photons, with $2.09\pm1.18\times10^7$ photons estimated by the gamma profile screen. As we assume that the on-shot electron and laser energy measurements are reliable, this either indicates that the calibration of the profile screen using the radioactive source is missing a systematic factor of $\sim 2$ or that the beam parameters deviate slightly from what we determined in Section \ref{Chap:linICS:Sec:RasterScan}, for instance since we are also averaging over the collisions near the hole of the scattering beam which produced a lower yield during the raster scan (see Figure \ref{linICS:Figs:GammaProfileRasterCounts}). The ratio for \textsc{a} is higher at an average of $4.57\pm3.44$ with a large statistical variance. The estimated number of photons was $2.75\pm1.06\times10^7$ photons and $1.12\pm0.85\times10^8$ photons measured by the gamma profile screen. Assuming that the ratios in both datasets are affected by the same systematic factor, if at all, we find that the number of measured photons is $\sim8.6\pm5.7$ times larger in \textsc{a} than in \textsc{b}, such that even if we match $N_{X,0}$ and $N_{X,\gamma}$ for dataset \textsc{b} there is a large discrepancy in for both values in \textsc{a}, indicating different beam parameters at the interaction. The implications of the ratios will be discussed in the following section.
+\EliasComm{Need to review Cs137 calibration and maybe add in Methods or Appendix.}
 
 \section{Laser beam size estimate from photon yield}
 \label{Chap:linICS:Sec:YieldBeamSize}
@@ -335,6 +342,7 @@ The with Equation \eqref{linICS:Eqn:rLaser_NxRatios} and \eqref{linICS:Eqn:a0Las
 In the previous section we found that for dataset \textsc{b} the yield was $53\%$ of the estimated value (see Figure \ref{linICS:Figs:NxNxEXP_Plot_Histo}). According to Equation \eqref{linICS:Eqn:rLaser_NxRatios} the beam radius is then $1/\sqrt{0.53} \approx 1.37$ times the estimated value of $r = 200\pm50\,\mathrm{\upmu m} \rightarrow 274\,\mathrm{\upmu m}$, which is beyond the error bar estimated by the step size. Assuming the measurement is correct the radius is then with statistical fluctuations $(1.37 \pm 0.36) \times r = 274\pm72\,\mathrm{\upmu m}$, which overlaps with the estimated size, but is systematically lower. This is partly due to the lower intensity near the hole in the scattering beam which leads to a systematic overestimate of the beam radius for those shots, but the estimate of the intensity in Equation \eqref{linICS:Eqn:a0Laser_NxRatios} will still be valid. The average radius estimated corresponds to an intensity of $a_0 \approx 0.21\pm0.06$ (see Figure \ref{linICS:Figs:NxNxEXP_a0}). In principle, it would be beneficial to confirm the calibration with a range of different radioactive sources and other high-energy sources like bremsstrahlung or by varying the laser energy at a fixed beam diameter to confirm the scaling of the energy deposition and to increase confidence in this method. In any case the intensity is $a_0 < 0.3$ and the spectral shape estimated appears to be correct. Independently of the exact value of $r$, we can use this to estimate the relative beam diameter in the second part of the dataset that was not scanned with the raster scan.
 
 The inferred number of photons in dataset \textsc{a}, on the other hand, were systematically larger than in \textsc{b}, which indicates that the beam size is here systematically smaller by a factor $\sim \sqrt{4.57} \approx 2.14$, so at a radius of $r = 94\,\mathrm{\upmu m}$ (see Figure \ref{linICS:Figs:NxNxEXP_radius}). This corresponds to an average intensity of $a_0 \approx 0.57\pm0.2$ (see Figure \ref{linICS:Figs:NxNxEXP_a0}), where the error bars are the statistical error assuming a normal distribution. The outlier at the higher end show a much higher yield than expected, indicating onsets of nonlinear interactions that would result into emission of higher harmonics and increase in the cross section (REF\addref). In the weakly nonlinear regime our assumptions will start to break down and an estimate of the spectrum and the beam size based on the deposited energy becomes less reliable as the scaling of the emission power changes (REF\addref).
+\EliasComm{If I investigate the nonlinearity I need to figure out how to estimate the fraction contributed by higher harmonics.}
 
 \begin{figure}
 \centering
@@ -350,6 +358,7 @@ In order to quantify the validity of this method further and to remove potential
 In the previous sections, we established the experimental parameters we operate in and based on this identified a fixed relation between the electron spectra and the emitted radiation. In this section we will confirm whether this relation holds in the experiment using specific examples. The gamma spectrometer in this experiment is an elongated elongated stack of caesium-iodide crystals that is imaged by a cooled 14-bit EMCCD camera (Andor iXon). The stack used in this experiment enables to follow the decay of the radiation through the stack from two perspectives or projection axes (top and side). The sideways emission is reflected by a vertical mirror upwards. Due to the elongation of the stack we were using two cameras to image the stack from the top, one to image the front part (both views) and one for the back part. Due to time constraints, we will only consider the response recorded on the side view of the detector and only the front part. Since we are expecting lower energies than in the other two following Chapters \ref{Chap:RR15} and \ref{Chap:BW} using only the first rows of crystals will be sufficient but the resolution is decreased as we are only considering only every other layer (ignoring the top view).
 More details are given in Section \ref{Chap:Methods:subsec:GammaSpec} of the \nameref{Chap:Methods}, in particular relating to the calibration, processing and extraction of the data.
 \EliasComm{Might not require this detail here but instead mention this in experimental setup or leave out at all?}
+\EliasComm{Alternatively, if I get more examples and can fix the other view, can corroborate the other results.}
 \vspace{\baselineskip}
 
 In particular, this method requires an assumption of the spectral shape of the measured radiation and as the response is not unfolded but a simulated response is fitted to the experimental data \cite{Behm2018_Gamma}. In this case we calculate the spectrum of the emitted radiation from the electron spectrum measured on-shot and calculate the detector response expected for that particular emission spectrum. The shape of the detector response will be dominated by the part of the electron spectrum that deposits most of the energy. Using the previous result concerning the energy deposition of different photon energies and assuming a similar detector response since both detectors (gamma profile and spectrometer) are composed of the same material, we can estimate the mean photon energy weighted by their relative contribution to the detector response and compare this the fitted mono-energetic response and the response calculated from linear ICS:
@@ -366,18 +375,17 @@ The response of the detector is in these cases well reproduced by a mono-energet
 \EliasComm{Give parameter for fit quality.}
 \begin{sidewaysfigure}
 \centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaProfile_Espec_20190211r006s106.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaSpec_Side_Fit_20190211r006s106.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaProfile_Espec_20190211r006s106_V2.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaSpec_Side_Fit_20190211r006s106.png}
 
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaProfile_Espec_20190208r015s037.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaSpec_Side_Fit_20190208r015s037.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaProfile_Espec_20190208r015s037_V2.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaSpec_Side_Fit_20190208r015s037.png}
 
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaProfile_Espec_20190211r006s107.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaSpec_Side_Fit_20190211r006s107.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaProfile_Espec_20190211r006s107_V2.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, height=0.2\columnwidth]{GammaSpec_Side_Fit_20190211r006s107.png}
 \caption{A: Fitted mono-energetic response: 15.5 MeV. Average energy 15.9 MeV.
 B: Fitted mono-energetic response: 12.5 MeV. Average energy 12.1 MeV
 C: Fitted mono-energetic response: 11 MeV. Average energy 11.4 MeV}
 \label{Chap:linICS:Fig:SpectralFits}
 \end{sidewaysfigure}
 
-\EliasComm{Change scaling of sidewaysfigure. Make gamma and electron data larger and spectral fits smaller. Add R2 or similar and the mean energy fitted to the plots.}
 
 \subsubsection{Nonlinearity}
 \EliasComm{This needs to be re-written once I have more results on this.}
@@ -427,6 +435,7 @@ with laser oscillations $N_0 = 10$\addnum. The spatial extent of the radiation c
 \sigma_D \approx \theta_f d + \sigma_S \approx \theta_f d,
 \end{equation}
 where $d$ is the distance from the source to the detector plane and $\sigma_S$ is the source size. Since $d \sim \mathrm{m}$ and $\theta \sim \mathrm{mrad}$ but $\sigma_S \sim \mathrm{\upmu m}$, so that we can ignore the contribution of the source size as $\theta_f d \gg \sigma_S$.
+\EliasComm{Revisit variance divergence argument.}
 
 In a first step we will compare the vertical divergence of the gamma radiation measured with the gamma profile screen with the divergence of the electron beam measured in the non-dispersion direction measured with the electron spectrometer. The corresponding \textsc{fwhm} divergences are shown in Figure \ref{linICS:Figs:ICS_Espec_Divergence}. The data is linearly correlated at a correlation coefficient of $0.63$. Ignoring for now the variation in the offset expected due to the shot-to-shot variation in energies, a linear function is fitted to the data. The slope of the fitted line is 1 (ADD ERROR CONFIDENCE INTERVAL\addnum), which is consistent with the relation proposed in Equation \ref{linICS:Eqn:DivergenceTheta_f}. The scattering around the line could then be related to shot-to-shot fluctuations in the electron energy, the limited spatial resolution and other measurement errors. The deviation of the on-shot data from the line fit is shown in \ref{linICS:Figs:ICS_Espec_Divergence} (right side). Assuming a normal distribution of the scatter the standard deviation is $0.81\,\mathrm{mrad}$.
 
@@ -480,6 +489,8 @@ Since the interaction with the laser pulse occurs in the plasma it can be suspec
 
 \subsection{Resolving spatial features}
 
+\EliasComm{Add some matching descriptions to the figures.}
+\EliasComm{Make the inversion clearer.}
 The previous sections have shown that the gamma beam measured on the profile screen can be used to infer the divergence of the electron beam. The lack of correlation of the electron and gamma beam pointing indicates that there is a discrepancy in the orientation of the electron beam measured on the electron spectrometer and the beam interacting with the laser pulse in the plasma. We are now investigating what the gamma profile measurement can tell us qualitatively about the spatial properties of the electron beam at the example of particularly interesting electron beams.
 \vspace{\baselineskip}
 
@@ -487,59 +498,71 @@ In Figure \ref{linICS:Figs:LaserWireExamples_Montage} a montage of electron beam
 The example on the top left of the Figure, for instance, shows an electron beam with distinct oscillations in the vertical axis. This is accompanied by an elongated gamma profile measurement. This indicates that the oscillations are predominantly in the vertical direction and that the elongation of the beam is less pronounced in the dispersion direction.
 \begin{figure}
 \centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_2.png}
+\includegraphics[trim={6cm 2cm 6cm 2cm}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_V4.png}
 \caption[Montage of example electron spectra and corresponding gamma profile measurements.]{Montage of example electron spectra and corresponding gamma profile measurements. The left column of panels and the centre-right column include gamma profile measurements corresponding to the electron spectra shown to their right. For the gamma profile measurements the x- and y-axes indicate the divergence in those directions in mrad. The colour scale indicates the number of pixel counts on the camera and is proportional to the scintillation light emitted by the stack which in turn is proportional to the energy deposited. The curves on the x- and y-axis are the onto the respective axis projected image at fixed maximum height across all panels. For the electron beam the x-axis is the dispersion axis and indicates the electron energy in MeV. The y-axis indicates the vertical divergence. The in the dispersion axis and the divergence axis integrated spectra are shown on the respective axis. The colour scale indicates the charge per MeV per mrad divergence.}
 \label{linICS:Figs:LaserWireExamples_Montage}
 \end{figure}
 \begin{figure}
 \centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_LaserWire_Examples_Ring.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1\columnwidth]{GammaProfile_Espec_20190208r015s317.png}
 \caption[Example of a highly divergent electron beam and the corresponding ring-like gamma emission.]{Example of a highly divergent electron beam at $\epsilon < 500$ MeV (right) and the corresponding gamma-ray emission measured on the profile screen. Due to the high-divergence the gamma radiation extends beyond the profile screen onto a second scintillator stack placed on top. }
 \label{linICS:Figs:LaserWireExamples_Ring}
 \end{figure}
-\begin{figure}
-\centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{GammaProfile_Espec_20190208r015s092.png}
-\caption[Example of two electron beamlets.]{Example of two vertically separated beamlets measured on the electron spectrometer (right) and their corresponding gamma-ray signal on the beam profile (left). The gamma}
-\label{linICS:Figs:LaserWireExamples_Beamlets}
-\end{figure}
+
 The example on the top right shows an electron beam that is tilted in the vertical direction. The gamma beam also indicates a vertical offset, but also shows that the tilt is not only in the vertical but also in the horizontal axis. 
 Similarly the other examples show how varied the gamma profile signal is as much as the electron beam varies from shot to shot.
-\begin{figure}
-\centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_Mono.png}
 
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Example_ICSEdepElecProfile_Intensity.png}
+
+\begin{sidewaysfigure}
+\begin{minipage}[t]{.45\textwidth}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_20190208r015s092.png}
+
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_IntensityEdep_20190208r015s092.png}
+\caption[Example of two electron beamlets.]{Example of two vertically separated beamlets measured on the electron spectrometer (right) and their corresponding gamma-ray signal on the beam profile (left). The gamma}
+\label{linICS:Figs:LaserWireExamples_Beamlets}
+ \end{minipage}
+ \hfill
+\begin{minipage}[t]{.45\textwidth}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_20190208r015s212.png}
+
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_IntensityEdep_20190208r015s212.png}
 \caption[Narrow energy spread beam with small off-axis features.]{Narrow energy spread beam with small off-axis features. Matching up the integrated profiles from electron spectrometer and gamma profile.}
 \label{linICS:Figs:LaserWireExamples_IntensityMatch_Mono}
-\end{figure}
+ \end{minipage}
+\end{sidewaysfigure}
 Looking at some examples a bit more close-up we see in Figure \ref{linICS:Figs:LaserWireExamples_Ring} a highly divergent electron beam around 450 MeV energy. On the electron spectrometer image the electrons are mainly seen concentrated in one point with a straight line in the vertical direction. The gamma profile screen reveals a highly divergent ring-like radiation pattern with a central beam which is not evident from the spectrometer screen.
 
 Figure \ref{linICS:Figs:LaserWireExamples_Beamlets} shows two in the vertical direction separated beamlets at similar energies. The corresponding gamma-ray beam measured with the profile (left) shows that the beams are not only separated vertically but also in the horizontal axis.
 
 These examples show that the radiation profiles are capable of reproducing spectral features visible in the electron spectra and but are also able to provide us additional insight into the composition of the electron beam that is hidden in the dispersion direction of the electron beam.
 
-\begin{figure}
+\begin{sidewaysfigure}
+\begin{minipage}[t]{.45\textwidth}
 \centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_Tilt.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_20190208r015s046.png}
 
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Example_ICSEdepElecProfile_Intensity_2.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_IntensityEdep_20190208r015s046.png}
 \caption[Tilted electron beam.]{With energy tilted electron beam corresponding to vertically but also horizontally tilted beam. Matching up the integrated profiles from electron spectrometer and gamma profile.}
 \label{linICS:Figs:LaserWireExamples_IntensityMatch_Tilt}
-\end{figure}
+ \end{minipage}
+ \hfill
+\begin{minipage}[t]{.45\textwidth}
+\centering
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_20190208r015s084.png}
+
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_IntensityEdep_20190208r015s084.png}
+\caption[Elongated electron beam with off-axis wing at lower energies and corresponding shape in the gamma profile. ]{Elongated electron beam with off-axis wing at lower energies and corresponding shape in the gamma profile. Matching up the integrated profiles from electron spectrometer and gamma profile.}
+\label{linICS:Figs:LaserWireExamples_IntensityMatch_Wing}
+ \end{minipage}
+\end{sidewaysfigure}
+
 
 
 In addition to this qualitative insight we want to investigate how well the radiation profile measured on the gamma profile reflects the spatial features of the electron spectra in terms of spatial separation of those features and their relative brightness. In Figures \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Mono}, \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Tilt} and \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Wing}, three examples are shown. This time the gamma profile measurement and the electron spectrum are complemented by a third panel that shows the onto the y-axis projected gamma profile and electron spectrum in comparison. The first obvious difference are the consistently broader profiles of the gamma-ray measurements which we expected as the radiation profile is a sum of the electron beam divergence and the emission cone. The gamma signal seems to be very good to show spectral changes over a broader range. In Figure \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Mono} the position of the secondary peak seems to be at the in right position in terms of divergence but the amplitude is much larger. The spatial feature ion the other side of the beam axis visible in the electron measurement seems to disappear or is not reproduced as the stack ends at this point. Comparing the gamma beam and the electron spectrum it appears as if we are matching up the wrong features. In Figures \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Tilt} and \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Wing} this suspicion seems to be confirmed as more distinctively the regions of higher energy deposition and lower energy deposition seem to be inverted with respect to the vertical charge distribution in the electron spectra. The features are in general harder to see in the electron profile but especially the shape of the decay on both sides in Figure \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Wing} seems to indicate that the inverted gamma profile signal matches the electron profile better. This will be investigated further in the following.
 
 
-\begin{figure}
-\centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_Wing.png}
-
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Example_ICSEdepElecProfile_Intensity_3.png}
-\caption[Elongated electron beam with off-axis wing at lower energies and corresponding shape in the gamma profile. ]{Elongated electron beam with off-axis wing at lower energies and corresponding shape in the gamma profile. Matching up the integrated profiles from electron spectrometer and gamma profile.}
-\label{linICS:Figs:LaserWireExamples_IntensityMatch_Wing}
-\end{figure}
 
 
 
@@ -552,11 +575,7 @@ There are three main explanations for this: first, the vertical arrangement of t
 
 Taking into account the number of photons produced from Equation \eqref{Chap:linICS:Eqn:NX_UsefulUnits}, we require a variation of intensity or photon density across the electron bunch to reproduce an emission profile as in Figure XX\addnum{}, if we assume that the electron charge distribution measured by the electron spectrometer is accurate. Alternatively, a large difference in the electron energy can result in a change in the  relative energy deposition in the profile screen. In Figure \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Tilt} for instance, the bright spot could be related to the increase in energy. However, the change in energy deposition is much more subtle than the change in the charge distribution (see Figure \ref{linICS:Figs:Edep_ResponseGEANT}). Considering a change in intensity we have to keep in mind that we interact with the electron beam in plasma. Here the electron beam is of size $\sim\mathrm{\upmu m}$ \cite{Weingartner2012_BUNCH} and transverse offsets, mainly as part of betatron oscillations, are typically also of order $r_\beta \sim \mathrm{\upmu m}$. For the example in Figure \ref{linICS:Figs:LaserWireExamples_IntensityMatch_Tilt} if we assume a linear gradient across the profile from low intensity to high intensity, we require a difference of a factor of $\sim 2$\addnum{} to first match and then another factor $\sim 2$\addnum{} to invert the brightness scale. Over the scale of few microns this seems very unlikely, particularly in the homogeneous near-field of the laser beam. In addition, the inversion has been observed consistently across shots with high and low yield signals being inverted but not consistently arranged (high top, low bottom for instance), such that a constant variation in the beam profile appears unlikely.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.9\columnwidth]{linICS_Inversion_Sketch_V2.pdf}
-\caption{Inversion Sketch (Replace)}
-\end{figure}
+
 The second hypothesis is that due to the relatively long propagation distance remaining in the plasma after the interaction the electron beam is still evolving and the transverse components perform betatron oscillations. The betatron wavelength is given by (REF\addref)
 \begin{equation}
 \lambda_\beta = \lambda_p \sqrt{2\gamma},
@@ -595,6 +614,7 @@ At the same time this indicates an interesting application of inverse Compton sc
 On the other hand, this analysis further re-affirms the hypothesis that the beam properties change throughout its propagation through the remaining plasma. In order to reflect the parameters of the final electron beam the interaction has to occur outside the plasma when the beam fully evolved.
 
 \EliasComm{Get correct density profile from Cary.}
+\EliasComm{Find a good way to show how the momentum distribution affects the gamma profile (some synthetic images) to replace the blue plots.}
 
 \section{Conclusion}
 
