@@ -19,6 +19,68 @@ In Cartesian coordinates
 In cylindrical coordinates
 
 In spherical coordinates
+\subsection{Convective derivative}
+
+\begin{equation}
+\frac{\mathrm{d}}{\mathrm{d}t} y = \frac{\partial y}{\partial} \mathbf{u} \cdot \nabla y,
+\end{equation}
+with $y = y(\mathbf{x},t)$ and velocity $\mathbf{u}(\mathbf{x},t)$
+
+\subsection{IDENTITY}
+Derivation of the identity:
+
+\begin{equation}
+\mathbf{v} \cdot \nabla \mathbf{p} = \nabla \mathbf{p} \cdot \mathbf{v} - \mathbf{v} \times (\nabla \times \mathbf{p}),
+\end{equation}
+
+with the covariant derivative $\nabla \mathbf{p}$.
+
+\begin{equation}
+A = B + C
+\end{equation}
+
+A:
+\begin{equation}
+\mathbf{v} \cdot \nabla \mathbf{p} = \left( \frac{\partial p_i}{\partial x_j}\right)_{ij}
+\end{equation}
+
+B:
+\begin{equation}
+\mathbf{v} \cdot \nabla \mathbf{p} = \left(v_i \frac{\partial p_i}{\partial x_j}\right)_j
+\end{equation}
+
+C:
+\begin{equation}
+\mathbf{v} \times (\nabla \times \mathbf{p}) = v_m \epsilon_{lmi} \epsilon_{ijk} \frac{\partial p_k}{\partial x_j},
+\end{equation}
+using the cyclic properties of the Levi-Civita symbol and the identity
+\begin{equation}
+\epsilon_{ilm} \epsilon_{ijk} = \delta_{lj} \delta_{mk} - \delta_{lk} \delta_{mj}
+\end{equation}
+the equation becomes
+\begin{equation}
+v_m \left( \delta_{lj}\delta_{mk} - \delta_{lk} \delta_{mj}\right) \frac{\partial p_k}{\partial x_j} = v_k \frac{\partial p_k}{\partial x_l} - v_m \frac{\partial p_l}{\partial x_m}
+\end{equation}
+
+
+
+\subsection{Curl of a gradient}
+\label{Appendix:VectorIdentities:CurlGradZero}
+The curl of a gradient is always zero.
+
+For a scalar function $f(x,y,z)$, the gradient in Cartesian coordinates is
+\begin{equation}
+\nabla f(x,y,z) = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z}\right)^t,
+\end{equation}
+where $\nabla f$ is now a vector field, $\mathbf{F} = \left( F_1, F_2, F_3\right)^t$. The curl of $\mathbf{F}$, $\nabla \times \mathbf{F}$ is then
+\begin{equation}
+\nabla \times \mathbf{F} = \left(\frac{\partial F_3}{\partial y} - \frac{\partial F_2}{\partial z}, \frac{\partial F_1}{\partial z} - \frac{\partial F_3}{\partial x}, \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y}\right),
+\end{equation}
+or again in terms of $f(x,y,z)$:
+\begin{equation}
+\nabla \times \nabla f = \left(\frac{\partial^2 f}{\partial y \partial z} - \frac{\partial^2 f}{\partial z \partial y}, \frac{\partial^2 f}{\partial z \partial x} - \frac{\partial^2 f}{\partial x \partial z}, \frac{\partial^2 f}{\partial x \partial y} - \frac{\partial^2 f}{\partial y \partial x}\right).
+\end{equation}
+If $f$ is twice continuously differentiable, the order of the derivatives is interchangeable and $\nabla \times \nabla f = \mathbf{0}$.
 
 \section{Maxwell's equations}
 
@@ -130,13 +192,19 @@ u &= (k'-p)^2 &= (k-p')^2.
 \section{Cross sections for fundamental QED processes}
 
 \subsection{Derivation Klein-Nishina equation}
-
+\label{Appendix:QEDDeriv_KleinNishina}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.4\columnwidth]{Compton_Feyn1.pdf}\includegraphics[width=0.4\columnwidth]{Compton_Feyn2.pdf}
 \caption{Feynman diagrams for Compton scattering. Time axis from left to right. s- and u-channel.}
 \end{figure}
+
+
+The cross section combines the kinematics of the process (as discussed) with the matrix element of the interaction which includes the physics of the interaction.
+
+This derivation is based on Peskin and Schroeder \cite{PeskinSchroeder} and Schwartz \cite{Schwartz}.
+
 
 See the Feynman diagrams for this.
 
@@ -171,6 +239,16 @@ Replacing $p \cdot k = m \omega$ and $p \cdot k' = m\omega'$
 \begin{equation}
 \frac{d \sigma}{d \cos \theta} = \frac{\pi \alpha^2}{m^2} \left(\frac{\omega'}{\omega}\right)^2 \left[ \frac{\omega'}{\omega} + \frac{\omega}{\omega'} - \sin^2 \theta \right].
 \end{equation}
+
+
+
+\subsubsection{Spin helicity}
+
+In more details this can be written as
+\begin{equation}
+\frac{\mathrm{d}\sigma}{\mathrm{d}y} = \frac{2 \pi \alpha^2}{s((1-y) + m^2/s)^2} \left[(1-y) + \frac{m^2}{s}\right],
+\end{equation}
+where the first part in the bracket corresponds to a helicity-conserving interaction and the second term to a process that flips helicity. 
 
 \subsection{Derivation linear Breit-Wheeler cross section}
 
