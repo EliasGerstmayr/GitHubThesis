@@ -968,7 +968,7 @@ Similarly as a wakefield cavity has analogies with conventional accelerator stru
 
 A good overview over the topic is given by \cite{Albert2016_APP}.
 
-
+\EliasComm{Two ways to calculate radiation spectra and cross sections: Classical method is deriving the equation of motion and solving with Lienard-Wiechert potentials the radiation integrals. The quantum approach is solving the cross sections in Feynman diagrams, Volkov states in the Furry picture.}
 
 \subsection{Bremsstrahlung}
 \begin{figure}[h]
@@ -1119,14 +1119,14 @@ which is independent of photon energy and has a total cross section of $\sigma_{
 
 The total cross section of the Klein-Nishina equation is:
 \begin{equation}
-\sigma = \frac{3}{4}\left[\frac{1 + x}{x^3}\left( \frac{2x(1+x)}{1+2x} - ln(1+2x)\right)\right] + \frac{1}{2x} ln(1+2x) - \frac{1+3x}{(1+2x)^2},
+\sigma = \frac{3}{4}\left[\frac{1 + x}{x^3}\left( \frac{2x(1+x)}{1+2x} - \ln(1+2x)\right)\right] + \frac{1}{2x} \ln(1+2x) - \frac{1+3x}{(1+2x)^2},
 \end{equation}
 with $x = E_\gamma /m_e c^2$, so that in the extreme cases this becomes
 \begin{equation}
 \sigma_{total} = 
 \begin{cases}
 \sigma_T(1-2x+\frac{26 x^2}{5}) & \mathrm{for } x\ll1,\\
-\frac{3}{8}\sigma_T \frac{1}{x} \left( ln 2x + \frac{1}{2}\right) & \mathrm{for } x\gg 1,
+\frac{3}{8}\sigma_T \frac{1}{x} \left( \ln 2x + \frac{1}{2}\right) & \mathrm{for } x\gg 1,
 \end{cases}
 \end{equation}
 so that $\sigma \rightarrow \sigma_T$ for $x \rightarrow 0$, which is the limit of Thomson scattering, and $\sigma \rightarrow 0$ for $x\rightarrow \inf$, which indicates that ultrarelativistic photons are less likely to scatter.
@@ -1192,14 +1192,13 @@ The photon energy is then boosted by $(2\gamma)^2$ to $E_{f,max} = 2 \gamma E'_f
 \subsubsection{Cross-Section}
 
 As for all relevant scenarios $E_i \ll m_e c^2/\gamma$, the interaction in the rest frame is accurately described by the Thomson cross section as given in Equation \eqref{Theory:Eqs:ThomsonXsec}, but in quantities of the rest frame $S'$:
-
 \begin{equation}
-\frac{\mathrm{d} \sigma'}{\mathrm{d}\cos \theta'} = \frac{\pi \alpha^2}{m^2} \left(1+\cos^2 {\theta'}^2\right).
+\frac{\mathrm{d} \sigma'}{\mathrm{d}\cos \theta'} = \frac{\pi \alpha^2}{m^2} \left(1+\cos^2 {\theta'}\right).
 \end{equation}
 
 For $\gamma \gg 1$ the transformation of the angles results in the so-called `headlight effect' or `searchlight effect' since $\cos\theta \rightarrow 1$, so that the photons are preferentially emitted in the direction of the electron momentum vector. If we consider a cross section normal to the direction of the boost $\sigma' \rightarrow \sigma$ and $\sigma = \sigma_T$, the Thomson cross section, so that the cross section is again independent of energy as long as $E_i \ll m_e c^2/\gamma$.
 
-\EliasComm{Add plot showing the transformation of the cross section.}
+\EliasComm{Add plot showing the transformation of the cross section and angles.}
 
 \subsubsection{Emission power}
 
