@@ -155,6 +155,26 @@ P = \frac{e^2 \gamma^6}{6 \pi c \epsilon_0} \left( |\mathbf{\dot{\beta}}|^2 - |\
 %\frac{d^2 I}{d\omega d\Omega} = \frac{e^2 \omega^2}{16 \pi^3 c \epsilon_0} |\int_{-\inf}^\inf \mathbf{n} \times (\mathbf{n} \times \mathbf{\beta}) e^{i\omega (t'- \mathbf{n}\cdot\mathbf{r}(t')/c)} dt|^2
 %\end{equation}
 
+\section{Center-of-mass frame}
+
+\subsection{Scattering angle}
+
+The scattering angle in the CM frame, $\theta_{CM}$, be defined as 
+\begin{equation}
+\mathbf{p} \cdot \mathbf{p}' = |\mathbf{p}| \cdot |\mathbf{p}'| \cos \theta_{CM}
+\end{equation}
+
+The angle be defined as 
+\begin{equation}
+\cos \theta_{CM} = \frac{s (t-u) + (m^2_1 - m^2_2)(m^2_3 - m^2_4)}{\sqrt{\lambda(s,m^2_1,m^2_2)}\sqrt{\lambda(s,m^2_3,m^2_4)}},
+\end{equation}
+where 
+\begin{equation}
+\lambda(a,b,c) = a^2 - 2a(b+c) + (b-c)^2,
+\end{equation}
+which is symmetric under $a \leftrightarrow b \leftrightarrow c$ and asymptotic behaviour $a \gg b,c: \lambda(a,b,c) \rightarrow a^2$.
+For photons $m = 0$, so that $\lambda(a,b,c) = a^2$
+
 \section{Feynman diagrams and convention}
 
 \subsection{Feynman rules for QED}
@@ -210,7 +230,7 @@ tr(\gamma^\mu \gamma^\nu) = 4 g^{\mu \nu}\\
 tr(\gamma^\mu \gamma^\nu \gamma^\rho \gamma^\sigma) &= 4(g^{\mu \nu} g^{\rho \sigma} - g^{\mu \rho} g^{\nu \sigma} + g^{\mu \sigma} g^{\nu\rho})\\
 tr(\gamma^5) &= 0\\
 tr(\gamma^\mu \gamma^\nu \gamma^5) &= 0\\
-tr(\gamma^\mu \gamma^\nu \gamma^\rho \gamma^sigma \gamma^5) = -4i \epsilon^{\mu \nu \rho \sigma}.
+tr(\gamma^\mu \gamma^\nu \gamma^\rho \gamma^\sigma \gamma^5) = -4i \epsilon^{\mu \nu \rho \sigma}.
 \end{align*}
 
 Reversal of orders is allowed within a trace:
@@ -285,7 +305,7 @@ Average squared amplitude over initial electron and photon polarisations. This i
 
 
 \begin{align*}
-\frac{1}{4} \Sigma_{spins} |M|^2 = \frac{e^4}{4} g_{\mu \rho} g_{\nu \sigma} \cdot tr\Bigg\lbrace &(\cancel{p}' + m \left[\frac{\gamma^\mu\cancel{k}\gamma^\nu + 2 \gamma^\mu p^\nu}{2p\cdot k} + \frac{\gamma^\nu \cancel{k}' \gamma^\mu - 2 \gamma^\nu p^\mu}{2p\cdot k'}\right]\\.
+\frac{1}{4} \Sigma_{spins} |M|^2 = \frac{e^4}{4} g_{\mu \rho} g_{\nu \sigma} \cdot tr\Bigg\lbrace &(\cancel{p}' + m \left[\frac{\gamma^\mu\cancel{k}\gamma^\nu + 2 \gamma^\mu p^\nu}{2p\cdot k} + \frac{\gamma^\nu \cancel{k}' \gamma^\mu - 2 \gamma^\nu p^\mu}{2p\cdot k'}\right]\\
 & \cdot (\cancel{p} + m) \left[ \frac{\gamma^\sigma \cancel{k} \gamma^\rho + 2 \gamma^\rho p^\sigma}{2p \cdot k} + \frac{\gamma^\rho \cancel{k}' \gamma^\sigma - 2 \gamma^\sigma p^\rho}{2p\cdot k'}\right]\Bigg\rbrace
 \end{align*}
 
@@ -328,6 +348,28 @@ k' &\rightarrow k_2
 
 The cross section for the Breit-Wheeler process is simply given by XX.
 
+From PRL Yu 2019 122\addref{}:
+
+The energy of the electron and the positron in the production process is equal as it is in the CM frame.
+\begin{equation}
+\epsilon_{ec} = \epsilon_{pc} = \frac{1}{2}\sqrt{2\epsilon_{\gamma1} \epsilon_{\gamma2} (1-\cos \theta_c)}
+\end{equation}
+The momenta follow
+\begin{equation}
+|p_{ec}| = |p_{pc}| = \sqrt{\frac{1}{4}\left[\left(\frac{\epsilon_{\gamma1}+\epsilon_{\gamma2}}{c}\right)^2 - (\mathbf{p}_{\gamma1} + \mathbf{p}_{\gamma2})^2\right] - (m_ec^2)^2}
+\end{equation}
+The gamma momenta are in the laboratory frame. The direction of the electron and positron momentum is isotropic in the CM frame but has to satisfy $\mathbf{p}_{ec} = - \mathbf{p}_{pc}$. In the laboratory frame
+\begin{equation}
+\epsilon_{e,p} = \gamma_c (\epsilon_{ec,pc} + \mathbf{v}_c \cdot \mathbf{p}_{e,p}),
+\end{equation}
+with the momentum in lab frame
+\begin{equation}
+\mathbf{p}_{e,p} = \mathbf{p}_{ec,pc} + \frac{\gamma_c - 1}{v^2_c} (\mathbf{v_c} \cdot \mathbf{p}_{ec,pc}) \cdot \mathbf{v}_c + \frac{\gamma_c \mathbf{v}_c \epsilon_{ec,pc}}{c^2},
+\end{equation}
+with $\gamma_c = 1/\sqrt{1-(v_c/c)^2}$ and $\mathbf{v}_c$, the velocity of the centre of mass frame
+\begin{equation}
+\mathbf{v}_c = \frac{(\mathbf{p}_{\gamma1} + \mathbf{p}_{\gamma2})^2}{\epsilon_{\gamma1} + \epsilon_{\gamma2}}
+\end{equation}
 
 \section{Statistics}
 

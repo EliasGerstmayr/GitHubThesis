@@ -27,6 +27,16 @@ J.~D. Jackson.
 \newblock \doi{10.1119/1.19136}.
 \newline\urlprefix\url{https://doi.org/10.1119/1.19136}
 
+\bibitem{Streeter2018_TEMPFEEDBACK}
+M.~Streeter et~al.
+\newblock \enquote{Temporal feedback control of high-intensity laser pulses to
+  optimize ultrafast heating of atomic clusters}.
+\newblock \emph{Applied Physics Letters}, 112, (2018), p. 244101.
+
+\bibitem{Streeter2019_RASTERSCAN}
+M.~Streeter.
+\newblock Private Communication.
+
 \bibitem{Shalloo_GEMINIDRIFT}
 R.~Shalloo et~al.
 \newblock \enquote{Measurement of femtosecond-scale drift and jitter of the
@@ -366,18 +376,6 @@ F.~Albert and A.~G. Thomas.
   sources}.
 \newblock \emph{Plasma Physics and Controlled Fusion}, 58, (2016), p. 103001.
 
-\bibitem{PeskinSchroeder}
-M.~E. Peskin and D.~V. Schroeder.
-\newblock \emph{An introduction to quantum field theory}.
-\newblock CRC Press, 2018.
-\newblock \doi{10.1201/9780429503559}.
-\newline\urlprefix\url{https://doi.org/10.1201/9780429503559}
-
-\bibitem{Schwartz}
-M.~D. Schwartz.
-\newblock \emph{Quantum field theory and the standard model}.
-\newblock Cambridge University Press, 2014.
-
 \bibitem{TaPhuoc2012_ICS}
 K.~{Ta Phuoc} et~al.
 \newblock \enquote{{All-optical Compton gamma-ray source}}.
@@ -466,13 +464,92 @@ V.~Ritus.
   with an intense electromagnetic field}.
 \newblock \emph{Journal of Russian Laser Research}, 6, (1985), pp. 497--617.
 
-\bibitem{Ribeyre2016_BW}
-X.~Ribeyre et~al.
-\newblock \enquote{Pair creation in collision of $\ensuremath{\gamma}$-ray
-  beams produced with high-intensity lasers}.
-\newblock \emph{Phys. Rev. E}, 93, (2016), p. 013201.
-\newblock \doi{10.1103/PhysRevE.93.013201}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.93.013201}
+\bibitem{Dirac1930_Annihilation}
+P.~A. Dirac.
+\newblock \enquote{On the annihilation of electrons and protons}.
+\newblock In \enquote{Mathematical Proceedings of the Cambridge Philosophical
+  Society}, volume~26, pp. 361--375. Cambridge University Press, 1930.
+
+\bibitem{Dirac1931_Positron}
+P.~A.~M. Dirac.
+\newblock \enquote{Quantised singularities in the electromagnetic field}.
+\newblock \emph{Proceedings of the Royal Society of London. Series A,
+  Containing Papers of a Mathematical and Physical Character}, 133, (1931), pp.
+  60--72.
+
+\bibitem{Klemperer1934_Annihilation}
+O.~Klemperer.
+\newblock \enquote{On the annihilation radiation of the positron}.
+\newblock In \enquote{Mathematical Proceedings of the Cambridge Philosophical
+  Society}, volume~30, pp. 347--354. Cambridge University Press, 1934.
+
+\bibitem{Anderson1932_Positron}
+C.~D. Anderson.
+\newblock \enquote{Energies of cosmic-ray particles}.
+\newblock \emph{Physical Review}, 41, (1932), p. 405.
+
+\bibitem{Anderson1933_Positron}
+C.~D. Anderson.
+\newblock \enquote{The positive electron}.
+\newblock \emph{Physical Review}, 43, (1933), p. 491.
+
+\bibitem{PET_BETAPLUS}
+D.~L. Bailey et~al.
+\newblock \emph{Positron emission tomography}.
+\newblock Springer, 2005.
+
+\bibitem{Ruffini2010_PAIRSASTRO}
+R.~Ruffini, G.~Vereshchagin, and S.-S. Xue.
+\newblock \enquote{Electron--positron pairs in physics and astrophysics: from
+  heavy nuclei to black holes}.
+\newblock \emph{Physics Reports}, 487, (2010), pp. 1--140.
+
+\bibitem{BreitWheeler1934_BW}
+G.~Breit and J.~A. Wheeler.
+\newblock \enquote{Collision of two light quanta}.
+\newblock \emph{Physical Review}, 46, (1934), p. 1087.
+
+\bibitem{Gould1967_BW}
+R.~J. Gould and G.~P. Schr{\'e}der.
+\newblock \enquote{Pair production in photon-photon collisions}.
+\newblock \emph{Physical Review}, 155, (1967), p. 1404.
+
+\bibitem{Nikishov1962_PAIRSASTRO}
+A.~I. Nikishov.
+\newblock \enquote{Absorption of high-energy photons in the universe}.
+\newblock \emph{Sov. Phys. JETP}, 14, (1962), pp. 393--394.
+
+\bibitem{Drebot2017_BW_ICS}
+I.~Drebot et~al.
+\newblock \enquote{Matter from light-light scattering via Breit-Wheeler events
+  produced by two interacting Compton sources}.
+\newblock \emph{Physical Review Accelerators and Beams}, 20, (2017), p. 043402.
+
+\bibitem{Bethe1934_BH}
+H.~Bethe and W.~Heitler.
+\newblock \enquote{On the stopping of fast particles and on the creation of
+  positive electrons}.
+\newblock \emph{Proceedings of the Royal Society of London. Series A,
+  Containing Papers of a Mathematical and Physical Character}, 146, (1934), pp.
+  83--112.
+
+\bibitem{Heitler1933_BHApprox}
+W.~Heitler.
+\newblock \enquote{{\"U}ber die bei sehr schnellen St{\"o}{\ss}en emittierte
+  Strahlung}.
+\newblock \emph{Zeitschrift f{\"u}r Physik}, 84, (1933), pp. 145--167.
+
+\bibitem{Bethe1954_BREMS}
+H.~Bethe and L.~Maximon.
+\newblock \enquote{Theory of bremsstrahlung and pair production. I.
+  Differential cross section}.
+\newblock \emph{Physical Review}, 93, (1954), p. 768.
+
+\bibitem{Davies1954_BREMSPAIR}
+H.~Davies, H.~Bethe, and L.~Maximon.
+\newblock \enquote{Theory of bremsstrahlung and pair production. II. Integral
+  cross section for pair production}.
+\newblock \emph{Physical Review}, 93, (1954), p. 788.
 
 \bibitem{Downer2018_DiagnosticReview}
 M.~C. Downer et~al.
@@ -894,16 +971,6 @@ Y.~Honda et~al.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
   Accelerators, Spectrometers, Detectors and Associated Equipment}, 538,
   (2005), pp. 100--115.
-
-\bibitem{Streeter2018_TEMPFEEDBACK}
-M.~Streeter et~al.
-\newblock \enquote{Temporal feedback control of high-intensity laser pulses to
-  optimize ultrafast heating of atomic clusters}.
-\newblock \emph{Applied Physics Letters}, 112, (2018), p. 244101.
-
-\bibitem{Streeter2019_RASTERSCAN}
-M.~Streeter.
-\newblock Private Communication.
 
 \bibitem{Weingartner2012_BUNCH}
 R.~Weingartner et~al.
@@ -1351,29 +1418,12 @@ C.~D. Baird et~al.
   reaction in high-intensity lasers}.
 \newblock \emph{New Journal of Physics}, 21, (2019), p. 053030.
 
-\bibitem{Nikishov1962_PAIRSASTRO}
-A.~I. Nikishov.
-\newblock \enquote{Absorption of high-energy photons in the universe}.
-\newblock \emph{Sov. Phys. JETP}, 14, (1962), pp. 393--394.
-
 \bibitem{Bonometto1971_PAIRSASTRO}
 S.~Bonometto and M.~Rees.
 \newblock \enquote{On possible observable effects of electron pair production
   in QSOs}.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 152,
   (1971), pp. 21--35.
-
-\bibitem{Ruffini2010_PAIRSASTRO}
-R.~Ruffini, G.~Vereshchagin, and S.-S. Xue.
-\newblock \enquote{Electron--positron pairs in physics and astrophysics: from
-  heavy nuclei to black holes}.
-\newblock \emph{Physics Reports}, 487, (2010), pp. 1--140.
-
-\bibitem{Dirac1930_Annihilation}
-P.~A. Dirac.
-\newblock \enquote{On the annihilation of electrons and protons}.
-\newblock In \enquote{Mathematical Proceedings of the Cambridge Philosophical
-  Society}, volume~26, pp. 361--375. Cambridge University Press, 1930.
 
 \bibitem{Hu2010_TRIDENT}
 H.~Hu, C.~M{\"u}ller, and C.~H. Keitel.
@@ -1387,6 +1437,13 @@ A.~Ilderton.
 \newblock \emph{Phys. Rev. Lett.}, 106, (2011), p. 020404.
 \newblock \doi{10.1103/PhysRevLett.106.020404}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.106.020404}
+
+\bibitem{PeskinSchroeder}
+M.~E. Peskin and D.~V. Schroeder.
+\newblock \emph{An introduction to quantum field theory}.
+\newblock CRC Press, 2018.
+\newblock \doi{10.1201/9780429503559}.
+\newline\urlprefix\url{https://doi.org/10.1201/9780429503559}
 
 \bibitem{Piotrzkowski2001_PhPh}
 K.~Piotrzkowski.
@@ -1439,20 +1496,6 @@ O.~J. Pike.
   validation}.
 \newblock \url{https://phys.org/news/2014-05-scientists-year-quest.html}, 2014.
 \newblock [Online; accessed 20. Sept. 2019].
-
-\bibitem{Klemperer1934_Annihilation}
-O.~Klemperer.
-\newblock \enquote{On the annihilation radiation of the positron}.
-\newblock In \enquote{Mathematical Proceedings of the Cambridge Philosophical
-  Society}, volume~30, pp. 347--354. Cambridge University Press, 1934.
-
-\bibitem{Bethe1934_BH}
-H.~Bethe and W.~Heitler.
-\newblock \enquote{On the stopping of fast particles and on the creation of
-  positive electrons}.
-\newblock \emph{Proceedings of the Royal Society of London. Series A,
-  Containing Papers of a Mathematical and Physical Character}, 146, (1934), pp.
-  83--112.
 
 \bibitem{Heitler1954_BH}
 W.~Heitler.
@@ -1588,11 +1631,6 @@ P.~Roberts et~al.
 \newblock \enquote{The stability of multiple-shell ICF targets}.
 \newblock \emph{Journal of Physics D: Applied Physics}, 13, (1980), p. 1957.
 
-\bibitem{BreitWheeler1934_BW}
-G.~Breit and J.~A. Wheeler.
-\newblock \enquote{Collision of two light quanta}.
-\newblock \emph{Physical Review}, 46, (1934), p. 1087.
-
 \bibitem{Kato1984_PHASEPLATE}
 Y.~Kato et~al.
 \newblock \enquote{Random Phasing of High-Power Lasers for Uniform Target
@@ -1715,5 +1753,10 @@ D.~Seipt et~al.
 \newblock \emph{Physical Review A}, 98, (2018), p. 23417.
 \newblock \doi{10.1103/PhysRevA.98.023417}.
 \newline\urlprefix\url{https://journals.aps.org/pra/pdf/10.1103/PhysRevA.98.023417}
+
+\bibitem{Schwartz}
+M.~D. Schwartz.
+\newblock \emph{Quantum field theory and the standard model}.
+\newblock Cambridge University Press, 2014.
 
 \end{thebibliography}

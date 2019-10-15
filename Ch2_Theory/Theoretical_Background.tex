@@ -1105,28 +1105,27 @@ Polar plots of the final photon energies for different initial photon energies a
 The cross section for Compton scattering, again assuming the electron is initially at rest, is given by the spin-averaged Klein-Nishina formula (see Section \ref{Appendix:QEDDeriv_KleinNishina} for an explicit derivation):
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
-\frac{\mathrm{d}\sigma}{\mathrm{d}\cos{\theta}} &= \frac{\pi \alpha^2}{m^2}\left(\frac{\omega'}{\omega}\right)^2 \left(\frac{\omega'}{\omega} + \frac{\omega}{\omega'}-\sin^2{\theta}\right),\\
-\frac{\mathrm{d}\sigma}{\mathrm{d}\cos{\theta}} &= \frac{\pi \alpha^2}{m^2}\left(\frac{E_f}{E_i}\right)^2 \left(\frac{E_f}{E_i} + \frac{E_i}{E_f}-\sin^2{\theta}\right),
+\frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} &= \frac{\pi \alpha^2}{m^2}\left(\frac{\omega'}{\omega}\right)^2 \left(\frac{\omega'}{\omega} + \frac{\omega}{\omega'}-\sin^2{\theta}\right),\\
+\frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} &= \frac{\pi \alpha^2}{m^2}\left(\frac{E_f}{E_i}\right)^2 \left(\frac{E_f}{E_i} + \frac{E_i}{E_f}-\sin^2{\theta}\right),
 \end{empheq}
 \end{subequations}
 in terms of the initial and final frequency and energy, respectively.
 For very low energetic photons in the limit $\omega \rightarrow 0$ and $\omega'/\omega \rightarrow 1$ the cross section simplifies to 
 \begin{equation}
-\boxed{\frac{\mathrm{d}\sigma}{\mathrm{d}\cos{\theta}} = \frac{\pi \alpha^2}{m_e^2} (1 + \cos^2\theta),}
+\boxed{\frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} = \frac{\pi \alpha^2}{m_e^2} (1 + \cos^2\theta),}
 \label{Theory:Eqs:ThomsonXsec}
 \end{equation}
-which is independent of photon energy and has a total cross section of $\sigma_{total} = 8\pi\alpha^2/(3m_e^2)$. This is the classical Thomson scattering cross section, $\sigma_T$.
-
-The total cross section of the Klein-Nishina equation is:
+which is independent of photon energy and has a total cross section of $\sigma_{\gamma e} = 8\pi\alpha^2/(3m_e^2)$. This is the classical Thomson scattering cross section, $\sigma_T$.
+The total cross section using the Klein-Nishina equation amounts to:
 \begin{equation}
-\sigma = \frac{3}{4}\left[\frac{1 + x}{x^3}\left( \frac{2x(1+x)}{1+2x} - \ln(1+2x)\right)\right] + \frac{1}{2x} \ln(1+2x) - \frac{1+3x}{(1+2x)^2},
+\boxed{\sigma_{\gamma e} = \frac{3}{4}\left[\frac{1 + x}{x^3}\left( \frac{2x(1+x)}{1+2x} - \ln(1+2x)\right)\right] + \frac{1}{2x} \ln(1+2x) - \frac{1+3x}{(1+2x)^2},}
 \end{equation}
 with $x = E_\gamma /m_e c^2$, so that in the extreme cases this becomes
 \begin{equation}
-\sigma_{total} = 
+\sigma_{\gamma e} = 
 \begin{cases}
-\sigma_T(1-2x+\frac{26 x^2}{5}) & \mathrm{for } x\ll1,\\
-\frac{3}{8}\sigma_T \frac{1}{x} \left( \ln 2x + \frac{1}{2}\right) & \mathrm{for } x\gg 1,
+\sigma_T(1-2x+\frac{26 x^2}{5}) & \mathrm{for }~x\ll1,\\
+\frac{3}{8}\sigma_T \frac{1}{x} \left( \ln 2x + \frac{1}{2}\right) & \mathrm{for }~x\gg 1,
 \end{cases}
 \end{equation}
 so that $\sigma \rightarrow \sigma_T$ for $x \rightarrow 0$, which is the limit of Thomson scattering, and $\sigma \rightarrow 0$ for $x\rightarrow \inf$, which indicates that ultrarelativistic photons are less likely to scatter.
@@ -1352,11 +1351,14 @@ After discussing these classical approaches to radiation reaction, finally, a mo
 
 However, even the model presented is derived within a framework relying on approximations. In this case this is the local constant field approximation (LCFA) which assumes that during the formation time of the photon the electric field does not change significantly. For an extremely intense oscillating electromagnetic field, for instance an intense laser field, this might not always be true and even this model might have its limitations \cite{DiPiazza2018_LCFA}. The LCFA is introduced and its potential limitations are shown as motivation for future research.
 
-\subsection{Lorentz-Abraham-Dirac Equation (LAD)}
+\EliasComm{Reviews will be REF DiPiazza2012 and Blackburn2019}
+
+\subsection{Classical Radiation Reaction}
+
+\subsubsection{Lorentz-Abraham-Dirac Equation (LAD)}
 
 This section is based on \cite{Jackson}.
 One intuitive way to derive an expression for radiation reaction is considering conservation of energy. It is well known that accelerated charges emit radiation which is fairly well characterised in the context of synchrotrons, other circular accelerators or undulator setups. The emitted power follows the Larmor power formula
-
 \begin{equation}
 P = \frac{2}{3} \frac{e^2}{c^3} \mathbf{\dot{v}}^2.
 \end{equation}
@@ -1408,7 +1410,7 @@ with the radiation friction force
 g^\mu = \frac{2e^2}{3c} \left[\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}s^2} - u^\mu \left(\frac{\mathrm{d}u^\nu}{\mathrm{d}s}\right)\left(\frac{\mathrm{d}u_\nu}{\mathrm{d}s}\right)\right].
 \end{equation}
 
-\subsection{Classical Landau-Lifschitz (LL) Description}
+\subsubsection{Landau-Lifschitz (LL) Equation}
 
 A first self-consistent solution to including radiation reaction into a classical model was achieved by Landau and Lifschitz \cite{LandauLifschitz}.
 LL solution is a perturbation and means the radiation reaction force has to be small compared to the Lorentz force and a suitable frame of reference has to be found to make this valid. In some cases energy conservation might be violated in an abruptly changing EM field.
@@ -1432,6 +1434,29 @@ In 3-dim.
 
 This is an effective model and the violation of energy conservation is possible.
 
+\EliasComm{According to REF Spohn 2000 all physical solutions of the LAD equation are also solutions of LL}
+
+
+For energy loss in the Landau-Lifschitz model using an analytic expression for a plane wave with a Gaussian temporal envelope given in \cite{Thomas2012_LL,Bulanov2011_LL}
+\begin{equation}
+\frac{\Delta \gamma}{\gamma_0} = \frac{\sqrt{\pi/2}\tau_0 t_L \omega_0^2 \gamma_0 a_0^2}{1+\sqrt{\pi/2 \tau_0 t_L \omega_0^2 \gamma_0 a_0^2}},
+\label{Theory:eq:EnergyLoss_LLThomas}
+\end{equation}
+where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, the pulse duration $t_L = 45\,\mathrm{fs}$, the wavelength be $\lambda = 800\,\mathrm{nm}$.
+
+Estimate relative magnitude (LL)
+
+\begin{equation}
+\boxed{\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c}}
+\end{equation}
+
+\subsubsection{Radiation Integral}
+
+In either case the trajectories are determined and the radiation emitted is calculated from the Lienard-Wiechert potentials:
+\begin{equation}
+\frac{\dif^2 I}{\dif \omega \dif \Omega} = \frac{\alpha \omega^2}{4 \pi^2}| \sum^{N_e}_{k=1} \int^\infty_{-\infty} \mathbf{n} \times (\mathbf{n} \times \mathbf{v}_k) e^{i\omega(t-\mathbf{n}\cdot \mathbf{r}_k}\dif t|^2
+\end{equation}
+
 \subsection{Quantum picture and corrections}
 \EliasComm{Furry picture, treating the laser field as classical external field.}
 \EliasComm{Multi-photon not equal to multi-photon.}
@@ -1448,11 +1473,7 @@ The field in the rest frame becomes important in relation to the critical field.
 With high confidence we know that we require a quantum description of this process.
 There are several ways to solve some of the issues of the classical Landau-Lifschitz description.
 
-Estimate relative magnitude (LL)
 
-\begin{equation}
-\boxed{\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c}}
-\end{equation}
 
 REFS: Chris Ridgers JoP \cite{Ridgers2017_QRR}
 
@@ -1471,6 +1492,40 @@ Fit for function is \cite{Baier1991_GAUNT}:
 \boxed{g(\eta) \approx \left(1 + 4.8(1+\eta)ln(1+1.7\eta)+2.44\eta^2\right)^{-2/3}.}
 \end{equation}
 
+So that the classical radiation reaction force is modified
+\begin{equation}
+\mathbf{F}_{mod,cl} = g \mathbf{F}_{cl} 
+\end{equation}
+
+
+Evolution of the variance 
+
+\begin{equation}
+S(\eta) = \frac{55 \alpha_f c}{24 \sqrt{3} \bar{\lambda}_c} m^2_e c^4 \eta^4 g_2(\eta),
+\end{equation}
+with $g_2(\eta)$
+\begin{equation}
+g_2(\eta) = \frac{\int_0^{\eta/2} \chi F(\eta, \chi) \mathrm{d}\chi}{\int_0 \chi F_{cl}\left(\frac{4\chi}{3\eta^2}\right)} = \frac{144}{55 \pi \eta^4} \int_0^{\eta/2}\chi F(\eta,\chi) \mathrm{d}\chi. 
+\end{equation}
+
+An accurate fit for $g_2$ is parametrised as follows:
+\begin{equation}
+g_2(\eta) \approx [1+ (1+4.528\eta)\ln(1+12.29\eta)+4.632\eta^2]^{-7/6}
+\end{equation}
+The limits are $g_2 \approx 1$ for $\eta \ll 1$, and $g_2 \approx 0.167\eta^{-7/3}$ for $\eta \gg 1$.
+
+\begin{equation}
+\left(\frac{\mathrm{d}\sigma^2}{\mathrm{d}t}\right)_{st} \approx \frac{\alpha_f  b^2}{\bar{\lambda}_c}\left(\frac{55b}{24\sqrt{3}}\left\langle\gamma\right\rangle^4 - \frac{8}{3}\sigma^2 \left\langle\gamma\right\rangle\right).
+\end{equation}
+
+Here 
+\begin{equation}
+\eta = \gamma b, b = |\mathbf{E}_\perp + \mathbf{v}\times \mathbf{B}|/E_s, \chi = (h\nu b)(2m_e c^2)
+\end{equation}
+
+\subsubsection{Old stuff}
+
+
 Assuming local constant cross field approximation \cite{Ritus1985_QRR} (LCFA).
 Formation time, coherence time.
 What is the force in this picture? How does it compare to ponderomotive force?
@@ -1483,90 +1538,137 @@ Cooling of spectra versus competing processes.
 
 \section{Pair Production and Annihilation}
 
-\subsection{Pair annihilation}
+\subsection{Dirac annihilation}
 \begin{figure}
 \centering
-\includegraphics[height=0.3\columnwidth]{Aivazis_PairAnnihilation.pdf}\hspace{1em}%
-\includegraphics[height=0.3\columnwidth]{Aivazis_BreitWheeler.pdf}\hspace{1em}%
-\includegraphics[height=0.3\columnwidth]{Aivazis_BetheHeitler.pdf}
-\caption{Feynman diagrams for, from left to right, pair annihilation, linear Breit-Wheeler pair production and Bethe-Heitler process. Time axis from left to right.}
+\includegraphics[height=0.3\columnwidth]{Aivazis_PairAnnihilation.pdf}\hspace{5em}%
+\includegraphics[height=0.3\columnwidth]{Aivazis_BreitWheeler.pdf}
+\caption{Feynman diagrams for pair annihilation (left) and linear Breit-Wheeler pair production (right). Time axis from left to right.}
 \label{Theory:Figs:Feynman:PairAnnihilation:PairProductionBWBH}
 \end{figure}
 
-The annihilation of an electron and a positron into two photons, matter transformed into light, was proposed by Dirac and is hence referred to as Dirac annihilation. It was experimentally confirmed by Klemperer in 1934.
-
-The annihilation of electron-positron pairs is commonly found in radioactive decays following this simple equation:
+An electron and a positron can annihilate into two photons, i.e. matter is transformed into light. This process is referred to as pair annihilation, two-photon annihilation or Dirac annihilation named after Paul Dirac who postulated the existence of the positron and also its annihilation with an electron \cite{Dirac1930_Annihilation,Dirac1931_Positron}, which was both confirmed experimentally briefly afterwards \cite{Klemperer1934_Annihilation,Anderson1932_Positron,Anderson1933_Positron}.
+It can be described by the following equation
 \begin{equation}
-e^+ + e^- \longrightarrow 2 \gamma,
+e^+ + e^- \longrightarrow \gamma + \gamma,
 \end{equation}
-or in terms of the Feynman diagram in Figure \ref{Theory:Figs:Feynman:PairAnnihilation:PairProductionBWBH}.
-Matter and antimatter meet and annihilate into pure energy converting the rest mass of both particles into photons. In radioactive decays relatively slow pairs collide and the emitted gamma rays are coincident emitted at 180 degrees in the centre-of-mass frame. This is used in radio-isotope therapy to localise the tumour.
+or in terms of the Feynman diagram in Figure \ref{Theory:Figs:Feynman:PairAnnihilation:PairProductionBWBH} (left).
+The annihilation of electron-positron pairs is commonly found in radioactive decays. There relatively `slow' pairs collide and the emitted gamma rays are coincident emitted at 180 degrees in the centre-of-mass frame with $E_{ph} = m_e c^2$ each. This is, for instance, used in coincidence measurements in radio-isotope therapy to localise tumours \cite{PET_BETAPLUS}.
 
-\subsubsection{Kinematics}
-An electron-positron pair at rest, i.e. total momentum was zero before the interaction. This means that the 2 gamma photons will leave (in that frame) back-to-back.
-These photons carry away the same energy. Deviations can be found once the electron and positron carry a kinetic energy.
-
-\subsubsection{Cross section}
-
-The total cross section for the process is given by (REF\addref)
+The total cross section for the process is given by \cite{Ruffini2010_PAIRSASTRO} (see Figure \ref{Theory:Figs:Xsec:DiracBW})
 \begin{equation}
-\sigma_{e^+ e^-} = \frac{\pi r^2_e}{2} (1-\beta^2) \left[ (3-\beta^4) ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right]. 
+\boxed{\sigma_{e^+ e^-} = \frac{\pi r^2_e}{2} (1-\beta^2) \left[ (3-\beta^4) \ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right],}
 \end{equation}
+where $r_e = e^2/4\pi\epsilon_0m_ec^2$ the classical electron radius, $\beta = \sqrt{1-1/s}$ and $s = (E_{CM}/m_e c^2)^2$ the square of the centre-of-mass (CM) energy. In the limit of ultrarelativistic energies, i.e. $s \rightarrow \inf$, $\beta \rightarrow 1$ and as a result $\sigma_{e^+ e^-} \rightarrow 0$. At low energies, $s \rightarrow 1$ reducing the energy to the rest mass, $\beta \rightarrow 0$ and the total cross section diverges, $\sigma_{e^+ e^-} \rightarrow \infty$, due to the logarithm $\ln[(1+\beta)/(1-\beta)]$.
 
-\subsection{Bethe Heitler process}
-
-There are different ways to create pairs:
-Bethe Heitler: 
-Trident: second order diagram. Electron emits a virtual photon which then decays into an electron-positron pair. Could happen in a two-step process of an electron in an external field (laser) performing inverse Compton.
-O. Pike:
+\iffalse
+The differential cross section in terms of CM quantities is given by \cite{PeskinSchroeder}
 \begin{equation}
-\frac{d \sigma_{\gamma Z}}{dE_+}(\omega,x) = -\frac{1}{\bar x^2}\frac{d\sigma_{eZ}}{d\omega}(-\omega,x)
+\frac{\mathrm{d}\sigma}{\mathrm{d}\cos \theta} = \frac{2\pi \alpha^2}{s}\frac{E}{p}\left[\frac{E^2 + p^2 \cos^2\theta}{m^2 + p^2 \sin^2 \theta} + \frac{2 m^2}{m^2 + p^2 \sin^2\theta} - \frac{2 m^4}{(m^2 + p^2 \sin^2 \theta)^2}\right],
 \end{equation}
 
-\subsection{Trident process}
-
-Multi-step process.
-
-\subsection{Breit Wheeler pair production}
-
-
-Linear and nonlinear Breit-Wheeler: two or more photons interact to produce one pair.
-
-
-Explain why X-ray and Gamma interaction is suitable:
-Need to overcome threshold for interaction. Cross section needs to be directed and hence we need one of the photons to be at much higher energy. Beaming!
-
-Annihilation
+in the high energy limit $E\gg m$:
 \begin{equation}
-\sigma_{e^+ e^-} = \pi r^2_0 \frac{(1-\beta^2)}{4\beta^2}\left[(3-\beta^4) ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right]
+\frac{\mathrm{d}\sigma}{\mathrm{d}\cos \theta} \longrightarrow \frac{2 \pi \alpha^2}{s} \left( \frac{1 + \cos^2\theta}{\sin^2 \theta}\right)
 \end{equation}
+\fi
+\subsection{Breit-Wheeler pair production}
+\label{Theory:Subsec:BW}
 
-
-Linear Breit Wheeler kinematics
-
-
-
-Linear Breit Wheeler cross section
-
-In CM frame, from \cite{Ribeyre2016_BW} (Pair creation in collision of gamma-ray beams produced with high intensity lasers) also found in O. Pike's thesis \cite{PikeThesis}
-
+The inverse mechanism of Dirac annihilation is the two-photon (linear) Breit-Wheeler process \cite{BreitWheeler1934_BW}.
+Here two photons combine to produce an electron-positron pair, i.e. matter is created from light.
+The process is described by the equation
 \begin{equation}
-\sigma_{\gamma,\gamma} = \frac{\pi r^2_e}{2}(1-\beta^2) \left[(3-\beta^4) ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right] = 2 \beta^2 \sigma_{e^+ e^-}
+\gamma + \gamma \longrightarrow e^+ + e^-,
 \end{equation}
+or in terms of the corresponding Feynman diagram shown in Figure \ref{Theory:Figs:Feynman:PairAnnihilation:PairProductionBWBH} (centre).
+In the CM frame the total cross section for the process is given by \cite{Gould1967_BW,Ruffini2010_PAIRSASTRO} (see Figure \ref{Theory:Figs:Xsec:DiracBW}):
+\begin{equation}
+\boxed{\sigma_{\gamma,\gamma} = \frac{\pi r^2_e}{2}(1-\beta^2) \left[(3-\beta^4) \ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right] = 2 \beta^2 \sigma_{e^+ e^-},}
+\end{equation}
+where again $s = (E^*/m_e c^2)^2 = E_{\gamma 1} E_{\gamma 2} (1-\cos\phi)/2 m^2_e c^4$, and $\beta = (1-1/s)^{1/2}$, so that it is again required that $s \geq 1$. For head-on collision $\theta = \pi \rightarrow s = E_1 E_2/m^2_e c^4$ and for $\theta = \pi/2 \rightarrow s = E_1 E_2/2m^2_e c^4$. 
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{BWD_Xsec.png}
+\caption{Cross sections for Dirac annihilation and Breit-Wheeler pair production in the CM frame.}
+\label{Theory:Figs:Xsec:DiracBW}
+\end{figure}
+The total cross section of the pair annihilation and the pair production process are related by the factor $2\beta^2$ \cite{Ruffini2010_PAIRSASTRO}, which immediately implies that $\sigma_{\gamma,\gamma} \rightarrow 0$ for $s \rightarrow 1$, opposite to the behaviour of the annihilation cross section. Equally it then indicates that also $\sigma_{\gamma,\gamma} \rightarrow 0$ for $s \rightarrow \infty$. Both cross sections are balanced for $\beta = 1/\sqrt{2}$ or $s = 2$, which is also approximately the maximum of $\sigma_{\gamma,\gamma}$.
+The differential cross section in the CM frame is given by \cite{Nikishov1962_PAIRSASTRO,Drebot2017_BW_ICS}
+\begin{equation}
+\boxed{\frac{\mathrm{d} \sigma_{BW}}{\mathrm{d}\Omega} = r^2_0 \beta (1-\beta^2) \left[ \frac{1 + 2\beta^2 \sin^2 \theta_{CM} - \beta^4 - \beta^4 \sin^4\theta_{CM}}{(1-\beta^2\cos^2\theta_{CM})^2}\right],}
+\label{Theory:Eqs:Xsec:BWdiff}
+\end{equation}
+where $\beta = \sqrt{1 - 1/s}$. 
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{BW_diff_cross_CM.pdf}\includegraphics[width=.5\columnwidth]{BW_Energy_Lab_E2E1.pdf}
 
-$s = (E^*/m_e c^2)^2 = E_{\gamma 1} E_{\gamma 2} (1-\cos\phi)/2 m^2_e c^4, \beta = (1-1/s)^{1/2}$
+\includegraphics[width=.5\columnwidth]{BW_MomentumVectors_Labframe_Pi4CM.pdf}\includegraphics[width=.5\columnwidth]{BW_MomentumVectors_Labframe_Pi2CM.pdf}
+\caption{Top left: Polar plot of differential Breit-Wheeler cross sections in the centre-of-mass (CM) calculated using Equation \eqref{Theory:Eqs:Xsec:BWdiff} for different centre-of-mass energies, $s$. Top right: Polar plot of the particle energy distribution in the laboratory frame for different ratios of the incident photon energies, with photon 1 propagating at zero degrees and $E_1 = 300\MeV$ and photon 2 at $180^\circ$. Bottom: Momentum vectors in the laboratory frame for a fixed centre-of-mass angle and varying ratios of $E_2/E_1 = 1, 0.5, 0.01$, left at $\theta_{CM} = 45^\circ$ and on the right at $\theta_{CM} = 90^\circ$. The blue vectors show the particle at $\theta_{CM}$ in the CM frame, whereas the red vectors correspond to the momentum vectors of the particles in the laboratory frame at $-\theta_{CM}$ in the CM frame.}
+\label{Theory:Figs:BW_DiffXsec_CM_E_LAB}
+\end{figure}
+The values in the laboratory system are calculated using
+\begin{align}
+E_{3,4} &= \gamma_{CM} \left( E^{CM}_{3,4} + \bm{\beta}_{CM} \cdot \mathbf{p}^{CM}_{3,4}\right),\\
+\mathbf{p}_{3,4} &= \mathbf{p}^{CM}_{3,4} + \frac{\gamma_{CM}-1}{\beta^2_{CM}}\left(\bm{\beta}_{CM} \cdot \mathbf{p}^{CM}_{3,4}\right) \bm{\beta}_{CM} + \gamma_{CM} E^{CM}_{3,4} \bm{\beta}_{CM},
+\end{align}
+with $\gamma_{CM} = (E_1 + E_2)/\sqrt{s}$ and $\bm{\beta}_{CM} = (\mathbf{p}_1 + \mathbf{p}_2)/(E_1 + E_2)$.
 
-For head-on collision $\theta = \pi \rightarrow s = E_1 E_2/m^2_e c^4$ and for $\theta = \pi/2 \rightarrow s = E_1 E_2/2m^2_e c^4$.
-The threshold is $s > 1$.
- \cite{PikeThesis} ($\sigma \sim 2 \beta^2 \sigma$ relating annihilation and pair production
 
-\subsubsection{Nonlinear Breit Wheeler}
+\subsubsection{Nonlinear Breit-Wheeler}
 
-Nonlinear Breit Wheeler measured at SLAC E144 \cite{Bula1996_RR,Burke1997_RR}
+In the nonlinear Breit-Wheeler process more than two photons interact to produce one electron-positron pair.
+The equation for the Breit-Wheeler process then becomes:
+\begin{equation}
+\gamma + n \gamma \longrightarrow e^+ + e^-.
+\end{equation}
+Typically many $n$ low-energy photons interact with one high-energy gamma ray to produce the pair. This has been measured at the E144 experiment at SLAC \cite{Bula1996_RR,Burke1997_RR}.
 
-Many photons interacting with one to generate pairs.
+Similarly as for nonlinear Compton scattering the multiphoton process requires the evaluation of higher order Feynman diagrams or in the Furry picture the use of Volkov states to sum over all possible states.
 
-\EliasComm{Do not go into detail here as we are not investigating the non-linear process here.}
+The second harmonic is for instance given by (REF RITUS JSOV LASeR RES 1985 and T NOUSCH PHYSICS LETTER B 2012):
+\begin{equation}
+\sigma_2 (s) = \frac{a^2_0}{4}\frac{2 \pi \alpha^2}{s}\left[\left(6 + \frac{3}{u_2} - \frac{20}{u^2_2} + \frac{15}{u^3_2}\right)\beta_2 + \frac{15}{2u^2_2}\beta^4_2 \ln \frac{1+\beta_2}{1-\beta_2}\right],
+\end{equation}
+where $u_n = ns/(4m^2)$ and $\beta_n = \sqrt{1- u^{-1}_n}$.
+
+\subsection{Bethe-Heitler pair production}
+\begin{figure}
+\centering
+\includegraphics[height=0.3\columnwidth]{Aivazis_BetheHeitler.pdf}\hspace{5em}%
+\includegraphics[width=0.35\columnwidth]{Aivazis_Bremsstrahlung.pdf}
+\caption{Feynman diagram for Bethe-Heitler process (left) and bremsstrahlung (right) as comparison. Time axis from left to right.}
+\label{Theory:Figs:Feynman:BH}
+\end{figure}
+A photon of energy $> 2m_e c^2$ can produce an electron-positron pair in the nuclear Coulomb field. This is called the Bethe-Heitler proces \cite{Bethe1934_BH}.
+The process is described by the equation
+\begin{equation}
+\gamma + Z \longrightarrow Z + e^+ + e^-,
+\end{equation}
+with the corresponding Feynman diagram shown in Figure \ref{Theory:Figs:Feynman:BH} (left) along with the diagram for bremsstrahlung (right).
+The differential cross section for the process is related to the bremsstrahlung cross section via crossing symmetry as follows
+\begin{equation}
+\frac{d \sigma_{\gamma Z}}{dE_+}(\omega,x) = -\frac{1}{\hbar x^2}\frac{d\sigma_{eZ}}{d\omega}(-\omega,x),
+\end{equation}
+where $x = \hbar \omega / E_+$, the ratio of the initial photon to the final positron energy.
+
+The total cross section scales as \cite{Heitler1933_BHApprox,Ruffini2010_PAIRSASTRO}
+\begin{equation}
+\sigma_{\gamma Z} \sim \alpha Z^2 \left(\frac{e^2}{m_ec^2}\right)^2,
+\end{equation}
+and in the ultrarelativistic case the total cross section for a photon of energy $\hbar \omega$ to produce a pair is \cite{Bethe1954_BREMS,Davies1954_BREMSPAIR,Ruffini2010_PAIRSASTRO}
+\begin{equation}
+\sigma_{\gamma Z} = \frac{28}{9} Z^2 \alpha r^2_e \left(\ln\frac{2\omega}{m_e} - \frac{109}{42} - f(Z\alpha)\right),
+\end{equation}
+with
+\begin{equation}
+f(Z\alpha) = (Z\alpha)^2 \sum^\infty_{n=1}\frac{1}{n[n^2 + (Z\alpha)^2]}.
+\end{equation}
+For $Z \alpha \ll 1$ the term $f(Z\alpha)\rightarrow 0$ \cite{Bethe1934_BH}.
+
+\EliasComm{Proper treatment is using dressed states that include the classical background fields exactly. At high Chi parameters the interaction becomes non-perturbative which means the dressed state treatment is not valid anymore. Tree level processes with many vertices also become important. Then radiative corrections become important.}
+
 
 \subsection{Vacuum polarisation}
 
@@ -1597,10 +1699,11 @@ or in terms of the center-of-momentum energy $\omega^\ast$:
 \begin{equation}
 \sigma_{\gamma\gamma\rightarrow\gamma\gamma} [\mathrm{cm}^2] =
 \begin{cases}
-7.4 \times 10^{-66} (\omega^\ast [\mathrm{eV}])^6 & \mathrm{for } \omega^\ast \ll m,\\
-5.4 \times 10^{-36}/(\omega^\ast [\mathrm{GeV}])^2 & \mathrm{for } \omega^\ast \gg m.
+7.4 \times 10^{-66} (\omega^\ast [\mathrm{eV}])^6 & \mathrm{for }~ \omega^\ast \ll m,\\
+5.4 \times 10^{-36}/(\omega^\ast [\mathrm{GeV}])^2 & \mathrm{for }~ \omega^\ast \gg m.
 \end{cases}
 \end{equation}
+\EliasComm{Add plot of cross section.}
 
 \subsection{Schwinger limit}
 
