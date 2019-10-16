@@ -157,6 +157,15 @@ P = \frac{e^2 \gamma^6}{6 \pi c \epsilon_0} \left( |\mathbf{\dot{\beta}}|^2 - |\
 
 \section{Center-of-mass frame}
 
+Defined by $\mathbf{p_1} = - \mathbf{p_2}$, so that for scattering events $2 \rightarrow 2$ also $\mathbf{p_3} = -\mathbf{p_4}$.
+
+In the special case $m_1 = m_2$, and $m_3 = m_4$, we also have $E^{CM}_1 = E^{CM}_2$ and $E^{CM}_4 = E^{CM}_4$.
+
+The centre of mass energy 
+\begin{equation}
+s = \frac{E_1 E_2 (1-\cos \theta)}{4m^2_e c^4}
+\end{equation}
+
 \subsection{Scattering angle}
 
 The scattering angle in the CM frame, $\theta_{CM}$, be defined as 
@@ -370,6 +379,34 @@ with $\gamma_c = 1/\sqrt{1-(v_c/c)^2}$ and $\mathbf{v}_c$, the velocity of the c
 \begin{equation}
 \mathbf{v}_c = \frac{(\mathbf{p}_{\gamma1} + \mathbf{p}_{\gamma2})^2}{\epsilon_{\gamma1} + \epsilon_{\gamma2}}
 \end{equation}
+
+\subsection{Bremsstrahlung with screening}
+\label{Appendix:Brems_with_Screening}
+
+The (in energy) differential cross section for electron-nucleus bremsstrahlung is in the ultra-relativistic limit, including electron contributions and screening, given by\addref
+\begin{align}
+\frac{\dif \sigma_{eZ}}{\dif \omega} = \frac{\alpha r^2_e}{\omega} \Bigg\lbrace &\left(\frac{4}{3} - \frac{4}{3}y + y^2\right) \times \left[Z^2\left(\phi_1 - \frac{4}{3}\ln Z - 4f\right) + Z \left(\psi_1 - \frac{8}{3}\ln Z\right)\right]\\ \nonumber 
+& + \frac{2}{3}(1-y) \left[ Z^2 (\phi_1 - \phi_2) + Z(\psi_1 - \psi_2)\right]\Bigg\rbrace,
+\end{align}
+with $y = \hbar \omega/\gamma m_e c^2$, the ratio of the emitted photon energy to the initial electron energy. $Z$ is the atomic number of the nucleus.
+
+The Coulomb correction term for the atomic electrons is given by
+\begin{equation}
+f(z) \approx 1.202 z - 1.0369z^2 + 1.008z^3/(1+z).
+\end{equation}
+
+\begin{align*}
+\phi_1 &= 2\left[1+\ln\left(a^2 Z^{2/3} m^2_e\right)\right] - 2\ln(1+b^2) - 4b \tan^{-1} (b^{-1}),\\
+\phi_2 &= 2\left[\frac{2}{3}+\ln\left(a^2 Z^{2/3}m^2_e\right)\right] -\ln(1+b^2) + 8b^2 \left[1-b \tan^{-1}(b^{-1}) - \frac{3}{4}\ln(1+b^{-2})\right],\\
+\psi_1 &= 2\left[1+\ln\left(a'^2 Z^{4/3}m^2_e\right)\right] -2\ln(1+b'^2) - 4b' \tan^{-1} (b^{-1}),\\
+\psi_2 &= 2\left[\frac{2}{3}+\ln \left(a'^2 Z^{4/3} m^2_e\right)\right] - 2 \ln (1+b'^2) + 8 b'^2 \left[1-b \tan^{-1} (b'^{-1}) - \frac{3}{4} \ln (1+b'^{-2})\right], 
+\end{align*}
+with $a=184.15(2.718)^{-1/2} Z^{-1/3}/m_e$, $a' = 1194(2.718)^{-1/2} Z^{-2/3}/m_e$, $b = a \delta$, $b' = a' \delta$, $\delta = m^2_e \hbar \omega/(2\gamma m_e c^2(\hbar \omega - \gamma m_e c^2))$.
+
+
+\subsection{Small Angle Scattering}
+
+
 
 \section{Statistics}
 
