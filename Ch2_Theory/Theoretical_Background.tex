@@ -1142,23 +1142,14 @@ with $x = E_\gamma /m_e c^2$, so that in the extreme cases this becomes
 \frac{3}{8}\sigma_T \frac{1}{x} \left( \ln 2x + \frac{1}{2}\right) & \mathrm{for }~x\gg 1,
 \end{cases}
 \end{equation}
-so that $\sigma \rightarrow \sigma_T$ for $x \rightarrow 0$, which is the limit of Thomson scattering, and $\sigma \rightarrow 0$ for $x\rightarrow \inf$, which indicates that ultrarelativistic photons are less likely to scatter.
+so that $\sigma_{\gamma e} \rightarrow \sigma_T$ for $x \rightarrow 0$, which is the limit of Thomson scattering, and $\sigma_{\gamma e} \rightarrow 0$ for $x\rightarrow \infty$, which indicates that ultra-relativistic photons are less likely to scatter.
 \EliasComm{Different Thomson cross section, units in PS might be different.}
 
-The differential cross section is shown in a polar plot in Figure \ref{Theory:Figs:Compton_E_XSEC} (right) for different incoming photon energies. At low photon energies the cross sections are symmetric in forwards and backwards direction following Thomson scattering (see Equation \eqref{Theory:Eqs:ThomsonXsec}). The emission spectrum of Compton scattering at low photon energies is symmetric in the forwards and backwards direction. At increasing photon energies reaching the X-ray and gamma regime the photon is preferentially scattered in the forwards direction.
+The differential cross section is shown in a polar plot in Figure \ref{Theory:Figs:Compton_E_XSEC} (right) for different incoming photon energies. At low photon energies the cross section and the photon spectrum are symmetric in forwards and backwards direction following Thomson scattering (see Equation \eqref{Theory:Eqs:ThomsonXsec}). At increasing photon energies reaching the X-ray and gamma regime the photon is preferentially scattered in the forwards direction at the lowest momentum transfer (exactly $0$ at $\theta = 0$).
 
 \subsection{Linear Inverse Compton Scattering}
 
 In the previous section Compton scattering and its classical low-energy limit Thomson scattering were discussed for a single photon interacting with an electron that is initially at rest. Here we will consider the special case of a relativistic electron of energy $\epsilon \gg m_e c^2$ interacting with a single photon. Whilst in Compton scattering momentum is transferred from the photon to the electron, resulting in a longer wavelength of the scattered photon, we will see that in this scenario the photon gains considerable amount of energy from the electron. Due to this inversion of the energy balance relative to standard Compton scattering, this special case is referred to as \textit{inverse} Compton scattering (ICS).
-
-\begin{figure}
-\centering
-\includegraphics[width=0.8\columnwidth]{ICS_Jason.png}
-\caption{Visualisation of inverse Compton scattering (ICS). A relativistic electron is counter-propagated with a laser pulse which gains energy from the interaction due to the relativistic Doppler-effect. Graphics by Jason Cole (Imperial College). REPLACE VISUALISATION BY OWN.}
-\end{figure}
-
-\EliasComm{need new ICS visualisation.}
-
 
 \subsubsection{Kinematics}
 
@@ -1169,41 +1160,40 @@ In the rest frame of the electron the photon experiences a relativistic Doppler-
 \begin{equation}
 E'_i = \gamma E_i (1-\mathbf{\beta} \cdot \mathbf{e_k}) = \gamma E_i (1 - \beta \cos\theta) \approx \gamma E_i (1- \cos\theta),
 \end{equation}
-where we assumed that the electrons are highly relativistic and $\beta \approx 1$.
-In a head-on collision ($\theta = \pi$) the photon energy in the electron rest frame is maximised by a factor of $2\gamma$. Angles transform similarly via
+where we assumed that the electron is highly relativistic and $\beta \approx 1$.
+In a head-on collision ($\theta = \pi$) the photon energy in the electron rest frame is maximised by a factor of $2\gamma$. The angles transform via
 \begin{equation}
-\sin\theta' = \frac{\sin \theta}{\gamma (1 + \beta \cos \theta)}, \cos \theta' = \frac{\cos \theta + \beta}{1 + \beta \cos \theta}
+\sin\theta' = \frac{\sin \theta}{\gamma (1 + \beta \cos \theta)},~\cos \theta' = \frac{\cos \theta + \beta}{1 + \beta \cos \theta}.
+\label{Theory:Eqs:ICS:BoostAngles}
 \end{equation}
 
-In this frame the scattered photon energies follow the same relation as before (see Equation \eqref{Theory:Eqs:Compton_Egammaf}), but in terms of dashed quantities:
+In this frame the scattered photon energies follow the same relation as for standard Compton scattering (see Equation \eqref{Theory:Eqs:Compton_Egammaf}), but in terms of dashed quantities:
 \begin{equation}
 E'_f = \frac{E'_i}{1+\frac{E'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
-where $\alpha'$ is the difference between the incident and outgoing angle:
+where $\alpha'$ is the difference between the incident and outgoing angle and determined by
 \begin{equation}
-\cos \alpha' = \mathbf{n'_f} \cdot \mathbf{n'_i} = \cos \theta'_i \cos \theta'_f + \sin \theta'_i \sin \theta'_f \cos(\phi'_i - \phi'_f)
+\cos \alpha' = \mathbf{n'_f} \cdot \mathbf{n'_i} = \cos \theta'_i \cos \theta'_f + \sin \theta'_i \sin \theta'_f \cos(\phi'_i - \phi'_f),
 \end{equation}
-with $\phi'$ angles being the azimuthal angles of the photon. 
-In this frame the photon is again losing energy as it transfers momentum to the electron, as expected for Compton scattering. In a head-on collision in the lab frame for $\gamma \sim 1000$ and $E_i = 1\eV$, the energy in the electron rest frame becomes $E'_i = 2\keV$, with $E'_i \ll m_e c^2$ or in terms of lab-frame quantities $E_i \ll m_e c^2/\gamma$, which means that under these conditions this interaction corresponds to Thomson scattering. 
+with the angles $\phi'$ denoting the azimuthal angles of the photon. 
+In this frame the photon is losing energy as it transfers momentum to the electron, as expected for Compton scattering. In a head-on collision in the lab frame for $\gamma \sim 1000$ and $E_i = 1\eV$, the energy in the electron rest frame becomes $E'_i = 2\keV$, with $E'_i \ll m_e c^2$ or in terms of lab-frame quantities $E_i \ll m_e c^2/\gamma$. This means that under these conditions this interaction corresponds to Thomson scattering. 
 
-In order to calculate the final photon energy in the lab frame we have to boost back from the rest frame of the electron, which results in another amplifying factor of $\sim\gamma$:
+In order to calculate the final photon energy in the laboratory frame, $S$, we have to boost back from the rest frame of the electron, $S'$, which results in another amplifying factor of $\sim\gamma$:
 \begin{equation}
-E_f = E'_f \gamma (1+\beta \cos \theta'_f) \approx E'_f \gamma (1+ \cos \theta'_f) = \frac{\gamma^2 (1+\cos \theta'_f)(1-\cos\theta_i)}{1+\frac{\gamma E_i (1-\cos \theta)}{m_e c^2}}(1-\cos\alpha'),
+E_f = E'_f \gamma (1+\beta \cos \theta'_f) \approx E'_f \gamma (1+ \cos \theta'_f) \sim \gamma^2 E_i,
 \end{equation}
 where the angles have to be transformed back into the lab frame as well. We now see that in the lab frame $E_f > E_i$, so that the photon gains energy in the interaction, hence the name inverse Compton scattering.
 The emitted energy is maximised in a head-on collision and when radiated in the propagation direction of the relativistic electron.
-The photon energy is then boosted by $(2\gamma)^2$ to $E_{f,max} = 2 \gamma E'_f = 2 \gamma E'_i = 4 \gamma^2 E_i$. In the rest frame this corresponds to $E'_i = E'_f$, which again indicates Thomson scattering.
+The photon energy is then boosted by $(2\gamma)^2$ to $E_{f,max} = 2 \gamma E'_f = 2 \gamma E'_i = 4 \gamma^2 E_i$. In the rest frame of the electron this corresponds to $E'_i = E'_f$, which again indicates Thomson scattering and motivates the alternative name for this process, relativistic Thomson scattering.
 
 \subsubsection{Cross-Section}
 
-As for all relevant scenarios $E_i \ll m_e c^2/\gamma$, the interaction in the rest frame is accurately described by the Thomson cross section as given in Equation \eqref{Theory:Eqs:ThomsonXsec}, but in quantities of the rest frame $S'$:
+$E_i = m_e c^2/\gamma$ would for $E_i = 1\eV$ require $\gamma \sim 5\times 10^5$ or $\epsilon \sim 250\GeV$.  As result $E_i \ll m_e c^2/\gamma$ holds for all relevant scenarios and the interaction is in the rest frame accurately described by the Thomson cross section as given in Equation \eqref{Theory:Eqs:ThomsonXsec}, but in quantities of the rest frame $S'$:
 \begin{equation}
 \frac{\mathrm{d} \sigma'}{\mathrm{d}\cos \theta'} = \frac{\pi \alpha^2}{m^2} \left(1+\cos^2 {\theta'}\right).
 \end{equation}
 
-For $\gamma \gg 1$ the transformation of the angles results in the so-called `headlight effect' or `searchlight effect' since $\cos\theta \rightarrow 1$, so that the photons are preferentially emitted in the direction of the electron momentum vector. If we consider a cross section normal to the direction of the boost $\sigma' \rightarrow \sigma$ and $\sigma = \sigma_T$, the Thomson cross section, so that the cross section is again independent of energy as long as $E_i \ll m_e c^2/\gamma$.
-
-\EliasComm{Add plot showing the transformation of the cross section and angles.}
+For $\gamma \gg 1$ the transformation of the angles results in the so-called `headlight effect' or `searchlight effect' since $\cos\theta \rightarrow 1$ (see Equation \eqref{Theory:Eqs:ICS:BoostAngles}), so that the photons are preferentially emitted in the direction of the electron momentum vector. If we consider a cross section normal to the direction of the boost $\sigma' \rightarrow \sigma$ and $\sigma = \sigma_T$, the Thomson cross section, so that the cross section is again independent of energy as long as $E_i \ll m_e c^2/\gamma$.
 
 \subsubsection{Emission power}
 
@@ -1222,114 +1212,101 @@ The average frequency of the spectrum is then
 \frac{\langle E \rangle}{E} = \frac{4}{3} \gamma^2
 \end{equation}
 
-\subsubsection{Applications}
+\subsubsection{Experimental modifications of the spectrum}
 
-The photon energies accessible with sufficiently relativistic particles is multiple orders of magnitude higher. In all optical Compton sources \cite{TaPhuoc2012_ICS} relativistic electrons of several hundreds of $\mathrm{MeV}$ have been collided with high-intensity laser pulses, producing tunable X-rays in the $\mathrm{keV}$ \cite{TaPhuoc2012_ICS,Powers2014_ICS,Khrennikov2015_ICS} to $\mathrm{MeV}$ \cite{Chen2013_ICS,Sarri2014_ICS} range with pulse durations of the order of tens of femtoseconds and a micron-scale source size.
-
-In addition to all-optical schemes, it has also been proposed to combine conventional accelerator elements with high-intensity lasers to reach high stability and repetition rates\cite{Seryi2015}.
-
-
-
-ICS has been widely used in the conventional accelerator community to measure the spin-polarisation of beams, laser wire (beam diagnostics) REF.
-
-\EliasComm{Parallel to classical description:  In a different picture this is again a wiggler, this time a laser wiggler making the electrons oscillate with a $K$ parameter of the normalised vector potential $a_0$. In the linear regime this value is $a_0 < 1$ and hence harmonics are emitted similarly as in an undulator.}
+In a real setting the ICS spectrum is modified by several input parameters:
+the energy spread of the electron beam will translate to an energy spread in the ICS spectrum.
+Short pulse lasers intrinsically require a certain bandwidth are hence not monochromatic. The spread of photon energies modifies the spectrum similarly.
+Deviations from a head-on collision have to be considered and also introduce a spread, in particular considering divergence and emittance of the electron beam and the range of angles of the focusing laser pulse with respect to the laser axis. The effective spectrum has, for instance, being investigated experimentally in REF KRAMER\addref.
 
 
 \subsection{Nonlinear Inverse Compton Scattering}
 
-In nonlinear ICS the $a_0$ of the laser pulse is larger than unity. On the microscopic level this allows for several photons to interact with one electron at a time resulting in higher harmonics being emitted. In a classical picture the electrons perform a figure-of-eight motion due to the intense laser pulse which gives rise to harmonics. This is another parallel to the description of electrons in insertion devices. Similarly as when moving from the undulator regime with distinct harmonics to the wiggler regime with large bandwidth, here also the $K$ parameter linked to $a_0$ increases and rapidly gives rise to hundreds of harmonics forming a smooth synchrotron-like radiation spectrum.
-\EliasComm{Maybe too fast here. References?}
+At higher intensities, i.e. $a_0 \rightarrow 1$ and $a_0 > 1$, the interaction changes as nonlinear effects gain significance. In a classical picture the electrons now perform a figure-of-eight motion (see SECTION\addnum) which gives rise to harmonics as becomes evident when the trajectory is evaluated in a Fourier analysis, whilst also leading to a relativistic mass increase. In a quantum picture the contribution of higher-order Feynman diagrams that describe the process of multiple photons being absorbed and then emitted as one photon by a single electron becomes increasingly significant (see FIGURE\addnum). The relativistic mass increase, on the other hand, results in red-shifting of the emitted radiation.
+This behaviour draws parallels in the description of electrons in insertion devices that is also described by the figure-of-eight motion (see SECTION\addnum). Here the wiggler parameter, $K$, indicates whether distinct harmonics ($K\ll1$) or broadband radiation is emitted ($K\gg1$). In the case of inverse Compton scattering, a laser wiggler, the parameter $a_0$ takes the place of $K$. 
+
+The process of $n$ photons scattering from a single electron resulting in the emission of one more energetic photon is described by
 \begin{equation}
 n\gamma_L + e^- \longrightarrow \gamma + e^-.
 \end{equation}
-
+\EliasComm{Make Feynman diagram for single photon and then for two to show how many diagrams one would have to solve.}
+\EliasComm{Describe here that in the quantum picture for $n>2$ it becomes increasingly tedious to solve all Feynman diagrams, such that we transition to Volkov states in the Furry picture.}
 \begin{figure}
 \centering
-\includegraphics[width=.9\columnwidth]{feyn_nICS.pdf}
+\includegraphics[height=.3\columnwidth]{Aivazis_ComptonScattering_FULL.pdf}
+
+\includegraphics[height=.3\columnwidth]{Aivazis_ComptonScattering2_FULL.pdf}
+
+\includegraphics[height=.3\columnwidth]{feyn_nICS.pdf}
 \caption{Feynman diagram for Volkov state equivalent to infinite series of diagrams}
 \end{figure}
 
 \subsubsection{Kinematics}
 
-Relativistic kinematics is identical for one or several photons as many incoming identical energy photons and one outgoing with n times $\omega$ the energy. When following the kinematics through one arrives at the same equation as previously for the scattering process in the rest frame of the electron
-
+Assuming all $n$ photons have the same energy $E_i$ and are parallel to each other, the relativistic kinematics for the multi-photon process is identical to the single-photon process discussed in the previous section by simply substituting $E_i \rightarrow nE_i$. As a result the energy of the scattered photon in the rest frame, $E'_f$, is then 
 \begin{equation}
 E'_f = \frac{n E'_i}{1+\frac{n E'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
-
-At laser intensities reaching an relativistic regime $a_0 \sim 0.1$ the equation of motion of the electron starts deviating from a simple up-and-down oscillation due to a longitudinal component. The electrons start performing a figure-of-eight motion with a longitudinal component increasing with $a_0$.
-This additional component has two effects:
-Firstly, the modification of the equation of motion leads to a redshifting of the spectrum. The energy of the Doppler-shifted radiation is damped to 
+including the effect of the mass increase on the energy of the radiation in the laboratory frame is given by
 \begin{equation}
-\hbar \omega' \approx \frac{4 \hbar \omega a_0 \gamma^2}{1+a_0^2/2 + \gamma^2 \theta^2},
+E_f \approx \frac{2 \gamma^2 (1- \cos \theta)}{1+a_0^2/2 + \gamma^2 \theta^2}n E_i a_0,
 \end{equation}
-This leads to a downshift and broadening of the radiation.
+which for higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation $E_f \sim 1/a_0$. This becomes already non-negligible for $a_0 \sim 1/10$ (REF\addref).
 
-We solved the equation of motion previously and it follows the relativistic Doppler shift.
-
-\begin{equation}
-\omega' = \gamma \omega (1-\beta \cos(\theta)) \approx \omega (1+\gamma^2 \theta^2)/2\gamma
-\end{equation}
-
-Secondly, energy is being transferred from this fundamental radiation at $\omega$ to higher order harmonics $\omega_1 = n\omega$, when multiple photons upconvert to one higher energy photon. Since this is a free electron process the harmonics are not restricted to either odd or even numbers but cover both. Classically, the radiation pattern is calculated using Fourier analysis.
-
-The angular distribution of each component is distinct and symmetric, with odd harmonics showing a maximum on-axis and (n-1)/2 lobes on either side and even harmonics having a minimum on-axis and n/2 side-maxima on either side.
 
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{ICS_Redshift.png}\includegraphics[width=.5\columnwidth]{ICS_Redshift2.png}
 \caption{Redshift of the fundamental harmonic.}
 \end{figure}
-\EliasComm{Red-shift etc. re-do and explain. Maybe move all of this to single-photon interactions or combine.}
 
 \EliasComm{make a plot for the spectrum and correct this spectrum to reflect the spectrum in the lab frame or make notable that this is in the rest frame. Maybe compare the two.}
 
-In the highly nonlinear regime $a_0 \gg 1$ the number of harmonics increases by a factor $a_0^3$ (REF ESAREY RIDE SPRANGLE PRE 1993)\addref $n_c \approx 3 a^3_0/4$. At the same time each harmonic is spread out due to the longitudinal component which now dominates the electron motion.
-
-The high number of harmonics (hundreds!) and the redshifting of each component transforms the spectrally very peaked spectrum to a broadband source resembling a synchrotron spectrum.
-
-This means to reach higher photon energies a more intense laser is not necessarily the best option as the redshifting appears rapidly along with the harmonics. A more energetic electron provides a redshift-free upshift. If one wants a close to monoenergetic spectrum on top of that linear Compton scattering in the limit $a_0 \rightarrow 0$ is more suitable.
 
 \subsubsection{Cross-Section}
-\EliasComm{Write down Coherently..}
-Volkov state, Furry picture, dressed states.
 
-Infinite series of diagrams in this set.
-
-\EliasComm{One, two photon feynman diagrams. Add image of dressed states and series equivalent.}
-
-Models: classical harmonics, polarisation dependency, quantum model.
-
-\EliasComm{See Naroshny 1965 Soviet JETP, KT McDonal 1986, dsigma/dx = ... Jl(x)/(1+x)2}
-
-In the classical derivation this becomes a Fourier analysis and the electron trajectories (see figure of eight motion) leads to higher harmonic generation.
-The emission spectrum is composed of generalised Bessel functions.
-
+The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation (Ritus REF, Tom Thesis REF\addref).
+The rates (averaged spin, in and out, unpolarised states) for $n$ scattered photons for circular polarisation
 \begin{equation}
-\sim \Sigma ... C_x^2(1-\sin^2\theta\cos^2\phi)+C_z^2\sin^2\theta-C_x C_z \sin2\theta\cos\phi
+\frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 E}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
+\end{equation}
+and for linear polarisation
+\begin{equation}
+\frac{\dif W_n}{\dif x} = \frac{2 \alpha m^2}{\pi E}\int^{\pi/2}_0 \left[-A^2_0 + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (A^2_1 - A_0 A_2)\right]\dif \phi.
+\end{equation}
+The frequency of the incoming photons is $\omega$, the scattered photon carries an energy $\omega' = xE$.
+$J_n$ is shorthand for $J_n(z)$, and $A_i = A_i(n,a,b)$, with
+\begin{equation}
+z = \frac{2 a_0}{\sqrt{1+a^2_0}}\frac{\sqrt{x(nu - (1+nu)x)}}{u(1-x)}.
+\end{equation}
+The function $A_i$ is defined as 
+\begin{equation}
+A_i(n,a,b) = \frac{1}{\pi}\int^\pi_0 \cos^i \phi \cos [(a+2b\cos \phi) \sin \phi - n\phi] \dif \phi,
+\end{equation}
+with $a$:
+\begin{equation}
+a = \frac{\sqrt{8}Qn a_0}{1+a^2_0 + Q^2}\cos \phi,
+\end{equation}
+and $b$:
+\begin{equation}
+b = - \frac{(n/2) a^2_0}{1+a^2_0 + Q^2},
+\end{equation}
+where 
+\begin{equation}
+Q^2 = (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
 \end{equation}
 
-\begin{equation}
-C_x = \Sigma (-1)^m j_m(\alpha_z) (J_{n-2m-1)} ...)
-\end{equation}
+\EliasComm{Reproduce KN eqns at low intensities.}
+\EliasComm{Make plot of cross sections to show the lobes (odd on axis and even off-axis).}
 
-Use some Bessel identities (see appendix) and $\theta = 0$. (There are also small angle solutions I believe).
+\subsubsection{Emission Spectra}
 
-The specific case of on-axis backscattering leads to the differential expression (REF Esarey):
+\EliasComm{Show example of harmonics and merging to synchrotron.}
+\EliasComm{Higher energy not necessarily immediately at higher $a_0$, definitely not peaked.}
 
-\begin{equation}
-\sim n \alpha_n \left[ J_{(n-1)/2}(\alpha_n) - J_{(n+1)/2}(\alpha_n)\right]^2
-\end{equation}
+\subsubsection{Power and average energy}
 
-For odd harmonics. For even harmonics the generalised Bessel function vanishes. This means there are only odd harmonics on the axis. However, there are off-axis contributions with both harmonics and very close at higher orders.
-
-\subsubsection{Other modifications of the spectrum}
-
-In a real setting the ICS spectrum is modified by several input parameters:
-the energy spread of the electron beam will translate to an energy spread in the ICS spectrum.
-Short pulse lasers intrinsically require a certain bandwidth are hence not monochromatic. The spread of photon energies modifies the spectrum similarly.
-Deviations from a head-on collision have to be considered and also introduce a spread, in particular considering divergence and emittance of the electron beam and the range of angles of the focusing laser pulse with respect to the laser axis.
-
+\EliasComm{Increase of harmonics at $\sim a^3_0$, but energy increase linear.}
 
 \section{Radiation Reaction}
 
