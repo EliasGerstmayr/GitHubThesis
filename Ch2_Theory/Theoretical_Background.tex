@@ -120,7 +120,7 @@ where $e$ is the charge of the electron and $\mathbf{p}_\perp$ is the component 
 The motion of the electron consists of two decoupled motions: one at the constant, initial velocity parallel to the magnetic field vector in $z$, the second motion is a circular motion in the x-y plane. This is called a cyclotron motion. For now we will ignore the dissipation of energy in form of radiation due to the acceleration of the electron and accept the result that the Lorentz force conserves the total momentum and energy of the particle in this case.
 
 \subsection{Electron motion in a monochromatic plane EM wave}
-
+\label{Theory:Sec:SingleParticle:FigOfEight}
 This derivation is based on \cite{ThomasThesis}.
 Writing the equation of motion (EoM) in terms of the potentials $\mathbf{A}$ and $\Phi$ as in Equation \eqref{Theory:Eqns:EoMLorentz} on page \pageref{Theory:Eqns:EoMLorentz} gives:
 
@@ -960,6 +960,85 @@ A good overview over the topic is given by \cite{Albert2016_APP} and CORDE REF\a
 
 \EliasComm{If synchrotron included then common classical trajectories are figure of eight motion.}
 
+
+
+\subsection{Synchrotron Radiation}
+
+\EliasComm{Draw parallel (see Jackson on undulator equation) to figure of eight motion and hence ICS/Betatron/harmonics.}
+
+based on Jon Wood \cite{WoodThesis} and Jackson \cite{Jackson}:
+
+\EliasComm{energy loss per turn.}
+\EliasComm{sketch on emission and cones.}
+
+Spectrum (angularly integrated)
+
+\begin{equation}
+\frac{dI}{d\omega} = \frac{\sqrt{3}}{4} \frac{e^2}{\pi c \epsilon_0} \gamma \frac{\omega}{\omega_c} \int_{\omega/\omega_c}^{\inf} K_{5/3}(x)dx
+\end{equation}
+
+Equation for on- and off-axis synchrotron
+
+\begin{equation}
+\frac{d^2 I}{dEd\Omega} = \frac{3e^2}{16\pi^3 \hbar c \epsilon_0} \gamma^2 \frac{E^2}{E_c^2} (1+\gamma^2 \theta^2)^2 [K_{2/3}^2(\psi) + \frac{\gamma^2 \theta^2}{1+\gamma^2 \theta^2} K_{1/3}^2 (\psi)]
+\end{equation}
+
+\begin{equation}
+\psi = \frac{E}{2E_c}(1+\gamma^2 \theta^2)^{3/2}
+\end{equation}
+
+Critical frequency
+\begin{equation}
+\omega_c = \frac{3}{2} \gamma^3 \frac{c}{\rho}
+\end{equation}
+
+\subsection{Undulator and Wiggler Radiation}
+\label{Theory:Sec:UndulatorWiggler}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{wiggler_offaxis.png}
+\caption{Synchrotron radiation.}
+\end{figure}
+
+To harvest and direct the radiation of an accelerated relativistic electron more efficiently a set of alternating magnets is used. The electron oscillates and emits radiation preferentially at the turning points as the acceleration is the strongest there and in a forwards-pointing cone with a diameter proportional to $1/\gamma$.\addref
+
+The rapid change of direction in the field and hence forced trajectory of the electron in transversal direction results in a change of effective Lorentz factor in the forward direction.
+
+\begin{equation}
+\left\langle\gamma\right\rangle \approx \frac{\gamma}{\sqrt{1 + 0.5 K^2}}
+\end{equation}
+
+Commonly two regimes are identified based on the wiggler parameter:\addref
+
+\begin{equation}
+K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c}
+\end{equation}
+
+For $K \ll 1$ it is called undulator regime, large $K \gg 1$ indicate the wiggler regime.
+In the wiggler regime the divergence of the cone is larger and the radiation has a large bandwidth.
+In the undulator regime the radiation is strongly collimated and interference can occur resulting in single harmonics being emitted.
+
+Constructive interference with harmonics of wavelength:
+
+\begin{equation}
+\lambda = \frac{\lambda_u}{2 n \gamma^2} \left( 1+ \frac{K^2}{2} + \gamma^2 \theta^2\right)
+\end{equation}
+
+If an electron beam of sufficient quality is inserted in a very long undulator the emitted radiation and the electron beam are able to interact and modulate resulting in the emission of coherent radiation. This is observed in free-electron lasers.
+
+The equations introduced for synchrotron radiation work similarly for wiggler radiation. The reference to the bending radius is usually replaced by an expression including the magnet periodicity or the $K$ parameter.
+
+
+For a wiggler this becomes:
+\begin{equation}
+\omega_c \sim \frac{3}{2} \gamma^2 K k_u c
+\end{equation}
+
+\EliasComm{Include explicit equations here.}
+
+
 \subsection{Bremsstrahlung}
 \begin{figure}[h]
 \centering
@@ -1035,15 +1114,12 @@ where $y= \hbar\omega/E$.
 
 \subsection{Compton Scattering}
 
-Compton scattering describes the inelastic scattering of a photon off a charged free or quasi-free particle, typically an electron (REF COMPTON 1932\addref). The photon transfers energy to the electron and as a result loses energy. In the low energy limit of the photon energy $\omega \rightarrow 0$ the interaction becomes fully elastic and is called Thomson scattering, i.e. Thomson scattering is the low-energy classical limit of Compton scattering.
-
+Compton scattering describes the inelastic scattering of a photon off a charged free or quasi-free particle, typically an electron \cite{Compton1923_Compton,Klein1929_KNEq}. The photon transfers energy to the electron and as a result loses energy. In the low energy limit of the photon energy $\omega \rightarrow 0$ the interaction becomes fully elastic and is called Thomson scattering \cite{Thomson2005_ThomsonScatter}, i.e. Thomson scattering is the low-energy classical limit of Compton scattering.
 The interaction can be written as follows:
-
 \begin{equation}
 \gamma + e^- \longrightarrow \gamma + e^-,
 \end{equation}
 with the corresponding Feynman diagram shown in Figure \ref{Theory:Fig:ComptonScattering:Feynman}.
-
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\columnwidth]{Aivazis_ComptonScattering.pdf}
@@ -1116,7 +1192,7 @@ Polar plots of the final photon energies for different initial photon energies a
 \label{Theory:Figs:Compton_E_XSEC}
 \end{figure}
 
-The cross section for Compton scattering, again assuming the electron is initially at rest, is given by the spin-averaged Klein-Nishina formula (see Section \ref{Appendix:QEDDeriv_KleinNishina} for an explicit derivation):
+The cross section for Compton scattering, again assuming the electron is initially at rest, is given by the spin-averaged Klein-Nishina formula \cite{Klein1929_KNEq} (see Section \ref{Appendix:QEDDeriv_KleinNishina} for an explicit derivation):
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
 \frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} &= \frac{\pi \alpha^2}{m^2}\left(\frac{\omega'}{\omega}\right)^2 \left(\frac{\omega'}{\omega} + \frac{\omega}{\omega'}-\sin^2{\theta}\right),\\
@@ -1136,10 +1212,10 @@ The total cross section using the Klein-Nishina equation amounts to:
 \end{equation}
 with $x = E_\gamma /m_e c^2$, so that in the extreme cases this becomes
 \begin{equation}
-\sigma_{\gamma e} = 
+\sigma_{\gamma e} = \sigma_T \times  
 \begin{cases}
-\sigma_T(1-2x+\frac{26 x^2}{5}) & \mathrm{for }~x\ll1,\\
-\frac{3}{8}\sigma_T \frac{1}{x} \left( \ln 2x + \frac{1}{2}\right) & \mathrm{for }~x\gg 1,
+(1-2x+\frac{26 x^2}{5}) & \mathrm{for }~x\ll1,\\
+\frac{3}{8}\frac{1}{x} \left( \ln 2x + \frac{1}{2}\right) & \mathrm{for }~x\gg 1,
 \end{cases}
 \end{equation}
 so that $\sigma_{\gamma e} \rightarrow \sigma_T$ for $x \rightarrow 0$, which is the limit of Thomson scattering, and $\sigma_{\gamma e} \rightarrow 0$ for $x\rightarrow \infty$, which indicates that ultra-relativistic photons are less likely to scatter.
@@ -1222,14 +1298,13 @@ Deviations from a head-on collision have to be considered and also introduce a s
 
 \subsection{Nonlinear Inverse Compton Scattering}
 
-At higher intensities, i.e. $a_0 \rightarrow 1$ and $a_0 > 1$, the interaction changes as nonlinear effects gain significance. In a classical picture the electrons now perform a figure-of-eight motion (see SECTION\addnum) which gives rise to harmonics as becomes evident when the trajectory is evaluated in a Fourier analysis, whilst also leading to a relativistic mass increase. In a quantum picture the contribution of higher-order Feynman diagrams that describe the process of multiple photons being absorbed and then emitted as one photon by a single electron becomes increasingly significant (see FIGURE\addnum). The relativistic mass increase, on the other hand, results in red-shifting of the emitted radiation.
+At higher intensities, i.e. $a_0 \rightarrow 1$ and $a_0 > 1$, the interaction changes as nonlinear effects gain significance. In a classical picture the electrons now perform a figure-of-eight motion (see Section \ref{Theory:Sec:SingleParticle:FigOfEight}) which gives rise to harmonics as becomes evident when the trajectory is evaluated in a Fourier analysis, whilst also leading to a relativistic mass increase. In a quantum picture the contribution of higher-order Feynman diagrams that describe the process of multiple photons being absorbed and then emitted as one photon by a single electron becomes increasingly significant (see FIGURE\addnum). The relativistic mass increase, on the other hand, results in red-shifting of the emitted radiation.
 This behaviour draws parallels in the description of electrons in insertion devices that is also described by the figure-of-eight motion (see SECTION\addnum). Here the wiggler parameter, $K$, indicates whether distinct harmonics ($K\ll1$) or broadband radiation is emitted ($K\gg1$). In the case of inverse Compton scattering, a laser wiggler, the parameter $a_0$ takes the place of $K$. 
 
 The process of $n$ photons scattering from a single electron resulting in the emission of one more energetic photon is described by
 \begin{equation}
 n\gamma_L + e^- \longrightarrow \gamma + e^-.
 \end{equation}
-\EliasComm{Make Feynman diagram for single photon and then for two to show how many diagrams one would have to solve.}
 \EliasComm{Describe here that in the quantum picture for $n>2$ it becomes increasingly tedious to solve all Feynman diagrams, such that we transition to Volkov states in the Furry picture.}
 \begin{figure}
 \centering
@@ -1247,56 +1322,51 @@ Assuming all $n$ photons have the same energy $E_i$ and are parallel to each oth
 \begin{equation}
 E'_f = \frac{n E'_i}{1+\frac{n E'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
-including the effect of the mass increase on the energy of the radiation in the laboratory frame is given by
+including the effect of the mass increase on the energy of the radiation in the laboratory frame is given by (REF\addref)
 \begin{equation}
-E_f \approx \frac{2 \gamma^2 (1- \cos \theta)}{1+a_0^2/2 + \gamma^2 \theta^2}n E_i a_0,
+E_f \approx \frac{2 \gamma^2 (1- \cos \theta) n E_i}{1+a_0^2/2 + \gamma^2 \theta^2} ,
 \end{equation}
-which for higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation $E_f \sim 1/a_0$. This becomes already non-negligible for $a_0 \sim 1/10$ (REF\addref).
+which for higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation $E_f \sim 1/a^2_0$. This already becomes significant for $a_0 \sim 0.1$ (REF\addref). The contribution $\gamma^2 \theta^2$ leads to a fall-off of the photon energy off-axis, so that it reaches $E_f/e$ at $\theta \sim 1/\gamma$.
 
 
 \begin{figure}
 \centering
-\includegraphics[width=.5\columnwidth]{ICS_Redshift.png}\includegraphics[width=.5\columnwidth]{ICS_Redshift2.png}
-\caption{Redshift of the fundamental harmonic.}
+\includegraphics[width=.5\columnwidth]{ICS_Divergence_ElecEnergy.pdf}\includegraphics[width=.5\columnwidth]{ICS_Redshift_a0.pdf}
+\caption{Divergence (left) and redshift for $a_0$.}
 \end{figure}
-
-\EliasComm{make a plot for the spectrum and correct this spectrum to reflect the spectrum in the lab frame or make notable that this is in the rest frame. Maybe compare the two.}
-
 
 \subsubsection{Cross-Section}
 
-The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation (Ritus REF, Tom Thesis REF\addref).
-The rates (averaged spin, in and out, unpolarised states) for $n$ scattered photons for circular polarisation
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{ICS_dWdx_xa01.pdf}
+\caption{Klein-Nishina and higher orders at $a_0$ for circular polarisation. Adapted from Tom Thesis REF}
+\end{figure}
+
+
+The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation \cite{Ritus1985_QRR,BlackburnThesis} and are given by (averaged spin, in and out, unpolarised states) for $n$ scattered photons for circular polarisation
 \begin{equation}
 \frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 E}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
 \end{equation}
 and for linear polarisation
 \begin{equation}
-\frac{\dif W_n}{\dif x} = \frac{2 \alpha m^2}{\pi E}\int^{\pi/2}_0 \left[-A^2_0 + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (A^2_1 - A_0 A_2)\right]\dif \phi.
+\frac{\dif W_n}{\dif x} = \frac{2 \alpha m^2}{\pi E}\int^{\pi/2}_0 \left[-A^2_0 + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (A^2_1 - A_0 A_2)\right]\dif \varphi.
 \end{equation}
-The frequency of the incoming photons is $\omega$, the scattered photon carries an energy $\omega' = xE$.
+The frequency of the incoming photons is $\omega$, the scattered photon carries an energy $\omega' = xE$, i.e $x$ is the fraction of energy the photon carries away.
 $J_n$ is shorthand for $J_n(z)$, and $A_i = A_i(n,a,b)$, with
-\begin{equation}
-z = \frac{2 a_0}{\sqrt{1+a^2_0}}\frac{\sqrt{x(nu - (1+nu)x)}}{u(1-x)}.
-\end{equation}
-The function $A_i$ is defined as 
-\begin{equation}
-A_i(n,a,b) = \frac{1}{\pi}\int^\pi_0 \cos^i \phi \cos [(a+2b\cos \phi) \sin \phi - n\phi] \dif \phi,
-\end{equation}
-with $a$:
-\begin{equation}
-a = \frac{\sqrt{8}Qn a_0}{1+a^2_0 + Q^2}\cos \phi,
-\end{equation}
-and $b$:
-\begin{equation}
-b = - \frac{(n/2) a^2_0}{1+a^2_0 + Q^2},
-\end{equation}
-where 
-\begin{equation}
-Q^2 = (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
-\end{equation}
+\begin{align}
+z &= \frac{2 a_0}{\sqrt{1+a^2_0}}\frac{\sqrt{x(nu - (1+nu)x)}}{u(1-x)},\\
+u &= \frac{2k \cdot q}{q^2} = \frac{4 E \omega}{m^2 (1+a^2_0)}.
+\end{align}
+The function $A_i$ and its arguments are defined as 
+\begin{align}
+A_i(n,a,b) &= \frac{1}{\pi}\int^\pi_0 \cos^i \phi \cos [(a+2b\cos \phi) \sin \phi - n\phi] \dif \phi,\\
+a &= \frac{\sqrt{8}Qn a_0}{1+a^2_0 + Q^2}\cos \varphi,\\
+b &= - \frac{(n/2) a^2_0}{1+a^2_0 + Q^2},\\
+Q^2 &= (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
+\end{align}
 
-\EliasComm{Reproduce KN eqns at low intensities.}
+\EliasComm{Reproduce KN eqns at low intensities. Also both should converge to the same result at $n=1$ as we are approaching the polarisation-independent KN eqn.}
 \EliasComm{Make plot of cross sections to show the lobes (odd on axis and even off-axis).}
 
 \subsubsection{Emission Spectra}
@@ -1307,16 +1377,22 @@ Q^2 = (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
 \subsubsection{Power and average energy}
 
 \EliasComm{Increase of harmonics at $\sim a^3_0$, but energy increase linear.}
+\EliasComm{Critical Energy.}
+
 
 \section{Radiation Reaction}
 
-\EliasComm{Energy losses were ignored in equation of motion.}
-\EliasComm{Knockback force on emitting particles but in most scenarios not important as it is a slow continuous force.}
-\EliasComm{Becomes important in astrophysical context. REFS and future accelerators.}
-\EliasComm{When multiple emissions by a particle in short time, we have to consider it in the equation of motion.}
+\EliasComm{In previous sections discussed the emission of radiation from charged particles.}
+\EliasComm{Based on conservation rules the particles lose energy and experience a knockback based on the momentum/energy of the radiation emitted.}
+\EliasComm{Knockback force can significantly alter the particle dynamics in strong electromagnetic fields.}
+\EliasComm{In most daily scenarios the force acting on the emitting particles is small and is accurately represented by a slow continuous force (for instance in accelerators) on emitting particles but in most scenarios not important as it is a slow continuous force.}
+\EliasComm{In astrophysical phenomena/context and in future accelerators this becomes more important. In addition this can be probed in high intensity laser fields.}
+\EliasComm{Here a single particle can emit multiple photons in a short time and the radiation reaction force has to be considered.}
+\EliasComm{In extreme cases the energy emitted approaches the initial energy of the particle, for which we have to model the process in the quantum model, i.e. consider quantum radiation reaction.}
 \EliasComm{This is radiation reaction and will discuss this fundamental phenomenon in this section. No universally accepted practicable solution across regimes.}
-\EliasComm{Start with classical model and then quantum corrections.}
-
+\EliasComm{This will be probed in future high-intensity laser interactions.}
+\EliasComm{Will initially introduce classical descriptions of radiation reaction and motivate limitations.}
+\EliasComm{Then introduce quantum corrections/semi-classical and quantum radiation reaction, and how they differ from the classical description.}
 \EliasComm{Reviews will be REF DiPiazza2012 and Blackburn2019}
 
 \subsection{Classical Radiation Reaction}
@@ -1357,12 +1433,6 @@ $\mathbf{a}$ is the acceleration at $t = 0$. If $\mathbf{a} \neq 0$ we run into 
 First attempts to simply add radiation reaction as a force onto the Lorentz-force equation resulted in unphysical expressions depending on several derivatives of the velocity. This in the end required knowing about the future to calculate its equation of motion, and led to self-acceleration of the particles in question. These solutions are commonly referred to as `runaway solutions'.
 
 The relativistic generalisation was found by Dirac renormalising in 4-space. The result is referred to as Lorentz-Abraham-Dirac equation (LAD).
-
-
-\EliasComm{Jackson \cite{Jackson} seems to be in cgs. Make sure you know which unit system you work in.}
-
-\EliasComm{Despite the runaway solution: if one ignores this solution tree, are the predictions feasible?}
-
 
 Lorentz-Abraham-Dirac (LAD) equation in terms of the four-acceleration  \cite{Bulanov2011_LADLL,DiPiazza2012_ICS}:
 
@@ -1457,7 +1527,7 @@ g(\eta) = \frac{\int_0^{\eta/2} F(\eta, \chi) \mathrm{d}\chi}{\int_0 F_{cl}\left
 
 Fit for function is \cite{Baier1991_GAUNT}:
 \begin{equation}
-\boxed{g(\eta) \approx \left(1 + 4.8(1+\eta)ln(1+1.7\eta)+2.44\eta^2\right)^{-2/3}.}
+\boxed{g(\eta) \approx \left(1 + 4.8(1+\eta)\ln(1+1.7\eta)+2.44\eta^2\right)^{-2/3}.}
 \end{equation}
 
 So that the classical radiation reaction force is modified
@@ -1573,6 +1643,7 @@ E_{3,4} &= \gamma_{CM} \left( E^{CM}_{3,4} + \bm{\beta}_{CM} \cdot \mathbf{p}^{C
 \end{align}
 with $\gamma_{CM} = (E_1 + E_2)/\sqrt{s}$ and $\bm{\beta}_{CM} = (\mathbf{p}_1 + \mathbf{p}_2)/(E_1 + E_2)$.
 
+\EliasComm{Explicitly refer to plots and that energy distribution is symmetric for $E_1/E_2 = 1$, but asymmetric if $E_1,E_2 \neq 1$. Distribution functions are symmetric for $e+,e-$}
 
 \subsubsection{Nonlinear Breit-Wheeler}
 
@@ -1585,11 +1656,25 @@ Typically many $n$ low-energy photons interact with one high-energy gamma ray to
 
 Similarly as for nonlinear Compton scattering the multiphoton process requires the evaluation of higher order Feynman diagrams or in the Furry picture the use of Volkov states to sum over all possible states.
 
-The second harmonic is for instance given by (REF RITUS JSOV LASeR RES 1985 and T NOUSCH PHYSICS LETTER B 2012):
+The second harmonic is for instance given by (\cite{Ritus1985_QRR} and T NOUSCH PHYSICS LETTER B 2012):
 \begin{equation}
 \sigma_2 (s) = \frac{a^2_0}{4}\frac{2 \pi \alpha^2}{s}\left[\left(6 + \frac{3}{u_2} - \frac{20}{u^2_2} + \frac{15}{u^3_2}\right)\beta_2 + \frac{15}{2u^2_2}\beta^4_2 \ln \frac{1+\beta_2}{1-\beta_2}\right],
 \end{equation}
 where $u_n = ns/(4m^2)$ and $\beta_n = \sqrt{1- u^{-1}_n}$.
+
+
+
+The probability of pair production by one photon of momentum $l$ in interaction with $n$ laser photons of momentum $k$ per unit volume in unit time (circular polarisation):
+
+\begin{equation}
+P_{\gamma\gamma} = \frac{e^2 m^2_e}{16 l_0} \sum^\infty_{n>n_0} \int^\nu_1 \frac{\dif \nu}{\nu^{3/2} (1+\nu)^{1/2}}[2 J^2_n(z) + \eta^2 (2\nu -1) (J^2_{n+1} + J^2_{n-1} - 2J^2_n)],
+\end{equation}
+with $\nu = (kl)^2/4(kq)(kq')$, $\nu_n = n/n_0$, $n_0 = 2m^2_\ast/(kl)$ and Bessel functions $J_n(z)$.
+
+\begin{equation}
+z = 4m^2_e \frac{\eta (1+ \eta^2)^{1/2}}{(kl)}\left[\frac{\nu}{\nu_n}\left(1- \frac{\nu}{\nu_n}\right)\right]^{1/2}.
+\end{equation}
+
 
 \subsection{Bethe-Heitler pair production}
 \begin{figure}
@@ -1597,6 +1682,10 @@ where $u_n = ns/(4m^2)$ and $\beta_n = \sqrt{1- u^{-1}_n}$.
 \includegraphics[height=0.3\columnwidth]{Aivazis_BetheHeitler.pdf}\hspace{5em}%
 \includegraphics[width=0.35\columnwidth]{Aivazis_Bremsstrahlung.pdf}
 \caption[Feynman diagram for Bethe-Heitler process and bremsstrahlung as comparison.]{Feynman diagram for Bethe-Heitler process (left) and bremsstrahlung (right) as comparison. The time axis is oriented from left to right. Wiggly lines indicate photons, the dark circle shows the nuclear field. The arrowed lines represent fermions (arrow towards positive time), here electrons, and anti-fermions (arrow in negative time direction), here positrons.}
+
+
+
+
 \label{Theory:Figs:Feynman:BH}
 \end{figure}
 A photon of energy $> 2m_e c^2$ can produce an electron-positron pair in the nuclear Coulomb field. This is called the Bethe-Heitler proces \cite{Bethe1934_BH}.

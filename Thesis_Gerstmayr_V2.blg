@@ -11,7 +11,7 @@ A level-1 auxiliary file: Ch5_Results1/RR2015.aux
 A level-1 auxiliary file: Ch6_Results2/BW2018.aux
 A level-1 auxiliary file: Ch9_Conclusion/Conclusions.aux
 A level-1 auxiliary file: Ch10_Appendix/Appendix.aux
-Reallocated field_info (elt_size=4) to 11890 items from 5000.
+Reallocated field_info (elt_size=4) to 11968 items from 5000.
 Database file #1: ICS_Diag.bib
 Database file #2: General.bib
 Database file #3: Theses.bib
@@ -30,58 +30,56 @@ Database file #15: ICSRR.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #16: Narozhny.bib
 Database file #17: BW_Astro.bib
+Warning--empty journal in Shalloo_GEMINIDRIFT
 Warning--missing school in LuThesis
-Warning--can't use both volume and number fields in Seryi2015
-Warning--missing publisher in Seryi2015
 Warning--can't use both volume and number fields in Dirac1930_Annihilation
 Warning--can't use both volume and number fields in Klemperer1934_Annihilation
 Warning--empty journal in GEMINI_GATEVALVES
-Warning--empty journal in Shalloo_GEMINIDRIFT
 Warning--can't use both volume and number fields in Nakamura2007_GEVGUIDED
 Warning--empty journal in Pollock2011_MULTISTAGE
 Warning--can't use both volume and number fields in FLUKA
 Warning--can't use both volume and number fields in Toth2017_BELLA
 Warning--empty journal in Heitler1954_BH
 Warning--can't use both volume and number fields in Fedotov2017_NAROZHNY
-You've used 265 entries,
+You've used 268 entries,
             2354 wiz_defined-function locations,
-            2302 strings with 75868 characters,
-and the built_in function-call counts, 104346 in all, are:
-= -- 8787
-> -- 2243
+            2319 strings with 75928 characters,
+and the built_in function-call counts, 104954 in all, are:
+= -- 8824
+> -- 2260
 < -- 225
-+ -- 1012
-- -- 506
-* -- 5334
-:= -- 11017
-add.period$ -- 885
-call.type$ -- 265
++ -- 1020
+- -- 510
+* -- 5355
+:= -- 11098
+add.period$ -- 893
+call.type$ -- 268
 change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 278
-duplicate$ -- 9954
-empty$ -- 9418
-format.name$ -- 725
-if$ -- 24677
+cite$ -- 279
+duplicate$ -- 10024
+empty$ -- 9488
+format.name$ -- 730
+if$ -- 24809
 int.to.chr$ -- 0
-int.to.str$ -- 265
-missing$ -- 2011
-newline$ -- 1502
-num.names$ -- 265
-pop$ -- 3218
+int.to.str$ -- 268
+missing$ -- 2027
+newline$ -- 1516
+num.names$ -- 268
+pop$ -- 3249
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4263
+skip$ -- 4268
 stack$ -- 0
-substring$ -- 5999
-swap$ -- 7267
+substring$ -- 6007
+swap$ -- 7302
 text.length$ -- 225
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 13
-while$ -- 772
-width$ -- 268
-write$ -- 2926
-(There were 13 warnings)
+warning$ -- 11
+while$ -- 778
+width$ -- 271
+write$ -- 2955
+(There were 11 warnings)
