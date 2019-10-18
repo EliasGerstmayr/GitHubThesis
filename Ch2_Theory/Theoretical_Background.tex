@@ -196,7 +196,6 @@ Using $E = \gamma m c^2 = \sqrt{mc^2 + (cp_\parallel)^2 + (cp_\perp)^2}$ and sub
 p_z = \frac{1}{2} mc a^2,
 \end{equation}
 where $a^2 = p^2_\perp$.
-
 We now have
 \begin{subequations}
 \begin{align}
@@ -501,7 +500,7 @@ If we now consider a force based on this field, we immediately see that this is 
 m_e \frac{\mathrm{d}^2 X}{\mathrm{d}t^2} = - \frac{e^2 n_e}{\epsilon_0} X = - \omega^2_p X,
 \end{equation}
 
-with the (plasma) frequency
+with the (plasma) frequency, $\omega_p$:
 \begin{equation}
 \boxed{\omega_p = \sqrt{\frac{n_{e0} e^2}{\epsilon_0 m_e}},}
 \end{equation}
@@ -597,7 +596,6 @@ v_p &= \frac{\omega}{k} = \frac{c}{\sqrt{1-\left(\frac{\omega_p}{\omega}\right)^
 v_g &= \frac{\partial\omega_L}{\partial k} = c \sqrt{1-\left(\frac{\omega_p}{\omega}\right)^2},
 \end{align}
 where $\omega$ is the frequency of the electromagnetic wave.
-
 At $\omega \ll \omega_p$ this the expression can be approximated by
 \begin{align}
 v_p &= \frac{\omega}{k} \approx c \left(1+ \frac{1}{2}\frac{\omega^2_p}{\omega^2}\right),\\
@@ -627,7 +625,6 @@ A plasma with a density $n_e < n_c$ is transparent and `underdense'. LWFA requir
 \subsection{Nonlinear Refractive Index}
 
 As we have seen previously electrons interacting with a highly intense laser perform a relativistic motion. This results into a relativistic mass increase and in turn to a modification of the plasma frequency and the refractive index \cite{Mori1997_NONLINEARPLASMA}:
-
 \begin{equation}
 \eta = \frac{c}{v_p} = \left(1-\frac{\omega^2_p}{\gamma_\perp \omega^2}\right),
 \end{equation}
@@ -647,6 +644,7 @@ assuming that the perturbations are small and higher order terms vanish.
 
 
 \subsection{Relativistic Self-focusing and Self-guiding}
+\label{Theory:Sec:SelffocusingSelfguiding}
 
 The diffraction of a Gaussian mode near focus ($z < z_R$) can be calculated by differentiating the waist size, $w$, 
 \begin{equation}
@@ -668,33 +666,17 @@ To find the conditions when diffraction and focusing balance each other we set b
 w^2_0 a^2_0 &= 32 \frac{c^2}{\omega^2_p},\nonumber\\
 w_0 &= \frac{\sqrt{32}}{a_0} \frac{c}{\omega_p}
 \end{align}
-
 and expressing this in terms of laser power \cite{Sprangle1987_SELFFOCUS}
 \begin{equation}
-\boxed{P_c \approx 17 \frac{\omega^2_0}{\omega^2_p} \,\mathrm{GW} = 17 \frac{n_c}{n_e} \, \mathrm{GW},}
+\boxed{P_c = \frac{8\pi \epsilon_0 m^2_e c^5}{e^2} \frac{\omega^2}{\omega^2_p} \approx 17.5 \frac{\omega^2_0}{\omega^2_p} \,\mathrm{GW} = 17.5 \frac{n_c}{n_e} \, \mathrm{GW},}
 \end{equation}
-where $P_c$ is the critical power or minimum power required to outweigh diffraction by relativistic self-focusing.
-Balancing both terms the laser pulse remains focused over several Rayleigh lengths while oscillating in size \cite{Esarey1993_SPOTOSCILLATION}. This is referred to as self-guiding as it enables guiding without external guiding structures \cite{Wagner1997_SELFGUIDED,Thomas2007_SELFGUIDED}.
-In the `bubble' regime \cite{Pukhov2002_BUBBLESIM} a highly intense laser pulse completely clears the laser axis from electrons forming a cavity of radius $R_b$, the bubble radius. This cavity is void of electrons $n_e = 0$ and no focusing occurs. In this case the guided spot size is matched to $R_b$ as smaller spots diffract and larger spots are focused again:
-
+where $P_c$ is the critical power or minimum power required to outweigh diffraction by relativistic self-focusing. This is referred to as self-guiding as it enables guiding without external guiding structures \cite{Wagner1997_SELFGUIDED,Thomas2007_SELFGUIDED}. 
+When balancing both terms the laser pulse remains focused over several Rayleigh lengths while oscillating in size \cite{Esarey1993_SPOTOSCILLATION}. The waist evolution is described by
 \begin{equation}
-R_b = 2 \sqrt{a_0} \frac{c}{\omega_p}.
+\frac{\dif^2 w}{\dif z^2} = \frac{w^2_0}{z^2_R w^3}\left(1 - \frac{P}{P_c}\right).
 \end{equation}
+In the `bubble' regime \cite{Pukhov2002_BUBBLESIM} a highly intense laser pulse completely clears the laser axis from electrons forming a cavity of radius $R_b =  \sqrt{a_0} \frac{c}{\omega_p}$, the bubble radius. This cavity is void of electrons $n_e = 0$ and no focusing occurs within it. The guided spot size is matched to $R_b$ as smaller spots diffract and larger spots are focused again.
 
-\iffalse
-matched spot size
-
-\begin{equation}
-w_m = \left(\frac{r^2_{ch}}{\pi r_e \Delta n_e}\right)^{\frac{1}{4}}
-\end{equation}
-
-for parabolic plasma channel
-\begin{equation}
-n_e(r) = n_{e0} + \Delta n_e \frac{r^2}{r^2_{ch}}
-\end{equation}
-
-Loads of terms: relativistic, ponderomotive, pre-formed, diffraction
-\fi
 \subsection{Pulse compression}
 
 Different densities result in different group velocities and this leads to change in length \cite{Mori1997_NONLINEARPLASMA,ColeThesis}
@@ -769,66 +751,58 @@ Depletion and Dephasing.
 
 \subsection{Wavebreaking}
 
-\EliasComm{Needs writing out.}
-Electron trajectories cross and wave becomes incoherent.
-
-The maximum electric field that can be sustained by a plasma 
-
+At large electric fields neighbouring electron sheets in the plasma start to cross and the plasma wave loses coherence. This is referred to as \textit{wavebreaking} and marks the breakdown of the fluid approximation of the plasma.
+The maximum electric field that can be sustained by a plasma wave is
 \begin{equation}
-E_0(V/m) = 96 \sqrt{n_0 (cm^-3)} 
+E_0 = \frac{\omega^2_p m_e}{e} \frac{\lambda_e}{2 \pi},
 \end{equation}
-
-This is referred to as the cold non-relativistic wave breaking limit.
-
-(REF DAWSON)\addref
-
-(REF ESAREY REV MOD 2009)\addref
-Nonlinear plasma waves can exceed this value. The 1D relativistic, non-linear maximum field sustained by a periodic plasma wave is then given by
-
+which is also called the cold non-relativistic wave breaking limit (REF DAWSON)\addref (REF ESAREY REV MOD 2009)\addref.
+In useful units we can write:
+\begin{equation}
+E_0 (GV/m) = 96 \sqrt{n_0 (10^{18} cm^{-3})},
+\end{equation}
+so that the maximum field sustained by a wave in a plasma of density $10^{18}\mathrm{cm^{-3}}$ is roughly $100\,\mathrm{GV/m}$.
+Nonlinear plasma waves can exceed this value and the wavebreaking limit for a 1D relativistic, non-linear periodic plasma wave is, for instance, given by
 \begin{equation}
 E_{WB} = \sqrt{2(\gamma_p -1)} E_0,
 \end{equation}
-where in the 1D low-intensity limit $\gamma_p \approx \omega/\omega_p$.
+where in the 1D low-intensity limit $\gamma_p \approx \omega/\omega_p$. $E_0$ is again the cold non-relativistic wave breaking limit given above.
 
 \subsection{Bubble regime}
-\EliasComm{Needs writing out.}
+
 A short and relativistic laser pulse fully expels the electrons in its way. The pure ion cavity left behind is approximately a spherical `bubble' of radius
 \begin{equation}
-\boxed{R_b = 2 \sqrt{a_0} \frac{c}{\omega_p}.}
+\boxed{r_b = 2 \sqrt{a_0} \frac{c}{\omega_p}.}
 \end{equation}
 
-This is a highly non-linear regime leading to wavebreaking and wakefields are only sustained for few periods.
-
-The fields are given by \cite{Kostyukov2004_BUBBLEFIELDS}
-
+This is a highly non-linear regime leading to wavebreaking such that wakefields are only sustained for few periods.
+The electromagnetic fields associated to the cavity are given by \cite{Kostyukov2004_BUBBLEFIELDS}
 \begin{align}
-E_z &= (k_p \chi/2) E_0,\\
-E_r &= (k_pr/4) E_0,\\
-B_\theta &= - (k_pr/4) E_0.
+E_z &= \frac{n_0 e}{\epsilon_0} \frac{\xi}{4},\\
+E_r &=\frac{n_0 e}{\epsilon_0} \frac{r}{4},\\
+B_\theta &= n_0 e \mu_0 \frac{r}{4},
 \end{align}
-
-The effective focusing force on an relativistic electron beam is given by
-
+where $n_0$ is the background ion density in the bubble and $\xi = z - v_{ph} t$ is the waveframe coordinate.
+Here the region in which electrons are accelerated and focused is half of the cavity $r_b \approx \lambda_p/2$.
+The effective focusing field on an relativistic electron beam is given in useful units by
 \begin{equation}
-E_r (MV/m) = 9.06 \times 10^{-15} n(cm^{-3}) \sigma_r (\mu m),
+E_r [\mathrm{MV/m}] = 9.06 \times 10^{-15} n_e [\mathrm{cm^{-3}}] \sigma_r [\mathrm{\mu m}],
 \end{equation}
-where $\sigma_r$ is the size of the electron beam. This focusing force leads to oscillations and the electron beam performs betatron oscillations.
+where $\sigma_r$ is the size of the electron beam. This focusing field forces off-axis electrons onto the axis, as a result of which the electron beam performs betatron oscillations.
 
-\subsection{Trapping}
+\subsection{Trapping and self-injection threshold}
 
-In order to trap electrons from the ambient plasma in the bubble of the wakefield and make sure they remain inside the cavity, the electrons have to fulfil the following criterion \cite{Thomas2010_WAKESCALINGS}
-
+In order to trap electrons from the ambient plasma in the wakefield cavity, the following condition has to be satisfied \cite{Thomas2010_WAKESCALINGS}
 \begin{equation}
-\frac{c \sqrt{\ln (2\gamma^2_{ph}-1)}}{\omega_p r_b} <= \frac{1}{2},
+\boxed{r_b \geq \frac{2c \sqrt{\ln (2\gamma^2_{ph}-1)}}{\omega_p },}
 \end{equation}
-where $\gamma_{ph} = \omega/\omega_p$
-\EliasComm{Needs writing out.}
-\cite{Mangles2012_SELF}
-\begin{equation}
-\frac{\alpha P}{P_c} > \frac{1}{16} \left[\ln\left(\frac{2n_c}{3n_e}\right) - 1 \right]^3,
-\end{equation}
-with $\alpha$ the fraction of energy contained in the \textsc{fwhm} of the laser focal spot, $P$ the laser power.
+where $\gamma_{ph} = \omega/\omega_p \approx \sqrt{n_c/(3n_e)}$ and $r_b$ is the radius of the plasma bubble. This is process is referred to as self-trapping and triggering triggering the injection of electrons into the cavity solely through the evolution of the laser pulse is called self-injection.
 
+Based on the trapping condition above the minimum power required to reach self-injection, the self-injection threshold, is for the depletion-limited case estimated by \cite{Mangles2012_SELF}
+\begin{equation}
+\boxed{\frac{\alpha P}{P_c} > \frac{1}{16} \left[\ln\left(\frac{2n_c}{3n_e}\right) - 1 \right]^3,}
+\end{equation}
+with $\alpha$ the fraction of energy contained in the \textsc{fwhm} of the laser focal spot, $P$ the laser power. $P_c$ is the laser power at which relativistic self-focusing and diffraction are balanced, with $P_c \approx 17.5 n_c/n_e\,\mathrm{GW}$ (see Section \ref{Theory:Sec:SelffocusingSelfguiding}).
 
 \subsection{Depletion}
 
@@ -839,71 +813,59 @@ v_{etch} = \frac{\omega^2_p}{\omega^2_0} c.
 \end{equation}
 
 The wakefield phase velocity or front velocity, $v_f$, is then given by the group velocity reduced by the etch velocity, $v_{etch}$,
-
 \begin{equation}
 \boxed{v_f = v_g - v_{etch} \approx c \left( 1-\frac{3}{2}\frac{\omega^2_p}{\omega^2}\right).}
+\label{Theory:Eqs:FrontVelocity}
 \end{equation}
 
 After a certain distance, the pump-depletion length $L_{pd}$, the pulse is not intense enough any more to drive a stable wave with sufficient field gradients - the cavity collapses. The depletion length in the 3D bubble regime is given by \cite{Lu2007_3DWAKE}
 \begin{equation}
-\boxed{L_{pd} = \frac{\omega^2}{\omega^2_p}\frac{\omega_p}{k_p}\tau.}
+\boxed{L_{pd} = \frac{\omega^2}{\omega^2_p}\frac{\omega_p}{k_p}\tau \propto \frac{1}{n_e}.}
 \end{equation}
 
-Higher electron densities lead to faster etching away of the pulse, whilst reducing the density allows sustaining the accelerating structure over longer distances.
+Higher plasma densities lead to faster etching of the pulse and shortens the depletion length, whilst reducing the density allows sustaining the accelerating structure over longer distances.
 
 \subsection{Dephasing}
 
-In the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma medium at a group velocity smaller than $c$. As a result the electrons slowly catch up with the driver and leave the accelerating phase of the cavity, hence called dephasing.
-
-The relativistic electrons are moving close to the speed of light ($\beta_e \rightarrow 1$) whilst the plasma wave moves at a velocity $\beta_p$:
+In the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma at a group velocity smaller than $c$. As a result the electrons slowly catch up with the driver and leave the accelerating phase of the cavity, hence called dephasing.
+The relativistic electrons are moving close to the speed of light ($\beta_e \rightarrow 1$) whilst the plasma wave moves at a velocity $\beta_p$ (in the 1D linear case):
 \begin{equation}
 \beta_p = \frac{v_g}{c} = \left(1-\frac{n_e}{n_c}\right)^{\frac{1}{2}},
 \end{equation}
 where $n_e$ is the electron and $n_c$ the critical density.
-
 Using this one can estimate the time it takes the electrons to move out of the acceleration phase of the wave sizing half the length of the plasma wave:
 \begin{equation}
 t_d = \frac{\lambda_p}{2c\left(\beta_e-\beta_p\right)}\approx \frac{\lambda_p}{c} \frac{n_c}{n_e}.
 \end{equation}
 
-The distance over which electrons leave the acceleration phase, the dephasing length $L_{dp}$, is hence
+The distance over which electrons leave the acceleration phase, the dephasing length $L_{dp}$, is then for the 1D linear regime
 \begin{equation}
-L_{dp} = \lambda_p \frac{n_c}{n_e}.
+L_{dp} = \lambda_p \frac{n_c}{n_e} \propto n^{-\frac{3}{2}}_e.
 \end{equation}
-
-\EliasComm{This was 1D linear.}
-
-
 
 The dephasing length for the 3D bubble regime is given by \cite{Lu2007_3DWAKE}
 \begin{equation}
-\boxed{L_{dp} = \frac{2}{3}\frac{\omega^2}{\omega^2_p} r_b = \frac{4}{3}\frac{\omega^2}{\omega^2_p}\frac{\sqrt{a_0}}{k_p},}
+\boxed{L_{dp} = \frac{2}{3}\frac{\omega^2}{\omega^2_p} r_b = \frac{4}{3}\frac{\omega^2}{\omega^2_p}\frac{\sqrt{a_0}}{k_p} \propto \sqrt{a_0} n^{-\frac{3}{2}}_e,}
 \end{equation}
-which is similar to the 1D linear case but using the bubble radius.
-We also have a reduction due to etching and front velocity.
-
-Since a higher plasma density slows the laser pulse down more, the dephasing length decreases as well.
-
-
-
-Both dephasing and depletion limit the acceleration length based on a similar scaling. Whilst the depletion length can be extended by using a more intense laser pulse, the dephasing length at a constant plasma density remains a fixed limitation. Solutions to overcome this limit include, for instance, increasing the density either gradually or abruptly to rephase the electrons \cite{Guillaume_REPHASING} and/or employ multiple lasers \cite{Debus2019_BEYONDDEPHASING} and acceleration stages injecting the electron bunch into the accelerating phase of the new wakefield \cite{Steinke2016_STAGING}.
+which is similar to the 1D linear case but using the bubble radius and considering the due to the etching reduced front velocity, $v_f$ (see Equation \eqref{Theory:Eqs:FrontVelocity}).
+A higher plasma density reduces the front velocity of the laser pulse and reduces the dephasing length
 
 \subsection{Maximum Energy Gain}
 
-Wakefield cavities support several orders of magnitude higher electric fields than conventional RF cavities. For a 3D non-linear wake the maximum electric field supported is given by \cite{Lu2007_3DWAKE}
+Wakefield cavities support several orders of magnitude higher electric fields than conventional radio-frequency cavities. For a 3D non-linear wake the maximum electric field that can be supported by the plasma wave is given by \cite{Lu2007_3DWAKE}
 \begin{equation}
-E_{max} = \sqrt{a_0} m_e c \omega_p/e.
+\boxed{E_{max} = \sqrt{a_0} m_e c \omega_p/e \propto \sqrt{a_0 n_e}.}
 \end{equation}
-A higher electron density results in a larger amount of charge separated and hence a stronger electric field which is desirable for our accelerator.
+A higher plasma density results in a larger amount of separated charge and hence a stronger electric field which is desirable for our accelerator.
 
-The maximum energy gain is the optimised product of the electric field and the acceleration distance.
-Combining our knowledge of the electric field, which increases with density, and the limiting factors for the acceleration length dephasing and depletion, which decrease with density, the maximum energy gain $W_{max}$ for a 3D non-linear wake at matched conditions is given by \cite{LuThesis,Lu2007_3DWAKE}
+On the other hand, both limiting factors introduced in the previous sections, depletion and dephasing, are inversely proportional to the plasma density. Whilst the depletion length can be extended by using a more intense laser pulse, the dephasing length at a constant plasma density remains a fixed limitation. Solutions to overcome this limit include, for instance, increasing the density either gradually or abruptly to rephase the electrons \cite{Guillaume_REPHASING} and/or employ multiple lasers \cite{Debus2019_BEYONDDEPHASING} and acceleration stages injecting the electron bunch into the accelerating phase of the new wakefield \cite{Steinke2016_STAGING}.
+
+The maximum energy gain is the optimised product of the electric field and the acceleration distance. By assuming that ultimately the dephasing length is the limiting factor, the maximum energy gain $W_{max}$ for a 3D non-linear wake at matched conditions is given by \cite{LuThesis,Lu2007_3DWAKE}
 \begin{equation}
-\boxed{W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2.}
+\boxed{W_{max} = \frac{2}{3}a_0\left(\frac{\omega_L}{\omega_p}\right)^2 m_e c^2 \propto \frac{a_0}{n_e}.}
 \end{equation}
 
 This gives the counter-intuitive result that one has to choose low plasma densities (corresponding to lower field gradients) to accelerate particles to higher energies. In addition, this means that one has to balance between high beam charge (requiring high $n_e$) and high peak energy. To solve this dilemma and optimise charge and energy, a variety of injection mechanisms (internal \cite{Faure2006_STABLEJET,Geddes2008_STABLE,Pak2010_ION,Buck2013_SHOCK} and external \cite{Deng2019_TROJAN,Steinke2016_STAGING}) have been proposed. 
-
 
 \subsection{Injection Mechanisms and Accelerator Tailoring}
 
@@ -1036,8 +998,15 @@ For a wiggler this becomes:
 \omega_c \sim \frac{3}{2} \gamma^2 K k_u c
 \end{equation}
 
-\EliasComm{Include explicit equations here.}
+Maximum energy 
+\begin{equation}
+\hbar \omega_{eV} = \frac{0.496[E(GeV)]^2}{(1+ K^2/2) \lambda_0 (m)}
+\end{equation}
 
+Number of emitted photons per magnet period (later compare to number of photons emitted in wiggler), is then \cite{Jackson}
+\begin{equation}
+N_\gamma = \frac{2 \pi}{3} \alpha K^2
+\end{equation}
 
 \subsection{Bremsstrahlung}
 \begin{figure}[h]
@@ -1205,7 +1174,7 @@ For very low energetic photons in the limit $\omega \rightarrow 0$ and $\omega'/
 \boxed{\frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} = \frac{\pi \alpha^2}{m_e^2} (1 + \cos^2\theta),}
 \label{Theory:Eqs:ThomsonXsec}
 \end{equation}
-which is independent of photon energy and has a total cross section of $\sigma_{\gamma e} = 8\pi\alpha^2/(3m_e^2)$. This is the classical Thomson scattering cross section, $\sigma_T$.
+which is independent of photon energy and has a total cross section of $\sigma_{\gamma e} = 8\pi\alpha^2/(3m_e^2)$ or $\sigma_T = 8\pi/3 r^2_e$, with $r_e = e^2/m_e c^2$ \cite{Jackson}. This is the classical Thomson scattering cross section, $\sigma_T$.
 The total cross section using the Klein-Nishina equation amounts to:
 \begin{equation}
 \boxed{\sigma_{\gamma e} = \frac{3}{4}\left[\frac{1 + x}{x^3}\left( \frac{2x(1+x)}{1+2x} - \ln(1+2x)\right)\right] + \frac{1}{2x} \ln(1+2x) - \frac{1+3x}{(1+2x)^2},}
@@ -1382,35 +1351,39 @@ Q^2 &= (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
 
 \section{Radiation Reaction}
 
-\EliasComm{In previous sections discussed the emission of radiation from charged particles.}
-\EliasComm{Based on conservation rules the particles lose energy and experience a knockback based on the momentum/energy of the radiation emitted.}
-\EliasComm{Knockback force can significantly alter the particle dynamics in strong electromagnetic fields.}
-\EliasComm{In most daily scenarios the force acting on the emitting particles is small and is accurately represented by a slow continuous force (for instance in accelerators) on emitting particles but in most scenarios not important as it is a slow continuous force.}
-\EliasComm{In astrophysical phenomena/context and in future accelerators this becomes more important. In addition this can be probed in high intensity laser fields.}
-\EliasComm{Here a single particle can emit multiple photons in a short time and the radiation reaction force has to be considered.}
-\EliasComm{In extreme cases the energy emitted approaches the initial energy of the particle, for which we have to model the process in the quantum model, i.e. consider quantum radiation reaction.}
-\EliasComm{This is radiation reaction and will discuss this fundamental phenomenon in this section. No universally accepted practicable solution across regimes.}
-\EliasComm{This will be probed in future high-intensity laser interactions.}
-\EliasComm{Will initially introduce classical descriptions of radiation reaction and motivate limitations.}
-\EliasComm{Then introduce quantum corrections/semi-classical and quantum radiation reaction, and how they differ from the classical description.}
-\EliasComm{Reviews will be REF DiPiazza2012 and Blackburn2019}
+In the previous sections we discussed the emission of radiation from charged particles through different mechanisms. Based on conservation rules the particles lose energy in the process and also have to experience a knock-back force whenever they radiate. Such a knock-back or commonly referred to as radiation reaction can in strong electromagnetic fields significantly alter the particle dynamics. Whilst the instantaneous force felt by the emitting particles is small in most settings, it is particularly important in the astrophysical context (EXAMPLES) and will be the subject of research at high-intensity laser facilities. Here a single particle can emit multiple photons in a short span of time and the radiation reaction force has to be considered. In extreme cases the energy emitted by the particle approaches its initial energy, which requires modelling the process in a quantum picture, i.e. we then consider quantum radiation reaction.
+
+Radiation reaction is a fundamental phenomenon of electrodynamics but surprisingly there is no universally accepted and practicable description across a variety of regimes. In the following, different descriptions will be introduced, starting with classical descriptions of radiation reaction highlighting their motivation and limitations, followed by quantum corrections and semi-classical models, indicating how they differ qualitatively.
+
+Reviews on this topic can be found in parts of REF DiPiazza\addref{} and in REF Blackburn2019\addref{}.
 
 \subsection{Classical Radiation Reaction}
 
+We will start with descriptions of the radiation reaction force rooted in classical electrodynamics. Out of a variety of different approaches we will focus on the two most commonly discussed models and their implications: the Lorentz-Abraham-Dirac (LAD) equation and the Landau-Lifschitz (LL) description. See for instance BURTON NOBLE 2-14 REF\addref{} for a review of other classical theories of radiation reaction.
+
 \subsubsection{Lorentz-Abraham-Dirac Equation (LAD)}
 
-This section is based on \cite{Jackson}.
-One intuitive way to derive an expression for radiation reaction is considering conservation of energy. It is well known that accelerated charges emit radiation which is fairly well characterised in the context of synchrotrons, other circular accelerators or undulator setups. The emitted power follows the Larmor power formula
+An intuitive way to derive an expression for a radiation reaction force is considering conservation of energy \cite{Jackson}. Considering the emission power in a synchrotron, the Larmor power formula is expressed as
 \begin{equation}
 P = \frac{2}{3} \frac{e^2}{c^3} \mathbf{\dot{v}}^2.
 \end{equation}
 
-This equation can be used to derive an expression for a radiation force by integration.
-The explicit steps can be found in Jackson (Chapter 16, equations 16.7 to 16.8).
-
-The in Jackson called `radiative reaction force' then becomes
+By requiring that the emitted radiation power corresponds to the work done by the radiation reaction force on the radiating particle we can write
+\begin{align}
+\int^{t_2}_{t_1} \mathbf{F}_{rad} \cdot \mathbf{v} \dif t &= - \int^{t_2}_{t_1} P \dif t,\\
+&= \frac{2}{3}\frac{e^2}{c^3}\int^{t_2}_{t_1} \mathbf{\ddot{v}} \cdot \mathbf{v} \dif t - \frac{2}{3}\frac{e^2}{c^3} (\mathbf{\dot{v}} \cdot \mathbf{v})|^{t_2}_{t_1}.
+\end{align}
+For a periodic motion or $\mathbf{\dot{v} \cdot v} = 0$ at $t = t_1$ and $t = t_2$, we can write:
 \begin{equation}
-F_{rad} = \frac{2}{3} \frac{e^2}{c^3}\mathbf{\ddot{v}} = m \tau \mathbf{\ddot{v}}.
+\int^{t_2}_{t_1} \left(\mathbf{F}_{rad} - \frac{2}{3}\frac{e^2}{c^3} \mathbf{\ddot{v}}\right) \cdot \mathbf{v} \dif t = 0,
+\end{equation}
+so that we can identify the radiation reaction force, $\mathbf{F}_{rad}$, as
+\begin{equation}
+\mathbf{F}_{rad} = \frac{2}{3} \frac{e^2}{c^3}\mathbf{\ddot{v}} = m \tau \mathbf{\ddot{v}},
+\end{equation}
+where $\tau$ is the `characteristic time'
+\begin{equation}
+\tau = \frac{2}{3} \frac{e^2}{m c^3}
 \end{equation}
 
 The equation of motion then reads
@@ -1423,109 +1396,102 @@ For a vanishing external force, we obtain two solutions for $\mathbf{\dot{v}}$:
 \begin{equation}
 \mathbf{\dot{v}}(t) = 
 \begin{cases}
-\mathbf{0} \\
-\mathbf{a}e^{t/\tau}.
+\mathbf{0}, \\
+\mathbf{a}e^{t/\tau},
 \end{cases}
 \end{equation}
+where $\mathbf{a}$ is the acceleration at $t = 0$. If $\mathbf{a} \neq 0$ leads to a self-acceleration of the particle in absence of an external force, which is clearly unphysical and also results in $(\mathbf{\dot{v} \cdot v}) \neq 0$ at $t_1$ and $t_2$, which we used to derive this expression.
 
-$\mathbf{a}$ is the acceleration at $t = 0$. If $\mathbf{a} \neq 0$ we run into trouble.
-
-First attempts to simply add radiation reaction as a force onto the Lorentz-force equation resulted in unphysical expressions depending on several derivatives of the velocity. This in the end required knowing about the future to calculate its equation of motion, and led to self-acceleration of the particles in question. These solutions are commonly referred to as `runaway solutions'.
-
-The relativistic generalisation was found by Dirac renormalising in 4-space. The result is referred to as Lorentz-Abraham-Dirac equation (LAD).
-
-Lorentz-Abraham-Dirac (LAD) equation in terms of the four-acceleration  \cite{Bulanov2011_LADLL,DiPiazza2012_ICS}:
-
+The relativistic generalisation of this equation is referred to as Lorentz-Abraham-Dirac equation (LAD) and is given in terms of the four-acceleration  \cite{Bulanov2011_LADLL,DiPiazza2012_ICS}:
 \begin{equation}
-m \frac{\mathrm{d}u^\mu}{\mathrm{d}s} = e F^{\mu\nu} u_\nu + \frac{2}{3} e^2 \left(\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}s^2} + \frac{\mathrm{d}u^\nu}{\mathrm{d}s}\frac{du_\nu}{\mathrm{d}s}u^\mu\right),
+ \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m} F^{\mu\nu} u_\nu + \frac{e^2}{6 \pi m} \left(\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}\tau^2} + u^\mu \frac{\mathrm{d}u^\nu}{\mathrm{d}\tau}\frac{du_\nu}{\mathrm{d}\tau}\right),
 \end{equation}
-
 with the radiation friction force
-
 \begin{equation}
-g^\mu = \frac{2e^2}{3c} \left[\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}s^2} - u^\mu \left(\frac{\mathrm{d}u^\nu}{\mathrm{d}s}\right)\left(\frac{\mathrm{d}u_\nu}{\mathrm{d}s}\right)\right].
+g^\mu = \frac{2e^2}{3c} \left[\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}\tau^2} - u^\mu \left(\frac{\mathrm{d}u^\nu}{\mathrm{d}\tau}\right)\left(\frac{\mathrm{d}u_\nu}{\mathrm{d}\tau}\right)\right],
 \end{equation}
+where the second derivative of the momentum leads again to the same pathological runaway solutions as in the Abraham-Lorentz equation.
 
 \subsubsection{Landau-Lifschitz (LL) Equation}
 
-A first self-consistent solution to including radiation reaction into a classical model was achieved by Landau and Lifschitz \cite{LandauLifschitz}.
-LL solution is a perturbation and means the radiation reaction force has to be small compared to the Lorentz force and a suitable frame of reference has to be found to make this valid. In some cases energy conservation might be violated in an abruptly changing EM field.
+A first self-consistent solution to including radiation reaction into a classical model was achieved in the Landau-Lifschitz (LL) equation \cite{LandauLifschitz}. Here it is assumed that the radiation reaction force is small compared to the Lorentz force in a suitable frame of reference. The expression $\dif u / \dif \tau$ is substituted by $e/m F^{\mu \nu} u_\nu$, which reduces the order of the differential equation and removes the runaway solutions. 
+\begin{equation}
+ \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m} F^{\mu\nu} u_\nu + \frac{e^4}{6 \pi m} \left[-\frac{m}{e}(\partial_\alpha F^{\mu \nu}) u_\nu u^\alpha + F^{\mu\nu} F_{\nu\alpha}u^\alpha + (F^{\nu \alpha}u_\alpha)^2 u^\mu      \right],
+\end{equation}
 
-Problems: energy loss can exceed initial energy for abruptly changing fields (REF Baylis PLA 2002). Stochasticity not included.
-
-
-In EM four vector form \cite{Bulanov2011_LADLL}:
-
+The radiation reaction force is then written
 \begin{equation}
 g^\mu = \frac{2e^3}{3m_e c^3} \left\lbrace   \frac{\partial F^{\mu \nu}}{\partial x^\lambda} u_\nu u_\lambda - \frac{e}{m_e c^2} \left[ F^{\mu \lambda} F_{\nu \lambda} u^\nu - \left(F_{\nu\lambda}u^\lambda\right) \left( F^{\nu\kappa}u_\kappa\right)u^\mu \right]   \right\rbrace
 \end{equation}
-
-In 3-dim.
-
+or in terms of 3-vectors as \cite{Bulanov2011_LADLL}:
 \begin{align*}
 \mathbf{F} = \frac{2e^3}{3m_e c^3 \sqrt{1-\frac{v^2}{c^2}}} \left\lbrace \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{E} + \frac{1}{c} \left[ \mathbf{v} \times \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{B} \right] \right\rbrace +\\
 + \frac{2e^4}{3m^2_e c^4}\left\lbrace \mathbf{E}\times\mathbf{B} + \frac{1}{c} ( \mathbf{B} \times (\mathbf{B} \times \mathbf{v})) + \frac{1}{c} \mathbf{E} (\mathbf{v} \cdot \mathbf{E}) \right\rbrace - \\
-- \frac{2e^4}{3m^2_e c^5 \left( 1-\frac{v^2}{c^2}\right)} \mathbf{v} \left\lbrace\left( \mathbf{E} + \frac{1}{c} \mathbf{v} \times \mathbf{B}\right)^2 - \frac{1}{c^2} (\mathbf{v} \cdot \mathbf{E})^2 \right\rbrace
+- \frac{2e^4}{3m^2_e c^5 \left( 1-\frac{v^2}{c^2}\right)} \mathbf{v} \left\lbrace\left( \mathbf{E} + \frac{1}{c} \mathbf{v} \times \mathbf{B}\right)^2 - \frac{1}{c^2} (\mathbf{v} \cdot \mathbf{E})^2 \right\rbrace,
 \end{align*}
 
-This is an effective model and the violation of energy conservation is possible.
-
+This description only holds if $L \ll \lambda_C$ and $E \ll E_{cr}/\alpha$, which is satisfied within the realm of classical electrodynamics.
 \EliasComm{According to REF Spohn EPL 50 2000 all physical solutions of the LAD equation are also solutions of LL}
+\vspace{\baselineskip}
 
+In the context of the collision of a relativistic electron beam of energy $\gamma$ with a laser pulse of intensity $a_0$ the relative magnitude of the LL radiation reaction force to the Lorentz force can be estimated by \cite{Thomas2012_LL}
+\begin{equation}
+\boxed{\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c}}
+\end{equation}
+Another useful parameter is the classical radiation reaction parameter (DI PIAZZA REF 2010), $R_c$:
+\begin{equation}
+R_c = \frac{\alpha a^2_0 \gamma_0 (1+\beta_0) \omega_0}{m},
+\end{equation}
+with significant radiation damping for $R_c \geq 0.24$ \cite{Thomas2012_LL} and radiation-dominated regime for $R_c \geq 1$ XXREF\addref{}. The fraction of the emitted radiation in the average rest frame of the electron, $f$, is given by $f = E_{rad}/(\gamma' m) = 4\pi R_c/3$.
 
-For energy loss in the Landau-Lifschitz model using an analytic expression for a plane wave with a Gaussian temporal envelope given in \cite{Thomas2012_LL,Bulanov2011_LL}
+In the Landau-Lifschitz model we can also find an analytic expression of the energy loss an electron experiences. For an electron interacting with a plane wave with a Gaussian temporal envelope this is given by \cite{Thomas2012_LL,Bulanov2011_LL} VALID\addnum{}
 \begin{equation}
 \frac{\Delta \gamma}{\gamma_0} = \frac{\sqrt{\pi/2}\tau_0 t_L \omega_0^2 \gamma_0 a_0^2}{1+\sqrt{\pi/2 \tau_0 t_L \omega_0^2 \gamma_0 a_0^2}},
 \label{Theory:eq:EnergyLoss_LLThomas}
 \end{equation}
-where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, the pulse duration $t_L = 45\,\mathrm{fs}$, the wavelength be $\lambda = 800\,\mathrm{nm}$.
+where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, the pulse duration $t_L$, the wavelength $\lambda$.
+\vspace{\baselineskip}
 
-Estimate relative magnitude (LL)
+Whilst this description is free from runaway solutions unlike the LAD equation it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle (REF Baylis PLA 2002). 
 
-\begin{equation}
-\boxed{\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c}}
-\end{equation}
-
-\subsubsection{Radiation Integral}
-
-In either case the trajectories are determined and the radiation emitted is calculated from the Lienard-Wiechert potentials:
-\begin{equation}
-\frac{\dif^2 I}{\dif \omega \dif \Omega} = \frac{\alpha \omega^2}{4 \pi^2}| \sum^{N_e}_{k=1} \int^\infty_{-\infty} \mathbf{n} \times (\mathbf{n} \times \mathbf{v}_k) e^{i\omega(t-\mathbf{n}\cdot \mathbf{r}_k}\dif t|^2
-\end{equation}
 
 \subsection{Quantum picture and corrections}
-\EliasComm{Furry picture, treating the laser field as classical external field.}
-\EliasComm{Multi-photon not equal to multi-photon.}
 
 Alec says that quantum radiation reaction is the overall recoil experienced by an electron undergoing multiple simultaneous incoherent photon emission events.
 
 Limit when quantum effects become more important: energy loss comparable to rest mass of the electron?
 This is at the same time also the limit of validity of the LL model, when the force becomes comparable to the Lorentz force.
 
-Quantum parameter eta and chi. $\eta = E_{RF}/E_{crit}$
-Critical field for quantum electrodynamics $E_{crit} = 1.38 \times 10^{18}\,\mathrm{V m^{-1}}$
+Quantum nonlinearity parameter
+\begin{equation}
+\eta = E_{RF}/E_{crit},
+\end{equation}
+with the critical field for quantum electrodynamics $E_{crit} = 1.38 \times 10^{18}\,\mathrm{V m^{-1}}$.
 The field in the rest frame becomes important in relation to the critical field. This is somewhat similar to the approximation that the field be much smaller than the Lorentz force.
 
-With high confidence we know that we require a quantum description of this process.
-There are several ways to solve some of the issues of the classical Landau-Lifschitz description.
-
-
-
-REFS: Chris Ridgers JoP \cite{Ridgers2017_QRR}
-
-Corrections regarding spectrum of radiation (cut-off).
-
-Stochasticity.
+\begin{itemize}
+\item corrections regarding radiation cut-off in spectrum (quantum synchrotron radiation)
+\item stochasticity (broadening in e-spectrum, straggling in radiation spectrum)
+\end{itemize}
 
 \subsubsection{Semi-classical approach}
+\begin{itemize}
+\item Accept that radiation spectrum is different, so reduce the emission power
+\item compare classical power and quantum result and correct by this value
+\end{itemize}
 
-Semi-classical approach using Gaunt factor (power!).
 
-\begin{equation}
-g(\eta) = \frac{\int_0^{\eta/2} F(\eta, \chi) \mathrm{d}\chi}{\int_0 F_{cl}\left(\frac{4\chi}{3\eta^2}\right)} = \frac{3 \sqrt{3}}{2 \pi \eta^2} \int_0^{\eta/2} F(\eta,\chi) \mathrm{d}\chi. 
-\end{equation}
+Semi-classical approach using Gaunt factor based on the ratio of the quantum and classical synchrotron emission power $g(\eta) = P_q/P_{cl}$
+\begin{align}
+g(\eta) &= \frac{\int_0^{\eta/2} F(\eta, \chi) \mathrm{d}\chi}{\int_0 F_{cl}\left(\frac{4\chi}{3\eta^2}\right)} = \frac{3 \sqrt{3}}{2 \pi \eta^2} \int_0^{\eta/2} F(\eta,\chi) \mathrm{d}\chi\\
+g(\eta) &= \frac{9 \sqrt{3}}{8 \pi}\int^\infty_0 \left[ \frac{2 u^2 K_{5/3} (u)}{(2+3 \eta u)^2} + \frac{36\eta^2 u^3 K_{2/3} (u)}{(2+3 \eta u)^4}\right] \dif u\\
+&= \begin{cases}
+1- \frac{55 \sqrt{3}}{16}\eta + 48 \eta^2 & \eta \ll 1\\
+\frac{16 \Gamma(2/3)}{3^{1/3} 27}\eta^{-4/3} & \eta \gg 1
+\end{cases}
+\end{align}
 
-Fit for function is \cite{Baier1991_GAUNT}:
+A within few percent accurate fit function for arbitrary $\eta$ is given by \cite{Baier1991_GAUNT}:
 \begin{equation}
 \boxed{g(\eta) \approx \left(1 + 4.8(1+\eta)\ln(1+1.7\eta)+2.44\eta^2\right)^{-2/3}.}
 \end{equation}
@@ -1536,7 +1502,7 @@ So that the classical radiation reaction force is modified
 \end{equation}
 
 
-Evolution of the variance 
+Capture quantum characteristics by considering evolution of the variance \cite{Ridgers2017_QRR}
 
 \begin{equation}
 S(\eta) = \frac{55 \alpha_f c}{24 \sqrt{3} \bar{\lambda}_c} m^2_e c^4 \eta^4 g_2(\eta),
@@ -1677,17 +1643,15 @@ z = 4m^2_e \frac{\eta (1+ \eta^2)^{1/2}}{(kl)}\left[\frac{\nu}{\nu_n}\left(1- \f
 
 
 \subsection{Bethe-Heitler pair production}
+
 \begin{figure}
 \centering
 \includegraphics[height=0.3\columnwidth]{Aivazis_BetheHeitler.pdf}\hspace{5em}%
 \includegraphics[width=0.35\columnwidth]{Aivazis_Bremsstrahlung.pdf}
 \caption[Feynman diagram for Bethe-Heitler process and bremsstrahlung as comparison.]{Feynman diagram for Bethe-Heitler process (left) and bremsstrahlung (right) as comparison. The time axis is oriented from left to right. Wiggly lines indicate photons, the dark circle shows the nuclear field. The arrowed lines represent fermions (arrow towards positive time), here electrons, and anti-fermions (arrow in negative time direction), here positrons.}
-
-
-
-
 \label{Theory:Figs:Feynman:BH}
 \end{figure}
+
 A photon of energy $> 2m_e c^2$ can produce an electron-positron pair in the nuclear Coulomb field. This is called the Bethe-Heitler proces \cite{Bethe1934_BH}.
 The process is described by the equation
 \begin{equation}
