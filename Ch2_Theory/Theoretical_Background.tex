@@ -1,22 +1,19 @@
 \chapter{Theory}
 \label{Chap:Theory}
 
-This Chapter lays the theoretical groundwork for the research presented later in this work, addressing laser wakefield acceleration, radiation production from charged particles and the fundamental processes of radiation reaction and pair production.
+This Chapter lays the theoretical groundwork for the results presented later in this work, addressing laser wakefield acceleration, radiation production from charged particles and the fundamental processes of radiation reaction and pair production.
 
 Firstly, equation of motions of charged single particles in electromagnetic fields are derived. This forms the basis for understanding the properties of electrons accelerated in wakefield accelerators, measuring their energy in magnetic spectrometers and calculating the radiation they emit in interaction with electromagnetic fields.
 
-Secondly, the propagation of a laser in a medium and its non-linear evolution, in particular plasmas, are discussed. This paves the way for the third section on laser wakefield acceleration where basic properties like maximum energy and injection mechanisms are introduced.
+Secondly, the propagation of a laser in a plasma and its non-linear evolution are discussed. This paves the way for the third section on laser wakefield acceleration where basic properties like maximum energy and injection mechanisms are introduced.
 
-Then, radiation production from electrons in different scenarios is discussed, starting with radiation in synchrotrons and insertion devices, then drawing the parallel to betatron radiation produced in wakefield acceleration and the radiation emitted in a laser wiggler, namely relativistic inverse Compton scattering (ICS) in moderately (linear ICS) and highly intense laser fields (non-linear ICS).
+Subsequently, radiation production from electrons in different scenarios is discussed, starting with radiation in synchrotrons and insertion devices, then drawing the parallel to betatron radiation produced in wakefield acceleration and the radiation emitted in a laser wiggler, namely relativistic inverse Compton scattering (ICS) in moderately (linear ICS) and highly intense laser fields (non-linear ICS). Bremsstrahlung as radiation mechanism is also being introduced.
 
-This leads over to the topic of radiation reaction, the knock-back force a particle experiences when emitting a photon which can, for instance, be investigated with relativistic inverse Compton scattering. Whilst radiation reaction is a very fundamental phenomenon there is so far no universally accepted and practicable description for a wide parameter space. In this section different proposed descriptions of radiation reaction are discussed, starting with the in classical electrodynamics self-consistent Landau-Abraham-Dirac equation, followed by the classical Landau-Lifschitz equation and leading over to quantum corrections and their implications. For each description the shortcomings and their qualitative implications are discussed.
-\EliasComm{Revise once finished RR section.}
+This leads over to the topic of radiation reaction, the knock-back force a charged particle experiences when emitting a photon. This can, for instance, be investigated in relativistic inverse Compton scattering. Whilst radiation reaction is a very fundamental phenomenon there is so far no universally accepted and practicable description for a wide parameter space. In this section different proposed descriptions of radiation reaction are discussed, starting with the in classical electrodynamics self-consistent Lorentz-Abraham-Dirac equation, followed by the classical Landau-Lifschitz equation and leading over to quantum corrections and their implications. 
 
-Finally, other fundamental high-field processes as pair production from different mechanisms and future research topics are discussed.
+Finally, other fundamental QED processes such as pair production, annihilation and light-light scattering is discussed.
 
 \EliasComm{Once full structure is clear, revise this.}
-
-\newpage
 
 \section{Single particle motion in an EM field}
 
@@ -62,7 +59,7 @@ Using the previously derived equation for the Lorentz force we can now consider 
 \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = q \mathbf{E}.
 \end{equation}
 
-If we choose the coordinate system such that  $\mathbf{E} =  (E,0,0)^t = E e_x$, we see that the momentum of the electron is unchanged in the other two directions, $\mathrm{d}p_x/\mathrm{d}t = \mathrm{d}p_y/\mathrm{d}p_y = 0$. In x-direction the electron however feels a constant force $qE$ accelerating it at a linear energy gain.
+If we choose the coordinate system such that  $\mathbf{E} =  (E,0,0)^t = E e_x$, we see that the momentum of the electron is unchanged in the other two directions, $\mathrm{d}p_x/\mathrm{d}t = \mathrm{d}p_y/\mathrm{d}t = 0$. In x-direction the electron however feels a constant force $qE$ accelerating it at a linear energy gain.
 
 \subsection{Electron motion in a homogeneous magnetic field}
 
@@ -73,10 +70,10 @@ Consider the motion of a single electron in a homogeneous magnetic field extendi
 \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} &= \frac{q}{\gamma m} \mathbf{p} \times \mathbf{B},
 \end{align}
 \end{subequations}
-in terms of the relativistic momentum $\mathbf{p} = \gamma m \mathbf{v}$
+in terms of the relativistic momentum $\mathbf{p} = \gamma m \mathbf{v}$.
 Note that in this case the purely magnetic Lorentz force does not do any work. The instantaneous rate of work (power) is $P = \mathbf{F} \cdot \mathbf{v}$, where the force $\mathbf{F}$ is by virtue of the cross product always orthogonal to $\mathbf{v}$ and the dot product vanishes.
 We choose the coordinate system such that $\mathbf{B} = (0,0,B)^t = B e_z$. The momentum vector is simply $\mathbf{p} = (p_x,p_y,p_z)^t$.
-This then gives us the differential equations:
+The differential equations are then given by:
 \begin{subequations}
 \begin{align}
 \dot{p_x} &= \frac{qB}{\gamma m} p_y,\\
@@ -100,7 +97,7 @@ p_x(t) &= p_\perp \cos(\omega t)\\
 p_y(t) &= - p_\perp \sin(\omega t) 
 \end{align}
 \end{subequations}
-The solution for the z-motion is trivial $p_z = p_{z,0}$.
+The solution for the z-motion is trivial with $p_z = p_{z,0}$.
 Expressed in terms of the trajectories with initial conditions $x(0) = 0, z(0) = 0, y(0) = p_\perp/qB = r_{L}$, this reads
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
@@ -121,8 +118,8 @@ The motion of the electron consists of two decoupled motions: one at the constan
 
 \subsection{Electron motion in a monochromatic plane EM wave}
 \label{Theory:Sec:SingleParticle:FigOfEight}
-This derivation is based on \cite{ThomasThesis}.
-Writing the equation of motion (EoM) in terms of the potentials $\mathbf{A}$ and $\Phi$ as in Equation \eqref{Theory:Eqns:EoMLorentz} on page \pageref{Theory:Eqns:EoMLorentz} gives:
+
+Writing the equation of motion in terms of the potentials $\mathbf{A}$ and $\Phi$ as in Equation \eqref{Theory:Eqns:EoMLorentz} on page \pageref{Theory:Eqns:EoMLorentz} gives \cite{ThomasThesis}:
 
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} = q\left(\mathbf{v} \times \nabla \times \mathbf{A}-\frac{\partial \mathbf{A}}{\partial t} - \nabla \Phi\right).
@@ -133,7 +130,7 @@ Now using the convective derivative and the vector identity $\mathbf{v} \cdot \n
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} = \frac{\partial\mathbf{p}}{\partial t} +(\nabla\mathbf{p})\cdot\mathbf{v} - \mathbf{v}\times(\nabla\times\mathbf{p}).
 \end{equation}
 \EliasComm{Add derivation to Appendix for vector identity.}
-With this result the EoM becomes
+With this result the equation of motion becomes
 \begin{align}
 \frac{\partial\mathbf{p}}{\partial t} +(\nabla\mathbf{p})\cdot\mathbf{v} - \mathbf{v}\times(\nabla\times\mathbf{p}) &= q\left(\mathbf{v} \times \nabla \times \mathbf{A}-\frac{\partial \mathbf{A}}{\partial t} - \nabla \Phi\right),\nonumber\\
 \frac{\partial}{\partial t}\left(\mathbf{p}+q\mathbf{A}\right) +(\nabla\mathbf{p})\cdot\mathbf{v} - \mathbf{v}\times\left(\nabla\times\left(\mathbf{p}+q\mathbf{A}\right)\right) &= - q\nabla \Phi,\nonumber\\
@@ -159,7 +156,7 @@ Taking the curl of this equation results in:
 \end{equation}
 where the second term disappeared as the curl of a gradient is always zero (see Section \ref{Appendix:VectorIdentities:CurlGradZero}),
 so that if $\nabla \times \mathbf{u}$ is zero initially, it will remain so always. The condition is satisfied, for instance, for a plasma at rest before the laser pulse arrives.
-Assuming this condition our Equation \eqref{Theory:Eqns:partialtU} simplifies to
+Assuming this condition Equation \eqref{Theory:Eqns:partialtU} simplifies to
 \begin{equation}
 \frac{\partial}{\partial t}\mathbf{u} = - \nabla \left(q\Phi + \gamma mc^2\right).
 \end{equation}
@@ -177,7 +174,7 @@ This means we obtain two separate components:
 \end{align}
 \end{subequations}
 
-From the perpendicular component we see that the transverse canonical momentum is conserved: $\mathbf{p}_\perp + q\mathbf{A} = 0$. If $q = -e$ and $e\mathbf{A}_\perp = \mathbf{a}_\perp$, then $\mathbf{p}_\perp = \mathbf{a}_\perp$. In terms of the Cartesian coordinates, this means $p_x = a_x, p_y = a_y$.
+From the perpendicular component we see that the transverse canonical momentum is conserved: $\mathbf{p}_\perp + q\mathbf{A} = 0$. If $q = -e$ and $e\mathbf{A}_\perp = \mathbf{a}_\perp$, then $\mathbf{p}_\perp = \mathbf{a}_\perp$. In Cartesian coordinates, this means $p_x = a_x, p_y = a_y$.
 
 For the parallel spatial component $z$ consider the substitution $z = ct$ for light. Thus, $\partial z = c \partial t$. The parallel-component of the vector potential $\mathbf{A}$ is zero, so $u_\parallel = p_\parallel = p_z$:
 
@@ -293,14 +290,12 @@ The equation of motion for the radial component is then
 with $\mathbf{p} = \gamma m_e \mathbf{\dot{r}}$.
 Assume there is no axial acceleration field, the radial component of the velocity is small compared to $c$ and the longitudinal component is close to $c$: $\dot{\gamma}$ is then close to zero. 
 The equation then takes the shape of a harmonic oscillator
-
 \begin{equation}
 \ddot{r} = - \frac{e^2 n_0}{2\epsilon_0 m_e \gamma} r = - \omega_\beta^2 r,
 \end{equation}
 
 with a frequency we will call the betatron frequency, $\omega_\beta$, which is related to the plasma frequency, $\omega_p$, by $\omega_\beta = \omega_p/\sqrt{2\gamma}$. The plasma frequency will be derived explicitly in Section \ref{Chap:Theory:Sec:PlasmaFreq}.
 As this is the standard harmonic oscillator equation, it follows a solution of shape
-
 \begin{equation}
 r(t) = A \cos (\omega_\beta t + \varphi),
 \end{equation}
@@ -387,7 +382,7 @@ r(t) = \frac{\pi \sqrt{CB}}{A} r_{\beta 0} \Biggl[ &J_1 \left( 2 \sqrt{CB}/A \ri
 \label{Theory:Eqs:EoM_Betatron}
 \end{subequations}
 with the initial conditions $r(t=0) = r_{\beta 0}$ and $\dot{r}(t=0) = 0$. $J_1, J_0$ are Bessel functions of first kind of order $1$ and $0$, respectively. $Y_1, Y_0$ are Bessel function of the second kind of order $1$ and $0$.
-This is motion is shown in Figure \ref{Theory:Figs:BetatronMotion}. We see that the oscillations quickly lose amplitude and fall to a settled value, whereas the wavelength of the oscillations increases as the electron gains momentum and inertia.
+This motion is shown in Figure \ref{Theory:Figs:BetatronMotion}. We see that the oscillations quickly lose amplitude and fall to a settled value, whereas the wavelength of the oscillations increases as the electron gains momentum and inertia.
 
 \subsection{Ponderomotive Force}
 
