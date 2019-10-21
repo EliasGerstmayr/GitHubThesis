@@ -429,21 +429,21 @@ On the other hand, the ponderomotive force is suppressed for ultrarelativistic p
 
 \subsection{Plasma Properties}
 
-A plasma is an on average charge-neutral medium that consists of charged particles, in the context of wakefield acceleration ions and free electrons. This property is called quasi-neutrality and can mathematically be expressed as
+A plasma is an on average charge-neutral medium that consists of charged particles, in the context of wakefield acceleration ions and free electrons. This property is called quasi-neutrality and can mathematically be expressed as (REF\addref)
 \begin{equation}
 -e n_e + Z e n_i \approx 0,
 \end{equation}
 where $e$ is the fundamental charge, $n_e$ the electron number density, $n_i$ the ion number density and $Z$ the charge number of the ions.
-Whilst this balance might locally not be true at every moment in time, the mobility of the charges lead to shielding at length scales larger than the Debye length $\lambda_D$:
+Whilst this balance might locally not be true at every moment in time, the mobility of the charges lead to shielding at length scales larger than the Debye length $\lambda_D$ (REF\addref):
 \begin{equation}
 \lambda_D = \left(\frac{\epsilon_0 k_B T_e}{n_e e^2}\right)^{1/2},
 \end{equation}
 where $\epsilon_0$ is the dielectric constant, $k_B$ the Boltzmann constant and $T_e$ the electron temperature. 
-The formation of Debye-spheres is an example of a collective response of the plasma to a small perturbation. In a plasma particles can act together on macroscopic scales through long range electromagnetic forces to form instabilities and waves. Even small imbalances can stimulate a significant response of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, introducing electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces.
+The formation of Debye-spheres is an example of a collective response of the plasma to a small perturbation. In a plasma particles can act together on macroscopic scales through long range electromagnetic forces to form instabilities and waves. Even small imbalances can stimulate a significant response of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, introducing electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces (REF\addref).
 
 \subsection{Plasma Formation}
 \label{Theory:Sec:PlasmaFormation}
-In the context of this work, the process of forming a plasma is achieved by ionising a neutral gas by applying an electric field in form of an intense laser pulse. The resulting collection of unbound electrons and ions is a plasma. After a certain time the electrons will return to the ionic cores of the atoms and back again to a bound energy state emitting any excess energy in form of radiation in the process. This is called recombination and the emitted radiation recombination light.
+In the context of this work, the process of forming a plasma is achieved by ionising a neutral gas in the electric field of an intense laser pulse. The resulting collection of unbound electrons and ions is a plasma. After a certain time the electrons will return to the ionic cores of the atoms and back again to a bound energy state emitting any excess energy in form of radiation in the process. This process is called \textit{recombination} and the emitted radiation \textit{recombination light}.
 
 There are different mechanisms through which an oscillating laser field ionises a gas. In single and multi-photon ionisation \cite{Keldysh1965_ION}, one electron is excited by absorbing one or multiple photons, respectively, before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964_ION}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966_ION}.
 
@@ -477,13 +477,13 @@ The plasma frequency $\omega_p$ is the natural frequency at which electrons will
 \vspace{\baselineskip}
 
 Assume a uniform and neutral plasma, i.e. $n_e = Z n_i = n_{e0}$, where $n_e$ is the electron number density, $Z$ the charge number of the ions, $n_i$ the ion number density, and the initial electric field be $\mathbf{E} = \mathbf{0}$.
-Now consider displacing a slab of charge in an arbitrary direction defining an axis that we will call X.
+Now consider displacing a slab of charge by $X$ in an arbitrary axis $x$.
 Starting with Gauss' Law:
 \begin{equation}
 \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} = \frac{\partial E_x}{\partial x},
 \end{equation}
 where we used that the displacement is only along $x$, simplifying the Nabla operator to a spatial derivative in $x$.
-We assume a uniform plasma so the charge density is a constant $\rho = e n_{e0}$. Integrating the previous equation then gives a constant factor times the displacement X:
+We assume a uniform plasma so the charge density is a constant $\rho = e n_{e0}$. Integrating the previous equation then gives a constant factor times the displacement $X$:
 \begin{align}
 E_x = \frac{1}{\epsilon_0} \int^x_0 \rho (x') dx' + E_x(0) &= \frac{e n_{e0}}{\epsilon_0} X,\nonumber\\
 E &= \frac{e n_{e0}}{\epsilon_0} X.
@@ -505,13 +505,13 @@ and the corresponding wavelength $\lambda_p = 2 \pi c/\omega_p$.
 \centering
 \includegraphics[width=.5\columnwidth]{omegap_lambdap_density.pdf}
 \caption{Plasma frequency (blue) and wavelength (red) as function of plasma density.}
+\label{Theory:Figs:PlasmaFreqLambdap}
 \end{figure}
-A typical regime wakefield accelerator in the context of this work operates at an electron density of around $10^{18}-10^{19}\,\mathrm{cm^{-3}}$. This corresponds to a plasma frequency of $(5.6 - 17.7) \times 10^{13} \,\mathrm{Hz}$ or a plasma wavelength of $\lambda_p \approx 33-10\,\mathrm{\mu m}$.
+A typical regime wakefield accelerator in the context of this work operates at an electron density of around $10^{18}-10^{19}\,\mathrm{cm^{-3}}$. This corresponds to a plasma frequency of $(5.6 - 17.7) \times 10^{13} \,\mathrm{Hz}$ or a plasma wavelength of $\lambda_p \approx 33-10\,\mathrm{\mu m}$ (see Figure \ref{Theory:Figs:PlasmaFreqLambdap}).
 
 \subsection{Laser Propagation in Vacuum}
 
 An electromagnetic wave of arbitrary shape $u$ has to satisfy Maxwell's equations and hence also the wave equation \cite{Jackson}
-
 \begin{equation}
 \left(\nabla^2 - \frac{1}{v^2}\frac{\partial^2}{\partial t^2} \right) u= 0,
 \end{equation}
@@ -527,33 +527,33 @@ For an an electric field $\mathbf{E} = \mathbf{E_0}(r,z) e^{i(kz-\omega t)}$ wit
 \left(\frac{\partial^2}{\partial r^2} + \frac{1}{r}\frac{\partial}{\partial r}- 2ik \frac{\partial}{\partial z}\right) \mathbf{E}_0 = 0.
 \end{equation}
 
-For an in x-direction linearly-polarised electric field moving in $z$ the solution is
+For an in $x$-direction linearly-polarised electric field moving in $z$ the solution is
 \begin{equation}
 \mathbf{E}(r,z,t) = E_0 \frac{w_0}{w(z)} \exp\left(-\frac{r^2}{w(z)^2}\right) \exp\left[-i(kz-\omega t)-i k\frac{r^2}{2 R(z)} + i \zeta (z)\right]\mathbf{\hat{x}}.
 \end{equation}
-This family of solutions is referred to as Gaussian modes and the physical properties of the beam are captured in the different parameters of the wave function. The function $\mathbf{E}$ describes a beam converging from $z < 0$ at a size $w(z)$ onto a minimum at $z = 0$ achieving the highest field strengths before diverging again for $z > 0$.
+This family of solutions is referred to as Gaussian modes and the physical properties of the beam are captured in the different parameters of the wave function. The function $\mathbf{E}$ describes a beam converging from $z < 0$ at a size $w(z)$ onto a minimum at $z = 0$ achieving the highest field strengths, before diverging again for $z > 0$.
 \vspace{\baselineskip}
 
 $w(z)$ is the waist size of the Gaussian beam at position $z$ and indicates the transverse size of the beam when the intensity drops to $1/e^2$ of its maximum:
 \begin{equation}
-w(z) = w_0 \sqrt{1+ \left(\frac{z}{z_R}\right)^2},
+\boxed{w(z) = w_0 \sqrt{1+ \left(\frac{z}{z_R}\right)^2},}
 \end{equation}
 where $w_0$ is the waist size at focus, $z=0$, and $z_R$ is the Rayleigh length defined as 
 \begin{equation}
-z_R = \frac{\pi w^2_0}{\lambda}.
+\boxed{z_R = \frac{\pi w^2_0}{\lambda}.}
 \end{equation}
 $z_R$ is the distance over which a Gaussian beam expands from $w_0$ to $\sqrt{2}w_0$ and is hence an indicator for how quickly a beam diverges or in other words over which distance it maintains an intensity close to its maximum.
-Assuming the beam is a Gaussian in both time and space the intensity at the focal plane $z = 0$ is given by
+Assuming the beam is a Gaussian in both time and space, the intensity at the focal plane $z = 0$ is given by
 \begin{equation}
 I(r,t) = I_0 \exp\left( -\frac{2 r^2}{w^2_0}\right) \exp\left(-\frac{2 t^2}{\tau^2}\right).
 \end{equation}
 The intensity is commonly expressed in terms of the normalised vector potential $a_0$
 \begin{equation}
-a_0 = \frac{e E_0}{m_e c \omega},
+\boxed{a_0 = \frac{e E_0}{m_e c \omega},}
 \end{equation}
 where $e$ is the electron charge, $m_e$ the electron mass, $c$ the speed of light, $\omega$ the frequency of the laser and $E_0$ the amplitude of the electric field. The intensity of the wave is given by $I = \epsilon_0 c E^2_0/2$, so that we can express $a_0$ in useful units for this work:
 \begin{equation}
-a_0 = 0.856 \times 10^9 \sqrt{I(W/cm^2)} \lambda(\mu m).
+\boxed{a_0 = 0.856 \times \sqrt{I[10^{18} \mathrm{W/cm}^2]} \lambda[\mathrm{\mu m}].}
 \end{equation}
 
 $R(z)$ is the radius of curvature of the wavefront
@@ -561,11 +561,10 @@ $R(z)$ is the radius of curvature of the wavefront
 R(z) = z \left[1+\left(\frac{z_R}{z}\right)^2\right].
 \end{equation}
 The wavefront is strongly curved around the focus $z < z_R$ and flattens out for $z \gg z_R$. The difference in radii of curvature for beams with different Rayleigh length can be used in spatial interferometry applied in the context of synchronising two laser pulses in time.
-
 $\zeta$ is called the Guoy phase and is an additional phase term that changes signs once the Gaussian mode passes through its focus.
 
-When focusing a beam with an optic, for instance an off-axis parabola or spherical mirror, the ratio of the focal length $f$ and the beam diameter $d$ is a useful quantity as it indicates how tightly a beam is focussed. It is called the f-number $f_\# = f/d$ and is in shorthand typically written as $f/2$ for $f_\# = 2$, $f/40$ for $f_\# = 40$ and so on.
-Expressing some of the previous quantities in terms of the f-number 
+When focusing a beam with an optic, for instance an off-axis parabola or spherical mirror, the ratio of the focal length, $f$, and the beam diameter, $d$, is a useful quantity that indicates how tightly a beam is focussed. It is called the f-number, $f_\# = f/d$, and is in shorthand typically written as $f/2$ for $f_\# = 2$, $f/40$ for $f_\# = 40$ and so on.
+Expressing some of the previous quantities in terms of the f-number gives
 \begin{equation}
 w_0 = \frac{2 \sqrt{2}}{\pi} \lambda f_\# \approx 0.9 \lambda f_\#,
 \end{equation}
@@ -574,7 +573,7 @@ and the distance over which a laser pulse remains intense
 z_R = \frac{\pi w^2_0}{\lambda} \approx 2.5 \lambda f^2_\#.
 \end{equation}
 
-However, real laser beams in experiments are typically not Gaussian but mostly flat-top beams. In addition, changes in the wave front, curvature profile, spatio-temporal couplings and so on consist further deviations from an ideal beam. These are commonly expressed in terms of the parameter $M^2$, with the minimum spot size being the ideal diffraction-limited spot size times $M^2$ and $M^2 > 1$.
+However, real laser beams in experiments are typically not Gaussian but mostly flat-top beams (REF\addref). In addition, changes in the wave front, curvature profile, spatio-temporal couplings and so on consist further deviations from an ideal beam. These are commonly expressed in terms of the parameter $M^2$, with the minimum spot size being the ideal diffraction-limited spot size times $M^2$ and $M^2 > 1$ (REF\addref).
 
 
 \subsection{Laser Propagation in Plasma}
@@ -591,7 +590,7 @@ v_p &= \frac{\omega}{k} = \frac{c}{\sqrt{1-\left(\frac{\omega_p}{\omega}\right)^
 v_g &= \frac{\partial\omega_L}{\partial k} = c \sqrt{1-\left(\frac{\omega_p}{\omega}\right)^2},
 \end{align}
 where $\omega$ is the frequency of the electromagnetic wave.
-At $\omega \ll \omega_p$ this the expression can be approximated by
+At $\omega \ll \omega_p$ this the expression can be approximated by a Taylor series:
 \begin{align}
 v_p &= \frac{\omega}{k} \approx c \left(1+ \frac{1}{2}\frac{\omega^2_p}{\omega^2}\right),\\
 v_g &= \frac{\partial\omega}{\partial k} \approx c \left(1 - \frac{1}{2}\frac{\omega^2_p}{\omega^2}\right).
@@ -605,7 +604,7 @@ v_g &= \frac{\partial\omega}{\partial k} \approx c \left(1 - \frac{1}{2}\frac{\o
 \caption[Group velocity at different densities and critical densities for different laser wavelengths.]{Left: Group velocity at different densities for photons of wavelength $\lambda = 0.8\,\mathrm{\mu m}$ (blue) and $10\,\mathrm{\mu m}$ (orange) in units of the vacuum speed of light (indicated in green). The red dotted line shows the density at which the group velocity reaches zero, called the critical density. Right: Critical density for wavelengths up to $2 \mu m$ (blue). The critical density corresponding to a central wavelength of $0.8 \mu m$, as for the commonly used titanium-doped sapphire (Ti:Sa) lasers, is marked in red on the graph. The region above the critical density (blue line) is called overdense, below underdense.}
 \end{figure}
 
-The group velocity reaches zero for $\omega_p = \omega$, where $\omega_p$ is the plasma frequency, derived in the previous section and given by $\omega_p = (n_e e^2/\epsilon_0 m_e)^{1/2}$. Solving this for the density, we obtain a relation for the critical density:
+The group velocity reaches zero for $\omega_p = \omega$, where $\omega_p$ is the plasma frequency, derived in the previous section and given by $\omega_p = (n_e e^2/\epsilon_0 m_e)^{1/2}$. Solving this for the density, we obtain a relation for the \textit{critical density}, $n_c$:
 
 \begin{equation}
 \boxed{n_c = \frac{m_e \epsilon_0 \omega^2}{e^2},}
@@ -675,14 +674,14 @@ In the `bubble' regime \cite{Pukhov2002_BUBBLESIM} a highly intense laser pulse 
 
 \subsection{Pulse compression}
 
-In a wakefield accelerator an intense laser pulse propagates through a plasma and expels the electrons in its way. As a result, the front and the back of the laser pulse witness different electron densities. This in turn corresponds to a variation in group velocities (see Equation \eqref{Theory:Eqs:Vg_Vp_medium}) which leads to a change in the length of the laser pulse over time \cite{Mori1997_NONLINEARPLASMA,ColeThesis}.
+In a wakefield accelerator an intense laser pulse propagates through a plasma and expels the electrons in its way. As a result, the front and the back of the laser pulse witness different electron densities. This in turn corresponds to a variation in group velocities (see Equation \eqref{Theory:Eqs:Vg_Vp_medium}) leading to a change in the length of the laser pulse over time \cite{Mori1997_NONLINEARPLASMA,ColeThesis}.
 
-Consider two points in the laser pulse at $z_1$ and $z_2$, separated by a distance $L = z_2 - z_1$, and travelling at a group velocity of $v_{g1}$ and $v_{g2}$, respectively. If the laser pulse propagates for a time interval $\Delta t$, the difference in the group velocities, $\Delta v_g$, will translate into a change in the separation of the two points by $\Delta L$
+Consider two points in the laser pulse at $z_1$ and $z_2$, separated by a distance $L = z_2 - z_1$, and travelling at a group velocity of $v_{g1}$ and $v_{g2}$, respectively. If the laser pulse propagates for a time interval, $\Delta t$, the difference in the group velocities, $\Delta v_g$, will translate into a change in the separation of the two points by $\Delta L$
 \begin{equation}
 \Delta L = (v_{g2} - v_{g1}) \Delta t = \Delta v_g \Delta t.
 \end{equation}
 
-If we write the difference in group velocities as rate of change in the group velocity over the pulse length L
+If we write the difference in group velocities as rate of change in the group velocity over the pulse length, $L$,
 \begin{equation}
 \Delta v_g \approx \frac{\partial v_g}{\partial z} L,
 \end{equation}
@@ -696,8 +695,7 @@ If we only consider the variation of the refractive index, $\eta$, due to a chan
  \frac{\partial v_g}{\partial z} =  \frac{\partial}{\partial z} (c \eta) \approx  \frac{\partial}{\partial z} c \left( 1 - \frac{n_e}{2n_c}\right) = - \frac{c}{2n_c}\frac{\partial n_e}{\partial z},
 \end{equation}
 where $n_c$ is the critical density.
-
-In the bubble regime the leading edge of the laser pulse sees a density $n_e = n_0$, whereas the remaining pulse propagates approximately in vacuum with $n_e = 0$. If we assume that the density transition occurs linearly over a distance $l$ then $\partial_z n_e = n_0/l$, then
+In the bubble regime the leading edge of the laser pulse sees a density $n_e = n_0$, whereas the remaining pulse propagates approximately in vacuum with $n_e \approx 0$. If we assume that the density transition occurs linearly over a distance $l$ then $\partial_z n_e = n_0/l$, then
 \begin{equation}
 \frac{\partial L}{\partial t} \approx L \frac{\partial v_g}{\partial z} \approx -L\frac{c}{2n_c} \frac{\partial n_e}{\partial z} = - L \frac{n_0 c}{2 n_c l},
 \end{equation}
@@ -711,11 +709,11 @@ This indicates that sharper density transitions (small $l$) lead to faster pulse
 \subsection{Photon acceleration}
 
 In the previous section we motivated that a laser pulse travelling through a density gradient can experience pulse compression.
-In the context of wakefield acceleration the density gradient is produced by the intense laser pulse itself. A compression of the pulse duration as described, however, has to be accompanied by an increase of the bandwidth of the laser pulse.
+In the context of wakefield acceleration the density gradient is produced by the intense laser pulse itself. A compression of the pulse duration as described has to be accompanied by an increase of the bandwidth of the laser pulse.
 
-Similarly as before, consider two points in the laser pulse at $z_1$ and $z_2$ with phase velocities $v_{p1}$ and $v_{p2}$, respectively. If we impose that the wavefronts at these points separated by a phase of $2\pi$, then the spatial separation corresponds then to the wavelength $\lambda_0 = z_2 - z_1$. After a time interval $\Delta t$, the spatial separation of the wavefronts is now $\Delta \lambda$
+Similarly as before, consider two points in the laser pulse at $z_1$ and $z_2$ with phase velocities $v_{p1}$ and $v_{p2}$, respectively. If we impose that the wavefronts at these points separated by a phase of $2\pi$, then the spatial separation corresponds then to the wavelength $\lambda_0 = z_2 - z_1$. After a time interval $\Delta t$, the spatial separation of the wavefronts is now different by $\Delta \lambda$
 \begin{equation}
-\Delta \lambda = \lambda_0 + (v_{p2} - v_{p1}) \Delta t.
+\lambda_0 + \Delta \lambda = \lambda_0 + (v_{p2} - v_{p1}) \Delta t.
 \end{equation}
 Substituting similarly as in the previous section 
 \begin{equation}
@@ -730,8 +728,7 @@ or in terms of the wave frame variables $\xi$ and $\tau$, and the refractive ind
 \frac{\partial \lambda}{\partial \tau} &= -\lambda_0 \frac{c}{\eta^2} \frac{\partial \eta}{\partial \xi},\\
 \frac{1}{\omega_L} \frac{\partial \omega}{\partial \tau} &= \frac{c}{\eta^2} \frac{\partial \eta}{\partial \xi}.
 \end{align}
-This equation now describes how the wavelength or frequency shifts as a function of the density gradient. A positive density gradient results in an increase of the frequency, $\omega$, i.e. blue-shifting or `photon acceleration'. A negative gradient, on the other hand, would lead to a decrease in the frequency, so red-shifting or `photon deceleration'. In the previous section we considered pulse compression as a result of a positive density gradient, so we now see that the pulse compression is accompanied by photon acceleration. This phenomenon has been more rigourously investigated theoretically in \cite{Mendoncca1994_PHOTONACC,Mendoncca2000_PHOTONACC} and has been confirmed in experiment \cite{Murphy2006_PHOTONACC}.
-
+This equation now describes how the wavelength or frequency shifts as a function of the density gradient. A positive density gradient results in an increase of the frequency, $\omega$, i.e. blue-shifting or `photon acceleration'. A negative gradient, on the other hand, would lead to a decrease in the frequency, so red-shifting or `photon deceleration'. In the previous section we considered pulse compression as a result of a positive density gradient, so we now see that pulse compression is accompanied by photon acceleration. This phenomenon has been more rigourously investigated theoretically in \cite{Mendoncca1994_PHOTONACC,Mendoncca2000_PHOTONACC} and has been confirmed in experiment \cite{Murphy2006_PHOTONACC}.
 
 \section{Laser Wakefield Acceleration}
 
@@ -746,13 +743,13 @@ The maximum electric field that can be sustained by a plasma wave is
 \begin{equation}
 E_0 = \frac{\omega^2_p m_e}{e} \frac{\lambda_e}{2 \pi},
 \end{equation}
-which is also called the cold non-relativistic wave breaking limit (REF DAWSON)\addref (REF ESAREY REV MOD 2009)\addref.
+which is also called the cold non-relativistic wave breaking limit \cite{Esarey2009_LPA_Review,Dawson1959_COLDWAVEBREAKING}
 In useful units we can write:
 \begin{equation}
-E_0 (GV/m) = 96 \sqrt{n_0 (10^{18} cm^{-3})},
+E_0 [\mathrm{GV/m}] \approx 96 \sqrt{n_0 [10^{18} \mathrm{cm^{-3}}]},
 \end{equation}
 so that the maximum field sustained by a wave in a plasma of density $10^{18}\mathrm{cm^{-3}}$ is roughly $100\,\mathrm{GV/m}$.
-Nonlinear plasma waves can exceed this value and the wavebreaking limit for a 1D relativistic, non-linear periodic plasma wave is, for instance, given by
+Nonlinear plasma waves can exceed this value and the wavebreaking limit for a 1D relativistic, non-linear periodic plasma wave is, for instance, given by (REF\addref)
 \begin{equation}
 E_{WB} = \sqrt{2(\gamma_p -1)} E_0,
 \end{equation}
@@ -760,7 +757,7 @@ where in the 1D low-intensity limit $\gamma_p \approx \omega/\omega_p$. $E_0$ is
 
 \subsection{Bubble regime}
 
-A short and relativistic laser pulse can fully expels the electrons in its way. The pure ion cavity left behind is approximately a spherical `bubble' of radius \cite{Pukhov2002_BUBBLESIM}
+A short and relativistic laser pulse can fully expels the electrons in its way. The pure ion cavity left behind is an approximately spherical `bubble' of radius \cite{Pukhov2002_BUBBLESIM}
 \begin{equation}
 \boxed{r_b = 2 \sqrt{a_0} \frac{c}{\omega_p},}
 \end{equation}
@@ -788,13 +785,13 @@ In order to trap electrons from the ambient plasma in the wakefield cavity, the 
 \begin{equation}
 \boxed{r_b \geq \frac{2c \sqrt{\ln (2\gamma^2_{ph}-1)}}{\omega_p },}
 \end{equation}
-where $\gamma_{ph} = \omega/\omega_p \approx \sqrt{n_c/(3n_e)}$ and $r_b$ is the radius of the plasma bubble. This is process is referred to as self-trapping and triggering triggering the injection of electrons into the cavity solely through the evolution of the laser pulse is called self-injection.
+where $\gamma_{ph} = \omega/\omega_p \approx \sqrt{n_c/(3n_e)}$ and $r_b$ is the radius of the plasma bubble. This is process is referred to as \textit{self-trapping} and triggering the injection of electrons into the cavity solely through the evolution of the laser pulse is called \textit{self-injection}.
 
 Based on the trapping condition above the minimum power required to reach self-injection, the self-injection threshold, is for the depletion-limited case estimated by \cite{Mangles2012_SELF}
 \begin{equation}
 \boxed{\frac{\alpha P}{P_c} > \frac{1}{16} \left[\ln\left(\frac{2n_c}{3n_e}\right) - 1 \right]^3,}
 \end{equation}
-with $\alpha$ the fraction of energy contained in the \textsc{fwhm} of the laser focal spot, $P$ the laser power. $P_c$ is the laser power at which relativistic self-focusing and diffraction are balanced, with $P_c \approx 17 n_c/n_e\,\mathrm{GW}$ (see Section \ref{Theory:Sec:SelffocusingSelfguiding}).
+with $\alpha$ the fraction of energy contained in the \textsc{fwhm} of the laser focal spot, and $P$, the laser power. $P_c$ is the laser power at which relativistic self-focusing and diffraction are balanced, with $P_c \approx 17 n_c/n_e\,\mathrm{GW}$ (see Section \ref{Theory:Sec:SelffocusingSelfguiding}).
 
 \subsection{Depletion}
 
@@ -819,7 +816,7 @@ Higher plasma densities lead to faster etching of the pulse and shortens the dep
 
 \subsection{Dephasing}
 
-In the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma at a group velocity smaller than $c$. As a result the electrons slowly catch up with the driver and leave the accelerating phase of the cavity, hence called dephasing.
+In the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma at a group velocity smaller than $c$. As a result the electrons slowly catch up with the driver and leave the accelerating phase of the cavity, hence called \textit{dephasing}.
 The relativistic electrons are moving close to the speed of light ($\beta_e \rightarrow 1$) whilst the plasma wave moves at a velocity $\beta_p$ (in the 1D linear case):
 \begin{equation}
 \beta_p = \frac{v_g}{c} = \left(1-\frac{n_e}{n_c}\right)^{\frac{1}{2}},
@@ -840,7 +837,7 @@ The dephasing length for the 3D bubble regime is given by \cite{Lu2007_3DWAKE}
 \boxed{L_{dp} = \frac{2}{3}\frac{\omega^2}{\omega^2_p} r_b = \frac{4}{3}\frac{\omega^2}{\omega^2_p}\frac{\sqrt{a_0}}{k_p} \propto \sqrt{a_0} n^{-\frac{3}{2}}_e,}
 \end{equation}
 which is similar to the 1D linear case but using the bubble radius and considering the due to the etching reduced front velocity, $v_f$ (see Equation \eqref{Theory:Eqs:FrontVelocity}).
-A higher plasma density reduces the front velocity of the laser pulse and reduces the dephasing length
+A higher plasma density reduces the front velocity of the laser pulse and the dephasing length.
 
 \subsection{Maximum Energy Gain}
 
@@ -861,35 +858,47 @@ This gives the counter-intuitive result that one has to choose low plasma densit
 
 \subsection{Injection Mechanisms and Accelerator Tailoring}
 
-In Section \ref{Theory:Sec:TrappingSelfInjection} we introduced a condition for ambient electrons from the plasma to be trapped in the bubble cavity, and a threshold was given over which the evolution of the laser pulse and subsequently the bubble injects these suitable electrons. This injection mechanisms is called self-injection. In 1D this threshold is equivalent to the wavebreaking limit, whereas in 3D the crossing of electron sheets that trigger the injection can also occur without catastrophic wavebreaking. 
-
-There are also other injection mechanisms that have been developed to produce electron beams with specific properties, for instance high charge or low energy spread. Out of the plethora of different techniques we will only introduce the mechanisms used in the context of this thesis, which are, besides self-injection, ionisation and shock injection.
+In Section \ref{Theory:Sec:TrappingSelfInjection} we introduced the self-trapping condition and the threshold for self-injection. In 1D this threshold is equivalent to the wavebreaking limit, whereas in 3D the crossing of electron sheets that trigger the injection can also occur without catastrophic wavebreaking. 
+Other injection mechanisms have been developed to produce electron beams with specific properties, for instance high charge or low energy spread. Out of the plethora of different techniques we will only introduce the mechanisms used in the context of this thesis, which are, besides self-injection, ionisation and shock injection.
 
 \subsubsection{Ionisation Injection}
 
-Instead of relying on the evolution of the laser pulse and subsequent wavebreaking, electrons can be released directly into the bubble cavity through delayed ionisation of the atoms or molecules close to the peak intensity of the laser pulse. 
-Higher-Z gases bind electrons strongly and require higher field strengths to release them. When the intense laser pulse passes through it triggers an increased rate of tunnel ionisation near the centre of the pulse (see Section \ref{Theory:Sec:PlasmaFormation} on plasma formation). The released electrons can then be trapped and subsequently accelerated. This is called \textit{ionisation injection}.
+Electrons can be released directly into the bubble cavity through delayed ionisation of the atoms or molecules close to the peak intensity of the laser pulse. 
+Higher-Z gases bind electrons strongly and require higher field strengths to release them. When the intense laser pulse passes through the plasma it triggers an increased rate of tunnel ionisation near the centre of the pulse (see Section \ref{Theory:Sec:PlasmaFormation} on plasma formation). The released electrons can then be trapped and subsequently accelerated. This is called \textit{ionisation injection}.
 
-Typically, a gas with low ionisation threshold like helium or hydrogen is used as base, which is then doped with a few percent of high-Z gas, for instance nitrogen, to provide the injection events. The interplay of the laser, its evolution and intensity, and the properties of the dopant determine the amount of charge released into the cavity and the duration of the injection event. The duration of the injection translates into energy spread and hence provides a way to tune the properties of the accelerated electron beam.
+Typically, a gas with low ionisation threshold like helium or hydrogen is used as base, which is then doped with a few percent of high-Z gas, for instance nitrogen, to provide the injection events. The interplay of the laser, its evolution and intensity, and the properties of the dopant determine the amount of charge released into the cavity and the duration of the injection event. The duration of the injection translates into energy spread and hence provides a way to tune the properties of the accelerated electron beam\addref{}.
 
 \subsubsection{Density Modulations}
 
 The accelerating structure in a wakefield depends on the complex interplay of the driving laser pulse and its evolution in interaction with the surrounding medium. An evident handle onto the shape and behaviour of the cavity is the plasma density as $r_b \sim 1/\sqrt{n_e}$ and the changes in the group velocity $\Delta v_g \sim - \Delta n_e$.
 
-An abrupt fall-off in plasma density leads to a temporary elongation of the bubble in the longitudinal direction as the effective velocity of the back of the bubble is reduced for a short time. Electrons can now be trapped inside the cavity as part of a very localised injection event. Since such a sharp density transition is in experiments being achieved by inducing a shock into the gas, this injection mechanism is called \textit{shock injection}.
+An abrupt fall-off in plasma density leads to a temporary elongation of the bubble in the longitudinal direction as the effective velocity of the back of the bubble is reduced for a short time. Electrons can now be trapped inside the cavity as part of a very localised injection event. Since such a sharp density transition can in experiments be achieved by inducing a shock into the gas, this injection mechanism is called \textit{shock injection}.
 Shock injection has been demonstrated as powerful tool to produce high-quality electron beams of high charge, stability and tunable energy (\cite{Schmid2010_SHOCK} REF\addref).
 Similarly, but less localised, an extended density gradient can also trigger the injection of electrons by gradually extending the bubble size, then called \textit{downramp injection} (REF\addref).
-In contrast, a positive density gradient will lead to a decrease in the size of the bubble. A decrease in bubble size is not suitable to capture electrons but it moves the centre of the cavity closer to the laser pulse shifting the accelerating phase. This can be used to keep electrons for a longer distance in an accelerating phase in order to delay dephasing, and is hence referred to as \textit{rephasing}.
+In contrast, a positive density gradient will lead to a decrease in the size of the bubble. A decrease in bubble size is not suitable to capture electrons but it moves the centre of the cavity closer to the laser pulse shifting the accelerating phase. This can be used to keep electrons for a longer distance in an accelerating phase in order to delay dephasing, and is hence referred to as \textit{rephasing}\addref.
 
 \section{Radiation Production}
 
-A good overview over the topic is given by \cite{Albert2016_APP} and CORDE REF\addref.
 
-\EliasComm{Two ways to calculate radiation spectra and cross sections: Classical method is deriving the equation of motion and solving with Lienard-Wiechert potentials the radiation integrals. The quantum approach is solving the cross sections in Feynman diagrams, Volkov states in the Furry picture.}
+In the previous sections we discussed the motion of single particles in electromagnetic fields, followed by an introduction in the dynamics of lasers, plasmas and their interplay to produce relativistic electron beams. In the following we will consider the production of radiation through different mechanisms.
 
-\EliasComm{If synchrotron included then common classical trajectories are figure of eight motion.}
+\begin{itemize}
+\item two methods to calculate the radiation spectra, cross sections and so on:
+\item classical method is deriving the equation of motion, analyse in terms of Lienard-Wiechert potentials and solve the radiation integrals.
+\item Fourier analysis tells us the spectrum and the cross sections.
+\item in the quantum picture the cross sections and spectra are obtained by solving the Feynman diagrams related to the process
+\item however, at higher intensities the number of contributing diagrams increases significantly, so that the standard Feynman diagrams are replaced by `dressed states' which replace electrons interacting with photons by electrons in background fields.
+\item this is referred to as the Furry picture. Here the dressed states use an exact description (classical) of the background fields.
+\item This is in particular important in the high-field regimes as the sum of infinite Feynman diagrams is equivalent to the Volkov states.
+\end{itemize}
 
+The first radiation sources considered are synchrotron radiation with the special case of undulator and wiggler radiation, where a magnetic field or a series of alternating magnetic fields oscillates the particles to produce radiation. This section is followed by betatron radiation where the magnetic field is replaced by an electric field in the cavity of the wakefield accelerator, sometimes referred to as a plasma wiggler. In both scenarios the electrons perform figure-of-eight motions as outlined in Section XX\addnum{}, and the the emission spectra follow accordingly similar equations where the wiggler parameter, $K$ and $K_\beta$, indicate the properties.
 
+We then investigate Compton scattering and its classical low-limit Thomson scattering, where a photon scatters off an electron at rest. After deriving the cross section and energy spectra we consider the special case of inverse Compton scattering, where the photon scatters from a relativistic electron and the radiation gains a significant amount of energy proportional to the electron energy due to the relativistic Doppler effect. At high field strengths multiple photons can interact in a nonlinear interaction to produce higher harmonic radiation, called nonlinear inverse Compton scattering or relativistic nonlinear Thomson scattering. The trajectories of the electrons in these processes are also described by a figure-of-eight motion as the electrons are now in a laser wiggler, where the wiggler parameter, $K$, is replaced by the normalised vector potential, $a_0$.
+
+Finally, we will introduce the process of bremsstrahlung where electrons interact with the nuclear Coulomb field to produce X-ray and gamma radiation.
+
+A review of radiation mechanisms and sources in the context of wakefield accelerators can be found in \cite{Corde2013_Rad} and \cite{Albert2016_APP}.
 
 \subsection{Synchrotron Radiation}
 
@@ -975,78 +984,44 @@ Number of emitted photons per magnet period (later compare to number of photons 
 N_\gamma = \frac{2 \pi}{3} \alpha K^2
 \end{equation}
 
-\subsection{Bremsstrahlung}
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.4\columnwidth]{Aivazis_Bremsstrahlung.pdf}
-\caption[Feynman diagram for bremsstrahlung.]{Feynman diagram for bremsstrahlung. The time axis is oriented from left to right. Wiggly lines indicate photons, the dark circle shows the nuclear field. The arrowed lines represent fermions (arrow towards positive time), here electrons, and anti-fermions (arrow in negative time direction), here positrons.}
-\label{Theory:Figs:Feynman_Bremsstrahlung}
-\end{figure}
-
-A charged particle can interact with the nuclear Coulomb field to produce bremsstrahlung, which roughly translates from German into `braking radiation'. For an electron this process is described by
-\begin{equation}
-Z + e^- \longrightarrow Z + e^- + \gamma
-\end{equation}
-or in terms of the Feyman diagram shown in Figure \ref{Theory:Figs:Feynman_Bremsstrahlung}. In the quantum picture the electron exchanges momentum with a virtual photon from the Coulomb field before radiating a photon. From the classical view the charged particle is decelerated in the Coulomb field which results in the production of radiation.
-
-The (in energy) differential cross section for electron-nucleus bremsstrahlung in a fixed field in Born approximation, neglecting the recoil of the nucleus, is given by\addref
-\begin{align}
-\frac{\dif \sigma_{eZ}}{\dif \omega} = \frac{\alpha Z^2 r^2_e}{\omega}\frac{u'}{u}\Bigg\lbrace &\frac{4}{3} - 2 \gamma \gamma' c^2 \frac{u^2 + u'^2}{u^2 u'^2} + c^3 \left( \frac{\epsilon \gamma'}{u^3} + \frac{\epsilon'\gamma}{u'^3}-\frac{\epsilon\epsilon^3}{u u' c}\right)\\ \nonumber
-&+ L\Bigg[\frac{8}{3} \frac{\gamma \gamma' c^2}{u u'} + \frac{(\hbar \omega)^2 c^2}{m^2_e u^3 u'^3} (\gamma^2 \gamma'^2 + u^2 u'^2/c^4)\\ \nonumber
-& +\frac{\hbar \omega}{2 m_e u u'}\left( \frac{\gamma \gamma'+ u^2/c^2}{u^3/c^3}- \frac{\gamma \gamma' + u^2/c^2}{u'^3/c^3}-\frac{2\hbar \omega \gamma \gamma'c^2}{m_e u^2 u'^2}\right)\Bigg]\Bigg\rbrace,
-\end{align}
-where
-\begin{align*}
-L &= \ln \left( \frac{\gamma \gamma' + u u'/c^2 -1}{\hbar \omega/m_e c^2}\right),\\
-\epsilon &= 2 \ln(\gamma + u/c),\\
-\epsilon' &= 2 \ln(\gamma' + u'/c).
-\end{align*}
-Primed quantities denote post-interaction values and $\gamma m_e c^2 = \hbar \omega + \gamma' m_e c^2$, assuming all energy is transferred into radiation. 
-The differential equation in the ultra-relativistic limit including screening and electron contributions is given in the Appendix in Section \ref{Appendix:Brems_with_Screening}.
-
-\EliasComm{Here comments on effective angle.}
-\EliasComm{Here a simpler equation in a specific limit to see scalings.}
 
 
-In the limit $\hbar \omega \ll E$ and $E, E' \gg Mc^2$ this simplifies to \cite{Jackson}:
-\begin{equation}
-\frac{d \sigma}{d (\hbar \omega)} \approx \frac{Z^2 e^6}{12 \hbar \pi^3 \epsilon_0^3 M^2 c^3} \left(1- \frac{\hbar \omega}{E} + \frac{3}{4} \frac{(\hbar \omega)^2}{E^2}\right) \times \left[\ln\left(\frac{2 E (E-\hbar\omega)}{Mc^2\hbar \omega}\right) - \frac{1}{2}\right] \frac{1}{\hbar \omega}.
-\end{equation}
-For $\hbar \omega \ll E$ the doubly differential cross is
-\begin{equation}
-\frac{d^2 \chi_R}{d \omega d \Omega_\gamma} = \left[\frac{3}{2 \pi} \gamma^2 \frac{(1+\gamma^4 \theta^4)}{(1+\gamma^2 \theta^2)^4}\right] \cdot \frac{d \chi_R}{d \omega}
-\end{equation}
+\subsection{Betatron Radiation}
 
-This means that for highly relativistic electron the emitted radiation is emitted in a narrow forwards-pointing cone. The energy of the emitted radiation is cut off at the energy of the electron.
+Just as the evacuated `bubble' in a wakefield accelerates particles in a similar way as conventional RF cavities would, the generation of X-rays draws another parallel in conventional devices.
+\vspace{\baselineskip}
 
-A useful quantity is the radiation length, $X_0$ \cite{Jackson}:
+Due to initial transverse momentum on injection, and the focusing and defocusing fields of the cavity, electrons start to oscillate around the central axis\addref. 
+The electrons oscillate at the betatron frequency $\omega_\beta$
+\begin{equation}
+\omega_\beta = \omega_p / \sqrt{2 \gamma},
+\end{equation}
+which depends on the plasma frequency $\omega_p$ and the energy of the electrons, here given by the relativistic Lorentz factor $\gamma$.
 
-\begin{equation}
-\frac{\dif E}{\dif x} = -\frac{E}{X_0},
-\end{equation}
-with $E(x) = E_0 e^{-x/X_0}$ and
-\begin{equation}
-X_0 = \left[ 4N \frac{Z(Z+1)e^2}{\hbar c} \left(\frac{z^2 e^2}{Mc^2}\right)^2 \ln \left(\frac{233 M}{Z^{1/3} m}\right)\right]^{-1}
-\end{equation}
-or (PDG\addref{}, Tsai REF\addref):
-\begin{equation}
-X_0 = \left[ 4 \alpha r^2_e \frac{N_A}{A}\left\lbrace Z^2 \left( L_{rad} - f(Z) \right) + Z L'_{rad} \right\rbrace\right]^{-1},
-\end{equation}
-with $A = 1 \mathrm{g}\,\mathrm{mol}^{-1}$.  $f(Z)$ for up to uranium can be approximated by (REF\addref)
-\begin{equation}
-f(Z) = a^2 \left[(1+a^2)^{-1} + 0.20206 - 0.0369 a^2 + 0.0083a^4 - 0.002 a^6\right],
-\end{equation}
-with $a = \alpha Z$.
-The radiation length in a mixture or compound of $n$ components can be approximated by the sum of radiation lengths of the individual components weighted by their weight
-\begin{equation}
-\frac{1}{X_0} = \sum^n_{j = 1} \frac{w_j}{X_j}.
-\end{equation}
+Similarly to electrons in an insertion device (undulator or wiggler) these oscillations lead to the emission of radiation in a narrow forward pointing cone due to the relativistic forward momentum of the particles.
+Not surprisingly, the equations describing both processes are very similar.
 
-We can then write in simplified terms with $X_0$ for the differential cross section (REF\addref)
+The collimation depends on $K$, the wiggler parameter (for insertion devices) or betatron strength parameter
 \begin{equation}
-\frac{\dif \sigma}{\dif (\hbar \omega)} = \frac{A}{X_0 N_A \hbar \omega} \left(\frac{4}{3} - \frac{4}{3}y + y^2\right),
+K = \gamma k_\beta r_\beta,
 \end{equation}
-where $y= \hbar\omega/E$.
+where $k_\beta = \omega_\beta / c$ is the wavenumber and $r_\beta$ is the betatron radius, the amplitude of the oscillations. If $K \gg 1$ it is called the undulator parameter.
+
+The radiation generated follows the on-axis synchrotron radiation with a critical energy
+\begin{equation}
+\boxed{E_c = \frac{3}{4} \hbar \gamma^2 \omega^2_p r_\beta / c,}
+\end{equation}
+where this energy parameter indicates when approximately half the energy radiated above and below this value\addref.
+\EliasComm{Explain this better.}
+\vspace{\baselineskip}
+
+The oscillation of the particles and hence the emission of radiation can be enhanced in wakefield experiments by tailoring the wavefront \cite{Mangles2009_BETATRON} or by using different injection mechanisms\addref.
+In LWFA betatron radiation typically reaches the soft X-ray regime of a few to tens of keV.
+\EliasComm{Maybe show energy increase can be done by increasing energy, plasma frequency or betatron radius.}
+
+Difference here is that we use an quasi-electrostatic field instead of a magnetic field, but radiation from a synchrotron, an insertion device (wiggler) and betatron radiation share a common description rooted in the equation of motion (figure-of-eight motion) even though using different field structures and $K$ parameters.
+
+
 
 \subsection{Compton Scattering}
 
@@ -1078,7 +1053,6 @@ In the following, we will treat the electron and the incoming photon both as par
 
 Assuming the electron has a negligible initial momentum $\mathbf{p}_{e,i} = \mathbf{0}$ as in Compton's original experiment, the total energy hence reduces to the rest energy of the electron $E_{e,i} = m_e c^2$. The subscript $e$ stands for `electron' and $i$ for initial.
 The photon on the other hand has an initial momentum $\mathbf{p}_{\gamma, i}$ and an energy $E_{\gamma, i} = p_{\gamma, i} c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
-
 Relying on the conservation of energy we can postulate that the sum of energies before and after the interaction have to be equal:
 \begin{align}
 E_{e, i} + E_{\gamma,i} &= E_{e,f} + E_{\gamma,f},\nonumber\\ 
@@ -1103,7 +1077,6 @@ Setting both equations equal we find the familiar equation for the angular depen
 \lambda_{final} - \lambda_{initial} = \frac{h}{m_e c} \left(1 - \cos\theta\right) = \lambda_C \left(1-\cos\theta\right),
 \end{equation}
 where $\lambda_C = hm_e c$ is the Compton wavelength.
-
 Similarly there is an equation for the emission angle of the electron:
 \begin{equation}
 \cot(\phi) = \left(1+\frac{hf}{m_e c^2}\right) \tan(\theta/2).
@@ -1115,7 +1088,7 @@ In terms of photon energy we can write
 \label{Theory:Eqs:Compton_Egammaf}
 \end{equation}
 where the final energy, $E_{\gamma,f}$, only depends on the energy of the incoming photon, $E_{\gamma,i}$, and the scattering angle $\theta$. 
-Polar plots of the final photon energies for different initial photon energies are shown in Figure \ref{Theory:Figs:Compton_E_XSEC} (left). At low energies $E_{\gamma,i} \rightarrow 0$ and $E_{\gamma,f} \rightarrow E_{\gamma,i}$, where the emitted energy becomes approximately independent of the scattering angle $\theta$ (see Figure \ref{Theory:Figs:Compton_E_XSEC} (left, inset)). At higher energies $E_{\gamma,i} > m_e ^2c$, the energy distribution is being skewed towards the forwards direction of the incoming photon and the energy of the photon after the interaction is maximised at zero degrees with $E_{\gamma,f} = E_{\gamma,i}$, i.e. no significant amount of energy is transferred to the electron.
+Polar plots of the final photon energies for different initial photon energies are shown in Figure \ref{Theory:Figs:Compton_E_XSEC} (left). At low energies $E_{\gamma,i} \rightarrow 0$ and $E_{\gamma,f} \rightarrow E_{\gamma,i}$, where the emitted energy becomes approximately independent of the scattering angle $\theta$ (see Figure \ref{Theory:Figs:Compton_E_XSEC} (left, inset)). At higher energies $E_{\gamma,i} > m_e ^2c$, the energy distribution is being skewed towards the forwards direction of the incoming photon and the energy of the photon after the interaction is maximised at zero degrees with $E_{\gamma,f} = E_{\gamma,i}$, i.e. no significant amount of energy is transferred to the electron (see Figure \ref{Theory:Figs:Compton_E_XSEC} (left)).
 
 
 \subsubsection{Cross-Section}
@@ -1146,7 +1119,7 @@ The total cross section using the Klein-Nishina equation amounts to:
 \begin{equation}
 \boxed{\sigma_{\gamma e} = \frac{3}{4}\left[\frac{1 + x}{x^3}\left( \frac{2x(1+x)}{1+2x} - \ln(1+2x)\right)\right] + \frac{1}{2x} \ln(1+2x) - \frac{1+3x}{(1+2x)^2},}
 \end{equation}
-with $x = E_\gamma /m_e c^2$, so that in the extreme cases this becomes
+with $x = E_\gamma /m_e c^2$, so that in the two limits this becomes
 \begin{equation}
 \sigma_{\gamma e} = \sigma_T \times  
 \begin{cases}
@@ -1192,11 +1165,11 @@ In this frame the photon is losing energy as it transfers momentum to the electr
 
 In order to calculate the final photon energy in the laboratory frame, $S$, we have to boost back from the rest frame of the electron, $S'$, which results in another amplifying factor of $\sim\gamma$:
 \begin{equation}
-E_f = E'_f \gamma (1+\beta \cos \theta'_f) \approx E'_f \gamma (1+ \cos \theta'_f) \sim \gamma^2 E_i,
+E_f = E'_f \gamma (1+\beta \cos \theta'_f) \approx E'_f \gamma (1+ \cos \theta'_f) \propto \gamma^2 E_i,
 \end{equation}
-where the angles have to be transformed back into the lab frame as well. We now see that in the lab frame $E_f > E_i$, so that the photon gains energy in the interaction, hence the name inverse Compton scattering.
+where the angles have to be transformed back into the lab frame as well. We now see that in the lab frame $E_f > E_i$, so that the photon gains energy in the interaction and the name \textit{inverse} Compton scattering is justified.
 The emitted energy is maximised in a head-on collision and when radiated in the propagation direction of the relativistic electron.
-The photon energy is then boosted by $(2\gamma)^2$ to $E_{f,max} = 2 \gamma E'_f = 2 \gamma E'_i = 4 \gamma^2 E_i$. In the rest frame of the electron this corresponds to $E'_i = E'_f$, which again indicates Thomson scattering and motivates the alternative name for this process, relativistic Thomson scattering.
+The photon energy is then boosted by $(2\gamma)^2$ to $E_{f,max} = 2 \gamma E'_f = 2 \gamma E'_i = 4 \gamma^2 E_i$. In the rest frame of the electron this corresponds to $E'_i = E'_f$, which again indicates Thomson scattering and motivates another common name for this process, \textit{relativistic Thomson scattering}.
 
 \subsubsection{Cross-Section}
 
@@ -1206,9 +1179,10 @@ $E_i = m_e c^2/\gamma$ would for $E_i = 1\eV$ require $\gamma \sim 5\times 10^5$
 \end{equation}
 
 For $\gamma \gg 1$ the transformation of the angles results in the so-called `headlight effect' or `searchlight effect' since $\cos\theta \rightarrow 1$ (see Equation \eqref{Theory:Eqs:ICS:BoostAngles}), so that the photons are preferentially emitted in the direction of the electron momentum vector. If we consider a cross section normal to the direction of the boost $\sigma' \rightarrow \sigma$ and $\sigma = \sigma_T$, the Thomson cross section, so that the cross section is again independent of energy as long as $E_i \ll m_e c^2/\gamma$.
+\EliasComm{Different Thomson cross section, units in PS might be different.}
 
 \subsubsection{Emission power}
-
+\EliasComm{This needs some additions and explanations. Main thing required for the results is that the yield is proportional to $\gamma^2$.}
 \begin{equation}
 P = \frac{4}{3} \sigma_T c \beta^2 \gamma^2 U_{rad},
 \end{equation}
@@ -1234,14 +1208,14 @@ Deviations from a head-on collision have to be considered and also introduce a s
 
 \subsection{Nonlinear Inverse Compton Scattering}
 
-At higher intensities, i.e. $a_0 \rightarrow 1$ and $a_0 > 1$, the interaction changes as nonlinear effects gain significance. In a classical picture the electrons now perform a figure-of-eight motion (see Section \ref{Theory:Sec:SingleParticle:FigOfEight}) which gives rise to harmonics as becomes evident when the trajectory is evaluated in a Fourier analysis, whilst also leading to a relativistic mass increase. In a quantum picture the contribution of higher-order Feynman diagrams that describe the process of multiple photons being absorbed and then emitted as one photon by a single electron becomes increasingly significant (see FIGURE\addnum). The relativistic mass increase, on the other hand, results in red-shifting of the emitted radiation.
-This behaviour draws parallels in the description of electrons in insertion devices that is also described by the figure-of-eight motion (see SECTION\addnum). Here the wiggler parameter, $K$, indicates whether distinct harmonics ($K\ll1$) or broadband radiation is emitted ($K\gg1$). In the case of inverse Compton scattering, a laser wiggler, the parameter $a_0$ takes the place of $K$. 
+At higher intensities, i.e. $a_0 \rightarrow 1$ and $a_0 > 1$, the interaction changes as nonlinear effects gain significance and the electrons experience a relativistic mass increase while performing a figure-of-eight motion (see Section \ref{Theory:Sec:SingleParticle:FigOfEight}). In a classical picture a Fourier analysis of the particle trajectories shows that this gives rise to higher harmonic radiation. In a quantum picture the contributions of multi-photon interactions described by higher-order Feynman diagram become increasingly significant (see Figure \ref{Theory:Figs:NlinICS_FeynmanDiags}). The relativistic mass increase results in red-shifting of the emitted radiation.
+This behaviour draws parallels in the description of electrons in insertion devices that is also described by the figure-of-eight motion (see Section  \ref{Theory:Sec:SingleParticle:FigOfEight} and \ref{Theory:Sec:UndulatorWiggler}). Here the wiggler parameter, $K$, indicates whether distinct harmonics ($K\ll1$) or broadband radiation is emitted ($K\gg1$). In the case of inverse Compton scattering, a \textit{laser wiggler}, the parameter $a_0$ replaces $K$. 
 
 The process of $n$ photons scattering from a single electron resulting in the emission of one more energetic photon is described by
 \begin{equation}
 n\gamma_L + e^- \longrightarrow \gamma + e^-.
 \end{equation}
-\EliasComm{Describe here that in the quantum picture for $n>2$ it becomes increasingly tedious to solve all Feynman diagrams, such that we transition to Volkov states in the Furry picture.}
+\EliasComm{Describe here that in the quantum picture for $n>2$ it becomes increasingly tedious to solve all Feynman diagrams, such that we transition to Volkov states in the Furry picture. This might be a comment at the beginning of Radiation Production and just repeated here in reduced form.}
 \begin{figure}
 \centering
 \includegraphics[height=.3\columnwidth]{Aivazis_ComptonScattering_FULL.pdf}
@@ -1250,6 +1224,7 @@ n\gamma_L + e^- \longrightarrow \gamma + e^-.
 
 \includegraphics[height=.3\columnwidth]{feyn_nICS.pdf}
 \caption{Feynman diagram for Volkov state equivalent to infinite series of diagrams}
+\label{Theory:Figs:NlinICS_FeynmanDiags}
 \end{figure}
 
 \subsubsection{Kinematics}
@@ -1276,7 +1251,7 @@ which for higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the ra
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{ICS_dWdx_xa01.pdf}
-\caption{Klein-Nishina and higher orders at $a_0$ for circular polarisation. Adapted from Tom Thesis REF}
+\caption{Klein-Nishina and higher orders at $a_0$ for circular polarisation. Adapted/reproduced from Tom Thesis REF}
 \end{figure}
 
 
@@ -1314,19 +1289,129 @@ Q^2 &= (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
 
 \EliasComm{Increase of harmonics at $\sim a^3_0$, but energy increase linear.}
 \EliasComm{Critical Energy.}
+\EliasComm{Yield $\sim \gamma a^2_0$}
+
+\subsection{Bremsstrahlung}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\columnwidth]{Aivazis_Bremsstrahlung.pdf}
+\caption[Feynman diagram for bremsstrahlung.]{Feynman diagram for bremsstrahlung. The time axis is oriented from left to right. Wiggly lines indicate photons, the dark circle shows the nuclear field. The arrowed lines represent fermions, here electrons.}
+\label{Theory:Figs:Feynman_Bremsstrahlung}
+\end{figure}
+
+A charged particle can interact with the nuclear Coulomb field to produce bremsstrahlung, which roughly translates from German into `braking radiation'. For an electron this process is described by
+\begin{equation}
+Z + e^- \longrightarrow Z + e^- + \gamma
+\end{equation}
+or in terms of the Feyman diagram shown in Figure \ref{Theory:Figs:Feynman_Bremsstrahlung}. In the quantum picture the electron exchanges momentum with a virtual photon from the Coulomb field before radiating a photon. From the classical view the charged particle is decelerated (`braked') in the Coulomb field which results in the production of radiation.
+
+The (in energy) differential cross section for electron-nucleus bremsstrahlung in a fixed field in Born approximation, neglecting the recoil of the nucleus, is given by\addref
+\begin{align}
+\frac{\dif \sigma_{eZ}}{\dif \omega} = \frac{\alpha Z^2 r^2_e}{\omega}\frac{u'}{u}\Bigg\lbrace &\frac{4}{3} - 2 \gamma \gamma' c^2 \frac{u^2 + u'^2}{u^2 u'^2} + c^3 \left( \frac{\epsilon \gamma'}{u^3} + \frac{\epsilon'\gamma}{u'^3}-\frac{\epsilon\epsilon^3}{u u' c}\right)\\ \nonumber
+&+ L\Bigg[\frac{8}{3} \frac{\gamma \gamma' c^2}{u u'} + \frac{(\hbar \omega)^2 c^2}{m^2_e u^3 u'^3} (\gamma^2 \gamma'^2 + u^2 u'^2/c^4)\\ \nonumber
+& +\frac{\hbar \omega}{2 m_e u u'}\left( \frac{\gamma \gamma'+ u^2/c^2}{u^3/c^3}- \frac{\gamma \gamma' + u^2/c^2}{u'^3/c^3}-\frac{2\hbar \omega \gamma \gamma'c^2}{m_e u^2 u'^2}\right)\Bigg]\Bigg\rbrace,
+\end{align}
+where
+\begin{align*}
+L &= \ln \left( \frac{\gamma \gamma' + u u'/c^2 -1}{\hbar \omega/m_e c^2}\right),\\
+\epsilon &= 2 \ln(\gamma + u/c),\\
+\epsilon' &= 2 \ln(\gamma' + u'/c).
+\end{align*}
+Primed quantities denote post-interaction values and $\gamma m_e c^2 = \hbar \omega + \gamma' m_e c^2$, assuming all energy is transferred into radiation. 
+The differential equation in the ultra-relativistic limit including screening and electron contributions is given in the Appendix in Section \ref{Appendix:Brems_with_Screening}.
+
+
+In the limit $\hbar \omega \ll E$ and $E, E' \gg Mc^2$ this simplifies to \cite{Jackson}:
+\begin{equation}
+\frac{d \sigma}{d (\hbar \omega)} \approx \frac{Z^2 e^6}{12 \hbar \pi^3 \epsilon_0^3 M^2 c^3} \left(1- \frac{\hbar \omega}{E} + \frac{3}{4} \frac{(\hbar \omega)^2}{E^2}\right) \times \left[\ln\left(\frac{2 E (E-\hbar\omega)}{Mc^2\hbar \omega}\right) - \frac{1}{2}\right] \frac{1}{\hbar \omega}.
+\end{equation}
+For $\hbar \omega \ll E$ the doubly differential cross is
+\begin{equation}
+\frac{d^2 \chi_R}{d \omega d \Omega_\gamma} = \left[\frac{3}{2 \pi} \gamma^2 \frac{(1+\gamma^4 \theta^4)}{(1+\gamma^2 \theta^2)^4}\right] \cdot \frac{d \chi_R}{d \omega}
+\end{equation}
+
+This means that for highly relativistic electron the emitted radiation is emitted in a narrow forwards-pointing cone. The energy of the emitted radiation is cut off at the energy of the electron.
+
+A useful quantity is the radiation length, $X_0$ \cite{Jackson}:
+
+\begin{equation}
+\frac{\dif E}{\dif x} = -\frac{E}{X_0},
+\end{equation}
+with $E(x) = E_0 e^{-x/X_0}$ and
+\begin{equation}
+X_0 = \left[ 4N \frac{Z(Z+1)e^2}{\hbar c} \left(\frac{z^2 e^2}{Mc^2}\right)^2 \ln \left(\frac{233 M}{Z^{1/3} m}\right)\right]^{-1}
+\end{equation}
+or (PDG\addref{}, Tsai REF\addref):
+\begin{equation}
+X_0 = \left[ 4 \alpha r^2_e \frac{N_A}{A}\left\lbrace Z^2 \left( L_{rad} - f(Z) \right) + Z L'_{rad} \right\rbrace\right]^{-1},
+\end{equation}
+with $A = 1~ \mathrm{g}\,\mathrm{mol}^{-1}$.  $f(Z)$ for up to uranium can be approximated by (REF\addref)
+\begin{equation}
+f(Z) = a^2 \left[(1+a^2)^{-1} + 0.20206 - 0.0369 a^2 + 0.0083a^4 - 0.002 a^6\right],
+\end{equation}
+with $a = \alpha Z$.
+The radiation length in a mixture or compound of $n$ components can be approximated by the sum of radiation lengths of the individual components weighted by their weight
+\begin{equation}
+\frac{1}{X_0} = \sum^n_{j = 1} \frac{w_j}{X_j}.
+\end{equation}
+
+We can then write in simplified terms with $X_0$ for the differential cross section (REF\addref)
+\begin{equation}
+\frac{\dif \sigma}{\dif (\hbar \omega)} = \frac{A}{X_0 N_A \hbar \omega} \left(\frac{4}{3} - \frac{4}{3}y + y^2\right),
+\end{equation}
+where $y= \hbar\omega/E$.
+
+\subsubsection{Angular distribution}
+\EliasComm{Here comments on effective angle.}
+
+Radiation enclosed in a cone of radius $\ln \gamma/\gamma$ or $1/\gamma$ for $\gamma \gg 1$.
+
+
+
 
 
 \section{Radiation Reaction}
 
-In the previous sections we discussed the emission of radiation from charged particles through different mechanisms. Based on conservation rules the particles lose energy in the process and also have to experience a knock-back force whenever they radiate. Such a knock-back or commonly referred to as radiation reaction can in strong electromagnetic fields significantly alter the particle dynamics. Whilst the instantaneous force felt by the emitting particles is small in most settings, it is particularly important in the astrophysical context (EXAMPLES) and will be the subject of research at high-intensity laser facilities. Here a single particle can emit multiple photons in a short span of time and the radiation reaction force has to be considered. In extreme cases the energy emitted by the particle approaches its initial energy, which requires modelling the process in a quantum picture, i.e. we then consider quantum radiation reaction.
+In the previous sections we discussed the emission of radiation from charged particles through different mechanisms. Based on conservation rules the particles lose energy in the process and also have to experience a knock-back force whenever they radiate. Such a knock-back, commonly referred to as \textit{radiation reaction (force)} or \textit{radiation friction (force)}, can in strong electromagnetic fields significantly alter the particle dynamics. Whilst the instantaneous force felt by the emitting particles is small in most settings, it is particularly important in the astrophysical context (EXAMPLES\addref) and will be the subject of research at high-intensity laser facilities. Here a single particle can emit multiple photons in a short span of time and the radiation reaction force has to be considered. In extreme cases the energy emitted by the particle approaches its initial energy, which requires modelling the process in a quantum picture, i.e. we then consider \textit{quantum radiation reaction}.
 
 Radiation reaction is a fundamental phenomenon of electrodynamics but surprisingly there is no universally accepted and practicable description across a variety of regimes. In the following, different descriptions will be introduced, starting with classical descriptions of radiation reaction highlighting their motivation and limitations, followed by quantum corrections and semi-classical models, indicating how they differ qualitatively.
 
-Reviews on this topic can be found in parts of REF DiPiazza\addref{} and in REF Blackburn2019\addref{}.
+Reviews on this topic can be found in parts of \cite{DiPiazza2012_ICS} and in REF Blackburn2019\addref{}.
+
+\subsection{Regimes of radiation reaction}
+
+In the context of the collision of a relativistic electron beam of energy $\gamma$ with a laser pulse of intensity $a_0$ the relative magnitude of the LL radiation reaction force to the Lorentz force can be estimated by \cite{Thomas2012_LL}
+\begin{equation}
+\boxed{\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c},}
+\end{equation}
+where $\psi \ll 1$ indicates that radiation reaction effects are negligible and $\psi \rightarrow 1$ that the radiation reaction force becomes comparable to the Lorentz force.
+Another useful parameter is the classical radiation reaction parameter (DI PIAZZA REF 2010), $R_c$:
+\begin{equation}
+R_c = \frac{\alpha a^2_0 \gamma_0 (1+\beta_0) \omega_0}{m},
+\end{equation}
+with significant radiation damping for $R_c \geq 0.24$ \cite{Thomas2012_LL} and radiation-dominated regime for $R_c \geq 1$ XXREF\addref{}. The fraction of the emitted radiation in the average rest frame of the electron, $f$, is given by $f = E_{rad}/(\gamma' m) = 4\pi R_c/3$.
+
+
+Quantum nonlinearity parameter
+\begin{equation}
+\eta = E_{RF}/E_{crit},
+\end{equation}
+with the critical field for quantum electrodynamics $E_{crit} = 1.38 \times 10^{18}\,\mathrm{V m^{-1}}$.
+The field in the rest frame becomes important in relation to the critical field. This is somewhat similar to the approximation that the field be much smaller than the Lorentz force.
+
+In head-on collision
+\begin{equation}
+\eta = \frac{2 \hbar \omega_0 \gamma a_0}{m_e c^2},
+\end{equation}
+with quantum effects dominating when $\eta \rightarrow 1$ or in terms of $a_0$ and $\gamma_0$ 
+\begin{equation}
+a_0 \gamma_0 > \frac{m_e c^2}{2 \hbar \omega_0}
+\end{equation}
+\EliasComm{Need to add some explanations.}
 
 \subsection{Classical Radiation Reaction}
 
-We will start with descriptions of the radiation reaction force rooted in classical electrodynamics. Out of a variety of different approaches we will focus on the two most commonly discussed models and their implications: the Lorentz-Abraham-Dirac (LAD) equation and the Landau-Lifschitz (LL) description. See for instance BURTON NOBLE 2-14 REF\addref{} for a review of other classical theories of radiation reaction.
+There is a variety of classical descriptions of radiation reaction rooted in classical electrodynamics (see for instance BURTON NOBLE 2014 REF\addref{} for a review on this topic). We will focus on the two most commonly applied models and their implications: the Lorentz-Abraham-Dirac (LAD) equation and the Landau-Lifschitz (LL) description. 
 
 \subsubsection{Lorentz-Abraham-Dirac Equation (LAD)}
 
@@ -1338,8 +1423,9 @@ P = \frac{2}{3} \frac{e^2}{c^3} \mathbf{\dot{v}}^2.
 By requiring that the emitted radiation power corresponds to the work done by the radiation reaction force on the radiating particle we can write
 \begin{align}
 \int^{t_2}_{t_1} \mathbf{F}_{rad} \cdot \mathbf{v} \dif t &= - \int^{t_2}_{t_1} P \dif t,\\
-&= \frac{2}{3}\frac{e^2}{c^3}\int^{t_2}_{t_1} \mathbf{\ddot{v}} \cdot \mathbf{v} \dif t - \frac{2}{3}\frac{e^2}{c^3} (\mathbf{\dot{v}} \cdot \mathbf{v})|^{t_2}_{t_1}.
+&= \frac{2}{3}\frac{e^2}{c^3}\int^{t_2}_{t_1} \mathbf{\ddot{v}} \cdot \mathbf{v} \dif t - \frac{2}{3}\frac{e^2}{c^3} (\mathbf{\dot{v}} \cdot \mathbf{v})|^{t_2}_{t_1},
 \end{align}
+where we used integration by parts.
 For a periodic motion or $\mathbf{\dot{v} \cdot v} = 0$ at $t = t_1$ and $t = t_2$, we can write:
 \begin{equation}
 \int^{t_2}_{t_1} \left(\mathbf{F}_{rad} - \frac{2}{3}\frac{e^2}{c^3} \mathbf{\ddot{v}}\right) \cdot \mathbf{v} \dif t = 0,
@@ -1352,7 +1438,7 @@ where $\tau$ is the `characteristic time'
 \begin{equation}
 \tau = \frac{2}{3} \frac{e^2}{m c^3}
 \end{equation}
-
+\EliasComm{Characteristic time needs some explanation. Based on \cite{Jackson}.}
 The equation of motion then reads
 \begin{equation}
 m(\mathbf{\dot{v}}-\tau \mathbf{\ddot{v}}) = \mathbf{F}_{ext}.
@@ -1368,12 +1454,11 @@ For a vanishing external force, we obtain two solutions for $\mathbf{\dot{v}}$:
 \end{cases}
 \end{equation}
 where $\mathbf{a}$ is the acceleration at $t = 0$. If $\mathbf{a} \neq 0$ leads to a self-acceleration of the particle in absence of an external force, which is clearly unphysical and also results in $(\mathbf{\dot{v} \cdot v}) \neq 0$ at $t_1$ and $t_2$, which we used to derive this expression.
-
 The relativistic generalisation of this equation is referred to as Lorentz-Abraham-Dirac equation (LAD) and is given in terms of the four-acceleration  \cite{Bulanov2011_LADLL,DiPiazza2012_ICS}:
 \begin{equation}
  \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m} F^{\mu\nu} u_\nu + \frac{e^2}{6 \pi m} \left(\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}\tau^2} + u^\mu \frac{\mathrm{d}u^\nu}{\mathrm{d}\tau}\frac{du_\nu}{\mathrm{d}\tau}\right),
 \end{equation}
-with the radiation friction force
+with the radiation reaction force
 \begin{equation}
 g^\mu = \frac{2e^2}{3c} \left[\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}\tau^2} - u^\mu \left(\frac{\mathrm{d}u^\nu}{\mathrm{d}\tau}\right)\left(\frac{\mathrm{d}u_\nu}{\mathrm{d}\tau}\right)\right],
 \end{equation}
@@ -1381,7 +1466,7 @@ where the second derivative of the momentum leads again to the same pathological
 
 \subsubsection{Landau-Lifschitz (LL) Equation}
 
-A first self-consistent solution to including radiation reaction into a classical model was achieved in the Landau-Lifschitz (LL) equation \cite{LandauLifschitz}. Here it is assumed that the radiation reaction force is small compared to the Lorentz force in a suitable frame of reference. The expression $\dif u / \dif \tau$ is substituted by $e/m F^{\mu \nu} u_\nu$, which reduces the order of the differential equation and removes the runaway solutions. 
+The first self-consistent solution to including radiation reaction into a classical model was achieved in the Landau-Lifschitz (LL) equation \cite{LandauLifschitz}. Here it is assumed that the radiation reaction force is small compared to the Lorentz force in a suitable frame of reference. The expression $\dif u / \dif \tau$ is substituted by $e/m F^{\mu \nu} u_\nu$, which reduces the order of the differential equation and removes the runaway solutions. 
 \begin{equation}
  \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m} F^{\mu\nu} u_\nu + \frac{e^4}{6 \pi m} \left[-\frac{m}{e}(\partial_\alpha F^{\mu \nu}) u_\nu u^\alpha + F^{\mu\nu} F_{\nu\alpha}u^\alpha + (F^{\nu \alpha}u_\alpha)^2 u^\mu      \right],
 \end{equation}
@@ -1401,45 +1486,33 @@ This description only holds if $L \ll \lambda_C$ and $E \ll E_{cr}/\alpha$, whic
 \EliasComm{According to REF Spohn EPL 50 2000 all physical solutions of the LAD equation are also solutions of LL}
 \vspace{\baselineskip}
 
-In the context of the collision of a relativistic electron beam of energy $\gamma$ with a laser pulse of intensity $a_0$ the relative magnitude of the LL radiation reaction force to the Lorentz force can be estimated by \cite{Thomas2012_LL}
-\begin{equation}
-\boxed{\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c}}
-\end{equation}
-Another useful parameter is the classical radiation reaction parameter (DI PIAZZA REF 2010), $R_c$:
-\begin{equation}
-R_c = \frac{\alpha a^2_0 \gamma_0 (1+\beta_0) \omega_0}{m},
-\end{equation}
-with significant radiation damping for $R_c \geq 0.24$ \cite{Thomas2012_LL} and radiation-dominated regime for $R_c \geq 1$ XXREF\addref{}. The fraction of the emitted radiation in the average rest frame of the electron, $f$, is given by $f = E_{rad}/(\gamma' m) = 4\pi R_c/3$.
-
-In the Landau-Lifschitz model we can also find an analytic expression of the energy loss an electron experiences. For an electron interacting with a plane wave with a Gaussian temporal envelope this is given by \cite{Thomas2012_LL,Bulanov2011_LL} VALID\addnum{}
+In the Landau-Lifschitz model we can also find an analytic expression of the energy loss an electron experiences. For an electron interacting with a plane wave with a Gaussian temporal envelope this is given by \cite{Thomas2012_LL,Bulanov2011_LL}
 \begin{equation}
 \frac{\Delta \gamma}{\gamma_0} = \frac{\sqrt{\pi/2}\tau_0 t_L \omega_0^2 \gamma_0 a_0^2}{1+\sqrt{\pi/2 \tau_0 t_L \omega_0^2 \gamma_0 a_0^2}},
 \label{Theory:eq:EnergyLoss_LLThomas}
 \end{equation}
-where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, the pulse duration $t_L$, the wavelength $\lambda$.
+where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, the pulse duration $t_L$, the wavelength $\lambda$. This is valid if quantum effects are negligible, $\gamma_0 a_0 \ll m_e c^2/2\hbar \omega_0$ (see next section), whereas strong radiation reaction effects are expected for $\gamma a^2_0 > (10 \sqrt{2\pi^3} \omega_0 \tau_0 \gamma_0)^{-1/2}$.
 \vspace{\baselineskip}
 
-Whilst this description is free from runaway solutions unlike the LAD equation it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle (REF Baylis PLA 2002). 
+Whilst this description is free from runaway solutions unlike the LAD equation it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle (REF Baylis PLA 2002\addref{}). 
 
 
 \subsection{Quantum picture and corrections}
 
-Alec says that quantum radiation reaction is the overall recoil experienced by an electron undergoing multiple simultaneous incoherent photon emission events.
-
-Limit when quantum effects become more important: energy loss comparable to rest mass of the electron?
-This is at the same time also the limit of validity of the LL model, when the force becomes comparable to the Lorentz force.
-
-Quantum nonlinearity parameter
-\begin{equation}
-\eta = E_{RF}/E_{crit},
-\end{equation}
-with the critical field for quantum electrodynamics $E_{crit} = 1.38 \times 10^{18}\,\mathrm{V m^{-1}}$.
-The field in the rest frame becomes important in relation to the critical field. This is somewhat similar to the approximation that the field be much smaller than the Lorentz force.
-
 \begin{itemize}
-\item corrections regarding radiation cut-off in spectrum (quantum synchrotron radiation)
-\item stochasticity (broadening in e-spectrum, straggling in radiation spectrum)
+\item in extreme cases we expect the classical descriptions to fail
+\item we then require a quantum description of the process or appropriate corrections
+\item an indicator of how important quantum effects are, is the quantum nonlinearity parameter
+\item this shows when the electric field becomes comparable to the critical field of qed (schwinger field)
+\item give example for head-on collision
+\item two-fold corrections:
+\item radiation cut-off in spectrum (quantum synchrotron radiation)
+\item stochasticity (broadening in e-spectrum and straggling in radiation spectrum)
+\item correction to emission can partly be done in a semi-classical model, stochasticity requires quantum
+\item pair production also becomes possible
+\item quantum radiation reaction is the overall recoil experienced by an electron undergoing multiple simultaneous incoherent photon emission events (Alec)
 \end{itemize}
+
 
 \subsubsection{Semi-classical approach}
 \begin{itemize}
@@ -1497,6 +1570,10 @@ Here
 
 \section{Pair Production and Annihilation}
 
+\EliasComm{For linear/nonlinear higher order processes: Proper treatment is using dressed states that include the classical background fields exactly. At high Chi parameters the interaction becomes non-perturbative which means the dressed state treatment is not valid anymore. Tree level processes with many vertices also become important. Then radiative corrections become important.}
+
+\EliasComm{Add intro.}
+
 \subsection{Dirac annihilation}
 \begin{figure}
 \centering
@@ -1506,7 +1583,7 @@ Here
 \label{Theory:Figs:Feynman:PairAnnihilation:PairProductionBWBH}
 \end{figure}
 
-An electron and a positron can annihilate into two photons, i.e. matter is transformed into light. This process is referred to as pair annihilation, two-photon annihilation or Dirac annihilation named after Paul Dirac who postulated the existence of the positron and also its annihilation with an electron \cite{Dirac1930_Annihilation,Dirac1931_Positron}. Both were confirmed experimentally briefly afterwards \cite{Klemperer1934_Annihilation,Anderson1932_Positron,Anderson1933_Positron}.
+An electron and a positron can annihilate into two photons, i.e. transform their matter into light. This process is referred to as \textit{pair annihilation}, two-photon annihilation or \textit{Dirac annihilation} named after Paul Dirac, who postulated the existence of the positron and also its annihilation with an electron \cite{Dirac1930_Annihilation,Dirac1931_Positron}. Both were confirmed experimentally briefly afterwards \cite{Klemperer1934_Annihilation,Anderson1932_Positron,Anderson1933_Positron}.
 It can be described by the following equation
 \begin{equation}
 e^+ + e^- \longrightarrow \gamma + \gamma,
@@ -1519,7 +1596,7 @@ The total cross section, $\sigma_{e^+e^-}$, is given by \cite{Ruffini2010_PAIRSA
 \boxed{\sigma_{e^+ e^-} = \frac{\pi r^2_e}{2} (1-\beta^2) \left[ (3-\beta^4) \ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right],}
 \label{Theory:Eqs:PairAnnihilation_totXsec}
 \end{equation}
-where $r_e = e^2/4\pi\epsilon_0m_ec^2$ is the classical electron radius, $\beta = \sqrt{1-1/s}$ and $s = (E_{CM}/m_e c^2)^2$ the square of the centre-of-mass (CM) energy. In the limit of ultrarelativistic energies, i.e. $s \rightarrow \inf$, $\beta \rightarrow 1$ and as a result $\sigma_{e^+ e^-} \rightarrow 0$. At low energies, $s \rightarrow 1$ reducing the energy to the rest mass, $\beta \rightarrow 0$ and the total cross section diverges, $\sigma_{e^+ e^-} \rightarrow \infty$, due to the logarithm $\ln[(1+\beta)/(1-\beta)]$. The total cross section is shown as a function of the centre-of-mass energy $\sqrt{s}$ in Figure \ref{Theory:Figs:Xsec:DiracBW}.
+where $r_e = e^2/4\pi\epsilon_0m_ec^2$ is the classical electron radius, $\beta = \sqrt{1-1/s}$ is the centre-of-mass velocity and $s = (E_{CM}/m_e c^2)^2$ the square of the centre-of-mass (CM) energy. In the limit of ultrarelativistic energies, i.e. $s \rightarrow \infty$, $\beta \rightarrow 1$ and as a result $\sigma_{e^+ e^-} \rightarrow 0$. At low energies, $s \rightarrow 1$ reducing the energy to the rest mass, $\beta \rightarrow 0$ and the total cross section diverges, $\sigma_{e^+ e^-} \rightarrow \infty$, due to the logarithm $\ln[(1+\beta)/(1-\beta)]$. The total cross section is shown as a function of the centre-of-mass energy $\sqrt{s}$ in Figure \ref{Theory:Figs:Xsec:DiracBW}.
 
 \iffalse
 The differential cross section in terms of CM quantities is given by \cite{PeskinSchroeder}
@@ -1535,7 +1612,7 @@ in the high energy limit $E\gg m$:
 \subsection{Breit-Wheeler pair production}
 \label{Theory:Subsec:BW}
 
-The inverse mechanism of Dirac annihilation is the two-photon (linear) Breit-Wheeler process \cite{BreitWheeler1934_BW}.
+The inverse mechanism of Dirac annihilation is the two-photon (linear) \textit{Breit-Wheeler process} \cite{BreitWheeler1934_BW}.
 Here two photons combine to produce an electron-positron pair, i.e. matter is created from light.
 The process is described by the equation
 \begin{equation}
@@ -1547,7 +1624,7 @@ In the CM frame the total cross section for the process is given by \cite{Gould1
 \boxed{\sigma_{\gamma,\gamma} = \frac{\pi r^2_e}{2}(1-\beta^2) \left[(3-\beta^4) \ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right] = 2 \beta^2 \sigma_{e^+ e^-},}
 \label{Theory:Eqs:BWPairs_totXsec}
 \end{equation}
-where again $s = (E^*/m_e c^2)^2 = E_{\gamma 1} E_{\gamma 2} (1-\cos\phi)/2 m^2_e c^4$, and $\beta = (1-1/s)^{1/2}$, so that it is again required that $s \geq 1$. For head-on collision $\theta = \pi \rightarrow s = E_1 E_2/m^2_e c^4$ and for $\theta = \pi/2 \rightarrow s = E_1 E_2/2m^2_e c^4$. 
+where again $s = (E_{CM}/m_e c^2)^2 = E_{\gamma 1} E_{\gamma 2} (1-\cos\phi)/2 m^2_e c^4$, and $\beta = \sqrt{1-1/s}$, so that it is again required that $s \geq 1$. For head-on collision $\theta = \pi \rightarrow s = E_1 E_2/m^2_e c^4$ and for $\theta = \pi/2 \rightarrow s = E_1 E_2/2m^2_e c^4$. 
 \begin{figure}
 \centering
 \includegraphics[width=0.8\columnwidth]{BWD_Xsec.png}
@@ -1560,42 +1637,44 @@ The differential cross section in the CM frame is given by \cite{Nikishov1962_PA
 \boxed{\frac{\mathrm{d} \sigma_{BW}}{\mathrm{d}\Omega} = r^2_0 \beta (1-\beta^2) \left[ \frac{1 + 2\beta^2 \sin^2 \theta_{CM} - \beta^4 - \beta^4 \sin^4\theta_{CM}}{(1-\beta^2\cos^2\theta_{CM})^2}\right],}
 \label{Theory:Eqs:Xsec:BWdiff}
 \end{equation}
-where $\beta = \sqrt{1 - 1/s}$. 
+and shown for different values of $s$ in a polar plot in Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB} (top, left). At $s\sim1$ the distribution is isotropic, but with increasing $s$ forward and backward emissions ($\theta = 0, \pi$) are preferential. The differential cross section is symmetric under the transformation $\theta \rightarrow \theta + \pi$ as we are in the centre-of-mass frame. 
+\vspace{\baselineskip}
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{BW_diff_cross_CM.pdf}\includegraphics[width=.5\columnwidth]{BW_Energy_Lab_E2E1.pdf}
 
 \includegraphics[width=.5\columnwidth]{BW_MomentumVectors_Labframe_Pi4CM.pdf}\includegraphics[width=.5\columnwidth]{BW_MomentumVectors_Labframe_Pi2CM.pdf}
-\caption[Polar plot of differential Breit-Wheeler cross sections in the centre-of-mass (CM), polar plot of the particle energy distribution in the laboratory frame for different ratios of the incident photon energies, and momentum vectors in the laboratory frame for a fixed centre-of-mass angle and varying ratios of incident photon energies.]{Top left: Polar plot of differential Breit-Wheeler cross sections in the centre-of-mass (CM) calculated using Equation \eqref{Theory:Eqs:Xsec:BWdiff} for different centre-of-mass energies, $s$. Top right: Polar plot of the particle energy distribution in the laboratory frame for different ratios of the incident photon energies, with photon 1 propagating at zero degrees and $E_1 = 300\MeV$ and photon 2 at $180^\circ$. Bottom: Momentum vectors in the laboratory frame for a fixed centre-of-mass angle and varying ratios of $E_2/E_1 = 1, 0.5, 0.01$, left at $\theta_{CM} = 45^\circ$ and on the right at $\theta_{CM} = 90^\circ$. The blue vectors show the particle at $\theta_{CM}$ in the CM frame, whereas the red vectors correspond to the momentum vectors of the particles in the laboratory frame at $-\theta_{CM}$ in the CM frame.}
+\caption[Polar plot of differential Breit-Wheeler cross sections in the centre-of-mass (CM), polar plot of the particle energy distribution in the laboratory frame for different ratios of the incident photon energies, and momentum vectors in the laboratory frame for a fixed centre-of-mass angle and varying ratios of incident photon energies.]{Top left: Polar plot of differential Breit-Wheeler cross sections in the centre-of-mass (CM) calculated using Equation \eqref{Theory:Eqs:Xsec:BWdiff} for different centre-of-mass energies, $s$. Top right: Polar plot of the particle energy distribution in the laboratory frame for different ratios of the incident photon energies, with photon 1 propagating at zero degrees and $E_1 = 300\MeV$ and photon 2 at $180^\circ$. Bottom: Momentum vectors in the laboratory frame for a fixed centre-of-mass angle and varying ratios of $E_2/E_1 = \lbrace 1, 0.5, 0.01 \rbrace$, left at $\theta_{CM} = 45^\circ$ and on the right at $\theta_{CM} = 90^\circ$. The blue vectors show the particle at $\theta_{CM}$ in the CM frame, whereas the red vectors correspond to the momentum vectors of the particles in the laboratory frame at $-\theta_{CM}$ in the CM frame.}
 \label{Theory:Figs:BW_DiffXsec_CM_E_LAB}
 \end{figure}
+
 The values in the laboratory system are calculated using
 \begin{align}
 E_{3,4} &= \gamma_{CM} \left( E^{CM}_{3,4} + \bm{\beta}_{CM} \cdot \mathbf{p}^{CM}_{3,4}\right),\\
 \mathbf{p}_{3,4} &= \mathbf{p}^{CM}_{3,4} + \frac{\gamma_{CM}-1}{\beta^2_{CM}}\left(\bm{\beta}_{CM} \cdot \mathbf{p}^{CM}_{3,4}\right) \bm{\beta}_{CM} + \gamma_{CM} E^{CM}_{3,4} \bm{\beta}_{CM},
 \end{align}
 with $\gamma_{CM} = (E_1 + E_2)/\sqrt{s}$ and $\bm{\beta}_{CM} = (\mathbf{p}_1 + \mathbf{p}_2)/(E_1 + E_2)$.
+Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB} (top, right) shows the angular energy distribution in the laboratory frame for different ratios of $E_1/E_2$, with $E_1 = 300\MeV$. For $E_1 = E_2$ the laboratory frame and the CM frame are identical (blue). Here the emitted energies are isotropic, but for $s > 1$ preferentially emitted at $\theta = 0, \pi$. At a fixed value of $E_1$ and $E_1 > E_2$, a decreasing energy of the second photon, $E_2$, i.e. $E_2/E_1 <1$, higher energies are emitted in forwards direction as momentum has to be conserved. Combined with the differential cross section we are expecting that particles of energy $\sim E_1$ are emitted predominantly in forwards direction. Note that the energy distribution and the differential cross section are identical for electrons and positrons.
 
-\EliasComm{Explicitly refer to plots and that energy distribution is symmetric for $E_1/E_2 = 1$, but asymmetric if $E_1,E_2 \neq 1$. Distribution functions are symmetric for $e+,e-$}
+The two panels at the bottom of Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB} show the energy distribution between the two particles in the laboratory frame at a fixed scattering angle in the CM frame of $\theta_{CM} = 45^\circ$ (left) and $90^\circ$ (right) for three ratios of $E_1/E_2$. For $E_1 = E_2$ the particles are emitted back-to-back as the CM frame and the laboratory are equivalent. With increasing asymmetry as $E_2/E_1 < 1$ the centre-of-mass velocity $\beta_{CM}$ increases in forwards direction and results in a head-light effect that rotates the momentum vectors towards $\theta = 0$. For $\theta_{CM} = 45^\circ$ we see that due to the relativistic boost the backwards emitted particle (red) carries a small fraction of the total energy whilst the forwards emitted particle carries most. In the case of $\theta_{CM} = 90^\circ$, on the other hand, the transformation back into the laboratory frame does not affect the overall zero momentum sum as the angle is perpendicular to the, such that both particles carry the same energy and are emitted at the same relative angle to the zero axis. For $s \gg 1$ emissions perpendicular to the main axis have a much lower probability than on-axis emissions.
 
-\subsubsection{Nonlinear Breit-Wheeler}
+\subsubsection{Nonlinear Breit-Wheeler process}
 
-In the nonlinear Breit-Wheeler process more than two photons interact to produce one electron-positron pair.
-The equation for the Breit-Wheeler process then becomes:
+At high photon densities multiple photons ($n>2$) can interact with each other to produce a single electron-positron pair.
+The equation for this \textit{nonlinear Breit-Wheeler process} then becomes:
 \begin{equation}
 \gamma + n \gamma \longrightarrow e^+ + e^-.
 \end{equation}
 Typically many $n$ low-energy photons interact with one high-energy gamma ray to produce the pair. This has been measured at the E144 experiment at SLAC \cite{Bula1996_RR,Burke1997_RR}.
-
 Similarly as for nonlinear Compton scattering the multiphoton process requires the evaluation of higher order Feynman diagrams or in the Furry picture the use of Volkov states to sum over all possible states.
 
-The second harmonic is for instance given by (\cite{Ritus1985_QRR} and T NOUSCH PHYSICS LETTER B 2012):
+The second harmonic is for instance given by (\cite{Ritus1985_QRR} and T NOUSCH PHYSICS LETTER B 2012\addref{}):
 \begin{equation}
 \sigma_2 (s) = \frac{a^2_0}{4}\frac{2 \pi \alpha^2}{s}\left[\left(6 + \frac{3}{u_2} - \frac{20}{u^2_2} + \frac{15}{u^3_2}\right)\beta_2 + \frac{15}{2u^2_2}\beta^4_2 \ln \frac{1+\beta_2}{1-\beta_2}\right],
 \end{equation}
 where $u_n = ns/(4m^2)$ and $\beta_n = \sqrt{1- u^{-1}_n}$.
 
-
+\EliasComm{Need a consistent closed form for nonlinear BW (crossing symmetry to nonlinear ICS).}
 
 The probability of pair production by one photon of momentum $l$ in interaction with $n$ laser photons of momentum $k$ per unit volume in unit time (circular polarisation):
 
@@ -1619,8 +1698,7 @@ z = 4m^2_e \frac{\eta (1+ \eta^2)^{1/2}}{(kl)}\left[\frac{\nu}{\nu_n}\left(1- \f
 \label{Theory:Figs:Feynman:BH}
 \end{figure}
 
-A photon of energy $> 2m_e c^2$ can produce an electron-positron pair in the nuclear Coulomb field. This is called the Bethe-Heitler proces \cite{Bethe1934_BH}.
-The process is described by the equation
+A photon of energy $> 2m_e c^2$ can produce an electron-positron pair in the nuclear Coulomb field. This is called the \textit{Bethe-Heitler process} \cite{Bethe1934_BH}, described by the equation
 \begin{equation}
 \gamma + Z \longrightarrow Z + e^+ + e^-,
 \end{equation}
@@ -1630,7 +1708,6 @@ The differential cross section for the process is related to the bremsstrahlung 
 \frac{d \sigma_{\gamma Z}}{dE_+}(\omega,x) = -\frac{1}{\hbar x^2}\frac{d\sigma_{eZ}}{d\omega}(-\omega,x),
 \end{equation}
 where $x = \hbar \omega / E_+$, the ratio of the initial photon to the final positron energy.
-
 The total cross section scales as \cite{Heitler1933_BHApprox,Ruffini2010_PAIRSASTRO}
 \begin{equation}
 \sigma_{\gamma Z} \sim \alpha Z^2 \left(\frac{e^2}{m_ec^2}\right)^2,
@@ -1644,23 +1721,32 @@ with
 f(Z\alpha) = (Z\alpha)^2 \sum^\infty_{n=1}\frac{1}{n[n^2 + (Z\alpha)^2]}.
 \end{equation}
 For $Z \alpha \ll 1$ the term $f(Z\alpha)\rightarrow 0$ \cite{Bethe1934_BH}.
-
-Similarly as for bremsstrahlung the differential cross section can in a simplified and approximated way also be expressed in terms of the radiation length, $X_0$ (REF\addref{} Tsai, PDG):
+Similarly as for bremsstrahlung the differential cross section can in the ultrarelativistic regime be approximated by a simplified equation in terms of the radiation length, $X_0$ (REF\addref{} Tsai, PDG):
 \begin{equation}
-\frac{\dif \sigma}{\dif x} = \frac{A}{X_0 N_A} \left[ 1 - \frac{4}{3}x(1-x)\right],
+\frac{\dif \sigma_{\gamma Z}}{\dif x} = \frac{A}{X_0 N_A} \left[ 1 - \frac{4}{3}x(1-x)\right],
 \end{equation}
 where $x = E/k$, where $k$ is the incident photon energy and $E$ the energy of the produced electron or positron.
 In the high-energy limit the total cross section becomes
 \begin{equation}
-\sigma = \frac{7}{9}\frac{A}{X_0 N_A},
+\sigma_{\gamma Z} = \frac{7}{9}\frac{A}{X_0 N_A},
 \end{equation}
 which is accurate to within a few percent at $1\GeV$ and high-Z materials.
 
-\EliasComm{Proper treatment is using dressed states that include the classical background fields exactly. At high Chi parameters the interaction becomes non-perturbative which means the dressed state treatment is not valid anymore. Tree level processes with many vertices also become important. Then radiative corrections become important.}
+
+\subsection{Schwinger limit}
+
+Schwinger pair production: The external electric field is so strong that virtual electron-positron pairs can be accelerated to relativistic energies within a Compton wavelength and made real.
+
+\EliasComm{Difficult to reach fields, but in the rest frame of a relativistic electron.}
+\EliasComm{Does this require a separate mention? As before already mentioned.}
+\EliasComm{Add high-field Feynman diagram (double-lines as circle).}
+
+
+\section{Light-light scattering}
 
 
 \subsection{Vacuum polarisation}
-
+\EliasComm{Low and high frequency vacuum polarisations. Also includes vacuum birefringence and Schwinger limit. Here just stick to photon-photon scattering.}
 
 \begin{figure}[h]
 \centering
@@ -1694,10 +1780,3 @@ or in terms of the center-of-momentum energy $\omega^\ast$:
 \end{cases}
 \end{equation}
 \EliasComm{Add plot of cross section.}
-
-\subsection{Schwinger limit}
-
-Schwinger pair production: The external electric field is so strong that virtual electron-positron pairs can be accelerated to relativistic energies within a Compton wavelength and made real.
-
-\EliasComm{Difficult to reach fields, but in the rest frame of a relativistic electron.}
-
