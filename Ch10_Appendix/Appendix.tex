@@ -1,5 +1,3 @@
-\appendix
-
 \chapter{Appendix}
 
 \section{Notation and Glossary}
@@ -99,11 +97,49 @@ Combining these:
 
 Wave equations.
 
-\section{Relativistic Transformations}
+\section{Frames of reference}
+
+\subsection{Relativistic Transformations}
 
 Boosts
 
-\section{Bessel Functions}
+
+\subsection{Rest frame}
+
+\subsection{Center-of-mass frame}
+
+Defined by $\mathbf{p_1} = - \mathbf{p_2}$, so that for scattering events $2 \rightarrow 2$ also $\mathbf{p_3} = -\mathbf{p_4}$.
+
+In the special case $m_1 = m_2$, and $m_3 = m_4$, we also have $E^{CM}_1 = E^{CM}_2$ and $E^{CM}_4 = E^{CM}_4$.
+
+The centre of mass energy 
+\begin{equation}
+s = \frac{E_1 E_2 (1-\cos \theta)}{4m^2_e c^4}
+\end{equation}
+
+
+\subsubsection{Scattering angle}
+
+The scattering angle in the CM frame, $\theta_{CM}$, be defined as 
+\begin{equation}
+\mathbf{p} \cdot \mathbf{p}' = |\mathbf{p}| \cdot |\mathbf{p}'| \cos \theta_{CM}
+\end{equation}
+
+The angle be defined as 
+\begin{equation}
+\cos \theta_{CM} = \frac{s (t-u) + (m^2_1 - m^2_2)(m^2_3 - m^2_4)}{\sqrt{\lambda(s,m^2_1,m^2_2)}\sqrt{\lambda(s,m^2_3,m^2_4)}},
+\end{equation}
+where 
+\begin{equation}
+\lambda(a,b,c) = a^2 - 2a(b+c) + (b-c)^2,
+\end{equation}
+which is symmetric under $a \leftrightarrow b \leftrightarrow c$ and asymptotic behaviour $a \gg b,c: \lambda(a,b,c) \rightarrow a^2$.
+For photons $m = 0$, so that $\lambda(a,b,c) = a^2$
+
+
+\section{Radiation Integrals}
+
+\subsection{Bessel functions}
 
 Functions solving the differential equations ....
 
@@ -120,8 +156,7 @@ Recursion
 First order for radiation integrals (see Synchrotron/Betatron and in generalized form ICS)
 
 
-\section{Radiation Integrals}
-
+\subsection{Lienard Wiechert potentials}
 Lienard Wiechart potentials and fields.
 
 Jackson \cite{Jackson}:
@@ -154,35 +189,6 @@ P = \frac{e^2 \gamma^6}{6 \pi c \epsilon_0} \left( |\mathbf{\dot{\beta}}|^2 - |\
 %\begin{equation}
 %\frac{d^2 I}{d\omega d\Omega} = \frac{e^2 \omega^2}{16 \pi^3 c \epsilon_0} |\int_{-\inf}^\inf \mathbf{n} \times (\mathbf{n} \times \mathbf{\beta}) e^{i\omega (t'- \mathbf{n}\cdot\mathbf{r}(t')/c)} dt|^2
 %\end{equation}
-
-\section{Center-of-mass frame}
-
-Defined by $\mathbf{p_1} = - \mathbf{p_2}$, so that for scattering events $2 \rightarrow 2$ also $\mathbf{p_3} = -\mathbf{p_4}$.
-
-In the special case $m_1 = m_2$, and $m_3 = m_4$, we also have $E^{CM}_1 = E^{CM}_2$ and $E^{CM}_4 = E^{CM}_4$.
-
-The centre of mass energy 
-\begin{equation}
-s = \frac{E_1 E_2 (1-\cos \theta)}{4m^2_e c^4}
-\end{equation}
-
-\subsection{Scattering angle}
-
-The scattering angle in the CM frame, $\theta_{CM}$, be defined as 
-\begin{equation}
-\mathbf{p} \cdot \mathbf{p}' = |\mathbf{p}| \cdot |\mathbf{p}'| \cos \theta_{CM}
-\end{equation}
-
-The angle be defined as 
-\begin{equation}
-\cos \theta_{CM} = \frac{s (t-u) + (m^2_1 - m^2_2)(m^2_3 - m^2_4)}{\sqrt{\lambda(s,m^2_1,m^2_2)}\sqrt{\lambda(s,m^2_3,m^2_4)}},
-\end{equation}
-where 
-\begin{equation}
-\lambda(a,b,c) = a^2 - 2a(b+c) + (b-c)^2,
-\end{equation}
-which is symmetric under $a \leftrightarrow b \leftrightarrow c$ and asymptotic behaviour $a \gg b,c: \lambda(a,b,c) \rightarrow a^2$.
-For photons $m = 0$, so that $\lambda(a,b,c) = a^2$
 
 \section{Feynman diagrams and convention}
 
@@ -220,12 +226,6 @@ t &= (k-p)^2 &= (k' - p')^2; \nonumber\\
 u &= (k'-p)^2 &= (k-p')^2.
 \end{align}
 
-\subsection{Other identities}
-
-\begin{align*}
-\sum u^s(p) \bar{u}^s (p) &= \cancel{p} + m \\
-\sum v^s (p) \bar{v}^s (p) &= \cancel{p} - m.
-\end{align*}
 
 \subsection{Trace Identities}
 
@@ -258,13 +258,19 @@ Contraction identities:
 \gamma^\mu \gamma^\nu \gamma^\rho \gamma_\mu &= 4 g^{\nu \rho}\\
 \gamma^\mu \gamma^\nu \gamma^\rho \gamma^\sigma \gamma_\mu = - 2\gamma^\sigma \gamma^\rho \gamma^\nu
 \end{align*}
+\subsection{Other identities}
+
+\begin{align*}
+\sum u^s(p) \bar{u}^s (p) &= \cancel{p} + m \\
+\sum v^s (p) \bar{v}^s (p) &= \cancel{p} - m.
+\end{align*}
 
 \subsection{Calculating Matrix Elements from Feynman diagrams}
 
 
 \section{Cross sections for fundamental QED processes}
 
-\subsection{Derivation Klein-Nishina equation}
+\subsection{Derivation of the Klein-Nishina equation}
 \label{Appendix:QEDDeriv_KleinNishina}
 
 \begin{figure}[h]
@@ -340,7 +346,7 @@ In more details this can be written as
 where the first part in the bracket corresponds to a helicity-conserving interaction and the second term to a process that flips helicity. 
 
 
-\subsection{Pair annihilation}
+\subsection{Derivation of the Dirac annihilation cross section}
 
 We can re-use the result from Compton scattering to determine the cross section of the pair annihilation process $e^- e^+ \rightarrow \gamma \gamma$ using cross symmetry.
 
@@ -353,7 +359,7 @@ k' &\rightarrow k_2
 \end{align*}
 
 
-\subsection{Linear Breit-Wheeler cross section}
+\subsection{Derivation of the linear Breit-Wheeler cross section}
 
 The cross section for the Breit-Wheeler process is simply given by XX.
 
@@ -404,9 +410,6 @@ f(z) \approx 1.202 z - 1.0369z^2 + 1.008z^3/(1+z).
 with $a=184.15(2.718)^{-1/2} Z^{-1/3}/m_e$, $a' = 1194(2.718)^{-1/2} Z^{-2/3}/m_e$, $b = a \delta$, $b' = a' \delta$, $\delta = m^2_e \hbar \omega/(2\gamma m_e c^2(\hbar \omega - \gamma m_e c^2))$.
 
 
-\subsection{Small Angle Scattering}
-
-
 
 \section{Statistics}
 
@@ -453,3 +456,10 @@ MATLAB:
 \begin{equation}
 \hat{f}_h(x) = \frac{1}{nh}\sum_{i=1}^n K\left(\frac{x-x_i}{h}\right)
 \end{equation}
+
+
+
+\section{Other}
+
+\subsection{Small Angle Scattering}
+

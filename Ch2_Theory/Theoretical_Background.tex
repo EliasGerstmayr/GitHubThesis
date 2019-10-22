@@ -1291,6 +1291,72 @@ Q^2 &= (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
 \EliasComm{Critical Energy.}
 \EliasComm{Yield $\sim \gamma a^2_0$}
 
+\EliasComm{Elongation of radiation ellipse as result of intensity?}
+
+\subsection{Quantum synchrotron function}
+
+Based on Tom's thesis:
+
+Given by
+\begin{equation}
+F(\eta, \chi) = \frac{4 \chi}{3\eta^2}\left[ \left( 1 - \frac{2 \chi}{\eta} + \frac{1}{1- 2\chi/\eta}\right) K_{2/3} (\delta) - \int^\infty_\delta K_{1/3} (t) \dif t\right],
+\end{equation}
+where 
+\begin{equation}
+\delta = \frac{4 \chi}{3 \eta^2}\left(1- \frac{2 \chi}{\eta}\right)^{-1}.
+\end{equation}
+
+For small $\chi$:
+\begin{equation}
+F(\eta,\chi) \approx \left(\frac{16}{3}\right)^{1/3} \Gamma\left(\frac{2}{3}\right) \eta^{-2/3} \chi^{1/3}
+\end{equation}
+
+The classical part be
+\begin{equation}
+F_{cl} (\eta, \chi) = \delta_{cl} \left[2K_{2/3} (\delta_{cl}) - \int^\infty_{\delta_{cl}} K_{1/3} (t) \dif t\right],
+\end{equation}
+where $\delta_{cl} = 4\chi/3\eta^2$.
+
+Emission power is
+
+\begin{equation}
+\frac{\dif P}{\dif \chi} = \frac{2 E \chi}{\eta} \frac{\dif W_\gamma}{\dif \chi} = \frac{\sqrt{3\alpha}}{\pi} \frac{m c^2}{\tau_c} F(\eta, \chi).
+\end{equation}
+
+For $a_0 \gg 1$ this is a good approximation to nonlinear Compton scattering.
+
+The total power is given by
+\begin{equation}
+P = \frac{2 \alpha}{3} \frac{mc^2}{\tau_c} \eta^2 g(\eta),
+\end{equation}
+with Gaunt factor
+\begin{equation}
+g(\eta) = \frac{3 \sqrt{3}}{2\pi \eta^2}\int^\infty_0 F(\eta, \chi) \dif \chi.
+\end{equation}
+
+In limits:
+\begin{equation}
+g(\eta) \approx 
+\begin{cases}
+1 - (55 \sqrt{3}/16) \eta + 48 \eta^2 ~ &\mathrm{for }~ \eta \ll 1\\
+0.5564 \eta^{-4/3}  ~ &\mathrm{for }~ \eta \gg 1
+\end{cases}
+\end{equation}
+The first term is from using the adjusted classical function $F_{cl}$, second from recoil and third for spin contribution.
+
+Approximation good within few percent
+\begin{equation}
+g(\eta) = [1 + 4.8(1+\eta)\ln(1+1.7\eta) + 2.44\eta^2]^{-2/3}
+\end{equation}
+
+At high intensities the power emission falls, with $P \propto \eta^{2/3}$ and as $\eta \propto a_0$, $P \propto a^{2/3}$.
+
+\EliasComm{Make a plot comparing nonlinear ICS and quantum synchrotron.}
+\EliasComm{Make a plot comparing quantum synchrotron and classical synchrotron.}
+
+
+
+
 \subsection{Bremsstrahlung}
 \begin{figure}[h]
 \centering
@@ -1522,19 +1588,7 @@ Whilst this description is free from runaway solutions unlike the LAD equation i
 
 
 Semi-classical approach using Gaunt factor based on the ratio of the quantum and classical synchrotron emission power $g(\eta) = P_q/P_{cl}$
-\begin{align}
-g(\eta) &= \frac{\int_0^{\eta/2} F(\eta, \chi) \mathrm{d}\chi}{\int_0 F_{cl}\left(\frac{4\chi}{3\eta^2}\right)} = \frac{3 \sqrt{3}}{2 \pi \eta^2} \int_0^{\eta/2} F(\eta,\chi) \mathrm{d}\chi\\
-g(\eta) &= \frac{9 \sqrt{3}}{8 \pi}\int^\infty_0 \left[ \frac{2 u^2 K_{5/3} (u)}{(2+3 \eta u)^2} + \frac{36\eta^2 u^3 K_{2/3} (u)}{(2+3 \eta u)^4}\right] \dif u\\
-&= \begin{cases}
-1- \frac{55 \sqrt{3}}{16}\eta + 48 \eta^2 & \eta \ll 1\\
-\frac{16 \Gamma(2/3)}{3^{1/3} 27}\eta^{-4/3} & \eta \gg 1
-\end{cases}
-\end{align}
-
-A within few percent accurate fit function for arbitrary $\eta$ is given by \cite{Baier1991_GAUNT}:
-\begin{equation}
-\boxed{g(\eta) \approx \left(1 + 4.8(1+\eta)\ln(1+1.7\eta)+2.44\eta^2\right)^{-2/3}.}
-\end{equation}
+(see section on quantum synchrotron function).
 
 So that the classical radiation reaction force is modified
 \begin{equation}
@@ -1567,6 +1621,7 @@ Here
 \eta = \gamma b, b = |\mathbf{E}_\perp + \mathbf{v}\times \mathbf{B}|/E_s, \chi = (h\nu b)(2m_e c^2)
 \end{equation}
 
+\EliasComm{Write on importance of straggling.}
 
 \section{Pair Production and Annihilation}
 
@@ -1742,10 +1797,10 @@ Schwinger pair production: The external electric field is so strong that virtual
 \EliasComm{Add high-field Feynman diagram (double-lines as circle).}
 
 
-\section{Light-light scattering}
+\section{Higher order processes}
 
 
-\subsection{Vacuum polarisation}
+\subsection{Light-light scattering}
 \EliasComm{Low and high frequency vacuum polarisations. Also includes vacuum birefringence and Schwinger limit. Here just stick to photon-photon scattering.}
 
 \begin{figure}[h]
@@ -1780,3 +1835,6 @@ or in terms of the center-of-momentum energy $\omega^\ast$:
 \end{cases}
 \end{equation}
 \EliasComm{Add plot of cross section.}
+
+\EliasComm{Delbrueck scattering, Schwinger process, trident process, double Compton scattering.}
+\EliasComm{What about perturbative theory and non-perturbative radiative corrections.}

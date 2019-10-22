@@ -31,7 +31,9 @@
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
 \usepackage[table]{xcolor}
-
+\usepackage{appendix}
+\appendixheaderoff
+\appendixtitleoff
 \newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
 
 % Table customization
@@ -85,7 +87,7 @@
 %\usepackage{feynmf}
 %\usepackage{cite}
 \usepackage[font={it}]{caption} % package to customise caption fonts
-\usepackage[nottoc,numbib]{tocbibind} % This is to enable titles for table of contents, references etc.
+\usepackage[nottoc]{tocbibind} % This is to enable titles for table of contents, references etc.
 \setlength{\headheight}{27.1pt}
 
 
@@ -315,7 +317,10 @@ The specific role of the author and contributions of other researchers in the co
 
 \include{Ch9_Conclusion/Conclusions}
 
-\include{Ch10_Appendix/Appendix}
+\begin{appendices}
+
+	\include{Ch10_Appendix/Appendix}
+\end{appendices}
 
 \clearpage
 \renewcommand{\bibname}{Bibliography}
