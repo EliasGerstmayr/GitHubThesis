@@ -3,18 +3,18 @@
 
 The following Chapter introduces a selection of experimental methods and techniques relevant in the context of the experimental results presented in this thesis and other laser wakefield acceleration (LWFA) experiments. The three main ingredients of an LWFA experiment will be covered: a high-intensity laser, gas targetry and diagnostics for particles and secondary radiation. The measurement of high-energy gamma radiation will be discussed more extensively as it is the centrepiece of the results presented later.
 
-The Chapter starts by introducing the Gemini laser system, the dual-beam high-intensity laser used to conduct the experiments in this work, along with diagnostics and methods used to characterise high-intensity laser pulses.
+The Chapter starts by introducing the \textsc{Gemini} laser system, the dual-beam high-intensity laser used to conduct the experiments in this work, along with diagnostics and methods used to characterise high-intensity laser pulses.
 It then continues with a section on gas targets used in this work and techniques to diagnose the plasma followed by particle diagnostics.
 Finally, the chapter focuses on diagnostics for high-energy radiation in the gamma regime, in particular a scintillator array used to infer gamma spectra.
 A comprehensive review of diagnostics used in LWFA experiments is, for instance, provided in \cite{Downer2018_DiagnosticReview}.
 
 \section{The Gemini laser system}
 
-All of the experimental results presented in this work were acquired at Target Area 3 using the Gemini laser \cite{Hooker2006_Gemini,Hooker2008_Gemini} of the Central Laser Facility at the Rutherford-Appleton Laboratory, UK.
+All of the experimental results presented in this work were acquired at Target Area 3 using the \textsc{Gemini} laser \cite{Hooker2006_Gemini,Hooker2008_Gemini} of the Central Laser Facility at the Rutherford-Appleton Laboratory, UK.
 
 \subsection{Laser properties}
 
-The titanium-sapphire Gemini laser system with central wavelength $800\,\mathrm{nm}$ provides two beams every 20 seconds at a compressed pulse duration of down to $30\,\mathrm{fs}$ and up to $15\,\mathrm{J}$ energy on each arm \cite{GeminiWebsite}. The collimated beams that enter the target chamber have a diameter of just under $\sim 150\,\mathrm{mm}$ with a flat-top intensity profile and are focused with a spherical mirror or off-axis parabolas (OAPs). Adaptive optics (AOs) are deployed on both laser arms in conjunction with wavefront sensors to remove aberrations and flatten the wavefront (see Section \ref{Methods:Sec:AO_WavefrontSensor}).
+The titanium-sapphire \textsc{Gemini} laser system with central wavelength $800\,\mathrm{nm}$ provides two beams every 20 seconds at a compressed pulse duration of down to $30\,\mathrm{fs}$ and up to $15\,\mathrm{J}$ energy on each arm \cite{GeminiWebsite}. The collimated beams that enter the target chamber have a diameter of just under $\sim 150\,\mathrm{mm}$ with a flat-top intensity profile and are focused with a spherical mirror or off-axis parabolas (OAPs). Adaptive optics (AOs) are deployed on both laser arms in conjunction with wavefront sensors to remove aberrations and flatten the wavefront (see Section \ref{Methods:Sec:AO_WavefrontSensor}).
 In addition to its full-power capabilities, a continuous-wave mode for alignment and a low power pulsed mode at 10 Hz repetition rate are available.
 
 \EliasComm{Vacuum compressors, gate valves. CPA. Separate laser and target area.}
@@ -25,7 +25,7 @@ In addition to its full-power capabilities, a continuous-wave mode for alignment
 
 \subsection{Beam line geometries}
 
-In the context of the LWFA experiments discussed later typically two types of geometries are of relevance at Gemini:
+In the context of the LWFA experiments discussed later typically two types of geometries are of relevance at \textsc{Gemini}:
 First, a long-focal-length geometry using either an $f/40$ spherical mirror or an OAP with $f = 6\,\mathrm{m}$ to provide an intense laser pulse $a_0 > 1$ with a long Rayleigh length, $z_R$, to efficiently drive LWFA over long distances. Due to the long focal length and the limited size of the Target Area the beam has to be reflected or `folded' at least once during the focusing process, in recent setups about halfway between optic and focal plane. Unfortunately, this means that the usable maximum energy in this laser arm is limited by the damage threshold of these `folding' mirrors or in other words the fluence the mirrors can sustain. The threshold at which damage occurs depends on several factors, including the beam quality and beam size, the quality of the mirror coating and cleanliness of the chamber.
 
 The second geometry is the short-focal-length scatterer which is typically an $f/2$ OAP with focal length $f = 300\,\mathrm{mm}$ which is also available with a central fitted hole for the case of head-on counter-propagating geometries. 
@@ -37,15 +37,15 @@ The second geometry is the short-focal-length scatterer which is typically an $f
 
 \subsection{Laser Energy}
 
-At Gemini, the laser energies are measured on every shot by collecting the transmitted light through the back of a highly-reflective dielectric mirror in the laser area and imaging it onto a CCD camera chip. The integrated number of counts on the CCD is calibrated using a laser energy meter (Gentec QE8SP-B-BL-D0) and the filtering is adjusted for different power modes.
-A laser energy meter is also used to measure the reflectivity of the compressor gratings, at Gemini typically between 60 ad 70 percent, and the energy reaching the interaction point.
+At \textsc{Gemini}, the laser energies are measured on every shot by collecting the transmitted light through the back of a highly-reflective dielectric mirror in the laser area and imaging it onto a CCD camera chip. The integrated number of counts on the CCD is calibrated using a laser energy meter (Gentec QE8SP-B-BL-D0) and the filtering is adjusted for different power modes.
+A laser energy meter is also used to measure the reflectivity of the compressor gratings, at \textsc{Gemini} typically between 60 and 70 percent, and the energy reaching the interaction point.
 
 \subsection{Laser Pulse Duration}
 
-At Gemini, frequency-resolved optical gating (FROG) \cite{FROG} is used to measure the pulse duration of the laser and characterise its temporal intensity profile.
-A FROG trace can be taken on every shot by using the through high-reflective dielectric mirrors transmitted beam in the laser area.
+At \textsc{Gemini}, frequency-resolved optical gating (FROG) \cite{FROG} is used to measure the pulse duration of the laser and characterise its temporal intensity profile.
+A FROG trace can be taken on every shot by using the through highly-reflective dielectric mirrors transmitted beam in the laser area.
 
-The FROG is a diagnostic to measure the intensity and spectral phase of ultrashort laser pulses as present at Gemini ($\sim 40\,\mathrm{fs}$). The setup is similar to an autocorrelator and is optically gated by combining two beams in a non-linear medium. Typically a second-harmonic-generation (SHG) crystal is the non-linear medium of choice. The produced second-harmonic (SH) radiation is then spectrally resolved (hence frequency-resolved) and provides information about the spectral phase.
+The FROG is a diagnostic to measure the intensity and spectral phase of ultrashort laser pulses as present at \textsc{Gemini} ($\sim 40\,\mathrm{fs}$). The setup is similar to an autocorrelator and is optically gated by combining two beams in a non-linear medium. Typically a second-harmonic-generation crystal is the non-linear medium of choice. The produced second-harmonic radiation is then spectrally resolved (hence frequency-resolved) and provides information about the spectral phase.
 More details can be found in \cite{FROG} or, for instance, also in \cite{StreeterThesis}.
 \EliasComm{Mention dazzler for control and reference.}
 
@@ -57,11 +57,11 @@ In LWFA a short-pulse laser is focused down to reach high enough intensities to 
 For each of these applications it is important to optimise and characterise the size and spatial energy distribution of the focal spot. Combining this with a measurement of the temporal pulse shape, for instance using a FROG, then provides an intensity map of the laser pulse at focus.
 \vspace{\baselineskip}
 
-In this work a CCD camera (AVT Manta G-033B) is coupled to a near infrared (NIR) infinity-corrected apochromatic long-working-distance microscope objective (depending on the application Mitotoyo $\times10$ or $\times20$ magnification) to image the spot at its focal plane. 
+In this work a CCD camera (AVT Manta G-033B) is coupled to a near infrared infinity-corrected apochromatic long-working-distance microscope objective (depending on the application Mitotoyo $\times10$ or $\times20$ magnification) to image the spot at its focal plane. 
 A thin metal wire of $10's-100 \,\mathrm{\mu m}$ width is used to help define a focal plane.
 \vspace{\baselineskip}
 
-Due to the high intensity Gemini can reach the beam alignment and also the characterisation of the focal spot are performed with the CW mode or the attenuated low-power pulsed beam. Assuming the focal plane and general character of the spot remains the same, the energy of the actual focal spot on shot is then scaled from the low power image.
+Due to the high intensity \textsc{Gemini} can reach the beam alignment is performed in the CW mode and the focal spot is characterised with an attenuated low-power pulsed beam. Assuming the focal plane and general character of the spot remains the same in the attenuated beam, the energy of the actual focal spot on shot is then scaled from the low power image.
 \SMComm{Make sure you distinguish between CW alignment and pulsed/high power focal spot. CW and high power spots are not the same.}
 
 A real direct measurement of the actual focus at typical intensities used in wakefield experiments is very challenging. Recent attempts involved the full 3D characterisation of the wavefront of the collimated laser beam by applying an asymmetric Mach-Zehnder interferometer and scanning the entire beam profile over hundreds of shots \cite{TERMITES} or using a gas jet ionisation (REF HERE)\addref. 
@@ -90,14 +90,7 @@ As the exact size of the focal spot is important, the focal spot camera has to b
 \sin \theta = \frac{m \lambda}{d} \rightarrow x_m = m f \tan \theta \rightarrow x \approx \frac{f \lambda}{d}
 \end{equation}
 
-\iffalse
-\begin{figure}
-\centering
-\includegraphics[width=0.5\columnwidth]{FocalSpot_USAF_example.png}
-\caption{Example USAF.}
-\end{figure}
-\fi
-
+\SMComm{References for these things?}
 
 \subsubsection{Intensity Estimate}
 
@@ -118,10 +111,10 @@ In addition to ensuring that the beam propagation and source is as close to idea
 On the other hand, this also gives control to add aberrations and tailor the wavefront to specific applications that might benefit from this, e.g.  aberration \cite{Mangles2009_BETATRON}.
 \vspace{\baselineskip}
 
-At Gemini a Shack-Hartmann sensor (HASO DETAILS REF) was used. This type of wavefront sensor consists of an array of microlenses.
+At \textsc{Gemini} a Shack-Hartmann sensor (HASO DETAILS REF\addref{}) was used. This type of wavefront sensor consists of an array of microlenses.
 A HASO observes the temporally integrated wavefront profile of the laser pulse. Spatio-temporal couplings are not visible and have to be diagnosed differently, for instance by characterising the behaviour of the beam near its focus.
 \EliasComm{Either add reference for interference filters or if not done, maybe leave out.}
-One adaptive optic was an ILAO (mechanical motors, large stroke) made by the French company XXX, the other one is a piezo-activated AO made by Chris Hooker at RAL.
+One adaptive optic was an ILAO (mechanical motors, large stroke) made by the French company XXX, the other one is a piezo-activated AO made by Chris Hooker at RAL\addref{}.
 
 
 \section{Dual-Beam Timing Diagnostics}
@@ -139,12 +132,12 @@ Depending on the accuracy required different techniques can help measure the dif
 Photodiodes, spatial and spectral interferometry are introduced. This is not an exhaustive list and other methods, e.g. cross-correlator, are not introduced as they were not used explicitly in the experiments presented.
 \vspace{\baselineskip}
 
-At Gemini both laser beams originate from the same source (oscillator) and are hence `intrinsically' synchronised, which means that they are emitted/triggered at the same time, underlie the same jitter but do not shift relative to each other at the point of emission (SM: GRAMMAR). However, this does not mean that both beams are automatically synchronised at the point of interaction, since the arms take different pathways through the amplification and compression stage, and then finally follow different beam lines within the target chamber. The longer their separate paths the larger the potential impact of, for instance, vibrations and thermal effects can be. Incredibly small changes can cumulatively make a significant impact on the $\mathrm{fs}$-scale synchronisation required in some of the challenging experiments attempted at Gemini.
+At \textsc{Gemini} both laser beams originate from the same source (oscillator) and are hence `intrinsically' synchronised, which means that they are emitted/triggered at the same time, underlie the same jitter but do not shift relative to each other at the point of emission (SM: GRAMMAR). However, this does not mean that both beams are automatically synchronised at the point of interaction, since the arms take different pathways through the amplification and compression stage, and then finally follow different beam lines within the target chamber. The longer their separate paths the larger the potential impact of, for instance, vibrations and thermal effects can be. Incredibly small changes can cumulatively make a significant impact on the $\mathrm{fs}$-scale synchronisation required in some of the challenging experiments attempted at \textsc{Gemini}.
 \vspace{\baselineskip}
 
-`Timing' two beams means in this case that the relative path lengths are adjusted to compensate for the measured difference in the time of arrival at the interaction point. At Gemini larger distances (few nanoseconds or metres in distance) require moving optics physically to extend the beam path, smaller distances are finely adjusted by using a linear translation stage that adds or removes path length in double-pass at few femtosecond (micrometre) precision. This stage is on the `split-and-delay' (SAD) table in the LA3 laser area. The linear stage is a Newport XXX REF\addref.
+`Timing' two beams means in this case that the relative path lengths are adjusted to compensate for the measured difference in the time of arrival at the interaction point. At \textsc{Gemini} larger distances (few nanoseconds or metres in distance) require moving optics physically to extend the beam path, smaller distances are finely adjusted by using a linear translation stage that adds or removes path length in double-pass at few femtosecond (micrometre) precision. This stage is on the `split-and-delay' table in the LA3 laser area. The linear stage is a Newport XXX REFat XX precision\addnum\addref.
 
-\subsection{Diode Timing}
+\subsection{Photodiodes}
 
 Photodiodes are a useful and easy-to-use tool to measure the temporal separation of light signals on a nano- to picosecond scale.
 Rise and fall times for fast diodes are few tens of picoseconds placing the peak of the distribution within $\sim10\,\mathrm{ps}$ using an appropriate oscilloscope. 
@@ -154,34 +147,35 @@ Both laser pulses have to be overlapped at the designated point in space and the
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\columnwidth]{PhotoDiode_BW.jpg}
+\includegraphics[width=0.3\columnwidth]{PhotoDiode_BW.jpg}
 \caption{Photodiode.}
 \end{figure}
 
-In the experiments at the Gemini laser the fast EOT-4000 GaAs photodetector with a rise/fall time of $< 30\,\mathrm{ps}$\footnote{Details can be found on the Electro-Optics website. www.eotech.com} was used in conjunction with a Lecroy WaveMaster 813Zi-B oscilloscope ($>13\,\mathrm{GHz}$)\footnote{More details on Lecroy XX WEBSITE XX}. This limits the resolution of the signal to about XXX PS. The accuracy of the difference measurement is per measurement is a few picoseconds. If several measurements at different separations (using a delay stage to delay one laser arm) are taken the error can be reduced to an accuracy of XXX PS.
+In the experiments at the \textsc{Gemini} laser the fast EOT-4000 GaAs photodetector with a rise/fall time of $< 30\,\mathrm{ps}$\footnote{Details can be found on the Electro-Optics website. www.eotech.com} was used in conjunction with a Lecroy WaveMaster 813Zi-B oscilloscope ($>13\,\mathrm{GHz}$)\footnote{More details on Lecroy XX WEBSITE XX}. This limits the resolution of the signal to about XXX PS. The accuracy of the difference measurement is per measurement is a few picoseconds. If several measurements at different separations (using a delay stage to delay one laser arm) are taken the error can be reduced to an accuracy of XXX PS\addnum{}.
 The detectors were only used at air and are not compatible for vacuum use.
-\EliasComm{This is also as we need short and thin cables to make use of the fast oscilloscope and this would not work with a feedthrough.}
+\EliasComm{This is also as we need short and thin cables to make use of the fast oscilloscope and this would not work with a feedthrough. Why is this}
 \EliasComm{Add details here (see results chapter)}
 \EliasComm{Replace footnotes by references or similar as they look like squares etc.}
 \EliasComm{Add data (we have the excel sheets for this).}
+\EliasComm{Do we have proper data from the scope.}
+
 \subsection{Spatial Interferometry}
 
-\subsubsection{General}
+
 Diode timing is limited by the typical rise and fall times and the access to a fast oscilloscope.
 A different method that is more coupled to the pulse duration of the laser beams is spatial interferometry. 
-If both laser pulses have the same polarisation and are overlapped in space and time, both beams can interfere. 
+If both laser pulses have the same polarisation and are overlapped in space and time, they can interfere. 
 Due to the large bandwidth of the Ti:Sa laser pulses used in this context the coherence length is very short and interference will only take place over the combined pulse duration, i.e. a potentially small time window. This is why this method is a useful technique to achieve precise timing after using a diagnostic with a wider time window (but less precision) like the photodiodes introduced in the previous section.
 
 \SMComm{This sentence comes across as a bit confused.   Is it the pulse duration or the bandwidth that determines the coherence length? }
 \begin{figure}
 \centering
-\includegraphics[width=.75\columnwidth]{RR19_TCC.png}
 \includegraphics[height=0.4\columnwidth]{Fringes_spatial_F2F20.png}\includegraphics[trim={14cm 0 0 0}, clip,height=0.4\columnwidth]{Fringes_spatial_exp.png}
-\caption{RR19 TCC with spatial interferometry setup. Fringe simulation and experimental results for f/40 and f/2.}
+\caption{Fringe simulation and experimental results for f/40 and f/2.}
 \end{figure}
 
 
-\EliasComm{Add here an example for Gaussian beams and the equation for interference based on this.}
+\EliasComm{Add here an example for Gaussian beams and the equation for interference based on this. Proper explanation}
 
 \begin{equation}
 \boxed{I \sim |1+\cos(ky \sin\theta - \omega \Delta \tau + \phi )|}
@@ -199,8 +193,7 @@ In the experiments described in Chapters RR15 XX and RR19linICS XX spatial inter
 Both beams were reaching the interaction point at 180 degrees from each other. One f/2, the other f/40. A 90-degree knife-edge prism with reflective surface was driven in at the desired interaction point and used to deflect both beams collinearly onto the CCD chip of a camera, in this case equipped with a x10 long-working-distance microscope objective.
 
 The contrast of the interference pattern was adjusted by equalising the relative brightness of the beams with a combination of adjusting the distance of the camera to the prism edge taking advantage of the different focal lengths and by adjusting the rotation angle of the polariser as the beams are cross-polarised.
-
-These measurements were done using the pulsed low power beam at Gemini.
+These measurements were done using the pulsed low power beam at \textsc{Gemini}.
 \SMComm{Results?
 Can you show plot of fringe visibility v delay? 
 How accurately can you time beams?}
@@ -213,12 +206,12 @@ Synchronising two laser beams to each other or a laser with an electron beam in 
 Light moves slower through media than through vacuum. The group velocity is reduced to $v_g \approx c(1-1/2 (\omega_p/\omega)^2)$ or $v_g =c/\eta$.
 In experiment this means that introducing or removing media asymmetrically from beam paths will change the relative time of arrival.
 \SMComm{This is only for plasma.}
-Typical examples at Gemini are moving from air to vacuum (pumping down the vacuum chamber), removing or adding gate valves, or attenuating beams using glass slides, when switching power modes.
+Typical examples at \textsc{Gemini} are moving from air to vacuum (pumping down the vacuum chamber), removing or adding gate valves, or attenuating beams using glass slides, when switching power modes.
 
 \subsubsection{Shifts from Air to Vacuum}
 
 The refractive index, $\eta_0$, of vacuum is $\eta_0 = 1$.
-The refractive index of air at standard temperature and pressure for 800 nm is $\eta_{air} = 1.00027$ (REF NIST)\footnote{add REF here.}
+The refractive index of air at standard temperature and pressure for 800 nm is $\eta_{air} = 1.00027$ (REF NIST)\addref{}
 \begin{align}
 \Delta t &= \frac{d}{c} \left( \eta_{air} - \eta_{0}\right),\nonumber\\
 \Delta t  &\approx 0.9\,\mathrm{ps} \times \frac{d}{1\,\mathrm{m}},
@@ -227,13 +220,13 @@ The refractive index of air at standard temperature and pressure for 800 nm is $
 which means every metre of path length that is being shifted from air to vacuum will add $0.9\,\mathrm{ps}$ of time delay.
 If the beam path of the two beams are asymmetric, the difference in beam path times this change in time from air to vacuum will lead to a change in timing as well.
 
-At Gemini the driver beam typically covers a path of over 10 m distance as it includes long-focal-distance optics with $f = 6\,\mathrm{m}$ whilst the scatterer beam only covers about half of the distance. A difference in $5\,\mathrm{m}$, for instance, would then mean that the driver beam arrives at the interaction point $4.5\,\mathrm{ps}$ after the scatterer.
+At \textsc{Gemini} the driver beam typically covers a path of over 10 m distance as it includes long-focal-distance optics with $f = 6\,\mathrm{m}$ whilst the scatterer beam only covers about half of the distance. A difference in $5\,\mathrm{m}$, for instance, would then mean that the driver beam arrives at the interaction point $4.5\,\mathrm{ps}$ after the scatterer.
 \SMComm{Is this as important as you make it sound? Both beams are at air or both are at vacuum, you can’t have one at air while one is at vacuum. Another major issue is things shifting on pump down..   }
 \subsubsection{Gate valves}
 
-Another step in the pump-down process at Gemini is opening the gate valves that separate the target chamber, which is often at air or lower quality vacuum, from the relatively permanent and high quality vacuum of the laser compressors (two separate compressors).
+Another step in the pump-down process at \textsc{Gemini} is opening the gate valves that separate the target chamber, which is often at air or lower quality vacuum, from the relatively permanent and high quality vacuum of the laser compressors (two separate compressors).
 Once the vacuum in the target chamber reaches a sufficient quality and the turbo pumps are engaged, the gate valves are opened.
-The gate valves at Gemini are made out of sapphire glass but are of different thickness on each arm \cite{GEMINI_GATEVALVES}. The difference in thickness is around $60 \pm 3\,\mathrm{\mu m}$.
+The gate valves at \textsc{Gemini} are made out of sapphire glass but are of different thickness on each arm \cite{GEMINI_GATEVALVES}. The difference in thickness is around $60 \pm 3\,\mathrm{\mu m}$.
 
 The refractive index is 1.75 and 1.76 in ordinary and extraordinary axis at 800 nm. This means removing the gate valves will shift the relative time of arrival again by $150\,\mathrm{fs}$.
 \SMComm{Again - the crucial thing is the difference between the two gate valves,   }
@@ -242,11 +235,11 @@ The refractive index is 1.75 and 1.76 in ordinary and extraordinary axis at 800 
 
 The previous two examples can be cross-checked by repeating some of the timing procedures, for instance using spatial interferometry after the pump-down, add the correction factors and optimise the interference pattern again.
 
-In some cases, however, material might be inserted asymmetrically to attenuate the beams. At Gemini glass slides are available to attenuate beams by a factor $\sim 100$ and are used in conjunction with polarisers and waveplates to improve the contrast of the interference pattern.
+In some cases, however, material might be inserted asymmetrically to attenuate the beams. At \textsc{Gemini} glass slides are available to attenuate beams by a factor $\sim 100$ and are used in conjunction with polarisers and waveplates to improve the contrast of the interference pattern.
 The attenuators are $2\,\mathrm{mm}$ thick fused silica glass slides at 45 degrees with refractive index $\eta = 1.4533$\addref{} REF, introducing a $4.24\,\mathrm{ps}$ delay per attenuator (up to 2 per beam). In this setup the attenuators are identical and if an equal number are used per beam no measurable change in relative time of arrival is witnessed. An asymmetric number requires adjustments and in general if materials are inserted, it should be checked whether they might influence the time of arrival.
 \vspace{\baselineskip}
 
-Recently, the attenuators at Gemini have been matched with `compensator plates' that will be in the beam path when the attenuators are removed. The compensator plates and the attenuators are matched, such that introducing an attenuator should not change the delay at all and asymmetric attenuation also would not change the relative delay. The accuracy of this setup, however, also has to be investigated and quantified.
+Recently, the attenuators at \textsc{Gemini} have been matched with `compensator plates' that will be in the beam path when the attenuators are removed. The compensator plates and the attenuators are matched, such that introducing an attenuator should not change the delay at all and asymmetric attenuation also would not change the relative delay. The accuracy of this setup, however, also has to be investigated and quantified.
 \SMComm{A key question for me is accuracy,  if an attenuator in on arm was at 45 degrees, how far off would the other one have to be to shift timing by 45 fs? }
 \subsubsection{Laser-Laser to Beam-Laser Timing}
 
@@ -270,7 +263,7 @@ However, this assumes that the electron bunch does not have a spatio-temporal ex
 
 \subsubsection{Drifts in Timing}
 
-In addition to the examples mentioned so far, when trying to synchronise two laser pulses or a laser and an LWFA electron beam, one also has to consider the stability of the synchronisation. At Gemini, the laser pulses cover typically several 10's of metres distance in several rooms before finally being directed into the target area. Minor changes in the environment (humidity, temperature) can lead to expansion or contraction of optical tables and components leading to a drift of the alignment and the relative timing over a period of time. See \cite{Shalloo_GEMINIDRIFT} where the relative timing was measured and monitored over an extended period of time, highlighting the importance of a stable environment in the laser area and the target area.
+In addition to the examples mentioned so far, when trying to synchronise two laser pulses or a laser and an LWFA electron beam, one also has to consider the stability of the synchronisation. At \textsc{Gemini}, the laser pulses cover typically several 10's of metres distance in several rooms before finally being directed into the target area. Minor changes in the environment (humidity, temperature) can lead to expansion or contraction of optical tables and components leading to a drift of the alignment and the relative timing over a period of time. See \cite{Shalloo_GEMINIDRIFT} where the relative timing was measured and monitored over an extended period of time, highlighting the importance of a stable environment in the laser area and the target area.
 
 Whilst it is of utmost importance to minimise these effects by investing in climate-controlled laboratories, it also shows that at the femtosecond level of precision the actual on-shot measurement of the timing and alignment becomes important to gain real control over interactions.
 
@@ -325,7 +318,7 @@ The material applied is frequently a type of metal, varying from aluminium to st
 \begin{figure}
 \centering
 \includegraphics[height=0.35\columnwidth]{GasCell_Example_cut.png}\includegraphics[height=0.35\columnwidth]{conical_nozzle_prettypic.jpg}
-\caption{Gas targets under fire. Right: Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionized by the laser and lights up. Picture taken at Gemini, Central Laser Facility, in December 2015. Left: Gas Cell}
+\caption{Gas targets under fire. Right: Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionized by the laser and lights up. Picture taken at \textsc{Gemini}, Central Laser Facility, in December 2015. Left: Gas Cell}
 \end{figure}
 
 \subsubsection{Experimental Implementation}
@@ -564,7 +557,7 @@ ADD A REFERENCE THAT DESCRIBES THE PROCEDURE IN MORE DETAIL, ON ABSOLUTE CALIBRA
 \section{Gamma-ray Diagnostics}
 \label{Methods:Sec:GammaDiags}
 
-\subsection{Gamma-ray Scintillator Profile}
+\subsection{Scintillator Profile Screen}
 
 Once the energies reach the gamma-ray regime (> 1 MeV), even using an indirect-detection camera on axis becomes infeasible as photons will decay into secondary particles and radiation that will shower the camera and reduce its lifetime.
 
@@ -579,7 +572,7 @@ It is hence a useful diagnostic to not only confirm an interaction took place bu
 
 \subsubsection{Experimental Implementation}
 
-In these experiments caesium-iodide doped with thallium is used (TO DO WHAT REF NUM\addnum) frequently due to its high light yield. LANEX has typically a better spatial resolution due to its fine grain size ($\sim 100\,\mathrm{\mu m}$) but the energy deposition in the thin screens, especially at gamma-ray energies, is not sufficient to produce a lot of signal. Long CsI crystals give a pixelated response. LYSO also comes at a decent resolution but the light yield is lower. It is a fast scintillator but at lower repetition rates as at Gemini, this is not necessary and the noise levels can not be gated away as it is too close.
+In these experiments caesium-iodide doped with thallium is used (TO DO WHAT REF NUM\addnum) frequently due to its high light yield. LANEX has typically a better spatial resolution due to its fine grain size ($\sim 100\,\mathrm{\mu m}$) but the energy deposition in the thin screens, especially at gamma-ray energies, is not sufficient to produce a lot of signal. Long CsI crystals give a pixelated response. LYSO also comes at a decent resolution but the light yield is lower. It is a fast scintillator but at lower repetition rates as at \textsc{Gemini}, this is not necessary and the noise levels can not be gated away as it is too close.
 \SMComm{Sometimes the style is a bit to conversational.  “Comes at a decent resolution” is not very tight phrasing }
 \begin{figure}
 \centering

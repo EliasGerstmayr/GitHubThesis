@@ -90,7 +90,7 @@ In this experiment the electrons were injected through density perturbations in 
 We consider a dataset consisting of a series of shots at fixed conditions to investigate fluctuations in the accelerator performance. These electron beams were collided with the laser pulse and will in the following analysed in more detail for radiation production through inverse Compton scattering.
 The dataset consists of 386 shots with electron beams, taken at constant backing pressure of the gas jet and fixed blade position ($1.2\pm0.1\,\mathrm{mm}$ into the gas flow from the entry point of the driver beam). A waterfall plot of the in non-dispersion direction integrated electron spectra is shown in Figure \ref{linICS:Figs:fixed_waterfall}. Despite the constant conditions, the properties of the electron beams vary strongly from shot-to-shot and beams of a wide range of shapes, maximum energy and energy spread are measured. A few examples of the 2D electron spectra from the dataset are provided in Figure \ref{linICS:Figs:Elec_example}.
 The spectral bandwidth of the beams varies strongly with some exhibiting an almost flat spectrum spanning hundreds of MeV (see 4 left panels in Figure \ref{linICS:Figs:Elec_example}). These spectrally very wide electron beams show signatures of strong transverse oscillations which indicate their potential to act as a bright betatron source \cite{Corde2013_Rad}. In other instances electron beams with narrow energy spread around $1\,\mathrm{GeV}$ are measured (right panels in Figure \ref{linICS:Figs:Elec_example}). 
-
+\SMComm{Can you sort this not in shot number but laser energy or charge to see whether there is any systematics?}
 
 \begin{figure}
 \centering
@@ -112,10 +112,11 @@ The striking variability of the electrons produced in this dataset at seemingly 
 The key properties of the electron beams in this dataset are summarised in Figure \ref{linICS:Figs:Elec_histogram} in form of histograms showing charge, maximum electron energy, vertical (non-dispersion axis) divergence and beam pointing.
 The maximum energy of the electron beam, here defined as the energy when the spectral intensity reaches 10 percent of its peak value, measured on average $944\pm139\,\mathrm{MeV}$, with some shots reaching up to $1.3\,\mathrm{GeV}$. The charge of the beam varied in particular due to the varying spectral range of the bunch with a mean of $239 \pm 92\,\mathrm{pC}$.
 The divergence of the beams was measured to be $2.7\pm 2.5\,\mathrm{mrad}$ and the vertical position of the beam centroid was fluctuating by $2.2\,\mathrm{mrad}$. The indicated errors are the standard deviations from the on average measured value, i.e. the statistical error and not a measurement error.
+\SMComm{Use median, upper, lower quantiles etc. equivalent to standard deviation but here not normal. Overestimating error and implying sub-zero divergence.}
 \vspace{\baselineskip}
 
 The wide range of electron beams produced in this setup is interesting in the context of radiation production by linear inverse Compton scattering (ICS). Since the properties of the beams this accelerator generates vary strongly, the radiation these electron beams are capable to produce in a well-defined linear ICS interaction will also vary significantly. This means that this accelerator is in principle also able to produce a wide range of radiation spectra from broadband to strongly peaked radiation, but an increased control over the accelerator would be required to shape the spectral emission and develop a tunable radiation source that can be optimised for a respective application. 
-
+\SMComm{Check any correlation with laser energy or similar. Maybe add to histograms.}
 
 \section{Laser raster scan}
 \label{Chap:linICS:Sec:RasterScan}
@@ -153,11 +154,13 @@ If we assume that this method successfully determines the transverse extent of t
 \end{figure}
 
 In the raster scan presented in Figure \ref{linICS:Figs:GammaProfileRaster} and Figure \ref{linICS:Figs:GammaProfileRasterCounts} the interaction region and hence, following our argument, the combined size of the laser beam and the electron beam along with variations in the relative beam pointing is $400\pm100 \,\mathrm{\upmu m}$. The integrated gamma yield in Figure \ref{linICS:Figs:GammaProfileRasterCounts} also shows signs of a drop in intensity throughout the scan, potentially when crossing the hole in the beam. At an energy on-target of $9.73\pm0.15\,\mathrm{J}$ this amounts to an average $a_0 \approx 0.28 \pm 0.04$, where we assumed a perfect flat-top beam profile and hence ignored the reduction of the energy in the beam due to the hole in the $f/2$ OAP as this does not affect the photon density in the near-field. For an $f/2$ geometry this also indicates that the interaction occured at $\sim1.1\pm0.1\,\mathrm{mm}$ distance from the focal plane. Based on the alignment procedure in the experiment we suspect that the interaction occurs prior to the focus of the scattering beam (left hand side in Figure \ref{linICS:Figs:ShadowgraphyRaster}). In either case the interaction occurs in the plasma, so that the electron beam is only $\sim \mathrm{\upmu m}$ in size \cite{Weingartner2012_BUNCH} and spatial fluctuations due to pointing variations of the laser with a varying off-axis distribution due to betatron oscillations with betatron amplitudes of typically $r_\beta \sim \mathrm{\upmu m}$ \cite{Corde2013_Rad}. Since the beam pointing of the $f/2$ beam is demagnified due to the short focal distance, the raster scan mainly reflects the dimensions of the scattering beam and this is hence a suitable method to determine the size of the laser beam.
-
-\subsubsection{Explaining offset}
+\SMComm{Find a better metric. number of successful shots, Qgamma relation or similar. This could then also be used for Matt's Bayesian.}
+\SMComm{Ask Matt about proper Bayesian paper.}
+\SMComm{Replot with other scaling as second?}
 
 The gas jet expands from its nozzle opening diameter of $15$ mm to a length of approximately $17.3$ mm (measured by the length of the plasma channel on the shadowgram). This means based on this scan the interaction point is defined as intended by the alignment procedure, the inner edge of the gas nozzle, but the gas jet has expanded. In addition, the focal plane of the laser has changed. We have to keep in mind that translating the OAP in longitudinal direction does not change the intensity of the interaction at first order as we shift the interaction plane along with the intensity plane when doing so. If we want to change the intensity at the interaction we have to change the relative delay of the two laser pulses.
 In brief, shifting the longitudinal OAP position and the focal plane in space only changes the plane of interaction at roughly the same intensity, whereas shifting the delay of the beams shifts both the interaction plane and the intensity. The mismatch of the interaction plane and the focal plane might be due to a misunderstanding of these two mechanisms and we mistakenly `compensated' for the shift in focus and fixed the interaction plane, rather than the intensity at the interaction.
+\SMComm{Confirm with Matt and Brendan whether this makes sense and matches their memory.}
 
 \begin{figure}
 \centering
@@ -392,6 +395,7 @@ C: Fitted mono-energetic response: 11 MeV. Average energy 11.4 MeV}
 \subsubsection{Nonlinearity}
 \EliasComm{This needs to be re-written once I have more results on this.}
 \EliasComm{Try to find systematic offset and then see whether the small change in the r015 data is weakly nonlinear.}
+\SMComm{Maybe remove nonlinearity and just explain this could be why.}
 In this scenario the interaction is clearly linear and we expect that variations of the emitted gamma radiation due to high-intensity effects such as higher harmonic generation and redshifting to be negligible. Later in Chapter \ref{Chap:RR15} we will consider the highly non-linear case where the emitted spectrum blends together to a broadband synchrotron-like emission spectrum. The intermediate region between the two limits of purely linear and highly non-linear is interesting and could be used to put a bound on the intensity at the interaction based on the emission spectrum.
 
 

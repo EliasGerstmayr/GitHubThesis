@@ -13,6 +13,12 @@ This leads over to the topic of radiation reaction, the knock-back force a charg
 
 Finally, other fundamental QED processes such as pair production, annihilation and light-light scattering is discussed.
 
+\SMComm{Best way to structure: instead of many equations and long cross sections, try to find scaling laws in terms of relevant quantities of the experiment (yield, energy etc.). Move equations to appendix.}
+\SMComm{Split theory in two parts.}
+\EliasComm{Restructure appendix.}
+\SMComm{Consider removing: cylindrical symmetry fields, axial, Debye length, plasma formation, quasi-neutrality.}
+\SMComm{Consider dropping some wakefield stuff.}
+
 \section{Single particle motion in an EM field}
 
 The Lagrangian for a relativistic particle in an electromagnetic field with the potentials $\Phi$ and $\mathbf{A}$ is given by \cite{Jackson}
@@ -443,7 +449,7 @@ The first radiation sources considered are synchrotron radiation with the specia
 We then investigate Compton scattering and its classical low-limit Thomson scattering, where a photon scatters off an electron at rest. After deriving the cross section and energy spectra we consider the special case of inverse Compton scattering, where the photon scatters from a relativistic electron and the radiation gains a significant amount of energy proportional to the electron energy due to the relativistic Doppler effect. At high field strengths multiple photons can interact in a nonlinear interaction to produce higher harmonic radiation, called nonlinear inverse Compton scattering or relativistic nonlinear Thomson scattering. The trajectories of the electrons in these processes are also described by a figure-of-eight motion as the electrons are now in a laser wiggler, where the wiggler parameter, $K$, is replaced by the normalised vector potential, $a_0$.
 
 Finally, we will introduce the process of bremsstrahlung where electrons interact with the nuclear Coulomb field to produce X-ray and gamma radiation.
-
+\EliasComm{Maybe move classical and quantum treatment to start of radiation. Including Furry picture, nonlinear effects...}
 A review of radiation mechanisms and sources in the context of wakefield accelerators can be found in \cite{Corde2013_Rad} and \cite{Albert2016_APP}.
 
 \subsection{Synchrotron Radiation}
@@ -791,7 +797,7 @@ which for higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the ra
 \includegraphics[width=.5\columnwidth]{ICS_Divergence_ElecEnergy.pdf}\includegraphics[width=.5\columnwidth]{ICS_Redshift_a0.pdf}
 \caption{Divergence (left) and redshift for $a_0$.}
 \end{figure}
-
+\SMComm{Need more details for plot here.}
 \subsubsection{Cross-Section}
 
 \begin{figure}
@@ -825,7 +831,7 @@ Q^2 &= (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
 
 \EliasComm{Reproduce KN eqns at low intensities. Also both should converge to the same result at $n=1$ as we are approaching the polarisation-independent KN eqn.}
 \EliasComm{Make plot of cross sections to show the lobes (odd on axis and even off-axis).}
-
+\SMComm{Too many equations.}
 \subsubsection{Emission Spectra}
 
 \EliasComm{Show example of harmonics and merging to synchrotron.}
@@ -931,7 +937,7 @@ L &= \ln \left( \frac{\gamma \gamma' + u u'/c^2 -1}{\hbar \omega/m_e c^2}\right)
 \end{align*}
 Primed quantities denote post-interaction values and $\gamma m_e c^2 = \hbar \omega + \gamma' m_e c^2$, assuming all energy is transferred into radiation. 
 The differential equation in the ultra-relativistic limit including screening and electron contributions is given in the Appendix in Section \ref{Appendix:Brems_with_Screening}.
-
+\SMComm{Move to appendix and only scalings.}
 
 In the limit $\hbar \omega \ll E$ and $E, E' \gg Mc^2$ this simplifies to \cite{Jackson}:
 \begin{equation}
@@ -1256,6 +1262,7 @@ E_{3,4} &= \gamma_{CM} \left( E^{CM}_{3,4} + \bm{\beta}_{CM} \cdot \mathbf{p}^{C
 \end{align}
 with $\gamma_{CM} = (E_1 + E_2)/\sqrt{s}$ and $\bm{\beta}_{CM} = (\mathbf{p}_1 + \mathbf{p}_2)/(E_1 + E_2)$.
 Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB} (top, right) shows the angular energy distribution in the laboratory frame for different ratios of $E_1/E_2$, with $E_1 = 300\MeV$. For $E_1 = E_2$ the laboratory frame and the CM frame are identical (blue). Here the emitted energies are isotropic, but for $s > 1$ preferentially emitted at $\theta = 0, \pi$. At a fixed value of $E_1$ and $E_1 > E_2$, a decreasing energy of the second photon, $E_2$, i.e. $E_2/E_1 <1$, higher energies are emitted in forwards direction as momentum has to be conserved. Combined with the differential cross section we are expecting that particles of energy $\sim E_1$ are emitted predominantly in forwards direction. Note that the energy distribution and the differential cross section are identical for electrons and positrons.
+\SMComm{Make plot easier to understand. Maybe switch around 90 degrees and 45 degrees. Link one to ICS scatter experiments and the other is our scenario.}
 
 The two panels at the bottom of Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB} show the energy distribution between the two particles in the laboratory frame at a fixed scattering angle in the CM frame of $\theta_{CM} = 45^\circ$ (left) and $90^\circ$ (right) for three ratios of $E_1/E_2$. For $E_1 = E_2$ the particles are emitted back-to-back as the CM frame and the laboratory are equivalent. With increasing asymmetry as $E_2/E_1 < 1$ the centre-of-mass velocity $\beta_{CM}$ increases in forwards direction and results in a head-light effect that rotates the momentum vectors towards $\theta = 0$. For $\theta_{CM} = 45^\circ$ we see that due to the relativistic boost the backwards emitted particle (red) carries a small fraction of the total energy whilst the forwards emitted particle carries most. In the case of $\theta_{CM} = 90^\circ$, on the other hand, the transformation back into the laboratory frame does not affect the overall zero momentum sum as the angle is perpendicular to the, such that both particles carry the same energy and are emitted at the same relative angle to the zero axis. For $s \gg 1$ emissions perpendicular to the main axis have a much lower probability than on-axis emissions.
 
