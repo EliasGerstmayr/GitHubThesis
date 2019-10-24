@@ -43,43 +43,43 @@ Warning--empty journal in Heitler1954_BH
 Warning--can't use both volume and number fields in Fedotov2017_NAROZHNY
 You've used 268 entries,
             2354 wiz_defined-function locations,
-            2320 strings with 75864 characters,
-and the built_in function-call counts, 104792 in all, are:
-= -- 8807
-> -- 2251
-< -- 225
-+ -- 1016
-- -- 508
-* -- 5345
-:= -- 11086
-add.period$ -- 893
+            2318 strings with 75668 characters,
+and the built_in function-call counts, 104602 in all, are:
+= -- 8787
+> -- 2246
+< -- 224
++ -- 1014
+- -- 507
+* -- 5332
+:= -- 11065
+add.period$ -- 892
 call.type$ -- 268
 change.case$ -- 25
 chr.to.int$ -- 0
 cite$ -- 279
-duplicate$ -- 10013
-empty$ -- 9480
-format.name$ -- 727
-if$ -- 24768
+duplicate$ -- 9993
+empty$ -- 9471
+format.name$ -- 725
+if$ -- 24720
 int.to.chr$ -- 0
 int.to.str$ -- 268
-missing$ -- 2025
+missing$ -- 2021
 newline$ -- 1516
 num.names$ -- 268
-pop$ -- 3244
+pop$ -- 3243
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4256
+skip$ -- 4251
 stack$ -- 0
-substring$ -- 5992
-swap$ -- 7291
-text.length$ -- 225
+substring$ -- 5977
+swap$ -- 7274
+text.length$ -- 224
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 11
-while$ -- 778
+while$ -- 776
 width$ -- 271
-write$ -- 2955
+write$ -- 2953
 (There were 11 warnings)

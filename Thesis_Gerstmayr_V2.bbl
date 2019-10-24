@@ -15,6 +15,13 @@ A.~Di~Piazza et~al.
 \newblock \doi{10.1103/PhysRevA.98.012134}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.98.012134}
 
+\bibitem{Jackson}
+J.~D. Jackson.
+\newblock \enquote{Classical Electrodynamics, 3rd ed.}
+\newblock \emph{American Journal of Physics}, 67, (1999), pp. 841--842.
+\newblock \doi{10.1119/1.19136}.
+\newline\urlprefix\url{https://doi.org/10.1119/1.19136}
+
 \bibitem{Streeter2018_TEMPFEEDBACK}
 M.~Streeter et~al.
 \newblock \enquote{Temporal feedback control of high-intensity laser pulses to
@@ -34,13 +41,6 @@ R.~Shalloo et~al.
 C.~N. Danson et~al.
 \newblock \enquote{Petawatt and exawatt class lasers worldwide}.
 \newblock \emph{High Power Laser Science and Engineering}, 7.
-
-\bibitem{Jackson}
-J.~D. Jackson.
-\newblock \enquote{Classical Electrodynamics, 3rd ed.}
-\newblock \emph{American Journal of Physics}, 67, (1999), pp. 841--842.
-\newblock \doi{10.1119/1.19136}.
-\newline\urlprefix\url{https://doi.org/10.1119/1.19136}
 
 \bibitem{ThomasThesis}
 A.~G.~R. Thomas.
@@ -354,11 +354,24 @@ K.~Schmid et~al.
 \newblock \doi{10.1103/PhysRevSTAB.13.091301}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.13.091301}
 
+\bibitem{Corde2013_Rad}
+S.~Corde et~al.
+\newblock \enquote{Femtosecond x rays from laser-plasma accelerators}.
+\newblock \emph{Rev. Mod. Phys.}, 85, (2013), pp. 1--48.
+\newblock \doi{10.1103/RevModPhys.85.1}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/RevModPhys.85.1}
+
 \bibitem{Albert2016_APP}
 F.~Albert and A.~G. Thomas.
 \newblock \enquote{Applications of laser wakefield accelerator-based light
   sources}.
 \newblock \emph{Plasma Physics and Controlled Fusion}, 58, (2016), p. 103001.
+
+\bibitem{Mangles2009_BETATRON}
+S.~Mangles et~al.
+\newblock \enquote{Controlling the spectrum of x-rays generated in a
+  laser-plasma accelerator by tailoring the laser wavefront}.
+\newblock \emph{Applied Physics Letters}, 95, (2009), p. 181106.
 
 \bibitem{Compton1923_Compton}
 A.~H. Compton.
@@ -388,25 +401,11 @@ T.~G. Blackburn.
 \newblock \emph{QED effects in laser-plasma interactions}.
 \newblock Ph.D. thesis, Oxford University, UK, 2015.
 
-\bibitem{Bulanov2011_LADLL}
-S.~V. Bulanov et~al.
-\newblock \enquote{Lorentz-Abraham-Dirac versus Landau-Lifshitz radiation
-  friction force in the ultrarelativistic electron interaction with
-  electromagnetic wave (exact solutions)}.
-\newblock \emph{Phys. Rev. E}, 84, (2011), p. 056605.
-\newblock \doi{10.1103/PhysRevE.84.056605}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.84.056605}
-
 \bibitem{DiPiazza2012_ICS}
 A.~Di~Piazza et~al.
 \newblock \enquote{Extremely high-intensity laser interactions with fundamental
   quantum systems}.
 \newblock \emph{Reviews of Modern Physics}, 84, (2012), p. 1177.
-
-\bibitem{LandauLifschitz}
-L.~D. Landau and E.~M. Lifshitz.
-\newblock \emph{The Classical Theory of Fields}.
-\newblock Butterworth-Heinemann, 1975.
 
 \bibitem{Thomas2012_LL}
 A.~G.~R. Thomas et~al.
@@ -417,7 +416,7 @@ A.~G.~R. Thomas et~al.
 \newblock \doi{10.1103/PhysRevX.2.041004}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevX.2.041004}
 
-\bibitem{Bulanov2011_LL}
+\bibitem{Bulanov2011_LADLL}
 S.~V. Bulanov et~al.
 \newblock \enquote{Lorentz-Abraham-Dirac versus Landau-Lifshitz radiation
   friction force in the ultrarelativistic electron interaction with
@@ -426,12 +425,19 @@ S.~V. Bulanov et~al.
 \newblock \doi{10.1103/PhysRevE.84.056605}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.84.056605}
 
-\bibitem{Baier1991_GAUNT}
-V.~Baier, V.~Katkov, and V.~Strakhovenko.
-\newblock \enquote{Quasiclassical theory of radiation and pair creation in
-  crystals at high energy}.
-\newblock \emph{Radiation Effects and Defects in Solids}, 122, (1991), pp.
-  527--556.
+\bibitem{LandauLifschitz}
+L.~D. Landau and E.~M. Lifshitz.
+\newblock \emph{The Classical Theory of Fields}.
+\newblock Butterworth-Heinemann, 1975.
+
+\bibitem{Bulanov2011_LL}
+S.~V. Bulanov et~al.
+\newblock \enquote{Lorentz-Abraham-Dirac versus Landau-Lifshitz radiation
+  friction force in the ultrarelativistic electron interaction with
+  electromagnetic wave (exact solutions)}.
+\newblock \emph{Phys. Rev. E}, 84, (2011), p. 056605.
+\newblock \doi{10.1103/PhysRevE.84.056605}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.84.056605}
 
 \bibitem{Ridgers2017_QRR}
 C.~Ridgers et~al.
@@ -547,6 +553,11 @@ C.~J. Hooker et~al.
 \newblock In \enquote{Conference on Lasers and Electro-Optics}, Optical Society
   of America, 2008.
 
+\bibitem{GeminiWebsite}
+C.~L. Facility.
+\newblock \enquote{The Astra Gemini Facility}.
+\newline\urlprefix\url{https://www.clf.stfc.ac.uk/Pages/The-Astra-Gemini-Facility.aspx}
+
 \bibitem{FROG}
 R.~Trebino.
 \newblock \emph{Frequency-resolved optical gating: the measurement of
@@ -564,12 +575,6 @@ G.~Pariente et~al.
 \newblock \enquote{Space--time characterization of ultra-intense femtosecond
   laser beams}.
 \newblock \emph{Nature Photonics}, 10, (2016), p. 547.
-
-\bibitem{Mangles2009_BETATRON}
-S.~Mangles et~al.
-\newblock \enquote{Controlling the spectrum of x-rays generated in a
-  laser-plasma accelerator by tailoring the laser wavefront}.
-\newblock \emph{Applied Physics Letters}, 95, (2009), p. 181106.
 
 \bibitem{GEMINI_GATEVALVES}
 D.~Carroll and C.~D. Murphy.
@@ -639,13 +644,6 @@ S.~W. Jolly et~al.
 \newblock \emph{Review of Scientific Instruments}, 83, (2012), p. 073503.
 \newblock \doi{10.1063/1.4731782}.
 \newline\urlprefix\url{https://doi.org/10.1063/1.4731782}
-
-\bibitem{FLASH}
-B.~Fryxell et~al.
-\newblock \enquote{FLASH: An adaptive mesh hydrodynamics code for modeling
-  astrophysical thermonuclear flashes}.
-\newblock \emph{The Astrophysical Journal Supplement Series}, 131, (2000), p.
-  273.
 
 \bibitem{FOURIER}
 R.~Bracewell.
@@ -867,13 +865,6 @@ J.~Kr{\"a}mer et~al.
 \newblock \enquote{Making spectral shape measurements in inverse Compton
   scattering a tool for advanced diagnostic applications}.
 \newblock \emph{Scientific reports}, 8, (2018), p. 1398.
-
-\bibitem{Corde2013_Rad}
-S.~Corde et~al.
-\newblock \enquote{Femtosecond x rays from laser-plasma accelerators}.
-\newblock \emph{Rev. Mod. Phys.}, 85, (2013), pp. 1--48.
-\newblock \doi{10.1103/RevModPhys.85.1}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/RevModPhys.85.1}
 
 \bibitem{Kevlar}
 DuPont.
@@ -1390,6 +1381,13 @@ M.~Burza et~al.
   (2013), p. 11301.
 \newblock \doi{10.1103/physrevstab.16.011301}.
 \newline\urlprefix\url{https://journals.aps.org/prab/pdf/10.1103/PhysRevSTAB.16.011301}
+
+\bibitem{Baier1991_GAUNT}
+V.~Baier, V.~Katkov, and V.~Strakhovenko.
+\newblock \enquote{Quasiclassical theory of radiation and pair creation in
+  crystals at high energy}.
+\newblock \emph{Radiation Effects and Defects in Solids}, 122, (1991), pp.
+  527--556.
 
 \bibitem{Shen1972_STRAGGLING}
 C.~S. Shen and D.~White.
