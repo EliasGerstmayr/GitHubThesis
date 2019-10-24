@@ -1,0 +1,465 @@
+\chapter{Appendix}
+
+\section{Notation and Glossary}
+
+Vectors will be noted in bold letters. 
+
+In equations using variable names $\times$ will be the cross product and $\cdot$ will notate the dot product. 
+In occasions using specific numbers as in $3 \times 10^{18}$ the $\times$ will just be a normal multiplication.
+
+\section{Nabla Operator and Vector Identities}
+
+In Cartesian coordinates
+\begin{equation}
+\nabla = (\partial x, \partial y, \partial z)^t
+\end{equation}
+
+In cylindrical coordinates
+
+In spherical coordinates
+\subsection{Convective derivative}
+
+\begin{equation}
+\frac{\mathrm{d}}{\mathrm{d}t} y = \frac{\partial y}{\partial} \mathbf{u} \cdot \nabla y,
+\end{equation}
+with $y = y(\mathbf{x},t)$ and velocity $\mathbf{u}(\mathbf{x},t)$
+
+\subsection{IDENTITY}
+Derivation of the identity:
+
+\begin{equation}
+\mathbf{v} \cdot \nabla \mathbf{p} = \nabla \mathbf{p} \cdot \mathbf{v} - \mathbf{v} \times (\nabla \times \mathbf{p}),
+\end{equation}
+
+with the covariant derivative $\nabla \mathbf{p}$.
+
+\begin{equation}
+A = B + C
+\end{equation}
+
+A:
+\begin{equation}
+\mathbf{v} \cdot \nabla \mathbf{p} = \left( \frac{\partial p_i}{\partial x_j}\right)_{ij}
+\end{equation}
+
+B:
+\begin{equation}
+\mathbf{v} \cdot \nabla \mathbf{p} = \left(v_i \frac{\partial p_i}{\partial x_j}\right)_j
+\end{equation}
+
+C:
+\begin{equation}
+\mathbf{v} \times (\nabla \times \mathbf{p}) = v_m \epsilon_{lmi} \epsilon_{ijk} \frac{\partial p_k}{\partial x_j},
+\end{equation}
+using the cyclic properties of the Levi-Civita symbol and the identity
+\begin{equation}
+\epsilon_{ilm} \epsilon_{ijk} = \delta_{lj} \delta_{mk} - \delta_{lk} \delta_{mj}
+\end{equation}
+the equation becomes
+\begin{equation}
+v_m \left( \delta_{lj}\delta_{mk} - \delta_{lk} \delta_{mj}\right) \frac{\partial p_k}{\partial x_j} = v_k \frac{\partial p_k}{\partial x_l} - v_m \frac{\partial p_l}{\partial x_m}
+\end{equation}
+
+
+
+\subsection{Curl of a gradient}
+\label{Appendix:VectorIdentities:CurlGradZero}
+The curl of a gradient is always zero.
+
+For a scalar function $f(x,y,z)$, the gradient in Cartesian coordinates is
+\begin{equation}
+\nabla f(x,y,z) = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z}\right)^t,
+\end{equation}
+where $\nabla f$ is now a vector field, $\mathbf{F} = \left( F_1, F_2, F_3\right)^t$. The curl of $\mathbf{F}$, $\nabla \times \mathbf{F}$ is then
+\begin{equation}
+\nabla \times \mathbf{F} = \left(\frac{\partial F_3}{\partial y} - \frac{\partial F_2}{\partial z}, \frac{\partial F_1}{\partial z} - \frac{\partial F_3}{\partial x}, \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y}\right),
+\end{equation}
+or again in terms of $f(x,y,z)$:
+\begin{equation}
+\nabla \times \nabla f = \left(\frac{\partial^2 f}{\partial y \partial z} - \frac{\partial^2 f}{\partial z \partial y}, \frac{\partial^2 f}{\partial z \partial x} - \frac{\partial^2 f}{\partial x \partial z}, \frac{\partial^2 f}{\partial x \partial y} - \frac{\partial^2 f}{\partial y \partial x}\right).
+\end{equation}
+If $f$ is twice continuously differentiable, the order of the derivatives is interchangeable and $\nabla \times \nabla f = \mathbf{0}$.
+
+\section{Maxwell's equations}
+
+In differential form
+
+\begin{align}
+\nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0}\\
+\nabla \cdot \mathbf{B} &= 0\\
+\nabla \times \mathbf{E} &= - \frac{\partial \mathbf{B}}{\partial t}\\
+\nabla \times \mathbf{B} &= \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}
+\end{align}
+
+In integral form
+
+Combining these:
+
+Wave equations.
+
+\section{Frames of reference}
+
+\subsection{Relativistic Transformations}
+
+Boosts
+
+
+\subsection{Rest frame}
+
+\subsection{Center-of-mass frame}
+
+Defined by $\mathbf{p_1} = - \mathbf{p_2}$, so that for scattering events $2 \rightarrow 2$ also $\mathbf{p_3} = -\mathbf{p_4}$.
+
+In the special case $m_1 = m_2$, and $m_3 = m_4$, we also have $E^{CM}_1 = E^{CM}_2$ and $E^{CM}_4 = E^{CM}_4$.
+
+The centre of mass energy 
+\begin{equation}
+s = \frac{E_1 E_2 (1-\cos \theta)}{4m^2_e c^4}
+\end{equation}
+
+
+\subsubsection{Scattering angle}
+
+The scattering angle in the CM frame, $\theta_{CM}$, be defined as 
+\begin{equation}
+\mathbf{p} \cdot \mathbf{p}' = |\mathbf{p}| \cdot |\mathbf{p}'| \cos \theta_{CM}
+\end{equation}
+
+The angle be defined as 
+\begin{equation}
+\cos \theta_{CM} = \frac{s (t-u) + (m^2_1 - m^2_2)(m^2_3 - m^2_4)}{\sqrt{\lambda(s,m^2_1,m^2_2)}\sqrt{\lambda(s,m^2_3,m^2_4)}},
+\end{equation}
+where 
+\begin{equation}
+\lambda(a,b,c) = a^2 - 2a(b+c) + (b-c)^2,
+\end{equation}
+which is symmetric under $a \leftrightarrow b \leftrightarrow c$ and asymptotic behaviour $a \gg b,c: \lambda(a,b,c) \rightarrow a^2$.
+For photons $m = 0$, so that $\lambda(a,b,c) = a^2$
+
+
+\section{Radiation Integrals}
+
+\subsection{Bessel functions}
+
+Functions solving the differential equations ....
+
+The Bessel function of first order transforms:
+...
+
+The generalized Bessel function
+\begin{equation}
+J_n(x,y) = \Sigma 
+\end{equation}
+
+Recursion
+
+First order for radiation integrals (see Synchrotron/Betatron and in generalized form ICS)
+
+
+\subsection{Lienard Wiechert potentials}
+Lienard Wiechart potentials and fields.
+
+Jackson \cite{Jackson}:
+\begin{equation}
+\mathbf{E} (\mathbf{r}, t) = \frac{e}{4 \pi \epsilon_0} \left[\frac{\mathbf{n}-\mathbf{\beta}}{\gamma^2 R^2 (1-\mathbf{\beta} \cdot \mathbf{n})^3}+\frac{\mathbf{n}\times\left[(\mathbf{n}-\mathbf{\beta})\times\dot{\mathbf{\beta}}\right]}{cR(1-\mathbf{\beta}\cdot\mathbf{n})^3}\right]_{retarded}
+\end{equation}
+
+\begin{equation}
+\mathbf{B}(\mathbf{r},t) = \frac{\mathbf{n}\times\mathbf{E}}{c}
+\end{equation}
+
+Poynting vector
+\begin{equation}
+\mathbf{S} = \mu_0^{-1} \mathbf{E}\times\mathbf{B} = (c \mu_0)^{-1} \mathbf{E} \times \mathbf{n} \times \mathbf{E}
+\end{equation}
+
+\begin{equation}
+[\mathbf{S} \cdot \mathbf{n}]_{retarded} = \frac{e^2}{16 \pi c \epsilon_0} \left[ \frac{1}{R^2}|\frac{\mathbf{n} \times [(\mathbf{n}-\mathbf{\beta})\times\dot{\mathbf{\beta}}]}{(1-\mathbf{\beta}\cdot \mathbf{n})^3}|^2\right]_{retarded}
+\end{equation}
+
+\begin{equation}
+\frac{dP(t)}{d\Omega} = R^2 [\mathbf{S}\cdot\mathbf{n}]_{retarded}
+\end{equation}
+
+Total power radiated:
+\begin{equation}
+P = \frac{e^2 \gamma^6}{6 \pi c \epsilon_0} \left( |\mathbf{\dot{\beta}}|^2 - |\mathbf{\beta} \times \dot{\mathbf{\beta}}|^2\right)
+\end{equation}
+
+%\begin{equation}
+%\frac{d^2 I}{d\omega d\Omega} = \frac{e^2 \omega^2}{16 \pi^3 c \epsilon_0} |\int_{-\inf}^\inf \mathbf{n} \times (\mathbf{n} \times \mathbf{\beta}) e^{i\omega (t'- \mathbf{n}\cdot\mathbf{r}(t')/c)} dt|^2
+%\end{equation}
+
+\section{Feynman diagrams and convention}
+
+\subsection{Feynman rules for QED}
+
+Photon rules:
+
+New vertex $- ie \gamma^\mu$
+
+Photon propagator $= \frac{-ig_{\mu\nu}}{q^2 + i\epsilon}$
+
+External photon lines $ =\epsilon_\mu (p)$ and $=\epsilon^\ast_\mu (p)$
+
+Fermion rule
+
+Vertex $=-ig$
+
+Propagator $=\frac{i(\cancel(p) + m)}{p^2 - m^2 + i\epsilon}$
+
+External legs fermion $u^s (p)$ and $\bar{u}^s (p)$
+
+External legs antifermion $\bar{v}^s (k)$ and $v^s(k)$
+
+Impose momentum conservation at each vertex
+
+Integrate over each undetermined loop momentum
+
+Figure out overall sign of diagram
+
+\subsection{Mandelstam variables}
+
+\begin{align}
+s & = (p + p')^2 &= (k + k')^2; \nonumber\\
+t &= (k-p)^2 &= (k' - p')^2; \nonumber\\
+u &= (k'-p)^2 &= (k-p')^2.
+\end{align}
+
+
+\subsection{Trace Identities}
+
+From \cite{PeskinSchroeder}:
+
+Trace theorems:
+\begin{align*}
+tr(\mathbf{1}) &= 4\\
+tr(any~odd~number~of~\gamma s) &= 0\\
+tr(\gamma^\mu \gamma^\nu) = 4 g^{\mu \nu}\\
+tr(\gamma^\mu \gamma^\nu \gamma^\rho \gamma^\sigma) &= 4(g^{\mu \nu} g^{\rho \sigma} - g^{\mu \rho} g^{\nu \sigma} + g^{\mu \sigma} g^{\nu\rho})\\
+tr(\gamma^5) &= 0\\
+tr(\gamma^\mu \gamma^\nu \gamma^5) &= 0\\
+tr(\gamma^\mu \gamma^\nu \gamma^\rho \gamma^\sigma \gamma^5) = -4i \epsilon^{\mu \nu \rho \sigma}.
+\end{align*}
+
+Reversal of orders is allowed within a trace:
+\begin{equation}
+tr(\gamma^\mu \gamma^\nu \gamma^\rho \gamma^\sigma ...) = tr(...\gamma^\sigma \gamma^\rho\gamma^\nu \gamma^\mu).
+\end{equation}
+
+Eliminating dotted $\gamma$-matrices:
+\begin{align*}
+\gamma^\mu \gamma_\mu = g_{\mu \nu}\gamma^\mu \gamma^\nu = \frac{1}{2}g_{\mu \nu}\lbrace\gamma^\mu,\gamma^\nu\rbrace = g_{\mu \nu} g^{\mu \nu} 4.
+\end{align*}
+
+Contraction identities:
+\begin{align*}
+\gamma^\mu \gamma^\nu \gamma_\mu &= - 2\gamma^\nu\\
+\gamma^\mu \gamma^\nu \gamma^\rho \gamma_\mu &= 4 g^{\nu \rho}\\
+\gamma^\mu \gamma^\nu \gamma^\rho \gamma^\sigma \gamma_\mu = - 2\gamma^\sigma \gamma^\rho \gamma^\nu
+\end{align*}
+\subsection{Other identities}
+
+\begin{align*}
+\sum u^s(p) \bar{u}^s (p) &= \cancel{p} + m \\
+\sum v^s (p) \bar{v}^s (p) &= \cancel{p} - m.
+\end{align*}
+
+\subsection{Calculating Matrix Elements from Feynman diagrams}
+
+
+\section{Cross sections for fundamental QED processes}
+
+\subsection{Derivation of the Klein-Nishina equation}
+\label{Appendix:QEDDeriv_KleinNishina}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\columnwidth]{Compton_Feyn1.pdf}\includegraphics[width=0.4\columnwidth]{Compton_Feyn2.pdf}
+\caption{Feynman diagrams for Compton scattering. Time axis from left to right. s- and u-channel.}
+\label{Appendix:Figs:ComptonScatter_Feynman}
+\end{figure}
+
+In this section the Klein-Nishina equation is derived explicitly by evaluating the matrix element of the lowest order Feynman diagrams contributing to Compton scattering (see Figure \ref{Appendix:Figs:ComptonScatter_Feynman}). The cross section combines the kinematics of the process with the matrix element which includes the physics of the interaction. The following derivation is based on \cite{PeskinSchroeder} and \cite{Schwartz}.
+
+Based on the two Feynman diagrams in Figure \ref{Appendix:Figs:ComptonScatter_Feynman} and using the Feynman rules introduced in Section\addnum{} we find the following expression for the matrix element:
+
+\begin{align}
+iM &= \bar{u}(p')(-ie\gamma^\mu)\epsilon_\mu^*(k') \frac{i(\cancel{p} + \cancel{k} + m)}{(p+k)^2 - m^2}(-ie\gamma^\nu)\epsilon_\nu(k)u(p)\nonumber\\
+&+ \bar{u}(p')(-ie\gamma^\nu)\epsilon_\nu(k) \frac{i(\cancel{p} - \cancel{k}' + m)}{(p - k')^2 - m^2}(-ie\gamma^\mu) \epsilon_\mu^*(k')u(p)\\
+&= -ie^2 \epsilon_\mu^*(k')\epsilon_\nu(k) \bar{u}(p') \left[\frac{\gamma^\mu (\cancel{p} + \cancel{k} +m)\gamma^\nu}{(p+k)^2 - m^2} + \frac{\gamma^\nu(\cancel{p}-\cancel{k'}+m)\gamma^\mu}{(p-k')^2-m^2}\right] u(p).
+\end{align}
+
+Using $p^2 = m^2$ and $k^2 = 0$, we can simplify the denominators
+\begin{align}
+(p + k)^2 - m^2 = p^2 + k^2 +2p\cdot k-m^2 &= 2p \cdot k\\
+(p - k')^2 - m^2 = p^2 + k'^2 - 2 p\cdot k' - m^2 &= -2p \cdot k'
+\end{align}
+
+Also use
+\begin{align*}
+(\cancel{p} + m) \gamma^\nu u(p) & = (2p^\nu - \gamma^\nu \cancel{p} + \gamma^\nu m) u(p)\\
+&= 2 p^\nu u(p) - \gamma^\nu (\cancel{p} - m) u(p)\\
+&= 2p^\nu u(p).
+\end{align*}
+
+Applying both we obtain:
+\begin{equation}
+iM = -ie^2\epsilon_\mu^*(k')\epsilon_\nu(k)\bar{u}(p')\left[\frac{\gamma^\mu \cancel{k} \gamma^\nu + 2 \gamma^\mu p^\nu}{2p\cdot k} + \frac{-\gamma_\nu \cancel{k'} \gamma^\mu + 2 \gamma^\nu p^\mu}{-2p\cdot k'}\right]u(p).
+\end{equation}
+
+We now have to sum or average over the electron and photon polarisation states.
+
+Use
+\begin{equation}
+\Sigma \epsilon_\mu^* \epsilon_\nu \longrightarrow - g_{\mu \nu}.
+\end{equation}
+
+
+Average squared amplitude over initial electron and photon polarisations. This is the spin-averaged Klein-Nishina equation.
+
+
+\begin{align*}
+\frac{1}{4} \Sigma_{spins} |M|^2 = \frac{e^4}{4} g_{\mu \rho} g_{\nu \sigma} \cdot tr\Bigg\lbrace &(\cancel{p}' + m \left[\frac{\gamma^\mu\cancel{k}\gamma^\nu + 2 \gamma^\mu p^\nu}{2p\cdot k} + \frac{\gamma^\nu \cancel{k}' \gamma^\mu - 2 \gamma^\nu p^\mu}{2p\cdot k'}\right]\\
+& \cdot (\cancel{p} + m) \left[ \frac{\gamma^\sigma \cancel{k} \gamma^\rho + 2 \gamma^\rho p^\sigma}{2p \cdot k} + \frac{\gamma^\rho \cancel{k}' \gamma^\sigma - 2 \gamma^\sigma p^\rho}{2p\cdot k'}\right]\Bigg\rbrace
+\end{align*}
+
+
+\begin{equation}
+\frac{1}{4} \Sigma_{spins} |M|^2 = 2 e^4 \left[\frac{p \cdot k'}{p \cdot k} + \frac{p \cdot k}{p \cdot k'} + 2 m^2 \left(\frac{1}{p \cdot k}-\frac{1}{p \cdot k'}\right) + m^4 \left( \frac{1}{p \cdot k} - \frac{1}{p \cdot k'}\right)^2   \right].
+\end{equation}
+
+Replacing $p \cdot k = m \omega$ and $p \cdot k' = m\omega'$
+
+\begin{equation}
+\frac{d \sigma}{d \cos \theta} = \frac{\pi \alpha^2}{m^2} \left(\frac{\omega'}{\omega}\right)^2 \left[ \frac{\omega'}{\omega} + \frac{\omega}{\omega'} - \sin^2 \theta \right].
+\end{equation}
+
+
+
+\subsubsection{Spin helicity}
+
+In more details this can be written as
+\begin{equation}
+\frac{\mathrm{d}\sigma}{\mathrm{d}y} = \frac{2 \pi \alpha^2}{s((1-y) + m^2/s)^2} \left[(1-y) + \frac{m^2}{s}\right],
+\end{equation}
+where the first part in the bracket corresponds to a helicity-conserving interaction and the second term to a process that flips helicity. 
+
+
+\subsection{Derivation of the Dirac annihilation cross section}
+
+We can re-use the result from Compton scattering to determine the cross section of the pair annihilation process $e^- e^+ \rightarrow \gamma \gamma$ using cross symmetry.
+
+By replacing:
+\begin{align*}
+p &\rightarrow p_1\\
+p' &\rightarrow -p_2\\
+k &\rightarrow - k_1\\
+k' &\rightarrow k_2
+\end{align*}
+
+
+\subsection{Derivation of the linear Breit-Wheeler cross section}
+
+The cross section for the Breit-Wheeler process is simply given by XX.
+
+From PRL Yu 2019 122\addref{}:
+
+The energy of the electron and the positron in the production process is equal as it is in the CM frame.
+\begin{equation}
+\epsilon_{ec} = \epsilon_{pc} = \frac{1}{2}\sqrt{2\epsilon_{\gamma1} \epsilon_{\gamma2} (1-\cos \theta_c)}
+\end{equation}
+The momenta follow
+\begin{equation}
+|p_{ec}| = |p_{pc}| = \sqrt{\frac{1}{4}\left[\left(\frac{\epsilon_{\gamma1}+\epsilon_{\gamma2}}{c}\right)^2 - (\mathbf{p}_{\gamma1} + \mathbf{p}_{\gamma2})^2\right] - (m_ec^2)^2}
+\end{equation}
+The gamma momenta are in the laboratory frame. The direction of the electron and positron momentum is isotropic in the CM frame but has to satisfy $\mathbf{p}_{ec} = - \mathbf{p}_{pc}$. In the laboratory frame
+\begin{equation}
+\epsilon_{e,p} = \gamma_c (\epsilon_{ec,pc} + \mathbf{v}_c \cdot \mathbf{p}_{e,p}),
+\end{equation}
+with the momentum in lab frame
+\begin{equation}
+\mathbf{p}_{e,p} = \mathbf{p}_{ec,pc} + \frac{\gamma_c - 1}{v^2_c} (\mathbf{v_c} \cdot \mathbf{p}_{ec,pc}) \cdot \mathbf{v}_c + \frac{\gamma_c \mathbf{v}_c \epsilon_{ec,pc}}{c^2},
+\end{equation}
+with $\gamma_c = 1/\sqrt{1-(v_c/c)^2}$ and $\mathbf{v}_c$, the velocity of the centre of mass frame
+\begin{equation}
+\mathbf{v}_c = \frac{(\mathbf{p}_{\gamma1} + \mathbf{p}_{\gamma2})^2}{\epsilon_{\gamma1} + \epsilon_{\gamma2}}
+\end{equation}
+
+\subsection{Bremsstrahlung with screening}
+\label{Appendix:Brems_with_Screening}
+
+The (in energy) differential cross section for electron-nucleus bremsstrahlung is in the ultra-relativistic limit, including electron contributions and screening, given by\addref
+\begin{align}
+\frac{\dif \sigma_{eZ}}{\dif \omega} = \frac{\alpha r^2_e}{\omega} \Bigg\lbrace &\left(\frac{4}{3} - \frac{4}{3}y + y^2\right) \times \left[Z^2\left(\phi_1 - \frac{4}{3}\ln Z - 4f\right) + Z \left(\psi_1 - \frac{8}{3}\ln Z\right)\right]\\ \nonumber 
+& + \frac{2}{3}(1-y) \left[ Z^2 (\phi_1 - \phi_2) + Z(\psi_1 - \psi_2)\right]\Bigg\rbrace,
+\end{align}
+with $y = \hbar \omega/\gamma m_e c^2$, the ratio of the emitted photon energy to the initial electron energy. $Z$ is the atomic number of the nucleus.
+
+The Coulomb correction term for the atomic electrons is given by
+\begin{equation}
+f(z) \approx 1.202 z - 1.0369z^2 + 1.008z^3/(1+z).
+\end{equation}
+
+\begin{align*}
+\phi_1 &= 2\left[1+\ln\left(a^2 Z^{2/3} m^2_e\right)\right] - 2\ln(1+b^2) - 4b \tan^{-1} (b^{-1}),\\
+\phi_2 &= 2\left[\frac{2}{3}+\ln\left(a^2 Z^{2/3}m^2_e\right)\right] -\ln(1+b^2) + 8b^2 \left[1-b \tan^{-1}(b^{-1}) - \frac{3}{4}\ln(1+b^{-2})\right],\\
+\psi_1 &= 2\left[1+\ln\left(a'^2 Z^{4/3}m^2_e\right)\right] -2\ln(1+b'^2) - 4b' \tan^{-1} (b^{-1}),\\
+\psi_2 &= 2\left[\frac{2}{3}+\ln \left(a'^2 Z^{4/3} m^2_e\right)\right] - 2 \ln (1+b'^2) + 8 b'^2 \left[1-b \tan^{-1} (b'^{-1}) - \frac{3}{4} \ln (1+b'^{-2})\right], 
+\end{align*}
+with $a=184.15(2.718)^{-1/2} Z^{-1/3}/m_e$, $a' = 1194(2.718)^{-1/2} Z^{-2/3}/m_e$, $b = a \delta$, $b' = a' \delta$, $\delta = m^2_e \hbar \omega/(2\gamma m_e c^2(\hbar \omega - \gamma m_e c^2))$.
+
+
+
+\section{Statistics}
+
+
+\subsection{Linear correlation coefficient}
+
+The Pearson correlation coefficient for two random variables and $N$ data points is defined as:
+\begin{equation}
+\rho(A, B) = \frac{1}{N-1} \sum_{i=1}^N \left( \frac{A_i-\mu_A}{\sigma_A}\right)^\ast \left(\frac{B_i-\mu_B}{\sigma_B}\right)
+\end{equation}
+or 
+\begin{equation}
+\rho(A, B) = \frac{\mathrm{cov}(A,B)}{\sigma_A \sigma_B}
+\end{equation}
+
+The correlation coefficient is a measure of the linear dependence of the two variables.
+
+REFS: MATLAB and FISHER STATS 1958, KENDALL ADVANCED 1979, PRESS NUMERICAL 1992
+
+
+\subsection{Normal Distribution}
+
+Gaussian probability density function
+\begin{equation}
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{\frac{-(x-\mu)^2}{2\sigma^2}}
+\end{equation}
+
+With cumulative distribution 
+
+\begin{equation}
+p = F(x) = \frac{1}{\sigma\sqrt{2\pi}}\int_{-\inf}^x e^{\frac{-(t-\mu)^2}{2\sigma^2}}\mathrm{d}t
+\end{equation}
+
+Standard normal cumulative distribution function
+
+\begin{equation}
+\Phi(x) = \frac{1}{2} \left[ 1 - \mathrm{erf}\left(-\frac{x}{\sqrt{2}}\right)\right]
+\end{equation}
+
+\subsection{Kernel Density Estimate}
+
+MATLAB:
+
+\begin{equation}
+\hat{f}_h(x) = \frac{1}{nh}\sum_{i=1}^n K\left(\frac{x-x_i}{h}\right)
+\end{equation}
+
+
+
+\section{Other}
+
+\subsection{Small Angle Scattering}
+

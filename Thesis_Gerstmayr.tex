@@ -1,0 +1,300 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass[12pt, oneside]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{GThesis}
+
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage[a4paper,width=160mm, top=15mm,bottom=15mm,includeheadfoot]{geometry}
+\usepackage{graphicx}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{microtype} %use after fonts
+\usepackage{siunitx}
+\usepackage{upgreek}
+%\usepackage{booktabs}
+\usepackage{lastpage}
+\usepackage{subcaption}
+\usepackage{epigraph} % this is to add quotes at the beginning of chapters
+%\usepackage{bibunits}
+\usepackage{empheq}
+\usepackage{nameref}
+\usepackage{rotating}
+\usepackage{ifthen}
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\usepackage[table]{xcolor}
+\usepackage{appendix}
+\appendixheaderoff
+\appendixtitleoff
+\newcommand*\widefbox[1]{\fbox{\hspace{2em}#1\hspace{2em}}}
+
+% Table customization
+\setlength{\arrayrulewidth}{0.5mm}
+%\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+
+
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{color}
+\newcommand{\EliasComm}[1]{\todo[inline,color=blue!40]{EG: #1}}
+\newcommand{\SMComm}[1]{\todo[inline,color=green!40]{SM: #1}}
+\newcommand{\addref}{\todo[color=red!40]{REF}}
+\newcommand{\adderr}{\todo[color=red!40]{ERROR}}
+\newcommand{\addlink}{\todo[color=yellow!40]{LINK}}
+\newcommand{\addnum}{\todo[color=orange!40]{NUM}}
+\renewcommand{\floatpagefraction}{.8}%
+
+\newcommand{\microns}{\,\mathrm{\upmu m}}
+\newcommand{\GeV}{\,\mathrm{GeV}}
+\newcommand{\MeV}{\,\mathrm{MeV}}
+\newcommand{\keV}{\,\mathrm{keV}}
+\newcommand{\eV}{\,\mathrm{eV}}
+\newcommand{\mm}{\,\mathrm{mm}}
+\newcommand{\mrad}{\,\mathrm{mrad}}
+\newcommand{\dif}{\mathrm{d}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhead{}
+\fancyhead[R]{\ifthenelse{\isodd{\value{page}}}{}{\rightmark}}
+\fancyhead[L]{\ifthenelse{\isodd{\value{page}}}{\leftmark}{}}
+\fancyfoot[C]{\thepage}
+
+\usepackage[font={it}]{caption} % package to customise caption fonts
+\usepackage[nottoc]{tocbibind} % This is to enable titles for table of contents, references etc.
+\setlength{\headheight}{27.1pt}
+
+
+\usepackage[section]{placeins}
+
+\usepackage{cancel}
+
+
+\usepackage[colorlinks=true, citecolor=blue,urlcolor=purple, linkcolor = black, pdfborder={0 0 0},backref=page]{hyperref}
+\usepackage{hypernat}
+\usepackage{cleveref}
+
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{%
+    \ifcase #1 (Not cited.)%
+    \or        (Cited on page~#2.)%
+    \else      (Cited on pages~#2.)%
+    \fi}
+
+\numberwithin{equation}{section}
+
+
+
+\graphicspath{{pics/}{pics/Ch1_Introduction/}{pics/Ch2_Theory/}{pics/Ch3_Methods/}{pics/Ch4_Simulations/}{pics/Ch5_Results1/}{pics/Ch6_Results2/}{pics/Ch7_Results3/}{pics/Ch8_Results4/}{pics/Ch9_Conclusion/}}
+
+\begin{document}
+
+\begin{titlepage}
+\vspace*{\fill}
+\begin{center}
+\huge{Energetic Radiation from Wakefield Acceleration and its Applications}\\[2cm]%\\[3.5cm]
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.6\columnwidth]{Imperial_2_Pantones}
+\end{figure}
+
+\vspace{1.5cm}
+\Large{Elias Gerstmayr}\\[1.0cm]%\\[3.5cm]
+\large{\today}
+\vfill
+\normalsize{Submitted in partial fulfilment of the requirements for the degree of Doctor of Philosophy in Physics of Imperial College London and for the Diploma of Imperial College London.}
+\vfill
+\large{Department of Physics\\Imperial College London\\ Prince Consort Road\\ London SW7 2AZ}
+\vfill
+\end{center}
+\end{titlepage}
+\stepcounter{page}
+
+%\newgeometry{twoside}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}  
+
+The driving theme of this thesis is the production and characterisation of high-energy radiation using laser wakefield accelerators (LWFA) and its applications.
+
+An electron beam from shock injection was collided with a laser pulse at an intensity of $a_0 \sim 0.3$ producing 10's of MeV photons from relativistic linear inverse Compton scattering. The energy spread of this high-energy radiation is bound to the energy spread of the electron beam which was shown to be tunable by varying the position of the blade causing the shock. LINEAR ICS AS BEAM DIAGNOSTICS.
+
+
+A relativistic electron beam from LWFA with $\epsilon > 500\,\mathrm{MeV}$ was collided with a tightly focused laser pulse with $a_0 \sim 10$ producing broadband synchrotron-like radiation from non-linear inverse Compton scattering with critical energies $\epsilon_{crit} > 30\,\mathrm{MeV}$, the highest photon energies reported from all-optical ICS. The high photon energies resulted in significant energy loss making this the first measurement of radiation reaction in an LWFA setup.
+
+
+An electron beam from LWFA was converted into broadband bremsstrahlung of 100's MeV photon energy by placing a high-Z bismuth foil in the beam path.
+These gamma rays were collided with a picosecond X-ray source emitted by a hot plasma in an attempt to measure the simplest photon-photon pair-creation process, linear Breit-Wheeler mechanism.
+CHARACTERISING BREMSSTRAHLUNG SOURCE, YIELD, NOISE.
+
+\EliasComm{Revisit at the end.}
+
+\vspace*{\fill}
+
+\newpage
+
+\section*{Declaration of Originality}
+\addcontentsline{toc}{chapter}{Declaration of Originality}  
+
+This thesis and the work presented in it are my original work. Material that was contributed by others or was taken from other sources is being referenced and acknowledged accordingly.
+\vspace{\baselineskip}
+
+\textbf{Elias Gerstmayr}
+
+\today
+
+\section*{Copyright Declaration}
+\addcontentsline{toc}{chapter}{Copyright Declaration}  
+
+The copyright of this thesis rests with the author. Unless otherwise
+indicated, its contents are licensed under a Creative Commons
+Attribution-Non Commercial 4.0 International Licence (CC BY-NC).
+
+Under this licence, you may copy and redistribute the material in any
+medium or format. You may also create and distribute modified
+versions of the work. This is on the condition that: you credit the
+author and do not use it, or any derivative works, for a commercial
+purpose.
+
+When reusing or sharing this work, ensure you make the licence
+terms clear to others by naming the licence and linking to the licence
+text. Where a work has been adapted, you should indicate that the
+work has been changed and describe those changes.
+
+Please seek permission from the copyright holder for uses of this
+work that are not included in this licence or permitted under UK
+Copyright Law.
+
+\vspace*{\fill}
+
+\newpage
+
+
+\thispagestyle{plain}
+%\maketitle
+\vspace*{\fill}
+\begin{center}
+
+\textit{Da\ss \,\,ich erkenne, was die Welt}
+
+\textit{Im Innersten zusammenh\"alt.}
+\vspace{\baselineskip}
+
+\textit{So that I may perceive whatever holds}
+
+\textit{the world together in its inmost folds.}
+\vspace{\baselineskip}
+
+Johann Wolfgang von Goethe -- Faust. Der Trag\"odie erster Teil.
+\vspace*{\fill}
+
+\end{center}
+\newpage
+
+\thispagestyle{plain}
+
+\vspace*{\fill}
+
+
+%\begin{center}
+%\textbf{Publications}
+%\end{center}
+
+
+\newpage
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{Table of Contents}  
+\newpage
+
+\listoffigures
+ 
+\listoftables
+
+\newpage
+
+\listoftodos
+
+\newpage
+
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgements}  
+
+\iffalse
+Moving to London and Plasmas.
+
+Thank you to supervisor.
+
+Thanks to colleagues and collaborators.
+
+Thanks to friends.
+
+Thanks to family. To parents.
+
+%I would also like to gratefully acknowledge the joint funding of the John Adams Institute and the Virtual Helmholtz Institute.
+\fi
+
+\chapter*{Role of the Author}
+\addcontentsline{toc}{chapter}{Role of the Author}  
+
+\EliasComm{Review Role of Author (DTAO TAO)}
+The success of experiments at high-power laser facilities depend on the contributions of many.
+The experimental results presented in this work were obtained during experimental campaigns at the Gemini laser facility at the Central Laser Facility (CLF), Rutherford Appleton Laboratory (RAL), Oxfordshire, UK. These results are product of XX collaborative effort and would not have been possible without the support of laser scientists, engineers etc. contributions of many.
+The analysis was conducted by the author unless acknowledged or indicated otherwise.
+
+The specific role of the author and contributions of other researchers in the context of the experimental campaigns of which the results are presented in the Chapters were as follows:
+\begin{itemize}
+\item Chapter \ref{Chap:linICS}: The author lead the planning and coordination of the project from the approval of the proposal to its execution. On the experiment, the author was the Target Area Operator (TAO) together with Matthew Streeter and Brendan Kettle, overseeing XX commissioning XX implementing XX. After the experiment the author coordinated the distribution of the data sets. Cary Colgan set up the transverse probe and analysed the interferometry data.
+
+\item Chapter \ref{Chap:RR15}: On the experiment, the author was mainly responsible for setting up the electron spectrometer and was helping out in general. The author analysed the electron spectrometer data, surveyed data to find suitable datasets, and correlated the gamma spectrometer yield with the electron spectra to identify successful collisions. Tom Blackburn provided simulations. Jason Cole and Keegan Behm analysed the gamma spectrometer data. Jason Cole correlated the experimental and the simulation results and wrote the paper.
+
+\item Chapter \ref{Chap:BW}: The author was involved in planning and coordinating the campaign. The author was Target Area Operator (TAO) together with Brendan Kettle and Guillermo Marrero Samarin. The author analysed the data from the electron spectrometer and the gamma spectrometer. Brendan Kettle and Guillermo Marrero Samarin analysed the data from the gamma profile screen and the single-particle diagnostics. Cary Colgan and Brendan Kettle set up and analysed the X-ray diagnostics. Dominik Hollatz set up and simulated the magnetic chicane.
+\end{itemize}
+
+
+\vspace*{\fill}
+
+
+\include{Introduction/Introduction}
+
+%\include{Ch2_Theory/Theoretical_Background}
+
+\include{Theory/SingleParticleMotion_Radiation}
+\include{Theory/Wakefield_Plasma_Laser}
+
+\include{Methods/Experimental_Methods}
+
+\include{Methods/Gamma_Spectrometer}
+
+\include{Results/RR2019_linICS}
+
+\include{Results/RR2015}
+
+\include{Results/BW2018}
+
+\include{Conclusion/Conclusions}
+
+\begin{appendices}
+
+	\include{Appendix/Appendix}
+\end{appendices}
+
+\clearpage
+\renewcommand{\bibname}{Bibliography}
+\bibliography{ICS_Diag,General,Theses,Plasma,SPD,LaserDiags,GammaDet,Betatron,Facilities,Wakefield,Sims,Ionisation,Xrays,IonAcc,ICSRR,Narozhny,BW_Astro}%}{}
+%\bibliographystyle{unsrt}
+
+\end{document}
+
