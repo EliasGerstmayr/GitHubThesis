@@ -1,10 +1,10 @@
 \chapter{Experimental Methods}
 \label{Chap:Methods}
 
-The following Chapter introduces a selection of experimental methods and techniques relevant in the context of the experimental results presented in this thesis and other laser wakefield acceleration (LWFA) experiments. The three main ingredients of an LWFA experiment will be covered: a high-intensity laser, gas targetry and diagnostics for particles and secondary radiation. The measurement of high-energy gamma radiation will be discussed more extensively as it is the centrepiece of the results presented later.
+The following Chapter introduces a selection of experimental methods and techniques relevant in the context of the experimental results presented in this thesis and other laser wakefield acceleration (LWFA) experiments. The three main ingredients of an LWFA experiment will be covered: a high-intensity laser, gas targetry and diagnostics for particles and secondary radiation. The measurement of high-energy gamma radiation will be discussed more extensively as it is central to this work.
 
 The Chapter starts by introducing the \textsc{Gemini} laser system, the dual-beam high-intensity laser used to conduct the experiments in this work, along with diagnostics and methods used to characterise high-intensity laser pulses.
-It then continues with a section on gas targets used in this work and techniques to diagnose the plasma followed by particle diagnostics.
+It then continues with a section on gas targets used in this work and techniques to diagnose the plasma, followed by particle diagnostics.
 Finally, the chapter focuses on diagnostics for high-energy radiation in the gamma regime, in particular a scintillator array used to infer gamma spectra.
 A comprehensive review of diagnostics used in LWFA experiments is, for instance, provided in \cite{Downer2018_DiagnosticReview}.
 
@@ -14,23 +14,31 @@ All of the experimental results presented in this work were acquired at Target A
 
 \subsection{Laser properties}
 
-The titanium-sapphire \textsc{Gemini} laser system with central wavelength $800\,\mathrm{nm}$ provides two beams every 20 seconds at a compressed pulse duration of down to $30\,\mathrm{fs}$ and up to $15\,\mathrm{J}$ energy on each arm \cite{GeminiWebsite}. The collimated beams that enter the target chamber have a diameter of just under $\sim 150\,\mathrm{mm}$ with a flat-top intensity profile and are focused with a spherical mirror or off-axis parabolas (OAPs). Adaptive optics (AOs) are deployed on both laser arms in conjunction with wavefront sensors to remove aberrations and flatten the wavefront (see Section \ref{Methods:Sec:AO_WavefrontSensor}).
+The titanium-sapphire \textsc{Gemini} laser system with central wavelength $800\,\mathrm{nm}$ provides two beams every 20 seconds at a compressed pulse duration of down to $30\,\mathrm{fs}$ and up to $15\,\mathrm{J}$ energy on each arm \cite{GeminiWebsite}. The collimated beams that enter the target chamber have a diameter of just under $\sim 150\,\mathrm{mm}$ with a flat-top intensity profile and are focused with a spherical mirror or off-axis parabolas (OAPs). Adaptive optics (AOs) are deployed on both laser arms in conjunction with wavefront sensors to remove aberrations and flatten the wavefront.
 In addition to its full-power capabilities, a continuous-wave mode for alignment and a low power pulsed mode at 10 Hz repetition rate are available.
 
-\EliasComm{Vacuum compressors, gate valves. CPA. Separate laser and target area.}
+%\EliasComm{Vacuum compressors, gate valves. CPA. Separate laser and target area.}
 
-\subsection{Target Area 3}
+%\subsection{Target Area 3}
 
-\EliasComm{Rough dimensions. Dimensions of vacuum chamber. Extension chambers. Lasers around the centre. Motivate dimensions. Bunker dimensions are $8 \times 8$ m and 1 m thick walls and 0.6 m concrete roof, along with lead shielding.}
+%At \textsc{Gemini} the laser and the target area, called Target Area 3, are located in the same building but separate rooms.
+%The target area 
+%\EliasComm{Rough dimensions. Dimensions of vacuum chamber. Extension chambers. Lasers around the centre. Motivate dimensions. Bunker dimensions are $8 \times 8$ m and 1 m thick walls and 0.6 m concrete roof, along with lead shielding.}
 
 \subsection{Beam line geometries}
 
-In the context of the LWFA experiments discussed later typically two types of geometries are of relevance at \textsc{Gemini}:
-First, a long-focal-length geometry using either an $f/40$ spherical mirror or an OAP with $f = 6\,\mathrm{m}$ to provide an intense laser pulse $a_0 > 1$ with a long Rayleigh length, $z_R$, to efficiently drive LWFA over long distances. Due to the long focal length and the limited size of the Target Area the beam has to be reflected or `folded' at least once during the focusing process, in recent setups about halfway between optic and focal plane. Unfortunately, this means that the usable maximum energy in this laser arm is limited by the damage threshold of these `folding' mirrors or in other words the fluence the mirrors can sustain. The threshold at which damage occurs depends on several factors, including the beam quality and beam size, the quality of the mirror coating and cleanliness of the chamber.
 
-The second geometry is the short-focal-length scatterer which is typically an $f/2$ OAP with focal length $f = 300\,\mathrm{mm}$ which is also available with a central fitted hole for the case of head-on counter-propagating geometries. 
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{BeamGeometries.pdf}
+\caption{Sketch of relevant focusing geometries used in experiments at \textsc{Gemini} discussed in this work. Top: A long-focal-length geometry using an $f/40$ spherical mirror or off-axis parabola used to drive a wakefield accelerator. Bottom: A short-focal-length $f/2$ geometry for a scatterer or heater beam using a full off-axis parabola (left) or an optic with a central hole (right).}
+\label{Methods:Figs:FocusingGeometries}
+\end{figure}
+In the context of the LWFA experiments discussed later typically two types of beam line geometries are of relevance at \textsc{Gemini} (see Figure \ref{Methods:Figs:FocusingGeometries}):
+First, a long-focal-length geometry using either an $f/40$ spherical mirror or an off-axis parabola with $f = 6\,\mathrm{m}$ to provide an intense laser pulse $a_0 > 1$ with a long Rayleigh length, $z_R$, to efficiently drive LWFA over long distances. This geometry is used in all experiments discussed in this work. Due to the long focal length and the limited size of the target area and the vacuum chamber the beam has to be reflected or `folded' at least once during the focusing process, in recent setups about halfway between optic and focal plane. As a result, the maximum usable energy in this laser arm is limited by the damage threshold of these `folding' mirrors or in other words the fluence (optical energy delivered per unit area) the mirrors can sustain. The threshold at which damage occurs depends on several factors, including the beam quality and beam size, the quality of the mirror coating and cleanliness of the chamber.
 
-\SMComm{Add a sketch on beam lines.}
+The second focusing geometry is the short-focal-length scatterer which is typically an $f/2$ off-axis parabola with focal length $f = 300\,\mathrm{mm}$. In the experiments discussed in Chapters \ref{Chap:linICS} and \ref{Chap:RR15} an off-axis parabola with a central fitted hole was used to enable a head-on counter-propagating geometry in conjunction with the long-focal-length beam line. 
+
 
 \section{Laser Diagnostics}
 
@@ -43,11 +51,9 @@ A laser energy meter is also used to measure the reflectivity of the compressor 
 \subsection{Laser Pulse Duration}
 
 At \textsc{Gemini}, frequency-resolved optical gating (FROG) \cite{FROG} is used to measure the pulse duration of the laser and characterise its temporal intensity profile.
-A FROG trace can be taken on every shot by using the through highly-reflective dielectric mirrors transmitted beam in the laser area.
+A FROG trace is taken on every shot by collecting laser light that is transmitted through highly-reflective dielectric mirrors.
 
-The FROG is a diagnostic to measure the intensity and spectral phase of ultrashort laser pulses as present at \textsc{Gemini} ($\sim 40\,\mathrm{fs}$). The setup is similar to an autocorrelator and is optically gated by combining two beams in a non-linear medium. Typically a second-harmonic-generation crystal is the non-linear medium of choice. The produced second-harmonic radiation is then spectrally resolved (hence frequency-resolved) and provides information about the spectral phase.
-More details can be found in \cite{FROG} or, for instance, also in \cite{StreeterThesis}.
-\EliasComm{Mention dazzler for control and reference.}
+The FROG is a diagnostic to measure the intensity and spectral phase of ultrashort laser pulses as present at \textsc{Gemini} ($\sim 40\,\mathrm{fs}$). The setup is similar to an autocorrelator and is optically gated by combining two beams in a non-linear medium, typically a second-harmonic-generation crystal. The radiation is then spectrally resolved (hence frequency-resolved) and provides information about the spectral phase. See, for instance, \cite{FROG} and \cite{StreeterThesis} for more details.
 
 \subsection{Focal Spot Characterisation}
 
@@ -100,22 +106,6 @@ The focal spot in figure XXX for instance has a size of XXXXXXX. The FROG analys
 Ideally, a series of several focal spots, even hundreds, are taken to incorporate fluctuations in the shape of the spot but also to characterise the typical spatial fluctuations over time.
 \SMComm{Add figures of laser intensity for a0, f/40 f/2 and with phase plate?}
 
-\subsection{Wavefront Sensor and Adaptive Optics}
-\label{Methods:Sec:AO_WavefrontSensor}
-
-Real laser beams tend to have a series of imperfections attributed to them due to the gain medium, diffraction, dirt or damage on optics, misalignments, beam transport and so on.
-Too many aberrations or distortions in the beam prevent it from focusing down to a close-to-idea diffraction-limited spot and result in energy being distributed in wings instead of merging to a small spot. As a consequence the reachable peak intensity is lower and a large fraction of energy is not efficiently used in the process. 
-\vspace{\baselineskip}
-
-In addition to ensuring that the beam propagation and source is as close to ideal as possible, one can use a wavefront sensor to characterise the wavefront of the beam. In conjunction with a deformable mirror or an adaptive optic (AO) a software can derive a map relating changes in the mirror to changes in the wavefront. Using this map or `interaction matrix' the mirror can be deformed to flatten the wavefront iteratively correcting for wavefront errors which makes consequent modelling easier, matching to simulations, and enables reaching a diffraction limited focus at higher intensities.
-On the other hand, this also gives control to add aberrations and tailor the wavefront to specific applications that might benefit from this, e.g.  aberration \cite{Mangles2009_BETATRON}.
-\vspace{\baselineskip}
-
-At \textsc{Gemini} a Shack-Hartmann sensor (HASO DETAILS REF\addref{}) was used. This type of wavefront sensor consists of an array of microlenses.
-A HASO observes the temporally integrated wavefront profile of the laser pulse. Spatio-temporal couplings are not visible and have to be diagnosed differently, for instance by characterising the behaviour of the beam near its focus.
-\EliasComm{Either add reference for interference filters or if not done, maybe leave out.}
-One adaptive optic was an ILAO (mechanical motors, large stroke) made by the French company XXX, the other one is a piezo-activated AO made by Chris Hooker at RAL\addref{}.
-
 
 \section{Dual-Beam Timing Diagnostics}
 \label{Methods:Sec:DualBeamTiming}
@@ -132,7 +122,7 @@ Depending on the accuracy required different techniques can help measure the dif
 Photodiodes, spatial and spectral interferometry are introduced. This is not an exhaustive list and other methods, e.g. cross-correlator, are not introduced as they were not used explicitly in the experiments presented.
 \vspace{\baselineskip}
 
-At \textsc{Gemini} both laser beams originate from the same source (oscillator) and are hence `intrinsically' synchronised, which means that they are emitted/triggered at the same time, underlie the same jitter but do not shift relative to each other at the point of emission (SM: GRAMMAR). However, this does not mean that both beams are automatically synchronised at the point of interaction, since the arms take different pathways through the amplification and compression stage, and then finally follow different beam lines within the target chamber. The longer their separate paths the larger the potential impact of, for instance, vibrations and thermal effects can be. Incredibly small changes can cumulatively make a significant impact on the $\mathrm{fs}$-scale synchronisation required in some of the challenging experiments attempted at \textsc{Gemini}.
+At \textsc{Gemini} both laser beams originate from the same source (oscillator) and are hence `intrinsically' synchronised, which means that they are emitted/triggered at the same time, underlie the same jitter but do not shift relative to each other at the point of emission (SM: GRAMMAR). However, this does not mean that both beams are automatically synchronised at the point of interaction, since the arms take different pathways through the amplification and compression stage, and then finally follow different beam lines within the target chamber. The longer their separate paths the larger the potential impact of, for instance, vibrations and thermal effects can be. Small changes can cumulatively make a significant impact on the femtosecond-scale synchronisation required in some of the challenging experiments attempted at \textsc{Gemini}.
 \vspace{\baselineskip}
 
 `Timing' two beams means in this case that the relative path lengths are adjusted to compensate for the measured difference in the time of arrival at the interaction point. At \textsc{Gemini} larger distances (few nanoseconds or metres in distance) require moving optics physically to extend the beam path, smaller distances are finely adjusted by using a linear translation stage that adds or removes path length in double-pass at few femtosecond (micrometre) precision. This stage is on the `split-and-delay' table in the LA3 laser area. The linear stage is a Newport XXX REFat XX precision\addnum\addref.
@@ -160,7 +150,7 @@ The detectors were only used at air and are not compatible for vacuum use.
 \EliasComm{Do we have proper data from the scope.}
 
 \subsection{Spatial Interferometry}
-
+\label{Methods:Sec:SpatialInterferometry}
 
 Diode timing is limited by the typical rise and fall times and the access to a fast oscilloscope.
 A different method that is more coupled to the pulse duration of the laser beams is spatial interferometry. 
@@ -198,50 +188,43 @@ These measurements were done using the pulsed low power beam at \textsc{Gemini}.
 Can you show plot of fringe visibility v delay? 
 How accurately can you time beams?}
 
-\subsection{Considerations for Timing Beams}
+\subsection{Considerations for Synchronising Beams}
 
 Synchronising two laser beams to each other or a laser with an electron beam in an experiment down to the femtosecond level comes with many challenges and considerations.
 
+Light moves slower through media than through vacuum. The group velocity, $v_g$, is reduced by the refractive index, $\eta$, to $v_g =c/\eta$ or more specifically in a plasma to $v_g \approx c(1-1/2 (\omega_p/\omega)^2)$ (see Section \ref{Theory:Sec:LaserPropagationPlasma}), where $\omega$ is the frequency of the laser and $\omega_p$ is the plasma frequency (see Section \ref{Chap:Theory:Sec:PlasmaFreq}).
+Introducing or removing media asymmetrically from beam paths changes the relative time of arrival of laser pulses.
+Typical examples at \textsc{Gemini} for this are moving from air to vacuum (pumping down the vacuum chamber), opening or closing the transparent gate valves, or attenuating beams using glass slides when switching between different power modes.
 
-Light moves slower through media than through vacuum. The group velocity is reduced to $v_g \approx c(1-1/2 (\omega_p/\omega)^2)$ or $v_g =c/\eta$.
-In experiment this means that introducing or removing media asymmetrically from beam paths will change the relative time of arrival.
-\SMComm{This is only for plasma.}
-Typical examples at \textsc{Gemini} are moving from air to vacuum (pumping down the vacuum chamber), removing or adding gate valves, or attenuating beams using glass slides, when switching power modes.
+\subsubsection{Shifting beam paths from air to vacuum}
 
-\subsubsection{Shifts from Air to Vacuum}
-
-The refractive index, $\eta_0$, of vacuum is $\eta_0 = 1$.
-The refractive index of air at standard temperature and pressure for 800 nm is $\eta_{air} = 1.00027$ (REF NIST)\addref{}
+The refractive index of vacuum is $\eta_0 = 1$, whereas the refractive index of air, for instance, at $20^\circ$ Celsius, $45\%$ relative humidity and atmospheric pressure for light of wavelength $\lambda = 800\,\mathrm{nm}$ is $\eta_{air} = 1.00027$ \cite{Stone2011_ETAAIR}. The difference in time, $\Delta t$, it takes a laser pulse to travel a distance $d$ in vacuum or air is then proportional to the difference in the refractive indices:
 \begin{align}
 \Delta t &= \frac{d}{c} \left( \eta_{air} - \eta_{0}\right),\nonumber\\
 \Delta t  &\approx 0.9\,\mathrm{ps} \times \frac{d}{1\,\mathrm{m}},
 \end{align}
+which means that it takes the laser pulse $0.9\,\mathrm{ps}$ longer to travel one metre in air than in vacuum.
+If the beam paths of two laser pulses are of different length, the difference in their beam path will result in a shift in the relative time of arrival at the interaction point when transitioning from air to vacuum.
 
-which means every metre of path length that is being shifted from air to vacuum will add $0.9\,\mathrm{ps}$ of time delay.
-If the beam path of the two beams are asymmetric, the difference in beam path times this change in time from air to vacuum will lead to a change in timing as well.
+At \textsc{Gemini} the laser arm used as wakefield driver typically covers a beam path of over $10\,\mathrm{m}$ distance due to the long-focal-length geometry with $f = 6\,\mathrm{m}$, whilst the scatterer beam only covers about half of the distance. If both beams arrive at the same time at the interaction point when the chamber is at air, then a difference in $5\,\mathrm{m}$, for instance, would mean that in vacuum the laser pulse following the long-focal-length beam line arrives at the interaction point $4.5\,\mathrm{ps}$ after the scatterer.
+\vspace{\baselineskip}
 
-At \textsc{Gemini} the driver beam typically covers a path of over 10 m distance as it includes long-focal-distance optics with $f = 6\,\mathrm{m}$ whilst the scatterer beam only covers about half of the distance. A difference in $5\,\mathrm{m}$, for instance, would then mean that the driver beam arrives at the interaction point $4.5\,\mathrm{ps}$ after the scatterer.
-\SMComm{Is this as important as you make it sound? Both beams are at air or both are at vacuum, you can’t have one at air while one is at vacuum. Another major issue is things shifting on pump down..   }
-\subsubsection{Gate valves}
+As a result of the pump-down process the components in the vacuum chamber and the vacuum chamber itself experience changes in pressure and temperature which in turn result in stress on the materials. This can lead to a steering of the laser beams which affects the alignment in general but also modifies the beam path.
 
-Another step in the pump-down process at \textsc{Gemini} is opening the gate valves that separate the target chamber, which is often at air or lower quality vacuum, from the relatively permanent and high quality vacuum of the laser compressors (two separate compressors).
-Once the vacuum in the target chamber reaches a sufficient quality and the turbo pumps are engaged, the gate valves are opened.
-The gate valves at \textsc{Gemini} are made out of sapphire glass but are of different thickness on each arm \cite{GEMINI_GATEVALVES}. The difference in thickness is around $60 \pm 3\,\mathrm{\mu m}$.
+\subsubsection{Opening and closing gate valves}
 
-The refractive index is 1.75 and 1.76 in ordinary and extraordinary axis at 800 nm. This means removing the gate valves will shift the relative time of arrival again by $150\,\mathrm{fs}$.
-\SMComm{Again - the crucial thing is the difference between the two gate valves,   }
+Another step in the pump-down process at \textsc{Gemini} is opening the gate valves that separate the target chamber, which is often at air or lower quality vacuum, from the relatively permanent and high quality vacuum of the two laser compressors.
+Once the pressure in the target chamber reaches a sufficiently low value and the turbo pumps are engaged, the gate valves can be opened.
+Both gate valves at \textsc{Gemini} are made of sapphire glass, but measurements found a slight difference in thickness of around $\Delta x = 60 \pm 3\,\mathrm{\upmu m}$ \cite{GEMINI_GATEVALVES} corresponding to $\Delta t = 350\pm17\,\mathrm{fs}$ at a wavelength of $\lambda = 800\nm$. The gate valve of the laser arm that is predominantly used as wakefield driver was found to be thicker.
 
 \subsubsection{Attenuation of beams}
 
-The previous two examples can be cross-checked by repeating some of the timing procedures, for instance using spatial interferometry after the pump-down, add the correction factors and optimise the interference pattern again.
+The previous two examples can be cross-checked by repeating some of the timing procedures after the pump-down, for instance using again spatial interferometry.
+At \textsc{Gemini} glass slides are used as beam attenuators in the low-power modes and can be used in conjunction with polarisers and waveplates to improve the contrast of the interference pattern in spatial interferometry (see Section \ref{Methods:Sec:SpatialInterferometry}). In some cases this will require inserting material asymmetrically in both laser arms in order to optimise the visibility of the pattern.
 
-In some cases, however, material might be inserted asymmetrically to attenuate the beams. At \textsc{Gemini} glass slides are available to attenuate beams by a factor $\sim 100$ and are used in conjunction with polarisers and waveplates to improve the contrast of the interference pattern.
-The attenuators are $2\,\mathrm{mm}$ thick fused silica glass slides at 45 degrees with refractive index $\eta = 1.4533$\addref{} REF, introducing a $4.24\,\mathrm{ps}$ delay per attenuator (up to 2 per beam). In this setup the attenuators are identical and if an equal number are used per beam no measurable change in relative time of arrival is witnessed. An asymmetric number requires adjustments and in general if materials are inserted, it should be checked whether they might influence the time of arrival.
-\vspace{\baselineskip}
+The attenuators are $2\,\mathrm{mm}$ thick fused silica glass slides with refractive index $\eta = 1.4533$ \cite{Malitson1965_FusedSilica}. The slides are inserted at 45 degrees angle relative to the laser beam axis which delays the laser pulse by $4.24\,\mathrm{ps}$ for each glass slide. The attenuators were found to be identical to each other to within $\Delta x < 10\microns$, such that an equal number of attenuators in each beam path does not introduce a relative delay. An unequal number of attenuators in each beam, on the other hand, requires an adjustment of the beam paths after `synchronising' the beams using spatial interferometry.
 
-Recently, the attenuators at \textsc{Gemini} have been matched with `compensator plates' that will be in the beam path when the attenuators are removed. The compensator plates and the attenuators are matched, such that introducing an attenuator should not change the delay at all and asymmetric attenuation also would not change the relative delay. The accuracy of this setup, however, also has to be investigated and quantified.
-\SMComm{A key question for me is accuracy,  if an attenuator in on arm was at 45 degrees, how far off would the other one have to be to shift timing by 45 fs? }
-\subsubsection{Laser-Laser to Beam-Laser Timing}
+\subsubsection{Synchronisation of an LWFA electron beam with a laser pulse}
 
 So far the considerations and methods have been aimed at ensuring the temporal overlap of two laser pulses, taking into account changes introduced by pump-down procedures or attenuation. Finally, we want to highlight what to consider when aiming to synchronise a laser pulse to an electron bunch accelerated through LWFA, relative to a laser-laser synchronisation.
 \vspace{\baselineskip}
@@ -261,31 +244,52 @@ However, this assumes that the electron bunch does not have a spatio-temporal ex
 \SMComm{I was trying to decide if this was better in methods or the RR chapter.  Either will work, and I like it here,  but the effect needs to be mentioned in the results too}
 \SMComm{Numbers?  You say knowing the injection point is important,  can you quantify?  Extreme worse case would be injection anywhere in the accelerator. But it will be significantly better than this!}
 
-\subsubsection{Drifts in Timing}
+\subsubsection{Stability of synchronisation over extended periods of time}
 
-In addition to the examples mentioned so far, when trying to synchronise two laser pulses or a laser and an LWFA electron beam, one also has to consider the stability of the synchronisation. At \textsc{Gemini}, the laser pulses cover typically several 10's of metres distance in several rooms before finally being directed into the target area. Minor changes in the environment (humidity, temperature) can lead to expansion or contraction of optical tables and components leading to a drift of the alignment and the relative timing over a period of time. See \cite{Shalloo_GEMINIDRIFT} where the relative timing was measured and monitored over an extended period of time, highlighting the importance of a stable environment in the laser area and the target area.
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{Shalloo_TimingDrift.pdf}
+\caption{Change in delay between the two laser arms measured in the target area using a spectral interferometry setup as a function of time (moving average in red line). The relative changes in temperature as measured in the laser area are shown in blue. Reprinted from \cite{Shalloo_GEMINIDRIFT} with permission of the author, R. Shalloo.}
+\label{Methods:Figs:ShallooTiming}
+\end{figure}
 
-Whilst it is of utmost importance to minimise these effects by investing in climate-controlled laboratories, it also shows that at the femtosecond level of precision the actual on-shot measurement of the timing and alignment becomes important to gain real control over interactions.
+After having discussed some of the considerations related to achieving a temporal synchronisation of two laser pulses, or a laser pulse and an electron beam, we will now consider the challenges associated to maintaining this synchronisation over an extended period of time.
+At \textsc{Gemini}, the laser pulses propagate typically several 10's of metres distance across mutiple laser areas before being directed into the target area. Minor changes in the environment, e.g. humidity or temperature, can lead to an expansion or contraction, for instance, of optical tables and optics mounts leading to a drift of the alignment and the relative timing over a period of time. In Figure \ref{Methods:Figs:ShallooTiming} the relative delay between the two \textsc{Gemini} laser beams in the target area is shown as a function of time (red) along with variations in the temperature in the laser area (blue) \cite{Shalloo_GEMINIDRIFT}. The measurements indicate fluctuations in the relative delay of $> 100\fs$ over the course of $\sim 20$ minutes associated with temperature changes of $\sim 1^\circ$ Celsius. This highlights the importance of a stable environment in the laser and target area to ensure that the sensitive alignment and synchronisation can be maintained for longer periods of time, but also indicates that it is crucial to monitor and identify drifts as seen in Figure \ref{Methods:Figs:ShallooTiming}.
 
-\SMComm{I would consider putting the plot in here (with permission).}
 
 \section{Gas Targets}
 
-In laser-wakefield acceleration (LWFA) the laser pulse propagates through the plasma and sets up a density modulation. To permit this propagation the density of the medium has to be below the critical density, $n_c = m_e \epsilon_0 \omega^2/e^2$. A medium with electron density $n_e < n_c$ is referred to as `underdense'. At $\lambda = 800\,\mathrm{nm}$ these are typically gaseous targets. `Overdense', i.e. targets with a density higher as the critical density, are mostly solid or liquid targets in the context of Ti:Sa lasers. They are preferrably used for ion acceleration schemes (e.g. (Target Normal) Sheath Acceleration (TNSA) \cite{Wilks2001_IONACC,Maksimchuk2000_IONACC} or to generate X-rays (REF). In LWFA experiments, however, densities well below $n_c$ are required. 
+In laser-wakefield acceleration (LWFA) the laser pulse propagates through a plasma and sets up a density modulation. This requires a plasma with a density below the critical density, $n_c = m_e \epsilon_0 \omega^2/e^2$. A medium with electron density $n_e < n_c$ is referred to as `underdense'. For a laser of wavelength $\lambda = 800\,\mathrm{nm}$ these are typically gaseous targets. `Overdense' targets with a density higher $n_e \geq n_c$ are for titanium-sapphire lasers mostly solid or liquid targets used for ion acceleration schemes, e.g. (Target Normal) Sheath Acceleration \cite{Wilks2001_IONACC,Maksimchuk2000_IONACC}, or to generate X-rays \cite{Edwards1990_BURNTHROUGH}. 
 \vspace{\baselineskip}
 
-Gas and liquid targets offer the advantage of being used in high-repetition experiments as they can be destroyed and replenished in a short amount of time without significant re-alignment and debris production. The limiting factors for the repetition rate are the performance of the vacuum system, the time it takes the gas flow to reach equilibrium, the durability of nozzles/casings etc. and the repetition rate of the laser system in use. Facilities like FLASHForward that have in principle the capabilities and the ambition to operate at MHz repetition rate (REF) even have to consider ion and plasma dynamics and scintillation times for detectors\addref{}.
-\SMComm{Does ion motion kick in at MHz? What is ion plasma frequency? }
+Gas and liquid targets can be destroyed and replenished in a short amount of time without significant re-alignment and debris production, and are suitable for high-repetition experiments. The factors limiting the repetition rate are then the performance of the vacuum system, the time it takes the gas flow or liquid to reach equilibrium, the durability of nozzles and other components, and the repetition rate of the laser system itself.
 \vspace{\baselineskip}
 
-Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001_GASJETS}, gas cells or capillaries \cite{Leemans2006_GEV,Leemans2014_GEV,Nakamura2007_GEVGUIDED,Desforges2014_CAPILLARY} (REF SIMON HOOKERS GROUP? JENS GROUP?) and capillary targets with a pre-ionised plasma (using an electric discharge) \cite{Spence2001_WAVEGUIDE}. In some cases several targets of the same or different type or combined and staged together to achieve more favourable results.
-However, even within those types of targetry a large variety exists, with each target being tailored to a different application and purpose. 
+Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001_GASJETS}, gas cells (REF\addref) and capillaries \cite{Spence2001_WAVEGUIDE,Leemans2006_GEV}. In some cases several targets of the same or different type or combined and staged together to achieve more favourable results (REF\addref). The target size, i.e. the distance the laser pulse propagates through the medium, has to be matched with the laser in use, considering depletion and dephasing lengths to optimise the particle and radiation output, and to use the energy of the laser pulse efficiently. As a result, there is a large variety of different targets, each tailored to a different application (REF\addref). Here we will focus on examples of gas jets and cells relevant to the work presented within the course of this thesis. An overview of those targets is given in Table \ref{Methods:tables:GasTargets}.
 
-The target size, i.e. the distance the laser pulse has to propagate through the medium, has to be matched with the laser in use, considering depletion and dephasing lengths to optimise the particle and radiation output, and to use the energy of the laser pulse to its fullest.
+\begin{figure}
+\centering
+\includegraphics[height=0.35\columnwidth]{GasCell_Example_cut.png}\includegraphics[height=0.35\columnwidth]{conical_nozzle_prettypic.jpg}
+\caption{Gas targets under fire. Right: Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionized by the laser and lights up. Picture taken at \textsc{Gemini}, Central Laser Facility, in December 2015. Left: Gas Cell}
+\end{figure}
 
-
-As listing and explaining all those different targets would be a hopeless task, the focus will be on examples of gas jet and cell specimen relevant to the work presented within the course of this thesis.
-\EliasComm{Change this.}
+\begin{table}
+\centering
+{\rowcolors{3}{white}{lightgray!50}
+\begin{tabular}{|r|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Gas Targets used in this work}} \\
+\hline \hline
+\textbf{Chapter} & \textbf{Target Type} & \textbf{Length} & \textbf{Gas} & \textbf{Inj. Mechanism}\\ \hline \hline
+\ref{Chap:linICS} & Jet + Blade & 15 mm & Helium & Shock Injection\\
+\ref{Chap:RR15} & Jet & 15 mm & Helium & Self + Shock Injection\\
+\ref{Chap:BW} & Cell & 20 mm & Helium + N & Self + Ionisation Injection\\
+\hline
+\end{tabular}
+}
+\caption{Overview of gas targets and gases used in this work.}
+\label{Methods:tables:GasTargets}
+\end{table}
 
 \subsection{Gas Jets}
 
@@ -302,11 +306,6 @@ The density of the gas jet is controlled by varying the backing pressure of the 
 Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. However, experimental results tend to be less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014_GEV} and stability \cite{Desforges2014_CAPILLARY,Osterhoff2008_CELL} to setups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible. ALSO MENTION MAX ENERGY FROM JET (4 GEV CORELS) \cite{Kim2013_GEV} \SMComm{too definitive.  Improvements could also be for other reasons... }
 \vspace{\baselineskip}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.4\columnwidth]{nozzle_sketch.png}
-\caption{Nozzle sketch, distances in mm. MAKE OWN SKETCH AND WITH RELEVANT NUMBERS}
-\end{figure}
 
 Different geometries and nozzles are being used depending on the application: for instance conical and rectangular, completely flat or double cones, diverging or converging. Different nozzle types and sizes have advantages for certain applications, producing density profiles for enable specific injection mechanisms, provide a fairly smooth flat-top profile \cite{Semushin2001_GASJETS} and so on.
 The diversity of nozzle designs also lead to the idea of using 3D printing methods for fast prototyping and tailoring the nozzles to the specific needs of the experiment \cite{Jolly2012_3DJET}.
@@ -315,26 +314,40 @@ To tailor the density profile even more groups have inserted thin objects into t
 
 The material applied is frequently a type of metal, varying from aluminium to steel or brass, in order to withstand the high laser intensities and the plasma heat. In the case of \cite{Jolly2012_3DJET} plastic was used for prototyping. Manufacture errors or deterioration over long run times can have an impact on the gas flow and will lead to deviations from idealised hydrodynamic simulations. Hence nozzles (and other gas targets as well) are usually characterised, i.e. their gas flow is analysed, either before or after an experiment to account for deviations from the ideal simulation properties in hydrodynamic codes. The density can, for instance, be determined using an interferometry setup and Abel inversion \cite{FOURIER}.
 
-\begin{figure}
-\centering
-\includegraphics[height=0.35\columnwidth]{GasCell_Example_cut.png}\includegraphics[height=0.35\columnwidth]{conical_nozzle_prettypic.jpg}
-\caption{Gas targets under fire. Right: Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionized by the laser and lights up. Picture taken at \textsc{Gemini}, Central Laser Facility, in December 2015. Left: Gas Cell}
-\end{figure}
+
 
 \subsubsection{Experimental Implementation}
-
-The gas nozzles used in experiment are conical aluminium nozzles designed to produce supersonic gas flows. Orifice size, $D_{crit}$ in drawing, is 1 mm wide and diverges over a certain height to its maximum diameter.
-
-In Chapter \ref{Chap:RR15} a conical nozzle with $1\,\mathrm{mm}$ orifice diverges over $19.7\,\mathrm{mm}$ to its maximum diameter of $15\,\mathrm{mm}$ (opening angle $\theta = 19.56^\circ$)\footnote{designed by Stuart Mangles, Imperial College}.
-In Chapter \ref{Chap:linICS}  a conical nozzle with $1\,\mathrm{mm}$ orifice diverges over $23.3\,\mathrm{mm}$ to its maximum diameter of $15\,\mathrm{mm}$ (opening angle $\theta = 16.72^\circ$)\footnote{designed by Stefan Kneip, Imperial College}. A steel blade was inserted $1.2\,\mathrm{mm}$ into the gas flow at $4\,\mathrm{mm}$ height above the nozzle at $-32.4\pm 0.3^\circ$ vertical tilt from the laser axis. The blade is mounted on a rotation and translation stage that allows changing the height and angle of the blade and how far it is inserted into the jet.
-
-The nozzles were operated at 70 to 100 bar backing pressures, typically at electron densities of few $10^{18}\,\mathrm{cm}^{-3}$.
-
 \begin{figure}
 \centering
 \includegraphics[height=0.3\columnwidth]{TopView_Blade_Gas_S_Edge.jpg}\includegraphics[height=0.3\columnwidth]{Blade_interferometry_reference.jpg}\includegraphics[height=0.3\columnwidth]{ShadowgraphyXiao.jpg}
 \caption{Gas jet with blade example pics. Shadowgraphy by Xiao Cui (MSc Imperial College).}
 \end{figure}
+The gas nozzles used in the experiments discussed in Chapter \ref{Chap:linICS} and \ref{Chap:RR15} are conical aluminium nozzles designed to produce supersonic gas flows. The nozzles were operated at 70 to 100 bar backing pressures, providing electron densities of few $10^{18}\,\mathrm{cm}^{-3}$. The orifice size, $D_{crit}$, (see Figure \ref{Methods:Fig:GasNozzleSketch}) is in both cases 1 mm wide and diverges to a maximum inner diameter of $15\,\mathrm{mm}$ at an opening angle of $\theta = 19.56^\circ$ (designed by Stuart Mangles, Imperial College) and $\theta = 16.72^\circ$ (designed by Stefan Kneip, Imperial College), respectively.
+In the experiment described in Chapter \ref{Chap:linICS} a steel blade was inserted $1.2\,\mathrm{mm}$ into the gas flow at $4\,\mathrm{mm}$ height above the nozzle at $-32.4\pm 0.3^\circ$ vertical tilt from the laser axis. The blade is mounted on a rotation and translation stage that allows changing the height and angle of the blade and its position in the jet.
+
+\begin{minipage}{\textwidth}
+  \begin{minipage}[b]{0.49\textwidth}
+    \centering
+    \includegraphics[width=0.8\columnwidth]{GasNozzleSketch.pdf}
+    \captionof{figure}{Nozzle sketch, distances in mm.}\label{Methods:Fig:GasNozzleSketch}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.49\textwidth}
+    \centering
+{\rowcolors{3}{white}{lightgray!50}
+\begin{tabular}{|r|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Gas nozzle details}} \\
+\hline \hline
+\textbf{Chap.} & $\bm{D_{crit}}$ & $\bm{D_{exit}}$ & $\bm{H}$ & $\bm{\theta}$\\ \hline \hline
+\ref{Chap:linICS} & 1 mm & 15 mm & 19.7 mm & $19.56^\circ$\\
+\ref{Chap:RR15} & 1 mm & 15 mm & 23.3 mm & $16.72^\circ$\\
+\hline
+\end{tabular}
+}
+      \captionof{table}{Summary of gas nozzle properties.}\label{Methods:tables:GasNozzles}
+    \end{minipage}
+  \end{minipage}
 
 
 \subsection{Gas Cells}
@@ -368,16 +381,17 @@ The variety of gas targets, their performance and the performance of the specifi
 
 In Chapter \ref{Chap:BW}, a variable length aluminium gas cell was used reaching up to 20 mm. The gas cell is equipped with replaceable glass windows and exit cones to counteract the constant deterioration of the cell performance. Typical backing pressures were around $100's\,\mathrm{mbar}$ to reach few $10^{18}\,\mathrm{W cm^{-2}}$. The gas cell was designed, built and maintained by Nelson Lopes.
 
+
+
+\iffalse
 \subsection{Choice of Gas}
 
-The properties and the behaviour of the plasma accelerator depend on the medium the laser propagates in. Tailoring the density profile or the gas in use can force the evolution of the bubble and inject electrons before wave-breaking. An easy handle is the choice of gas as it requires little engineering, but can have a significant impact on the injection mechanism in the wakefield accelerator.
-\vspace{\baselineskip}
+The properties and the behaviour of the plasma accelerator depend on the medium the laser propagates in. Tailoring the density profile or the gas in use can force the evolution of the bubble and inject electrons before wave-breaking. An easy handle to influence the properties of the accelerated electron beam is the choice of gas as it requires little engineering, but can have a significant impact on the injection mechanism in the wakefield accelerator.
 
-Helium and nitrogen are presented as examples of gases relating to the self-injection and ionisation injection mechanism introduced earlier in the \nameref{Chap:Theory:LWFA}. Similarly as there is a variety of different target designs other media are used as well.
-\vspace{\baselineskip}
+Helium and nitrogen are presented as examples of gases relating to the self-injection and ionisation injection mechanism introduced in Section \ref{Theory:Sec:InjectionMechanismsAccTailor}. Similarly as there is a variety of different target designs other gases are used as well.
 
-The first example is helium. At typical laser intensities in the context of LWFA helium is fully ionised and at first approximation the laser pulse propagates through a homogeneous medium. While propagating through the medium the laser pulse and the bubble evolve, the laser self-focuses, the wake becomes strongly non-linear and wave-breaking occurs, resulting in electrons being injected into the bubble \cite{Bulanov1997_SELF}: this is called self-injection as this mechanism is purely based on the evolution of the bubble in the plasma. This mechanism, however, is hence strongly coupled to the properties of the laser and its evolution in the plasma.
-Another gas that is fully ionised at these intensities is hydrogen. The downside is, however, the additional safety concern arising from its explosive capabilities. 
+Helium is at typical laser intensities in the context of LWFA fully ionised, so that the laser pulse propagates approximately through a homogeneous medium. While propagating through the medium the laser pulse and the bubble evolve, the laser self-focuses, the wake becomes strongly non-linear and wave-breaking occurs, resulting in electrons being injected into the bubble \cite{Bulanov1997_SELF}: this is called self-injection as this mechanism is purely based on the evolution of the bubble in the plasma. This mechanism, however, is hence strongly coupled to the properties of the laser and its evolution in the plasma.
+Another gas that is fully ionised at these intensities is hydrogen, which, however, requires additional safety measures arising from its explosive capabilities. 
 \vspace{\baselineskip}
 
 The second example is nitrogen. Electrons in higher-Z gases like nitrogen are bound more strongly than in helium or hydrogen. At typical laser intensities used in LWFA nitrogen cannot be fully ionised and outer electrons are only released at peak intensities of the laser pulse. This behaviour is utilised in ionisation injection. Here a gas with a low ionisation threshold, e.g. helium, is doped with a high-Z gas, e.g. nitrogen. In this case helium would allow the laser pulse to propagate and to drive a wake. The high-Z gas would result in a release of additional electrons at the peak fields of the laser pulse which are then trapped and accelerated \cite{McGuffey2010_ION,Pak2010_ION}.
@@ -388,6 +402,7 @@ In Chapter \ref{Chap:linICS}, helium was used in a gas jet with a blade (shock i
 In Chapter \ref{Chap:BW}, helium with nitrogen dopant was used (ionisation injection) in a gas cell.
 
 In Chapter \ref{Chap:RR15}, helium was used in a gas jet, indications of self-injection and shock-injection.
+\fi
 
 \subsection{Characterising Gas Targets}
 
@@ -460,14 +475,6 @@ On the experiments described a Mach-Zehnder interferometer was used, but with a 
 
 Due to this geometry the interferometer can be set up as an extension to an existing shadowgraphy imaging system. It constitutes a complementary and very useful tool to the shadowgraphy. Whilst the shadowgraphy is useful to identify features in the medium, the interferometry image can give absolute numbers for the phase shift translating into the electron densities of the target by applying Abel inversion if one assumes cylindrical symmetry \cite{FOURIER} (see Jason Cole's PhD thesis \cite{ColeThesis} for more instructive details).
 
-\subsubsection{Self emission of the plasma}
-
-Another much simpler and qualitative way to diagnose the plasma is done by imaging the self-emission or recombination light.
-This shows the formation of a channel and the presence of any strong features or simply that the laser reaches the gas target and a plasma is present.
-Due to the longer timescale of recombination (microseconds) this is typically not an ultrafast diagnostic like the transverse probe and is in this context mostly used for qualitative insights.
-
-However, in other experiments plasma emissions have been used to achieve the temporal overlap of an electron beam and a laser (see plasma afterglow \cite{Scherkl2019_PLASMAAFTERGLOW}).
-\SMComm{This section is very unspecific.  Either discuss what info you can get and how, or drop,}
 
 \section{Magnetic Energy Spectrometer}
 \label{Chap:Methods:Sec:Espec}
@@ -532,25 +539,7 @@ More details on the typical procedure can be found, for instance, in Jason Cole'
 \SMComm{Why}
 In all Chapters Lanex (standard and Biomax) are used in conjunction with Andor Neo cameras.
 
-\subsection{Absolute Charge Measurement}
-
-Absolute charge measurements are challenging in an EMP rich environment as near intense laser-plasma interactions.
-\SMComm{This section is a bit sparse of useful information.  I surest you read Jon Woods chapter in this (or at least cite it).  
-As the absolute calibration of electron number isn’t a big part of your work, this whole section could be subsumed into the previous one and a short sentence.
-The signal recorded from the lanex screen can be related to the absolute number of electrons by cross calibrating with an imaging plate (ref wood).}
-Commonly, Lanex or other scintillators imaged by optical CCD cameras are used to measure the electron spectrum and charge.
-However, obtaining an absolute charge calibration requires a very detailed knowledge of the efficiencies of the scintillator material, imaging system, quantum efficiency of the detector chip and so on (REF REF). Typically, phosphorescent image plates (WHAT ARE THEY MADE OF) are used instead to achieve an absolute calibration (REF).
-
-In the experiments described image plate was attached to the back of the electron spectrometer screen and left in the beam path for several shots. After removing the image plate again they are left to decay over a certain period before then being analysed using a scanner. The accumulated signature on the image plates was then overlapped with the corresponding scintillator images taken with the optical cameras to obtain a conversion factor of pixel counts to charge. The scattering and damping of the imaging plate has to be considered and its heightened sensitivity which might result in additional background noise on the imaging plate due to its large dynamic range.
-
-The disadvantage of imaging plate technology is that it is not suitable for high repetition rate operation as it has to be replaced manually. In addition, any change of the imaging system requires a new calibration which could be intrusive and time-constraining depending on the spectrometer setup (vacuum or air?).
-The evaluation of the diagnostic is also not instantaneous as it has to be left to decay and then scanned.
-\vspace{\baselineskip}
-
-Other technology being used are ICT, but they have to be shielded properly as electronics is vulnerable in EMP environment and are very expensive.
-
-
-ADD A REFERENCE THAT DESCRIBES THE PROCEDURE IN MORE DETAIL, ON ABSOLUTE CALIBRATION.
+The signal recorded from the lanex screen can be related to the absolute number of electrons by cross calibrating with an imaging plate \cite{WoodThesis}.
 
 
 
