@@ -546,86 +546,61 @@ The signal recorded from the lanex screen can be related to the absolute number 
 \section{Gamma-ray Diagnostics}
 \label{Methods:Sec:GammaDiags}
 
-\subsection{Scintillator Profile Screen}
+In the following diagnostics measuring the profile and spectrum of energetic radiation are introduced. Both detectors consist of a pixellated scintillator array imaged by a CCD camera. In one case the transverse profile of the radiation is measured, in the other case the gradual decay throughout several scintillating layers is used to infer the spectrum of the incident radiation.
 
-Once the energies reach the gamma-ray regime (> 1 MeV), even using an indirect-detection camera on axis becomes infeasible as photons will decay into secondary particles and radiation that will shower the camera and reduce its lifetime.
+At photon energies $> 1\MeV$ the quantum efficiency of CCD chips decreases significantly (REF\addref) such that a direct measurement of the radiation use these becomes infeasible. The production of particle showers can also lead to damages to electronics in the path of the radiation. As a consequence commercially available indirect detection X-ray cameras, e.g. Andor iKon, that directly couple a scintillating layer to a silicon-based readout chip are also not advisable in these energy ranges. By spatially separating the two components, i.e. placing the scintillator in the radiation path and the CCD sufficiently far away, this problem can be circumvented.
 
-Relying on indirect detection with an off-axis camera or detector then becomes necessary. 
-In experiment this has been an array of scintillator material normal to the beam axis and imaged by a camera.
+A scintillator placed into the path of the energetic radiation emits scintillation light when energy is deposited in the scintillator. A suitable imaging system collects the light and directs it onto the CCD detector. Commonly used scintillators emit light in a spectral bandwidth matched to the quantum efficiency of silicon-based detectors with a material-dependent characteristic emission spectrum. The light yield of the scintillator is at the energies relevant in this context proportional to the energy deposited in it (REF\addref), with a material-dependent conversion efficiency from energy deposited to number of photons emitted (REF\addref). The light emission is isotropic in a $4\pi$ solid angle (REF\addref), which can lead to a
+ spreading of the signal comparable to the thickness of the scintillator. This spreading can be reduced by either using a thin scintillator or by dividing the detection area into smaller scintillators such that light from one crystal can not enter another and vice versa. The result in the latter case is then a pixellated detector, where the spatial resolution is determined by the width of the crystals such that thicker crystals can be used to increase the light yield. To increase the fraction of collected light the crystal faces are often polished and some sides are coated or covered with a reflective surface, so called reflectors, such that the emitted scintillation can be directed. 
 
-This enables measuring the shape of the profile is interesting as it allows deduction of the source (SEE REF). In this context it gives insight into the properties of the electrons (their divergence, propagation and so on). 
-The profile is also an indicator the the intensity of the interaction in non-linear ICS and carries the imprint of the interacting electron beam within it.
-It is hence a useful diagnostic to not only confirm an interaction took place but also to characterise the conditions at the interaction.
+\subsection{Profile Screen}
 
-\EliasComm{Reference REF UMSTADTER AO? TOM BLACKBURN IF PUBLISHED.}
+Measuring the radiation profile is a useful to measure, for instance, the pointing of the radiation cone and its divergence, or as indicator of the total radiation yield.
+In the context of inverse Compton scattering or nonlinear relativistic Thomson scattering, where a relativistic electron beam is collided with an intense laser pulse, the elongation of the radiation profile in the laser polarisation direction has also been proposed as measurement of the laser intensity at the interaction \cite{HarShemesh2012_INTENSITY,Yan2017_ICS} (Blackburn REF\addref).
 
-\subsubsection{Experimental Implementation}
+In the experiments described in this work a pixellated scintillating screen is placed into the path of the radiation, normal to the beam axis, and is then imaged by a sensitive CCD camera (Andor iXon) with a bandpass filter. 
+See Figure XX for sketch of the setup. An overview of the different arrays used in the experiments is given in Table \ref{Methods:Table:GammaProfileOverview}
+The imaging was in all cases done close to normal to the scintillator surface, either directly or by placing a mirror into the radiation path, to maximise the collection efficiency of the scintillation light which is directed due to the reflectors. This also reduces the required post-processing of the images to small rotations and background subtractions. In this setup the required spatial resolution of the imaging system is low as the intrinsic spatial resolution of the detector is given by the width of the scintillator voxels which are $\sim 1\mm$ or more.
+The scintillating material that was used is caesium-iodide doped with thallium which has one of the highest light conversion efficiencies of available crystals at XX per MeV (REF\addref), with a central wavelength of XX. 
 
-In these experiments caesium-iodide doped with thallium is used (TO DO WHAT REF NUM\addnum) frequently due to its high light yield. LANEX has typically a better spatial resolution due to its fine grain size ($\sim 100\,\mathrm{\mu m}$) but the energy deposition in the thin screens, especially at gamma-ray energies, is not sufficient to produce a lot of signal. Long CsI crystals give a pixelated response. LYSO also comes at a decent resolution but the light yield is lower. It is a fast scintillator but at lower repetition rates as at \textsc{Gemini}, this is not necessary and the noise levels can not be gated away as it is too close.
-\SMComm{Sometimes the style is a bit to conversational.  “Comes at a decent resolution” is not very tight phrasing }
 \begin{figure}
 \centering
-\includegraphics[height=0.3\columnwidth]{JenaProfile.jpg}\includegraphics[height=.3\columnwidth]{ScreenshotGEANT_JenaStack.png}\includegraphics[height=0.3\columnwidth]{20190208r015s036_GammaProfile_crop.jpg}
+\includegraphics[height=0.3\columnwidth]{JenaProfile.jpg}\includegraphics[height=.3\columnwidth]{ScreenshotGEANT_JenaStack.png}\includegraphics[height=0.3\columnwidth]{GammaProfileExample.pdf}
 \caption[Scintillator profile screen, photograph, GEANT representation and measured gamma signal.]{Example of a scintillator stack used as profile screen in experiment. Photograph of the scintillator screen (left) along its GEANT representation (middle) and gamma signal measured with the stack in experiment (right).}
+\label{Methods:Figs:GammaProfileExample}
 \end{figure}
 
-Different profile screens were used in the experiments. The details can be found in Table XX NUMBER REF.
-
-The scintillators emit around 546 nm (XX NUMBER) of radiation which is ideal for CCD chips. Andor iXon cameras (sensitive chips) are used to image the scintillators close to normal or using a mirror. A bandpass filter can be used to reduce the noise.
 
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l|l|l|l|r|r}
-Name & Chapter &Crystals & Crystal Dimension & Front Plate & Divider\\ \hline \hline
+{\rowcolors{3}{white}{lightgray!50}
+\begin{tabular}{|l|l|l|l|r|r|}
+\hline
+\multicolumn{6}{|c|}{\textbf{Overview of Scintillating Profile Screens}} \\ \hline \hline
+\textbf{Name} & \textbf{Chapter} & \textbf{Crystals} & \textbf{Crystal Dimension} & \textbf{Front Plate} & \textbf{Divider}\\ \hline \hline
 QUB & \ref{Chap:BW}, BW & $20 \times 20$ & $2 \times 2 \times 20$ mm & Al 10 mm & Al 0.1 mm\\
 Jena & \ref{Chap:linICS}, linICS & $45 \times 45$ & $1 \times 1 \times 10$ mm & TiO2 0.5 mm & TiO2 0.2 mm\\
 DESY & \ref{Chap:linICS}, linICS & $30 \times 30$ & $1.5 \times 1.5 \times 10$ mm & Epoxy 0.5 mm & Epoxy 0.2 mm\\
-RAL & \ref{Chap:RR15}, RR & $47 \times 33$ & $5 \times 5 \times 50$ mm & None & Al 1 mm
+RAL & \ref{Chap:RR15}, RR & $47 \times 33$ & $5 \times 5 \times 50$ mm & None & Al 1 mm\\
+\hline
 \end{tabular}
-\caption[Overview of scintillator arrays used as profile screens in experiments.]{Overview of caesium-iodide crystal stacks used in experiments as profile screens.}
+}
+\caption[Overview of scintillator arrays used as profile screens in experiments.]{Overview of caesium-iodide arrays used as radiation profile screens in this experiment.}
+\label{Methods:Table:GammaProfileOverview}
 \end{table}
 
-The photons go through the entire thickness of 10 mm CsI, so background subtraction from random noise was not a large concern. The signal is strong, also due to the high light yield of CsI at cost of spatial resolution (1mm crystals). The crystal outlines themselves and the overall array act as spatial reference as their symmetry is well known. A close to normal orientation is preferable to discourage mixing and again a normal imaging is ideal as well, resulting in very little post-processing being required.
 
+Figure \ref{Methods:Figs:GammaProfileExample} shows a photograph of one of the scintillating arrays used in this work (left, labelled `Jena' in Table \ref{Methods:Table:GammaProfileOverview}) along with a GEANT4 representation (centre) and a false-colour image of a detector response produced by a gamma-ray beam from inverse Compton scattering measured in the experiment discussed in Chapter \ref{Chap:linICS}.
+Each square corresponds to one crystal or pixel in the array.
 
+\subsubsection{Energy dependent detector response}
 
-\subsubsection{GEANT simulations showing energy deposition}
-\SMComm{NIST is a good bridge as it goes up to the MeV level (Henke stops at 30 keV)}
-\EliasComm{Add a figure on energy deposition using GEANT REF for MeV range and on the other hand absorption using Henke.}
-RESULT: The energy deposited in an energy range (GIVE GEANT SIM FOR 10-XX MEV) is proportional to the energy of the radiation.
-
-\EliasComm{Add comment on GEANT code in general, REF GEANT, mention Jason's and Kris' input.}
-
-When planning to use such a detector as measurement of the total energy of the radiation one has to keep in mind that this is not a calorimeter in the gamma regime as radiation is bound to be transmitted through the stack. However, it is expected that the energy deposited per photon will vary and of course the number of photons will leave their trace on this detector.
-
-The response is simulated using GEANT:
-The detector in the simulation:
-the detector assembled in the simulation is based on a CsI stack used in some experiments and provided by the Helmholtz Institut in Jena.
-It consists of 45 x 45 CsI(Tl) crystals of face dimension 1 mm x 1 mm and a thickness of 10 mm. The crystals are spaced by a 0.2 mm layer of TiO2 and the front side has another layer of TiO2 of 0.5 mm which holds the entire stack together.
-
-The stack was defined as such in the simulation and it can be seen in Figure ADD HERE.
-
-
-The front side of the detector is XX m away from the source of the radiation, similarly to experiment conditions, hence being in general able to cover plus minus NUMBER divergence from a point source if centred along the same axis.
-
-Now individual photons with ranging energy from 10 keV to 500 MeV are launched from the source point and the energy deposited in the crystals is being recorded. Each energy step is simulated 10000 to 100000 times and then averaged to obtain an average energy deposited per photon of this energy.
-
-The results from these simulation can be seen in figure ADD HERE. Photon energies up to ENERGY are almost completely absorbed, backscattered and rarely transmitted. At around 200 keV suddenly a large amount of radiation is being absorbed. This indicates a material characteristic absorption edge.
-This means that whilst for the majority of the energy ranges the CsI profile will give a good indication as energy times flux is monotonic increasing and somewhat linear for the two regimes of interest. In the regime of hundreds of keV we have to consider that a lot of energy will be absorbed in the front layer and we have to check how this behaves further downstream in the next detector.
+To determine the energy deposited in the scintillating crystals, one has to consider the scattering of the radiation, secondary particles and their energy deposition through various mechanisms. This complex interplay of different mechanisms is most conveniently modelled in a Monte-Carlo code as we do not expect any collective effects to become important. Here a GEANT4 code was used based on work done by J. Cole and K. Poder (Imperial College). The simulation geometry includes the composition of the detector and the relevant materials in the beam path of the radiation as measured on the respective experiment. Individual photons within a range of energies are then launched towards the detector and the energy deposition is recorded as a function of the incident photon energies. For each photon energy $10^6$ photons are simulated to account for statistical fluctuations. In Figure XX the energy deposited on average per incident photon in the `Jena' profile screen is shown as a function of the incident photon energy for an energy range of 100 to 2000 keV (left) and for 1 to 100 MeV. It is assumed that the light yield of the scintillator and the energy deposition are linearly related (REF\addref) and that there are no saturation effects to be considered in this scenario. 
+With exception of a peak in energy deposition at just under 200 keV photon energy the energy deposited in the screen monotonically increases with photon energy. The distribution seems to follow one gradient up to 15 MeV and a lower gradient after this value, apparently reaching saturation.
 
 \begin{figure}
 \centering
-\includegraphics[width=.5\columnwidth]{Edep_JenaStack.pdf}\includegraphics[width=.5\columnwidth]{Edep_JenaStack_rel.pdf}
-\caption{Simulation results: energy deposited per photon in a profile stack. Replace this by 10's MeV plot as GEANT is not performing too well at low keV levels and the 250 keV peak might be a fluke.}
+\includegraphics[width=.5\columnwidth]{Edep_JenaStack.pdf}\includegraphics[width=.5\columnwidth]{Edep_Jena_1_100_MeV.png}
+\caption{In GEANT4 simulated energy deposition per photon in the `Jena' profile screen as a function of photon energy for 100 to 2000 keV (left) and 1 to 100 MeV photon energies (right).}
 \end{figure}
-
-If we look at this in terms of relative energy deposited per photon, so in other words energy deposited over energy of the photon, this does not look like a sharp edge but merely a steady decrease in energy deposited relative to the total photon energy. Scattering cross sections typically decrease with increase in energy and this goes along the same lines.
-
-
-\subsubsection{Absolute Calibration}
-
-The smaller profile stacks can also be calibrated by using a radioactive source since the stack mainly consists of crystals.
-A Na or Cs source can be used at the standard measurement conditions. The energy emission is well known. If one assumes that all energy is absorbed by the detector the light yield is related to energy deposited. The disadvantage to real calorimeters is that due to a non-zero transmission through the material and due to the spacers not all energy deposited is deposited within crystals and converted into signal.
-\SMComm{Which isotopes?}
-
