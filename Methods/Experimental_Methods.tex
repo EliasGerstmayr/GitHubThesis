@@ -3,14 +3,14 @@
 
 The following Chapter introduces a selection of experimental methods and techniques relevant in the context of the experimental results presented in this thesis and other laser wakefield acceleration (LWFA) experiments. The three main ingredients of an LWFA experiment will be covered: a high-intensity laser, gas targetry and diagnostics for particles and secondary radiation. The measurement of high-energy gamma radiation will be discussed more extensively as it is central to this work.
 
-The Chapter starts by introducing the \textsc{Gemini} laser system, the dual-beam high-intensity laser used to conduct the experiments in this work, along with diagnostics and methods used to characterise high-intensity laser pulses.
-It then continues with a section on gas targets used in this work and techniques to diagnose the plasma, followed by particle diagnostics.
+The Chapter starts by introducing the \textsc{Gemini} laser system, the dual-beam high-intensity laser used to conduct the experiments in this work, along with diagnostics and methods to characterise high-intensity laser pulses.
+It then continues with a section on gas targets and techniques to diagnose the plasma, followed by particle diagnostics.
 Finally, the chapter focuses on diagnostics for high-energy radiation in the gamma regime, in particular a scintillator array used to infer gamma spectra.
 A comprehensive review of diagnostics used in LWFA experiments is, for instance, provided in \cite{Downer2018_DiagnosticReview}.
 
 \section{The Gemini laser system}
 
-All of the experimental results presented in this work were acquired at Target Area 3 using the \textsc{Gemini} laser \cite{Hooker2006_Gemini,Hooker2008_Gemini} of the Central Laser Facility at the Rutherford-Appleton Laboratory, UK.
+All experimental results presented in this work were acquired at Target Area 3 using the \textsc{Gemini} laser \cite{Hooker2006_Gemini,Hooker2008_Gemini} of the Central Laser Facility, Rutherford-Appleton Laboratory, UK.
 
 \subsection{Laser properties}
 
@@ -479,68 +479,64 @@ Due to this geometry the interferometer can be set up as an extension to an exis
 \section{Magnetic Energy Spectrometer}
 \label{Chap:Methods:Sec:Espec}
 
-The energy of electrons in wakefield experiments can be determined using a spectrometer based on magnetic dispersion. The electrons are deflected using a dipole magnet and are detected on a scintillating Lanex screen.
-
-In order to understand the fundamental relations this method is based on, the motion of a single electron in a homogeneous magnetic field is considered and analytically solved in the case of an electron passing through a region of a homogeneous magnetic field of finite extent, but without considering fringe fields or gradients. In reality, the magnetic fields are measured or simulated and the particles are tracked using numerical methods.
-\vspace{\baselineskip}
-
-Consider an external magnetic field restricted to a circle of radius $r_b$ embedded in an otherwise completely field-free region. The following derivation is based on \cite{ManglesThesis}.
+The energy of electrons in wakefield experiments can be determined with a magnetic spectrometer, where they are dispersed in a magnetic field and then detected on a scintillating Lanex screen.
+To analytically determine the deflection angle, $\theta$, in such a magnetic field, we will consider an external magnetic field restricted to a circle of radius $r_b$ embedded in an otherwise completely field-free region: \cite{ManglesThesis}.
 \begin{align}
 \mathbf{B} &= B \mathbf{e_z} \, &r \leq r_b,\nonumber \\
 &= \mathbf{0} &r > r_b
 \end{align}
-
-The angular deflection of a particle in this case can be solved analytically using the Larmor radius and simple geometry.
-
+The angular deflection of a particle in this case can be solved analytically using the Larmor radius and simple geometry. This is visualised in Figure \ref{Methods:Figs:EspecAnalyticSketch} (left).
 \begin{figure}
 \centering
-\includegraphics[height=0.3\columnwidth]{elecspec.png}\includegraphics[height=0.3\columnwidth]{Espec_shotexemp.jpg}
-\includegraphics[width=0.75\columnwidth]{TrackingFigMangles2015.png}
-\caption[Visualisation of an electron deflected in a homogeneous magnetic field and ]{Visualisation of an electron deflected in a homogeneous circular magnetic field (grey) with radius $r_b$. The larger green circle indicates the Larmor radius, determining the electron trajectory (blue) from the point of entry into the field (A) to its exit point (C) resulting in a total deflection $\theta$. Bottom: Example of particle tracking through a three-piece magnet for electrons of -X, 0 and +X MRAD pointing.}
+\includegraphics[width=0.49\columnwidth]{elecspec_2.pdf}\includegraphics[width =0.49\columnwidth]{elecspec_3.pdf}
+\caption[Visualisation of an electron deflected in a homogeneous magnetic field.]{Left: Visualisation of an electron deflected in a homogeneous circular magnetic field (grey) with radius $r_b$. The larger (empty) circle indicates the Larmor radius, determining the electron trajectory (blue) from the point of entry into the field (A) to its exit point (B) resulting in a total deflection $\theta$. Right: Similar visualisation as on the left but considering two electrons entering the same field at different angles and positions. }
+\label{Methods:Figs:EspecAnalyticSketch}
 \end{figure}
-\SMComm{I suggest not filling the larmor orbit circle - there is nothing inside it, and it was easy to confuse with the b fiekdb}
-\SMComm{Small numbers! Units!! }
-Drawing the circular field region for the magnetic field and the electron entering the field, one can then graphically indicate its Larmor radius, equivalent to its expected motion for the region with the constant B-field. The angles in this geometry are determined using the trigonometric relation that the angles in a triangle have to add up to $\pi$:
+Since the sum of all angles in a triangle is $\pi$:
 \begin{equation}
 2 \alpha + \theta = \pi,
 \end{equation}
-where $\theta$ is the deflection angle and $\alpha$ the angle indicated in the graphic (see figure).
-
-Relating this to the angles to substitute $\alpha$:
+where $\theta$ is the deflection angle and $\alpha$ the angle indicated in the sketch in Figure \ref{Methods:Figs:EspecAnalyticSketch} (left).
+The angle $\alpha$ is geometrically related to the two radii:
 \begin{equation}
-\tan \alpha = \frac{r_L}{r_b},
+\tan \alpha = \frac{r_L}{r_b}.
 \end{equation}
-and then expressing this into parameters we can measure in experiment we reach
+By combining these results and expressing this in quantities relevant in an experiment we obtain
 \begin{align}
 \tan \frac{\theta}{2} &= \frac{r_b}{r_L},\nonumber\\
-&= \frac{e B r_b}{p_\perp}.
+&= \frac{e B r_b}{p_\perp},
 \end{align}
-
-In a typical LWFA experiment $p_\perp$ will be dominated by the component in the laser propagation axis, i.e. if the propagation axis were z, $|\mathbf{p_\perp}| \approx p_z$. 
+which indicates that at a fixed magnetic field strength, $B$, and field region, $r_b$, the deflection angle, $\theta$, is larger for a lower particle momentum, $p_\perp$, the to the magnetic field lines perpendicular momentum component. 
+In a typical LWFA experiment $p_\perp$ will be dominated by the component in the laser propagation axis, i.e. if the propagation axis were $z$, $|\mathbf{p_\perp}| \approx p_z$. 
 \vspace{\baselineskip}
 
-The correct assignment of the position on the screen to the correct electron energy is achieved by measuring the position of all components (lanex screen, magnet, TCC) and mapping the magnet field strength accurately, for instance using a Hall probe, and then running a particle tracking code with these details.
-\SMComm{which one(s) were used in this thesis? }
-Each pixel has a certain error bar on its associated energy as the divergence of the electron beam (instrument function), an offset at source or shot-to-shot pointing fluctuations could lead to different positions at the same electron energy (pointing). The energy resolution is determined by the strength of the magnetic field, the drift length, the intrinsic spatial resolution of the scintillator (for Lanex $\sim 100\,\mathrm{\mu m}$ REF) and the spatial resolution of the imaging system. 
-\SMComm{A bit unclear, }
+In a realistic scenario the field regions are not perfectly homogeneous and field gradients have to be considered. The magnetic fields can be measured, for instance, using a Hall probe and the particle trajectories are determined with numerical methods.
+To measure the magnetic dispersion as diagnostic a scintillating Lanex screen is positioned behind the magnet. By measuring the magnetic field strength of the magnet and the distances between the components, and by calculating the trajectories for a range of energies, each position on the screen can be linked to a specific electron energy. In this work a Matlab-based particle tracking code by Matthew Streeter (Imperial College) was used (see Figure \ref{Methods:Figs:Espec_MattVis} for a visualisation).
+
+If all electrons enter the magnet at one defined position and angle each position on the detector screen is uniquely related to one electron energy. For a distribution of angles and positions each position on the screen can correspond to multiple energies (see Figure \ref{Methods:Figs:EspecAnalyticSketch}, right). 
+In LWFA experiments variations in angle and position typically originate from two sources: 
+first, the entire beam might be ejected from the accelerator at an angle relative to a reference axis that varies from shot-to-shot. 
+This is referred to as \textit{beam pointing} and shifts the entire dispersed beam on the detection plane relative to the reference axis, i.e. leads to a systematic shift in the inferred energy if not considered.
+Multiple detector screens or spatial references can be used to identify and correct for beam pointing \cite{Clayton2010_ION,Soloviev2011_TWOSCREEN,PoderThesis}.
+
+Second, the beam has a finite divergence such that electrons entering the magnetic field have a distribution of angles, even at a fixed energy. 
+As a result, one energy is not mapped onto a single point but a spot of finite size, i.e. the dispersion or energy axis and spatial components of the beam are mixed (instrument function).
 \vspace{\baselineskip}
 
-A second Lanex screen or other spatial references (fiudicials) can help to identify and correct for pointing fluctuations or an overall pointing to achieve a more accurate determination of the energy, but could introduce additional scattering. 
-\SMComm{What does overall pointing mean}
-See \cite{PoderThesis} for more details on this or for instance \cite{Clayton2010_ION,Soloviev2011_TWOSCREEN}.
+\begin{figure}
+\centering
+\includegraphics[width=1\columnwidth]{MagneticSpectrometer_Matt.png}
+\caption[Visualisation of particle tracking in realistic fields.]{Example of particle tracking simulation using a code by M. Streeter. Electrons enter a three-piece magnet from the left side and are dispersed according to their energy (colour bar). The perpendicular field magnet field component, $B_\perp$, is colour-coded, with black indicating zero and white $B_\perp = 1\,T$ (only valid within the black the rectangle, fields outside of it vanish). The vertical dashed line indicates the position of a measurement screen. }
+\label{Methods:Figs:Espec_MattVis}
+\end{figure}
 
-The width of the electron trace in the non-dispersion direction can be used to determine the divergence of the beam (in the non-dispersion axis) and cross-checked with the spectrum of the betatron radiation or a beam profile monitor.
-\SMComm{How?}
+The momentum component of the electron beam that is parallel to the magnetic field lines is unperturbed by the magnetic field as the magnetic Lorentz force vanishes for parallel vectors. If the size of the electron beam is very small at the end of the accelerator, measuring its width in the non-dispersed direction at the detector plane and the distance from the detector to the accelerator can be used to infer the magnitude of $p_\parallel$ relative to $p_\perp$, $p_\parallel/p_\perp$. This ratio is in the small-angle approximation equivalent to the angle to a reference axis $z$, with $z \parallel \mathbf{p_\perp}$, or applied to an entire beam the \textit{divergence}, $\theta$.
 \vspace{\baselineskip}
 
-In addition to measuring the distances and the magnetic field, the imaging system for the scintillator screen has to be characterised.
-This requires transforming the optical image (projective transform), spatially calibrate the image and translate from spatial to energy axis.
-More details on the typical procedure can be found, for instance, in Jason Cole's or Kristjan Poder's PhD thesis \cite{ColeThesis, PoderThesis}
-\SMComm{Why}
-In all Chapters Lanex (standard and Biomax) are used in conjunction with Andor Neo cameras.
-
-The signal recorded from the lanex screen can be related to the absolute number of electrons by cross calibrating with an imaging plate \cite{WoodThesis}.
-
+In the experiments discussed in this thesis the detectors are scintillating Lanex screens (Kodak Standard or Biomax) imaged by cooled 16-bit CCD Andor Neo cameras. 
+Since the imaging of the screens was non-normal but at an oblique angle to avoid placing the cameras into the path of the electrons, the spatial scale is not constant across the image. Spatial references on the image, here rulers attached to the frame holding the Lanex screen, can then be used to apply a projective transform that morphs the image onto a linear spatial scale \cite{ColeThesis, PoderThesis}. 
+The linear spatial scale can then be translated into an energy axis in the dispersion direction, by applying the results from the particle tracking code described above, and into beam divergence in the non-dispersion direction.
+The signal recorded from the Lanex screen can be related to the absolute number of electrons by cross calibrating with an imaging plate \cite{WoodThesis}.
 
 
 \section{Gamma-ray Diagnostics}
@@ -586,7 +582,7 @@ RAL & \ref{Chap:RR15}, RR & $47 \times 33$ & $5 \times 5 \times 50$ mm & None & 
 \hline
 \end{tabular}
 }
-\caption[Overview of scintillator arrays used as profile screens in experiments.]{Overview of caesium-iodide arrays used as radiation profile screens in this experiment.}
+\caption[Overview of scintillator arrays used as profile screens in experiments.]{Overview of caesium-iodide arrays used as radiation profile screens in the context of this thesis. Columns from left to right: Name or `affiliation' of the screen, chapter related to an experiment using this particular profile screen, size of the array in number of crystal columns and rows, spatial dimensions of an individual crystal in the array, material and thickness of the front plate or coating on the front side facing the beam, divider material and thickness between crystals.}
 \label{Methods:Table:GammaProfileOverview}
 \end{table}
 
@@ -596,11 +592,11 @@ Each square corresponds to one crystal or pixel in the array.
 
 \subsubsection{Energy dependent detector response}
 
-To determine the energy deposited in the scintillating crystals, one has to consider the scattering of the radiation, secondary particles and their energy deposition through various mechanisms. This complex interplay of different mechanisms is most conveniently modelled in a Monte-Carlo code as we do not expect any collective effects to become important. Here a GEANT4 code was used based on work done by J. Cole and K. Poder (Imperial College). The simulation geometry includes the composition of the detector and the relevant materials in the beam path of the radiation as measured on the respective experiment. Individual photons within a range of energies are then launched towards the detector and the energy deposition is recorded as a function of the incident photon energies. For each photon energy $10^6$ photons are simulated to account for statistical fluctuations. In Figure XX the energy deposited on average per incident photon in the `Jena' profile screen is shown as a function of the incident photon energy for an energy range of 100 to 2000 keV (left) and for 1 to 100 MeV. It is assumed that the light yield of the scintillator and the energy deposition are linearly related (REF\addref) and that there are no saturation effects to be considered in this scenario. 
-With exception of a peak in energy deposition at just under 200 keV photon energy the energy deposited in the screen monotonically increases with photon energy. The distribution seems to follow one gradient up to 15 MeV and a lower gradient after this value, apparently reaching saturation.
-
 \begin{figure}
 \centering
-\includegraphics[width=.5\columnwidth]{Edep_JenaStack.pdf}\includegraphics[width=.5\columnwidth]{Edep_Jena_1_100_MeV.png}
+\includegraphics[height=.3\columnwidth]{Edep_JenaStack.pdf}\includegraphics[height=.3\columnwidth]{Edep_Jena_1_100_MeV.png}
 \caption{In GEANT4 simulated energy deposition per photon in the `Jena' profile screen as a function of photon energy for 100 to 2000 keV (left) and 1 to 100 MeV photon energies (right).}
 \end{figure}
+
+To determine the energy deposited in the scintillating crystals, one has to consider the scattering of the radiation, secondary particles and their energy deposition through various mechanisms. This complex interplay of different mechanisms is most conveniently modelled in a Monte-Carlo code as we do not expect any collective effects to become important. Here a GEANT4 code was used based on work done by J. Cole and K. Poder (Imperial College). The simulation geometry includes the composition of the detector and the relevant materials in the beam path of the radiation as measured on the respective experiment. Individual photons within a range of energies are then launched towards the detector and the energy deposition is recorded as a function of the incident photon energies. For each photon energy $10^6$ photons are simulated to account for statistical fluctuations. In Figure XX the energy deposited on average per incident photon in the `Jena' profile screen is shown as a function of the incident photon energy for an energy range of 100 to 2000 keV (left) and for 1 to 100 MeV. It is assumed that the light yield of the scintillator and the energy deposition are linearly related (REF\addref) and that there are no saturation effects to be considered in this scenario. 
+With exception of a peak in energy deposition at just under 200 keV photon energy the energy deposited in the screen monotonically increases with photon energy. The distribution seems to follow one gradient up to 15 MeV and a lower gradient after this value, apparently reaching saturation.

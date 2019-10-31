@@ -2,7 +2,7 @@
 \label{Chap:Methods:subsec:GammaSpec}
 
 \subsubsection{Experimental Setup}
-To infer the spectrum of the gamma radiation, a long array of scintillating crystals is placed in the beam path and the scintillation signal is measured with a CCD. By simulating the response of this scintillator array in GEANT4 and comparing it to the measured response in the experiment, the spectrum can be inferred \cite{Behm2018_Gamma}.
+A long array of scintillating crystals is placed in the beam path and the scintillation signal is measured with a CCD. The spectrum of gamma radiation passing through the crystals can be inferred by simulating the response of the array in GEANT4 and comparing it to the measured response in the experiment \cite{Behm2018_Gamma}.
 A conceptual sketch of the experimental setup is shown in Figure \ref{Methods:Figs:SketchGammaSpec}: a beam of gamma rays enters from the left side of the sketch, passes through a vacuum window (orange) into air, then traverses a lead collimator and enters the scintillator array. The response of the detector is imaged by a camera (bottom right corner). 
 
 \begin{figure}
@@ -12,32 +12,31 @@ A conceptual sketch of the experimental setup is shown in Figure \ref{Methods:Fi
 \label{Methods:Figs:SketchGammaSpec}
 \end{figure}
 
-The individual scintillators are caesium-iodide crystals doped with thallium, with the dimensions $5 \times 5 \times 50\,\mathrm{mm}$. 
-The long side of the crystals is oriented transversely to the propagation direction of the gamma rays ($z$), in the sketch shown in Figure \ref{Methods:Figs:SketchGammaSpec} this is the horizontal axis $x$. This maximises the light yield as the response of the detector is integrated along this axis ($x$) at cost of spatial resolution. The crystals are arranged in a two-dimensional grid of columns ($z$) and rows ($y$). Crystals along the longitudinal axis $z$ measure the decay of the radiation and can be used to infer the spectrum. The response in the $y$-axis encodes the vertical divergence of the radiation. 
+The individual scintillators are caesium-iodide crystals doped with thallium, with the spatial dimensions $5 \times 5 \times 50\,\mathrm{mm}$. 
+The long side of the crystals is oriented transversely to the propagation direction of the gamma rays ($z$), in the sketch shown in Figure \ref{Methods:Figs:SketchGammaSpec} this is the horizontal axis $x$ (see also Figure \ref{Methods:Figs:GammaSpectrometer_Axes}). This maximises the light yield as the response of the detector is integrated along this axis ($x$) at cost of spatial resolution. The crystals are arranged in a two-dimensional grid of columns ($z$) and rows ($y$). Crystals along the longitudinal axis $z$ measure the decay of the radiation and can be used to infer the spectrum. The response in the $y$-axis encodes the vertical divergence of the radiation. 
 
 The crystals are separated from each other by light-tight spacers such that each crystal is enclosed from all but one side, from which the scintillation light leaves the crystal. This crystal side faces in $x$ direction and the scintillation light is measured on a CCD. In all the experiments discussed in this thesis cooled 14-bit EMCCD cameras of type Andor iXon were used, which are very sensitive and allow for high gain but in turn also require efficient light shielding. The cameras were equipped with suitable objectives and bandpass filters that only transmit light in the bandwidth of the scintillation light at a wavelength of $546\pm10\nm$. A reflective casing for the crystals along with polishing and reflective coating of the crystals can increase the light output. The material and thickness of the dividers between the crystal columns determine how fast the incoming radiation decays which can be used to `tune' the response of the detector for the right spectral range. The separation and thickness of the crystals in the $y$-axis, on the other hand, determines the vertical spatial or with respect to the source angular resolution.
 \vspace{\baselineskip}
 
-Two different scintillator stack designs were used as gamma spectrometers in the experiments described in this thesis . An overview of the dimensions and the materials used in the arrays is provided in Table \ref{Methods:GSpec:Table} and photos are shown in Figure \ref{Methods:Figs:CsI_Stacks}. Examples of raw images are shown in Figure \ref{Methods:Figs:CsI_shotexemp}.
+Two different scintillator stack designs were used as gamma spectrometers in the experiments described in this thesis. An overview of the dimensions and the materials used in the arrays is provided in Table \ref{Methods:GSpec:Table} and photos are shown in Figure \ref{Methods:Figs:CsI_Stacks}. Examples of raw images are shown in Figure \ref{Methods:Figs:CsI_shotexemp}.
 
 
 
 \begin{figure}
 \centering
 \includegraphics[height=0.3\columnwidth]{scintillator.jpg}\includegraphics[height=0.3\columnwidth]{DualAxis_assembly.JPG}
-\caption[Photographs of scintillator arrays used in experiments.]{Photographs of scintillator arrays used in experiments. Left: RAL stack. Right: Dual-axis long stack.}
+\caption[Photographs of scintillator arrays used in experiments.]{Photographs of scintillator arrays used in experiments. Left: `RAL' stack of $47 \times 33$ crystals. Right: Long dual-axis stack consisting of $10 \times 70$ crystals. More details can be found in Table \ref{Methods:GSpec:Table}}
 \label{Methods:Figs:CsI_Stacks}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[height=0.3\columnwidth]{GammaSpecCrystals_2.pdf}\includegraphics[height=0.3\columnwidth]{GammaSpecCrystals_3.pdf}
-\caption{Sketch of crystal orientations in the spectrometer arrays for the RAL stack (left) and the alternating layers in the new long stack.}
+\caption{Sketch of crystal orientations (cyan) in the spectrometer arrays relative to the incident gamma rays (green) for the RAL stack (left) and the alternating layers in the new long stack (right). The yellow faces indicate the open sides out of which the scintillation light (green) leaves the crystal.}
 \label{Methods:Figs:GammaSpectrometer_Axes}
 \end{figure}
 
 In the experiment described in Chapter \ref{Chap:RR15} a $47 \times 33$ [longitudinal ($z$) $\times$ vertical ($y$)] array of crystals housed in an aluminium casing was used\footnote{Designed and built by Rob Clarke (CLF).} (see Figure \ref{Methods:Figs:CsI_Stacks}, left). The long side of the crystals was oriented along the horizontal direction ($x$) to maximise the light yield. The crystals were separated in $z$ and $y$ by 1-mm-thick light-tight aluminium spacers. On the sides ($x$) the array is held together by 1-mm-thick aluminium plates. One plate is solid, on the other side 4 mm diameter holes over the crystal faces allow the scintillation light to escape. The aluminium spacers and the solid plate reflect the light and direct the photons towards the only open side. The front and back side of the stack ($z$) are fortified with $9\,\mathrm{mm}$ thick steel plates.
-\vspace{\baselineskip}
 
 The experiment outlined in Chapter \ref{Chap:BW} used the same scintillator array as above for the setup described in Chapter \ref{Chap:RR15}, but the thick steel front plate is replaced by a 1-mm sheet of plastic (PTFE) to reduce the attenuation of the incident radiation. In this setup scintillating profile screen is placed in front of the spectrometer array (see previous section). The added material of the profile screen roughly compensates the effect of the thinner front plate and matches the response of the detector to its previous configuration. 
 \vspace{\baselineskip}
@@ -85,44 +84,31 @@ Dual & \ref{Chap:linICS}, linICS & $10 \times 70$ & Al 2 mm & Nylon 0.5 mm\\
 \subsubsection{GEANT Simulation Setup}
 
 The attenuation and energy deposition of the radiation is simulated using the Monte Carlo code GEANT4 \cite{GEANT4} as the impact of secondary radiation and particles as well as 3D effects such as side-scattering become important.
-The specifically used GEANT4 code used in this work is based on previous work by K. Poder, J. Cole and K. Behm.
+The specific GEANT4 code used in this work builds on previous work by K. Poder and J. Cole (Imperial College).
 
 
 \begin{figure}
 \centering
-\includegraphics[trim={3cm 0 15cm 0}, clip, height=0.3\columnwidth]{Screenshot_GEANT4_RALStack.png}\includegraphics[height=0.3\columnwidth]{ScreenshotGEANT_DualAxisStack.png}
+\includegraphics[height=0.25\columnwidth]{Screenshot_GEANT4_RALStack_BW.png}\includegraphics[height=0.25\columnwidth]{ScreenshotGEANT_DualAxisStack.png}
 \caption[GEANT representations of the two scintillator arrays used in the experiments]{GEANT representations of the two scintillator arrays used in the experiments without their outer casing. The cyan blocks indicate the caesium-idodide crystals and the energy deposited in those volumes is recorded as detector response. Divider materials, front- and end plates are indicated in white. Photos of the stacks are shown in Figure \ref{Methods:Figs:CsI_Stacks}.}
 \label{Methods:GSpec:GEANT4screenshots}
 \end{figure}
-\SMComm{There are photons on the simulation image. Mention.}
 
-In this code $10^{6}$ individual photons or $10^5$ electrons are simulated, assuming collective or multi-photon/-particle processes are negligible, such that individual photon responses can be combined cumulatively. The specific experiment geometries are reconstructed in GEANT4 including the detector geometry and materials in the pathway as well as distances measured in the experiment. The electrons and gamma rays are emitted from a point source and low divergence, close to an idealised pencil beam. The GEANT4 representations of the two spectrometer designs are shown in Figure \ref{Methods:GSpec:GEANT4screenshots}.
+Typically $10^{6}$ individual photons or $10^5$ electrons are simulated, assuming collective or multi-photon/-particle processes are negligible, such that individual photon responses can be combined cumulatively. The specific experiment geometries are reconstructed in GEANT4 including the detector geometry and materials in the pathway as well as distances measured in the experiment. The electrons and gamma rays are emitted from a point source and low divergence, close to an idealised pencil beam. The GEANT4 representations of the two spectrometer designs are shown in Figure \ref{Methods:GSpec:GEANT4screenshots}.
 The code measures the energy deposition in the scintillator material and does not model the physics of the scintillation process or the light transport. It is assumed that the energy deposited within the scintillator crystals is linearly related to the light yield of the scintillator, i.e. the number of fluorescence photons emitted, independent of the process of energy deposition (REF\addref)
 
 
 \subsubsection{Image processing}
 
-In this setup, the response of the detector is recorded as an image on a CCD and the images taken require some processing before analysing them.
-The specific steps vary from setup to setup depending on the imaging system.
+The response of the scintillator array is recorded as an image on a CCD and the images require processing before analysing them.
+The specific steps vary from setup to setup depending on the imaging system. The open side of the crystals (see Figure \ref{Methods:Figs:GammaSpectrometer_Axes} were imaged close-to-normal to collect a large fraction of the scintillation light, which also removed the necessity of morphing the image as required for the magnetic spectrometer screen, for instance.
 
-Ideally, the crystals should be imaged close-to-normal as a large fraction of the scintillation light will be emitted in forwards-direction and the collection efficiency will drop off off-normal.
-\SMComm{There is always an angle,.. what makes it relative? Keep the sentence linked to previous one, which was
-about imaging at normal...}
-If there is a relative angle between the stack and the camera, a projective image transform can correct the perspective, similarly as described for the magnetic spectrometer setup previously (SIMILARLY TO THAT DESCRIBED IN SECTION XX\addref). For normal imaging a simple rotation of the image will suffice. 
-In some cases there might be aberrations in the system which lead to image distortion. In principle, this can be corrected using appropriate algorithms. In order to correctly apply transformations to the images, it is helpful to take images as spatial references (for instance rulers or well-defined grids).
+The images contain background noise from different sources that have to be removed. The background can roughly be divided into `permanent' background and on-shot noise. The permanent noise includes the intrinsic `dark noise' on the camera chip and counts related to ambient light.
+This background can be characterised by taking a series of images at dark conditions and then subtracted from on-shot data.
 
-In the setups used in the context of this thesis, the imaging was always set up to be close-to-normal and aberrations were negligible, such that only small rotations were used as processing.
-\SMComm{In which case is there any need for the discussion above??}
-\vspace{\baselineskip}
+On-shot additional noise from hard radiation or electrons directly hitting the CCD (`hard hits' or `hot pixels'), scattered laser light and a physical bremsstrahlung background is measured. The treatment of the physical bremsstrahlung background is more complicated and will be discussed later.
+Scattered laser light can be mitigated by putting light shielding in place and adding bandpass filters matched to scintillation light to the imaging system. Hard hits, single pixels with high or saturation value, can be removed by a median filter which will also result in some blurring of the image.
 
-After correcting for the perspective and optical aberrations, we have to remove background noise from the images.
-There are different kinds of noise from different sources: 
-Dark noise from the camera (gradients in the chip), stray light, hot pixels from hard hits in experiments and bremsstrahlung background when electrons are present. The bremsstrahlung background will be investigated later.
-
-The readout of the camera might by itself produce a noise floor which is a combination of room light and thermal effects in the chip, could also be in gradients. This can be removed by taking images in dark light conditions and subtracting those dark images from the image. This accounts for ambient light and gradients in the chip.
-\SMComm{Check sentence for clarity.}
-
-On-shot when energetic radiation is produced some photons and electrons might interact directly with the CCD chip of the imaging camera and produce so-called hot pixels or hard hits, which are single pixels with high value or saturated. By applying a median filter to the image these outliers will be removed, but the image also experiences some blurring.
 
 On-shot there will also be stray laser light on the image.
 Depending on the image and the fraction of signal on the image the subtraction of the on-shot background (stray light etc.) will vary.
