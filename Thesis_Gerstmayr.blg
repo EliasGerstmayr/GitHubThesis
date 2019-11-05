@@ -12,7 +12,7 @@ A level-1 auxiliary file: Results/RR2015.aux
 A level-1 auxiliary file: Results/BW2018.aux
 A level-1 auxiliary file: Conclusion/Conclusions.aux
 A level-1 auxiliary file: Appendix/Appendix.aux
-Reallocated field_info (elt_size=4) to 12020 items from 5000.
+Reallocated field_info (elt_size=4) to 11968 items from 5000.
 Database file #1: ICS_Diag.bib
 Database file #2: General.bib
 Database file #3: Theses.bib
@@ -36,51 +36,50 @@ Warning--can't use both volume and number fields in Dirac1930_Annihilation
 Warning--can't use both volume and number fields in Klemperer1934_Annihilation
 Warning--missing school in LuThesis
 Warning--empty journal in GEMINI_GATEVALVES
-Warning--can't use both volume and number fields in Nakamura2007_GEVGUIDED
 Warning--empty journal in Pollock2011_MULTISTAGE
-Warning--can't use both volume and number fields in FLUKA
 Warning--can't use both volume and number fields in Toth2017_BELLA
 Warning--empty journal in Heitler1954_BH
+Warning--can't use both volume and number fields in FLUKA
 Warning--can't use both volume and number fields in Fedotov2017_NAROZHNY
-You've used 270 entries,
+You've used 268 entries,
             2354 wiz_defined-function locations,
-            2330 strings with 75986 characters,
-and the built_in function-call counts, 105245 in all, are:
-= -- 8838
-> -- 2259
-< -- 225
-+ -- 1020
-- -- 510
-* -- 5363
-:= -- 11130
-add.period$ -- 897
-call.type$ -- 270
-change.case$ -- 25
+            2314 strings with 74912 characters,
+and the built_in function-call counts, 104328 in all, are:
+= -- 8757
+> -- 2241
+< -- 222
++ -- 1012
+- -- 506
+* -- 5309
+:= -- 11030
+add.period$ -- 888
+call.type$ -- 268
+change.case$ -- 23
 chr.to.int$ -- 0
-cite$ -- 281
-duplicate$ -- 10052
-empty$ -- 9537
-format.name$ -- 729
-if$ -- 24870
+cite$ -- 278
+duplicate$ -- 9968
+empty$ -- 9454
+format.name$ -- 723
+if$ -- 24657
 int.to.chr$ -- 0
-int.to.str$ -- 270
-missing$ -- 2033
-newline$ -- 1525
-num.names$ -- 270
-pop$ -- 3269
+int.to.str$ -- 268
+missing$ -- 2015
+newline$ -- 1511
+num.names$ -- 268
+pop$ -- 3241
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4277
+skip$ -- 4246
 stack$ -- 0
-substring$ -- 6017
-swap$ -- 7316
-text.length$ -- 225
+substring$ -- 5966
+swap$ -- 7257
+text.length$ -- 222
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 11
-while$ -- 781
-width$ -- 273
-write$ -- 2971
-(There were 11 warnings)
+warning$ -- 10
+while$ -- 773
+width$ -- 271
+write$ -- 2943
+(There were 10 warnings)

@@ -35,9 +35,9 @@ In addition to its full-power capabilities, a continuous-wave mode for alignment
 \label{Methods:Figs:FocusingGeometries}
 \end{figure}
 In the context of the LWFA experiments discussed later typically two types of beam line geometries are of relevance at \textsc{Gemini} (see Figure \ref{Methods:Figs:FocusingGeometries}):
-First, a long-focal-length geometry using either an $f/40$ spherical mirror or an off-axis parabola with focal length $f = 6\,\mathrm{m}$ to provide an intense laser pulse with normalised vector potential $a_0 > 1$ and a long Rayleigh length, $z_R$, to efficiently drive LWFA over long distances. This geometry is used for the wakefield driver beam in all experiments discussed in this work. Due to the long focal length and the limited size of the target area and the vacuum chamber the beam has to be reflected or `folded' at least once during the focusing process, in recent setups about halfway between optic and focal plane. As a result, the maximum usable energy in this laser arm is limited by the damage threshold of these `folding' mirrors or in other words the fluence (optical energy delivered per unit area) the mirrors can sustain. The threshold at which damage occurs depends on several factors, including the beam quality and beam size, the quality of the mirror coating and cleanliness of the chamber.
+First, a long-focal-length geometry using either an $f/40$ spherical mirror or an off-axis parabola with focal length $f = 6\,\mathrm{m}$ to provide an intense laser pulse with normalised vector potential $a_0 > 1$ and a long Rayleigh length, $z_R$, to efficiently drive LWFA over long distances. This geometry is used for the wakefield driver beam in all experiments discussed in this work. Due to the long focal length and the limited size of the target area and the vacuum chamber the beam has to be reflected or `folded' at least once during the focusing process, in recent setups about halfway between optic and focal plane (see Figure \ref{Methods:Figs:FocusingGeometries}, top). As a result, the maximum usable energy in this laser arm is limited by the damage threshold of these `folding' mirrors or in other words the fluence (optical energy delivered per unit area) the mirrors can sustain. The threshold at which damage occurs depends on several factors, including the beam quality and beam size, the quality of the mirror coating and cleanliness of the chamber.
 
-The second focusing geometry is the short-focal-length scatterer which is typically an $f/2$ off-axis parabola with focal length $f = 300\,\mathrm{mm}$. In the experiments discussed in Chapters \ref{Chap:linICS} and \ref{Chap:RR15} an off-axis parabola with a central fitted hole was used to enable a head-on counter-propagating geometry in conjunction with the long-focal-length beam line. 
+The second focusing geometry is the short-focal-length scatterer (see Figure \ref{Methods:Figs:FocusingGeometries}, bottom) which is typically an $f/2$ off-axis parabola with focal length $f = 300\,\mathrm{mm}$. In the experiments discussed in Chapters \ref{Chap:linICS} and \ref{Chap:RR15} an off-axis parabola with a central fitted hole was used to enable a head-on counter-propagating geometry in conjunction with the long-focal-length beam line. 
 
 
 \section{Laser Diagnostics}
@@ -110,26 +110,15 @@ Ideally, a series of several focal spots, even hundreds, are taken to incorporat
 \section{Dual-Beam Timing Diagnostics}
 \label{Methods:Sec:DualBeamTiming}
 
-\SMComm{I think this section needs more background information for the reader who isn’t familiar with what you are trying to do.  
- we need to time two beams to femtosecond level which cant be achieved with diodes.
-interference can be used (time scale of the pulse envelope)
-well known inteference patterns  for two plane waves crossing at an angle (straight fringes) or plane wave and spherical wave front (circular fringes) 
- also get similar for large f number and small f number expanding beams which is suited here.}
  
-In experiments involving two or more pulsed laser beams, for instance pump-probe or colliding-pulse experiments, the beams require spatial and temporal synchronisation down to the picosecond or even femtosecond level.
-Depending on the accuracy required different techniques can help measure the difference in timing, as well as correct and monitor the synchronisation over extended periods of time.
+All of the experiments discussed in this thesis use both laser arms of \textsc{Gemini}, which have to be overlapped in space and synchronised in time or `timed' to each other. This section discusses the two diagnostics, photodiodes and spatial interference, that were used to measure the temporal separation of two laser pulses. Photodiodes were employed to measure and account for relatively `large' separations on the nanosecond to few picosecond level, which was by itself sufficient for the experimental setup described in Chapter \ref{Chap:BW}. The colliding-pulse experiments described in Chapters \ref{Chap:linICS} and \ref{Chap:RR15} required a femtosecond level synchronisation of the laser pulses, for which interference occurring within the time scale of the pulse envelopes was used in addition. Two plane waves crossing at an angle produce an interference pattern of parallel straight lines, whereas a plane wave interfering with a spherical wave front results in a circular pattern. Two laser pulses that expand at different f-numbers, here $f/2$ and $f/40$, behave similarly as the latter case as the radii of curvature of their wave fronts differ strongly. The presence of a circular interference pattern then signals temporal overlap within their combined pulse duration at a tens of femtoseconds accuracy.
+At the end of this section the implications for electron-laser timing and effects from other experimental procedures, such as the pump-down of the chamber or the attenuation of the laser pulses, are considered.
 
-Photodiodes, spatial and spectral interferometry are introduced. This is not an exhaustive list and other methods, e.g. cross-correlator, are not introduced as they were not used explicitly in the experiments presented.
-\vspace{\baselineskip}
-
-At \textsc{Gemini} both laser beams originate from the same source (oscillator) and are hence `intrinsically' synchronised, which means that they are emitted/triggered at the same time, underlie the same jitter but do not shift relative to each other at the point of emission (SM: GRAMMAR). However, this does not mean that both beams are automatically synchronised at the point of interaction, since the arms take different pathways through the amplification and compression stage, and then finally follow different beam lines within the target chamber. The longer their separate paths the larger the potential impact of, for instance, vibrations and thermal effects can be. Small changes can cumulatively make a significant impact on the femtosecond-scale synchronisation required in some of the challenging experiments attempted at \textsc{Gemini}.
-\vspace{\baselineskip}
-
-`Timing' two beams means in this case that the relative path lengths are adjusted to compensate for the measured difference in the time of arrival at the interaction point. At \textsc{Gemini} larger distances (few nanoseconds or metres in distance) require moving optics physically to extend the beam path, smaller distances are finely adjusted by using a linear translation stage that adds or removes path length in double-pass at few femtosecond (micrometre) precision. This stage is on the `split-and-delay' (SAD) table in the LA3 laser area. The linear stage is a Newport XXX REFat XX precision\addnum\addref.
+At \textsc{Gemini} both laser arms are `intrinsically' synchronised as they originate from the same source (oscillator), but might arrive at the interaction point at different times as they travel on beam paths of different length. By measuring the difference in the time of arrival of both laser pulses, $\Delta \tau$, the length of the beam paths can be adjusted accordingly, such that $\Delta \tau \rightarrow 0$. Temporal separations on the nanosecond level are typically corrected by extending the beam path of the `early' laser pulse. Smaller adjustments corresponding to temporal shifts of tens of picoseconds are performed using a motorised linear stage (Newport M-ILS250) on the `split-and-delay' (SAD) table in the laser area. The SAD delay stage adds or removes beam path in double-pass at micrometre or correspondingly few femtosecond precision.
 
 \subsection{Photodiodes}
 
-In the experiments described in this thesis two attenuated laser pulses are overlapped spatially at an interaction point. The pulses are then either directed directly onto the active chip or are scattered from an object placed at the interaction point, for instance a piece of lens tissue. Each laser pulse triggers a response in the photodiode that can be measured with an oscilloscope. Since each pulse is only $\sim 40\fs$, almost instantaneous for the diode, the response for each pulse is a symmetric peak with the rise/fall time as width. The relative time of arrival can then be determined by measuring the separation of the two peaks. At \textsc{Gemini} the fast EOT-4000 GaAs photodetector (see Figure \ref{Methods:Figs:Photodiode}) with a rise/fall time of $< 30\,\mathrm{ps}$ was used in conjunction with a Lecroy WaveMaster 813Zi-B oscilloscope ($>13\,\mathrm{GHz}$). The detectors were only used at air and were not tested for vacuum use.
+In the experiments described in this thesis two attenuated (low power) laser pulses were spatially overlapped at the interaction point. The pulses are then either directed directly onto the active chip of a photodiode or are scattered from an object placed at the interaction point, for instance a piece of lens tissue. Each laser pulse triggers a response in the photodiode that can be measured with an oscilloscope. Since each pulse is only $\sim 40\fs$ long, almost instantaneous for the diode, the response for each pulse is a symmetric peak with the rise/fall time as width. The relative time of arrival can then be determined by measuring the separation of the two peaks. At \textsc{Gemini} the fast EOT-4000 GaAs photodetector (see Figure \ref{Methods:Figs:Photodiode}) with a rise/fall time of $< 30\,\mathrm{ps}$ was used in conjunction with a Lecroy WaveMaster 813Zi-B oscilloscope ($>13\,\mathrm{GHz}$). The detectors were only used at air and were not tested for vacuum use.
 
 
 \begin{figure}
@@ -140,50 +129,71 @@ In the experiments described in this thesis two attenuated laser pulses are over
 \end{figure}
 
 
-Photodiodes and oscilloscopes are relatively straightforward to set up and use, but due to their typical rise/fall time of several tens of picoseconds the accuracy of an individual measurement using an appropriate oscilloscope is $\sim10\,\mathrm{ps}$. The accuracy of the synchronisation can be improved by conducting multiple measurements across a range of relative temporal delays and then interpolating between the data points to obtain the zero-delay point. At \textsc{Gemini} the delay stage on the SAD table can be moved to adjust the relative delay of both laser arms. Since the stage moves at micrometre precision the main experimental error for each measurement is the reading error on the oscilloscope. The result of such a scan in relative delay is shown in Figure \ref{Methods:Figs:Photodiode} (right) for data taken on the experimental campaign presented in Chapter \ref{Chap:linICS}: the relative delay of the two laser pulses (here in terms of how much earlier the $f/40$ laser pulse arrives) as measured with the photodiode and the oscilloscope is shown as a function of the SAD position. When both pulses arrive within each other's rise or fall time the diode responses merge and the peaks can not be properly distinguished, which is why there are no data points around the zero-delay point. The linear fit to the data points is parametrised by $y_{fit} = 6.78 \mathrm{ps/mm} \,x_{SAD} - 178.72\,\mathrm{ps}$ which indicates that the zero point is at $x_0 = 26.36\mm \pm 0.68$. The error on the SAD position (equivalent to $\sim 2\,\mathrm{ps}$ was estimated using the 95 percent confidence interval of the linear fit (shaded area in Figure \ref{Methods:Figs:Photodiode}) and can similarly be gauged by dividing the accuracy of a single measurement by the square root of the number of measurements.
+Photodiodes and oscilloscopes are relatively straightforward to set up and use, but due to their typical rise/fall time of several tens of picoseconds the accuracy of an individual measurement using an appropriate oscilloscope is $\sim10\,\mathrm{ps}$. The accuracy of the synchronisation can be improved by conducting multiple measurements across a range of relative temporal delays and then interpolating between the data points to obtain the zero-delay point. At \textsc{Gemini} the delay stage on the SAD table can be moved to adjust the relative delay of both laser arms. Since the stage moves at micrometre precision the main experimental error for each measurement is the reading error on the oscilloscope. 
 
+The result of such a scan in relative delay is shown in Figure \ref{Methods:Figs:Photodiode} (right) for data taken on the experimental campaign presented in Chapter \ref{Chap:linICS}: the relative delay of the two laser pulses (here in terms of how much earlier the $f/40$ laser pulse arrives) as measured with the photodiode and the oscilloscope is shown as a function of the SAD position. When both pulses arrive within each other's rise or fall time the diode responses merge and the peaks can not be properly distinguished, which is why there are no data points around the zero-delay point. The linear fit to the data points is parametrised by $y_{fit} = 6.78 \,[\mathrm{ps/mm}]\, \times\,x_{SAD}[\mathrm{mm}] - 178.72\,[\mathrm{ps}]$ which indicates that the zero point is at $x_0 = (26.36 \,\pm\, 0.68)\mm$. The error on the SAD position (equivalent to $\sim 2\,\mathrm{ps}$) was estimated using the 95 percent confidence interval of the linear fit (shaded area in Figure \ref{Methods:Figs:Photodiode}).
 
-\subsection{Spatial Interferometry}
+\subsection{Interferometry}
 \label{Methods:Sec:SpatialInterferometry}
 
-Diode timing is limited by the typical rise and fall times and the access to a fast oscilloscope.
-A different method that is more coupled to the pulse duration of the laser beams is spatial interferometry. 
-If both laser pulses have the same polarisation and are overlapped in space and time, they can interfere. 
-Due to the large bandwidth of the Ti:Sa laser pulses used in this context the coherence length is very short and interference will only take place over the combined pulse duration, i.e. a potentially small time window. This is why this method is a useful technique to achieve precise timing after using a diagnostic with a wider time window (but less precision) like the photodiodes introduced in the previous section.
+Diode timing as described in the previous section can measure up to nanosecond temporal separations but is limited to an accuracy of a few picoseconds. It is a suitable technique to `roughly' synchronise the two laser pulses. Interference of the two laser pulses can be used to synchronise the two laser pulses to the femtosecond level.
 
-\SMComm{This sentence comes across as a bit confused.   Is it the pulse duration or the bandwidth that determines the coherence length? }
+
+Considering the electric fields of two plane waves with the identical frequency $\omega$ and polarisation but different wave vectors $\mathbf{k_1}$, $\mathbf{k_2}$, time of arrival $t_1$, $t_2$ and initial phase $\phi_1$, $\phi_2$ can be written as:
+\begin{equation}
+\mathbf{E_1} (\mathbf{r},t_1) = E_1 e^{i(\omega t_1 - \mathbf{k_1} \cdot \mathbf{r} + \phi_1)} \mathbf{e_x},\,\, \mathbf{E_2} (\mathbf{r},t_2) = E_2 e^{i(\omega t_2 - \mathbf{k_2} \cdot \mathbf{r}+\phi_2)} \mathbf{e_x},
+\end{equation}
+where $\mathbf{e_x}$ is a unit vector indicating the polarisation, $\mathbf{r}$ is the position vector and $E_1, E_2$ are the amplitudes of the electric fields.
+The combined intensity of both plane waves, for instance at the plane of the detector is 
+\begin{equation}
+I = \frac{1}{4}\epsilon_0 \mathbf{E} \cdot \mathbf{E}^\ast, 
+\end{equation}
+where $\mathbf{E}^\ast$ is the complex conjugate of $\mathbf{E}$, and $\mathbf{E} = \mathbf{E_1} + \mathbf{E_2}$.
+
+\begin{equation}
+I = \frac{\epsilon_0}{4}\left|E^2_1 + E^2_2+ E_1 E_2 \cos(2 ky \sin\theta - \omega \Delta \tau + \Delta\phi )\right|,
+\end{equation}
+where $\theta$ is the angle between the two plane waves, $\Delta \tau$ the difference in their time of arrival and $\Delta \phi$ the difference in the initial constant phase. The relation shows that the crossing plane waves produce a straight interference pattern due to the relative angle between them, $\theta$, which vanishes when both wave vectors are parallel and arrive at the same time, $\Delta \tau$. The contrast, the difference between the maxima and minima $(I_{max} - I_{min})/(I_{max} + I_{min})$, is optimised for equal field amplitudes, $E_1 = E_2$. 
+If we consider a plane wave and a spherical wave instead the resulting interference pattern will produce concentric rings due to the radius of curvature:
+\begin{equation}
+I \sim 1 + \cos\left(\frac{\pi r^2}{\lambda R}\right),
+\end{equation}
+where we simplified the relation by assuming that the wave vectors are parallel and $\Delta \tau = 0 = \Delta \phi$, i.e. in contrast to the previous case the interference pattern does not vanish for parallel waves with an identical time of arrival. In the limit of $R \rightarrow \infty$ this approaches the scenario as discussed above, the interference of two plane waves. 
+
+A focusing and defocusing Gaussian laser pulse changes its radius of curvature, $R$, where the wave front is strongly curved near the focus (within few Rayleigh lengths, $z_R$) and asymptotically flat at a distance $|z| \gg z_R$ away from the focus (see Section \ref{Chap:Theory:Sec:LaserInVac}). As a consequence, one can produce straight or circular fringes by interacting two Gaussian laser pulses either close or far away from their foci.
+\vspace{\baselineskip}
+
+
+Ultrashort laser pulses require large bandwidths such that the coherence length is very short, here comparable to the pulse duration. As a result, the variation in the interference pattern due to a change in the term $\omega \Delta \tau$ can be neglected when varying the relative delay between two pulses. The interference pattern only appears when both pulses arrive at the detector plane within the limited time window of their combined pulse durations with an optimised contrast of the pattern when the beams are centred on each other in space and time as then the entirety of the pulses interfere. This method is referred to as \textit{spatial interferometry}. Since the `active' time window in which the pattern appears is very small an initial `rough' timing using the photodiodes described in the previous section is of advantage.
+
+On the other hand, it is possible to increase the coherence length by dispersing both laser pulses with a grating such that the individual frequency components interact separately, assuming both pulses are identically chirped. This method is referred to as \textit{spectral interferometry}. See for instance \cite{Corvan2016_TIMING} for a detailed description. Depending on the dispersion this enables an active window of hundreds of picoseconds and in turn allows using the variation of $\omega \Delta \tau$ to quantitatively determine the temporal separation of the laser pulses as it is now encoded in the wavelength of the interference pattern.
+
+\subsubsection{Experimental Implementation}
 \begin{figure}
 \centering
 \includegraphics[height=0.4\columnwidth]{PrismCam.pdf}\includegraphics[height=0.4\columnwidth]{PrismCamExample.pdf}
 \caption[Realising spatial interferometry as timing diagnostic in an experiment (sketch and example from an experiment).]{Realising spatial interferometry as timing diagnostic in an experiment. Left: Sketch of a spatial interferometry setup used in the experiments described in this work. Two counterpropagating laser beams are reflected collinearly from a 90-degree knife-edge prism and onto a CCD (brown). One laser pulse is highly divergent ($f/2$, left), the other one has a comparatively long Rayleigh length ($f/40$, right). The different radii of curvature result in a circular interference pattern when both laser pulses are overlapped in space and time. The prism can be translated to only reflect half of each beam (dotted prism). Right: Example of spatial interferometry (circular interference pattern) measured in an experiment using a setup as sketched out on the left with an attenuated (low-power) pulsed $f/2$ (OAP with hole) and an $f/40$ beam. Both beams aligned such they are effectively bisected by the knife-edge prism (spatial overlap, see dotted prism in the sketch on the left). As a result the $f/2$ beam shows straight diffraction patterns in its near field. The hole in the $f/2$ beam is also clearly visible and the circular interference pattern is centred on it which indicates that both beams are close to parallel and the interference pattern mainly originates from the different radii of curvature.}
+\label{Methods:Figs:PrismCamSketchPlusExample}
 \end{figure}
 
 
-\EliasComm{Add here an example for Gaussian beams and the equation for interference based on this. Proper explanation}
+In the experiments discussed in Chapters \ref{Chap:RR15} and \ref{Chap:linICS} spatial interferometry was used to synchronise two counterpropagating laser pulses of pulse duration $\sim 45\fs$, one focused by an $f/2$ off-axis parabola (OAP), the other by an $f/40$ OAP or spherical mirror. The laser pulses are cross-polarised and the timing measurements were performed in an attenuated low-power mode. To combine both beams a 90-degree reflective knife-edge prism (Thorlabs, protected aluminium/dielectric) was placed at the interaction point, which reflects the counterpropagating beams collinearly onto the CCD chip of a camera (see Figure \ref{Methods:Figs:PrismCamSketchPlusExample}, left).
+By gradually translating the prism away from the CCD the two laser beams move closer to the knife edge of the prism and in the process closer together until only one half of each beam is reflected  (see dotted prism outline in Figure \ref{Methods:Figs:PrismCamSketchPlusExample}, left). By now moving the CCD in the opposite direction the beams diverge and overlap: we achieved spatial overlap. When both pulses are also synchronised in time a circular interference pattern will appear which allows a synchronisation of both beams to about $\sim 45\fs$. An example of this final configuration from the experiment described in Chapter \ref{Chap:linICS} is shown in Figure \ref{Methods:Figs:PrismCamSketchPlusExample} (right), where the large half circle with the central hole is the divergent $f/2$ laser pulse and the bright spot is the only slowly expanding $f/40$ beam. The straight, vertical interference pattern is due to diffraction from the knife edge, whereas the circular, more closely spaced circular pattern results from the interference between both two pulses.
 
-\begin{equation}
-\boxed{I \sim |1+\cos(ky \sin\theta - \omega \Delta \tau + \phi )|}
-\end{equation}
-\SMComm{Relate to the equation.}
+\begin{figure}
+\centering
+\includegraphics[height=0.4\columnwidth]{FringeVisibilityCole.png}
+\caption{Visibility of the interference pattern (fringes) as a function of the relative delay from a reference position for data taken on an experimental campaign at \textsc{Gemini} in 2015. The data was analysed by J. Cole (Imperial College). }
+\label{Methods:Figs:PrismCam_FringeVisibility}
+\end{figure}
 
-As we see the interference fringes rely on a phase difference between the two laser pulses. The main contributor for two timed spectrally identical laser pulses are a relative angle or different radii of curvature.
-The experiments presented combine a short focal length optics with a longer focal length beam line and hence perfect alignment can be aspired to as the interference pattern will be clearly visible due to the stark difference of the radii of curvature of, for instance, and f/40 and f/2 at the relevant point.
-\EliasComm{Change perfect alignment for something else.}
+The camera was equipped with a long-working-distance microscope objective ($\times 10$ Mitutoyo Plan Apochromat Near-Infrared) and a linear polariser.
+The polariser is prerequisite for interference but was also be used to adjust the relative brightness of both beams to increase the contrast. The contrast was also adjusted by taking advantage of the different divergences of the beam and moving the imaging plane closer or further away from the focus.
+Once the contrast was optimised the visibility of the pattern was optimised to determine the temporal overlap more accurately. By quantifying the visibility of the pattern, for instance from the Fourier transform, the accuracy of the synchronisation can be improved through statistical measurements, similarly as described for the diode timing. In Figure \ref{Methods:Figs:PrismCam_FringeVisibility} the `fringe' (interference pattern) visibility is shown as a function of the SAD position, using data analysed for \cite{Cole2018_RR} and provided by J. Cole (Imperial College). The position for the optimum overlap was determined through a fitting routine. The uncertainty of this technique was estimated to be $\sim 17\fs$.
 
-\subsubsection{Experimental Implementation}
+\subsection{Additional considerations for the synchronisation of beams}
 
-Spatial interferometry was used in the experiments discussed in Chapters \ref{Chap:RR15} and \ref{Chap:linICS}
-Both beams were reaching the interaction point at 180 degrees from each other. One f/2, the other f/40. A 90-degree knife-edge prism with reflective surface was driven in at the desired interaction point and used to deflect both beams collinearly onto the CCD chip of a camera, in this case equipped with a x10 long-working-distance microscope objective.
-
-The contrast of the interference pattern was adjusted by equalising the relative brightness of the beams with a combination of adjusting the distance of the camera to the prism edge taking advantage of the different focal lengths and by adjusting the rotation angle of the polariser as the beams are cross-polarised.
-These measurements were done using the pulsed low power beam at \textsc{Gemini}.
-\SMComm{Results?
-Can you show plot of fringe visibility v delay? 
-How accurately can you time beams?}
-
-\subsection{Considerations for Synchronising Beams}
-
-Synchronising two laser beams to each other or a laser with an electron beam in an experiment down to the femtosecond level comes with many challenges and considerations.
+The synchronisation of two laser pulses to each other or a laser pulse with an electron beam to the femtosecond level is very challenging (even if we neglect the spatial overlap to the micrometre level). In this section we will discuss certain factors that had to be considered in the context of the experiments at \textsc{Gemini} discussed later in this thesis.
 
 Light moves slower through media than through vacuum. The group velocity, $v_g$, is reduced by the refractive index, $\eta$, to $v_g =c/\eta$ or more specifically in a plasma to $v_g \approx c(1-1/2 (\omega_p/\omega)^2)$ (see Section \ref{Theory:Sec:LaserPropagationPlasma}), where $\omega$ is the frequency of the laser and $\omega_p$ is the plasma frequency (see Section \ref{Chap:Theory:Sec:PlasmaFreq}).
 Introducing or removing media asymmetrically from beam paths changes the relative time of arrival of laser pulses.
@@ -321,7 +331,7 @@ In the experiment described in Chapter \ref{Chap:linICS} a steel blade was inser
 \begin{minipage}{\textwidth}
   \begin{minipage}[b]{0.49\textwidth}
     \centering
-    \includegraphics[width=0.8\columnwidth]{GasNozzleSketch.pdf}
+    \includegraphics[width=0.7\columnwidth]{GasNozzleSketch.pdf}
     \captionof{figure}{Nozzle sketch, distances in mm.}\label{Methods:Fig:GasNozzleSketch}
   \end{minipage}
   \hfill
@@ -548,7 +558,7 @@ In the following diagnostics measuring the profile and spectrum of energetic rad
 At photon energies $> 1\MeV$ the quantum efficiency of CCD chips decreases significantly (REF\addref) such that a direct measurement of the radiation use these becomes infeasible. The production of particle showers can also lead to damages to electronics in the path of the radiation. As a consequence commercially available indirect detection X-ray cameras, e.g. Andor iKon, that directly couple a scintillating layer to a silicon-based readout chip are also not advisable in these energy ranges. By spatially separating the two components, i.e. placing the scintillator in the radiation path and the CCD sufficiently far away, this problem can be circumvented.
 
 A scintillator placed into the path of the energetic radiation emits scintillation light when energy is deposited in the scintillator. A suitable imaging system collects the light and directs it onto the CCD detector. Commonly used scintillators emit light in a spectral bandwidth matched to the quantum efficiency of silicon-based detectors with a material-dependent characteristic emission spectrum. The light yield of the scintillator is at the energies relevant in this context proportional to the energy deposited in it (REF\addref), with a material-dependent conversion efficiency from energy deposited to number of photons emitted (REF\addref). The light emission is isotropic in a $4\pi$ solid angle (REF\addref), which can lead to a
- spreading of the signal comparable to the thickness of the scintillator. This spreading can be reduced by either using a thin scintillator or by dividing the detection area into smaller scintillators such that light from one crystal can not enter another and vice versa. The result in the latter case is then a pixellated detector, where the spatial resolution is determined by the width of the crystals such that thicker crystals can be used to increase the light yield. To increase the fraction of collected light the crystal faces are often polished and some sides are coated or covered with a reflective surface, so called reflectors, such that the emitted scintillation can be directed. 
+ spreading of the signal comparable to the thickness of the scintillator. This spreading can be reduced by either using a thin scintillator or by dividing the detection area into smaller scintillators such that light from one crystal can not enter another and vice versa. The result in the latter case is then a pixellated detector, where the spatial resolution is determined by the width of the crystals such that thicker crystals can be used to increase the light yield. To increase the fraction of collected light the crystal faces are often polished and some sides are coated or covered with a reflective surface, so-called reflectors, such that the emitted scintillation can be directed. 
 
 \subsection{Profile Screen}
 
