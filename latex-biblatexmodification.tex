@@ -1,0 +1,174 @@
+%
+\defbibheading{head}{\section*{Bibliography}} %
+
+
+%% ---------------------------------------------------------------
+%% Based ON:
+%% biblatex-phys --- A biblatex implementation of the AIP and APS 
+%% ---------------------------------------------------------------
+
+% Alter settings that carry through from biblatex
+\ExecuteBibliographyOptions
+  {
+    doi          = false      ,
+	url			 = false	  ,
+    eprint       = false      ,
+    firstinits   = true       ,
+    isbn         = false      ,
+    maxnames     = 2         ,
+    maxcitenames = 2          ,
+	%dashed		 = true,
+  }
+
+%%%%%
+% Year at the end:
+\renewbibmacro*{issue+date}{%
+\iffieldundef{issue}{}{\printtext[parens]{issue}\newunit}%
+}
+\renewbibmacro*{note+pages}{%
+	\printfield{note}%
+	\setunit{\bibpagespunct}%
+	\printfield{pages}%
+	\ifthenelse{\equal{\thefield{eprinttype}}{arXiv}}{%
+	}{%
+	\iffieldundef{year}{\newunit}{\setunit*{\addspace}\printtext[parens]{\usebibmacro{date}}\newunit}%
+	}
+}
+
+
+%%%%%
+% Edition
+\AtEveryBibitem{\clearfield{edition}}
+\AtEveryCitekey{\clearfield{edition}}
+
+%%%%%
+% Address
+\AtEveryBibitem{\clearfield{address}}
+\AtEveryCitekey{\clearfield{address}}
+
+%%%%%
+% Month
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryCitekey{\clearfield{month}}
+
+%%%%%
+% Number
+\AtEveryBibitem{\clearfield{number}}
+\AtEveryCitekey{\clearfield{number}}
+
+%%%%%
+% No page prefix
+\DeclareFieldFormat{pages}{\mkfirstpage{#1}}
+
+%%%%%
+% No in:
+\renewbibmacro{in:}{}
+
+%%%%%
+% DOI LINKS title
+\ExecuteBibliographyOptions{doi=false}
+\newbibmacro{string+doi}[1]{%
+\iffieldundef{doi}{%
+	\iffieldundef{url}{%
+		\iffieldundef{eprint}{#1}{%
+			\iffieldundef{eprinttype}{#1}{%
+				\ifthenelse{\equal{\thefield{eprinttype}}{arXiv}}{%
+					\iffieldundef{primaryClass}{#1}{%
+						\addspace\href{http://arxiv.org/abs/\thefield{eprint}}{arXiv:\thefield{eprint}}\addspace\printtext[parens]{\usebibmacro{date}}\newunit
+					}{%
+						\addcomma\space{}arXiv:\href{http://arxiv.org/abs/\thefield{primaryClass}/\thefield{eprint}}{\thefield{eprint}}\space{}(\thefield{year})%
+					}%
+				}{???\thefield{eprinttype}}%
+			}%
+		}%
+	}{\href{\thefield{url}}{#1}}%
+}{\href{http://dx.doi.org/\thefield{doi}}{#1}}
+}%
+
+
+\DeclareFieldFormat{title}{\usebibmacro{string+doi}{\mkbibemph{#1}}}
+\DeclareFieldFormat[article]{title}{\usebibmacro{string+doi}{\textit{#1}}}
+\DeclareFieldFormat[book]{title}{\usebibmacro{string+doi}{\textit{#1}}}
+\DeclareFieldFormat[inbook]{title}{\usebibmacro{string+doi}{\textit{#1}}}
+\DeclareFieldFormat[incollection]{title}{\usebibmacro{string+doi}{\textit{#1}}}
+\DeclareFieldFormat[inproceedings]{title}{\usebibmacro{string+doi}{\textit{#1}}}
+\DeclareFieldFormat[patent]{title}{\usebibmacro{string+doi}{\textit{#1}}}
+\DeclareFieldFormat[thesis]{title}{\usebibmacro{string+doi}{\textit{#1}}}
+\DeclareFieldFormat[online]{title}{\usebibmacro{string+doi}{\textit{#1}}}
+\DeclareFieldFormat[misc]{title}{\usebibmacro{string+doi}{\textit{#1}}}
+%
+\DeclareFieldFormat[incollection]{booktitle}{\textit{#1}}
+
+%%%%%
+% Journal title
+\DeclareFieldFormat{journaltitle}{#1}
+
+%%%%%
+% Volumne
+\DeclareFieldFormat[article]{volume}{\textbf{#1}}
+\DeclareFieldFormat[incollection]{volume}{\textbf{#1}}
+\DeclareFieldFormat[inproceedings]{volume}{\textbf{#1}}
+
+%%%%%
+% MISC ENTRY:
+
+\DeclareBibliographyDriver{misc}{%
+  %\usebibmacro{bibindex}%
+  %\usebibmacro{begentry}%
+  \printtext{\textit{\href{\thefield{url}}{\thefield{title}}}}%\printfield{title}}%\printtext[title]{
+  %\usebibmacro{title}%
+  \setunit*{\addspace}%
+  \printtext{(\thefield{year})}
+  %\printtext[parens]{\usebibmacro{author/editor+others/translator+others}}%
+  \usebibmacro{finentry}}
+
+%%%%%
+% Article
+
+\DeclareBibliographyDriver{article}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/translator+others}%
+  \setunit{\labelnamepunct}
+  \usebibmacro{title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \usebibmacro{bytranslator+others}%
+  \newunit\newblock
+  \printfield{version}%
+  \newunit\newblock
+  \usebibmacro{in:}%
+  \usebibmacro{journal+issuetitle}%
+  \newunit
+  \usebibmacro{byeditor+others}%
+  \newunit
+  \usebibmacro{note+pages}%
+  \newunit
+  \iftoggle{bbx:isbn}
+    {\printfield{issn}}
+    {}%
+  \newunit
+  \usebibmacro{doi+eprint+url}%
+  \newunit
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}
+  \usebibmacro{pageref}%
+  \newunit
+  \iftoggle{bbx:related}
+    {\usebibmacro{related:init}%
+     \usebibmacro{related}}
+    {}%
+  \usebibmacro{finentry}}
+
+%%%%%
+% Sort multiple citations by year
+\DeclareSortingScheme{mycitesort}{
+ \sort{\field{year}}
+ \sort{\field{month}}
+ \sort{\field{page}}
+}
+
+

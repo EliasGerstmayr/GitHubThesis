@@ -57,68 +57,71 @@ The FROG is a diagnostic to measure the intensity and spectral phase of ultrasho
 
 \subsection{Focal Spot Characterisation}
 
-\EliasComm{Replace this with 3 focal spot images (f/40, f/2 and f/2 with phase plate) on intensity scale. Then in words describe how to get there: take image on low power modus, then assume that it remains the same in shape. Measure energy and pulse duration, peak power on-shot and use that to derive an intensity map. Also give an estimate how close the low-power focal spot and the high-power focal spot is. The first three amplification stages are the same. On-shot final stage is mistimed.}
-In LWFA a short-pulse laser is focused down to reach high enough intensities to drive a wake, but has to guide itself over a long range at the same time. In parts of this work a second laser is used as scatterer for inverse Compton scattering or as an X-ray heater.
+The ability to characterise the properties of a focused laser pulse, such as its size and peak intensity, is crucial for high-intensity laser experiments as it enables the optimisation of the focal spot shape for the respective application in an active feedback loop, and also enables diagnosing the physical phenomena the laser is employed to probe or induce. In LWFA a short-pulse laser is focused down to reach high intensities to drive a wake, but has to guide itself over a long range at the same time. Only energy contained in the beam centroid is efficiently guided, whilst energy in the `wings' of the beam is lost and reduces the peak intensity of the laser pulse. 
+For Compton-backscatter experiments, on the other hand, a high intensity increases the yield of X-rays and is prerequisite to accessing nonlinear phenomena.
+Since the energy in the laser pulses is limited and the temporal compression is also bounded (and not always desirable), the spatial shaping of the focal spot is a critical tool to reach efficiently high intensities.
+\SMComm{Reference? Mangles PRSTAB and Genoud...}
 
-For each of these applications it is important to optimise and characterise the size and spatial energy distribution of the focal spot. Combining this with a measurement of the temporal pulse shape, for instance using a FROG, then provides an intensity map of the laser pulse at focus.
-\vspace{\baselineskip}
+A \textit{direct} measurement of a high-intensity laser focus, also referred to as \textit{focal spot}, is however very challenging.
+For this reason, an attenuated low-power laser pulse is characterised instead at \textsc{Gemini}. In the low-power mode the laser pulses are only amplified in two out of three amplification stages (see, for instance, \cite{PoderThesis} for more details on the laser beam line), but propagate on the same beam path, through the same materials and are manipulated by the same optics. As a result, the focal spot in the low-power and high-power mode are expected to be very similar, with exception of certain thermal effects.
+
+
+
 
 In this work a CCD camera (AVT Manta G-033B) is coupled to a near infrared infinity-corrected apochromatic long-working-distance microscope objective (depending on the application Mitotoyo $\times10$ or $\times20$ magnification) to image the spot at its focal plane. 
 A thin metal wire of $10's-100 \,\mathrm{\mu m}$ width is used to help define a focal plane.
-\vspace{\baselineskip}
+\subsubsection{Spatial calibration}
 
-Due to the high intensity \textsc{Gemini} can reach the beam alignment is performed in the CW mode and the focal spot is characterised with an attenuated low-power pulsed beam. Assuming the focal plane and general character of the spot remains the same in the attenuated beam, the energy of the actual focal spot on shot is then scaled from the low power image.
-\SMComm{Make sure you distinguish between CW alignment and pulsed/high power focal spot. CW and high power spots are not the same.}
+The imaging systems for the focal spot characterisation were spatially calibrated by imaging well defined line pairs on a transmissive 1951 USAF Target (Thorlabs). Figure \ref{Methods:Figs:FocalSpot_USAF} (left) shows an image of the central part of the USAF target, containing the smallest line pairs, with a sketch of the full USAF target pattern (negative) presented on its right side. A simple diode laser was used as backlighter. Each line pair can be identified by its element and group number, and the related spatial dimension is given on the website of the manufacturer in units of line pairs per millimetre, $lp/mm$. By multiplying the size of a line pair on the image (pixels per line pair) with the dimensions given on the data sheet (line pairs per mm), we obtain the number of pixels corresponding to one millimetre or in inverse the size of one pixel, i.e. the spatial calibration of the image.
+The magnification of the imaging system, on the other hand, is then simply the physical size of one camera pixel, which can be found on the datasheet of the camera in use, divided by the determined spatial scale that corresponds to one pixel on the image.
 
-A real direct measurement of the actual focus at typical intensities used in wakefield experiments is very challenging. Recent attempts involved the full 3D characterisation of the wavefront of the collimated laser beam by applying an asymmetric Mach-Zehnder interferometer and scanning the entire beam profile over hundreds of shots \cite{TERMITES} or using a gas jet ionisation (REF HERE)\addref. 
+Using the image shown in Figure \ref{Methods:Figs:FocalSpot_USAF} as an explicit example: One line pair of the second element of the 6th group measures 15 pixels. According to the data sheet this element has a scale of $71.8\,lp/mm$, such that we obtain for the image a $1077$ pixels/mm or $0.93$ micron/pixel. The camera that was used is of type AVT Manta G-033B with $9.9\microns$ physical pixel size, which then gives a magnification of $10.65$.
 
+\begin{figure}
+\centering
+\includegraphics[height=0.35\columnwidth]{USAF_FocalCalib_Example.jpg}\includegraphics[height=0.35\columnwidth]{USAF_Resolution_Chart_A1-780.jpg}
+\caption[USAF Target for spatial calibration.]{USAF target for spatial calibration.}
+\label{Methods:Figs:FocalSpot_USAF}
+\end{figure}
+
+\subsubsection{Intensity Estimate}
+
+By combining the spatial calibration with the on-shot measurements of the energy and pulse duration/peak power of the laser pulse, the peak intensity of the high-power can be estimated, under the assumption that the focal spots in both power modes are comparable.
+
+For this purpose the pixel counts on the CCD are calibrated with the energy measurement.
+
+Energy / area and pulse duration (for Gaussian) or with real pulse duration measurement for peak number.
+
+
+Or in terms of the normalised vector potential:
 \begin{equation}
 a_0 \approx 0.85 \lambda [\mu m] \sqrt{I [10^{18} cm^{-2}]}
 \end{equation}
 
-\SMComm{I think you need to say a little more about how close the focal spot is. The key thing is that the first three amplifications....}
-\subsubsection{Image Processing}
 
-In addition to a spatial calibration, the images for a focal spot analysis require some background removal: 
-A series of images without any laser are taken (dark field) and averaged over to be then subtracted from the actual focal spot image. 
-Then a median filter can be used to account for individual hot pixels on the camera.
-\SMComm{Too much detail?}
-The remaining signal should be mainly the laser spot and the highest pixel values are at the centre of the focal spot.
-Taking the maximum pixel value and fitting an ellipse to area reaching half of this value, the \textsc{fwhm} size of the spot is estimated.
-The area of the focal spot, ignoring smaller deviations from an ellipse, is then $A = \pi a b$, where $a$ and $b$ are the two axes.
-Comparing the pixel counts within the \textsc{fwhm} contour against the pixel counts in the total beam, one can then quantify the fraction of energy contained in the \textsc{fwhm} the beam. A high fraction is important as the wings of the beam decreases the peak intensity and will not be guided in the wakefield accelerator, is hence lost.
-\SMComm{Reference? Mangles PRSTAB and Genoud...}
+Using the methods described in this section the intensity distributions for three example focal spots from different focusing geometries were calculated and are shown in Figure {Methods:Figs:FocalSpotExamples} (note different spatial scales).
 
-\subsubsection{Spatial calibration}
+\begin{figure}
+\centering
+\includegraphics[width=0.35\columnwidth]{RRf40Spot.png}\includegraphics[width=0.35\columnwidth]{RRF2Spot.png}\includegraphics[width=0.35\columnwidth]{QEDPhasePlate.png}
+\caption[Examples of low-power focal spots from different focusing geometries, measured at \textsc{Gemini}.]{Examples of low-power focal spots from different focusing geometries, measured at \textsc{Gemini}. The x- and y-axes show the horizontal and vertical spatial scale in micrometres, the colour scale shows the intensity in units of $W/cm^2$ on a linear scale (bottom row) and a logarithmic scale (top row). The focusing optics were an $f/40$ off-axis parabola (left column) and an $f/2$ off-axis parabola (central and right column). A phase plate was inserted into the collimated beam path of the laser pulse shown in the right column. The halo around this spot causes scattering in the imaging system which leads to the apparent rectangular region of intensity visible on the logarithmic scale (top) but is not a physical representation of the spot itself. The images were taken at \textsc{Gemini} in 2019 (left, centre) and 2018 (right).}
+\label{Methods:Figs:FocalSpotExamples}
+\end{figure}
 
-As the exact size of the focal spot is important, the focal spot camera has to be spatially calibrated. Carefully measuring the distances between the components of the optical system and knowing about their properties might not be accurate enough. Alternatively, the camera can image an object of well-defined spatial extent. A typical tool are USAF targets, for instance provided by Thorlabs, available in transmissive or negative, with a range of line sets of different dimensions. Knowing the pixel size of the camera one can then relate the width of the lines to a conversion factor from pixels to microns, in this case. Another approach is placing a grid of known dimensions into the collimated laser beam and deduce the spatial dimensions by measuring the separation of the diffracting multiple copies of the focal spot following:
-\begin{equation}
-\sin \theta = \frac{m \lambda}{d} \rightarrow x_m = m f \tan \theta \rightarrow x \approx \frac{f \lambda}{d}
-\end{equation}
-
-\SMComm{References for these things?}
-
-\subsubsection{Intensity Estimate}
-
-Knowing about the total energy in the beam and combining this with a measurement of the pulse shape (e.g. using a FROG), the number of pixel counts in the spot can be related to an intensity in the beam.
-The focal spot in figure XXX for instance has a size of XXXXXXX. The FROG analysis indicates a peak power of XXX TW. Combined this gives a peak $a_0 = 2$. 
-\SMComm{Errors, for which experiment, OAP...}
-Ideally, a series of several focal spots, even hundreds, are taken to incorporate fluctuations in the shape of the spot but also to characterise the typical spatial fluctuations over time.
-\SMComm{Add figures of laser intensity for a0, f/40 f/2 and with phase plate?}
 
 
 \section{Dual-Beam Timing Diagnostics}
 \label{Methods:Sec:DualBeamTiming}
 
  
-All of the experiments discussed in this thesis use both laser arms of \textsc{Gemini}, which have to be overlapped in space and synchronised in time or `timed' to each other. This section discusses the two diagnostics, photodiodes and spatial interference, that were used to measure the temporal separation of two laser pulses. Photodiodes were employed to measure and account for relatively `large' separations on the nanosecond to few picosecond level, which was by itself sufficient for the experimental setup described in Chapter \ref{Chap:BW}. The colliding-pulse experiments described in Chapters \ref{Chap:linICS} and \ref{Chap:RR15} required a femtosecond level synchronisation of the laser pulses, for which interference occurring within the time scale of the pulse envelopes was used in addition. Two plane waves crossing at an angle produce an interference pattern of parallel straight lines, whereas a plane wave interfering with a spherical wave front results in a circular pattern. Two laser pulses that expand at different f-numbers, here $f/2$ and $f/40$, behave similarly as the latter case as the radii of curvature of their wave fronts differ strongly. The presence of a circular interference pattern then signals temporal overlap within their combined pulse duration at a tens of femtoseconds accuracy.
-At the end of this section the implications for electron-laser timing and effects from other experimental procedures, such as the pump-down of the chamber or the attenuation of the laser pulses, are considered.
+All of the experiments discussed in this thesis use both laser arms of \textsc{Gemini}, so that their laser pulses have to be overlapped in space and synchronised in time, or in other words `timed' to each other. This section discusses the two diagnostics, photodiodes and spatial interference, that were used to measure the temporal separation of the two laser pulses. Photodiodes were employed to measure and account for relatively `large' separations on the nanosecond to few picosecond level, which was by itself sufficient for the experimental setup described in Chapter \ref{Chap:BW}. The colliding-pulse experiments described in Chapters \ref{Chap:linICS} and \ref{Chap:RR15}, on the other hand, required a femtosecond level synchronisation of the laser pulses, for which interference occurring between them within the time scale of their pulse envelopes was used in addition. Two plane waves crossing at an angle produce an interference pattern of parallel straight lines, whereas a plane wave interfering with a spherical wave front results in a circular pattern. Two laser pulses that expand at different f-numbers, here $f/2$ and $f/40$, behave similarly as the latter case as the radii of curvature of their wave fronts differ strongly. The presence of a circular interference pattern then signals temporal overlap within their combined pulse duration at an accuracy of tens of femtoseconds.
+At the end of this section the implications for electron-laser timing from a perspective of laser-laser timing, and effects from other experimental procedures, such as the pump-down of the chamber or the attenuation of the laser pulses, are considered.
 
-At \textsc{Gemini} both laser arms are `intrinsically' synchronised as they originate from the same source (oscillator), but might arrive at the interaction point at different times as they travel on beam paths of different length. By measuring the difference in the time of arrival of both laser pulses, $\Delta \tau$, the length of the beam paths can be adjusted accordingly, such that $\Delta \tau \rightarrow 0$. Temporal separations on the nanosecond level are typically corrected by extending the beam path of the `early' laser pulse. Smaller adjustments corresponding to temporal shifts of tens of picoseconds are performed using a motorised linear stage (Newport M-ILS250) on the `split-and-delay' (SAD) table in the laser area. The SAD delay stage adds or removes beam path in double-pass at micrometre or correspondingly few femtosecond precision.
+At \textsc{Gemini} both laser arms are `intrinsically' synchronised as they originate from the same source (oscillator), but might arrive at the interaction point at different times as they travel on different beam paths. By measuring the difference in the time of arrival of both laser pulses, $\Delta \tau$, the length of the beam paths can be adjusted accordingly, such that $\Delta \tau \rightarrow 0$, i.e. the laser pulses are `timed'. Temporal separations on the nanosecond level are typically corrected by extending the beam path of the `early' laser pulse by several optics. Smaller adjustments corresponding to temporal shifts of tens of picoseconds or less are performed using a motorised linear stage (Newport M-ILS250) on the `split-and-delay' (SAD) table in the laser area. The SAD delay stage adds or removes beam path in double-pass at micrometre or correspondingly few femtosecond precision.
 
 \subsection{Photodiodes}
 
-In the experiments described in this thesis two attenuated (low power) laser pulses were spatially overlapped at the interaction point. The pulses are then either directed directly onto the active chip of a photodiode or are scattered from an object placed at the interaction point, for instance a piece of lens tissue. Each laser pulse triggers a response in the photodiode that can be measured with an oscilloscope. Since each pulse is only $\sim 40\fs$ long, almost instantaneous for the diode, the response for each pulse is a symmetric peak with the rise/fall time as width. The relative time of arrival can then be determined by measuring the separation of the two peaks. At \textsc{Gemini} the fast EOT-4000 GaAs photodetector (see Figure \ref{Methods:Figs:Photodiode}) with a rise/fall time of $< 30\,\mathrm{ps}$ was used in conjunction with a Lecroy WaveMaster 813Zi-B oscilloscope ($>13\,\mathrm{GHz}$). The detectors were only used at air and were not tested for vacuum use.
+In the experiments described in this thesis two attenuated (low power) laser pulses were spatially overlapped at the interaction point. The pulses are then either directed onto the active chip of a photodiode or are scattered from an object placed at the interaction point, for instance a piece of lens tissue, which the photodiode then faces. Each laser pulse triggers a response in the photodiode that can be measured with an oscilloscope. Since each pulse is only $\sim 40\fs$ long, almost instantaneous for the diode, the response for each pulse is a symmetric peak with the rise/fall time as width. The relative time of arrival can then be determined by measuring the separation of the two peaks. At \textsc{Gemini} the fast EOT-4000 GaAs photodetector (see Figure \ref{Methods:Figs:Photodiode}) with a rise/fall time of $< 30\,\mathrm{ps}$ was used in conjunction with a Lecroy WaveMaster 813Zi-B oscilloscope ($>13\,\mathrm{GHz}$). The detectors were only used in air and were not tested for vacuum use.
 
 
 \begin{figure}
@@ -153,14 +156,14 @@ where $\mathbf{E}^\ast$ is the complex conjugate of $\mathbf{E}$, and $\mathbf{E
 \begin{equation}
 I = \frac{\epsilon_0}{4}\left|E^2_1 + E^2_2+ E_1 E_2 \cos(2 ky \sin\theta - \omega \Delta \tau + \Delta\phi )\right|,
 \end{equation}
-where $\theta$ is the angle between the two plane waves, $\Delta \tau$ the difference in their time of arrival and $\Delta \phi$ the difference in the initial constant phase. The relation shows that the crossing plane waves produce a straight interference pattern due to the relative angle between them, $\theta$, which vanishes when both wave vectors are parallel and arrive at the same time, $\Delta \tau$. The contrast, the difference between the maxima and minima $(I_{max} - I_{min})/(I_{max} + I_{min})$, is optimised for equal field amplitudes, $E_1 = E_2$. 
-If we consider a plane wave and a spherical wave instead the resulting interference pattern will produce concentric rings due to the radius of curvature:
+where $\theta$ is the angle between the two plane waves, $\Delta \tau$ the difference in their time of arrival and $\Delta \phi$ the difference in the initial constant phase. The relation shows that the crossing plane waves produce a straight interference pattern due to the angle, $\theta$, between them which vanishes when both wave vectors are parallel and arrive at the same time, $\Delta \tau = 0$. The contrast, the difference between the maxima and minima $(I_{max} - I_{min})/(I_{max} + I_{min})$, is optimised for equal field amplitudes, $E_1 = E_2$. 
+If we consider a plane wave and a spherical wave instead, the resulting interference pattern will produce concentric rings due to the radius of curvature:
 \begin{equation}
 I \sim 1 + \cos\left(\frac{\pi r^2}{\lambda R}\right),
 \end{equation}
-where we simplified the relation by assuming that the wave vectors are parallel and $\Delta \tau = 0 = \Delta \phi$, i.e. in contrast to the previous case the interference pattern does not vanish for parallel waves with an identical time of arrival. In the limit of $R \rightarrow \infty$ this approaches the scenario as discussed above, the interference of two plane waves. 
+where we simplified the relation by assuming that the wave vectors are parallel and $\Delta \tau = 0\,\&\,\Delta \phi = 0$, i.e. in contrast to the previous case the interference pattern does not vanish for parallel waves with the same time of arrival. In the limit of $R \rightarrow \infty$ this approaches the scenario as discussed above, the interference of two plane waves. 
 
-A focusing and defocusing Gaussian laser pulse changes its radius of curvature, $R$, where the wave front is strongly curved near the focus (within few Rayleigh lengths, $z_R$) and asymptotically flat at a distance $|z| \gg z_R$ away from the focus (see Section \ref{Chap:Theory:Sec:LaserInVac}). As a consequence, one can produce straight or circular fringes by interacting two Gaussian laser pulses either close or far away from their foci.
+A focusing and defocusing Gaussian laser pulse changes its radius of curvature, $R$, where the wave front is strongly curved near the focus (within few Rayleigh lengths, $z_R$), especially for tightly focused beams, and asymptotically flat at a distance $|z| \gg z_R$ away from the focus or weakly focused beams (see Section \ref{Chap:Theory:Sec:LaserInVac}). As a consequence, one can produce straight or circular fringes by interacting two Gaussian laser pulses either close or far away from their foci, or by focusing one with a short and the other one with a long-focal-length optic.
 \vspace{\baselineskip}
 
 
@@ -171,14 +174,14 @@ On the other hand, it is possible to increase the coherence length by dispersing
 \subsubsection{Experimental Implementation}
 \begin{figure}
 \centering
-\includegraphics[height=0.4\columnwidth]{PrismCam.pdf}\includegraphics[height=0.4\columnwidth]{PrismCamExample.pdf}
+\includegraphics[height=0.35\columnwidth]{PrismCam.pdf}\includegraphics[height=0.35\columnwidth]{PrismCamExample.pdf}
 \caption[Realising spatial interferometry as timing diagnostic in an experiment (sketch and example from an experiment).]{Realising spatial interferometry as timing diagnostic in an experiment. Left: Sketch of a spatial interferometry setup used in the experiments described in this work. Two counterpropagating laser beams are reflected collinearly from a 90-degree knife-edge prism and onto a CCD (brown). One laser pulse is highly divergent ($f/2$, left), the other one has a comparatively long Rayleigh length ($f/40$, right). The different radii of curvature result in a circular interference pattern when both laser pulses are overlapped in space and time. The prism can be translated to only reflect half of each beam (dotted prism). Right: Example of spatial interferometry (circular interference pattern) measured in an experiment using a setup as sketched out on the left with an attenuated (low-power) pulsed $f/2$ (OAP with hole) and an $f/40$ beam. Both beams aligned such they are effectively bisected by the knife-edge prism (spatial overlap, see dotted prism in the sketch on the left). As a result the $f/2$ beam shows straight diffraction patterns in its near field. The hole in the $f/2$ beam is also clearly visible and the circular interference pattern is centred on it which indicates that both beams are close to parallel and the interference pattern mainly originates from the different radii of curvature.}
 \label{Methods:Figs:PrismCamSketchPlusExample}
 \end{figure}
 
 
-In the experiments discussed in Chapters \ref{Chap:RR15} and \ref{Chap:linICS} spatial interferometry was used to synchronise two counterpropagating laser pulses of pulse duration $\sim 45\fs$, one focused by an $f/2$ off-axis parabola (OAP), the other by an $f/40$ OAP or spherical mirror. The laser pulses are cross-polarised and the timing measurements were performed in an attenuated low-power mode. To combine both beams a 90-degree reflective knife-edge prism (Thorlabs, protected aluminium/dielectric) was placed at the interaction point, which reflects the counterpropagating beams collinearly onto the CCD chip of a camera (see Figure \ref{Methods:Figs:PrismCamSketchPlusExample}, left).
-By gradually translating the prism away from the CCD the two laser beams move closer to the knife edge of the prism and in the process closer together until only one half of each beam is reflected  (see dotted prism outline in Figure \ref{Methods:Figs:PrismCamSketchPlusExample}, left). By now moving the CCD in the opposite direction the beams diverge and overlap: we achieved spatial overlap. When both pulses are also synchronised in time a circular interference pattern will appear which allows a synchronisation of both beams to about $\sim 45\fs$. An example of this final configuration from the experiment described in Chapter \ref{Chap:linICS} is shown in Figure \ref{Methods:Figs:PrismCamSketchPlusExample} (right), where the large half circle with the central hole is the divergent $f/2$ laser pulse and the bright spot is the only slowly expanding $f/40$ beam. The straight, vertical interference pattern is due to diffraction from the knife edge, whereas the circular, more closely spaced circular pattern results from the interference between both two pulses.
+In the experiments discussed in Chapters \ref{Chap:linICS} and \ref{Chap:RR15} spatial interferometry was used to synchronise two counterpropagating laser pulses of pulse duration $\sim 45\fs$, one focused by an $f/2$ off-axis parabola (OAP), the other by an $f/40$ OAP or spherical mirror. The laser pulses are cross-polarised and the timing measurements were performed in an attenuated low-power mode. To combine both beams a 90-degree reflective knife-edge prism (Thorlabs, protected aluminium/dielectric) was placed at the interaction point, which reflects the counterpropagating beams collinearly onto the CCD chip of a camera (see Figure \ref{Methods:Figs:PrismCamSketchPlusExample}, left).
+By gradually translating the prism away from the CCD the two laser beams move closer to the knife edge of the prism and in the process closer together until only one half of each beam is reflected  (see dotted prism outline in Figure \ref{Methods:Figs:PrismCamSketchPlusExample}, left). By now moving the CCD in the opposite direction the beams diverge and overlap with each other: we achieved spatial overlap. When both pulses are also synchronised in time a circular interference pattern will appear which allows a synchronisation of both beams to about $\sim 30\fs$. An example of this final configuration from the experiment described in Chapter \ref{Chap:linICS} is shown in Figure \ref{Methods:Figs:PrismCamSketchPlusExample} (right), where the large half circle with the central hole is the divergent $f/2$ laser pulse and the bright spot is the $f/40$ beam that expands only slowly. The straight, vertical interference pattern is due to diffraction from the knife edge, whereas the circular, more closely spaced circular pattern results from the interference between both two pulses.
 
 \begin{figure}
 \centering
@@ -189,14 +192,14 @@ By gradually translating the prism away from the CCD the two laser beams move cl
 
 The camera was equipped with a long-working-distance microscope objective ($\times 10$ Mitutoyo Plan Apochromat Near-Infrared) and a linear polariser.
 The polariser is prerequisite for interference but was also be used to adjust the relative brightness of both beams to increase the contrast. The contrast was also adjusted by taking advantage of the different divergences of the beam and moving the imaging plane closer or further away from the focus.
-Once the contrast was optimised the visibility of the pattern was optimised to determine the temporal overlap more accurately. By quantifying the visibility of the pattern, for instance from the Fourier transform, the accuracy of the synchronisation can be improved through statistical measurements, similarly as described for the diode timing. In Figure \ref{Methods:Figs:PrismCam_FringeVisibility} the `fringe' (interference pattern) visibility is shown as a function of the SAD position, using data analysed for \cite{Cole2018_RR} and provided by J. Cole (Imperial College). The position for the optimum overlap was determined through a fitting routine. The uncertainty of this technique was estimated to be $\sim 17\fs$.
+Once the contrast was maximised the visibility of the pattern was optimised to determine the temporal overlap more accurately. By quantifying the visibility of the pattern, for instance from the Fourier transform, the accuracy of the synchronisation can be improved through statistical measurements, similarly as described for the diode timing. In Figure \ref{Methods:Figs:PrismCam_FringeVisibility} the `fringe' (interference pattern) visibility is shown as a function of the SAD position, using data analysed for \cite{Cole2018_RR} and provided by J. Cole (Imperial College). The position for the optimum overlap was determined through a fitting routine. The uncertainty of this technique was estimated to be $\sim 17\fs$.
 
 \subsection{Additional considerations for the synchronisation of beams}
 
 The synchronisation of two laser pulses to each other or a laser pulse with an electron beam to the femtosecond level is very challenging (even if we neglect the spatial overlap to the micrometre level). In this section we will discuss certain factors that had to be considered in the context of the experiments at \textsc{Gemini} discussed later in this thesis.
 
 Light moves slower through media than through vacuum. The group velocity, $v_g$, is reduced by the refractive index, $\eta$, to $v_g =c/\eta$ or more specifically in a plasma to $v_g \approx c(1-1/2 (\omega_p/\omega)^2)$ (see Section \ref{Theory:Sec:LaserPropagationPlasma}), where $\omega$ is the frequency of the laser and $\omega_p$ is the plasma frequency (see Section \ref{Chap:Theory:Sec:PlasmaFreq}).
-Introducing or removing media asymmetrically from beam paths changes the relative time of arrival of laser pulses.
+Introducing or removing media asymmetrically from beam paths changes the relative time of arrival of the laser pulses.
 Typical examples at \textsc{Gemini} for this are moving from air to vacuum (pumping down the vacuum chamber), opening or closing the transparent gate valves, or attenuating beams using glass slides when switching between different power modes.
 
 \subsubsection{Shifting beam paths from air to vacuum}
@@ -216,7 +219,7 @@ As a result of the pump-down process the components in the vacuum chamber and th
 
 \subsubsection{Opening and closing gate valves}
 
-Another step in the pump-down process at \textsc{Gemini} is opening the gate valves that separate the target chamber, which is often at air or lower quality vacuum, from the relatively permanent and high quality vacuum of the two laser compressors.
+Another step in the pump-down process at \textsc{Gemini} is opening the transparent gate valves that separate the target chamber, which is often at air or lower quality vacuum, from the relatively permanent and high quality vacuum of the two laser compressors.
 Once the pressure in the target chamber reaches a sufficiently low value and the turbo pumps are engaged, the gate valves can be opened.
 Both gate valves at \textsc{Gemini} are made of sapphire glass, but measurements found a slight difference in thickness of around $\Delta x = 60 \pm 3\,\mathrm{\upmu m}$ \cite{GEMINI_GATEVALVES} corresponding to $\Delta t = 350\pm17\,\mathrm{fs}$ at a wavelength of $\lambda = 800\nm$. The gate valve of the laser arm that is predominantly used as wakefield driver was found to be thicker.
 
@@ -225,34 +228,69 @@ Both gate valves at \textsc{Gemini} are made of sapphire glass, but measurements
 The previous two examples can be cross-checked by repeating some of the timing procedures after the pump-down, for instance using again spatial interferometry.
 At \textsc{Gemini} glass slides are used as beam attenuators in the low-power modes and can be used in conjunction with polarisers and waveplates to improve the contrast of the interference pattern in spatial interferometry (see Section \ref{Methods:Sec:SpatialInterferometry}). In some cases this will require inserting material asymmetrically in both laser arms in order to optimise the visibility of the pattern.
 
-The attenuators are $2\,\mathrm{mm}$ thick fused silica glass slides with refractive index $\eta = 1.4533$ \cite{Malitson1965_FusedSilica}. The slides are inserted at 45 degrees angle relative to the laser beam axis which delays the laser pulse by $4.24\,\mathrm{ps}$ for each glass slide. The attenuators were found to be identical to each other to within $\Delta x < 10\microns$, such that an equal number of attenuators in each beam path does not introduce a relative delay. An unequal number of attenuators in each beam, on the other hand, requires an adjustment of the beam paths after `synchronising' the beams using spatial interferometry.
+The attenuators are $2\,\mathrm{mm}$ thick fused silica glass slides with refractive index $\eta = 1.4533$ \cite{Malitson1965_FusedSilica}. The slides are inserted at 45 degrees angle relative to the laser beam axis which delays the laser pulse by $4.24\,\mathrm{ps}$ for each glass slide. The attenuators were found to be identical to each other to within $\Delta x < 10\microns$, such that an equal number of attenuators in each beam path does not introduce a relative delay. An unequal number of attenuators in each beam, on the other hand, requires an adjustment of the beam paths after observing the spatial interference pattern.
 
 \subsubsection{Synchronisation of an LWFA electron beam with a laser pulse}
+\label{Methods:Sec:Beam_Laser_Timing}
 
-So far the considerations and methods have been aimed at ensuring the temporal overlap of two laser pulses, taking into account changes introduced by pump-down procedures or attenuation. Finally, we want to highlight what to consider when aiming to synchronise a laser pulse to an electron bunch accelerated through LWFA, relative to a laser-laser synchronisation.
+Using spatial interferometry the two laser pulses can be synchronised in vacuum to an estimated accuracy of $30\,\mathrm{fs}$. This timing is only valid if both laser pulses travel through vacuum. In a shooting scenario, however, the driving laser pulse propagates through plasma to accelerate electrons via LWFA. The propagation in a medium reduces the group velocity of the laser pulse and delays its arrival relative to the vacuum timing.
+In the colliding-pulse experiments discussed in Chapters \ref{Chap:linICS} and \ref{Chap:RR15} we are in addition trying to overlap the scattering beam with the electrons accelerated by the driver pulse, not the driver itself. The LWFA electron bunch trails behind the driving laser pulse and arrives even later at the interaction point. Since the scattering beam arrives before both at its focal plane and the designated interaction point, the real collision will occur beyond this point.
 \vspace{\baselineskip}
 
-In LWFA, the driver beam propagates through a plasma and is hence slower relative to the in vacuum-timing procedure: it will arrive later at the interaction point than measured previously in vacuum.
+The following analysis is explicitly deriving Equation 2 in \cite{Cole2018_RR} and is based on work by Jason Cole (Imperial College).
+We assume that the laser pulse travels through the plasma at the standard non-linear group velocity reduced by the etching velocity, $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$ (called front velocity in \cite{Decker1996_FV}). Given a plasma of thickness $d$ the laser pulse of the scattering beam travels in the same time a distance  $d'=d c/v_f > d$.
+Both laser pulses now meet at a distance $\delta z_1$ past the focal plane of the scattering beam (see Figure \ref{Methods:Figs:LaserElectronOffset_Sketch}, central row):
+\begin{equation}
+\delta z_1 = \frac{1}{2} \left[d \frac{c}{v_f} - d\right] = \frac{d}{2} \left[\left(1-\frac{3}{2} \frac{n_e}{n_c}\right)^{-1} -1\right] \approx \frac{d}{2}\left(1+\frac{3}{2} \frac{n_e}{n_c} -1\right) = \frac{3d}{4}\frac{n_e}{n_c}.
+\end{equation} 
 
-The electrons are injected after a certain distance of propagation. At injection they quickly reach a velocity close to the speed of light, from when the electrons and the second laser pulse travel at approximately the same velocity.
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{LaserElectronOffset_Sketch.pdf}
+\caption[Sketch of two counterpropagating laser pulses and how the interaction point shifts in different scenarios.]{Top row: Two counterpropagating laser pulses (red) are synchronised to each other in vacuum so that they meet at a designated interaction point (yellow cross) $z = 0$ at $t = 0$. Central row: The laser pulse entering the sketch from the left now propagates through plasma and is slowed down such that at $t=0$ it is a distance $2\delta z_1$ separated from the designated interaction point. The laser pulses then meet halfway at $z = \delta z_1$ (yellow cross). Bottom row: An LWFA electron bunch is trailing behind the laser pulse at $2 \delta z_2$ distance. The effective interaction point is now at $\delta z = \delta z_1 + \delta z_2$.}
+\label{Methods:Figs:LaserElectronOffset_Sketch}
+\end{figure}
 
-For the relative offset of the driver pulse and the electron bunch we can estimate that the bunch trails in the Nth bubble behind the laser pulse between N/2 to N plasma wavelengths, the accelerating to zero phase region of the bubble. If the electrons are close to dephasing and in the first bubble, the laser-electron offset is 1/2 $\lambda_p$.
-\vspace{\baselineskip}
 
-This shows that knowing the point of injection becomes important. Alternatively, calculate the distance the laser pulse propagated in plasma and take this as total delay (as the electrons are moving just as fast as the laser in vacuum from thereon forwards). For this purpose measuring injection radiation or forcing radiation at a designated point (shock injection) becomes very useful.
 
-However, this assumes that the electron bunch does not have a spatio-temporal extent which is typical for LWFA beams with long tails and potentially energy-time chirp. Short, localised injections will lead to low energy spread but also short bunches that will localise the beam further. This is also a property shock injection can facilitate.
-\EliasComm{Rephrase.}
-\SMComm{Maybe put a typical number in this - at density x this corresponds to a delay if y fs }
-\SMComm{I was trying to decide if this was better in methods or the RR chapter.  Either will work, and I like it here,  but the effect needs to be mentioned in the results too}
-\SMComm{Numbers?  You say knowing the injection point is important,  can you quantify?  Extreme worse case would be injection anywhere in the accelerator. But it will be significantly better than this!}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{LaserElectronOffset.png}
+\caption[Temporal offset between the laser pulse (in vacuum) and the electron beam, $\Delta \tau$, as a function of the injection point relative to the start of the plasma.]{Temporal offset between the laser pulse (in vacuum) and the electron beam, $\Delta \tau$, as a function of the injection point relative to the start of the plasma, $d$, for the dephasing limited case, $N = 1/2$, for different electron densities, $n_e$. The dashed lines indicate the delay $\Delta \tau$ for $d = 0$ for the respective electron density in the same colour.}
+\label{Methods:Figs:LaserElectronOffset_ne}
+\end{figure}
+
+
+The electrons in turn trail around $N$ plasma wavelengths, $\lambda_p$, behind the driving laser pulse and meet the scattering pulse midway (see Figure \ref{Methods:Figs:LaserElectronOffset_Sketch}, bottom row):
+\begin{equation}
+\delta z_2 = \frac{1}{2} N \lambda_p = \frac{1}{2} N \frac{2 \pi c}{\omega_p} = \frac{1}{2} N \frac{2 \pi c}{\omega} \frac{\omega}{\omega_p} = N \frac{\lambda_0}{2} \sqrt{\frac{n_c}{n_e}}.
+\end{equation}
+The smallest possible value of $N$, assuming a homogeneous plasma, is $N = 1/2$ which is when the acceleration is close to its dephasing limit.
+Under these assumptions the electron bunch and the scattering beam meet at $\delta z$ distance from the intended collision point:
+\begin{equation}
+\boxed{\delta z = \frac{3d}{4} \frac{n_e}{n_c} + N \frac{\lambda_0}{2}\sqrt{\frac{n_c}{n_e}},}
+\label{Methods:Eqns:BeamLaser_Timing_deltaz}
+\end{equation}
+where in this context $d$ is the distance of the injection point from the front of the plasma. We can instead also determine, similarly as before, the temporal offset, $\Delta \tau$, relative to the vacuum laser-laser timing:
+\begin{equation}
+\boxed{\Delta \tau = \frac{2 \delta z}{c} = \frac{3 d}{2 c} \frac{n_e}{n_c} + N \frac{\lambda_0}{c} \sqrt{\frac{n_c}{n_e}},}
+\end{equation}
+or in terms of practical units:
+\begin{equation}
+\Delta \tau [\mathrm{fs}] \approx 5 \times 10^3 \times d [\mathrm{mm}]\, \frac{n_e}{n_c}  + 3.34 \times \lambda_0 [\mathrm{\mu m}] \, N \sqrt{\frac{n_c}{n_e}},
+\end{equation}
+and specifically for $\lambda_0 = 0.8\microns$
+\begin{equation}
+\Delta \tau [\mathrm{fs}] \approx 2.88 \times d [\mathrm{mm}] \, n_e [10^{18} \mathrm{cm^{-3}}] + 1.11\times 10^2 \times N \left(n_e [10^{18} \mathrm{cm^{-3}}]\right)^{-\frac{1}{2}},
+\end{equation}
+where the second term dominates if the injection point is within the first few millimetres. $\Delta \tau$ is shown as a function of $d$ for a range of electron densities, $n_e$, in Figure \ref{Methods:Figs:LaserElectronOffset_ne}, assuming $N = 1/2$.
 
 \subsubsection{Stability of synchronisation over extended periods of time}
 
 \begin{figure}
 \centering
 \includegraphics[width=0.8\columnwidth]{Shalloo_TimingDrift.pdf}
-\caption{Change in delay between the two laser arms measured in the target area using a spectral interferometry setup as a function of time (moving average in red line). The relative changes in temperature as measured in the laser area are shown in blue. Reprinted from \cite{Shalloo_GEMINIDRIFT} with permission of the author, R. Shalloo.}
+\caption[Change in delay between the two \textsc{Gemini} laser arms measured in the target area using a spectral interferometry setup and temperature fluctuations in the laser area as a function of time.]{Change in delay between the two \textsc{Gemini} laser arms measured in the target area using a spectral interferometry setup as a function of time (moving average in red line). The relative changes in temperature as measured in the laser area are shown in blue. Reprinted from \cite{Shalloo_GEMINIDRIFT} with permission of the author, R. Shalloo.}
 \label{Methods:Figs:ShallooTiming}
 \end{figure}
 
@@ -273,7 +311,7 @@ Examples of gas targets that are routinely used for wakefield experiments are ga
 \begin{figure}
 \centering
 \includegraphics[height=0.35\columnwidth]{GasCell_Example_cut.png}\includegraphics[height=0.35\columnwidth]{conical_nozzle_prettypic.jpg}
-\caption{Gas targets under fire. Right: Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionized by the laser and lights up. Picture taken at \textsc{Gemini}, Central Laser Facility, in December 2015. Left: Gas Cell}
+\caption{Gas targets under fire. Left: Variable length and density gas cell target by N. Lopes (Imperial College/IST) used at \textsc{Gemini} in 2018. The laser propagates from left to right. The straight bright line is the plasma channel inside the cell, whereas the blue plume is gas that left the cell and was subsequently ionised by back-reflected laser light. Right: Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionised by the laser and lights up. Picture taken at \textsc{Gemini} in December 2015. }
 \end{figure}
 
 \begin{table}

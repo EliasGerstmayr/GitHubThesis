@@ -115,7 +115,6 @@ In order to make a measurement of radiation reaction we need to observe that whe
 However, in a laser wakefield accelerator (LWFA) experiment there are two key challenges: first, the electron spectrum varies from shot to shot, and second, not all attempted collisions will be successful.
 
 To overcome these difficulties the statistical fluctuations of the electron beam need to be characterised when there is not a collision, and the sub-set of successful collisions needs to be identified.
-\vspace{\baselineskip}
 
 After an outline of the experimental setup in Section \ref{Chap:RR:Sec:ExpSetup}, such a method to identify successful collisions is presented in Section \ref{Chap:RR:Sec:SuccessfulColl}. For this purpose, the yield on the gamma detectors is correlated with the energy in the electron beam on a shot-to-shot basis. Without the second scattering beam, the radiation measured is produced from bremsstrahlung as dispersed electrons interact with the walls of the vacuum chamber. It is assumed that the second laser adds ICS as an additional source of radiation and that particularly intense interactions produce a significant excess signal on the gamma detector. 
 
@@ -267,7 +266,7 @@ As we can see most of the shots follow the expected trend within 2 standard devi
 \boxed{
 S_{ICS, norm} [\sigma_{BG}] 
 \begin{cases}
-\text{if } \geq 5 &\longrightarrow \mathrm{Succesful\,Collision}\\
+\text{if } \geq 5 &\longrightarrow \mathrm{Successful\,Collision}\\
 \text{if } 5 < x < 1 &\longrightarrow  \mathrm{Partial\,Overlap}\\
 \text{if } \leq 1 &\longrightarrow  \mathrm{No\,Collision}
 \end{cases}
@@ -409,30 +408,14 @@ This is lower than the estimated peak intensity of $a_0 \sim 25$ reachable at th
 The intensity of the laser pulse estimated through the energy loss is significantly lower than the peak $a_0$ achievable in this geometry. Since the calibration of the on-shot laser energy measurement is relatively reliable, this indicates a spatio-temporal offset and that the interaction is not occurring at the focal plane of the laser.
 \vspace{\baselineskip}
 
-The two laser pulses were synchronised at vacuum using spatial interferometry to an estimated accuracy of $30\,\mathrm{fs}$. This timing is only valid if both laser pulses travel through vacuum. In a shooting scenario, however, the driving laser pulse propagates through plasma to accelerate electrons via LWFA. The propagation in a medium reduces the group velocity of the laser pulse and delays its arrival relative to the vacuum timing.
+The two laser pulses were synchronised in vacuum using spatial interferometry to an estimated accuracy of $30\,\mathrm{fs}$. This timing is only valid if both laser pulses travel through vacuum. In a shooting scenario, however, the driving laser pulse propagates through plasma to accelerate electrons via LWFA. The propagation in a medium reduces the group velocity of the laser pulse and delays its arrival relative to the vacuum timing.
 In addition, we are trying to overlap the scattering beam with the electrons accelerated by the driver pulse, not the driver itself. The LWFA electron bunch trails behind the driving laser pulse and arrives even later at the interaction point. Since the scattering beam arrives before both at its focal plane and the designated interaction point, the real collision will occur beyond this point and at a slightly defocused spot size. 
 To estimate the intensity of the laser pulse at the interaction we have to determine the real collision point and the size of the scattering beam at this plane. 
-\vspace{\baselineskip}
-
-The following analysis is explicitly deriving Equation 2 in \cite{Cole2018_RR} and is based on work by Jason Cole (Imperial College).
-We assume that the laser pulse travels through the plasma at the standard non-linear group velocity reduced by the etching velocity, $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$ (called front velocity in \cite{Decker1996_FV}). Given a medium of thickness $d$ the laser pulse of the scattering beam travels in the same time a distance  $d'=d c/v_f > d$.
-Both laser pulses now meet at a distance $\delta z_1$ past the focal plane of the scattering beam:
-\begin{equation}
-\delta z_1 = \frac{1}{2} \left(d \frac{c}{v_f} - d\right) = \frac{d}{2} \left(\left[1-\frac{3}{2} \frac{n_e}{n_c}\right]^{-1} -1\right) \approx \frac{d}{2}\left(1+\frac{3}{2} \frac{n_e}{n_c} -1\right) = \frac{3d}{4}\frac{n_e}{n_c}.
-\end{equation} 
-
-The electrons in turn trail behind the driving laser pulse around N plasma wavelengths and meet the scattering pulse midway:
-\begin{equation}
-\delta z_2 = \frac{1}{2} N \lambda_p = \frac{1}{2} N \frac{2 \pi c}{\omega_p} = \frac{1}{2} N \frac{2 \pi c}{\omega} \frac{\omega}{\omega_p} = N \frac{\lambda_0}{2} \sqrt{\frac{n_c}{n_e}}.
-\end{equation}
-
-If we assume that the acceleration is close to its dephasing limit, $N = 1/2$.
-Under these assumptions the electron bunch and the scattering beam meet at $\delta z$ distance from the intended collision point:
+For this purpose we can use Equation \eqref{Methods:Eqns:BeamLaser_Timing_deltaz} derived in Section \ref{Methods:Sec:Beam_Laser_Timing} to determine the distance $\delta z$ from the intended collision point:
 \begin{equation}
 \boxed{\delta z = \frac{3d}{4} \frac{n_e}{n_c} + N \frac{\lambda_0}{2}\sqrt{\frac{n_c}{n_e}},}
 \end{equation}
-where in this context $d$ is the distance of the injection point from the front of the gas jet.
-\vspace{\baselineskip}
+where $d$ is the distance of the injection point from the front of the gas jet, $n_c$ the critical density, $n_e$ the density of the plasma, $\lambda_0$ the wavelength of the laser, and $N$ the number of plasma wavelengths the electron bunch is trailing behind the laser pulse ($N = 1/2$ at the dephasing limit).
 
 For a normal distribution of $\pm 30$ fs of the relative temporal jitter and by sampling from a uniform distribution for the injection point $d$ between $0$ and $10\,\mathrm{mm}$, the intensity expected at the interaction averaged over an area of $10\,\mathrm{\upmu m}^2$, the estimated size of the electron beam and its spatial shot-to-shot fluctuations, reaches $a_0 = 12 \pm 1$.
 

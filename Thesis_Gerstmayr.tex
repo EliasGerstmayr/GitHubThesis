@@ -4,8 +4,14 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+
 \usepackage[numbers,sort&compress]{natbib}
 \bibliographystyle{GThesis}
+
+%\usepackage[backend=biber,bibencoding=utf8,block=ragged,citestyle=numeric-comp,sorting=none,bibstyle=numeric-comp,hyperref,firstinits=true]{biblatex} % ,sortcites=true,
+%\input{latex-biblatexmodification.tex}
+%\bibliography{ICS_Diag,General,Theses,Plasma,SPD,LaserDiags,GammaDet,Betatron,Facilities,Wakefield,Sims,Ionisation,Xrays,IonAcc,ICSRR,Narozhny,BW_Astro}
+%\usepackage[babel]{csquotes}
 
 \usepackage{amsmath}
 \usepackage{bm}
@@ -83,6 +89,7 @@
 
 
 \usepackage[colorlinks=true, citecolor=blue,urlcolor=purple, linkcolor = black, pdfborder={0 0 0},backref=page]{hyperref}
+%,
 \usepackage{hypernat}
 \usepackage{cleveref}
 
@@ -300,6 +307,9 @@ The specific role of the author and contributions of other researchers in the co
 \renewcommand{\bibname}{Bibliography}
 \bibliography{ICS_Diag,General,Theses,Plasma,SPD,LaserDiags,GammaDet,Betatron,Facilities,Wakefield,Sims,Ionisation,Xrays,IonAcc,ICSRR,Narozhny,BW_Astro}%}{}
 %\bibliographystyle{unsrt}
+
+%\phantomsection	%
+%\printbibliography[heading=head]
 
 \end{document}
 
