@@ -13,21 +13,23 @@ This leads over to the topic of radiation reaction, the knock-back force a charg
 
 Finally, other fundamental QED processes such as pair production, annihilation and light-light scattering is discussed.
 
+\EliasComm{This is the same intro as for the other theory section.}
+
 \section{Laser Propagation in an Underdense Medium}
 
 \subsection{Plasma Properties}
 
-A plasma is an on average charge-neutral medium that consists of charged particles, in the context of wakefield acceleration ions and free electrons. This property is called quasi-neutrality and can mathematically be expressed as (REF\addref)
+A plasma is an on average charge-neutral medium that consists of charged particles, in the context of wakefield acceleration ions and free electrons. This property is called quasi-neutrality and can mathematically be expressed as \cite{Kruer}
 \begin{equation}
 -e n_e + Z e n_i \approx 0,
 \end{equation}
 where $e$ is the fundamental charge, $n_e$ the electron number density, $n_i$ the ion number density and $Z$ the charge number of the ions.
-Whilst this balance might locally not be true at every moment in time, the mobility of the charges lead to shielding at length scales larger than the Debye length $\lambda_D$ (REF\addref):
+Whilst this balance might locally not be true at every moment in time, the mobility of the charges lead to shielding at length scales larger than the Debye length $\lambda_D$ \cite{Hutchinson2002_PlasmaDiag}:
 \begin{equation}
 \lambda_D = \left(\frac{\epsilon_0 k_B T_e}{n_e e^2}\right)^{1/2},
 \end{equation}
 where $\epsilon_0$ is the dielectric constant, $k_B$ the Boltzmann constant and $T_e$ the electron temperature. 
-The formation of Debye-spheres is an example of a collective response of the plasma to a small perturbation. In a plasma particles can act together on macroscopic scales through long range electromagnetic forces to form instabilities and waves. Even small imbalances can stimulate a significant response of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, introducing electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces (REF\addref).
+The formation of Debye-spheres is an example of a collective response of the plasma to a small perturbation. In a plasma particles can act together on macroscopic scales through long range electromagnetic forces to form instabilities and waves. Even small imbalances can stimulate a significant response of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, introducing electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces \cite{Kruer}.
 \SMComm{Maybe leave out.}
 
 \subsection{Plasma Formation}
@@ -163,7 +165,7 @@ and the distance over which a laser pulse remains intense
 z_R = \frac{\pi w^2_0}{\lambda} \approx 2.5 \lambda f^2_\#.
 \end{equation}
 
-However, real laser beams in experiments are typically not Gaussian but mostly flat-top beams (REF\addref). In addition, changes in the wave front, curvature profile, spatio-temporal couplings and so on consist further deviations from an ideal beam. These are commonly expressed in terms of the parameter $M^2$, with the minimum spot size being the ideal diffraction-limited spot size times $M^2$ and $M^2 > 1$ (REF\addref).
+However, real laser beams in experiments are typically not Gaussian but mostly flat-top beams. In addition, changes in the wave front, curvature profile, spatio-temporal couplings and so on consist further deviations from an ideal beam. These are commonly expressed in terms of the parameter $M^2$, with the minimum spot size being the ideal diffraction-limited spot size times $M^2$ and $M^2 > 1$ \cite{PoderThesis}.
 
 
 \subsection{Laser Propagation in Plasma}
@@ -321,6 +323,7 @@ or in terms of the wave frame variables $\xi$ and $\tau$, and the refractive ind
 This equation now describes how the wavelength or frequency shifts as a function of the density gradient. A positive density gradient results in an increase of the frequency, $\omega$, i.e. blue-shifting or `photon acceleration'. A negative gradient, on the other hand, would lead to a decrease in the frequency, so red-shifting or `photon deceleration'. In the previous section we considered pulse compression as a result of a positive density gradient, so we now see that pulse compression is accompanied by photon acceleration. This phenomenon has been more rigourously investigated theoretically in \cite{Mendoncca1994_PHOTONACC,Mendoncca2000_PHOTONACC} and has been confirmed in experiment \cite{Murphy2006_PHOTONACC}.
 
 \section{Laser Wakefield Acceleration}
+\label{Theory:Sec:LWFA}
 
 In laser wakefield acceleration (LWFA) a short (10`s fs), intense and focused laser pulse (NUMBER\addnum) travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way by means of the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back onto the laser axis, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake, producing a cavity with strong longitudinal and transversal electromagnetic fields, which are suited to focus and accelerate electrons to relativistic energies. This is commonly referred to as the non-linear or `bubble' regime, which enables the production of quasi-monoenergetic electron beams, first reported in 2004 \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}. By now maximum electron energies of beams produced in LWFA have reached the multi-GeV level in one \cite{Leemans2006_GEV,Leemans2014_GEV} (check current REFS)\addref{} or two coupled acceleration stages \cite{Steinke2016_STAGING,Kim2013_GEV}.
 
@@ -339,7 +342,7 @@ In useful units we can write:
 E_0 [\mathrm{GV/m}] \approx 96 \sqrt{n_0 [10^{18} \mathrm{cm^{-3}}]},
 \end{equation}
 so that the maximum field sustained by a wave in a plasma of density $10^{18}\mathrm{cm^{-3}}$ is roughly $100\,\mathrm{GV/m}$.
-Nonlinear plasma waves can exceed this value and the wavebreaking limit for a 1D relativistic, non-linear periodic plasma wave is, for instance, given by (REF\addref)
+Nonlinear plasma waves can exceed this value and the wavebreaking limit for a 1D relativistic, non-linear periodic plasma wave is, for instance, given by \cite{Akhiezcr1956_Waves}
 \begin{equation}
 E_{WB} = \sqrt{2(\gamma_p -1)} E_0,
 \end{equation}
@@ -457,15 +460,15 @@ Other injection mechanisms have been developed to produce electron beams with sp
 Electrons can be released directly into the bubble cavity through delayed ionisation of the atoms or molecules close to the peak intensity of the laser pulse. 
 Higher-Z gases bind electrons strongly and require higher field strengths to release them. When the intense laser pulse passes through the plasma it triggers an increased rate of tunnel ionisation near the centre of the pulse (see Section \ref{Theory:Sec:PlasmaFormation} on plasma formation). The released electrons can then be trapped and subsequently accelerated. This is called \textit{ionisation injection}.
 
-Typically, a gas with low ionisation threshold like helium or hydrogen is used as base, which is then doped with a few percent of high-Z gas, for instance nitrogen, to provide the injection events. The interplay of the laser, its evolution and intensity, and the properties of the dopant determine the amount of charge released into the cavity and the duration of the injection event. The duration of the injection translates into energy spread and hence provides a way to tune the properties of the accelerated electron beam\addref{}.
+Typically, a gas with low ionisation threshold like helium or hydrogen is used as base, which is then doped with a few percent of high-Z gas, for instance nitrogen, to provide the injection events. The interplay of the laser, its evolution and intensity, and the properties of the dopant determine the amount of charge released into the cavity and the duration of the injection event. The duration of the injection translates into energy spread (Liouville's theorem, see e.g. \cite{ColeThesis}) and hence provides a way to tune the properties of the accelerated electron beam.
 
 \subsubsection{Density Modulations}
 
 The accelerating structure in a wakefield depends on the complex interplay of the driving laser pulse and its evolution in interaction with the surrounding medium. An evident handle onto the shape and behaviour of the cavity is the plasma density as $r_b \sim 1/\sqrt{n_e}$ and the changes in the group velocity $\Delta v_g \sim - \Delta n_e$.
 
 An abrupt fall-off in plasma density leads to a temporary elongation of the bubble in the longitudinal direction as the effective velocity of the back of the bubble is reduced for a short time. Electrons can now be trapped inside the cavity as part of a very localised injection event. Since such a sharp density transition can in experiments be achieved by inducing a shock into the gas, this injection mechanism is called \textit{shock injection}.
-Shock injection has been demonstrated as powerful tool to produce high-quality electron beams of high charge, stability and tunable energy (\cite{Schmid2010_SHOCK} REF\addref).
-Similarly, but less localised, an extended density gradient can also trigger the injection of electrons by gradually extending the bubble size, then called \textit{downramp injection} (REF\addref).
-In contrast, a positive density gradient will lead to a decrease in the size of the bubble. A decrease in bubble size is not suitable to capture electrons but it moves the centre of the cavity closer to the laser pulse shifting the accelerating phase. This can be used to keep electrons for a longer distance in an accelerating phase in order to delay dephasing, and is hence referred to as \textit{rephasing}\addref.
+Shock injection has been demonstrated as powerful tool to produce high-quality electron beams of high charge, stability and tunable energy (\cite{Schmid2010_SHOCK,Buck2013_SHOCK}.
+Similarly, but less localised, an extended density gradient can also trigger the injection of electrons by gradually extending the bubble size, then called \textit{downramp injection} \cite{Bulanov1998_Downramp}.
+In contrast, a positive density gradient will lead to a decrease in the size of the bubble. A decrease in bubble size is not suitable to capture electrons but it moves the centre of the cavity closer to the laser pulse shifting the accelerating phase. This can be used to keep electrons for a longer distance in an accelerating phase to delay dephasing, and is hence referred to as \textit{rephasing} \cite{Guillaume_REPHASING}.
 
 

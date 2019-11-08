@@ -2,8 +2,8 @@
 \label{Chap:Methods:subsec:GammaSpec}
 
 \subsubsection{Experimental Setup}
-A long array of scintillating crystals is placed in the beam path and the scintillation signal is measured with a CCD. The spectrum of gamma radiation passing through the crystals can be inferred by simulating the response of the array in GEANT4 and comparing it to the measured response in the experiment \cite{Behm2018_Gamma}.
-A conceptual sketch of the experimental setup is shown in Figure \ref{Methods:Figs:SketchGammaSpec}: a beam of gamma rays enters from the left side of the sketch, passes through a vacuum window (orange) into air, then traverses a lead collimator and enters the scintillator array. The response of the detector is imaged by a camera (bottom right corner). 
+A long array of scintillating crystals is placed in the beam path and its scintillation light is measured with a CCD. The spectrum of gamma radiation passing through the crystals can be inferred by simulating the response of the array in GEANT4 \cite{GEANT4} and comparing it to the response measured in the experiment \cite{Behm2018_Gamma}.
+A conceptual sketch of the experimental setup is shown in Figure \ref{Methods:Figs:SketchGammaSpec}: a beam of gamma rays (green) enters from the left side of the sketch, passes through a vacuum window (orange) into air, then traverses a lead collimator and enters the scintillator array. The crystals are indicated in yellow. The response of the detector is imaged by a camera (bottom right corner). 
 
 \begin{figure}
 \centering
@@ -13,55 +13,53 @@ A conceptual sketch of the experimental setup is shown in Figure \ref{Methods:Fi
 \end{figure}
 
 The individual scintillators are caesium-iodide crystals doped with thallium, with the spatial dimensions $5 \times 5 \times 50\,\mathrm{mm}$. 
-The long side of the crystals is oriented transversely to the propagation direction of the gamma rays ($z$), in the sketch shown in Figure \ref{Methods:Figs:SketchGammaSpec} this is the horizontal axis $x$ (see also Figure \ref{Methods:Figs:GammaSpectrometer_Axes}). This maximises the light yield as the response of the detector is integrated along this axis ($x$) at cost of spatial resolution. The crystals are arranged in a two-dimensional grid of columns ($z$) and rows ($y$). Crystals along the longitudinal axis $z$ measure the decay of the radiation and can be used to infer the spectrum. The response in the $y$-axis encodes the vertical divergence of the radiation. 
+The long side of the crystals is oriented transversely to the propagation direction of the gamma rays ($z$), in the sketch shown in Figure \ref{Methods:Figs:SketchGammaSpec} this is the horizontal axis $x$ (see also Figure \ref{Methods:Figs:GammaSpectrometer_Axes}). This maximises the light yield as the response of the detector is integrated along this axis ($x$) but at cost of spatial resolution. The crystals are arranged in a two-dimensional grid of columns ($z$) and rows ($y$). Crystals along the longitudinal axis $z$ measure the decay of the radiation and can be used to infer the spectrum. The response in the $y$-axis encodes the vertical divergence of the radiation. 
 
-The crystals are separated from each other by light-tight spacers such that each crystal is enclosed from all but one side, from which the scintillation light leaves the crystal. This crystal side faces in $x$ direction and the scintillation light is measured on a CCD. In all the experiments discussed in this thesis cooled 14-bit EMCCD cameras of type Andor iXon were used, which are very sensitive and allow for high gain but in turn also require efficient light shielding. The cameras were equipped with suitable objectives and bandpass filters that only transmit light in the bandwidth of the scintillation light at a wavelength of $546\pm10\nm$. A reflective casing for the crystals along with polishing and reflective coating of the crystals can increase the light output. The material and thickness of the dividers between the crystal columns determine how fast the incoming radiation decays which can be used to `tune' the response of the detector for the right spectral range. The separation and thickness of the crystals in the $y$-axis, on the other hand, determines the vertical spatial or with respect to the source angular resolution.
+The crystals are separated from each other by light-tight spacers such that each crystal is enclosed from all but one side, from which the scintillation light leaves the crystal. This crystal side faces in $x$ direction and the scintillation light is measured on a CCD. In all the experiments discussed in this thesis cooled 14-bit EMCCD cameras of type Andor iXon were used, which are very sensitive and allow for high gain but in turn also require efficient light shielding. The cameras were equipped with suitable objectives and bandpass filters that only transmit light in the bandwidth of the scintillation light at a wavelength of $546\pm10\nm$. A reflective casing for the crystals along with polishing and reflective coating of the crystals can increase the light output. The material and thickness of the dividers between the crystal columns determine how fast the incoming radiation decays which can be used to `tune' the response of the detector to the right spectral range. The separation and thickness of the crystals in the $y$-axis, on the other hand, determines the vertical spatial or, with respect to the radiation source, the angular resolution.
 \vspace{\baselineskip}
 
-Two different scintillator stack designs were used as gamma spectrometers in the experiments described in this thesis. An overview of the dimensions and the materials used in the arrays is provided in Table \ref{Methods:GSpec:Table} and photos are shown in Figure \ref{Methods:Figs:CsI_Stacks}. Examples of raw images are shown in Figure \ref{Methods:Figs:CsI_shotexemp}.
+Two different scintillator stack designs were used as gamma spectrometers in the experiments described in this thesis. An overview of the dimensions and the materials used in the arrays is provided in Table \ref{Methods:GSpec:Table} and photos of the stacks are shown in Figure \ref{Methods:Figs:CsI_Stacks}. Examples of raw images from both detectors are shown in Figure \ref{Methods:Figs:CsI_shotexemp}.
 
 
 
 \begin{figure}
 \centering
-\includegraphics[height=0.3\columnwidth]{scintillator.jpg}\includegraphics[height=0.3\columnwidth]{DualAxis_assembly.JPG}
+\includegraphics[height=0.3\columnwidth]{scintillator.jpg}\hspace{2em}%
+\includegraphics[height=0.3\columnwidth]{DualAxis_assembly.JPG}
 \caption[Photographs of scintillator arrays used in experiments.]{Photographs of scintillator arrays used in experiments. Left: `RAL' stack of $47 \times 33$ crystals. Right: Long dual-axis stack consisting of $10 \times 70$ crystals. More details can be found in Table \ref{Methods:GSpec:Table}}
 \label{Methods:Figs:CsI_Stacks}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[height=0.3\columnwidth]{GammaSpecCrystals_2.pdf}\includegraphics[height=0.3\columnwidth]{GammaSpecCrystals_3.pdf}
-\caption{Sketch of crystal orientations (cyan) in the spectrometer arrays relative to the incident gamma rays (green) for the RAL stack (left) and the alternating layers in the new long stack (right). The yellow faces indicate the open sides out of which the scintillation light (green) leaves the crystal.}
+\includegraphics[height=0.3\columnwidth]{GammaSpecCrystals_2.pdf}\hspace{2em}%
+\includegraphics[height=0.3\columnwidth]{GammaSpecCrystals_3.pdf}
+\caption[Sketch of crystal orientations in the spectrometer arrays relative to the incident gamma rays.]{Sketch of crystal orientations (cyan) in the spectrometer arrays relative to the incident gamma rays (green) for the RAL stack (left) and the alternating layers in the long dual-axis stack (right). The yellow faces indicate the open sides out of which the scintillation light (green) leaves the crystal.}
 \label{Methods:Figs:GammaSpectrometer_Axes}
 \end{figure}
 
-In the experiment described in Chapter \ref{Chap:RR15} a $47 \times 33$ [longitudinal ($z$) $\times$ vertical ($y$)] array of crystals housed in an aluminium casing was used\footnote{Designed and built by Rob Clarke (CLF).} (see Figure \ref{Methods:Figs:CsI_Stacks}, left). The long side of the crystals was oriented along the horizontal direction ($x$) to maximise the light yield. The crystals were separated in $z$ and $y$ by 1-mm-thick light-tight aluminium spacers. On the sides ($x$) the array is held together by 1-mm-thick aluminium plates. One plate is solid, on the other side 4 mm diameter holes over the crystal faces allow the scintillation light to escape. The aluminium spacers and the solid plate reflect the light and direct the photons towards the only open side. The front and back side of the stack ($z$) are fortified with $9\,\mathrm{mm}$ thick steel plates.
+In the experiment outlined in Chapter \ref{Chap:RR15} a $47 \times 33$ [longitudinal ($z$) $\times$ vertical ($y$)] array of crystals housed in an aluminium casing was used\footnote{Designed and built by Rob Clarke (CLF).} (see Figure \ref{Methods:Figs:CsI_Stacks}, left). The long side of the crystals was oriented along the horizontal direction ($x$) to maximise the light yield. The crystals were separated in $z$ and $y$ by 1-mm-thick light-tight aluminium spacers. On the sides ($x$) the array is held together by 1-mm-thick aluminium plates. One plate is solid, on the other side 4 mm diameter holes over the crystal faces allow the scintillation light to escape. The aluminium spacers and the solid plate reflect the light and direct the photons towards the only open side. The front and back side of the stack ($z$) are fortified with $9\,\mathrm{mm}$ thick steel plates.
 
-The experiment outlined in Chapter \ref{Chap:BW} used the same scintillator array as above for the setup described in Chapter \ref{Chap:RR15}, but the thick steel front plate is replaced by a 1-mm sheet of plastic (PTFE) to reduce the attenuation of the incident radiation. In this setup scintillating profile screen is placed in front of the spectrometer array (see previous section). The added material of the profile screen roughly compensates the effect of the thinner front plate and matches the response of the detector to its previous configuration. 
+The experiment described in Chapter \ref{Chap:BW} used the same scintillator array as above for the setup described in Chapter \ref{Chap:RR15}, but the thick steel front plate is replaced by a 1-mm sheet of plastic (PTFE) to reduce the attenuation of the incident radiation. In this setup a scintillating profile screen is placed in front of the spectrometer array (see previous section). The additional material of the profile screen roughly compensates the effect of the thinner front plate and matches the response of the detector to its previous configuration. 
 \vspace{\baselineskip}
 
 
 \begin{figure}
 \centering
-\includegraphics[angle=-90, width=0.5\columnwidth]{CsI_shotexemp.png}
-\includegraphics[angle=-90, width=0.5\columnwidth]{dualaxis_example.png}
-\caption[Examples of raw response recorded on CsI scintillator arrays.]{Examples of raw response recorded on CsI scintillator arrays. Top: Taken with RAL stack and lead collimator. Round circles due to aperture in the steel plate. Bottom: Imaging one side of the front dual-axis stack without collimator setup and extended stack.}
+\includegraphics[width=.6\columnwidth]{GammaSpecExamples.pdf}
+\caption[Examples of raw response recorded on scintillator arrays.]{Examples of raw response recorded on scintillator arrays in false colour, where black indicates low and orange a high signal. The radiation propagates into the stack from left to right, such that radiation of higher energy penetrate deeper into the stack. The vertical axis encodes spatial/angular information. Top: Top view of the first 15 crystal columns of the dual-axis stack. The response was measured at \textsc{Gemini} in 2019. Each square is an individual crystal, where the different dimensions are due to a large variation in the size of the transverse spacers that were used in the assembly. Top: Response of the `RAL' spectrometer stack to gamma radiation from inverse Compton scattering measured at \textsc{Gemini} in late 2015 (see Chapter \ref{Chap:RR15}). The stack was housed in a lead enclosure with a circular aperture (lead collimator) such that the signal area is restricted to the centre. The shielded regions can be used as background measurement. The crystals in this array have also rectangular faces but the casing holding the crystals in place has round apertures.}
 \label{Methods:Figs:CsI_shotexemp}
 \end{figure}
 
 
-In the campaign described in Chapter \ref{Chap:linICS}, a longer array of $10 \times 70$ [transverse ($x,y$) $\times$ longitudinal ($z$)] crystals is fielded\footnote{Proposed by Stuart Mangles (IC), designed and built by D. Treverrow (CLF) and C. Baird (CLF).} (see Figure \ref{Methods:Figs:CsI_Stacks}, right). Since the gamma beam produced in these experiments is highly-directional, the signal measured in previous experiments on the array described above was concentrated on a few central rows with a large number of crystals being left unused. In this design the transverse dimension is reduced in favour of an extension in the $z$ axis that is spectrally relevant. In addition, lighter spacing materials are used to slow down the decay and stretch out the signal over more crystal columns ($z$).
+In the campaign described in Chapter \ref{Chap:linICS}, a longer array of $10 \times 70$ [transverse ($x,y$) $\times$ longitudinal ($z$)] crystals was fielded\footnote{Proposed by Stuart Mangles (IC), designed and built by D. Treverrow (CLF) and C. Baird (CLF).} (see Figure \ref{Methods:Figs:CsI_Stacks}, right). Since the gamma beam produced in these experiments is highly-directional, the signal measured in previous experiments on the array described above was concentrated on a few central rows with a large number of crystals being left unused. In this design the transverse dimension is reduced in favour of an extension in the $z$ axis that is spectrally relevant. In addition, lighter spacing materials are used to slow down the decay and stretch out the signal over more crystal columns ($z$).
 
 The crystals rows ($x,y$) are spaced by black polyethylene dividers and the columns by $0.5\,\mathrm{mm}$ sheets of black nylon. The small faces of the crystals that are not imaged are covered with reflective aluminium foil. The front plate of the stack is a $2\,\mathrm{mm}$ thick aluminium plate. The entire stack is held together by an aluminium skeleton, with the 4 long sides being covered by transparent PTFE plastic sheets. 
-The first pass was assembled by hand with hundreds of individual components and wrong parts, so there is a slight irregularity and inhomogeneity visible on the raw response (see Figure) regarding the size of the visible radiation. In addition, the light-shielding on the extremal rows seems to be imperfect and there are signs of cross-talk.
-\EliasComm{Change phrasing.}
+The positioning and visibility of the crystals is less regular than in the other stack since this array was assembled from hundreds of individual components which were partly not matching the requested dimensions, requiring manual (and hence not completely repeatable) corrections. In addition, the light shielding of the extremal rows (see Figure \ref{Methods:Figs:CsI_shotexemp} (top)) appears to require improvement as well.
 
-Another new feature is the alternating orientation of the crystals (see Figure \ref{Methods:Figs:GammaSpectrometer_Axes}, right): the long side of the crystals is now not in every column aligned with the horizontal $x$-axis, but in every second layer instead rotated by $90$ degrees aligning with the $y$-axis (vertical). Each odd and even layer now integrates the response of the detector in a different transverse dimension. The preserved non-integrated spatial component then also alternates with each subsequent column. This is discussed in more detail at the end of this section.
+Another new feature of this array is the alternating orientation of the crystals (see Figure \ref{Methods:Figs:GammaSpectrometer_Axes}, right): the long side of the crystals is now in every other column rotated from the $x$-axis (horizontal) by $90$ degrees to align with the $y$-axis (vertical). Each odd and even layer now integrates the response of the detector in a different transverse dimension. The preserved non-integrated spatial component then also alternates with each subsequent column. This is discussed in more detail at the end of this section.
 
-In the setup used in the context of Chapter \ref{Chap:linICS} the top of the detector ($y$) was imaged directly and a long rectangular mirror was placed at 45 degrees next to the other side, reflecting the scintillating light of both integrated views onto the same CCD chip using the area of the rectangular CCD chip most efficiently. Due to the length of the stack ($z$) two Andor iXon cameras were used, one for the front section and one for the back. 
-
-
+In the setup outlined in Chapter \ref{Chap:linICS} the top of the detector ($y$) was imaged directly and a long rectangular mirror was placed at 45 degrees next to the other side, reflecting the scintillating light from even and odd layers onto the same CCD chip to use the area of the rectangular CCD chip most efficiently. Due to the length of the stack ($z$) two cameras were used, one for the front section and one for the back. The cameras were cooled 14-bit EMCCD cameras of type Andor iXon.
 
 
 \begin{table}
@@ -77,7 +75,7 @@ Dual & \ref{Chap:linICS}, linICS & $10 \times 70$ & Al 2 mm & Nylon 0.5 mm\\
 \hline
 \end{tabular}
 }
-\caption[Overview of scintillator arrays used as spectrometers in experiments.]{Overview of scintillator arrays used in the experiments discussed in this thesis and their properties, namely the array size, divider and front plate material. All crystals used are made of caesium-iodide doped with thallium with the dimensions $5 \times 5 \times 50$ mm.}
+\caption[Scintillator arrays used as spectrometers in experiments.]{Overview of scintillator arrays used in the experiments discussed in this thesis and their properties, namely the array size, divider and front plate material. The material of all crystals that were used is caesium-iodide doped with thallium and have the spatial dimensions $5 \times 5 \times 50$ mm.}
 \label{Methods:GSpec:Table}
 \end{table}
 
@@ -94,27 +92,22 @@ The specific GEANT4 code used in this work builds on previous work by K. Poder a
 \label{Methods:GSpec:GEANT4screenshots}
 \end{figure}
 
-Typically $10^{6}$ individual photons or $10^5$ electrons are simulated, assuming collective or multi-photon/-particle processes are negligible, such that individual photon responses can be combined cumulatively. The specific experiment geometries are reconstructed in GEANT4 including the detector geometry and materials in the pathway as well as distances measured in the experiment. The electrons and gamma rays are emitted from a point source and low divergence, close to an idealised pencil beam. The GEANT4 representations of the two spectrometer designs are shown in Figure \ref{Methods:GSpec:GEANT4screenshots}.
-The code measures the energy deposition in the scintillator material and does not model the physics of the scintillation process or the light transport. It is assumed that the energy deposited within the scintillator crystals is linearly related to the light yield of the scintillator, i.e. the number of fluorescence photons emitted, independent of the process of energy deposition (REF\addref)
+Typically $10^{6}$ individual photons or $10^5$ electrons are simulated, assuming collective or multi-photon/-particle processes are negligible, such that individual photon responses can be combined cumulatively. The specific experiment geometries are reconstructed in GEANT4 including the detector geometry and materials in the pathway as well as distances measured in the experiment. The GEANT4 representations of the two spectrometer designs are shown in Figure \ref{Methods:GSpec:GEANT4screenshots}. The electrons and gamma rays are emitted from a point source and low divergence, close to an idealised pencil beam. 
+The code measures the energy deposition in the scintillator material, but does not model the physics of the scintillation process itself or the light transport. It is assumed that the energy deposited within the scintillator crystals is linearly related to the light yield of the scintillator, i.e. the number of fluorescence photons emitted, independent of the process of energy deposition \cite{Frlez2000_CsI}.
 
 
-\subsubsection{Image processing}
+\subsubsection{Image processing and background subtraction}
 
 The response of the scintillator array is recorded as an image on a CCD and the images require processing before analysing them.
-The specific steps vary from setup to setup depending on the imaging system. The open side of the crystals (see Figure \ref{Methods:Figs:GammaSpectrometer_Axes} were imaged close-to-normal to collect a large fraction of the scintillation light, which also removed the necessity of morphing the image as required for the magnetic spectrometer screen, for instance.
+The specific steps vary from setup to setup depending on the imaging system. The open side of the crystals (see Figure \ref{Methods:Figs:GammaSpectrometer_Axes}) were imaged close-to-normal to collect a large fraction of the scintillation light, which also removed the necessity of morphing the image as required for the magnetic spectrometer screen (see Section \ref{Chap:Methods:Sec:Espec}).
 
-The images contain background noise from different sources that have to be removed. The background can roughly be divided into `permanent' background and on-shot noise. The permanent noise includes the intrinsic `dark noise' on the camera chip and counts related to ambient light.
-This background can be characterised by taking a series of images at dark conditions and then subtracted from on-shot data.
+The images contain background noise from different sources that have to be removed. The background can roughly be divided into continuous off-shot background and on-shot noise. The off-shot noise includes the intrinsic `dark noise' on the camera chip and counts related to ambient light.
+This background can be characterised by taking a series of images at dark conditions which are then subtracted from on-shot data.
 
-On-shot additional noise from hard radiation or electrons directly hitting the CCD (`hard hits' or `hot pixels'), scattered laser light and a physical bremsstrahlung background is measured. The treatment of the physical bremsstrahlung background is more complicated and will be discussed later.
-Scattered laser light can be mitigated by putting light shielding in place and adding bandpass filters matched to scintillation light to the imaging system. Hard hits, single pixels with high or saturation value, can be removed by a median filter which will also result in some blurring of the image.
+In high-intensity laser-plasma interactions energetic radiation and particles are produced, which can directly hit CCD chips resulting in `hard hits' or `hot pixels'. In addition the scattered laser light and bremsstrahlung might produce a signal on the detectors. 
+Scattered laser light can be mitigated by putting light shielding in place and adding bandpass filters to the imaging system with a transmission that is matched to the bandwidth of the scintillation light. Hard hits, single pixels with high or saturation value, can be removed by applying a median filter which will also result in some blurring of the image. The treatment of the bremsstrahlung background is more complicated and will be discussed later.
 
-
-On-shot there will also be stray laser light on the image.
-Depending on the image and the fraction of signal on the image the subtraction of the on-shot background (stray light etc.) will vary.
-
-In Chapter \ref{Chap:RR15} the radiation signal is constrained to a narrow, central part of the image due to the lead collimator and we can use the remaining image as on-shot reference for the background subtraction. To estimate the background the part of the image containing the signal is masked out, and using the area above and below a smooth surface is fitted over the signal region. The fitted background is then subtracted from the full image. This accounts for readout gradients in the chip and the on-shot background noise from stray light.
-
+In the experiment outlined in Chapter \ref{Chap:RR15} the radiation signal is constrained to a narrow, central part of the image due to the lead collimator and the remaining image can be used as on-shot reference to account for off-shot noise and on-shot noise from stray light (see Figure \ref{Methods:Figs:CsI_shotexemp}).
 In Chapters \ref{Chap:linICS} and \ref{Chap:BW} the signal occupies large parts of the image and the regions in between the crystals are used instead to estimate the background.
 \SMComm{There is quite a lot of detail on background subtraction. Not a problem but it would be nice to see some
 images pre and post big subtraction, to show that it’s effective,}
@@ -126,29 +119,25 @@ images pre and post big subtraction, to show that it’s effective,}
 %\includegraphics[width=1.0\columnwidth]{DualAxisCrystalExtrExample.png}
 %\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrExample_Int.png}\includegraphics[height=0.25\columnwidth]{CsI_CrystalExtrPixExample_Int.png}
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.5\columnwidth]{CrystalExtract_Example_Full.png}\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.5\columnwidth]{CrystalExtract_Example_Pixelated.png}
-\caption[Response of a scintillator stack as measured by the detector and its pixellated response.]{Response produced by an LWFA bremsstrahlung source measured using the dual-axis spectrometer stack. The radiation enters the stack from the left side and propagates to the right. Left: Image of the scintillator stack after image processing. The black rectangles indicate the regions of interest where the crystals are located. The dark regions in between are where the spacers are. Right: Corresponding pixellated response retrieved from the image on the left by integrating over the regions indicated by the rectangles.}
+\caption[Response of a scintillator stack as measured by the detector and its pixellated response.]{Response produced by an LWFA bremsstrahlung source measured using the dual-axis spectrometer stack. The radiation enters the stack from the left side and propagates to the right. Left: Image of the scintillator stack after background subtraction. The black rectangles indicate the regions of interest where the crystals are located. The dark regions in between the crystals are occupied by spacers. Right: Corresponding pixellated response retrieved from the image on the left by integrating over the regions indicated by the rectangles.}
+\label{Methods:Figs:GSpec:Pixellated_Response}
 \end{figure}
 
-\SMComm{Has the image been background subtracted?}
 
-Even with efficient filling of the field of view, the crystals emitting the scintillation light only occupy a fraction of the total image for the stacks considered.
-To further reduce the impact of noise and to focus on the signal-relevant parts of the image, we select the regions of the individual crystals (see Figure XX\addref{} for an example) and extract the content of the crystals. As a result we obtain the pixellated response of the detector, only using its active parts.
+Even with efficient filling of the field of view, the crystals emitting the scintillation light only occupy a fraction of the total image.
+To further reduce the impact of noise and to focus on the signal-relevant parts of the image, we select the regions of the individual crystals (see Figure \ref{Methods:Figs:GSpec:Pixellated_Response}) and extract the content of the crystals. The result is a pixellated response of the detector, only using its active parts.
 The shape of the decay in the longitudinal direction is characteristic of the spectral content, whereas the transverse dimension indicates the angular divergence. The transverse width of the crystal and spacers determine the transverse spatial resolution.
 
 
 \subsubsection{On-shot bremsstrahlung background and shielding}
 
-In the experiment setups described in this thesis, electrons are accelerated and dispersed in a magnetic spectrometer. While traversing the chamber and also when leaving it, the electrons interact with a range of solid materials, resulting in scattering, generation of secondary particles and showers of bremsstrahlung being produced. This is another source of on-shot noise. Since the radiation from this process is highly energetic, a lot of energy is potentially deposited in the scintillator crystals and could overlay the radiation signal we aim to measure.
-\SMComm{overlay is not the best word.}
+In the experiment setups described in this thesis, electrons are accelerated and dispersed in a magnetic spectrometer. While traversing the chamber and also when leaving it, the electrons interact with a range of solid materials, resulting in scattering, generation of secondary particles and showers of bremsstrahlung being produced. This is another source of on-shot noise. Since the radiation from this process is highly energetic, a lot of energy is potentially deposited in the scintillator crystals dominating the detector response.
 \vspace{\baselineskip}
 
 Firstly, it is important to reduce the amount of noise reaching the detector by identifying the main source and shielding the direct line of sight to the detector efficiently. 
-
-In Chapter \ref{Chap:RR15}, the electrons were dispersed upwards. The main source of noise is the roof of the vacuum chamber and the ceiling of the target area. After measuring the shower of radiation from above, the top of the detector was shielded with lead which reduced the noise level. A lead collimator was also used to reduce the acceptance angle of radiation to a narrow cone of radiation.
-
-In Chapter \ref{Chap:BW}, the electrons were primarily dispersed downwards into the thick chamber breadboard and the ground. Two lead walls with narrow apertures and a large aperture 60-cm-long magnet were blocking the direct line of sight downstream to the detector. In some instances the primary magnet was removed from the setup and the second magnet was used to characterise the electron beam by dispersing it horizontally. For this scenario the sides of the detector were shielded as well.
-
-In Chapter \ref{Chap:linICS}, the electrons were dispersed sideways and the detector was shielded on the sides.
+In the setup described in Chapter \ref{Chap:linICS}, the electrons were dispersed sideways and the detector was shielded on the sides.
+In the campaign in CHapter \ref{Chap:RR15}, the electrons were dispersed upwards. The main source of noise is the roof of the vacuum chamber and the ceiling of the target area. After measuring the shower of radiation from above on the detectors, the top of the detector was shielded with lead which reduced the noise level. A lead collimator was also used to limit the acceptance angle for radiation coming from upstream.
+For the measurements in Chapter \ref{Chap:BW}, the electrons were primarily dispersed downwards into the thick breadboard of the vacuum chamber, the chamber itself and the floor of the target area. Two lead walls with narrow apertures and a large aperture 60-cm-long magnet were blocking the direct line of sight downstream to the detector. In some instances the primary magnet was removed from the setup and the second magnet was used to characterise the electron beam by dispersing it horizontally. To account for this scenario the sides of the detector were shielded with lead as well.
 \vspace{\baselineskip}
 
 Since the primary noise source is off-axis, efficient shielding of the direct line of sight reduces the measured signal significantly. The source of the remaining radiation is likely to originate from a similar direction as the signal we aim to measure and will then enter the stack from one defined direction like the signal radiation. This makes it impossible to shield this component without infringing on the signal itself. Since it enters the stack from one defined direction, just as the signal, we can characterise its spectrum similarly as for the signal (GRAMMAR).
@@ -279,7 +268,7 @@ energy.) for different photon energies for a few geometries varying the separati
 \EliasComm{Change peak determination by smoothing out or so? Make the plot look less spiky.}
 \SMComm{They do look spiky.}
 
-We now simulated the energy deposition for a range of incoming photon energies in terms of energy deposition for crystals in longitudinal direction for a given photon energy. We assume (REF\addref{} NEED JUSTIFICATION) this is linearly converted into light output and that the experimental measurement has been corrected as described previously. For each photon energy $E_i$ we obtain an array of deposited energies $\mathbf{R_i}$ in the longitudinal crystal columns $C_1$ to $C_n$ 
+We now simulated the energy deposition for a range of incoming photon energies in terms of energy deposition for crystals in longitudinal direction for a given photon energy. We assume this is linearly converted into light output  \cite{Frlez2000_CsI} and that the experimental measurement has been corrected as described previously. For each photon energy $E_i$ we obtain an array of deposited energies $\mathbf{R_i}$ in the longitudinal crystal columns $C_1$ to $C_n$ 
 \begin{eqnarray}
 \mathbf{R_i} = & \bordermatrix{\text{}&C_1&C_2&\ldots &C_n\cr
                 E_i&R_{i1} &  R_{i2}  & \ldots & R_{in}} 
@@ -321,7 +310,7 @@ Provided we have access to a sufficiently populated matrix spanning finely a wid
 
 Since this is a matrix operation, in theory one can invert an experimental detector response to obtain the input spectrum. Unfortunately, this is an ill posed problem due to the noise and the low sensitivity to smaller changes in the spectral shape, which makes inversion an unsuitable technique. Instead we have to assume a spectral shape as primer, calculate the response for a range of parameters and find the best fit to the experimentally measured response, for instance using a least-square fit. 
 
-Other work has shown that the gamma spectrum can be retrieved without assumption of the spectral shape if a second measurement is performed, for instance using a Compton or pair spectrometer (REF\addref{}).
+Other work has shown that the gamma spectrum can be retrieved without assumption of the spectral shape if a second independent measurement is performed, for instance using a Compton or pair spectrometer \cite{Lisi2018_Gamma}.
 
 \subsubsection{Resolving spatial features}
 
@@ -354,6 +343,6 @@ clear which is the bigger dimension on the spectrum images.}
 If we have an asymmetric source that is elongated in one direction, the two views will reflect this as well. In Figure \ref{Methods:Figs:Spatial} (bottom) we see the elongated signal on the profile screen that is stretched in the horizontal. This was produced by a particularly bright burst of hard betatron radiation. The view integrating vertically shows the broad signal in the first transversal crystal rows. The view integrating along the horizontal axis sees a much more localised signal as energy is deposited along the full length of individual crystals. 
 \vspace{\baselineskip}
 
-Measuring the spatial profile of radiation is interesting for different applications. In the context of inverse Compton scattering,  it can be used as beam diagnostics in the linear case (KRAMER REF\addref) and to infer the intensity at the interaction in a model-independent way from the ellipticity in the non-linear case (REF BLACKBURN, UMSTADTER, HARM SHEMESH\addref{}). For betatron radiation produced from wakefield accelerators, for instance, the ellipticity is an indicator for the wiggler parameter. However, a plain spatial analysis of the profile is easier done using a scintillator with much better resolution.
+Measuring the spatial profile of radiation is interesting for different applications. In the context of inverse Compton scattering,  it can be used as beam diagnostics in the linear case \cite{Kramer2018_Gamma} and to infer the intensity at the interaction from the ellipticity in the non-linear case \cite{HarShemesh2012_INTENSITY,Yan2017_ICS,Blackburn2019_ModelIndependentLaser}. For betatron radiation produced from wakefield accelerators, for instance, the ellipticity is an indicator for the wiggler parameter. However, a plain spatial analysis of the profile is easier done using a scintillator with much better resolution.
 
 On the other hand, if not only the spatial component is of relevance but the spectral distribution across the profile, then a profile screen alone is not sufficient and this capability would be useful. The different rows allow in principle a separate spectral retrieval if simulated properly. The ellipticity of a source and its decay could be tracked throughout this stack as another way to characterise radiation in a double-differential or close to infer full 3-D spectrum. This is not further investigated in this context, but represents a proof-of-principle that this detector is able to resolve the different dimensions and that the spectral retrieval can be done independently. 

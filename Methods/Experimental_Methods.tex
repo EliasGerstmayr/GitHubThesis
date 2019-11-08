@@ -31,7 +31,7 @@ In addition to its full-power capabilities, a continuous-wave mode for alignment
 \begin{figure}
 \centering
 \includegraphics[width=0.8\columnwidth]{BeamGeometries.pdf}
-\caption{Sketch of relevant focusing geometries used in experiments at \textsc{Gemini} discussed in this work. Top: A long-focal-length geometry using an $f/40$ spherical mirror or off-axis parabola used to drive a wakefield accelerator. Bottom: A short-focal-length $f/2$ geometry for a scatterer or heater beam using a full off-axis parabola (left) or an optic with a central hole (right).}
+\caption[Sketch of relevant focusing geometries used in experiments at \textsc{Gemini} discussed in this work.]{Sketch of relevant focusing geometries used in experiments at \textsc{Gemini} discussed in this work. Top: A long-focal-length geometry using an $f/40$ spherical mirror or off-axis parabola used to drive a wakefield accelerator. Bottom: A short-focal-length $f/2$ geometry for a scatterer or heater beam using a full off-axis parabola (left) or an optic with a central hole (right).}
 \label{Methods:Figs:FocusingGeometries}
 \end{figure}
 In the context of the LWFA experiments discussed later typically two types of beam line geometries are of relevance at \textsc{Gemini} (see Figure \ref{Methods:Figs:FocusingGeometries}):
@@ -44,11 +44,13 @@ The second focusing geometry is the short-focal-length scatterer (see Figure \re
 
 
 \subsection{Laser Energy}
+\label{Methods:Sec:LaserEnergy}
 
 At \textsc{Gemini}, the laser energies are measured on every shot by collecting the transmitted light through the back of a highly-reflective dielectric mirror in the laser area and imaging it onto a CCD camera chip. The integrated number of counts on the CCD is calibrated using a laser energy meter (Gentec QE8SP-B-BL-D0) and the filtering is adjusted for different power modes.
 A laser energy meter is also used to measure the reflectivity of the compressor gratings, at \textsc{Gemini} typically between 60 and 70 percent, and the energy reaching the interaction point.
 
 \subsection{Laser Pulse Duration}
+\label{Methods:Sec:PulseDuration}
 
 At \textsc{Gemini}, frequency-resolved optical gating (FROG) \cite{FROG} is used to measure the pulse duration of the laser and characterise its temporal intensity profile.
 A FROG trace is taken on every shot by collecting laser light that is transmitted through highly-reflective dielectric mirrors.
@@ -57,54 +59,43 @@ The FROG is a diagnostic to measure the intensity and spectral phase of ultrasho
 
 \subsection{Focal Spot Characterisation}
 
-The ability to characterise the properties of a focused laser pulse, such as its size and peak intensity, is crucial for high-intensity laser experiments as it enables the optimisation of the focal spot shape for the respective application in an active feedback loop, and also enables diagnosing the physical phenomena the laser is employed to probe or induce. In LWFA a short-pulse laser is focused down to reach high intensities to drive a wake, but has to guide itself over a long range at the same time. Only energy contained in the beam centroid is efficiently guided, whilst energy in the `wings' of the beam is lost and reduces the peak intensity of the laser pulse. 
-For Compton-backscatter experiments, on the other hand, a high intensity increases the yield of X-rays and is prerequisite to accessing nonlinear phenomena.
+The ability to characterise the properties of a focused laser pulse, such as its size and peak intensity, is crucial for high-intensity laser experiments as it enables the optimisation of the focal spot shape for the respective application in an active feedback loop \cite{Gregory2015_f2OPT}, and also enables diagnosing the physical phenomena the laser is employed to probe or induce. In LWFA a short-pulse laser is focused down to reach high intensities to drive a wake, but has to guide itself over a long range at the same time. Only energy contained in the beam centroid is efficiently guided, whilst energy in the `wings' of the beam is lost and reduces the peak intensity of the laser pulse \cite{Mangles2012_SELF}. 
+For Compton-backscatter experiments, on the other hand, a high intensity increases the yield of X-rays and is prerequisite to accessing nonlinear phenomena \cite{Corde2013_Rad}.
 Since the energy in the laser pulses is limited and the temporal compression is also bounded (and not always desirable), the spatial shaping of the focal spot is a critical tool to reach efficiently high intensities.
-\SMComm{Reference? Mangles PRSTAB and Genoud...}
 
-A \textit{direct} measurement of a high-intensity laser focus, also referred to as \textit{focal spot}, is however very challenging.
-For this reason, an attenuated low-power laser pulse is characterised instead at \textsc{Gemini}. In the low-power mode the laser pulses are only amplified in two out of three amplification stages (see, for instance, \cite{PoderThesis} for more details on the laser beam line), but propagate on the same beam path, through the same materials and are manipulated by the same optics. As a result, the focal spot in the low-power and high-power mode are expected to be very similar, with exception of certain thermal effects.
+A \textit{direct} measurement and characterisation of a high-intensity laser focus, also referred to as \textit{focal spot}, or even just its peak intensity is, however, very challenging.
+For this reason, an attenuated low-power laser pulse is characterised instead at \textsc{Gemini}. In the low-power mode the laser pulses are amplified in all but the final amplification stage (see, for instance, \cite{PoderThesis} for more details on the laser beam line), propagate on the same beam path, through the same materials and are manipulated by the same optics. As a result, the focal spot in the low-power and high-power mode are expected to be very similar, with exception of certain thermal effects.
 
+At \textsc{Gemini} the low-power focal spot is imaged through a special long-working-distance microscope objective (Mitutoyo near-infrared infinity-corrected apochromatic) onto the CCD chip of an AVT Manta G-033B. To characterise the focal spot of the $f/40$ beam line and the $f/2$ focal spot with a phase plate a microscope objective with magnification $\times10$ was used. A $\times20$ objective was used to image the focal spot from the $f/2$ beam line in the colliding-pulse experiments. A thin metal wire $ \sim 100 \microns$ was used to localise a well-defined focal plane and position, relative to which other components in the setup were then positioned. 
 
+In order to produce an intensity profile of the laser pulse we require a measurement of the energy in the laser pulse, its temporal structure and spatial properties. The diagnostics for on-shot laser energy and pulse duration measurements were already presented in the previous section. The measurement of the spatial properties of the focal spot and how to relate the focal spot image to an intensity distribution is presented in the following.
 
-
-In this work a CCD camera (AVT Manta G-033B) is coupled to a near infrared infinity-corrected apochromatic long-working-distance microscope objective (depending on the application Mitotoyo $\times10$ or $\times20$ magnification) to image the spot at its focal plane. 
-A thin metal wire of $10's-100 \,\mathrm{\mu m}$ width is used to help define a focal plane.
 \subsubsection{Spatial calibration}
 
-The imaging systems for the focal spot characterisation were spatially calibrated by imaging well defined line pairs on a transmissive 1951 USAF Target (Thorlabs). Figure \ref{Methods:Figs:FocalSpot_USAF} (left) shows an image of the central part of the USAF target, containing the smallest line pairs, with a sketch of the full USAF target pattern (negative) presented on its right side. A simple diode laser was used as backlighter. Each line pair can be identified by its element and group number, and the related spatial dimension is given on the website of the manufacturer in units of line pairs per millimetre, $lp/mm$. By multiplying the size of a line pair on the image (pixels per line pair) with the dimensions given on the data sheet (line pairs per mm), we obtain the number of pixels corresponding to one millimetre or in inverse the size of one pixel, i.e. the spatial calibration of the image.
+The imaging systems for the focal spot characterisation were spatially calibrated by imaging well defined line pairs on a transmissive resolution target, a 1951 USAF Target (R1DS1P, Thorlabs). Figure \ref{Methods:Figs:FocalSpot_USAF} (left) shows an image of the central part of the USAF target, containing the smallest line pairs, with a sketch of the full USAF target pattern (negative) presented on its right side. A simple diode laser was used as backlighter. Each line pair can be identified by its element and group number, and the related spatial dimension is given on the website of the manufacturer in units of line pairs per millimetre, lp/mm. By multiplying the size of a line pair on the image (pixels per line pair) with the dimensions given on the data sheet (line pairs per mm), we obtain the number of pixels corresponding to one millimetre or in inverse the size of one pixel, i.e. the spatial calibration of the image.
 The magnification of the imaging system, on the other hand, is then simply the physical size of one camera pixel, which can be found on the datasheet of the camera in use, divided by the determined spatial scale that corresponds to one pixel on the image.
 
-Using the image shown in Figure \ref{Methods:Figs:FocalSpot_USAF} as an explicit example: One line pair of the second element of the 6th group measures 15 pixels. According to the data sheet this element has a scale of $71.8\,lp/mm$, such that we obtain for the image a $1077$ pixels/mm or $0.93$ micron/pixel. The camera that was used is of type AVT Manta G-033B with $9.9\microns$ physical pixel size, which then gives a magnification of $10.65$.
+Using the image shown in Figure \ref{Methods:Figs:FocalSpot_USAF} as an explicit example: One line pair of the second element of the 6th group measures 15 pixels. According to the data sheet this element has a scale of $71.8\,\mathrm{lp/mm}$, such that we obtain for the image $1077$ pixels/mm or $0.93 \microns$/pixel. The camera was of type AVT Manta G-033B with $9.9\microns$ physical pixel size, which then gives a magnification of $10.65$.
 
 \begin{figure}
 \centering
 \includegraphics[height=0.35\columnwidth]{USAF_FocalCalib_Example.jpg}\includegraphics[height=0.35\columnwidth]{USAF_Resolution_Chart_A1-780.jpg}
-\caption[USAF Target for spatial calibration.]{USAF target for spatial calibration.}
+\caption[Spatial calibration target for a focal spot camera.]{USAF targets to spatially calibrate the imaging system of the focal spot camera. Left: Central part of a transmissive USAF target backlit by a diode laser. Right: Full (negative) USAF pattern. The groups in the centre (numbers not legible) correspond to the groups shown on the left.}
 \label{Methods:Figs:FocalSpot_USAF}
 \end{figure}
 
-\subsubsection{Intensity Estimate}
+\subsubsection{Intensity Distribution and Peak Intensity}
 
-By combining the spatial calibration with the on-shot measurements of the energy and pulse duration/peak power of the laser pulse, the peak intensity of the high-power can be estimated, under the assumption that the focal spots in both power modes are comparable.
+The image of the low-power focal spot on the CCD is a temporally integrated measurement of the profile of the laser pulse. Given an appropriate background subtraction, no saturation in the image and given that the entire focal spot is captured in the image, the total pixel count corresponds to the total energy in the laser pulse and the distribution of the counts in turn corresponds to the spatial energy distribution. This also applies to the high-power focal spot as we assume that the low-power laser pulse is representative of the high-power pulse. By relating the on-shot energy measurement (see Section \ref{Methods:Sec:LaserEnergy}) to the total pixel count on the image we obtain an energy calibration in units of $J/pixel\,counts$. Since the image is spatially calibrated, we can assign each pixel in turn a fluence, $pixel\,counts/area \rightarrow J/area$. If we now fold in the time over which this fluence is delivered, we obtain the intensity, energy per unit time and area, here given in the units $\mathrm{W/cm^2}$. By considering the entire pulse duration (see Section \ref{Methods:Sec:PulseDuration}) this corresponds to the average intensity. If we extract the peak power from the pulse envelope (FROG trace), we can determine the peak intensity, which is the driving quantity in most LWFA and colliding-pulse experiments.
+As a result we obtain the spatial distribution of the peak intensity of the focal spot. 
 
-For this purpose the pixel counts on the CCD are calibrated with the energy measurement.
+Using the methods described in this section the intensity distributions for three example focal spots from different focusing geometries were calculated and are shown in Figure \ref{Methods:Figs:FocalSpotExamples} (note different spatial scales), where the colour scale indicates the intensity in $\mathrm{W/cm^2}$. The top and bottom row show the same focal spots but on a logarithmic scale (top) and a linear scale (bottom), respectively. The laser pulses were focused by an $f/40$ off-axis parabola (left column) and an $f/2$ off-axis parabola (centre and right). A phase plate \cite{Kato1984_PHASEPLATE} was inserted into the collimated beam to obtain the wide, speckled focal spot on the right, which was used as X-ray heater beam in the experiment described in Chapter \ref{Chap:BW}. The other two focal spots were measured on a \textsc{Gemini} campaign in 2019, which is outlined in Chapter \ref{Chap:linICS}.
 
-Energy / area and pulse duration (for Gaussian) or with real pulse duration measurement for peak number.
-
-
-Or in terms of the normalised vector potential:
-\begin{equation}
-a_0 \approx 0.85 \lambda [\mu m] \sqrt{I [10^{18} cm^{-2}]}
-\end{equation}
-
-
-Using the methods described in this section the intensity distributions for three example focal spots from different focusing geometries were calculated and are shown in Figure {Methods:Figs:FocalSpotExamples} (note different spatial scales).
 
 \begin{figure}
 \centering
-\includegraphics[width=0.35\columnwidth]{RRf40Spot.png}\includegraphics[width=0.35\columnwidth]{RRF2Spot.png}\includegraphics[width=0.35\columnwidth]{QEDPhasePlate.png}
-\caption[Examples of low-power focal spots from different focusing geometries, measured at \textsc{Gemini}.]{Examples of low-power focal spots from different focusing geometries, measured at \textsc{Gemini}. The x- and y-axes show the horizontal and vertical spatial scale in micrometres, the colour scale shows the intensity in units of $W/cm^2$ on a linear scale (bottom row) and a logarithmic scale (top row). The focusing optics were an $f/40$ off-axis parabola (left column) and an $f/2$ off-axis parabola (central and right column). A phase plate was inserted into the collimated beam path of the laser pulse shown in the right column. The halo around this spot causes scattering in the imaging system which leads to the apparent rectangular region of intensity visible on the logarithmic scale (top) but is not a physical representation of the spot itself. The images were taken at \textsc{Gemini} in 2019 (left, centre) and 2018 (right).}
+\includegraphics[width=0.33\columnwidth]{RRf40Spot.png}\includegraphics[width=0.33\columnwidth]{RRF2Spot.png}\includegraphics[width=0.33\columnwidth]{QEDPhasePlate.png}
+\caption[Examples of low-power focal spots from different focusing geometries, measured at \textsc{Gemini}.]{Examples of low-power focal spots from different focusing geometries, measured at \textsc{Gemini}. The x- and y-axes show the horizontal and vertical spatial scale in micrometres, the colour scale shows the peak intensity in units of $W/cm^2$ on a linear scale (bottom row) and a logarithmic scale (top row). The focusing optics were an $f/40$ off-axis parabola (left column) and an $f/2$ off-axis parabola (central and right column). A phase plate was inserted into the collimated beam path of the laser pulse shown in the right column. The halo around this spot causes scattering in the imaging system which leads to the apparent rectangular region of intensity visible on the logarithmic scale (top) but is not a physical representation of the spot itself. The images were taken at \textsc{Gemini} in 2019 (left, centre) and 2018 (right).}
 \label{Methods:Figs:FocalSpotExamples}
 \end{figure}
 
@@ -127,14 +118,14 @@ In the experiments described in this thesis two attenuated (low power) laser pul
 \begin{figure}
 \centering
 \includegraphics[height=0.38\columnwidth]{PhotoDiode_BW.jpg}\includegraphics[trim={2.0cm 0 2cm 0}, clip, height=0.38\columnwidth]{DeadReckonDiode.png}
-\caption{Left: Photodiode (black) used in the experiments in this work (EOT-4000 GaAs). The active area is inside the round `window'. The white strip is used to scatter the laser and increase the signal yield. Right: Temporal separation between two laser pulses ($f/40$ and $f/2$) measured with a fast diode and oscilloscope. The plot shows how much earlier the $f/40$ laser pulse arrives as a function of the position of the delay stage (SAD position). In the region between 15 and 40 picoseconds the peaks start to merge and measurement of the separation becomes unreliable. The linear fit can be used to identify the delay required to match the time of arrival of both laser pulses. The shaded region indicates the 95 percent confidence interval for the fit.}
+\caption[Photo of a photodiode used in experiment and timing scan using a delay stage and a photodiode.]{Left: Photodiode (black) used in the experiments in this work (EOT-4000 GaAs). The active area is inside the round `window'. The white strip is used to scatter the laser and increase the signal yield. Right: Temporal separation between two laser pulses ($f/40$ and $f/2$) measured with a fast diode and oscilloscope. The plot shows how much earlier the $f/40$ laser pulse arrives as a function of the position of the delay stage (SAD position). In the region between 15 and 40 picoseconds the peaks start to merge and measurement of the separation becomes unreliable. The linear fit can be used to identify the delay required to match the time of arrival of both laser pulses. The shaded region indicates the 95 percent confidence interval for the fit.}
 \label{Methods:Figs:Photodiode}
 \end{figure}
 
 
 Photodiodes and oscilloscopes are relatively straightforward to set up and use, but due to their typical rise/fall time of several tens of picoseconds the accuracy of an individual measurement using an appropriate oscilloscope is $\sim10\,\mathrm{ps}$. The accuracy of the synchronisation can be improved by conducting multiple measurements across a range of relative temporal delays and then interpolating between the data points to obtain the zero-delay point. At \textsc{Gemini} the delay stage on the SAD table can be moved to adjust the relative delay of both laser arms. Since the stage moves at micrometre precision the main experimental error for each measurement is the reading error on the oscilloscope. 
 
-The result of such a scan in relative delay is shown in Figure \ref{Methods:Figs:Photodiode} (right) for data taken on the experimental campaign presented in Chapter \ref{Chap:linICS}: the relative delay of the two laser pulses (here in terms of how much earlier the $f/40$ laser pulse arrives) as measured with the photodiode and the oscilloscope is shown as a function of the SAD position. When both pulses arrive within each other's rise or fall time the diode responses merge and the peaks can not be properly distinguished, which is why there are no data points around the zero-delay point. The linear fit to the data points is parametrised by $y_{fit} = 6.78 \,[\mathrm{ps/mm}]\, \times\,x_{SAD}[\mathrm{mm}] - 178.72\,[\mathrm{ps}]$ which indicates that the zero point is at $x_0 = (26.36 \,\pm\, 0.68)\mm$. The error on the SAD position (equivalent to $\sim 2\,\mathrm{ps}$) was estimated using the 95 percent confidence interval of the linear fit (shaded area in Figure \ref{Methods:Figs:Photodiode}).
+The result of such a scan in relative delay is shown in Figure \ref{Methods:Figs:Photodiode} (right) for data taken on the experimental campaign presented in Chapter \ref{Chap:linICS}: the relative delay of the two laser pulses (here in terms of how much earlier the $f/40$ laser pulse arrives) as measured with the photodiode and the oscilloscope is shown as a function of the SAD position. When both pulses arrive within each other's rise or fall time the diode responses merge and the peaks can not be properly distinguished, which is why there are no data points around the zero-delay point. The linear fit to the data points is parametrised by $y_{fit} = 6.78 \,[\mathrm{ps/mm}]\, \times\,x_{SAD}[\mathrm{mm}] - 178.72\,[\mathrm{ps}]$ which indicates that the zero point is at $x_0 = (26.36 \,\pm\, 0.68)\mm$. The error on the SAD position (equivalent to $\sim 2\,\mathrm{ps}$) was estimated using the $95\%$ confidence interval of the linear fit (shaded area in Figure \ref{Methods:Figs:Photodiode}).
 
 \subsection{Interferometry}
 \label{Methods:Sec:SpatialInterferometry}
@@ -161,13 +152,13 @@ If we consider a plane wave and a spherical wave instead, the resulting interfer
 \begin{equation}
 I \sim 1 + \cos\left(\frac{\pi r^2}{\lambda R}\right),
 \end{equation}
-where we simplified the relation by assuming that the wave vectors are parallel and $\Delta \tau = 0\,\&\,\Delta \phi = 0$, i.e. in contrast to the previous case the interference pattern does not vanish for parallel waves with the same time of arrival. In the limit of $R \rightarrow \infty$ this approaches the scenario as discussed above, the interference of two plane waves. 
+where we simplified the relation by assuming that the wave vectors are parallel and $\Delta \tau = 0,\,\Delta \phi = 0$, i.e. in contrast to the previous case the interference pattern does not vanish for parallel waves with the same time of arrival. In the limit of $R \rightarrow \infty$ this approaches the case of two plane waves. 
 
 A focusing and defocusing Gaussian laser pulse changes its radius of curvature, $R$, where the wave front is strongly curved near the focus (within few Rayleigh lengths, $z_R$), especially for tightly focused beams, and asymptotically flat at a distance $|z| \gg z_R$ away from the focus or weakly focused beams (see Section \ref{Chap:Theory:Sec:LaserInVac}). As a consequence, one can produce straight or circular fringes by interacting two Gaussian laser pulses either close or far away from their foci, or by focusing one with a short and the other one with a long-focal-length optic.
 \vspace{\baselineskip}
 
 
-Ultrashort laser pulses require large bandwidths such that the coherence length is very short, here comparable to the pulse duration. As a result, the variation in the interference pattern due to a change in the term $\omega \Delta \tau$ can be neglected when varying the relative delay between two pulses. The interference pattern only appears when both pulses arrive at the detector plane within the limited time window of their combined pulse durations with an optimised contrast of the pattern when the beams are centred on each other in space and time as then the entirety of the pulses interfere. This method is referred to as \textit{spatial interferometry}. Since the `active' time window in which the pattern appears is very small an initial `rough' timing using the photodiodes described in the previous section is of advantage.
+Ultrashort laser pulses require large bandwidths such that the coherence length is very short, here comparable to the pulse duration. As a result, the variation in the interference pattern due to a change in the term $\omega \Delta \tau$ can be neglected when varying the relative delay between two pulses. The interference pattern only appears when both pulses arrive at the detector plane within the limited time window of their combined pulse durations with an optimised contrast of the pattern when the beams are centred on each other in space and time as then the entirety of the pulses interfere. This method is here referred to as \textit{spatial interferometry}. Since the `active' time window in which the pattern appears is very small an initial `rough' timing using the photodiodes described in the previous section is of advantage.
 
 On the other hand, it is possible to increase the coherence length by dispersing both laser pulses with a grating such that the individual frequency components interact separately, assuming both pulses are identically chirped. This method is referred to as \textit{spectral interferometry}. See for instance \cite{Corvan2016_TIMING} for a detailed description. Depending on the dispersion this enables an active window of hundreds of picoseconds and in turn allows using the variation of $\omega \Delta \tau$ to quantitatively determine the temporal separation of the laser pulses as it is now encoded in the wavelength of the interference pattern.
 
@@ -192,7 +183,7 @@ By gradually translating the prism away from the CCD the two laser beams move cl
 
 The camera was equipped with a long-working-distance microscope objective ($\times 10$ Mitutoyo Plan Apochromat Near-Infrared) and a linear polariser.
 The polariser is prerequisite for interference but was also be used to adjust the relative brightness of both beams to increase the contrast. The contrast was also adjusted by taking advantage of the different divergences of the beam and moving the imaging plane closer or further away from the focus.
-Once the contrast was maximised the visibility of the pattern was optimised to determine the temporal overlap more accurately. By quantifying the visibility of the pattern, for instance from the Fourier transform, the accuracy of the synchronisation can be improved through statistical measurements, similarly as described for the diode timing. In Figure \ref{Methods:Figs:PrismCam_FringeVisibility} the `fringe' (interference pattern) visibility is shown as a function of the SAD position, using data analysed for \cite{Cole2018_RR} and provided by J. Cole (Imperial College). The position for the optimum overlap was determined through a fitting routine. The uncertainty of this technique was estimated to be $\sim 17\fs$.
+Once the contrast was maximised the visibility of the pattern was optimised to determine the temporal overlap more accurately. The accuracy of the synchronisation can be improved through statistical measurements, similarly as described for the diode timing. In Figure \ref{Methods:Figs:PrismCam_FringeVisibility} the `fringe' (interference pattern) visibility is shown as a function of the SAD position, using data analysed for \cite{Cole2018_RR} by J. Cole (Imperial College). The position for the optimum overlap was determined through a fitting routine. The uncertainty of this technique was estimated to be $\sim 17\fs$.
 
 \subsection{Additional considerations for the synchronisation of beams}
 
@@ -234,15 +225,8 @@ The attenuators are $2\,\mathrm{mm}$ thick fused silica glass slides with refrac
 \label{Methods:Sec:Beam_Laser_Timing}
 
 Using spatial interferometry the two laser pulses can be synchronised in vacuum to an estimated accuracy of $30\,\mathrm{fs}$. This timing is only valid if both laser pulses travel through vacuum. In a shooting scenario, however, the driving laser pulse propagates through plasma to accelerate electrons via LWFA. The propagation in a medium reduces the group velocity of the laser pulse and delays its arrival relative to the vacuum timing.
-In the colliding-pulse experiments discussed in Chapters \ref{Chap:linICS} and \ref{Chap:RR15} we are in addition trying to overlap the scattering beam with the electrons accelerated by the driver pulse, not the driver itself. The LWFA electron bunch trails behind the driving laser pulse and arrives even later at the interaction point. Since the scattering beam arrives before both at its focal plane and the designated interaction point, the real collision will occur beyond this point.
+In the colliding-pulse experiments discussed in Chapters \ref{Chap:linICS} and \ref{Chap:RR15} we are in addition trying to overlap the scattering beam with the electrons accelerated by the driver pulse rather than the driver itself. The LWFA electron bunch trails behind the driving laser pulse and arrives later at the interaction point. Since the scattering beam arrives before both at its focal plane and the designated interaction point, the real collision will occur beyond this point. This is illustrated in a sketch in Figure \ref{Methods:Figs:LaserElectronOffset_Sketch}.
 \vspace{\baselineskip}
-
-The following analysis is explicitly deriving Equation 2 in \cite{Cole2018_RR} and is based on work by Jason Cole (Imperial College).
-We assume that the laser pulse travels through the plasma at the standard non-linear group velocity reduced by the etching velocity, $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$ (called front velocity in \cite{Decker1996_FV}). Given a plasma of thickness $d$ the laser pulse of the scattering beam travels in the same time a distance  $d'=d c/v_f > d$.
-Both laser pulses now meet at a distance $\delta z_1$ past the focal plane of the scattering beam (see Figure \ref{Methods:Figs:LaserElectronOffset_Sketch}, central row):
-\begin{equation}
-\delta z_1 = \frac{1}{2} \left[d \frac{c}{v_f} - d\right] = \frac{d}{2} \left[\left(1-\frac{3}{2} \frac{n_e}{n_c}\right)^{-1} -1\right] \approx \frac{d}{2}\left(1+\frac{3}{2} \frac{n_e}{n_c} -1\right) = \frac{3d}{4}\frac{n_e}{n_c}.
-\end{equation} 
 
 \begin{figure}
 \centering
@@ -250,6 +234,13 @@ Both laser pulses now meet at a distance $\delta z_1$ past the focal plane of th
 \caption[Sketch of two counterpropagating laser pulses and how the interaction point shifts in different scenarios.]{Top row: Two counterpropagating laser pulses (red) are synchronised to each other in vacuum so that they meet at a designated interaction point (yellow cross) $z = 0$ at $t = 0$. Central row: The laser pulse entering the sketch from the left now propagates through plasma and is slowed down such that at $t=0$ it is a distance $2\delta z_1$ separated from the designated interaction point. The laser pulses then meet halfway at $z = \delta z_1$ (yellow cross). Bottom row: An LWFA electron bunch is trailing behind the laser pulse at $2 \delta z_2$ distance. The effective interaction point is now at $\delta z = \delta z_1 + \delta z_2$.}
 \label{Methods:Figs:LaserElectronOffset_Sketch}
 \end{figure}
+
+The following analysis is explicitly deriving Equation 2 in \cite{Cole2018_RR} and is based on work by Jason Cole (Imperial College).
+We assume that the laser pulse travels through the plasma at the standard non-linear group velocity reduced by the etching velocity, $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$ (called front velocity in \cite{Decker1996_FV}). Given a plasma of thickness $d$ the laser pulse of the scattering beam travels in the same time a distance  $d'=d c/v_f > d$.
+Both laser pulses now meet at a distance $\delta z_1$ past the focal plane of the scattering beam (see Figure \ref{Methods:Figs:LaserElectronOffset_Sketch}, central row):
+\begin{equation}
+\delta z_1 = \frac{1}{2} \left[d \frac{c}{v_f} - d\right] = \frac{d}{2} \left[\left(1-\frac{3}{2} \frac{n_e}{n_c}\right)^{-1} -1\right] \approx \frac{d}{2}\left(1+\frac{3}{2} \frac{n_e}{n_c} -1\right) = \frac{3d}{4}\frac{n_e}{n_c}.
+\end{equation} 
 
 
 
@@ -306,12 +297,13 @@ In laser-wakefield acceleration (LWFA) the laser pulse propagates through a plas
 Gas and liquid targets can be destroyed and replenished in a short amount of time without significant re-alignment and debris production, and are suitable for high-repetition experiments. The factors limiting the repetition rate are then the performance of the vacuum system, the time it takes the gas flow or liquid to reach equilibrium, the durability of nozzles and other components, and the repetition rate of the laser system itself.
 \vspace{\baselineskip}
 
-Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001_GASJETS}, gas cells (REF\addref) and capillaries \cite{Spence2001_WAVEGUIDE,Leemans2006_GEV}. In some cases several targets of the same or different type or combined and staged together to achieve more favourable results (REF\addref). The target size, i.e. the distance the laser pulse propagates through the medium, has to be matched with the laser in use, considering depletion and dephasing lengths to optimise the particle and radiation output, and to use the energy of the laser pulse efficiently. As a result, there is a large variety of different targets, each tailored to a different application (REF\addref). Here we will focus on examples of gas jets and cells relevant to the work presented within the course of this thesis. An overview of those targets is given in Table \ref{Methods:tables:GasTargets}.
+Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001_GASJETS}, gas cells \cite{Osterhoff2008_CELL} and capillaries \cite{Spence2001_WAVEGUIDE,Leemans2006_GEV}. In some cases several targets of the same or different type or combined and staged together to achieve more favourable results. The target size, i.e. the distance the laser pulse propagates through the medium, has to be matched with the laser in use, considering depletion and dephasing lengths (see Section \ref{Theory:Sec:LWFA}) to optimise the particle and radiation output, and to use the energy of the laser pulse efficiently. As a result, there is a large variety of different targets, each tailored to a different application. Here we will focus on examples of gas jets and cells relevant to the work presented within the course of this thesis. An overview of those targets is given in Table \ref{Methods:tables:GasTargets}.
 
 \begin{figure}
 \centering
-\includegraphics[height=0.35\columnwidth]{GasCell_Example_cut.png}\includegraphics[height=0.35\columnwidth]{conical_nozzle_prettypic.jpg}
-\caption{Gas targets under fire. Left: Variable length and density gas cell target by N. Lopes (Imperial College/IST) used at \textsc{Gemini} in 2018. The laser propagates from left to right. The straight bright line is the plasma channel inside the cell, whereas the blue plume is gas that left the cell and was subsequently ionised by back-reflected laser light. Right: Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionised by the laser and lights up. Picture taken at \textsc{Gemini} in December 2015. }
+\includegraphics[height=0.33\columnwidth]{GasCell_Example_cut.png}\hspace{0.5em}%
+\includegraphics[height=0.33\columnwidth]{conical_nozzle_prettypic.jpg}
+\caption[Images of a gas cell and a gas jet used in an experiment.]{Gas targets under fire. Left: Variable length and density gas cell target by N. Lopes (Imperial College/IST) used at \textsc{Gemini} in 2018. The laser propagates from left to right. The straight bright line is the plasma channel inside the cell, whereas the blue plume is gas that left the cell and was subsequently ionised by back-reflected laser light. Right: Picture of a diverging supersonic gas jet with $15\,\mathrm{mm}$ diameter. The emerging helium gas is ionised by the laser and lights up. Picture taken at \textsc{Gemini} in December 2015. }
 \end{figure}
 
 \begin{table}
@@ -319,7 +311,7 @@ Examples of gas targets that are routinely used for wakefield experiments are ga
 {\rowcolors{3}{white}{lightgray!50}
 \begin{tabular}{|r|r|r|r|r|}
 \hline
-\multicolumn{5}{|c|}{\textbf{Gas Targets used in this work}} \\
+\multicolumn{5}{|c|}{\textbf{Gas Targets in this work}} \\
 \hline \hline
 \textbf{Chapter} & \textbf{Target Type} & \textbf{Length} & \textbf{Gas} & \textbf{Inj. Mechanism}\\ \hline \hline
 \ref{Chap:linICS} & Jet + Blade & 15 mm & Helium & Shock Injection\\
@@ -328,7 +320,7 @@ Examples of gas targets that are routinely used for wakefield experiments are ga
 \hline
 \end{tabular}
 }
-\caption{Overview of gas targets and gases used in this work.}
+\caption[Gas targets and relevant injection mechanisms in this work.]{Overview of gas targets in this work and relevant injection mechanisms.}
 \label{Methods:tables:GasTargets}
 \end{table}
 
@@ -343,8 +335,7 @@ Supersonic gas jets are able to produce relatively smooth flat-top density profi
 The density of the gas jet is controlled by varying the backing pressure of the gas line, where higher pressure results in higher densities. When comparing nozzles of the same type in different sizes, larger nozzles require higher backing pressures to reach the same densities as smaller nozzles. For supersonic flat-top profiles the density slowly decreases above the nozzle. The actual density profile and gas flow depends on the specific design and manufacturing.
 \vspace{\baselineskip}
 
-
-Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. However, experimental results tend to be less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014_GEV} and stability \cite{Desforges2014_CAPILLARY,Osterhoff2008_CELL} to setups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible. ALSO MENTION MAX ENERGY FROM JET (4 GEV CORELS) \cite{Kim2013_GEV} \SMComm{too definitive.  Improvements could also be for other reasons... }
+Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. 
 \vspace{\baselineskip}
 
 
@@ -367,18 +358,18 @@ The gas nozzles used in the experiments discussed in Chapter \ref{Chap:linICS} a
 In the experiment described in Chapter \ref{Chap:linICS} a steel blade was inserted $1.2\,\mathrm{mm}$ into the gas flow at $4\,\mathrm{mm}$ height above the nozzle at $-32.4\pm 0.3^\circ$ vertical tilt from the laser axis. The blade is mounted on a rotation and translation stage that allows changing the height and angle of the blade and its position in the jet.
 
 \begin{minipage}{\textwidth}
-  \begin{minipage}[b]{0.49\textwidth}
+  \begin{minipage}[b]{0.35\textwidth}
     \centering
     \includegraphics[width=0.7\columnwidth]{GasNozzleSketch.pdf}
-    \captionof{figure}{Nozzle sketch, distances in mm.}\label{Methods:Fig:GasNozzleSketch}
+    \captionof{figure}{Sketch of nozzle design, distances in mm.}\label{Methods:Fig:GasNozzleSketch}
   \end{minipage}
   \hfill
-  \begin{minipage}[b]{0.49\textwidth}
+  \begin{minipage}[b]{0.6\textwidth}
     \centering
 {\rowcolors{3}{white}{lightgray!50}
 \begin{tabular}{|r|r|r|r|r|}
 \hline
-\multicolumn{5}{|c|}{\textbf{Gas nozzle details}} \\
+\multicolumn{5}{|c|}{\textbf{Gas Nozzles}} \\
 \hline \hline
 \textbf{Chap.} & $\bm{D_{crit}}$ & $\bm{D_{exit}}$ & $\bm{H}$ & $\bm{\theta}$\\ \hline \hline
 \ref{Chap:linICS} & 1 mm & 15 mm & 19.7 mm & $19.56^\circ$\\
@@ -386,7 +377,7 @@ In the experiment described in Chapter \ref{Chap:linICS} a steel blade was inser
 \hline
 \end{tabular}
 }
-      \captionof{table}{Summary of gas nozzle properties.}\label{Methods:tables:GasNozzles}
+      \captionof{table}[Gas nozzle properties.]{Overview of gas nozzle properties.}\label{Methods:tables:GasNozzles}
     \end{minipage}
   \end{minipage}
 
@@ -394,6 +385,7 @@ In the experiment described in Chapter \ref{Chap:linICS} a steel blade was inser
 \subsection{Gas Cells}
 
 Gas cells are compartments that are filled with gas and that have a small exit and entry hole. Due to the enclosed volume less gas and hence backing pressure is required to reach comparable densities as gas jets. 
+\EliasComm{Steady state gas flow.}
 
 Variable length is possible and with several stages in one cell to tailor the density profile for different injection mechanisms \cite{Pollock2011_MULTISTAGE}.
 
@@ -404,23 +396,35 @@ In contrast to gas jets, the alignment of cell require more precision as the ori
 Gas cells have been very successfully used by several research teams reaching energies up to the multi-GeV level in a single stage \cite{Leemans2014_GEV}.
 \vspace{\baselineskip}
 
-\EliasComm{Provide pic of damaged cell or blackening of cell windows over 100's of shots (see Staging2019 data for instance)?}
-
 A disadvantage, in addition to the factors mentioned previously, is the potential reduction in field of view due to the enclosing shell of the gas cell. This might make taking data from optical diagnostics like side-scattering more challenging.
 This can be resolved by designing the gas cell accordingly and use appropriate materials that allow probing and withstand the experimental conditions. However, more careful planning is required in advance to design the gas cell and put appropriate maintenance and alignment procedures in place.
 Debris can coat the glass windows and reduce the efficiency of optical diagnostics over time.
 \vspace{\baselineskip}
 
 Just as 3D printing methods have been considered for gas jets \cite{Jolly2012_3DJET} researchers have demonstrated that this is also a promising route to design and build \cite{Vargas2014_3DCELL,Hussein2019_MICROSTRUCTURES}.
-\vspace{\baselineskip}
+
+\subsubsection{Experimental Implementation}
+
+In the experiment discussed in Chapter \ref{Chap:BW}, a variable density and length aluminium gas cell was used with a maximum length of $20\mm$. The gas cell is equipped with replaceable glass windows and plastic exit cones to counteract the constant deterioration of the cell performance. Typical backing pressures were around $100's\,\mathrm{mbar}$ to reach an electron density of few $10^{18}\,\mathrm{cm^{-3}}$. The gas cell was designed, built and maintained by Nelson Lopes (Imperial College/IST).
+
+\subsection{Gas jets and cells in comparison}
+
+
+Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. However, experimental results tend to be less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014_GEV} and stability \cite{Desforges2014_CAPILLARY,Osterhoff2008_CELL} to setups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible. ALSO MENTION MAX ENERGY FROM JET (4 GEV CORELS) \cite{Kim2013_GEV} \SMComm{too definitive.  Improvements could also be for other reasons... }
+
+
 
 Gas cell targets have sometimes produced superior results from gas jets using the same laser system (Poder v Kneip, \cite{Osterhoff2008_CELL} \cite{Kuschel2018_SELF}) in terms of charge, shot-to-shot stability and maximum energy gain.
 However, some of the most stable LWFA sources have been achieved using gas jet targets \cite{Faure2006_STABLEJET} and the open geometry allows for diagnostic access and colliding pulse experiments as well as a route to high repetition rate operation.
 The variety of gas targets, their performance and the performance of the specific laser system make it difficult to compare gas cells and jets in general with each other. Comparisons can in most cases only be done between individual specimens and conclusions drawn from such a comparison might only be valid in this limited context. 
 
-\subsubsection{Experimental Implementation}
+In contrast to gas jets, the alignment of cell require more precision as the orientation of the gas cell is crucial to make sure the laser pulse propagates through the entire cell, also in order to avoid damaging the gas cell and in consequence deteriorate the performance and possibly damage other components through debris. Depending on the size of the laser beam and the gas cell even careful alignment can lead to deterioration of components, especially at the entry and exit holes if the laser beam is too large, jitters or defocuses in interaction with the plasma.
 
-In Chapter \ref{Chap:BW}, a variable length aluminium gas cell was used reaching up to 20 mm. The gas cell is equipped with replaceable glass windows and exit cones to counteract the constant deterioration of the cell performance. Typical backing pressures were around $100's\,\mathrm{mbar}$ to reach few $10^{18}\,\mathrm{W cm^{-2}}$. The gas cell was designed, built and maintained by Nelson Lopes.
+
+A disadvantage, in addition to the factors mentioned previously, is the potential reduction in field of view due to the enclosing shell of the gas cell. This might make taking data from optical diagnostics like side-scattering more challenging.
+This can be resolved by designing the gas cell accordingly and use appropriate materials that allow probing and withstand the experimental conditions. However, more careful planning is required in advance to design the gas cell and put appropriate maintenance and alignment procedures in place.
+Debris can coat the glass windows and reduce the efficiency of optical diagnostics over time.
+
 
 
 
@@ -447,81 +451,84 @@ In Chapter \ref{Chap:RR15}, helium was used in a gas jet, indications of self-in
 
 \subsection{Characterising Gas Targets}
 
-In wakefield experiments a variety of optical diagnostics can be used to gain an insight into the behaviour of the laser pulse in the plasma, the wake itself or the injection mechanisms.
-
-The most common diagnostics used on the wakefield experiments in this work are shadowgraphy and interferometry to measure the plasma density at interaction and see features of the plasma channel. Similarly the recombination light or self-emission of the plasma provide useful insights.
-
-Other examples of diagnostics that are used to characterise the plasma and the laser-plasma interaction are post-interaction laser-diagnostics to measure shifts in the laser frequency, guiding, focusing, energy content etc. of the laser pulse and Raman side-scattering satellites to deduce the electron density at lower intensity interactions (REFs REF?).
+In wakefield experiments a variety of diagnostics can be used to gain an insight into the behaviour of the laser pulse in the plasma, the wake itself or the injection mechanisms. A commonly used tool is an optical probe that is passed through the plasma transverse to the main beam, where density perturbations induced by the main beam modulate the phase of the probe beam. 
+In this work a shadowgraphy and interferometry setup translate these phase shifts back into a measurement of the plasma density and strong density gradients or features. The two methods and their experimental implementation at \textsc{Gemini} are introduced in the following.
 
 \subsubsection{Shadowgraphy}
 
-In a shadowgraphy light is shone through a transparent medium and then imaged onto a detector. Gradients in the density translate into gradients in the refractive index leading to light refracting and accumulating in boundaries making outlines highly visible. Because of this shadow images or shadowgrams are a useful tool to see features, such as the edges of a plasma channel or a shock front. Whilst features become very clear, the absolute density itself can not be derived from a single projection without further reference.
-\vspace{\baselineskip}
+In a shadowgraphy a coherent light source, here a laser, is used to backlight a transparent medium and the transmitted light is imaged onto a detector \cite{Hutchinson2002_PlasmaDiag}. The medium is in this case an underdense plasma (see Section \ref{Theory:Sec:LaserPropagationPlasma}), where gradients in density translate into gradients in the refractive index. These gradients cause light to refract and to accumulate at the boundaries of these regions (see Figure \ref{Methods:Figs:Shadowgraphy_ION}). Because of this behaviour shadow images or \textit{shadowgrams} are a useful tool to see features in a plasma, such as the edges of a plasma channel or a shock front. Whilst features become very apparent, the absolute density itself can not be derived from a single projection without further reference.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.75\columnwidth]{Shadowgraphy.png}
-\caption{Sketch of how shadowgraphy works. Using Ollie's and George's code. Adapt to show in 3D how a density spike would act.}
+\includegraphics[trim={0.5cm 1cm 0.5cm 1cm}, clip, width=0.75\columnwidth]{Shadowgraphy.png}
+\caption[Shadowgraphy: Deflection of light rays in a cylindrically symmetric medium of varying density.]{Rays of light (red) entering the sketch from the left propagate through a cylindrically symmetric density profile and are then incident onto a detector plane. The density is encoded in the colour scale, where darker regions are denser than light regions. The rays are deflected away from large density gradients, resulting at the detector plane in an accumulation of rays at the edges of the dense region and fewer rays inside of it. Figure courtesy O. Ettlinger and G. Hicks (Imperial College).}
+\label{Methods:Figs:Shadowgraphy_ION}
 \end{figure}
-From Jason Cole's PhD thesis \cite{ColeThesis}:
 
-For small changes in ray displacement the relative change in local beam intensity is
 
+The relative change in local intensity a beam experiences when travelling in $z$ through a medium of refractive index $\eta$ is for small deflections given by \cite{ColeThesis}:
 \begin{equation}
-\frac{I(x,y,L) - I_0}{I_0} = - L\nabla^2 \int \log \eta (x,y,z) \mathrm{d}z
+\frac{I(x,y,L) - I_0}{I_0} = - L\nabla^2 \int \log \eta (x,y,z) \mathrm{d}z,
 \end{equation}
-
-\SMComm{Make sure everything is defined.  Equations should be talked about in the text,}
-
-In the LWFA experiments in this work shadowgraphy was achieved by passing a secondary laser beam transversely through the ionised gas target. The `probe', as it is commonly referred to, is the through an HR mirror transmitted component of the main driver beam that is then telescoped down to the approximate size of the required field view (TOO COMPLICATED SENTENCE). The beam path of the probe beam has to be matched to the main beam in order to arrive at the plasma at a similar time as the main beam to capture interesting features. If the probe pulse is too early, there will no plasma channel will have been formed and if too late the channel will have expanded already and does not represent the conditions of the wakefield accurately. The imaging system includes one or multiple lenses, depending on the path of the light, magnification desired and so on. Working with high intensities the B-integral and the damage threshold of the optics also needs to be considered as the beam will focus down eventually in some part of the imaging system.
-
-An example of a shadowgraphy image in an experiment is shown in Figure XX NUMBER. It shows the inside of a gas cell filled with a high density gas leading to filamentation of the plasma channel (coming from the right side) . If one looks closely it also reveals a plasma channel beyond the wall indicating a gentle ramp due to leaking gas.
-\SMComm{(Is it filamentation or an imaging artefact? )}
-\vspace{\baselineskip}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.75\columnwidth]{Interferometry_Shadowgraphy.pdf}
-\caption[Example of a shadowgraphy and an interferometry image taken in an experiment at TA2.]{Example of a shadowgram (top) and an interferometry image taken on an experiment run at TA2 (Central Laser Facility, RAL) in Spring 2016. The image shows a plasma channel produced by the Astra laser pulse in a gas cell of $3\,\mathrm{mm}$ length filled with helium. Both diagnostics also indicate a lower density plasma outside of the cell ramping up in density towards the entry pinhole. The density is relatively high leading to strong scattering and filamentation of the channel, which is in particularly visible in the shadowgram.}
-\end{figure}
-
-If one wants to capture smaller and more volatile features like the wake itself, a very short pulse duration ($\sim 10\,\mathrm{fs}$) for the probe pulse is required \cite{Siminos2016_FASTSHADOW} and very high resolution imaging \cite{Buck2011_BUBBLE,Savert2015_BUBBLE}. This represents a more direct measurement of the in-situ plasma conditions the laser and the wake experience (see also \cite{Kuschel2018_SELF}).
-\SMComm{Why TA2 data? Would be better to include data from an experiment discussed in the results.  
-Do be careful about including data that you haven’t done the analysis of.  This is where 'figure courtesy XX' would be sensible. }
+where $I_0$ is the initial intensity distribution and $I(x,y,L)$ the final distribution measured at a detector at distance $L$. The Laplacian, $\nabla^2$, indicates that the intensity is strongly modulated by steep gradients in the refractive index, $\eta$, corresponding to abrupt changes in density.
+Figure \ref{Methods:Figs:Probe_Examples} (bottom) shows a shadowgram measured during an experimental campaign at \textsc{Gemini} in 2019 (see Chapter \ref{Chap:linICS}).
 
 \subsubsection{Interferometry}
 
+\begin{figure}
+\centering
+\includegraphics[width=1.0\columnwidth]{MachZehnder_Comparison.pdf}
+\caption[Comparison of two Mach-Zehner interferometer geometries.]{Comparison of two Mach-Zehner (MZ) interferometer geometries. The laser beam (red) enters the sketch from the bottom and reaches the detector at the top. On its path it passes through a gas target (grey ring filled blue) in a vacuum chamber (grey box), where it images a plasma channel (blue-purple line). The pink circles indicate the respective beam properties on each arm. Left: Standard MZ setup. One propagates through the plasma, whereas the other beam bypasses it to act as reference. Both are fully overlapped to effect interference. Right: MZ setup used in the experiments at \textsc{Gemini}. A single beam passes through the plasma. The beam is then split up into two identical copies which are recombined with a spatial offset. Different regions of the beam act as reference and others as signal regions. Adapted from \cite{ColeThesis}.}
+\label{Methods:Figs:MachZehnderComparison}
+\end{figure}
 
-In interferometry two beams are overlapped with a phase difference resulting in an interference pattern. Usually one beam will act as the unperturbed reference, the second beam will image capture the perturbation of interest at the interaction point. Starting from the original interference pattern, the interference fringes will shift as the second beam collects phase shifts when propagating through the interaction region. Phase shifts can occur, for instance, due to density modulations \cite{Kaluza2019_ULTRAFAST}:
-
+In interferometry two beams are overlapped with a phase difference resulting in an interference pattern. One beam acts as the unperturbed reference, the second beam probes the perturbation of interest at the interaction point. Starting from the original interference pattern, the `fringes' will shift as the second beam collects phase shifts when propagating through the interaction region. In this context the phase shift, $\Delta \phi$, occurs due to density modulations in the plasma which are reflected in changes to the refractive index, $\eta$ \cite{Kaluza2019_ULTRAFAST,Hutchinson2002_PlasmaDiag}:
 \begin{equation}
-\Delta \phi(y,z) = \frac{2\pi}{\lambda} \int^\infty_{-\infty} (\eta(r,z) - 1) \mathrm{d}x
+\Delta \phi(y,z) = \frac{2\pi}{\lambda} \int^\infty_{-\infty} (\eta(r,z) - 1) \mathrm{d}x,
 \end{equation}
-and for $n_e \ll n_c$, $\eta \approx 1 - n_e/(2n_c)$.
-
+where the refractive index, $\eta$, is for underdense plasmas, $n_e \ll n_c$, approximated by $\eta \approx 1 - n_e/(2n_c)$.
 \begin{equation}
 \Delta \phi(y_0) = \frac{\pi}{n_c \lambda} \int^\infty_{-\infty} n_e (x, y_0) \mathrm{d}x = \frac{2 \pi}{n_c \lambda} \int^R_{y_0} \frac{n_e (r) r}{\sqrt{r^2 - y^2_0}}\mathrm{d}r,
 \end{equation}
 substituting $x = \sqrt{r^2 -y^2_0}$ and $\mathrm{d}r = r \mathrm{d}r/\sqrt{r^2 - y^2_0}$.
-
 Assuming radial symmetry the plasma density $n_e (r)$ is then inferred using an Abel inversion \cite{FOURIER}:
 \begin{equation}
-e_e (r) = - \frac{n_c \lambda}{\pi^2}\int^R_r \frac{\mathrm{d}}{\mathrm{d}r}\Delta \phi(y) \frac{\mathrm{d}y}{\sqrt{y^2 - r^2}}
+n_e (r) = - \frac{n_c \lambda}{\pi^2}\int^R_r \frac{\mathrm{d}}{\mathrm{d}r}\Delta \phi(y) \frac{\mathrm{d}y}{\sqrt{y^2 - r^2}}
 \end{equation}
-
-
-On the experiments described a Mach-Zehnder interferometer was used, but with a little twist: in this version one single beam passes through the gas target and is then afterwards split. Both copies carry the same information and the phase shifts, but typically only a fraction of the gas is ionised forming a channel and the remaining neutral gas is used as reference by shifting the copies relative to each other perpendicular to the laser axis.
-\SMComm{check word order.  Figure?}
+More instructive details on this method can be found in \cite{ColeThesis}.
 \vspace{\baselineskip}
 
-Due to this geometry the interferometer can be set up as an extension to an existing shadowgraphy imaging system. It constitutes a complementary and very useful tool to the shadowgraphy. Whilst the shadowgraphy is useful to identify features in the medium, the interferometry image can give absolute numbers for the phase shift translating into the electron densities of the target by applying Abel inversion if one assumes cylindrical symmetry \cite{FOURIER} (see Jason Cole's PhD thesis \cite{ColeThesis} for more instructive details).
+In the experiments at \textsc{Gemini} described in this work a Mach-Zehnder interferometer was used. However, instead of splitting the beam before the interaction, the beam is only entering the Mach-Zehnder setup after the interaction, such that both copies are identical (see Figure \ref{Methods:Figs:MachZehnderComparison}). Since the plasma channel that is diagnosed only takes up a small fraction of the image, the remaining area of neutral gas can be used as reference. Similarly as in a Wollaston interferometer the two beams are offset relative to each other to overlap `active' with `passive' regions. As a result two copies of the plasma channel with inverted phase shifts can be seen.
+An example of an interferometry measurement from an experiment performed at \textsc{Gemini} is shown in Figure \ref{Methods:Figs:Probe_Examples} (top).
 
+
+\subsubsection{Experimental Implementation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\columnwidth]{ProbeTA3.pdf}
+\caption[Example of a shadowgraphy and an interferometry image taken on an experiment at \textsc{Gemini}.]{Example of an interferometry image (top) and a shadowgram (bottom) taken on an experiment at \textsc{Gemini} (see Chapter \ref{Chap:linICS}) on the same shot. Two laser pulses counterpropagate through a gas jet and form a plasma. One laser pulse is focused in an $f/40$ geometry (left to right), the other tightly by an $f/2$ off-axis parabola. The common features on both diagnostics are indicated in the same colour on both images.}
+\label{Methods:Figs:Probe_Examples}
+\end{figure}
+
+In the LWFA experiments in this work the optical probe is split off the main wakefield driver beam by collecting the fraction of light that is transmitted through a highly reflective dielectric mirror. The transmitted light is telescoped down from $\sim 150\mm$, the beam diameter of the collimated main laser pulse, to about one inch using an $f/7$ off-axis parabola and a suitable lens. The final diameter is determined by the field of view required for the respective application. 
+
+The collimated probe beam is then following a beam path of the same length as the main beam to ensure that both arrive at the interaction point simultaneously. The probe is send through the gas target at the interaction point and collects phase shifts encoding the density and its variation in the plasma. If the probe arrives before the main driver at the gas target, no plasma has been formed yet. If the probe arrives much later than the main beam the plasma channel it formed has expanded. As a result, the density that is being measured is not representative of the conditions the driver beam experienced and in turn does not describe the wakefield dynamics correctly either. A motorised linear stage can be used to add or remove beam path dynamically (delay stage) to adjust the relative arrival time of the probe and the main beam. 
+
+After the plasma the probe beam is attenuated by reflecting off glass wedges to reduce the B-integral before leaving the vacuum chamber through a glass window. A set of lenses is used to image the plane of the gas target onto the prospective detector plane. On the way to the detector plane the probe pulse is split up by a beam splitter into two parts: one is directly incident on a CCD chip to act as shadowgraphy, the other pulse travels through a symmetric, compact Mach-Zehnder setup before also arriving at a CCD camera chip forming an interferometry diagnostic as outlined in the previous section.
+
+Figure \ref{Methods:Figs:Probe_Examples} shows an example interferometry (top) and shadowgraphy (bottom) image, taken with an optical probe on a single shot. The data was taken on an experimental campaign at \textsc{Gemini} in 2019 (see Chapter \ref{Chap:linICS}). On the images an $f/40$ laser pulse is travelling through a helium gas jet and forms a plasma channel (orange). The centre of the channel is slightly darker and the edges form a bright line as discussed in the previous section. In the interferometry image, on the other hand, a shift of the interference pattern indicates the formation of a plasma channel. Due to the special setup of the Mach-Zehnder two copies of the same channel can be seen (white), where the only difference between the two is the inverted phase shift. On the right side the divergent cone of a counterpropagating, tightly focused $f/2$ beam is visible (green). The particularly bright outline of the cone seen in the shadowgraphy indicates a large gradient in density. A distinct feature at the crossing of both pulses is potentially caused by an interaction between the optical probe pulse and the $f/2$ beam.
+
+
+\iffalse
+If one wants to capture smaller and more volatile features like the wake itself, a very short pulse duration ($\sim 10\,\mathrm{fs}$) for the probe pulse is required \cite{Siminos2016_FASTSHADOW} and very high resolution imaging \cite{Buck2011_BUBBLE,Savert2015_BUBBLE}. This represents a more direct measurement of the in-situ plasma conditions the laser and the wake experience (see also \cite{Kuschel2018_SELF}).
+\fi
 
 \section{Magnetic Energy Spectrometer}
 \label{Chap:Methods:Sec:Espec}
 
 The energy of electrons in wakefield experiments can be determined with a magnetic spectrometer, where they are dispersed in a magnetic field and then detected on a scintillating Lanex screen.
-To analytically determine the deflection angle, $\theta$, in such a magnetic field, we will consider an external magnetic field restricted to a circle of radius $r_b$ embedded in an otherwise completely field-free region: \cite{ManglesThesis}.
+To analytically determine the deflection angle, $\theta$, in such a magnetic field, we will consider an external magnetic field restricted to a circle of radius $r_b$ embedded in an otherwise completely field-free region \cite{ManglesThesis}:
 \begin{align}
 \mathbf{B} &= B \mathbf{e_z} \, &r \leq r_b,\nonumber \\
 &= \mathbf{0} &r > r_b
@@ -552,7 +559,7 @@ In a typical LWFA experiment $p_\perp$ will be dominated by the component in the
 \vspace{\baselineskip}
 
 In a realistic scenario the field regions are not perfectly homogeneous and field gradients have to be considered. The magnetic fields can be measured, for instance, using a Hall probe and the particle trajectories are determined with numerical methods.
-To measure the magnetic dispersion as diagnostic a scintillating Lanex screen is positioned behind the magnet. By measuring the magnetic field strength of the magnet and the distances between the components, and by calculating the trajectories for a range of energies, each position on the screen can be linked to a specific electron energy. In this work a Matlab-based particle tracking code by Jonathan Wood (Imperial College) and another code by Matthew Streeter (Imperial College) were used (see Figure \ref{Methods:Figs:Espec_MattVis} for a visualisation of M. Streeter's code).
+To measure the magnetic dispersion as diagnostic a scintillating Lanex screen is positioned behind the magnet. By measuring the magnetic field strength of the magnet and the distances between the components, and by calculating the trajectories for a range of energies, each position on the screen can be linked to a specific electron energy. In this work a Matlab-based particle tracking code by Jonathan Wood (Imperial College) and another code by Matthew Streeter (Imperial College) were used (see Figure \ref{Methods:Figs:Espec_MattVis} for a visualisation from M. Streeter's code simulating the particle trajectories for the magnet configuration used in the photon-photon collider experiment outlined in Chapter \ref{Chap:BW}).
 
 If all electrons enter the magnet at one defined position and angle each position on the detector screen is uniquely related to one electron energy. For a distribution of angles and positions each position on the screen can correspond to multiple energies (see Figure \ref{Methods:Figs:EspecAnalyticSketch}, right). 
 In LWFA experiments variations in angle and position typically originate from two sources: 
@@ -593,20 +600,26 @@ The signal recorded from the Lanex screen can be related to the absolute number 
 
 In the following diagnostics measuring the profile and spectrum of energetic radiation are introduced. Both detectors consist of a pixellated scintillator array imaged by a CCD camera. In one case the transverse profile of the radiation is measured, in the other case the gradual decay throughout several scintillating layers is used to infer the spectrum of the incident radiation.
 
-At photon energies $> 1\MeV$ the quantum efficiency of CCD chips decreases significantly (REF\addref) such that a direct measurement of the radiation use these becomes infeasible. The production of particle showers can also lead to damages to electronics in the path of the radiation. As a consequence commercially available indirect detection X-ray cameras, e.g. Andor iKon, that directly couple a scintillating layer to a silicon-based readout chip are also not advisable in these energy ranges. By spatially separating the two components, i.e. placing the scintillator in the radiation path and the CCD sufficiently far away, this problem can be circumvented.
+At photon energies $> 1\MeV$ the quantum efficiency of CCD chips decreases significantly such that a direct measurement of the radiation using these becomes infeasible. The production of particle showers can also lead to damages to electronics in the path of the radiation. As a consequence commercially available indirect detection X-ray cameras, e.g. Andor iKon, that directly couple a scintillating layer to a silicon-based readout chip are also not advisable in these energy ranges. By spatially separating the two components, i.e. placing the scintillator in the radiation path and the CCD sufficiently far away, this problem can be circumvented.
 
-A scintillator placed into the path of the energetic radiation emits scintillation light when energy is deposited in the scintillator. A suitable imaging system collects the light and directs it onto the CCD detector. Commonly used scintillators emit light in a spectral bandwidth matched to the quantum efficiency of silicon-based detectors with a material-dependent characteristic emission spectrum. The light yield of the scintillator is at the energies relevant in this context proportional to the energy deposited in it (REF\addref), with a material-dependent conversion efficiency from energy deposited to number of photons emitted (REF\addref). The light emission is isotropic in a $4\pi$ solid angle (REF\addref), which can lead to a
- spreading of the signal comparable to the thickness of the scintillator. This spreading can be reduced by either using a thin scintillator or by dividing the detection area into smaller scintillators such that light from one crystal can not enter another and vice versa. The result in the latter case is then a pixellated detector, where the spatial resolution is determined by the width of the crystals such that thicker crystals can be used to increase the light yield. To increase the fraction of collected light the crystal faces are often polished and some sides are coated or covered with a reflective surface, so-called reflectors, such that the emitted scintillation can be directed. 
+A scintillator placed into the path of the energetic radiation emits scintillation light when energy is deposited in the scintillator. 
+A suitable imaging system collects the light and directs it onto the CCD detector. Commonly used scintillators emit light in a spectral bandwidth matched to the quantum efficiency of silicon-based detectors with a material-dependent characteristic emission spectrum. 
+The light yield of the scintillator is at the energies relevant in this context proportional to the energy deposited in it \cite{Frlez2000_CsI}, with a material-dependent conversion efficiency from energy deposited to number of photons emitted. 
+The light emission is isotropic in a $4\pi$ solid angle \cite{Birks2013_SCINTILLATOR}, which can lead to a spreading of the signal comparable to the thickness of the scintillator. 
+This spreading can be reduced by either using a thin scintillator or by dividing the detection area into smaller scintillators such that light from one crystal can not enter another and vice versa. 
+The result in the latter case is then a pixellated detector, where the spatial resolution is determined by the width of the crystals such that thicker crystals can be used to increase the light yield without loss of spatial resolution. 
+To increase the fraction of collected light the crystal faces are often polished and some sides are coated or covered with a reflective surface, so-called reflectors, such that the emitted scintillation can be directed. 
 
 \subsection{Profile Screen}
 
 Measuring the radiation profile is a useful to measure, for instance, the pointing of the radiation cone and its divergence, or as indicator of the total radiation yield.
-In the context of inverse Compton scattering or nonlinear relativistic Thomson scattering, where a relativistic electron beam is collided with an intense laser pulse, the elongation of the radiation profile in the laser polarisation direction has also been proposed as measurement of the laser intensity at the interaction \cite{HarShemesh2012_INTENSITY,Yan2017_ICS} (Blackburn REF\addref).
+In the context of inverse Compton scattering or nonlinear relativistic Thomson scattering, where a relativistic electron beam is collided with an intense laser pulse, the elongation of the radiation profile in the laser polarisation direction has also been proposed as measurement of the laser intensity at the interaction \cite{HarShemesh2012_INTENSITY,Yan2017_ICS,Blackburn2019_ModelIndependentLaser}.
 
 In the experiments described in this work a pixellated scintillating screen is placed into the path of the radiation, normal to the beam axis, and is then imaged by a sensitive CCD camera (Andor iXon) with a bandpass filter. 
-See Figure XX for sketch of the setup. An overview of the different arrays used in the experiments is given in Table \ref{Methods:Table:GammaProfileOverview}
+An overview of the different arrays used in the experiments is given in Table \ref{Methods:Table:GammaProfileOverview}
 The imaging was in all cases done close to normal to the scintillator surface, either directly or by placing a mirror into the radiation path, to maximise the collection efficiency of the scintillation light which is directed due to the reflectors. This also reduces the required post-processing of the images to small rotations and background subtractions. In this setup the required spatial resolution of the imaging system is low as the intrinsic spatial resolution of the detector is given by the width of the scintillator voxels which are $\sim 1\mm$ or more.
-The scintillating material that was used is caesium-iodide doped with thallium which has one of the highest light conversion efficiencies of available crystals at XX per MeV (REF\addref), with a central wavelength of XX. 
+The scintillating material that was used is caesium-iodide doped with thallium which has one of the highest light conversion efficiencies of available crystals releasing $\approx 5.4 \times 10^4$ optical photons at a central wavelength of $550\nm$ for each MeV energy deposited in the crystal \cite{StGobain_CsI}.
+
 
 \begin{figure}
 \centering
@@ -623,15 +636,15 @@ The scintillating material that was used is caesium-iodide doped with thallium w
 \begin{tabular}{|l|l|l|l|r|r|}
 \hline
 \multicolumn{6}{|c|}{\textbf{Overview of Scintillating Profile Screens}} \\ \hline \hline
-\textbf{Name} & \textbf{Chapter} & \textbf{Crystals} & \textbf{Crystal Dimension} & \textbf{Front Plate} & \textbf{Divider}\\ \hline \hline
+\textbf{Name} & \textbf{Chapter} & \textbf{Crystals} & \textbf{Crystal Dim.} & \textbf{Front Plate} & \textbf{Divider}\\ \hline \hline
 QUB & \ref{Chap:BW}, BW & $20 \times 20$ & $2 \times 2 \times 20$ mm & Al 10 mm & Al 0.1 mm\\
 Jena & \ref{Chap:linICS}, linICS & $45 \times 45$ & $1 \times 1 \times 10$ mm & TiO2 0.5 mm & TiO2 0.2 mm\\
-DESY & \ref{Chap:linICS}, linICS & $30 \times 30$ & $1.5 \times 1.5 \times 10$ mm & Epoxy 0.5 mm & Epoxy 0.2 mm\\
+DESY & \ref{Chap:linICS}, linICS & $30 \times 30$ & $1.5 \times 1.5 \times 10$ mm & TiO2 0.5 mm & TiO2 0.2 mm\\
 RAL & \ref{Chap:RR15}, RR & $47 \times 33$ & $5 \times 5 \times 50$ mm & None & Al 1 mm\\
 \hline
 \end{tabular}
 }
-\caption[Overview of scintillator arrays used as profile screens in experiments.]{Overview of caesium-iodide arrays used as radiation profile screens in the context of this thesis. Columns from left to right: Name or `affiliation' of the screen, chapter related to an experiment using this particular profile screen, size of the array in number of crystal columns and rows, spatial dimensions of an individual crystal in the array, material and thickness of the front plate or coating on the front side facing the beam, divider material and thickness between crystals.}
+\caption[Scintillator arrays used as profile screens in experiments.]{Overview of caesium-iodide arrays used as radiation profile screens in the context of this thesis. Columns from left to right: Name or `affiliation' of the screen, chapter related to an experiment using this particular profile screen, size of the array in number of crystal columns and rows, spatial dimensions of an individual crystal in the array, material and thickness of the front plate or coating on the front side facing the beam, divider material and thickness between crystals.}
 \label{Methods:Table:GammaProfileOverview}
 \end{table}
 
@@ -645,7 +658,8 @@ Each square corresponds to one crystal or pixel in the array.
 \centering
 \includegraphics[height=.3\columnwidth]{Edep_JenaStack.pdf}\includegraphics[height=.3\columnwidth]{Edep_Jena_1_100_MeV.png}
 \caption{In GEANT4 simulated energy deposition per photon in the `Jena' profile screen as a function of photon energy for 100 to 2000 keV (left) and 1 to 100 MeV photon energies (right).}
+\label{Methods:Fig:EnergyDepGProfile}
 \end{figure}
 
-To determine the energy deposited in the scintillating crystals, one has to consider the scattering of the radiation, secondary particles and their energy deposition through various mechanisms. This complex interplay of different mechanisms is most conveniently modelled in a Monte-Carlo code as we do not expect any collective effects to become important. Here a GEANT4 code was used based on work done by J. Cole and K. Poder (Imperial College). The simulation geometry includes the composition of the detector and the relevant materials in the beam path of the radiation as measured on the respective experiment. Individual photons within a range of energies are then launched towards the detector and the energy deposition is recorded as a function of the incident photon energies. For each photon energy $10^6$ photons are simulated to account for statistical fluctuations. In Figure XX the energy deposited on average per incident photon in the `Jena' profile screen is shown as a function of the incident photon energy for an energy range of 100 to 2000 keV (left) and for 1 to 100 MeV. It is assumed that the light yield of the scintillator and the energy deposition are linearly related (REF\addref) and that there are no saturation effects to be considered in this scenario. 
+To determine the energy deposited in the scintillating crystals, one has to consider the scattering of the radiation, secondary particles and their energy deposition through various mechanisms. This complex interplay of different mechanisms is most conveniently modelled in a Monte-Carlo code as we do not expect any collective effects to become important. Here a GEANT4 code was used based on work done by J. Cole and K. Poder (Imperial College). The simulation geometry includes the composition of the detector and the relevant materials in the beam path of the radiation as measured on the respective experiment. Individual photons within a range of energies are then launched towards the detector and the energy deposition is recorded as a function of the incident photon energies. For each photon energy $10^6$ photons are simulated to account for statistical fluctuations. In Figure \ref{Methods:Fig:EnergyDepGProfile} the energy deposited on average per incident photon in the `Jena' profile screen is shown as a function of the incident photon energy for an energy range of 100 to 2000 keV (left) and for 1 to 100 MeV. It is assumed that the light yield of the scintillator and the energy deposition are linearly related \cite{Frlez2000_CsI} and that there are no saturation effects to be considered in this scenario. 
 With exception of a peak in energy deposition at just under 200 keV photon energy the energy deposited in the screen monotonically increases with photon energy. The distribution seems to follow one gradient up to 15 MeV and a lower gradient after this value, apparently reaching saturation.
