@@ -7,35 +7,12 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem{DiPiazza2018_LCFA}
-A.~Di~Piazza et~al.
-\newblock \enquote{Implementing nonlinear Compton scattering beyond the
-  local-constant-field approximation}.
-\newblock \emph{Phys. Rev. A}, 98, (2018), p. 012134.
-\newblock \doi{10.1103/PhysRevA.98.012134}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.98.012134}
-
 \bibitem{Jackson}
 J.~D. Jackson.
 \newblock \enquote{Classical Electrodynamics, 3rd ed.}
 \newblock \emph{American Journal of Physics}, 67, (1999), pp. 841--842.
 \newblock \doi{10.1119/1.19136}.
 \newline\urlprefix\url{https://doi.org/10.1119/1.19136}
-
-\bibitem{Streeter2018_TEMPFEEDBACK}
-M.~Streeter et~al.
-\newblock \enquote{Temporal feedback control of high-intensity laser pulses to
-  optimize ultrafast heating of atomic clusters}.
-\newblock \emph{Applied Physics Letters}, 112, (2018), p. 244101.
-
-\bibitem{Streeter2019_RASTERSCAN}
-M.~Streeter.
-\newblock Private Communication.
-
-\bibitem{Shalloo_GEMINIDRIFT}
-R.~Shalloo et~al.
-\newblock \enquote{Measurement of femtosecond-scale drift and jitter of the
-  delay between the North and South Beams of Gemini}.
 
 \bibitem{Danson2019_PWLASERS}
 C.~N. Danson et~al.
@@ -637,6 +614,11 @@ I.~Malitson.
   silica}.
 \newblock \emph{Josa}, 55, (1965), pp. 1205--1209.
 
+\bibitem{Shalloo_GEMINIDRIFT}
+R.~Shalloo et~al.
+\newblock \enquote{Measurement of femtosecond-scale drift and jitter of the
+  delay between the North and South Beams of Gemini}.
+
 \bibitem{Wilks2001_IONACC}
 S.~C. Wilks et~al.
 \newblock \enquote{{Energetic proton generation in ultra-intense laser-solid
@@ -681,12 +663,11 @@ D.~J. Spence and S.~M. Hooker.
   Physics}, 63, (2001), pp. 1--4.
 \newblock \doi{10.1103/PhysRevE.63.015401}.
 
-\bibitem{Pollock2011_MULTISTAGE}
-B.~B. Pollock et~al.
-\newblock \enquote{{Demonstration of a narrow energy spread, {\~{}}0.5GeV
-  electron beam from a two-stage laser wakefield accelerator}}.
-\newblock 107, (2011), pp. 1--4.
-\newblock \doi{10.1103/PhysRevLett.107.045001}.
+\bibitem{Cole2015_tomography}
+J.~Cole et~al.
+\newblock \enquote{Tomography of human trabecular bone with a laser-wakefield
+  driven x-ray source}.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 58, (2015), p. 014008.
 
 \bibitem{Jolly2012_3DJET}
 S.~W. Jolly et~al.
@@ -704,18 +685,6 @@ M.~Vargas et~al.
 \newblock \emph{Applied Physics Letters}, 104.
 \newblock \doi{10.1063/1.4874981}.
 \newline\urlprefix\url{http://dx.doi.org/10.1063/1.4874981}
-
-\bibitem{Hussein2019_MICROSTRUCTURES}
-A.~E. Hussein et~al.
-\newblock \enquote{Laser-wakefield accelerators for high-resolution X-ray
-  imaging of complex microstructures}.
-\newblock \emph{Scientific reports}, 9, (2019), p. 3249.
-
-\bibitem{Cole2015_tomography}
-J.~Cole et~al.
-\newblock \enquote{Tomography of human trabecular bone with a laser-wakefield
-  driven x-ray source}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 58, (2015), p. 014008.
 
 \bibitem{Kneip2009_GEV}
 S.~Kneip et~al.
@@ -996,6 +965,16 @@ S.~Chen et~al.
   laser-wakefield accelerated electrons}}.
 \newblock \emph{Physical Review Letters}, 110, (2013), pp. 1--5.
 \newblock \doi{10.1103/PhysRevLett.110.155003}.
+
+\bibitem{Streeter2018_TEMPFEEDBACK}
+M.~Streeter et~al.
+\newblock \enquote{Temporal feedback control of high-intensity laser pulses to
+  optimize ultrafast heating of atomic clusters}.
+\newblock \emph{Applied Physics Letters}, 112, (2018), p. 244101.
+
+\bibitem{Streeter2019_RASTERSCAN}
+M.~Streeter.
+\newblock Private Communication.
 
 \bibitem{Weingartner2012_BUNCH}
 R.~Weingartner et~al.
@@ -1443,6 +1422,14 @@ C.~D. Baird et~al.
   reaction in high-intensity lasers}.
 \newblock \emph{New Journal of Physics}, 21, (2019), p. 053030.
 
+\bibitem{DiPiazza2018_LCFA}
+A.~Di~Piazza et~al.
+\newblock \enquote{Implementing nonlinear Compton scattering beyond the
+  local-constant-field approximation}.
+\newblock \emph{Phys. Rev. A}, 98, (2018), p. 012134.
+\newblock \doi{10.1103/PhysRevA.98.012134}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.98.012134}
+
 \bibitem{Bonometto1971_PAIRSASTRO}
 S.~Bonometto and M.~Rees.
 \newblock \enquote{On possible observable effects of electron pair production
@@ -1672,6 +1659,12 @@ B.~Kettle et~al.
 \newblock \enquote{Single-shot multi-keV X-ray absorption spectroscopy using an
   ultrashort laser wakefield accelerator source}.
 \newblock \emph{arXiv preprint arXiv:1907.10167}.
+
+\bibitem{Hussein2019_MICROSTRUCTURES}
+A.~E. Hussein et~al.
+\newblock \enquote{Laser-wakefield accelerators for high-resolution X-ray
+  imaging of complex microstructures}.
+\newblock \emph{Scientific reports}, 9, (2019), p. 3249.
 
 \bibitem{PDG_ATOM}
 P.~D.~G. (PDG).
