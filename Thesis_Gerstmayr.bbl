@@ -7,12 +7,6 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem{ColeThesis}
-J.~M. Cole.
-\newblock \emph{Diagnosis and application of laser wakefield accelerators}.
-\newblock Ph.D. thesis, Imperial College London, 2015.
-\newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.695533}
-
 \bibitem{DiPiazza2018_LCFA}
 A.~Di~Piazza et~al.
 \newblock \enquote{Implementing nonlinear Compton scattering beyond the
@@ -371,6 +365,12 @@ A.~Pukhov and J.~Meyer-ter Vehn.
   broken-wave regime}.
 \newblock \emph{Applied Physics B}, 74, (2002), pp. 355--361.
 
+\bibitem{ColeThesis}
+J.~M. Cole.
+\newblock \emph{Diagnosis and application of laser wakefield accelerators}.
+\newblock Ph.D. thesis, Imperial College London, 2015.
+\newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.695533}
+
 \bibitem{Mendoncca1994_PHOTONACC}
 J.~Mendon{\c{c}}a and L.~O. e~Silva.
 \newblock \enquote{Regular and stochastic acceleration of photons}.
@@ -681,6 +681,13 @@ D.~J. Spence and S.~M. Hooker.
   Physics}, 63, (2001), pp. 1--4.
 \newblock \doi{10.1103/PhysRevE.63.015401}.
 
+\bibitem{Pollock2011_MULTISTAGE}
+B.~B. Pollock et~al.
+\newblock \enquote{{Demonstration of a narrow energy spread, {\~{}}0.5GeV
+  electron beam from a two-stage laser wakefield accelerator}}.
+\newblock 107, (2011), pp. 1--4.
+\newblock \doi{10.1103/PhysRevLett.107.045001}.
+
 \bibitem{Jolly2012_3DJET}
 S.~W. Jolly et~al.
 \newblock \enquote{Stereolithography based method of creating custom gas
@@ -688,18 +695,6 @@ S.~W. Jolly et~al.
 \newblock \emph{Review of Scientific Instruments}, 83, (2012), p. 073503.
 \newblock \doi{10.1063/1.4731782}.
 \newline\urlprefix\url{https://doi.org/10.1063/1.4731782}
-
-\bibitem{FOURIER}
-R.~Bracewell.
-\newblock \emph{{The Fourier Transform and its Applications}}.
-\newblock McGraw-Hill, 1978.
-
-\bibitem{Pollock2011_MULTISTAGE}
-B.~B. Pollock et~al.
-\newblock \enquote{{Demonstration of a narrow energy spread, {\~{}}0.5GeV
-  electron beam from a two-stage laser wakefield accelerator}}.
-\newblock 107, (2011), pp. 1--4.
-\newblock \doi{10.1103/PhysRevLett.107.045001}.
 
 \bibitem{Vargas2014_3DCELL}
 M.~Vargas et~al.
@@ -716,6 +711,18 @@ A.~E. Hussein et~al.
   imaging of complex microstructures}.
 \newblock \emph{Scientific reports}, 9, (2019), p. 3249.
 
+\bibitem{Cole2015_tomography}
+J.~Cole et~al.
+\newblock \enquote{Tomography of human trabecular bone with a laser-wakefield
+  driven x-ray source}.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 58, (2015), p. 014008.
+
+\bibitem{Kneip2009_GEV}
+S.~Kneip et~al.
+\newblock \enquote{Near-GeV acceleration of electrons by a nonlinear plasma
+  wave driven by a self-guided laser pulse}.
+\newblock \emph{Physical review letters}, 103, (2009), p. 035002.
+
 \bibitem{Desforges2014_CAPILLARY}
 F.~G. Desforges et~al.
 \newblock \enquote{{Reproducibility of electron beams from laser wakefield
@@ -726,19 +733,16 @@ F.~G. Desforges et~al.
 \newblock \doi{10.1016/j.nima.2013.10.062}.
 \newline\urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0168900213014538}
 
-\bibitem{Kuschel2018_SELF}
-S.~Kuschel et~al.
-\newblock \enquote{{Controlling the Self-Injection Threshold in Laser Wakefield
-  Accelerators}}.
-\newblock \emph{Physical Review Letters}, 121.
-\newblock \doi{10.1103/PhysRevLett.121.154801}.
-\newline\urlprefix\url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.121.154801}
-
 \bibitem{Kaluza2019_ULTRAFAST}
 M.~C. Kaluza.
 \newblock \enquote{Ultrafast Plasma Imaging}.
 \newblock In \enquote{Laser-Driven Sources of High Energy Particles and
   Radiation}, pp. 165--185. Springer, 2019.
+
+\bibitem{FOURIER}
+R.~Bracewell.
+\newblock \emph{{The Fourier Transform and its Applications}}.
+\newblock McGraw-Hill, 1978.
 
 \bibitem{ManglesThesis}
 S.~P.~D. Mangles.
@@ -804,6 +808,13 @@ S.~Gobain.
   Datasheet)}, 2017.
 \newline\urlprefix\url{https://www.crystals.saint-gobain.com/sites/imdf.crystals.com/files/documents/csitl-and-na-material-data-sheet.pdf}
 
+\bibitem{GEANT4}
+S.~Agostinelli et~al.
+\newblock \enquote{GEANT4: a simulation toolkit}.
+\newblock \emph{Nuclear instruments and methods in physics research section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, 506,
+  (2003), pp. 250--303.
+
 \bibitem{Behm2018_Gamma}
 K.~T. Behm et~al.
 \newblock \enquote{{A spectrometer for ultrashort gamma-ray pulses with photon
@@ -811,13 +822,6 @@ K.~T. Behm et~al.
 \newblock \emph{Review of Scientific Instruments}, 89, (2018), p. 113303.
 \newblock \doi{10.1063/1.5056248}.
 \newline\urlprefix\url{http://aip.scitation.org/toc/rsi/89/11}
-
-\bibitem{GEANT4}
-S.~Agostinelli et~al.
-\newblock \enquote{GEANT4: a simulation toolkit}.
-\newblock \emph{Nuclear instruments and methods in physics research section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 506,
-  (2003), pp. 250--303.
 
 \bibitem{Lisi2018_Gamma}
 L.~Lisi et~al.
@@ -1662,12 +1666,6 @@ B.~Bergmann et~al.
 \newblock \enquote{3D track reconstruction capability of a silicon hybrid
   active pixel detector}.
 \newblock \emph{The European Physical Journal C}, 77, (2017), p. 421.
-
-\bibitem{Kneip2009_GEV}
-S.~Kneip et~al.
-\newblock \enquote{Near-GeV acceleration of electrons by a nonlinear plasma
-  wave driven by a self-guided laser pulse}.
-\newblock \emph{Physical review letters}, 103, (2009), p. 035002.
 
 \bibitem{Kettle2019_XANES}
 B.~Kettle et~al.

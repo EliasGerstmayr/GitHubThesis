@@ -297,7 +297,7 @@ In laser-wakefield acceleration (LWFA) the laser pulse propagates through a plas
 Gas and liquid targets can be destroyed and replenished in a short amount of time without significant re-alignment and debris production, and are suitable for high-repetition experiments. The factors limiting the repetition rate are then the performance of the vacuum system, the time it takes the gas flow or liquid to reach equilibrium, the durability of nozzles and other components, and the repetition rate of the laser system itself.
 \vspace{\baselineskip}
 
-Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001_GASJETS}, gas cells \cite{Osterhoff2008_CELL} and capillaries \cite{Spence2001_WAVEGUIDE,Leemans2006_GEV}. In some cases several targets of the same or different type or combined and staged together to achieve more favourable results. The target size, i.e. the distance the laser pulse propagates through the medium, has to be matched with the laser in use, considering depletion and dephasing lengths (see Section \ref{Theory:Sec:LWFA}) to optimise the particle and radiation output, and to use the energy of the laser pulse efficiently. As a result, there is a large variety of different targets, each tailored to a different application. Here we will focus on examples of gas jets and cells relevant to the work presented within the course of this thesis. An overview of those targets is given in Table \ref{Methods:tables:GasTargets}.
+Examples of gas targets that are routinely used for wakefield experiments are gas jets \cite{Semushin2001_GASJETS}, gas cells \cite{Osterhoff2008_CELL} and capillaries \cite{Spence2001_WAVEGUIDE,Leemans2006_GEV}. In some cases several targets of the same or different type or combined and staged together to achieve more favourable results \cite{Kim2013_GEV,Steinke2016_STAGING}. The target size, i.e. the distance the laser pulse propagates through the medium, has to be matched with the laser in use, considering depletion and dephasing lengths (see Section \ref{Theory:Sec:LWFA}) to optimise the particle and radiation output, and to use the energy of the laser pulse efficiently. As a result, there is a large variety of different targets, each tailored to a different application. Here we will focus on examples of gas jets and cells relevant to the work presented within the course of this thesis. An overview of these targets is given in Table \ref{Methods:tables:GasTargets}.
 
 \begin{figure}
 \centering
@@ -326,6 +326,8 @@ Examples of gas targets that are routinely used for wakefield experiments are ga
 
 \subsection{Gas Jets}
 
+
+\iffalse
 The flow of gas produced when forcing it with high backing pressure through a small orifice at the bottom of a diverging cone is in the context of this work related to as gas jet.
 \SMComm{awk}
 If the measurements of the cone are chosen correctly at a high enough backing pressure, the flow detaches and becomes supersonic \cite{Semushin2001_GASJETS}. 
@@ -335,27 +337,27 @@ Supersonic gas jets are able to produce relatively smooth flat-top density profi
 The density of the gas jet is controlled by varying the backing pressure of the gas line, where higher pressure results in higher densities. When comparing nozzles of the same type in different sizes, larger nozzles require higher backing pressures to reach the same densities as smaller nozzles. For supersonic flat-top profiles the density slowly decreases above the nozzle. The actual density profile and gas flow depends on the specific design and manufacturing.
 \vspace{\baselineskip}
 
-Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. 
-\vspace{\baselineskip}
-
-
 Different geometries and nozzles are being used depending on the application: for instance conical and rectangular, completely flat or double cones, diverging or converging. Different nozzle types and sizes have advantages for certain applications, producing density profiles for enable specific injection mechanisms, provide a fairly smooth flat-top profile \cite{Semushin2001_GASJETS} and so on.
 The diversity of nozzle designs also lead to the idea of using 3D printing methods for fast prototyping and tailoring the nozzles to the specific needs of the experiment \cite{Jolly2012_3DJET}.
 
 To tailor the density profile even more groups have inserted thin objects into the supersonic gas flow to induce a shock front. The shock introduces a sharp density transition in the density profile which can be used to trigger a localised injection event in LWFA referred to as shock injection \cite{Schmid2010_SHOCK,Buck2013_SHOCK}.
 
 The material applied is frequently a type of metal, varying from aluminium to steel or brass, in order to withstand the high laser intensities and the plasma heat. In the case of \cite{Jolly2012_3DJET} plastic was used for prototyping. Manufacture errors or deterioration over long run times can have an impact on the gas flow and will lead to deviations from idealised hydrodynamic simulations. Hence nozzles (and other gas targets as well) are usually characterised, i.e. their gas flow is analysed, either before or after an experiment to account for deviations from the ideal simulation properties in hydrodynamic codes. The density can, for instance, be determined using an interferometry setup and Abel inversion \cite{FOURIER}.
+\fi
 
-
-
-\subsubsection{Experimental Implementation}
 \begin{figure}
 \centering
-\includegraphics[height=0.3\columnwidth]{TopView_Blade_Gas_S_Edge.jpg}\includegraphics[height=0.3\columnwidth]{Blade_interferometry_reference.jpg}\includegraphics[height=0.3\columnwidth]{ShadowgraphyXiao.jpg}
-\caption{Gas jet with blade example pics. Shadowgraphy by Xiao Cui (MSc Imperial College).}
+\includegraphics[height=0.4\columnwidth]{TopView_Blade_Gas_S_Edge.pdf}\includegraphics[height=0.4\columnwidth]{GasNozzleSideView.pdf}
+\caption[Gas jet and blade setup used at \textsc{Gemini}.]{Gas jet and blade setup used at \textsc{Gemini} in 2019 (see Chapter \ref{Chap:linICS}), shown from a top-down view (left) and from the side (right). A $15\mm$ diameter conical aluminium gas nozzle (red) is mounted on a Peter-Paul solenoid valve (green). A razor blade (yellow) is introduced to induce a shock front on-shot.}
+\label{Methods:Figs:GasJetPhotos}
 \end{figure}
-The gas nozzles used in the experiments discussed in Chapter \ref{Chap:linICS} and \ref{Chap:RR15} are conical aluminium nozzles designed to produce supersonic gas flows. The nozzles were operated at 70 to 100 bar backing pressures, providing electron densities of few $10^{18}\,\mathrm{cm}^{-3}$. The orifice size, $D_{crit}$, (see Figure \ref{Methods:Fig:GasNozzleSketch}) is in both cases 1 mm wide and diverges to a maximum inner diameter of $15\,\mathrm{mm}$ at an opening angle of $\theta = 19.56^\circ$ (designed by Stuart Mangles, Imperial College) and $\theta = 16.72^\circ$ (designed by Stefan Kneip, Imperial College), respectively.
-In the experiment described in Chapter \ref{Chap:linICS} a steel blade was inserted $1.2\,\mathrm{mm}$ into the gas flow at $4\,\mathrm{mm}$ height above the nozzle at $-32.4\pm 0.3^\circ$ vertical tilt from the laser axis. The blade is mounted on a rotation and translation stage that allows changing the height and angle of the blade and its position in the jet.
+
+In the experiments discussed in Chapters \ref{Chap:linICS} and \ref{Chap:RR15} conical aluminium gas nozzles were used to produce a supersonic gas flow \cite{Semushin2001_GASJETS}.
+The gas is stored in a reservoir at backing pressures between $70$ and $100\,\mathrm{bar}$, and is released through a Peter-Paul solenoid valve (EH22). 
+The resulting density profile was typically a flat-top with short density ramps on either side, providing electron densities of few $10^{18}\,\mathrm{cm}^{-3}$.
+The characteristic parameters of the conical nozzle (see Figure \ref{Methods:Fig:GasNozzleSketch}) are its orifice size, $D_{crit}$, its maximum inner diameter, $D_{exit}$, and the opening angle, $\theta$, and are listed for both nozzles that were used in Table \ref{Methods:tables:GasNozzles}. Both nozzle types have the same orifice size, $D_{crit} = 1\mm$, and exit diameter, $D_{exit}$, so that they only differ in their opening angles of $\theta = 19.56^\circ$ (designed by Stuart Mangles, Imperial College) and $\theta = 16.72^\circ$ (designed by Stefan Kneip, Imperial College), respectively.
+
+In the experiment described in Chapter \ref{Chap:linICS} a steel blade was inserted $1.2\,\mathrm{mm}$ into the gas flow at $4\,\mathrm{mm}$ height above the nozzle at $-32.4\pm 0.3^\circ$ vertical tilt from the laser axis. The blade was mounted on a rotation and translation stage that allowed changing the height and angle of the blade and its position in the jet. Photos of this setup are shown in Figure \ref{Methods:Figs:GasJetPhotos}.
 
 \begin{minipage}{\textwidth}
   \begin{minipage}[b]{0.35\textwidth}
@@ -367,7 +369,7 @@ In the experiment described in Chapter \ref{Chap:linICS} a steel blade was inser
   \begin{minipage}[b]{0.6\textwidth}
     \centering
 {\rowcolors{3}{white}{lightgray!50}
-\begin{tabular}{|r|r|r|r|r|}
+\begin{tabular}{|r|r|r|c|c|}
 \hline
 \multicolumn{5}{|c|}{\textbf{Gas Nozzles}} \\
 \hline \hline
@@ -384,6 +386,17 @@ In the experiment described in Chapter \ref{Chap:linICS} a steel blade was inser
 
 \subsection{Gas Cells}
 
+\begin{figure}
+\centering
+\includegraphics[height=0.5\columnwidth]{GasCellSketch.pdf}
+\caption[Variable density and length gas cell used at \textsc{Gemini}.]{Variable density and length gas cell used at \textsc{Gemini} in 2018 (see Chapter \ref{Chap:BW}). The length of the accelerator (red) is varied by translating the cell (orange arrow) and keeping the position of the entry cone (turquoise) fixed. The plastic exit cones are regularly replaced to maintain the cell performance. Glass windows (purple) enable diagnostic access to the plasma.}
+\label{Methods:Figs:GasCell_Sketch}
+\end{figure}
+
+In the experiment discussed in Chapter \ref{Chap:BW}, a variable density and length aluminium gas cell was used with a maximum length of $20\mm$ \cite{Cole2015_tomography}. The gas cell was designed, built and maintained by Nelson Lopes (Imperial College/IST). A photo of the gas cell and its components is shown in Figure \ref{Methods:Figs:GasCell_Sketch}. The gas cell is equipped with replaceable glass windows (purple) for optical probing and plastic exit cones (yellow) to counteract the constant deterioration of the cell performance. The exit cone was typically replaced once per shot day, whereas the durable entry brass cone remained in place throughout the campaign. The length of the accelerator (red) was varied by shifting the position of the entry cone tip inside the cell. In order to preserve the relative position of the focal plane of the laser and the start of the accelerator, the entry cone is fixed in space whilst the rest of the cell is being translated (orange arrows).
+The electron density was varied by adjusting the backing pressure of the gas reservoirs connected to the cell (blue). Typical backing pressures were around $100's\,\mathrm{mbar}$ to reach an electron density of few $10^{18}\,\mathrm{cm^{-3}}$. 
+
+\iffalse
 Gas cells are compartments that are filled with gas and that have a small exit and entry hole. Due to the enclosed volume less gas and hence backing pressure is required to reach comparable densities as gas jets. 
 \EliasComm{Steady state gas flow.}
 
@@ -402,29 +415,16 @@ Debris can coat the glass windows and reduce the efficiency of optical diagnosti
 \vspace{\baselineskip}
 
 Just as 3D printing methods have been considered for gas jets \cite{Jolly2012_3DJET} researchers have demonstrated that this is also a promising route to design and build \cite{Vargas2014_3DCELL,Hussein2019_MICROSTRUCTURES}.
-
-\subsubsection{Experimental Implementation}
-
-In the experiment discussed in Chapter \ref{Chap:BW}, a variable density and length aluminium gas cell was used with a maximum length of $20\mm$. The gas cell is equipped with replaceable glass windows and plastic exit cones to counteract the constant deterioration of the cell performance. Typical backing pressures were around $100's\,\mathrm{mbar}$ to reach an electron density of few $10^{18}\,\mathrm{cm^{-3}}$. The gas cell was designed, built and maintained by Nelson Lopes (Imperial College/IST).
+\fi
 
 \subsection{Gas jets and cells in comparison}
 
-
-Gas jets provide a relatively easy target, diverse in shape and comparatively straightforward to align. The open geometry also allows optical probing from a large solid angle. However, experimental results tend to be less stable (shot-to-shot reproducibility) and inferior in terms of maximum energy \cite{Leemans2014_GEV} and stability \cite{Desforges2014_CAPILLARY,Osterhoff2008_CELL} to setups relying on gas cells or capillaries at similar conditions, especially at low densities, as the medium is laminar and reproducible. ALSO MENTION MAX ENERGY FROM JET (4 GEV CORELS) \cite{Kim2013_GEV} \SMComm{too definitive.  Improvements could also be for other reasons... }
-
-
-
-Gas cell targets have sometimes produced superior results from gas jets using the same laser system (Poder v Kneip, \cite{Osterhoff2008_CELL} \cite{Kuschel2018_SELF}) in terms of charge, shot-to-shot stability and maximum energy gain.
-However, some of the most stable LWFA sources have been achieved using gas jet targets \cite{Faure2006_STABLEJET} and the open geometry allows for diagnostic access and colliding pulse experiments as well as a route to high repetition rate operation.
+Gas jets and cells are both frequently used in experiments and 3D printing techniques allow for fast prototyping \cite{Jolly2012_3DJET,Vargas2014_3DCELL}.
+Gas cell targets have sometimes produced superior results from gas jets using the same laser system, e.g. \cite{Kneip2009_GEV} v \cite{PoderThesis},  in terms of charge, shot-to-shot stability \cite{Osterhoff2008_CELL,Desforges2014_CAPILLARY} and maximum energy gain.
+However, some of the most stable LWFA sources have been achieved using gas jet targets \cite{Faure2006_STABLEJET} and the open geometry of gas jets allows for diagnostic access and colliding pulse experiments as well as a route to high repetition rate operation. In addition, gas jets are relatively easy to align and sharp density transitions can be introduced by obstructing the gas flow \cite{Schmid2010_SHOCK,Buck2013_SHOCK}.
+The alignment of gas cells, on the other hand, requires more precision as otherwise parts might be damaged and in turn deteriorate the performance. Large pointing fluctuations of the laser can in addition cause damage, in particular at the entry and exit of the cell where plasma might defocus the laser pulse.
+The diagnostic access is typically enabled by glass windows, but the casing of the cell leads to a reduction of the field of view and debris can render the windows over hundreds of shots opaque.
 The variety of gas targets, their performance and the performance of the specific laser system make it difficult to compare gas cells and jets in general with each other. Comparisons can in most cases only be done between individual specimens and conclusions drawn from such a comparison might only be valid in this limited context. 
-
-In contrast to gas jets, the alignment of cell require more precision as the orientation of the gas cell is crucial to make sure the laser pulse propagates through the entire cell, also in order to avoid damaging the gas cell and in consequence deteriorate the performance and possibly damage other components through debris. Depending on the size of the laser beam and the gas cell even careful alignment can lead to deterioration of components, especially at the entry and exit holes if the laser beam is too large, jitters or defocuses in interaction with the plasma.
-
-
-A disadvantage, in addition to the factors mentioned previously, is the potential reduction in field of view due to the enclosing shell of the gas cell. This might make taking data from optical diagnostics like side-scattering more challenging.
-This can be resolved by designing the gas cell accordingly and use appropriate materials that allow probing and withstand the experimental conditions. However, more careful planning is required in advance to design the gas cell and put appropriate maintenance and alignment procedures in place.
-Debris can coat the glass windows and reduce the efficiency of optical diagnostics over time.
-
 
 
 
