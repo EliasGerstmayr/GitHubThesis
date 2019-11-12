@@ -1,19 +1,10 @@
 \chapter{Laser Propagation and Wakefield Acceleration}
 \label{Chap:Theory:LWFA}
 
-This Chapter lays the theoretical groundwork for the results presented later in this work, addressing laser wakefield acceleration, radiation production from charged particles and the fundamental processes of radiation reaction and pair production.
-
-Firstly, equation of motions of charged single particles in electromagnetic fields are derived. This forms the basis for understanding the properties of electrons accelerated in wakefield accelerators, measuring their energy in magnetic spectrometers and calculating the radiation they emit in interaction with electromagnetic fields.
-
-Secondly, the propagation of a laser in a plasma and its non-linear evolution are discussed. This paves the way for the third section on laser wakefield acceleration where basic properties like maximum energy and injection mechanisms are introduced.
-
-Subsequently, radiation production from electrons in different scenarios is discussed, starting with radiation in synchrotrons and insertion devices, then drawing the parallel to betatron radiation produced in wakefield acceleration and the radiation emitted in a laser wiggler, namely relativistic inverse Compton scattering (ICS) in moderately (linear ICS) and highly intense laser fields (non-linear ICS). Bremsstrahlung as radiation mechanism is also being introduced.
-
-This leads over to the topic of radiation reaction, the knock-back force a charged particle experiences when emitting a photon. This can, for instance, be investigated in relativistic inverse Compton scattering. Whilst radiation reaction is a very fundamental phenomenon there is so far no universally accepted and practicable description for a wide parameter space. In this section different proposed descriptions of radiation reaction are discussed, starting with the in classical electrodynamics self-consistent Lorentz-Abraham-Dirac equation, followed by the classical Landau-Lifschitz equation and leading over to quantum corrections and their implications. 
-
-Finally, other fundamental QED processes such as pair production, annihilation and light-light scattering is discussed.
-
-\EliasComm{This is the same intro as for the other theory section.}
+This Chapter addresses the propagation of a laser pulse in an underdense plasma and its evolution at high-intensities, which give rise to interesting phenomena such as self-focusing and self-guiding, pulse compression and photon acceleration.
+In contrast to the previous Chapter that was concerned with the motion of individual charged particles and consequences thereof, e.g. radiation production and radiation reaction, here the interaction of an intense laser pulse with a plasma, a medium exhibiting collective behaviour, is discussed.
+This leads over to the topic of laser wakefield acceleration (LWFA): here an intense laser pulse drives a plasma wave through the ponderomotive force and the resulting charge separation in its wake generates strong electric fields that are suitable to capture and accelerate electrons to relativistic energies.
+In the context of this discussion key quantities like the maximum energy gain and its fundamental limiting factors, dephasing and depletion, are introduced, along with a brief note on different injection mechanisms relevant to this work.
 
 \section{Laser Propagation in an Underdense Medium}
 
@@ -30,13 +21,13 @@ Whilst this balance might locally not be true at every moment in time, the mobil
 \end{equation}
 where $\epsilon_0$ is the dielectric constant, $k_B$ the Boltzmann constant and $T_e$ the electron temperature. 
 The formation of Debye-spheres is an example of a collective response of the plasma to a small perturbation. In a plasma particles can act together on macroscopic scales through long range electromagnetic forces to form instabilities and waves. Even small imbalances can stimulate a significant response of the medium. This means that even though plasmas can be modelled as fluids and simulated using hydrodynamic codes, introducing electromagnetic forces will give rise to more complex and exotic phenomena than in fluids dominated by gravitational forces \cite{Kruer}.
-\SMComm{Maybe leave out.}
+
 
 \subsection{Plasma Formation}
 \label{Theory:Sec:PlasmaFormation}
 In the context of this work, the process of forming a plasma is achieved by ionising a neutral gas in the electric field of an intense laser pulse. The resulting collection of unbound electrons and ions is a plasma. After a certain time the electrons will return to the ionic cores of the atoms and back again to a bound energy state emitting any excess energy in form of radiation in the process. This process is called \textit{recombination} and the emitted radiation \textit{recombination light}.
 
-There are different mechanisms through which an oscillating laser field ionises a gas. In single and multi-photon ionisation \cite{Keldysh1965_ION}, one electron is excited by absorbing one or multiple photons, respectively, before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964_ION}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966_ION}.
+There are different mechanisms through which an oscillating laser field ionises a gas. In single and multi-photon ionisation \cite{Keldysh1965_ION} one electron is excited by absorbing one or multiple photons, respectively, before decaying to its original ground state. Another mechanism relies on the collision of electrons and atoms \cite{Latypov1964_ION}. The electric field of the laser can also distort the Coulomb potential of the atom, resulting in a finite probability for electrons to tunnel into the continuum \cite{Perelomov1966_ION}.
 
 The dominant ionisation mechanism is indicated by the Keldysh parameter $\gamma_K$ considering the strength of the electric field $E$ relative to the binding potential $V$ and the frequency of the oscillating field $\omega$:
 \begin{equation}
@@ -59,22 +50,22 @@ I = \frac{c\epsilon_0^3 \pi^2 V^4_e}{2e^6 Z^2} \approx 4 \times 10^{9} \left(\fr
 
 For hydrogen with $V_e = 13.6\,\mathrm{eV}$ the lower bound intensity required for barrier-suppression ionisation amounts to $1.37 \times 10^{14} \,\mathrm{W/cm^2}$, for helium with $Z=2$ and $V_e = 54.4\,\mathrm{eV}$ the equation gives $I = 8.76\times10^{15}\,\mathrm{W/cm^2}$.
 The laser intensities in LWFA experiments routinely reach peak intensities above $10^{18}\,\mathrm{W/cm^2}$. Hence, one can safely assume that ionisation effects are negligible for low-$Z$ gases. Higher-$Z$ gases like nitrogen are not as easily fully ionised: in hydrogen-like nitrogen the last electron is bound by a potential of $V_e = 667\,\mathrm{eV}$ at $Z = 7$, which translates in intensities required in excess of $10^{19}\,\mathrm{W/cm^2}$. Even very intense laser pulses might struggle to fully ionise a nitrogen gas at all and one can not assume any longer that a fully ionised plasma is in place when the main part of the laser pulse arrives. The gas might then reach higher degrees of ionisation only at peak fields of the laser either through full barrier suppression or by triggering an increased tunnelling rate: this is taken advantage of in an injection schme for laser wakefield acceleration called `ionisation injection' \cite{McGuffey2010_ION,Pak2010_ION}. 
-\SMComm{Maybe leave this out.}
+
 
 \subsection{Plasma Frequency}
 \label{Chap:Theory:Sec:PlasmaFreq}
 
-The plasma frequency $\omega_p$ is the natural frequency at which electrons will oscillate in a plasma when displaced \cite{Kruer}. It constitutes the typical time scale and the corresponding plasma wavelength $\lambda_p$ the typical length scale of the medium.
+The plasma frequency, $\omega_p$, is the natural frequency at which electrons will oscillate in a plasma when being displaced \cite{Kruer}. It constitutes the typical time scale and the corresponding plasma wavelength, $\lambda_p$, the typical length scale of the medium.
 \vspace{\baselineskip}
 
 Assume a uniform and neutral plasma, i.e. $n_e = Z n_i = n_{e0}$, where $n_e$ is the electron number density, $Z$ the charge number of the ions, $n_i$ the ion number density, and the initial electric field be $\mathbf{E} = \mathbf{0}$.
 Now consider displacing a slab of charge by $X$ in an arbitrary axis $x$.
-Starting with Gauss' Law:
+Starting with Gauss' Law we obtain:
 \begin{equation}
 \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} = \frac{\partial E_x}{\partial x},
 \end{equation}
 where we used that the displacement is only along $x$, simplifying the Nabla operator to a spatial derivative in $x$.
-We assume a uniform plasma so the charge density is a constant $\rho = e n_{e0}$. Integrating the previous equation then gives a constant factor times the displacement $X$:
+We assume a uniform plasma so that the charge density is a constant $\rho = e n_{e0}$. Integrating the previous equation then gives a constant factor times the displacement $X$:
 \begin{align}
 E_x = \frac{1}{\epsilon_0} \int^x_0 \rho (x') dx' + E_x(0) &= \frac{e n_{e0}}{\epsilon_0} X,\nonumber\\
 E &= \frac{e n_{e0}}{\epsilon_0} X.
@@ -193,10 +184,11 @@ v_g &= \frac{\partial\omega}{\partial k} \approx c \left(1 - \frac{1}{2}\frac{\o
 \begin{figure}
 \centering
 \includegraphics[width= 0.5\columnwidth ]{GroupVelocity_density.pdf}\includegraphics[width=0.5\columnwidth]{critical_density.pdf}
-\caption[Group velocity at different densities and critical densities for different laser wavelengths.]{Left: Group velocity at different densities for photons of wavelength $\lambda = 0.8\,\mathrm{\mu m}$ (blue) and $10\,\mathrm{\mu m}$ (orange) in units of the vacuum speed of light (indicated in green). The red dotted line shows the density at which the group velocity reaches zero, called the critical density. Right: Critical density for wavelengths up to $2 \mu m$ (blue). The critical density corresponding to a central wavelength of $0.8 \mu m$, as for the commonly used titanium-doped sapphire (Ti:Sa) lasers, is marked in red on the graph. The region above the critical density (blue line) is called overdense, below underdense.}
+\caption[Group velocity at different densities and critical densities for different laser wavelengths.]{Left: Group velocity at different densities for photons of wavelength $\lambda =$ 0.8 $\mu m$ (blue) and 10 $\mu m$ (orange) in units of the vacuum speed of light (indicated in green). The red dotted line shows the density at which the group velocity reaches zero, called the critical density. Right: Critical density for wavelengths up to 2 $\mu m$ (blue). The critical density corresponding to a central wavelength of 0.8 $\mu m$, as for the commonly used titanium-doped sapphire (Ti:Sa) lasers, is marked in red on the graph. The region above the critical density (blue line) is called overdense, below underdense.}
+\label{Theory:Figs:Ncrit}
 \end{figure}
 
-The group velocity reaches zero for $\omega_p = \omega$, where $\omega_p$ is the plasma frequency, derived in the previous section and given by $\omega_p = (n_e e^2/\epsilon_0 m_e)^{1/2}$. Solving this for the density, we obtain a relation for the \textit{critical density}, $n_c$:
+The group velocity reaches zero for $\omega_p = \omega$, where $\omega_p$ is the plasma frequency, derived in the previous section and given by $\omega_p = (n_e e^2/\epsilon_0 m_e)^{1/2}$. Solving this for the density, we obtain a relation for the \textit{critical density}, $n_c$ (see also Figure \ref{Theory:Figs:Ncrit}):
 
 \begin{equation}
 \boxed{n_c = \frac{m_e \epsilon_0 \omega^2}{e^2},}
@@ -211,7 +203,7 @@ A plasma with a density $n_e < n_c$ is transparent and `underdense'. LWFA requir
 
 \subsection{Nonlinear Refractive Index}
 
-As we have seen previously electrons interacting with a highly intense laser perform a relativistic motion. This results into a relativistic mass increase and in turn to a modification of the plasma frequency and the refractive index \cite{Mori1997_NONLINEARPLASMA}:
+As seen previously, electrons interacting with a highly intense laser perform a relativistic motion (see Section \ref{Theory:Sec:SingleParticle:FigOfEight}). This results into a relativistic mass increase and in turn to a modification of the plasma frequency and the refractive index \cite{Mori1997_NONLINEARPLASMA}:
 \begin{equation}
 \eta = \frac{c}{v_p} = \left(1-\frac{\omega^2_p}{\gamma_\perp \omega^2}\right),
 \end{equation}
@@ -233,7 +225,7 @@ assuming that the perturbations are small and higher order terms vanish.
 \subsection{Relativistic Self-focusing and Self-guiding}
 \label{Theory:Sec:SelffocusingSelfguiding}
 
-The diffraction of a Gaussian mode near focus ($z < z_R$) can be calculated by differentiating the waist size, $w$, 
+The diffraction of a Gaussian mode near focus ($z < z_R$) can be calculated by differentiating the waist size, $w$, \cite{ColeThesis}
 \begin{equation}
 \frac{\partial w}{\partial\tau} = \frac{\partial z}{\partial \tau} \frac{\partial w}{\partial z},
 \end{equation}
@@ -243,7 +235,6 @@ The diffraction of a Gaussian mode near focus ($z < z_R$) can be calculated by d
 \end{equation}
 which takes a positive value resulting in an increase of the waist size.
 On the other hand, using the expression of the nonlinear refractive index and focusing on the term involving the vector potential of the laser we find
-
 \begin{equation}
 \frac{\partial^2 w}{\partial \tau^2} = \frac{c^2}{\eta}\frac{\partial \eta}{\partial r} = -\frac{c^2}{8} \frac{\omega^2_p}{\omega^2_0} \frac{\partial}{\partial r} a^2 (r,z) \approx - \frac{1}{8}\frac{\omega^2_p}{\omega^2_0}\frac{a^2_0}{w_0}c^2,
 \end{equation}
@@ -257,7 +248,7 @@ and expressing this in terms of laser power \cite{Sprangle1987_SELFFOCUS}
 \begin{equation}
 \boxed{P_c = \frac{8\pi \epsilon_0 m^2_e c^5}{e^2} \frac{\omega^2}{\omega^2_p} \approx 17 \frac{\omega^2_0}{\omega^2_p} \,\mathrm{GW} = 17 \frac{n_c}{n_e} \, \mathrm{GW},}
 \end{equation}
-where $P_c$ is the critical power or minimum power required to outweigh diffraction by relativistic self-focusing. This is referred to as self-guiding as it enables guiding without external guiding structures \cite{Wagner1997_SELFGUIDED,Thomas2007_SELFGUIDED}. 
+where $P_c$ is the \textit{critical power} or minimum power required to outweigh diffraction by relativistic self-focusing. This is referred to as \textit{self-guiding} as it enables guiding without external guiding structures \cite{Wagner1997_SELFGUIDED,Thomas2007_SELFGUIDED}. 
 When balancing both terms the laser pulse remains focused over several Rayleigh lengths while oscillating in size \cite{Esarey1993_SPOTOSCILLATION}. The waist evolution is described by
 \begin{equation}
 \frac{\dif^2 w}{\dif z^2} = \frac{w^2_0}{z^2_R w^3}\left(1 - \frac{P}{P_c}\right).
@@ -321,11 +312,12 @@ or in terms of the wave frame variables $\xi$ and $\tau$, and the refractive ind
 \frac{1}{\omega_L} \frac{\partial \omega}{\partial \tau} &= \frac{c}{\eta^2} \frac{\partial \eta}{\partial \xi}.
 \end{align}
 This equation now describes how the wavelength or frequency shifts as a function of the density gradient. A positive density gradient results in an increase of the frequency, $\omega$, i.e. blue-shifting or `photon acceleration'. A negative gradient, on the other hand, would lead to a decrease in the frequency, so red-shifting or `photon deceleration'. In the previous section we considered pulse compression as a result of a positive density gradient, so we now see that pulse compression is accompanied by photon acceleration. This phenomenon has been more rigourously investigated theoretically in \cite{Mendoncca1994_PHOTONACC,Mendoncca2000_PHOTONACC} and has been confirmed in experiment \cite{Murphy2006_PHOTONACC}.
+\clearpage
 
 \section{Laser Wakefield Acceleration}
 \label{Theory:Sec:LWFA}
 
-In laser wakefield acceleration (LWFA) a short (10`s fs), intense and focused laser pulse (NUMBER\addnum) travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way by means of the ponderomotive force. Due to the short duration of the laser pulse the ions remain undisturbed and the Coulomb force pulls the electrons back onto the laser axis, setting up a density wave. For highly intense pulses $a_0 \sim 1$, the pulse almost completely evacuates the region in its wake, producing a cavity with strong longitudinal and transversal electromagnetic fields, which are suited to focus and accelerate electrons to relativistic energies. This is commonly referred to as the non-linear or `bubble' regime, which enables the production of quasi-monoenergetic electron beams, first reported in 2004 \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}. By now maximum electron energies of beams produced in LWFA have reached the multi-GeV level in one \cite{Leemans2006_GEV,Leemans2014_GEV} (check current REFS)\addref{} or two coupled acceleration stages \cite{Steinke2016_STAGING,Kim2013_GEV}.
+In laser wakefield acceleration (LWFA) a short (10`s fs), intense and focused laser pulse ($a_0 \geq 1$) travels through an underdense plasma, driving a plasma wave by pushing the electrons out of its way by means of the ponderomotive force (see Section \ref{Theory:Sec:PonderomotiveForce}). On the time scale of the laser pulse the ions remain static and the Coulomb force pulls the electrons back onto the laser axis, setting up a density wave. A highly intense pulse ($a_0 \geq 2$) almost completely evacuates the region in its wake, producing a cavity with strong longitudinal and transverse electromagnetic fields, which are suited to focus and accelerate electrons to relativistic energies. This is commonly referred to as the non-linear or `bubble' regime, which enables the production of quasi-monoenergetic electron beams, first reported in 2004 \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}. By now maximum electron energies of beams produced in LWFA have reached the multi-GeV level in one \cite{Leemans2006_GEV,Leemans2014_GEV,Gonsalves2019_GEV,PoderThesis} or two coupled acceleration stages \cite{Steinke2016_STAGING,Kim2013_GEV}.
 
 A comprehensive overview on this topic explaining the fundamental physics is given in \cite{Esarey2009_LPA_Review}. A more recent overview on the progress and status of experiments in the laser wakefield community can be found in \cite{Mangles2016_LPA_Review}.
 
@@ -336,28 +328,27 @@ The maximum electric field that can be sustained by a plasma wave is
 \begin{equation}
 E_0 = \frac{\omega^2_p m_e}{e} \frac{\lambda_e}{2 \pi},
 \end{equation}
-which is also called the cold non-relativistic wave breaking limit \cite{Esarey2009_LPA_Review,Dawson1959_COLDWAVEBREAKING}
+which is also called the \textit{cold non-relativistic wavebreaking limit} \cite{Esarey2009_LPA_Review,Dawson1959_COLDWAVEBREAKING}.
 In useful units we can write:
 \begin{equation}
 E_0 [\mathrm{GV/m}] \approx 96 \sqrt{n_0 [10^{18} \mathrm{cm^{-3}}]},
 \end{equation}
-so that the maximum field sustained by a wave in a plasma of density $10^{18}\mathrm{cm^{-3}}$ is roughly $100\,\mathrm{GV/m}$.
+which indicates that the maximum field sustained by a wave in a plasma of density $10^{18}\mathrm{cm^{-3}}$ is roughly $100\,\mathrm{GV/m}$.
 Nonlinear plasma waves can exceed this value and the wavebreaking limit for a 1D relativistic, non-linear periodic plasma wave is, for instance, given by \cite{Akhiezcr1956_Waves}
 \begin{equation}
 E_{WB} = \sqrt{2(\gamma_p -1)} E_0,
 \end{equation}
-where in the 1D low-intensity limit $\gamma_p \approx \omega/\omega_p$. $E_0$ is again the cold non-relativistic wave breaking limit given above.
+where in the 1D low-intensity limit $\gamma_p \approx \omega/\omega_p$, and $E_0$ is again the cold non-relativistic wave breaking limit given above.
 
 \subsection{Bubble regime}
 
-A short and relativistic laser pulse can fully expels the electrons in its way. The pure ion cavity left behind is an approximately spherical `bubble' of radius \cite{Pukhov2002_BUBBLESIM}
+A short and relativistic laser pulse can fully expel the electrons in its way. The pure ion cavity left behind is an approximately spherical `bubble' of radius $r_b$ \cite{Pukhov2002_BUBBLESIM}:
 \begin{equation}
 \boxed{r_b = 2 \sqrt{a_0} \frac{c}{\omega_p},}
 \end{equation}
-which can be derived by balancing the ponderomotive force with the Lorentz force acting on the electrons.
-\EliasComm{Maybe make some adjustments and check the fields again.}
+which can be derived by balancing the ponderomotive force with the Lorentz force acting on the electrons (see e.g. \cite{WoodThesis}).
 This is a highly non-linear regime leading to wavebreaking such that wakefields are only sustained for few periods.
-The electromagnetic fields associated to the cavity are given by \cite{Kostyukov2004_BUBBLEFIELDS}\addnum
+The electromagnetic fields associated to the cavity are given by \cite{Kostyukov2004_BUBBLEFIELDS,ColeThesis}
 \begin{align}
 E_z &= \frac{n_0 e}{\epsilon_0} \frac{\xi}{4},\\
 E_r &=\frac{n_0 e}{\epsilon_0} \frac{r}{4},\\
@@ -365,16 +356,16 @@ B_\theta &= n_0 e \mu_0 \frac{r}{4},
 \end{align}
 where $n_0$ is the background ion density in the bubble and $\xi = z - v_{ph} t$ is the waveframe coordinate.
 Here the region in which electrons are accelerated and focused is half of the cavity $r_b \approx \lambda_p/2$.
-The effective focusing field on an relativistic electron beam is given in useful units by
+The effective focusing field on an relativistic electron beam is given in useful units by \cite{Esarey2009_LPA_Review}
 \begin{equation}
-E_r [\mathrm{MV/m}] = 9.06 \times 10^{-15} n_e [\mathrm{cm^{-3}}] \sigma_r [\mathrm{\mu m}],
+E_r [\mathrm{GV/m}] = 9.06 \times n_e [\mathrm{10^{18}\,cm^{-3}}] \sigma_r [\mathrm{\mu m}],
 \end{equation}
 where $\sigma_r$ is the size of the electron beam. This focusing field forces off-axis electrons onto the axis, as a result of which the electron beam performs betatron oscillations.
 
 \subsection{Trapping and self-injection threshold}
 \label{Theory:Sec:TrappingSelfInjection}
 
-In order to trap electrons from the ambient plasma in the wakefield cavity, the following condition has to be satisfied \cite{Thomas2010_WAKESCALINGS}
+In order to trap electrons from the ambient plasma in the wakefield cavity, the following condition has to be satisfied \cite{Thomas2010_WAKESCALINGS}:
 \begin{equation}
 \boxed{r_b \geq \frac{2c \sqrt{\ln (2\gamma^2_{ph}-1)}}{\omega_p },}
 \end{equation}
@@ -409,7 +400,7 @@ Higher plasma densities lead to faster etching of the pulse and shortens the dep
 
 \subsection{Dephasing}
 
-In the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma at a group velocity smaller than $c$. As a result the electrons slowly catch up with the driver and leave the accelerating phase of the cavity, hence called \textit{dephasing}.
+In the high field gradients of the wake electrons are relatively quickly accelerated to relativistic energies, reaching velocities close to the speed of light. The driving laser pulse on the other hand propagates through the plasma at a group velocity smaller than $c$. As a result, the electrons slowly catch up with the driver and leave the accelerating phase of the cavity, hence called \textit{dephasing}.
 The relativistic electrons are moving close to the speed of light ($\beta_e \rightarrow 1$) whilst the plasma wave moves at a velocity $\beta_p$ (in the 1D linear case):
 \begin{equation}
 \beta_p = \frac{v_g}{c} = \left(1-\frac{n_e}{n_c}\right)^{\frac{1}{2}},
@@ -467,7 +458,7 @@ Typically, a gas with low ionisation threshold like helium or hydrogen is used a
 The accelerating structure in a wakefield depends on the complex interplay of the driving laser pulse and its evolution in interaction with the surrounding medium. An evident handle onto the shape and behaviour of the cavity is the plasma density as $r_b \sim 1/\sqrt{n_e}$ and the changes in the group velocity $\Delta v_g \sim - \Delta n_e$.
 
 An abrupt fall-off in plasma density leads to a temporary elongation of the bubble in the longitudinal direction as the effective velocity of the back of the bubble is reduced for a short time. Electrons can now be trapped inside the cavity as part of a very localised injection event. Since such a sharp density transition can in experiments be achieved by inducing a shock into the gas, this injection mechanism is called \textit{shock injection}.
-Shock injection has been demonstrated as powerful tool to produce high-quality electron beams of high charge, stability and tunable energy (\cite{Schmid2010_SHOCK,Buck2013_SHOCK}.
+Shock injection has been demonstrated as powerful tool to produce high-quality electron beams of high charge, stability and tunable energy \cite{Schmid2010_SHOCK,Buck2013_SHOCK}.
 Similarly, but less localised, an extended density gradient can also trigger the injection of electrons by gradually extending the bubble size, then called \textit{downramp injection} \cite{Bulanov1998_Downramp}.
 In contrast, a positive density gradient will lead to a decrease in the size of the bubble. A decrease in bubble size is not suitable to capture electrons but it moves the centre of the cavity closer to the laser pulse shifting the accelerating phase. This can be used to keep electrons for a longer distance in an accelerating phase to delay dephasing, and is hence referred to as \textit{rephasing} \cite{Guillaume_REPHASING}.
 

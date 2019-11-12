@@ -7,10 +7,13 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem{Danson2019_PWLASERS}
-C.~N. Danson et~al.
-\newblock \enquote{Petawatt and exawatt class lasers worldwide}.
-\newblock \emph{High Power Laser Science and Engineering}, 7.
+\bibitem{DiPiazza2018_LCFA}
+A.~Di~Piazza et~al.
+\newblock \enquote{Implementing nonlinear Compton scattering beyond the
+  local-constant-field approximation}.
+\newblock \emph{Phys. Rev. A}, 98, (2018), p. 012134.
+\newblock \doi{10.1103/PhysRevA.98.012134}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.98.012134}
 
 \bibitem{Jackson}
 J.~D. Jackson.
@@ -18,6 +21,26 @@ J.~D. Jackson.
 \newblock \emph{American Journal of Physics}, 67, (1999), pp. 841--842.
 \newblock \doi{10.1119/1.19136}.
 \newline\urlprefix\url{https://doi.org/10.1119/1.19136}
+
+\bibitem{Streeter2018_TEMPFEEDBACK}
+M.~Streeter et~al.
+\newblock \enquote{Temporal feedback control of high-intensity laser pulses to
+  optimize ultrafast heating of atomic clusters}.
+\newblock \emph{Applied Physics Letters}, 112, (2018), p. 244101.
+
+\bibitem{Streeter2019_RASTERSCAN}
+M.~Streeter.
+\newblock Private Communication.
+
+\bibitem{Shalloo_GEMINIDRIFT}
+R.~Shalloo et~al.
+\newblock \enquote{Measurement of femtosecond-scale drift and jitter of the
+  delay between the North and South Beams of Gemini}.
+
+\bibitem{Danson2019_PWLASERS}
+C.~N. Danson et~al.
+\newblock \enquote{Petawatt and exawatt class lasers worldwide}.
+\newblock \emph{High Power Laser Science and Engineering}, 7.
 
 \bibitem{ThomasThesis}
 A.~G.~R. Thomas.
@@ -400,6 +423,14 @@ W.~P. Leemans et~al.
 \newblock \doi{10.1103/PhysRevLett.113.245002}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.113.245002}
 
+\bibitem{Gonsalves2019_GEV}
+A.~J. Gonsalves et~al.
+\newblock \enquote{Petawatt Laser Guiding and Electron Beam Acceleration to 8
+  GeV in a Laser-Heated Capillary Discharge Waveguide}.
+\newblock \emph{Phys. Rev. Lett.}, 122, (2019), p. 084801.
+\newblock \doi{10.1103/PhysRevLett.122.084801}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.122.084801}
+
 \bibitem{Steinke2016_STAGING}
 S.~Steinke et~al.
 \newblock \enquote{{Multistage coupling of independent laser-plasma
@@ -613,11 +644,6 @@ I.~Malitson.
 \newblock \enquote{Interspecimen comparison of the refractive index of fused
   silica}.
 \newblock \emph{Josa}, 55, (1965), pp. 1205--1209.
-
-\bibitem{Shalloo_GEMINIDRIFT}
-R.~Shalloo et~al.
-\newblock \enquote{Measurement of femtosecond-scale drift and jitter of the
-  delay between the North and South Beams of Gemini}.
 
 \bibitem{Wilks2001_IONACC}
 S.~C. Wilks et~al.
@@ -966,16 +992,6 @@ S.~Chen et~al.
 \newblock \emph{Physical Review Letters}, 110, (2013), pp. 1--5.
 \newblock \doi{10.1103/PhysRevLett.110.155003}.
 
-\bibitem{Streeter2018_TEMPFEEDBACK}
-M.~Streeter et~al.
-\newblock \enquote{Temporal feedback control of high-intensity laser pulses to
-  optimize ultrafast heating of atomic clusters}.
-\newblock \emph{Applied Physics Letters}, 112, (2018), p. 244101.
-
-\bibitem{Streeter2019_RASTERSCAN}
-M.~Streeter.
-\newblock Private Communication.
-
 \bibitem{Weingartner2012_BUNCH}
 R.~Weingartner et~al.
 \newblock \enquote{Ultralow emittance electron beams from a laser-wakefield
@@ -1230,14 +1246,6 @@ B.~Shen et~al.
   an x-ray free electron laser beam}.
 \newblock \emph{Plasma Physics and Controlled Fusion}, 60, (2018), p. 044002.
 
-\bibitem{Gonsalves2019_GEV}
-A.~J. Gonsalves et~al.
-\newblock \enquote{Petawatt Laser Guiding and Electron Beam Acceleration to 8
-  GeV in a Laser-Heated Capillary Discharge Waveguide}.
-\newblock \emph{Phys. Rev. Lett.}, 122, (2019), p. 084801.
-\newblock \doi{10.1103/PhysRevLett.122.084801}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.122.084801}
-
 \bibitem{Blackburn2014_QRR}
 T.~G. Blackburn et~al.
 \newblock \enquote{Quantum Radiation Reaction in Laser--Electron-Beam
@@ -1421,14 +1429,6 @@ C.~D. Baird et~al.
 \newblock \enquote{Realising single-shot measurements of quantum radiation
   reaction in high-intensity lasers}.
 \newblock \emph{New Journal of Physics}, 21, (2019), p. 053030.
-
-\bibitem{DiPiazza2018_LCFA}
-A.~Di~Piazza et~al.
-\newblock \enquote{Implementing nonlinear Compton scattering beyond the
-  local-constant-field approximation}.
-\newblock \emph{Phys. Rev. A}, 98, (2018), p. 012134.
-\newblock \doi{10.1103/PhysRevA.98.012134}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.98.012134}
 
 \bibitem{Bonometto1971_PAIRSASTRO}
 S.~Bonometto and M.~Rees.
