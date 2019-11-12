@@ -1,32 +1,23 @@
 \chapter{Single particle motions and radiation mechanisms}
 \label{Chap:Theory:SingleParticle}
 
-This Chapter lays the theoretical groundwork for the results presented later in this work, addressing laser wakefield acceleration, radiation production from charged particles and the fundamental processes of radiation reaction and pair production.
+This Chapter lays the theoretical groundwork for the results presented later in this work, by deriving the equations of motion for single charged particles in electromagnetic fields and considering the radiation they emit in the process. It also addresses the fundamental processes of radiation reaction and pair production.
 
 Firstly, equation of motions of charged single particles in electromagnetic fields are derived. This forms the basis for understanding the properties of electrons accelerated in wakefield accelerators, measuring their energy in magnetic spectrometers and calculating the radiation they emit in interaction with electromagnetic fields.
-
-Secondly, the propagation of a laser in a plasma and its non-linear evolution are discussed. This paves the way for the third section on laser wakefield acceleration where basic properties like maximum energy and injection mechanisms are introduced.
 
 Subsequently, radiation production from electrons in different scenarios is discussed, starting with radiation in synchrotrons and insertion devices, then drawing the parallel to betatron radiation produced in wakefield acceleration and the radiation emitted in a laser wiggler, namely relativistic inverse Compton scattering (ICS) in moderately (linear ICS) and highly intense laser fields (non-linear ICS). Bremsstrahlung as radiation mechanism is also being introduced.
 
 This leads over to the topic of radiation reaction, the knock-back force a charged particle experiences when emitting a photon. This can, for instance, be investigated in relativistic inverse Compton scattering. Whilst radiation reaction is a very fundamental phenomenon there is so far no universally accepted and practicable description for a wide parameter space. In this section different proposed descriptions of radiation reaction are discussed, starting with the in classical electrodynamics self-consistent Lorentz-Abraham-Dirac equation, followed by the classical Landau-Lifschitz equation and leading over to quantum corrections and their implications. 
+Finally, the fundamental QED processes of pair production and annihilation are discussed.
 
-Finally, other fundamental QED processes such as pair production, annihilation and light-light scattering is discussed.
-
-\SMComm{Best way to structure: instead of many equations and long cross sections, try to find scaling laws in terms of relevant quantities of the experiment (yield, energy etc.). Move equations to appendix.}
-\SMComm{Split theory in two parts.}
-\EliasComm{Restructure appendix.}
-\SMComm{Consider removing: cylindrical symmetry fields, axial, Debye length, plasma formation, quasi-neutrality.}
-\SMComm{Consider dropping some wakefield stuff.}
-
-\section{Single particle motion in an EM field}
+\section{Single particle motion in an electromagnetic field}
 
 The Lagrangian for a relativistic particle in an electromagnetic field with the potentials $\Phi$ and $\mathbf{A}$ is given by \cite{Jackson}
 \begin{equation}
 L(\mathbf{r},\mathbf{v},t) = - mc^2 \gamma^{-1}+q \mathbf{v}\cdot\mathbf{A} - q \Phi,
 \end{equation}
 where $m$ is the mass of the particle, $\gamma$ the relativistic Lorentz factor and $q$ the charge.
-To obtain the equation of motion (EoM) we use the Euler-Lagrange equation
+To obtain the equation of motion we use the Euler-Lagrange equation
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t} \frac{\partial L}{\partial \mathbf{v}} - \frac{\partial L}{\partial \mathbf{r}} = 0.
 \end{equation}
@@ -129,11 +120,10 @@ Writing the equation of motion in terms of the potentials $\mathbf{A}$ and $\Phi
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} = q\left(\mathbf{v} \times \nabla \times \mathbf{A}-\frac{\partial \mathbf{A}}{\partial t} - \nabla \Phi\right).
 \end{equation}
 
-Now using the convective derivative and the vector identity $\mathbf{v} \cdot \nabla \mathbf{p} = (\nabla \mathbf{p})\cdot\mathbf{v} - \mathbf{v} \times (\nabla\times\mathbf{p})$ again, the total time derivative of the momentum expands to
+Now using the convective derivative, $\mathrm{d}\mathbf{p}/\mathrm{d}t = \partial \mathbf{p}/\partial t + \mathbf{v} \cdot \nabla \mathbf{p}$ and the vector identity $\mathbf{v} \cdot \nabla \mathbf{p} = (\nabla \mathbf{p})\cdot\mathbf{v} - \mathbf{v} \times (\nabla\times\mathbf{p})$ again, the total time derivative of the momentum expands to
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} = \frac{\partial\mathbf{p}}{\partial t} +(\nabla\mathbf{p})\cdot\mathbf{v} - \mathbf{v}\times(\nabla\times\mathbf{p}).
 \end{equation}
-\EliasComm{Add derivation to Appendix for vector identity.}
 With this result the equation of motion becomes
 \begin{align}
 \frac{\partial\mathbf{p}}{\partial t} +(\nabla\mathbf{p})\cdot\mathbf{v} - \mathbf{v}\times(\nabla\times\mathbf{p}) &= q\left(\mathbf{v} \times \nabla \times \mathbf{A}-\frac{\partial \mathbf{A}}{\partial t} - \nabla \Phi\right),\nonumber\\
@@ -181,7 +171,6 @@ This means we obtain two separate components:
 From the perpendicular component we see that the transverse canonical momentum is conserved: $\mathbf{p}_\perp + q\mathbf{A} = 0$. If $q = -e$ and $e\mathbf{A}_\perp = \mathbf{a}_\perp$, then $\mathbf{p}_\perp = \mathbf{a}_\perp$. In Cartesian coordinates, this means $p_x = a_x, p_y = a_y$.
 
 For the parallel spatial component $z$ consider the substitution $z = ct$ for light. Thus, $\partial z = c \partial t$. The parallel-component of the vector potential $\mathbf{A}$ is zero, so $u_\parallel = p_\parallel = p_z$:
-
 \begin{equation}
 \frac{\partial}{\partial t}(cp_z - \gamma mc^2) = 0.
 \end{equation}
@@ -256,137 +245,11 @@ z(\xi) &= \frac{a^2_0}{4k}\left(\xi + \frac{1}{2}\sin(2\xi)\right),
 \end{align}
 \end{subequations}
 where we chose the initial conditions $x(0)=y(0)=z(0)=0$  and used $\mathrm{d}\xi/\mathrm{d}t = \omega/\gamma$.
-
-The electron is performing a periodic oscillation around the z-axis, whilst the motion in the z-axis is composed of a constant drift and another oscillation (see Figure \ref{Theory:Figs:FigureOfEight} (left)). This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame (see Figure \ref{Theory:Figs:FigureOfEight} (right)). For $a_0 \leq 1$ the motion in z is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
-
+The electron performs a periodic oscillation around the $z$-axis, whilst the motion in the z-axis is composed of a constant drift and another oscillation (see Figure \ref{Theory:Figs:FigureOfEight} (left)). This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame (see Figure \ref{Theory:Figs:FigureOfEight} (right)). For $a_0 \leq 1$ the motion in z is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
 
 
-\subsection{Electron in a cylindrically symmetric electric field}
-
-The previously discussed case of a particle in a homogeneous magnetic field corresponds to the motion in a magnetic electron spectrometer or the deflection of charged particles in a circular accelerator.
-We will now discuss the motion of an electron in a cylindrically symmetric electric field which resembles the case of an electron in a plasma channel.
-This derivation is based on \cite{WoodThesis}.
-
-Assume a relativistic electron moving in the longitudinal direction and an electric field that is cylindrically symmetric around the propagation axis.
-We ignore any vector potential contributions and only use a scalar potential.
-The Lagrangian of this scenario is described by
-\begin{equation}
-L(\mathbf{r},\mathbf{v},t) = - m_e c^2 \gamma^{-1} - q \Phi,
-\end{equation}
-where $\Phi$ is the scalar potential describing the electrostatic field of the channel.
-The scalar potential is the solution matching the radial Poisson equation in cylindrical symmetry
-
-\begin{equation}
-\frac{1}{r} \frac{\partial}{\partial r} \left(r \frac{\partial \phi}{\partial r}\right) = \frac{- e (n_0 - n_e)}{\epsilon_0},
-\end{equation}
-
-with the solution 
-\begin{equation}
-\phi = -\frac{(n_0 - n_e) e r^2}{4 \epsilon_0},
-\end{equation}
-where $n_0$ is the ion charge density and $n_e$ the electron density in the channel. 
-In the limit of a completely evacuated channel, $n_e \rightarrow 0$, $\phi = -n_0 er^2/(4\epsilon_0)$.
-As before $\mathbf{E} = - \nabla \phi$ and in this case $E_r = - \partial_r \phi$.
-The equation of motion for the radial component is then
-\begin{equation}
-\frac{d}{dt} \mathbf{p} = - \frac{e^2 n_0}{2 \epsilon_0} r,
-\end{equation}
-with $\mathbf{p} = \gamma m_e \mathbf{\dot{r}}$.
-Assume there is no axial acceleration field, the radial component of the velocity is small compared to $c$ and the longitudinal component is close to $c$: $\dot{\gamma}$ is then close to zero. 
-The equation then takes the shape of a harmonic oscillator
-\begin{equation}
-\ddot{r} = - \frac{e^2 n_0}{2\epsilon_0 m_e \gamma} r = - \omega_\beta^2 r,
-\end{equation}
-
-with a frequency we will call the betatron frequency, $\omega_\beta$, which is related to the plasma frequency, $\omega_p$, by $\omega_\beta = \omega_p/\sqrt{2\gamma}$. The plasma frequency will be derived explicitly in Section \ref{Chap:Theory:Sec:PlasmaFreq}.
-As this is the standard harmonic oscillator equation, it follows a solution of shape
-\begin{equation}
-r(t) = A \cos (\omega_\beta t + \varphi),
-\end{equation}
-and with initial conditions $r(t=0) = r_\beta$ and $\dot{r}(t=0) = 0$, we obtain
-\begin{equation}
-r(t) = r_\beta \cos(\omega_\beta t),
-\end{equation}
-where $r_\beta$ is the amplitude of the oscillation, also referred to as the betatron radius.
-\vspace{\baselineskip}
-
-If we continue with the assumption $\dot{\gamma} = 0$, this requires $\beta^2 = \beta^2_r + \beta^2_z = constant$. This gives $\beta_z = \sqrt{\beta^2 - \beta^2_r} \approx \beta (1-\beta^2/2)$, where we used a Taylor expansion and $\beta \approx 1$. If we use the solution for $r(t)$ derived above, $\beta_r = \dot{r}/c$ and $\sin^2 x = (1-\cos 2\theta)/2$, we obtain:
-\begin{equation}
-\beta_z \approx \beta \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right) + \beta \frac{r^2_\beta \omega^2_\beta}{4c^2} \cos (2 \omega_\beta t).
-\end{equation}
-
-Integrating this with the initial condition $z(t=0) = z_0$
-
-\begin{equation}
-\frac{z}{c} \approx \frac{z_0}{c} + \beta \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right) t + \beta \frac{r^2_\beta \omega_\beta}{8c^2}\sin(2\omega_\beta t),
-\end{equation}
-
-where we identify the drift velocity $\beta c \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right)$ and in the moving frame the familiar figure-of-eight motion again.
 
 
-\subsection{Electron in a cylindrically symmetric electric field with axial field}
-
-Now we add will add a constant axial field in the longitudinal (direction of electron propagation) to the previous case. This comes closer to the reality of a laser wakefield accelerator where electrons experience radial focusing and axial accelerating fields at the same time. Significant parts of this derivation are based on \cite{WoodThesis,Glinec2008_BETATRON}.
-
-The electric field component shall now be $E_z$, with $z$ being the longitudinal axis.
-This gives us the extra term $\frac{\partial \phi}{\partial z} = - E_z$.
-The Euler-Lagrangian now has two non-trivial equations of motions.
-First, as before
-\begin{equation}
-\frac{d}{dt} (\gamma m_e \dot{r}) = \frac{\partial }{\partial r} L = -\frac{e^2 n_0}{2\epsilon_0} r,
-\label{Theory:Eq:EoM_Rad_Ax_R}
-\end{equation}
-and, second, the z-component
-\begin{equation}
-\frac{d}{dt} (\gamma m_e \dot{z}) = \frac{\partial }{\partial z} L = e E_z = const.
-\label{Theory:Eq:EoM_Rad_Ax_Z}
-\end{equation}
-
-The change in momentum is now not negligible any more, $\dot{\gamma}\neq 0$, and we have to expand the brackets on the left-hand side of Equations \eqref{Theory:Eq:EoM_Rad_Ax_R} and \eqref{Theory:Eq:EoM_Rad_Ax_Z}.
-The radial component is then
-\begin{equation}
-\dot{\gamma}m_e \dot{r} + \gamma m_e \ddot{r} = - \frac{e^2 n_0}{2 \epsilon_0} r.
-\end{equation}
-
-The axial component is equal to a constant, so we can simply integrate
-\begin{equation}
-\gamma m_e \dot{z} = - e E_z t + const.
-\end{equation}
-
-If we assume that the electron is highly relativistic $\dot{z} \rightarrow c$, so $\dot{\gamma} = eE_z/m_e c$ and
-
-\begin{equation}
-\gamma \beta_z \approx \gamma = - \frac{e E_z t}{m_e c} + \gamma_0 \beta_0,
-\label{Theory:Eq:EoM_Rad_Ax_Gamma}
-\end{equation}
-
-where $\gamma_0 \beta_0$ are the initial conditions.
-\begin{figure}
-\centering
-\includegraphics[width=.8\columnwidth]{betatron_traj.pdf}
-\caption[Particle trajectory of an electron in a cylindrically symmetric electric field with a constant axial accelerating field.]{Particle trajectory of an electron in a cylindrically symmetric electric field with a constant axial accelerating field as described in Equation \eqref{Theory:Eqs:EoM_Betatron} for a plasma of density $n_e = 2 \times 10^{18} cm^{-3}$ as a function of propagation distance.}
-\label{Theory:Figs:BetatronMotion}
-\end{figure}
-Inserting the result from Equation \eqref{Theory:Eq:EoM_Rad_Ax_Gamma} into Equation \eqref{Theory:Eq:EoM_Rad_Ax_R}, we obtain the differential equation
-
-\begin{equation}
-eE_z \dot{r} + (eE_z t + \gamma_0 \beta_0 m_e c) \ddot{r} = - \frac{e^2 n_0 c}{2 \epsilon_0} r,
-\end{equation}
-which we can write as 
-\begin{equation}
-(At + B) \ddot{r} + A \dot{r} + C r = 0,
-\end{equation}
-by using the abbreviations $A = eE_z$, $B = \gamma_0 \beta_0 m_e c$ and $C = e^2 n_0 c/2\epsilon_0$.
-The analytic solution for this differential equation is:
-\begin{subequations}
-\begin{empheq}[box=\widefbox]{align}
-r(t) = \frac{\pi \sqrt{CB}}{A} r_{\beta 0} \Biggl[ &J_1 \left( 2 \sqrt{CB}/A \right) Y_0 \left(2 \sqrt{C (B+At)}/A\right) \\  \nonumber
-&- Y_1 \left(2\sqrt{CB}/A\right)J_0\left(2\sqrt{C(B+At)}/A\right)\Biggr],
-\end{empheq}
-\label{Theory:Eqs:EoM_Betatron}
-\end{subequations}
-with the initial conditions $r(t=0) = r_{\beta 0}$ and $\dot{r}(t=0) = 0$. $J_1, J_0$ are Bessel functions of first kind of order $1$ and $0$, respectively. $Y_1, Y_0$ are Bessel function of the second kind of order $1$ and $0$.
-This motion is shown in Figure \ref{Theory:Figs:BetatronMotion}. We see that the oscillations quickly lose amplitude and fall to a settled value, whereas the wavelength of the oscillations increases as the electron gains momentum and inertia.
 
 \subsection{Ponderomotive Force}
 \label{Theory:Sec:PonderomotiveForce}
@@ -395,21 +258,17 @@ In laser wakefield acceleration (LWFA) a high intensity laser pulse propagates t
 
 The following relativistic derivation of the ponderomotive force is based on \cite{ThomasThesis}.
 We start with the Euler-Lagrange equations after inserting the Lagrangian in terms of the potentials $\mathbf{A}$ and $\Phi$ as given as intermediate step in Equation \eqref{Theory:Eqns:EoMLorentzRaw} on page \pageref{Theory:Eqns:EoMLorentzRaw}:
-
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t} \left[\mathbf{p}+q\mathbf{A}\right]-\left[q\nabla\left( \mathbf{A} \cdot \mathbf{v}\right) - q\nabla \Phi \right] = 0.
 \end{equation}
 
 This can be written in terms of the normalised quantities
 \begin{align}
-\mathbf{a} &= -q \mathbf{A}/m_e c,\nonumber\\
-\phi &= -q\phi/mc^2,\nonumber\\
-\mathbf{v} &\rightarrow \beta = \mathbf{v}/c,\nonumber\\
-\mathbf{p} &\rightarrow \mathbf{p}/m c,
+\mathbf{a} &= -q \mathbf{A}/m_e c, & \phi &= -q\phi/mc^2,\nonumber\\
+\mathbf{v} &\rightarrow \beta = \mathbf{v}/c, & \mathbf{p} &\rightarrow \mathbf{p}/m c,
 \end{align}
 
 resulting in
-
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t} \left[\mathbf{p}-\mathbf{a}\right] - \left(c\nabla \mathbf{a}\right) - c \nabla \phi = 0.
 \end{equation}
@@ -425,6 +284,7 @@ When averaging over the time of a period $T = 2\pi/\omega$, the terms of linear 
 \begin{equation}
 \boxed{\left\langle\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{u}\right\rangle \sim -\left\langle\frac{1}{\gamma}c\nabla\frac{\mathbf{a}^2}{2}\right\rangle,}
 \end{equation}
+
 which is the ponderomotive force $\mathbf{F}_p$ acting on a single electron. Since $\mathbf{F}_p \sim \nabla \left\langle\mathbf{a}^2\right\rangle$, this implies $\mathbf{F}_p \sim \nabla \left\langle I\right\rangle$, i.e. the ponderomotive force pushes electrons away from regions of high intensity and is hence a suitable force to drive LWFA.
 
 On the other hand, the ponderomotive force is suppressed for ultrarelativistic particles as $1/\gamma \ll 1$ as considered in relativistic inverse Compton scattering geometries as used in studies of radiation reaction (see Chapters \ref{Chap:linICS}, \ref{Chap:RR15} and \cite{Cole2018_RR,Poder2018_RR,Burke1997_RR,Bula1996_RR}).
@@ -452,128 +312,6 @@ We then investigate Compton scattering and its classical low-limit Thomson scatt
 Finally, we will introduce the process of bremsstrahlung where electrons interact with the nuclear Coulomb field to produce X-ray and gamma radiation.
 \EliasComm{Maybe move classical and quantum treatment to start of radiation. Including Furry picture, nonlinear effects...}
 A review of radiation mechanisms and sources in the context of wakefield accelerators can be found in \cite{Corde2013_Rad} and \cite{Albert2016_APP}.
-
-\subsection{Synchrotron Radiation}
-
-\EliasComm{Draw parallel (see Jackson on undulator equation) to figure of eight motion and hence ICS/Betatron/harmonics.}
-
-based on Jon Wood \cite{WoodThesis} and Jackson \cite{Jackson}:
-
-\EliasComm{energy loss per turn.}
-\EliasComm{sketch on emission and cones.}
-
-Spectrum (angularly integrated)
-
-\begin{equation}
-\frac{dI}{d\omega} = \frac{\sqrt{3}}{4} \frac{e^2}{\pi c \epsilon_0} \gamma \frac{\omega}{\omega_c} \int_{\omega/\omega_c}^{\inf} K_{5/3}(x)dx
-\end{equation}
-
-Equation for on- and off-axis synchrotron
-
-\begin{equation}
-\frac{d^2 I}{dEd\Omega} = \frac{3e^2}{16\pi^3 \hbar c \epsilon_0} \gamma^2 \frac{E^2}{E_c^2} (1+\gamma^2 \theta^2)^2 [K_{2/3}^2(\psi) + \frac{\gamma^2 \theta^2}{1+\gamma^2 \theta^2} K_{1/3}^2 (\psi)]
-\end{equation}
-
-\begin{equation}
-\psi = \frac{E}{2E_c}(1+\gamma^2 \theta^2)^{3/2}
-\end{equation}
-
-Critical frequency
-\begin{equation}
-\omega_c = \frac{3}{2} \gamma^3 \frac{c}{\rho}
-\end{equation}
-
-\subsection{Undulator and Wiggler Radiation}
-\label{Theory:Sec:UndulatorWiggler}
-
-
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{wiggler_offaxis.png}
-\caption{Synchrotron radiation.}
-\end{figure}
-
-To harvest and direct the radiation of an accelerated relativistic electron more efficiently a set of alternating magnets is used. The electron oscillates and emits radiation preferentially at the turning points as the acceleration is the strongest there and in a forwards-pointing cone with a diameter proportional to $1/\gamma$.\addref
-
-The rapid change of direction in the field and hence forced trajectory of the electron in transversal direction results in a change of effective Lorentz factor in the forward direction.
-
-\begin{equation}
-\left\langle\gamma\right\rangle \approx \frac{\gamma}{\sqrt{1 + 0.5 K^2}}
-\end{equation}
-
-Commonly two regimes are identified based on the wiggler parameter:\addref
-
-\begin{equation}
-K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c}
-\end{equation}
-
-For $K \ll 1$ it is called undulator regime, large $K \gg 1$ indicate the wiggler regime.
-In the wiggler regime the divergence of the cone is larger and the radiation has a large bandwidth.
-In the undulator regime the radiation is strongly collimated and interference can occur resulting in single harmonics being emitted.
-
-Constructive interference with harmonics of wavelength:
-
-\begin{equation}
-\lambda = \frac{\lambda_u}{2 n \gamma^2} \left( 1+ \frac{K^2}{2} + \gamma^2 \theta^2\right)
-\end{equation}
-
-If an electron beam of sufficient quality is inserted in a very long undulator the emitted radiation and the electron beam are able to interact and modulate resulting in the emission of coherent radiation. This is observed in free-electron lasers.
-
-The equations introduced for synchrotron radiation work similarly for wiggler radiation. The reference to the bending radius is usually replaced by an expression including the magnet periodicity or the $K$ parameter.
-
-
-For a wiggler this becomes:
-\begin{equation}
-\omega_c \sim \frac{3}{2} \gamma^2 K k_u c
-\end{equation}
-
-Maximum energy 
-\begin{equation}
-\hbar \omega_{eV} = \frac{0.496[E(GeV)]^2}{(1+ K^2/2) \lambda_0 (m)}
-\end{equation}
-
-Number of emitted photons per magnet period (later compare to number of photons emitted in wiggler), is then \cite{Jackson}
-\begin{equation}
-N_\gamma = \frac{2 \pi}{3} \alpha K^2
-\end{equation}
-
-
-
-\subsection{Betatron Radiation}
-
-Just as the evacuated `bubble' in a wakefield accelerates particles in a similar way as conventional RF cavities would, the generation of X-rays draws another parallel in conventional devices.
-\vspace{\baselineskip}
-
-Due to initial transverse momentum on injection, and the focusing and defocusing fields of the cavity, electrons start to oscillate around the central axis\addref. 
-The electrons oscillate at the betatron frequency $\omega_\beta$
-\begin{equation}
-\omega_\beta = \omega_p / \sqrt{2 \gamma},
-\end{equation}
-which depends on the plasma frequency $\omega_p$ and the energy of the electrons, here given by the relativistic Lorentz factor $\gamma$.
-
-Similarly to electrons in an insertion device (undulator or wiggler) these oscillations lead to the emission of radiation in a narrow forward pointing cone due to the relativistic forward momentum of the particles.
-Not surprisingly, the equations describing both processes are very similar.
-
-The collimation depends on $K$, the wiggler parameter (for insertion devices) or betatron strength parameter
-\begin{equation}
-K = \gamma k_\beta r_\beta,
-\end{equation}
-where $k_\beta = \omega_\beta / c$ is the wavenumber and $r_\beta$ is the betatron radius, the amplitude of the oscillations. If $K \gg 1$ it is called the undulator parameter.
-
-The radiation generated follows the on-axis synchrotron radiation with a critical energy
-\begin{equation}
-\boxed{E_c = \frac{3}{4} \hbar \gamma^2 \omega^2_p r_\beta / c,}
-\end{equation}
-where this energy parameter indicates when approximately half the energy radiated above and below this value\addref.
-\EliasComm{Explain this better.}
-\vspace{\baselineskip}
-
-The oscillation of the particles and hence the emission of radiation can be enhanced in wakefield experiments by tailoring the wavefront \cite{Mangles2009_BETATRON} or by using different injection mechanisms\addref.
-In LWFA betatron radiation typically reaches the soft X-ray regime of a few to tens of keV.
-\EliasComm{Maybe show energy increase can be done by increasing energy, plasma frequency or betatron radius.}
-
-Difference here is that we use an quasi-electrostatic field instead of a magnetic field, but radiation from a synchrotron, an insertion device (wiggler) and betatron radiation share a common description rooted in the equation of motion (figure-of-eight motion) even though using different field structures and $K$ parameters.
-
 
 
 \subsection{Compton Scattering}
@@ -1185,6 +923,8 @@ Here
 
 \EliasComm{Add intro.}
 
+Pair production and annihilation is a pure quantum effect.
+
 \subsection{Dirac annihilation}
 \begin{figure}
 \centering
@@ -1200,7 +940,7 @@ It can be described by the following equation
 e^+ + e^- \longrightarrow \gamma + \gamma,
 \end{equation}
 or in terms of the Feynman diagram in Figure \ref{Theory:Figs:Feynman:PairAnnihilation:PairProductionBWBH} (left).
-The annihilation of electron-positron pairs is commonly found in radioactive decays. There relatively `slow' pairs collide and the emitted gamma rays are coincident emitted at 180 degrees in the centre-of-mass frame with $E_{ph} = m_e c^2$ each. This is, for instance, used in coincidence measurements in radio-isotope therapy to localise tumours \cite{PET_BETAPLUS}.
+The annihilation of electron-positron pairs is commonly found in radioactive decays. There relatively `slow' pairs collide and the emitted gamma rays are emitted at 180 degrees in the centre-of-mass frame with $E_{ph} = m_e c^2$ each. This is, for instance, used in coincidence measurements in radio-isotope therapy to localise tumours \cite{PET_BETAPLUS}.
 
 The total cross section, $\sigma_{e^+e^-}$, is given by \cite{Ruffini2010_PAIRSASTRO}: 
 \begin{equation}
