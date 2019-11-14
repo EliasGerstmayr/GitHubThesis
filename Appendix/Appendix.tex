@@ -603,6 +603,11 @@ Replacing $p \cdot k = m \omega$ and $p \cdot k' = m\omega'$
 \end{equation}
 
 
+\subsubsection{Spin dependent Klein Nishina}
+
+\begin{equation}
+\frac{d \sigma}{d \Omega} = \frac{\alpha^2}{m^2} \left(\frac{\omega'}{\omega}\right)^2 \left[ \frac{\omega'}{\omega} + \frac{\omega}{\omega'} - 2\sin^2 \theta \cos^2 \phi \right].
+\end{equation}
 
 \subsubsection{Spin helicity}
 
@@ -653,6 +658,91 @@ with $\gamma_c = 1/\sqrt{1-(v_c/c)^2}$ and $\mathbf{v}_c$, the velocity of the c
 \mathbf{v}_c = \frac{(\mathbf{p}_{\gamma1} + \mathbf{p}_{\gamma2})^2}{\epsilon_{\gamma1} + \epsilon_{\gamma2}}
 \end{equation}
 
+
+\subsection{Nonlinear Breit-Wheeler cross section}
+
+The probability of pair production by one photon of momentum $l$ in interaction with $n$ laser photons of momentum $k$ per unit volume in unit time (circular polarisation):
+
+\begin{equation}
+P_{\gamma\gamma} = \frac{e^2 m^2_e}{16 l_0} \sum^\infty_{n>n_0} \int^\nu_1 \frac{\dif \nu}{\nu^{3/2} (1+\nu)^{1/2}}[2 J^2_n(z) + \eta^2 (2\nu -1) (J^2_{n+1} + J^2_{n-1} - 2J^2_n)],
+\end{equation}
+with $\nu = (kl)^2/4(kq)(kq')$, $\nu_n = n/n_0$, $n_0 = 2m^2_\ast/(kl)$ and Bessel functions $J_n(z)$.
+
+\begin{equation}
+z = 4m^2_e \frac{\eta (1+ \eta^2)^{1/2}}{(kl)}\left[\frac{\nu}{\nu_n}\left(1- \frac{\nu}{\nu_n}\right)\right]^{1/2}.
+\end{equation}
+
+
+\subsection{Nonlinear Compton scattering cross section}
+
+
+The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation \cite{Ritus1985_QRR,BlackburnThesis} and are given by (averaged spin, in and out, unpolarised states) for $n$ scattered photons for circular polarisation
+\begin{equation}
+\frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 E}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
+\end{equation}
+and for linear polarisation
+\begin{equation}
+\frac{\dif W_n}{\dif x} = \frac{2 \alpha m^2}{\pi E}\int^{\pi/2}_0 \left[-A^2_0 + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (A^2_1 - A_0 A_2)\right]\dif \varphi.
+\end{equation}
+The frequency of the incoming photons is $\omega$, the scattered photon carries an energy $\omega' = xE$, i.e $x$ is the fraction of energy the photon carries away.
+$J_n$ is shorthand for $J_n(z)$, and $A_i = A_i(n,a,b)$, with
+\begin{align}
+z &= \frac{2 a_0}{\sqrt{1+a^2_0}}\frac{\sqrt{x(nu - (1+nu)x)}}{u(1-x)},\\
+u &= \frac{2k \cdot q}{q^2} = \frac{4 E \omega}{m^2 (1+a^2_0)}.
+\end{align}
+The function $A_i$ and its arguments are defined as 
+\begin{align}
+A_i(n,a,b) &= \frac{1}{\pi}\int^\pi_0 \cos^i \phi \cos [(a+2b\cos \phi) \sin \phi - n\phi] \dif \phi,\\
+a &= \frac{\sqrt{8}Qn a_0}{1+a^2_0 + Q^2}\cos \varphi,\\
+b &= - \frac{(n/2) a^2_0}{1+a^2_0 + Q^2},\\
+Q^2 &= (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
+\end{align}
+
+\subsection{Radiation Length}
+
+
+A useful quantity is the radiation length, $X_0$ \cite{Jackson}:
+
+\begin{equation}
+\frac{\dif E}{\dif x} = -\frac{E}{X_0},
+\end{equation}
+with $E(x) = E_0 e^{-x/X_0}$ and
+\begin{equation}
+X_0 = \left[ 4N \frac{Z(Z+1)e^2}{\hbar c} \left(\frac{z^2 e^2}{Mc^2}\right)^2 \ln \left(\frac{233 M}{Z^{1/3} m}\right)\right]^{-1}
+\end{equation}
+or (PDG\addref{}, Tsai REF\addref):
+\begin{equation}
+X_0 = \left[ 4 \alpha r^2_e \frac{N_A}{A}\left\lbrace Z^2 \left( L_{rad} - f(Z) \right) + Z L'_{rad} \right\rbrace\right]^{-1},
+\end{equation}
+with $A = 1~ \mathrm{g}\,\mathrm{mol}^{-1}$.  $f(Z)$ for up to uranium can be approximated by (REF\addref)
+\begin{equation}
+f(Z) = a^2 \left[(1+a^2)^{-1} + 0.20206 - 0.0369 a^2 + 0.0083a^4 - 0.002 a^6\right],
+\end{equation}
+with $a = \alpha Z$.
+The radiation length in a mixture or compound of $n$ components can be approximated by the sum of radiation lengths of the individual components weighted by their weight
+\begin{equation}
+\frac{1}{X_0} = \sum^n_{j = 1} \frac{w_j}{X_j}.
+\end{equation}
+
+
+\subsection{Bremsstrahlung in Born approximation}
+
+The (in energy) differential cross section for electron-nucleus bremsstrahlung in a fixed field in Born approximation, neglecting the recoil of the nucleus, is given by\addref
+\begin{align}
+\frac{\dif \sigma_{eZ}}{\dif \omega} = \frac{\alpha Z^2 r^2_e}{\omega}\frac{u'}{u}\Bigg\lbrace &\frac{4}{3} - 2 \gamma \gamma' c^2 \frac{u^2 + u'^2}{u^2 u'^2} + c^3 \left( \frac{\epsilon \gamma'}{u^3} + \frac{\epsilon'\gamma}{u'^3}-\frac{\epsilon\epsilon^3}{u u' c}\right)\\ \nonumber
+&+ L\Bigg[\frac{8}{3} \frac{\gamma \gamma' c^2}{u u'} + \frac{(\hbar \omega)^2 c^2}{m^2_e u^3 u'^3} (\gamma^2 \gamma'^2 + u^2 u'^2/c^4)\\ \nonumber
+& +\frac{\hbar \omega}{2 m_e u u'}\left( \frac{\gamma \gamma'+ u^2/c^2}{u^3/c^3}- \frac{\gamma \gamma' + u^2/c^2}{u'^3/c^3}-\frac{2\hbar \omega \gamma \gamma'c^2}{m_e u^2 u'^2}\right)\Bigg]\Bigg\rbrace,
+\end{align}
+where
+\begin{align*}
+L &= \ln \left( \frac{\gamma \gamma' + u u'/c^2 -1}{\hbar \omega/m_e c^2}\right),\\
+\epsilon &= 2 \ln(\gamma + u/c),\\
+\epsilon' &= 2 \ln(\gamma' + u'/c).
+\end{align*}
+Primed quantities denote post-interaction values and $\gamma m_e c^2 = \hbar \omega + \gamma' m_e c^2$, assuming all energy is transferred into radiation. 
+The differential equation in the ultra-relativistic limit including screening and electron contributions is given in the Appendix in Section \ref{Appendix:Brems_with_Screening}.
+
+
 \subsection{Bremsstrahlung with screening}
 \label{Appendix:Brems_with_Screening}
 
@@ -676,12 +766,19 @@ f(z) \approx 1.202 z - 1.0369z^2 + 1.008z^3/(1+z).
 \end{align*}
 with $a=184.15(2.718)^{-1/2} Z^{-1/3}/m_e$, $a' = 1194(2.718)^{-1/2} Z^{-2/3}/m_e$, $b = a \delta$, $b' = a' \delta$, $\delta = m^2_e \hbar \omega/(2\gamma m_e c^2(\hbar \omega - \gamma m_e c^2))$.
 
+\subsection{Bremsstrahlung in terms of radiation length}
+
+We can then write in simplified terms with $X_0$ for the differential cross section (REF\addref)
+\begin{equation}
+\frac{\dif \sigma}{\dif (\hbar \omega)} = \frac{A}{X_0 N_A \hbar \omega} \left(\frac{4}{3} - \frac{4}{3}y + y^2\right),
+\end{equation}
+where $y= \hbar\omega/E$.
 
 
 \chapter{Statistics}
 
 
-\subsection{Linear correlation coefficient}
+\section{Linear correlation coefficient}
 
 The Pearson correlation coefficient for two random variables and $N$ data points is defined as:
 \begin{equation}
@@ -697,7 +794,7 @@ The correlation coefficient is a measure of the linear dependence of the two var
 REFS: MATLAB and FISHER STATS 1958, KENDALL ADVANCED 1979, PRESS NUMERICAL 1992
 
 
-\subsection{Normal Distribution}
+\section{Normal Distribution}
 
 Gaussian probability density function
 \begin{equation}
@@ -716,7 +813,7 @@ Standard normal cumulative distribution function
 \Phi(x) = \frac{1}{2} \left[ 1 - \mathrm{erf}\left(-\frac{x}{\sqrt{2}}\right)\right]
 \end{equation}
 
-\subsection{Kernel Density Estimate}
+\section{Kernel Density Estimate}
 
 MATLAB:
 
