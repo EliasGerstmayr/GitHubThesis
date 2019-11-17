@@ -114,6 +114,7 @@ At the end of this section the implications for electron-laser timing from a per
 At \textsc{Gemini} both laser arms are `intrinsically' synchronised as they originate from the same source (oscillator), but might arrive at the interaction point at different times as they travel on different beam paths. By measuring the difference in the time of arrival of both laser pulses, $\Delta \tau$, the length of the beam paths can be adjusted accordingly, such that $\Delta \tau \rightarrow 0$, i.e. the laser pulses are `timed'. Temporal separations on the nanosecond level are typically corrected by extending the beam path of the `early' laser pulse by several optics. Smaller adjustments corresponding to temporal shifts of tens of picoseconds or less are performed using a motorised linear stage (Newport M-ILS250) on the `split-and-delay' (SAD) table in the laser area. The SAD delay stage adds or removes beam path in double-pass at micrometre or correspondingly few femtosecond precision.
 
 \subsection{Photodiodes}
+\label{Methods:Sec:DiodeTiming}
 
 In the experiments described in this thesis two attenuated (low power) laser pulses were spatially overlapped at the interaction point. The pulses are then either directed onto the active chip of a photodiode or are scattered from an object placed at the interaction point, for instance a piece of lens tissue, which the photodiode then faces. Each laser pulse triggers a response in the photodiode that can be measured with an oscilloscope. Since each pulse is only $\sim 40\fs$ long, almost instantaneous for the diode, the response for each pulse is a symmetric peak with the rise/fall time as width. The relative time of arrival can then be determined by measuring the separation of the two peaks. At \textsc{Gemini} the fast EOT-4000 GaAs photodetector (see Figure \ref{Methods:Figs:Photodiode}) with a rise/fall time of $< 30\,\mathrm{ps}$ was used in conjunction with a Lecroy WaveMaster 813Zi-B oscilloscope ($>13\,\mathrm{GHz}$). The detectors were only used in air and were not tested for vacuum use.
 
@@ -281,6 +282,7 @@ and specifically for $\lambda_0 = 0.8\microns$
 where the second term dominates if the injection point is within the first few millimetres. $\Delta \tau$ is shown as a function of $d$ for a range of electron densities, $n_e$, in Figure \ref{Methods:Figs:LaserElectronOffset_ne}, assuming $N = 1/2$.
 
 \subsubsection{Stability of synchronisation over extended periods of time}
+\label{Methods:Sec:TimingStability}
 
 \begin{figure}
 \centering
