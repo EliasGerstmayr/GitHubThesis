@@ -22,6 +22,11 @@ J.~D. Jackson.
 \newblock \doi{10.1119/1.19136}.
 \newline\urlprefix\url{https://doi.org/10.1119/1.19136}
 
+\bibitem{Spohn2000_RR}
+H.~Spohn.
+\newblock \enquote{The critical manifold of the Lorentz-Dirac equation}.
+\newblock \emph{EPL (Europhysics Letters)}, 50, (2000), p. 287.
+
 \bibitem{Streeter2018_TEMPFEEDBACK}
 M.~Streeter et~al.
 \newblock \enquote{Temporal feedback control of high-intensity laser pulses to
@@ -31,11 +36,6 @@ M.~Streeter et~al.
 \bibitem{Streeter2019_RASTERSCAN}
 M.~Streeter.
 \newblock Private Communication.
-
-\bibitem{Shalloo_GEMINIDRIFT}
-R.~Shalloo et~al.
-\newblock \enquote{Measurement of femtosecond-scale drift and jitter of the
-  delay between the North and South Beams of Gemini}.
 
 \bibitem{Danson2019_PWLASERS}
 C.~N. Danson et~al.
@@ -48,19 +48,6 @@ A.~G.~R. Thomas.
   injection in laser-wakefield accelerators}.
 \newblock Ph.D. thesis, Imperial College London (University of London), 2007.
 \newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.439099}
-
-\bibitem{WoodThesis}
-J.~C. Wood.
-\newblock \emph{Betatron radiation from laser wakefield accelerators and its
-  applications}.
-\newblock Ph.D. thesis, Imperial College London, 2016.
-\newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.739605}
-
-\bibitem{Glinec2008_BETATRON}
-Y.~Glinec et~al.
-\newblock \enquote{Direct observation of betatron oscillations in a
-  laser-plasma electron accelerator}.
-\newblock \emph{EPL (Europhysics Letters)}, 81, (2008), p. 64001.
 
 \bibitem{Cole2018_RR}
 J.~Cole et~al.
@@ -99,12 +86,6 @@ F.~Albert and A.~G. Thomas.
   sources}.
 \newblock \emph{Plasma Physics and Controlled Fusion}, 58, (2016), p. 103001.
 
-\bibitem{Mangles2009_BETATRON}
-S.~Mangles et~al.
-\newblock \enquote{Controlling the spectrum of x-rays generated in a
-  laser-plasma accelerator by tailoring the laser wavefront}.
-\newblock \emph{Applied Physics Letters}, 95, (2009), p. 181106.
-
 \bibitem{Compton1923_Compton}
 A.~H. Compton.
 \newblock \enquote{A quantum theory of the scattering of X-rays by light
@@ -122,16 +103,85 @@ J.~J. Thomson.
 \newblock \emph{Conduction of electricity through gases}.
 \newblock Cambridge University Press, 1906.
 
+\bibitem{Kramer2018_Gamma}
+J.~Kr{\"a}mer et~al.
+\newblock \enquote{Making spectral shape measurements in inverse Compton
+  scattering a tool for advanced diagnostic applications}.
+\newblock \emph{Scientific reports}, 8, (2018), p. 1398.
+
+\bibitem{Esarey1993_NT}
+E.~Esarey, S.~K. Ride, and P.~Sprangle.
+\newblock \enquote{Nonlinear Thomson scattering of intense laser pulses from
+  beams and plasmas}.
+\newblock \emph{Phys. Rev. E}, 48, (1993), pp. 3003--3021.
+\newblock \doi{10.1103/PhysRevE.48.3003}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.48.3003}
+
+\bibitem{Ruffini2010_PAIRSASTRO}
+R.~Ruffini, G.~Vereshchagin, and S.-S. Xue.
+\newblock \enquote{Electron--positron pairs in physics and astrophysics: from
+  heavy nuclei to black holes}.
+\newblock \emph{Physics Reports}, 487, (2010), pp. 1--140.
+
+\bibitem{Shen1972_STRAGGLING}
+C.~S. Shen and D.~White.
+\newblock \enquote{Energy Straggling and Radiation Reaction for Magnetic
+  Bremsstrahlung}.
+\newblock \emph{Phys. Rev. Lett.}, 28, (1972), pp. 455--459.
+\newblock \doi{10.1103/PhysRevLett.28.455}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.28.455}
+
+\bibitem{Shen2018_SULF}
+B.~Shen et~al.
+\newblock \enquote{Exploring vacuum birefringence based on a 100 PW laser and
+  an x-ray free electron laser beam}.
+\newblock \emph{Plasma Physics and Controlled Fusion}, 60, (2018), p. 044002.
+
+\bibitem{Gales2018_ELINP}
+S.~Gales et~al.
+\newblock \enquote{The extreme light infrastructure?nuclear physics (ELI-NP)
+  facility: New horizons in physics with 10 PW ultra-intense lasers and 20 MeV
+  brilliant gamma beams}.
+\newblock \emph{Reports on Progress in Physics}, 81, (2018), p. 094301.
+
+\bibitem{Weber2017_ELIBeamlines}
+S.~Weber et~al.
+\newblock \enquote{P3: An installation for high-energy density plasma physics
+  and ultra-high intensity laser--matter interaction at ELI-Beamlines}.
+\newblock \emph{Matter and Radiation at Extremes}, 2, (2018), p. 149.
+
+\bibitem{Zou2015_Apollon}
+J.~Zou et~al.
+\newblock \enquote{Design and current progress of the Apollon 10 PW project}.
+\newblock \emph{High Power Laser Science and Engineering}, 3.
+
 \bibitem{Ritus1985_QRR}
 V.~Ritus.
 \newblock \enquote{Quantum effects of the interaction of elementary particles
   with an intense electromagnetic field}.
 \newblock \emph{Journal of Russian Laser Research}, 6, (1985), pp. 497--617.
 
-\bibitem{BlackburnThesis}
-T.~G. Blackburn.
-\newblock \emph{QED effects in laser-plasma interactions}.
-\newblock Ph.D. thesis, Oxford University, UK, 2015.
+\bibitem{Blackburn2014_QRR}
+T.~G. Blackburn et~al.
+\newblock \enquote{Quantum Radiation Reaction in Laser--Electron-Beam
+  Collisions}.
+\newblock \emph{Phys. Rev. Lett.}, 112, (2014), p. 015001.
+\newblock \doi{10.1103/PhysRevLett.112.015001}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.112.015001}
+
+\bibitem{Ridgers2017_QRR}
+C.~Ridgers et~al.
+\newblock \enquote{Signatures of quantum effects on radiation reaction in
+  laser--electron-beam collisions}.
+\newblock \emph{Journal of Plasma Physics}, 83.
+
+\bibitem{DiPiazza2010_QRR}
+A.~Di~Piazza, K.~Z. Hatsagortsyan, and C.~H. Keitel.
+\newblock \enquote{Quantum Radiation Reaction Effects in Multiphoton Compton
+  Scattering}.
+\newblock \emph{Phys. Rev. Lett.}, 105, (2010), p. 220403.
+\newblock \doi{10.1103/PhysRevLett.105.220403}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.105.220403}
 
 \bibitem{DiPiazza2012_ICS}
 A.~Di~Piazza et~al.
@@ -153,6 +203,12 @@ A.~G.~R. Thomas et~al.
 \newblock \emph{Phys. Rev. X}, 2, (2012), p. 041004.
 \newblock \doi{10.1103/PhysRevX.2.041004}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevX.2.041004}
+
+\bibitem{Burton2014_CRR}
+D.~A. Burton and A.~Noble.
+\newblock \enquote{Aspects of electromagnetic radiation reaction in strong
+  fields}.
+\newblock \emph{Contemporary Physics}, 55, (2014), pp. 110--121.
 
 \bibitem{Bulanov2011_LADLL}
 S.~V. Bulanov et~al.
@@ -177,11 +233,10 @@ S.~V. Bulanov et~al.
 \newblock \doi{10.1103/PhysRevE.84.056605}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.84.056605}
 
-\bibitem{Ridgers2017_QRR}
-C.~Ridgers et~al.
-\newblock \enquote{Signatures of quantum effects on radiation reaction in
-  laser--electron-beam collisions}.
-\newblock \emph{Journal of Plasma Physics}, 83.
+\bibitem{Baylis2002_LL}
+W.~Baylis and J.~Huschilt.
+\newblock \enquote{Energy balance with the Landau--Lifshitz equation}.
+\newblock \emph{Physics Letters A}, 301, (2002), pp. 7--12.
 
 \bibitem{Dirac1930_Annihilation}
 P.~A. Dirac.
@@ -216,12 +271,6 @@ C.~D. Anderson.
 D.~L. Bailey et~al.
 \newblock \emph{Positron emission tomography}.
 \newblock Springer, 2005.
-
-\bibitem{Ruffini2010_PAIRSASTRO}
-R.~Ruffini, G.~Vereshchagin, and S.-S. Xue.
-\newblock \enquote{Electron--positron pairs in physics and astrophysics: from
-  heavy nuclei to black holes}.
-\newblock \emph{Physics Reports}, 487, (2010), pp. 1--140.
 
 \bibitem{BreitWheeler1934_BW}
 G.~Breit and J.~A. Wheeler.
@@ -335,6 +384,12 @@ W.~Mori.
 \newblock \emph{IEEE Journal of Quantum Electronics}, 33, (1997), pp.
   1942--1953.
 
+\bibitem{ColeThesis}
+J.~M. Cole.
+\newblock \emph{Diagnosis and application of laser wakefield accelerators}.
+\newblock Ph.D. thesis, Imperial College London, 2015.
+\newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.695533}
+
 \bibitem{Sprangle1987_SELFFOCUS}
 P.~Sprangle, C.-M. Tang, and E.~Esarey.
 \newblock \enquote{Relativistic self-focusing of short-pulse radiation beams in
@@ -364,12 +419,6 @@ A.~Pukhov and J.~Meyer-ter Vehn.
 \newblock \enquote{Laser wake field acceleration: the highly non-linear
   broken-wave regime}.
 \newblock \emph{Applied Physics B}, 74, (2002), pp. 355--361.
-
-\bibitem{ColeThesis}
-J.~M. Cole.
-\newblock \emph{Diagnosis and application of laser wakefield accelerators}.
-\newblock Ph.D. thesis, Imperial College London, 2015.
-\newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.695533}
 
 \bibitem{Mendoncca1994_PHOTONACC}
 J.~Mendon{\c{c}}a and L.~O. e~Silva.
@@ -470,6 +519,13 @@ J.~M. Dawson.
 A.~Akhiezcr and R.~Polovin.
 \newblock \enquote{On the theory of wave motions of relativistic plasma}.
 \newblock \emph{JETP}, 3, (1956), p. 696.
+
+\bibitem{WoodThesis}
+J.~C. Wood.
+\newblock \emph{Betatron radiation from laser wakefield accelerators and its
+  applications}.
+\newblock Ph.D. thesis, Imperial College London, 2016.
+\newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.739605}
 
 \bibitem{Kostyukov2004_BUBBLEFIELDS}
 I.~Kostyukov, A.~Pukhov, and S.~Kiselev.
@@ -644,6 +700,11 @@ I.~Malitson.
 \newblock \enquote{Interspecimen comparison of the refractive index of fused
   silica}.
 \newblock \emph{Josa}, 55, (1965), pp. 1205--1209.
+
+\bibitem{Shalloo_GEMINIDRIFT}
+R.~Shalloo et~al.
+\newblock \enquote{Measurement of femtosecond-scale drift and jitter of the
+  delay between the North and South Beams of Gemini}.
 
 \bibitem{Wilks2001_IONACC}
 S.~C. Wilks et~al.
@@ -825,12 +886,6 @@ L.~Lisi et~al.
 \newblock In \enquote{2018 IEEE Advanced Accelerator Concepts Workshop (AAC)},
   pp. 1--4. IEEE, 2018.
 
-\bibitem{Kramer2018_Gamma}
-J.~Kr{\"a}mer et~al.
-\newblock \enquote{Making spectral shape measurements in inverse Compton
-  scattering a tool for advanced diagnostic applications}.
-\newblock \emph{Scientific reports}, 8, (2018), p. 1398.
-
 \bibitem{Nakano2001_ICSNuclear}
 T.~Nakano et~al.
 \newblock \enquote{Multi-GeV laser-electron photon project at SPring-8}.
@@ -1000,14 +1055,6 @@ R.~Weingartner et~al.
 \newblock \doi{10.1103/PhysRevSTAB.15.111302}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.15.111302}
 
-\bibitem{Esarey1993_NT}
-E.~Esarey, S.~K. Ride, and P.~Sprangle.
-\newblock \enquote{Nonlinear Thomson scattering of intense laser pulses from
-  beams and plasmas}.
-\newblock \emph{Phys. Rev. E}, 48, (1993), pp. 3003--3021.
-\newblock \doi{10.1103/PhysRevE.48.3003}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.48.3003}
-
 \bibitem{Kneip2010_BETATRON}
 S.~Kneip et~al.
 \newblock \enquote{Bright spatially coherent synchrotron X-rays from a
@@ -1168,19 +1215,6 @@ C.~Harvey, M.~Marklund, and A.~R. Holkundkar.
 \newblock \doi{10.1103/PhysRevAccelBeams.19.094701}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.094701}
 
-\bibitem{Gales2018_ELINP}
-S.~Gales et~al.
-\newblock \enquote{The extreme light infrastructure?nuclear physics (ELI-NP)
-  facility: New horizons in physics with 10 PW ultra-intense lasers and 20 MeV
-  brilliant gamma beams}.
-\newblock \emph{Reports on Progress in Physics}, 81, (2018), p. 094301.
-
-\bibitem{Weber2017_ELIBeamlines}
-S.~Weber et~al.
-\newblock \enquote{P3: An installation for high-energy density plasma physics
-  and ultra-high intensity laser--matter interaction at ELI-Beamlines}.
-\newblock \emph{Matter and Radiation at Extremes}, 2, (2018), p. 149.
-
 \bibitem{EPAC_Website}
 C.~L. Facility.
 \newblock \enquote{Introducing the Extreme Photonics Applications Centre
@@ -1200,11 +1234,6 @@ A.~Maksimchuk et~al.
 \newblock \enquote{Zettawatt-Equivalent Ultrashort Pulse Laser System (ZEUS) at
   the University of Michigan}.
 \newblock \emph{Bulletin of the American Physical Society}.
-
-\bibitem{Zou2015_Apollon}
-J.~Zou et~al.
-\newblock \enquote{Design and current progress of the Apollon 10 PW project}.
-\newblock \emph{High Power Laser Science and Engineering}, 3.
 
 \bibitem{Li2017_SULF}
 R.~Li et~al.
@@ -1239,20 +1268,6 @@ A.~Kessel et~al.
 \newblock \enquote{Relativistic few-cycle pulses with high contrast from
   picosecond-pumped OPCPA}.
 \newblock \emph{Optica}, 5, (2018), pp. 434--442.
-
-\bibitem{Shen2018_SULF}
-B.~Shen et~al.
-\newblock \enquote{Exploring vacuum birefringence based on a 100 PW laser and
-  an x-ray free electron laser beam}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 60, (2018), p. 044002.
-
-\bibitem{Blackburn2014_QRR}
-T.~G. Blackburn et~al.
-\newblock \enquote{Quantum Radiation Reaction in Laser--Electron-Beam
-  Collisions}.
-\newblock \emph{Phys. Rev. Lett.}, 112, (2014), p. 015001.
-\newblock \doi{10.1103/PhysRevLett.112.015001}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.112.015001}
 
 \bibitem{Enterria2013_PhPh}
 D.~d'Enterria and G.~G. da~Silveira.
@@ -1409,14 +1424,6 @@ V.~Baier, V.~Katkov, and V.~Strakhovenko.
   crystals at high energy}.
 \newblock \emph{Radiation Effects and Defects in Solids}, 122, (1991), pp.
   527--556.
-
-\bibitem{Shen1972_STRAGGLING}
-C.~S. Shen and D.~White.
-\newblock \enquote{Energy Straggling and Radiation Reaction for Magnetic
-  Bremsstrahlung}.
-\newblock \emph{Phys. Rev. Lett.}, 28, (1972), pp. 455--459.
-\newblock \doi{10.1103/PhysRevLett.28.455}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.28.455}
 
 \bibitem{Mirzaie2015_GEVJET}
 M.~Mirzaie et~al.
@@ -1784,9 +1791,26 @@ D.~Seipt et~al.
 \newblock \doi{10.1103/PhysRevA.98.023417}.
 \newline\urlprefix\url{https://journals.aps.org/pra/pdf/10.1103/PhysRevA.98.023417}
 
+\bibitem{Glinec2008_BETATRON}
+Y.~Glinec et~al.
+\newblock \enquote{Direct observation of betatron oscillations in a
+  laser-plasma electron accelerator}.
+\newblock \emph{EPL (Europhysics Letters)}, 81, (2008), p. 64001.
+
+\bibitem{Mangles2009_BETATRON}
+S.~Mangles et~al.
+\newblock \enquote{Controlling the spectrum of x-rays generated in a
+  laser-plasma accelerator by tailoring the laser wavefront}.
+\newblock \emph{Applied Physics Letters}, 95, (2009), p. 181106.
+
 \bibitem{Schwartz}
 M.~D. Schwartz.
 \newblock \emph{Quantum field theory and the standard model}.
 \newblock Cambridge University Press, 2014.
+
+\bibitem{BlackburnThesis}
+T.~G. Blackburn.
+\newblock \emph{QED effects in laser-plasma interactions}.
+\newblock Ph.D. thesis, Oxford University, UK, 2015.
 
 \end{thebibliography}

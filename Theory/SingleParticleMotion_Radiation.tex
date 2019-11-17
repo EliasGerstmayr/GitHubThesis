@@ -3,13 +3,12 @@
 
 This Chapter lays the theoretical groundwork for the results presented later in this work, by deriving the equations of motion for single charged particles in electromagnetic fields and considering the radiation they emit in the process. It also addresses the fundamental processes of radiation reaction and pair production.
 
-Firstly, equation of motions of charged single particles in electromagnetic fields are derived. This forms the basis for understanding the properties of electrons accelerated in wakefield accelerators, measuring their energy in magnetic spectrometers and calculating the radiation they emit in interaction with electromagnetic fields.
+First, equation of motions of charged single particles in electromagnetic fields are derived. This forms the basis for understanding the properties of electrons accelerated in wakefield accelerators, measuring their energy in magnetic spectrometers and calculating the radiation they emit in interaction with electromagnetic fields.
 
-Subsequently, radiation production from electrons in different scenarios is discussed, starting with radiation in synchrotrons and insertion devices, then drawing the parallel to betatron radiation produced in wakefield acceleration and the radiation emitted in a laser wiggler, namely relativistic inverse Compton scattering (ICS) in moderately (linear ICS) and highly intense laser fields (non-linear ICS). Bremsstrahlung as radiation mechanism is also being introduced.
+Subsequently, the production of radiation through two processes is discussed: (relativistic inverse) Compton scattering (ICS) in moderately (linear ICS) and highly intense laser fields (non-linear ICS), which is central to the work presented in Chapters \ref{Chap:linICS} and \ref{Chap:RR15}, and the radiation process of bremsstrahlung which is in particular important for the experiment outlined in Chapter \ref{Chap:BW}.
 
 This leads over to the topic of radiation reaction, the knock-back force a charged particle experiences when emitting a photon. This can, for instance, be investigated in relativistic inverse Compton scattering. Whilst radiation reaction is a very fundamental phenomenon there is so far no universally accepted and practicable description for a wide parameter space. In this section different proposed descriptions of radiation reaction are discussed, starting with the in classical electrodynamics self-consistent Lorentz-Abraham-Dirac equation, followed by the classical Landau-Lifschitz equation and leading over to quantum corrections and their implications. 
 Finally, the fundamental QED processes of pair production and annihilation are discussed.
-\EliasComm{Edit intro after removing parts.}
 
 \section{Single particle motion in an electromagnetic field}
 
@@ -476,9 +475,9 @@ For $\gamma \gg 1$ the transformation of the angles results in the so-called `he
 
 \subsubsection{Total emitted energy}
 
-In the Thomson limit the cross section of the interaction is independent of the photon and electron energy. The total number of scattered photons, $N_X$, is then given by the Thomson cross section multiplied by the number of electrons, $N_e$, and photons, $N_L$, in an area $\pi w^2_0$ \addref{}:
+In the Thomson limit the cross section of the interaction is independent of the photon and electron energy. The total number of scattered photons, $N_X$, is then given by the Thomson cross section multiplied by the number of electrons, $N_e$, and photons, $N_L$, in an area $\pi w^2_0$ \cite{Albert2016_APP}:
 \begin{equation}
-N_X = \frac{\sigma_T}{\pi w^2_0} N_L N_e.
+\boxed{N_X = \frac{\sigma_T}{\pi w^2_0} N_L N_e.}
 \end{equation}
 The total energy emitted in this interaction is simply the sum of the individual photon energies. The total energy emitted by an electron bunch of distribution $\dif N_e /\dif \gamma$ is
 \begin{equation}
@@ -491,7 +490,7 @@ where we would generally have to integrate over all incoming and outgoing angles
 In a real setting the ICS spectrum is modified by several input parameters:
 the energy spread of the electron beam will translate to an energy spread in the ICS spectrum.
 Short pulse lasers intrinsically require a certain bandwidth are hence not monochromatic. The spread of photon energies modifies the spectrum similarly.
-Deviations from a head-on collision have to be considered and also introduce a spread, in particular considering divergence and emittance of the electron beam and the range of angles of the focusing laser pulse with respect to the laser axis. The effective spectrum has, for instance, being investigated experimentally in REF KRAMER\addref.
+Deviations from a head-on collision have to be considered and also introduce a spread, in particular considering divergence and emittance of the electron beam and the range of angles of the focusing laser pulse with respect to the laser axis. The effective spectrum has, for instance, being investigated experimentally in a laser wakefield setup in \cite{Kramer2018_Gamma}.
 
 
 \subsection{Nonlinear Inverse Compton Scattering}
@@ -521,11 +520,11 @@ Assuming all $n$ photons have the same energy $E_i$ and are parallel to each oth
 \begin{equation}
 E'_f = \frac{n E'_i}{1+\frac{n E'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
-including the effect of the mass increase on the energy of the radiation in the laboratory frame is given by (REF\addref)
+including the effect of the mass increase on the energy of the radiation in the laboratory frame is given by \cite{Esarey1993_NT}
 \begin{equation}
-E_f \approx \frac{2 \gamma^2 (1- \cos \theta) n E_i}{1+a_0^2/2 + \gamma^2 \theta^2} ,
+\boxed{E_f \approx \frac{2 \gamma^2 (1- \cos \theta) n E_i}{1+a_0^2/2 + \gamma^2 \theta^2},}
 \end{equation}
-which for higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation $E_f \propto 1/a^2_0$. This already becomes significant for $a_0 \sim 0.1$ (REF\addref). The contribution $\gamma^2 \theta^2$ leads to a fall-off of the photon energy off-axis, so that it reaches $E_f/e$ at $\theta \sim 1/\gamma$.
+which for higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation $E_f \propto 1/a^2_0$. This already becomes significant for $a_0 \sim 0.1$. The contribution $\gamma^2 \theta^2$ leads to a fall-off of the photon energy off-axis, so that it reaches $E_f/e$ at $\theta \sim 1/\gamma$.
 
 
 \begin{figure}
@@ -641,28 +640,31 @@ Z + e^- \longrightarrow Z + e^- + \gamma
 \end{equation}
 or in terms of the Feyman diagram shown in Figure \ref{Theory:Figs:Feynman_Bremsstrahlung}. In the quantum picture the electron exchanges momentum with a virtual photon from the Coulomb field before radiating a photon. From the classical view the charged particle is decelerated (`braked') in the Coulomb field which results in the production of radiation.
 
-\EliasComm{Appendix reference.}
-
-In the limit $\hbar \omega \ll E$ and $E, E' \gg Mc^2$ this simplifies to \cite{Jackson}:
+In the limit of small photon energies relative to the initial electron energy, $\hbar \omega \ll E$, and relativistic initial and final electron energies, $E, E' \gg Mc^2$ the differential cross section can be written as \cite{Jackson}:
 \begin{equation}
-\frac{d \sigma}{d (\hbar \omega)} \approx \frac{Z^2 e^6}{12 \hbar \pi^3 \epsilon_0^3 M^2 c^3} \left(1- \frac{\hbar \omega}{E} + \frac{3}{4} \frac{(\hbar \omega)^2}{E^2}\right) \times \left[\ln\left(\frac{2 E (E-\hbar\omega)}{Mc^2\hbar \omega}\right) - \frac{1}{2}\right] \frac{1}{\hbar \omega}.
+\frac{d \sigma}{d (\hbar \omega)} \approx \frac{Z^2 e^6}{12 \hbar \pi^3 \epsilon_0^3 M^2 c^3} \left(1- \frac{\hbar \omega}{E} + \frac{3}{4} \frac{(\hbar \omega)^2}{E^2}\right) \times \left[\ln\left(\frac{2 E (E-\hbar\omega)}{Mc^2\hbar \omega}\right) - \frac{1}{2}\right] \frac{1}{\hbar \omega},
+\label{Theory:Eqns:Brems_dSigma_dEph}
 \end{equation}
-For $\hbar \omega \ll E$ the doubly differential cross is
+where $Z$ is the charge number of the nucleus and $\epsilon_0$ is the dielectric constant.
+For $\hbar \omega \ll E$ the doubly differential cross is then 
 \begin{equation}
 \frac{d^2 \sigma}{d \omega d \Omega_\gamma} = \left[\frac{3}{2 \pi} \gamma^2 \frac{(1+\gamma^4 \theta^4)}{(1+\gamma^2 \theta^2)^4}\right] \cdot \frac{d \sigma}{d \omega},
 \end{equation}
-which also indicates that for highly relativistic electron the emitted radiation is confined to a narrow forwards-pointing cone of angle $\ln \gamma/\gamma$ for $\gamma \gg 1$. The emission of photons at energies $\hbar \omega \ll E$ is strongly favoured whereas the cross section falls off towards the maximum emitted energy which is the initial energy of the electron.
-
-\EliasComm{Total energy deposition (for background) and one spectral plot.}
+which also indicates that for highly relativistic electron the emitted radiation is confined to a narrow forwards-pointing cone of angle $\ln \gamma/\gamma$ for $\gamma \gg 1$. The emission of photons at energies $\hbar \omega \ll E$ is strongly favoured whereas the cross section falls off towards the maximum emitted energy which is the initial energy of the electron (see Figure \ref{Theory:Figs:BremsSpec}). The complete cross section for bremsstrahlung in the Born approximation can be found in the Appendix in Section \ref{Appendix:Brems_Born}, along with description including screening in Section \ref{Appendix:Brems_with_Screening}.
 
 
+\begin{figure}
+\centering
+\includegraphics[width=.9\columnwidth]{BremsstrahlungSpectrum.png}
+\caption[Differential cross section of bremsstrahlung for different electron energies.]{Differential cross section of bremsstrahlung for different electron energies as a function of the emitted photon energy calculated using Equation \eqref{Theory:Eqns:Brems_dSigma_dEph}. The dashed lines indicate the high-energy cut-off or maximum energy, $E_{max}$, that is equal to the electron energy.}
+\label{Theory:Figs:BremsSpec}
+\end{figure}
 
 \section{Radiation Reaction}
 
-In the previous sections we discussed the emission of radiation from charged particles through different mechanisms. Based on conservation rules the particles lose energy in the process and also have to experience a knock-back force whenever they radiate. Such a knock-back, commonly referred to as \textit{radiation reaction (force)} or \textit{radiation friction (force)}, can in strong electromagnetic fields significantly alter the particle dynamics. Whilst the instantaneous force felt by the emitting particles is small in most settings, it is particularly important in the astrophysical context (EXAMPLES\addref) and will be the subject of research at high-intensity laser facilities. Here a single particle can emit multiple photons in a short span of time and the radiation reaction force has to be considered. In extreme cases the energy emitted by the particle approaches its initial energy, which requires modelling the process in a quantum picture, i.e. we then consider \textit{quantum radiation reaction}.
+In the previous sections we discussed the emission of radiation from charged particles through different mechanisms. Based on conservation rules the particles lose energy in the process and also have to experience a knock-back force whenever they radiate. Such a knock-back, commonly referred to as \textit{radiation reaction (force)} or \textit{radiation friction (force)}, can in strong electromagnetic fields significantly alter the particle dynamics. Whilst the instantaneous force felt by the emitting particles is small in most settings, it is particularly important in the astrophysical context \cite{Ruffini2010_PAIRSASTRO,Shen1972_STRAGGLING} and will be the subject of research at high-intensity laser facilities \cite{Shen2018_SULF,Gales2018_ELINP,Weber2017_ELIBeamlines,Zou2015_Apollon}. Here a single particle can emit multiple photons in a short span of time and the radiation reaction force has to be considered. In extreme cases the energy emitted by the particle approaches its initial energy, which requires modelling the process in a quantum picture, i.e. we then consider \textit{quantum radiation reaction} \cite{Ritus1985_QRR,Blackburn2014_QRR,Ridgers2017_QRR,DiPiazza2010_QRR}.
 
 Radiation reaction is a fundamental phenomenon of electrodynamics but surprisingly there is no universally accepted and practicable description across a variety of regimes. In the following, different descriptions will be introduced, starting with classical descriptions of radiation reaction highlighting their motivation and limitations, followed by quantum corrections and semi-classical models, indicating how they differ qualitatively.
-
 Reviews on this topic can be found in parts of \cite{DiPiazza2012_ICS} and in \cite{Blackburn2019_RRReview}.
 
 \subsection{Regimes of radiation reaction}
@@ -672,11 +674,11 @@ In the context of the collision of a relativistic electron beam of energy $\gamm
 \boxed{\psi = \gamma^2 a_0 \frac{2 r_e \omega}{3c},}
 \end{equation}
 where $\psi \ll 1$ indicates that radiation reaction effects are negligible and $\psi \rightarrow 1$ that the radiation reaction force becomes comparable to the Lorentz force.
-Another useful parameter is the classical radiation reaction parameter (DI PIAZZA REF 2010), $R_c$:
+Another useful parameter is the classical radiation reaction parameter, $R_c$ \cite{DiPiazza2010_QRR}:
 \begin{equation}
 R_c = \frac{\alpha a^2_0 \gamma_0 (1+\beta_0) \omega_0}{m},
 \end{equation}
-with significant radiation damping for $R_c \geq 0.24$ \cite{Thomas2012_LL} and radiation-dominated regime for $R_c \geq 1$ XXREF\addref{}. The fraction of the emitted radiation in the average rest frame of the electron, $f$, is given by $f = E_{rad}/(\gamma' m) = 4\pi R_c/3$.
+with significant radiation damping for $R_c \geq 0.24$ \cite{Thomas2012_LL} and radiation-dominated regime for $R_c \geq 1$ \cite{DiPiazza2010_QRR}. The fraction of the emitted radiation in the average rest frame of the electron, $f$, is given by $f = E_{rad}/(\gamma' m) = 4\pi R_c/3$.
 
 
 Quantum nonlinearity parameter
@@ -698,7 +700,7 @@ a_0 \gamma_0 > \frac{m_e c^2}{2 \hbar \omega_0}
 
 \subsection{Classical Radiation Reaction}
 
-There is a variety of classical descriptions of radiation reaction rooted in classical electrodynamics (see for instance BURTON NOBLE 2014 REF\addref{} for a review on this topic). We will focus on the two most commonly applied models and their implications: the Lorentz-Abraham-Dirac (LAD) equation and the Landau-Lifschitz (LL) description. 
+There is a variety of classical descriptions of radiation reaction rooted in classical electrodynamics \cite{Burton2014_CRR}. We will focus on the two most commonly applied models and their implications: the Lorentz-Abraham-Dirac (LAD) equation and the Landau-Lifschitz (LL) description. 
 
 \subsubsection{Lorentz-Abraham-Dirac Equation (LAD)}
 
@@ -710,7 +712,7 @@ P = \frac{2}{3} \frac{e^2}{c^3} \mathbf{\dot{v}}^2.
 By requiring that the emitted radiation power corresponds to the work done by the radiation reaction force on the radiating particle we can write
 \begin{align}
 \int^{t_2}_{t_1} \mathbf{F}_{rad} \cdot \mathbf{v} \dif t &= - \int^{t_2}_{t_1} P \dif t,\\
-&= \frac{2}{3}\frac{e^2}{c^3}\int^{t_2}_{t_1} \mathbf{\ddot{v}} \cdot \mathbf{v} \dif t - \frac{2}{3}\frac{e^2}{c^3} (\mathbf{\dot{v}} \cdot \mathbf{v})|^{t_2}_{t_1},
+&= \frac{2}{3}\frac{e^2}{c^3}\int^{t_2}_{t_1} \mathbf{\ddot{v}} \cdot \mathbf{v} \dif t - \frac{2}{3}\frac{e^2}{c^3} (\mathbf{\dot{v}} \cdot \mathbf{v})\Big|^{t_2}_{t_1},
 \end{align}
 where we used integration by parts.
 For a periodic motion or $\mathbf{\dot{v} \cdot v} = 0$ at $t = t_1$ and $t = t_2$, we can write:
@@ -770,7 +772,7 @@ or in terms of 3-vectors as \cite{Bulanov2011_LADLL}:
 \end{align*}
 
 This description only holds if $L \ll \lambda_C$ and $E \ll E_{cr}/\alpha$, which is satisfied within the realm of classical electrodynamics.
-\EliasComm{According to REF Spohn EPL 50 2000 all physical solutions of the LAD equation are also solutions of LL}
+\EliasComm{According to \cite{Spohn2000_RR} all physical solutions of the LAD equation are also solutions of LL}
 \vspace{\baselineskip}
 
 In the Landau-Lifschitz model we can also find an analytic expression of the energy loss an electron experiences. For an electron interacting with a plane wave with a Gaussian temporal envelope this is given by \cite{Thomas2012_LL,Bulanov2011_LL}
@@ -781,7 +783,7 @@ In the Landau-Lifschitz model we can also find an analytic expression of the ene
 where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, the pulse duration $t_L$, the wavelength $\lambda$. This is valid if quantum effects are negligible, $\gamma_0 a_0 \ll m_e c^2/2\hbar \omega_0$ (see next section), whereas strong radiation reaction effects are expected for $\gamma a^2_0 > (10 \sqrt{2\pi^3} \omega_0 \tau_0 \gamma_0)^{-1/2}$.
 \vspace{\baselineskip}
 
-Whilst this description is free from runaway solutions unlike the LAD equation it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle (REF Baylis PLA 2002\addref{}). 
+Whilst this description is free from runaway solutions unlike the LAD equation it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle \cite{Baylis2002_LL}. 
 
 
 \subsection{Quantum picture and corrections}
