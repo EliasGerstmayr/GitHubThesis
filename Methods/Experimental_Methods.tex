@@ -180,7 +180,7 @@ By gradually translating the prism away from the CCD the two laser beams move cl
 \begin{figure}
 \centering
 \includegraphics[height=0.4\columnwidth]{FringeVisibilityCole.png}
-\caption{Visibility of the interference pattern (fringes) as a function of the relative delay from a reference position for data taken on an experimental campaign at \textsc{Gemini} in 2015. Figure courtesy of J. Cole (Imperial College). }
+\caption[Visibility of the interference pattern (fringes) as a function of the relative delay from a reference position.]{Visibility of the interference pattern (fringes) as a function of the relative delay from a reference position for data taken on an experimental campaign at \textsc{Gemini} in 2015. Figure courtesy of J. Cole (Imperial College). }
 \label{Methods:Figs:PrismCam_FringeVisibility}
 \end{figure}
 
@@ -663,7 +663,7 @@ Each square corresponds to one crystal or voxel in the array.
 \begin{figure}
 \centering
 \includegraphics[height=.3\columnwidth]{Edep_JenaStack.pdf}\includegraphics[height=.3\columnwidth]{Edep_Jena_1_100_MeV.png}
-\caption{In GEANT4 simulated energy deposition per photon in the `Jena' profile screen as a function of photon energy for 100 to 2000 keV (left) and 1 to 100 MeV photon energies (right).}
+\caption[In GEANT4 simulated energy deposition in a gamma profile screen.]{In GEANT4 simulated energy deposition per photon in the `Jena' profile screen as a function of photon energy for 100 to 2000 keV (left) and 1 to 100 MeV photon energies (right).}
 \label{Methods:Fig:EnergyDepGProfile}
 \end{figure}
 
@@ -894,8 +894,8 @@ This correction factor now accounts for deviations in the efficiency independent
 To reduce the experimental error this can also be averaged over several shots, but experimental data has shown that bremsstrahlung is a very reliable and reproducible source \cite{Behm2018_Gamma}. However, if the detector is moved or the imaging is being changed, the procedure has to be repeated.
 The `corrected' response, $R_{corr}$, is then being obtained by multiplying the experimental response of crystal $(i,j)$ in the array, $R_{exp}(i,j)$, by the corresponding correction factor $c_{corr}(i,j)$:
 \begin{align}
-R_{corr}(i,j) = R_{exp}(i,j) \,\cdot \,c_{corr} (i,j), \\ \nonumber
- R_{corr} = R_{exp} \, \circ \, c_{corr}.
+R_{corr}(i,j) &= R_{exp}(i,j) \,\cdot \,c_{corr} (i,j), \\ \nonumber
+ R_{corr} &= R_{exp} \, \circ \, c_{corr}.
 \end{align}
 
 \subsubsection{Detector response for gamma-ray spectra}

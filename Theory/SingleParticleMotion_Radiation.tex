@@ -148,7 +148,7 @@ Taking the curl of this equation results in:
 \begin{equation}
 \frac{\partial}{\partial t}\nabla\times\mathbf{u} = \nabla\times\left[\mathbf{v}\times\left(\nabla\times\mathbf{u}\right)\right],
 \end{equation}
-where the second term disappeared as the curl of a gradient is always zero (see Section \ref{Appendix:VectorIdentities:CurlGradZero}),
+where the second term disappeared as the curl of a gradient is always zero,
 so that if $\nabla \times \mathbf{u}$ is zero initially, it will remain so always. The condition is satisfied, for instance, for a plasma at rest before the laser pulse arrives.
 Assuming this condition Equation \eqref{Theory:Eqns:partialtU} simplifies to
 \begin{equation}
@@ -335,7 +335,7 @@ with the corresponding Feynman diagram shown in Figure \ref{Theory:Fig:ComptonSc
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{Compton_kinematics_sketch.pdf}
-\caption{Kinematics diagram for Compton scattering. Time axis from left to right.}
+\caption[Kinematics diagram for Compton scattering.]{Sketch of the kinematics for Compton scattering. A photon of energy $E_{\gamma,i}$ (green) is incident onto an electron at rest (blue), i.e. $E_{e,i} = m_e c^2$, and scatters off it at an angle $\theta$. The electron is scattered at an angle $\phi$. The photon and the electron exchange momentum.}
 \label{Theory:Fig:ComptonScattering:Kinematics}
 \end{figure}
 
@@ -363,7 +363,7 @@ Similarly, we can use momentum conservation to find an expression for the moment
 E_{\gamma, i}^2 + E_{\gamma, f}^2 - 2 E_{\gamma, i} E_{\gamma, f} \cos\theta &= (p_{e, f} c)^2,
 \label{Theory:Eqns:Compton_MomConserve}
 \end{align}
-where $\mathbf{p}$ is a momentum vector and $p$ its corresponding length.
+where $\mathbf{p}$ is a momentum vector and $p$ its corresponding length. $\theta$ is the angle between incoming and outgoing momentum vector of the photon (see Figure \ref{Theory:Fig:ComptonScattering:Kinematics}).
 Setting Equations \eqref{Theory:Eqns:Compton_EnergyConserve} and \eqref{Theory:Eqns:Compton_MomConserve} equal we find the familiar equation for the angular dependent change in wavelength of a photon performing Compton scattering with an electron:
 \begin{equation}
 \lambda_{final} - \lambda_{initial} = \frac{h}{m_e c} \left(1 - \cos\theta\right) = \lambda_C \left(1-\cos\theta\right),
@@ -389,7 +389,7 @@ Polar plots of the final photon energies for different initial photon energies a
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{Compton_kinematic.pdf}\includegraphics[width=.5\columnwidth]{Compton_KN_cross.pdf}
-\caption[Polar plot of photon energies from Compton scattering and differential cross section.]{Left: Polar plot of photon energies after Compton scattering from an electron at rest for different incoming photon energies (legend) for up to $100\keV$ (left, inset) and up to $10\MeV$ (left). The incoming photon travels on the zero degree axis. The energy axis is linear and the numbers show the energy in MeV. Right: Polar plot of the differential cross section in arbitrary units for photon scattering angles calculated using Equation \eqref{Theory:Eqs:ComptonXsec} for different initial photon energies (legend).}
+\caption[Polar plot of photon energies and related differential cross section for Compton scattering.]{Left: Polar plot of photon energies after Compton scattering from an electron at rest for different incoming photon energies (legend) for up to $100\keV$ (left, inset) and up to $10\MeV$ (left). The incoming photon travels on the zero degree axis. The energy axis is linear and the numbers show the energy in MeV. Right: Polar plot of the differential cross section in arbitrary units for photon scattering angles calculated using Equation \eqref{Theory:Eqs:ComptonXsec} for different initial photon energies (legend).}
 \label{Theory:Figs:Compton_E_XSEC}
 \end{figure}
 
@@ -520,11 +520,11 @@ Assuming all $n$ photons have the same energy $E_i$ and are parallel to each oth
 \begin{equation}
 E'_f = \frac{n E'_i}{1+\frac{n E'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
-including the effect of the mass increase ($m_e \rightarrow m_e \sqrt{1+a^2_0}$) on the energy of the radiation in the laboratory frame is given by \cite{Esarey1993_NT}
+including the effect of the mass increase ($m_e \rightarrow m^\ast = m_e \sqrt{1+a^2_0}$) on the energy of the radiation in the laboratory frame is given by \cite{Esarey1993_NT}
 \begin{equation}
-\boxed{E_f \approx \frac{2 \gamma^2 (1- \cos \theta) n E_i}{1+a_0^2/2 + \gamma^2 \theta^2},}
+\boxed{E_f \approx \frac{2 \gamma^2 (1- \cos \theta) n E_i}{1+a_0^2/2 + (\gamma \theta)^2},}
 \end{equation}
-which for higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation $E_f \propto 1/a^2_0$. This already becomes significant for $a_0 \sim 0.1$. The contribution $\gamma^2 \theta^2$ leads to a fall-off of the photon energy off-axis, so that it reaches $E_f/e$ at $\theta \sim 1/\gamma$.
+which for higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation $E_f \propto 1/a^2_0$. This already becomes significant for $a_0 \sim 0.1$. The contribution $(\gamma \theta)^2$ leads to a fall-off of the photon energy off-axis, so that it reaches $E_f/e$ at about $\theta \sim 1/\gamma$ and the emitted radiation is confined to a cone of that opening angle.
 
 
 \begin{figure}
@@ -542,7 +542,11 @@ which for higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the ra
 \caption{Klein-Nishina and higher orders at $a_0$ for circular polarisation. Adapted/reproduced from Tom Thesis REF}
 \end{figure}
 
-
+The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation \cite{Ritus1985_QRR,BlackburnThesis}. The scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given by a series of Bessel functions
+\begin{equation}
+\frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 E}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
+\end{equation}
+where we have to evaluate $n$ differential cross sections to reproduce the right spectrum. The highest significant order scales as XXX. However, we see that even at moderate intensities we already have to evaluate a high number which becomes unfeasible. Alternatively, use the quantum synchrotron function (see next section).
 
 \EliasComm{Reproduce KN eqns at low intensities. Also both should converge to the same result at $n=1$ as we are approaching the polarisation-independent KN eqn.}
 \EliasComm{Make plot of cross sections to show the lobes (odd on axis and even off-axis).}
@@ -650,7 +654,7 @@ For $\hbar \omega \ll E$ the doubly differential cross is then
 \begin{equation}
 \frac{d^2 \sigma}{d \omega d \Omega_\gamma} = \left[\frac{3}{2 \pi} \gamma^2 \frac{(1+\gamma^4 \theta^4)}{(1+\gamma^2 \theta^2)^4}\right] \cdot \frac{d \sigma}{d \omega},
 \end{equation}
-which also indicates that for highly relativistic electron the emitted radiation is confined to a narrow forwards-pointing cone of angle $\ln \gamma/\gamma$ for $\gamma \gg 1$. The emission of photons at energies $\hbar \omega \ll E$ is strongly favoured whereas the cross section falls off towards the maximum emitted energy which is the initial energy of the electron (see Figure \ref{Theory:Figs:BremsSpec}). The complete cross section for bremsstrahlung in the Born approximation can be found in the Appendix in Section \ref{Appendix:Brems_Born}, along with description including screening in Section \ref{Appendix:Brems_with_Screening}.
+which also indicates that for highly relativistic electron the emitted radiation is confined to a narrow forwards-pointing cone of angle $\ln \gamma/\gamma$ for $\gamma \gg 1$. The emission of photons at energies $\hbar \omega \ll E$ is strongly favoured whereas the cross section falls off towards the maximum emitted energy which is the initial energy of the electron (see Figure \ref{Theory:Figs:BremsSpec}). The complete cross section for bremsstrahlung in the Born approximation can be found in the Appendix in Section \ref{Appendix:Brems_Born}, along with a description including screening in Section \ref{Appendix:Brems_with_Screening}.
 
 
 \begin{figure}
@@ -662,7 +666,7 @@ which also indicates that for highly relativistic electron the emitted radiation
 
 \section{Radiation Reaction}
 
-In the previous sections we discussed the emission of radiation from charged particles through different mechanisms. Based on conservation rules the particles lose energy in the process and also have to experience a knock-back force whenever they radiate. Such a knock-back, commonly referred to as \textit{radiation reaction (force)} or \textit{radiation friction (force)}, can in strong electromagnetic fields significantly alter the particle dynamics. Whilst the instantaneous force felt by the emitting particles is small in most settings, it is particularly important in the astrophysical context \cite{Ruffini2010_PAIRSASTRO,Shen1972_STRAGGLING} and will be the subject of research at high-intensity laser facilities \cite{Shen2018_SULF,Gales2018_ELINP,Weber2017_ELIBeamlines,Zou2015_Apollon}. Here a single particle can emit multiple photons in a short span of time and the radiation reaction force has to be considered. In extreme cases the energy emitted by the particle approaches its initial energy, which requires modelling the process in a quantum picture, i.e. we then consider \textit{quantum radiation reaction} \cite{Ritus1985_QRR,Blackburn2014_QRR,Ridgers2017_QRR,DiPiazza2010_QRR}.
+In the previous sections we discussed the emission of radiation from charged particles, in particular through inverse Compton scattering. Based on conservation rules the particles lose energy in the process and also have to experience a knock-back force whenever they radiate. Such a knock-back, commonly referred to as \textit{radiation reaction (force)} or \textit{radiation friction (force)}, can in strong electromagnetic fields significantly alter the particle dynamics. Whilst the instantaneous force felt by the emitting particles is small in most settings, it is particularly important in the astrophysical context \cite{Ruffini2010_PAIRSASTRO,Shen1972_STRAGGLING} and will be the subject of research at high-intensity laser facilities \cite{Shen2018_SULF,Gales2018_ELINP,Weber2017_ELIBeamlines,Zou2015_Apollon}. Here a single particle can emit multiple photons in a short span of time and the radiation reaction force has to be considered. In extreme cases the energy emitted by the particle approaches its initial energy, which requires modelling the process in a quantum picture, i.e. we then consider \textit{quantum radiation reaction} \cite{Ritus1985_QRR,Blackburn2014_QRR,Ridgers2017_QRR,DiPiazza2010_QRR}.
 
 Radiation reaction is a fundamental phenomenon of electrodynamics but surprisingly there is no universally accepted and practicable description across a variety of regimes. In the following, different descriptions will be introduced, starting with classical descriptions of radiation reaction highlighting their motivation and limitations, followed by quantum corrections and semi-classical models, indicating how they differ qualitatively.
 Reviews on this topic can be found in parts of \cite{DiPiazza2012_ICS} and in \cite{Blackburn2019_RRReview}.
@@ -704,12 +708,12 @@ There is a variety of classical descriptions of radiation reaction rooted in cla
 
 \subsubsection{Lorentz-Abraham-Dirac Equation (LAD)}
 
-An intuitive way to derive an expression for a radiation reaction force is considering conservation of energy \cite{Jackson}. Considering the emission power in a synchrotron, the Larmor power formula is expressed as
+An intuitive way to derive an expression for a radiation reaction force is considering the conservation of energy \cite{Jackson}. The synchrotron emission power, $P$, of an electron with charge $e$ is given by the Larmor power formula:
 \begin{equation}
-P = \frac{2}{3} \frac{e^2}{c^3} \mathbf{\dot{v}}^2.
+P = \frac{2}{3} \frac{e^2}{c^3} \mathbf{\dot{v}}^2,
 \end{equation}
-
-By requiring that the emitted radiation power corresponds to the work done by the radiation reaction force on the radiating particle we can write
+where $\mathbf{v}$ is the velocity vector of the particle and $\mathbf{\dot{v}}$ its acceleration.
+By requiring that the emitted radiation power corresponds to the work done on the radiating particle by the radiation reaction force we can write
 \begin{align}
 \int^{t_2}_{t_1} \mathbf{F}_{rad} \cdot \mathbf{v} \dif t &= - \int^{t_2}_{t_1} P \dif t,\\
 &= \frac{2}{3}\frac{e^2}{c^3}\int^{t_2}_{t_1} \mathbf{\ddot{v}} \cdot \mathbf{v} \dif t - \frac{2}{3}\frac{e^2}{c^3} (\mathbf{\dot{v}} \cdot \mathbf{v})\Big|^{t_2}_{t_1},
@@ -725,15 +729,14 @@ so that we can identify the radiation reaction force, $\mathbf{F}_{rad}$, as
 \end{equation}
 where $\tau$ is the `characteristic time'
 \begin{equation}
-\tau = \frac{2}{3} \frac{e^2}{m c^3}
+\tau = \frac{2}{3} \frac{e^2}{m c^3},
 \end{equation}
-\EliasComm{Characteristic time needs some explanation. Based on \cite{Jackson}.}
+which for electrons amounts to $\tau = 6.26 \times 10^{-24}\,\mathrm{s}$. A sudden force acting on a similar time scale as this characteristic time will result in a significant modification of the motion through radiative effects.
 The equation of motion then reads
 \begin{equation}
 m(\mathbf{\dot{v}}-\tau \mathbf{\ddot{v}}) = \mathbf{F}_{ext}.
 \end{equation}
-
-This equation of motion, sometimes referred to as Abraham-Lorentz equation, depends on the second derivative of the velocity in time which results in runaway solutions.
+This equation of motion, sometimes referred to as \textit{Abraham-Lorentz equation}, depends on the second derivative of the velocity in time, which requires a knowledge of the acceleration as initial condition and also results in runaway solutions.
 For a vanishing external force, we obtain two solutions for $\mathbf{\dot{v}}$:
 \begin{equation}
 \mathbf{\dot{v}}(t) = 
@@ -743,48 +746,39 @@ For a vanishing external force, we obtain two solutions for $\mathbf{\dot{v}}$:
 \end{cases}
 \end{equation}
 where $\mathbf{a}$ is the acceleration at $t = 0$. If $\mathbf{a} \neq 0$ leads to a self-acceleration of the particle in absence of an external force, which is clearly unphysical and also results in $(\mathbf{\dot{v} \cdot v}) \neq 0$ at $t_1$ and $t_2$, which we used to derive this expression.
-The relativistic generalisation of this equation is referred to as Lorentz-Abraham-Dirac equation (LAD) and is given in terms of the four-acceleration  \cite{Bulanov2011_LADLL,DiPiazza2012_ICS}:
+The relativistic generalisation of this equation is referred to as \textit{Lorentz-Abraham-Dirac equation (LAD)} and is for an electron of charge $-e$ and mass $m_e$ given in terms of the four-velocity $u$ \cite{Bulanov2011_LADLL,DiPiazza2012_ICS}:
 \begin{equation}
- \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m} F^{\mu\nu} u_\nu + \frac{e^2}{6 \pi m} \left(\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}\tau^2} + u^\mu \frac{\mathrm{d}u^\nu}{\mathrm{d}\tau}\frac{du_\nu}{\mathrm{d}\tau}\right),
+ \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m_e} F^{\mu\nu} u_\nu + \frac{e^2}{6 \pi m_e} \left(\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}\tau^2} + u^\mu \frac{\mathrm{d}u^\nu}{\mathrm{d}\tau}\frac{du_\nu}{\mathrm{d}\tau}\right),
 \end{equation}
 with the radiation reaction force
 \begin{equation}
-g^\mu = \frac{2e^2}{3c} \left[\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}\tau^2} - u^\mu \left(\frac{\mathrm{d}u^\nu}{\mathrm{d}\tau}\right)\left(\frac{\mathrm{d}u_\nu}{\mathrm{d}\tau}\right)\right],
+g^\mu = \frac{e^2}{6 \pi m_e} \left[\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}\tau^2} - u^\mu \left(\frac{\mathrm{d}u^\nu}{\mathrm{d}\tau}\right)\left(\frac{\mathrm{d}u_\nu}{\mathrm{d}\tau}\right)\right],
 \end{equation}
-where the second derivative of the momentum leads again to the same pathological runaway solutions as in the Abraham-Lorentz equation.
+where $\tau$ is the proper time and $F_{\mu \nu}$ is the field tensor for an applied electromagnetic field.
+The second derivative of the momentum, $\dif^2 u/\dif \tau^2$, leads again to pathological runaway solutions as described for the Abraham-Lorentz equation.
 
 \subsubsection{Landau-Lifschitz (LL) Equation}
 
-The first self-consistent solution to including radiation reaction into a classical model was achieved in the Landau-Lifschitz (LL) equation \cite{LandauLifschitz}. Here it is assumed that the radiation reaction force is small compared to the Lorentz force in a suitable frame of reference. The expression $\dif u / \dif \tau$ is substituted by $e/m F^{\mu \nu} u_\nu$, which reduces the order of the differential equation and removes the runaway solutions. 
+The first self-consistent solution to including radiation reaction into a classical model was achieved by the \textit{Landau-Lifschitz (LL) equation} \cite{LandauLifschitz}. Here it is assumed that the radiation reaction force is small compared to the Lorentz force in a suitable frame of reference. The expression $\dif u / \dif \tau$ is substituted by $e/m F^{\mu \nu} u_\nu$, which reduces the order of the differential equation and removes the runaway solutions \cite{Blackburn2019_RRReview}: 
 \begin{equation}
- \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m} F^{\mu\nu} u_\nu + \frac{e^4}{6 \pi m} \left[-\frac{m}{e}(\partial_\alpha F^{\mu \nu}) u_\nu u^\alpha + F^{\mu\nu} F_{\nu\alpha}u^\alpha + (F^{\nu \alpha}u_\alpha)^2 u^\mu      \right],
+ \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m} F^{\mu\nu} u_\nu + \frac{e^4}{6 \pi m_e} \left[-\frac{m_e}{e}(\partial_\alpha F^{\mu \nu}) u_\nu u^\alpha + F^{\mu\nu} F_{\nu\alpha}u^\alpha + (F^{\nu \alpha}u_\alpha)^2 u^\mu      \right],
 \end{equation}
-
-The radiation reaction force is then written
+with the radiation reaction force
 \begin{equation}
-g^\mu = \frac{2e^3}{3m_e c^3} \left\lbrace   \frac{\partial F^{\mu \nu}}{\partial x^\lambda} u_\nu u_\lambda - \frac{e}{m_e c^2} \left[ F^{\mu \lambda} F_{\nu \lambda} u^\nu - \left(F_{\nu\lambda}u^\lambda\right) \left( F^{\nu\kappa}u_\kappa\right)u^\mu \right]   \right\rbrace
+g^\mu =\frac{e^4}{6 \pi m_e} \left[-\frac{m_e}{e}(\partial_\alpha F^{\mu \nu}) u_\nu u^\alpha + F^{\mu\nu} F_{\nu\alpha}u^\alpha + (F^{\nu \alpha}u_\alpha)^2 u^\mu      \right].
 \end{equation}
-or in terms of 3-vectors as \cite{Bulanov2011_LADLL}:
-\begin{align*}
-\mathbf{F} = \frac{2e^3}{3m_e c^3 \sqrt{1-\frac{v^2}{c^2}}} \left\lbrace \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{E} + \frac{1}{c} \left[ \mathbf{v} \times \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{B} \right] \right\rbrace +\\
-+ \frac{2e^4}{3m^2_e c^4}\left\lbrace \mathbf{E}\times\mathbf{B} + \frac{1}{c} ( \mathbf{B} \times (\mathbf{B} \times \mathbf{v})) + \frac{1}{c} \mathbf{E} (\mathbf{v} \cdot \mathbf{E}) \right\rbrace - \\
-- \frac{2e^4}{3m^2_e c^5 \left( 1-\frac{v^2}{c^2}\right)} \mathbf{v} \left\lbrace\left( \mathbf{E} + \frac{1}{c} \mathbf{v} \times \mathbf{B}\right)^2 - \frac{1}{c^2} (\mathbf{v} \cdot \mathbf{E})^2 \right\rbrace,
-\end{align*}
-
 This description only holds if $L \ll \lambda_C$ and $E \ll E_{cr}/\alpha$, which is satisfied within the realm of classical electrodynamics.
-\EliasComm{According to \cite{Spohn2000_RR} all physical solutions of the LAD equation are also solutions of LL}
 \vspace{\baselineskip}
 
-In the Landau-Lifschitz model we can also find an analytic expression of the energy loss an electron experiences. For an electron interacting with a plane wave with a Gaussian temporal envelope this is given by \cite{Thomas2012_LL,Bulanov2011_LL}
+In the Landau-Lifschitz model we can also find an analytic expression of the energy loss, $\Delta \gamma$, an electron experiences. For an electron of initial energy $\gamma_0$ interacting with a plane wave with a Gaussian temporal envelope this is given by \cite{Thomas2012_LL,Bulanov2011_LL}
 \begin{equation}
 \frac{\Delta \gamma}{\gamma_0} = \frac{\sqrt{\pi/2}\tau_0 t_L \omega_0^2 \gamma_0 a_0^2}{1+\sqrt{\pi/2 \tau_0 t_L \omega_0^2 \gamma_0 a_0^2}},
 \label{Theory:eq:EnergyLoss_LLThomas}
 \end{equation}
-where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$, the pulse duration $t_L$, the wavelength $\lambda$. This is valid if quantum effects are negligible, $\gamma_0 a_0 \ll m_e c^2/2\hbar \omega_0$ (see next section), whereas strong radiation reaction effects are expected for $\gamma a^2_0 > (10 \sqrt{2\pi^3} \omega_0 \tau_0 \gamma_0)^{-1/2}$.
+where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$ is again the `characteristic time' for an electron, $t_L$ is the laser pulse duration, $\lambda$ the wavelength of the laser pulse, and $a_0$ is its normalised vector potential. This is valid if quantum effects are negligible, $\gamma_0 a_0 \ll m_e c^2/2\hbar \omega_0$ (see next section). Strong radiation reaction effects are expected for $\gamma a^2_0 > (10 \sqrt{2\pi^3} \omega_0 \tau_0 \gamma_0)^{-1/2}$.
 \vspace{\baselineskip}
 
-Whilst this description is free from runaway solutions unlike the LAD equation it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle \cite{Baylis2002_LL}. 
-
+Whilst this description is free from runaway solutions unlike the LAD equation it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle \cite{Baylis2002_LL}. Note also that all physical solutions of the LAD equation are also solutions of the LL description \cite{Spohn2000_RR}.
 
 \subsection{Quantum picture and corrections}
 
@@ -850,7 +844,7 @@ Here
 
 One of the most intriguing predictions of quantum electrodynamics (QED) is the transformation of light into matter and vice versa matter into light. In this context the two most fundamental processes are the annihilation of an electron with its antiparticle, the positron, into two photons (Dirac annihilation), and the inverse process where two photons create an electron-positron pair (Breit-Wheeler pair production). If multiple photons annihilate into an electron-positron pair this is referred to as the nonlinear Breit-Wheeler process. 
 
-Another means of producing electron-positron pairs is, for instance, the interaction of photons with the Coulomb field of the nucleus and atom (Bethe-Heitler process) which is closely related to the radiative process of bremsstrahlung.
+Another means of producing electron-positron pairs is, for instance, the interaction of photons with the Coulomb field of the nucleus and atom (Bethe-Heitler process), which is closely related to the radiative process of bremsstrahlung.
 A third example of pair production is the so-called Schwinger pair production where an extremely high electric field `pulls' virtual electron-positron pairs directly out of the vacuum. These field strengths can, for instance, be achieved in the rest frame of a relativistic electron colliding with an intense laser pulse or in the standing wave of two such laser pulses.
 The following section briefly discusses the cross sections and scaling laws associated with these mechanisms, where the focus lies on the (linear) Breit-Wheeler process that is central to the results presented in Chapter \ref{Chap:BW}.
 
@@ -1002,12 +996,8 @@ The differential cross section for the process is related to the bremsstrahlung 
 \begin{equation}
 \frac{d \sigma_{\gamma Z}}{dE_+}(\omega,x) = -\frac{1}{\hbar x^2}\frac{d\sigma_{eZ}}{d\omega}(-\omega,x),
 \end{equation}
-where $x = \hbar \omega / E_+$, the ratio of the initial photon to the final positron energy.
-The total cross section scales as \cite{Heitler1933_BHApprox,Ruffini2010_PAIRSASTRO}
-\begin{equation}
-\sigma_{\gamma Z} \sim \alpha Z^2 \left(\frac{e^2}{m_ec^2}\right)^2,
-\end{equation}
-and in the ultrarelativistic case the total cross section for a photon of energy $\hbar \omega$ to produce a pair is \cite{Bethe1954_BREMS,Davies1954_BREMSPAIR,Ruffini2010_PAIRSASTRO}
+where $x = \hbar \omega / E_+$, the ratio of the initial photon to the final positron energy. The full cross section is given in Section \ref{Appendix:Sec:BetheHeitler}.
+In the ultrarelativistic case the total cross section for a photon of energy $\hbar \omega$ to produce a pair is \cite{Bethe1954_BREMS,Davies1954_BREMSPAIR,Ruffini2010_PAIRSASTRO}
 \begin{equation}
 \sigma_{\gamma Z} = \frac{28}{9} Z^2 \alpha r^2_e \left(\ln\frac{2\omega}{m_e} - \frac{109}{42} - f(Z\alpha)\right),
 \end{equation}
@@ -1016,16 +1006,6 @@ with
 f(Z\alpha) = (Z\alpha)^2 \sum^\infty_{n=1}\frac{1}{n[n^2 + (Z\alpha)^2]}.
 \end{equation}
 For $Z \alpha \ll 1$ the term $f(Z\alpha)\rightarrow 0$ \cite{Bethe1934_BH}.
-Similarly as for bremsstrahlung the differential cross section can in the ultrarelativistic regime be approximated by a simplified equation in terms of the radiation length, $X_0$ (REF\addref{} Tsai, PDG):
-\begin{equation}
-\frac{\dif \sigma_{\gamma Z}}{\dif x} = \frac{A}{X_0 N_A} \left[ 1 - \frac{4}{3}x(1-x)\right],
-\end{equation}
-where $x = E/k$, where $k$ is the incident photon energy and $E$ the energy of the produced electron or positron.
-In the high-energy limit the total cross section becomes
-\begin{equation}
-\sigma_{\gamma Z} = \frac{7}{9}\frac{A}{X_0 N_A},
-\end{equation}
-which is accurate to within a few percent at $1\GeV$ and high-Z materials.
 
 
 \subsection{Schwinger limit}

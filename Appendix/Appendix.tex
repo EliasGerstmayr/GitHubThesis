@@ -1,70 +1,6 @@
-\chapter{Notations and Vector Identities}
-
-\section{Notation and Glossary}
-
-Vectors will be noted in bold letters. 
-
-In equations using variable names $\times$ will be the cross product and $\cdot$ will notate the dot product. 
-In occasions using specific numbers as in $3 \times 10^{18}$ the $\times$ will just be a normal multiplication.
-
-\section{Nabla Operator and Vector Identities}
-
-In Cartesian coordinates
-\begin{equation}
-\nabla = (\partial x, \partial y, \partial z)^t
-\end{equation}
-
-In cylindrical coordinates
-
-In spherical coordinates
-
 
 \iffalse
-\subsection{Convective derivative}
-
-\begin{equation}
-\frac{\mathrm{d}}{\mathrm{d}t} y = \frac{\partial y}{\partial} \mathbf{u} \cdot \nabla y,
-\end{equation}
-with $y = y(\mathbf{x},t)$ and velocity $\mathbf{u}(\mathbf{x},t)$
-
-
-
-\subsection{IDENTITY}
-Derivation of the identity:
-
-\begin{equation}
-\mathbf{v} \cdot \nabla \mathbf{p} = \nabla \mathbf{p} \cdot \mathbf{v} - \mathbf{v} \times (\nabla \times \mathbf{p}),
-\end{equation}
-
-with the covariant derivative $\nabla \mathbf{p}$.
-
-\begin{equation}
-A = B + C
-\end{equation}
-
-A:
-\begin{equation}
-\mathbf{v} \cdot \nabla \mathbf{p} = \left( \frac{\partial p_i}{\partial x_j}\right)_{ij}
-\end{equation}
-
-B:
-\begin{equation}
-\mathbf{v} \cdot \nabla \mathbf{p} = \left(v_i \frac{\partial p_i}{\partial x_j}\right)_j
-\end{equation}
-
-C:
-\begin{equation}
-\mathbf{v} \times (\nabla \times \mathbf{p}) = v_m \epsilon_{lmi} \epsilon_{ijk} \frac{\partial p_k}{\partial x_j},
-\end{equation}
-using the cyclic properties of the Levi-Civita symbol and the identity
-\begin{equation}
-\epsilon_{ilm} \epsilon_{ijk} = \delta_{lj} \delta_{mk} - \delta_{lk} \delta_{mj}
-\end{equation}
-the equation becomes
-\begin{equation}
-v_m \left( \delta_{lj}\delta_{mk} - \delta_{lk} \delta_{mj}\right) \frac{\partial p_k}{\partial x_j} = v_k \frac{\partial p_k}{\partial x_l} - v_m \frac{\partial p_l}{\partial x_m}
-\end{equation}
-\fi
+\chapter{Notations and Vector Identities}
 
 
 \subsection{Curl of a gradient}
@@ -85,69 +21,13 @@ or again in terms of $f(x,y,z)$:
 \end{equation}
 If $f$ is twice continuously differentiable, the order of the derivatives is interchangeable and $\nabla \times \nabla f = \mathbf{0}$.
 The curl of a gradient is always zero.
-
-\section{Maxwell's equations}
-
-In differential form
-
-\begin{align}
-\nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0}\\
-\nabla \cdot \mathbf{B} &= 0\\
-\nabla \times \mathbf{E} &= - \frac{\partial \mathbf{B}}{\partial t}\\
-\nabla \times \mathbf{B} &= \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}
-\end{align}
-
-In integral form
-
-Combining these:
-
-Wave equations.
-
-\chapter{Frames of reference}
-
-\subsection{Relativistic Transformations}
-
-Boosts
-
-
-\subsection{Rest frame}
-
-\subsection{Center-of-mass frame}
-
-Defined by $\mathbf{p_1} = - \mathbf{p_2}$, so that for scattering events $2 \rightarrow 2$ also $\mathbf{p_3} = -\mathbf{p_4}$.
-
-In the special case $m_1 = m_2$, and $m_3 = m_4$, we also have $E^{CM}_1 = E^{CM}_2$ and $E^{CM}_4 = E^{CM}_4$.
-
-The centre of mass energy 
-\begin{equation}
-s = \frac{E_1 E_2 (1-\cos \theta)}{4m^2_e c^4}
-\end{equation}
-
-
-\subsubsection{Scattering angle}
-
-The scattering angle in the CM frame, $\theta_{CM}$, be defined as 
-\begin{equation}
-\mathbf{p} \cdot \mathbf{p}' = |\mathbf{p}| \cdot |\mathbf{p}'| \cos \theta_{CM}
-\end{equation}
-
-The angle be defined as 
-\begin{equation}
-\cos \theta_{CM} = \frac{s (t-u) + (m^2_1 - m^2_2)(m^2_3 - m^2_4)}{\sqrt{\lambda(s,m^2_1,m^2_2)}\sqrt{\lambda(s,m^2_3,m^2_4)}},
-\end{equation}
-where 
-\begin{equation}
-\lambda(a,b,c) = a^2 - 2a(b+c) + (b-c)^2,
-\end{equation}
-which is symmetric under $a \leftrightarrow b \leftrightarrow c$ and asymptotic behaviour $a \gg b,c: \lambda(a,b,c) \rightarrow a^2$.
-For photons $m = 0$, so that $\lambda(a,b,c) = a^2$
+\fi
 
 \chapter{Single particle motion}
 
 \section{Electron in a cylindrically symmetric electric field}
 
-The previously discussed case of a particle in a homogeneous magnetic field corresponds to the motion in a magnetic electron spectrometer or the deflection of charged particles in a circular accelerator.
-We will now discuss the motion of an electron in a cylindrically symmetric electric field which resembles the case of an electron in a plasma channel.
+Here we discuss the motion of an electron in a cylindrically symmetric electric field which resembles the case of an electron in a plasma channel.
 This derivation is based on \cite{WoodThesis}.
 
 Assume a relativistic electron moving in the longitudinal direction and an electric field that is cylindrically symmetric around the propagation axis.
@@ -204,12 +84,12 @@ Integrating this with the initial condition $z(t=0) = z_0$
 \frac{z}{c} \approx \frac{z_0}{c} + \beta \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right) t + \beta \frac{r^2_\beta \omega_\beta}{8c^2}\sin(2\omega_\beta t),
 \end{equation}
 
-where we identify the drift velocity $\beta c \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right)$ and in the moving frame the familiar figure-of-eight motion again.
-
+where we identify the drift velocity $\beta c \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right)$ and in the moving frame the familiar figure-of-eight motion.
+\clearpage
 
 \section{Electron in a cylindrically symmetric electric field with axial field}
 
-Now we add will add a constant axial field in the longitudinal (direction of electron propagation) to the previous case. This comes closer to the reality of a laser wakefield accelerator where electrons experience radial focusing and axial accelerating fields at the same time. Significant parts of this derivation are based on \cite{WoodThesis,Glinec2008_BETATRON}.
+Now we add a constant axial field in the longitudinal (direction of electron propagation) to the previous case. This comes closer to the reality of a laser wakefield accelerator where electrons experience radial focusing and axial accelerating fields at the same time. Significant parts of this derivation are based on \cite{WoodThesis,Glinec2008_BETATRON}.
 
 The electric field component shall now be $E_z$, with $z$ being the longitudinal axis.
 This gives us the extra term $\frac{\partial \phi}{\partial z} = - E_z$.
@@ -397,63 +277,77 @@ In LWFA betatron radiation typically reaches the soft X-ray regime of a few to t
 Difference here is that we use an quasi-electrostatic field instead of a magnetic field, but radiation from a synchrotron, an insertion device (wiggler) and betatron radiation share a common description rooted in the equation of motion (figure-of-eight motion) even though using different field structures and $K$ parameters.
 
 
+\chapter{Radiation Length}
+\label{Appendix:Sec:RadiationLength}
 
-
-\iffalse
-\chapter{Radiation Integrals}
-
-\subsection{Bessel functions}
-
-Functions solving the differential equations ....
-
-The Bessel function of first order transforms:
-...
-
-The generalized Bessel function
+The radiation length, $X_0$, is a material-specific quantity that indicates how much energy a high-energy particle converts into radiation and secondary particles. The energy of a particle passing through a material of thickness $x$ and radiation length $X_0$ loses energy at a rate \cite{Jackson}:
 \begin{equation}
-J_n(x,y) = \Sigma 
+\frac{\dif E}{\dif x} = -\frac{E}{X_0},
+\end{equation}
+with $E(x) = E_0 e^{-x/X_0}$ and $X_0$ is given by \cite{Tsai1974_PairsBrems,Tanabashi2018_PDGReview}:
+\begin{equation}
+\boxed{X_0 = \left[ 4 \alpha r^2_e \frac{N_A}{A}\left\lbrace Z^2 \left( L_{rad} - f(Z) \right) + Z L'_{rad} \right\rbrace\right]^{-1},}
+\end{equation}
+with the atomic weight, $A$, and $4 \alpha r^2_e \frac{N_A}{A} = (716.408\,\mathrm{g}\,\mathrm{cm}^{-2})^{-1}$ for $A = 1~\mathrm{g/mol}$.  For up to uranium $f(Z)$ can be approximated by
+\begin{equation}
+f(Z) = a^2 \left[(1+a^2)^{-1} + 0.20206 - 0.0369 a^2 + 0.0083a^4 - 0.002 a^6\right],
+\end{equation}
+with $a = \alpha Z$.
+The radiation length in a mixture or compound of $n$ components can be approximated by the sum of radiation lengths of the individual components weighted by their weight
+\begin{equation}
+\frac{1}{X_0} = \sum^n_{j = 1} \frac{w_j}{X_j}.
 \end{equation}
 
-Recursion
+\chapter{Bremsstrahlung}
 
-First order for radiation integrals (see Synchrotron/Betatron and in generalized form ICS)
+\section{Bremsstrahlung in the Born approximation}
+\label{Appendix:Brems_Born}
+
+The (in energy) differential cross section for electron-nucleus bremsstrahlung in a fixed field in the Born approximation, neglecting the recoil of the nucleus, is given by \cite{Ruffini2010_PAIRSASTRO,PikeThesis}
+\begin{align}
+\frac{\dif \sigma_{eZ}}{\dif \omega} = \frac{\alpha Z^2 r^2_e}{\omega}\frac{u'}{u}\Bigg\lbrace &\frac{4}{3} - 2 \gamma \gamma' c^2 \frac{u^2 + u'^2}{u^2 u'^2} + c^3 \left( \frac{\epsilon \gamma'}{u^3} + \frac{\epsilon'\gamma}{u'^3}-\frac{\epsilon\epsilon'^3}{u u' c}\right)\\ \nonumber
+&+ L\Bigg[\frac{8}{3} \frac{\gamma \gamma' c^2}{u u'} + \frac{(\hbar \omega)^2 c^2}{m^2_e u^3 u'^3} (\gamma^2 \gamma'^2 + u^2 u'^2/c^4)\\ \nonumber
+& +\frac{\hbar \omega}{2 m_e u u'}\left( \frac{\gamma \gamma'+ u^2/c^2}{u^3/c^3}- \frac{\gamma \gamma' + u'^2/c^2}{u'^3/c^3}-\frac{2\hbar \omega \gamma \gamma'c^2}{m_e u^2 u'^2}\right)\Bigg]\Bigg\rbrace,
+\end{align}
+where
+\begin{align*}
+L &= \ln \left( \frac{\gamma \gamma' + u u'/c^2 -1}{\hbar \omega/m_e c^2}\right),\\
+\epsilon &= 2 \ln(\gamma + u/c),\\
+\epsilon' &= 2 \ln(\gamma' + u'/c).
+\end{align*}
+$u$ is the momentum of the electron, $\gamma$ its energy and $m_e$ its mass. $\hbar \omega$ is the energy of the photon and $c$ is the speed of light. Primed quantities denote post-interaction values and $\gamma m_e c^2 = \hbar \omega + \gamma' m_e c^2$, assuming all energy is transferred into radiation.  $r_e$ is the electron radius, $\alpha$ the fine-structure constant and $Z$ the atomic number.
 
 
-\subsection{Lienard Wiechert potentials}
-Lienard Wiechart potentials and fields.
+\section{Bremsstrahlung including screening}
+\label{Appendix:Brems_with_Screening}
 
-Jackson \cite{Jackson}:
+The (in energy) differential cross section for electron-nucleus bremsstrahlung is in the ultra-relativistic limit, including electron contributions and screening, given by \cite{Tsai1974_PairsBrems,Tanabashi2018_PDGReview}
+\begin{align}
+\frac{\dif \sigma_{eZ}}{\dif \omega} = \frac{\alpha r^2_e}{\omega} \Bigg\lbrace &\left(\frac{4}{3} - \frac{4}{3}y + y^2\right) \times \left[Z^2\left(\phi_1 - \frac{4}{3}\ln Z - 4f\right) + Z \left(\psi_1 - \frac{8}{3}\ln Z\right)\right]\\ \nonumber 
+& + \frac{2}{3}(1-y) \left[ Z^2 (\phi_1 - \phi_2) + Z(\psi_1 - \psi_2)\right]\Bigg\rbrace,
+\end{align}
+with $y = \hbar \omega/\gamma m_e c^2$, the ratio of the emitted photon energy to the initial electron energy. $r_e$ is the electron radius, $\alpha$ the fine-structure constant and $Z$ is the atomic number. The $\phi$ and $\psi$ terms are given by
+\begin{align*}
+\phi_1 &= 2\left[1+\ln\left(a^2 Z^{2/3} m^2_e\right)\right] - 2\ln(1+b^2) - 4b \tan^{-1} (b^{-1}),\\
+\phi_2 &= 2\left[\frac{2}{3}+\ln\left(a^2 Z^{2/3}m^2_e\right)\right] -\ln(1+b^2) + 8b^2 \left[1-b \tan^{-1}(b^{-1}) - \frac{3}{4}\ln(1+b^{-2})\right],\\
+\psi_1 &= 2\left[1+\ln\left(a'^2 Z^{4/3}m^2_e\right)\right] -2\ln(1+b'^2) - 4b' \tan^{-1} (b^{-1}),\\
+\psi_2 &= 2\left[\frac{2}{3}+\ln \left(a'^2 Z^{4/3} m^2_e\right)\right] - 2 \ln (1+b'^2) + 8 b'^2 \left[1-b \tan^{-1} (b'^{-1}) - \frac{3}{4} \ln (1+b'^{-2})\right], 
+\end{align*}
+with $a=184.15(2.718)^{-1/2} Z^{-1/3}/m_e$, $a' = 1194(2.718)^{-1/2} Z^{-2/3}/m_e$, $b = a \delta$, $b' = a' \delta$, $\delta = m^2_e \hbar \omega/(2\gamma m_e c^2(\hbar \omega - \gamma m_e c^2))$.
+The Coulomb correction term for the atomic electrons, $f$, is given by
 \begin{equation}
-\mathbf{E} (\mathbf{r}, t) = \frac{e}{4 \pi \epsilon_0} \left[\frac{\mathbf{n}-\mathbf{\beta}}{\gamma^2 R^2 (1-\mathbf{\beta} \cdot \mathbf{n})^3}+\frac{\mathbf{n}\times\left[(\mathbf{n}-\mathbf{\beta})\times\dot{\mathbf{\beta}}\right]}{cR(1-\mathbf{\beta}\cdot\mathbf{n})^3}\right]_{retarded}
+f(z) \approx 1.202 z - 1.0369z^2 + 1.008z^3/(1+z).
 \end{equation}
 
+\section{Bremsstrahlung in terms of radiation length}
+\label{Appendix:Sec:Brems_RadiationLength}
+
+The differential cross section for the bremsstrahlung process is in the ultrarelativistic limit approximated by a simplified expression in terms of the radiation length, $X_0$ (see Section \ref{Appendix:Sec:RadiationLength}) \cite{Tsai1974_PairsBrems,Tanabashi2018_PDGReview}
 \begin{equation}
-\mathbf{B}(\mathbf{r},t) = \frac{\mathbf{n}\times\mathbf{E}}{c}
+\frac{\dif \sigma}{\dif (\hbar \omega)} = \frac{A}{X_0 N_A \hbar \omega} \left(\frac{4}{3} - \frac{4}{3}y + y^2\right),
 \end{equation}
+where $\hbar \omega$ is the energy of the emitted photon, $Z$ is the atomic number and $A$ the atomic weight and $N_A$ the Avogadro number. $y= \hbar\omega/E$, i.e. the fraction of the emitted photon energy relative to the initial electron energy.
 
-Poynting vector
-\begin{equation}
-\mathbf{S} = \mu_0^{-1} \mathbf{E}\times\mathbf{B} = (c \mu_0)^{-1} \mathbf{E} \times \mathbf{n} \times \mathbf{E}
-\end{equation}
-
-\begin{equation}
-[\mathbf{S} \cdot \mathbf{n}]_{retarded} = \frac{e^2}{16 \pi c \epsilon_0} \left[ \frac{1}{R^2}|\frac{\mathbf{n} \times [(\mathbf{n}-\mathbf{\beta})\times\dot{\mathbf{\beta}}]}{(1-\mathbf{\beta}\cdot \mathbf{n})^3}|^2\right]_{retarded}
-\end{equation}
-
-\begin{equation}
-\frac{dP(t)}{d\Omega} = R^2 [\mathbf{S}\cdot\mathbf{n}]_{retarded}
-\end{equation}
-
-Total power radiated:
-\begin{equation}
-P = \frac{e^2 \gamma^6}{6 \pi c \epsilon_0} \left( |\mathbf{\dot{\beta}}|^2 - |\mathbf{\beta} \times \dot{\mathbf{\beta}}|^2\right)
-\end{equation}
-
-%\begin{equation}
-%\frac{d^2 I}{d\omega d\Omega} = \frac{e^2 \omega^2}{16 \pi^3 c \epsilon_0} |\int_{-\inf}^\inf \mathbf{n} \times (\mathbf{n} \times \mathbf{\beta}) e^{i\omega (t'- \mathbf{n}\cdot\mathbf{r}(t')/c)} dt|^2
-%\end{equation}
-
-\fi
 
 \chapter{Cross sections for fundamental QED processes}
 
@@ -618,109 +512,20 @@ In more details this can be written as
 where the first part in the bracket corresponds to a helicity-conserving interaction and the second term to a process that flips helicity. 
 
 
-\subsection{Derivation of the Dirac annihilation cross section}
 
-We can re-use the result from Compton scattering to determine the cross section of the pair annihilation process $e^- e^+ \rightarrow \gamma \gamma$ using cross symmetry.
-
-By replacing:
-\begin{align*}
-p &\rightarrow p_1\\
-p' &\rightarrow -p_2\\
-k &\rightarrow - k_1\\
-k' &\rightarrow k_2
-\end{align*}
-
-
-\subsection{Derivation of the linear Breit-Wheeler cross section}
-
-The cross section for the Breit-Wheeler process is simply given by XX.
-
-From PRL Yu 2019 122\addref{}:
-
-The energy of the electron and the positron in the production process is equal as it is in the CM frame.
-\begin{equation}
-\epsilon_{ec} = \epsilon_{pc} = \frac{1}{2}\sqrt{2\epsilon_{\gamma1} \epsilon_{\gamma2} (1-\cos \theta_c)}
-\end{equation}
-The momenta follow
-\begin{equation}
-|p_{ec}| = |p_{pc}| = \sqrt{\frac{1}{4}\left[\left(\frac{\epsilon_{\gamma1}+\epsilon_{\gamma2}}{c}\right)^2 - (\mathbf{p}_{\gamma1} + \mathbf{p}_{\gamma2})^2\right] - (m_ec^2)^2}
-\end{equation}
-The gamma momenta are in the laboratory frame. The direction of the electron and positron momentum is isotropic in the CM frame but has to satisfy $\mathbf{p}_{ec} = - \mathbf{p}_{pc}$. In the laboratory frame
-\begin{equation}
-\epsilon_{e,p} = \gamma_c (\epsilon_{ec,pc} + \mathbf{v}_c \cdot \mathbf{p}_{e,p}),
-\end{equation}
-with the momentum in lab frame
-\begin{equation}
-\mathbf{p}_{e,p} = \mathbf{p}_{ec,pc} + \frac{\gamma_c - 1}{v^2_c} (\mathbf{v_c} \cdot \mathbf{p}_{ec,pc}) \cdot \mathbf{v}_c + \frac{\gamma_c \mathbf{v}_c \epsilon_{ec,pc}}{c^2},
-\end{equation}
-with $\gamma_c = 1/\sqrt{1-(v_c/c)^2}$ and $\mathbf{v}_c$, the velocity of the centre of mass frame
-\begin{equation}
-\mathbf{v}_c = \frac{(\mathbf{p}_{\gamma1} + \mathbf{p}_{\gamma2})^2}{\epsilon_{\gamma1} + \epsilon_{\gamma2}}
-\end{equation}
-
-
-\subsection{Nonlinear Breit-Wheeler cross section}
-\label{Theory:Sec:NonlinearBW}
-
-The probability of pair production by one photon of momentum $l$ in interaction with $n$ laser photons of momentum $k$ per unit volume in unit time (circular polarisation) \cite{Ruffini2010_PAIRSASTRO}:
-
-\begin{equation}
-P_{\gamma\gamma} = \frac{e^2 m^2_e}{16 l_0} \sum^\infty_{n>n_0} \int^\nu_1 \frac{\dif \nu}{\nu^{3/2} (1+\nu)^{1/2}}[2 J^2_n(z) + \eta^2 (2\nu -1) (J^2_{n+1} + J^2_{n-1} - 2J^2_n)],
-\end{equation}
-with $\nu = (kl)^2/4(kq)(kq')$, $\nu_n = n/n_0$, $n_0 = 2m^2_\ast/(kl)$ and Bessel functions $J_n(z)$.
-
-\begin{equation}
-z = 4m^2_e \frac{\eta (1+ \eta^2)^{1/2}}{(kl)}\left[\frac{\nu}{\nu_n}\left(1- \frac{\nu}{\nu_n}\right)\right]^{1/2}.
-\end{equation}
-
-Alternatively, using results from \cite{BlackburnThesis}:
-
-The differential probability rate:
-
-\begin{equation}
-\frac{\dif W_{\pm}}{\dif \eta_+} = \frac{\alpha}{\tau_C} \frac{mc^2}{\hbar \omega} \chi \frac{\dif T(\chi)}{\dif \eta_+}.
-\end{equation}
-
-\begin{equation}
-\frac{\dif T(\chi)}{\dif \eta_+} = \frac{1}{2 \sqrt{3} \pi \chi^2} \left[ \left( \frac{2\chi}{\eta_+} - 1 + \frac{1}{2\chi/\eta_+ - 1}\right) K_{2/3} (\delta) - \int^\infty_\delta K_{1/3}(t)\dif t\right],
-\end{equation}
-where
-\begin{equation}
-\delta = \frac{4 \chi}{3\eta^2_+} \left( \frac{2 \chi}{\eta_+} - 1\right)^{-1}.
-\end{equation}
-Conservation law $2\chi = \eta_+ + \eta_-$.
-
-
-The total Breit-Wheeler pair production 
-\begin{equation}
-W_{\pm} = \frac{\alpha}{\tau_C} \frac{mc^2}{\hbar \omega}\chi T(\chi),
-\end{equation}
-where
-\begin{equation}
-T(\chi) = 
-\begin{cases}
-\frac{3\sqrt{3}}{8 \sqrt{2}} \exp\left(-\frac{4}{3\chi}\right) \,\, & \chi \ll 1,\\
-0.6\chi^{-1/3} \,\,&\chi \gg 1.
-\end{cases}
-\end{equation}
-
-Approximation (ERBER\addref{})
-\begin{equation}
-T(\chi) \approx \frac{0.16}{\chi} K^2_{2/3} \left(\frac{2}{3\chi}\right).
-\end{equation}
 
 \subsection{Nonlinear Compton scattering cross section}
 
 
-The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation \cite{Ritus1985_QRR,BlackburnThesis} and are given by (averaged spin, in and out, unpolarised states) for $n$ scattered photons for circular polarisation
+The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation \cite{Ritus1985_QRR,BlackburnThesis}. The scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given by
 \begin{equation}
 \frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 E}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
 \end{equation}
-and for linear polarisation
+and for linear polarisation by
 \begin{equation}
 \frac{\dif W_n}{\dif x} = \frac{2 \alpha m^2}{\pi E}\int^{\pi/2}_0 \left[-A^2_0 + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (A^2_1 - A_0 A_2)\right]\dif \varphi.
 \end{equation}
-The frequency of the incoming photons is $\omega$, the scattered photon carries an energy $\omega' = xE$, i.e $x$ is the fraction of energy the photon carries away.
+The frequency of the incoming photons is $\omega$ and the scattered photon carries an energy $\omega' = xE$, i.e $x$ is the fraction of energy the photon carries away. $a_0$ is the normalised vector potential of the laser pulse.
 $J_n$ is shorthand for $J_n(z)$, and $A_i = A_i(n,a,b)$, with
 \begin{align}
 z &= \frac{2 a_0}{\sqrt{1+a^2_0}}\frac{\sqrt{x(nu - (1+nu)x)}}{u(1-x)},\\
@@ -734,129 +539,109 @@ b &= - \frac{(n/2) a^2_0}{1+a^2_0 + Q^2},\\
 Q^2 &= (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
 \end{align}
 
-\subsection{Radiation Length}
 
 
-A useful quantity is the radiation length, $X_0$ \cite{Jackson}:
+\chapter{Radiation Reaction}
+
+\section{Landau-Lifschitz Equation}
+
+In terms of 3-vectors this can be written as \cite{Bulanov2011_LADLL}:
+\begin{align*}
+\mathbf{F} = \frac{2e^3}{3m_e c^3 \sqrt{1-\frac{v^2}{c^2}}} \left\lbrace \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{E} + \frac{1}{c} \left[ \mathbf{v} \times \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{B} \right] \right\rbrace +\\
++ \frac{2e^4}{3m^2_e c^4}\left\lbrace \mathbf{E}\times\mathbf{B} + \frac{1}{c} ( \mathbf{B} \times (\mathbf{B} \times \mathbf{v})) + \frac{1}{c} \mathbf{E} (\mathbf{v} \cdot \mathbf{E}) \right\rbrace - \\
+- \frac{2e^4}{3m^2_e c^5 \left( 1-\frac{v^2}{c^2}\right)} \mathbf{v} \left\lbrace\left( \mathbf{E} + \frac{1}{c} \mathbf{v} \times \mathbf{B}\right)^2 - \frac{1}{c^2} (\mathbf{v} \cdot \mathbf{E})^2 \right\rbrace,
+\end{align*}
+
+
+
+\chapter{Pair Production}
+
+\section{Nonlinear Breit-Wheeler cross section}
+\label{Theory:Sec:NonlinearBW}
+
+The probability of pair production by one photon of momentum $l$ in interaction with $n$ laser photons of momentum $k$ per unit volume in unit time (circular polarisation) \cite{Ruffini2010_PAIRSASTRO}:
 
 \begin{equation}
-\frac{\dif E}{\dif x} = -\frac{E}{X_0},
+P_{\gamma\gamma} = \frac{e^2 m^2_e}{16 l_0} \sum^\infty_{n>n_0} \int^\nu_1 \frac{\dif \nu}{\nu^{3/2} (1+\nu)^{1/2}}[2 J^2_n(z) + \eta^2 (2\nu -1) (J^2_{n+1} + J^2_{n-1} - 2J^2_n)],
 \end{equation}
-with $E(x) = E_0 e^{-x/X_0}$ and
+with $\nu = (kl)^2/4(kq)(kq')$, $\nu_n = n/n_0$, $n_0 = 2m^2_\ast/(kl)$ and Bessel functions $J_n(z)$, where
 \begin{equation}
-X_0 = \left[ 4N \frac{Z(Z+1)e^2}{\hbar c} \left(\frac{z^2 e^2}{Mc^2}\right)^2 \ln \left(\frac{233 M}{Z^{1/3} m}\right)\right]^{-1}
-\end{equation}
-or (PDG\addref{}, Tsai REF\addref):
-\begin{equation}
-X_0 = \left[ 4 \alpha r^2_e \frac{N_A}{A}\left\lbrace Z^2 \left( L_{rad} - f(Z) \right) + Z L'_{rad} \right\rbrace\right]^{-1},
-\end{equation}
-with $A = 1~ \mathrm{g}\,\mathrm{mol}^{-1}$.  $f(Z)$ for up to uranium can be approximated by (REF\addref)
-\begin{equation}
-f(Z) = a^2 \left[(1+a^2)^{-1} + 0.20206 - 0.0369 a^2 + 0.0083a^4 - 0.002 a^6\right],
-\end{equation}
-with $a = \alpha Z$.
-The radiation length in a mixture or compound of $n$ components can be approximated by the sum of radiation lengths of the individual components weighted by their weight
-\begin{equation}
-\frac{1}{X_0} = \sum^n_{j = 1} \frac{w_j}{X_j}.
+z = 4m^2_e \frac{\eta (1+ \eta^2)^{1/2}}{(kl)}\left[\frac{\nu}{\nu_n}\left(1- \frac{\nu}{\nu_n}\right)\right]^{1/2}.
 \end{equation}
 
+Alternatively, in the high-field limit the rates can be related to the (quantum) synchrotron function, such that the differential probability rate is given by \cite{BlackburnThesis}
+\begin{equation}
+\boxed{\frac{\dif W_{\pm}}{\dif \eta_+} = \frac{\alpha}{\tau_C} \frac{mc^2}{\hbar \omega} \chi \frac{\dif T(\chi)}{\dif \eta_+},}
+\label{Theory:Eqns:NLBW:diffW}
+\end{equation}
+where $\tau_C = \hbar/mc^2 = 1.288\times10^{-6}\fs$ is the Compton time, $\chi$ is the quantum parameter and
+\begin{equation}
+\frac{\dif T(\chi)}{\dif \eta_+} = \frac{1}{2 \sqrt{3} \pi \chi^2} \left[ \left( \frac{2\chi}{\eta_+} - 1 + \frac{1}{2\chi/\eta_+ - 1}\right) K_{2/3} (\delta) - \int^\infty_\delta K_{1/3}(t)\dif t\right],
+\end{equation}
+with
+\begin{equation}
+\delta = \frac{4 \chi}{3\eta^2_+} \left( \frac{2 \chi}{\eta_+} - 1\right)^{-1}.
+\end{equation}
+The total rate of the Breit-Wheeler pair production is obtained by integrating Equation \eqref{Theory:Eqns:NLBW:diffW}:
+\begin{equation}
+\boxed{W_{\pm} = \frac{\alpha}{\tau_C} \frac{mc^2}{\hbar \omega}\chi T(\chi),}
+\end{equation}
+where $T(\chi)$ can analytically be approximated by \cite{Erber1966_PAIRS}
+\begin{equation}
+T(\chi) \approx \frac{0.16}{\chi} K^2_{2/3} \left(\frac{2}{3\chi}\right),
+\end{equation}
+or in two limits of $\chi$ by
+\begin{equation}
+T(\chi) = 
+\begin{cases}
+\frac{3\sqrt{3}}{8 \sqrt{2}} \exp\left(-\frac{4}{3\chi}\right) \,\, & \chi \ll 1,\\
+0.6\chi^{-1/3} \,\,&\chi \gg 1.
+\end{cases}
+\end{equation}
 
-\subsection{Bremsstrahlung in Born approximation}
-\label{Appendix:Brems_Born}
+\clearpage
+\section{Bethe-Heitler Pair Production}
+\label{Appendix:Sec:BetheHeitler}
 
-The (in energy) differential cross section for electron-nucleus bremsstrahlung in a fixed field in Born approximation, neglecting the recoil of the nucleus, is given by\addref
+The differential cross section of the Bethe-Heitler pair production process is given by crossing symmetry from bremsstrahlung (compare with Section \ref{Appendix:Brems_Born}) \cite{Ruffini2010_PAIRSASTRO}:
 \begin{align}
-\frac{\dif \sigma_{eZ}}{\dif \omega} = \frac{\alpha Z^2 r^2_e}{\omega}\frac{u'}{u}\Bigg\lbrace &\frac{4}{3} - 2 \gamma \gamma' c^2 \frac{u^2 + u'^2}{u^2 u'^2} + c^3 \left( \frac{\epsilon \gamma'}{u^3} + \frac{\epsilon'\gamma}{u'^3}-\frac{\epsilon\epsilon^3}{u u' c}\right)\\ \nonumber
-&+ L\Bigg[\frac{8}{3} \frac{\gamma \gamma' c^2}{u u'} + \frac{(\hbar \omega)^2 c^2}{m^2_e u^3 u'^3} (\gamma^2 \gamma'^2 + u^2 u'^2/c^4)\\ \nonumber
-& +\frac{\hbar \omega}{2 m_e u u'}\left( \frac{\gamma \gamma'+ u^2/c^2}{u^3/c^3}- \frac{\gamma \gamma' + u^2/c^2}{u'^3/c^3}-\frac{2\hbar \omega \gamma \gamma'c^2}{m_e u^2 u'^2}\right)\Bigg]\Bigg\rbrace,
+\frac{\dif \sigma_{\gamma Z}}{\dif \gamma_+} = \frac{\alpha Z^2 r^2_e u_+ u_-}{\omega^3}\Bigg\lbrace &-\frac{4}{3} - 2 \gamma_+ \gamma_- c^2 \frac{u^2_+ + u^2_-}{u^2_+ u^2_-} + c^3 \left( \frac{\epsilon_- \gamma_+}{u^3_-} + \frac{\epsilon_+\gamma_-}{u^3_+}-\frac{\epsilon_-\epsilon^3_+}{u_- u_+ c}\right)\\ \nonumber
+&+ L\Bigg[\frac{8}{3} \frac{\gamma_+ \gamma_- c^2}{u_+ u_-} + \frac{(\hbar \omega)^2 c^2}{m^2_e u^3_+ u^3_-} (\gamma^2_+ \gamma^2_- + u^2_+ u^2_-/c^4)\\ \nonumber
+& -\frac{\hbar \omega}{2 m_e u_+ u_-}\left( \frac{\gamma_+ \gamma_- - u^2_+/c^2}{u^3_+/c^3}+ \frac{\gamma_+ \gamma_- - u^2_-/c^2}{u^3_-/c^3}+\frac{2\hbar \omega \gamma_+ \gamma_- c^2}{m_e u^2_+ u^2_-}\right)\Bigg]\Bigg\rbrace,
 \end{align}
 where
 \begin{align*}
-L &= \ln \left( \frac{\gamma \gamma' + u u'/c^2 -1}{\hbar \omega/m_e c^2}\right),\\
-\epsilon &= 2 \ln(\gamma + u/c),\\
-\epsilon' &= 2 \ln(\gamma' + u'/c).
+L &= \ln \left( \frac{\gamma_+ \gamma_- + u_+ u_-/c^2 -1}{\hbar \omega/m_e c^2}\right),\\
+\epsilon_\pm &= 2 \ln(\gamma_\pm + u_\pm /c),
 \end{align*}
-Primed quantities denote post-interaction values and $\gamma m_e c^2 = \hbar \omega + \gamma' m_e c^2$, assuming all energy is transferred into radiation. 
-The differential equation in the ultra-relativistic limit including screening and electron contributions is given in the Appendix in Section \ref{Appendix:Brems_with_Screening}.
 
+with $r_e$ denotes the electron radius, $u_\pm$ the momentum of the positron and electron, respectively, and $\alpha$ is the fine-structure constant. $\gamma_\pm$ is the energy of the electron and positron, and $c$ is the speed of light.
+\vspace{\baselineskip}
 
-\subsection{Bremsstrahlung with screening}
-\label{Appendix:Brems_with_Screening}
-
-The (in energy) differential cross section for electron-nucleus bremsstrahlung is in the ultra-relativistic limit, including electron contributions and screening, given by\addref
-\begin{align}
-\frac{\dif \sigma_{eZ}}{\dif \omega} = \frac{\alpha r^2_e}{\omega} \Bigg\lbrace &\left(\frac{4}{3} - \frac{4}{3}y + y^2\right) \times \left[Z^2\left(\phi_1 - \frac{4}{3}\ln Z - 4f\right) + Z \left(\psi_1 - \frac{8}{3}\ln Z\right)\right]\\ \nonumber 
-& + \frac{2}{3}(1-y) \left[ Z^2 (\phi_1 - \phi_2) + Z(\psi_1 - \psi_2)\right]\Bigg\rbrace,
-\end{align}
-with $y = \hbar \omega/\gamma m_e c^2$, the ratio of the emitted photon energy to the initial electron energy. $Z$ is the atomic number of the nucleus.
-
-The Coulomb correction term for the atomic electrons is given by
+Similarly as for bremsstrahlung (see Section \ref{Appendix:Sec:Brems_RadiationLength}) the differential cross section can in the ultrarelativistic regime be approximated by a simplified equation in terms of the radiation length, $X_0$ (see Section \ref{Appendix:Sec:RadiationLength}) \cite{Tsai1974_PairsBrems,Tanabashi2018_PDGReview}:
 \begin{equation}
-f(z) \approx 1.202 z - 1.0369z^2 + 1.008z^3/(1+z).
+\frac{\dif \sigma_{\gamma Z}}{\dif x} = \frac{A}{X_0 N_A} \left[ 1 - \frac{4}{3}x(1-x)\right],
 \end{equation}
-
-\begin{align*}
-\phi_1 &= 2\left[1+\ln\left(a^2 Z^{2/3} m^2_e\right)\right] - 2\ln(1+b^2) - 4b \tan^{-1} (b^{-1}),\\
-\phi_2 &= 2\left[\frac{2}{3}+\ln\left(a^2 Z^{2/3}m^2_e\right)\right] -\ln(1+b^2) + 8b^2 \left[1-b \tan^{-1}(b^{-1}) - \frac{3}{4}\ln(1+b^{-2})\right],\\
-\psi_1 &= 2\left[1+\ln\left(a'^2 Z^{4/3}m^2_e\right)\right] -2\ln(1+b'^2) - 4b' \tan^{-1} (b^{-1}),\\
-\psi_2 &= 2\left[\frac{2}{3}+\ln \left(a'^2 Z^{4/3} m^2_e\right)\right] - 2 \ln (1+b'^2) + 8 b'^2 \left[1-b \tan^{-1} (b'^{-1}) - \frac{3}{4} \ln (1+b'^{-2})\right], 
-\end{align*}
-with $a=184.15(2.718)^{-1/2} Z^{-1/3}/m_e$, $a' = 1194(2.718)^{-1/2} Z^{-2/3}/m_e$, $b = a \delta$, $b' = a' \delta$, $\delta = m^2_e \hbar \omega/(2\gamma m_e c^2(\hbar \omega - \gamma m_e c^2))$.
-
-\subsection{Bremsstrahlung in terms of radiation length}
-
-We can then write in simplified terms with $X_0$ for the differential cross section (REF\addref)
+where $x = E/k$, where $k$ is the incident photon energy and $E$ the energy of the produced electron or positron. $A$ is the atomic weight and $N_A$ the Avogadro constant.
+In the high-energy limit the total cross section becomes
 \begin{equation}
-\frac{\dif \sigma}{\dif (\hbar \omega)} = \frac{A}{X_0 N_A \hbar \omega} \left(\frac{4}{3} - \frac{4}{3}y + y^2\right),
+\sigma_{\gamma Z} = \frac{7}{9}\frac{A}{X_0 N_A},
 \end{equation}
-where $y= \hbar\omega/E$.
+which is accurate to within a few percent at $1\GeV$ and high-Z materials.
 
 
-\chapter{Statistics}
 
 
-\section{Linear correlation coefficient}
+\chapter{Linear correlation coefficient}
 
-The Pearson correlation coefficient for two random variables and $N$ data points is defined as:
+The Pearson correlation coefficient, $\rho$, is a measure of the linear dependence of two variables. For two two random variables, $A$ and $B$, and $N$ data points is defined as \cite{Kendall1948_STATISTICS}:
 \begin{equation}
-\rho(A, B) = \frac{1}{N-1} \sum_{i=1}^N \left( \frac{A_i-\mu_A}{\sigma_A}\right)^\ast \left(\frac{B_i-\mu_B}{\sigma_B}\right)
+\boxed{\rho(A, B) = \frac{1}{N-1} \sum_{i=1}^N \left( \frac{A_i-\mu_A}{\sigma_A}\right)^\ast \left(\frac{B_i-\mu_B}{\sigma_B}\right),}
 \end{equation}
-or 
+or alternatively in terms of the covariance
 \begin{equation}
-\rho(A, B) = \frac{\mathrm{cov}(A,B)}{\sigma_A \sigma_B}
+\rho(A, B) = \frac{\mathrm{cov}(A,B)}{\sigma_A \sigma_B},
 \end{equation}
-
-The correlation coefficient is a measure of the linear dependence of the two variables.
-
-REFS: MATLAB and FISHER STATS 1958, KENDALL ADVANCED 1979, PRESS NUMERICAL 1992
-
-
-\section{Normal Distribution}
-
-Gaussian probability density function
-\begin{equation}
-f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{\frac{-(x-\mu)^2}{2\sigma^2}}
-\end{equation}
-
-With cumulative distribution 
-
-\begin{equation}
-p = F(x) = \frac{1}{\sigma\sqrt{2\pi}}\int_{-\inf}^x e^{\frac{-(t-\mu)^2}{2\sigma^2}}\mathrm{d}t
-\end{equation}
-
-Standard normal cumulative distribution function
-
-\begin{equation}
-\Phi(x) = \frac{1}{2} \left[ 1 - \mathrm{erf}\left(-\frac{x}{\sqrt{2}}\right)\right]
-\end{equation}
-
-\section{Kernel Density Estimate}
-
-MATLAB:
-
-\begin{equation}
-\hat{f}_h(x) = \frac{1}{nh}\sum_{i=1}^n K\left(\frac{x-x_i}{h}\right)
-\end{equation}
-
+where $\mu$ denotes the mean and $\sigma$ the standard deviation of the distribution. The correlation coefficient can take values in the interval $[-1,1]$, where negative values indicate a negative linear correlation and positive value a positive linear correlation. Values close to $1$ or $-1$ imply a strong linear dependence, whereas small values close to zero suggest that there is no strong linear dependence between $A$ and $B$.
 
 

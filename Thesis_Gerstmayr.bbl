@@ -15,18 +15,6 @@ A.~Di~Piazza et~al.
 \newblock \doi{10.1103/PhysRevA.98.012134}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.98.012134}
 
-\bibitem{Jackson}
-J.~D. Jackson.
-\newblock \enquote{Classical Electrodynamics, 3rd ed.}
-\newblock \emph{American Journal of Physics}, 67, (1999), pp. 841--842.
-\newblock \doi{10.1119/1.19136}.
-\newline\urlprefix\url{https://doi.org/10.1119/1.19136}
-
-\bibitem{Spohn2000_RR}
-H.~Spohn.
-\newblock \enquote{The critical manifold of the Lorentz-Dirac equation}.
-\newblock \emph{EPL (Europhysics Letters)}, 50, (2000), p. 287.
-
 \bibitem{Streeter2018_TEMPFEEDBACK}
 M.~Streeter et~al.
 \newblock \enquote{Temporal feedback control of high-intensity laser pulses to
@@ -41,6 +29,13 @@ M.~Streeter.
 C.~N. Danson et~al.
 \newblock \enquote{Petawatt and exawatt class lasers worldwide}.
 \newblock \emph{High Power Laser Science and Engineering}, 7.
+
+\bibitem{Jackson}
+J.~D. Jackson.
+\newblock \enquote{Classical Electrodynamics, 3rd ed.}
+\newblock \emph{American Journal of Physics}, 67, (1999), pp. 841--842.
+\newblock \doi{10.1119/1.19136}.
+\newline\urlprefix\url{https://doi.org/10.1119/1.19136}
 
 \bibitem{ThomasThesis}
 A.~G.~R. Thomas.
@@ -117,6 +112,17 @@ E.~Esarey, S.~K. Ride, and P.~Sprangle.
 \newblock \doi{10.1103/PhysRevE.48.3003}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.48.3003}
 
+\bibitem{Ritus1985_QRR}
+V.~Ritus.
+\newblock \enquote{Quantum effects of the interaction of elementary particles
+  with an intense electromagnetic field}.
+\newblock \emph{Journal of Russian Laser Research}, 6, (1985), pp. 497--617.
+
+\bibitem{BlackburnThesis}
+T.~G. Blackburn.
+\newblock \emph{QED effects in laser-plasma interactions}.
+\newblock Ph.D. thesis, Oxford University, UK, 2015.
+
 \bibitem{Ruffini2010_PAIRSASTRO}
 R.~Ruffini, G.~Vereshchagin, and S.-S. Xue.
 \newblock \enquote{Electron--positron pairs in physics and astrophysics: from
@@ -154,12 +160,6 @@ S.~Weber et~al.
 J.~Zou et~al.
 \newblock \enquote{Design and current progress of the Apollon 10 PW project}.
 \newblock \emph{High Power Laser Science and Engineering}, 3.
-
-\bibitem{Ritus1985_QRR}
-V.~Ritus.
-\newblock \enquote{Quantum effects of the interaction of elementary particles
-  with an intense electromagnetic field}.
-\newblock \emph{Journal of Russian Laser Research}, 6, (1985), pp. 497--617.
 
 \bibitem{Blackburn2014_QRR}
 T.~G. Blackburn et~al.
@@ -238,6 +238,11 @@ W.~Baylis and J.~Huschilt.
 \newblock \enquote{Energy balance with the Landau--Lifshitz equation}.
 \newblock \emph{Physics Letters A}, 301, (2002), pp. 7--12.
 
+\bibitem{Spohn2000_RR}
+H.~Spohn.
+\newblock \enquote{The critical manifold of the Lorentz-Dirac equation}.
+\newblock \emph{EPL (Europhysics Letters)}, 50, (2000), p. 287.
+
 \bibitem{Dirac1930_Annihilation}
 P.~A. Dirac.
 \newblock \enquote{On the annihilation of electrons and protons}.
@@ -293,11 +298,6 @@ I.~Drebot et~al.
   produced by two interacting Compton sources}.
 \newblock \emph{Physical Review Accelerators and Beams}, 20, (2017), p. 043402.
 
-\bibitem{BlackburnThesis}
-T.~G. Blackburn.
-\newblock \emph{QED effects in laser-plasma interactions}.
-\newblock Ph.D. thesis, Oxford University, UK, 2015.
-
 \bibitem{Erber1966_PAIRS}
 T.~Erber.
 \newblock \enquote{High-energy electromagnetic conversion processes in intense
@@ -311,12 +311,6 @@ H.~Bethe and W.~Heitler.
 \newblock \emph{Proceedings of the Royal Society of London. Series A,
   Containing Papers of a Mathematical and Physical Character}, 146, (1934), pp.
   83--112.
-
-\bibitem{Heitler1933_BHApprox}
-W.~Heitler.
-\newblock \enquote{{\"U}ber die bei sehr schnellen St{\"o}{\ss}en emittierte
-  Strahlung}.
-\newblock \emph{Zeitschrift f{\"u}r Physik}, 84, (1933), pp. 145--167.
 
 \bibitem{Bethe1954_BREMS}
 H.~Bethe and L.~Maximon.
@@ -1814,9 +1808,24 @@ S.~Mangles et~al.
   laser-plasma accelerator by tailoring the laser wavefront}.
 \newblock \emph{Applied Physics Letters}, 95, (2009), p. 181106.
 
+\bibitem{Tsai1974_PairsBrems}
+Y.-S. Tsai.
+\newblock \enquote{Pair production and bremsstrahlung of charged leptons}.
+\newblock \emph{Reviews of Modern Physics}, 46, (1974), p. 815.
+
+\bibitem{Tanabashi2018_PDGReview}
+M.~Tanabashi et~al.
+\newblock \enquote{Review of particle physics}.
+\newblock \emph{Physical Review D}, 98, (2018), p. 030001.
+
 \bibitem{Schwartz}
 M.~D. Schwartz.
 \newblock \emph{Quantum field theory and the standard model}.
 \newblock Cambridge University Press, 2014.
+
+\bibitem{Kendall1948_STATISTICS}
+M.~G. Kendall et~al.
+\newblock \enquote{The advanced theory of statistics. Vols. 1.}
+\newblock \emph{The advanced theory of statistics. Vols. 1.}, 1.
 
 \end{thebibliography}
