@@ -660,8 +660,9 @@ with $\gamma_c = 1/\sqrt{1-(v_c/c)^2}$ and $\mathbf{v}_c$, the velocity of the c
 
 
 \subsection{Nonlinear Breit-Wheeler cross section}
+\label{Theory:Sec:NonlinearBW}
 
-The probability of pair production by one photon of momentum $l$ in interaction with $n$ laser photons of momentum $k$ per unit volume in unit time (circular polarisation):
+The probability of pair production by one photon of momentum $l$ in interaction with $n$ laser photons of momentum $k$ per unit volume in unit time (circular polarisation) \cite{Ruffini2010_PAIRSASTRO}:
 
 \begin{equation}
 P_{\gamma\gamma} = \frac{e^2 m^2_e}{16 l_0} \sum^\infty_{n>n_0} \int^\nu_1 \frac{\dif \nu}{\nu^{3/2} (1+\nu)^{1/2}}[2 J^2_n(z) + \eta^2 (2\nu -1) (J^2_{n+1} + J^2_{n-1} - 2J^2_n)],
@@ -672,6 +673,41 @@ with $\nu = (kl)^2/4(kq)(kq')$, $\nu_n = n/n_0$, $n_0 = 2m^2_\ast/(kl)$ and Bess
 z = 4m^2_e \frac{\eta (1+ \eta^2)^{1/2}}{(kl)}\left[\frac{\nu}{\nu_n}\left(1- \frac{\nu}{\nu_n}\right)\right]^{1/2}.
 \end{equation}
 
+Alternatively, using results from \cite{BlackburnThesis}:
+
+The differential probability rate:
+
+\begin{equation}
+\frac{\dif W_{\pm}}{\dif \eta_+} = \frac{\alpha}{\tau_C} \frac{mc^2}{\hbar \omega} \chi \frac{\dif T(\chi)}{\dif \eta_+}.
+\end{equation}
+
+\begin{equation}
+\frac{\dif T(\chi)}{\dif \eta_+} = \frac{1}{2 \sqrt{3} \pi \chi^2} \left[ \left( \frac{2\chi}{\eta_+} - 1 + \frac{1}{2\chi/\eta_+ - 1}\right) K_{2/3} (\delta) - \int^\infty_\delta K_{1/3}(t)\dif t\right],
+\end{equation}
+where
+\begin{equation}
+\delta = \frac{4 \chi}{3\eta^2_+} \left( \frac{2 \chi}{\eta_+} - 1\right)^{-1}.
+\end{equation}
+Conservation law $2\chi = \eta_+ + \eta_-$.
+
+
+The total Breit-Wheeler pair production 
+\begin{equation}
+W_{\pm} = \frac{\alpha}{\tau_C} \frac{mc^2}{\hbar \omega}\chi T(\chi),
+\end{equation}
+where
+\begin{equation}
+T(\chi) = 
+\begin{cases}
+\frac{3\sqrt{3}}{8 \sqrt{2}} \exp\left(-\frac{4}{3\chi}\right) \,\, & \chi \ll 1,\\
+0.6\chi^{-1/3} \,\,&\chi \gg 1.
+\end{cases}
+\end{equation}
+
+Approximation (ERBER\addref{})
+\begin{equation}
+T(\chi) \approx \frac{0.16}{\chi} K^2_{2/3} \left(\frac{2}{3\chi}\right).
+\end{equation}
 
 \subsection{Nonlinear Compton scattering cross section}
 

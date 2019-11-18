@@ -11,7 +11,7 @@ A level-1 auxiliary file: Results/RR2015.aux
 A level-1 auxiliary file: Results/BW2018.aux
 A level-1 auxiliary file: Conclusion/Conclusions.aux
 A level-1 auxiliary file: Appendix/Appendix.aux
-Reallocated field_info (elt_size=4) to 12228 items from 5000.
+Reallocated field_info (elt_size=4) to 12254 items from 5000.
 Database file #1: ICS_Diag.bib
 Database file #2: General.bib
 Database file #3: Theses.bib
@@ -40,45 +40,45 @@ Warning--can't use both volume and number fields in Toth2017_BELLA
 Warning--empty journal in Heitler1954_BH
 Warning--can't use both volume and number fields in FLUKA
 Warning--can't use both volume and number fields in Fedotov2017_NAROZHNY
-You've used 278 entries,
+You've used 279 entries,
             2354 wiz_defined-function locations,
-            2367 strings with 76247 characters,
-and the built_in function-call counts, 107597 in all, are:
-= -- 9003
-> -- 2310
-< -- 229
-+ -- 1044
-- -- 522
-* -- 5465
-:= -- 11370
-add.period$ -- 916
-call.type$ -- 278
+            2373 strings with 76370 characters,
+and the built_in function-call counts, 107914 in all, are:
+= -- 9026
+> -- 2314
+< -- 230
++ -- 1046
+- -- 523
+* -- 5481
+:= -- 11404
+add.period$ -- 919
+call.type$ -- 279
 change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 288
-duplicate$ -- 10299
-empty$ -- 9773
-format.name$ -- 744
-if$ -- 25419
+cite$ -- 289
+duplicate$ -- 10333
+empty$ -- 9805
+format.name$ -- 745
+if$ -- 25493
 int.to.chr$ -- 0
-int.to.str$ -- 278
-missing$ -- 2085
-newline$ -- 1560
-num.names$ -- 278
-pop$ -- 3370
+int.to.str$ -- 279
+missing$ -- 2092
+newline$ -- 1565
+num.names$ -- 279
+pop$ -- 3380
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4371
+skip$ -- 4382
 stack$ -- 0
-substring$ -- 6121
-swap$ -- 7493
-text.length$ -- 229
+substring$ -- 6136
+swap$ -- 7518
+text.length$ -- 230
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 10
-while$ -- 796
-width$ -- 281
-write$ -- 3040
+while$ -- 799
+width$ -- 282
+write$ -- 3050
 (There were 10 warnings)
