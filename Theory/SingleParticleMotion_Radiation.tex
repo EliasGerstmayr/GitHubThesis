@@ -521,7 +521,7 @@ Assuming all $n$ photons have the same energy $E_i$ and are parallel to each oth
 \begin{equation}
 E'_f = \frac{n E'_i}{1+\frac{n E'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
-including the effect of the mass increase ($m_e \rightarrow m^\ast = m_e \sqrt{1+a^2_0}$) the energy of the radiation in the laboratory frame is then given by \cite{Esarey1993_NT}
+including the effect of the mass increase $\left(m_e \rightarrow m^\ast = m_e \sqrt{1+a^2_0}\right)$ the energy of the radiation in the laboratory frame is then given by \cite{Esarey1993_NT}
 \begin{equation}
 \boxed{E_f \approx \frac{2 \gamma^2 (1- \cos \theta) n E_i}{1+a_0^2/2 + (\gamma \theta)^2},}
 \end{equation}
@@ -529,7 +529,7 @@ where the contribution $(\gamma \theta)^2$ leads to a fall-off of the photon ene
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{ICS_Divergence_ElecEnergy.pdf}\includegraphics[width=.5\columnwidth]{ICS_Redshift_a0.pdf}
-\caption{Divergence (left) and redshift for $a_0$.}
+\caption{Energy as a function of the observation angle $\theta$ (left) and decrease in the photon energy (redshifting) as a function of $a_0$ (right).}
 \label{Theory:Figs:ICS:Divergence_and_Redshift}
 \end{figure}
 
@@ -544,33 +544,26 @@ The equation also shows that higher $a_0$ leads for a fixed harmonic $n$ to a re
 \caption{Klein-Nishina and higher orders at $a_0$ for circular polarisation. Adapted/reproduced from Tom Thesis REF}
 \end{figure}
 
-The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation \cite{Ritus1985_QRR,BlackburnThesis}. The scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given by a series of Bessel functions
+Similarly as for XXX (synchrotron, betatron...) the equation of motion resembling a figure-of-eight motion results in a emission rate that consists of a series of Bessel functions. The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation \cite{Ritus1985_QRR,BlackburnThesis}. The scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given by
 \begin{equation}
 \frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 E}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
 \end{equation}
-where we have to evaluate $n$ differential cross sections to reproduce the right spectrum. The highest significant order scales as XXX. However, we see that even at moderate intensities we already have to evaluate a high number which becomes unfeasible. Alternatively, use the quantum synchrotron function (see next section).
+where we have to evaluate $n$ differential cross sections to reproduce the complete spectrum and the full explanation of all terms is given in the Appendix. 
+The equation is evaluated in Figure XX showing the first harmonic in the limit $a_0 \rightarrow 0$ and for $a_0 = 1$ which required including $n=4$ harmonics.
 
-\EliasComm{Reproduce KN eqns at low intensities. Also both should converge to the same result at $n=1$ as we are approaching the polarisation-independent KN eqn.}
-\EliasComm{Make plot of cross sections to show the lobes (odd on axis and even off-axis).}
 
-\subsubsection{Emission Spectra}
-
-\EliasComm{Show example of harmonics and merging to synchrotron.}
-\EliasComm{Higher energy not necessarily immediately at higher $a_0$, definitely not peaked.}
-
-\subsubsection{Power and average energy}
+The highest significant order scales as $a^3_0$, such that the number of harmonics and the respective integrals we have to evaluate increases rapidly. Even at moderate intensities this starts to become unfeasible. As an alternative we can approximate the emission spectrum by the quantum synchrotron function, which is valid within XXX limit (see next section). Net energy gain is $a_0$.
 
 \EliasComm{Increase of harmonics at $\sim a^3_0$, but energy increase linear.}
-\EliasComm{Critical Energy.}
-\EliasComm{Yield $\sim \gamma a^2_0$}
+\EliasComm{Yield $\sim \gamma a^2_0$ for certain regime, Thomas}
 
-\EliasComm{Elongation of radiation ellipse as result of intensity?}
+\EliasComm{Elongation of radiation ellipse as result of intensity, similarly as wiggler?}
 
 \subsection{Quantum synchrotron function}
 
-Based on Tom's thesis:
+Based on \cite{BlackburnThesis}
 
-Given by
+The quantum synchrotron function is described by (WHAT IS THIS? DIFF CROSS SECITON?)
 \begin{equation}
 F(\eta, \chi) = \frac{4 \chi}{3\eta^2}\left[ \left( 1 - \frac{2 \chi}{\eta} + \frac{1}{1- 2\chi/\eta}\right) K_{2/3} (\delta) - \int^\infty_\delta K_{1/3} (t) \dif t\right],
 \end{equation}
@@ -578,7 +571,6 @@ where
 \begin{equation}
 \delta = \frac{4 \chi}{3 \eta^2}\left(1- \frac{2 \chi}{\eta}\right)^{-1}.
 \end{equation}
-
 For small $\chi$:
 \begin{equation}
 F(\eta,\chi) \approx \left(\frac{16}{3}\right)^{1/3} \Gamma\left(\frac{2}{3}\right) \eta^{-2/3} \chi^{1/3}
@@ -598,7 +590,7 @@ Emission power is
 
 For $a_0 \gg 1$ this is a good approximation to nonlinear Compton scattering.
 
-The total power is given by
+The total power is similar to the classical synchrotron function but reduced by the Gaunt factor:
 \begin{equation}
 P = \frac{2 \alpha}{3} \frac{mc^2}{\tau_c} \eta^2 g(\eta),
 \end{equation}
@@ -607,27 +599,12 @@ with Gaunt factor
 g(\eta) = \frac{3 \sqrt{3}}{2\pi \eta^2}\int^\infty_0 F(\eta, \chi) \dif \chi.
 \end{equation}
 
-In limits:
-\begin{equation}
-g(\eta) \approx 
-\begin{cases}
-1 - (55 \sqrt{3}/16) \eta + 48 \eta^2 ~ &\mathrm{for }~ \eta \ll 1\\
-0.5564 \eta^{-4/3}  ~ &\mathrm{for }~ \eta \gg 1
-\end{cases}
-\end{equation}
-The first term is from using the adjusted classical function $F_{cl}$, second from recoil and third for spin contribution.
 
-Approximation good within few percent
-\begin{equation}
-g(\eta) = [1 + 4.8(1+\eta)\ln(1+1.7\eta) + 2.44\eta^2]^{-2/3}
-\end{equation}
-
-At high intensities the power emission falls, with $P \propto \eta^{2/3}$ and as $\eta \propto a_0$, $P \propto a^{2/3}$.
+At high intensities the power emission falls, with $P \propto \eta^{2/3}$ and as $\eta \propto a_0$, $P \propto a^{2/3}_0$.
 
 \EliasComm{Make a plot comparing nonlinear ICS and quantum synchrotron.}
 \EliasComm{Make a plot comparing quantum synchrotron and classical synchrotron.}
-
-
+\EliasComm{Critical energy?}
 
 
 \subsection{Bremsstrahlung}

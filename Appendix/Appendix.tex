@@ -126,7 +126,7 @@ If we assume that the electron is highly relativistic $\dot{z} \rightarrow c$, s
 where $\gamma_0 \beta_0$ are the initial conditions.
 \begin{figure}
 \centering
-\includegraphics[width=.8\columnwidth]{betatron_traj.pdf}
+\includegraphics[width=.6\columnwidth]{betatron_traj.pdf}
 \caption[Particle trajectory of an electron in a cylindrically symmetric electric field with a constant axial accelerating field.]{Particle trajectory of an electron in a cylindrically symmetric electric field with a constant axial accelerating field as described in Equation \eqref{Theory:Eqs:EoM_Betatron} for a plasma of density $n_e = 2 \times 10^{18} cm^{-3}$ as a function of propagation distance.}
 \label{Theory:Figs:BetatronMotion}
 \end{figure}
@@ -157,45 +157,32 @@ This motion is shown in Figure \ref{Theory:Figs:BetatronMotion}. We see that the
 
 \section{Synchrotron Radiation}
 
-\EliasComm{Draw parallel (see Jackson on undulator equation) to figure of eight motion and hence ICS/Betatron/harmonics.}
-
-based on Jon Wood \cite{WoodThesis} and Jackson \cite{Jackson}:
-
-\EliasComm{energy loss per turn.}
-\EliasComm{sketch on emission and cones.}
-
-Spectrum (angularly integrated)
-
+The angularly integrated spectral intensity for synchrotron radiation is given by  \cite{WoodThesis,Jackson}:
 \begin{equation}
-\frac{dI}{d\omega} = \frac{\sqrt{3}}{4} \frac{e^2}{\pi c \epsilon_0} \gamma \frac{\omega}{\omega_c} \int_{\omega/\omega_c}^{\inf} K_{5/3}(x)dx
+\frac{dI}{d\omega} = \frac{\sqrt{3}}{4} \frac{e^2}{\pi c \epsilon_0} \gamma \frac{\omega}{\omega_c} \int_{\omega/\omega_c}^{\infty} K_{5/3}(x)dx,
 \end{equation}
-
-Equation for on- and off-axis synchrotron
-
+where $e$ is the electron charge, $\epsilon_0$ the dielectric constant and $c$ is the speed of light. $\gamma$ is the relativistic Lorentz factor of an electron. $K_{5/3}$ is a modified Bessel function of the second kind.
+$\omega_c$ is the characteristic or \textit{critical frequency} given by
 \begin{equation}
-\frac{d^2 I}{dEd\Omega} = \frac{3e^2}{16\pi^3 \hbar c \epsilon_0} \gamma^2 \frac{E^2}{E_c^2} (1+\gamma^2 \theta^2)^2 [K_{2/3}^2(\psi) + \frac{\gamma^2 \theta^2}{1+\gamma^2 \theta^2} K_{1/3}^2 (\psi)]
+\omega_c = \frac{3}{2} \gamma^3 \frac{c}{\rho},
 \end{equation}
-
+where $\rho$ is the bending radius.
+The doubly differential spectral intensity reads
+\begin{equation}
+\frac{d^2 I}{dEd\Omega} = \frac{3e^2}{16\pi^3 \hbar c \epsilon_0} \gamma^2 \frac{E^2}{E_c^2} \left(1+\gamma^2 \theta^2\right)^2 [K_{2/3}^2(\psi) + \frac{\gamma^2 \theta^2}{1+\gamma^2 \theta^2} K_{1/3}^2 (\psi)],
+\end{equation}
+with
 \begin{equation}
 \psi = \frac{E}{2E_c}(1+\gamma^2 \theta^2)^{3/2}
 \end{equation}
 
-Critical frequency
-\begin{equation}
-\omega_c = \frac{3}{2} \gamma^3 \frac{c}{\rho}
-\end{equation}
 
+\clearpage
 \section{Undulator and Wiggler Radiation}
 \label{Theory:Sec:UndulatorWiggler}
 
 
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{wiggler_offaxis.png}
-\caption{Synchrotron radiation.}
-\end{figure}
-
-To harvest and direct the radiation of an accelerated relativistic electron more efficiently a set of alternating magnets is used. The electron oscillates and emits radiation preferentially at the turning points as the acceleration is the strongest there and in a forwards-pointing cone with a diameter proportional to $1/\gamma$.\addref
+To harvest and direct the radiation of an accelerated relativistic electron more efficiently a set of alternating magnets can be used. The electron oscillates and emits radiation preferentially at the turning points as the acceleration is the strongest there in a forwards-pointing cone with a diameter proportional to $K/\gamma$ and $1/\gamma$ \cite{Jackson} in and out of plane of the oscillation, respectively.
 
 The rapid change of direction in the field and hence forced trajectory of the electron in transversal direction results in a change of effective Lorentz factor in the forward direction.
 
@@ -203,32 +190,26 @@ The rapid change of direction in the field and hence forced trajectory of the el
 \left\langle\gamma\right\rangle \approx \frac{\gamma}{\sqrt{1 + 0.5 K^2}}
 \end{equation}
 
-Commonly two regimes are identified based on the wiggler parameter:\addref
-
+Commonly two regimes are identified based on the \textit{wiggler parameter}, K:
 \begin{equation}
-K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c}
+K = \frac{eB_0}{m_e ck_u} = \frac{e B_0 \lambda_u}{2\pi m_e c},
 \end{equation}
-
-For $K \ll 1$ it is called undulator regime, large $K \gg 1$ indicate the wiggler regime.
-In the wiggler regime the divergence of the cone is larger and the radiation has a large bandwidth.
+where $B_0$ is the amplitude of the magnetic field, $\lambda_u$ the wavelength of the alternating magnetic field, and $k_u$ is the corresponding wave vector. $e$ is charge of the electron, $m_e$ its mass and $c$ is the speed of light. 
+$K \ll 1$ refers to the \textit{undulator regime}, whereas large $K \gg 1$ indicate the \textit{wiggler regime}.
+In the wiggler regime the divergence of the cone is large and the radiation has a broad bandwidth.
 In the undulator regime the radiation is strongly collimated and interference can occur resulting in single harmonics being emitted.
-
-Constructive interference with harmonics of wavelength:
-
+The constructive interference occurs with the $n$th harmonic of wavelength:
 \begin{equation}
-\lambda = \frac{\lambda_u}{2 n \gamma^2} \left( 1+ \frac{K^2}{2} + \gamma^2 \theta^2\right)
+\lambda = \frac{\lambda_u}{2 n \gamma^2} \left( 1+ \frac{K^2}{2} + \gamma^2 \theta^2\right),
 \end{equation}
-
-If an electron beam of sufficient quality is inserted in a very long undulator the emitted radiation and the electron beam are able to interact and modulate resulting in the emission of coherent radiation. This is observed in free-electron lasers.
-
+where $\gamma$ is the relativistic Lorentz factor of the electron and $\theta$ is the observation angle relative to the beam axis.
 The equations introduced for synchrotron radiation work similarly for wiggler radiation. The reference to the bending radius is usually replaced by an expression including the magnet periodicity or the $K$ parameter.
-
-
-For a wiggler this becomes:
+The critical frequency of a wiggler is then, for instance:
 \begin{equation}
 \omega_c \sim \frac{3}{2} \gamma^2 K k_u c
 \end{equation}
 
+\iffalse
 Maximum energy 
 \begin{equation}
 \hbar \omega_{eV} = \frac{0.496[E(GeV)]^2}{(1+ K^2/2) \lambda_0 (m)}
@@ -238,8 +219,8 @@ Number of emitted photons per magnet period (later compare to number of photons 
 \begin{equation}
 N_\gamma = \frac{2 \pi}{3} \alpha K^2
 \end{equation}
-
-
+\fi
+\clearpage
 \section{Betatron Radiation}
 
 Just as the evacuated `bubble' in a wakefield accelerates particles in a similar way as conventional RF cavities would, the generation of X-rays draws another parallel in conventional devices.
@@ -265,15 +246,11 @@ The radiation generated follows the on-axis synchrotron radiation with a critica
 \begin{equation}
 \boxed{E_c = \frac{3}{4} \hbar \gamma^2 \omega^2_p r_\beta / c,}
 \end{equation}
-where this energy parameter indicates when approximately half the energy radiated above and below this value\addref.
-\EliasComm{Explain this better.}
+where this characteristic energy indicates when approximately half the energy is radiated above and below this value.
 \vspace{\baselineskip}
 
 The oscillation of the particles and hence the emission of radiation can be enhanced in wakefield experiments by tailoring the wavefront \cite{Mangles2009_BETATRON} or by using different injection mechanisms\addref.
-In LWFA betatron radiation typically reaches the soft X-ray regime of a few to tens of keV.
-\EliasComm{Maybe show energy increase can be done by increasing energy, plasma frequency or betatron radius.}
-
-Difference here is that we use an quasi-electrostatic field instead of a magnetic field, but radiation from a synchrotron, an insertion device (wiggler) and betatron radiation share a common description rooted in the equation of motion (figure-of-eight motion) even though using different field structures and $K$ parameters.
+In LWFA betatron radiation typically reaches the soft X-ray regime of a few to tens of keV\addref.
 
 
 \chapter{Radiation Length}
@@ -551,7 +528,22 @@ In terms of 3-vectors this can be written as \cite{Bulanov2011_LADLL}:
 - \frac{2e^4}{3m^2_e c^5 \left( 1-\frac{v^2}{c^2}\right)} \mathbf{v} \left\lbrace\left( \mathbf{E} + \frac{1}{c} \mathbf{v} \times \mathbf{B}\right)^2 - \frac{1}{c^2} (\mathbf{v} \cdot \mathbf{E})^2 \right\rbrace,
 \end{align*}
 
+\chapter{Gaunt factor}
 
+In limits:
+\begin{equation}
+g(\eta) \approx 
+\begin{cases}
+1 - (55 \sqrt{3}/16) \eta + 48 \eta^2 ~ &\mathrm{for }~ \eta \ll 1\\
+0.5564 \eta^{-4/3}  ~ &\mathrm{for }~ \eta \gg 1
+\end{cases}
+\end{equation}
+The first term is from using the adjusted classical function $F_{cl}$, second from recoil and third for spin contribution.
+
+Approximation good within few percent
+\begin{equation}
+g(\eta) = [1 + 4.8(1+\eta)\ln(1+1.7\eta) + 2.44\eta^2]^{-2/3}
+\end{equation}
 
 \chapter{Pair Production}
 
