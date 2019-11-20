@@ -483,7 +483,7 @@ The total energy emitted in this interaction is simply the sum of the individual
 \begin{equation}
 \boxed{\mathcal{E}_{total} = \int E_f(\gamma) \frac{\sigma_T}{\pi \omega^2_0} N_L \frac{\mathrm{d}N_e}{\mathrm{d}\gamma}\mathrm{d}\gamma  \approx \langle E_f \rangle N_X \propto \langle \gamma^2 \rangle N_X,}
 \end{equation}
-where we would generally have to integrate over all incoming and outgoing angles and photon energies to obtain the emitted energy.
+where we would generally have to integrate over all incoming and outgoing angles and photon energies to obtain the emitted energy. Since the number of photons, $N_L$, is proportional to the intensity and $N_e$ to the charge $Q$, we also find $\mathcal{E}_{total} \propto a^2_0 \langle \gamma^2 \rangle Q$.
 
 \subsubsection{Experimental modifications of the spectrum}
 
@@ -533,78 +533,33 @@ where the contribution $(\gamma \theta)^2$ leads to a fall-off of the photon ene
 \label{Theory:Figs:ICS:Divergence_and_Redshift}
 \end{figure}
 
-The equation also shows that higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation $E_f \propto 1/a^2_0$. This decrease in energy from the case of $a_0 \rightarrow 0$ is shown for a fixed harmonic in Figure \ref{Theory:Figs:ICS:Divergence_and_Redshift} (right) as a function of $a_0$. At $a_0 = 10$, for instance, the photon energy has reached a value less than $10\%$ of its original value. Whilst a fixed harmonic loses energy with increasing $a_0$, high $a_0$'s give rise to a larger number of higher harmonics, such that the emitted energy in an interaction increases overall. This behaviour will be discussed in more detail in the following.
+The equation also shows that higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation, $E_f \propto 1/a^2_0$ for $a_0 \gg 1$. This decrease in energy from the case of $a_0 \rightarrow 0$ is shown for a fixed harmonic in Figure \ref{Theory:Figs:ICS:Divergence_and_Redshift} (right) as a function of $a_0$. At $a_0 = 10$, for instance, the photon energy has reached a value less than $10\%$ of its original value. Whilst a fixed harmonic loses energy with increasing $a_0$, high $a_0$'s give rise to a larger number of higher harmonics, such that the emitted energy in an interaction increases overall. This behaviour will be discussed in more detail in the following.
 
 
 \subsubsection{Cross-Section}
 
 \begin{figure}
 \centering
-\includegraphics[width=.5\columnwidth]{ICS_dWdx_xa01.pdf}
+\includegraphics[width=.5\columnwidth]{ICS_dWdx_xa01.pdf}\includegraphics[width=.5\columnwidth]{ICS_dWdx_xa010.pdf}
 \caption{Klein-Nishina and higher orders at $a_0$ for circular polarisation. Adapted/reproduced from Tom Thesis REF}
+\label{Theory:Figs:NLICS_diffSigma}
 \end{figure}
 
-Similarly as for XXX (synchrotron, betatron...) the equation of motion resembling a figure-of-eight motion results in a emission rate that consists of a series of Bessel functions. The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation \cite{Ritus1985_QRR,BlackburnThesis}. The scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given by
+Since the equation of motion takes the form of a figure-of-eight motion it is not surprising that the related emission rate consists of a series of Bessel functions, similarly as an undulator or wiggler. For instance, the scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given by \cite{Ritus1985_QRR,BlackburnThesis}
 \begin{equation}
 \frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 E}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
 \end{equation}
-where we have to evaluate $n$ differential cross sections to reproduce the complete spectrum and the full explanation of all terms is given in the Appendix. 
-The equation is evaluated in Figure XX showing the first harmonic in the limit $a_0 \rightarrow 0$ and for $a_0 = 1$ which required including $n=4$ harmonics.
+where we have to evaluate the sum of $n$ differential cross sections to reproduce the complete spectrum, and $x$ is the energy that is transferred from the electron into radiation. Also note that the emission rates for the $n$-th harmonic depend on the laser polarisation. The full explanation of all terms in the equation and the rates for linear polarisation are given in the Appendix in Section \ref{Appendix:Sec:NLCompton}.
 
+Figure \ref{Theory:Figs:NLICS_diffSigma} shows the emission rate, $\dif W/\dif x$ as a function of the transferred energy for two cases. First, for the limit of $a_0 \rightarrow 0$ (orange), which corresponds to linear Compton scattering, i.e. $n = 1$, and the result from the Klein-Nishina equation. The spectrum rises up to the Compton edge (dashed line) where it sharply falls off. The blue line shows the emission rates evaluated for $a_0 = 1$: the distinct Compton edge is down-shifted to about half of its original energy. On the other hand, higher harmonics, up to $n = 4$, are emerging and are also down-shifted, with a maximum energy of about twice the Compton edge for $a_0 = 0$.
 
-The highest significant order scales as $a^3_0$, such that the number of harmonics and the respective integrals we have to evaluate increases rapidly. Even at moderate intensities this starts to become unfeasible. As an alternative we can approximate the emission spectrum by the quantum synchrotron function, which is valid within XXX limit (see next section). Net energy gain is $a_0$.
+Even for a moderate intensity of $a_0 = 1$ we already had to evaluate the emission rates of $n=4$ harmonics to reproduce the tail of the spectrum accurately, although the most significant contribution is still the red-shifted first order. The highest significant order scales as $a^3_0$ (REF\addref), such that the number of additional harmonics and related emission rates that have to be evaluated increases rapidly, e.g. $n = 1000$ for $a_0 = 10$. As a result, this approach becomes infeasible relatively quickly. As an alternative we can approximate the emission spectrum by the \textit{quantum synchrotron function}, which is valid within XXX limit (see Appendix \ref{Appendix:Sec:QuantumSynchrotron}). Figure \ref{Theory:Figs:NLICS_diffSigma} (right) shows the emission rate (times energy) for increasing intensities $a_0$. Even for these moderate intensities the high-energy component and relatively quickly also lower energy band structures disappear and give rise to a smooth synchrotron-like emission spectrum, which indicates that this approach is valid.
 
-\EliasComm{Increase of harmonics at $\sim a^3_0$, but energy increase linear.}
-\EliasComm{Yield $\sim \gamma a^2_0$ for certain regime, Thomas}
+Whilst the highest significant order increases at $a^3_0$, the energy of the emitted radiation is red-shifted at $E_f \propto 1/a^2_0$ for $a_0 \gg 1$, such that the net energy gain increases linearly with $a_0$.
+The emitted energy in the linear case was $\propto \gamma^2 a^2_0$, whereas the total emission power slows down for large $a_0$ to $\propto a^{2/3}_0$.
 
-\EliasComm{Elongation of radiation ellipse as result of intensity, similarly as wiggler?}
-
-\subsection{Quantum synchrotron function}
-
-Based on \cite{BlackburnThesis}
-
-The quantum synchrotron function is described by (WHAT IS THIS? DIFF CROSS SECITON?)
-\begin{equation}
-F(\eta, \chi) = \frac{4 \chi}{3\eta^2}\left[ \left( 1 - \frac{2 \chi}{\eta} + \frac{1}{1- 2\chi/\eta}\right) K_{2/3} (\delta) - \int^\infty_\delta K_{1/3} (t) \dif t\right],
-\end{equation}
-where 
-\begin{equation}
-\delta = \frac{4 \chi}{3 \eta^2}\left(1- \frac{2 \chi}{\eta}\right)^{-1}.
-\end{equation}
-For small $\chi$:
-\begin{equation}
-F(\eta,\chi) \approx \left(\frac{16}{3}\right)^{1/3} \Gamma\left(\frac{2}{3}\right) \eta^{-2/3} \chi^{1/3}
-\end{equation}
-
-The classical part be
-\begin{equation}
-F_{cl} (\eta, \chi) = \delta_{cl} \left[2K_{2/3} (\delta_{cl}) - \int^\infty_{\delta_{cl}} K_{1/3} (t) \dif t\right],
-\end{equation}
-where $\delta_{cl} = 4\chi/3\eta^2$.
-
-Emission power is
-
-\begin{equation}
-\frac{\dif P}{\dif \chi} = \frac{2 E \chi}{\eta} \frac{\dif W_\gamma}{\dif \chi} = \frac{\sqrt{3\alpha}}{\pi} \frac{m c^2}{\tau_c} F(\eta, \chi).
-\end{equation}
-
-For $a_0 \gg 1$ this is a good approximation to nonlinear Compton scattering.
-
-The total power is similar to the classical synchrotron function but reduced by the Gaunt factor:
-\begin{equation}
-P = \frac{2 \alpha}{3} \frac{mc^2}{\tau_c} \eta^2 g(\eta),
-\end{equation}
-with Gaunt factor
-\begin{equation}
-g(\eta) = \frac{3 \sqrt{3}}{2\pi \eta^2}\int^\infty_0 F(\eta, \chi) \dif \chi.
-\end{equation}
-
-
-At high intensities the power emission falls, with $P \propto \eta^{2/3}$ and as $\eta \propto a_0$, $P \propto a^{2/3}_0$.
-
-\EliasComm{Make a plot comparing nonlinear ICS and quantum synchrotron.}
-\EliasComm{Make a plot comparing quantum synchrotron and classical synchrotron.}
-\EliasComm{Critical energy?}
+The emission of the radiation occurs in a cone of divergence $1/\gamma$ in one axis and $a_0/\gamma$ in the polarisation direction, similarly as for a wiggler/undulator ($K/\gamma$).
+\EliasComm{Needs some thinking here.}
 
 
 \subsection{Bremsstrahlung}
@@ -681,6 +636,13 @@ a_0 \gamma_0 > \frac{m_e c^2}{2 \hbar \omega_0}
 \end{equation}
 \EliasComm{Need to add some explanations.}
 
+Also $\chi$, which is equivalent for photon which does not have a rest frame:
+\begin{equation}
+\chi = \frac{\hbar \omega E}{E_S 2 m_e c^2}
+\end{equation}
+
+\EliasComm{Add regimes from Tom's review here. Add plot.}
+
 \subsection{Classical Radiation Reaction}
 
 There is a variety of classical descriptions of radiation reaction rooted in classical electrodynamics \cite{Burton2014_CRR}. We will focus on the two most commonly applied models and their implications: the Lorentz-Abraham-Dirac (LAD) equation and the Landau-Lifschitz (LL) description. 
@@ -747,6 +709,7 @@ with the radiation reaction force
 g^\mu =\frac{e^4}{6 \pi m_e} \left[-\frac{m_e}{e}(\partial_\alpha F^{\mu \nu}) u_\nu u^\alpha + F^{\mu\nu} F_{\nu\alpha}u^\alpha + (F^{\nu \alpha}u_\alpha)^2 u^\mu      \right].
 \end{equation}
 This description only holds if $L \ll \lambda_C$ and $E \ll E_{cr}/\alpha$, which is satisfied within the realm of classical electrodynamics.
+\EliasComm{Check conditions.}
 \vspace{\baselineskip}
 
 In the Landau-Lifschitz model we can also find an analytic expression of the energy loss, $\Delta \gamma$, an electron experiences. For an electron of initial energy $\gamma_0$ interacting with a plane wave with a Gaussian temporal envelope this is given by \cite{Thomas2012_LL,Bulanov2011_LL}
@@ -759,38 +722,75 @@ where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$ is again the `
 
 Whilst this description is free from runaway solutions unlike the LAD equation it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle \cite{Baylis2002_LL}. Note also that all physical solutions of the LAD equation are also solutions of the LL description \cite{Spohn2000_RR}.
 
-\subsection{Quantum picture and corrections}
+\subsection{Quantum Radiation Reaction}
 
-\begin{itemize}
-\item in extreme cases we expect the classical descriptions to fail
-\item we then require a quantum description of the process or appropriate corrections
-\item an indicator of how important quantum effects are, is the quantum nonlinearity parameter
-\item this shows when the electric field becomes comparable to the critical field of qed (schwinger field)
-\item give example for head-on collision
-\item two-fold corrections:
-\item radiation cut-off in spectrum (quantum synchrotron radiation)
-\item stochasticity (broadening in e-spectrum and straggling in radiation spectrum)
-\item correction to emission can partly be done in a semi-classical model, stochasticity requires quantum
-\item pair production also becomes possible
-\item quantum radiation reaction is the overall recoil experienced by an electron undergoing multiple simultaneous incoherent photon emission events (Alec)
-\end{itemize}
+\EliasComm{Structuring: either QRR in general and then signatures, or maybe explain QRR generally and then have one section just one signatures (relying on Chris Ridger's bits).}
+At high energies and field strengths, the quantum nonlinearity parameter approaches unity (electric field in rest frame approaches critical field of QED), and we expect quantum effects to dominate such that the assumptions under which the classical treatments were derived are not valid any more. The deviations or corrections of the classical model are fundamentally two-fold:
 
-
-\subsubsection{Semi-classical approach}
-\begin{itemize}
-\item Accept that radiation spectrum is different, so reduce the emission power
-\item compare classical power and quantum result and correct by this value
-\end{itemize}
-
-
-Semi-classical approach using Gaunt factor based on the ratio of the quantum and classical synchrotron emission power $g(\eta) = P_q/P_{cl}$
-(see section on quantum synchrotron function).
-
-So that the classical radiation reaction force is modified
+First, the emission spectrum of the classical model overestimates the emission power and allows more emission than the original particle energy. This is fixed by replacing the classical synchrotron function by the quantum synchrotron function. As a result, the classical radiation reaction force is modified by the same factor, the Gaunt factor, which is the ratio of the quantum and classical synchrotron emission power $g(\eta) = P_q/P_{cl}$:
 \begin{equation}
-\mathbf{F}_{mod,cl} = g \mathbf{F}_{cl} 
+\mathbf{F}_{mod,cl} = g \mathbf{F}_{cl} .
 \end{equation}
 
+Second, the stochasticity of the emission events has to be considered. The emission is not continuous but stochastic and the finite emission lifetime can result in straggling (hardening of the spectrum). Quantum radiation reaction is then the overall recoil experienced by an electron undergoing multiple simultaneous incoherent photon emission events. Straggling (enter field region that are forbidden due to finite lifetime and in field with spatiotemporal structure). Also can occur that no interaction (quenching of radiation losses).
+
+\EliasComm{Add some bits here about the time scsale of the laser. Tom compares the duration of the laser field with the time interval.}
+
+\begin{equation}
+\omega_0 \Delta t = 
+\begin{cases}
+44 a^{-1}_0 & \chi \ll 1,\\
+58 [\gamma \omega_0/ (a_0 m_e)]^{1/3} & \chi \gg 1.
+\end{cases}
+\end{equation}
+Stochastic effects are most significant when $\omega_0 \Delta t \geq 1$, when total number of emissions small but $\chi$ large. $\Delta t$ is the typical timescale between emissions $\Delta t = \langle \omega \rangle / P$, where P is the emission spectrum. See total emission power $P_q = 2 \alpha m^2 \chi^2 g(\chi)/3$.
+
+In addition, we also have to start considering quantum effects like pair production and subsequent showers or cascades.
+
+
+\subsubsection{Semi-classical Implementation}
+
+The treatment of these processes require numerical efforts. The numerical treatment is typically semi-classical or semi-quantum, depending on the point of view, in different levels. Typically large parts of the particle trajectories are evaluated by classical electrodynamics, whereas emission power and probabilities are evaluated in a quantum picture. One approach is to treat the process as a series distinct incoherent emission events. These emission events are treated in quantum, in between these events the particle trajectories are derived classically. This includes the stochastic nature of the emission events.
+
+Alternatively, one can simply treat the entire process classically but modify the classical radiation reaction force by multiplying the Gaunt factor. This treatment then does not include stochasticity but has the right average emission power. This holds in an intermediate regime and is easier treatment as deterministic and analytic. This is typically explicitly referred to as semi-classical model.
+
+
+
+\subsubsection{Signatures of radiation reaction}
+
+
+
+Momentum
+
+Classical
+\begin{equation}
+\left( \frac{\dif \langle p \rangle}{\dif t}\right)_{cl} = - \frac{\langle P_{cl} \hat{p}}{c}
+\end{equation}
+Modified
+\begin{equation}
+\left( \frac{\dif \langle p \rangle}{\dif t}\right)_{mod cl}- \frac{\langle g P_{cl} \hat{p}}{c}
+\end{equation}
+
+
+Variance:
+
+\begin{equation}
+\left(\frac{\dif \sigma^2}{\dif t}\right)_{st} =  - 2 \frac{\langle \Delta \gamma g P_{cl}\rangle}{m_e c^2} + \frac{\langle S \rangle}{m^2_e c^4}
+\end{equation}
+
+\begin{equation}
+\left(\frac{\dif \sigma^2}{\dif t}\right)_{cl} =  - 2 \frac{\langle \Delta \gamma P_{cl}\rangle}{m_e c^2}
+\end{equation}
+
+\begin{equation}
+\left(\frac{\dif \sigma^2}{\dif t}\right)_{mod~cl} =  - 2 \frac{\langle \Delta \gamma g P_{cl}\rangle}{m_e c^2}
+\end{equation}
+
+For Gaussian:
+
+\begin{equation}
+\left(\frac{\mathrm{d}\sigma^2}{\mathrm{d}t}\right)_{st} \approx \frac{\alpha_f  b^2}{\bar{\lambda}_c}\left(\frac{55b}{24\sqrt{3}}\left\langle\gamma\right\rangle^4 - \frac{8}{3}\sigma^2 \left\langle\gamma\right\rangle\right).
+\end{equation}
 
 Capture quantum characteristics by considering evolution of the variance \cite{Ridgers2017_QRR}
 
@@ -808,16 +808,23 @@ g_2(\eta) \approx [1+ (1+4.528\eta)\ln(1+12.29\eta)+4.632\eta^2]^{-7/6}
 \end{equation}
 The limits are $g_2 \approx 1$ for $\eta \ll 1$, and $g_2 \approx 0.167\eta^{-7/3}$ for $\eta \gg 1$.
 
-\begin{equation}
-\left(\frac{\mathrm{d}\sigma^2}{\mathrm{d}t}\right)_{st} \approx \frac{\alpha_f  b^2}{\bar{\lambda}_c}\left(\frac{55b}{24\sqrt{3}}\left\langle\gamma\right\rangle^4 - \frac{8}{3}\sigma^2 \left\langle\gamma\right\rangle\right).
-\end{equation}
 
-Here 
-\begin{equation}
-\eta = \gamma b, b = |\mathbf{E}_\perp + \mathbf{v}\times \mathbf{B}|/E_s, \chi = (h\nu b)(2m_e c^2)
-\end{equation}
 
-\EliasComm{Write on importance of straggling.}
+\subsubsection{Local constant field approximation}
+
+An important assumption is that the electric field remains constant over the formation time of the photon. This is referred to as LCFA.
+
+Formation length is short, so intensity is large.
+
+Particle has to be ultrarelativistic and background is weak compared to critical field of QED.
+
+\begin{equation}
+\frac{l_f}{C} \approx \frac{1}{2 \pi a_0},
+\end{equation}
+$C = 2\pi r'$
+\begin{equation}
+r' = \frac{a_0}{\gamma_0 (1+\beta_0)\omega_0}
+\end{equation}
 
 \section{Pair Production and Annihilation}
 
