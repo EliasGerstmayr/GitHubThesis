@@ -7,6 +7,29 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
+\bibitem{CERN_Aerial}
+{CERN}.
+\newblock \enquote{The scale of the {LHC}}.
+\newline\urlprefix\url{http://cds.cern.ch/record/42370}
+
+\bibitem{ICUIL2019_Map}
+{ICUIL}.
+\newblock \enquote{{ICUIL World Map 2019}}.
+\newline\urlprefix\url{https://www.icuil.org/}
+
+\bibitem{Mourou2019_Nobel}
+G.~Mourou.
+\newblock \enquote{Nobel Lecture: Extreme light physics and application}.
+\newblock \emph{Rev. Mod. Phys.}, 91, (2019), p. 030501.
+\newblock \doi{10.1103/RevModPhys.91.030501}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/RevModPhys.91.030501}
+
+\bibitem{Blackburn2019_RRReview}
+T.~Blackburn.
+\newblock \enquote{Radiation reaction in electron-beam interactions with
+  high-intensity lasers}.
+\newblock \emph{arXiv preprint arXiv:1910.13377}.
+
 \bibitem{DiPiazza2018_LCFA}
 A.~Di~Piazza et~al.
 \newblock \enquote{Implementing nonlinear Compton scattering beyond the
@@ -15,15 +38,11 @@ A.~Di~Piazza et~al.
 \newblock \doi{10.1103/PhysRevA.98.012134}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.98.012134}
 
-\bibitem{Streeter2018_TEMPFEEDBACK}
-M.~Streeter et~al.
-\newblock \enquote{Temporal feedback control of high-intensity laser pulses to
-  optimize ultrafast heating of atomic clusters}.
-\newblock \emph{Applied Physics Letters}, 112, (2018), p. 244101.
-
-\bibitem{Streeter2019_RASTERSCAN}
-M.~Streeter.
-\newblock Private Communication.
+\bibitem{LivingstonPlot}
+A.~Chao et~al.
+\newblock \enquote{2001 Snowmass Accelerator R \& D Report}.
+\newblock \emph{Technical report}, Fermi National Accelerator Lab.(FNAL),
+  Batavia, IL (United States), 2001.
 
 \bibitem{Danson2019_PWLASERS}
 C.~N. Danson et~al.
@@ -112,16 +131,16 @@ E.~Esarey, S.~K. Ride, and P.~Sprangle.
 \newblock \doi{10.1103/PhysRevE.48.3003}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.48.3003}
 
+\bibitem{BlackburnThesis}
+T.~G. Blackburn.
+\newblock \emph{QED effects in laser-plasma interactions}.
+\newblock Ph.D. thesis, Oxford University, UK, 2015.
+
 \bibitem{Ritus1985_QRR}
 V.~Ritus.
 \newblock \enquote{Quantum effects of the interaction of elementary particles
   with an intense electromagnetic field}.
 \newblock \emph{Journal of Russian Laser Research}, 6, (1985), pp. 497--617.
-
-\bibitem{BlackburnThesis}
-T.~G. Blackburn.
-\newblock \emph{QED effects in laser-plasma interactions}.
-\newblock Ph.D. thesis, Oxford University, UK, 2015.
 
 \bibitem{Ruffini2010_PAIRSASTRO}
 R.~Ruffini, G.~Vereshchagin, and S.-S. Xue.
@@ -188,12 +207,6 @@ A.~Di~Piazza et~al.
 \newblock \enquote{Extremely high-intensity laser interactions with fundamental
   quantum systems}.
 \newblock \emph{Reviews of Modern Physics}, 84, (2012), p. 1177.
-
-\bibitem{Blackburn2019_RRReview}
-T.~Blackburn.
-\newblock \enquote{Radiation reaction in electron-beam interactions with
-  high-intensity lasers}.
-\newblock \emph{arXiv preprint arXiv:1910.13377}.
 
 \bibitem{Thomas2012_LL}
 A.~G.~R. Thomas et~al.
@@ -1060,6 +1073,16 @@ R.~Weingartner et~al.
 \newblock \doi{10.1103/PhysRevSTAB.15.111302}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.15.111302}
 
+\bibitem{Streeter2018_TEMPFEEDBACK}
+M.~Streeter et~al.
+\newblock \enquote{Temporal feedback control of high-intensity laser pulses to
+  optimize ultrafast heating of atomic clusters}.
+\newblock \emph{Applied Physics Letters}, 112, (2018), p. 244101.
+
+\bibitem{Streeter2019_RASTERSCAN}
+M.~Streeter.
+\newblock Private Communication.
+
 \bibitem{Kneip2010_BETATRON}
 S.~Kneip et~al.
 \newblock \enquote{Bright spatially coherent synchrotron X-rays from a
@@ -1078,6 +1101,11 @@ Y.~Glinec et~al.
 \newblock \enquote{Absolute calibration for a broad range single shot electron
   spectrometer}.
 \newblock \emph{Review of scientific instruments}, 77, (2006), p. 103301.
+
+\bibitem{Tanabashi2018_PDGReview}
+M.~Tanabashi et~al.
+\newblock \enquote{Review of particle physics}.
+\newblock \emph{Physical Review D}, 98, (2018), p. 030001.
 
 \bibitem{Lau2003_NT}
 Y.~Y. Lau et~al.
@@ -1812,11 +1840,6 @@ S.~Mangles et~al.
 Y.-S. Tsai.
 \newblock \enquote{Pair production and bremsstrahlung of charged leptons}.
 \newblock \emph{Reviews of Modern Physics}, 46, (1974), p. 815.
-
-\bibitem{Tanabashi2018_PDGReview}
-M.~Tanabashi et~al.
-\newblock \enquote{Review of particle physics}.
-\newblock \emph{Physical Review D}, 98, (2018), p. 030001.
 
 \bibitem{Schwartz}
 M.~D. Schwartz.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  20 NOV 2019 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  21 NOV 2019 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1322,7 +1322,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<pics/Imperial_2_Pantones.jpg, id=658, 564.60938pt x 148.30406pt>
+<pics/Imperial_2_Pantones.jpg, id=662, 564.60938pt x 148.30406pt>
 File: pics/Imperial_2_Pantones.jpg Graphic file (type jpg)
 <use pics/Imperial_2_Pantones.jpg>
 Package pdftex.def Info: pics/Imperial_2_Pantones.jpg  used on input line 125.
@@ -1346,16 +1346,10 @@ ine 161.
 \tf@toc=\write5
 \openout5 = `Thesis_Gerstmayr.toc'.
 
- [11] (./Thesis_Gerstmayr.lof
-Overfull \hbox (34.54597pt too wide) in paragraph at lines 10--10
- [][] [][][]\OT1/cmr/m/n/12 (-20) Klein-Nishina and higher or-ders at $\OML/cmm
-/m/it/12 a[]$ \OT1/cmr/m/n/12 (-20) for cir-cu-lar po-lar-i-sa-tion. Adapted/re
-produced 
- []
+ [11] (./Thesis_Gerstmayr.lof [12
 
-[12
-
-] [13] [14] [15] [16] [17])
+] [13] [14] [15] [16]
+[17])
 \tf@lof=\write6
 \openout6 = `Thesis_Gerstmayr.lof'.
 
@@ -1365,65 +1359,103 @@ produced
 
  [19
 
-]
-(./Thesis_Gerstmayr.tdo [20
+] (./Thesis_Gerstmayr.tdo [20
 
 ] [21])
 \tf@tdo=\write8
 \openout8 = `Thesis_Gerstmayr.tdo'.
 
- [22] [23
+
+[22] [23
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 278.
 
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 278.
- [24
+
+[24
 
 ] [25]
 \openout2 = `Introduction/Introduction.aux'.
 
-
-(./Introduction/Introduction.tex
+ (./Introduction/Introduction.tex
 Chapter 1.
+<pics/Ch1_Introduction/CERN_Aerial.jpg, id=1529, 563.10374pt x 563.10374pt>
+File: pics/Ch1_Introduction/CERN_Aerial.jpg Graphic file (type jpg)
+<use pics/Ch1_Introduction/CERN_Aerial.jpg>
+Package pdftex.def Info: pics/Ch1_Introduction/CERN_Aerial.jpg  used on input l
+ine 16.
+(pdftex.def)             Requested size: 227.62204pt x 227.61755pt.
+<pics/Ch1_Introduction/SLACOverview.jpg, id=1532, 2055.68pt x 529.98pt>
+File: pics/Ch1_Introduction/SLACOverview.jpg Graphic file (type jpg)
+<use pics/Ch1_Introduction/SLACOverview.jpg>
+Package pdftex.def Info: pics/Ch1_Introduction/SLACOverview.jpg  used on input 
+line 22.
+(pdftex.def)             Requested size: 227.62204pt x 58.67805pt.
 [26
 
 
-]) [27]
+]
+<pics/Ch1_Introduction/ICUIL-world-map-2019-v6.pdf, id=1539, 1156.32pt x 650.43
+pt>
+File: pics/Ch1_Introduction/ICUIL-world-map-2019-v6.pdf Graphic file (type pdf)
+
+<use pics/Ch1_Introduction/ICUIL-world-map-2019-v6.pdf>
+Package pdftex.def Info: pics/Ch1_Introduction/ICUIL-world-map-2019-v6.pdf  use
+d on input line 35.
+(pdftex.def)             Requested size: 409.71689pt x 230.46262pt.
+<pics/Ch1_Introduction/LaserIntensities.png, id=1542, 501.875pt x 261.97874pt>
+File: pics/Ch1_Introduction/LaserIntensities.png Graphic file (type png)
+<use pics/Ch1_Introduction/LaserIntensities.png>
+Package pdftex.def Info: pics/Ch1_Introduction/LaserIntensities.png  used on in
+put line 43.
+(pdftex.def)             Requested size: 364.19664pt x 190.1196pt.
+ [27 <./pics/Ch1_Introduction/CERN_Aerial.jpg> <./pics/Ch1_Introduction/SLACOve
+rview.jpg>] [28 <./pics/Ch1_Introduction/ICUIL-world-map-2019-v6.pdf> <./pics/C
+h1_Introduction/LaserIntensities.png (PNG copy)>]
+<pics/Ch2_Theory/RROverview_Blackburn.png, id=1595, 835.12pt x 652.4375pt>
+File: pics/Ch2_Theory/RROverview_Blackburn.png Graphic file (type png)
+<use pics/Ch2_Theory/RROverview_Blackburn.png>
+Package pdftex.def Info: pics/Ch2_Theory/RROverview_Blackburn.png  used on inpu
+t line 62.
+(pdftex.def)             Requested size: 318.66946pt x 248.96417pt.
+ [29
+
+] [30 <./pics/Ch2_Theory/RROverview_Blackburn.png>]) [31]
 \openout2 = `Theory/SingleParticleMotion_Radiation.aux'.
 
- (./Theory/SingleParticleMotion_Radiation.tex
+
+(./Theory/SingleParticleMotion_Radiation.tex
 Chapter 2.
-[28
+[32
 
 
 
-] [29] [30] [31] [32] [33]
-<pics/Ch2_Theory/figeight_lab.pdf, id=1621, 581.77347pt x 361.35pt>
+] [33] [34] [35] [36] [37]
+<pics/Ch2_Theory/figeight_lab.pdf, id=1719, 581.77347pt x 361.35pt>
 File: pics/Ch2_Theory/figeight_lab.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/figeight_lab.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/figeight_lab.pdf  used on input line 2
 24.
 (pdftex.def)             Requested size: 223.0721pt x 138.55502pt.
-<pics/Ch2_Theory/figeight_drift.pdf, id=1622, 581.77347pt x 361.35pt>
+<pics/Ch2_Theory/figeight_drift.pdf, id=1720, 581.77347pt x 361.35pt>
 File: pics/Ch2_Theory/figeight_drift.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/figeight_drift.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/figeight_drift.pdf  used on input line
  225.
 (pdftex.def)             Requested size: 223.0721pt x 138.55502pt.
- [34 <./pics/Ch2_Theory/figeight_lab.pdf> <./pics/Ch2_Theory/figeight_drift.pdf
+ [38 <./pics/Ch2_Theory/figeight_lab.pdf> <./pics/Ch2_Theory/figeight_drift.pdf
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch2_Theory/figeight_d
 rift.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
->] [35] [36]
-<pics/Ch2_Theory/Aivazis_ComptonScattering.pdf, id=1739, 556.01826pt x 311.1444
+>] [39] [40]
+<pics/Ch2_Theory/Aivazis_ComptonScattering.pdf, id=1837, 556.01826pt x 311.1444
 2pt>
 File: pics/Ch2_Theory/Aivazis_ComptonScattering.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Aivazis_ComptonScattering.pdf>
@@ -1434,35 +1466,35 @@ Package pdftex.def Info: pics/Ch2_Theory/Aivazis_ComptonScattering.pdf  used on
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/Ch2_Theory/Compton_kinematics_sketch.pdf, id=1740, 112.83376pt x 79.04535
+<pics/Ch2_Theory/Compton_kinematics_sketch.pdf, id=1838, 112.83376pt x 79.04535
 pt>
 File: pics/Ch2_Theory/Compton_kinematics_sketch.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Compton_kinematics_sketch.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/Compton_kinematics_sketch.pdf  used on
  input line 337.
 (pdftex.def)             Requested size: 227.62204pt x 159.46646pt.
-[37] [38 <./pics/Ch2_Theory/Aivazis_ComptonScattering.pdf> <./pics/Ch2_Theory/C
+[41] [42 <./pics/Ch2_Theory/Aivazis_ComptonScattering.pdf> <./pics/Ch2_Theory/C
 ompton_kinematics_sketch.pdf>]
-<pics/Ch2_Theory/Compton_kinematic.pdf, id=1787, 578.16pt x 578.16pt>
+<pics/Ch2_Theory/Compton_kinematic.pdf, id=1884, 578.16pt x 578.16pt>
 File: pics/Ch2_Theory/Compton_kinematic.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Compton_kinematic.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/Compton_kinematic.pdf  used on input l
 ine 391.
 (pdftex.def)             Requested size: 227.62204pt x 227.61641pt.
-<pics/Ch2_Theory/Compton_KN_cross.pdf, id=1788, 578.16pt x 578.16pt>
+<pics/Ch2_Theory/Compton_KN_cross.pdf, id=1885, 578.16pt x 578.16pt>
 File: pics/Ch2_Theory/Compton_KN_cross.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Compton_KN_cross.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/Compton_KN_cross.pdf  used on input li
 ne 391.
 (pdftex.def)             Requested size: 227.62204pt x 227.61641pt.
- [39] [40 <./pics/Ch2_Theory/Compton_kinematic.pdf> <./pics/Ch2_Theory/Compton_
+ [43] [44 <./pics/Ch2_Theory/Compton_kinematic.pdf> <./pics/Ch2_Theory/Compton_
 KN_cross.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch2_Theory/Compton_KN
 _cross.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
->] [41] [42] [43]
-<pics/Ch2_Theory/Aivazis_ComptonScattering_FULL.pdf, id=1933, 695.38794pt x 344
+>] [45] [46] [47]
+<pics/Ch2_Theory/Aivazis_ComptonScattering_FULL.pdf, id=2029, 695.38794pt x 344
 .68976pt>
 File: pics/Ch2_Theory/Aivazis_ComptonScattering_FULL.pdf Graphic file (type pdf
 )
@@ -1470,7 +1502,7 @@ File: pics/Ch2_Theory/Aivazis_ComptonScattering_FULL.pdf Graphic file (type pdf
 Package pdftex.def Info: pics/Ch2_Theory/Aivazis_ComptonScattering_FULL.pdf  us
 ed on input line 509.
 (pdftex.def)             Requested size: 275.52939pt x 136.5746pt.
-<pics/Ch2_Theory/Aivazis_ComptonScattering2_FULL.pdf, id=1934, 1069.65222pt x 3
+<pics/Ch2_Theory/Aivazis_ComptonScattering2_FULL.pdf, id=2030, 1069.65222pt x 3
 44.68976pt>
 File: pics/Ch2_Theory/Aivazis_ComptonScattering2_FULL.pdf Graphic file (type pd
 f)
@@ -1478,26 +1510,26 @@ f)
 Package pdftex.def Info: pics/Ch2_Theory/Aivazis_ComptonScattering2_FULL.pdf  u
 sed on input line 511.
 (pdftex.def)             Requested size: 423.82188pt x 136.5746pt.
-<pics/Ch2_Theory/feyn_nICS.pdf, id=1935, 1014.79124pt x 445.665pt>
+<pics/Ch2_Theory/feyn_nICS.pdf, id=2031, 1014.79124pt x 445.665pt>
 File: pics/Ch2_Theory/feyn_nICS.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/feyn_nICS.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/feyn_nICS.pdf  used on input line 513.
 
 (pdftex.def)             Requested size: 310.97415pt x 136.5746pt.
-<pics/Ch2_Theory/ICS_Divergence_ElecEnergy.pdf, id=1938, 581.77347pt x 361.35pt
+<pics/Ch2_Theory/ICS_Divergence_ElecEnergy.pdf, id=2034, 581.77347pt x 361.35pt
 >
 File: pics/Ch2_Theory/ICS_Divergence_ElecEnergy.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/ICS_Divergence_ElecEnergy.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/ICS_Divergence_ElecEnergy.pdf  used on
  input line 531.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-<pics/Ch2_Theory/ICS_Redshift_a0.pdf, id=1939, 581.77347pt x 361.35pt>
+<pics/Ch2_Theory/ICS_Redshift_a0.pdf, id=2035, 581.77347pt x 361.35pt>
 File: pics/Ch2_Theory/ICS_Redshift_a0.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/ICS_Redshift_a0.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/ICS_Redshift_a0.pdf  used on input lin
 e 531.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
- [44] [45 <./pics/Ch2_Theory/Aivazis_ComptonScattering_FULL.pdf> <./pics/Ch2_Th
+ [48] [49 <./pics/Ch2_Theory/Aivazis_ComptonScattering_FULL.pdf> <./pics/Ch2_Th
 eory/Aivazis_ComptonScattering2_FULL.pdf> <./pics/Ch2_Theory/feyn_nICS.pdf> <./
 pics/Ch2_Theory/ICS_Divergence_ElecEnergy.pdf> <./pics/Ch2_Theory/ICS_Redshift_
 a0.pdf
@@ -1506,32 +1538,26 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch2_Theory/ICS_Redshi
 ft_a0.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
-<pics/Ch2_Theory/ICS_dWdx_xa01.pdf, id=2070, 581.77347pt x 361.35pt>
+<pics/Ch2_Theory/ICS_dWdx_xa01.pdf, id=2168, 581.77347pt x 361.35pt>
 File: pics/Ch2_Theory/ICS_dWdx_xa01.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/ICS_dWdx_xa01.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/ICS_dWdx_xa01.pdf  used on input line 
 543.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-<pics/Ch2_Theory/ICS_dWdx_xa010.pdf, id=2071, 581.77347pt x 361.35pt>
+<pics/Ch2_Theory/ICS_dWdx_xa010.pdf, id=2169, 581.77347pt x 361.35pt>
 File: pics/Ch2_Theory/ICS_dWdx_xa010.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/ICS_dWdx_xa010.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/ICS_dWdx_xa010.pdf  used on input line
  543.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-
-Underfull \hbox (badness 3612) in paragraph at lines 544--544
-[]\OT1/cmr/m/it/12 (+20) Figure 2.7: |Klein-Nishina and higher or-ders at $\OML
-/cmm/m/it/12 a[]$ \OT1/cmr/m/it/12 (+20) for cir-cu-lar po-lar-i-sa-tion.
- []
-
-[46 <./pics/Ch2_Theory/ICS_dWdx_xa01.pdf> <./pics/Ch2_Theory/ICS_dWdx_xa010.pdf
-
+ [50 <./pics/Ch2_Theory/ICS_dWdx_xa01.pdf> <./pics/Ch2_Theory/ICS_dWdx_xa010.pd
+f
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch2_Theory/ICS_dWdx_x
 a010.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >]
-<pics/Ch2_Theory/Aivazis_Bremsstrahlung.pdf, id=2178, 845.1575pt x 597.23125pt>
+<pics/Ch2_Theory/Aivazis_Bremsstrahlung.pdf, id=2277, 845.1575pt x 597.23125pt>
 
 File: pics/Ch2_Theory/Aivazis_Bremsstrahlung.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Aivazis_Bremsstrahlung.pdf>
@@ -1539,158 +1565,163 @@ Package pdftex.def Info: pics/Ch2_Theory/Aivazis_Bremsstrahlung.pdf  used on in
 put line 570.
 (pdftex.def)             Requested size: 182.09485pt x 128.6756pt.
 
-Overfull \hbox (4.8001pt too wide) in paragraph at lines 575--576
-[]\OT1/cmr/m/n/12 (-20) A charged par-ti-cle can in-ter-act with the nu-clear C
-oulomb field to pro-duce bremsstrahlung,
- []
 
-[47 <./pics/Ch2_Theory/Aivazis_Bremsstrahlung.pdf>]
-<pics/Ch2_Theory/BremsstrahlungSpectrum.png, id=2204, 2007.5pt x 1003.75pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[51]
+<pics/Ch2_Theory/BremsstrahlungSpectrum.png, id=2290, 2007.5pt x 1003.75pt>
 File: pics/Ch2_Theory/BremsstrahlungSpectrum.png Graphic file (type png)
 <use pics/Ch2_Theory/BremsstrahlungSpectrum.png>
 Package pdftex.def Info: pics/Ch2_Theory/BremsstrahlungSpectrum.png  used on in
 put line 596.
 (pdftex.def)             Requested size: 409.71689pt x 204.85112pt.
- [48 <./pics/Ch2_Theory/BremsstrahlungSpectrum.png (PNG copy)>] [49] [50] [51] 
-[52] [53] [54] [55]
-<pics/Ch2_Theory/Aivazis_PairAnnihilation.pdf, id=2331, 321.14378pt x 473.74791
+ [52 <./pics/Ch2_Theory/Aivazis_Bremsstrahlung.pdf>] [53 <./pics/Ch2_Theory/Bre
+msstrahlungSpectrum.png (PNG copy)>]
+File: pics/Ch2_Theory/RROverview_Blackburn.png Graphic file (type png)
+<use pics/Ch2_Theory/RROverview_Blackburn.png>
+Package pdftex.def Info: pics/Ch2_Theory/RROverview_Blackburn.png  used on inpu
+t line 646.
+(pdftex.def)             Requested size: 318.66946pt x 248.96417pt.
+ [54] [55] [56] [57] [58] [59]
+<pics/Ch2_Theory/Aivazis_PairAnnihilation.pdf, id=2429, 321.14378pt x 473.74791
 pt>
 File: pics/Ch2_Theory/Aivazis_PairAnnihilation.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Aivazis_PairAnnihilation.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/Aivazis_PairAnnihilation.pdf  used on 
-input line 840.
+input line 828.
 (pdftex.def)             Requested size: 92.58047pt x 136.5746pt.
-<pics/Ch2_Theory/Aivazis_BreitWheeler.pdf, id=2332, 321.14378pt x 473.74791pt>
+<pics/Ch2_Theory/Aivazis_BreitWheeler.pdf, id=2430, 321.14378pt x 473.74791pt>
 File: pics/Ch2_Theory/Aivazis_BreitWheeler.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Aivazis_BreitWheeler.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/Aivazis_BreitWheeler.pdf  used on inpu
-t line 841.
+t line 829.
 (pdftex.def)             Requested size: 92.58047pt x 136.5746pt.
-<pics/Ch6_Results2/BWD_Xsec.png, id=2344, 2007.5pt x 1003.75pt>
+ [60 <./pics/Ch2_Theory/Aivazis_PairAnnihilation.pdf> <./pics/Ch2_Theory/Aivazi
+s_BreitWheeler.pdf>]
+<pics/Ch6_Results2/BWD_Xsec.png, id=2450, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BWD_Xsec.png Graphic file (type png)
 <use pics/Ch6_Results2/BWD_Xsec.png>
-Package pdftex.def Info: pics/Ch6_Results2/BWD_Xsec.png  used on input line 865
+Package pdftex.def Info: pics/Ch6_Results2/BWD_Xsec.png  used on input line 853
 .
 (pdftex.def)             Requested size: 364.19664pt x 182.09158pt.
- [56 <./pics/Ch2_Theory/Aivazis_PairAnnihilation.pdf> <./pics/Ch2_Theory/Aivazi
-s_BreitWheeler.pdf>]
-<pics/Ch2_Theory/BW_diff_cross_CM.pdf, id=2368, 578.16pt x 578.16pt>
+ [61 <./pics/Ch6_Results2/BWD_Xsec.png (PNG copy)>]
+<pics/Ch2_Theory/BW_diff_cross_CM.pdf, id=2473, 578.16pt x 578.16pt>
 File: pics/Ch2_Theory/BW_diff_cross_CM.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/BW_diff_cross_CM.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/BW_diff_cross_CM.pdf  used on input li
-ne 902.
+ne 890.
 (pdftex.def)             Requested size: 227.62204pt x 227.61641pt.
-<pics/Ch2_Theory/BW_Energy_Lab_E2E1.pdf, id=2369, 578.16pt x 578.16pt>
+<pics/Ch2_Theory/BW_Energy_Lab_E2E1.pdf, id=2474, 578.16pt x 578.16pt>
 File: pics/Ch2_Theory/BW_Energy_Lab_E2E1.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/BW_Energy_Lab_E2E1.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/BW_Energy_Lab_E2E1.pdf  used on input 
-line 902.
+line 890.
 (pdftex.def)             Requested size: 227.62204pt x 227.61641pt.
- [57 <./pics/Ch6_Results2/BWD_Xsec.png (PNG copy)>]
-<pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi2CM.pdf, id=2386, 578.16pt x 578
-.16pt>
-File: pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi2CM.pdf Graphic file (type 
-pdf)
-<use pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi2CM.pdf>
-Package pdftex.def Info: pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi2CM.pdf 
- used on input line 917.
-(pdftex.def)             Requested size: 227.62204pt x 227.61641pt.
-<pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi4CM.pdf, id=2387, 578.16pt x 578
-.16pt>
-File: pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi4CM.pdf Graphic file (type 
-pdf)
-<use pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi4CM.pdf>
-Package pdftex.def Info: pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi4CM.pdf 
- used on input line 917.
-(pdftex.def)             Requested size: 227.62204pt x 227.61641pt.
- [58 <./pics/Ch2_Theory/BW_diff_cross_CM.pdf> <./pics/Ch2_Theory/BW_Energy_Lab_
+ [62 <./pics/Ch2_Theory/BW_diff_cross_CM.pdf> <./pics/Ch2_Theory/BW_Energy_Lab_
 E2E1.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch2_Theory/BW_Energy_
 Lab_E2E1.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
->] [59 <./pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi2CM.pdf> <./pics/Ch2_Th
-eory/BW_MomentumVectors_Labframe_Pi4CM.pdf
+>]
+<pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi2CM.pdf, id=2592, 578.16pt x 578
+.16pt>
+File: pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi2CM.pdf Graphic file (type 
+pdf)
+<use pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi2CM.pdf>
+Package pdftex.def Info: pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi2CM.pdf 
+ used on input line 905.
+(pdftex.def)             Requested size: 227.62204pt x 227.61641pt.
+<pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi4CM.pdf, id=2593, 578.16pt x 578
+.16pt>
+File: pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi4CM.pdf Graphic file (type 
+pdf)
+<use pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi4CM.pdf>
+Package pdftex.def Info: pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi4CM.pdf 
+ used on input line 905.
+(pdftex.def)             Requested size: 227.62204pt x 227.61641pt.
+ [63 <./pics/Ch2_Theory/BW_MomentumVectors_Labframe_Pi2CM.pdf> <./pics/Ch2_Theo
+ry/BW_MomentumVectors_Labframe_Pi4CM.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch2_Theory/BW_Momentu
 mVectors_Labframe_Pi4CM.pdf): PDF inclusion: multiple pdfs with page group incl
 uded in a single page
->] [60]
-<pics/Ch2_Theory/Aivazis_BetheHeitler.pdf, id=2627, 597.23125pt x 845.1575pt>
+>] [64]
+<pics/Ch2_Theory/Aivazis_BetheHeitler.pdf, id=2721, 597.23125pt x 845.1575pt>
 File: pics/Ch2_Theory/Aivazis_BetheHeitler.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Aivazis_BetheHeitler.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/Aivazis_BetheHeitler.pdf  used on inpu
-t line 970.
+t line 958.
 (pdftex.def)             Requested size: 96.5067pt x 136.5746pt.
 File: pics/Ch2_Theory/Aivazis_Bremsstrahlung.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Aivazis_Bremsstrahlung.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/Aivazis_Bremsstrahlung.pdf  used on in
-put line 971.
+put line 959.
 (pdftex.def)             Requested size: 159.3382pt x 112.59114pt.
- [61 <./pics/Ch2_Theory/Aivazis_BetheHeitler.pdf>]) [62]
+ [65]) [66 <./pics/Ch2_Theory/Aivazis_BetheHeitler.pdf>]
 \openout2 = `Theory/Wakefield_Plasma_Laser.aux'.
 
 
 (./Theory/Wakefield_Plasma_Laser.tex
 Chapter 3.
-[63
+[67
 
 
 
-] [64] [65]
-<pics/Ch2_Theory/omegap_lambdap_density.pdf, id=2707, 581.77347pt x 361.35pt>
+] [68] [69]
+<pics/Ch2_Theory/omegap_lambdap_density.pdf, id=2806, 581.77347pt x 361.35pt>
 File: pics/Ch2_Theory/omegap_lambdap_density.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/omegap_lambdap_density.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/omegap_lambdap_density.pdf  used on in
 put line 88.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
- [66 <./pics/Ch2_Theory/omegap_lambdap_density.pdf>] [67]
-[68]
-<pics/Ch2_Theory/GroupVelocity_density.pdf, id=2796, 581.77347pt x 361.35pt>
+ [70 <./pics/Ch2_Theory/omegap_lambdap_density.pdf>] [71]
+[72]
+<pics/Ch2_Theory/GroupVelocity_density.pdf, id=2894, 581.77347pt x 361.35pt>
 File: pics/Ch2_Theory/GroupVelocity_density.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/GroupVelocity_density.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/GroupVelocity_density.pdf  used on inp
 ut line 186.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-<pics/Ch2_Theory/critical_density.pdf, id=2797, 581.77347pt x 361.35pt>
+<pics/Ch2_Theory/critical_density.pdf, id=2895, 581.77347pt x 361.35pt>
 File: pics/Ch2_Theory/critical_density.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/critical_density.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/critical_density.pdf  used on input li
 ne 186.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
- [69] [70 <./pics/Ch2_Theory/GroupVelocity_density.pdf> <./pics/Ch2_Theory/crit
+ [73] [74 <./pics/Ch2_Theory/GroupVelocity_density.pdf> <./pics/Ch2_Theory/crit
 ical_density.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch2_Theory/critical_d
 ensity.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
->] [71] [72] [73] [74
+>] [75] [76] [77] [78
 
-] [75] [76] [77] [78]) [79]
+] [79] [80] [81] [82]) [83]
 \openout2 = `Methods/Experimental_Methods.aux'.
 
 
 (./Methods/Experimental_Methods.tex
 Chapter 4.
-[80
+[84
 
 
 
 ]
-<pics/Ch3_Methods/BeamGeometries.png, id=3132, 379.83047pt x 296.20375pt>
+<pics/Ch3_Methods/BeamGeometries.png, id=3230, 379.83047pt x 296.20375pt>
 File: pics/Ch3_Methods/BeamGeometries.png Graphic file (type png)
 <use pics/Ch3_Methods/BeamGeometries.png>
 Package pdftex.def Info: pics/Ch3_Methods/BeamGeometries.png  used on input lin
 e 33.
 (pdftex.def)             Requested size: 364.19664pt x 284.02242pt.
- [81 <./pics/Ch3_Methods/BeamGeometries.png>] [82] [83]
-<pics/Ch3_Methods/USAF_FocalCalib_Example.jpg, id=3170, 658.46pt x 493.845pt>
+ [85 <./pics/Ch3_Methods/BeamGeometries.png>] [86] [87]
+<pics/Ch3_Methods/USAF_FocalCalib_Example.jpg, id=3267, 658.46pt x 493.845pt>
 File: pics/Ch3_Methods/USAF_FocalCalib_Example.jpg Graphic file (type jpg)
 <use pics/Ch3_Methods/USAF_FocalCalib_Example.jpg>
 Package pdftex.def Info: pics/Ch3_Methods/USAF_FocalCalib_Example.jpg  used on 
 input line 85.
 (pdftex.def)             Requested size: 212.44968pt x 159.3382pt.
-<pics/Ch3_Methods/USAF_Resolution_Chart_A1-780.jpg, id=3171, 782.925pt x 782.92
+<pics/Ch3_Methods/USAF_Resolution_Chart_A1-780.jpg, id=3268, 782.925pt x 782.92
 5pt>
 File: pics/Ch3_Methods/USAF_Resolution_Chart_A1-780.jpg Graphic file (type jpg)
 
@@ -1698,106 +1729,106 @@ File: pics/Ch3_Methods/USAF_Resolution_Chart_A1-780.jpg Graphic file (type jpg)
 Package pdftex.def Info: pics/Ch3_Methods/USAF_Resolution_Chart_A1-780.jpg  use
 d on input line 85.
 (pdftex.def)             Requested size: 159.32991pt x 159.3382pt.
-<pics/Ch3_Methods/RRf40Spot.png, id=3172, 883.3pt x 1273.75874pt>
+<pics/Ch3_Methods/RRf40Spot.png, id=3269, 883.3pt x 1273.75874pt>
 File: pics/Ch3_Methods/RRf40Spot.png Graphic file (type png)
 <use pics/Ch3_Methods/RRf40Spot.png>
 Package pdftex.def Info: pics/Ch3_Methods/RRf40Spot.png  used on input line 93.
 
 (pdftex.def)             Requested size: 150.23137pt x 216.6333pt.
-<pics/Ch3_Methods/RRF2Spot.png, id=3173, 883.3pt x 1273.75874pt>
+<pics/Ch3_Methods/RRF2Spot.png, id=3270, 883.3pt x 1273.75874pt>
 File: pics/Ch3_Methods/RRF2Spot.png Graphic file (type png)
 <use pics/Ch3_Methods/RRF2Spot.png>
 Package pdftex.def Info: pics/Ch3_Methods/RRF2Spot.png  used on input line 93.
 (pdftex.def)             Requested size: 150.23137pt x 216.6333pt.
-<pics/Ch3_Methods/QEDPhasePlate.png, id=3174, 883.3pt x 1273.75874pt>
+<pics/Ch3_Methods/QEDPhasePlate.png, id=3271, 883.3pt x 1273.75874pt>
 File: pics/Ch3_Methods/QEDPhasePlate.png Graphic file (type png)
 <use pics/Ch3_Methods/QEDPhasePlate.png>
 Package pdftex.def Info: pics/Ch3_Methods/QEDPhasePlate.png  used on input line
  93.
 (pdftex.def)             Requested size: 150.23137pt x 216.6333pt.
- [84 <./pics/Ch3_Methods/USAF_FocalCalib_Example.jpg> <./pics/Ch3_Methods/USAF_
-Resolution_Chart_A1-780.jpg>] [85 <./pics/Ch3_Methods/RRf40Spot.png (PNG copy)>
+ [88 <./pics/Ch3_Methods/USAF_FocalCalib_Example.jpg> <./pics/Ch3_Methods/USAF_
+Resolution_Chart_A1-780.jpg>] [89 <./pics/Ch3_Methods/RRf40Spot.png (PNG copy)>
  <./pics/Ch3_Methods/RRF2Spot.png (PNG copy)> <./pics/Ch3_Methods/QEDPhasePlate
 .png (PNG copy)>]
-[86]
-<pics/Ch3_Methods/PhotoDiode_BW.jpg, id=3201, 1842.885pt x 3276.24pt>
+[90]
+<pics/Ch3_Methods/PhotoDiode_BW.jpg, id=3298, 1842.885pt x 3276.24pt>
 File: pics/Ch3_Methods/PhotoDiode_BW.jpg Graphic file (type jpg)
 <use pics/Ch3_Methods/PhotoDiode_BW.jpg>
 Package pdftex.def Info: pics/Ch3_Methods/PhotoDiode_BW.jpg  used on input line
  124.
 (pdftex.def)             Requested size: 97.29562pt x 172.99496pt.
-<pics/Ch3_Methods/DeadReckonDiode.png, id=3202, 2007.5pt x 1003.75pt>
+<pics/Ch3_Methods/DeadReckonDiode.png, id=3299, 2007.5pt x 1003.75pt>
 File: pics/Ch3_Methods/DeadReckonDiode.png Graphic file (type png)
 <use pics/Ch3_Methods/DeadReckonDiode.png>
 Package pdftex.def Info: pics/Ch3_Methods/DeadReckonDiode.png  used on input li
 ne 124.
 (pdftex.def)             Requested size: 326.37276pt x 172.99496pt.
- [87 <./pics/Ch3_Methods/DeadReckonDiode.png (PNG copy)> <./pics/Ch3_Methods/Ph
-otoDiode_BW.jpg>] [88]
-<pics/Ch3_Methods/PrismCam.png, id=3223, 389.32881pt x 286.1892pt>
+ [91 <./pics/Ch3_Methods/DeadReckonDiode.png (PNG copy)> <./pics/Ch3_Methods/Ph
+otoDiode_BW.jpg>] [92]
+<pics/Ch3_Methods/PrismCam.png, id=3321, 389.32881pt x 286.1892pt>
 File: pics/Ch3_Methods/PrismCam.png Graphic file (type png)
 <use pics/Ch3_Methods/PrismCam.png>
 Package pdftex.def Info: pics/Ch3_Methods/PrismCam.png  used on input line 171.
 
 (pdftex.def)             Requested size: 216.75728pt x 159.3382pt.
-<pics/Ch3_Methods/PrismCamExample.pdf, id=3224, 493.845pt x 370.38374pt>
+<pics/Ch3_Methods/PrismCamExample.pdf, id=3322, 493.845pt x 370.38374pt>
 File: pics/Ch3_Methods/PrismCamExample.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/PrismCamExample.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/PrismCamExample.pdf  used on input li
 ne 171.
 (pdftex.def)             Requested size: 212.4547pt x 159.3382pt.
- [89]
-<pics/Ch3_Methods/FringeVisibilityCole.png, id=3237, 700.6175pt x 398.48875pt>
+ [93]
+<pics/Ch3_Methods/FringeVisibilityCole.png, id=3335, 700.6175pt x 398.48875pt>
 File: pics/Ch3_Methods/FringeVisibilityCole.png Graphic file (type png)
 <use pics/Ch3_Methods/FringeVisibilityCole.png>
 Package pdftex.def Info: pics/Ch3_Methods/FringeVisibilityCole.png  used on inp
 ut line 182.
 (pdftex.def)             Requested size: 320.14984pt x 182.09485pt.
- [90 <./pics/Ch3_Methods/PrismCam.png> <./pics/Ch3_Methods/PrismCamExample.pdf>
+ [94 <./pics/Ch3_Methods/PrismCam.png> <./pics/Ch3_Methods/PrismCamExample.pdf>
 ]
 Overfull \hbox (1.31377pt too wide) in paragraph at lines 191--191
 []\OT1/cmr/bx/n/14.4 Additional con-sid-er-a-tions for the syn-chro-ni-sa-tion 
 of beams 
  []
 
-[91 <./pics/Ch3_Methods/FringeVisibilityCole.png>] [92]
-<pics/Ch3_Methods/LaserElectronOffset_Sketch.png, id=3284, 658.68942pt x 578.05
+[95 <./pics/Ch3_Methods/FringeVisibilityCole.png>] [96]
+<pics/Ch3_Methods/LaserElectronOffset_Sketch.png, id=3380, 658.68942pt x 578.05
 676pt>
 File: pics/Ch3_Methods/LaserElectronOffset_Sketch.png Graphic file (type png)
 <use pics/Ch3_Methods/LaserElectronOffset_Sketch.png>
 Package pdftex.def Info: pics/Ch3_Methods/LaserElectronOffset_Sketch.png  used 
 on input line 236.
 (pdftex.def)             Requested size: 364.19664pt x 319.60808pt.
- [93]
-<pics/Ch3_Methods/LaserElectronOffset.png, id=3301, 2007.5pt x 1003.75pt>
+ [97]
+<pics/Ch3_Methods/LaserElectronOffset.png, id=3398, 2007.5pt x 1003.75pt>
 File: pics/Ch3_Methods/LaserElectronOffset.png Graphic file (type png)
 <use pics/Ch3_Methods/LaserElectronOffset.png>
 Package pdftex.def Info: pics/Ch3_Methods/LaserElectronOffset.png  used on inpu
 t line 253.
 (pdftex.def)             Requested size: 364.19664pt x 182.09158pt.
- [94 <./pics/Ch3_Methods/LaserElectronOffset_Sketch.png>]
-<pics/Ch3_Methods/Shalloo_TimingDrift.pdf, id=3312, 364.41826pt x 169.31206pt>
+ [98 <./pics/Ch3_Methods/LaserElectronOffset_Sketch.png>]
+<pics/Ch3_Methods/Shalloo_TimingDrift.pdf, id=3410, 364.41826pt x 169.31206pt>
 File: pics/Ch3_Methods/Shalloo_TimingDrift.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/Shalloo_TimingDrift.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/Shalloo_TimingDrift.pdf  used on inpu
 t line 289.
 (pdftex.def)             Requested size: 364.19664pt x 169.21346pt.
- [95 <./pics/Ch3_Methods/LaserElectronOffset.png (PNG copy)>] [96 <./pics/Ch3_M
-ethods/Shalloo_TimingDrift.pdf>]
-<pics/Ch3_Methods/GasCell_Example_cut.png, id=3390, 1663.21375pt x 997.7275pt>
+ [99 <./pics/Ch3_Methods/LaserElectronOffset.png (PNG copy)>] [100 <./pics/Ch3_
+Methods/Shalloo_TimingDrift.pdf>]
+<pics/Ch3_Methods/GasCell_Example_cut.png, id=3488, 1663.21375pt x 997.7275pt>
 File: pics/Ch3_Methods/GasCell_Example_cut.png Graphic file (type png)
 <use pics/Ch3_Methods/GasCell_Example_cut.png>
 Package pdftex.def Info: pics/Ch3_Methods/GasCell_Example_cut.png  used on inpu
 t line 310.
 (pdftex.def)             Requested size: 250.43568pt x 150.23137pt.
-<pics/Ch5_Results1/conical_nozzle_prettypic.jpg, id=3391, 764.8575pt x 584.1825
+<pics/Ch5_Results1/conical_nozzle_prettypic.jpg, id=3489, 764.8575pt x 584.1825
 pt>
 File: pics/Ch5_Results1/conical_nozzle_prettypic.jpg Graphic file (type jpg)
 <use pics/Ch5_Results1/conical_nozzle_prettypic.jpg>
 Package pdftex.def Info: pics/Ch5_Results1/conical_nozzle_prettypic.jpg  used o
 n input line 311.
 (pdftex.def)             Requested size: 196.68748pt x 150.23137pt.
-<pics/Ch3_Methods/TopView_Blade_Gas_S_Edge_flattened.pdf, id=3395, 596.76062pt 
+<pics/Ch3_Methods/TopView_Blade_Gas_S_Edge_flattened.pdf, id=3493, 596.76062pt 
 x 445.50862pt>
 File: pics/Ch3_Methods/TopView_Blade_Gas_S_Edge_flattened.pdf Graphic file (typ
 e pdf)
@@ -1805,16 +1836,17 @@ e pdf)
 Package pdftex.def Info: pics/Ch3_Methods/TopView_Blade_Gas_S_Edge_flattened.pd
 f  used on input line 356.
 (pdftex.def)             Requested size: 243.91765pt x 182.09485pt.
-<pics/Ch3_Methods/GasNozzleSideView.pdf, id=3396, 641.27176pt x 704.50801pt>
+<pics/Ch3_Methods/GasNozzleSideView.pdf, id=3494, 641.27176pt x 704.50801pt>
 File: pics/Ch3_Methods/GasNozzleSideView.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/GasNozzleSideView.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/GasNozzleSideView.pdf  used on input 
 line 356.
 (pdftex.def)             Requested size: 165.74821pt x 182.09485pt.
- [97 <./pics/Ch3_Methods/GasCell_Example_cut.png> <./pics/Ch5_Results1/conical_
-nozzle_prettypic.jpg>] [98 <./pics/Ch3_Methods/TopView_Blade_Gas_S_Edge_flatten
-ed.pdf> <./pics/Ch3_Methods/GasNozzleSideView.pdf>]
-<pics/Ch3_Methods/GasNozzleSketch.pdf, id=3459, 154.81117pt x 187.3244pt>
+
+[101 <./pics/Ch3_Methods/GasCell_Example_cut.png> <./pics/Ch5_Results1/conical_
+nozzle_prettypic.jpg>] [102 <./pics/Ch3_Methods/TopView_Blade_Gas_S_Edge_flatte
+ned.pdf> <./pics/Ch3_Methods/GasNozzleSideView.pdf>]
+<pics/Ch3_Methods/GasNozzleSketch.pdf, id=3556, 154.81117pt x 187.3244pt>
 File: pics/Ch3_Methods/GasNozzleSketch.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/GasNozzleSketch.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/GasNozzleSketch.pdf  used on input li
@@ -1836,82 +1868,82 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 368--391
 []$[]$ 
  []
 
-<pics/Ch3_Methods/GasCellSketch.pdf, id=3462, 1462.71457pt x 1175.89313pt>
+<pics/Ch3_Methods/GasCellSketch.pdf, id=3559, 1462.71457pt x 1175.89313pt>
 File: pics/Ch3_Methods/GasCellSketch.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/GasCellSketch.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/GasCellSketch.pdf  used on input line
  397.
 (pdftex.def)             Requested size: 283.14134pt x 227.62204pt.
-[99 <./pics/Ch3_Methods/GasCellSketch.pdf> <./pics/Ch3_Methods/GasNozzleSketch.
-pdf
+[103 <./pics/Ch3_Methods/GasCellSketch.pdf> <./pics/Ch3_Methods/GasNozzleSketch
+.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch3_Methods/GasNozzle
 Sketch.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
->] [100]
-<pics/Ch3_Methods/Shadowgraphy.png, id=3513, 561.7788pt x 421.575pt>
+>] [104]
+<pics/Ch3_Methods/Shadowgraphy.png, id=3611, 561.7788pt x 421.575pt>
 File: pics/Ch3_Methods/Shadowgraphy.png Graphic file (type png)
 <use pics/Ch3_Methods/Shadowgraphy.png>
 Package pdftex.def Info: pics/Ch3_Methods/Shadowgraphy.png  used on input line 
 469.
 (pdftex.def)             Requested size: 341.43306pt x 233.46002pt.
- [101 <./pics/Ch3_Methods/Shadowgraphy.png>]
-<pics/Ch3_Methods/MachZehnder_Comparison.png, id=3526, 848.86278pt x 379.00453p
+ [105 <./pics/Ch3_Methods/Shadowgraphy.png>]
+<pics/Ch3_Methods/MachZehnder_Comparison.png, id=3624, 848.86278pt x 379.00453p
 t>
 File: pics/Ch3_Methods/MachZehnder_Comparison.png Graphic file (type png)
 <use pics/Ch3_Methods/MachZehnder_Comparison.png>
 Package pdftex.def Info: pics/Ch3_Methods/MachZehnder_Comparison.png  used on i
 nput line 486.
 (pdftex.def)             Requested size: 455.24408pt x 203.25987pt.
- [102 <./pics/Ch3_Methods/MachZehnder_Comparison.png>]
-<pics/Ch3_Methods/ProbeTA3.pdf, id=3545, 321.80162pt x 224.41779pt>
+ [106 <./pics/Ch3_Methods/MachZehnder_Comparison.png>]
+<pics/Ch3_Methods/ProbeTA3.pdf, id=3642, 321.80162pt x 224.41779pt>
 File: pics/Ch3_Methods/ProbeTA3.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/ProbeTA3.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/ProbeTA3.pdf  used on input line 515.
 
 (pdftex.def)             Requested size: 341.43306pt x 238.1214pt.
- [103 <./pics/Ch3_Methods/ProbeTA3.pdf>] [104]
-<pics/Ch2_Theory/elecspec_2.pdf, id=3582, 264.0128pt x 187.37755pt>
+ [107 <./pics/Ch3_Methods/ProbeTA3.pdf>] [108]
+<pics/Ch2_Theory/elecspec_2.pdf, id=3679, 264.0128pt x 187.37755pt>
 File: pics/Ch2_Theory/elecspec_2.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/elecspec_2.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/elecspec_2.pdf  used on input line 548
 .
 (pdftex.def)             Requested size: 223.0721pt x 158.32527pt.
-<pics/Ch2_Theory/elecspec_3.pdf, id=3583, 264.0128pt x 187.37755pt>
+<pics/Ch2_Theory/elecspec_3.pdf, id=3680, 264.0128pt x 187.37755pt>
 File: pics/Ch2_Theory/elecspec_3.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/elecspec_3.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/elecspec_3.pdf  used on input line 548
 .
 (pdftex.def)             Requested size: 223.0721pt x 158.32527pt.
 
-[105 <./pics/Ch2_Theory/elecspec_2.pdf> <./pics/Ch2_Theory/elecspec_3.pdf
+[109 <./pics/Ch2_Theory/elecspec_2.pdf> <./pics/Ch2_Theory/elecspec_3.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch2_Theory/elecspec_3
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<pics/Ch3_Methods/MagneticSpectrometer_Matt.png, id=3664, 2096.83376pt x 807.01
+<pics/Ch3_Methods/MagneticSpectrometer_Matt.png, id=3762, 2096.83376pt x 807.01
 5pt>
 File: pics/Ch3_Methods/MagneticSpectrometer_Matt.png Graphic file (type png)
 <use pics/Ch3_Methods/MagneticSpectrometer_Matt.png>
 Package pdftex.def Info: pics/Ch3_Methods/MagneticSpectrometer_Matt.png  used o
 n input line 585.
 (pdftex.def)             Requested size: 455.24408pt x 175.20418pt.
- [106]
-<pics/Ch3_Methods/EspecMethods.png, id=3673, 1637.11626pt x 978.65625pt>
+ [110]
+<pics/Ch3_Methods/EspecMethods.png, id=3770, 1637.11626pt x 978.65625pt>
 File: pics/Ch3_Methods/EspecMethods.png Graphic file (type png)
 <use pics/Ch3_Methods/EspecMethods.png>
 Package pdftex.def Info: pics/Ch3_Methods/EspecMethods.png  used on input line 
 595.
 (pdftex.def)             Requested size: 455.24408pt x 272.14032pt.
- [107 <./pics/Ch3_Methods/MagneticSpectrometer_Matt.png (PNG copy)>]
-[108 <./pics/Ch3_Methods/EspecMethods.png>]
-<pics/Ch3_Methods/JenaProfile.jpg, id=3695, 3035.34pt x 4047.12pt>
+ [111 <./pics/Ch3_Methods/MagneticSpectrometer_Matt.png (PNG copy)>]
+[112 <./pics/Ch3_Methods/EspecMethods.png>]
+<pics/Ch3_Methods/JenaProfile.jpg, id=3792, 3035.34pt x 4047.12pt>
 File: pics/Ch3_Methods/JenaProfile.jpg Graphic file (type jpg)
 <use pics/Ch3_Methods/JenaProfile.jpg>
 Package pdftex.def Info: pics/Ch3_Methods/JenaProfile.jpg  used on input line 6
 29.
 (pdftex.def)             Requested size: 102.40356pt x 136.5746pt.
-<pics/Ch4_Simulations/ScreenshotGEANT_JenaStack.png, id=3696, 644.4075pt x 693.
+<pics/Ch4_Simulations/ScreenshotGEANT_JenaStack.png, id=3793, 644.4075pt x 693.
 59125pt>
 File: pics/Ch4_Simulations/ScreenshotGEANT_JenaStack.png Graphic file (type png
 )
@@ -1919,21 +1951,21 @@ File: pics/Ch4_Simulations/ScreenshotGEANT_JenaStack.png Graphic file (type png
 Package pdftex.def Info: pics/Ch4_Simulations/ScreenshotGEANT_JenaStack.png  us
 ed on input line 629.
 (pdftex.def)             Requested size: 126.88315pt x 136.5746pt.
-<pics/Ch3_Methods/GammaProfileExample.pdf, id=3697, 371.1366pt x 321.45094pt>
+<pics/Ch3_Methods/GammaProfileExample.pdf, id=3794, 371.1366pt x 321.45094pt>
 File: pics/Ch3_Methods/GammaProfileExample.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/GammaProfileExample.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/GammaProfileExample.pdf  used on inpu
 t line 629.
 (pdftex.def)             Requested size: 157.68849pt x 136.5746pt.
- [109] [110 <./pics/Ch3_Methods/JenaProfile.jpg> <./pics/Ch4_Simulations/Screen
+ [113] [114 <./pics/Ch3_Methods/JenaProfile.jpg> <./pics/Ch4_Simulations/Screen
 shotGEANT_JenaStack.png> <./pics/Ch3_Methods/GammaProfileExample.pdf>]
-<pics/Ch4_Simulations/Edep_JenaStack.pdf, id=3740, 581.77347pt x 361.35pt>
+<pics/Ch4_Simulations/Edep_JenaStack.pdf, id=3837, 581.77347pt x 361.35pt>
 File: pics/Ch4_Simulations/Edep_JenaStack.pdf Graphic file (type pdf)
 <use pics/Ch4_Simulations/Edep_JenaStack.pdf>
 Package pdftex.def Info: pics/Ch4_Simulations/Edep_JenaStack.pdf  used on input
  line 665.
 (pdftex.def)             Requested size: 219.88667pt x 136.5746pt.
-<pics/Ch7_Results3/Edep_Jena_1_100_MeV.png, id=3741, 2007.5pt x 1003.75pt>
+<pics/Ch7_Results3/Edep_Jena_1_100_MeV.png, id=3838, 2007.5pt x 1003.75pt>
 File: pics/Ch7_Results3/Edep_Jena_1_100_MeV.png Graphic file (type png)
 <use pics/Ch7_Results3/Edep_Jena_1_100_MeV.png>
 Package pdftex.def Info: pics/Ch7_Results3/Edep_Jena_1_100_MeV.png  used on inp
@@ -1944,55 +1976,55 @@ Overfull \hbox (37.78763pt too wide) in paragraph at lines 665--666
  [][][] 
  []
 
-[111 <./pics/Ch4_Simulations/Edep_JenaStack.pdf> <./pics/Ch7_Results3/Edep_Jena
+[115 <./pics/Ch4_Simulations/Edep_JenaStack.pdf> <./pics/Ch7_Results3/Edep_Jena
 _1_100_MeV.png (PNG copy)>]
-<pics/Ch3_Methods/GammaSpectrometerSketch.pdf, id=3784, 2150.05774pt x 1084.05p
+<pics/Ch3_Methods/GammaSpectrometerSketch.pdf, id=3882, 2150.05774pt x 1084.05p
 t>
 File: pics/Ch3_Methods/GammaSpectrometerSketch.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/GammaSpectrometerSketch.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/GammaSpectrometerSketch.pdf  used on 
 input line 683.
 (pdftex.def)             Requested size: 364.19664pt x 183.6244pt.
- [112 <./pics/Ch3_Methods/GammaSpectrometerSketch.pdf>]
-<pics/scintillator.jpg, id=3807, 3276.24pt x 2457.18pt>
+ [116 <./pics/Ch3_Methods/GammaSpectrometerSketch.pdf>]
+<pics/scintillator.jpg, id=3905, 3276.24pt x 2457.18pt>
 File: pics/scintillator.jpg Graphic file (type jpg)
 <use pics/scintillator.jpg>
 Package pdftex.def Info: pics/scintillator.jpg  used on input line 702.
 (pdftex.def)             Requested size: 182.06844pt x 136.5746pt.
-<pics/Ch3_Methods/DualAxis_assembly.JPG, id=3808, 4047.12pt x 3035.34pt>
+<pics/Ch3_Methods/DualAxis_assembly.JPG, id=3906, 4047.12pt x 3035.34pt>
 File: pics/Ch3_Methods/DualAxis_assembly.JPG Graphic file (type jpg)
 <use pics/Ch3_Methods/DualAxis_assembly.JPG>
 Package pdftex.def Info: pics/Ch3_Methods/DualAxis_assembly.JPG  used on input 
 line 703.
 (pdftex.def)             Requested size: 182.05078pt x 136.5746pt.
-<pics/Ch3_Methods/GammaSpecCrystals_2.pdf, id=3811, 469.17342pt x 415.44139pt>
+<pics/Ch3_Methods/GammaSpecCrystals_2.pdf, id=3909, 469.17342pt x 415.44139pt>
 File: pics/Ch3_Methods/GammaSpecCrystals_2.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/GammaSpecCrystals_2.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/GammaSpecCrystals_2.pdf  used on inpu
 t line 710.
 (pdftex.def)             Requested size: 154.2335pt x 136.5746pt.
-<pics/Ch3_Methods/GammaSpecCrystals_3.pdf, id=3812, 626.30379pt x 609.15788pt>
+<pics/Ch3_Methods/GammaSpecCrystals_3.pdf, id=3910, 626.30379pt x 609.15788pt>
 File: pics/Ch3_Methods/GammaSpecCrystals_3.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/GammaSpecCrystals_3.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/GammaSpecCrystals_3.pdf  used on inpu
 t line 711.
 (pdftex.def)             Requested size: 140.41533pt x 136.5746pt.
- [113 <./pics/scintillator.jpg> <./pics/Ch3_Methods/DualAxis_assembly.JPG>]
-<pics/Ch3_Methods/GammaSpecExamples.pdf, id=3825, 686.36786pt x 552.43628pt>
+ [117 <./pics/scintillator.jpg> <./pics/Ch3_Methods/DualAxis_assembly.JPG>]
+<pics/Ch3_Methods/GammaSpecExamples.pdf, id=3923, 686.36786pt x 552.43628pt>
 File: pics/Ch3_Methods/GammaSpecExamples.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/GammaSpecExamples.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/GammaSpecExamples.pdf  used on input 
 line 724.
 (pdftex.def)             Requested size: 273.14922pt x 219.84947pt.
 
-[114 <./pics/Ch3_Methods/GammaSpecCrystals_2.pdf> <./pics/Ch3_Methods/GammaSpec
+[118 <./pics/Ch3_Methods/GammaSpecCrystals_2.pdf> <./pics/Ch3_Methods/GammaSpec
 Crystals_3.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch3_Methods/GammaSpec
 Crystals_3.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
->] [115 <./pics/Ch3_Methods/GammaSpecExamples.pdf>]
-<pics/Ch4_Simulations/Screenshot_GEANT4_RALStack_BW.png, id=3906, 879.285pt x 4
+>] [119 <./pics/Ch3_Methods/GammaSpecExamples.pdf>]
+<pics/Ch4_Simulations/Screenshot_GEANT4_RALStack_BW.png, id=4003, 879.285pt x 4
 84.81125pt>
 File: pics/Ch4_Simulations/Screenshot_GEANT4_RALStack_BW.png Graphic file (type
  png)
@@ -2000,7 +2032,7 @@ File: pics/Ch4_Simulations/Screenshot_GEANT4_RALStack_BW.png Graphic file (type
 Package pdftex.def Info: pics/Ch4_Simulations/Screenshot_GEANT4_RALStack_BW.png
   used on input line 765.
 (pdftex.def)             Requested size: 206.40392pt x 113.81102pt.
-<pics/Ch4_Simulations/ScreenshotGEANT_DualAxisStack.png, id=3907, 958.58125pt x
+<pics/Ch4_Simulations/ScreenshotGEANT_DualAxisStack.png, id=4004, 958.58125pt x
  529.98pt>
 File: pics/Ch4_Simulations/ScreenshotGEANT_DualAxisStack.png Graphic file (type
  png)
@@ -2008,9 +2040,9 @@ File: pics/Ch4_Simulations/ScreenshotGEANT_DualAxisStack.png Graphic file (type
 Package pdftex.def Info: pics/Ch4_Simulations/ScreenshotGEANT_DualAxisStack.png
   used on input line 765.
 (pdftex.def)             Requested size: 205.8423pt x 113.81102pt.
- [116 <./pics/Ch4_Simulations/Screenshot_GEANT4_RALStack_BW.png> <./pics/Ch4_Si
+ [120 <./pics/Ch4_Simulations/Screenshot_GEANT4_RALStack_BW.png> <./pics/Ch4_Si
 mulations/ScreenshotGEANT_DualAxisStack.png>]
-<pics/Ch3_Methods/GSpec_Example_Betamax_BGSub_Top.png, id=3920, 2007.5pt x 501.
+<pics/Ch3_Methods/GSpec_Example_Betamax_BGSub_Top.png, id=4017, 2007.5pt x 501.
 875pt>
 File: pics/Ch3_Methods/GSpec_Example_Betamax_BGSub_Top.png Graphic file (type p
 ng)
@@ -2018,8 +2050,8 @@ ng)
 Package pdftex.def Info: pics/Ch3_Methods/GSpec_Example_Betamax_BGSub_Top.png  
 used on input line 781.
 (pdftex.def)             Requested size: 455.24408pt x 132.16151pt.
- [117 <./pics/Ch3_Methods/GSpec_Example_Betamax_BGSub_Top.png (PNG copy)>]
-<pics/Ch4_Simulations/CrystalExtract_Example_Full.png, id=3933, 2007.5pt x 1003
+ [121 <./pics/Ch3_Methods/GSpec_Example_Betamax_BGSub_Top.png (PNG copy)>]
+<pics/Ch4_Simulations/CrystalExtract_Example_Full.png, id=4031, 2007.5pt x 1003
 .75pt>
 File: pics/Ch4_Simulations/CrystalExtract_Example_Full.png Graphic file (type p
 ng)
@@ -2027,7 +2059,7 @@ ng)
 Package pdftex.def Info: pics/Ch4_Simulations/CrystalExtract_Example_Full.png  
 used on input line 801.
 (pdftex.def)             Requested size: 227.62204pt x 132.16151pt.
-<pics/Ch4_Simulations/CrystalExtract_Example_Pixelated.png, id=3935, 2007.5pt x
+<pics/Ch4_Simulations/CrystalExtract_Example_Pixelated.png, id=4033, 2007.5pt x
  1003.75pt>
 File: pics/Ch4_Simulations/CrystalExtract_Example_Pixelated.png Graphic file (t
 ype png)
@@ -2035,9 +2067,9 @@ ype png)
 Package pdftex.def Info: pics/Ch4_Simulations/CrystalExtract_Example_Pixelated.
 png  used on input line 801.
 (pdftex.def)             Requested size: 227.62204pt x 132.16151pt.
- [118 <./pics/Ch4_Simulations/CrystalExtract_Example_Full.png (PNG copy)> <./pi
-cs/Ch4_Simulations/CrystalExtract_Example_Pixelated.png (PNG copy)>] [119]
-<pics/Ch3_Methods/Example_BremsGEANT_ElecInput.png, id=3961, 1001.7425pt x 618.
+ [122 <./pics/Ch4_Simulations/CrystalExtract_Example_Full.png (PNG copy)> <./pi
+cs/Ch4_Simulations/CrystalExtract_Example_Pixelated.png (PNG copy)>] [123]
+<pics/Ch3_Methods/Example_BremsGEANT_ElecInput.png, id=4059, 1001.7425pt x 618.
 31pt>
 File: pics/Ch3_Methods/Example_BremsGEANT_ElecInput.png Graphic file (type png)
 
@@ -2045,7 +2077,7 @@ File: pics/Ch3_Methods/Example_BremsGEANT_ElecInput.png Graphic file (type png)
 Package pdftex.def Info: pics/Ch3_Methods/Example_BremsGEANT_ElecInput.png  use
 d on input line 850.
 (pdftex.def)             Requested size: 227.62204pt x 140.4912pt.
-<pics/Ch3_Methods/Example_GSpecGEANT_GammaSpec.png, id=3962, 1022.82124pt x 620
+<pics/Ch3_Methods/Example_GSpecGEANT_GammaSpec.png, id=4060, 1022.82124pt x 620
 .3175pt>
 File: pics/Ch3_Methods/Example_GSpecGEANT_GammaSpec.png Graphic file (type png)
 
@@ -2057,35 +2089,35 @@ d on input line 850.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[120]
-<pics/Ch3_Methods/Example_GSpec_ExpSim.png, id=3974, 1018.80624pt x 630.355pt>
+[124]
+<pics/Ch3_Methods/Example_GSpec_ExpSim.png, id=4071, 1018.80624pt x 630.355pt>
 File: pics/Ch3_Methods/Example_GSpec_ExpSim.png Graphic file (type png)
 <use pics/Ch3_Methods/Example_GSpec_ExpSim.png>
 Package pdftex.def Info: pics/Ch3_Methods/Example_GSpec_ExpSim.png  used on inp
 ut line 888.
 (pdftex.def)             Requested size: 227.62204pt x 140.83305pt.
-<pics/Ch3_Methods/Example_GSpecGEANT_Corr.png, id=3975, 1012.78375pt x 607.2687
+<pics/Ch3_Methods/Example_GSpecGEANT_Corr.png, id=4072, 1012.78375pt x 607.2687
 5pt>
 File: pics/Ch3_Methods/Example_GSpecGEANT_Corr.png Graphic file (type png)
 <use pics/Ch3_Methods/Example_GSpecGEANT_Corr.png>
 Package pdftex.def Info: pics/Ch3_Methods/Example_GSpecGEANT_Corr.png  used on 
 input line 888.
 (pdftex.def)             Requested size: 227.62204pt x 136.48131pt.
- [121 <./pics/Ch3_Methods/Example_BremsGEANT_ElecInput.png> <./pics/Ch3_Methods
+ [125 <./pics/Ch3_Methods/Example_BremsGEANT_ElecInput.png> <./pics/Ch3_Methods
 /Example_GSpecGEANT_GammaSpec.png>]
-<pics/Ch4_Simulations/EdepGEANTStack.png, id=3989, 536.0025pt x 353.32pt>
+<pics/Ch4_Simulations/EdepGEANTStack.png, id=4085, 536.0025pt x 353.32pt>
 File: pics/Ch4_Simulations/EdepGEANTStack.png Graphic file (type png)
 <use pics/Ch4_Simulations/EdepGEANTStack.png>
 Package pdftex.def Info: pics/Ch4_Simulations/EdepGEANTStack.png  used on input
  line 913.
 (pdftex.def)             Requested size: 227.62204pt x 150.04309pt.
-<pics/Ch4_Simulations/EdepMax_Cases.pdf, id=3990, 581.77347pt x 361.35pt>
+<pics/Ch4_Simulations/EdepMax_Cases.pdf, id=4086, 581.77347pt x 361.35pt>
 File: pics/Ch4_Simulations/EdepMax_Cases.pdf Graphic file (type pdf)
 <use pics/Ch4_Simulations/EdepMax_Cases.pdf>
 Package pdftex.def Info: pics/Ch4_Simulations/EdepMax_Cases.pdf  used on input 
 line 913.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
- [122 <./pics/Ch3_Methods/Example_GSpec_ExpSim.png> <./pics/Ch3_Methods/Example
+ [126 <./pics/Ch3_Methods/Example_GSpec_ExpSim.png> <./pics/Ch3_Methods/Example
 _GSpecGEANT_Corr.png>]
 
 Package nag Warning: Environment eqnarray is obsolete. 
@@ -2095,7 +2127,7 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 925.
 
-[123 <./pics/Ch4_Simulations/EdepGEANTStack.png> <./pics/Ch4_Simulations/EdepMa
+[127 <./pics/Ch4_Simulations/EdepGEANTStack.png> <./pics/Ch4_Simulations/EdepMa
 x_Cases.pdf>]
 
 Package nag Warning: Environment eqnarray is obsolete. 
@@ -2105,15 +2137,15 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 941.
 
-[124]
-<pics/Ch3_Methods/GammaSpec_Views.pdf, id=4066, 2059.72685pt x 1263.29106pt>
+[128]
+<pics/Ch3_Methods/GammaSpec_Views.pdf, id=4164, 2059.72685pt x 1263.29106pt>
 File: pics/Ch3_Methods/GammaSpec_Views.pdf Graphic file (type pdf)
 <use pics/Ch3_Methods/GammaSpec_Views.pdf>
 Package pdftex.def Info: pics/Ch3_Methods/GammaSpec_Views.pdf  used on input li
 ne 967.
 (pdftex.def)             Requested size: 409.71689pt x 251.28513pt.
- [125 <./pics/Ch3_Methods/GammaSpec_Views.pdf>]
-<pics/Ch4_Simulations/GammaProfile_Brems_example.png, id=4094, 1003.75pt x 1003
+ [129 <./pics/Ch3_Methods/GammaSpec_Views.pdf>]
+<pics/Ch4_Simulations/GammaProfile_Brems_example.png, id=4192, 1003.75pt x 1003
 .75pt>
 File: pics/Ch4_Simulations/GammaProfile_Brems_example.png Graphic file (type pn
 g)
@@ -2121,7 +2153,7 @@ g)
 Package pdftex.def Info: pics/Ch4_Simulations/GammaProfile_Brems_example.png  u
 sed on input line 981.
 (pdftex.def)             Requested size: 89.86061pt x 104.7042pt.
-<pics/Ch4_Simulations/GSpec_Example_Spatial_Brems_Top.png, id=4096, 2007.5pt x 
+<pics/Ch4_Simulations/GSpec_Example_Spatial_Brems_Top.png, id=4194, 2007.5pt x 
 1003.75pt>
 File: pics/Ch4_Simulations/GSpec_Example_Spatial_Brems_Top.png Graphic file (ty
 pe png)
@@ -2129,7 +2161,7 @@ pe png)
 Package pdftex.def Info: pics/Ch4_Simulations/GSpec_Example_Spatial_Brems_Top.p
 ng  used on input line 981.
 (pdftex.def)             Requested size: 180.3148pt x 104.7042pt.
-<pics/Ch4_Simulations/GSpec_Example_Spatial_Brems_Side.png, id=4098, 2007.5pt x
+<pics/Ch4_Simulations/GSpec_Example_Spatial_Brems_Side.png, id=4196, 2007.5pt x
  1003.75pt>
 File: pics/Ch4_Simulations/GSpec_Example_Spatial_Brems_Side.png Graphic file (t
 ype png)
@@ -2137,7 +2169,7 @@ ype png)
 Package pdftex.def Info: pics/Ch4_Simulations/GSpec_Example_Spatial_Brems_Side.
 png  used on input line 981.
 (pdftex.def)             Requested size: 180.3148pt x 104.7042pt.
-<pics/Ch4_Simulations/GammaProfile_Betamax_example.png, id=4100, 1003.75pt x 10
+<pics/Ch4_Simulations/GammaProfile_Betamax_example.png, id=4198, 1003.75pt x 10
 03.75pt>
 File: pics/Ch4_Simulations/GammaProfile_Betamax_example.png Graphic file (type 
 png)
@@ -2145,7 +2177,7 @@ png)
 Package pdftex.def Info: pics/Ch4_Simulations/GammaProfile_Betamax_example.png 
  used on input line 983.
 (pdftex.def)             Requested size: 89.86061pt x 104.7042pt.
-<pics/Ch4_Simulations/GSpec_Example_Spatial_Betamax_Top.png, id=4102, 2007.5pt 
+<pics/Ch4_Simulations/GSpec_Example_Spatial_Betamax_Top.png, id=4200, 2007.5pt 
 x 1003.75pt>
 File: pics/Ch4_Simulations/GSpec_Example_Spatial_Betamax_Top.png Graphic file (
 type png)
@@ -2153,7 +2185,7 @@ type png)
 Package pdftex.def Info: pics/Ch4_Simulations/GSpec_Example_Spatial_Betamax_Top
 .png  used on input line 983.
 (pdftex.def)             Requested size: 180.3148pt x 104.7042pt.
-<pics/Ch4_Simulations/GSpec_Example_Spatial_Betamax_Side.png, id=4104, 2007.5pt
+<pics/Ch4_Simulations/GSpec_Example_Spatial_Betamax_Side.png, id=4202, 2007.5pt
  x 1003.75pt>
 File: pics/Ch4_Simulations/GSpec_Example_Spatial_Betamax_Side.png Graphic file 
 (type png)
@@ -2161,32 +2193,32 @@ File: pics/Ch4_Simulations/GSpec_Example_Spatial_Betamax_Side.png Graphic file
 Package pdftex.def Info: pics/Ch4_Simulations/GSpec_Example_Spatial_Betamax_Sid
 e.png  used on input line 983.
 (pdftex.def)             Requested size: 180.3148pt x 104.7042pt.
- [126 <./pics/Ch4_Simulations/GammaProfile_Brems_example.png (PNG copy)> <./pic
+ [130 <./pics/Ch4_Simulations/GammaProfile_Brems_example.png (PNG copy)> <./pic
 s/Ch4_Simulations/GSpec_Example_Spatial_Brems_Top.png (PNG copy)> <./pics/Ch4_S
 imulations/GSpec_Example_Spatial_Brems_Side.png (PNG copy)> <./pics/Ch4_Simulat
 ions/GammaProfile_Betamax_example.png (PNG copy)> <./pics/Ch4_Simulations/GSpec
 _Example_Spatial_Betamax_Top.png (PNG copy)> <./pics/Ch4_Simulations/GSpec_Exam
-ple_Spatial_Betamax_Side.png (PNG copy)>]) [127]
+ple_Spatial_Betamax_Side.png (PNG copy)>]) [131]
 \openout2 = `Results/RR2019_linICS.aux'.
 
  (./Results/RR2019_linICS.tex
 Chapter 5.
 
-LaTeX Warning: Marginpar on page 128 moved.
+LaTeX Warning: Marginpar on page 132 moved.
 
 
-LaTeX Warning: Marginpar on page 128 moved.
+LaTeX Warning: Marginpar on page 132 moved.
 
-[128
+[132
 
 
 
 ]
 
-LaTeX Warning: Marginpar on page 129 moved.
+LaTeX Warning: Marginpar on page 133 moved.
 
-[129]
-<pics/Ch7_Results3/GeminiShock2019_ExpBlend_V1_Aug20_annotated.png, id=4181, 19
+[133]
+<pics/Ch7_Results3/GeminiShock2019_ExpBlend_V1_Aug20_annotated.png, id=4279, 19
 24.18875pt x 949.5475pt>
 File: pics/Ch7_Results3/GeminiShock2019_ExpBlend_V1_Aug20_annotated.png Graphic
  file (type png)
@@ -2194,17 +2226,17 @@ File: pics/Ch7_Results3/GeminiShock2019_ExpBlend_V1_Aug20_annotated.png Graphic
 Package pdftex.def Info: pics/Ch7_Results3/GeminiShock2019_ExpBlend_V1_Aug20_an
 notated.png  used on input line 48.
 (pdftex.def)             Requested size: 409.71689pt x 202.17824pt.
- [130] [131 <./pics/Ch7_Results3/GeminiShock2019_ExpBlend_V1_Aug20_annotated.pn
-g>] [132]
-<pics/Ch7_Results3/Example_Montage_twoSets_V2.png, id=4222, 2007.5pt x 1003.75p
+ [134] [135 <./pics/Ch7_Results3/GeminiShock2019_ExpBlend_V1_Aug20_annotated.pn
+g>] [136]
+<pics/Ch7_Results3/Example_Montage_twoSets_V2.png, id=4320, 2007.5pt x 1003.75p
 t>
 File: pics/Ch7_Results3/Example_Montage_twoSets_V2.png Graphic file (type png)
 <use pics/Ch7_Results3/Example_Montage_twoSets_V2.png>
 Package pdftex.def Info: pics/Ch7_Results3/Example_Montage_twoSets_V2.png  used
  on input line 79.
 (pdftex.def)             Requested size: 455.24408pt x 252.6829pt.
- [133]
-<pics/Ch7_Results3/Example_Espec_CollisionMontage_V3.png, id=4241, 2007.5pt x 1
+ [137]
+<pics/Ch7_Results3/Example_Espec_CollisionMontage_V3.png, id=4338, 2007.5pt x 1
 003.75pt>
 File: pics/Ch7_Results3/Example_Espec_CollisionMontage_V3.png Graphic file (typ
 e png)
@@ -2212,7 +2244,7 @@ e png)
 Package pdftex.def Info: pics/Ch7_Results3/Example_Espec_CollisionMontage_V3.pn
 g  used on input line 92.
 (pdftex.def)             Requested size: 455.24408pt x 244.97897pt.
-<pics/Ch7_Results3/linICS_ElectronProperties_Histograms_V3.png, id=4251, 2007.5
+<pics/Ch7_Results3/linICS_ElectronProperties_Histograms_V3.png, id=4348, 2007.5
 pt x 1003.75pt>
 File: pics/Ch7_Results3/linICS_ElectronProperties_Histograms_V3.png Graphic fil
 e (type png)
@@ -2220,9 +2252,9 @@ e (type png)
 Package pdftex.def Info: pics/Ch7_Results3/linICS_ElectronProperties_Histograms
 _V3.png  used on input line 102.
 (pdftex.def)             Requested size: 455.24408pt x 269.653pt.
- [134 <./pics/Ch7_Results3/Example_Montage_twoSets_V2.png (PNG copy)>] [135 <./
+ [138 <./pics/Ch7_Results3/Example_Montage_twoSets_V2.png (PNG copy)>] [139 <./
 pics/Ch7_Results3/Example_Espec_CollisionMontage_V3.png (PNG copy)>]
-<pics/Ch7_Results3/RasterScan_Shadowgraphy_CloseUp_annotated.pdf, id=4267, 680.
+<pics/Ch7_Results3/RasterScan_Shadowgraphy_CloseUp_annotated.pdf, id=4364, 680.
 32741pt x 133.18579pt>
 File: pics/Ch7_Results3/RasterScan_Shadowgraphy_CloseUp_annotated.pdf Graphic f
 ile (type pdf)
@@ -2234,9 +2266,9 @@ tated.pdf  used on input line 118.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[136 <./pics/Ch7_Results3/linICS_ElectronProperties_Histograms_V3.png (PNG copy
-)>] [137 <./pics/Ch7_Results3/RasterScan_Shadowgraphy_CloseUp_annotated.pdf>]
-<pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Montage_V3.png, id=4298, 2007
+[140 <./pics/Ch7_Results3/linICS_ElectronProperties_Histograms_V3.png (PNG copy
+)>] [141 <./pics/Ch7_Results3/RasterScan_Shadowgraphy_CloseUp_annotated.pdf>]
+<pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Montage_V3.png, id=4396, 2007
 .5pt x 1003.75pt>
 File: pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Montage_V3.png Graphic f
 ile (type png)
@@ -2245,339 +2277,331 @@ Package pdftex.def Info: pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Monta
 ge_V3.png  used on input line 133.
 (pdftex.def)             Requested size: 455.24408pt x 243.7121pt.
 
-[138 <./pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Montage_V3.png (PNG co
+[142 <./pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Montage_V3.png (PNG co
 py)>]
-<pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Counts.png, id=4324, 2007.5pt
- x 1003.75pt>
-File: pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Counts.png Graphic file 
-(type png)
-<use pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Counts.png>
+<pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Counts_V2.png, id=4422, 2007.
+5pt x 1003.75pt>
+File: pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Counts_V2.png Graphic fi
+le (type png)
+<use pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Counts_V2.png>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Count
-s.png  used on input line 144.
-(pdftex.def)             Requested size: 455.24408pt x 256.72632pt.
- [139 <./pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Counts.png (PNG copy)
->]
-<pics/Ch7_Results3/linICS_Raster_WaistSize_V2.png, id=4339, 2007.5pt x 1003.75p
-t>
-File: pics/Ch7_Results3/linICS_Raster_WaistSize_V2.png Graphic file (type png)
-<use pics/Ch7_Results3/linICS_Raster_WaistSize_V2.png>
-Package pdftex.def Info: pics/Ch7_Results3/linICS_Raster_WaistSize_V2.png  used
- on input line 162.
+s_V2.png  used on input line 144.
+(pdftex.def)             Requested size: 409.71689pt x 223.88887pt.
+ [143 <./pics/Ch7_Results3/linICS_RasterScan_GammaProfile_Counts_V2.png (PNG co
+py)>]
+<pics/Ch7_Results3/linICS_Raster_WaistSize_V3_annotated.png, id=4437, 2007.5pt 
+x 1003.75pt>
+File: pics/Ch7_Results3/linICS_Raster_WaistSize_V3_annotated.png Graphic file (
+type png)
+<use pics/Ch7_Results3/linICS_Raster_WaistSize_V3_annotated.png>
+Package pdftex.def Info: pics/Ch7_Results3/linICS_Raster_WaistSize_V3_annotated
+.png  used on input line 160.
 (pdftex.def)             Requested size: 409.71689pt x 236.72366pt.
- [140 <./pics/Ch7_Results3/linICS_Raster_WaistSize_V2.png (PNG copy)>]
-[141]
-<pics/Ch7_Results3/Egamma_ICS_V2.png, id=4362, 2007.5pt x 1003.75pt>
+ [144 <./pics/Ch7_Results3/linICS_Raster_WaistSize_V3_annotated.png>] [145]
+<pics/Ch7_Results3/Egamma_ICS_V2.png, id=4463, 2007.5pt x 1003.75pt>
 File: pics/Ch7_Results3/Egamma_ICS_V2.png Graphic file (type png)
 <use pics/Ch7_Results3/Egamma_ICS_V2.png>
 Package pdftex.def Info: pics/Ch7_Results3/Egamma_ICS_V2.png  used on input lin
-e 198.
+e 196.
 (pdftex.def)             Requested size: 273.14922pt x 154.03273pt.
- [142 <./pics/Ch7_Results3/Egamma_ICS_V2.png (PNG copy)>]
-<pics/Ch7_Results3/Example_Espec_ICS_V3.png, id=4380, 2007.5pt x 1003.75pt>
+ [146 <./pics/Ch7_Results3/Egamma_ICS_V2.png (PNG copy)>]
+<pics/Ch7_Results3/Example_Espec_ICS_V3.png, id=4480, 2007.5pt x 1003.75pt>
 File: pics/Ch7_Results3/Example_Espec_ICS_V3.png Graphic file (type png)
 <use pics/Ch7_Results3/Example_Espec_ICS_V3.png>
 Package pdftex.def Info: pics/Ch7_Results3/Example_Espec_ICS_V3.png  used on in
-put line 220.
+put line 218.
 (pdftex.def)             Requested size: 455.24408pt x 234.25778pt.
- [143 <./pics/Ch7_Results3/Example_Espec_ICS_V3.png (PNG copy)>] [144] [145]
-<pics/Ch7_Results3/Edep_Jena_1_100_MeV_V2.png, id=4414, 2007.5pt x 1003.75pt>
+ [147 <./pics/Ch7_Results3/Example_Espec_ICS_V3.png (PNG copy)>] [148] [149]
+<pics/Ch7_Results3/Edep_Jena_1_100_MeV_V2.png, id=4513, 2007.5pt x 1003.75pt>
 File: pics/Ch7_Results3/Edep_Jena_1_100_MeV_V2.png Graphic file (type png)
 <use pics/Ch7_Results3/Edep_Jena_1_100_MeV_V2.png>
 Package pdftex.def Info: pics/Ch7_Results3/Edep_Jena_1_100_MeV_V2.png  used on 
-input line 273.
+input line 271.
 (pdftex.def)             Requested size: 364.19664pt x 211.46762pt.
-<pics/Ch7_Results3/Example_Espec_ICS_Edep_V4.png, id=4419, 2007.5pt x 1003.75pt
+<pics/Ch7_Results3/Example_Espec_ICS_Edep_V4.png, id=4518, 2007.5pt x 1003.75pt
 >
 File: pics/Ch7_Results3/Example_Espec_ICS_Edep_V4.png Graphic file (type png)
 <use pics/Ch7_Results3/Example_Espec_ICS_Edep_V4.png>
 Package pdftex.def Info: pics/Ch7_Results3/Example_Espec_ICS_Edep_V4.png  used 
-on input line 281.
+on input line 279.
 (pdftex.def)             Requested size: 455.24408pt x 234.25778pt.
- [146 <./pics/Ch7_Results3/Edep_Jena_1_100_MeV_V2.png (PNG copy)>] [147 <./pics
+ [150 <./pics/Ch7_Results3/Edep_Jena_1_100_MeV_V2.png (PNG copy)>] [151 <./pics
 /Ch7_Results3/Example_Espec_ICS_Edep_V4.png (PNG copy)>]
-<pics/Ch7_Results3/linICS_FULL_NxNxEXP_Plot_V2.png, id=4441, 2007.5pt x 1003.75
+<pics/Ch7_Results3/linICS_FULL_NxNxEXP_Plot_V2.png, id=4541, 2007.5pt x 1003.75
 pt>
 File: pics/Ch7_Results3/linICS_FULL_NxNxEXP_Plot_V2.png Graphic file (type png)
 
 <use pics/Ch7_Results3/linICS_FULL_NxNxEXP_Plot_V2.png>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_FULL_NxNxEXP_Plot_V2.png  use
-d on input line 310.
+d on input line 308.
 (pdftex.def)             Requested size: 455.24408pt x 256.72632pt.
- [148]
-<pics/Ch7_Results3/linICS_FULL_NxNxEXP_HistoPlot.png, id=4459, 2007.5pt x 1003.
+ [152] [153 <./pics/Ch7_Results3/linICS_FULL_NxNxEXP_Plot_V2.png (PNG copy)>]
+<pics/Ch7_Results3/linICS_FULL_NxNxEXP_HistoPlot.png, id=4565, 2007.5pt x 1003.
 75pt>
 File: pics/Ch7_Results3/linICS_FULL_NxNxEXP_HistoPlot.png Graphic file (type pn
 g)
 <use pics/Ch7_Results3/linICS_FULL_NxNxEXP_HistoPlot.png>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_FULL_NxNxEXP_HistoPlot.png  u
-sed on input line 329.
+sed on input line 327.
 (pdftex.def)             Requested size: 455.24408pt x 256.72632pt.
- [149 <./pics/Ch7_Results3/linICS_FULL_NxNxEXP_Plot_V2.png (PNG copy)>] [150 <.
-/pics/Ch7_Results3/linICS_FULL_NxNxEXP_HistoPlot.png (PNG copy)>]
-<pics/Ch7_Results3/linICS_NxRatio_radiusEstimate.png, id=4479, 2007.5pt x 1003.
+ [154 <./pics/Ch7_Results3/linICS_FULL_NxNxEXP_HistoPlot.png (PNG copy)>]
+<pics/Ch7_Results3/linICS_NxRatio_radiusEstimate.png, id=4579, 2007.5pt x 1003.
 75pt>
 File: pics/Ch7_Results3/linICS_NxRatio_radiusEstimate.png Graphic file (type pn
 g)
 <use pics/Ch7_Results3/linICS_NxRatio_radiusEstimate.png>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_NxRatio_radiusEstimate.png  u
-sed on input line 356.
+sed on input line 354.
 (pdftex.def)             Requested size: 455.24408pt x 256.72632pt.
- [151 <./pics/Ch7_Results3/linICS_NxRatio_radiusEstimate.png (PNG copy)>]
-<pics/Ch7_Results3/linICS_NxRatio_a0Estimate.png, id=4498, 2007.5pt x 1003.75pt
+ [155 <./pics/Ch7_Results3/linICS_NxRatio_radiusEstimate.png (PNG copy)>]
+<pics/Ch7_Results3/linICS_NxRatio_a0Estimate.png, id=4598, 2007.5pt x 1003.75pt
 >
 File: pics/Ch7_Results3/linICS_NxRatio_a0Estimate.png Graphic file (type png)
 <use pics/Ch7_Results3/linICS_NxRatio_a0Estimate.png>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_NxRatio_a0Estimate.png  used 
-on input line 368.
+on input line 366.
 (pdftex.def)             Requested size: 455.24408pt x 256.72632pt.
- [152 <./pics/Ch7_Results3/linICS_NxRatio_a0Estimate.png (PNG copy)>] [153]
-<pics/Ch7_Results3/GammaProfile_Espec_20190211r006s106_V2.png, id=4519, 3011.25
+ [156 <./pics/Ch7_Results3/linICS_NxRatio_a0Estimate.png (PNG copy)>] [157]
+<pics/Ch7_Results3/GammaProfile_Espec_20190211r006s106_V2.png, id=4619, 3011.25
 pt x 1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_20190211r006s106_V2.png Graphic file
  (type png)
 <use pics/Ch7_Results3/GammaProfile_Espec_20190211r006s106_V2.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_20190211r006s106_
-V2.png  used on input line 399.
+V2.png  used on input line 397.
 (pdftex.def)             Requested size: 377.1151pt x 138.5356pt.
-<pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s106.png, id=4521, 2007.5pt x
+<pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s106.png, id=4621, 2007.5pt x
  1003.75pt>
 File: pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s106.png Graphic file (t
 ype png)
 <use pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s106.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s106.
-png  used on input line 399.
+png  used on input line 397.
 (pdftex.def)             Requested size: 238.58212pt x 138.5356pt.
-<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s037_V2.png, id=4523, 3011.25
+<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s037_V2.png, id=4623, 3011.25
 pt x 1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s037_V2.png Graphic file
  (type png)
 <use pics/Ch7_Results3/GammaProfile_Espec_20190208r015s037_V2.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s037_
-V2.png  used on input line 401.
+V2.png  used on input line 399.
 (pdftex.def)             Requested size: 377.1151pt x 138.5356pt.
-<pics/Ch7_Results3/GammaSpec_Side_Fit_20190208r015s037.png, id=4525, 2007.5pt x
+<pics/Ch7_Results3/GammaSpec_Side_Fit_20190208r015s037.png, id=4625, 2007.5pt x
  1003.75pt>
 File: pics/Ch7_Results3/GammaSpec_Side_Fit_20190208r015s037.png Graphic file (t
 ype png)
 <use pics/Ch7_Results3/GammaSpec_Side_Fit_20190208r015s037.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaSpec_Side_Fit_20190208r015s037.
-png  used on input line 401.
+png  used on input line 399.
 (pdftex.def)             Requested size: 238.58212pt x 138.5356pt.
-<pics/Ch7_Results3/GammaProfile_Espec_20190211r006s107_V2.png, id=4527, 3011.25
+<pics/Ch7_Results3/GammaProfile_Espec_20190211r006s107_V2.png, id=4627, 3011.25
 pt x 1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_20190211r006s107_V2.png Graphic file
  (type png)
 <use pics/Ch7_Results3/GammaProfile_Espec_20190211r006s107_V2.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_20190211r006s107_
-V2.png  used on input line 403.
+V2.png  used on input line 401.
 (pdftex.def)             Requested size: 377.1151pt x 138.5356pt.
-<pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s107.png, id=4529, 2007.5pt x
+<pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s107.png, id=4629, 2007.5pt x
  1003.75pt>
 File: pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s107.png Graphic file (t
 ype png)
 <use pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s107.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s107.
-png  used on input line 403.
+png  used on input line 401.
 (pdftex.def)             Requested size: 238.58212pt x 138.5356pt.
-<pics/Ch7_Results3/PlaceHolder_perturbedResponse.png, id=4532, 1155.31625pt x 3
+ [158] [159 <./pics/Ch7_Results3/GammaProfile_Espec_20190211r006s106_V2.png (PN
+G copy)> <./pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s106.png (PNG copy
+)> <./pics/Ch7_Results3/GammaProfile_Espec_20190208r015s037_V2.png (PNG copy)> 
+<./pics/Ch7_Results3/GammaSpec_Side_Fit_20190208r015s037.png (PNG copy)> <./pic
+s/Ch7_Results3/GammaProfile_Espec_20190211r006s107_V2.png (PNG copy)> <./pics/C
+h7_Results3/GammaSpec_Side_Fit_20190211r006s107.png (PNG copy)>]
+<pics/Ch7_Results3/PlaceHolder_perturbedResponse.png, id=4649, 1155.31625pt x 3
 54.32375pt>
 File: pics/Ch7_Results3/PlaceHolder_perturbedResponse.png Graphic file (type pn
 g)
 <use pics/Ch7_Results3/PlaceHolder_perturbedResponse.png>
 Package pdftex.def Info: pics/Ch7_Results3/PlaceHolder_perturbedResponse.png  u
-sed on input line 420.
+sed on input line 418.
 (pdftex.def)             Requested size: 455.24408pt x 139.61842pt.
- [154] [155 <./pics/Ch7_Results3/GammaProfile_Espec_20190211r006s106_V2.png (PN
-G copy)> <./pics/Ch7_Results3/GammaSpec_Side_Fit_20190211r006s106.png (PNG copy
-)> <./pics/Ch7_Results3/GammaProfile_Espec_20190208r015s037_V2.png (PNG copy)> 
-<./pics/Ch7_Results3/GammaSpec_Side_Fit_20190208r015s037.png (PNG copy)> <./pic
-s/Ch7_Results3/GammaProfile_Espec_20190211r006s107_V2.png (PNG copy)> <./pics/C
-h7_Results3/GammaSpec_Side_Fit_20190211r006s107.png (PNG copy)>] [156 <./pics/C
-h7_Results3/PlaceHolder_perturbedResponse.png>] [157]
-<pics/Ch7_Results3/linICS_Espec_GP_Pointing.png, id=4579, 2007.5pt x 1003.75pt>
+ [160 <./pics/Ch7_Results3/PlaceHolder_perturbedResponse.png>] [161]
+<pics/Ch7_Results3/linICS_Espec_GP_Pointing.png, id=4679, 2007.5pt x 1003.75pt>
 
 File: pics/Ch7_Results3/linICS_Espec_GP_Pointing.png Graphic file (type png)
 <use pics/Ch7_Results3/linICS_Espec_GP_Pointing.png>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_Espec_GP_Pointing.png  used o
-n input line 453.
+n input line 451.
 (pdftex.def)             Requested size: 409.71689pt x 237.88768pt.
 
-[158 <./pics/Ch7_Results3/linICS_Espec_GP_Pointing.png (PNG copy)>]
-<pics/Ch7_Results3/linICS_FWHM_Y_Espec_GP_V4.png, id=4591, 2007.5pt x 1003.75pt
+[162 <./pics/Ch7_Results3/linICS_Espec_GP_Pointing.png (PNG copy)>] [163]
+<pics/Ch7_Results3/linICS_FWHM_Y_Espec_GP_V4.png, id=4698, 2007.5pt x 1003.75pt
 >
 File: pics/Ch7_Results3/linICS_FWHM_Y_Espec_GP_V4.png Graphic file (type png)
 <use pics/Ch7_Results3/linICS_FWHM_Y_Espec_GP_V4.png>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_FWHM_Y_Espec_GP_V4.png  used 
-on input line 480.
+on input line 478.
 (pdftex.def)             Requested size: 227.62204pt x 129.38933pt.
-<pics/Ch7_Results3/linICS_FWHM_Y_Espec_DeltaGP_V4.png, id=4593, 2007.5pt x 1003
+<pics/Ch7_Results3/linICS_FWHM_Y_Espec_DeltaGP_V4.png, id=4700, 2007.5pt x 1003
 .75pt>
 File: pics/Ch7_Results3/linICS_FWHM_Y_Espec_DeltaGP_V4.png Graphic file (type p
 ng)
 <use pics/Ch7_Results3/linICS_FWHM_Y_Espec_DeltaGP_V4.png>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_FWHM_Y_Espec_DeltaGP_V4.png  
-used on input line 480.
+used on input line 478.
 (pdftex.def)             Requested size: 227.62204pt x 129.38933pt.
-<pics/Ch7_Results3/linICS_ElectronFWHM_Ellipticity_V4.png, id=4595, 2007.5pt x 
+<pics/Ch7_Results3/linICS_ElectronFWHM_Ellipticity_V4.png, id=4702, 2007.5pt x 
 1003.75pt>
 File: pics/Ch7_Results3/linICS_ElectronFWHM_Ellipticity_V4.png Graphic file (ty
 pe png)
 <use pics/Ch7_Results3/linICS_ElectronFWHM_Ellipticity_V4.png>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_ElectronFWHM_Ellipticity_V4.p
-ng  used on input line 489.
+ng  used on input line 487.
 (pdftex.def)             Requested size: 409.71689pt x 237.88768pt.
- [159]
-[160 <./pics/Ch7_Results3/linICS_FWHM_Y_Espec_GP_V4.png (PNG copy)> <./pics/Ch7
-_Results3/linICS_FWHM_Y_Espec_DeltaGP_V4.png (PNG copy)>] [161 <./pics/Ch7_Resu
+
+[164 <./pics/Ch7_Results3/linICS_FWHM_Y_Espec_GP_V4.png (PNG copy)> <./pics/Ch7
+_Results3/linICS_FWHM_Y_Espec_DeltaGP_V4.png (PNG copy)>] [165 <./pics/Ch7_Resu
 lts3/linICS_ElectronFWHM_Ellipticity_V4.png (PNG copy)>]
-<pics/Ch7_Results3/linICS_LaserWire_Examples_V4.png, id=4627, 2007.5pt x 1003.7
+<pics/Ch7_Results3/linICS_LaserWire_Examples_V4.png, id=4727, 2007.5pt x 1003.7
 5pt>
 File: pics/Ch7_Results3/linICS_LaserWire_Examples_V4.png Graphic file (type png
 )
 <use pics/Ch7_Results3/linICS_LaserWire_Examples_V4.png>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_LaserWire_Examples_V4.png  us
-ed on input line 522.
+ed on input line 520.
 (pdftex.def)             Requested size: 455.24408pt x 243.16557pt.
-<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s317.png, id=4629, 2007.5pt x
+<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s317.png, id=4729, 2007.5pt x
  1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s317.png Graphic file (t
 ype png)
 <use pics/Ch7_Results3/GammaProfile_Espec_20190208r015s317.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s317.
-png  used on input line 528.
+png  used on input line 526.
 (pdftex.def)             Requested size: 455.24408pt x 264.32304pt.
-<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s092.png, id=4631, 2007.5pt x
+<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s092.png, id=4731, 2007.5pt x
  1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s092.png Graphic file (t
 ype png)
 <use pics/Ch7_Results3/GammaProfile_Espec_20190208r015s092.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s092.
-png  used on input line 540.
+png  used on input line 538.
 (pdftex.def)             Requested size: 296.1214pt x 171.9371pt.
-<pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s092.png, id=46
+<pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s092.png, id=47
 33, 2007.5pt x 1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s092.png G
 raphic file (type png)
 <use pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s092.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_201
-90208r015s092.png  used on input line 542.
+90208r015s092.png  used on input line 540.
 (pdftex.def)             Requested size: 296.1214pt x 171.9371pt.
-<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s212.png, id=4635, 2007.5pt x
+<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s212.png, id=4735, 2007.5pt x
  1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s212.png Graphic file (t
 ype png)
 <use pics/Ch7_Results3/GammaProfile_Espec_20190208r015s212.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s212.
-png  used on input line 549.
+png  used on input line 547.
 (pdftex.def)             Requested size: 296.1214pt x 171.9371pt.
-<pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s212.png, id=46
+<pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s212.png, id=47
 37, 2007.5pt x 1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s212.png G
 raphic file (type png)
 <use pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s212.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_201
-90208r015s212.png  used on input line 551.
+90208r015s212.png  used on input line 549.
 (pdftex.def)             Requested size: 296.1214pt x 171.9371pt.
-<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s046.png, id=4641, 2007.5pt x
+ [166]
+<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s046.png, id=4745, 2007.5pt x
  1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s046.png Graphic file (t
 ype png)
 <use pics/Ch7_Results3/GammaProfile_Espec_20190208r015s046.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s046.
-png  used on input line 565.
+png  used on input line 563.
 (pdftex.def)             Requested size: 296.1214pt x 171.9371pt.
-<pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s046.png, id=46
-43, 2007.5pt x 1003.75pt>
+<pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s046.png, id=47
+47, 2007.5pt x 1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s046.png G
 raphic file (type png)
 <use pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s046.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_201
-90208r015s046.png  used on input line 567.
+90208r015s046.png  used on input line 565.
 (pdftex.def)             Requested size: 296.1214pt x 171.9371pt.
-<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s084.png, id=4645, 2007.5pt x
+<pics/Ch7_Results3/GammaProfile_Espec_20190208r015s084.png, id=4749, 2007.5pt x
  1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s084.png Graphic file (t
 ype png)
 <use pics/Ch7_Results3/GammaProfile_Espec_20190208r015s084.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_20190208r015s084.
-png  used on input line 574.
+png  used on input line 572.
 (pdftex.def)             Requested size: 296.1214pt x 171.9371pt.
-<pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s084.png, id=46
-47, 2007.5pt x 1003.75pt>
+<pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s084.png, id=47
+51, 2007.5pt x 1003.75pt>
 File: pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s084.png G
 raphic file (type png)
 <use pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s084.png>
 Package pdftex.def Info: pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_201
-90208r015s084.png  used on input line 576.
+90208r015s084.png  used on input line 574.
 (pdftex.def)             Requested size: 296.1214pt x 171.9371pt.
- [162] [163 <./pics/Ch7_Results3/linICS_LaserWire_Examples_V4.png (PNG copy)>]
+ [167 <./pics/Ch7_Results3/linICS_LaserWire_Examples_V4.png (PNG copy)>]
 
-LaTeX Warning: Marginpar on page 164 moved.
+LaTeX Warning: Marginpar on page 168 moved.
 
-[164 <./pics/Ch7_Results3/GammaProfile_Espec_20190208r015s317.png (PNG copy)>]
-[165 <./pics/Ch7_Results3/GammaProfile_Espec_20190208r015s092.png (PNG copy)> <
+[168 <./pics/Ch7_Results3/GammaProfile_Espec_20190208r015s317.png (PNG copy)>]
+[169 <./pics/Ch7_Results3/GammaProfile_Espec_20190208r015s092.png (PNG copy)> <
 ./pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s092.png (PNG 
 copy)> <./pics/Ch7_Results3/GammaProfile_Espec_20190208r015s212.png (PNG copy)>
  <./pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s212.png (PN
-G copy)>] [166 <./pics/Ch7_Results3/GammaProfile_Espec_20190208r015s046.png (PN
+G copy)>] [170 <./pics/Ch7_Results3/GammaProfile_Espec_20190208r015s046.png (PN
 G copy)> <./pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s046
 .png (PNG copy)> <./pics/Ch7_Results3/GammaProfile_Espec_20190208r015s084.png (
 PNG copy)> <./pics/Ch7_Results3/GammaProfile_Espec_IntensityEdep_20190208r015s0
 84.png (PNG copy)>]
 
-LaTeX Warning: Marginpar on page 167 moved.
+LaTeX Warning: Marginpar on page 171 moved.
 
-[167] [168]
-
-LaTeX Warning: Marginpar on page 169 moved.
-
-<pics/Ch7_Results3/RR19_02_11_r008_17-24_Average_density_cm3.png, id=4711, 623.
+[171] [172]
+<pics/Ch7_Results3/RR19_02_11_r008_17-24_Average_density_cm3.png, id=4812, 623.
 4492pt x 536.7252pt>
 File: pics/Ch7_Results3/RR19_02_11_r008_17-24_Average_density_cm3.png Graphic f
 ile (type png)
 <use pics/Ch7_Results3/RR19_02_11_r008_17-24_Average_density_cm3.png>
 Package pdftex.def Info: pics/Ch7_Results3/RR19_02_11_r008_17-24_Average_densit
-y_cm3.png  used on input line 620.
+y_cm3.png  used on input line 618.
 (pdftex.def)             Requested size: 227.62204pt x 195.9563pt.
-<pics/Ch7_Results3/PrettyPic_linICS_Density.pdf, id=4712, 2460.62132pt x 1866.9
+<pics/Ch7_Results3/PrettyPic_linICS_Density.pdf, id=4813, 2460.62132pt x 1866.9
 75pt>
 File: pics/Ch7_Results3/PrettyPic_linICS_Density.pdf Graphic file (type pdf)
 <use pics/Ch7_Results3/PrettyPic_linICS_Density.pdf>
 Package pdftex.def Info: pics/Ch7_Results3/PrettyPic_linICS_Density.pdf  used o
-n input line 620.
+n input line 618.
 (pdftex.def)             Requested size: 227.62204pt x 172.69249pt.
-<pics/Ch7_Results3/linICS_Inversion_Sketch_Bubble.pdf, id=4713, 672.58963pt x 1
+<pics/Ch7_Results3/linICS_Inversion_Sketch_Bubble.pdf, id=4814, 672.58963pt x 1
 57.9885pt>
 File: pics/Ch7_Results3/linICS_Inversion_Sketch_Bubble.pdf Graphic file (type p
 df)
 <use pics/Ch7_Results3/linICS_Inversion_Sketch_Bubble.pdf>
 Package pdftex.def Info: pics/Ch7_Results3/linICS_Inversion_Sketch_Bubble.pdf  
-used on input line 627.
+used on input line 625.
 (pdftex.def)             Requested size: 409.71689pt x 96.24265pt.
-[169 <./pics/Ch7_Results3/RR19_02_11_r008_17-24_Average_density_cm3.png> <./pic
-s/Ch7_Results3/PrettyPic_linICS_Density.pdf> <./pics/Ch7_Results3/linICS_Invers
-ion_Sketch_Bubble.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch7_Results3/linICS_I
-nversion_Sketch_Bubble.pdf): PDF inclusion: multiple pdfs with page group inclu
-ded in a single page
->] [170]) [171]
+ [173 <./pics/Ch7_Results3/RR19_02_11_r008_17-24_Average_density_cm3.png> <./pi
+cs/Ch7_Results3/PrettyPic_linICS_Density.pdf>] [174 <./pics/Ch7_Results3/linICS
+_Inversion_Sketch_Bubble.pdf>]) [175]
 \openout2 = `Results/RR2015.aux'.
 
  (./Results/RR2015.tex
 Chapter 6.
-[172
+[176
 
 
 
 ]
-<pics/Ch5_Results1/RR2015_Gmax_thiswork.pdf, id=4886, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/RR2015_Gmax_thiswork.pdf, id=4988, 581.77347pt x 361.35pt>
 File: pics/Ch5_Results1/RR2015_Gmax_thiswork.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/RR2015_Gmax_thiswork.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/RR2015_Gmax_thiswork.pdf  used on in
 put line 19.
 (pdftex.def)             Requested size: 364.19664pt x 226.21262pt.
-<pics/Ch5_Results1/RR2015_Eta_thiswork_lowera0.pdf, id=4887, 581.77347pt x 361.
+<pics/Ch5_Results1/RR2015_Eta_thiswork_lowera0.pdf, id=4989, 581.77347pt x 361.
 35pt>
 File: pics/Ch5_Results1/RR2015_Eta_thiswork_lowera0.pdf Graphic file (type pdf)
 
@@ -2589,16 +2613,16 @@ d on input line 20.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[173] [174] [175] [176] [177 <./pics/Ch5_Results1/RR2015_Gmax_thiswork.pdf> <./
+[177] [178] [179] [180] [181 <./pics/Ch5_Results1/RR2015_Gmax_thiswork.pdf> <./
 pics/Ch5_Results1/RR2015_Eta_thiswork_lowera0.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch5_Results1/RR2015_E
 ta_thiswork_lowera0.pdf): PDF inclusion: multiple pdfs with page group included
  in a single page
->] [178
+>] [182
 
 ]
-<pics/Ch5_Results1/Exp_setup_render_RR2.png, id=5179, 1724.4425pt x 808.01875pt
+<pics/Ch5_Results1/Exp_setup_render_RR2.png, id=5281, 1724.4425pt x 808.01875pt
 >
 File: pics/Ch5_Results1/Exp_setup_render_RR2.png Graphic file (type png)
 <use pics/Ch5_Results1/Exp_setup_render_RR2.png>
@@ -2609,36 +2633,36 @@ put line 135.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[179] [180 <./pics/Ch5_Results1/Exp_setup_render_RR2.png>]
-<pics/Ch5_Results1/20151217r002_NullGroup.jpg, id=5199, 558.085pt x 380.42125pt
+[183] [184 <./pics/Ch5_Results1/Exp_setup_render_RR2.png>]
+<pics/Ch5_Results1/20151217r002_NullGroup.jpg, id=5301, 558.085pt x 380.42125pt
 >
 File: pics/Ch5_Results1/20151217r002_NullGroup.jpg Graphic file (type jpg)
 <use pics/Ch5_Results1/20151217r002_NullGroup.jpg>
 Package pdftex.def Info: pics/Ch5_Results1/20151217r002_NullGroup.jpg  used on 
 input line 167.
 (pdftex.def)             Requested size: 180.31953pt x 122.91783pt.
-<pics/Ch5_Results1/20151217r002_CollGroup.jpg, id=5200, 723.70375pt x 380.42125
+<pics/Ch5_Results1/20151217r002_CollGroup.jpg, id=5302, 723.70375pt x 380.42125
 pt>
 File: pics/Ch5_Results1/20151217r002_CollGroup.jpg Graphic file (type jpg)
 <use pics/Ch5_Results1/20151217r002_CollGroup.jpg>
 Package pdftex.def Info: pics/Ch5_Results1/20151217r002_CollGroup.jpg  used on 
 input line 168.
 (pdftex.def)             Requested size: 233.83162pt x 122.91783pt.
-<pics/Ch5_Results1/up_arrows.jpg, id=5201, 97.3236pt x 380.622pt>
+<pics/Ch5_Results1/up_arrows.jpg, id=5303, 97.3236pt x 380.622pt>
 File: pics/Ch5_Results1/up_arrows.jpg Graphic file (type jpg)
 <use pics/Ch5_Results1/up_arrows.jpg>
 Package pdftex.def Info: pics/Ch5_Results1/up_arrows.jpg  used on input line 16
 9.
 (pdftex.def)             Requested size: 31.4293pt x 122.91783pt.
- [181 <./pics/Ch5_Results1/20151217r002_NullGroup.jpg> <./pics/Ch5_Results1/201
+ [185 <./pics/Ch5_Results1/20151217r002_NullGroup.jpg> <./pics/Ch5_Results1/201
 51217r002_CollGroup.jpg> <./pics/Ch5_Results1/up_arrows.jpg>]
-<pics/Ch5_Results1/Example_RR15Cole_CsI.png, id=5208, 2007.5pt x 501.875pt>
+<pics/Ch5_Results1/Example_RR15Cole_CsI.png, id=5309, 2007.5pt x 501.875pt>
 File: pics/Ch5_Results1/Example_RR15Cole_CsI.png Graphic file (type png)
 <use pics/Ch5_Results1/Example_RR15Cole_CsI.png>
 Package pdftex.def Info: pics/Ch5_Results1/Example_RR15Cole_CsI.png  used on in
 put line 181.
 (pdftex.def)             Requested size: 364.19664pt x 105.73381pt.
-<pics/Ch5_Results1/ElecQ2_CsI_null_Correlation.pdf, id=5213, 581.77347pt x 361.
+<pics/Ch5_Results1/ElecQ2_CsI_null_Correlation.pdf, id=5314, 581.77347pt x 361.
 35pt>
 File: pics/Ch5_Results1/ElecQ2_CsI_null_Correlation.pdf Graphic file (type pdf)
 
@@ -2646,36 +2670,36 @@ File: pics/Ch5_Results1/ElecQ2_CsI_null_Correlation.pdf Graphic file (type pdf)
 Package pdftex.def Info: pics/Ch5_Results1/ElecQ2_CsI_null_Correlation.pdf  use
 d on input line 201.
 (pdftex.def)             Requested size: 409.71689pt x 254.48712pt.
- [182 <./pics/Ch5_Results1/Example_RR15Cole_CsI.png (PNG copy)>] [183 <./pics/C
+ [186 <./pics/Ch5_Results1/Example_RR15Cole_CsI.png (PNG copy)>] [187 <./pics/C
 h5_Results1/ElecQ2_CsI_null_Correlation.pdf>]
-<pics/Ch5_Results1/ElecQ2_CsI_Correlation.pdf, id=5280, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/ElecQ2_CsI_Correlation.pdf, id=5381, 581.77347pt x 361.35pt>
 
 File: pics/Ch5_Results1/ElecQ2_CsI_Correlation.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/ElecQ2_CsI_Correlation.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/ElecQ2_CsI_Correlation.pdf  used on 
 input line 221.
 (pdftex.def)             Requested size: 409.71689pt x 254.48712pt.
-<pics/Ch5_Results1/DCsI_sigma.pdf, id=5283, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/DCsI_sigma.pdf, id=5384, 581.77347pt x 361.35pt>
 File: pics/Ch5_Results1/DCsI_sigma.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/DCsI_sigma.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/DCsI_sigma.pdf  used on input line 2
 35.
 (pdftex.def)             Requested size: 409.71689pt x 254.48712pt.
- [184 <./pics/Ch5_Results1/ElecQ2_CsI_Correlation.pdf>] [185 <./pics/Ch5_Result
+ [188 <./pics/Ch5_Results1/ElecQ2_CsI_Correlation.pdf>] [189 <./pics/Ch5_Result
 s1/DCsI_sigma.pdf>]
-<pics/Ch5_Results1/Example_RR15Cole.png, id=5395, 2007.5pt x 501.875pt>
+<pics/Ch5_Results1/Example_RR15Cole.png, id=5497, 2007.5pt x 501.875pt>
 File: pics/Ch5_Results1/Example_RR15Cole.png Graphic file (type png)
 <use pics/Ch5_Results1/Example_RR15Cole.png>
 Package pdftex.def Info: pics/Ch5_Results1/Example_RR15Cole.png  used on input 
 line 290.
 (pdftex.def)             Requested size: 409.71689pt x 118.94383pt.
-<pics/Ch5_Results1/ElecEdge_Example_slim.png, id=5397, 2007.5pt x 501.875pt>
+<pics/Ch5_Results1/ElecEdge_Example_slim.png, id=5499, 2007.5pt x 501.875pt>
 File: pics/Ch5_Results1/ElecEdge_Example_slim.png Graphic file (type png)
 <use pics/Ch5_Results1/ElecEdge_Example_slim.png>
 Package pdftex.def Info: pics/Ch5_Results1/ElecEdge_Example_slim.png  used on i
 nput line 292.
 (pdftex.def)             Requested size: 409.71689pt x 118.56093pt.
-<pics/Ch5_Results1/20151217r001s009_PrettyPic_annotated.JPG, id=5415, 590.205pt
+<pics/Ch5_Results1/20151217r001s009_PrettyPic_annotated.JPG, id=5517, 590.205pt
  x 627.34375pt>
 File: pics/Ch5_Results1/20151217r001s009_PrettyPic_annotated.JPG Graphic file (
 type jpg)
@@ -2683,7 +2707,7 @@ type jpg)
 Package pdftex.def Info: pics/Ch5_Results1/20151217r001s009_PrettyPic_annotated
 .JPG  used on input line 309.
 (pdftex.def)             Requested size: 182.09485pt x 193.54602pt.
-<pics/Ch5_Results1/20151217r002s003_PrettyPic_crop.jpg, id=5416, 590.205pt x 62
+<pics/Ch5_Results1/20151217r002s003_PrettyPic_crop.jpg, id=5518, 590.205pt x 62
 7.34375pt>
 File: pics/Ch5_Results1/20151217r002s003_PrettyPic_crop.jpg Graphic file (type 
 jpg)
@@ -2691,9 +2715,9 @@ jpg)
 Package pdftex.def Info: pics/Ch5_Results1/20151217r002s003_PrettyPic_crop.jpg 
  used on input line 309.
 (pdftex.def)             Requested size: 182.09485pt x 193.54602pt.
- [186] [187 <./pics/Ch5_Results1/Example_RR15Cole.png (PNG copy)> <./pics/Ch5_R
+ [190] [191 <./pics/Ch5_Results1/Example_RR15Cole.png (PNG copy)> <./pics/Ch5_R
 esults1/ElecEdge_Example_slim.png (PNG copy)>]
-<pics/Ch5_Results1/ElecEdge_Raster_Drift_elapsed.pdf, id=5434, 581.77347pt x 36
+<pics/Ch5_Results1/ElecEdge_Raster_Drift_elapsed.pdf, id=5535, 581.77347pt x 36
 1.35pt>
 File: pics/Ch5_Results1/ElecEdge_Raster_Drift_elapsed.pdf Graphic file (type pd
 f)
@@ -2701,7 +2725,7 @@ f)
 Package pdftex.def Info: pics/Ch5_Results1/ElecEdge_Raster_Drift_elapsed.pdf  u
 sed on input line 329.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-<pics/Ch5_Results1/ElecEdge_Raster_Slices_Drift_elapsed.pdf, id=5435, 581.77347
+<pics/Ch5_Results1/ElecEdge_Raster_Slices_Drift_elapsed.pdf, id=5536, 581.77347
 pt x 361.35pt>
 File: pics/Ch5_Results1/ElecEdge_Raster_Slices_Drift_elapsed.pdf Graphic file (
 type pdf)
@@ -2713,9 +2737,9 @@ Package pdftex.def Info: pics/Ch5_Results1/ElecEdge_Raster_Slices_Drift_elapsed
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[188 <./pics/Ch5_Results1/20151217r001s009_PrettyPic_annotated.JPG> <./pics/Ch5
+[192 <./pics/Ch5_Results1/20151217r001s009_PrettyPic_annotated.JPG> <./pics/Ch5
 _Results1/20151217r002s003_PrettyPic_crop.jpg>]
-<pics/Ch5_Results1/Cole_LaserTime_Corr_elapsed.pdf, id=5449, 581.77347pt x 361.
+<pics/Ch5_Results1/Cole_LaserTime_Corr_elapsed.pdf, id=5550, 581.77347pt x 361.
 35pt>
 File: pics/Ch5_Results1/Cole_LaserTime_Corr_elapsed.pdf Graphic file (type pdf)
 
@@ -2723,7 +2747,7 @@ File: pics/Ch5_Results1/Cole_LaserTime_Corr_elapsed.pdf Graphic file (type pdf)
 Package pdftex.def Info: pics/Ch5_Results1/Cole_LaserTime_Corr_elapsed.pdf  use
 d on input line 343.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-<pics/Ch5_Results1/ElecEdge_Laser_Corr.pdf, id=5450, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/ElecEdge_Laser_Corr.pdf, id=5551, 581.77347pt x 361.35pt>
 File: pics/Ch5_Results1/ElecEdge_Laser_Corr.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/ElecEdge_Laser_Corr.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/ElecEdge_Laser_Corr.pdf  used on inp
@@ -2733,14 +2757,14 @@ ut line 343.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[189 <./pics/Ch5_Results1/ElecEdge_Raster_Drift_elapsed.pdf> <./pics/Ch5_Result
+[193 <./pics/Ch5_Results1/ElecEdge_Raster_Drift_elapsed.pdf> <./pics/Ch5_Result
 s1/ElecEdge_Raster_Slices_Drift_elapsed.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch5_Results1/ElecEdge
 _Raster_Slices_Drift_elapsed.pdf): PDF inclusion: multiple pdfs with page group
  included in a single page
 >]
-<pics/Ch5_Results1/ElecEdge_DE_drift_histo_errors.pdf, id=5534, 581.77347pt x 3
+<pics/Ch5_Results1/ElecEdge_DE_drift_histo_errors.pdf, id=5635, 581.77347pt x 3
 61.35pt>
 File: pics/Ch5_Results1/ElecEdge_DE_drift_histo_errors.pdf Graphic file (type p
 df)
@@ -2752,49 +2776,49 @@ used on input line 360.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[190 <./pics/Ch5_Results1/Cole_LaserTime_Corr_elapsed.pdf> <./pics/Ch5_Results1
+[194 <./pics/Ch5_Results1/Cole_LaserTime_Corr_elapsed.pdf> <./pics/Ch5_Results1
 /ElecEdge_Laser_Corr.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch5_Results1/ElecEdge
 _Laser_Corr.pdf): PDF inclusion: multiple pdfs with page group included in a si
 ngle page
 >]
-<pics/Ch5_Results1/DCsI_sigma_v_ElecEdge.pdf, id=5613, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/DCsI_sigma_v_ElecEdge.pdf, id=5714, 581.77347pt x 361.35pt>
 File: pics/Ch5_Results1/DCsI_sigma_v_ElecEdge.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/DCsI_sigma_v_ElecEdge.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/DCsI_sigma_v_ElecEdge.pdf  used on i
 nput line 375.
 (pdftex.def)             Requested size: 364.19664pt x 226.21262pt.
- [191 <./pics/Ch5_Results1/ElecEdge_DE_drift_histo_errors.pdf>] [192 <./pics/Ch
-5_Results1/DCsI_sigma_v_ElecEdge.pdf>] [193]
-<pics/Ch5_Results1/CsIFit_ColePaper.pdf, id=5740, 491.66364pt x 289.08pt>
+ [195 <./pics/Ch5_Results1/ElecEdge_DE_drift_histo_errors.pdf>] [196 <./pics/Ch
+5_Results1/DCsI_sigma_v_ElecEdge.pdf>] [197]
+<pics/Ch5_Results1/CsIFit_ColePaper.pdf, id=5841, 491.66364pt x 289.08pt>
 File: pics/Ch5_Results1/CsIFit_ColePaper.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/CsIFit_ColePaper.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/CsIFit_ColePaper.pdf  used on input 
 line 437.
 (pdftex.def)             Requested size: 227.62204pt x 133.83414pt.
-<pics/Ch5_Results1/OnOff_Temp_DCsI.pdf, id=5741, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/OnOff_Temp_DCsI.pdf, id=5842, 581.77347pt x 361.35pt>
 File: pics/Ch5_Results1/OnOff_Temp_DCsI.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/OnOff_Temp_DCsI.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/OnOff_Temp_DCsI.pdf  used on input l
 ine 437.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
- [194 <./pics/Ch5_Results1/CsIFit_ColePaper.pdf> <./pics/Ch5_Results1/OnOff_Tem
+ [198 <./pics/Ch5_Results1/CsIFit_ColePaper.pdf> <./pics/Ch5_Results1/OnOff_Tem
 p_DCsI.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch5_Results1/OnOff_Te
 mp_DCsI.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-<pics/Ch5_Results1/Figure9_blank_largeaxes.pdf, id=5854, 491.6636pt x 361.35pt>
+<pics/Ch5_Results1/Figure9_blank_largeaxes.pdf, id=5954, 491.6636pt x 361.35pt>
 
 File: pics/Ch5_Results1/Figure9_blank_largeaxes.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Figure9_blank_largeaxes.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Figure9_blank_largeaxes.pdf  used on
  input line 463.
 (pdftex.def)             Requested size: 227.62204pt x 167.29268pt.
- [195 <./pics/Ch5_Results1/Figure9_blank_largeaxes.pdf>]
-<pics/Ch5_Results1/EcritvsEf_withmean.pdf, id=6045, 491.66364pt x 361.35pt>
+ [199 <./pics/Ch5_Results1/Figure9_blank_largeaxes.pdf>]
+<pics/Ch5_Results1/EcritvsEf_withmean.pdf, id=6147, 491.66364pt x 361.35pt>
 File: pics/Ch5_Results1/EcritvsEf_withmean.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/EcritvsEf_withmean.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/EcritvsEf_withmean.pdf  used on inpu
@@ -2804,29 +2828,29 @@ t line 495.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[196] [197 <./pics/Ch5_Results1/EcritvsEf_withmean.pdf>] [198]
-<pics/Ch5_Results1/ExpSetup_Poder.pdf, id=6128, 278.24849pt x 156.51477pt>
+[200] [201 <./pics/Ch5_Results1/EcritvsEf_withmean.pdf>] [202]
+<pics/Ch5_Results1/ExpSetup_Poder.pdf, id=6230, 278.24849pt x 156.51477pt>
 File: pics/Ch5_Results1/ExpSetup_Poder.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/ExpSetup_Poder.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/ExpSetup_Poder.pdf  used on input li
 ne 534.
 (pdftex.def)             Requested size: 409.71689pt x 230.48947pt.
- [199 <./pics/Ch5_Results1/ExpSetup_Poder.pdf>]
-<pics/Ch5_Results1/Example_RR15Poder.png, id=6170, 2007.5pt x 501.875pt>
+ [203 <./pics/Ch5_Results1/ExpSetup_Poder.pdf>]
+<pics/Ch5_Results1/Example_RR15Poder.png, id=6270, 2007.5pt x 501.875pt>
 File: pics/Ch5_Results1/Example_RR15Poder.png Graphic file (type png)
 <use pics/Ch5_Results1/Example_RR15Poder.png>
 Package pdftex.def Info: pics/Ch5_Results1/Example_RR15Poder.png  used on input
  line 555.
 (pdftex.def)             Requested size: 409.71689pt x 118.94383pt.
- [200 <./pics/Ch5_Results1/Example_RR15Poder.png (PNG copy)>]
-<pics/Ch5_Results1/Poder_Laser_Corr.pdf, id=6183, 581.77347pt x 361.35pt>
+ [204 <./pics/Ch5_Results1/Example_RR15Poder.png (PNG copy)>]
+<pics/Ch5_Results1/Poder_Laser_Corr.pdf, id=6283, 581.77347pt x 361.35pt>
 File: pics/Ch5_Results1/Poder_Laser_Corr.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Poder_Laser_Corr.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Poder_Laser_Corr.pdf  used on input 
 line 569.
 (pdftex.def)             Requested size: 364.19664pt x 226.21262pt.
- [201 <./pics/Ch5_Results1/Poder_Laser_Corr.pdf>]
-<pics/Ch5_Results1/Comparison_ESpectra_insetVar.pdf, id=6231, 581.77347pt x 361
+ [205 <./pics/Ch5_Results1/Poder_Laser_Corr.pdf>]
+<pics/Ch5_Results1/Comparison_ESpectra_insetVar.pdf, id=6333, 581.77347pt x 361
 .35pt>
 File: pics/Ch5_Results1/Comparison_ESpectra_insetVar.pdf Graphic file (type pdf
 )
@@ -2834,21 +2858,21 @@ File: pics/Ch5_Results1/Comparison_ESpectra_insetVar.pdf Graphic file (type pdf
 Package pdftex.def Info: pics/Ch5_Results1/Comparison_ESpectra_insetVar.pdf  us
 ed on input line 580.
 (pdftex.def)             Requested size: 364.19664pt x 226.21262pt.
-<pics/Ch5_Results1/Comparison_Histo_errors.pdf, id=6234, 581.77347pt x 361.35pt
+<pics/Ch5_Results1/Comparison_Histo_errors.pdf, id=6336, 581.77347pt x 361.35pt
 >
 File: pics/Ch5_Results1/Comparison_Histo_errors.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Comparison_Histo_errors.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Comparison_Histo_errors.pdf  used on
  input line 588.
 (pdftex.def)             Requested size: 364.19664pt x 226.21262pt.
- [202 <./pics/Ch5_Results1/Comparison_ESpectra_insetVar.pdf>]
-<pics/Ch5_Results1/Histo_Cole_RR.pdf, id=6284, 581.77347pt x 361.35pt>
+ [206 <./pics/Ch5_Results1/Comparison_ESpectra_insetVar.pdf>]
+<pics/Ch5_Results1/Histo_Cole_RR.pdf, id=6386, 581.77347pt x 361.35pt>
 File: pics/Ch5_Results1/Histo_Cole_RR.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Histo_Cole_RR.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Histo_Cole_RR.pdf  used on input lin
 e 613.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-<pics/Ch5_Results1/Histo_Poder_RR.pdf, id=6285, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/Histo_Poder_RR.pdf, id=6387, 581.77347pt x 361.35pt>
 File: pics/Ch5_Results1/Histo_Poder_RR.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Histo_Poder_RR.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Histo_Poder_RR.pdf  used on input li
@@ -2858,40 +2882,40 @@ ne 613.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[203 <./pics/Ch5_Results1/Comparison_Histo_errors.pdf>] [204 <./pics/Ch5_Result
+[207 <./pics/Ch5_Results1/Comparison_Histo_errors.pdf>] [208 <./pics/Ch5_Result
 s1/Histo_Cole_RR.pdf> <./pics/Ch5_Results1/Histo_Poder_RR.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch5_Results1/Histo_Po
 der_RR.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
 >]
-<pics/Ch5_Results1/Nshots_5sigma_RR.pdf, id=6432, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/Nshots_5sigma_RR.pdf, id=6534, 581.77347pt x 361.35pt>
 File: pics/Ch5_Results1/Nshots_5sigma_RR.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Nshots_5sigma_RR.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Nshots_5sigma_RR.pdf  used on input 
 line 655.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-<pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf, id=6433, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf, id=6535, 581.77347pt x 361.35pt>
 
 File: pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Nshots_5sigma_RR_a0_20.pdf  used on 
 input line 655.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-<pics/Ch5_Results1/Nshots_3sigma_RR.pdf, id=6434, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/Nshots_3sigma_RR.pdf, id=6536, 581.77347pt x 361.35pt>
 File: pics/Ch5_Results1/Nshots_3sigma_RR.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Nshots_3sigma_RR.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Nshots_3sigma_RR.pdf  used on input 
 line 657.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
-<pics/Ch5_Results1/Nshots_3sigma_RR_a0_20.pdf, id=6435, 581.77347pt x 361.35pt>
+<pics/Ch5_Results1/Nshots_3sigma_RR_a0_20.pdf, id=6537, 581.77347pt x 361.35pt>
 
 File: pics/Ch5_Results1/Nshots_3sigma_RR_a0_20.pdf Graphic file (type pdf)
 <use pics/Ch5_Results1/Nshots_3sigma_RR_a0_20.pdf>
 Package pdftex.def Info: pics/Ch5_Results1/Nshots_3sigma_RR_a0_20.pdf  used on 
 input line 657.
 (pdftex.def)             Requested size: 227.62204pt x 141.37805pt.
- [205] [206 <./pics/Ch5_Results1/Nshots_5sigma_RR.pdf> <./pics/Ch5_Results1/Nsh
+ [209] [210 <./pics/Ch5_Results1/Nshots_5sigma_RR.pdf> <./pics/Ch5_Results1/Nsh
 ots_5sigma_RR_a0_20.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch5_Results1/Nshots_5
@@ -2907,46 +2931,46 @@ e page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./pics/Ch5_Results1/Nshots_3
 sigma_RR_a0_20.pdf): PDF inclusion: multiple pdfs with page group included in a
  single page
->] [207] [208]) [209]
+>] [211] [212]) [213]
 \openout2 = `Results/BW2018.aux'.
 
  (./Results/BW2018.tex
 Chapter 7.
-[210
+[214
 
 
 
 ]
-<pics/Ch6_Results2/QED_TreeDiagrams_OPike.jpg, id=6725, 853.1875pt x 602.25pt>
+<pics/Ch6_Results2/QED_TreeDiagrams_OPike.jpg, id=6827, 853.1875pt x 602.25pt>
 File: pics/Ch6_Results2/QED_TreeDiagrams_OPike.jpg Graphic file (type jpg)
 <use pics/Ch6_Results2/QED_TreeDiagrams_OPike.jpg>
 Package pdftex.def Info: pics/Ch6_Results2/QED_TreeDiagrams_OPike.jpg  used on 
 input line 16.
 (pdftex.def)             Requested size: 409.71689pt x 289.21455pt.
- [211 <./pics/Ch6_Results2/QED_TreeDiagrams_OPike.jpg>]
+ [215 <./pics/Ch6_Results2/QED_TreeDiagrams_OPike.jpg>]
 File: pics/Ch6_Results2/BWD_Xsec.png Graphic file (type png)
 <use pics/Ch6_Results2/BWD_Xsec.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWD_Xsec.png  used on input line 34.
 
 (pdftex.def)             Requested size: 455.24408pt x 269.653pt.
- [212]
-<pics/Ch6_Results2/OPike_nphoton_plot.JPG, id=6801, 929.4725pt x 461.725pt>
+ [216]
+<pics/Ch6_Results2/OPike_nphoton_plot.JPG, id=6902, 929.4725pt x 461.725pt>
 File: pics/Ch6_Results2/OPike_nphoton_plot.JPG Graphic file (type jpg)
 <use pics/Ch6_Results2/OPike_nphoton_plot.JPG>
 Package pdftex.def Info: pics/Ch6_Results2/OPike_nphoton_plot.JPG  used on inpu
 t line 46.
 (pdftex.def)             Requested size: 318.66946pt x 158.3019pt.
-<pics/Ch6_Results2/2018QED_Chicane.JPG, id=6828, 2601.72pt x 1734.48pt>
+<pics/Ch6_Results2/2018QED_Chicane.JPG, id=6929, 2601.72pt x 1734.48pt>
 File: pics/Ch6_Results2/2018QED_Chicane.JPG Graphic file (type jpg)
 <use pics/Ch6_Results2/2018QED_Chicane.JPG>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Chicane.JPG  used on input l
 ine 60.
 (pdftex.def)             Requested size: 318.66946pt x 212.44258pt.
- [213 <./pics/Ch6_Results2/OPike_nphoton_plot.JPG>] [214 <./pics/Ch6_Results2/2
-018QED_Chicane.JPG>] [215
+ [217 <./pics/Ch6_Results2/OPike_nphoton_plot.JPG>] [218 <./pics/Ch6_Results2/2
+018QED_Chicane.JPG>] [219
 
 ]
-<pics/Ch6_Results2/BW2018_render_V4_annotated.png, id=6892, 1927.2pt x 1084.05p
+<pics/Ch6_Results2/BW2018_render_V4_annotated.png, id=6993, 1927.2pt x 1084.05p
 t>
 File: pics/Ch6_Results2/BW2018_render_V4_annotated.png Graphic file (type png)
 <use pics/Ch6_Results2/BW2018_render_V4_annotated.png>
@@ -2963,15 +2987,15 @@ Overfull \hbox (7.15341pt too wide) in paragraph at lines 106--106
 [][][][]\OT1/cmr/m/n/12 (-20) ERROR  
  []
 
-[216] [217 <./pics/Ch6_Results2/BW2018_render_V4_annotated.png>] [218] [219]
-[220]
-<pics/Ch6_Results2/BW_example_Espec_V2.png, id=6971, 2007.5pt x 501.875pt>
+[220] [221 <./pics/Ch6_Results2/BW2018_render_V4_annotated.png>] [222] [223]
+[224]
+<pics/Ch6_Results2/BW_example_Espec_V2.png, id=7073, 2007.5pt x 501.875pt>
 File: pics/Ch6_Results2/BW_example_Espec_V2.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_example_Espec_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_example_Espec_V2.png  used on inp
 ut line 149.
 (pdftex.def)             Requested size: 455.24408pt x 122.48947pt.
-<pics/Ch6_Results2/2018QED_ElecSpecs_average_V4.png, id=6978, 2007.5pt x 1003.7
+<pics/Ch6_Results2/2018QED_ElecSpecs_average_V4.png, id=7080, 2007.5pt x 1003.7
 5pt>
 File: pics/Ch6_Results2/2018QED_ElecSpecs_average_V4.png Graphic file (type png
 )
@@ -2979,16 +3003,16 @@ File: pics/Ch6_Results2/2018QED_ElecSpecs_average_V4.png Graphic file (type png
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_ElecSpecs_average_V4.png  us
 ed on input line 160.
 (pdftex.def)             Requested size: 409.71689pt x 227.41154pt.
-<pics/Ch6_Results2/2018QED_Espec_AllVarBar.png, id=6980, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/2018QED_Espec_AllVarBar.png, id=7082, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/2018QED_Espec_AllVarBar.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_Espec_AllVarBar.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Espec_AllVarBar.png  used on
  input line 167.
 (pdftex.def)             Requested size: 455.24408pt x 274.2631pt.
- [221 <./pics/Ch6_Results2/BW_example_Espec_V2.png (PNG copy)>] [222 <./pics/Ch
+ [225 <./pics/Ch6_Results2/BW_example_Espec_V2.png (PNG copy)>] [226 <./pics/Ch
 6_Results2/2018QED_ElecSpecs_average_V4.png (PNG copy)> <./pics/Ch6_Results2/20
 18QED_Espec_AllVarBar.png (PNG copy)>]
-<pics/Ch6_Results2/BW_GammaProfileConverter_Montage.pdf, id=7009, 1851.00996pt 
+<pics/Ch6_Results2/BW_GammaProfileConverter_Montage.pdf, id=7110, 1851.00996pt 
 x 1143.22298pt>
 File: pics/Ch6_Results2/BW_GammaProfileConverter_Montage.pdf Graphic file (type
  pdf)
@@ -2996,15 +3020,15 @@ File: pics/Ch6_Results2/BW_GammaProfileConverter_Montage.pdf Graphic file (type
 Package pdftex.def Info: pics/Ch6_Results2/BW_GammaProfileConverter_Montage.pdf
   used on input line 251.
 (pdftex.def)             Requested size: 455.24408pt x 281.1649pt.
- [223] [224 <./pics/Ch6_Results2/BW_GammaProfileConverter_Montage.pdf>]
-<pics/Ch6_Results2/2018QED_Converter_Yield.png, id=7039, 2007.5pt x 1003.75pt>
+ [227] [228 <./pics/Ch6_Results2/BW_GammaProfileConverter_Montage.pdf>]
+<pics/Ch6_Results2/2018QED_Converter_Yield.png, id=7140, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/2018QED_Converter_Yield.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_Converter_Yield.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Converter_Yield.png  used on
  input line 264.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
- [225 <./pics/Ch6_Results2/2018QED_Converter_Yield.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_Converter_Divergence.png, id=7047, 2007.5pt x 1003.7
+ [229 <./pics/Ch6_Results2/2018QED_Converter_Yield.png (PNG copy)>]
+<pics/Ch6_Results2/2018QED_Converter_Divergence.png, id=7149, 2007.5pt x 1003.7
 5pt>
 File: pics/Ch6_Results2/2018QED_Converter_Divergence.png Graphic file (type png
 )
@@ -3012,8 +3036,8 @@ File: pics/Ch6_Results2/2018QED_Converter_Divergence.png Graphic file (type png
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Converter_Divergence.png  us
 ed on input line 277.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
- [226 <./pics/Ch6_Results2/2018QED_Converter_Divergence.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_GConverter_Pointing.png, id=7062, 2007.5pt x 1003.75
+ [230 <./pics/Ch6_Results2/2018QED_Converter_Divergence.png (PNG copy)>]
+<pics/Ch6_Results2/2018QED_GConverter_Pointing.png, id=7164, 2007.5pt x 1003.75
 pt>
 File: pics/Ch6_Results2/2018QED_GConverter_Pointing.png Graphic file (type png)
 
@@ -3021,13 +3045,13 @@ File: pics/Ch6_Results2/2018QED_GConverter_Pointing.png Graphic file (type png)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GConverter_Pointing.png  use
 d on input line 296.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/BW_GammaProfile_Example.png, id=7065, 722.7pt x 433.62pt>
+<pics/Ch6_Results2/BW_GammaProfile_Example.png, id=7167, 722.7pt x 433.62pt>
 File: pics/Ch6_Results2/BW_GammaProfile_Example.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_GammaProfile_Example.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_GammaProfile_Example.png  used on
  input line 305.
 (pdftex.def)             Requested size: 227.62204pt x 148.24268pt.
-<pics/Ch6_Results2/BW_GammaProfileCollIN_Example.png, id=7067, 722.7pt x 433.62
+<pics/Ch6_Results2/BW_GammaProfileCollIN_Example.png, id=7169, 722.7pt x 433.62
 pt>
 File: pics/Ch6_Results2/BW_GammaProfileCollIN_Example.png Graphic file (type pn
 g)
@@ -3035,17 +3059,17 @@ g)
 Package pdftex.def Info: pics/Ch6_Results2/BW_GammaProfileCollIN_Example.png  u
 sed on input line 305.
 (pdftex.def)             Requested size: 227.62204pt x 148.24268pt.
- [227 <./pics/Ch6_Results2/2018QED_GConverter_Pointing.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_AbsTransmission_V3.png, id=7075, 2007.5pt x 1003.75p
+ [231 <./pics/Ch6_Results2/2018QED_GConverter_Pointing.png (PNG copy)>]
+<pics/Ch6_Results2/2018QED_AbsTransmission_V3.png, id=7177, 2007.5pt x 1003.75p
 t>
 File: pics/Ch6_Results2/2018QED_AbsTransmission_V3.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_AbsTransmission_V3.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_AbsTransmission_V3.png  used
  on input line 316.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
- [228 <./pics/Ch6_Results2/BW_GammaProfile_Example.png (PNG copy)> <./pics/Ch6_
+ [232 <./pics/Ch6_Results2/BW_GammaProfile_Example.png (PNG copy)> <./pics/Ch6_
 Results2/BW_GammaProfileCollIN_Example.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V3.png, id=7084, 2007.5pt x 10
+<pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V3.png, id=7186, 2007.5pt x 10
 03.75pt>
 File: pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V3.png Graphic file (type
  png)
@@ -3053,7 +3077,7 @@ File: pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V3.png Graphic file (type
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V3.png
   used on input line 327.
 (pdftex.def)             Requested size: 409.71689pt x 234.80916pt.
-<pics/Ch6_Results2/2018QED_YieldvNoise_CollIN_V3.png, id=7086, 2007.5pt x 1003.
+<pics/Ch6_Results2/2018QED_YieldvNoise_CollIN_V3.png, id=7188, 2007.5pt x 1003.
 75pt>
 File: pics/Ch6_Results2/2018QED_YieldvNoise_CollIN_V3.png Graphic file (type pn
 g)
@@ -3061,16 +3085,16 @@ g)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_YieldvNoise_CollIN_V3.png  u
 sed on input line 337.
 (pdftex.def)             Requested size: 409.71689pt x 234.80916pt.
- [229 <./pics/Ch6_Results2/2018QED_AbsTransmission_V3.png (PNG copy)>] [230 <./
+ [233 <./pics/Ch6_Results2/2018QED_AbsTransmission_V3.png (PNG copy)>] [234 <./
 pics/Ch6_Results2/2018QED_Converter_YieldvNoise_V3.png (PNG copy)> <./pics/Ch6_
 Results2/2018QED_YieldvNoise_CollIN_V3.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_Yield_CollIN_V2.png, id=7106, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/2018QED_Yield_CollIN_V2.png, id=7206, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/2018QED_Yield_CollIN_V2.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_Yield_CollIN_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_Yield_CollIN_V2.png  used on
  input line 346.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/2018QED_SignalToNoise_CollIN_V3.png, id=7108, 2007.5pt x 100
+<pics/Ch6_Results2/2018QED_SignalToNoise_CollIN_V3.png, id=7208, 2007.5pt x 100
 3.75pt>
 File: pics/Ch6_Results2/2018QED_SignalToNoise_CollIN_V3.png Graphic file (type 
 png)
@@ -3078,9 +3102,9 @@ png)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_SignalToNoise_CollIN_V3.png 
  used on input line 352.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
- [231 <./pics/Ch6_Results2/2018QED_Yield_CollIN_V2.png (PNG copy)>] [232 <./pic
+ [235 <./pics/Ch6_Results2/2018QED_Yield_CollIN_V2.png (PNG copy)>] [236 <./pic
 s/Ch6_Results2/2018QED_SignalToNoise_CollIN_V3.png (PNG copy)>]
-<pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png, id=7132, 574.145pt x 353.32
+<pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png, id=7233, 574.145pt x 353.32
 pt>
 File: pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png Graphic file (type png)
 
@@ -3088,14 +3112,14 @@ File: pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png Graphic file (type png)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png  use
 d on input line 371.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png, id=7133, 574.145pt x 353.32p
+<pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png, id=7234, 574.145pt x 353.32p
 t>
 File: pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_simspec2.png  used
  on input line 371.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_simresp_V2.png, id=7134, 580.1675pt x 353.
+<pics/Ch6_Results2/2018QED_GammaSpec_simresp_V2.png, id=7235, 580.1675pt x 353.
 32pt>
 File: pics/Ch6_Results2/2018QED_GammaSpec_simresp_V2.png Graphic file (type png
 )
@@ -3103,7 +3127,7 @@ File: pics/Ch6_Results2/2018QED_GammaSpec_simresp_V2.png Graphic file (type png
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_simresp_V2.png  us
 ed on input line 373.
 (pdftex.def)             Requested size: 227.62204pt x 138.6191pt.
-<pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png, id=7135, 574.145pt x 3
+<pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png, id=7236, 574.145pt x 3
 53.32pt>
 File: pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png Graphic file (type
  png)
@@ -3111,15 +3135,15 @@ File: pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png Graphic file (type
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png
   used on input line 373.
 (pdftex.def)             Requested size: 227.62204pt x 140.07472pt.
- [233]
-<pics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png, id=7144, 2007.5pt x 1003.75pt>
+ [237]
+<pics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png, id=7245, 2007.5pt x 1003.75pt>
 
 File: pics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png Graphic file (type png)
 <use pics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png  used o
 n input line 381.
 (pdftex.def)             Requested size: 409.71689pt x 236.72366pt.
-<pics/Ch6_Results2/2018QED_GSpec_Variations_V2.png, id=7146, 2007.5pt x 1003.75
+<pics/Ch6_Results2/2018QED_GSpec_Variations_V2.png, id=7247, 2007.5pt x 1003.75
 pt>
 File: pics/Ch6_Results2/2018QED_GSpec_Variations_V2.png Graphic file (type png)
 
@@ -3127,24 +3151,24 @@ File: pics/Ch6_Results2/2018QED_GSpec_Variations_V2.png Graphic file (type png)
 Package pdftex.def Info: pics/Ch6_Results2/2018QED_GSpec_Variations_V2.png  use
 d on input line 387.
 (pdftex.def)             Requested size: 409.71689pt x 236.72366pt.
- [234 <./pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png> <./pics/Ch6_Results
+ [238 <./pics/Ch6_Results2/2018QED_ElecSpecs_examples2.png> <./pics/Ch6_Results
 2/2018QED_GammaSpec_simspec2.png> <./pics/Ch6_Results2/2018QED_GammaSpec_simres
-p_V2.png> <./pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png>] [235 <./p
-ics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png (PNG copy)>] [236 <./pics/Ch6_Res
+p_V2.png> <./pics/Ch6_Results2/2018QED_GammaSpec_Average_expsim.png>] [239 <./p
+ics/Ch6_Results2/2018QED_GEANT_AvGSpec_V2.png (PNG copy)>] [240 <./pics/Ch6_Res
 ults2/2018QED_GSpec_Variations_V2.png (PNG copy)>]
-<pics/Ch6_Results2/BW_XraySpec_Morton_V2.png, id=7173, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/BW_XraySpec_Morton_V2.png, id=7274, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BW_XraySpec_Morton_V2.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_XraySpec_Morton_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_XraySpec_Morton_V2.png  used on i
 nput line 402.
 (pdftex.def)             Requested size: 409.71689pt x 234.80916pt.
-<pics/Ch6_Results2/BW_XraySpec_AvDay_V3.png, id=7175, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/BW_XraySpec_AvDay_V3.png, id=7276, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BW_XraySpec_AvDay_V3.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_XraySpec_AvDay_V3.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_XraySpec_AvDay_V3.png  used on in
 put line 404.
 (pdftex.def)             Requested size: 409.71689pt x 234.80916pt.
-<pics/Ch6_Results2/BW_Pinhole_Pinhole_Yield_V4.png, id=7180, 2007.5pt x 1003.75
+<pics/Ch6_Results2/BW_Pinhole_Pinhole_Yield_V4.png, id=7281, 2007.5pt x 1003.75
 pt>
 File: pics/Ch6_Results2/BW_Pinhole_Pinhole_Yield_V4.png Graphic file (type png)
 
@@ -3152,60 +3176,60 @@ File: pics/Ch6_Results2/BW_Pinhole_Pinhole_Yield_V4.png Graphic file (type png)
 Package pdftex.def Info: pics/Ch6_Results2/BW_Pinhole_Pinhole_Yield_V4.png  use
 d on input line 418.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/BW_CSpec_Pinhole_Yield_V4.png, id=7182, 2007.5pt x 1003.75pt
+<pics/Ch6_Results2/BW_CSpec_Pinhole_Yield_V4.png, id=7283, 2007.5pt x 1003.75pt
 >
 File: pics/Ch6_Results2/BW_CSpec_Pinhole_Yield_V4.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_CSpec_Pinhole_Yield_V4.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_CSpec_Pinhole_Yield_V4.png  used 
 on input line 420.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-<pics/Ch6_Results2/BW_XraySpec_AvDay_Yield_V3.png, id=7185, 2007.5pt x 1003.75p
+<pics/Ch6_Results2/BW_XraySpec_AvDay_Yield_V3.png, id=7286, 2007.5pt x 1003.75p
 t>
 File: pics/Ch6_Results2/BW_XraySpec_AvDay_Yield_V3.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_XraySpec_AvDay_Yield_V3.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_XraySpec_AvDay_Yield_V3.png  used
  on input line 430.
 (pdftex.def)             Requested size: 409.71689pt x 238.28589pt.
-[237] [238 <./pics/Ch6_Results2/BW_XraySpec_Morton_V2.png (PNG copy)> <./pics/C
-h6_Results2/BW_XraySpec_AvDay_V3.png (PNG copy)>] [239 <./pics/Ch6_Results2/BW_
+[241] [242 <./pics/Ch6_Results2/BW_XraySpec_Morton_V2.png (PNG copy)> <./pics/C
+h6_Results2/BW_XraySpec_AvDay_V3.png (PNG copy)>] [243 <./pics/Ch6_Results2/BW_
 Pinhole_Pinhole_Yield_V4.png (PNG copy)> <./pics/Ch6_Results2/BW_CSpec_Pinhole_
-Yield_V4.png (PNG copy)>] [240 <./pics/Ch6_Results2/BW_XraySpec_AvDay_Yield_V3.
+Yield_V4.png (PNG copy)>] [244 <./pics/Ch6_Results2/BW_XraySpec_AvDay_Yield_V3.
 png (PNG copy)>]
-<pics/Ch6_Results2/BWXrayAlignment.png, id=7211, 627.81981pt x 242.1045pt>
+<pics/Ch6_Results2/BWXrayAlignment.png, id=7313, 627.81981pt x 242.1045pt>
 File: pics/Ch6_Results2/BWXrayAlignment.png Graphic file (type png)
 <use pics/Ch6_Results2/BWXrayAlignment.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWXrayAlignment.png  used on input l
 ine 448.
 (pdftex.def)             Requested size: 409.71689pt x 157.99777pt.
- [241]
-<pics/Ch6_Results2/BWOverlapSketchFront.png, id=7225, 237.35533pt x 225.58565pt
+ [245]
+<pics/Ch6_Results2/BWOverlapSketchFront.png, id=7326, 237.35533pt x 225.58565pt
 >
 File: pics/Ch6_Results2/BWOverlapSketchFront.png Graphic file (type png)
 <use pics/Ch6_Results2/BWOverlapSketchFront.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWOverlapSketchFront.png  used on in
 put line 465.
 (pdftex.def)             Requested size: 136.5746pt x 129.80711pt.
-<pics/Ch6_Results2/BWOverlapSketch.png, id=7226, 602.52531pt x 177.7842pt>
+<pics/Ch6_Results2/BWOverlapSketch.png, id=7327, 602.52531pt x 177.7842pt>
 File: pics/Ch6_Results2/BWOverlapSketch.png Graphic file (type png)
 <use pics/Ch6_Results2/BWOverlapSketch.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWOverlapSketch.png  used on input l
 ine 465.
 (pdftex.def)             Requested size: 318.66946pt x 94.02983pt.
- [242 <./pics/Ch6_Results2/BWXrayAlignment.png>]
+ [246 <./pics/Ch6_Results2/BWXrayAlignment.png>]
 File: pics/Ch6_Results2/BWD_Xsec.png Graphic file (type png)
 <use pics/Ch6_Results2/BWD_Xsec.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWD_Xsec.png  used on input line 478
 .
 (pdftex.def)             Requested size: 409.71689pt x 204.85112pt.
-<pics/Ch6_Results2/BW_Xsec_EgEx_2D_V2.png, id=7234, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/BW_Xsec_EgEx_2D_V2.png, id=7334, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BW_Xsec_EgEx_2D_V2.png Graphic file (type png)
 <use pics/Ch6_Results2/BW_Xsec_EgEx_2D_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/BW_Xsec_EgEx_2D_V2.png  used on inpu
 t line 480.
 (pdftex.def)             Requested size: 409.71689pt x 204.85112pt.
- [243 <./pics/Ch6_Results2/BWOverlapSketchFront.png> <./pics/Ch6_Results2/BWOve
-rlapSketch.png>] [244 <./pics/Ch6_Results2/BW_Xsec_EgEx_2D_V2.png (PNG copy)>]
-<pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr_V2.png, id=7248, 2007.5pt x
+ [247 <./pics/Ch6_Results2/BWOverlapSketchFront.png> <./pics/Ch6_Results2/BWOve
+rlapSketch.png>] [248 <./pics/Ch6_Results2/BW_Xsec_EgEx_2D_V2.png (PNG copy)>]
+<pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr_V2.png, id=7349, 2007.5pt x
  1003.75pt>
 File: pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr_V2.png Graphic file (t
 ype png)
@@ -3213,7 +3237,7 @@ ype png)
 Package pdftex.def Info: pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr_V2.
 png  used on input line 496.
 (pdftex.def)             Requested size: 341.43306pt x 198.57158pt.
-<pics/Ch6_Results2/BWXsec_Angles_MortonCorrYieldCorr_V2.png, id=7250, 2007.5pt 
+<pics/Ch6_Results2/BWXsec_Angles_MortonCorrYieldCorr_V2.png, id=7351, 2007.5pt 
 x 1003.75pt>
 File: pics/Ch6_Results2/BWXsec_Angles_MortonCorrYieldCorr_V2.png Graphic file (
 type png)
@@ -3221,7 +3245,7 @@ type png)
 Package pdftex.def Info: pics/Ch6_Results2/BWXsec_Angles_MortonCorrYieldCorr_V2
 .png  used on input line 498.
 (pdftex.def)             Requested size: 341.43306pt x 198.57158pt.
-<pics/Ch6_Results2/BWXsec_Angles_AvDay_V2.png, id=7252, 2007.5pt x 1003.75pt>
+<pics/Ch6_Results2/BWXsec_Angles_AvDay_V2.png, id=7353, 2007.5pt x 1003.75pt>
 File: pics/Ch6_Results2/BWXsec_Angles_AvDay_V2.png Graphic file (type png)
 <use pics/Ch6_Results2/BWXsec_Angles_AvDay_V2.png>
 Package pdftex.def Info: pics/Ch6_Results2/BWXsec_Angles_AvDay_V2.png  used on 
@@ -3231,30 +3255,30 @@ input line 500.
 
 LaTeX Warning: Float too large for page by 16.52612pt on input line 503.
 
-[245] [246 <./pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr_V2.png (PNG co
+[249] [250 <./pics/Ch6_Results2/BWXsec_Angles_MortonRawYieldCorr_V2.png (PNG co
 py)> <./pics/Ch6_Results2/BWXsec_Angles_MortonCorrYieldCorr_V2.png (PNG copy)> 
-<./pics/Ch6_Results2/BWXsec_Angles_AvDay_V2.png (PNG copy)>] [247] [248]
-[249] [250] [251] [252] [253]) [254
+<./pics/Ch6_Results2/BWXsec_Angles_AvDay_V2.png (PNG copy)>] [251] [252]
+[253] [254] [255] [256] [257]) [258
 
 ]
 \openout2 = `Conclusion/Conclusions.aux'.
 
  (./Conclusion/Conclusions.tex
 Chapter 8.
-[255
+[259
 
 
 
-] [256] [257]
-<pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png, id=7380, 1927.2pt x 1084.05pt>
+] [260] [261]
+<pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png, id=7481, 1927.2pt x 1084.05pt>
 File: pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png Graphic file (type png)
 <use pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png>
 Package pdftex.def Info: pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png  used on 
 input line 113.
 (pdftex.def)             Requested size: 692.6886pt x 389.62914pt.
- [258] [259 <./pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png>]
-[260]
-<pics/Ch9_Conclusion/GasJetCloseUp_Combo.pdf, id=7404, 845.1575pt x 597.23125pt
+ [262] [263 <./pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png>]
+[264]
+<pics/Ch9_Conclusion/GasJetCloseUp_Combo.pdf, id=7505, 845.1575pt x 597.23125pt
 >
 File: pics/Ch9_Conclusion/GasJetCloseUp_Combo.pdf Graphic file (type pdf)
 <use pics/Ch9_Conclusion/GasJetCloseUp_Combo.pdf>
@@ -3265,8 +3289,8 @@ nput line 177.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[261 <./pics/Ch9_Conclusion/GasJetCloseUp_Combo.pdf, page is rotated 270 degree
-s>] [262] [263]
+[265 <./pics/Ch9_Conclusion/GasJetCloseUp_Combo.pdf, page is rotated 270 degree
+s>] [266] [267]
 Overfull \hbox (29.73932pt too wide) in paragraph at lines 266--274
  [][] 
  []
@@ -3274,70 +3298,70 @@ Overfull \hbox (29.73932pt too wide) in paragraph at lines 266--274
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[264]
-<pics/Ch9_Conclusion/Ebeam_Diag.png, id=7484, 1927.2pt x 1084.05pt>
+[268]
+<pics/Ch9_Conclusion/Ebeam_Diag.png, id=7585, 1927.2pt x 1084.05pt>
 File: pics/Ch9_Conclusion/Ebeam_Diag.png Graphic file (type png)
 <use pics/Ch9_Conclusion/Ebeam_Diag.png>
 Package pdftex.def Info: pics/Ch9_Conclusion/Ebeam_Diag.png  used on input line
  319.
 (pdftex.def)             Requested size: 409.71689pt x 230.45268pt.
- [265] [266 <./pics/Ch9_Conclusion/Ebeam_Diag.png>]
-<pics/Ch9_Conclusion/GammaDets.png, id=7501, 1927.2pt x 1084.05pt>
+ [269] [270 <./pics/Ch9_Conclusion/Ebeam_Diag.png>]
+<pics/Ch9_Conclusion/GammaDets.png, id=7601, 1927.2pt x 1084.05pt>
 File: pics/Ch9_Conclusion/GammaDets.png Graphic file (type png)
 <use pics/Ch9_Conclusion/GammaDets.png>
 Package pdftex.def Info: pics/Ch9_Conclusion/GammaDets.png  used on input line 
 373.
 (pdftex.def)             Requested size: 409.71689pt x 230.45268pt.
- [267]
-<pics/Ch9_Conclusion/LCFACam_CloseUp.png, id=7510, 1927.2pt x 1084.05pt>
+ [271]
+<pics/Ch9_Conclusion/LCFACam_CloseUp.png, id=7612, 1927.2pt x 1084.05pt>
 File: pics/Ch9_Conclusion/LCFACam_CloseUp.png Graphic file (type png)
 <use pics/Ch9_Conclusion/LCFACam_CloseUp.png>
 Package pdftex.def Info: pics/Ch9_Conclusion/LCFACam_CloseUp.png  used on input
  line 391.
 (pdftex.def)             Requested size: 409.71689pt x 230.45268pt.
-<pics/Ch9_Conclusion/LCFA_DiPiazza.png, id=7513, 501.875pt x 407.5225pt>
+<pics/Ch9_Conclusion/LCFA_DiPiazza.png, id=7615, 501.875pt x 407.5225pt>
 File: pics/Ch9_Conclusion/LCFA_DiPiazza.png Graphic file (type png)
 <use pics/Ch9_Conclusion/LCFA_DiPiazza.png>
 Package pdftex.def Info: pics/Ch9_Conclusion/LCFA_DiPiazza.png  used on input l
 ine 398.
 (pdftex.def)             Requested size: 227.62204pt x 184.83229pt.
-<pics/Ch9_Conclusion/GammaDiag_Overview.pdf, id=7516, 546.17319pt x 148.89899pt
+<pics/Ch9_Conclusion/GammaDiag_Overview.pdf, id=7618, 546.17319pt x 148.89899pt
 >
 File: pics/Ch9_Conclusion/GammaDiag_Overview.pdf Graphic file (type pdf)
 <use pics/Ch9_Conclusion/GammaDiag_Overview.pdf>
 Package pdftex.def Info: pics/Ch9_Conclusion/GammaDiag_Overview.pdf  used on in
 put line 404.
 (pdftex.def)             Requested size: 409.71689pt x 111.69894pt.
- [268 <./pics/Ch9_Conclusion/GammaDets.png>] [269 <./pics/Ch9_Conclusion/LCFACa
+ [272 <./pics/Ch9_Conclusion/GammaDets.png>] [273 <./pics/Ch9_Conclusion/LCFACa
 m_CloseUp.png> <./pics/Ch9_Conclusion/LCFA_DiPiazza.png (PNG copy)>]
-<pics/Ch9_Conclusion/MagneticChicane.png, id=7531, 1927.2pt x 1084.05pt>
+<pics/Ch9_Conclusion/MagneticChicane.png, id=7633, 1927.2pt x 1084.05pt>
 File: pics/Ch9_Conclusion/MagneticChicane.png Graphic file (type png)
 <use pics/Ch9_Conclusion/MagneticChicane.png>
 Package pdftex.def Info: pics/Ch9_Conclusion/MagneticChicane.png  used on input
  line 427.
 (pdftex.def)             Requested size: 409.71689pt x 230.45268pt.
-<pics/Ch9_Conclusion/SPDDiag_Overview.pdf, id=7534, 474.2759pt x 136.83978pt>
+<pics/Ch9_Conclusion/SPDDiag_Overview.pdf, id=7636, 474.2759pt x 136.83978pt>
 File: pics/Ch9_Conclusion/SPDDiag_Overview.pdf Graphic file (type pdf)
 <use pics/Ch9_Conclusion/SPDDiag_Overview.pdf>
 Package pdftex.def Info: pics/Ch9_Conclusion/SPDDiag_Overview.pdf  used on inpu
 t line 434.
 (pdftex.def)             Requested size: 409.71689pt x 118.21861pt.
- [270 <./pics/Ch9_Conclusion/GammaDiag_Overview.pdf, page is rotated 90 degrees
->] [271 <./pics/Ch9_Conclusion/MagneticChicane.png> <./pics/Ch9_Conclusion/SPDD
+ [274 <./pics/Ch9_Conclusion/GammaDiag_Overview.pdf, page is rotated 90 degrees
+>] [275 <./pics/Ch9_Conclusion/MagneticChicane.png> <./pics/Ch9_Conclusion/SPDD
 iag_Overview.pdf, page is rotated 90 degrees>]
-<pics/Ch9_Conclusion/CARRAN_PLACEHOLDER.png, id=7620, 513.92pt x 211.79124pt>
+<pics/Ch9_Conclusion/CARRAN_PLACEHOLDER.png, id=7720, 513.92pt x 211.79124pt>
 File: pics/Ch9_Conclusion/CARRAN_PLACEHOLDER.png Graphic file (type png)
 <use pics/Ch9_Conclusion/CARRAN_PLACEHOLDER.png>
 Package pdftex.def Info: pics/Ch9_Conclusion/CARRAN_PLACEHOLDER.png  used on in
 put line 529.
 (pdftex.def)             Requested size: 455.24408pt x 187.6146pt.
-<pics/Ch9_Conclusion/CARRAN_Nmin.png, id=7621, 1407.2575pt x 1003.75pt>
+<pics/Ch9_Conclusion/CARRAN_Nmin.png, id=7721, 1407.2575pt x 1003.75pt>
 File: pics/Ch9_Conclusion/CARRAN_Nmin.png Graphic file (type png)
 <use pics/Ch9_Conclusion/CARRAN_Nmin.png>
 Package pdftex.def Info: pics/Ch9_Conclusion/CARRAN_Nmin.png  used on input lin
 e 531.
 (pdftex.def)             Requested size: 227.62204pt x 162.3493pt.
-<pics/Ch9_Conclusion/CARRAN_SingleShotConfidence.png, id=7622, 1406.25375pt x 1
+<pics/Ch9_Conclusion/CARRAN_SingleShotConfidence.png, id=7722, 1406.25375pt x 1
 003.75pt>
 File: pics/Ch9_Conclusion/CARRAN_SingleShotConfidence.png Graphic file (type pn
 g)
@@ -3345,7 +3369,7 @@ g)
 Package pdftex.def Info: pics/Ch9_Conclusion/CARRAN_SingleShotConfidence.png  u
 sed on input line 531.
 (pdftex.def)             Requested size: 227.62204pt x 162.45651pt.
- [272]) [273 <./pics/Ch9_Conclusion/CARRAN_PLACEHOLDER.png> <./pics/Ch9_Conclus
+ [276]) [277 <./pics/Ch9_Conclusion/CARRAN_PLACEHOLDER.png> <./pics/Ch9_Conclus
 ion/CARRAN_Nmin.png (PNG copy)> <./pics/Ch9_Conclusion/CARRAN_SingleShotConfide
 nce.png (PNG copy)>]
 \openout2 = `Appendix/Appendix.aux'.
@@ -3358,56 +3382,56 @@ Overfull \hbox (6.97374pt too wide) in paragraph at lines 28--28
  
  []
 
-[274
+[278
 
 
 
-] [275]
+] [279]
 Overfull \hbox (6.97374pt too wide) in paragraph at lines 90--90
 []\OT1/cmr/bx/n/17.28 Electron in a cylin-dri-cally sym-met-ric elec-tric field
 
  []
 
-<pics/Ch2_Theory/betatron_traj.pdf, id=7665, 581.77347pt x 361.35pt>
+<pics/Ch2_Theory/betatron_traj.pdf, id=7767, 581.77347pt x 361.35pt>
 File: pics/Ch2_Theory/betatron_traj.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/betatron_traj.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/betatron_traj.pdf  used on input line 
 129.
 (pdftex.def)             Requested size: 273.14922pt x 169.66359pt.
-[276
-
-] [277 <./pics/Ch2_Theory/betatron_traj.pdf>]
-Appendix B.
-[278
-
-] [279
-
-]
-
-LaTeX Warning: Marginpar on page 280 moved.
-
 [280
 
-]
-Appendix C.
-[281
-
-]
-Appendix D.
+] [281 <./pics/Ch2_Theory/betatron_traj.pdf>]
+Appendix B.
 [282
 
-] [283]
-Appendix E.
+] [283
+
+]
+
+LaTeX Warning: Marginpar on page 284 moved.
+
 [284
 
 ]
-<pics/Ch2_Theory/Compton_Feyn1.pdf, id=7805, 429.605pt x 294.09875pt>
+Appendix C.
+[285
+
+]
+Appendix D.
+[286
+
+] [287]
+Appendix E.
+[288
+
+]
+<pics/Ch2_Theory/Compton_Feyn1.pdf, id=7903, 429.605pt x 294.09875pt>
 File: pics/Ch2_Theory/Compton_Feyn1.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Compton_Feyn1.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/Compton_Feyn1.pdf  used on input line 
 415.
 (pdftex.def)             Requested size: 182.09485pt x 124.66046pt.
-<pics/Ch2_Theory/Compton_Feyn2.pdf, id=7806, 429.605pt x 294.09875pt>
+<pics/Ch2_Theory/Compton_Feyn2.pdf, id=7904, 429.605pt x 294.09875pt>
 File: pics/Ch2_Theory/Compton_Feyn2.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/Compton_Feyn2.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/Compton_Feyn2.pdf  used on input line 
@@ -3417,180 +3441,180 @@ Package pdftex.def Info: pics/Ch2_Theory/Compton_Feyn2.pdf  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[285] [286 <./pics/Ch2_Theory/Compton_Feyn1.pdf> <./pics/Ch2_Theory/Compton_Fey
-n2.pdf>] [287] [288]
+[289] [290 <./pics/Ch2_Theory/Compton_Feyn1.pdf> <./pics/Ch2_Theory/Compton_Fey
+n2.pdf>] [291] [292]
 Appendix F.
-[289
+[293
 
 ]
 Appendix G.
-[290
+[294
 
-] [291]
+] [295]
 Appendix H.
-[292
+[296
 
-] [293] [294
+] [297] [298
 
 ]
 Appendix I.
-) [295
+) [299
 
 ] (./Thesis_Gerstmayr.bbl (./Thesis_Gerstmayr.brf)
 \tf@brf=\write9
 \openout9 = `Thesis_Gerstmayr.brf'.
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 17--17
+Underfull \hbox (badness 1895) in paragraph at lines 40--40
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevA . 98 . 012134$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
-[296
+[300
 
 
 
-] [297]
-Underfull \hbox (badness 1895) in paragraph at lines 139--139
+] [301]
+Underfull \hbox (badness 1895) in paragraph at lines 158--158
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevLett . 28 . 455$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
-[298]
-Underfull \hbox (badness 3590) in paragraph at lines 206--206
+[302]
+Underfull \hbox (badness 3590) in paragraph at lines 219--219
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevX . 2 . 041004$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 221--221
+Underfull \hbox (badness 1895) in paragraph at lines 234--234
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevE . 84 . 056605$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 235--235
+Underfull \hbox (badness 1895) in paragraph at lines 248--248
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevE . 84 . 056605$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
-[299] [300] [301]
-Underfull \hbox (badness 1796) in paragraph at lines 457--457
+[303] [304] [305]
+Underfull \hbox (badness 1796) in paragraph at lines 470--470
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 http : / / www . nature . com /
  nature / journal / v431 / n7008 / abs / nature02963 .
  []
 
-[302]
-Underfull \hbox (badness 1895) in paragraph at lines 495--495
+[306]
+Underfull \hbox (badness 1895) in paragraph at lines 508--508
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 http : / / www . nature . com /
  doifinder / 10 . 1038 / nature16525$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
 
-Underfull \hbox (badness 3590) in paragraph at lines 511--511
+Underfull \hbox (badness 3590) in paragraph at lines 524--524
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 http : / / link . aps . org / d
 oi / 10 . 1103 / RevModPhys . 81 . 1229$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
-[303]
-Underfull \hbox (badness 3590) in paragraph at lines 582--582
+[307]
+Underfull \hbox (badness 3590) in paragraph at lines 595--595
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevX . 9 . 031044$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
-[304]
-Underfull \hbox (badness 2591) in paragraph at lines 658--658
+[308]
+Underfull \hbox (badness 2591) in paragraph at lines 671--671
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / www . clf . stfc . 
 ac . uk / Pages / The-[]Astra-[]Gemini-[]Facility . aspx$[][]
  []
 
-[305] [306]
-Underfull \hbox (badness 10000) in paragraph at lines 796--796
+[309] [310]
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 http : / / linkinghub . elsevie
 r . com / retrieve / pii / S0168900213014538$[][]
  []
 
-[307]
-Underfull \hbox (badness 10000) in paragraph at lines 871--871
+[311] [312]
+Underfull \hbox (badness 10000) in paragraph at lines 884--884
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / www . crystals . sa
 int-[]gobain . com / sites / imdf . crystals .
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 871--871
+Underfull \hbox (badness 2197) in paragraph at lines 884--884
 \OT1/cmtt/m/n/12 com / files / documents / csitl-[]and-[]na-[]material-[]data-[
 ]sheet . pdf$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
-[308]
-Underfull \hbox (badness 10000) in paragraph at lines 947--947
+[313]
+Underfull \hbox (badness 10000) in paragraph at lines 960--960
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 http : / / iopscience . iop . o
 rg / article / 10 . 1088 / 1742-[]6596 / 583 / 1 /
  []
 
-[309]
-Underfull \hbox (badness 10000) in paragraph at lines 978--978
+
+Underfull \hbox (badness 10000) in paragraph at lines 991--991
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 http : / / www . dupont . co . 
 uk / content / dam / dupont /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 978--978
+Underfull \hbox (badness 10000) in paragraph at lines 991--991
 \OT1/cmtt/m/n/12 products-[]and-[]services / fabrics-[]fibers-[]and-[]nonwovens
  / fibers / documents /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+[314]
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1018
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevAccelBeams . 20 . 051301$[][]
  []
 
-[310] [311] [312] [313]
-Underfull \hbox (badness 10000) in paragraph at lines 1222--1222
+[315] [316] [317]
+Underfull \hbox (badness 10000) in paragraph at lines 1250--1250
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevAccelBeams . 19 . 094701$[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1228
+Underfull \hbox (badness 10000) in paragraph at lines 1256--1256
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / www . clf . stfc . 
 ac . uk / Pages / EPAC-[]introduction-[]page . aspx$[][]
  []
 
-[314]
-Underfull \hbox (badness 1895) in paragraph at lines 1297--1297
+[318]
+Underfull \hbox (badness 1895) in paragraph at lines 1325--1325
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevA . 96 . 022128$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 1312--1312
+Underfull \hbox (badness 1895) in paragraph at lines 1340--1340
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevA . 94 . 062102$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
-[315] [316]
-Underfull \hbox (badness 5161) in paragraph at lines 1425--1425
+[319] [320]
+Underfull \hbox (badness 5161) in paragraph at lines 1453--1453
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / journals . aps . or
 g / prab / pdf / 10 . 1103 / PhysRevSTAB . 16 . 011301$[][]
  []
 
-[317] [318] [319] [320] [321]
-Underfull \hbox (badness 1895) in paragraph at lines 1790--1790
+[321] [322] [323] [324] [325]
+Underfull \hbox (badness 1895) in paragraph at lines 1818--1818
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / link . aps . org / 
 doi / 10 . 1103 / PhysRevA . 96 . 043407$[][]  \OT1/cmr/m/n/12 (+20) (Cited on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1798--1798
+Underfull \hbox (badness 10000) in paragraph at lines 1826--1826
 \OT1/cmr/m/n/12 (+20) URL [][]$\OT1/cmtt/m/n/12 https : / / journals . aps . or
 g / pra / pdf / 10 . 1103 / PhysRevA . 98 . 023417$[][]
  []
 
-) 
+[326]) 
 AED: lastpage setting LastPage
-[322]
+[327]
 
 Package nag Warning: 5 complaints in total.
 
@@ -3604,51 +3628,52 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
 Package rerunfilecheck Info: File `Thesis_Gerstmayr.out' has not changed.
-(rerunfilecheck)             Checksum: E84452FDA656F15597C0590E72458966;12305.
+(rerunfilecheck)             Checksum: 470031897AEC6479CCBC461BE7642D64;12417.
 Package rerunfilecheck Info: File `Thesis_Gerstmayr.brf' has not changed.
-(rerunfilecheck)             Checksum: 98BBFF5EE0D0D6A6E984601F6AE768F0;48132.
+(rerunfilecheck)             Checksum: 955BB8854BEEE12A443AB70F4AC3D2CD;48778.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
  ) 
 Here is how much of TeX's memory you used:
- 41470 strings out of 492639
- 841712 string characters out of 6129301
- 925946 words of memory out of 5000000
- 42815 multiletter control sequences out of 15000+600000
+ 41566 strings out of 492639
+ 844246 string characters out of 6129301
+ 924508 words of memory out of 5000000
+ 42890 multiletter control sequences out of 15000+600000
  561861 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,20n,82p,3099b,1959s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Thesis_Gerstmayr.pdf (322 pages, 79163684 bytes).
+ 62i,20n,82p,3099b,2013s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regul
+ar.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.
+pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Thesis_Gerstmayr.pdf (327 pages, 82064868 bytes).
 PDF statistics:
- 9278 PDF objects out of 10688 (max. 8388607)
- 6793 compressed objects within 68 object streams
- 1461 named destinations out of 1728 (max. 500000)
- 29928 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 9407 PDF objects out of 10688 (max. 8388607)
+ 6894 compressed objects within 69 object streams
+ 1477 named destinations out of 1728 (max. 500000)
+ 29961 words of extra memory for PDF output out of 35830 (max. 10000000)
 

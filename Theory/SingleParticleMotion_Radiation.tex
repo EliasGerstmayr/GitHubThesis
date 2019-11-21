@@ -529,7 +529,7 @@ where the contribution $(\gamma \theta)^2$ leads to a fall-off of the photon ene
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{ICS_Divergence_ElecEnergy.pdf}\includegraphics[width=.5\columnwidth]{ICS_Redshift_a0.pdf}
-\caption{Energy as a function of the observation angle $\theta$ (left) and decrease in the photon energy (redshifting) as a function of $a_0$ (right).}
+\caption[Angular energy distribution as a function of electron energy and redshifting of radiation as a function of $a_0$.]{Left: Energy of the emitted emitted radiation relative to the peak energy, $E_0$, as a function of the observation angle $\theta$ for different electron energies (legend). Right: Decrease in the peak photon energy (redshifting) relative to the peak photon energy in the limit $a_0 \rightarrow 0$ as a function of $a_0$ (right).}
 \label{Theory:Figs:ICS:Divergence_and_Redshift}
 \end{figure}
 
@@ -541,7 +541,7 @@ The equation also shows that higher $a_0$ leads for a fixed harmonic $n$ to a re
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{ICS_dWdx_xa01.pdf}\includegraphics[width=.5\columnwidth]{ICS_dWdx_xa010.pdf}
-\caption{Klein-Nishina and higher orders at $a_0$ for circular polarisation. Adapted/reproduced from Tom Thesis REF}
+\caption[Differential emission rates for (nonlinear) Compton scattering at different intensities.]{Left: Differential emission rates for Compton scattering (circular polarisation) at an intensity of $a_0 = 1$ (blue) and in the linear limit of $a_0 \rightarrow 0$ (orange) as a function of the energy transferred from the electron to the emitted photon. Right: Energy times differential emission rates for Compton scattering (circular polarisation) at increasing intensities from $a_0 = 1$ (blue), $2$ (orange) to $5$ (green) as a function of the energy transferred from the electron to the emitted photon. The spectral shape smooths out with increasing $a_0$ and resembles a synchrotron spectrum. Both axes are logarithmic. The plots are adapted from \cite{BlackburnThesis}.}
 \label{Theory:Figs:NLICS_diffSigma}
 \end{figure}
 
@@ -553,7 +553,7 @@ where we have to evaluate the sum of $n$ differential cross sections to reproduc
 
 Figure \ref{Theory:Figs:NLICS_diffSigma} shows the emission rate, $\dif W/\dif x$ as a function of the transferred energy for two cases. First, for the limit of $a_0 \rightarrow 0$ (orange), which corresponds to linear Compton scattering, i.e. $n = 1$, and the result from the Klein-Nishina equation. The spectrum rises up to the Compton edge (dashed line) where it sharply falls off. The blue line shows the emission rates evaluated for $a_0 = 1$: the distinct Compton edge is down-shifted to about half of its original energy. On the other hand, higher harmonics, up to $n = 4$, are emerging and are also down-shifted, with a maximum energy of about twice the Compton edge for $a_0 = 0$.
 
-Even for a moderate intensity of $a_0 = 1$ we already had to evaluate the emission rates of $n=4$ harmonics to reproduce the tail of the spectrum accurately, although the most significant contribution is still the red-shifted first order. The highest significant order scales as $a^3_0$ (REF\addref), such that the number of additional harmonics and related emission rates that have to be evaluated increases rapidly, e.g. $n = 1000$ for $a_0 = 10$. As a result, this approach becomes infeasible relatively quickly. As an alternative we can approximate the emission spectrum by the \textit{quantum synchrotron function}, which is valid within XXX limit (see Appendix \ref{Appendix:Sec:QuantumSynchrotron}). Figure \ref{Theory:Figs:NLICS_diffSigma} (right) shows the emission rate (times energy) for increasing intensities $a_0$. Even for these moderate intensities the high-energy component and relatively quickly also lower energy band structures disappear and give rise to a smooth synchrotron-like emission spectrum, which indicates that this approach is valid.
+Even for a moderate intensity of $a_0 = 1$ we already had to evaluate the emission rates of $n=4$ harmonics to reproduce the tail of the spectrum accurately, although the most significant contribution is still the red-shifted first order. The highest significant order scales as $a^3_0$ (REF\addref), such that the number of additional harmonics and related emission rates that have to be evaluated increases rapidly, e.g. $n = 1000$ for $a_0 = 10$. As a result, this approach becomes infeasible relatively quickly. As an alternative we can approximate the emission spectrum by the \textit{quantum synchrotron function}, which is valid within XXX\addnum{} limit (see Appendix \ref{Appendix:Sec:QuantumSynchrotron}). Figure \ref{Theory:Figs:NLICS_diffSigma} (right) shows the emission rate (times energy) for increasing intensities $a_0$. Even for these moderate intensities the high-energy component and relatively quickly also lower energy band structures disappear and give rise to a smooth synchrotron-like emission spectrum, which indicates that this approach is valid.
 
 Whilst the highest significant order increases at $a^3_0$, the energy of the emitted radiation is red-shifted at $E_f \propto 1/a^2_0$ for $a_0 \gg 1$, such that the net energy gain increases linearly with $a_0$.
 The emitted energy in the linear case was $\propto \gamma^2 a^2_0$, whereas the total emission power slows down for large $a_0$ to $\propto a^{2/3}_0$.
@@ -641,7 +641,27 @@ Also $\chi$, which is equivalent for photon which does not have a rest frame:
 \chi = \frac{\hbar \omega E}{E_S 2 m_e c^2}
 \end{equation}
 
-\EliasComm{Add regimes from Tom's review here. Add plot.}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\columnwidth]{RROverview_Blackburn.png}
+\caption{Overview of radiation reaction regimes and experiments. From \cite{Blackburn2019_RRReview}.}
+\end{figure}
+
+\subsubsection{Local constant field approximation}
+
+An important assumption is that the electric field remains constant over the formation time of the photon. This is referred to as LCFA.
+
+Formation length is short, so intensity is large.
+
+Particle has to be ultrarelativistic and background is weak compared to critical field of QED.
+
+\begin{equation}
+\frac{l_f}{C} \approx \frac{1}{2 \pi a_0},
+\end{equation}
+$C = 2\pi r'$
+\begin{equation}
+r' = \frac{a_0}{\gamma_0 (1+\beta_0)\omega_0}
+\end{equation}
 
 \subsection{Classical Radiation Reaction}
 
@@ -724,7 +744,6 @@ Whilst this description is free from runaway solutions unlike the LAD equation i
 
 \subsection{Quantum Radiation Reaction}
 
-\EliasComm{Structuring: either QRR in general and then signatures, or maybe explain QRR generally and then have one section just one signatures (relying on Chris Ridger's bits).}
 At high energies and field strengths, the quantum nonlinearity parameter approaches unity (electric field in rest frame approaches critical field of QED), and we expect quantum effects to dominate such that the assumptions under which the classical treatments were derived are not valid any more. The deviations or corrections of the classical model are fundamentally two-fold:
 
 First, the emission spectrum of the classical model overestimates the emission power and allows more emission than the original particle energy. This is fixed by replacing the classical synchrotron function by the quantum synchrotron function. As a result, the classical radiation reaction force is modified by the same factor, the Gaunt factor, which is the ratio of the quantum and classical synchrotron emission power $g(\eta) = P_q/P_{cl}$:
@@ -734,7 +753,7 @@ First, the emission spectrum of the classical model overestimates the emission p
 
 Second, the stochasticity of the emission events has to be considered. The emission is not continuous but stochastic and the finite emission lifetime can result in straggling (hardening of the spectrum). Quantum radiation reaction is then the overall recoil experienced by an electron undergoing multiple simultaneous incoherent photon emission events. Straggling (enter field region that are forbidden due to finite lifetime and in field with spatiotemporal structure). Also can occur that no interaction (quenching of radiation losses).
 
-\EliasComm{Add some bits here about the time scsale of the laser. Tom compares the duration of the laser field with the time interval.}
+\EliasComm{Add some bits here about the time scale of the laser. Tom compares the duration of the laser field with the time interval.}
 
 \begin{equation}
 \omega_0 \Delta t = 
@@ -756,23 +775,23 @@ Alternatively, one can simply treat the entire process classically but modify th
 
 
 
-\subsubsection{Signatures of radiation reaction}
+\subsection{Signatures of radiation reaction in the electron spectrum}
 
 
 
-Momentum
+\subsubsection{Momentum}
 
 Classical
 \begin{equation}
-\left( \frac{\dif \langle p \rangle}{\dif t}\right)_{cl} = - \frac{\langle P_{cl} \hat{p}}{c}
+\left( \frac{\dif \langle p \rangle}{\dif t}\right)_{cl} = - \frac{\langle P_{cl} \hat{p}\rangle}{c}
 \end{equation}
 Modified
 \begin{equation}
-\left( \frac{\dif \langle p \rangle}{\dif t}\right)_{mod cl}- \frac{\langle g P_{cl} \hat{p}}{c}
+\left( \frac{\dif \langle p \rangle}{\dif t}\right)_{mod cl}- \frac{\langle g P_{cl} \hat{p}\rangle}{c}
 \end{equation}
 
 
-Variance:
+\subsubsection{Variance}
 
 \begin{equation}
 \left(\frac{\dif \sigma^2}{\dif t}\right)_{st} =  - 2 \frac{\langle \Delta \gamma g P_{cl}\rangle}{m_e c^2} + \frac{\langle S \rangle}{m^2_e c^4}
@@ -794,37 +813,6 @@ For Gaussian:
 
 Capture quantum characteristics by considering evolution of the variance \cite{Ridgers2017_QRR}
 
-\begin{equation}
-S(\eta) = \frac{55 \alpha_f c}{24 \sqrt{3} \bar{\lambda}_c} m^2_e c^4 \eta^4 g_2(\eta),
-\end{equation}
-with $g_2(\eta)$
-\begin{equation}
-g_2(\eta) = \frac{\int_0^{\eta/2} \chi F(\eta, \chi) \mathrm{d}\chi}{\int_0 \chi F_{cl}\left(\frac{4\chi}{3\eta^2}\right)} = \frac{144}{55 \pi \eta^4} \int_0^{\eta/2}\chi F(\eta,\chi) \mathrm{d}\chi. 
-\end{equation}
-
-An accurate fit for $g_2$ is parametrised as follows:
-\begin{equation}
-g_2(\eta) \approx [1+ (1+4.528\eta)\ln(1+12.29\eta)+4.632\eta^2]^{-7/6}
-\end{equation}
-The limits are $g_2 \approx 1$ for $\eta \ll 1$, and $g_2 \approx 0.167\eta^{-7/3}$ for $\eta \gg 1$.
-
-
-
-\subsubsection{Local constant field approximation}
-
-An important assumption is that the electric field remains constant over the formation time of the photon. This is referred to as LCFA.
-
-Formation length is short, so intensity is large.
-
-Particle has to be ultrarelativistic and background is weak compared to critical field of QED.
-
-\begin{equation}
-\frac{l_f}{C} \approx \frac{1}{2 \pi a_0},
-\end{equation}
-$C = 2\pi r'$
-\begin{equation}
-r' = \frac{a_0}{\gamma_0 (1+\beta_0)\omega_0}
-\end{equation}
 
 \section{Pair Production and Annihilation}
 
