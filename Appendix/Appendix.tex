@@ -61,7 +61,7 @@ The equation then takes the shape of a harmonic oscillator
 \ddot{r} = - \frac{e^2 n_0}{2\epsilon_0 m_e \gamma} r = - \omega_\beta^2 r,
 \end{equation}
 
-with a frequency we will call the betatron frequency, $\omega_\beta$, which is related to the plasma frequency, $\omega_p$, by $\omega_\beta = \omega_p/\sqrt{2\gamma}$. The plasma frequency will be derived explicitly in Section \ref{Chap:Theory:Sec:PlasmaFreq}.
+with a frequency we will call the betatron frequency, $\omega_\beta$, which is related to the plasma frequency, $\omega_p$, by $\omega_\beta = \omega_p/\sqrt{2\gamma}$. The plasma frequency is derived explicitly in Section \ref{Chap:Theory:Sec:PlasmaFreq}.
 As this is the standard harmonic oscillator equation, it follows a solution of shape
 \begin{equation}
 r(t) = A \cos (\omega_\beta t + \varphi),
@@ -99,7 +99,7 @@ First, as before
 \frac{d}{dt} (\gamma m_e \dot{r}) = \frac{\partial }{\partial r} L = -\frac{e^2 n_0}{2\epsilon_0} r,
 \label{Theory:Eq:EoM_Rad_Ax_R}
 \end{equation}
-and, second, the z-component
+and, second, the $z$-component
 \begin{equation}
 \frac{d}{dt} (\gamma m_e \dot{z}) = \frac{\partial }{\partial z} L = e E_z = const.
 \label{Theory:Eq:EoM_Rad_Ax_Z}
@@ -166,7 +166,7 @@ $\omega_c$ is the characteristic or \textit{critical frequency} given by
 \begin{equation}
 \omega_c = \frac{3}{2} \gamma^3 \frac{c}{\rho},
 \end{equation}
-where $\rho$ is the bending radius.
+where $\rho$ is the bending radius, e.g. the Larmor radius.
 The doubly differential spectral intensity reads
 \begin{equation}
 \frac{d^2 I}{dEd\Omega} = \frac{3e^2}{16\pi^3 \hbar c \epsilon_0} \gamma^2 \frac{E^2}{E_c^2} \left(1+\gamma^2 \theta^2\right)^2 [K_{2/3}^2(\psi) + \frac{\gamma^2 \theta^2}{1+\gamma^2 \theta^2} K_{1/3}^2 (\psi)],
@@ -257,7 +257,7 @@ In LWFA betatron radiation typically reaches the soft X-ray regime of a few to t
 \chapter{Radiation Length}
 \label{Appendix:Sec:RadiationLength}
 
-The radiation length, $X_0$, is a material-specific quantity that indicates how much energy a high-energy particle converts into radiation and secondary particles. The energy of a particle passing through a material of thickness $x$ and radiation length $X_0$ loses energy at a rate \cite{Jackson}:
+The radiation length, $X_0$, is a material-specific quantity that indicates how much energy a high-energy particle converts into radiation and secondary particles when passing through a material. The energy of a particle passing through a material of thickness $x$ and radiation length $X_0$ loses energy at a rate \cite{Jackson}:
 \begin{equation}
 \frac{\dif E}{\dif x} = -\frac{E}{X_0},
 \end{equation}
@@ -494,7 +494,7 @@ where the first part in the bracket corresponds to a helicity-conserving interac
 \subsection{Nonlinear Compton scattering cross section}
 \label{Appendix:Sec:NLCompton}
 
-The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation \cite{Ritus1985_QRR,BlackburnThesis}. The scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given by
+The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation: the scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given (in natural units) by \cite{Ritus1985_QRR,BlackburnThesis}
 \begin{equation}
 \frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 E}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
 \end{equation}
@@ -502,10 +502,10 @@ and for linear polarisation by
 \begin{equation}
 \frac{\dif W_n}{\dif x} = \frac{2 \alpha m^2}{\pi E}\int^{\pi/2}_0 \left[-A^2_0 + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (A^2_1 - A_0 A_2)\right]\dif \varphi.
 \end{equation}
-The frequency of the incoming photons is $\omega$ and the scattered photon carries an energy $\omega' = xE$, i.e $x$ is the fraction of energy the photon carries away. $a_0$ is the normalised vector potential of the laser pulse.
+The energy of the incoming photons is $\omega$ and the scattered photon carries an energy $\omega' = xE$, i.e $x$ is the fraction of energy the photon carries away. $a_0$ is the normalised vector potential of the laser pulse.
 $J_n$ is shorthand for $J_n(z)$, and $A_i = A_i(n,a,b)$, with
 \begin{align}
-z &= \frac{2 a_0}{\sqrt{1+a^2_0}}\frac{\sqrt{x(nu - (1+nu)x)}}{u(1-x)},\\
+z &= \frac{2 a_0}{\sqrt{1+a^2_0}}\frac{\sqrt{x[nu - (1+nu)x]}}{u(1-x)},\\
 u &= \frac{2k \cdot q}{q^2} = \frac{4 E \omega}{m^2 (1+a^2_0)}.
 \end{align}
 The function $A_i$ and its arguments are defined as 
@@ -604,7 +604,7 @@ with $\nu = (kl)^2/4(kq)(kq')$, $\nu_n = n/n_0$, $n_0 = 2m^2_\ast/(kl)$ and Bess
 z = 4m^2_e \frac{\eta (1+ \eta^2)^{1/2}}{(kl)}\left[\frac{\nu}{\nu_n}\left(1- \frac{\nu}{\nu_n}\right)\right]^{1/2}.
 \end{equation}
 
-Alternatively, in the high-field limit the rates can be related to the (quantum) synchrotron function, such that the differential probability rate is given by \cite{BlackburnThesis}
+Alternatively, in the high-field limit the rates can be related to the (quantum) synchrotron function (Sec. \ref{Appendix:Sec:QuantumSynchrotron}), such that the differential probability rate is given by \cite{BlackburnThesis}
 \begin{equation}
 \boxed{\frac{\dif W_{\pm}}{\dif \eta_+} = \frac{\alpha}{\tau_C} \frac{mc^2}{\hbar \omega} \chi \frac{\dif T(\chi)}{\dif \eta_+},}
 \label{Theory:Eqns:NLBW:diffW}

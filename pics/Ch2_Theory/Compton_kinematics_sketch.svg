@@ -9,15 +9,37 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="39.656528mm"
-   height="27.781263mm"
-   viewBox="0 0 39.656528 27.781264"
+   width="64.420372mm"
+   height="27.860914mm"
+   viewBox="0 0 64.420371 27.860915"
    version="1.1"
    id="svg4717"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="Compton_kinematics_sketch.svg">
   <defs
      id="defs4711">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect956"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect954"
+       is_visible="true"
+       steps="1"
+       threshold="0.0001"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false"
+       simplifyindividualpaths="false"
+       simplifyJustCoalesce="false" />
     <marker
        inkscape:stockid="Arrow2Lend"
        orient="auto"
@@ -273,8 +295,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="6.6441666"
-     inkscape:cx="14.923281"
-     inkscape:cy="69.635638"
+     inkscape:cx="101.06948"
+     inkscape:cy="63.916365"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -299,6 +321,18 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.52999997, 0.26499999;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 20.030413,0.105045 c 0,9.2519567 0,18.503913 0,27.75587"
+       id="path952"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect954;#path-effect956"
+       inkscape:original-d="m 20.030413,0.105045 v 27.75587" />
+  </g>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -1153,7 +1187,7 @@
          id="tspan899"
          x="104.26729"
          y="101.97958"
-         style="stroke-width:0.26458332px"></tspan></text>
+         style="stroke-width:0.26458332px" /></text>
     <path
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.16500001;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path903"
@@ -1203,44 +1237,72 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="70.936935"
-       y="76.532303"
+       x="70.737823"
+       y="76.27346"
        id="text1287"><tspan
          sodipodi:role="line"
          id="tspan1285"
-         x="70.936935"
-         y="76.532303"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;stroke-width:0.26458332px">E<tspan
+         x="70.737823"
+         y="76.27346"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.32833338px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;stroke-width:0.26458332px">E<tspan
    style="font-size:64.99999762%;baseline-shift:sub"
-   id="tspan1295">γ,i</tspan>=hf</tspan></text>
+   id="tspan934">γ,i</tspan>=hf</tspan></text>
     <text
        id="text1301"
-       y="76.532303"
-       x="88.169067"
+       y="76.27346"
+       x="111.07741"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;stroke-width:0.26458332px"
-         y="76.532303"
-         x="88.169067"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.32833338px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;stroke-width:0.26458332px"
+         y="76.27346"
+         x="111.07741"
          id="tspan1299"
          sodipodi:role="line">E<tspan
-   id="tspan1297"
-   style="font-size:64.99999762%;baseline-shift:sub">γ,f</tspan>=hf'</tspan></text>
+   style="font-size:64.99999762%;baseline-shift:sub"
+   id="tspan942">γ,f</tspan>=hf'</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="82.724213"
-       y="93.456589"
+       x="70.737823"
+       y="92.779617"
        id="text1321"><tspan
          sodipodi:role="line"
          id="tspan1323"
-         x="82.724213"
-         y="93.456589">E<tspan
+         x="70.737823"
+         y="92.779617"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.32833338px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">E<tspan
    style="font-size:64.99999762%;baseline-shift:sub"
-   id="tspan1325">e,i</tspan>=m<tspan
+   id="tspan946">e,i</tspan>=m<tspan
    style="font-size:64.99999762%;baseline-shift:sub"
-   id="tspan1329">e</tspan>c<tspan
+   id="tspan950">e</tspan>c<tspan
    style="font-size:64.99999762%;baseline-shift:super"
-   id="tspan1327">2</tspan></tspan></text>
+   id="tspan992">2</tspan></tspan></text>
+    <text
+       id="text1002"
+       y="92.779617"
+       x="111.07741"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.32833338px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
+         y="92.779617"
+         x="111.07741"
+         id="tspan1000"
+         sodipodi:role="line">E<tspan
+   style="font-size:64.99999762%;baseline-shift:super"
+   id="tspan1004">2</tspan><tspan
+   id="tspan994"
+   style="font-size:64.99999762%;baseline-shift:sub">e,f</tspan>=(pc<tspan
+   style="font-size:64.99999762%;baseline-shift:super"
+   id="tspan1010">2</tspan>)<tspan
+   style="font-size:64.99999762%;baseline-shift:super"
+   id="tspan1006">2</tspan>+(m<tspan
+   id="tspan996"
+   style="font-size:64.99999762%;baseline-shift:sub">e</tspan>c2)<tspan
+   style="font-size:64.99999762%;baseline-shift:super"
+   id="tspan1008">2</tspan></tspan></text>
   </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2" />
 </svg>

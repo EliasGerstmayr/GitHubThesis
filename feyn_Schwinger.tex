@@ -1,0 +1,17 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}
+
+
+\begin{document}
+
+\begin{fmffile}{feyngraph}
+{\begin{fmfgraph}(100,100)\fmfkeep{fermion} \fmfleft{i} \fmfright{o} \fmf{phantom}{i,v1} \fmf{phantom}{v2,o} \fmf{double_arrow,left,tension=.3}{v1,v2,v1} \end{fmfgraph}}
+\end{fmffile}
+
+
+
+\end{document}

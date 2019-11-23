@@ -1,14 +1,14 @@
 \chapter{Single particle motions and radiation mechanisms}
 \label{Chap:Theory:SingleParticle}
 
-This Chapter lays the theoretical groundwork for the results presented later in this work, by deriving the equations of motion for single charged particles in electromagnetic fields and considering the radiation they emit in the process. It also addresses the fundamental processes of radiation reaction and pair production.
+This Chapter lays the theoretical groundwork for the results presented later in this work, addressing the motion of single charged particles in electromagnetic fields, radiation mechanisms, and discussing the fundamental processes of radiation reaction and pair production.
 
 First, equation of motions of charged single particles in electromagnetic fields are derived. This forms the basis for understanding the properties of electrons accelerated in wakefield accelerators, measuring their energy in magnetic spectrometers and calculating the radiation they emit in interaction with electromagnetic fields.
 
 Subsequently, the production of radiation through two processes is discussed: (relativistic inverse) Compton scattering (ICS) in moderately (linear ICS) and highly intense laser fields (non-linear ICS), which is central to the work presented in Chapters \ref{Chap:linICS} and \ref{Chap:RR15}, and the radiation process of bremsstrahlung which is in particular important for the experiment outlined in Chapter \ref{Chap:BW}.
 
 This leads over to the topic of radiation reaction, the knock-back force a charged particle experiences when emitting a photon. This can, for instance, be investigated in relativistic inverse Compton scattering. Whilst radiation reaction is a very fundamental phenomenon there is so far no universally accepted and practicable description for a wide parameter space. In this section different proposed descriptions of radiation reaction are discussed, starting with the in classical electrodynamics self-consistent Lorentz-Abraham-Dirac equation, followed by the classical Landau-Lifschitz equation and leading over to quantum corrections and their implications. 
-Finally, the fundamental QED processes of pair production and annihilation are discussed.
+Finally, the fundamental QED processes of pair annihilation and production through the Breit-Wheeler and Bethe-Heitler process are discussed.
 
 \section{Single particle motion in an electromagnetic field}
 
@@ -28,7 +28,7 @@ Using $\mathbf{A} = \mathbf{A}(\mathbf{r},t)$, $\Phi = \Phi(\mathbf{r},t)$, $\ga
 \label{Theory:Eqns:EoMLorentzRaw}
 \end{equation}
 where $\mathbf{p} = \gamma m \mathbf{v}$ is the relativistic momentum.
-Now using $\frac{\mathrm{d}}{\mathrm{d}t} = \frac{\partial}{\partial t} + \mathbf{v} \cdot \nabla$ and the vector identity $\nabla \left(\mathbf{v}\cdot\mathbf{A}\right) = (\mathbf{v}\cdot\nabla)\mathbf{A} + \mathbf{v}\times(\nabla\times\mathbf{A})$ this becomes:
+Now using $\frac{\mathrm{d}}{\mathrm{d}t} = \frac{\partial}{\partial t} + \mathbf{v} \cdot \nabla$ and the vector identity $\nabla \left(\mathbf{v}\cdot\mathbf{A}\right) = (\mathbf{v}\cdot\nabla)\mathbf{A} + \mathbf{v}\times(\nabla\times\mathbf{A})$ this reads:
 \begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} = q\left(\mathbf{v} \times \nabla \times \mathbf{A}-\frac{\partial \mathbf{A}}{\partial t} - \nabla \Phi\right).
 \label{Theory:Eqns:EoMLorentz}
@@ -54,7 +54,7 @@ Using the previously derived equation for the Lorentz force we can now consider 
 \frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t} = q \mathbf{E}.
 \end{equation}
 
-If we choose the coordinate system such that  $\mathbf{E} =  (E,0,0)^t = E e_x$, we see that the momentum of the electron is unchanged in the other two directions, $\mathrm{d}p_x/\mathrm{d}t = \mathrm{d}p_y/\mathrm{d}t = 0$. In x-direction the electron however feels a constant force $qE$ accelerating it at a linear energy gain.
+If we choose the coordinate system such that  $\mathbf{E} =  (E,0,0)^t = E \mathbf{e}_x$, the electron feels a constant force $qE$ accelerating it in $x$ at a linear energy gain. Its momentum, however, is unchanged in the other two directions, $\mathrm{d}p_x/\mathrm{d}t = \mathrm{d}p_y/\mathrm{d}t = 0$. 
 
 \subsection{Electron motion in a homogeneous magnetic field}
 
@@ -92,7 +92,7 @@ p_x(t) &= p_\perp \cos(\omega t)\\
 p_y(t) &= - p_\perp \sin(\omega t) 
 \end{align}
 \end{subequations}
-The solution for the z-motion is trivial with $p_z = p_{z,0}$.
+The solution for the $z$-motion is trivial with $p_z = p_{z,0}$.
 Expressed in terms of the trajectories with initial conditions $x(0) = 0, z(0) = 0, y(0) = p_\perp/qB = r_{L}$, this reads
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
@@ -102,18 +102,19 @@ z(t) &= \frac{p_{z,0}}{\gamma m} t
 \end{empheq}
 \end{subequations}
 
-The radius of the circular motion of the electron is called the Larmor radius $r_L$. It depends on the total momentum in the x-y plane and the magnetic field strength $B$: 
+The radius of the circular motion of the electron is called the Larmor radius $r_L$. It depends on the total momentum in the $x$-$y$ plane and the magnetic field strength $B$: 
 \begin{equation}
 \boxed{r_{L} = |\mathbf{p}_\perp|/eB,}
 \end{equation}
 where $e$ is the charge of the electron and $\mathbf{p}_\perp$ is the component of the momentum vector $\mathbf{p}$ that is perpendicular to the field component of the magnetic field.
 \vspace{\baselineskip}
 
-The motion of the electron consists of two decoupled motions: one at the constant, initial velocity parallel to the magnetic field vector in $z$, the second motion is a circular motion in the x-y plane. This is called a cyclotron motion. For now we will ignore the dissipation of energy in form of radiation due to the acceleration of the electron and accept the result that the Lorentz force conserves the total momentum and energy of the particle in this case.
+The motion of the electron consists of two decoupled motions: one at the constant, initial velocity parallel to the magnetic field vector in $z$, the second motion is a circular motion in the $x$-$y$ plane. This is called a cyclotron motion. For now we will ignore the dissipation of energy in form of radiation due to the acceleration of the electron and accept the result that the Lorentz force conserves the total momentum and energy of the particle in this case.
 
 \subsection{Electron motion in a monochromatic plane EM wave}
 \label{Theory:Sec:SingleParticle:FigOfEight}
 
+We will now consider the case of an electron in a monochromatic plane wave.
 Writing the equation of motion in terms of the potentials $\mathbf{A}$ and $\Phi$ as in Equation \eqref{Theory:Eqns:EoMLorentz} on page \pageref{Theory:Eqns:EoMLorentz} gives \cite{ThomasThesis}:
 
 \begin{equation}
@@ -217,7 +218,7 @@ Let us assume a laser field with linear polarisation in $x$, described by the ve
 \begin{equation}
 \mathbf{a} = a_0 \cos(kz - \omega t)\mathbf{e}_x = a_0 \cos(\xi)\mathbf{e}_x,
 \end{equation}
-where $\mathbf{e}_x$ is the unit vector in the x-coordinate, $\xi = kz - \omega t$ the waveframe coordinate and $k = \omega/c$ the wave number. 
+where $\mathbf{e}_x$ is the unit vector in the $x$-coordinate, $\xi = kz - \omega t$ the waveframe coordinate and $k = \omega/c$ the wave number. 
 
 \begin{figure}[h]
 \centering
@@ -245,7 +246,7 @@ z(\xi) &= \frac{a^2_0}{4k}\left(\xi + \frac{1}{2}\sin(2\xi)\right),
 \end{align}
 \end{subequations}
 where we chose the initial conditions $x(0)=y(0)=z(0)=0$  and used $\mathrm{d}\xi/\mathrm{d}t = \omega/\gamma$.
-The electron performs a periodic oscillation around the $z$-axis, whilst the motion in the z-axis is composed of a constant drift and another oscillation (see Figure \ref{Theory:Figs:FigureOfEight} (left)). This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame (see Figure \ref{Theory:Figs:FigureOfEight} (right)). For $a_0 \leq 1$ the motion in z is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
+The electron performs a periodic oscillation in the $x$-axis, whilst the motion in the $z$-axis is composed of a constant drift and another oscillation (see Figure \ref{Theory:Figs:FigureOfEight} (left)). This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame (see Figure \ref{Theory:Figs:FigureOfEight} (right)). For $a_0 \leq 1$ the motion in $z$ is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
 
 
 
@@ -305,18 +306,31 @@ In the previous sections we discussed the motion of single particles in electrom
 \item This is in particular important in the high-field regimes as the sum of infinite Feynman diagrams is equivalent to the Volkov states.
 \end{itemize}
 
+
+\begin{figure}
+\centering
+\includegraphics[height=.3\columnwidth]{Aivazis_ComptonScattering_FULL.pdf}
+
+\includegraphics[height=.3\columnwidth]{Aivazis_ComptonScattering2_FULL.pdf}
+
+\includegraphics[height=.3\columnwidth]{feyn_nICS.pdf}
+\caption{Feynman diagram for Volkov state equivalent to infinite series of diagrams}
+\label{Theory:Figs:HighFieldProcess}
+\end{figure}
+
+
 The first radiation sources considered are synchrotron radiation with the special case of undulator and wiggler radiation, where a magnetic field or a series of alternating magnetic fields oscillates the particles to produce radiation. This section is followed by betatron radiation where the magnetic field is replaced by an electric field in the cavity of the wakefield accelerator, sometimes referred to as a plasma wiggler. In both scenarios the electrons perform figure-of-eight motions as outlined in Section XX\addnum{}, and the the emission spectra follow accordingly similar equations where the wiggler parameter, $K$ and $K_\beta$, indicate the properties.
 
 We then investigate Compton scattering and its classical low-limit Thomson scattering, where a photon scatters off an electron at rest. After deriving the cross section and energy spectra we consider the special case of inverse Compton scattering, where the photon scatters from a relativistic electron and the radiation gains a significant amount of energy proportional to the electron energy due to the relativistic Doppler effect. At high field strengths multiple photons can interact in a nonlinear interaction to produce higher harmonic radiation, called nonlinear inverse Compton scattering or relativistic nonlinear Thomson scattering. The trajectories of the electrons in these processes are also described by a figure-of-eight motion as the electrons are now in a laser wiggler, where the wiggler parameter, $K$, is replaced by the normalised vector potential, $a_0$.
 
 Finally, we will introduce the process of bremsstrahlung where electrons interact with the nuclear Coulomb field to produce X-ray and gamma radiation.
-\EliasComm{Maybe move classical and quantum treatment to start of radiation. Including Furry picture, nonlinear effects...}
+
 A review of radiation mechanisms and sources in the context of wakefield accelerators can be found in \cite{Corde2013_Rad} and \cite{Albert2016_APP}.
-\EliasComm{For linear/nonlinear higher order processes: Proper treatment is using dressed states that include the classical background fields exactly. At high Chi parameters the interaction becomes non-perturbative which means the dressed state treatment is not valid anymore. Tree level processes with many vertices also become important. Then radiative corrections become important.}
-\EliasComm{Describe here that in the quantum picture for $n>2$ it becomes increasingly tedious to solve all Feynman diagrams, such that we transition to Volkov states in the Furry picture. This might be a comment at the beginning of Radiation Production and just repeated here in reduced form.}
+A review particularly aimed at high-field interactions \cite{DiPiazza2012_ICS}
+
 \subsection{Compton Scattering}
 
-Compton scattering describes the inelastic scattering of a photon off a charged free or quasi-free particle, typically an electron \cite{Compton1923_Compton,Klein1929_KNEq}. The photon transfers energy to the electron and as a result loses energy. In the low energy limit of the photon energy $\omega \rightarrow 0$ the interaction becomes fully elastic and is called Thomson scattering \cite{Thomson2005_ThomsonScatter}, i.e. Thomson scattering is the low-energy classical limit of Compton scattering.
+\textit{Compton scattering} describes the inelastic scattering of a photon off a charged free or quasi-free particle, typically an electron \cite{Compton1923_Compton,Klein1929_KNEq}. The photon transfers energy to the electron and as a result loses energy. In the low energy limit of the photon energy $\omega \rightarrow 0$ the interaction becomes fully elastic and is called \textit{Thomson scattering} \cite{Thomson2005_ThomsonScatter}, i.e. Thomson scattering is the low-energy classical limit of Compton scattering.
 The interaction can be written as follows:
 \begin{equation}
 \gamma + e^- \longrightarrow \gamma + e^-,
@@ -334,7 +348,7 @@ with the corresponding Feynman diagram shown in Figure \ref{Theory:Fig:ComptonSc
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\columnwidth]{Compton_kinematics_sketch.pdf}
+\includegraphics[width=0.8\columnwidth]{Compton_kinematics_sketch.pdf}
 \caption[Kinematics diagram for Compton scattering.]{Sketch of the kinematics for Compton scattering. A photon of energy $E_{\gamma,i}$ (green) is incident onto an electron at rest (blue), i.e. $E_{e,i} = m_e c^2$, and scatters off it at an angle $\theta$. The electron is scattered at an angle $\phi$. The photon and the electron exchange momentum.}
 \label{Theory:Fig:ComptonScattering:Kinematics}
 \end{figure}
@@ -342,7 +356,7 @@ with the corresponding Feynman diagram shown in Figure \ref{Theory:Fig:ComptonSc
 In the following, we will treat the electron and the incoming photon both as particles and calculate their final momenta based on energy and momentum conservation in a relativistic framework.
 \vspace{\baselineskip}
 
-Assuming the electron has a negligible initial momentum $\mathbf{p}_{e,i} = \mathbf{0}$ as in Compton's original experiment, the total energy hence reduces to the rest energy of the electron $E_{e,i} = m_e c^2$. The subscript $e$ stands for `electron' and $i$ for initial.
+Assuming the electron has a negligible initial momentum $\mathbf{p}_{e,i} = \mathbf{0}$ as in Compton's original experiment \cite{Compton1923_Compton}, the total energy hence reduces to the rest energy of the electron $E_{e,i} = m_e c^2$. The subscript $e$ stands for `electron' and $i$ for `initial'.
 The photon on the other hand has an initial momentum $\mathbf{p}_{\gamma, i}$ and an energy $E_{\gamma, i} = p_{\gamma, i} c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
 Relying on the conservation of energy we can postulate that the sum of energies before and after the interaction have to be equal:
 \begin{align}
@@ -356,14 +370,14 @@ hf - hf' +m_e c^2 &= \sqrt{(p_{e,f} c)^2 + (m_e c^2)^2},\nonumber\\
 where $f'$ is the frequency of the photon after the interaction.
 Similarly, we can use momentum conservation to find an expression for the momentum of the electron after the scattering:
 \begin{align}
-\mathbf{p_{\gamma, i}} &= \mathbf{p_{e, f}} + \mathbf{p_{\gamma, f}}\nonumber\\
-\mathbf{p_{\gamma, i}} - \mathbf{p_{\gamma, f}} &= \mathbf{p_{e, f}}\nonumber\\
-(\mathbf{p_{\gamma, i}} - \mathbf{p_{\gamma, f}})^2 &= (\mathbf{p_{e, f}} )^2\nonumber\\
+\mathbf{p}_{\gamma, i} &= \mathbf{p}_{e, f} + \mathbf{p}_{\gamma, f}\nonumber\\
+\mathbf{p}_{\gamma, i} - \mathbf{p}_{\gamma, f} &= \mathbf{p}_{e, f}\nonumber\\
+(\mathbf{p}_{\gamma, i} - \mathbf{p}_{\gamma, f})^2 &= (\mathbf{p}_{e, f} )^2\nonumber\\
 (p_{\gamma, i}c)^2 + (p_{\gamma, f}c)^2 - 2 p_{\gamma, i}p_{\gamma, f}c^2\cos\theta &= (p_{e, f} c )^2,\nonumber\\
 E_{\gamma, i}^2 + E_{\gamma, f}^2 - 2 E_{\gamma, i} E_{\gamma, f} \cos\theta &= (p_{e, f} c)^2,
 \label{Theory:Eqns:Compton_MomConserve}
 \end{align}
-where $\mathbf{p}$ is a momentum vector and $p$ its corresponding length. $\theta$ is the angle between incoming and outgoing momentum vector of the photon (see Figure \ref{Theory:Fig:ComptonScattering:Kinematics}).
+where $\mathbf{p}$ is a momentum vector and $|\mathbf{p}| = p$ its corresponding length. $\theta$ is the angle between incoming and outgoing momentum vector of the photon (see Figure \ref{Theory:Fig:ComptonScattering:Kinematics}).
 Setting Equations \eqref{Theory:Eqns:Compton_EnergyConserve} and \eqref{Theory:Eqns:Compton_MomConserve} equal we find the familiar equation for the angular dependent change in wavelength of a photon performing Compton scattering with an electron:
 \begin{equation}
 \lambda_{final} - \lambda_{initial} = \frac{h}{m_e c} \left(1 - \cos\theta\right) = \lambda_C \left(1-\cos\theta\right),
@@ -389,7 +403,7 @@ Polar plots of the final photon energies for different initial photon energies a
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{Compton_kinematic.pdf}\includegraphics[width=.5\columnwidth]{Compton_KN_cross.pdf}
-\caption[Polar plot of photon energies and related differential cross section for Compton scattering.]{Left: Polar plot of photon energies after Compton scattering from an electron at rest for different incoming photon energies (legend) for up to $100\keV$ (left, inset) and up to $10\MeV$ (left). The incoming photon travels on the zero degree axis. The energy axis is linear and the numbers show the energy in MeV. Right: Polar plot of the differential cross section in arbitrary units for photon scattering angles calculated using Equation \eqref{Theory:Eqs:ComptonXsec} for different initial photon energies (legend).}
+\caption[Polar plot of photon energies and related differential cross section for Compton scattering.]{Left: Polar plot of photon energies after Compton scattering from an electron at rest for different incoming photon energies (legend) for up to 100 keV (left, inset) and up to 10 MeV (left). The incoming photon travels on the zero degree axis. The energy axis is linear and the numbers show the energy in MeV. Right: Polar plot of the differential cross section in arbitrary units for photon scattering angles calculated using Equation \eqref{Theory:Eqs:ComptonXsec} for different initial photon energies (legend).}
 \label{Theory:Figs:Compton_E_XSEC}
 \end{figure}
 
@@ -407,7 +421,7 @@ For very low energetic photons in the limit $\omega \rightarrow 0$ and $\omega'/
 \boxed{\frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} = \pi r^2_e (1 + \cos^2\theta),}
 \label{Theory:Eqs:ThomsonXsec}
 \end{equation}
-which is independent of photon energy and has a total cross section of $\sigma_{\gamma e} = \sigma_T = 8\pi r^2_e/3 $, with $r_e = e^2/4\pi \epsilon_0 m_e c^2$ \cite{Jackson}. This is the classical Thomson scattering cross section, $\sigma_T$.
+which is independent of photon energy and has a total cross section of $\sigma_{\gamma e} = \sigma_T = 8\pi r^2_e/3 $, with $r_e = e^2/4\pi \epsilon_0 m_e c^2 = 6.65 \times 10^{-29}\,\mathrm{m}^2$ \cite{Jackson}. This is the classical Thomson scattering cross section, $\sigma_T$.
 The total cross section using the Klein-Nishina equation amounts to:
 \begin{equation}
 \boxed{\sigma_{\gamma e} = 2\pi r^2_e \left[\frac{1 + x}{x^3}\left( \frac{2x(1+x)}{1+2x} - \ln(1+2x)\right) + \frac{1}{2x} \ln(1+2x) - \frac{1+3x}{(1+2x)^2}\right],}
@@ -422,12 +436,12 @@ with $x = E_\gamma /m_e c^2$, so that in the two limits this becomes
 \end{equation}
 so that $\sigma_{\gamma e} \rightarrow \sigma_T$ for $x \rightarrow 0$, which is the limit of Thomson scattering, and $\sigma_{\gamma e} \rightarrow 0$ for $x\rightarrow \infty$, which indicates that ultra-relativistic photons are less likely to scatter.
 
-The differential cross section is shown in a polar plot in Figure \ref{Theory:Figs:Compton_E_XSEC} (right) for different incoming photon energies. At low photon energies the cross section and the photon spectrum are symmetric in forwards and backwards direction following Thomson scattering (see Equation \eqref{Theory:Eqs:ThomsonXsec}). At increasing photon energies reaching the X-ray and gamma regime the photon is preferentially scattered in the forwards direction at the lowest momentum transfer (exactly $0$ at $\theta = 0$).
+The differential cross section is shown in a polar plot in Figure \ref{Theory:Figs:Compton_E_XSEC} (right) for different incoming photon energies. At low photon energies the cross section and the photon spectrum are symmetric in forwards and backwards direction following Thomson scattering (see Equation \eqref{Theory:Eqs:ThomsonXsec}). At increasing photon energies reaching the X-ray and gamma regime the photon is preferentially scattered in the forwards direction at lower momentum transfers and falling to $0$ at $\theta = 0$.
 
 \subsection{Linear Inverse Compton Scattering}
 \label{Theory:Sec:LinearICS}
 
-In the previous section Compton scattering and its classical low-energy limit Thomson scattering were discussed for a single photon interacting with an electron that is initially at rest. Here we will consider the special case of a relativistic electron of energy $\epsilon \gg m_e c^2$ interacting with a single photon. Whilst in Compton scattering momentum is transferred from the photon to the electron, resulting in a longer wavelength of the scattered photon, we will see that in this scenario the photon gains considerable amount of energy from the electron. Due to this inversion of the energy balance relative to standard Compton scattering, this special case is referred to as \textit{inverse} Compton scattering (ICS). In this section we will neglect nonlinear effects such as the emission of higher harmonics or the relativistic mass gain of electrons in an intense laser field. These phenomena will be discussed in the following section related to nonlinear inverse Compton scattering.
+In the previous section Compton scattering and its classical low-energy limit Thomson scattering were discussed for a single photon interacting with an electron that is initially at rest. Here we will consider the special case of a relativistic electron of energy $\epsilon \gg m_e c^2$ interacting with a single photon. Whilst in `standard' Compton scattering momentum is transferred from the photon to the electron, resulting in a longer wavelength of the scattered photon, we will see that in this scenario the photon gains considerable amount of energy from the electron. Due to this inversion of the energy balance relative to standard Compton scattering, this special case is referred to as \textit{inverse} Compton scattering (ICS). In the limit discussed here it is also referred to as relativistic Thomson scattering or Compton backscattering. In this section we will neglect nonlinear effects such as the emission of higher harmonics or the relativistic mass gain of electrons in an intense laser field. These phenomena will be discussed in the following section related to nonlinear inverse Compton scattering.
 
 \subsubsection{Kinematics}
 
@@ -496,8 +510,8 @@ Deviations from a head-on collision have to be considered and also introduce a s
 \subsection{Nonlinear Inverse Compton Scattering}
 \label{Theory:Sec:NonlinearICS}
 
-At higher intensities, i.e. $a_0 \rightarrow 1$ and $a_0 > 1$, the character of Compton scattering changes as nonlinear effects gain significance and the electrons experience a relativistic mass increase while performing a figure-of-eight motion (see Section \ref{Theory:Sec:SingleParticle:FigOfEight}). In a classical picture a Fourier analysis of the particle trajectories shows that this gives rise to higher harmonic radiation. In a quantum picture the contributions of multi-photon interactions described by higher-order Feynman diagram become increasingly significant (see Figure \ref{Theory:Figs:NlinICS_FeynmanDiags}). The relativistic mass increase results in red-shifting of the emitted radiation.
-This behaviour draws parallels in the description of electrons in insertion devices that is also described by the figure-of-eight motion (see Section  \ref{Theory:Sec:SingleParticle:FigOfEight} and \ref{Theory:Sec:UndulatorWiggler}). Here the wiggler parameter, $K$, indicates whether distinct harmonics ($K\ll1$) or broadband radiation is emitted ($K\gg1$). In the case of (inverse) Compton scattering, a \textit{laser wiggler}, the parameter $a_0$ replaces $K$. 
+At higher intensities, i.e. $a_0 \rightarrow 1$ and $a_0 > 1$, the character of Compton scattering changes as nonlinear effects gain significance and the electrons experience a relativistic mass increase while performing a figure-of-eight motion (see Section \ref{Theory:Sec:SingleParticle:FigOfEight}). In a classical picture a Fourier analysis of the particle trajectories shows that this gives rise to higher harmonic radiation (REF\addref Esarey). In a quantum picture the contributions of multi-photon interactions described by higher-order Feynman diagram become increasingly significant (see Figure \ref{Theory:Figs:NlinICS_FeynmanDiags}). The relativistic mass increase results in red-shifting of the emitted radiation \addref{}.
+This behaviour draws parallels in the description of electrons in insertion devices that is also described by the figure-of-eight motion (see Section  \ref{Theory:Sec:SingleParticle:FigOfEight} and \ref{Theory:Sec:UndulatorWiggler}). There the wiggler parameter, $K$, indicates whether distinct harmonics ($K\ll1$) or broadband radiation is emitted ($K\gg1$). In the case of (inverse) Compton scattering, a \textit{laser wiggler}, the parameter $a_0$ replaces $K$, so that linear ICS corresponds to the undulator regime ($a_0 \ll 1$) and nonlinear ICS to the wiggler regime ($a_0 \gg 1$).
 
 The process of $n$ photons scattering from a single electron resulting in the emission of one more energetic photon is described by
 \begin{equation}
@@ -506,18 +520,14 @@ n\gamma_L + e^- \longrightarrow \gamma + e^-.
 
 \begin{figure}
 \centering
-\includegraphics[height=.3\columnwidth]{Aivazis_ComptonScattering_FULL.pdf}
-
-\includegraphics[height=.3\columnwidth]{Aivazis_ComptonScattering2_FULL.pdf}
-
-\includegraphics[height=.3\columnwidth]{feyn_nICS.pdf}
+\includegraphics[height=.3\columnwidth]{feyn_nICS_simp.pdf}
 \caption{Feynman diagram for Volkov state equivalent to infinite series of diagrams}
 \label{Theory:Figs:NlinICS_FeynmanDiags}
 \end{figure}
 
 \subsubsection{Kinematics}
 
-Assuming all $n$ photons have the same energy $E_i$ and are parallel to each other, the relativistic kinematics for the multi-photon process is identical to the single-photon process discussed in the previous section by simply substituting $E_i \rightarrow nE_i$. As a result, the energy of the scattered photon in the rest frame, $E'_f$, is then 
+Assuming all $n$ photons have the same energy $E_i$ and are parallel to each other, the relativistic kinematics for the multi-photon process are identical to the single-photon process discussed in the previous section by simply substituting $E_i \rightarrow nE_i$. As a result, the energy of the scattered photon in the rest frame, $E'_f$, is then 
 \begin{equation}
 E'_f = \frac{n E'_i}{1+\frac{n E'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
@@ -545,7 +555,7 @@ The equation also shows that higher $a_0$ leads for a fixed harmonic $n$ to a re
 \label{Theory:Figs:NLICS_diffSigma}
 \end{figure}
 
-Since the equation of motion takes the form of a figure-of-eight motion it is not surprising that the related emission rate consists of a series of Bessel functions, similarly as an undulator or wiggler. For instance, the scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given by \cite{Ritus1985_QRR,BlackburnThesis}
+Since the equation of motion takes the form of a figure-of-eight motion it is not surprising that the related emission rate consists of a series of Bessel functions, similarly as an undulator or wiggler. For instance, the scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is in natural units given by \cite{Ritus1985_QRR,BlackburnThesis}
 \begin{equation}
 \frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 E}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
 \end{equation}
@@ -580,15 +590,15 @@ or in terms of the Feyman diagram shown in Figure \ref{Theory:Figs:Feynman_Brems
 
 In the limit of small photon energies relative to the initial electron energy, $\hbar \omega \ll E$, and relativistic initial and final electron energies, $E, E' \gg Mc^2$ the differential cross section can be written as \cite{Jackson}:
 \begin{equation}
-\frac{d \sigma}{d (\hbar \omega)} \approx \frac{Z^2 e^6}{12 \hbar \pi^3 \epsilon_0^3 M^2 c^3} \left(1- \frac{\hbar \omega}{E} + \frac{3}{4} \frac{(\hbar \omega)^2}{E^2}\right) \times \left[\ln\left(\frac{2 E (E-\hbar\omega)}{Mc^2\hbar \omega}\right) - \frac{1}{2}\right] \frac{1}{\hbar \omega},
+\frac{d \sigma}{d (\hbar \omega)} \approx \frac{16}{3} \frac{Z^2 e^2}{c} \left(\frac{z^2 e^2}{Mc^2}\right)^2 \left(1- \frac{\hbar \omega}{E} + \frac{3}{4} \frac{(\hbar \omega)^2}{E^2}\right) \times \left[\ln\left(\frac{2 E (E-\hbar\omega)}{Mc^2\hbar \omega}\right) - \frac{1}{2}\right],
 \label{Theory:Eqns:Brems_dSigma_dEph}
 \end{equation}
-where $Z$ is the charge number of the nucleus and $\epsilon_0$ is the dielectric constant.
+where $Z$ is the charge number of the nucleus and $z$ the number of electrons in the atomic orbit.
 For $\hbar \omega \ll E$ the doubly differential cross is then 
 \begin{equation}
 \frac{d^2 \sigma}{d \omega d \Omega_\gamma} = \left[\frac{3}{2 \pi} \gamma^2 \frac{(1+\gamma^4 \theta^4)}{(1+\gamma^2 \theta^2)^4}\right] \cdot \frac{d \sigma}{d \omega},
 \end{equation}
-which also indicates that for highly relativistic electron the emitted radiation is confined to a narrow forwards-pointing cone of angle $\ln \gamma/\gamma$ for $\gamma \gg 1$. The emission of photons at energies $\hbar \omega \ll E$ is strongly favoured whereas the cross section falls off towards the maximum emitted energy which is the initial energy of the electron (see Figure \ref{Theory:Figs:BremsSpec}). The complete cross section for bremsstrahlung in the Born approximation can be found in the Appendix in Section \ref{Appendix:Brems_Born}, along with a description including screening in Section \ref{Appendix:Brems_with_Screening}.
+which indicates that for highly relativistic electron the emitted radiation is confined to a narrow forwards-pointing cone of angle $\ln \gamma/\gamma$ for $\gamma \gg 1$. The emission of photons at energies $\hbar \omega \ll E$ is strongly favoured whereas the cross section falls off towards the maximum emitted energy which is the initial energy of the electron (see Figure \ref{Theory:Figs:BremsSpec}). The complete cross section for bremsstrahlung in the Born approximation can be found in the Appendix in Section \ref{Appendix:Brems_Born}, along with a description including screening in Section \ref{Appendix:Brems_with_Screening}.
 
 
 \begin{figure}
@@ -709,7 +719,7 @@ For a vanishing external force, we obtain two solutions for $\mathbf{\dot{v}}$:
 where $\mathbf{a}$ is the acceleration at $t = 0$. If $\mathbf{a} \neq 0$ leads to a self-acceleration of the particle in absence of an external force, which is clearly unphysical and also results in $(\mathbf{\dot{v} \cdot v}) \neq 0$ at $t_1$ and $t_2$, which we used to derive this expression.
 The relativistic generalisation of this equation is referred to as \textit{Lorentz-Abraham-Dirac equation (LAD)} and is for an electron of charge $-e$ and mass $m_e$ given in terms of the four-velocity $u$ \cite{Bulanov2011_LADLL,DiPiazza2012_ICS}:
 \begin{equation}
- \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m_e} F^{\mu\nu} u_\nu + \frac{e^2}{6 \pi m_e} \left(\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}\tau^2} + u^\mu \frac{\mathrm{d}u^\nu}{\mathrm{d}\tau}\frac{du_\nu}{\mathrm{d}\tau}\right),
+ \boxed{\frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m_e} F^{\mu\nu} u_\nu + \frac{e^2}{6 \pi m_e} \left(\frac{\mathrm{d}^2 u^\mu}{\mathrm{d}\tau^2} + u^\mu \frac{\mathrm{d}u^\nu}{\mathrm{d}\tau}\frac{du_\nu}{\mathrm{d}\tau}\right),}
 \end{equation}
 with the radiation reaction force
 \begin{equation}
@@ -722,7 +732,7 @@ The second derivative of the momentum, $\dif^2 u/\dif \tau^2$, leads again to pa
 
 The first self-consistent solution to including radiation reaction into a classical model was achieved by the \textit{Landau-Lifschitz (LL) equation} \cite{LandauLifschitz}. Here it is assumed that the radiation reaction force is small compared to the Lorentz force in a suitable frame of reference. The expression $\dif u / \dif \tau$ is substituted by $e/m F^{\mu \nu} u_\nu$, which reduces the order of the differential equation and removes the runaway solutions \cite{Blackburn2019_RRReview}: 
 \begin{equation}
- \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m} F^{\mu\nu} u_\nu + \frac{e^4}{6 \pi m_e} \left[-\frac{m_e}{e}(\partial_\alpha F^{\mu \nu}) u_\nu u^\alpha + F^{\mu\nu} F_{\nu\alpha}u^\alpha + (F^{\nu \alpha}u_\alpha)^2 u^\mu      \right],
+\boxed{ \frac{\mathrm{d}u^\mu}{\mathrm{d}\tau} = - \frac{e}{m} F^{\mu\nu} u_\nu + \frac{e^4}{6 \pi m_e} \left[-\frac{m_e}{e}(\partial_\alpha F^{\mu \nu}) u_\nu u^\alpha + F^{\mu\nu} F_{\nu\alpha}u^\alpha + (F^{\nu \alpha}u_\alpha)^2 u^\mu      \right],}
 \end{equation}
 with the radiation reaction force
 \begin{equation}
@@ -816,10 +826,10 @@ Capture quantum characteristics by considering evolution of the variance \cite{R
 
 \section{Pair Production and Annihilation}
 
-One of the most intriguing predictions of quantum electrodynamics (QED) is the transformation of light into matter and vice versa matter into light. In this context the two most fundamental processes are the annihilation of an electron with its antiparticle, the positron, into two photons (Dirac annihilation), and the inverse process where two photons create an electron-positron pair (Breit-Wheeler pair production). If multiple photons annihilate into an electron-positron pair this is referred to as the nonlinear Breit-Wheeler process. 
+One of the most intriguing predictions of quantum electrodynamics (QED) is the transformation of light into matter and vice versa matter into light. In this context the two most fundamental processes are the annihilation of an electron with its antiparticle, the positron, into two photons (Dirac annihilation)\addref, and the inverse process where two photons create an electron-positron pair (Breit-Wheeler pair production)\addref. If multiple photons annihilate into an electron-positron pair this is referred to as the nonlinear Breit-Wheeler process\addref. 
 
-Another means of producing electron-positron pairs is, for instance, the interaction of photons with the Coulomb field of the nucleus and atom (Bethe-Heitler process), which is closely related to the radiative process of bremsstrahlung.
-A third example of pair production is the so-called Schwinger pair production where an extremely high electric field `pulls' virtual electron-positron pairs directly out of the vacuum. These field strengths can, for instance, be achieved in the rest frame of a relativistic electron colliding with an intense laser pulse or in the standing wave of two such laser pulses.
+Another means of producing electron-positron pairs is, for instance, the interaction of photons with the Coulomb field of the nucleus and atom (Bethe-Heitler process)\addref, which is closely related to the radiative process of bremsstrahlung\addref.
+A third example of pair production is the so-called Schwinger pair production\addref{} where an extremely high electric field `pulls' virtual electron-positron pairs directly out of the vacuum. These field strengths can, for instance, be achieved in the rest frame of a relativistic electron colliding with an intense laser pulse\addref{} or in the standing wave of two such laser pulses\addref.
 The following section briefly discusses the cross sections and scaling laws associated with these mechanisms, where the focus lies on the (linear) Breit-Wheeler process that is central to the results presented in Chapter \ref{Chap:BW}.
 
 \subsection{Dirac annihilation}
@@ -837,21 +847,21 @@ It can be described by the following equation
 e^+ + e^- \longrightarrow \gamma + \gamma,
 \end{equation}
 or in terms of the Feynman diagram in Figure \ref{Theory:Figs:Feynman:PairAnnihilation:PairProductionBWBH} (left).
-The annihilation of electron-positron pairs is commonly found in radioactive decays. There relatively `slow' pairs collide and the emitted gamma rays are emitted at 180 degrees in the centre-of-mass frame with $E_{ph} = m_e c^2$ each. This is, for instance, used in coincidence measurements in radio-isotope therapy to localise tumours \cite{PET_BETAPLUS}.
+The annihilation of electron-positron pairs is commonly found in radioactive decays. There relatively `slow' pairs collide and the emitted gamma rays are emitted  (in the centre-of-mass frame) at 180 degrees with $E_{ph} = m_e c^2$ each. This is, for instance, used in coincidence measurements in radio-isotope therapy to localise tumours \cite{PET_BETAPLUS}.
 
 The total cross section, $\sigma_{e^+e^-}$, is given by \cite{Ruffini2010_PAIRSASTRO}: 
 \begin{equation}
 \boxed{\sigma_{e^+ e^-} = \frac{\pi r^2_e}{2} (1-\beta^2) \left[ (3-\beta^4) \ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right],}
 \label{Theory:Eqs:PairAnnihilation_totXsec}
 \end{equation}
-where $r_e = e^2/4\pi\epsilon_0m_ec^2$ is the classical electron radius, $\beta = \sqrt{1-1/s}$ is the centre-of-mass velocity and $s = (E_{CM}/m_e c^2)^2$ the square of the centre-of-mass (CM) energy. In the limit of ultrarelativistic energies, i.e. $s \rightarrow \infty$, $\beta \rightarrow 1$ and as a result $\sigma_{e^+ e^-} \rightarrow 0$. At low energies, $s \rightarrow 1$ reducing the energy to the rest mass, $\beta \rightarrow 0$ and the total cross section diverges, $\sigma_{e^+ e^-} \rightarrow \infty$, due to the logarithm $\ln[(1+\beta)/(1-\beta)]$. The total cross section is shown as a function of the centre-of-mass energy $\sqrt{s}$ in Figure \ref{Theory:Figs:Xsec:DiracBW}.
+where $r_e = e^2/4\pi\epsilon_0m_ec^2$ is the classical electron radius, $\beta = \sqrt{1-1/s}$ is the centre-of-mass velocity and $s = (E_{CM}/m_e c^2)^2$ the square of the centre-of-mass (CM) energy. In the limit of ultrarelativistic energies, i.e. $s \rightarrow \infty$, $\beta \rightarrow 1$ and as a result $\sigma_{e^+ e^-} \rightarrow 0$. At low energies, $s \rightarrow 1$ reducing the energy to the rest mass, $\beta \rightarrow 0$ and the total cross section diverges, $\sigma_{e^+ e^-} \rightarrow \infty$, due to the logarithm $\ln[(1+\beta)/(1-\beta)]$. The total cross section is shown as a function of the centre-of-mass energy, $\sqrt{s}$, in Figure \ref{Theory:Figs:Xsec:DiracBW}.
 
 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\columnwidth]{BWD_Xsec.png}
-\caption[Total cross sections for Dirac annihilationand Breit-Wheeler pair production in the CM frame.]{Total cross sections for Dirac annihilation (see Equation \eqref{Theory:Eqs:PairAnnihilation_totXsec}) and Breit-Wheeler pair production (see Equation \eqref{Theory:Eqs:BWPairs_totXsec}) in the CM frame in units of $m^{-2}$ as a function of centre-of-mass energy $\sqrt{s}$.}
+\includegraphics[width=0.8\columnwidth]{BWD_Xsec_V2.png}
+\caption[Total cross sections for Dirac annihilationand Breit-Wheeler pair production in the CM frame.]{Total cross sections for Dirac annihilation (see Equation \eqref{Theory:Eqs:PairAnnihilation_totXsec}) and Breit-Wheeler pair production (see Equation \eqref{Theory:Eqs:BWPairs_totXsec}) in the CM frame in units of $m^{-2}$ as a function of centre-of-mass energy, $\sqrt{s}$.}
 \label{Theory:Figs:Xsec:DiracBW}
 \end{figure}
 
@@ -893,10 +903,10 @@ where again $s = (E_{CM}/m_e c^2)^2 = E_{\gamma 1} E_{\gamma 2} (1-\cos\phi)/2 m
 \end{figure}
 
 
-The total cross section of the pair annihilation and the pair production process are related by the factor $2\beta^2$ \cite{Ruffini2010_PAIRSASTRO}, which immediately implies that $\sigma_{\gamma,\gamma} \rightarrow 0$ for $s \rightarrow 1$, opposite to the behaviour of the annihilation cross section. Equally it then indicates that also $\sigma_{\gamma,\gamma} \rightarrow 0$ for $s \rightarrow \infty$. Both cross sections are balanced for $\beta = 1/\sqrt{2}$ or $s = 2$, which is also approximately the maximum of $\sigma_{\gamma,\gamma}$.
+The total cross section of the pair annihilation and the pair production process are related by the factor $2\beta^2$ \cite{Ruffini2010_PAIRSASTRO}, which immediately implies that $\sigma_{\gamma,\gamma} \rightarrow 0$ for $s \rightarrow 1$, opposite to the behaviour of the annihilation cross section. Equally, it then indicates that also $\sigma_{\gamma,\gamma} \rightarrow 0$ for $s \rightarrow \infty$. Both cross sections are balanced for $\beta = 1/\sqrt{2}$ or $s = 2$, which is also approximately the maximum of $\sigma_{\gamma,\gamma}$.
 The differential cross section in the CM frame is given by \cite{Nikishov1962_PAIRSASTRO,Drebot2017_BW_ICS}
 \begin{equation}
-\boxed{\frac{\mathrm{d} \sigma_{BW}}{\mathrm{d}\Omega} = r^2_e \beta (1-\beta^2) \left[ \frac{1 + 2\beta^2 \sin^2 \theta_{CM} - \beta^4 - \beta^4 \sin^4\theta_{CM}}{(1-\beta^2\cos^2\theta_{CM})^2}\right].}
+\boxed{\frac{\mathrm{d} \sigma_{\gamma,\gamma}}{\mathrm{d}\Omega} = r^2_e \beta (1-\beta^2) \left[ \frac{1 + 2\beta^2 \sin^2 \theta_{CM} - \beta^4 - \beta^4 \sin^4\theta_{CM}}{(1-\beta^2\cos^2\theta_{CM})^2}\right].}
 \label{Theory:Eqs:Xsec:BWdiff}
 \end{equation}
 The differential cross section is shown for different values of $s$ in a polar plot in Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB_TOP} (left). At $s\sim1$ the distribution is isotropic, but with increasing $s$ forward and backward emissions ($\theta = 0, \pi$) become preferential. The differential cross section is symmetric under the transformation $\theta \rightarrow \theta + \pi$ as we are in the centre-of-mass frame. 
@@ -920,9 +930,17 @@ with $\gamma_{CM} = (E_1 + E_2)/\sqrt{s}$ and $\bm{\beta}_{CM} = (\mathbf{p}_1 +
 Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB_TOP} (right) shows the angular energy distribution in the laboratory frame for different ratios of the two photon energies $E_1/E_2$, with $E_1 = 300\MeV$. For $E_1 = E_2$ the laboratory frame and the CM frame are identical (blue). Here the emitted energies are isotropic, but for $s > 1$ preferentially emitted at $\theta = 0, \pi$. At a fixed value of $E_1$ and $E_1 > E_2$, a decreasing energy of the second photon, $E_2$, i.e. $E_2/E_1 <1$, higher energies are emitted in forwards direction as momentum has to be conserved. Combined with the differential cross section we are expecting that particles of energy $\sim E_1$ are emitted predominantly in forwards direction. Note that the energy distribution and the differential cross section are identical for electrons and positrons.
 
 We will now discuss how this asymmetry affects how energy and momentum is shared between the two emitted particles. For this purpose we will consider two specific examples of scattering angles in the centre-of-mass frame to symptomatically indicate their behaviour.
-Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB_BOTTOM} shows the energy distribution between the two particles in the laboratory frame at a fixed scattering angle in the CM frame of $\theta_{CM} = 90^\circ \pm 180^\circ$ (left) and $45^\circ \pm 180^\circ$ (right) for three ratios of $E_1/E_2$. For $E_1 = E_2$ the particles are emitted back-to-back as the CM frame and the laboratory are equivalent. With increasing asymmetry as $E_2/E_1 < 1$ the centre-of-mass velocity $\beta_{CM}$ increases in forwards direction and results in a head-light effect that rotates the momentum vectors towards $\theta = 0$. As a result, for a large centre-of-mass velocity all particles are emitted in forwards direction, a phenomenon sometimes referred to as pair-beaming. In the case of $\theta_{CM} = 90^\circ$ the transformation back into the laboratory frame conserves the symmetry of the emission angle relative to the zero-degree axis such that both particles carry the same energy, $(E_1+E_2)/2$. For a non-perpendicular scattering angle, here at the example of $\theta_{CM} = 45^\circ$, the relativistic boost results in an increasingly unequal distribution of the energies amongst the two particles, strongly favouring the forwards scattered particle whereas the backwards scattered particle only carries a small fraction of the total energy. This example describes the typical emitted momentum distribution most accurately, whilst an equal momentum distribution is only produced in the special case of perpendicular scattering, which is further suppressed as the centre-of-mass energy $s$ increases. 
+Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB_BOTTOM} shows the energy distribution between the two particles in the laboratory frame at a fixed scattering angle in the CM frame of $\theta_{CM} = 90^\circ \pm 180^\circ$ (left) and $45^\circ \pm 180^\circ$ (right) for three ratios of $E_1/E_2$. For $E_1 = E_2$ the particles are emitted back-to-back as the CM frame and the laboratory are equivalent. With increasing asymmetry as $E_2/E_1 < 1$ the centre-of-mass velocity $\beta_{CM}$ increases in forwards direction and results in a head-light effect that rotates the momentum vectors towards $\theta = 0$. As a result, for a large centre-of-mass velocity all particles are emitted in forwards direction, a phenomenon sometimes referred to as pair-beaming \addref{}. In the case of $\theta_{CM} = 90^\circ$ the transformation back into the laboratory frame conserves the symmetry of the emission angle relative to the zero-degree axis such that both particles carry the same energy, $(E_1+E_2)/2$. For a non-perpendicular scattering angle, here at the example of $\theta_{CM} = 45^\circ$, the relativistic boost results in an increasingly unequal distribution of the energies amongst the two particles, strongly favouring the forwards scattered particle whereas the backwards scattered particle only carries a small fraction of the total energy. This example describes the typical emitted momentum distribution most accurately, whilst an equal momentum distribution is only produced in the special case of perpendicular scattering, which is further suppressed as the centre-of-mass energy, $s$, increases. 
 
 \subsubsection{Nonlinear Breit-Wheeler process}
+
+\begin{figure}
+\centering
+\includegraphics[height=.3\columnwidth]{feyn_nBW.pdf}
+\caption{Feynman diagram for Volkov state equivalent to infinite series of diagrams}
+\label{Theory:Figs:NlinBW_FeynmanDiag}
+\end{figure}
+
 
 At high photon densities multiple photons ($n>2$) can interact with each other to produce a single electron-positron pair.
 The equation for this \textit{nonlinear Breit-Wheeler process} then becomes:
@@ -932,9 +950,9 @@ The equation for this \textit{nonlinear Breit-Wheeler process} then becomes:
 and similarly as for nonlinear Compton scattering the multiphoton process requires the evaluation of higher order Feynman diagrams or in the Furry picture the use of Volkov states to sum over all possible states.
 
 Considering the special case of one high-energy photon colliding with $n$ identical low-energy photons \cite{Bula1996_RR,Burke1997_RR}, for instance optical photons from a laser, the corresponding centre-of-mass energy can simply be written as  $s = (E_{CM}/m_e c^2)^2 = E_{\gamma 1} n E_{\gamma 2} (1-\cos\phi)/2 m^2_e c^4$. 
-The total rate for the Breit-Wheeler pair production is given by \cite{BlackburnThesis}
+The total rate for the Breit-Wheeler pair production is (in natural units) given by \cite{BlackburnThesis}
 \begin{equation}
-W_{\pm} = \frac{\alpha}{\tau_C} \frac{mc^2}{\hbar \omega}\chi T(\chi),
+\boxed{W_{\pm} = \frac{\alpha}{\tau_C} \frac{mc^2}{\hbar \omega}\chi T(\chi),}
 \end{equation}
 where $\tau_C = \hbar/mc^2 = 1.288\times10^{-6}\fs$ is the Compton time, $\chi$ is the quantum parameter and $T(\chi)$ can be parametrised by \cite{Erber1966_PAIRS}
 \begin{equation}
@@ -983,6 +1001,16 @@ For $Z \alpha \ll 1$ the term $f(Z\alpha)\rightarrow 0$ \cite{Bethe1934_BH}.
 
 
 \subsection{Schwinger limit}
+
+
+\begin{figure}
+\centering
+\includegraphics[height=.2\columnwidth]{feyn_Schwinger.pdf}
+\caption{Feynman diagram for Volkov state equivalent to infinite series of diagrams}
+\label{Theory:Figs:Schwinger_FeynmanDiag}
+\end{figure}
+
+
 
 Schwinger pair production: The external electric field is so strong that virtual electron-positron pairs can be accelerated to relativistic energies within a Compton wavelength and made real.
 
