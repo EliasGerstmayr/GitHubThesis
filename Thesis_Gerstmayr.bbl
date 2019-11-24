@@ -100,6 +100,12 @@ F.~Albert and A.~G. Thomas.
   sources}.
 \newblock \emph{Plasma Physics and Controlled Fusion}, 58, (2016), p. 103001.
 
+\bibitem{DiPiazza2012_ICS}
+A.~Di~Piazza et~al.
+\newblock \enquote{Extremely high-intensity laser interactions with fundamental
+  quantum systems}.
+\newblock \emph{Reviews of Modern Physics}, 84, (2012), p. 1177.
+
 \bibitem{Compton1923_Compton}
 A.~H. Compton.
 \newblock \enquote{A quantum theory of the scattering of X-rays by light
@@ -201,12 +207,6 @@ A.~Di~Piazza, K.~Z. Hatsagortsyan, and C.~H. Keitel.
 \newblock \emph{Phys. Rev. Lett.}, 105, (2010), p. 220403.
 \newblock \doi{10.1103/PhysRevLett.105.220403}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.105.220403}
-
-\bibitem{DiPiazza2012_ICS}
-A.~Di~Piazza et~al.
-\newblock \enquote{Extremely high-intensity laser interactions with fundamental
-  quantum systems}.
-\newblock \emph{Reviews of Modern Physics}, 84, (2012), p. 1177.
 
 \bibitem{Thomas2012_LL}
 A.~G.~R. Thomas et~al.
@@ -972,6 +972,12 @@ O.~Lundh et~al.
 \newblock \emph{Nature Physics}, 7, (2011), pp. 219 EP --.
 \newline\urlprefix\url{https://doi.org/10.1038/nphys1872}
 
+\bibitem{Wood2018_BetatronShock}
+J.~C. Wood et~al.
+\newblock \enquote{Ultrafast imaging of laser driven shock waves using betatron
+  x-rays from a laser wakefield accelerator}.
+\newblock \emph{Scientific reports}, 8, (2018), p. 11010.
+
 \bibitem{Jochmann2013_ICS_BeamEAngle}
 A.~Jochmann et~al.
 \newblock \enquote{High resolution energy-angle correlation measurement of hard
@@ -983,6 +989,34 @@ G.~Golovin et~al.
 \newblock \enquote{Intrinsic beam emittance of laser-accelerated electrons
   measured by x-ray spectroscopic imaging}.
 \newblock \emph{Scientific reports}, 6, (2016), p. 24622.
+
+\bibitem{Alley1996_LaserWire}
+R.~Alley et~al.
+\newblock \enquote{A laser-based beam profile monitor for the SLC/SLD
+  interaction region}.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, 379,
+  (1996), pp. 363--365.
+
+\bibitem{Leemans1996_ICS_BeamTransLong}
+W.~Leemans et~al.
+\newblock \enquote{X-ray based subpicosecond electron bunch characterization
+  using 90 Thomson scattering}.
+\newblock \emph{Physical review letters}, 77, (1996), p. 4182.
+
+\bibitem{Sakai2001_BeamSize}
+H.~Sakai et~al.
+\newblock \enquote{Measurement of an electron beam size with a laser wire beam
+  profile monitor}.
+\newblock \emph{Physical Review Special Topics-Accelerators and Beams}, 4,
+  (2001), p. 022801.
+
+\bibitem{Honda2005_ICS_LaserWire}
+Y.~Honda et~al.
+\newblock \enquote{Upgraded laser wire beam profile monitor}.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, 538,
+  (2005), pp. 100--115.
 
 \bibitem{Kevlar}
 DuPont.
@@ -1031,40 +1065,12 @@ R.~Weingartner et~al.
 \newblock \doi{10.1103/PhysRevSTAB.15.111302}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.15.111302}
 
-\bibitem{Alley1996_LaserWire}
-R.~Alley et~al.
-\newblock \enquote{A laser-based beam profile monitor for the SLC/SLD
-  interaction region}.
-\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 379,
-  (1996), pp. 363--365.
-
-\bibitem{Leemans1996_ICS_BeamTransLong}
-W.~Leemans et~al.
-\newblock \enquote{X-ray based subpicosecond electron bunch characterization
-  using 90 Thomson scattering}.
-\newblock \emph{Physical review letters}, 77, (1996), p. 4182.
-
 \bibitem{Okugi1999_WireScanner_Emittance}
 T.~Okugi et~al.
 \newblock \enquote{Evaluation of extremely small horizontal emittance}.
 \newblock \emph{Phys. Rev. ST Accel. Beams}, 2, (1999), p. 022801.
 \newblock \doi{10.1103/PhysRevSTAB.2.022801}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.2.022801}
-
-\bibitem{Sakai2001_BeamSize}
-H.~Sakai et~al.
-\newblock \enquote{Measurement of an electron beam size with a laser wire beam
-  profile monitor}.
-\newblock \emph{Physical Review Special Topics-Accelerators and Beams}, 4,
-  (2001), p. 022801.
-
-\bibitem{Honda2005_ICS_LaserWire}
-Y.~Honda et~al.
-\newblock \enquote{Upgraded laser wire beam profile monitor}.
-\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 538,
-  (2005), pp. 100--115.
 
 \bibitem{Chen2013_ICS}
 S.~Chen et~al.
@@ -1073,15 +1079,31 @@ S.~Chen et~al.
 \newblock \emph{Physical Review Letters}, 110, (2013), pp. 1--5.
 \newblock \doi{10.1103/PhysRevLett.110.155003}.
 
+\bibitem{Kirschner2019_Bayesian}
+J.~Kirschner et~al.
+\newblock \enquote{Adaptive and Safe Bayesian Optimization in High Dimensions
+  via One-Dimensional Subspaces}.
+\newblock \emph{arXiv preprint arXiv:1902.03229}.
+
+\bibitem{Edelen2018_ML}
+A.~Edelen et~al.
+\newblock \enquote{Opportunities in Machine Learning for Particle
+  Accelerators}.
+\newblock \emph{arXiv preprint arXiv:1811.03172}.
+
+\bibitem{Emma2018_ML}
+C.~Emma et~al.
+\newblock \enquote{Machine learning-based longitudinal phase space prediction
+  of particle accelerators}.
+\newblock \emph{Phys. Rev. Accel. Beams}, 21, (2018), p. 112802.
+\newblock \doi{10.1103/PhysRevAccelBeams.21.112802}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevAccelBeams.21.112802}
+
 \bibitem{Streeter2018_TEMPFEEDBACK}
 M.~Streeter et~al.
 \newblock \enquote{Temporal feedback control of high-intensity laser pulses to
   optimize ultrafast heating of atomic clusters}.
 \newblock \emph{Applied Physics Letters}, 112, (2018), p. 244101.
-
-\bibitem{Streeter2019_RASTERSCAN}
-M.~Streeter.
-\newblock Private Communication.
 
 \bibitem{Kneip2010_BETATRON}
 S.~Kneip et~al.
@@ -1106,6 +1128,20 @@ Y.~Glinec et~al.
 M.~Tanabashi et~al.
 \newblock \enquote{Review of particle physics}.
 \newblock \emph{Physical Review D}, 98, (2018), p. 030001.
+
+\bibitem{Babzien2006_ICS_2ndHarmonic}
+M.~Babzien et~al.
+\newblock \enquote{Observation of the Second Harmonic in Thomson Scattering
+  from Relativistic Electrons}.
+\newblock \emph{Phys. Rev. Lett.}, 96, (2006), p. 054802.
+\newblock \doi{10.1103/PhysRevLett.96.054802}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.96.054802}
+
+\bibitem{Kuschel2016_PassiveLens}
+S.~Kuschel et~al.
+\newblock \enquote{Demonstration of passive plasma lensing of a laser wakefield
+  accelerated electron bunch}.
+\newblock \emph{Physical Review Accelerators and Beams}, 19, (2016), p. 071301.
 
 \bibitem{Lau2003_NT}
 Y.~Y. Lau et~al.
