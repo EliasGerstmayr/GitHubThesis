@@ -11,25 +11,27 @@ A level-1 auxiliary file: Results/RR2015.aux
 A level-1 auxiliary file: Results/BW2018.aux
 A level-1 auxiliary file: Conclusion/Conclusions.aux
 A level-1 auxiliary file: Appendix/Appendix.aux
-Reallocated field_info (elt_size=4) to 12722 items from 5000.
-Database file #1: ICS_Diag.bib
-Database file #2: General.bib
-Database file #3: Theses.bib
-Database file #4: Plasma.bib
-Database file #5: SPD.bib
-Database file #6: LaserDiags.bib
-Database file #7: GammaDet.bib
-Database file #8: Betatron.bib
-Database file #9: Facilities.bib
-Database file #10: Wakefield.bib
-Database file #11: Sims.bib
-Database file #12: Ionisation.bib
-Database file #13: Xrays.bib
-Database file #14: IonAcc.bib
-Database file #15: ICSRR.bib
+Reallocated field_info (elt_size=4) to 12800 items from 5000.
+Database file #1: SFQED.bib
+Database file #2: ICS_Diag.bib
+Database file #3: General.bib
+Database file #4: Theses.bib
+Database file #5: Plasma.bib
+Database file #6: SPD.bib
+Database file #7: LaserDiags.bib
+Database file #8: GammaDet.bib
+Database file #9: Betatron.bib
+Database file #10: Facilities.bib
+Database file #11: Wakefield.bib
+Database file #12: Sims.bib
+Database file #13: Ionisation.bib
+Database file #14: Xrays.bib
+Database file #15: IonAcc.bib
+Database file #16: ICSRR.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Database file #16: Narozhny.bib
-Database file #17: BW_Astro.bib
+Database file #17: Narozhny.bib
+Database file #18: BW_Astro.bib
+Warning--empty journal in SeiptThesis
 Warning--can't use both volume and number fields in Dirac1930_Annihilation
 Warning--can't use both volume and number fields in Klemperer1934_Annihilation
 Warning--missing school in LuThesis
@@ -40,45 +42,45 @@ Warning--can't use both volume and number fields in Toth2017_BELLA
 Warning--empty journal in Heitler1954_BH
 Warning--can't use both volume and number fields in FLUKA
 Warning--can't use both volume and number fields in Fedotov2017_NAROZHNY
-You've used 297 entries,
+You've used 300 entries,
             2354 wiz_defined-function locations,
-            2483 strings with 81023 characters,
-and the built_in function-call counts, 114576 in all, are:
-= -- 9578
-> -- 2456
-< -- 243
-+ -- 1110
-- -- 555
-* -- 5808
-:= -- 12114
-add.period$ -- 979
-call.type$ -- 297
+            2499 strings with 81320 characters,
+and the built_in function-call counts, 115434 in all, are:
+= -- 9643
+> -- 2468
+< -- 245
++ -- 1116
+- -- 558
+* -- 5850
+:= -- 12210
+add.period$ -- 987
+call.type$ -- 300
 change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 307
-duplicate$ -- 10980
-empty$ -- 10402
-format.name$ -- 791
-if$ -- 27065
+cite$ -- 311
+duplicate$ -- 11068
+empty$ -- 10489
+format.name$ -- 794
+if$ -- 27261
 int.to.chr$ -- 0
-int.to.str$ -- 297
-missing$ -- 2221
-newline$ -- 1669
-num.names$ -- 297
-pop$ -- 3590
+int.to.str$ -- 300
+missing$ -- 2239
+newline$ -- 1683
+num.names$ -- 300
+pop$ -- 3621
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4661
+skip$ -- 4689
 stack$ -- 0
-substring$ -- 6493
-swap$ -- 7992
-text.length$ -- 243
+substring$ -- 6540
+swap$ -- 8050
+text.length$ -- 245
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 10
-while$ -- 844
-width$ -- 300
-write$ -- 3248
-(There were 10 warnings)
+warning$ -- 11
+while$ -- 852
+width$ -- 303
+write$ -- 3275
+(There were 11 warnings)
