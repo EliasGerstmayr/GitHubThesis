@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Thesis_Gerstmayr.aux
-The style file: GThesis.bst
+The style file: GThesis2.bst
 A level-1 auxiliary file: Introduction/Introduction.aux
 A level-1 auxiliary file: Theory/SingleParticleMotion_Radiation.aux
 A level-1 auxiliary file: Theory/Wakefield_Plasma_Laser.aux
@@ -9,10 +9,9 @@ A level-1 auxiliary file: Methods/Experimental_Methods.aux
 A level-1 auxiliary file: Results/RR2019_linICS.aux
 A level-1 auxiliary file: Results/RR2015.aux
 A level-1 auxiliary file: Results/BW2018.aux
-A level-1 auxiliary file: Conclusion/Outlook.aux
 A level-1 auxiliary file: Conclusion/Conclusions.aux
 A level-1 auxiliary file: Appendix/Appendix.aux
-Reallocated field_info (elt_size=4) to 12956 items from 5000.
+Reallocated field_info (elt_size=4) to 14240 items from 5000.
 Database file #1: SFQED.bib
 Database file #2: ICS_Diag.bib
 Database file #3: General.bib
@@ -32,55 +31,79 @@ Database file #16: ICSRR.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Database file #17: Narozhny.bib
 Database file #18: BW_Astro.bib
-Warning--empty journal in SeiptThesis
+Warning--I didn't find a database entry for "protopapas1997atomic"
+Warning--I didn't find a database entry for "schafer1993above"
+Warning--I didn't find a database entry for "freeman1987above"
+Warning--I didn't find a database entry for "corkum1993plasma"
+Warning--I didn't find a database entry for "sauter1931verhalten"
+Warning--I didn't find a database entry for "heisenberg1936folgerungen"
+Warning--I didn't find a database entry for "schwinger1951gauge"
+Warning--I didn't find a database entry for "hogan_preliminary_2016"
+Warning--I didn't find a database entry for "harding1991_GRB"
+Warning--I didn't find a database entry for "uzdensky2014plasma"
+Warning--I didn't find a database entry for "denisov_vacuum_2017"
+Warning--I didn't find a database entry for "mignani_evidence_for_vacuum_birefingence_2017"
+Warning--I didn't find a database entry for "blandford1977_KerrBlackHole"
+Warning--I didn't find a database entry for "kandus2011primordial"
+Warning--I didn't find a database entry for "grasso2001_earlyUniverse"
+Warning--I didn't find a database entry for "CLIC2012"
+Warning--I didn't find a database entry for "ILC2013"
+Warning--I didn't find a database entry for "Yokoya1992_SFQED_BeamBeam"
+Warning--I didn't find a database entry for "Esberg2014_SFQED_BeamBeam"
+Warning--I didn't find a database entry for "yakimenko2019prospect"
+Warning--I didn't find a database entry for "Grismayer2017_SeededQEDCascades"
+Warning--I didn't find a database entry for "ridgers_dense_2012"
+Warning--I didn't find a database entry for "nerush_laser_2011"
 Warning--can't use both volume and number fields in Dirac1930_Annihilation
 Warning--can't use both volume and number fields in Klemperer1934_Annihilation
 Warning--missing institution in Gregory2015_f2OPT
 Warning--empty journal in GEMINI_GATEVALVES
+Warning--empty year in GEMINI_GATEVALVES
 Warning--empty journal in Shalloo_GEMINIDRIFT
+Warning--empty year in Shalloo_GEMINIDRIFT
 Warning--can't use both volume and number fields in Toth2017_BELLA
 Warning--empty journal in Heitler1954_BH
 Warning--can't use both volume and number fields in FLUKA
 Warning--can't use both volume and number fields in Fedotov2017_NAROZHNY
-You've used 306 entries,
-            2354 wiz_defined-function locations,
-            2536 strings with 82854 characters,
-and the built_in function-call counts, 117695 in all, are:
-= -- 9830
-> -- 2517
-< -- 250
-+ -- 1138
-- -- 569
-* -- 5959
-:= -- 12451
-add.period$ -- 1006
-call.type$ -- 306
+You've used 307 entries,
+            2465 wiz_defined-function locations,
+            2597 strings with 83832 characters,
+and the built_in function-call counts, 137987 in all, are:
+= -- 10124
+> -- 3760
+< -- 251
++ -- 1880
+- -- 940
+* -- 8129
+:= -- 13684
+add.period$ -- 1020
+call.type$ -- 307
 change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 316
-duplicate$ -- 11292
-empty$ -- 10694
-format.name$ -- 810
-if$ -- 27801
+cite$ -- 318
+duplicate$ -- 14116
+empty$ -- 12876
+format.name$ -- 1181
+if$ -- 31587
 int.to.chr$ -- 0
-int.to.str$ -- 306
-missing$ -- 2282
-newline$ -- 1715
-num.names$ -- 306
-pop$ -- 3696
+int.to.str$ -- 307
+missing$ -- 2952
+newline$ -- 1732
+num.names$ -- 307
+pop$ -- 4640
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4775
+skip$ -- 5776
 stack$ -- 0
-substring$ -- 6660
-swap$ -- 8213
-text.length$ -- 250
+substring$ -- 6722
+swap$ -- 10519
+text.length$ -- 251
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 10
-while$ -- 868
-width$ -- 309
-write$ -- 3340
-(There were 10 warnings)
+warning$ -- 11
+while$ -- 873
+width$ -- 310
+write$ -- 3388
+(There were 34 warnings)

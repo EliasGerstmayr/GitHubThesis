@@ -15,6 +15,8 @@ A procedure to align and overlap the laser pulse and electron beam and maintain 
 \item In Chapter \ref{Chap:BW}, electron beams were propagated through a bismuth target to produce a highly-energetic gamma-ray beam from bremsstrahlung. The yield, collimation and noise of the bremsstrahlung source were optimised for its application in a photon-photon collider experiment with the aim to produce electron-positron pairs from the linear Breit-Wheeler process. The second photon source was a keV X-ray source from a burn-through foil heated by a high-intensity laser. The variations in performance of both high-energy photon sources and the implications for measuring Breit-Wheeler pairs in this and future experiments were discussed.
 \end{itemize}
 
+\EliasComm{Make sure it says the experiment or results instead of in the chapter it happened.}
+\EliasComm{Should there be some kind of discussion merging these somehow or leave it as that is part of the outlook? Maybe a sentence to lead over to the outlook?}
 
 \section{Outlook: Future Measurements of Radiation Reaction using LWFA}
 \label{Chap:Outlook}
@@ -114,7 +116,11 @@ Can identify interesting regimes  \cite{Arran2019_RR_PPCF,Arran2019_RR_SPIE}.
 
 We might be able to reach a regime where QED effects become relevant as the `quantumness' parameter $\eta$, indicating how much the interaction is dominated by QED effects \cite{Bell2008_PairsEta,Blackburn2014_QRR}, approaches values close to $1$. In this regime we expect gamma rays to be produced early in the interaction that can then combine with the copious amounts of laser photons available to produce electron-positron pairs \cite{Blackburn2017_pairs}. At the same time, this work in conjunction with \cite{Arran2019_RR_PPCF,Arran2019_RR_SPIE} indicates that by improving the electron beam quality differences in models can be measured even at comparable laser and electron energies, giving future experiments at Gemini or comparable laser facilities the opportunity to bridge the gap between these first measurements of radiation reaction and the future projects being worked on at the next generation experiments.
 
-
+\textbf{Structure for motivation}
+\begin{itemize}
+\item what kind of interesting phenomena are there when increasing energy and intensity?
+\item what kind of diagnostics and measurements would that require (which then leads over to the sections)?
+\end{itemize}
 
 
 \begin{sidewaysfigure}
@@ -124,35 +130,6 @@ We might be able to reach a regime where QED effects become relevant as the `qua
 \label{Concl:Fig:FutureExp}
 \end{sidewaysfigure}
 
-What could then be possible in realistic terms (calculate eta)
-\begin{itemize}
-\item Use beam as achieved, maybe assume we can boost it to 2 GeV
-\item Assume we can get $a_0 = 10$ safely, what can be done with 25
-\item what is the real peak intensity?
-\item table for different energies and eta
-\end{itemize}
-
-
-A proposed experiment layout based on the experiments described in the previous Chapters is shown in Figure \ref{Concl:Fig:FutureExp} and is outlined in more detail in the next sections, describing the requirements and ideas with the reference to the corresponding chapter where this diagnostic or technique was fielded and shown to be useful.
-
-
-
-\begin{itemize}
-\item for each area make a table to summarise what has been fielded and what is proposed as new
-\end{itemize}
-
-
-
-\begin{itemize}
-\item Successful high-intensity collisions $N>100$ at $a_0 \sim 10$
-\item Precision study of radiation reaction phenomena 
-\item Very high-intensity collisions at $a_0 > 20$
-\end{itemize}
-
-
-\subsubsection{High confidence No RR-RR Comparison}
-
-See Chapter \ref{Chap:RR15}
 
 \subsubsection{Precision Measurement of RR at high-intensities (quantum corrections)}
 
@@ -176,34 +153,10 @@ Detector as in \cite{Cole2018_RR,Behm2018_Gamma}
 combined with \cite{Corvan2014_Gamma}
 as proposed in \cite{Lisi2018_Gamma}.
 
-\subsubsection{Double-differential Gamma spectrum}
-
-
-
-
 \subsubsection{On-shot interaction intensity}
 
-Measuring the interaction intensity of electrons and laser pulse.
 
-Requires high-intensity interactions.
-
-Requires low-intensity characterisation of the electron beam.
-
-Requires gamma profile screen of sufficient field of view and spatial resolution.
-
-Requires camera imaging the screen, here 14-bit EMCCD (Andor iXon).
-
-This can help to constrain the experiment conditions and narrows down the model.
-
-Optional rotating polarisation and changing from linear to circular.
-
-Also ideally measurement of polarisation.
-
-Varying intensity and electron beam intensity.
-
-\cite{HarShemesh2012_INTENSITY,Yan2017_ICS}
-
-REF TOM BLACKBURN MODEL INDEPENDENT A0
+\cite{HarShemesh2012_INTENSITY,Yan2017_ICS,Blackburn2019_ModelIndependentLaser}
 
 
 
@@ -242,7 +195,7 @@ We are able to produce a high-charge electron beam with the potential to be a na
 
 
 
-
+\iffalse
 \begin{table}[h]
 \centering
 \begin{tabular}{l|l|l|l|c}
@@ -257,7 +210,7 @@ Self-Emission HM & Channel & Probe & Top View & \xmark \\
 \end{tabular}
 \caption[Overview of plasma diagnostics.]{Overview of plasma diagnostics.}
 \end{table}
-
+\fi
 
 Diagnosing the plasma
 
@@ -282,25 +235,65 @@ Diagnosing the plasma
 \item estimate $\eta$
 \end{itemize}
 
-As fielded successfully in Chapters \ref{Chap:linICS} and \ref{Chap:RR15}, we propose the use of an f/2 OAP which allows tight focusing to a spot of similar dimensions as the electron beam at the exit of the accelerator. We also propose to keep the head-on geometry as used so far which requires a central hole in the parabola. 
-Loss in energy for the hole is very similar to loss when going off-axis. Focus close to the target (will be explained later). We hope to use the maximum energy possible which from the standpoint of optics not be a problem. This would allow us reaching intensities at focus in excess of $a_0 = 20$ at 45 fs pulse duration, which combined with a 1.3 GeV electron beam brings us to CHI ETA XX NUMBER and if we manage to increase the electron beam energy to 2 GeV to CHI ETA XX NUMBER.
+\subsubsection{Short focal length}
 
-Due to the short focal length the OAP has to be protected again against scattered light from the driver beam defocused in the plasma. This is done by covering a ring around the hole with plastic.
-Since we decided on a gas jet the level of debris expected is low, but a pellicle (AR thin foil) is still recommended. The beam dump for the defocusing scattering beam should be positioned far away to reduce the fluence and the debris generated. A second parabola could be used to recollimate the beam, transport it out of the chamber as diagnostics, but since the laser pulse propagates through plasma at different intensities and focal points, we can not confidently predict the properties of the beam, where it might focus and produce damage, so a simple beam block facing away from any sensitive optics is preferred.
 
-Depending on the predicted divergence of produced pairs in very intense interactions, the central hole might not be large enough and we have to consider going off-axis or to increase the hole size, which currently is anyways effectively larger due to the plastic cover.
+As fielded successfully in Chapters \ref{Chap:linICS} and \ref{Chap:RR15}, we propose the use of an f/2 OAP which allows tight focusing to a spot of similar dimensions as the electron beam at the exit of the accelerator. 
 
-An adaptive optic and wavefront measurement is important as well, optimisation using focal spot camera again.
+\subsubsection{Beam geometry}
 
-For the intensity measurements that depend on the polarisation of the scattering beam. It would be useful to implement a waveplate on a rotation mount, one for linear polarisation and one for circular polarisation.
+\begin{itemize}
+\item $\eta$ maximised in head-on collision
+\item energy loss if with hole
+\item wave front error with hole
+\item ease of alignment and long temporal overlap in head-on
+\item supercritical if off-axis
+\item depending on cascading or high peak $\eta$ we might want to use different geometries
+\item large divergence radiation is against hole but also requires wider off-axis angle
+\item see Figure 
+\item off-axis might reusable dumped beam using parabola?
+\item if super large optics for future generations of laser then the small hole is minimal
+\end{itemize}
 
-The polarisation of the beam is ideally also diagnosed as verification. Such a diagnostic was recently built and fielded by Matthew Streeter (Imperial College) at Gemini.
+\begin{equation}
+\eta = \frac{(1-\cos \theta) \gamma E_L}{E_S} \propto (1-\cos\theta) \sqrt{I_L}
+\end{equation}
 
-As implemented as standard at Gemini, we require an adaptive optic and a wavefront sensor to optimise the spot, along with a focal spot camera at the interaction point. Similarly we benefit from on-shot laser energy measurements.
+\EliasComm{Make a plot to show $\eta$ for different angles and energies to show explicit impact}
 
-The fluctuation of the laser, expected to be small due to the short focal length, also have to be characterised.
+\subsubsection{Polarisation}
+
+\begin{itemize}
+\item polarisation dependence of effects
+\item wave plate on rotation mount for linear and circular
+\item intensity measurement on shot depends on polarisation
+\item polarisation of electron beam (REF\addref) requires some elliptical polarisation?
+\item suitable polarisation diagnostic required
+\end{itemize}
+
+
+\subsubsection{Laser diagnostics}
+
+\begin{itemize}
+\item on-shot measurement of energy
+\item wavefront on-shot (high-intensity) for modelling
+\item temporal (FROG?)
+\item control over spatio-temporal wave front (dazzler or similar) for different interactions
+\item adaptive optic 
+\item intensity (beyond ellipticity thing)
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\columnwidth]{DoubleF2Setup.png}\includegraphics[width=.5\columnwidth]{HoleyF2Setup.png}
+\caption{Scattering geometries.}
+\end{figure}
 
 \subsection{Spatial and temporal Overlap and alignment}
+
+
+\subsubsection{Laser-laser diagnostics}
+
 
 
 \begin{itemize}
@@ -309,17 +302,21 @@ The fluctuation of the laser, expected to be small due to the short focal length
 \item  spectral interferometry at TCC \cite{Corvan2016_TIMING}
 \item  on-shot timing, as done at Gemini \cite{Shalloo_GEMINIDRIFT}, upstairs, downstairs, analysis pending (staging)
 \item on-shot pointing reference (done on staging)
-\item  Shock injection to fix laser-electron offset and short bunches, calculate fluctuations from shock fluctuations.
-\item  Finding alignment using raster scan as described in Chapter \ref{Chap:linICS}
-\item  outside plasma, other effects like fringes or plasma afterglow \cite{Scherkl2019_PLASMAAFTERGLOW} to consider? only mJ laser required but match and remove driver laser, tune via shuttering?
-\item opto-electric (calibrate laser-electron offset, which then can be used in conjunction with spectral interferometry on-shot, find delay via some shuttering)? \cite{Cavalieri2005_EOS,Yan2000_EOS} GaP sample?
-\item another ICS source (estimate brightness required)
 \item fast transverse probe (shadowgraphy)
 \item fast transverse probe also gives polarogram?
 \item probe or top view with high mag?
 \item improvements to prism setup and actual overlap (wire at end of gas jet, if shooting very far away?)
 \end{itemize}
 
+\subsubsection{Laser-electron diagnostics}
+
+\begin{itemize}
+\item  Shock injection to fix laser-electron offset and short bunches, calculate fluctuations from shock fluctuations.
+\item  Finding alignment using raster scan as described in Chapter \ref{Chap:linICS}
+\item  outside plasma, other effects like fringes or plasma afterglow \cite{Scherkl2019_PLASMAAFTERGLOW} to consider? only mJ laser required but match and remove driver laser, tune via shuttering?
+\item opto-electric (calibrate laser-electron offset, which then can be used in conjunction with spectral interferometry on-shot, find delay via some shuttering)? \cite{Cavalieri2005_EOS,Yan2000_EOS} GaP sample?
+\item another ICS source (estimate brightness required)
+\end{itemize}
 
 \begin{table}[h]
 \centering
@@ -334,6 +331,8 @@ Opto-electric & fs & Crystal and Probe & FP & \xmark
 \caption[Overview of timing diagnostics.]{Overview of timing diagnostics.}
 \end{table}
 
+\subsubsection{Fluctuations}
+
 Estimate laser-electron jitter:
 
 \begin{itemize}
@@ -347,6 +346,11 @@ Estimate laser-electron jitter:
 High mag fast probe \cite{Buck2011_BUBBLE,Savert2015_BUBBLE,Siminos2016_FASTSHADOW}
 
 Multiple probes, chirped pulse as temporally resolved probe (will add a lot of complexity)
+
+
+\subsubsection{Automated alignment}
+
+Bayesian inference?
 
 \subsection{Electron beam diagnostics}
 
@@ -421,7 +425,7 @@ Estimate required spatial dimensions of the gamma profile screen as follow:
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\columnwidth]{GammaDets.png}
+\includegraphics[width=0.9\columnwidth]{GmmaDets_DoubleScreen.png}
 \caption{Gamma detectors as proposed for a future campaign. Gamma profile and (dual-axis) gamma spectrometer as used before to measure profile and intensity. A new, not yet fielded, addition would be the converter spectrometer separating produced pairs and Compton electrons using a magnet and measuring these to increase the sensitivity of the spectrometer setup.}
 \end{figure}
 
@@ -450,12 +454,6 @@ In Chapter \ref{Chap:BW}, we used a crystal spectrometer setup in vacuum to meas
 \caption{Radiation emitted in an interaction of a 10 GeV electron beam XXX REF NUM XX with a laser pulse. The blue and red curve have been calculated XX. The dotted curve indicates the calculated spectrum in the locally constant field approximation (LCFA). Reprinted Figure 3 with permission from \cite{DiPiazza2018_LCFA}. Copyright (2019) by the American Physical Society.}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.9\columnwidth]{GammaDiag_Overview.pdf}
-\caption{Overview. Need to work this over and also include somewhere whether we already fielded diagnostics or not.}
-\end{figure}
-
 \begin{itemize}
 \item motivation LCFA
 \item angular distribution, calculate feasibility based on laser and gamma-ray divergence
@@ -463,6 +461,7 @@ In Chapter \ref{Chap:BW}, we used a crystal spectrometer setup in vacuum to meas
 \item what kind of angle or crystal would we require?
 \item shielding or signal-to-noise?
 \item inside chamber?
+\item is radiation polarisation dependent, i.e. is the crystal orientation important?
 \end{itemize}
 
 
@@ -479,12 +478,6 @@ We have also shown that we can use the Bethe-Heitler process to calibrate our ch
 \caption{Sketch of the beam transport for electrons and positrons consisting of two permanent large aperture dipole magnets as used in Chapter \ref{Chap:BW}. Electrons and positrons are dispersed horizontally. The positrons are redirected onto a set of single particle detectors by a second dipole magnet.}
 \end{figure}
 
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\columnwidth]{SPDDiag_Overview.pdf}
-\caption{Overview. Need to work this over and also include somewhere whether we already fielded diagnostics or not.}
-\end{figure}
 
 
 
@@ -503,4 +496,5 @@ We were able to calibrate these diagnostics by converting gamma radiation into p
 \item detectors: SPD
 \item tracking layers
 \item coincidence measurement possible?
+\item real calorimeter
 \end{itemize}

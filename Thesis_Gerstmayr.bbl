@@ -6,21 +6,22 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
 
 \bibitem{CERN_Aerial}
 {CERN}.
-\newblock \enquote{The scale of the {LHC}}, 2019.
+\newblock \enquote{The scale of the {LHC}} (2019).
 \newline\urlprefix\url{http://cds.cern.ch/record/42370}
 
 \bibitem{ICUIL2019_Map}
 {ICUIL}.
-\newblock \enquote{{ICUIL World Map 2019}}, 2019.
+\newblock \enquote{{ICUIL World Map 2019}} (2019).
 \newline\urlprefix\url{https://www.icuil.org/}
 
 \bibitem{Mourou2019_Nobel}
 G.~Mourou.
 \newblock \enquote{Nobel Lecture: Extreme light physics and application}.
-\newblock \emph{Rev. Mod. Phys.}, 91, (2019), p. 030501.
+\newblock \emph{Rev. Mod. Phys.}, \textbf{91} (2019), p. 030501.
 \newblock \doi{10.1103/RevModPhys.91.030501}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/RevModPhys.91.030501}
 
@@ -28,42 +29,95 @@ G.~Mourou.
 T.~Blackburn.
 \newblock \enquote{Radiation reaction in electron-beam interactions with
   high-intensity lasers}.
-\newblock \emph{arXiv preprint arXiv:1910.13377}.
+\newblock \emph{arXiv preprint arXiv:1910.13377},  (2019).
 
 \bibitem{DiPiazza2018_LCFA}
-A.~Di~Piazza et~al.
+A.~Di~Piazza, M.~Tamburini, S.~Meuren and C.~H. Keitel.
 \newblock \enquote{Implementing nonlinear Compton scattering beyond the
   local-constant-field approximation}.
-\newblock \emph{Phys. Rev. A}, 98, (2018), p. 012134.
+\newblock \emph{Phys. Rev. A}, \textbf{98} (2018), p. 012134.
 \newblock \doi{10.1103/PhysRevA.98.012134}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.98.012134}
 
 \bibitem{LivingstonPlot}
-A.~Chao et~al.
+A.~Chao, R.~Davidson, A.~Dragt \emph{et~al.}
 \newblock \enquote{2001 Snowmass Accelerator R \& D Report}.
 \newblock \emph{Technical report}, Fermi National Accelerator Lab.(FNAL),
-  Batavia, IL (United States), 2001.
+  Batavia, IL (United States) (2001).
 
 \bibitem{Sauter1931_ECRIT}
 F.~Sauter.
 \newblock \enquote{{\"U}ber das Verhalten eines Elektrons im homogenen
   elektrischen Feld nach der relativistischen Theorie Diracs}.
-\newblock \emph{Zeitschrift f{\"u}r Physik}, 69, (1931), pp. 742--764.
+\newblock \emph{Zeitschrift f{\"u}r Physik}, \textbf{69} (1931)(11-12), pp.
+  742--764.
 
 \bibitem{Heisenberg1936_ECRIT}
 W.~Heisenberg and H.~Euler.
 \newblock \enquote{Folgerungen aus der diracschen theorie des positrons}.
-\newblock \emph{Zeitschrift f{\"u}r Physik}, 98, (1936), pp. 714--732.
+\newblock \emph{Zeitschrift f{\"u}r Physik}, \textbf{98} (1936)(11-12), pp.
+  714--732.
 
 \bibitem{Danson2019_PWLASERS}
-C.~N. Danson et~al.
+C.~N. Danson, C.~Haefner, J.~Bromage \emph{et~al.}
 \newblock \enquote{Petawatt and exawatt class lasers worldwide}.
-\newblock \emph{High Power Laser Science and Engineering}, 7.
+\newblock \emph{High Power Laser Science and Engineering}, \textbf{7} (2019).
+
+\bibitem{DiPiazza2012_ICS}
+A.~Di~Piazza, C.~M{\"u}ller, K.~Hatsagortsyan and C.~H. Keitel.
+\newblock \enquote{Extremely high-intensity laser interactions with fundamental
+  quantum systems}.
+\newblock \emph{Reviews of Modern Physics}, \textbf{84} (2012)(3), p. 1177.
+
+\bibitem{Ruffini2010_PAIRSASTRO}
+R.~Ruffini, G.~Vereshchagin and S.-S. Xue.
+\newblock \enquote{Electron--positron pairs in physics and astrophysics: from
+  heavy nuclei to black holes}.
+\newblock \emph{Physics Reports}, \textbf{487} (2010)(1-4), pp. 1--140.
+
+\bibitem{Nikishov1962_PAIRSASTRO}
+A.~I. Nikishov.
+\newblock \enquote{Absorption of high-energy photons in the universe}.
+\newblock \emph{Sov. Phys. JETP}, \textbf{14} (1962), pp. 393--394.
+
+\bibitem{Gales2018_ELINP}
+S.~Gales, K.~Tanaka, D.~Balabanski \emph{et~al.}
+\newblock \enquote{The extreme light infrastructure?nuclear physics (ELI-NP)
+  facility: New horizons in physics with 10 PW ultra-intense lasers and 20 MeV
+  brilliant gamma beams}.
+\newblock \emph{Reports on Progress in Physics}, \textbf{81} (2018)(9), p.
+  094301.
+
+\bibitem{Weber2017_ELIBeamlines}
+S.~Weber, S.~Bechet, S.~Borneis \emph{et~al.}
+\newblock \enquote{P3: An installation for high-energy density plasma physics
+  and ultra-high intensity laser--matter interaction at ELI-Beamlines}.
+\newblock \emph{Matter and Radiation at Extremes}, \textbf{2} (2018)(4), p.
+  149.
+
+\bibitem{Li2017_SULF}
+R.~Li, X.~Liang, Y.~Leng and Z.~Xu.
+\newblock \enquote{Progress of the SULF 10 PW laser project}.
+\newblock In \enquote{1st AAPPS-DPP meeting},  (2017).
+
+\bibitem{Shen2018_SULF}
+B.~Shen, Z.~Bu, J.~Xu \emph{et~al.}
+\newblock \enquote{Exploring vacuum birefringence based on a 100 PW laser and
+  an x-ray free electron laser beam}.
+\newblock \emph{Plasma Physics and Controlled Fusion}, \textbf{60} (2018)(4),
+  p. 044002.
+
+\bibitem{Maksimchuk2019_ZEUS}
+A.~Maksimchuk, I.~Jovanovic, G.~Kalinchenko \emph{et~al.}
+\newblock \enquote{Zettawatt-Equivalent Ultrashort Pulse Laser System (ZEUS) at
+  the University of Michigan}.
+\newblock \emph{Bulletin of the American Physical Society},  (2019).
 
 \bibitem{Jackson}
 J.~D. Jackson.
 \newblock \enquote{Classical Electrodynamics, 3rd ed.}
-\newblock \emph{American Journal of Physics}, 67, (1999), pp. 841--842.
+\newblock \emph{American Journal of Physics}, \textbf{67} (1999)(9), pp.
+  841--842.
 \newblock \doi{10.1119/1.19136}.
 \newline\urlprefix\url{https://doi.org/10.1119/1.19136}
 
@@ -71,73 +125,69 @@ J.~D. Jackson.
 A.~G.~R. Thomas.
 \newblock \emph{Studies of laser propagation and mono-energetic electron beam
   injection in laser-wakefield accelerators}.
-\newblock Ph.D. thesis, Imperial College London (University of London), 2007.
+\newblock Ph.D. thesis, Imperial College London (University of London) (2007).
 \newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.439099}
 
 \bibitem{Cole2018_RR}
-J.~Cole et~al.
+J.~Cole, K.~Behm, E.~Gerstmayr \emph{et~al.}
 \newblock \enquote{Experimental evidence of radiation reaction in the collision
   of a high-intensity laser pulse with a laser-wakefield accelerated electron
   beam}.
-\newblock \emph{Physical Review X}, 8, (2018), p. 011020.
+\newblock \emph{Physical Review X}, \textbf{8} (2018)(1), p. 011020.
 
 \bibitem{Poder2018_RR}
-K.~Poder et~al.
+K.~Poder, M.~Tamburini, G.~Sarri \emph{et~al.}
 \newblock \enquote{Experimental signatures of the quantum nature of radiation
   reaction in the field of an ultraintense laser}.
-\newblock \emph{Physical Review X}, 8, (2018), p. 031004.
+\newblock \emph{Physical Review X}, \textbf{8} (2018)(3), p. 031004.
 
 \bibitem{Burke1997_RR}
-D.~Burke et~al.
+D.~Burke, R.~Field, G.~Horton-Smith \emph{et~al.}
 \newblock \enquote{Positron production in multiphoton light-by-light
   scattering}.
-\newblock \emph{Physical Review Letters}, 79, (1997), p. 1626.
+\newblock \emph{Physical Review Letters}, \textbf{79} (1997)(9), p. 1626.
 
 \bibitem{Bula1996_RR}
-C.~Bula et~al.
+C.~Bula, K.~McDonald, E.~Prebys \emph{et~al.}
 \newblock \enquote{Observation of nonlinear effects in Compton scattering}.
-\newblock \emph{Physical Review Letters}, 76, (1996), p. 3116.
+\newblock \emph{Physical Review Letters}, \textbf{76} (1996)(17), p. 3116.
 
 \bibitem{Esarey1993_NT}
-E.~Esarey, S.~K. Ride, and P.~Sprangle.
+E.~Esarey, S.~K. Ride and P.~Sprangle.
 \newblock \enquote{Nonlinear Thomson scattering of intense laser pulses from
   beams and plasmas}.
-\newblock \emph{Phys. Rev. E}, 48, (1993), pp. 3003--3021.
+\newblock \emph{Phys. Rev. E}, \textbf{48} (1993), pp. 3003--3021.
 \newblock \doi{10.1103/PhysRevE.48.3003}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.48.3003}
 
 \bibitem{PeskinSchroeder}
 M.~E. Peskin and D.~V. Schroeder.
 \newblock \emph{An introduction to quantum field theory}.
-\newblock CRC Press, 2018.
+\newblock CRC Press (2018).
 \newblock \doi{10.1201/9780429503559}.
 \newline\urlprefix\url{https://doi.org/10.1201/9780429503559}
-
-\bibitem{DiPiazza2012_ICS}
-A.~Di~Piazza et~al.
-\newblock \enquote{Extremely high-intensity laser interactions with fundamental
-  quantum systems}.
-\newblock \emph{Reviews of Modern Physics}, 84, (2012), p. 1177.
 
 \bibitem{Furry1951_FURRY}
 W.~Furry.
 \newblock \enquote{On bound states and scattering in positron theory}.
-\newblock \emph{Physical Review}, 81, (1951), p. 115.
+\newblock \emph{Physical Review}, \textbf{81} (1951)(1), p. 115.
 
 \bibitem{Wolkow1935_VOLKOV}
 D.~Wolkow.
 \newblock \enquote{{\"U}ber eine klasse von l{\"o}sungen der diracschen
   gleichung}.
-\newblock \emph{Zeitschrift f{\"u}r Physik}, 94, (1935), pp. 250--260.
+\newblock \emph{Zeitschrift f{\"u}r Physik}, \textbf{94} (1935)(3-4), pp.
+  250--260.
 
 \bibitem{SeiptThesis}
 D.~Seipt.
-\newblock \enquote{Strong-Field QED Processes in Short Laser Pulses}.
+\newblock \emph{Strong-Field QED Processes in Short Laser Pulses}.
+\newblock Ph.D. thesis, Technische Universitaet Dresden (2012).
 
 \bibitem{Corde2013_Rad}
-S.~Corde et~al.
+S.~Corde, K.~Ta~Phuoc, G.~Lambert \emph{et~al.}
 \newblock \enquote{Femtosecond x rays from laser-plasma accelerators}.
-\newblock \emph{Rev. Mod. Phys.}, 85, (2013), pp. 1--48.
+\newblock \emph{Rev. Mod. Phys.}, \textbf{85} (2013), pp. 1--48.
 \newblock \doi{10.1103/RevModPhys.85.1}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/RevModPhys.85.1}
 
@@ -145,140 +195,118 @@ S.~Corde et~al.
 F.~Albert and A.~G. Thomas.
 \newblock \enquote{Applications of laser wakefield accelerator-based light
   sources}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 58, (2016), p. 103001.
+\newblock \emph{Plasma Physics and Controlled Fusion}, \textbf{58} (2016)(10),
+  p. 103001.
 
 \bibitem{Compton1923_Compton}
 A.~H. Compton.
 \newblock \enquote{A quantum theory of the scattering of X-rays by light
   elements}.
-\newblock \emph{Physical review}, 21, (1923), p. 483.
+\newblock \emph{Physical review}, \textbf{21} (1923)(5), p. 483.
 
 \bibitem{Klein1929_KNEq}
 O.~Klein and Y.~Nishina.
 \newblock \enquote{{\"U}ber die Streuung von Strahlung durch freie Elektronen
   nach der neuen relativistischen Quantendynamik von Dirac}.
-\newblock \emph{Zeitschrift f{\"u}r Physik}, 52, (1929), pp. 853--868.
+\newblock \emph{Zeitschrift f{\"u}r Physik}, \textbf{52} (1929)(11-12), pp.
+  853--868.
 
 \bibitem{Thomson2005_ThomsonScatter}
 J.~J. Thomson.
 \newblock \emph{Conduction of electricity through gases}.
-\newblock Cambridge University Press, 1906.
+\newblock Cambridge University Press (1906).
 
 \bibitem{Kramer2018_Gamma}
-J.~Kr{\"a}mer et~al.
+J.~Kr{\"a}mer, A.~Jochmann, M.~Budde \emph{et~al.}
 \newblock \enquote{Making spectral shape measurements in inverse Compton
   scattering a tool for advanced diagnostic applications}.
-\newblock \emph{Scientific reports}, 8, (2018), p. 1398.
+\newblock \emph{Scientific reports}, \textbf{8} (2018)(1), p. 1398.
 
 \bibitem{Blackburn2019_ModelIndependentLaser}
-T.~G. Blackburn et~al.
+T.~G. Blackburn, E.~Gerstmayr, S.~P.~D. Mangles and M.~Marklund.
 \newblock \enquote{Model-independent inference of laser intensity}.
-\newblock \emph{arXiv preprint arXiv:1911.02349}.
+\newblock \emph{arXiv preprint arXiv:1911.02349},  (2019).
 
 \bibitem{BlackburnThesis}
 T.~G. Blackburn.
 \newblock \emph{QED effects in laser-plasma interactions}.
-\newblock Ph.D. thesis, Oxford University, UK, 2015.
+\newblock Ph.D. thesis, Oxford University, UK (2015).
 
 \bibitem{Ritus1985_QRR}
 V.~Ritus.
 \newblock \enquote{Quantum effects of the interaction of elementary particles
   with an intense electromagnetic field}.
-\newblock \emph{Journal of Russian Laser Research}, 6, (1985), pp. 497--617.
-
-\bibitem{Ruffini2010_PAIRSASTRO}
-R.~Ruffini, G.~Vereshchagin, and S.-S. Xue.
-\newblock \enquote{Electron--positron pairs in physics and astrophysics: from
-  heavy nuclei to black holes}.
-\newblock \emph{Physics Reports}, 487, (2010), pp. 1--140.
+\newblock \emph{Journal of Russian Laser Research}, \textbf{6} (1985)(5), pp.
+  497--617.
 
 \bibitem{Shen1972_STRAGGLING}
 C.~S. Shen and D.~White.
 \newblock \enquote{Energy Straggling and Radiation Reaction for Magnetic
   Bremsstrahlung}.
-\newblock \emph{Phys. Rev. Lett.}, 28, (1972), pp. 455--459.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{28} (1972), pp. 455--459.
 \newblock \doi{10.1103/PhysRevLett.28.455}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.28.455}
 
-\bibitem{Shen2018_SULF}
-B.~Shen et~al.
-\newblock \enquote{Exploring vacuum birefringence based on a 100 PW laser and
-  an x-ray free electron laser beam}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 60, (2018), p. 044002.
-
-\bibitem{Gales2018_ELINP}
-S.~Gales et~al.
-\newblock \enquote{The extreme light infrastructure?nuclear physics (ELI-NP)
-  facility: New horizons in physics with 10 PW ultra-intense lasers and 20 MeV
-  brilliant gamma beams}.
-\newblock \emph{Reports on Progress in Physics}, 81, (2018), p. 094301.
-
-\bibitem{Weber2017_ELIBeamlines}
-S.~Weber et~al.
-\newblock \enquote{P3: An installation for high-energy density plasma physics
-  and ultra-high intensity laser--matter interaction at ELI-Beamlines}.
-\newblock \emph{Matter and Radiation at Extremes}, 2, (2018), p. 149.
-
 \bibitem{Zou2015_Apollon}
-J.~Zou et~al.
+J.~Zou, C.~Le~Blanc, D.~Papadopoulos \emph{et~al.}
 \newblock \enquote{Design and current progress of the Apollon 10 PW project}.
-\newblock \emph{High Power Laser Science and Engineering}, 3.
+\newblock \emph{High Power Laser Science and Engineering}, \textbf{3} (2015).
 
 \bibitem{Blackburn2014_QRR}
-T.~G. Blackburn et~al.
+T.~G. Blackburn, C.~P. Ridgers, J.~G. Kirk and A.~R. Bell.
 \newblock \enquote{Quantum Radiation Reaction in Laser--Electron-Beam
   Collisions}.
-\newblock \emph{Phys. Rev. Lett.}, 112, (2014), p. 015001.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{112} (2014), p. 015001.
 \newblock \doi{10.1103/PhysRevLett.112.015001}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.112.015001}
 
 \bibitem{Ridgers2017_QRR}
-C.~Ridgers et~al.
+C.~Ridgers, T.~Blackburn, D.~Del~Sorbo \emph{et~al.}
 \newblock \enquote{Signatures of quantum effects on radiation reaction in
   laser--electron-beam collisions}.
-\newblock \emph{Journal of Plasma Physics}, 83.
+\newblock \emph{Journal of Plasma Physics}, \textbf{83} (2017)(5).
 
 \bibitem{DiPiazza2010_QRR}
-A.~Di~Piazza, K.~Z. Hatsagortsyan, and C.~H. Keitel.
+A.~Di~Piazza, K.~Z. Hatsagortsyan and C.~H. Keitel.
 \newblock \enquote{Quantum Radiation Reaction Effects in Multiphoton Compton
   Scattering}.
-\newblock \emph{Phys. Rev. Lett.}, 105, (2010), p. 220403.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{105} (2010), p. 220403.
 \newblock \doi{10.1103/PhysRevLett.105.220403}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.105.220403}
 
 \bibitem{Ridgers2012_DENSE}
-C.~P. Ridgers et~al.
+C.~P. Ridgers, C.~S. Brady, R.~Duclous \emph{et~al.}
 \newblock \enquote{{{D}}ense {{E}}lectron-{{P}}ositron {{P}}lasmas and
   {{U}}ltraintense $\gamma$ rays from {{L}}aser-{{I}}rradiated {{S}}olids}.
-\newblock \emph{Phys. Rev. Lett.}, 108, (2012), p. 165006.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{108} (2012), p. 165006.
 \newblock \doi{10.1103/PhysRevLett.108.165006}.
 
 \bibitem{Bulanov2010_MultiPulseVac}
-S.~S. Bulanov et~al.
+S.~S. Bulanov, V.~D. Mur, N.~B. Narozhny \emph{et~al.}
 \newblock \enquote{Multiple Colliding Electromagnetic Pulses: A Way to Lower
   the Threshold of ${e}^{+}{e}^{\ensuremath{-}}$ Pair Production from Vacuum}.
-\newblock \emph{Phys. Rev. Lett.}, 104, (2010), p. 220404.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{104} (2010), p. 220404.
 \newblock \doi{10.1103/PhysRevLett.104.220404}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.104.220404}
 
 \bibitem{Wistisen2018_RR}
-T.~N. Wistisen et~al.
+T.~N. Wistisen, A.~Di~Piazza, H.~V. Knudsen and U.~I. Uggerh{\o}j.
 \newblock \enquote{Experimental evidence of quantum radiation reaction in
   aligned crystals}.
-\newblock \emph{Nature communications}, 9, (2018), p. 795.
+\newblock \emph{Nature communications}, \textbf{9} (2018)(1), p. 795.
 
 \bibitem{DiPiazza2017_CrystalRR}
-A.~Di~Piazza, T.~N. Wistisen, and U.~I. Uggerh{\o}j.
+A.~Di~Piazza, T.~N. Wistisen and U.~I. Uggerh{\o}j.
 \newblock \enquote{Investigation of classical radiation reaction with aligned
   crystals}.
-\newblock \emph{Physics Letters B}, 765, (2017), pp. 1--5.
+\newblock \emph{Physics Letters B}, \textbf{765} (2017), pp. 1--5.
 
 \bibitem{Thomas2012_LL}
-A.~G.~R. Thomas et~al.
+A.~G.~R. Thomas, C.~P. Ridgers, S.~S. Bulanov \emph{et~al.}
 \newblock \enquote{Strong Radiation-Damping Effects in a Gamma-Ray Source
   Generated by the Interaction of a High-Intensity Laser with a
   Wakefield-Accelerated Electron Beam}.
-\newblock \emph{Phys. Rev. X}, 2, (2012), p. 041004.
+\newblock \emph{Phys. Rev. X}, \textbf{2} (2012), p. 041004.
 \newblock \doi{10.1103/PhysRevX.2.041004}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevX.2.041004}
 
@@ -286,69 +314,70 @@ A.~G.~R. Thomas et~al.
 D.~A. Burton and A.~Noble.
 \newblock \enquote{Aspects of electromagnetic radiation reaction in strong
   fields}.
-\newblock \emph{Contemporary Physics}, 55, (2014), pp. 110--121.
+\newblock \emph{Contemporary Physics}, \textbf{55} (2014)(2), pp. 110--121.
 
 \bibitem{Bulanov2011_LADLL}
-S.~V. Bulanov et~al.
+S.~V. Bulanov, T.~Z. Esirkepov, M.~Kando \emph{et~al.}
 \newblock \enquote{Lorentz-Abraham-Dirac versus Landau-Lifshitz radiation
   friction force in the ultrarelativistic electron interaction with
   electromagnetic wave (exact solutions)}.
-\newblock \emph{Phys. Rev. E}, 84, (2011), p. 056605.
+\newblock \emph{Phys. Rev. E}, \textbf{84} (2011), p. 056605.
 \newblock \doi{10.1103/PhysRevE.84.056605}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.84.056605}
 
 \bibitem{LandauLifschitz}
 L.~D. Landau and E.~M. Lifshitz.
 \newblock \emph{The Classical Theory of Fields}.
-\newblock Butterworth-Heinemann, 1975.
+\newblock Butterworth-Heinemann (1975).
 
 \bibitem{Bulanov2011_LL}
-S.~V. Bulanov et~al.
+S.~V. Bulanov, T.~Z. Esirkepov, M.~Kando \emph{et~al.}
 \newblock \enquote{Lorentz-Abraham-Dirac versus Landau-Lifshitz radiation
   friction force in the ultrarelativistic electron interaction with
   electromagnetic wave (exact solutions)}.
-\newblock \emph{Phys. Rev. E}, 84, (2011), p. 056605.
+\newblock \emph{Phys. Rev. E}, \textbf{84} (2011), p. 056605.
 \newblock \doi{10.1103/PhysRevE.84.056605}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.84.056605}
 
 \bibitem{Baylis2002_LL}
 W.~Baylis and J.~Huschilt.
 \newblock \enquote{Energy balance with the Landau--Lifshitz equation}.
-\newblock \emph{Physics Letters A}, 301, (2002), pp. 7--12.
+\newblock \emph{Physics Letters A}, \textbf{301} (2002)(1-2), pp. 7--12.
 
 \bibitem{Spohn2000_RR}
 H.~Spohn.
 \newblock \enquote{The critical manifold of the Lorentz-Dirac equation}.
-\newblock \emph{EPL (Europhysics Letters)}, 50, (2000), p. 287.
+\newblock \emph{EPL (Europhysics Letters)}, \textbf{50} (2000)(3), p. 287.
 
 \bibitem{Harvey2017_QUENCHING}
-C.~N. Harvey et~al.
+C.~N. Harvey, A.~Gonoskov, A.~Ilderton and M.~Marklund.
 \newblock \enquote{Quantum Quenching of Radiation Losses in Short Laser
   Pulses}.
-\newblock \emph{Phys. Rev. Lett.}, 118, (2017), p. 105004.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{118} (2017), p. 105004.
 \newblock \doi{10.1103/PhysRevLett.118.105004}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.118.105004}
 
 \bibitem{Arran2019_RR_PPCF}
-C.~Arran et~al.
+C.~Arran, J.~M. Cole, E.~Gerstmayr \emph{et~al.}
 \newblock \enquote{Optimal parameters for radiation reaction experiments}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 61, (2019), p. 074009.
+\newblock \emph{Plasma Physics and Controlled Fusion}, \textbf{61} (2019)(7),
+  p. 074009.
 \newblock \doi{10.1088/1361-6587/ab20f6}.
 \newline\urlprefix\url{https://doi.org/10.1088}
 
 \bibitem{Arran2019_RR_SPIE}
-C.~Arran et~al.
+C.~Arran, J.~M. Cole, E.~Gerstmayr \emph{et~al.}
 \newblock \enquote{Potential to measure quantum effects in recent all-optical
   radiation reaction experiments}.
-\newblock \emph{Proc. SPIE}, 11039.
+\newblock \emph{Proc. SPIE}, \textbf{11039} (2019).
 \newblock \doi{10.1117/12.2520591}.
 \newline\urlprefix\url{https://doi.org/10.1117/12.2520591}
 
 \bibitem{Niel2018_RRStochastic}
-F.~Niel et~al.
+F.~Niel, C.~Riconda, F.~Amiranoff \emph{et~al.}
 \newblock \enquote{From quantum to classical modeling of radiation reaction: A
   focus on stochasticity effects}.
-\newblock \emph{Phys. Rev. E}, 97, (2018), p. 043209.
+\newblock \emph{Phys. Rev. E}, \textbf{97} (2018), p. 043209.
 \newblock \doi{10.1103/PhysRevE.97.043209}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevE.97.043209}
 
@@ -356,168 +385,168 @@ F.~Niel et~al.
 P.~A. Dirac.
 \newblock \enquote{On the annihilation of electrons and protons}.
 \newblock In \enquote{Mathematical Proceedings of the Cambridge Philosophical
-  Society}, volume~26, pp. 361--375. Cambridge University Press, 1930.
+  Society}, volume~26, pp. 361--375. Cambridge University Press (1930).
 
 \bibitem{BreitWheeler1934_BW}
 G.~Breit and J.~A. Wheeler.
 \newblock \enquote{Collision of two light quanta}.
-\newblock \emph{Physical Review}, 46, (1934), p. 1087.
+\newblock \emph{Physical Review}, \textbf{46} (1934)(12), p. 1087.
 
 \bibitem{Bethe1934_BH}
 H.~Bethe and W.~Heitler.
 \newblock \enquote{On the stopping of fast particles and on the creation of
   positive electrons}.
 \newblock \emph{Proceedings of the Royal Society of London. Series A,
-  Containing Papers of a Mathematical and Physical Character}, 146, (1934), pp.
-  83--112.
+  Containing Papers of a Mathematical and Physical Character}, \textbf{146}
+  (1934)(856), pp. 83--112.
 
 \bibitem{Schwinger1951_VACPAIRS}
 J.~Schwinger.
 \newblock \enquote{On gauge invariance and vacuum polarization}.
-\newblock \emph{Physical Review}, 82, (1951), p. 664.
+\newblock \emph{Physical Review}, \textbf{82} (1951)(5), p. 664.
 
 \bibitem{Dirac1931_Positron}
 P.~A.~M. Dirac.
 \newblock \enquote{Quantised singularities in the electromagnetic field}.
 \newblock \emph{Proceedings of the Royal Society of London. Series A,
-  Containing Papers of a Mathematical and Physical Character}, 133, (1931), pp.
-  60--72.
+  Containing Papers of a Mathematical and Physical Character}, \textbf{133}
+  (1931)(821), pp. 60--72.
 
 \bibitem{Klemperer1934_Annihilation}
 O.~Klemperer.
 \newblock \enquote{On the annihilation radiation of the positron}.
 \newblock In \enquote{Mathematical Proceedings of the Cambridge Philosophical
-  Society}, volume~30, pp. 347--354. Cambridge University Press, 1934.
+  Society}, volume~30, pp. 347--354. Cambridge University Press (1934).
 
 \bibitem{Anderson1932_Positron}
 C.~D. Anderson.
 \newblock \enquote{Energies of cosmic-ray particles}.
-\newblock \emph{Physical Review}, 41, (1932), p. 405.
+\newblock \emph{Physical Review}, \textbf{41} (1932)(4), p. 405.
 
 \bibitem{Anderson1933_Positron}
 C.~D. Anderson.
 \newblock \enquote{The positive electron}.
-\newblock \emph{Physical Review}, 43, (1933), p. 491.
+\newblock \emph{Physical Review}, \textbf{43} (1933)(6), p. 491.
 
 \bibitem{PET_BETAPLUS}
-D.~L. Bailey et~al.
+D.~L. Bailey, M.~N. Maisey, D.~W. Townsend and P.~E. Valk.
 \newblock \emph{Positron emission tomography}.
-\newblock Springer, 2005.
+\newblock Springer (2005).
 
 \bibitem{Gould1967_BW}
 R.~J. Gould and G.~P. Schr{\'e}der.
 \newblock \enquote{Pair production in photon-photon collisions}.
-\newblock \emph{Physical Review}, 155, (1967), p. 1404.
-
-\bibitem{Nikishov1962_PAIRSASTRO}
-A.~I. Nikishov.
-\newblock \enquote{Absorption of high-energy photons in the universe}.
-\newblock \emph{Sov. Phys. JETP}, 14, (1962), pp. 393--394.
+\newblock \emph{Physical Review}, \textbf{155} (1967)(5), p. 1404.
 
 \bibitem{Drebot2017_BW_ICS}
-I.~Drebot et~al.
+I.~Drebot, D.~Micieli, E.~Milotti \emph{et~al.}
 \newblock \enquote{Matter from light-light scattering via Breit-Wheeler events
   produced by two interacting Compton sources}.
-\newblock \emph{Physical Review Accelerators and Beams}, 20, (2017), p. 043402.
+\newblock \emph{Physical Review Accelerators and Beams}, \textbf{20} (2017)(4),
+  p. 043402.
 
 \bibitem{Ribeyre2018_BW}
-X.~Ribeyre et~al.
+X.~Ribeyre, E.~d'Humieres, S.~Jequier and V.~Tikhonchuk.
 \newblock \enquote{Effect of differential cross section in Breit--Wheeler pair
   production}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 60, (2018), p. 104001.
+\newblock \emph{Plasma Physics and Controlled Fusion}, \textbf{60} (2018)(10),
+  p. 104001.
 
 \bibitem{Erber1966_PAIRS}
 T.~Erber.
 \newblock \enquote{High-energy electromagnetic conversion processes in intense
   magnetic fields}.
-\newblock \emph{Reviews of Modern Physics}, 38, (1966), p. 626.
+\newblock \emph{Reviews of Modern Physics}, \textbf{38} (1966)(4), p. 626.
 
 \bibitem{Bethe1954_BREMS}
 H.~Bethe and L.~Maximon.
 \newblock \enquote{Theory of bremsstrahlung and pair production. I.
   Differential cross section}.
-\newblock \emph{Physical Review}, 93, (1954), p. 768.
+\newblock \emph{Physical Review}, \textbf{93} (1954)(4), p. 768.
 
 \bibitem{Davies1954_BREMSPAIR}
-H.~Davies, H.~Bethe, and L.~Maximon.
+H.~Davies, H.~Bethe and L.~Maximon.
 \newblock \enquote{Theory of bremsstrahlung and pair production. II. Integral
   cross section for pair production}.
-\newblock \emph{Physical Review}, 93, (1954), p. 788.
+\newblock \emph{Physical Review}, \textbf{93} (1954)(4), p. 788.
 
 \bibitem{Brezin1970_VACPAIRS}
 E.~Br{\'e}zin and C.~Itzykson.
 \newblock \enquote{Pair production in vacuum by an alternating field}.
-\newblock \emph{Physical Review D}, 2, (1970), p. 1191.
+\newblock \emph{Physical Review D}, \textbf{2} (1970)(7), p. 1191.
 
 \bibitem{Popov1971_VACPAIRS}
 V.~Popov.
 \newblock \enquote{Production of e+ e-Pairs in an Alternating External Field}.
 \newblock \emph{Soviet Journal of Experimental and Theoretical Physics
-  Letters}, 13, (1971), p. 195.
+  Letters}, \textbf{13} (1971), p. 195.
 
 \bibitem{Sokolov2010_QEDPAIRS}
-I.~V. Sokolov et~al.
+I.~V. Sokolov, N.~M. Naumova, J.~A. Nees and G.~A. Mourou.
 \newblock \enquote{Pair Creation in QED-Strong Pulsed Laser Fields Interacting
   with Electron Beams}.
-\newblock \emph{Phys. Rev. Lett.}, 105, (2010), p. 195005.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{105} (2010), p. 195005.
 \newblock \doi{10.1103/PhysRevLett.105.195005}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.105.195005}
 
 \bibitem{Blackburn2019_SUPER}
-T.~G. Blackburn et~al.
+T.~G. Blackburn, A.~Ilderton, M.~Marklund and C.~P. Ridgers.
 \newblock \enquote{Reaching supercritical field strengths with intense lasers}.
-\newblock \emph{New Journal of Physics}, 21, (2019), p. 053040.
+\newblock \emph{New Journal of Physics}, \textbf{21} (2019)(5), p. 053040.
 \newblock \doi{10.1088/1367-2630/ab1e0d}.
 \newline\urlprefix\url{https://doi.org/10.1088}
 
 \bibitem{Kruer}
 W.~Kruer.
 \newblock \emph{The physics of laser plasma interactions}.
-\newblock CRC Press, 2018.
+\newblock CRC Press (2018).
 
 \bibitem{Hutchinson2002_PlasmaDiag}
 I.~H. Hutchinson.
 \newblock \enquote{Principles of plasma diagnostics}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 44, (2002), p. 2603.
+\newblock \emph{Plasma Physics and Controlled Fusion}, \textbf{44} (2002)(12),
+  p. 2603.
 
 \bibitem{Keldysh1965_ION}
 L.~V. Keldysh.
 \newblock \enquote{{Ionization in the field of a strong electromagnetic wave}}.
-\newblock \emph{Soviet Physics JETP}, 20, (1965), pp. 1307--1314.
+\newblock \emph{Soviet Physics JETP}, \textbf{20} (1965)(5), pp. 1307--1314.
 \newblock \doi{10.1234/12345678}.
+\newblock \eprint{arXiv:1210.1833v2}.
 
 \bibitem{Latypov1964_ION}
-Z.~Z. Latypov, S.~E. Kupriyanov, and N.~N. Tunitskii.
+Z.~Z. Latypov, S.~E. Kupriyanov and N.~N. Tunitskii.
 \newblock \enquote{{Ionizing Collisions of Electrons with Ions and Atoms}}.
-\newblock \emph{Sov. Phys. JETP}, 19.
+\newblock \emph{Sov. Phys. JETP}, \textbf{19} (1964)(3).
 \newblock \doi{10.2307/3574172}.
 \newline\urlprefix\url{http://www.rrjournal.org/doi/abs/10.2307/3574172}
 
 \bibitem{Perelomov1966_ION}
-A.~M. Perelomov, V.~S. Popov, and M.~V. Terent'ev.
+A.~M. Perelomov, V.~S. Popov and M.~V. Terent'ev.
 \newblock \enquote{{Ionization of atoms in an alternating electrical field}}.
-\newblock \emph{Sov. Phys. JETP}, 23, (1966), p. 924.
+\newblock \emph{Sov. Phys. JETP}, \textbf{23} (1966)(5), p. 924.
 
 \bibitem{Reiss1970_ION}
 H.~R. Reiss.
 \newblock \enquote{{Semiclassical electrodynamics of bound systems in intense
   fields}}.
-\newblock \emph{Physical Review A}, 1.
+\newblock \emph{Physical Review A}, \textbf{1} (1970)(3).
 \newblock \doi{10.1103/PhysRevA.1.803}.
+\newblock \eprint{arXiv:1011.1669v3}.
 
 \bibitem{McGuffey2010_ION}
-C.~McGuffey et~al.
+C.~McGuffey, A.~G.~R. Thomas, W.~Schumaker \emph{et~al.}
 \newblock \enquote{Ionization Induced Trapping in a Laser Wakefield
   Accelerator}.
-\newblock \emph{Phys. Rev. Lett.}, 104, (2010), p. 025004.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{104} (2010), p. 025004.
 \newblock \doi{10.1103/PhysRevLett.104.025004}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.104.025004}
 
 \bibitem{Pak2010_ION}
-A.~Pak et~al.
+A.~Pak, K.~A. Marsh, S.~F. Martins \emph{et~al.}
 \newblock \enquote{Injection and Trapping of Tunnel-Ionized Electrons into
   Laser-Produced Wakes}.
-\newblock \emph{Phys. Rev. Lett.}, 104, (2010), p. 025003.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{104} (2010), p. 025003.
 \newblock \doi{10.1103/PhysRevLett.104.025003}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.104.025003}
 
@@ -525,133 +554,135 @@ A.~Pak et~al.
 K.~Poder.
 \newblock \emph{Characterisation of self-guided laser wakefield accelerators to
   multi-GeV energies}.
-\newblock Ph.D. thesis, Imperial College London, 2016.
+\newblock Ph.D. thesis, Imperial College London (2016).
 \newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.733125}
 
 \bibitem{Mori1997_NONLINEARPLASMA}
 W.~Mori.
 \newblock \enquote{The physics of the nonlinear optics of plasmas at
   relativistic intensities for short-pulse lasers}.
-\newblock \emph{IEEE Journal of Quantum Electronics}, 33, (1997), pp.
-  1942--1953.
+\newblock \emph{IEEE Journal of Quantum Electronics}, \textbf{33} (1997)(11),
+  pp. 1942--1953.
 
 \bibitem{ColeThesis}
 J.~M. Cole.
 \newblock \emph{Diagnosis and application of laser wakefield accelerators}.
-\newblock Ph.D. thesis, Imperial College London, 2015.
+\newblock Ph.D. thesis, Imperial College London (2015).
 \newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.695533}
 
 \bibitem{Sprangle1987_SELFFOCUS}
-P.~Sprangle, C.-M. Tang, and E.~Esarey.
+P.~Sprangle, C.-M. Tang and E.~Esarey.
 \newblock \enquote{Relativistic self-focusing of short-pulse radiation beams in
   plasmas}.
-\newblock \emph{IEEE transactions on plasma science}, 15, (1987), pp. 145--153.
+\newblock \emph{IEEE transactions on plasma science}, \textbf{15} (1987)(2),
+  pp. 145--153.
 
 \bibitem{Wagner1997_SELFGUIDED}
-R.~Wagner et~al.
+R.~Wagner, S.-Y. Chen, A.~Maksimchuk and D.~Umstadter.
 \newblock \enquote{Electron acceleration by a laser wakefield in a
   relativistically self-guided channel}.
-\newblock \emph{Physical Review Letters}, 78, (1997), p. 3125.
+\newblock \emph{Physical Review Letters}, \textbf{78} (1997)(16), p. 3125.
 
 \bibitem{Thomas2007_SELFGUIDED}
-A.~Thomas et~al.
+A.~Thomas, Z.~Najmudin, S.~Mangles \emph{et~al.}
 \newblock \enquote{Effect of laser-focusing conditions on propagation and
   monoenergetic electron production in laser-wakefield accelerators}.
-\newblock \emph{Physical review letters}, 98, (2007), p. 095004.
+\newblock \emph{Physical review letters}, \textbf{98} (2007)(9), p. 095004.
 
 \bibitem{Esarey1993_SPOTOSCILLATION}
-E.~Esarey et~al.
+E.~Esarey, P.~Sprangle, J.~Krall \emph{et~al.}
 \newblock \enquote{Optically guided laser wake-field acceleration}.
-\newblock \emph{Physics of Fluids B: Plasma Physics}, 5, (1993), pp.
+\newblock \emph{Physics of Fluids B: Plasma Physics}, \textbf{5} (1993)(7), pp.
   2690--2697.
 
 \bibitem{Pukhov2002_BUBBLESIM}
 A.~Pukhov and J.~Meyer-ter Vehn.
 \newblock \enquote{Laser wake field acceleration: the highly non-linear
   broken-wave regime}.
-\newblock \emph{Applied Physics B}, 74, (2002), pp. 355--361.
+\newblock \emph{Applied Physics B}, \textbf{74} (2002)(4-5), pp. 355--361.
 
 \bibitem{Mendoncca1994_PHOTONACC}
 J.~Mendon{\c{c}}a and L.~O. e~Silva.
 \newblock \enquote{Regular and stochastic acceleration of photons}.
-\newblock \emph{Physical Review E}, 49, (1994), p. 3520.
+\newblock \emph{Physical Review E}, \textbf{49} (1994)(4), p. 3520.
 
 \bibitem{Mendoncca2000_PHOTONACC}
 J.~T. Mendon{\c{c}}a.
 \newblock \emph{Theory of photon acceleration}.
-\newblock CRC Press, 2000.
+\newblock CRC Press (2000).
 
 \bibitem{Murphy2006_PHOTONACC}
-C.~Murphy et~al.
+C.~Murphy, R.~Trines, J.~Vieira \emph{et~al.}
 \newblock \enquote{Evidence of photon acceleration by laser wake fields}.
-\newblock \emph{Physics of Plasmas}, 13, (2006), p. 033108.
+\newblock \emph{Physics of Plasmas}, \textbf{13} (2006)(3), p. 033108.
 
 \bibitem{Mangles2004_MONO}
-S.~P.~D. Mangles et~al.
+S.~P.~D. Mangles, C.~D. Murphy, Z.~Najmudin \emph{et~al.}
 \newblock \enquote{{Monoenergetic beams of relativistic electrons from intense
   laser-plasma interactions.}}
-\newblock \emph{Nature}, 431, (2004), pp. 535--538.
+\newblock \emph{Nature}, \textbf{431} (2004)(7008), pp. 535--538.
 \newblock \doi{10.1038/nature02939}.
 
 \bibitem{Faure2004_MONO}
-J.~Faure et~al.
+J.~Faure, Y.~Glinec, A.~Pukhov \emph{et~al.}
 \newblock \enquote{{A laser-plasma accelerator producing monoenergetic electron
   beams.}}
-\newblock \emph{Nature}, 431, (2004), pp. 541--544.
+\newblock \emph{Nature}, \textbf{431} (2004)(7008), pp. 541--544.
 \newblock \doi{10.1038/nature02963}.
 \newline\urlprefix\url{http://www.nature.com/nature/journal/v431/n7008/abs/nature02963.html}
 
 \bibitem{Geddes2004_MONO}
-C.~G.~R. Geddes et~al.
+C.~G.~R. Geddes, C.~S. Toth, J.~{Van Tilborg} \emph{et~al.}
 \newblock \enquote{{High-quality electron beams from a laser wakefield
   accelerator using plasma-channel guiding.}}
-\newblock \emph{Nature}, 431, (2004), pp. 538--541.
+\newblock \emph{Nature}, \textbf{431} (2004)(7008), pp. 538--541.
 \newblock \doi{10.1038/nature02900}.
 
 \bibitem{Leemans2006_GEV}
-C.~B. Schroeder et~al.
+C.~B. Schroeder, A.~J. Gonsalves, C.~G.~R. Geddes \emph{et~al.}
 \newblock \enquote{{GeV electron beams from a centimetre-scale accelerator}}.
-\newblock \emph{Nature Physics}, 2, (2006), pp. 696--699.
+\newblock \emph{Nature Physics}, \textbf{2} (2006)(10), pp. 696--699.
 \newblock \doi{10.1038/nphys418}.
 \newline\urlprefix\url{http://www.nature.com/doifinder/10.1038/nphys418}
 
 \bibitem{Leemans2014_GEV}
-W.~P. Leemans et~al.
+W.~P. Leemans, A.~J. Gonsalves, H.-S. Mao \emph{et~al.}
 \newblock \enquote{Multi-GeV Electron Beams from Capillary-Discharge-Guided
   Subpetawatt Laser Pulses in the Self-Trapping Regime}.
-\newblock \emph{Phys. Rev. Lett.}, 113, (2014), p. 245002.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{113} (2014), p. 245002.
 \newblock \doi{10.1103/PhysRevLett.113.245002}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.113.245002}
 
 \bibitem{Gonsalves2019_GEV}
-A.~J. Gonsalves et~al.
+A.~J. Gonsalves, K.~Nakamura, J.~Daniels \emph{et~al.}
 \newblock \enquote{Petawatt Laser Guiding and Electron Beam Acceleration to 8
   GeV in a Laser-Heated Capillary Discharge Waveguide}.
-\newblock \emph{Phys. Rev. Lett.}, 122, (2019), p. 084801.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{122} (2019), p. 084801.
 \newblock \doi{10.1103/PhysRevLett.122.084801}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.122.084801}
 
 \bibitem{Steinke2016_STAGING}
-S.~Steinke et~al.
+S.~Steinke, J.~van Tilborg, C.~Benedetti \emph{et~al.}
 \newblock \enquote{{Multistage coupling of independent laser-plasma
   accelerators}}.
-\newblock \emph{Nature}.
+\newblock \emph{Nature},  (2016).
 \newblock \doi{10.1038/nature16525}.
 \newline\urlprefix\url{http://www.nature.com/doifinder/10.1038/nature16525}
 
 \bibitem{Kim2013_GEV}
-H.~T. Kim et~al.
+H.~T. Kim, K.~H. Pae, H.~J. Cha \emph{et~al.}
 \newblock \enquote{Enhancement of Electron Energy to the Multi-GeV Regime by a
   Dual-Stage Laser-Wakefield Accelerator Pumped by Petawatt Laser Pulses}.
-\newblock \emph{Phys. Rev. Lett.}, 111, (2013), p. 165002.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{111} (2013), p. 165002.
 \newblock \doi{10.1103/PhysRevLett.111.165002}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.111.165002}
 
 \bibitem{Esarey2009_LPA_Review}
-E.~Esarey, C.~B. Schroeder, and W.~P. Leemans.
+E.~Esarey, C.~B. Schroeder and W.~P. Leemans.
 \newblock \enquote{{Physics of laser-driven plasma-based electron
   accelerators}}.
-\newblock \emph{Reviews of Modern Physics}, 81, (2009), pp. 1229--1285.
+\newblock \emph{Reviews of Modern Physics}, \textbf{81} (2009)(3), pp.
+  1229--1285.
 \newblock \doi{10.1103/RevModPhys.81.1229}.
 \newline\urlprefix\url{http://link.aps.org/doi/10.1103/RevModPhys.81.1229}
 
@@ -659,70 +690,72 @@ E.~Esarey, C.~B. Schroeder, and W.~P. Leemans.
 S.~P.~D. Mangles.
 \newblock \enquote{{An Overview of Recent Progress in Laser Wakefield
   Acceleration Experiments}}.
-\newblock \emph{CERN Proceedings}, 001, (2016), pp. 23--29.
+\newblock \emph{CERN Proceedings}, \textbf{001} (2016)(November 2014), pp.
+  23--29.
 
 \bibitem{Dawson1959_COLDWAVEBREAKING}
 J.~M. Dawson.
 \newblock \enquote{Nonlinear electron oscillations in a cold plasma}.
-\newblock \emph{Physical Review}, 113, (1959), p. 383.
+\newblock \emph{Physical Review}, \textbf{113} (1959)(2), p. 383.
 
 \bibitem{Akhiezcr1956_Waves}
 A.~Akhiezcr and R.~Polovin.
 \newblock \enquote{On the theory of wave motions of relativistic plasma}.
-\newblock \emph{JETP}, 3, (1956), p. 696.
+\newblock \emph{JETP}, \textbf{3} (1956), p. 696.
 
 \bibitem{WoodThesis}
 J.~C. Wood.
 \newblock \emph{Betatron radiation from laser wakefield accelerators and its
   applications}.
-\newblock Ph.D. thesis, Imperial College London, 2016.
+\newblock Ph.D. thesis, Imperial College London (2016).
 \newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.739605}
 
 \bibitem{Kostyukov2004_BUBBLEFIELDS}
-I.~Kostyukov, A.~Pukhov, and S.~Kiselev.
+I.~Kostyukov, A.~Pukhov and S.~Kiselev.
 \newblock \enquote{Phenomenological theory of laser-plasma interaction in
   'bubble' regime}.
-\newblock \emph{Physics of Plasmas}, 11, (2004), pp. 5256--5264.
+\newblock \emph{Physics of Plasmas}, \textbf{11} (2004)(11), pp. 5256--5264.
 
 \bibitem{Thomas2010_WAKESCALINGS}
 A.~G.~R. Thomas.
 \newblock \enquote{Scalings for radiation from plasma bubbles}.
-\newblock \emph{Physics of Plasmas}, 17, (2010), p. 056708.
+\newblock \emph{Physics of Plasmas}, \textbf{17} (2010)(5), p. 056708.
 
 \bibitem{Mangles2012_SELF}
-S.~P. Mangles et~al.
+S.~P. Mangles, G.~Genoud, M.~S. Bloom \emph{et~al.}
 \newblock \enquote{Self-injection threshold in self-guided laser wakefield
   accelerators}.
-\newblock \emph{Physical Review Special Topics-Accelerators and Beams}, 15,
-  (2012), p. 011302.
+\newblock \emph{Physical Review Special Topics-Accelerators and Beams},
+  \textbf{15} (2012)(1), p. 011302.
 
 \bibitem{Decker1996_FV}
-C.~Decker et~al.
+C.~Decker, W.~Mori, K.-C. Tzeng and T.~Katsouleas.
 \newblock \enquote{The evolution of ultra-intense, short-pulse lasers in
   underdense plasmas}.
-\newblock \emph{Physics of Plasmas}, 3, (1996), pp. 2047--2056.
+\newblock \emph{Physics of Plasmas}, \textbf{3} (1996)(5), pp. 2047--2056.
 
 \bibitem{Lu2007_3DWAKE}
-W.~Lu et~al.
+W.~Lu, M.~Tzoufras, C.~Joshi \emph{et~al.}
 \newblock \enquote{{Generating multi-GeV electron bunches using single stage
   laser wakefield acceleration in a 3D nonlinear regime}}.
-\newblock \emph{Physical Review Special Topics - Accelerators and Beams}, 10,
-  (2007), p. 061301.
+\newblock \emph{Physical Review Special Topics - Accelerators and Beams},
+  \textbf{10} (2007)(6), p. 061301.
 \newblock \doi{10.1103/PhysRevSTAB.10.061301}.
+\newblock \eprint{0612227}.
 \newline\urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevSTAB.10.061301}
 
 \bibitem{Guillaume_REPHASING}
-E.~Guillaume et~al.
+E.~Guillaume, A.~D\"opp, C.~Thaury \emph{et~al.}
 \newblock \enquote{Electron Rephasing in a Laser-Wakefield Accelerator}.
-\newblock \emph{Phys. Rev. Lett.}, 115, (2015), p. 155002.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{115} (2015), p. 155002.
 \newblock \doi{10.1103/PhysRevLett.115.155002}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.115.155002}
 
 \bibitem{Debus2019_BEYONDDEPHASING}
-A.~Debus et~al.
+A.~Debus, R.~Pausch, A.~Huebl \emph{et~al.}
 \newblock \enquote{Circumventing the Dephasing and Depletion Limits of
   Laser-Wakefield Acceleration}.
-\newblock \emph{Phys. Rev. X}, 9, (2019), p. 031044.
+\newblock \emph{Phys. Rev. X}, \textbf{9} (2019), p. 031044.
 \newblock \doi{10.1103/PhysRevX.9.031044}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevX.9.031044}
 
@@ -730,72 +763,72 @@ A.~Debus et~al.
 W.~Lu.
 \newblock \emph{Nonlinear plasma wakefield theory and optimum scaling for laser
   wakefield acceleration in the blowout regime}.
-\newblock Ph.D. thesis, University of California, 2006.
+\newblock Ph.D. thesis, University of California (2006).
 
 \bibitem{Faure2006_STABLEJET}
-J.~Faure et~al.
+J.~Faure, C.~Rechatin, A.~Norlin \emph{et~al.}
 \newblock \enquote{Controlled injection and acceleration of electrons in plasma
   wakefields by colliding laser pulses}.
-\newblock \emph{Nature}, 444, (2006), pp. 737--739.
+\newblock \emph{Nature}, \textbf{444} (2006)(7120), pp. 737--739.
 \newblock \doi{10.1038/nature05393}.
 \newline\urlprefix\url{https://doi.org/10.1038/nature05393}
 
 \bibitem{Geddes2008_STABLE}
-C.~G.~R. Geddes et~al.
+C.~G.~R. Geddes, K.~Nakamura, G.~R. Plateau \emph{et~al.}
 \newblock \enquote{{Plasma-Density-Gradient Injection of Low
   Absolute-Momentum-Spread Electron Bunches}}.
-\newblock \emph{Physical Review Letters}, 100, (2008), p. 215004.
+\newblock \emph{Physical Review Letters}, \textbf{100} (2008)(21), p. 215004.
 \newblock \doi{10.1103/PhysRevLett.100.215004}.
 \newline\urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.100.215004}
 
 \bibitem{Buck2013_SHOCK}
-A.~Buck et~al.
+A.~Buck, J.~Wenz, J.~Xu \emph{et~al.}
 \newblock \enquote{Shock-Front Injector for High-Quality Laser-Plasma
   Acceleration}.
-\newblock \emph{Phys. Rev. Lett.}, 110, (2013), p. 185006.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{110} (2013), p. 185006.
 \newblock \doi{10.1103/PhysRevLett.110.185006}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.110.185006}
 
 \bibitem{Deng2019_TROJAN}
-A.~Deng et~al.
+A.~Deng, O.~Karger, T.~Heinemann \emph{et~al.}
 \newblock \enquote{Generation and acceleration of electron bunches from a
   plasma photocathode}.
-\newblock \emph{Nature Physics}, pp. 1--5.
+\newblock \emph{Nature Physics},  (2019), pp. 1--5.
 
 \bibitem{Schmid2010_SHOCK}
-K.~Schmid et~al.
+K.~Schmid, A.~Buck, C.~M.~S. Sears \emph{et~al.}
 \newblock \enquote{Density-transition based electron injector for laser driven
   wakefield accelerators}.
-\newblock \emph{Phys. Rev. ST Accel. Beams}, 13, (2010), p. 091301.
+\newblock \emph{Phys. Rev. ST Accel. Beams}, \textbf{13} (2010), p. 091301.
 \newblock \doi{10.1103/PhysRevSTAB.13.091301}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.13.091301}
 
 \bibitem{Bulanov1998_Downramp}
-S.~Bulanov et~al.
+S.~Bulanov, N.~Naumova, F.~Pegoraro and J.~Sakai.
 \newblock \enquote{Particle injection into the wave acceleration phase due to
   nonlinear wake wave breaking}.
-\newblock \emph{Physical Review E}, 58, (1998), p. R5257.
+\newblock \emph{Physical Review E}, \textbf{58} (1998)(5), p. R5257.
 
 \bibitem{Downer2018_DiagnosticReview}
-M.~C. Downer et~al.
+M.~C. Downer, R.~Zgadzaj, A.~Debus \emph{et~al.}
 \newblock \enquote{Diagnostics for plasma-based electron accelerators}.
-\newblock \emph{Rev. Mod. Phys.}, 90, (2018), p. 035002.
+\newblock \emph{Rev. Mod. Phys.}, \textbf{90} (2018), p. 035002.
 \newblock \doi{10.1103/RevModPhys.90.035002}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/RevModPhys.90.035002}
 
 \bibitem{Hooker2006_Gemini}
-C.~Hooker et~al.
+C.~Hooker, J.~Collier, O.~Chekhlov \emph{et~al.}
 \newblock \enquote{The Astra Gemini project--A dual-beam petawatt Ti: Sapphire
   laser system}.
 \newblock In \enquote{Journal de Physique IV (Proceedings)}, volume 133, pp.
-  673--677. EDP sciences, 2006.
+  673--677. EDP sciences (2006).
 
 \bibitem{Hooker2008_Gemini}
-C.~J. Hooker et~al.
+C.~J. Hooker, S.~Blake, O.~Chekhlov \emph{et~al.}
 \newblock \enquote{Commissioning the Astra Gemini petawatt Ti: sapphire laser
   system}.
 \newblock In \enquote{Conference on Lasers and Electro-Optics}, Optical Society
-  of America, 2008.
+  of America (2008).
 
 \bibitem{GeminiWebsite}
 C.~L. Facility.
@@ -806,40 +839,40 @@ C.~L. Facility.
 R.~Trebino.
 \newblock \emph{Frequency-resolved optical gating: the measurement of
   ultrashort laser pulses}.
-\newblock Springer Science \& Business Media, 2012.
+\newblock Springer Science \& Business Media (2012).
 
 \bibitem{StreeterThesis}
 M.~Streeter.
 \newblock \emph{Ultrafast dynamics of relativistic laser plasma interactions}.
-\newblock Ph.D. thesis, Imperial College London, 2013.
+\newblock Ph.D. thesis, Imperial College London (2013).
 \newline\urlprefix\url{https://core.ac.uk/download/pdf/76990054.pdf}
 
 \bibitem{Gregory2015_f2OPT}
-C.~Gregory et~al.
+C.~Gregory, D.~Symes, M.~Baraclough \emph{et~al.}
 \newblock \enquote{Optimisation of the f/2 Gemini focal spot using full beam
   adaptive optics}.
-\newblock \emph{Technical report}, 2015.
+\newblock \emph{Technical report} (2015).
 
 \bibitem{Kato1984_PHASEPLATE}
-Y.~Kato et~al.
+Y.~Kato, K.~Mima, N.~Miyanaga \emph{et~al.}
 \newblock \enquote{Random Phasing of High-Power Lasers for Uniform Target
   Acceleration and Plasma-Instability Suppression}.
-\newblock \emph{Phys. Rev. Lett.}, 53, (1984), pp. 1057--1060.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{53} (1984), pp. 1057--1060.
 \newblock \doi{10.1103/PhysRevLett.53.1057}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.53.1057}
 
 \bibitem{Corvan2016_TIMING}
-D.~J. Corvan et~al.
+D.~J. Corvan, T.~Dzelzainis, C.~Hyland \emph{et~al.}
 \newblock \enquote{Optical measurement of the temporal delay between two
   ultra-short and focussed laser pluses}.
-\newblock \emph{Opt. Express}, 24, (2016), pp. 3127--3136.
+\newblock \emph{Opt. Express}, \textbf{24} (2016)(3), pp. 3127--3136.
 \newblock \doi{10.1364/OE.24.003127}.
 \newline\urlprefix\url{http://www.opticsexpress.org/abstract.cfm?URI=oe-24-3-3127}
 
 \bibitem{Stone2011_ETAAIR}
 J.~Stone and J.~Zimmerman.
 \newblock \enquote{``Index of Refraction of Air,''in the Engineering Metrology
-  Toolbox of the National Institute of Standards and Technology (NIST)}, 2011.
+  Toolbox of the National Institute of Standards and Technology (NIST)} (2011).
 
 \bibitem{GEMINI_GATEVALVES}
 D.~Carroll and C.~D. Murphy.
@@ -850,47 +883,48 @@ D.~Carroll and C.~D. Murphy.
 I.~Malitson.
 \newblock \enquote{Interspecimen comparison of the refractive index of fused
   silica}.
-\newblock \emph{Josa}, 55, (1965), pp. 1205--1209.
+\newblock \emph{Josa}, \textbf{55} (1965)(10), pp. 1205--1209.
 
 \bibitem{Shalloo_GEMINIDRIFT}
-R.~Shalloo et~al.
+R.~Shalloo, C.~Arran, G.~Cheung \emph{et~al.}
 \newblock \enquote{Measurement of femtosecond-scale drift and jitter of the
   delay between the North and South Beams of Gemini}.
 
 \bibitem{Wilks2001_IONACC}
-S.~C. Wilks et~al.
+S.~C. Wilks, A.~B. Langdon, T.~E. Cowan \emph{et~al.}
 \newblock \enquote{{Energetic proton generation in ultra-intense laser-solid
   interactions}}.
-\newblock \emph{Physics of Plasmas}, 8, (2001), pp. 542--549.
+\newblock \emph{Physics of Plasmas}, \textbf{8} (2001)(2), pp. 542--549.
 \newblock \doi{10.1063/1.1333697}.
 
 \bibitem{Maksimchuk2000_IONACC}
-a.~Maksimchuk et~al.
+a.~Maksimchuk, S.~Gu, K.~Flippo \emph{et~al.}
 \newblock \enquote{{Forward ion acceleration in thin films driven by a
   high-intensity laser}}.
-\newblock \emph{Physical review letters}, 84, (2000), pp. 4108--11.
+\newblock \emph{Physical review letters}, \textbf{84} (2000)(18), pp. 4108--11.
 \newblock \doi{10.1103/PhysRevLett.84.4108}.
 \newline\urlprefix\url{http://www.ncbi.nlm.nih.gov/pubmed/10990622}
 
 \bibitem{Edwards1990_BURNTHROUGH}
-J.~Edwards et~al.
+J.~Edwards, V.~Barrow, O.~Willi and S.~Rose.
 \newblock \enquote{Measurement and analysis of radiation transport in
   laser-irradiated targets}.
-\newblock \emph{EPL (Europhysics Letters)}, 11, (1990), p. 631.
+\newblock \emph{EPL (Europhysics Letters)}, \textbf{11} (1990)(7), p. 631.
 
 \bibitem{Semushin2001_GASJETS}
 S.~Semushin and V.~Malka.
 \newblock \enquote{{High density gas jet nozzle design for laser target
   production}}.
-\newblock \emph{Review of Scientific Instruments}, 72, (2001), pp. 2961--2965.
+\newblock \emph{Review of Scientific Instruments}, \textbf{72} (2001)(7), pp.
+  2961--2965.
 \newblock \doi{10.1063/1.1380393}.
 \newline\urlprefix\url{http://dx.doi.org/10.1063/1.1380393}
 
 \bibitem{Osterhoff2008_CELL}
-J.~Osterhoff et~al.
+J.~Osterhoff, A.~Popp, Z.~Major \emph{et~al.}
 \newblock \enquote{Generation of Stable, Low-Divergence Electron Beams by
   Laser-Wakefield Acceleration in a Steady-State-Flow Gas Cell}.
-\newblock \emph{Phys. Rev. Lett.}, 101, (2008), p. 085002.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{101} (2008), p. 085002.
 \newblock \doi{10.1103/PhysRevLett.101.085002}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.101.085002}
 
@@ -898,45 +932,47 @@ J.~Osterhoff et~al.
 D.~J. Spence and S.~M. Hooker.
 \newblock \enquote{{Investigation of a hydrogen plasma waveguide}}.
 \newblock \emph{Physical Review E - Statistical, Nonlinear, and Soft Matter
-  Physics}, 63, (2001), pp. 1--4.
+  Physics}, \textbf{63} (2001)(1 II), pp. 1--4.
 \newblock \doi{10.1103/PhysRevE.63.015401}.
 
 \bibitem{Cole2015_tomography}
-J.~Cole et~al.
+J.~Cole, J.~Wood, N.~Lopes \emph{et~al.}
 \newblock \enquote{Tomography of human trabecular bone with a laser-wakefield
   driven x-ray source}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 58, (2015), p. 014008.
+\newblock \emph{Plasma Physics and Controlled Fusion}, \textbf{58} (2015)(1),
+  p. 014008.
 
 \bibitem{Jolly2012_3DJET}
-S.~W. Jolly et~al.
+S.~W. Jolly, Z.~He, C.~McGuffey \emph{et~al.}
 \newblock \enquote{Stereolithography based method of creating custom gas
   density profile targets for high intensity laser-plasma experiments}.
-\newblock \emph{Review of Scientific Instruments}, 83, (2012), p. 073503.
+\newblock \emph{Review of Scientific Instruments}, \textbf{83} (2012)(7), p.
+  073503.
 \newblock \doi{10.1063/1.4731782}.
 \newline\urlprefix\url{https://doi.org/10.1063/1.4731782}
 
 \bibitem{Vargas2014_3DCELL}
-M.~Vargas et~al.
+M.~Vargas, W.~Schumaker, Z.~H. He \emph{et~al.}
 \newblock \enquote{{Improvements to laser wakefield accelerated electron beam
   stability, divergence, and energy spread using three-dimensional printed
   two-stage gas cell targets}}.
-\newblock \emph{Applied Physics Letters}, 104.
+\newblock \emph{Applied Physics Letters}, \textbf{104} (2014)(17).
 \newblock \doi{10.1063/1.4874981}.
 \newline\urlprefix\url{http://dx.doi.org/10.1063/1.4874981}
 
 \bibitem{Kneip2009_GEV}
-S.~Kneip et~al.
+S.~Kneip, S.~Nagel, S.~Martins \emph{et~al.}
 \newblock \enquote{Near-GeV acceleration of electrons by a nonlinear plasma
   wave driven by a self-guided laser pulse}.
-\newblock \emph{Physical review letters}, 103, (2009), p. 035002.
+\newblock \emph{Physical review letters}, \textbf{103} (2009)(3), p. 035002.
 
 \bibitem{Desforges2014_CAPILLARY}
-F.~G. Desforges et~al.
+F.~G. Desforges, M.~Hansson, J.~Ju \emph{et~al.}
 \newblock \enquote{{Reproducibility of electron beams from laser wakefield
   acceleration in capillary tubes}}.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 740,
-  (2014), pp. 54--59.
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{740} (2014)(2014), pp. 54--59.
 \newblock \doi{10.1016/j.nima.2013.10.062}.
 \newline\urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0168900213014538}
 
@@ -944,337 +980,342 @@ F.~G. Desforges et~al.
 M.~C. Kaluza.
 \newblock \enquote{Ultrafast Plasma Imaging}.
 \newblock In \enquote{Laser-Driven Sources of High Energy Particles and
-  Radiation}, pp. 165--185. Springer, 2019.
+  Radiation}, pp. 165--185. Springer (2019).
 
 \bibitem{FOURIER}
 R.~Bracewell.
 \newblock \emph{{The Fourier Transform and its Applications}}.
-\newblock McGraw-Hill, 1978.
+\newblock McGraw-Hill (1978).
 
 \bibitem{ManglesThesis}
 S.~P.~D. Mangles.
 \newblock \emph{Measurements of relativistic electrons from intense
   laser-plasma interactions}.
-\newblock Ph.D. thesis, Imperial College London (University of London), 2005.
+\newblock Ph.D. thesis, Imperial College London (University of London) (2005).
 \newline\urlprefix\url{https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.417730}
 
 \bibitem{Clayton2010_ION}
-C.~E. Clayton et~al.
+C.~E. Clayton, J.~E. Ralph, F.~Albert \emph{et~al.}
 \newblock \enquote{Self-Guided Laser Wakefield Acceleration beyond 1 GeV Using
   Ionization-Induced Injection}.
-\newblock \emph{Phys. Rev. Lett.}, 105, (2010), p. 105003.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{105} (2010), p. 105003.
 \newblock \doi{10.1103/PhysRevLett.105.105003}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.105.105003}
 
 \bibitem{Soloviev2011_TWOSCREEN}
-A.~A. Soloviev et~al.
+A.~A. Soloviev, M.~V. Starodubtsev, K.~F. Burdonov \emph{et~al.}
 \newblock \enquote{{Two-screen single-shot electron spectrometer for laser
   wakefield accelerated electron beams}}.
-\newblock \emph{Review of Scientific Instruments}, 82.
+\newblock \emph{Review of Scientific Instruments}, \textbf{82} (2011)(4).
 \newblock \doi{10.1063/1.3585862}.
 \newline\urlprefix\url{https://doi.org/10.1063/1.3585862}
 
 \bibitem{Frlez2000_CsI}
-E.~Frle{\v{z}} et~al.
+E.~Frle{\v{z}}, I.~Supek, K.~Assamagan \emph{et~al.}
 \newblock \enquote{Cosmic muon tomography of pure cesium iodide calorimeter
   crystals}.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 440,
-  (2000), pp. 57--85.
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{440} (2000)(1), pp. 57--85.
 
 \bibitem{Birks2013_SCINTILLATOR}
 J.~B. Birks.
 \newblock \emph{The theory and practice of scintillation counting:
   International series of monographs in electronics and instrumentation},
   volume~27.
-\newblock Elsevier, 2013.
+\newblock Elsevier (2013).
 
 \bibitem{HarShemesh2012_INTENSITY}
 O.~Har-Shemesh and A.~D. Piazza.
 \newblock \enquote{Peak intensity measurement of relativistic lasers via
   nonlinear Thomson scattering}.
-\newblock \emph{Opt. Lett.}, 37, (2012), pp. 1352--1354.
+\newblock \emph{Opt. Lett.}, \textbf{37} (2012)(8), pp. 1352--1354.
 \newblock \doi{10.1364/OL.37.001352}.
 \newline\urlprefix\url{http://ol.osa.org/abstract.cfm?URI=ol-37-8-1352}
 
 \bibitem{Yan2017_ICS}
-W.~Yan et~al.
+W.~Yan, C.~Fruhling, G.~Golovin \emph{et~al.}
 \newblock \enquote{{High-order multiphoton Thomson scattering}}.
-\newblock \emph{Nature Photonics}, 11, (2017), pp. 514--520.
+\newblock \emph{Nature Photonics}, \textbf{11} (2017)(8), pp. 514--520.
 \newblock \doi{10.1038/nphoton.2017.100}.
 \newline\urlprefix\url{http://dx.doi.org/10.1038/nphoton.2017.100}
 
 \bibitem{StGobain_CsI}
 S.~Gobain.
 \newblock \enquote{Cesium Iodide Scintillation Material (CsI(Tl) and CsI(Na)
-  Datasheet)}, 2017.
+  Datasheet)} (2017).
 \newline\urlprefix\url{https://www.crystals.saint-gobain.com/sites/imdf.crystals.com/files/documents/csitl-and-na-material-data-sheet.pdf}
 
 \bibitem{GEANT4}
-S.~Agostinelli et~al.
+S.~Agostinelli, J.~Allison, K.~a. Amako \emph{et~al.}
 \newblock \enquote{GEANT4: a simulation toolkit}.
 \newblock \emph{Nuclear instruments and methods in physics research section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 506,
-  (2003), pp. 250--303.
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{506} (2003)(3), pp. 250--303.
 
 \bibitem{Behm2018_Gamma}
-K.~T. Behm et~al.
+K.~T. Behm, J.~M. Cole, A.~S. Joglekar \emph{et~al.}
 \newblock \enquote{{A spectrometer for ultrashort gamma-ray pulses with photon
   energies greater than 10 MeV}}.
-\newblock \emph{Review of Scientific Instruments}, 89, (2018), p. 113303.
+\newblock \emph{Review of Scientific Instruments}, \textbf{89} (2018)(11), p.
+  113303.
 \newblock \doi{10.1063/1.5056248}.
 \newline\urlprefix\url{http://aip.scitation.org/toc/rsi/89/11}
 
 \bibitem{Lisi2018_Gamma}
-L.~Lisi et~al.
+L.~Lisi, J.~Shaw, G.~Tiwari \emph{et~al.}
 \newblock \enquote{Spectral Analysis of 50--100 MeV Thomson Backscatter
   Gamma-rays from GeV Laser-Plasma Accelerator}.
 \newblock In \enquote{2018 IEEE Advanced Accelerator Concepts Workshop (AAC)},
-  pp. 1--4. IEEE, 2018.
+  pp. 1--4. IEEE (2018).
 
 \bibitem{Nakano2001_ICSNuclear}
-T.~Nakano et~al.
+T.~Nakano, J.~K. Ahn, M.~Fujiwara \emph{et~al.}
 \newblock \enquote{Multi-GeV laser-electron photon project at SPring-8}.
-\newblock \emph{Nuclear Physics A}, 684, (2001), pp. 71--79.
+\newblock \emph{Nuclear Physics A}, \textbf{684} (2001)(1-4), pp. 71--79.
 
 \bibitem{Chouffani2006_ICS_BeamParam}
-K.~Chouffani et~al.
+K.~Chouffani, F.~Harmon, D.~Wells \emph{et~al.}
 \newblock \enquote{Determination of electron beam parameters by means of
   laser-Compton scattering}.
-\newblock \emph{Phys. Rev. ST Accel. Beams}, 9, (2006), p. 050701.
+\newblock \emph{Phys. Rev. ST Accel. Beams}, \textbf{9} (2006), p. 050701.
 \newblock \doi{10.1103/PhysRevSTAB.9.050701}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.9.050701}
 
 \bibitem{Utsunomiya2014_ICS_BeamEnergy}
-H.~Utsunomiya et~al.
+H.~Utsunomiya, T.~Shima, K.~Takahisa \emph{et~al.}
 \newblock \enquote{Energy calibration of the NewSUBARU storage ring for laser
   Compton-scattering gamma rays and applications}.
-\newblock \emph{IEEE Transactions on Nuclear Science}, 61, (2014), pp.
-  1252--1258.
+\newblock \emph{IEEE Transactions on Nuclear Science}, \textbf{61} (2014)(3),
+  pp. 1252--1258.
 
 \bibitem{Sakai2002_ICS_LaserWire}
-H.~Sakai et~al.
+H.~Sakai, Y.~Honda, N.~Sasao \emph{et~al.}
 \newblock \enquote{Performance studies of a laser wire beam profile monitor}.
-\newblock \emph{Japanese journal of applied physics}, 41, (2002), p. 6398.
+\newblock \emph{Japanese journal of applied physics}, \textbf{41} (2002)(11R),
+  p. 6398.
 
 \bibitem{Sakai2002_ICS_EMITTANCE}
-H.~Sakai et~al.
+H.~Sakai, Y.~Honda, N.~Sasao \emph{et~al.}
 \newblock \enquote{Measurement of a small vertical emittance with a laser wire
   beam profile monitor}.
-\newblock \emph{Physical Review Special Topics-Accelerators and Beams}, 5,
-  (2002), p. 122801.
+\newblock \emph{Physical Review Special Topics-Accelerators and Beams},
+  \textbf{5} (2002)(12), p. 122801.
 
 \bibitem{Barber1993_POL}
-D.~Barber et~al.
+D.~Barber, H.-D. Bremer, M.~B{\"o}ge \emph{et~al.}
 \newblock \enquote{The HERA polarimeter and the first observation of electron
   spin polarization at HERA}.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 329,
-  (1993), pp. 79--111.
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{329} (1993)(1-2), pp. 79--111.
 
 \bibitem{Baylac2002_POL}
-M.~Baylac et~al.
+M.~Baylac, E.~Burtin, C.~Cavata \emph{et~al.}
 \newblock \enquote{First electron beam polarization measurements with a Compton
   polarimeter at Jefferson Laboratory}.
-\newblock \emph{Physics Letters B}, 539, (2002), pp. 8--12.
+\newblock \emph{Physics Letters B}, \textbf{539} (2002)(1-2), pp. 8--12.
 
 \bibitem{Weber2018_POL}
-G.~Weber et~al.
+G.~Weber, K.~H. Blumenhagen, H.~Br{\"{a}}uning \emph{et~al.}
 \newblock \enquote{{Compton polarimetry using double-sided segmented x-ray
   detectors}}.
-\newblock \emph{Journal of Physics: Conference Series}, 583.
+\newblock \emph{Journal of Physics: Conference Series}, \textbf{583} (2015).
 \newblock \doi{10.1088/1742-6596/583/1/012041}.
 \newline\urlprefix\url{http://iopscience.iop.org/article/10.1088/1742-6596/583/1/012041/pdf}
 
 \bibitem{Banerjee2015_ICS_RADIOGRAPHY}
-S.~Banerjee et~al.
+S.~Banerjee, S.~Chen, N.~Powers \emph{et~al.}
 \newblock \enquote{Compact source of narrowband and tunable X-rays for
   radiography}.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section B:
-  Beam Interactions with Materials and Atoms}, 350, (2015), pp. 106--111.
+  Beam Interactions with Materials and Atoms}, \textbf{350} (2015), pp.
+  106--111.
 
 \bibitem{Lundh2011_BUNCH}
-O.~Lundh et~al.
+O.~Lundh, J.~Lim, C.~Rechatin \emph{et~al.}
 \newblock \enquote{Few femtosecond, few kiloampere electron bunch produced by a
   laser--plasma accelerator}.
-\newblock \emph{Nature Physics}, 7, (2011), pp. 219 EP --.
+\newblock \emph{Nature Physics}, \textbf{7} (2011), pp. 219 EP --.
 \newline\urlprefix\url{https://doi.org/10.1038/nphys1872}
 
 \bibitem{Wood2018_BetatronShock}
-J.~C. Wood et~al.
+J.~C. Wood, D.~Chapman, K.~Poder \emph{et~al.}
 \newblock \enquote{Ultrafast imaging of laser driven shock waves using betatron
   x-rays from a laser wakefield accelerator}.
-\newblock \emph{Scientific reports}, 8, (2018), p. 11010.
+\newblock \emph{Scientific reports}, \textbf{8} (2018)(1), p. 11010.
 
 \bibitem{Jochmann2013_ICS_BeamEAngle}
-A.~Jochmann et~al.
+A.~Jochmann, A.~Irman, M.~Bussmann \emph{et~al.}
 \newblock \enquote{High resolution energy-angle correlation measurement of hard
   x rays from laser-Thomson backscattering}.
-\newblock \emph{Physical review letters}, 111, (2013), p. 114803.
+\newblock \emph{Physical review letters}, \textbf{111} (2013)(11), p. 114803.
 
 \bibitem{Golovin2016_ICS_BeamEmittance}
-G.~Golovin et~al.
+G.~Golovin, S.~Banerjee, C.~Liu \emph{et~al.}
 \newblock \enquote{Intrinsic beam emittance of laser-accelerated electrons
   measured by x-ray spectroscopic imaging}.
-\newblock \emph{Scientific reports}, 6, (2016), p. 24622.
+\newblock \emph{Scientific reports}, \textbf{6} (2016), p. 24622.
 
 \bibitem{Alley1996_LaserWire}
-R.~Alley et~al.
+R.~Alley, D.~Arnett, E.~Bong \emph{et~al.}
 \newblock \enquote{A laser-based beam profile monitor for the SLC/SLD
   interaction region}.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 379,
-  (1996), pp. 363--365.
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{379} (1996)(3), pp. 363--365.
 
 \bibitem{Leemans1996_ICS_BeamTransLong}
-W.~Leemans et~al.
+W.~Leemans, R.~Schoenlein, P.~Volfbeyn \emph{et~al.}
 \newblock \enquote{X-ray based subpicosecond electron bunch characterization
   using 90 Thomson scattering}.
-\newblock \emph{Physical review letters}, 77, (1996), p. 4182.
+\newblock \emph{Physical review letters}, \textbf{77} (1996)(20), p. 4182.
 
 \bibitem{Sakai2001_BeamSize}
-H.~Sakai et~al.
+H.~Sakai, Y.~Honda, N.~Sasao \emph{et~al.}
 \newblock \enquote{Measurement of an electron beam size with a laser wire beam
   profile monitor}.
-\newblock \emph{Physical Review Special Topics-Accelerators and Beams}, 4,
-  (2001), p. 022801.
+\newblock \emph{Physical Review Special Topics-Accelerators and Beams},
+  \textbf{4} (2001)(2), p. 022801.
 
 \bibitem{Honda2005_ICS_LaserWire}
-Y.~Honda et~al.
+Y.~Honda, N.~Sasao, S.~Araki \emph{et~al.}
 \newblock \enquote{Upgraded laser wire beam profile monitor}.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 538,
-  (2005), pp. 100--115.
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{538} (2005)(1-3), pp. 100--115.
 
 \bibitem{Kevlar}
 DuPont.
-\newblock \enquote{Kevlar Aramid Fiber: Technical Guide}, 2019.
+\newblock \enquote{Kevlar Aramid Fiber: Technical Guide} (2019).
 \newline\urlprefix\url{http://www.dupont.co.uk/content/dam/dupont/products-and-services/fabrics-fibers-and-nonwovens/fibers/documents/Kevlar_Technical_Guide_0319.pdf}
 
 \bibitem{Moller1932_Moller}
 C.~M{\o}ller.
 \newblock \enquote{Zur theorie des durchgangs schneller elektronen durch
   materie}.
-\newblock \emph{Annalen der Physik}, 406, (1932), pp. 531--585.
+\newblock \emph{Annalen der Physik}, \textbf{406} (1932)(5), pp. 531--585.
 
 \bibitem{Bethe1953_Moliere}
 H.~A. Bethe.
 \newblock \enquote{Moliere's theory of multiple scattering}.
-\newblock \emph{Physical review}, 89, (1953), p. 1256.
+\newblock \emph{Physical review}, \textbf{89} (1953)(6), p. 1256.
 
 \bibitem{Glinec2005_Brems}
-Y.~Glinec et~al.
+Y.~Glinec, J.~Faure, L.~L. Dain \emph{et~al.}
 \newblock \enquote{High-Resolution $\ensuremath{\gamma}$-Ray Radiography
   Produced by a Laser-Plasma Driven Electron Source}.
-\newblock \emph{Phys. Rev. Lett.}, 94, (2005), p. 025003.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{94} (2005), p. 025003.
 \newblock \doi{10.1103/PhysRevLett.94.025003}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.94.025003}
 
 \bibitem{Swanson2017_SHOCK}
-K.~K. Swanson et~al.
+K.~K. Swanson, H.-E. Tsai, S.~K. Barber \emph{et~al.}
 \newblock \enquote{Control of tunable, monoenergetic laser-plasma-accelerated
   electron beams using a shock-induced density downramp injector}.
-\newblock \emph{Phys. Rev. Accel. Beams}, 20, (2017), p. 051301.
+\newblock \emph{Phys. Rev. Accel. Beams}, \textbf{20} (2017), p. 051301.
 \newblock \doi{10.1103/PhysRevAccelBeams.20.051301}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.051301}
 
 \bibitem{Tsai2018_SHOCK}
-H.-E. Tsai et~al.
+H.-E. Tsai, K.~K. Swanson, S.~K. Barber \emph{et~al.}
 \newblock \enquote{{Control of quasi-monoenergetic electron beams from
   laser-plasma accelerators with adjustable shock density profile}}.
-\newblock \emph{Physics of Plasmas}, 25, (2018), p. 043107.
+\newblock \emph{Physics of Plasmas}, \textbf{25} (2018)(4), p. 043107.
 \newblock \doi{10.1063/1.5023694}.
 
 \bibitem{Weingartner2012_BUNCH}
-R.~Weingartner et~al.
+R.~Weingartner, S.~Raith, A.~Popp \emph{et~al.}
 \newblock \enquote{Ultralow emittance electron beams from a laser-wakefield
   accelerator}.
-\newblock \emph{Phys. Rev. ST Accel. Beams}, 15, (2012), p. 111302.
+\newblock \emph{Phys. Rev. ST Accel. Beams}, \textbf{15} (2012), p. 111302.
 \newblock \doi{10.1103/PhysRevSTAB.15.111302}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.15.111302}
 
 \bibitem{Okugi1999_WireScanner_Emittance}
-T.~Okugi et~al.
+T.~Okugi, T.~Hirose, H.~Hayano \emph{et~al.}
 \newblock \enquote{Evaluation of extremely small horizontal emittance}.
-\newblock \emph{Phys. Rev. ST Accel. Beams}, 2, (1999), p. 022801.
+\newblock \emph{Phys. Rev. ST Accel. Beams}, \textbf{2} (1999), p. 022801.
 \newblock \doi{10.1103/PhysRevSTAB.2.022801}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevSTAB.2.022801}
 
 \bibitem{Chen2013_ICS}
-S.~Chen et~al.
+S.~Chen, N.~D. Powers, I.~Ghebregziabher \emph{et~al.}
 \newblock \enquote{{MeV-energy X rays from inverse compton scattering with
   laser-wakefield accelerated electrons}}.
-\newblock \emph{Physical Review Letters}, 110, (2013), pp. 1--5.
+\newblock \emph{Physical Review Letters}, \textbf{110} (2013)(15), pp. 1--5.
 \newblock \doi{10.1103/PhysRevLett.110.155003}.
 
 \bibitem{Kirschner2019_Bayesian}
-J.~Kirschner et~al.
+J.~Kirschner, M.~Mutn{\`y}, N.~Hiller \emph{et~al.}
 \newblock \enquote{Adaptive and Safe Bayesian Optimization in High Dimensions
   via One-Dimensional Subspaces}.
-\newblock \emph{arXiv preprint arXiv:1902.03229}.
+\newblock \emph{arXiv preprint arXiv:1902.03229},  (2019).
 
 \bibitem{Edelen2018_ML}
-A.~Edelen et~al.
+A.~Edelen, C.~Mayes, D.~Bowring \emph{et~al.}
 \newblock \enquote{Opportunities in Machine Learning for Particle
   Accelerators}.
-\newblock \emph{arXiv preprint arXiv:1811.03172}.
+\newblock \emph{arXiv preprint arXiv:1811.03172},  (2018).
 
 \bibitem{Emma2018_ML}
-C.~Emma et~al.
+C.~Emma, A.~Edelen, M.~J. Hogan \emph{et~al.}
 \newblock \enquote{Machine learning-based longitudinal phase space prediction
   of particle accelerators}.
-\newblock \emph{Phys. Rev. Accel. Beams}, 21, (2018), p. 112802.
+\newblock \emph{Phys. Rev. Accel. Beams}, \textbf{21} (2018), p. 112802.
 \newblock \doi{10.1103/PhysRevAccelBeams.21.112802}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevAccelBeams.21.112802}
 
 \bibitem{Streeter2018_TEMPFEEDBACK}
-M.~Streeter et~al.
+M.~Streeter, S.~Dann, J.~Scott \emph{et~al.}
 \newblock \enquote{Temporal feedback control of high-intensity laser pulses to
   optimize ultrafast heating of atomic clusters}.
-\newblock \emph{Applied Physics Letters}, 112, (2018), p. 244101.
+\newblock \emph{Applied Physics Letters}, \textbf{112} (2018)(24), p. 244101.
 
 \bibitem{Kneip2010_BETATRON}
-S.~Kneip et~al.
+S.~Kneip, C.~McGuffey, J.~Martins \emph{et~al.}
 \newblock \enquote{Bright spatially coherent synchrotron X-rays from a
   table-top source}.
-\newblock \emph{Nature Physics}, 6, (2010), p. 980.
+\newblock \emph{Nature Physics}, \textbf{6} (2010)(12), p. 980.
 
 \bibitem{Chen2013_BETATRON}
-L.~M. Chen et~al.
+L.~M. Chen, W.~C. Yan, D.~Z. Li \emph{et~al.}
 \newblock \enquote{Bright betatron X-ray radiation from a
   laser-driven-clustering gas target}.
-\newblock \emph{Scientific Reports}, 3.
+\newblock \emph{Scientific Reports}, \textbf{3} (2013).
 \newline\urlprefix\url{https://doi.org/10.1038/srep01912}
 
 \bibitem{Glinec2006_Lanex}
-Y.~Glinec et~al.
+Y.~Glinec, J.~Faure, A.~Guemnie-Tafo \emph{et~al.}
 \newblock \enquote{Absolute calibration for a broad range single shot electron
   spectrometer}.
-\newblock \emph{Review of scientific instruments}, 77, (2006), p. 103301.
+\newblock \emph{Review of scientific instruments}, \textbf{77} (2006)(10), p.
+  103301.
 
 \bibitem{Tanabashi2018_PDGReview}
-M.~Tanabashi et~al.
+M.~Tanabashi, K.~Hagiwara, K.~Hikasa \emph{et~al.}
 \newblock \enquote{Review of particle physics}.
-\newblock \emph{Physical Review D}, 98, (2018), p. 030001.
+\newblock \emph{Physical Review D}, \textbf{98} (2018)(3), p. 030001.
 
 \bibitem{Babzien2006_ICS_2ndHarmonic}
-M.~Babzien et~al.
+M.~Babzien, I.~Ben-Zvi, K.~Kusche \emph{et~al.}
 \newblock \enquote{Observation of the Second Harmonic in Thomson Scattering
   from Relativistic Electrons}.
-\newblock \emph{Phys. Rev. Lett.}, 96, (2006), p. 054802.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{96} (2006), p. 054802.
 \newblock \doi{10.1103/PhysRevLett.96.054802}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.96.054802}
 
 \bibitem{Kuschel2016_PassiveLens}
-S.~Kuschel et~al.
+S.~Kuschel, D.~Hollatz, T.~Heinemann \emph{et~al.}
 \newblock \enquote{Demonstration of passive plasma lensing of a laser wakefield
   accelerated electron bunch}.
-\newblock \emph{Physical Review Accelerators and Beams}, 19, (2016), p. 071301.
+\newblock \emph{Physical Review Accelerators and Beams}, \textbf{19} (2016)(7),
+  p. 071301.
 
 \bibitem{Lau2003_NT}
-Y.~Y. Lau et~al.
+Y.~Y. Lau, F.~He, D.~P. Umstadter and R.~Kowalczyk.
 \newblock \enquote{Nonlinear Thomson scattering: A tutorial}.
-\newblock \emph{Physics of Plasmas}, 10, (2003), pp. 2155--2162.
+\newblock \emph{Physics of Plasmas}, \textbf{10} (2003)(5), pp. 2155--2162.
 \newblock \doi{10.1063/1.1565115}.
 \newline\urlprefix\url{https://doi.org/10.1063/1.1565115}
 
@@ -1282,133 +1323,137 @@ Y.~Y. Lau et~al.
 E.~Sarachik and G.~Schappert.
 \newblock \enquote{Classical theory of the scattering of intense laser
   radiation by free electrons}.
-\newblock \emph{Physical Review D}, 1, (1970), p. 2738.
+\newblock \emph{Physical Review D}, \textbf{1} (1970)(10), p. 2738.
 
 \bibitem{Koga2005_ICS}
-J.~Koga, T.~Z. Esirkepov, and S.~V. Bulanov.
+J.~Koga, T.~Z. Esirkepov and S.~V. Bulanov.
 \newblock \enquote{Nonlinear Thomson scattering in the strong radiation damping
   regime}.
-\newblock \emph{Physics of plasmas}, 12, (2005), p. 093106.
+\newblock \emph{Physics of plasmas}, \textbf{12} (2005)(9), p. 093106.
 
 \bibitem{Carroll2002_MEDICX}
 F.~E. Carroll.
 \newblock \enquote{Tunable monochromatic X rays: a new paradigm in medicine}.
-\newblock \emph{American Journal of Roentgenology}, 179, (2002), pp. 583--590.
+\newblock \emph{American Journal of Roentgenology}, \textbf{179} (2002)(3), pp.
+  583--590.
 
 \bibitem{Devita2008_CANCER}
-V.~T. DeVita, T.~S. Lawrence, and S.~A. Rosenberg.
+V.~T. DeVita, T.~S. Lawrence and S.~A. Rosenberg.
 \newblock \emph{DeVita, Hellman, and Rosenberg's cancer: principles \& practice
   of oncology}, volume~2.
-\newblock Lippincott Williams \& Wilkins, 2008.
+\newblock Lippincott Williams \& Wilkins (2008).
 
 \bibitem{Oliva2010_ICSIMAGING}
-P.~Oliva et~al.
+P.~Oliva, M.~Carpinelli, B.~Golosio \emph{et~al.}
 \newblock \enquote{Quantitative evaluation of single-shot inline phase contrast
   imaging using an inverse compton x-ray source}.
-\newblock \emph{Applied Physics Letters}, 97, (2010), p. 134104.
+\newblock \emph{Applied Physics Letters}, \textbf{97} (2010)(13), p. 134104.
 
 \bibitem{Baldwin1948_GAMMA}
 G.~Baldwin and G.~Klaiber.
 \newblock \enquote{X-ray yield curves for $\gamma$- n reactions}.
-\newblock \emph{Physical Review}, 73, (1948), p. 1156.
+\newblock \emph{Physical Review}, \textbf{73} (1948)(10), p. 1156.
 
 \bibitem{Bosco2008_LW}
-A.~Bosco et~al.
+A.~Bosco, M.~Price, G.~Blair \emph{et~al.}
 \newblock \enquote{A two-dimensional laser-wire scanner for electron
   accelerators}.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 592,
-  (2008), pp. 162--170.
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{592} (2008)(3), pp. 162--170.
 
 \bibitem{TaPhuoc2012_ICS}
-K.~{Ta Phuoc} et~al.
+K.~{Ta Phuoc}, S.~Corde, C.~Thaury \emph{et~al.}
 \newblock \enquote{{All-optical Compton gamma-ray source}}.
-\newblock \emph{Nature Photonics}, 6, (2012), pp. 308--311.
+\newblock \emph{Nature Photonics}, \textbf{6} (2012)(5), pp. 308--311.
 \newblock \doi{10.1038/nphoton.2012.82}.
+\newblock \eprint{1301.3973}.
 \newline\urlprefix\url{http://www.nature.com/doifinder/10.1038/nphoton.2012.82}
 
 \bibitem{Liu2014_ICS}
-C.~Liu et~al.
+C.~Liu, G.~Golovin, S.~Chen \emph{et~al.}
 \newblock \enquote{Generation of 9 MeV $\gamma$-rays by all-laser-driven
   Compton scattering with second-harmonic laser light}.
-\newblock \emph{Optics letters}, 39, (2014), pp. 4132--4135.
+\newblock \emph{Optics letters}, \textbf{39} (2014)(14), pp. 4132--4135.
 
 \bibitem{Powers2014_ICS}
-N.~D. Powers et~al.
+N.~D. Powers, I.~Ghebregziabher, G.~Golovin \emph{et~al.}
 \newblock \enquote{{Quasi-monoenergetic and tunable X-rays from a laser-driven
   Compton light source}}.
-\newblock \emph{Nature Photonics}, 8, (2014), pp. 28--31.
+\newblock \emph{Nature Photonics}, \textbf{8} (2014)(1), pp. 28--31.
 \newblock \doi{10.1038/nphoton.2013.314}.
 \newline\urlprefix\url{http://dx.doi.org/10.1038/nphoton.2013.314}
 
 \bibitem{Sarri2014_ICS}
-G.~Sarri et~al.
+G.~Sarri, D.~Corvan, W.~Schumaker \emph{et~al.}
 \newblock \enquote{Ultrahigh brilliance multi-MeV $\gamma$-ray beams from
   nonlinear relativistic Thomson scattering}.
-\newblock \emph{Physical review letters}, 113, (2014), p. 224801.
+\newblock \emph{Physical review letters}, \textbf{113} (2014)(22), p. 224801.
 
 \bibitem{Khrennikov2015_ICS}
-K.~Khrennikov et~al.
+K.~Khrennikov, J.~Wenz, A.~Buck \emph{et~al.}
 \newblock \enquote{{Tunable All-Optical Quasimonochromatic Thomson X-Ray Source
   in the Nonlinear Regime}}.
-\newblock \emph{Physical Review Letters}, 114, (2015), pp. 1--5.
+\newblock \emph{Physical Review Letters}, \textbf{114} (2015)(19), pp. 1--5.
 \newblock \doi{10.1103/PhysRevLett.114.195003}.
+\newblock \eprint{1406.6654}.
 \newline\urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevLett.114.195003}
 
 \bibitem{Shaw2017_ICS}
-J.~Shaw et~al.
+J.~Shaw, A.~Bernstein, R.~Zgadzaj \emph{et~al.}
 \newblock \enquote{Bright 5-85 MeV Compton gamma-ray pulses from GeV
   laser-plasma accelerator and plasma mirror}.
-\newblock \emph{arXiv preprint arXiv:1705.08637}.
+\newblock \emph{arXiv preprint arXiv:1705.08637},  (2017).
 
 \bibitem{Bell2008_PairsEta}
 A.~R. Bell and J.~G. Kirk.
 \newblock \enquote{Possibility of Prolific Pair Production with High-Power
   Lasers}.
-\newblock \emph{Phys. Rev. Lett.}, 101, (2008), p. 200403.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{101} (2008), p. 200403.
 \newblock \doi{10.1103/PhysRevLett.101.200403}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.101.200403}
 
 \bibitem{Kapteyn1991_PM}
-H.~C. Kapteyn et~al.
+H.~C. Kapteyn, M.~M. Murnane, A.~Szoke and R.~W. Falcone.
 \newblock \enquote{Prepulse energy suppression for high-energy ultrashort
   pulses using self-induced plasma shuttering}.
-\newblock \emph{Opt. Lett.}, 16, (1991), pp. 490--492.
+\newblock \emph{Opt. Lett.}, \textbf{16} (1991)(7), pp. 490--492.
 \newblock \doi{10.1364/OL.16.000490}.
 \newline\urlprefix\url{http://ol.osa.org/abstract.cfm?URI=ol-16-7-490}
 
 \bibitem{Tsai2015_ICS}
-H.-E. Tsai et~al.
+H.-E. Tsai, X.~Wang, J.~M. Shaw \emph{et~al.}
 \newblock \enquote{Compact tunable Compton x-ray source from laser-plasma
   accelerator and plasma mirror}.
-\newblock \emph{Physics of Plasmas}, 22, (2015), p. 023106.
+\newblock \emph{Physics of Plasmas}, \textbf{22} (2015)(2), p. 023106.
 \newblock \doi{10.1063/1.4907655}.
 \newline\urlprefix\url{https://doi.org/10.1063/1.4907655}
 
 \bibitem{Yu2016_ICS}
-C.~Yu et~al.
+C.~Yu, R.~Qi, W.~Wang \emph{et~al.}
 \newblock \enquote{Ultrahigh brilliance quasi-monochromatic MeV $\gamma$-rays
   based on self-synchronized all-optical Compton scattering}.
-\newblock \emph{Scientific reports}, 6, (2016), p. 29518.
+\newblock \emph{Scientific reports}, \textbf{6} (2016), p. 29518.
 
 \bibitem{Shadwick2009_nlDepletion}
-B.~A. Shadwick, C.~B. Schroeder, and E.~Esarey.
+B.~A. Shadwick, C.~B. Schroeder and E.~Esarey.
 \newblock \enquote{Nonlinear laser energy depletion in laser-plasma
   accelerators}.
-\newblock \emph{Physics of Plasmas}, 16, (2009), p. 056704.
+\newblock \emph{Physics of Plasmas}, \textbf{16} (2009)(5), p. 056704.
 
 \bibitem{Samarin2017_RR}
-G.~M. Samarin, M.~Zepf, and G.~Sarri.
+G.~M. Samarin, M.~Zepf and G.~Sarri.
 \newblock \enquote{{Radiation reaction studies in an all-optical set-up:
   experimental limitations}}.
-\newblock \emph{Journal of Modern Optics}, 65, (2017), pp. 1362--1369.
+\newblock \emph{Journal of Modern Optics}, \textbf{65} (2017)(11), pp.
+  1362--1369.
 \newblock \doi{10.1080/09500340.2017.1353655}.
 \newline\urlprefix\url{http://www-thphys.physics.ox.ac.uk/research/plasma/JPP/papers17/sarri2.pdf}
 
 \bibitem{Harvey2016_ICSFOCUS}
-C.~Harvey, M.~Marklund, and A.~R. Holkundkar.
+C.~Harvey, M.~Marklund and A.~R. Holkundkar.
 \newblock \enquote{Focusing effects in laser-electron Thomson scattering}.
-\newblock \emph{Phys. Rev. Accel. Beams}, 19, (2016), p. 094701.
+\newblock \emph{Phys. Rev. Accel. Beams}, \textbf{19} (2016), p. 094701.
 \newblock \doi{10.1103/PhysRevAccelBeams.19.094701}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.094701}
 
@@ -1419,71 +1464,60 @@ C.~L. Facility.
 \newline\urlprefix\url{https://www.clf.stfc.ac.uk/Pages/EPAC-introduction-page.aspx}
 
 \bibitem{Yanovsky2008_HERCULES}
-V.~Yanovsky et~al.
+V.~Yanovsky, V.~Chvykov, G.~Kalinchenko \emph{et~al.}
 \newblock \enquote{Ultra-high intensity- 300-TW laser at 0.1 Hz repetition
   rate.}
-\newblock \emph{Opt. Express}, 16, (2008), pp. 2109--2114.
+\newblock \emph{Opt. Express}, \textbf{16} (2008)(3), pp. 2109--2114.
 \newblock \doi{10.1364/OE.16.002109}.
 \newline\urlprefix\url{http://www.opticsexpress.org/abstract.cfm?URI=oe-16-3-2109}
 
-\bibitem{Maksimchuk2019_ZEUS}
-A.~Maksimchuk et~al.
-\newblock \enquote{Zettawatt-Equivalent Ultrashort Pulse Laser System (ZEUS) at
-  the University of Michigan}.
-\newblock \emph{Bulletin of the American Physical Society}.
-
-\bibitem{Li2017_SULF}
-R.~Li et~al.
-\newblock \enquote{Progress of the SULF 10 PW laser project}.
-\newblock In \enquote{1st AAPPS-DPP meeting}, 2017.
-
 \bibitem{Cartlidge2018_SEL}
 E.~Cartlidge.
-\newblock \enquote{The light fantastic}, 2018.
+\newblock \enquote{The light fantastic} (2018).
 
 \bibitem{Leemans2013_BELLA}
-W.~Leemans et~al.
+W.~Leemans, J.~Daniels, A.~Deshmukh \emph{et~al.}
 \newblock \enquote{BELLA laser and operations}.
-\newblock \emph{Proc. of PAC2013}, p. THYAA11097.
+\newblock \emph{Proc. of PAC2013},  (2013), p. THYAA11097.
 
 \bibitem{Toth2017_BELLA}
-C.~Toth et~al.
+C.~Toth, D.~Evans, A.~J. Gonsalves \emph{et~al.}
 \newblock \enquote{Transition of the bella PW laser system towards a
   collaborative research facility in laser plasma science}.
 \newblock In \enquote{AIP Conference Proceedings}, volume 1812, p. 110005. AIP
-  Publishing, 2017.
+  Publishing (2017).
 
 \bibitem{Bashinov2014_XCELS}
-A.~Bashinov et~al.
+A.~Bashinov, A.~Gonoskov, A.~Kim \emph{et~al.}
 \newblock \enquote{New horizons for extreme light physics with mega-science
   project XCELS}.
-\newblock \emph{The European Physical Journal Special Topics}, 223, (2014), pp.
-  1105--1112.
+\newblock \emph{The European Physical Journal Special Topics}, \textbf{223}
+  (2014)(6), pp. 1105--1112.
 
 \bibitem{Kessel2018_PWMPQ}
-A.~Kessel et~al.
+A.~Kessel, V.~E. Leshchenko, O.~Jahn \emph{et~al.}
 \newblock \enquote{Relativistic few-cycle pulses with high contrast from
   picosecond-pumped OPCPA}.
-\newblock \emph{Optica}, 5, (2018), pp. 434--442.
+\newblock \emph{Optica}, \textbf{5} (2018)(4), pp. 434--442.
 
 \bibitem{Enterria2013_PhPh}
 D.~d'Enterria and G.~G. da~Silveira.
 \newblock \enquote{Observing Light-by-Light Scattering at the Large Hadron
   Collider}.
-\newblock \emph{Phys. Rev. Lett.}, 111, (2013), p. 080405.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{111} (2013), p. 080405.
 \newblock \doi{10.1103/PhysRevLett.111.080405}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.111.080405}
 
 \bibitem{Pike2014_BW}
-O.~Pike et~al.
+O.~Pike, F.~Mackenroth, E.~Hill and S.~Rose.
 \newblock \enquote{A photon--photon collider in a vacuum hohlraum}.
-\newblock \emph{Nature Photonics}, 8, (2014), p. 434.
+\newblock \emph{Nature Photonics}, \textbf{8} (2014)(6), p. 434.
 
 \bibitem{Blackburn2017_pairs}
-T.~G. Blackburn et~al.
+T.~G. Blackburn, A.~Ilderton, C.~D. Murphy and M.~Marklund.
 \newblock \enquote{Scaling laws for positron production in laser--electron-beam
   collisions}.
-\newblock \emph{Phys. Rev. A}, 96, (2017), p. 022128.
+\newblock \emph{Phys. Rev. A}, \textbf{96} (2017), p. 022128.
 \newblock \doi{10.1103/PhysRevA.96.022128}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.96.022128}
 
@@ -1491,7 +1525,7 @@ T.~G. Blackburn et~al.
 B.~King and N.~Elkina.
 \newblock \enquote{Vacuum birefringence in high-energy laser-electron
   collisions}.
-\newblock \emph{Phys. Rev. A}, 94, (2016), p. 062102.
+\newblock \emph{Phys. Rev. A}, \textbf{94} (2016), p. 062102.
 \newblock \doi{10.1103/PhysRevA.94.062102}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.94.062102}
 
@@ -1499,124 +1533,126 @@ B.~King and N.~Elkina.
 A.~A. {Sokolov} and I.~M. {Ternov}.
 \newblock \enquote{On Polarization and Spin Effects in the Theory of
   Synchrotron Radiation}.
-\newblock \emph{Soviet Physics Doklady}, 8, (1964), p. 1203.
+\newblock \emph{Soviet Physics Doklady}, \textbf{8} (1964), p. 1203.
 
 \bibitem{Baier1967_POL}
 V.~Baier and V.~Katkov.
 \newblock \enquote{Radiational polarization of electrons in inhomogeneous
   magnetic field}.
-\newblock \emph{Physics Letters A}, 24, (1967), pp. 327--329.
+\newblock \emph{Physics Letters A}, \textbf{24} (1967)(6), pp. 327--329.
 
 \bibitem{Glenzer2009_ICSFusion}
 S.~H. Glenzer and R.~Redmer.
 \newblock \enquote{X-ray Thomson scattering in high energy density plasmas}.
-\newblock \emph{Reviews of Modern Physics}, 81, (2009), p. 1625.
+\newblock \emph{Reviews of Modern Physics}, \textbf{81} (2009)(4), p. 1625.
 
 \bibitem{Prunty2014_ICSFusion}
 S.~Prunty.
 \newblock \enquote{A primer on the theory of Thomson scattering for
   high-temperature fusion plasmas}.
-\newblock \emph{Physica Scripta}, 89, (2014), p. 128001.
+\newblock \emph{Physica Scripta}, \textbf{89} (2014)(12), p. 128001.
 
 \bibitem{Vinko2012_HEDX}
-S.~Vinko et~al.
+S.~Vinko, O.~Ciricosta, B.~Cho \emph{et~al.}
 \newblock \enquote{Creation and diagnosis of a solid-density plasma with an
   X-ray free-electron laser}.
-\newblock \emph{Nature}, 482, (2012), p.~59.
+\newblock \emph{Nature}, \textbf{482} (2012)(7383), p.~59.
 
 \bibitem{Schropp2015_SHOCKX}
-A.~Schropp et~al.
+A.~Schropp, R.~Hoppe, V.~Meier \emph{et~al.}
 \newblock \enquote{Imaging shock waves in diamond with both high temporal and
   spatial resolution at an XFEL}.
-\newblock \emph{Scientific reports}, 5, (2015), p. 11089.
+\newblock \emph{Scientific reports}, \textbf{5} (2015), p. 11089.
 
 \bibitem{Harmand2015_XAS}
-M.~Harmand et~al.
+M.~Harmand, A.~Ravasio, S.~Mazevet \emph{et~al.}
 \newblock \enquote{X-ray absorption spectroscopy of iron at multimegabar
   pressures in laser shock experiments}.
-\newblock \emph{Physical Review B}, 92, (2015), p. 024108.
+\newblock \emph{Physical Review B}, \textbf{92} (2015)(2), p. 024108.
 
 \bibitem{Burkart2019_LUXE}
-F.~Burkart et~al.
+F.~Burkart, R.~A{\ss}mann, R.~Brinkmann \emph{et~al.}
 \newblock \enquote{LUXE-a QED Experiment at the European XFEL}.
 \newblock In \enquote{10th Int. Partile Accelerator Conf.(IPAC'19), Melbourne,
   Australia, 19-24 May 2019}, pp. 1694--1697. JACOW Publishing, Geneva,
-  Switzerland, 2019.
+  Switzerland (2019).
 
 \bibitem{Abramowicz2019_LUXE}
-H.~Abramowicz et~al.
+H.~Abramowicz, M.~Altarelli, R.~A{\ss}mann \emph{et~al.}
 \newblock \enquote{Letter of Intent for the LUXE Experiment}.
-\newblock \emph{arXiv preprint arXiv:1909.00860}.
+\newblock \emph{arXiv preprint arXiv:1909.00860},  (2019).
 
 \bibitem{SFQEDOverview2019}
-M.~{Altarelli} et~al.
+M.~{Altarelli}, R.~{Assmann}, F.~{Burkart} \emph{et~al.}
 \newblock \enquote{{Summary of strong-field QED Workshop}}.
-\newblock \emph{arXiv e-prints}, arXiv:1905.00059.
+\newblock \emph{arXiv e-prints},  (2019), arXiv:1905.00059.
+\newblock \eprint{1905.00059}.
 
 \bibitem{Artru1994_CHANNELING}
 X.~Artru and M.~Chevallier.
 \newblock \enquote{Channeling radiation: Theory, semi-classical simulations}.
-\newblock \emph{Radiation Effects and Defects in Solids}, 130, (1994), pp.
-  415--432.
+\newblock \emph{Radiation Effects and Defects in Solids}, \textbf{130}
+  (1994)(1), pp. 415--432.
 
 \bibitem{Katkov1998_CHANNELING}
-V.~Katkov, V.~M. Strakhovenko et~al.
+V.~Katkov, V.~M. Strakhovenko \emph{et~al.}
 \newblock \emph{Electromagnetic processes at high energies in oriented single
   crystals}.
-\newblock World Scientific, 1998.
+\newblock World Scientific (1998).
 
 \bibitem{Bulanov1997_SELF}
-S.~V. Bulanov et~al.
+S.~V. Bulanov, F.~Pegoraro, A.~M. Pukhov and A.~S. Sakharov.
 \newblock \enquote{Transverse-Wake Wave Breaking}.
-\newblock \emph{Phys. Rev. Lett.}, 78, (1997), pp. 4205--4208.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{78} (1997), pp. 4205--4208.
 \newblock \doi{10.1103/PhysRevLett.78.4205}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.78.4205}
 
 \bibitem{Burza2013_SHOCK}
-M.~Burza et~al.
+M.~Burza, A.~Gonoskov, K.~Svensson \emph{et~al.}
 \newblock \enquote{{Laser wakefield acceleration using wire produced double
   density ramps}}.
-\newblock \emph{Physical Review Special Topics - Accelerators and Beams}, 16,
-  (2013), p. 11301.
+\newblock \emph{Physical Review Special Topics - Accelerators and Beams},
+  \textbf{16} (2013)(1), p. 11301.
 \newblock \doi{10.1103/physrevstab.16.011301}.
+\newblock \eprint{arXiv:1210.6787v1}.
 \newline\urlprefix\url{https://journals.aps.org/prab/pdf/10.1103/PhysRevSTAB.16.011301}
 
 \bibitem{Baier1991_GAUNT}
-V.~Baier, V.~Katkov, and V.~Strakhovenko.
+V.~Baier, V.~Katkov and V.~Strakhovenko.
 \newblock \enquote{Quasiclassical theory of radiation and pair creation in
   crystals at high energy}.
-\newblock \emph{Radiation Effects and Defects in Solids}, 122, (1991), pp.
-  527--556.
+\newblock \emph{Radiation Effects and Defects in Solids}, \textbf{122}
+  (1991)(2), pp. 527--556.
 
 \bibitem{Mirzaie2015_GEVJET}
-M.~Mirzaie et~al.
+M.~Mirzaie, S.~Li, M.~Zeng \emph{et~al.}
 \newblock \enquote{Demonstration of self-truncated ionization injection for GeV
   electron beams}.
-\newblock \emph{Scientific reports}, 5, (2015), p. 14659.
+\newblock \emph{Scientific reports}, \textbf{5} (2015), p. 14659.
 
 \bibitem{Baird2019_RR}
-C.~D. Baird et~al.
+C.~D. Baird, C.~D. Murphy, T.~Blackburn \emph{et~al.}
 \newblock \enquote{Realising single-shot measurements of quantum radiation
   reaction in high-intensity lasers}.
-\newblock \emph{New Journal of Physics}, 21, (2019), p. 053030.
+\newblock \emph{New Journal of Physics}, \textbf{21} (2019)(5), p. 053030.
 
 \bibitem{Bonometto1971_PAIRSASTRO}
 S.~Bonometto and M.~Rees.
 \newblock \enquote{On possible observable effects of electron pair production
   in QSOs}.
-\newblock \emph{Monthly Notices of the Royal Astronomical Society}, 152,
-  (1971), pp. 21--35.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  \textbf{152} (1971)(1), pp. 21--35.
 
 \bibitem{Hu2010_TRIDENT}
-H.~Hu, C.~M{\"u}ller, and C.~H. Keitel.
+H.~Hu, C.~M{\"u}ller and C.~H. Keitel.
 \newblock \enquote{Complete QED theory of multiphoton trident pair production
   in strong laser fields}.
-\newblock \emph{Physical review letters}, 105, (2010), p. 080401.
+\newblock \emph{Physical review letters}, \textbf{105} (2010)(8), p. 080401.
 
 \bibitem{Ilderton2011_TRIDENT}
 A.~Ilderton.
 \newblock \enquote{Trident Pair Production in Strong Laser Pulses}.
-\newblock \emph{Phys. Rev. Lett.}, 106, (2011), p. 020404.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{106} (2011), p. 020404.
 \newblock \doi{10.1103/PhysRevLett.106.020404}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.106.020404}
 
@@ -1624,365 +1660,385 @@ A.~Ilderton.
 K.~Piotrzkowski.
 \newblock \enquote{Tagging two-photon production at the CERN Large Hadron
   Collider}.
-\newblock \emph{Physical Review D}, 63, (2001), p. 071502.
+\newblock \emph{Physical Review D}, \textbf{63} (2001)(7), p. 071502.
 
 \bibitem{ATLAS2017_GammaGamma}
-M.~Aaboud et~al.
+M.~Aaboud, G.~Aad, B.~Abbott \emph{et~al.}
 \newblock \enquote{Evidence for light-by-light scattering in heavy-ion
   collisions with the ATLAS detector at the LHC}.
-\newblock \emph{Nature Physics}, 13, (2017), p. 852.
+\newblock \emph{Nature Physics}, \textbf{13} (2017)(9), p. 852.
 
 \bibitem{dEnterria2013_GammaGamma}
 D.~d'Enterria and G.~G. da~Silveira.
 \newblock \enquote{Observing Light-by-Light Scattering at the Large Hadron
   Collider}.
-\newblock \emph{Phys. Rev. Lett.}, 111, (2013), p. 080405.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{111} (2013), p. 080405.
 \newblock \doi{10.1103/PhysRevLett.111.080405}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.111.080405}
 
 \bibitem{OPAL2000_GammaGamma}
-G.~Abbiendi, O.~collaboration et~al.
+G.~Abbiendi, O.~collaboration \emph{et~al.}
 \newblock \enquote{Total hadronic cross-section of photon-photon interactions
   at LEP}.
-\newblock \emph{The European Physical Journal C-Particles and Fields}, 14,
-  (2000), pp. 199--212.
+\newblock \emph{The European Physical Journal C-Particles and Fields},
+  \textbf{14} (2000)(2), pp. 199--212.
 
 \bibitem{Knapen2017_PhPh_AXIONLIKE}
-S.~Knapen et~al.
+S.~Knapen, T.~Lin, H.~K. Lou and T.~Melia.
 \newblock \enquote{Searching for axionlike particles with ultraperipheral
   heavy-ion collisions}.
-\newblock \emph{Physical review letters}, 118, (2017), p. 171801.
+\newblock \emph{Physical review letters}, \textbf{118} (2017)(17), p. 171801.
 
 \bibitem{Baldenegro2018_PhPh_AXIONLIKE}
-C.~Baldenegro et~al.
+C.~Baldenegro, S.~Fichet, G.~von Gersdorff and C.~Royon.
 \newblock \enquote{Searching for axion-like particles with proton tagging at
   the LHC}.
-\newblock \emph{Journal of High Energy Physics}, 2018, (2018), p. 131.
+\newblock \emph{Journal of High Energy Physics}, \textbf{2018} (2018)(6), p.
+  131.
 
 \bibitem{Beresford2019_PhPh_SLEPTONS}
 L.~Beresford and J.~Liu.
 \newblock \enquote{Search strategy for sleptons and dark matter using the LHC
   as a photon collider}.
-\newblock \emph{Physical Review Letters}.
+\newblock \emph{Physical Review Letters},  (2019).
 
 \bibitem{Pike_PHYSORG}
 O.~J. Pike.
 \newblock \enquote{Fundamental Feynman diagrams and their experimental
   validation}.
-\newblock \url{https://phys.org/news/2014-05-scientists-year-quest.html}, 2014.
+\newblock \url{https://phys.org/news/2014-05-scientists-year-quest.html}
+  (2014).
 \newblock [Online; accessed 20. Sept. 2019].
 
 \bibitem{Heitler1954_BH}
 W.~Heitler.
 \newblock \enquote{The quantum theory of radiation}.
+\newblock  (1954).
 
 \bibitem{Gahn2000_BH}
-C.~Gahn et~al.
+C.~Gahn, G.~Tsakiris, G.~Pretzler \emph{et~al.}
 \newblock \enquote{Generating positrons with femtosecond-laser pulses}.
-\newblock \emph{Applied Physics Letters}, 77, (2000), pp. 2662--2664.
+\newblock \emph{Applied Physics Letters}, \textbf{77} (2000)(17), pp.
+  2662--2664.
 
 \bibitem{Chen2009_BH}
-H.~Chen et~al.
+H.~Chen, S.~C. Wilks, J.~D. Bonlie \emph{et~al.}
 \newblock \enquote{Relativistic Positron Creation Using Ultraintense Short
   Pulse Lasers}.
-\newblock \emph{Phys. Rev. Lett.}, 102, (2009), p. 105001.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{102} (2009), p. 105001.
 \newblock \doi{10.1103/PhysRevLett.102.105001}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.102.105001}
 
 \bibitem{Sarri2013_pairs}
-G.~Sarri et~al.
+G.~Sarri, W.~Schumaker, A.~Di~Piazza \emph{et~al.}
 \newblock \enquote{Table-top laser-based source of femtosecond, collimated,
   ultrarelativistic positron beams}.
-\newblock \emph{Physical review letters}, 110, (2013), p. 255002.
+\newblock \emph{Physical review letters}, \textbf{110} (2013)(25), p. 255002.
 
 \bibitem{Sarri2015_pairs}
-G.~Sarri et~al.
+G.~Sarri, K.~Poder, J.~Cole \emph{et~al.}
 \newblock \enquote{Generation of neutral and high-density electron--positron
   pair plasmas in the laboratory}.
-\newblock \emph{Nature communications}, 6, (2015), p. 6747.
+\newblock \emph{Nature communications}, \textbf{6} (2015), p. 6747.
 
 \bibitem{Emma2010_XFEL}
-P.~Emma et~al.
+P.~Emma, R.~Akre, J.~Arthur \emph{et~al.}
 \newblock \enquote{First lasing and operation of an {\aa}ngstrom-wavelength
   free-electron laser}.
-\newblock \emph{nature photonics}, 4, (2010), p. 641.
+\newblock \emph{nature photonics}, \textbf{4} (2010)(9), p. 641.
 
 \bibitem{Rousse2004_BETATRON}
-A.~Rousse et~al.
+A.~Rousse, K.~T. Phuoc, R.~Shah \emph{et~al.}
 \newblock \enquote{Production of a keV X-ray beam from synchrotron radiation in
   relativistic laser-plasma interaction}.
-\newblock \emph{Physical review letters}, 93, (2004), p. 135005.
+\newblock \emph{Physical review letters}, \textbf{93} (2004)(13), p. 135005.
 
 \bibitem{Lindl2004_HOHLRAUMBASICS}
-J.~D. Lindl et~al.
+J.~D. Lindl, P.~Amendt, R.~L. Berger \emph{et~al.}
 \newblock \enquote{The physics basis for ignition using indirect-drive targets
   on the National Ignition Facility}.
-\newblock \emph{Physics of plasmas}, 11, (2004), pp. 339--491.
+\newblock \emph{Physics of plasmas}, \textbf{11} (2004)(2), pp. 339--491.
 
 \bibitem{Decker1997_HOHLRAUM}
-C.~Decker et~al.
+C.~Decker, R.~Turner, O.~Landen \emph{et~al.}
 \newblock \enquote{Hohlraum radiation drive measurements on the Omega laser}.
-\newblock \emph{Physical review letters}, 79, (1997), p. 1491.
+\newblock \emph{Physical review letters}, \textbf{79} (1997)(8), p. 1491.
 
 \bibitem{Town2011_HOHLRAUM}
-R.~Town et~al.
+R.~Town, M.~Rosen, P.~Michel \emph{et~al.}
 \newblock \enquote{Analysis of the National Ignition Facility ignition hohlraum
   energetics experiments}.
-\newblock \emph{Physics of Plasmas}, 18, (2011), p. 056302.
+\newblock \emph{Physics of Plasmas}, \textbf{18} (2011)(5), p. 056302.
 
 \bibitem{Glenzer2011_HOHLRAUM}
-S.~Glenzer et~al.
+S.~Glenzer, B.~MacGowan, N.~Meezan \emph{et~al.}
 \newblock \enquote{Demonstration of ignition radiation temperatures in
   indirect-drive inertial confinement fusion hohlraums}.
-\newblock \emph{Physical review letters}, 106, (2011), p. 085004.
+\newblock \emph{Physical review letters}, \textbf{106} (2011)(8), p. 085004.
 
 \bibitem{Edwards2002_Brems}
-R.~Edwards et~al.
+R.~Edwards, M.~Sinclair, T.~Goldsack \emph{et~al.}
 \newblock \enquote{Characterization of a gamma-ray source based on a
   laser-plasma accelerator with applications to radiography}.
-\newblock \emph{Applied Physics Letters}, 80, (2002), pp. 2129--2131.
+\newblock \emph{Applied Physics Letters}, \textbf{80} (2002)(12), pp.
+  2129--2131.
 
 \bibitem{Giulietti2008_Brems}
-A.~Giulietti et~al.
+A.~Giulietti, N.~Bourgeois, T.~Ceccotti \emph{et~al.}
 \newblock \enquote{Intense $\gamma$-ray source in the giant-dipole-resonance
   range driven by 10-TW laser pulses}.
-\newblock \emph{Physical review letters}, 101, (2008), p. 105002.
+\newblock \emph{Physical review letters}, \textbf{101} (2008)(10), p. 105002.
 
 \bibitem{Ben2011_Brems}
-A.~Ben-Isma{\"\i}l, J.~Faure, and V.~Malka.
+A.~Ben-Isma{\"\i}l, J.~Faure and V.~Malka.
 \newblock \enquote{Optimization of gamma-ray beams produced by a laser-plasma
   accelerator}.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 629,
-  (2011), pp. 382--386.
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{629} (2011)(1), pp. 382--386.
 
 \bibitem{Oishi2011_Brems}
-Y.~Oishi et~al.
+Y.~Oishi, T.~Nayuki, A.~Zhidkov \emph{et~al.}
 \newblock \enquote{Evaluation of Yields of $\gamma$-Rays Produced by Electrons
   from Gas Jets Irradiated by Low-Energy Laser Pulses: Towards “Virtual
   Radioisotopes”}.
-\newblock \emph{Japanese Journal of Applied Physics}, 50, (2011), p. 042702.
+\newblock \emph{Japanese Journal of Applied Physics}, \textbf{50} (2011)(4R),
+  p. 042702.
 
 \bibitem{Cipiccia2012_Brems}
-S.~Cipiccia et~al.
+S.~Cipiccia, S.~Wiggins, R.~Shanks \emph{et~al.}
 \newblock \enquote{A tuneable ultra-compact high-power, ultra-short pulsed,
   bright gamma-ray source based on bremsstrahlung radiation from laser-plasma
   accelerated electrons}.
-\newblock \emph{Journal of Applied Physics}, 111, (2012), p. 063302.
+\newblock \emph{Journal of Applied Physics}, \textbf{111} (2012)(6), p. 063302.
 
 \bibitem{Dopp2016_Brems}
-A.~D{\"o}pp et~al.
+A.~D{\"o}pp, E.~Guillaume, C.~Thaury \emph{et~al.}
 \newblock \enquote{A bremsstrahlung gamma-ray source based on stable ionization
   injection of electrons into a laser wakefield accelerator}.
 \newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment}, 830,
-  (2016), pp. 515--519.
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  \textbf{830} (2016), pp. 515--519.
 
 \bibitem{Lemos2018_Brems}
-N.~Lemos et~al.
+N.~Lemos, F.~Albert, J.~Shaw \emph{et~al.}
 \newblock \enquote{Bremsstrahlung hard x-ray source driven by an electron beam
   from a self-modulated laser wakefield accelerator}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 60, (2018), p. 054008.
+\newblock \emph{Plasma Physics and Controlled Fusion}, \textbf{60} (2018)(5),
+  p. 054008.
 
 \bibitem{PikeThesis}
 O.~J. Pike.
 \newblock \emph{Particle Interactions in High-Temperature Plasmas}.
-\newblock Springer, 2017.
+\newblock Springer (2017).
 
 \bibitem{Stearns1949_Brems}
 M.~Stearns.
 \newblock \enquote{Mean square angles of bremsstrahlung and pair production}.
-\newblock \emph{Physical Review}, 76, (1949), p. 836.
+\newblock \emph{Physical Review}, \textbf{76} (1949)(6), p. 836.
 
 \bibitem{Roberts1980_AWECODE}
-P.~Roberts et~al.
+P.~Roberts, S.~Rose, P.~Thompson and R.~Wright.
 \newblock \enquote{The stability of multiple-shell ICF targets}.
-\newblock \emph{Journal of Physics D: Applied Physics}, 13, (1980), p. 1957.
+\newblock \emph{Journal of Physics D: Applied Physics}, \textbf{13} (1980)(11),
+  p. 1957.
 
 \bibitem{Timepix3}
-T.~Poikela et~al.
+T.~Poikela, J.~Plosila, T.~Westerlund \emph{et~al.}
 \newblock \enquote{Timepix3: a 65K channel hybrid pixel readout chip with
   simultaneous ToA/ToT and sparse readout}.
-\newblock \emph{Journal of instrumentation}, 9, (2014), p. C05013.
+\newblock \emph{Journal of instrumentation}, \textbf{9} (2014)(05), p. C05013.
 
 \bibitem{Bergmann2017_Tracking}
-B.~Bergmann et~al.
+B.~Bergmann, M.~Pichotka, S.~Pospisil \emph{et~al.}
 \newblock \enquote{3D track reconstruction capability of a silicon hybrid
   active pixel detector}.
-\newblock \emph{The European Physical Journal C}, 77, (2017), p. 421.
+\newblock \emph{The European Physical Journal C}, \textbf{77} (2017)(6), p.
+  421.
 
 \bibitem{Kettle2019_XANES}
-B.~Kettle et~al.
+B.~Kettle, E.~Gerstmayr, M.~Streeter \emph{et~al.}
 \newblock \enquote{Single-shot multi-keV X-ray absorption spectroscopy using an
   ultrashort laser wakefield accelerator source}.
-\newblock \emph{arXiv preprint arXiv:1907.10167}.
+\newblock \emph{arXiv preprint arXiv:1907.10167},  (2019).
 
 \bibitem{Hussein2019_MICROSTRUCTURES}
-A.~E. Hussein et~al.
+A.~E. Hussein, N.~Senabulya, Y.~Ma \emph{et~al.}
 \newblock \enquote{Laser-wakefield accelerators for high-resolution X-ray
   imaging of complex microstructures}.
-\newblock \emph{Scientific reports}, 9, (2019), p. 3249.
+\newblock \emph{Scientific reports}, \textbf{9} (2019)(1), p. 3249.
 
 \bibitem{PDG_ATOM}
 P.~D.~G. (PDG).
-\newblock \enquote{Atomic and Nuclear Properties of Materials}, 2019.
+\newblock \enquote{Atomic and Nuclear Properties of Materials} (2019).
 \newline\urlprefix\url{http://pdg.lbl.gov/2019/AtomicNuclearProperties/}
 
 \bibitem{HENKE}
-B.~L. Henke, E.~M. Gullikson, and J.~C. Davis.
+B.~L. Henke, E.~M. Gullikson and J.~C. Davis.
 \newblock \enquote{X-ray interactions: photoabsorption, scattering,
   transmission, and reflection at E= 50-30,000 eV, Z= 1-92}.
-\newblock \emph{Atomic data and nuclear data tables}, 54, (1993), pp. 181--342.
+\newblock \emph{Atomic data and nuclear data tables}, \textbf{54} (1993)(2),
+  pp. 181--342.
 
 \bibitem{FLUKA}
-G.~Battistoni et~al.
+G.~Battistoni, F.~Cerutti, A.~Fasso \emph{et~al.}
 \newblock \enquote{The FLUKA code: Description and benchmarking}.
-\newblock In \enquote{AIP Conference proceedings}, volume 896, pp. 31--49. AIP,
-  2007.
+\newblock In \enquote{AIP Conference proceedings}, volume 896, pp. 31--49. AIP
+  (2007).
 
 \bibitem{Corvan2014_Gamma}
-D.~J. Corvan, G.~Sarri, and M.~Zepf.
+D.~J. Corvan, G.~Sarri and M.~Zepf.
 \newblock \enquote{Design of a compact spectrometer for high-flux MeV gamma-ray
   beams}.
-\newblock \emph{Review of Scientific Instruments}, 85, (2014), p. 065119.
+\newblock \emph{Review of Scientific Instruments}, \textbf{85} (2014)(6), p.
+  065119.
 \newblock \doi{10.1063/1.4884643}.
+\newblock \eprint{https://doi.org/10.1063/1.4884643}.
 \newline\urlprefix\url{https://doi.org/10.1063/1.4884643}
 
 \bibitem{Ritus1972_NAROZHNY}
 V.~Ritus.
 \newblock \enquote{Radiative corrections in quantum electrodynamics with
   intense field and their analytical properties}.
-\newblock \emph{Annals of Physics}, 69, (1972), pp. 555--582.
+\newblock \emph{Annals of Physics}, \textbf{69} (1972)(2), pp. 555--582.
 
 \bibitem{Narozhny1980_NAROZHNY}
 N.~Narozhny.
 \newblock \enquote{Expansion parameter of perturbation theory in intense-field
   quantum electrodynamics}.
-\newblock \emph{Physical Review D}, 21, (1980), p. 1176.
+\newblock \emph{Physical Review D}, \textbf{21} (1980)(4), p. 1176.
 
 \bibitem{Fedotov2017_NAROZHNY}
 A.~Fedotov.
 \newblock \enquote{Conjecture of perturbative QED breakdown at
   $\alpha\chi^{2/3}\geq 1$}.
 \newblock In \enquote{Journal of Physics: Conference Series}, volume 826, p.
-  012027. IOP Publishing, 2017.
+  012027. IOP Publishing (2017).
 
 \bibitem{Yakimenko2019_NONPERTURB}
-V.~Yakimenko et~al.
+V.~Yakimenko, S.~Meuren, F.~Del~Gaudio \emph{et~al.}
 \newblock \enquote{Prospect of Studying Nonperturbative QED with Beam-Beam
   Collisions}.
-\newblock \emph{Physical review letters}, 122, (2019), p. 190404.
+\newblock \emph{Physical review letters}, \textbf{122} (2019)(19), p. 190404.
 
 \bibitem{Baumann2019_NONPERTURB}
-C.~Baumann et~al.
+C.~Baumann, E.~Nerush, A.~Pukhov and I.~Y. Kostyukov.
 \newblock \enquote{Probing non-perturbative QED with electron-laser
   collisions}.
-\newblock \emph{Scientific reports}, 9, (2019), p. 9407.
-
-\bibitem{Buck2011_BUBBLE}
-A.~Buck et~al.
-\newblock \enquote{Real-time observation of laser-driven electron
-  acceleration}.
-\newblock \emph{Nature Physics}, 7.
-\newline\urlprefix\url{https://doi.org/10.1038/nphys1942}
-
-\bibitem{Savert2015_BUBBLE}
-A.~S\"avert et~al.
-\newblock \enquote{Direct Observation of the Injection Dynamics of a Laser
-  Wakefield Accelerator Using Few-Femtosecond Shadowgraphy}.
-\newblock \emph{Phys. Rev. Lett.}, 115, (2015), p. 055002.
-\newblock \doi{10.1103/PhysRevLett.115.055002}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.115.055002}
-
-\bibitem{Siminos2016_FASTSHADOW}
-E.~Siminos et~al.
-\newblock \enquote{Modeling ultrafast shadowgraphy in laser-plasma interaction
-  experiments}.
-\newblock \emph{Plasma Physics and Controlled Fusion}, 58, (2016), p. 065004.
-\newblock \doi{10.1088/0741-3335/58/6/065004}.
-
-\bibitem{Wang2013_GEV_FIUDICIAL}
-X.~Wang et~al.
-\newblock \enquote{Quasi-monoenergetic laser-plasma acceleration of electrons
-  to 2 GeV}.
-\newblock \emph{Nature communications}, 4, (2013), p. 1988.
-
-\bibitem{Scherkl2019_PLASMAAFTERGLOW}
-P.~Scherkl et~al.
-\newblock \enquote{Plasma-photonic spatiotemporal synchronization of
-  relativistic electron and laser beams}.
-\newblock \emph{arXiv preprint arXiv:1908.09263}.
-
-\bibitem{Cavalieri2005_EOS}
-A.~L. Cavalieri et~al.
-\newblock \enquote{Clocking Femtosecond X Rays}.
-\newblock \emph{Phys. Rev. Lett.}, 94, (2005), p. 114801.
-\newblock \doi{10.1103/PhysRevLett.94.114801}.
-\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.94.114801}
-
-\bibitem{Yan2000_EOS}
-X.~Yan et~al.
-\newblock \enquote{Subpicosecond electro-optic measurement of relativistic
-  electron pulses}.
-\newblock \emph{Physical Review Letters}, 85, (2000), p. 3404.
+\newblock \emph{Scientific reports}, \textbf{9} (2019)(1), p. 9407.
 
 \bibitem{DelSorbo2017_SPIN}
-D.~Del~Sorbo et~al.
+D.~Del~Sorbo, D.~Seipt, T.~G. Blackburn \emph{et~al.}
 \newblock \enquote{Spin polarization of electrons by ultraintense lasers}.
-\newblock \emph{Phys. Rev. A}, 96, (2017), p. 043407.
+\newblock \emph{Phys. Rev. A}, \textbf{96} (2017), p. 043407.
 \newblock \doi{10.1103/PhysRevA.96.043407}.
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.96.043407}
 
 \bibitem{Seipt2018_SPIN}
-D.~Seipt et~al.
+D.~Seipt, D.~{Del Sorbo}, C.~P. Ridgers and A.~G.~R. Thomas.
 \newblock \enquote{{Theory of Radiative Electron Polarization in Strong Laser
   Fields}}.
-\newblock \emph{Physical Review A}, 98, (2018), p. 23417.
+\newblock \emph{Physical Review A}, \textbf{98} (2018), p. 23417.
 \newblock \doi{10.1103/PhysRevA.98.023417}.
+\newblock \eprint{1805.02027}.
 \newline\urlprefix\url{https://journals.aps.org/pra/pdf/10.1103/PhysRevA.98.023417}
 
+\bibitem{Wang2013_GEV_FIUDICIAL}
+X.~Wang, R.~Zgadzaj, N.~Fazel \emph{et~al.}
+\newblock \enquote{Quasi-monoenergetic laser-plasma acceleration of electrons
+  to 2 GeV}.
+\newblock \emph{Nature communications}, \textbf{4} (2013), p. 1988.
+
+\bibitem{Scherkl2019_PLASMAAFTERGLOW}
+P.~Scherkl, A.~Knetsch, T.~Heinemann \emph{et~al.}
+\newblock \enquote{Plasma-photonic spatiotemporal synchronization of
+  relativistic electron and laser beams}.
+\newblock \emph{arXiv preprint arXiv:1908.09263},  (2019).
+
+\bibitem{Cavalieri2005_EOS}
+A.~L. Cavalieri, D.~M. Fritz, S.~H. Lee \emph{et~al.}
+\newblock \enquote{Clocking Femtosecond X Rays}.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{94} (2005), p. 114801.
+\newblock \doi{10.1103/PhysRevLett.94.114801}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.94.114801}
+
+\bibitem{Yan2000_EOS}
+X.~Yan, A.~MacLeod, W.~Gillespie \emph{et~al.}
+\newblock \enquote{Subpicosecond electro-optic measurement of relativistic
+  electron pulses}.
+\newblock \emph{Physical Review Letters}, \textbf{85} (2000)(16), p. 3404.
+
+\bibitem{Buck2011_BUBBLE}
+A.~Buck, M.~Nicolai, K.~Schmid \emph{et~al.}
+\newblock \enquote{Real-time observation of laser-driven electron
+  acceleration}.
+\newblock \emph{Nature Physics}, \textbf{7} (2011).
+\newline\urlprefix\url{https://doi.org/10.1038/nphys1942}
+
+\bibitem{Savert2015_BUBBLE}
+A.~S\"avert, S.~P.~D. Mangles, M.~Schnell \emph{et~al.}
+\newblock \enquote{Direct Observation of the Injection Dynamics of a Laser
+  Wakefield Accelerator Using Few-Femtosecond Shadowgraphy}.
+\newblock \emph{Phys. Rev. Lett.}, \textbf{115} (2015), p. 055002.
+\newblock \doi{10.1103/PhysRevLett.115.055002}.
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.115.055002}
+
+\bibitem{Siminos2016_FASTSHADOW}
+E.~Siminos, S.~Skupin, A.~S\"avert \emph{et~al.}
+\newblock \enquote{Modeling ultrafast shadowgraphy in laser-plasma interaction
+  experiments}.
+\newblock \emph{Plasma Physics and Controlled Fusion}, \textbf{58} (2016)(6),
+  p. 065004.
+\newblock \doi{10.1088/0741-3335/58/6/065004}.
+
 \bibitem{Glinec2008_BETATRON}
-Y.~Glinec et~al.
+Y.~Glinec, J.~Faure, A.~Lifschitz \emph{et~al.}
 \newblock \enquote{Direct observation of betatron oscillations in a
   laser-plasma electron accelerator}.
-\newblock \emph{EPL (Europhysics Letters)}, 81, (2008), p. 64001.
+\newblock \emph{EPL (Europhysics Letters)}, \textbf{81} (2008)(6), p. 64001.
+
+\bibitem{Whittum1992_BETATRON}
+D.~H. Whittum.
+\newblock \enquote{Electromagnetic instability of the ion-focused regime}.
+\newblock \emph{Physics of Fluids B: Plasma Physics}, \textbf{4} (1992)(3), pp.
+  730--739.
 
 \bibitem{Mangles2009_BETATRON}
-S.~Mangles et~al.
+S.~Mangles, G.~Genoud, S.~Kneip \emph{et~al.}
 \newblock \enquote{Controlling the spectrum of x-rays generated in a
   laser-plasma accelerator by tailoring the laser wavefront}.
-\newblock \emph{Applied Physics Letters}, 95, (2009), p. 181106.
+\newblock \emph{Applied Physics Letters}, \textbf{95} (2009)(18), p. 181106.
 
 \bibitem{Ferri2016_BETATRON}
-J.~Ferri et~al.
+J.~Ferri, X.~Davoine, S.~Fourmaux \emph{et~al.}
 \newblock \enquote{Effect of experimental laser imperfections on laser
   wakefield acceleration and betatron source}.
-\newblock \emph{Scientific reports}, 6, (2016), p. 27846.
+\newblock \emph{Scientific reports}, \textbf{6} (2016), p. 27846.
 
 \bibitem{TaPhuoc2008_BETATRON}
-K.~Ta~Phuoc et~al.
+K.~Ta~Phuoc, E.~Esarey, V.~Leurent \emph{et~al.}
 \newblock \enquote{Betatron radiation from density tailored plasmas}.
-\newblock \emph{Physics of Plasmas}, 15, (2008), p. 063102.
+\newblock \emph{Physics of Plasmas}, \textbf{15} (2008)(6), p. 063102.
 
 \bibitem{Kozlova2019_BETATRON}
-M.~Kozlova et~al.
+M.~Kozlova, I.~Andriyash, J.~Gautier \emph{et~al.}
 \newblock \enquote{Hard X-rays from laser-wakefield accelerators in density
   tailored plasmas}.
-\newblock \emph{arXiv preprint arXiv:1909.06090}.
+\newblock \emph{arXiv preprint arXiv:1909.06090},  (2019).
 
 \bibitem{Tsai1974_PairsBrems}
 Y.-S. Tsai.
 \newblock \enquote{Pair production and bremsstrahlung of charged leptons}.
-\newblock \emph{Reviews of Modern Physics}, 46, (1974), p. 815.
+\newblock \emph{Reviews of Modern Physics}, \textbf{46} (1974)(4), p. 815.
 
 \bibitem{Schwartz}
 M.~D. Schwartz.
 \newblock \emph{Quantum field theory and the standard model}.
-\newblock Cambridge University Press, 2014.
+\newblock Cambridge University Press (2014).
 
 \bibitem{Kendall1948_STATISTICS}
-M.~G. Kendall et~al.
+M.~G. Kendall \emph{et~al.}
 \newblock \enquote{The advanced theory of statistics. Vols. 1.}
-\newblock \emph{The advanced theory of statistics. Vols. 1.}
+\newblock \emph{The advanced theory of statistics. Vols. 1.},  (1948)(Ed. 4).
 
 \end{thebibliography}

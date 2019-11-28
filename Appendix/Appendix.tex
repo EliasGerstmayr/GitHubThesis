@@ -5,8 +5,10 @@
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l|l}
-Symbol & Name  \\ \hline \hline
+{\rowcolors{2}{white}{lightgray!50}
+\begin{tabular}{|l|l|}
+\hline 
+\textbf{Symbol} & \textbf{Name}  \\ \hline \hline
 $a_0$ & normalised vector potential\\
 $n_e$ & electron density\\
 $n_c$ & critical density\\
@@ -30,8 +32,10 @@ $\sigma_{X}$ & cross section for process $X$ \\
 $r$ & radius\\
 $w$ & waist size\\
 $r_\beta$ & betatron radius\\
-$\omega_p$ & plasma frequency
+$\omega_p$ & plasma frequency\\
+\hline
 \end{tabular}
+}
 \caption[Frequently used symbols.]{Frequently used symbols.}
 \end{table}
 
@@ -40,16 +44,20 @@ $\omega_p$ & plasma frequency
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l|l}
-Symbol & Name  \\ \hline \hline
+{\rowcolors{2}{white}{lightgray!50}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Symbol} & \textbf{Name}  \\ \hline \hline
 LWFA & laser wakefield acceleration\\
 ICS & inverse Compton scattering\\
 BW & Breit-Wheeler\\
 FWHM & full-width half-max\\
 OAP & off-axis parabola\\
 CCD & charged coupling device\\
-RAL & Rutherford Appleton Laboratory
+RAL & Rutherford Appleton Laboratory\\
+\hline
 \end{tabular}
+}
 \caption[Frequently used abbreviations.]{Frequently used abbreviations.}
 \end{table}
 
@@ -57,8 +65,10 @@ RAL & Rutherford Appleton Laboratory
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l|l|l|l}
-Symbol & Name & Value (SI) & Unit \\ \hline \hline
+{\rowcolors{2}{white}{lightgray!50}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Symbol} & \textbf{Name} & \textbf{Value (SI)} & \textbf{Unit} \\ \hline \hline
 $\alpha$ & fine-structure constant & & one\\
 $c$ & Vacuum speed of light & $3$ & $\mathrm{m/s}$ \\
 $m_e$ & electron mass & & $\mathrm{kg}$\\
@@ -72,8 +82,10 @@ $\hbar$ & reduced Planck constant & & \\
 $\lambda_C$ & Compton wavelength & & \\
 $\bar{\lambda_C}$ & reduced Compton wavelength & & \\
 $\tau_C$ & Compton time & & \\
-$E_S$ & Schwinger field & &
+$E_S$ & Schwinger field & &\\
+\hline
 \end{tabular}
+}
 \caption[Fundamental constants.]{Fundamental constants.}
 \end{table}
 
@@ -83,14 +95,18 @@ Quantities with a bar are reduced quantities $\hbar = h/2\pi$.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l|l}
-Symbol & Meaning \\ \hline \hline
+{\rowcolors{2}{white}{lightgray!50}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Symbol} & \textbf{Meaning} \\ \hline \hline
 Bold & Vector\\
 Non-bold & Scalar\\
 $\langle ...\rangle$ & average\\
 bar & reduced quantity, i.e. divided by $2\pi$\\
-dotted & time derivative
+dotted & time derivative\\
+\hline
 \end{tabular}
+}
 \caption[Notations.]{Notations.}
 \end{table}
 
@@ -325,7 +341,7 @@ Just as the evacuated `bubble' in a wakefield accelerates particles in a similar
 \vspace{\baselineskip}
 
 Due to initial transverse momentum on injection, and the focusing and defocusing fields of the cavity, electrons start to oscillate around the central axis. 
-The electrons oscillate at the betatron frequency $\omega_\beta$ \cite{WoodThesis}
+The electrons oscillate at the betatron frequency, $\omega_\beta$ \cite{Whittum1992_BETATRON,WoodThesis}
 \begin{equation}
 \omega_\beta = \omega_p / \sqrt{2 \gamma},
 \end{equation}
