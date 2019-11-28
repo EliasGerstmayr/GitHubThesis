@@ -216,14 +216,12 @@ REF TOM BLACKBURN MODEL INDEPENDENT A0
 
 
 \begin{itemize}
-\item Focusing geometry: long focusing $f/40$ 
-\item polarisation: at Gemini given by folding mirrors but ideally cross-polarised to scattering beam
+\item Focusing geometry: long focusing $f/40$ or longer
+\item give example of maximum energy, show low energy spread is possible
 \item Targetry and injection: gas jet (diagnostics access and damaging properties, stability can be improved, less important at high intensities, narrow-energy spread beams through shock injection, could fix timing with shock injection
-\item Diagnostic for laser
-\item Diagnostic for plasmas
 \end{itemize}
 
-As now firmly established for wakefield experiments at Gemini, we propose an f/40 long-focusing geometry to drive a wakefield accelerator. We emphasise that we aim to deliver the maximum possible energy on-target which means increasing the beam size to its maximum on the folding mirrors to lower the fluence. On next-generation facilities this might be a lesser problem as experimental areas might provide enough space to avoid folding the beam. The folding geometry also fixes the polarisation of the laser to horizontal.
+
 
 The gas target would be a gas jet, as concluded in Chapter \ref{Chap:RR15}, as it allows debris-free high-intensity interaction and open access for diagnostics, which is more favourable than the potential increases shot-to-shot stability of a gas cell target as used in Chapter \ref{Chap:BW}. It has been shown in Chapter \ref{Chap:linICS} that we can shoot suitably high above the nozzle ($up to 14\,\mathrm{mm}$) to avoid damage to the nozzle, whilst still encountering a sufficient density profile and still produce suitable electron beams.
 
@@ -233,25 +231,7 @@ A shock injected beam is also expected to have a fixed injection point and hence
 We hope to explore whether we can increase the final energy of the electron beam whilst maintaining the low energy spread by increasing the length of the gas jet and increasing the driver beam energy. 
 \vspace{\baselineskip}
 
-The gas jet will be diagnosed by a shadowgraphy and interferometry setup to determine the density profile, but also to identify interesting features in the channel and use TIMING OVERLAP FRINGES PROBE. This gives visual confirmation of the transverse position and overlap and timing.
-This has been successfully demonstrated in Chapter XX. The spatial resolution of the diagnostics could be improved by increasing the magnification which would increase the accuracy of the setup. High magnification top view and also for the transverse probe. This could be achieved by splitting off the transverse beam after the interaction and using a microscope objective. For the top view a second camera with objective can be used.
 
-In addition to a high magnification, the alignment and temporal overlap could benefit from an ultrashort probe to resolve the position of the bubble and the laser pulse accurately. This requires high level of control over the system and might for the next campaign add too much complexity (REF SAVERT).
-
-The self-emission of the plasma is also imaged from two axes. This helps to monitor potential drifts in the alignment.
-HIGH MAG FOR FUTURE CAMPAIGNS.
-
-
-\begin{figure}
-\centering
-\includegraphics[width=1.0\columnwidth]{GasJetCloseUp_Combo.pdf}
-\caption[Close-up sketch of gas jet and diagnostics to characterise the plasma.]{Close-up sketch of gas jet and diagnostics to characterise the plasma. A transverse probe is used to obtain a shadowgram and an interferometry image. The self-emission of the plasma is imaged from the side and the top.}
-\end{figure}
-
-
-High mag fast probe \cite{Buck2011_BUBBLE,Savert2015_BUBBLE,Siminos2016_FASTSHADOW}
-
-Multiple probes, chirped pulse as temporally resolved probe (will add a lot of complexity)
 
 Low energy spread beams (shock injection, but also \cite{Wang2013_GEV_FIUDICIAL} and see Chapter \ref{Chap:linICS})
 
@@ -279,6 +259,16 @@ Self-Emission HM & Channel & Probe & Top View & \xmark \\
 \end{table}
 
 
+Diagnosing the plasma
+
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\columnwidth]{GasJetCloseUp_Combo.pdf}
+\caption[Close-up sketch of gas jet and diagnostics to characterise the plasma.]{Close-up sketch of gas jet and diagnostics to characterise the plasma. A transverse probe is used to obtain a shadowgram and an interferometry image. The self-emission of the plasma is imaged from the side and the top.}
+\end{figure}
+
+
 
 \subsection{Scattering Geometry}
 
@@ -291,7 +281,7 @@ Self-Emission HM & Channel & Probe & Top View & \xmark \\
 \item ellipticity 
 \item estimate $\eta$
 \end{itemize}
-\EliasComm{Mention a second scattering beam to measure the polarisation of the beam.}
+
 As fielded successfully in Chapters \ref{Chap:linICS} and \ref{Chap:RR15}, we propose the use of an f/2 OAP which allows tight focusing to a spot of similar dimensions as the electron beam at the exit of the accelerator. We also propose to keep the head-on geometry as used so far which requires a central hole in the parabola. 
 Loss in energy for the hole is very similar to loss when going off-axis. Focus close to the target (will be explained later). We hope to use the maximum energy possible which from the standpoint of optics not be a problem. This would allow us reaching intensities at focus in excess of $a_0 = 20$ at 45 fs pulse duration, which combined with a 1.3 GeV electron beam brings us to CHI ETA XX NUMBER and if we manage to increase the electron beam energy to 2 GeV to CHI ETA XX NUMBER.
 
@@ -353,6 +343,11 @@ Estimate laser-electron jitter:
 \end{itemize}
 
 
+
+High mag fast probe \cite{Buck2011_BUBBLE,Savert2015_BUBBLE,Siminos2016_FASTSHADOW}
+
+Multiple probes, chirped pulse as temporally resolved probe (will add a lot of complexity)
+
 \subsection{Electron beam diagnostics}
 
 
@@ -370,13 +365,17 @@ Fiudicials & Reference & Wires & Scatter, block, noise & \cmark/\xmark
 \caption[Overview of electron beam diagnostics.]{Overview of electron beam diagnostics.}
 \end{table}
 
-\subsubsection{Electron beam profile}
 
-Since we will be attempting high-intensity interactions at small laser focus, we will need to characterise the pointing and divergence fluctuations. This is necessary to estimate the collision likelihood but also to estimate the error on an intensity measurement based on the divergence profile.
-
-An simple and effective method is a Lanex profile screen in the undispersed beam as used frequently on experiments. This, however, was unsuitable in the experimental setup proposed as the laser pulse is not disposed of by a tape and the backside is damaged, which produces debris and also bremsstrahlung which is unsuitable during collisions. In the process of colliding beams, we can then move to diagnosing the properties of the beam using linear ICS as investigated in Chapter \ref{Chap:linICS} which provides a non-invasive technique that can be sustained without material damage over hundreds of shots.
-
-\subsubsection{Electron spectrometer}
+\begin{itemize}
+\item electron beam measurement
+\item ICS for profile measurement, ellipticity, etc.
+\item double screen spectrometer, fiudicials
+\item polarisation measurement with ICS?
+\item high resolution/different dynamic range/high mag
+\item overlap radiation and energy axis for calibration and energy reference
+\item statistical analysis
+\item absolute calibration, in a permanent setup ideally
+\end{itemize}
 
 The electron energy will be measured as previously using a magnetic spectrometer setup. As in Chapter \ref{Chap:linICS} this can be done just outside the vacuum window which allows easy access to the screen for absolute calibration and imaging.
 
@@ -390,20 +389,14 @@ Since we have seen in Chapter \ref{Chap:linICS} that the electron beam underlies
 \caption{Magnet spectrometer setup with two Lanex screens.}
 \end{figure}
 
-Since we have the capability to produce micron sized electron beams and interact with a large amount of them, we do not require large dynamic range and can use standard Lanex. However, more sensitive Lanex (Biomax) can again be used to measure an on-axis X-ray signature as on-shot pointing reference.
-The second screen in Chapter \ref{Chap:linICS} was in line with the gamma profile screen which also provides a laser reference. This preferably should e done again.
 
-The energy measurement is cut off at 220 MeV due to the aperture of the magnet. It might be interesting to measure the full spectrum, which could be achieved by placing a Lanex screen inside onto the yoke. Scintillators lose efficiency in magnets, so this might provide only a low signal and will also be hard to calibrate in absolute numbers.
-
-
-We have shown that a statistical characterisation of the electron beam can be done and that these are normally (randomly) distributed after removing correlations.
-We were able to measure energy loss from radiation reaction and that the statistical analysis helped estimating the likelihood.
 
 \subsection{Radiation diagnostics}
 
 \subsubsection{Gamma Profile}
 
- \cite{HarShemesh2012_INTENSITY,Yan2017_ICS} NO REFERENCE FROM T BLACKBURN YET)
+ \cite{HarShemesh2012_INTENSITY,Yan2017_ICS}
+Blackburn \addref{}
 
 \begin{itemize}
 \item scintillating screen
@@ -421,18 +414,6 @@ Estimate required spatial dimensions of the gamma profile screen as follow:
 \item this adding up with an initial electron beam divergence of $theta_e$
 \item and a typical beam pointing fluctuation of $\sigma_e$
 \item assume the extreme case of $a_0 = 25$ and $1$ GeV
-\item this gives $12.7 mrad$, is this full or half angle?
-\item initial divergence around 3 mrad
-\item pointing around 1 mrad
-\item need around 17 mrad
-\item ignore source size
-\item if full angle then at same plane as this time (2.31 m), we are at 39.3 mm
-\item if double then suddenly 87.8 mm, so need larger stack
-\item at the same time spatial resolution as is now is important
-\item if single angle then one stack (well centred), otherwise need double sized and would prefer to have full view
-\item since we have seen signals of order 10 mm already, probably more like 90 mm in total
-\item stacking different stacks is not ideal due to different responses
-\item need to consider window sizes for these kind of measurements and noise production at the hole?
 \end{itemize}
 
 \subsubsection{Gamma Spectrometer}
@@ -446,7 +427,7 @@ Estimate required spatial dimensions of the gamma profile screen as follow:
 
 \begin{itemize}
 \item gamma spectrometer to estimate spectrum
-\item dual-axis could be useful and fielded
+\item dual-axis could be useful
 \item want to improve resolution, so maybe combine with converter
 \item has to be balanced with gamma profile position, calculate dispersion needed, noise from aperture and so on
 \end{itemize}
