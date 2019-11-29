@@ -131,39 +131,67 @@ We might be able to reach a regime where QED effects become relevant as the `qua
 \end{sidewaysfigure}
 
 
-\subsubsection{Precision Measurement of RR at high-intensities (quantum corrections)}
+\subsubsection{Phenomena: Precision Measurement of RR at high-intensities (quantum corrections)}
 
 \cite{Blackburn2014_QRR,Ridgers2017_QRR}
 
 \cite{Arran2019_RR_PPCF,Arran2019_RR_SPIE}
 
 
-\subsubsection{Very high-intensity collisions with pair production}
+\subsubsection{Phenomena: Very high-intensity collisions with pair production}
 
 \cite{Blackburn2017_pairs}
 
-\subsubsection{Very high-intensity collisions with spin polarisation measurement}
+\subsubsection{Phenomena: Very high-intensity collisions with spin polarisation measurement}
 
 \cite{SokolovTernov1964_POL}
 \cite{DelSorbo2017_SPIN,Seipt2018_SPIN}
 
-\subsubsection{Spectral Measurement increased accuracy}
+\subsubsection{Phenomena: QED Cascades}
+
+\subsubsection{Phenomena: dense QED plasma}
+
+\subsubsection{Phenomena: Schwinger pair production (vacuum breakdown)}
+
+
+\subsubsection{Phenomena: LCFA low X-ray measurement}
+
+\cite{Ritus1985_QRR}
+\cite{DiPiazza2018_LCFA}
+
+\subsubsection{Phenomena B: Nonlinear BW measurement in isolation}
+
+\subsubsection{Phenomena B: Linear BW measurement in isolation}
+
+In comparison to measurements of virtuality
+
+\subsubsection{Phenomena B: Vacuum birefringence}
+
+\subsubsection{Phenomena B: Hawking-Unruh effect}
+
+\subsubsection{Phenomena B: Physics beyond the Standard Model (axions)}
+
+In nonlinear wakes and in nonlinear Compton scattering
+
+\subsubsection{Phenomena C: strong-coupling regime of SFQED}
+
+\subsubsection{Diagnostics: Spectral Measurement increased accuracy}
 
 Detector as in \cite{Cole2018_RR,Behm2018_Gamma}
 combined with \cite{Corvan2014_Gamma}
 as proposed in \cite{Lisi2018_Gamma}.
 
-\subsubsection{On-shot interaction intensity}
-
+\subsubsection{Diagnostics: On-shot interaction intensity}
 
 \cite{HarShemesh2012_INTENSITY,Yan2017_ICS,Blackburn2019_ModelIndependentLaser}
 
+\subsubsection{Diagnostics: Electron spectrometer (multi-screen+fiudicial)}
 
+\subsubsection{Diagnostics: Electron polarisation measurement}
 
-\subsubsection{LCFA low X-ray measurement}
+\subsubsection{Diagnostics: Electron profile (ICS)}
 
-\cite{Ritus1985_QRR}
-\cite{DiPiazza2018_LCFA}
+\subsubsection{Diagnostics: }
 
 \subsection{Laser Wakefield Accelerator}
 
@@ -172,6 +200,7 @@ as proposed in \cite{Lisi2018_Gamma}.
 \item Focusing geometry: long focusing $f/40$ or longer
 \item give example of maximum energy, show low energy spread is possible
 \item Targetry and injection: gas jet (diagnostics access and damaging properties, stability can be improved, less important at high intensities, narrow-energy spread beams through shock injection, could fix timing with shock injection
+\item for now not considering focusing optics like a capillary as size was much larger 
 \end{itemize}
 
 
@@ -298,14 +327,13 @@ As fielded successfully in Chapters \ref{Chap:linICS} and \ref{Chap:RR15}, we pr
 
 \begin{itemize}
 \item photo diode (also in vacuum to avoid pump-down procedures?)
-\item  spatial interferometry at TCC \cite{Cole2018_RR}
-\item  spectral interferometry at TCC \cite{Corvan2016_TIMING}
-\item  on-shot timing, as done at Gemini \cite{Shalloo_GEMINIDRIFT}, upstairs, downstairs, analysis pending (staging)
+\item spatial interferometry at TCC \cite{Cole2018_RR}
+\item spectral interferometry at TCC \cite{Corvan2016_TIMING}
+\item on-shot timing, as done at Gemini \cite{Shalloo_GEMINIDRIFT}, upstairs, downstairs, analysis pending (staging)
 \item on-shot pointing reference (done on staging)
-\item fast transverse probe (shadowgraphy)
+\item two fast transverse probe (shadowgraphy)
 \item fast transverse probe also gives polarogram?
 \item probe or top view with high mag?
-\item improvements to prism setup and actual overlap (wire at end of gas jet, if shooting very far away?)
 \end{itemize}
 
 \subsubsection{Laser-electron diagnostics}
@@ -356,20 +384,6 @@ Bayesian inference?
 
 
 
-
-\begin{table}[h]
-\centering
-\begin{tabular}{l|l|l|l|c}
-Diagnostic & Observable & Setup & Comment & Fielded?\\ \hline \hline
-Beam Profile & Profile & Lanex & Undispersed, scatter & \cmark \\
-Spectrometer I & Energy & Magnet, Lanex & Dispersed, scatter & \cmark \\
-Spectrometer II & Energy & Magnet, Lanex & Dispersed, scatter & \cmark \\
-Fiudicials & Reference & Wires & Scatter, block, noise & \cmark/\xmark
-\end{tabular}
-\caption[Overview of electron beam diagnostics.]{Overview of electron beam diagnostics.}
-\end{table}
-
-
 \begin{itemize}
 \item electron beam measurement
 \item ICS for profile measurement, ellipticity, etc.
@@ -399,8 +413,7 @@ Since we have seen in Chapter \ref{Chap:linICS} that the electron beam underlies
 
 \subsubsection{Gamma Profile}
 
- \cite{HarShemesh2012_INTENSITY,Yan2017_ICS}
-Blackburn \addref{}
+ \cite{HarShemesh2012_INTENSITY,Yan2017_ICS,Blackburn2019_ModelIndependentLaser}
 
 \begin{itemize}
 \item scintillating screen
@@ -408,16 +421,7 @@ Blackburn \addref{}
 \item intensity diagnostic
 \item calculate field of view required for $a_0 = 25$ interactions
 \item spatial resolution required?
-\end{itemize}
-
-
-Estimate required spatial dimensions of the gamma profile screen as follow:
-
-\begin{itemize}
-\item the radiation emitted is $\theta \sim a_0/\gamma$ for a half angle or variance $\sigma = a_0/4\gamma$
-\item this adding up with an initial electron beam divergence of $theta_e$
-\item and a typical beam pointing fluctuation of $\sigma_e$
-\item assume the extreme case of $a_0 = 25$ and $1$ GeV
+\item the larger the less feasible a pixellated array becomes, but if very bright can use different material (DRZ, Lanex) 
 \end{itemize}
 
 \subsubsection{Gamma Spectrometer}
@@ -431,8 +435,10 @@ Estimate required spatial dimensions of the gamma profile screen as follow:
 
 \begin{itemize}
 \item gamma spectrometer to estimate spectrum
-\item dual-axis could be useful
-\item want to improve resolution, so maybe combine with converter
+\item dual-axis could be useful or shorter crystals such that it effectively sees things from two side all the time?
+\item 2D screens followed by mirror, but complicated and requires a lot of space
+\item to improve spectral retrieval require second measurements
+\item converter target and magnet required
 \item has to be balanced with gamma profile position, calculate dispersion needed, noise from aperture and so on
 \end{itemize}
 
@@ -460,8 +466,9 @@ In Chapter \ref{Chap:BW}, we used a crystal spectrometer setup in vacuum to meas
 \item polarisation dependence
 \item what kind of angle or crystal would we require?
 \item shielding or signal-to-noise?
-\item inside chamber?
+\item inside chamber
 \item is radiation polarisation dependent, i.e. is the crystal orientation important?
+\item silicon detectors instead of cameras as at XFELs.
 \end{itemize}
 
 
