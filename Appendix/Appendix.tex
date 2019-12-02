@@ -462,9 +462,10 @@ The differential cross section for the bremsstrahlung process is in the ultrarel
 where $\hbar \omega$ is the energy of the emitted photon, $Z$ is the atomic number and $A$ the atomic weight and $N_A$ the Avogadro number. $y= \hbar\omega/\epsilon$, i.e. the fraction of the emitted photon energy relative to the initial electron energy.
 
 
-\chapter{Cross sections for fundamental QED processes}
-\label{Appendix:QEDProcesses}
+\chapter{Nonlinear Compton Scattering}
+%\label{Appendix:QEDProcesses}
 
+\iffalse
 \section{Feynman diagrams and convention}
 
 \subsection{Feynman rules for QED}
@@ -510,7 +511,7 @@ Trace theorems:
 \begin{align*}
 tr(\mathbf{1}) &= 4\\
 tr(any~odd~number~of~\gamma s) &= 0\\
-tr(\gamma^\mu \gamma^\nu) = 4 g^{\mu \nu}\\
+tr(\gamma^\mu \gamma^\nu) &= 4 g^{\mu \nu}\\
 tr(\gamma^\mu \gamma^\nu \gamma^\rho \gamma^\sigma) &= 4(g^{\mu \nu} g^{\rho \sigma} - g^{\mu \rho} g^{\nu \sigma} + g^{\mu \sigma} g^{\nu\rho})\\
 tr(\gamma^5) &= 0\\
 tr(\gamma^\mu \gamma^\nu \gamma^5) &= 0\\
@@ -531,7 +532,7 @@ Contraction identities:
 \begin{align*}
 \gamma^\mu \gamma^\nu \gamma_\mu &= - 2\gamma^\nu\\
 \gamma^\mu \gamma^\nu \gamma^\rho \gamma_\mu &= 4 g^{\nu \rho}\\
-\gamma^\mu \gamma^\nu \gamma^\rho \gamma^\sigma \gamma_\mu = - 2\gamma^\sigma \gamma^\rho \gamma^\nu
+\gamma^\mu \gamma^\nu \gamma^\rho \gamma^\sigma \gamma_\mu &= - 2\gamma^\sigma \gamma^\rho \gamma^\nu
 \end{align*}
 \subsection{Other identities}
 
@@ -540,12 +541,7 @@ Contraction identities:
 \sum v^s (p) \bar{v}^s (p) &= \cancel{p} - m.
 \end{align*}
 
-\subsection{Calculating Matrix Elements from Feynman diagrams}
-
-
-\section{Cross sections for fundamental QED processes}
-
-\subsection{Derivation of the Klein-Nishina equation}
+\section{Derivation of the Klein-Nishina equation}
 \label{Appendix:QEDDeriv_KleinNishina}
 
 \begin{figure}[h]
@@ -626,9 +622,9 @@ In more details this can be written as
 where the first part in the bracket corresponds to a helicity-conserving interaction and the second term to a process that flips helicity. 
 
 
+\fi
 
-
-\subsection{Nonlinear Compton scattering cross section}
+%\section{Nonlinear Compton scattering cross section}
 \label{Appendix:Sec:NLCompton}
 
 The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation: the scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given (in natural units) by \cite{Ritus1985_QRR,BlackburnThesis}
@@ -654,27 +650,15 @@ Q^2 &= (1+a^2_0) \left[nu \left(\frac{1}{x}-1\right) -1 \right].
 \end{align}
 
 
-
-\chapter{Radiation Reaction}
-
-\section{Landau-Lifschitz Equation}
-
-In terms of 3-vectors this can be written as \cite{Bulanov2011_LADLL}:
-\begin{align*}
-\mathbf{F} = \frac{2e^3}{3m_e c^3 \sqrt{1-\frac{v^2}{c^2}}} \left\lbrace \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{E} + \frac{1}{c} \left[ \mathbf{v} \times \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{B} \right] \right\rbrace +\\
-+ \frac{2e^4}{3m^2_e c^4}\left\lbrace \mathbf{E}\times\mathbf{B} + \frac{1}{c} ( \mathbf{B} \times (\mathbf{B} \times \mathbf{v})) + \frac{1}{c} \mathbf{E} (\mathbf{v} \cdot \mathbf{E}) \right\rbrace - \\
-- \frac{2e^4}{3m^2_e c^5 \left( 1-\frac{v^2}{c^2}\right)} \mathbf{v} \left\lbrace\left( \mathbf{E} + \frac{1}{c} \mathbf{v} \times \mathbf{B}\right)^2 - \frac{1}{c^2} (\mathbf{v} \cdot \mathbf{E})^2 \right\rbrace,
-\end{align*}
-
 \chapter{Quantum synchrotron function}
 \label{Appendix:Sec:QuantumSynchrotron}
 
 
-The quantum synchrotron function describing the emissivity and spectral shape of the emitted radiation is given by \cite{BlackburnThesis}
+The quantum synchrotron function, $F$, is given as a function of the two invariants, $\eta$ and $\chi$, by \cite{BlackburnThesis}
 \begin{equation}
 F(\eta, \chi) = \frac{4 \chi}{3\eta^2}\left[ \left( 1 - \frac{2 \chi}{\eta} + \frac{1}{1- 2\chi/\eta}\right) K_{2/3} (\delta) - \int^\infty_\delta K_{1/3} (t) \dif t\right],
 \end{equation}
-where $\chi = \gamma b, \eta = \hbar \omega b/2m_e C^2$ are quantum parameters with $b = |\mathbf{E}_\perp + \mathbf{v}\times \mathbf{B}|/E_s$, $K_{2,3}, K_{1/3}$ are Bessel functions of the second kind, and $\delta$ is given by
+where $\chi = \gamma b, \eta = \hbar \omega b/2m_e c^2$ are quantum parameters with $b = |\mathbf{E}_\perp + \mathbf{v}\times \mathbf{B}|/E_S$, and $E_S$ is the Schwinger field. $K_{2,3}, K_{1/3}$ are Bessel functions of the second kind, and $\delta$ is given by
 \begin{equation}
 \delta = \frac{4 \chi}{3 \eta^2}\left(1- \frac{2 \chi}{\eta}\right)^{-1}.
 \end{equation}
@@ -683,15 +667,15 @@ The classical part of the quantum synchrotron function is here
 F_{cl} (\eta, \chi) = \delta_{cl} \left[2K_{2/3} (\delta_{cl}) - \int^\infty_{\delta_{cl}} K_{1/3} (t) \dif t\right],
 \end{equation}
 where $\delta_{cl} = 4\chi/3\eta^2$.
-The emission power in terms of $\chi$ reads
+The emission power in terms of $\chi$ for an electron of energy $\epsilon$ reads
 \begin{equation}
-\frac{\dif P}{\dif \chi} = \frac{2 E \chi}{\eta} \frac{\dif W_\gamma}{\dif \chi} = \frac{\sqrt{3\alpha}}{\pi} \frac{m c^2}{\tau_c} F(\eta, \chi).
+\frac{\dif P}{\dif \chi} = \frac{2 \epsilon \chi}{\eta} \frac{\dif W_\gamma}{\dif \chi} = \frac{\sqrt{3\alpha}}{\pi} \frac{m c^2}{\tau_c} F(\eta, \chi).
 \end{equation}
-The total emission power of the classical synchrotron emission and the quantum description are related by the Gaunt factor, $g(\eta)$:
+The total emission power of the classical synchrotron emission and the quantum description are related by the \textit{Gaunt factor}, $g(\eta)$:
 \begin{equation}
 P = \frac{2 \alpha}{3} \frac{mc^2}{\tau_c} \eta^2 g(\eta),
 \end{equation}
-were $g(\eta)$ is defined as
+were $\tau_C = \hbar/mc^2 = 1.29\times10^{-21}\,\mathrm{s}$ is the Compton time and $g(\eta)$ is defined as
 \begin{equation}
 g(\eta) = \frac{3 \sqrt{3}}{2\pi \eta^2}\int^\infty_0 F(\eta, \chi) \dif \chi.
 \end{equation}
@@ -703,34 +687,46 @@ g(\eta) \approx
 0.5564 \eta^{-4/3}  ~ &\mathrm{for }~ \eta \gg 1,
 \end{cases}
 \end{equation}
-or by an analytic approximation that holds over the entire parameter space to within few percent 
+or by an analytic approximation that holds over the entire parameter space to within few percent \cite{Baier1991_GAUNT}
 \begin{equation}
 g(\eta) = [1 + 4.8(1+\eta)\ln(1+1.7\eta) + 2.44\eta^2]^{-2/3}.
 \end{equation}
 Examining these expressions we see that the rate at which the power emission increases falls at high intensities to $P \propto \eta^{2/3}$ and as $\eta \propto a_0$, $P \propto a^{2/3}_0$.
 
+\chapter{Radiation Reaction}
 
+\section{Landau-Lifschitz Equation}
+
+The Landau-Lifschitz radiation reaction force, $\mathbf{F}_{LL}$, can be written in terms of 3-vectors as follows \cite{Bulanov2011_LADLL}:
+\begin{align*}
+\mathbf{F_{LL}} = \frac{2e^3}{3m_e c^3 \sqrt{1-\frac{v^2}{c^2}}} \left\lbrace \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{E} + \frac{1}{c} \left[ \mathbf{v} \times \left( \frac{\partial}{\partial t} + (\mathbf{v} \cdot \nabla) \right) \mathbf{B} \right] \right\rbrace +\\
++ \frac{2e^4}{3m^2_e c^4}\left\lbrace \mathbf{E}\times\mathbf{B} + \frac{1}{c} ( \mathbf{B} \times (\mathbf{B} \times \mathbf{v})) + \frac{1}{c} \mathbf{E} (\mathbf{v} \cdot \mathbf{E}) \right\rbrace - \\
+- \frac{2e^4}{3m^2_e c^5 \left( 1-\frac{v^2}{c^2}\right)} \mathbf{v} \left\lbrace\left( \mathbf{E} + \frac{1}{c} \mathbf{v} \times \mathbf{B}\right)^2 - \frac{1}{c^2} (\mathbf{v} \cdot \mathbf{E})^2 \right\rbrace,
+\end{align*}
+where $c$ is the speed of light, $e$ is the electron charge, $m_e$ its mass, $\mathbf{v}$ its velocity and $v = |\mathbf{v}|$. $\mathbf{E}$ and $\mathbf{B}$ are the electric and magnetic field, respectively.
+
+\section{Stochastic Operator}
+\label{Appendix:Sec:RR:StochasticOperator}
+
+The stochastic operator, $S$, in Section \ref{Theory:Sec:Signatures} is given by \cite{Ridgers2017_QRR}
 \begin{equation}
-S(\eta) = \frac{55 \alpha_f c}{24 \sqrt{3} \bar{\lambda}_c} m^2_e c^4 \eta^4 g_2(\eta),
+S(\eta) = \frac{55 \alpha c}{24 \sqrt{3} \bar{\lambda}_c} m^2_e c^4 \eta^4 g_2(\eta),,
 \end{equation}
-with $g_2(\eta)$
+where $\alpha$ is the fine-structure constant, $c$ the speed of light, $m_e$ the electron mass and $\bar{\lambda}_c$ is the Compton wavelength. $b = |\mathbf{E}_\perp + \mathbf{v}\times \mathbf{B}|/E_S$, i.e. the relative magnitude of the Lorentz force, and $E_S$ is the Schwinger field. $\eta$ is the quantum nonlinearity parameter. $g_2(\eta)$ is similarly defined as the Gaunt factor, $g$, (see Appendix \ref{Appendix:Sec:QuantumSynchrotron} in terms of the quantum synchrotron function, $F$, and the classical synchrotron function, $F_{cl}$:
 \begin{equation}
 g_2(\eta) = \frac{\int_0^{\eta/2} \chi F(\eta, \chi) \mathrm{d}\chi}{\int_0 \chi F_{cl}\left(\frac{4\chi}{3\eta^2}\right)} = \frac{144}{55 \pi \eta^4} \int_0^{\eta/2}\chi F(\eta,\chi) \mathrm{d}\chi. 
 \end{equation}
-
 An accurate fit for $g_2$ is parametrised as follows:
 \begin{equation}
 g_2(\eta) \approx [1+ (1+4.528\eta)\ln(1+12.29\eta)+4.632\eta^2]^{-7/6}
 \end{equation}
 The limits are $g_2 \approx 1$ for $\eta \ll 1$, and $g_2 \approx 0.167\eta^{-7/3}$ for $\eta \gg 1$.
 
-For Gaussian:
-
+For an electron beam with a Gaussian energy distribution colliding with a plane wave in the limits $\eta \ll 1$ and $\sigma \ll \langle \gamma \rangle$, i.e. the width is much smaller than the mean of the Gaussian, the evolution of the variance can be written as:
 \begin{equation}
-\left(\frac{\mathrm{d}\sigma^2}{\mathrm{d}t}\right)_{st} \approx \frac{\alpha_f  b^2}{\bar{\lambda}_c}\left(\frac{55b}{24\sqrt{3}}\left\langle\gamma\right\rangle^4 - \frac{8}{3}\sigma^2 \left\langle\gamma\right\rangle\right).
+\left(\frac{\mathrm{d}\sigma^2}{\mathrm{d}t}\right)_{st} \approx \frac{\alpha  b^2}{\bar{\lambda}_c}\left(\frac{55b}{24\sqrt{3}}\left\langle\gamma\right\rangle^4 - \frac{8}{3}\sigma^2 \left\langle\gamma\right\rangle\right).
 \end{equation}
 
-\EliasComm{Needs some work, explanation and sub-sections?}
 
 \chapter{Pair Production}
 

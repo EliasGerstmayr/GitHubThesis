@@ -302,7 +302,7 @@ There are two main routes to determine the spectrum of a specific radiative proc
 In a \textit{classical} picture, we first have to derive the equation of motion of the charged particle and then analyse its trajectory in terms of relativistic Lienard-Wiechert potentials. Solving the corresponding radiation integrals through a Fourier analysis then provides the classical emission spectra \cite{Jackson}. Similar particle motions then provide similar radiation spectra which allows identifying similar behaviour in analogue scenarios. An example is, for instance, the figure-of-eight motion , which can be found in the context of electrons in (alternating) magnetic fields, e.g. synchrotrons and insertion devices (see Appendix \ref{Appendix:Sec:SingleParticleMotion} and \ref{Appendix:Sec:Synchrotron}), but similarly in an electron in a laser field (see Section \ref{Theory:Sec:SingleParticle:FigOfEight}). As a result, we identify a wiggler parameter, $K$, which in one case is related to the magnetic field strength \cite{Jackson} and in the other is the normalised vector potential, $a_0$ \cite{Esarey1993_NT}.
 
 In a \textit{quantum} picture, the cross sections and spectra are obtained by calculating the matrix element from the Feynman diagrams related to the process.
-The evaluation of a matrix element, even a simple fundamental tree-level diagram, is relatively tedious (see Appendix \ref{Appendix:QEDDeriv_KleinNishina}), but processes with a similar Feynman representation can be related to each other (crossing symmetry) \cite{PeskinSchroeder} and the small coupling constant, $\alpha \approx 1/137$, allows a perturbative treatment such that more complicated processes contribute only little overall and can be neglected. 
+The evaluation of a matrix element, even a simple fundamental tree-level diagram, is relatively tedious, but processes with a similar Feynman representation can be related to each other (crossing symmetry) \cite{PeskinSchroeder} and the small coupling constant, $\alpha \approx 1/137$, allows a perturbative treatment such that more complicated processes contribute only little overall and can be neglected. 
 However, at high field strengths the number of contributing diagrams increases significantly, e.g. at $a^3_0$ for nonlinear Compton scattering \cite{DiPiazza2012_ICS}, which makes the evaluation of standard Feynman diagrams not very feasible and computationally challenging. 
 To restore a perturbative treatment \textit{`dressed states'} are being introduced, which replaces, for instance, an electron interacting with many photons with one dressed electron, i.e. an electron in a background field. The dressed state uses the exact classical description of the background field, assuming that the quantum nature of the interaction does not originate in the field itself and that there is no backreaction of the particles to the field. This is referred to as the \textit{Furry picture} \cite{Furry1951_FURRY}. In this picture one dressed or \textit{Volkov state} \cite{Wolkow1935_VOLKOV} is equivalent to the infinite sum of standard Feynman diagrams \cite{SeiptThesis}.
 
@@ -397,7 +397,7 @@ Polar plots of the final photon energies for different initial photon energies a
 \label{Theory:Figs:Compton_E_XSEC}
 \end{figure}
 
-The cross section for Compton scattering, again assuming the electron is initially at rest, is given by the spin-averaged Klein-Nishina formula \cite{Klein1929_KNEq} (see Section \ref{Appendix:QEDDeriv_KleinNishina} for an explicit derivation and the spin-dependent equation):
+The cross section for Compton scattering, again assuming the electron is initially at rest, is given by the spin-averaged Klein-Nishina formula \cite{Klein1929_KNEq}:
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
 \frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} &= \pi r^2_e \left(\frac{\omega'}{\omega}\right)^2 \left(\frac{\omega'}{\omega} + \frac{\omega}{\omega'}-\sin^2{\theta}\right),\\
@@ -797,6 +797,7 @@ Alternatively, one can simply treat the entire process classically but modify th
 
 
 \subsection{Signatures of radiation reaction in the electron spectrum}
+\label{Theory:Sec:Signatures}
 
 Here we will now consider the signatures or observables of radiation reaction in the post-interaction spectrum of relativistic electrons in the interaction with an intense laser pulse, following \cite{Ridgers2017_QRR}. The two key signatures are the change in the momentum, predominantly observed through energy loss, the second is the variance or energy spread of the electron spectrum. The evolution of these two properties is characteristic for different models of radiation reaction, such that these are suitable experimental indicators for radiation reaction and facilitate discrimination between the models. The optimum conditions to distinguish different models is investigated in more detail, for instance, in \cite{Arran2019_RR_PPCF,Arran2019_RR_SPIE} using the same formalism as \cite{Ridgers2017_QRR}.
 
@@ -850,7 +851,7 @@ If we not only apply the reduced emission power but also consider the stochastic
 \begin{equation}
 \boxed{\left(\frac{\dif \sigma^2}{\dif t}\right)_{st} =  - 2 \frac{\langle \Delta \gamma g P_{cl}\rangle}{m_e c^2} + \frac{\langle S \rangle}{m^2_e c^4},}
 \end{equation}
-where $S$ is a measure of stochasticity and is given in Appendix \ref{Appendix:Sec:QuantumSynchrotron}.
+where $S$ is a measure of stochasticity and is given in Appendix \ref{Appendix:Sec:RR:StochasticOperator}.
 Whereas the deterministic models predict a decrease in variance under all circumstances, we see that this equation consists of two terms with opposite signs such that the variance can increase or at least decrease at a slower rate if the stochasticity is significant.
 For a Gaussian electron beam spectrum with mean $\langle\epsilon_i\rangle$ and width $\sigma_{\epsilon_i}$ the crossover point below which stochastic broadening dominates is for $\sigma_{\epsilon_i} \ll \langle \epsilon_i \rangle$ given by \cite{Arran2019_RR_PPCF}
 \begin{equation}
