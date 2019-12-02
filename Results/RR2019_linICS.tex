@@ -189,9 +189,9 @@ Nonetheless, we were able to show consistent overlap in space and time and a goo
 \section{Gamma spectra from inverse Compton scattering}
 \label{Chap:linICS:Sec:GammaSpec_A}
 
-A photon of energy $E_{ph}$ that is scattered off a relativistic electron is Doppler up-shifted due to the relativistic Lorentz boost. The energy of the scattered photon, $E_{X}$, is given by \cite{Esarey1993_NT}:
+A photon of energy $\epsilon_{ph}$ that is scattered off a relativistic electron is Doppler up-shifted due to the relativistic Lorentz boost. The energy of the scattered photon, $\epsilon_{X}$, is given by \cite{Esarey1993_NT}:
 \begin{equation}
-E_{X} \approx E_{ph}\times\frac{2(1-\cos \theta)\gamma^2}{1+a^2_0/2 + \gamma^2 \theta^2_0},
+\epsilon_{X} \approx \epsilon_{ph}\times\frac{2(1-\cos \theta)\gamma^2}{1+a^2_0/2 + \gamma^2 \theta^2_0},
 \label{linICS:eqns:full_linICS}
 \end{equation}
 where $\theta$ the angle between the electron and the incoming photon, $a_0$ is the normalised vector potential and $\theta_0$ is the angle of the observer relative to the propagation direction of the electron.
@@ -200,7 +200,7 @@ The electron beams shown in Section \ref{Chap:linICS:sec:Espec} were collided wi
 
 The electron beams are here in most cases confined to a divergence cone of few milliradians. For a beam of divergence $4\,\mathrm{mrad}$ the difference introduced by the electron angles in the $\cos\theta$ term, assuming a collimated light source, is less than $0.001\%$, which means that we can ignore a broadening of the spectrum from electron angles as well.
 
-For a beam focused by an $f/2$ optic the angle between the outer rays is up to 14.04 degrees which corresponds to a 3 percent spread in energy. Since the electron beam $w_0 \sim \microns$ only interacts with a small fraction of the full beam with radius $r$, i.e. $\pi w^2_0/\pi r^2 \ll 1$, the rays in the interaction region are approximately collinear and this contribution can be ignored as well. A systematic shift of the radiation by 3 percent due to the relative pointing of the electron beam and the laser pulse within this solid angle is also negligible for our considerations ($\Delta E <1\MeV$ at $30\MeV$).
+For a beam focused by an $f/2$ optic the angle between the outer rays is up to 14.04 degrees which corresponds to a 3 percent spread in energy. Since the electron beam $w_0 \sim \microns$ only interacts with a small fraction of the full beam with radius $r$, i.e. $\pi w^2_0/\pi r^2 \ll 1$, the rays in the interaction region are approximately collinear and this contribution can be ignored as well. A systematic shift of the radiation by 3 percent due to the relative pointing of the electron beam and the laser pulse within this solid angle is also negligible for our considerations ($\Delta \epsilon <1\MeV$ at $30\MeV$).
 
 \begin{figure}
 \centering
@@ -217,11 +217,11 @@ Lastly, for $\gamma \sim 2500$ ($\epsilon \sim 1.3\,\mathrm{GeV}$) and $a_0 = 0.
 which indicates that radiation reaction effects are negligible and the interaction with the laser pulse does not perturb the electron beam significantly as a whole \cite{Thomas2012_LL,Albert2016_APP}.
 Combining these assumptions and considering a head-on collision ($\theta = 180^\circ$), Equation \eqref{linICS:eqns:full_linICS} above simplifies to
 \begin{equation}
-\boxed{E_X \approx 4\gamma^2 E_{ph}.}
+\boxed{\epsilon_X \approx 4\gamma^2 \epsilon_{ph}.}
 \label{linICS:Eqs:SimpleLinICSEX}
 \end{equation}
 
-For a titanium-sapphire laser system with central wavelength $800\,\mathrm{nm}$ like \textsc{Gemini} the corresponding energy carried by an individual photon, $E_{ph}$, amounts to $1.55\,\mathrm{eV}$. Based on the simplified Equation \eqref{linICS:Eqs:SimpleLinICSEX} above and ignoring the bandwidth of the laser, we then obtain a quadratic one-to-one mapping of the electron energy to a corresponding gamma-ray energy (see Figure \ref{linICS:fig:ElecEToEgamma}). 
+For a titanium-sapphire laser system with central wavelength $800\,\mathrm{nm}$ like \textsc{Gemini} the corresponding energy carried by an individual photon, $\epsilon_{ph}$, amounts to $1.55\,\mathrm{eV}$. Based on the simplified Equation \eqref{linICS:Eqs:SimpleLinICSEX} above and ignoring the bandwidth of the laser, we then obtain a quadratic one-to-one mapping of the electron energy to a corresponding gamma-ray energy (see Figure \ref{linICS:fig:ElecEToEgamma}). 
 \vspace{\baselineskip}
 
 \begin{figure}
@@ -248,27 +248,27 @@ Since the laser beam is much larger than the electron bunch, we assume that the 
 In order to determine the number of photons, $N_{ph}$, sharing the interaction volume, we will make the following assumptions.
 The Rayleigh length, $z_R$, of an $f/2$ beam is approximately $2.5 \lambda f^2_\# \approx 8\,\mathrm{\upmu m}$.
 At a diameter of $400\pm100\,\mathrm{\upmu m}$ the beam is at $\sim 1100\pm 275 \mathrm{\upmu m}$ distance from the focal plane, which corresponds to $> 100 z_R$, so that the laser beam is in its near field at this plane. As discussed before, we ignore relative angles between the laser and the electron beam. We will also ignore focusing effect assuming that the duration of the interaction is short due to the short duration of the laser pulse and the electron bunch \cite{Lundh2011_BUNCH} to avoid significant changes in intensity, such that the electrons encounter a static photon field. 
-The number of photons overlapping with an electron beam of transverse area $\pi w^2_0$, $N_{ph}$, is given by the laser energy in this area divided by the energy of a single photon, $E_{ph}$. Assuming a homogeneous flat-top laser profile, the energy in this area is simply given by the fraction this area holds relative to the total beam area multiplied by the total energy in the laser pulse, $E_J$:
+The number of photons overlapping with an electron beam of transverse area $\pi w^2_0$, $N_{ph}$, is given by the laser energy in this area divided by the energy of a single photon, $\epsilon_{ph}$. Assuming a homogeneous flat-top laser profile, the energy in this area is simply given by the fraction this area holds relative to the total beam area multiplied by the total energy in the laser pulse, $\epsilon_J$:
 \begin{equation}
-N_{ph} = \left[\frac{E_J}{E_{ph}} \frac{\pi w^2_0}{\pi r^2}\right],
+N_{ph} = \left[\frac{\epsilon_J}{\epsilon_{ph}} \frac{\pi w^2_0}{\pi r^2}\right],
 \end{equation}
 where $r$ is the full radius of the laser beam at the plane of the interaction.
 Note that $E_J$ is the total energy in the laser pulse measured on-shot, neglecting the reduction due to the hole in the OAP, since this does not affect the local photon density in the near field of the laser pulse.
 We then obtain for the number of scattered photons, $N_X$:
 \begin{align}
-N_X &= \frac{\sigma_T}{\pi w^2_0} \left[\frac{E_J}{E_{ph}} \frac{\pi w^2_0}{\pi r^2}\right] \left[\frac{Q}{e}\right],\\ \nonumber
-&= \frac{\sigma_T}{\pi r^2}\left[ \frac{E_J}{E_{ph}}\right] \left[ \frac{Q}{e}\right].
+N_X &= \frac{\sigma_T}{\pi w^2_0} \left[\frac{\epsilon_J}{\epsilon_{ph}} \frac{\pi w^2_0}{\pi r^2}\right] \left[\frac{Q}{e}\right],\\ \nonumber
+&= \frac{\sigma_T}{\pi r^2}\left[ \frac{\epsilon_J}{\epsilon_{ph}}\right] \left[ \frac{Q}{e}\right].
 \end{align}
-The region of the interaction defined by the electron beam size $w_0$ cancels out as the photon density is constant across any region in this approximation and only depends on the size of the full laser beam, $r$, and its total energy content, $E_J$.
+The region of the interaction defined by the electron beam size $w_0$ cancels out as the photon density is constant across any region in this approximation and only depends on the size of the full laser beam, $r$, and its total energy content, $\epsilon_J$.
 In useful units we can then write
 \begin{equation}
-\boxed{N_X = 5.32 \times 10^{10}\times  E_J [J] \times Q [100pC] \times r[\mu m]^{-2}.}
+\boxed{N_X = 5.32 \times 10^{10}\times  \epsilon_J [J] \times Q [100pC] \times r[\mu m]^{-2}.}
 \label{Chap:linICS:Eqn:NX_UsefulUnits}
 \end{equation}
-For the conditions measured or inferred in this experiment ($E_J = 9.73\pm0.15$, $Q=239\pm92\,\mathrm{pC}$ and $r=200\,\mathrm{\upmu m}$) this equation estimates that $(3.1 \pm 1.2) \times 10^{7}$ photons are on average scattered and emitted at an energy $E_X > 1\,\mathrm{MeV}$. This is of comparable order of magnitude as reported for similar Compton experiments and bright betatron sources \cite{Kneip2010_BETATRON,Chen2013_BETATRON}, where we can assume that the radiation has a pulse duration and source size comparable to the electron beam.
+For the conditions measured or inferred in this experiment ($\epsilon_J = 9.73\pm0.15$, $Q=239\pm92\,\mathrm{pC}$ and $r=200\,\mathrm{\upmu m}$) this equation estimates that $(3.1 \pm 1.2) \times 10^{7}$ photons are on average scattered and emitted at an energy $\epsilon_X > 1\,\mathrm{MeV}$. This is of comparable order of magnitude as reported for similar Compton experiments and bright betatron sources \cite{Kneip2010_BETATRON,Chen2013_BETATRON}, where we can assume that the radiation has a pulse duration and source size comparable to the electron beam.
 \vspace{\baselineskip}
 
-However, considering the experimental parameters it becomes clear that a linear Compton source could be achieved in a much more economical way by scaling down the energy and the beam size at the interaction, whilst still preserving a permanent overlap within the shot-to-shot fluctuations of the laser and the accelerator. Assuming a fixed charge in the electron beam, the number of scattered photons then only depends on the ratio of the laser energy and the beam size $\propto E_J/r^2$. By reducing the beam radius from $200\,\mathrm{\upmu m}$ to $25\,\mathrm{\upmu m}$, a factor of $8$, the corresponding energy in the scattering beam can be reduced by a factor of $64$, to about $150\,\mathrm{mJ}$, to produce the same number of photons as before. Using an $f/2$ OAP as in this case, the plane of the interaction would be more than 10 Rayleigh lengths, $z_R$, away from the focal plane and which is still in the near-field of the laser, where the profile is flat and smooth, such that any changes in response would predominantly reflect the electron beam properties.
+However, considering the experimental parameters it becomes clear that a linear Compton source could be achieved in a much more economical way by scaling down the energy and the beam size at the interaction, whilst still preserving a permanent overlap within the shot-to-shot fluctuations of the laser and the accelerator. Assuming a fixed charge in the electron beam, the number of scattered photons then only depends on the ratio of the laser energy and the beam size $\propto \epsilon_J/r^2$. By reducing the beam radius from $200\,\mathrm{\upmu m}$ to $25\,\mathrm{\upmu m}$, a factor of $8$, the corresponding energy in the scattering beam can be reduced by a factor of $64$, to about $150\,\mathrm{mJ}$, to produce the same number of photons as before. Using an $f/2$ OAP as in this case, the plane of the interaction would be more than 10 Rayleigh lengths, $z_R$, away from the focal plane and which is still in the near-field of the laser, where the profile is flat and smooth, such that any changes in response would predominantly reflect the electron beam properties.
 
 \section{Energy-dependent detector response}
 \label{Chap:linICS:Sec:EdepResponse}
@@ -283,7 +283,7 @@ However, whilst the cross-section for an interaction is independent of energy an
 \caption[Energy deposition in gamma profile detector as function of photon energy as simulated in GEANT.]{Energy deposition per photon in the gamma profile stack as a function of the incident photon energy in MeV as simulated in GEANT4. The grey dashed line at 15 MeV indicates roughly the separation between two regimes, in the first of which the energy deposition increases more per increase in incoming photon energy than in the second.}
 \label{linICS:Figs:Edep_ResponseGEANT}
 \end{figure}
-Figure \ref{linICS:Figs:Edep_ResponseGEANT} shows the simulated average energy deposited by one individual photon incident on the profile stack as a function of the photon energy, $E_\gamma$. Between $E_\gamma=1$ and $15\MeV$ the energy deposition increases steadily before slowing down (grey dashed line) and increasing at a slower rate over the remaining simulated energy range. This behaviour is important as the corresponding electron energies coincide with this energy band, so that it has to be considered particularly when attempting to measure absolute quantities such as the total number of photons. The energy-dependency shown in Figure \ref{linICS:Figs:Edep_ResponseGEANT} contrasts the almost flat energy deposition of relativistic electron beams in Lanex as discussed in \cite{Glinec2006_Lanex}.
+Figure \ref{linICS:Figs:Edep_ResponseGEANT} shows the simulated average energy deposited by one individual photon incident on the profile stack as a function of the photon energy, $\epsilon_\gamma$. Between $\epsilon_\gamma=1$ and $15\MeV$ the energy deposition increases steadily before slowing down (grey dashed line) and increasing at a slower rate over the remaining simulated energy range. This behaviour is important as the corresponding electron energies coincide with this energy band, so that it has to be considered particularly when attempting to measure absolute quantities such as the total number of photons. The energy-dependency shown in Figure \ref{linICS:Figs:Edep_ResponseGEANT} contrasts the almost flat energy deposition of relativistic electron beams in Lanex as discussed in \cite{Glinec2006_Lanex}.
 
 \begin{figure}
 \centering
@@ -294,9 +294,9 @@ Figure \ref{linICS:Figs:Edep_ResponseGEANT} shows the simulated average energy d
 In Figure \ref{linICS:Figs:Edep_Response} an example electron spectrum is given, its related gamma spectrum and the relative contributions in terms of total energy deposition. The response of a detector would in this case be dominated by the high energy peak and the radiation from lower energy electrons is suppressed in relative terms. The response of a profile screen in this experiment then mainly reflects the properties of the higher tail of the radiation, in contrast to an electron beam profile diagnostic using a Lanex screen. In radiation reaction studies the highest energies are of particular interest as they are expected to experience the strongest interaction and largest energy loss, such that this property might be of  advantage in this scenario.
 \vspace{\baselineskip}
 
-Using the simulated result as a lookup-table for the energy deposition, $E_{dep}(\gamma)$, and relating the photon energy to the electron energy, the total energy deposition, $\mathcal{E}_{dep}$, for a given electron spectrum can be calculated as follows:
+Using the simulated result as a lookup-table for the energy deposition, $\epsilon_{dep}(\gamma)$, and relating the photon energy to the electron energy, the total energy deposition, $\mathcal{E}_{dep}$, for a given electron spectrum can be calculated as follows:
 \begin{equation}
-\boxed{\mathcal{E}_{dep} = \int E_{dep} (\gamma) \frac{\sigma_T}{\pi \omega^2_0} N_L \frac{\mathrm{d}N_e}{\mathrm{d}\gamma}\mathrm{d}\gamma  \approx \langle E_{dep} (\gamma) \rangle N_X.}
+\boxed{\mathcal{E}_{dep} = \int \epsilon_{dep} (\gamma) \frac{\sigma_T}{\pi \omega^2_0} N_L \frac{\mathrm{d}N_e}{\mathrm{d}\gamma}\mathrm{d}\gamma  \approx \langle \epsilon_{dep} (\gamma) \rangle N_X.}
 \label{linICS:Eqs:Edep_YIELD}
 \end{equation}
 This becomes in particular important when the electron spectrum covers a wide energy range as in some of the cases presented. Higher energy radiation contributes in relative terms more to the response of the measured profile.
@@ -351,7 +351,7 @@ Assuming that the absolute calibration of the gamma profile screen is accurate, 
 \end{equation}
 where $N_{X,0}$ is the initially estimated number of scattered photons at radius $r_0$, and $N_{X,\gamma}$ is the number of photons inferred from the gamma profile measurement. The corresponding laser intensity in turn is then approximately
 \begin{equation}
-a_0 \approx 0.85 \lambda [\mu m] \sqrt{ I [10^{18} W/cm^2]} \approx 0.286 \times \sqrt{E [10 J]} (r [200 \mu m])^{-1},
+a_0 \approx 0.85 \lambda [\mu m] \sqrt{ I [10^{18} W/cm^2]} \approx 0.286 \times \sqrt{\epsilon [10 J]} (r [200 \mu m])^{-1},
 \end{equation}
 where we assumed a pulse duration $\tau = 45\,\mathrm{fs}$. In terms of the ratio of the estimated number of scattered photons this then reads
 \begin{equation}

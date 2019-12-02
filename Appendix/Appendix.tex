@@ -70,6 +70,7 @@ FWHM & Full width at half maximum\\
 ICS & Inverse Compton scattering\\
 LWFA & Laser wakefield acceleration\\
 LAD & Lorentz-Abraham-Dirac (equation)\\
+LCFA & Locally constant field approximation\\
 LL & Landau-Lifschitz (equation)\\
 OAP & Off-axis parabola\\
 QED & Quantum electrodynamics\\
@@ -303,11 +304,11 @@ $\omega_c$ is the characteristic or \textit{critical frequency} given by
 where $\rho$ is the bending radius, e.g. the Larmor radius.
 The doubly differential spectral intensity reads
 \begin{equation}
-\frac{d^2 I}{dEd\Omega} = \frac{3e^2}{16\pi^3 \hbar c \epsilon_0} \gamma^2 \frac{E^2}{E_c^2} \left(1+\gamma^2 \theta^2\right)^2 [K_{2/3}^2(\psi) + \frac{\gamma^2 \theta^2}{1+\gamma^2 \theta^2} K_{1/3}^2 (\psi)],
+\frac{d^2 I}{dEd\Omega} = \frac{3e^2}{16\pi^3 \hbar c \epsilon_0} \gamma^2 \frac{\epsilon^2}{\epsilon_c^2} \left(1+\gamma^2 \theta^2\right)^2 [K_{2/3}^2(\psi) + \frac{\gamma^2 \theta^2}{1+\gamma^2 \theta^2} K_{1/3}^2 (\psi)],
 \end{equation}
 with
 \begin{equation}
-\psi = \frac{E}{2E_c}(1+\gamma^2 \theta^2)^{3/2}
+\psi = \frac{\epsilon}{2\epsilon_c}(1+\gamma^2 \theta^2)^{3/2}
 \end{equation}
 
 
@@ -379,7 +380,7 @@ where $k_\beta = \omega_\beta / c$ is the wavenumber and $r_\beta$ is the betatr
 
 The radiation generated follows the on-axis synchrotron radiation with a critical energy
 \begin{equation}
-\boxed{E_c = \frac{3}{4} \hbar \gamma^2 \omega^2_p r_\beta / c,}
+\boxed{\epsilon_c = \frac{3}{4} \hbar \gamma^2 \omega^2_p r_\beta / c,}
 \end{equation}
 where this characteristic energy indicates when approximately half the energy is radiated above and below this value.
 \vspace{\baselineskip}
@@ -393,9 +394,9 @@ In LWFA betatron radiation typically reaches the soft X-ray regime of a few to t
 
 The radiation length, $X_0$, is a material-specific quantity that indicates how much energy a high-energy particle converts into radiation and secondary particles when passing through a material. The energy of a particle passing through a material of thickness $x$ and radiation length $X_0$ loses energy at a rate \cite{Jackson}:
 \begin{equation}
-\frac{\dif E}{\dif x} = -\frac{E}{X_0},
+\frac{\dif \epsilon}{\dif x} = -\frac{\epsilon}{X_0},
 \end{equation}
-with $E(x) = E_0 e^{-x/X_0}$ and $X_0$ is given by \cite{Tsai1974_PairsBrems,Tanabashi2018_PDGReview}:
+with $\epsilon(x) = \epsilon_0 e^{-x/X_0}$ and $X_0$ is given by \cite{Tsai1974_PairsBrems,Tanabashi2018_PDGReview}:
 \begin{equation}
 \boxed{X_0 = \left[ 4 \alpha r^2_e \frac{N_A}{A}\left\lbrace Z^2 \left( L_{rad} - f(Z) \right) + Z L'_{rad} \right\rbrace\right]^{-1},}
 \end{equation}
@@ -457,7 +458,7 @@ The differential cross section for the bremsstrahlung process is in the ultrarel
 \begin{equation}
 \frac{\dif \sigma}{\dif (\hbar \omega)} = \frac{A}{X_0 N_A \hbar \omega} \left(\frac{4}{3} - \frac{4}{3}y + y^2\right),
 \end{equation}
-where $\hbar \omega$ is the energy of the emitted photon, $Z$ is the atomic number and $A$ the atomic weight and $N_A$ the Avogadro number. $y= \hbar\omega/E$, i.e. the fraction of the emitted photon energy relative to the initial electron energy.
+where $\hbar \omega$ is the energy of the emitted photon, $Z$ is the atomic number and $A$ the atomic weight and $N_A$ the Avogadro number. $y= \hbar\omega/\epsilon$, i.e. the fraction of the emitted photon energy relative to the initial electron energy.
 
 
 \chapter{Cross sections for fundamental QED processes}
@@ -631,17 +632,17 @@ where the first part in the bracket corresponds to a helicity-conserving interac
 
 The emission/scatter rates for the $n$-th harmonic depend on the laser polarisation: the scattering rate (spin-averaged and unpolarised states in/out) for $n$ scattered photons for circular polarisation is given (in natural units) by \cite{Ritus1985_QRR,BlackburnThesis}
 \begin{equation}
-\frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 E}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
+\frac{\dif W_n}{\dif x} = \frac{\alpha m^2}{4 \epsilon}\left[ -4 J^2_n + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (J^2_{n-1} + J^2_{n+1} - 2 J^2_n)\right],
 \end{equation}
 and for linear polarisation by
 \begin{equation}
-\frac{\dif W_n}{\dif x} = \frac{2 \alpha m^2}{\pi E}\int^{\pi/2}_0 \left[-A^2_0 + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (A^2_1 - A_0 A_2)\right]\dif \varphi.
+\frac{\dif W_n}{\dif x} = \frac{2 \alpha m^2}{\pi \epsilon}\int^{\pi/2}_0 \left[-A^2_0 + a^2_0 \left(1-x+ \frac{1}{1-x}\right) (A^2_1 - A_0 A_2)\right]\dif \varphi.
 \end{equation}
-The energy of the incoming photons is $\omega$ and the scattered photon carries an energy $\omega' = xE$, i.e $x$ is the fraction of energy the photon carries away. $a_0$ is the normalised vector potential of the laser pulse.
+The energy of the incoming photons is $\omega$ and the scattered photon carries an energy $\omega' = x\epsilon$, i.e $x$ is the fraction of energy the photon carries away. $a_0$ is the normalised vector potential of the laser pulse.
 $J_n$ is shorthand for $J_n(z)$, and $A_i = A_i(n,a,b)$, with
 \begin{align}
 z &= \frac{2 a_0}{\sqrt{1+a^2_0}}\frac{\sqrt{x[nu - (1+nu)x]}}{u(1-x)},\\
-u &= \frac{2k \cdot q}{q^2} = \frac{4 E \omega}{m^2 (1+a^2_0)}.
+u &= \frac{2k \cdot q}{q^2} = \frac{4 \epsilon \omega}{m^2 (1+a^2_0)}.
 \end{align}
 The function $A_i$ and its arguments are defined as 
 \begin{align}
@@ -798,7 +799,7 @@ Similarly as for bremsstrahlung (see Section \ref{Appendix:Sec:Brems_RadiationLe
 \begin{equation}
 \frac{\dif \sigma_{\gamma Z}}{\dif x} = \frac{A}{X_0 N_A} \left[ 1 - \frac{4}{3}x(1-x)\right],
 \end{equation}
-where $x = E/k$, where $k$ is the incident photon energy and $E$ the energy of the produced electron or positron. $A$ is the atomic weight and $N_A$ the Avogadro constant.
+where $x = \epsilon/k$, where $k$ is the incident photon energy and $\epsilon$ the energy of the produced electron or positron. $A$ is the atomic weight and $N_A$ the Avogadro constant.
 In the high-energy limit the total cross section becomes
 \begin{equation}
 \sigma_{\gamma Z} = \frac{7}{9}\frac{A}{X_0 N_A},

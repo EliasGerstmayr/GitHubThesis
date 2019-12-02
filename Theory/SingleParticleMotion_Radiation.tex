@@ -346,15 +346,15 @@ with the corresponding Feynman diagram shown in Figure \ref{Theory:Fig:ComptonSc
 In the following, we will treat the electron and the incoming photon both as particles and calculate their final momenta based on energy and momentum conservation in a relativistic framework.
 \vspace{\baselineskip}
 
-Assuming the electron has a negligible initial momentum $\mathbf{p}_{e,i} = \mathbf{0}$ as in Compton's original experiment \cite{Compton1923_Compton}, the total energy hence reduces to the rest energy of the electron $E_{e,i} = m_e c^2$. The subscript $e$ stands for `electron' and $i$ for `initial'.
-The photon on the other hand has an initial momentum $\mathbf{p}_{\gamma, i}$ and an energy $E_{\gamma, i} = p_{\gamma, i} c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
+Assuming the electron has a negligible initial momentum $\mathbf{p}_{e,i} = \mathbf{0}$ as in Compton's original experiment \cite{Compton1923_Compton}, the total energy hence reduces to the rest energy of the electron $\epsilon_{e,i} = m_e c^2$. The subscript $e$ stands for `electron' and $i$ for `initial'.
+The photon on the other hand has an initial momentum $\mathbf{p}_{\gamma, i}$ and an energy $\epsilon_{\gamma, i} = p_{\gamma, i} c = hf$, where $h$ is Planck's constant and $f$ the frequency of the photon. The subscript $\gamma$ represents the photon in this interaction.
 Relying on the conservation of energy we can postulate that the sum of energies before and after the interaction have to be equal:
 \begin{align}
-E_{e, i} + E_{\gamma,i} &= E_{e,f} + E_{\gamma,f},\nonumber\\ 
+\epsilon_{e, i} + \epsilon_{\gamma,i} &= \epsilon_{e,f} + \epsilon_{\gamma,f},\nonumber\\ 
 m_e c^2 + h f &= \sqrt{(p_{e,f} c)^2 + (m_e c^2)^2} + h f',\nonumber\\
 hf - hf' +m_e c^2 &= \sqrt{(p_{e,f} c)^2 + (m_e c^2)^2},\nonumber\\
 \left( hf - hf' +m_e c^2\right)^2 -(m_e c^2)^2 &= (p_{e,f} c)^2, \nonumber\\
-(E_{\gamma, i} - E_{\gamma, f} + m_e c^2)^2 - (m_e c^2)^2 &= (p_{e, f} c)^2,
+(\epsilon_{\gamma, i} - \epsilon_{\gamma, f} + m_e c^2)^2 - (m_e c^2)^2 &= (p_{e, f} c)^2,
 \label{Theory:Eqns:Compton_EnergyConserve}
 \end{align}
 where $f'$ is the frequency of the photon after the interaction.
@@ -364,7 +364,7 @@ Similarly, we can use momentum conservation to find an expression for the moment
 \mathbf{p}_{\gamma, i} - \mathbf{p}_{\gamma, f} &= \mathbf{p}_{e, f}\nonumber\\
 (\mathbf{p}_{\gamma, i} - \mathbf{p}_{\gamma, f})^2 &= (\mathbf{p}_{e, f} )^2\nonumber\\
 (p_{\gamma, i}c)^2 + (p_{\gamma, f}c)^2 - 2 p_{\gamma, i}p_{\gamma, f}c^2\cos\theta &= (p_{e, f} c )^2,\nonumber\\
-E_{\gamma, i}^2 + E_{\gamma, f}^2 - 2 E_{\gamma, i} E_{\gamma, f} \cos\theta &= (p_{e, f} c)^2,
+\epsilon_{\gamma, i}^2 + \epsilon_{\gamma, f}^2 - 2 \epsilon_{\gamma, i} \epsilon_{\gamma, f} \cos\theta &= (p_{e, f} c)^2,
 \label{Theory:Eqns:Compton_MomConserve}
 \end{align}
 where $\mathbf{p}$ is a momentum vector and $|\mathbf{p}| = p$ its corresponding length. $\theta$ is the angle between incoming and outgoing momentum vector of the photon (see Figure \ref{Theory:Fig:ComptonScattering:Kinematics}).
@@ -380,11 +380,11 @@ Similarly there is an equation for the emission angle of the electron:
 
 In terms of photon energy we can write
 \begin{equation}
-\boxed{E_{\gamma,f} = \frac{E_{\gamma,i}}{1+\frac{E_{\gamma,i}}{m_e c^2}(1-\cos\theta)},}
+\boxed{\epsilon_{\gamma,f} = \frac{\epsilon_{\gamma,i}}{1+\frac{E_{\gamma,i}}{m_e c^2}(1-\cos\theta)},}
 \label{Theory:Eqs:Compton_Egammaf}
 \end{equation}
-where the final energy, $E_{\gamma,f}$, only depends on the energy of the incoming photon, $E_{\gamma,i}$, and the scattering angle $\theta$. 
-Polar plots of the final photon energies for different initial photon energies are shown in Figure \ref{Theory:Figs:Compton_E_XSEC} (left). At low energies $E_{\gamma,i} \rightarrow 0$ and $E_{\gamma,f} \rightarrow E_{\gamma,i}$, and the emitted energy becomes approximately independent of the scattering angle $\theta$ (see Figure \ref{Theory:Figs:Compton_E_XSEC} (left, inset)). At higher energies $E_{\gamma,i} > m_e ^2c$, the energy distribution is being skewed towards the forwards direction of the incoming photon and the energy of the photon after the interaction is maximised at zero degrees with $E_{\gamma,f} = E_{\gamma,i}$, i.e. no significant amount of energy is transferred to the electron (see Figure \ref{Theory:Figs:Compton_E_XSEC} (left)).
+where the final energy, $\epsilon_{\gamma,f}$, only depends on the energy of the incoming photon, $\epsilon_{\gamma,i}$, and the scattering angle $\theta$. 
+Polar plots of the final photon energies for different initial photon energies are shown in Figure \ref{Theory:Figs:Compton_E_XSEC} (left). At low energies $\epsilon_{\gamma,i} \rightarrow 0$ and $\epsilon_{\gamma,f} \rightarrow E_{\gamma,i}$, and the emitted energy becomes approximately independent of the scattering angle $\theta$ (see Figure \ref{Theory:Figs:Compton_E_XSEC} (left, inset)). At higher energies $\epsilon_{\gamma,i} > m_e ^2c$, the energy distribution is being skewed towards the forwards direction of the incoming photon and the energy of the photon after the interaction is maximised at zero degrees with $\epsilon_{\gamma,f} = \epsilon_{\gamma,i}$, i.e. no significant amount of energy is transferred to the electron (see Figure \ref{Theory:Figs:Compton_E_XSEC} (left)).
 
 
 \subsubsection{Cross-Section}
@@ -401,7 +401,7 @@ The cross section for Compton scattering, again assuming the electron is initial
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
 \frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} &= \pi r^2_e \left(\frac{\omega'}{\omega}\right)^2 \left(\frac{\omega'}{\omega} + \frac{\omega}{\omega'}-\sin^2{\theta}\right),\\
-\frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} &= \pi r^2_e  \left(\frac{E_f}{E_i}\right)^2 \left(\frac{E_f}{E_i} + \frac{E_i}{E_f}-\sin^2{\theta}\right),
+\frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} &= \pi r^2_e  \left(\frac{\epsilon_f}{\epsilon_i}\right)^2 \left(\frac{\epsilon_f}{\epsilon_i} + \frac{\epsilon_i}{\epsilon_f}-\sin^2{\theta}\right),
 \end{empheq}
 \label{Theory:Eqs:ComptonXsec}
 \end{subequations}
@@ -416,7 +416,7 @@ The total cross section using the Klein-Nishina equation amounts to:
 \begin{equation}
 \boxed{\sigma_{\gamma e} = 2\pi r^2_e \left[\frac{1 + x}{x^3}\left( \frac{2x(1+x)}{1+2x} - \ln(1+2x)\right) + \frac{1}{2x} \ln(1+2x) - \frac{1+3x}{(1+2x)^2}\right],}
 \end{equation}
-with $x = E_\gamma /m_e c^2$, so that in the two limits this becomes
+with $x = \epsilon_\gamma /m_e c^2$, so that in the two limits this becomes
 \begin{equation}
 \sigma_{\gamma e} = \sigma_T \times  
 \begin{cases}
@@ -435,12 +435,12 @@ In the previous section Compton scattering and its classical low-energy limit Th
 
 \subsubsection{Kinematics}
 
-To treat this scattering process similarly to the standard Compton scattering discussed in the previous section, we will shift to the rest frame of the electron, where the initial condition, that the electron is at rest, is again satisfied. In the following, quantities in the lab frame, $S$, will be denoted as before, for instance $E, \theta$. In the rest frame of the electron, $S'$, quantities will be denoted as dashed quantities, i.e. $E', \theta'$ and so on.
+To treat this scattering process similarly to the standard Compton scattering discussed in the previous section, we will shift to the rest frame of the electron, where the initial condition, that the electron is at rest, is again satisfied. In the following, quantities in the lab frame, $S$, will be denoted as before, for instance $\epsilon, \theta$. In the rest frame of the electron, $S'$, quantities will be denoted as dashed quantities, i.e. $\epsilon', \theta'$ and so on.
 
-Assume a single relativistic electron with a relativistic Lorentz factor, $\gamma$, moving in $x$ and a photon of energy $E_{i}$ with an incident angle $\theta_i$ relative to this axis.
-In the rest frame of the electron the photon experiences a relativistic Doppler-shift so that its energy in this frame, $E'_{i}$, is
+Assume a single relativistic electron with a relativistic Lorentz factor, $\gamma$, moving in $x$ and a photon of energy $\epsilon_{i}$ with an incident angle $\theta_i$ relative to this axis.
+In the rest frame of the electron the photon experiences a relativistic Doppler-shift so that its energy in this frame, $\epsilon'_{i}$, is
 \begin{equation}
-E'_i = \gamma E_i (1-\mathbf{\beta} \cdot \mathbf{e_k}) = \gamma E_i (1 - \beta \cos\theta) \approx \gamma E_i (1- \cos\theta),
+\epsilon'_i = \gamma \epsilon_i (1-\mathbf{\beta} \cdot \mathbf{e_k}) = \gamma \epsilon_i (1 - \beta \cos\theta) \approx \gamma \epsilon_i (1- \cos\theta),
 \end{equation}
 where we assumed that the electron is highly relativistic and $\beta \approx 1$.
 In a head-on collision ($\theta = \pi$) the photon energy in the electron rest frame is maximised by a factor of $2\gamma$. The angles transform via
@@ -451,31 +451,31 @@ In a head-on collision ($\theta = \pi$) the photon energy in the electron rest f
 
 In this frame the scattered photon energies follow the same relation as for standard Compton scattering (see Equation \eqref{Theory:Eqs:Compton_Egammaf}), but in terms of dashed quantities:
 \begin{equation}
-E'_f = \frac{E'_i}{1+\frac{E'_i}{m_e c^2}(1-\cos\alpha')},
+\epsilon'_f = \frac{\epsilon'_i}{1+\frac{\epsilon'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
 where $\alpha'$ is the difference between the incident and outgoing angle and determined by
 \begin{equation}
 \cos \alpha' = \mathbf{n'_f} \cdot \mathbf{n'_i} = \cos \theta'_i \cos \theta'_f + \sin \theta'_i \sin \theta'_f \cos(\phi'_i - \phi'_f),
 \end{equation}
 with the angles $\phi'$ denoting the azimuthal angles of the photon. 
-In this frame the photon is losing energy as it transfers momentum to the electron, as expected for Compton scattering. In a head-on collision in the lab frame for $\gamma \sim 1000$ and $E_i = 1\eV$, the energy in the electron rest frame becomes $E'_i = 2\keV$, with $E'_i \ll m_e c^2$ or in terms of lab-frame quantities $E_i \ll m_e c^2/\gamma$. This means that under these conditions this interaction corresponds to Thomson scattering. 
+In this frame the photon is losing energy as it transfers momentum to the electron, as expected for Compton scattering. In a head-on collision in the lab frame for $\gamma \sim 1000$ and $E_i = 1\eV$, the energy in the electron rest frame becomes $\epsilon'_i = 2\keV$, with $\epsilon'_i \ll m_e c^2$ or in terms of lab-frame quantities $\epsilon_i \ll m_e c^2/\gamma$. This means that under these conditions this interaction corresponds to Thomson scattering. 
 
 In order to calculate the final photon energy in the laboratory frame, $S$, we have to boost back from the rest frame of the electron, $S'$, which results in another amplifying factor of $\sim\gamma$:
 \begin{equation}
-E_f = E'_f \gamma (1+\beta \cos \theta'_f) \approx E'_f \gamma (1+ \cos \theta'_f) \propto \gamma^2 E_i,
+\epsilon_f = \epsilon'_f \gamma (1+\beta \cos \theta'_f) \approx \epsilon'_f \gamma (1+ \cos \theta'_f) \propto \gamma^2 \epsilon_i,
 \end{equation}
-where the angles have to be transformed back into the lab frame as well. We now see that in the lab frame $E_f > E_i$, so that the photon gains energy in the interaction and the name \textit{inverse} Compton scattering is justified.
+where the angles have to be transformed back into the lab frame as well. We now see that in the lab frame $\epsilon_f > \epsilon_i$, so that the photon gains energy in the interaction and the name \textit{inverse} Compton scattering is justified.
 The emitted energy is maximised in a head-on collision and when radiated in the propagation direction of the relativistic electron.
-The photon energy is then boosted by $(2\gamma)^2$ to $E_{f,max} = 2 \gamma E'_f = 2 \gamma E'_i = 4 \gamma^2 E_i$. In the rest frame of the electron this corresponds to $E'_i = E'_f$, which again indicates Thomson scattering and motivates another common name for this process, \textit{relativistic Thomson scattering}.
+The photon energy is then boosted by $(2\gamma)^2$ to $\epsilon_{f,max} = 2 \gamma \epsilon'_f = 2 \gamma \epsilon'_i = 4 \gamma^2 \epsilon_i$. In the rest frame of the electron this corresponds to $\epsilon'_i = \epsilon'_f$, which again indicates Thomson scattering and motivates another common name for this process, \textit{relativistic Thomson scattering}.
 
 \subsubsection{Cross-Section}
 
-$E_i = m_e c^2/\gamma$ would for $E_i = 1\eV$ require $\gamma \sim 5\times 10^5$ or $\epsilon \sim 250\GeV$.  As a result, $E_i \ll m_e c^2/\gamma$ holds for all relevant scenarios and the interaction is in the rest frame accurately described by the Thomson cross section as given in Equation \eqref{Theory:Eqs:ThomsonXsec}, but in quantities of the rest frame $S'$:
+$\epsilon_i = m_e c^2/\gamma$ would for $\epsilon_i = 1\eV$ require $\gamma \sim 5\times 10^5$ or $\epsilon \sim 250\GeV$.  As a result, $\epsilon_i \ll m_e c^2/\gamma$ holds for all relevant scenarios and the interaction is in the rest frame accurately described by the Thomson cross section as given in Equation \eqref{Theory:Eqs:ThomsonXsec}, but in quantities of the rest frame $S'$:
 \begin{equation}
 \frac{\mathrm{d} \sigma'}{\mathrm{d}\cos \theta'} =\pi r^2_e \left(1+\cos^2 {\theta'}\right).
 \end{equation}
 
-For $\gamma \gg 1$ the transformation of the angles results in the so-called `headlight' or `searchlight effect' since $\cos\theta \rightarrow 1$ (see Equation \eqref{Theory:Eqs:ICS:BoostAngles}), so that the photons are preferentially emitted in the direction of the electron momentum vector. If we consider a cross section normal to the direction of the boost $\sigma' \rightarrow \sigma$ and $\sigma = \sigma_T$, the Thomson cross section, so that the cross section is again independent of energy as long as $E_i \ll m_e c^2/\gamma$.
+For $\gamma \gg 1$ the transformation of the angles results in the so-called `headlight' or `searchlight effect' since $\cos\theta \rightarrow 1$ (see Equation \eqref{Theory:Eqs:ICS:BoostAngles}), so that the photons are preferentially emitted in the direction of the electron momentum vector. If we consider a cross section normal to the direction of the boost $\sigma' \rightarrow \sigma$ and $\sigma = \sigma_T$, the Thomson cross section, so that the cross section is again independent of energy as long as $\epsilon_i \ll m_e c^2/\gamma$.
 
 \subsubsection{Total emitted energy}
 
@@ -485,13 +485,13 @@ In the Thomson limit the cross section of the interaction is independent of the 
 \end{equation}
 The total energy emitted in this interaction is simply the sum of the individual photon energies. The total energy emitted by an electron bunch of distribution $\dif N_e /\dif \gamma$ is
 \begin{equation}
-\boxed{\mathcal{E}_{total} = \int E_f(\gamma) \frac{\sigma_T}{\pi \omega^2_0} N_L \frac{\mathrm{d}N_e}{\mathrm{d}\gamma}\mathrm{d}\gamma  \approx \langle E_f \rangle N_X \propto \langle \gamma^2 \rangle N_X,}
+\boxed{\mathcal{E}_{total} = \int \epsilon_f(\gamma) \frac{\sigma_T}{\pi \omega^2_0} N_L \frac{\mathrm{d}N_e}{\mathrm{d}\gamma}\mathrm{d}\gamma  \approx \langle \epsilon_f \rangle N_X \propto \langle \gamma^2 \rangle N_X,}
 \end{equation}
 where we would generally have to integrate over all incoming and outgoing angles and photon energies to obtain the emitted energy. Since the number of photons, $N_L$, is proportional to the intensity and $N_e$ to the charge $Q$, we also find $\mathcal{E}_{total} \propto a^2_0 \langle \gamma^2 \rangle Q$.
 
 \subsubsection{Experimental modifications of the spectrum}
 
-In a real setting the ICS spectrum is modified by experimental parameters that result in an energy spread of the emitted radiation, $\Delta E_f$. These are, for instance, the energy spread of the electron beam, the bandwidth of a realistic laser pulse, and a range of angles between the electrons and photons introduced by the divergence of the electron bunch and the focusing of the laser pulse. The effective spectrum has, for instance, being investigated experimentally in a laser wakefield setup in \cite{Kramer2018_Gamma}.
+In a real setting the ICS spectrum is modified by experimental parameters that result in an energy spread of the emitted radiation, $\Delta \epsilon_f$. These are, for instance, the energy spread of the electron beam, the bandwidth of a realistic laser pulse, and a range of angles between the electrons and photons introduced by the divergence of the electron bunch and the focusing of the laser pulse. The effective spectrum has, for instance, being investigated experimentally in a laser wakefield setup in \cite{Kramer2018_Gamma}.
 In addition, when the normalised vector potential approaches unity, nonlinear effects start to modify the spectrum. This is discussed in the following section.
 
 \subsection{Nonlinear Inverse Compton Scattering}
@@ -514,15 +514,15 @@ which is represented by the Feynman diagram shown in Figure \ref{Theory:Figs:Nli
 
 \subsubsection{Kinematics}
 
-Assuming all $n$ photons have the same energy $E_i$ and are parallel to each other, the relativistic kinematics for the multi-photon process are identical to the single-photon process discussed in the previous section by simply substituting $E_i \rightarrow nE_i$. As a result, the energy of the scattered photon in the rest frame, $E'_f$, is then 
+Assuming all $n$ photons have the same energy $\epsilon_i$ and are parallel to each other, the relativistic kinematics for the multi-photon process are identical to the single-photon process discussed in the previous section by simply substituting $\epsilon_i \rightarrow n\epsilon_i$. As a result, the energy of the scattered photon in the rest frame, $E'_f$, is then 
 \begin{equation}
-E'_f = \frac{n E'_i}{1+\frac{n E'_i}{m_e c^2}(1-\cos\alpha')},
+\epsilon'_f = \frac{n \epsilon'_i}{1+\frac{n \epsilon'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
 including the effect of the mass increase $\left(m_e \rightarrow m^\ast = m_e \sqrt{1+a^2_0}\right)$ the energy of the radiation in the laboratory frame is then given by \cite{Esarey1993_NT}
 \begin{equation}
-\boxed{E_f \approx \frac{2 \gamma^2 (1- \cos \theta) n E_i}{1+a_0^2/2 + (\gamma \theta)^2},}
+\boxed{\epsilon_f \approx \frac{2 \gamma^2 (1- \cos \theta) n \epsilon_i}{1+a_0^2/2 + (\gamma \theta)^2},}
 \end{equation}
-where the contribution $(\gamma \theta)^2$ leads to a fall-off of the photon energy off-axis, so that it reaches $E_f/e$ at about $\theta \sim 1/\gamma$ and the emitted radiation is confined to a cone of that opening angle [see Figure \ref{Theory:Figs:ICS:Divergence_and_Redshift} (left)].
+where the contribution $(\gamma \theta)^2$ leads to a fall-off of the photon energy off-axis, so that it reaches $\epsilon_f/e$ at about $\theta \sim 1/\gamma$ and the emitted radiation is confined to a cone of that opening angle [see Figure \ref{Theory:Figs:ICS:Divergence_and_Redshift} (left)].
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{ICS_Divergence_ElecEnergy.pdf}\includegraphics[width=.5\columnwidth]{ICS_Redshift_a0.pdf}
@@ -530,7 +530,7 @@ where the contribution $(\gamma \theta)^2$ leads to a fall-off of the photon ene
 \label{Theory:Figs:ICS:Divergence_and_Redshift}
 \end{figure}
 
-The equation also shows that higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation, $E_f \propto 1/a^2_0$ for $a_0 \gg 1$. This decrease in energy from the case of $a_0 \rightarrow 0$ is shown for a fixed harmonic in Figure \ref{Theory:Figs:ICS:Divergence_and_Redshift} (right) as a function of $a_0$. At $a_0 = 10$, for instance, the photon energy has reached a value less than $10\%$ of its original value. Whilst a fixed harmonic loses energy with increasing $a_0$, high $a_0$'s give rise to a larger number of higher harmonics, such that the emitted energy in an interaction increases overall. This behaviour will be discussed in more detail in the following.
+The equation also shows that higher $a_0$ leads for a fixed harmonic $n$ to a redshifting of the radiation, $\epsilon_f \propto 1/a^2_0$ for $a_0 \gg 1$. This decrease in energy from the case of $a_0 \rightarrow 0$ is shown for a fixed harmonic in Figure \ref{Theory:Figs:ICS:Divergence_and_Redshift} (right) as a function of $a_0$. At $a_0 = 10$, for instance, the photon energy has reached a value less than $10\%$ of its original value. Whilst a fixed harmonic loses energy with increasing $a_0$, high $a_0$'s give rise to a larger number of higher harmonics, such that the emitted energy in an interaction increases overall. This behaviour will be discussed in more detail in the following.
 
 
 \subsubsection{Cross-Section}
@@ -551,7 +551,7 @@ where we have to evaluate the sum of $n$ differential cross sections to reproduc
 Figure \ref{Theory:Figs:NLICS_diffSigma} shows the emission rate, $\dif W/\dif x$, as a function of the transferred energy for values of $a_0$. First, for the limit of $a_0 \rightarrow 0$ (orange), which corresponds to linear Compton scattering, i.e. $n = 1$, and the result from the Klein-Nishina equation. The spectrum rises up to the Compton edge (dashed line) where it sharply falls off. The blue line shows the emission rates evaluated for $a_0 = 1$: the distinct Compton edge is down-shifted to about half of its original energy. On the other hand, higher harmonics, up to $n = 4$, are emerging and are also down-shifted, with a maximum energy of about twice the Compton edge for $a_0 \rightarrow 0$.
 
 The most significant contribution is still the red-shifted fundamental order, but even for a moderate intensity of $a_0 = 1$ we already had to evaluate the emission rates of $n=4$ harmonics to reproduce the tail of the spectrum accurately. The highest significant order scales as $\sim a^3_0$ \cite{DiPiazza2012_ICS}, such that the number of additional harmonics and related emission rates that have to be evaluated increases rapidly, e.g. $n = 1000$ for $a_0 = 10$. As a result, this approach becomes infeasible relatively quickly. As an alternative, we can for $a_0 \gg 1$ approximate the emission spectrum by the \textit{quantum synchrotron function} \cite{BlackburnThesis,Cole2018_RR} (see Appendix \ref{Appendix:Sec:QuantumSynchrotron}). Figure \ref{Theory:Figs:NLICS_diffSigma} (right) shows the emission rate (times energy) for increasing values of $a_0$. Even for these moderate intensities the high-energy component and relatively quickly also lower energy band structures disappear, and give rise to a smooth synchrotron-like emission spectrum, which indicates that this approach is valid (see for instance \cite{BlackburnThesis} for a more rigorous comparison).
-Whilst the highest significant order increases at $a^3_0$, the energy of the emitted radiation is red-shifted at $E_f \propto 1/a^2_0$ for $a_0 \gg 1$, such that the net energy gain is linear in $a_0$.
+Whilst the highest significant order increases at $a^3_0$, the energy of the emitted radiation is red-shifted at $\epsilon_f \propto 1/a^2_0$ for $a_0 \gg 1$, such that the net energy gain is linear in $a_0$.
 
 \iffalse
 The emitted energy in the linear case was $\propto \gamma^2 a^2_0$, whereas the total emission power slows down for large $a_0$ to $\propto a^{2/3}_0$ \addref{}.
@@ -573,13 +573,13 @@ Z + e^- \longrightarrow Z + e^- + \gamma
 \end{equation}
 or in terms of the Feyman diagram shown in Figure \ref{Theory:Figs:Feynman_Bremsstrahlung}. In the quantum picture the electron exchanges momentum with a virtual photon from the Coulomb field before radiating a photon. From the classical view the charged particle is decelerated (`braked') in the Coulomb field which results in the production of radiation.
 
-In the limit of small photon energies relative to the initial electron energy, $\hbar \omega \ll E$, and relativistic initial and final electron energies, $E, E' \gg Mc^2$ the differential cross section can be written as \cite{Jackson}:
+In the limit of small photon energies relative to the initial electron energy, $\hbar \omega \ll \epsilon$, and relativistic initial and final electron energies, $\epsilon, \epsilon' \gg Mc^2$ the differential cross section can be written as \cite{Jackson}:
 \begin{equation}
-\frac{d \sigma}{d (\hbar \omega)} \approx \frac{16}{3} \frac{Z^2 e^2}{c} \left(\frac{z^2 e^2}{Mc^2}\right)^2 \left(1- \frac{\hbar \omega}{E} + \frac{3}{4} \frac{(\hbar \omega)^2}{E^2}\right) \times \left[\ln\left(\frac{2 E (E-\hbar\omega)}{Mc^2\hbar \omega}\right) - \frac{1}{2}\right],
+\frac{d \sigma}{d (\hbar \omega)} \approx \frac{16}{3} \frac{Z^2 e^2}{c} \left(\frac{z^2 e^2}{Mc^2}\right)^2 \left(1- \frac{\hbar \omega}{\epsilon} + \frac{3}{4} \frac{(\hbar \omega)^2}{\epsilon^2}\right) \times \left[\ln\left(\frac{2 \epsilon (\epsilon-\hbar\omega)}{Mc^2\hbar \omega}\right) - \frac{1}{2}\right],
 \label{Theory:Eqns:Brems_dSigma_dEph}
 \end{equation}
 where $Z$ is the charge number of the nucleus and $z$ the number of electrons in the atomic orbit.
-For $\hbar \omega \ll E$ the doubly differential cross is then 
+For $\hbar \omega \ll \epsilon$ the doubly differential cross is then 
 \begin{equation}
 \frac{d^2 \sigma}{d \omega d \Omega_\gamma} = \left[\frac{3}{2 \pi} \gamma^2 \frac{(1+\gamma^4 \theta^4)}{(1+\gamma^2 \theta^2)^4}\right] \cdot \frac{d \sigma}{d \omega},
 \end{equation}
@@ -609,14 +609,14 @@ A more detailed overview of this topic can be found in parts of \cite{DiPiazza20
 
 There are different parameters that indicate the significance of radiation reaction effects and signal the appropriate description that describes the dynamics most accurately in a particular regime.
 
-The \textit{classical radiation reaction parameter}, $R_c$, for instance, indicates how much energy is radiated in a single cycle relative to the electron energy in the average rest frame, $f = E_{rad}/(\gamma' m) = 4\pi R_c/3$. $R_c$ is in natural units and in terms of experimental variables given by \cite{DiPiazza2010_QRR,Blackburn2019_RRReview}:
+The \textit{classical radiation reaction parameter}, $R_c$, for instance, indicates how much energy is radiated in a single cycle relative to the electron energy in the average rest frame, $f = \epsilon_{rad}/(\gamma' m) = 4\pi R_c/3$. $R_c$ is in natural units and in terms of experimental variables given by \cite{DiPiazza2010_QRR,Blackburn2019_RRReview}:
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
 R_c &= \frac{\alpha a^2_0 \gamma_0 (1+\beta_0) \omega_0}{m} \\ \nonumber
-&\approx 0.13 \left(\frac{E_0}{500\MeV}\right) \left( \frac{I_0}{10^{22}\,\mathrm{W/cm^2}}\right)\left(\frac{\lambda}{\mathrm{\mu m}}\right),
+&\approx 0.13 \left(\frac{\epsilon_0}{500\MeV}\right) \left( \frac{I_0}{10^{22}\,\mathrm{W/cm^2}}\right)\left(\frac{\lambda}{\mathrm{\mu m}}\right),
 \end{empheq}
 \end{subequations}
-where $\alpha$ denotes the fine-structure constant, $a_0$ the normalised vector potential,  $\omega_0$ is the laser frequency and $m$ is the electron mass, $\lambda$ is the laser wavelength, $I_0$ the peak intensity and $E_0$ the initial energy of the electron. $\gamma' = (1+a^2_0)^{1/2}$ and $\beta' = a_0 (1+ a^2_0)^{-1/2}$. 
+where $\alpha$ denotes the fine-structure constant, $a_0$ the normalised vector potential,  $\omega_0$ is the laser frequency and $m$ is the electron mass, $\lambda$ is the laser wavelength, $I_0$ the peak intensity and $\epsilon_0$ the initial energy of the electron. $\gamma' = (1+a^2_0)^{1/2}$ and $\beta' = a_0 (1+ a^2_0)^{-1/2}$. 
 Significant radiation damping occurs for $R_c \geq 0.24$ \cite{Thomas2012_LL}, when the energy loss per period approaches $10\%$ of the electron energy.  For $R_c \geq 1$ \cite{DiPiazza2010_QRR} we reach the \textit{radiation-dominated regime}.
 
 We can also, on the other hand, estimate the magnitude of a specific radiation reaction force relative to the Lorentz force.
@@ -892,7 +892,7 @@ The total cross section, $\sigma_{e^+e^-}$, is given by \cite{Ruffini2010_PAIRSA
 \boxed{\sigma_{e^+ e^-} = \frac{\pi r^2_e}{2} (1-\beta^2) \left[ (3-\beta^4) \ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right],}
 \label{Theory:Eqs:PairAnnihilation_totXsec}
 \end{equation}
-where $r_e = e^2/4\pi\epsilon_0m_ec^2$ is the classical electron radius, $\beta = \sqrt{1-1/s}$ is the centre-of-mass velocity and $s = (E_{CM}/m_e c^2)^2$ the square of the centre-of-mass (CM) energy. In the limit of ultrarelativistic energies, i.e. $s \rightarrow \infty$, $\beta \rightarrow 1$ and as a result $\sigma_{e^+ e^-} \rightarrow 0$. At low energies, $s \rightarrow 1$ reducing the energy to the rest mass, $\beta \rightarrow 0$ and the total cross section diverges, $\sigma_{e^+ e^-} \rightarrow \infty$, due to the logarithm $\ln[(1+\beta)/(1-\beta)]$. The total cross section is shown as a function of the centre-of-mass energy, $\sqrt{s}$, in Figure \ref{Theory:Figs:Xsec:DiracBW}.
+where $r_e = e^2/4\pi\epsilon_0m_ec^2$ is the classical electron radius, $\beta = \sqrt{1-1/s}$ is the centre-of-mass velocity and $s = (\epsilon_{CM}/m_e c^2)^2$ the square of the centre-of-mass (CM) energy. In the limit of ultrarelativistic energies, i.e. $s \rightarrow \infty$, $\beta \rightarrow 1$ and as a result $\sigma_{e^+ e^-} \rightarrow 0$. At low energies, $s \rightarrow 1$ reducing the energy to the rest mass, $\beta \rightarrow 0$ and the total cross section diverges, $\sigma_{e^+ e^-} \rightarrow \infty$, due to the logarithm $\ln[(1+\beta)/(1-\beta)]$. The total cross section is shown as a function of the centre-of-mass energy, $\sqrt{s}$, in Figure \ref{Theory:Figs:Xsec:DiracBW}.
 
 
 
@@ -931,7 +931,7 @@ In the CM frame the total cross section for the process is given by \cite{Gould1
 \boxed{\sigma_{\gamma,\gamma} = \frac{\pi r^2_e}{2}(1-\beta^2) \left[(3-\beta^4) \ln\left(\frac{1+\beta}{1-\beta}\right) - 2 \beta (2-\beta^2)\right] = 2 \beta^2 \sigma_{e^+ e^-},}
 \label{Theory:Eqs:BWPairs_totXsec}
 \end{equation}
-where again $s = (E_{CM}/m_e c^2)^2 = E_{\gamma 1} E_{\gamma 2} (1-\cos\phi)/2 m^2_e c^4$, and $\beta = \sqrt{1-1/s}$, so that it is again required that $s \geq 1$. We see that for a head-on collision ($\theta = \pi$) $s = E_1 E_2/m^2_e c^4$ and for a right-angle scattering ($\theta = \pi/2$) only half of this, $s = E_1 E_2/2m^2_e c^4$. 
+where again $s = (\epsilon_{CM}/m_e c^2)^2 = \epsilon_{\gamma 1} \epsilon_{\gamma 2} (1-\cos\phi)/2 m^2_e c^4$, and $\beta = \sqrt{1-1/s}$, so that it is again required that $s \geq 1$. We see that for a head-on collision ($\theta = \pi$) $s = \epsilon_1 \epsilon_2/m^2_e c^4$ and for a right-angle scattering ($\theta = \pi/2$) only half of this, $s = \epsilon_1 \epsilon_2/2m^2_e c^4$. 
 
 \begin{figure}
 \centering
@@ -961,14 +961,14 @@ After having calculated the differential cross section in the CM frame, we now w
 
 The particle energy and momenta in the laboratory system are calculated using
 \begin{align}
-E_{3,4} &= \gamma_{CM} \left( E^{CM}_{3,4} + \bm{\beta}_{CM} \cdot \mathbf{p}^{CM}_{3,4}\right),\\
-\mathbf{p}_{3,4} &= \mathbf{p}^{CM}_{3,4} + \frac{\gamma_{CM}-1}{\beta^2_{CM}}\left(\bm{\beta}_{CM} \cdot \mathbf{p}^{CM}_{3,4}\right) \bm{\beta}_{CM} + \gamma_{CM} E^{CM}_{3,4} \bm{\beta}_{CM},
+\epsilon_{3,4} &= \gamma_{CM} \left( \epsilon^{CM}_{3,4} + \bm{\beta}_{CM} \cdot \mathbf{p}^{CM}_{3,4}\right),\\
+\mathbf{p}_{3,4} &= \mathbf{p}^{CM}_{3,4} + \frac{\gamma_{CM}-1}{\beta^2_{CM}}\left(\bm{\beta}_{CM} \cdot \mathbf{p}^{CM}_{3,4}\right) \bm{\beta}_{CM} + \gamma_{CM} \epsilon^{CM}_{3,4} \bm{\beta}_{CM},
 \end{align}
-with $\gamma_{CM} = (E_1 + E_2)/\sqrt{s}$ and $\bm{\beta}_{CM} = (\mathbf{p}_1 + \mathbf{p}_2)/(E_1 + E_2)$.
-Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB_TOP} (right) shows the angular energy distribution in the laboratory frame for different ratios of the two photon energies $E_1/E_2$, with $E_1 = 300\MeV$. For $E_1 = E_2$ the laboratory frame and the CM frame are identical (blue). Here the emitted energies are isotropic, but for $s > 1$ preferentially emitted at $\theta = 0, \pi$. At a fixed value of $E_1$ and $E_1 > E_2$, a decreasing energy of the second photon, $E_2$, i.e. $E_2/E_1 <1$, higher energies are emitted in forwards direction as momentum has to be conserved. Combined with the differential cross section we are expecting that particles of energy $\sim E_1$ are emitted predominantly in forwards direction. Note that the energy distribution and the differential cross section are identical for electrons and positrons.
+with $\gamma_{CM} = (\epsilon_1 + \epsilon_2)/\sqrt{s}$ and $\bm{\beta}_{CM} = (\mathbf{p}_1 + \mathbf{p}_2)/(\epsilon_1 + \epsilon_2)$.
+Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB_TOP} (right) shows the angular energy distribution in the laboratory frame for different ratios of the two photon energies $\epsilon_1/\epsilon_2$, with $\epsilon_1 = 300\MeV$. For $\epsilon_1 = \epsilon_2$ the laboratory frame and the CM frame are identical (blue). Here the emitted energies are isotropic, but for $s > 1$ preferentially emitted at $\theta = 0, \pi$. At a fixed value of $\epsilon_1$ and $\epsilon_1 > \epsilon_2$, a decreasing energy of the second photon, $\epsilon_2$, i.e. $\epsilon_2/\epsilon_1 <1$, higher energies are emitted in forwards direction as momentum has to be conserved. Combined with the differential cross section we are expecting that particles of energy $\sim \epsilon_1$ are emitted predominantly in forwards direction. Note that the energy distribution and the differential cross section are identical for electrons and positrons.
 
 We will now discuss how this asymmetry affects how energy and momentum is shared between the two emitted particles. For this purpose we will consider two specific examples of scattering angles in the centre-of-mass frame to symptomatically indicate their behaviour.
-Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB_BOTTOM} shows the energy distribution between the two particles in the laboratory frame at a fixed scattering angle in the CM frame of $\theta_{CM} = 90^\circ \pm 180^\circ$ (left) and $45^\circ \pm 180^\circ$ (right) for three ratios of $E_1/E_2$. For $E_1 = E_2$ the particles are emitted back-to-back as the CM frame and the laboratory are equivalent. With increasing asymmetry as $E_2/E_1 < 1$ the centre-of-mass velocity $\beta_{CM}$ increases in forwards direction and results in a head-light effect that rotates the momentum vectors towards $\theta = 0$. As a result, for a large centre-of-mass velocity all particles are emitted in forwards direction, a phenomenon sometimes referred to as pair-beaming \cite{Ribeyre2018_BW}. In the case of $\theta_{CM} = 90^\circ$ the transformation back into the laboratory frame conserves the symmetry of the emission angle relative to the zero-degree axis such that both particles carry the same energy, $(E_1+E_2)/2$. For a non-perpendicular scattering angle, here at the example of $\theta_{CM} = 45^\circ$, the relativistic boost results in an increasingly unequal distribution of the energies amongst the two particles, strongly favouring the forwards scattered particle whereas the backwards scattered particle only carries a small fraction of the total energy. This example describes the typical emitted momentum distribution for the setup presented in Chapter \ref{Chap:BW} most accurately, whilst an equal momentum distribution is only produced in the special case of perpendicular scattering, which is further suppressed as the centre-of-mass energy, $s$, increases. 
+Figure \ref{Theory:Figs:BW_DiffXsec_CM_E_LAB_BOTTOM} shows the energy distribution between the two particles in the laboratory frame at a fixed scattering angle in the CM frame of $\theta_{CM} = 90^\circ \pm 180^\circ$ (left) and $45^\circ \pm 180^\circ$ (right) for three ratios of $\epsilon_1/\epsilon_2$. For $\epsilon_1 = \epsilon_2$ the particles are emitted back-to-back as the CM frame and the laboratory are equivalent. With increasing asymmetry as $\epsilon_2/\epsilon_1 < 1$ the centre-of-mass velocity $\beta_{CM}$ increases in forwards direction and results in a head-light effect that rotates the momentum vectors towards $\theta = 0$. As a result, for a large centre-of-mass velocity all particles are emitted in forwards direction, a phenomenon sometimes referred to as pair-beaming \cite{Ribeyre2018_BW}. In the case of $\theta_{CM} = 90^\circ$ the transformation back into the laboratory frame conserves the symmetry of the emission angle relative to the zero-degree axis such that both particles carry the same energy, $(\epsilon_1+\epsilon_2)/2$. For a non-perpendicular scattering angle, here at the example of $\theta_{CM} = 45^\circ$, the relativistic boost results in an increasingly unequal distribution of the energies amongst the two particles, strongly favouring the forwards scattered particle whereas the backwards scattered particle only carries a small fraction of the total energy. This example describes the typical emitted momentum distribution for the setup presented in Chapter \ref{Chap:BW} most accurately, whilst an equal momentum distribution is only produced in the special case of perpendicular scattering, which is further suppressed as the centre-of-mass energy, $s$, increases. 
 
 \subsubsection{Nonlinear Breit-Wheeler process}
 
@@ -987,7 +987,7 @@ The equation for this \textit{nonlinear Breit-Wheeler process} then becomes:
 \end{equation}
 Similarly as for nonlinear Compton scattering (Section \ref{Theory:Sec:NonlinearICS}), the multiphoton process requires the evaluation of higher order Feynman diagrams or, in the Furry picture, the use of Volkov states to sum over all possible states (see Section \ref{Theory:Sec:RadiationProductionIntro}). The corresponding Feynman diagram is shown in Figure \ref{Theory:Figs:NlinBW_FeynmanDiag}.
 
-Considering the special case of one high-energy photon colliding with $n$ identical low-energy photons \cite{Bula1996_RR,Burke1997_RR}, for instance optical photons from a laser, the corresponding centre-of-mass energy can simply be written as  $s = (E_{CM}/m_e c^2)^2 = E_{\gamma} n E_{\gamma_n} (1-\cos\phi)/2 m^2_e c^4$. 
+Considering the special case of one high-energy photon colliding with $n$ identical low-energy photons \cite{Bula1996_RR,Burke1997_RR}, for instance optical photons from a laser, the corresponding centre-of-mass energy can simply be written as  $s = (\epsilon_{CM}/m_e c^2)^2 = \epsilon_{\gamma} n \epsilon_{\gamma_n} (1-\cos\phi)/2 m^2_e c^4$. 
 The total rate for the Breit-Wheeler pair production is (in natural units) given by \cite{BlackburnThesis}
 \begin{equation}
 \boxed{W_{\pm} = \frac{\alpha}{\tau_C} \frac{mc^2}{\hbar \omega}\chi T(\chi),}
@@ -1027,7 +1027,7 @@ The differential cross section for the process is related to the bremsstrahlung 
 \begin{equation}
 \frac{d \sigma_{\gamma Z}}{dE_+}(\omega,x) = -\frac{1}{\hbar x^2}\frac{d\sigma_{eZ}}{d\omega}(-\omega,x),
 \end{equation}
-where $x = \hbar \omega / E_+$, the ratio of the initial photon to the final positron energy. The full cross section is given in Section \ref{Appendix:Sec:BetheHeitler}.
+where $x = \hbar \omega / \epsilon_+$, the ratio of the initial photon to the final positron energy. The full cross section is given in Section \ref{Appendix:Sec:BetheHeitler}.
 In the ultrarelativistic case the total cross section for a photon of energy $\omega$ to produce a pair is \cite{Bethe1954_BREMS,Davies1954_BREMSPAIR,Ruffini2010_PAIRSASTRO}
 \begin{equation}
 \sigma_{\gamma Z} = \frac{28}{9} Z^2 \alpha r^2_e \left(\ln\frac{2\omega}{m_e} - \frac{109}{42} - f(Z\alpha)\right),
