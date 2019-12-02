@@ -9,13 +9,36 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 
-\usepackage[numbers,sort&compress]{natbib}
-\bibliographystyle{GThesis2}
+%\usepackage[numbers,sort&compress]{natbib}
+%\bibliographystyle{GThesis2}
 
-%\usepackage[backend=biber,bibencoding=utf8,block=ragged,citestyle=numeric-comp,sorting=none,bibstyle=numeric-comp,hyperref,firstinits=true]{biblatex} % ,sortcites=true,
-%\input{latex-biblatexmodification.tex}
-%\bibliography{ICS_Diag,General,Theses,Plasma,SPD,LaserDiags,GammaDet,Betatron,Facilities,Wakefield,Sims,Ionisation,Xrays,IonAcc,ICSRR,Narozhny,BW_Astro}
-%\usepackage[babel]{csquotes}
+\usepackage[colorlinks=true, citecolor=blue,urlcolor=purple, linkcolor = black, pdfborder={0 0 0},backref=none]{hyperref}
+%,
+\usepackage{hypernat}
+%\usepackage{cleveref}
+
+\usepackage[backend=biber,bibencoding=utf8,block=ragged,citestyle=numeric-comp,sorting=none,bibstyle=numeric-comp,hyperref,firstinits=true]{biblatex} % ,sortcites=true,
+\input{latex-biblatexmodification.tex}
+\addbibresource{./SFQED.bib}
+\addbibresource{./ICS_Diag.bib}
+\addbibresource{./General.bib}
+\addbibresource{Theses.bib}
+\addbibresource{Plasma.bib}
+\addbibresource{LaserDiags.bib}
+\addbibresource{GammaDet.bib}
+\addbibresource{Betatron.bib}
+\addbibresource{Facilities.bib}
+\addbibresource{Wakefield.bib}
+\addbibresource{Sims.bib}
+\addbibresource{Ionisation.bib}
+\addbibresource{Xrays.bib}
+\addbibresource{IonAcc.bib}
+\addbibresource{ICSRR.bib}
+\addbibresource{Narozhny.bib}
+\addbibresource{BW_Astro.bib}
+\addbibresource{SPD.bib}
+\usepackage[babel]{csquotes}
+\usepackage{doi}
 
 \usepackage{amsmath}
 \usepackage{bm}
@@ -93,17 +116,14 @@
 \usepackage{cancel}
 
 
-\usepackage[colorlinks=true, citecolor=blue,urlcolor=purple, linkcolor = black, pdfborder={0 0 0},backref=page]{hyperref}
-%,
-\usepackage{hypernat}
-\usepackage{cleveref}
 
-\renewcommand*{\backref}[1]{}
-\renewcommand*{\backrefalt}[4]{%
-    \ifcase #1 (Not cited.)%
-    \or        (Cited on page~#2.)%
-    \else      (Cited on pages~#2.)%
-    \fi}
+
+%\renewcommand*{\backref}[1]{}
+%\renewcommand*{\backrefalt}[4]{%
+%    \ifcase #1 (Not cited.)%
+%    \or        (Cited on page~#2.)%
+%    \else      (Cited on pages~#2.)%
+%    \fi}
 
 \numberwithin{equation}{section}
 
@@ -310,12 +330,12 @@ Stuart Mangles (IC) was the principal investigator (PI) for all three experiment
 \end{appendices}
 
 \clearpage
-\renewcommand{\bibname}{Bibliography}
-\bibliography{SFQED,ICS_Diag,General,Theses,Plasma,SPD,LaserDiags,GammaDet,Betatron,Facilities,Wakefield,Sims,Ionisation,Xrays,IonAcc,ICSRR,Narozhny,BW_Astro}%}{}
-%\bibliographystyle{unsrt}
+%\renewcommand{\bibname}{Bibliography}
+%\bibliography{SFQED,ICS_Diag,General,Theses,Plasma,SPD,LaserDiags,GammaDet,Betatron,Facilities,Wakefield,Sims,Ionisation,Xrays,IonAcc,ICSRR,Narozhny,BW_Astro}
 
-%\phantomsection	%
-%\printbibliography[heading=head]
+\phantomsection	%
+\addcontentsline{toc}{chapter}{Bibliography}  
+\printbibliography[heading=head]
 
 \end{document}
 
