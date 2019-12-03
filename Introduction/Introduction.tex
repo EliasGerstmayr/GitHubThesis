@@ -4,108 +4,102 @@
 \label{Chap:Introduction}
 
 Developing a better understanding of the fundamental principles of nature lies at the very heart of science. 
-Ultrarelativistic particle accelerators represent powerful `microscopes', which provide invaluable insights into the fundamental building blocks of nature.
-Moreover, they have enabled many interdisciplinary applications, including ultra-bright FEL-based photon sources.
-\EliasComm{Mention Standard Model and Higgs}
+Ultrarelativistic particle accelerators represent powerful `microscopes', which provide invaluable insights into the fundamental building blocks of nature\addref.
+The recent discovery of the Higgs boson \cite{Higgs1964_HIGGS,Englert1964_HIGGS,Guralnik1964_HIGGS,ATLAS2012_expHIGGS,CMS2012_expHIGGS} completes the \textit{Standard Model} of particle physics\addref, which classifies the zoo of known elementary particles and describes the interaction of the fundamental forces (except gravitation).
+Moreover, they have enabled many interdisciplinary applications\addref, including ultra-bright FEL-based photon sources\addref.
 
-Since the invention of the Nobel-prize awarded chirped-pulse amplification technique peak intensities of optical lasers have increased exponentially. This development has revolutionised our understanding of light-matter interactions and lead to disruptive transformations. They created entire novel scientific fields, such as strong-field atom and molecular science, attosecond physics, relativistic and nonlinear optics, and high energy density physics (HEDP).
-\EliasComm{Mention high number of facilities.}
-\EliasComm{Mention LWFA as explicit example?}
+Since the invention of the Nobel-prize awarded \textit{chirped-pulse amplification} (CPA) technique \cite{Strickland1985_CPA} peak intensities of optical lasers have increased exponentially, while at the same time the number of high-intensity laser systems has surged \cite{Danson2019_PWLASERS}. This development has revolutionised our understanding of light-matter interactions and lead to disruptive transformations \cite{Mourou2019_Nobel}. The advent of CPA created entire novel scientific fields, such as strong-field atom and molecular science \cite{Protopapas1997_HIAtomic,Schafer1993_AboveThreshold,Corkum1993_multiPhoton,Freeman1987_AboveThreshold}, attosecond physics \cite{Calegari2014_ATTOSECONDS}, relativistic and nonlinear optics \cite{Mori1997_NONLINEARPLASMA}, and laboratory astrophysics \cite{Albertazzi2014_LABASTRO}. It also enabled the realisation of the plasma-based \textit{laser wakefield acceleration} (LWFA) \cite{Mangles2004_MONO,Faure2004_MONO,Geddes2004_MONO}, where a laser pulse of relativistic intensities forms an accelerating cavity with high field gradients \cite{Esarey2009_LPA_Review}. 
 
-The marriage of both technologies -- ultra-relativistic particle accelerators and ultra-intense lasers -- is bound to boost our understanding of nature once again, by providing access to electromagnetic fields which reach and potentially exceed those encountered in extreme astrophysical environments, e.g., close to the surface of a neutron star. The fundamental scale, at which qualitatively new physics is expected, is the so-called QED critical field. This scale defines the ``strong-field frontier'', which is complementary to the ``energy frontier'', that is traditionally explored with accelerators. 
-\EliasComm{Mention future research and that multi-PW facilities will in laser-plasma interactions probe an interplay between strong-field quantum and collective effects.}
-\EliasComm{Mention it enables access to light-light colliders (real, not virtual!)}
-\EliasComm{Mention that this work presents results at the intersection of accelerators, high-energy light sources and lasers.}
-\clearpage
+The marriage of both technologies -- ultra-relativistic particle accelerators and ultra-intense lasers -- is bound to boost our understanding of nature once again, by providing access to electromagnetic fields which reach and potentially exceed those encountered in extreme astrophysical environments, e.g., close to the surface of a neutron star\addref. The fundamental scale, at which qualitatively new physics is expected, is the so-called \textit{Schwinger field}, \textit{Sauter field} or also \textit{critical field of QED} \cite{Sauter1931_ECRIT,Heisenberg1936_ECRIT,Schwinger1951_VACPAIRS}. This scale defines the ``strong-field frontier''\addref, which is complementary to the ``energy frontier''\addref, that is traditionally explored with accelerators. This regime bears ample research opportunities which will be explored at conventional accelerator facilities \cite{Burkart2019_LUXE,Abramowicz2019_LUXE,SFQEDOverview2019,Hogan2016_FACETII} and the next generation of multi-PW laser facilities \cite{Gales2018_ELINP,Weber2017_ELIBeamlines,Zou2015_Apollon,Li2017_SULF,Shen2018_SULF,Cartlidge2018_SEL,Toth2017_BELLA,Bashinov2014_XCELS,Kessel2018_PWMPQ,EPAC_Website,Maksimchuk2019_ZEUS,Yanovsky2008_HERCULES} probing strong-field effects in laser-matter interactions\addref{}, also the interplay with collective effects and photon-photon interactions\addref.
+%This work and the work presented here is then consequently located at the intersection of accelerators, high-energy light sources and high-intensity lasers.
+
 
 \section{Particle Accelerators}
-
+\label{Introduction:Sec:PartAccelerators}
 
 \begin{figure}
 \centering
 \includegraphics[height=0.4\columnwidth]{CERN_Aerial.jpg}\includegraphics[height=0.4\columnwidth]{Livingston_Plot_1.png}
 \caption{From \cite{CERN_Aerial}. Second be Livingston plot.  \cite{LivingstonPlot}}
+\label{Introduction:Figs:CERN_Livingston}
 \end{figure}
 \EliasComm{Add Plot: Livingston changes, own plot.}
 
-\EliasComm{Storyline: Explain what acc. is, then new physics via new ENERGY, phenomena and slow-down for luminosity}
-
-\textbf{Driving force for understanding is higher energy (smaller wavelength), secondary now luminosity}
-
-Charged particles are accelerated by electric fields. In the first accelerators static strong high voltage fields were used for this purpose. Helium and neon atoms were ionised and the atom was split. 
-
-The particle energy determines the physics that can be resolved, see de Broglie wavelength $\lambda = h/p$, such that accelerators grow further and further in size (and expense) in order to access new physics. Higher energies also allow to produce particles due to the energy equivalence, such that the key quantity is the centre-of-mass energy
+In a microscope the smallest feature that can ultimately be resolved is determined by the wavelength of the light used to backlight the sample, or more generally \textit{the characteristic scale of the probe has to be smaller than the object it tries to resolve}. By considering the \textit{de Broglie wavelength}, $\lambda_{dB} = h/p$ \addref{}, we can intuitively motivate why higher and higher energies are required for particle accelerators. Higher energies allow us to resolve smaller scales. Higher energies also allow to produce particles due to the energy equivalence, $\epsilon = mc^2$, such that the key quantity is the \textit{centre-of-mass energy}, which is for two ultrarelativistic particles, $\epsilon \gg mc^2$, of same species colliding with each other at an angle $\theta$\addref:
 \begin{equation}
-s = \frac{(1-\cos \theta) \epsilon_1 \epsilon_2}{2 m c^2}
+\boxed{s = \frac{(1-\cos \theta) \epsilon_1 \epsilon_2}{2 m c^2}}
 \end{equation}
-Maintaining large electric field gradients over long distances is, however, difficult. In modern particle accelerators the metal cavities are set under high fields at a radio-frequency, in phase with particles passing through them. Newer generations are based on superconducting coils reaching field strengths of up to $100 MV/m$, where materials start to break down at higher field strengths. Increasing energy then comes at larger scale. 
+In modern particle accelerators the metal cavities are set under high fields at a radio-frequency, in phase with particles passing through them\addref. Newer generations are based on superconducting coils reaching field strengths of up to $\sim 100\,\mathrm{MV/m}$, where materials start to break down at higher field strengths\addref. A complementary technology that could extend the energy range is the use of plasmas \cite{Lee2002_Afterburner}, which can in principle sustain orders of magnitude higher field gradients \cite{Dawson1959_COLDWAVEBREAKING}, e.g. $\sim 100\,\mathrm{GV/m}$ for a plasma of density $n_e = 10^{18}\,\mathrm{cm}^{-3}$. Fundamentally however, increasing energy then comes at larger scale. 
 
-Alternative is using circular accelerators where same segments can be used again and again. However, particles radiate at $P$\addnum{} such that electron accelerators would have to be very big. As a result have much higher proton accelerator energies at CERN which is massive. Figure XX\addnum{} shows an aerial view of the LHC at CERN and its massive outline. Future facilities like CLIC \cite{CLIC2012}, ILC \cite{ILC2013} or the FCC \cite{Benedikt2016_FCC} aim to make use of improved cavities and extend their size 
+A way to reduce the footprint is the use of circular accelerators where same accelerator segments are use more than once, where magnets are used to keep the particles in the loop. However, due to the bending radius the particles constantly are accelerated and radiate as a consequence. The associated emission power, and consequently the rate at which the particle loses energy, is the \textit{Larmor emission power} \cite{Jackson}
+\begin{equation}
+\boxed{P_L = \frac{1}{6 \pi \epsilon_0 c^5} \left( \frac{q}{m}\right)^4 \epsilon^2 B^2,}
+\end{equation}
+where we see that the emission power increases quadratically with the energy of the particle, $\epsilon$, and the magnetic field, $B$ (stronger fields result in smaller bending radii). We also see that it scales with the charge to mass ratio by $(q/m)^4$ which indicates that circular accelerators are not ideal for electrons. As a result, circular accelerators are typically only used for proton or heavy ion accelerators, and end up being very big to reduce the magnetic field strength and emission power. Figure \ref{Introduction:Figs:CERN_Livingston} (left) shows the extensive size of the Large Hadron Collider (LHC) at CERN with a diameter of XX and circumference of XX\addnum. Electron or other lepton accelerators are typically linear accelerators, for instance SLAC with XX\addnum{}. Future facilities like CLIC \cite{CLIC2012}, ILC \cite{ILC2013} or the FCC \cite{Benedikt2016_FCC} aim to make use of improved cavities and extend their size. 
 
-At the same time proton or more complex particles are difficult and messy when interacting due to the complex nature of QCD, so that electron colliders are hard to reach at high energies and electron beam lines are typically linear accelerator (designs).  
-Figure XX\addnum{} Livingston plot shows the increasing centre-of-mass energy. 
-
-One complementary technology to extend the energy range is the use of plasmas \cite{Lee2002_Afterburner} which can sustain thousands of times higher field gradients than solid materials.
-
-The story of accelerators is a success story, with the standard model being well documented and predictive. The Higgs boson is the final particle to complete the set \cite{Higgs1964_HIGGS,Guralnik1964_HIGGS,Englert1964_HIGGS,ATLAS2012_expHIGGS,CMS2012_expHIGGS}.
+(An important distinction) Another worth noting is that proton or more complex particles are difficult and messy when interacting due to the complex nature of QCD\addref, so that the interaction of elementary leptons is highly desirable but harder to achieve.
 \vspace{\baselineskip}
 
-The radiation (limiting factor) of accelerators has also proven to be immensely useful to image and understand material structures and chemical processes. The state-of-the-art light sources are nowadays free-electron lasers (FELs). Entire facilities to produce this radiation and opened up fields, useful for atom, molecular, chemical sciences and so on.
+Despite the cost and the challenges the centre-of-mass energy has continuously increased, which is visualised in a so-called \textit{Livingston plot} shown in Figure \ref{Introduction:Figs:CERN_Livingston} (right).
+As a result, the story of accelerators is a success story, with the standard model being well documented and predictive. The Higgs boson is the final particle to complete the set \cite{Higgs1964_HIGGS,Guralnik1964_HIGGS,Englert1964_HIGGS,ATLAS2012_expHIGGS,CMS2012_expHIGGS}. Fundamental forces. Still require a unified theory including gravitation and other physics beyond the standard model (dark matter, energy and so on)\addref.
 \vspace{\baselineskip}
 
-Reaching a slow down in energy existing facilities are upgrading their systems to instead increase the luminosity (HL-LHC \cite{Apollinari2015_HLLHC}) to produce more data and to facilitate precision studies of rare processes \cite{Atlas2012_HLLHCPhysics} like light-light scattering in ultra-peripheral scattering and other studies beyond the standard model including exotic projects like aligned crystals, laser through wall, and so on. However, light-light is virtual, so not real.
+The radiation (limiting factor) of accelerators has also proven to be immensely useful to image and understand material structures and chemical processes\addref. The state-of-the-art light sources are nowadays free-electron lasers (FELs)\addref, dubbed `Nature' machines due to their high impact on a wide range of fields\addref. Entire facilities to produce this radiation and opened up fields, useful for atom, molecular, chemical sciences and so on\addref.
+\vspace{\baselineskip}
 
+Reaching a slow down in energy existing facilities are upgrading their systems to instead increase the luminosity (HL-LHC \cite{Apollinari2015_HLLHC}) to produce more data and to facilitate precision studies of rare processes \cite{Atlas2012_HLLHCPhysics} like light-light scattering in ultra-peripheral scattering \cite{Enterria2013_PhPh,ATLAS2017_GammaGamma}, also for studies of physics beyond the standard model \cite{Beresford2019_PhPh_SLEPTONS,Knapen2017_PhPh_AXIONLIKE}.
 
 \section{High-intensity lasers}
-\EliasComm{Storyline: Explain how high-intensity lasers became, then new physics via new INTENSITY, phenomena and slow-down for repetition rate}
+\label{Introduction:Sec:HILasers}
 
-\textbf{Driving force is intensity, secondary is short durations (for time resolution).}
-
-
-Since the invention of CPA laser intensities have been increasing rapidly. Higher intensities are also the driving factor to access fundamentally new science so that the rapid access to higher intensities have revolutionised our understanding of laser-matter interactions (see parallel to Livingston plot).
-Number of intense lasers has increased as field opens up and more and more applications \cite{Danson2019_PWLASERS}
+Whilst in particle physics the centre-of-mass energy was the driving factor, here the \textit{peak intensity} of the laser field determines access to fundamentally new science
+The intensity is the unit energy deliver per unit area and time, commonly given in units $\mathrm{W/cm^2}$. The peak intensity for a laser pulse Gaussian in time and space, using \textsc{fwhm} quantities is then
+\begin{equation}
+\boxed{I_0 = 0.415 \frac{\epsilon_J}{d^2_s \tau_{\textsc{fwhm}}}}.
+\end{equation}
+In the context of relativistic intensities we commonly also use the \textit{normalised vector potential}, $a_0$, where unity indicates a relativistic intensity\addref
+\begin{equation}
+\boxed{a_0 = \frac{eE_0}{m_e c \omega_L} = 0.856 \sqrt{\frac{I \lambda^2}{10^{18}\,\mathrm{W/cm^2 \upmu m^2}}}}
+\end{equation}
+so we see that we can reach higher intensities by reducing the pulse duration and increasing the energy, also $\lambda^2$.
+\vspace{\baselineskip}
 
 \begin{figure}
 \centering
 \includegraphics[width=0.8\columnwidth]{LaserIntensities.png}
 \caption{Laser intensities. Printed with permission \cite{Mourou2019_Nobel}. Alternative could be from 2002.}
+\label{Introduction:Figs:IntensityPhysics}
 \end{figure}
 
-
-The intensity is the unit energy delivered per unit time and area:
-\begin{equation}
-I = E/At
-\end{equation}
-In the context of relativistic intensities we commonly also use the normalised vector, where unity indicates a relativistic intensity
-\begin{equation}
-a_0 = sqrt{I}
-\end{equation}
-so we see that we can reach higher intensities by reducing the pulse duration and increasing the energy.
+Since the invention of CPA laser intensities have been increasing rapidly\addref. 
+Number of intense lasers has increased as field opens up and more and more applications \cite{Danson2019_PWLASERS}. 
+The rapid access to higher intensities have revolutionised our understanding of laser-matter interactions (see parallel to Livingston plot) shown in Figure \ref{Introduction:Figs:IntensityPhysics}.
 \vspace{\baselineskip}
 
 Approaching the atomic intensity of $\sim\!10^{16}\,\mathrm{W/cm^2}$ nonperturbative laser-atom interactions give rise to a wealth of strong-field phenomena, including tunnel ionization and recollision-induced high-harmonic generation (HHG) \cite{Protopapas1997_HIAtomic,Schafer1993_AboveThreshold,Freeman1987_AboveThreshold,Corkum1993_multiPhoton}. 
 The fields are then strong field atom and molecular sciences, ionisation (tunnel, barrier, multiphoton).
 \vspace{\baselineskip}
 
+\iffalse
 \begin{figure}
 \centering
 \includegraphics[width=0.9\columnwidth]{ICUIL3Maps.pdf}
 \caption[Ultrahigh intensity laser facilities worldwide.]{Ultrahigh intensity laser facilities worldwide according to ICUIL \cite{ICUIL2019_Map}. To qualify peak laser intensity of $10$ TW.}
 \end{figure}
+\fi
 
-
-Reaching relativistic intensities we are now able to access relativistic and nonlinear optics. Here the electron motion becomes relativistic.
-This includes studies in high energy density physics (HEDP), also involving ICF studies. The high photon density also enables nonlinear photon interactions.
-One example relevant in this context of relativistic motions is the ponderomotive force.
+Reaching relativistic intensities $10^{18}\,\mathrm{W/cm^2}$ we are now able to access relativistic and nonlinear optics\addref. Here the electron motion becomes relativistic ($a_0 \rightarrow 1$)\addref.
+This includes studies in high energy density physics (HEDP), also involving ICF studies. The high photon density also enables nonlinear photon interactions\addref.
+One example relevant in this context of relativistic motions is the \textit{ponderomotive force}\addref.
 \begin{equation}
-F_p \propto \Delta I
+\boxed{\mathbf{F}_p = - m_e c^2 \nabla \frac{\langle a^2 \rangle}{2},}
 \end{equation}
 which pushes away from regions of high-intensities
 \vspace{\baselineskip}
 
-It also enabled the development of plasma-based accelerator techniques, in particular LWFA: one more recent is the application to develop accelerators (LWFA) in the interplay with plasmas.
+Relativistic intensities and nonlinear optics also enabled the development of plasma-based accelerator techniques, in particular LWFA\addref: one more recent is the application to develop accelerators (LWFA) in the interplay with plasmas.
 \EliasComm{Add plot: Wakefield plot (maybe Jason's)}
-Here an intense laser pulse travels through a plasma and expels electrons in its way. The wake it forms has strong electric fields due to the space charge separation. If electrons are injected they can be accelerated to relativistic energies in short distances. The oscillation of the particles can also be used as light source. 
+Here an intense laser pulse travels through a plasma and expels electrons in its way. The wake it forms has strong electric fields due to the space charge separation. If electrons are injected they can be accelerated to relativistic energies in short distances. The oscillation of the particles can also be used as light source. Since its conception\addref{} we have seen quasi-monoenergetic particle beams, now reaching maximum energies of several GeV\addref{} at short pulse durations\addref{} and micron source size\addref{}. Whilst the beam quality is inferior to conventional accelerators to date, it has a large potential. Currently, hybrid schemes are envisioned, with future applications maybe relying purely on this. Also light source with application\addref.
 \vspace{\baselineskip}
 
 
@@ -117,45 +111,60 @@ Here an intense laser pulse travels through a plasma and expels electrons in its
 
 
 
-Beyond the relativistic regime field strengths are now increasing further. The next interesting limit is the critical field  \cite{Sauter1931_ECRIT,Heisenberg1936_ECRIT}, which however is very far away, but is direction of new facilities. It is the characteristic intensity at which we are now looking at nonlinear effects from the vacuum and pair production. It is also dominated by (strong field) quantum effects.
+Beyond the relativistic regime field strengths are now increasing further. The next interesting limit giving access to qualitatively different science is the \textit{critical field} \cite{Sauter1931_ECRIT,Heisenberg1936_ECRIT}, which however is very far away, but is direction of new facilities. 
+\begin{equation}
+\boxed{E_S = \frac{m^2_e c^3}{e \hbar}= 1.33 \times 10^{18}\,\mathrm{V/m}}
+\end{equation}
+It is the characteristic intensity at which we are now looking at nonlinear effects from the vacuum and pair production. It is also dominated by (strong field) quantum effects.
 \vspace{\baselineskip}
 
 Next generation of lasers are now commissioned across \cite{Gales2018_ELINP,Weber2017_ELIBeamlines}, Asia \cite{Li2017_SULF,Shen2018_SULF} and the US \cite{Maksimchuk2019_ZEUS} aiming to reach several to hundred PW, with peak intensities of XX\addnum{} \cite{Danson2019_PWLASERS}. At the same time efficiency and repetition rates (similar as luminosity for particle accelerators) are further improved.
 
 Whilst these are incredibly high intensities, reaching even higher intensities is coming with challenges. 
-The limiting factor is the damage threshold of crystals, also bandwidth of materials, concepts are different amplification, larger crystals, OPCPA. One idea is to combine multiple beams coherent and incoherent combination, different steps (see ICUIL newsletter).
-
-
+The limiting factor is the damage threshold of crystals, also bandwidth of materials, concepts are different amplification, larger crystals, OPCPA\addref. One idea is to combine multiple beams coherent and incoherent combination\addref, different steps (see ICUIL newsletter). CAN (Mourou's scheme)\addref.
 
 
 \section{Particle accelerators and high-intensity lasers}
+\label{Introduction:Sec:HILasers_and_PartAcc}
 
-\textbf{For particle accelerators the quantity driving new physics is energy, secondary luminosity.
-For high-intensity lasers the quantity driving new physics is intensity, secondary pulse duration and repetition rates.
-Combining both we now drive beam energy and intensity from both sides.}
-\textbf{Driving force will be energy and intensity from both sides}
-
-(High-intensity) lasers and (ultrarelativistic) accelerators have separately revolutionised our understanding of nature. By combining both we are able to access a new regime of physics to explore qualitatively new physics.
+(High-intensity) lasers and (ultrarelativistic) accelerators have separately revolutionised our understanding of nature. By combining both we are able to access a new regime of physics to explore qualitatively new physics\addref.
 \vspace{\baselineskip}
 
 They are currently already used in pump-probe experiments crucial for material, atom, molecular science and HEDP experiments at XFELs for instance. 
 They have been proposed to enhance acceleration via hybrid schemes, e.g. Trojan horse and PWFA afterburner \cite{Lee2002_Afterburner}.
-One interesting configuration is Compton scattering. Here the energy is enhanced due to the relativistic Doppler shift. This has been widely used as diagnostic for particle accelerators (linear ICS, laser wire). The energetic radiation is a diagnostic but is also used in nuclear studies.
+One interesting configuration is Compton scattering. Here the energy is enhanced due to the relativistic Doppler shift. This has been widely used as diagnostic for particle accelerators (linear ICS, laser wire)\addref. The energetic radiation is a diagnostic but is also used in nuclear studies\addref.
 \vspace{\baselineskip}
 
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{RROverview_Blackburn.png}
+\caption{Overview of radiation reaction regimes and experiments. From \cite{Blackburn2019_RRReview}.}
+\end{figure}
+
+
 In this geometry, we realise that the electric field of the laser is enhanced, such that we can probe interesting phenomena. This is also the geometry we take advantage of in this work. 
-At high electron energies and intensities we might also be able to reach the regime described earlier. The parameter of interest is here $\eta$:
+At high electron energies and intensities we might also be able to reach the regime described earlier. The parameter of interest is here $\eta$\addref:
 \begin{equation}
-\eta = \frac{E_{RF}}{E_S} = \frac{(1-\cos\theta) \gamma E_L}{E_S},
+\boxed{\eta = \frac{E_{RF}}{E_S} = \frac{(1-\cos\theta) \gamma E_L}{E_S} \approx 0.1 \left(\frac{\epsilon}{500\MeV}\right)\left(\frac{I_0}{10^{21}\,\mathrm{W/cm^2}}\right)^{1/2},}
 \end{equation}
 with the Schwinger field $E_S = 1.38 \times 10^{18}\,\mathrm{V/m}$ or $I_S \approx 10^{29}\,\mathrm{W/cm^2}$. 
 We see that we can reach high values by increasing $\gamma$ and the field strength, intensity $a_0$.
-Critical field  \cite{Sauter1931_ECRIT,Heisenberg1936_ECRIT}.
+Critical field  \cite{Sauter1931_ECRIT,Heisenberg1936_ECRIT}. We see that we can reach these values by either reaching high $a_0$ or high $\gamma$, such that this is a field that is approached from two sides, conventional accelerators and multi-petawatt laser facilities.
 \EliasComm{Visualisations of QED effects or so on?}
 
 At the ``critical intensity'' $I_{cr}\!\sim\!10^{29}\,\mathrm{W/cm^2}$ the interaction with the vacuum itself becomes sizeable \cite{Sauter1931_ECRIT,Heisenberg1936_ECRIT}, opening a qualitatively new regime of light-matter interactions \cite{Schwinger1951_VACPAIRS,Brezin1970_VACPAIRS,Popov1971_VACPAIRS,DiPiazza2012_ICS}. 
 By combining high-intensity lasers with ultra-relativistic electron beams, e.g., at SLAC's FACET-II \cite{Hogan2016_FACETII}, such extreme intensities become accessible in the electron rest frame due to the Lorentz boost of the intensity ($I' \sim 4\gamma^2 I$). 
 In this so-called \textit{nonperturbative strong-field regime of QED} ($I'\!\gtrsim\!I_{cr}$) the recoil of emitted photons significantly perturbs electron/positron trajectories (strong-field radiation reaction) and prolific electron-positron pair production becomes substantial (vacuum breakdown). 
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\columnwidth]{BlackburnRR.png}
+\caption{Courtesy T. Blackburn. From \cite{Blackburn2019_RRReview}.}
+\end{figure}
+
 
 Such extreme conditions can be encountered in violent astrophysical phenomena like gamma ray bursts \cite{Harding1991_GRB} and supernova explosions \cite{Uzdensky2014_PlasmaAstro}, in the vicinity of pulsars and magnetars \cite{Denisov2017_VacuumPulsarMagnetar,Mignani2017_VBAstro}, close to magnetized black holes \cite{Blandford1977_KerrBlackHole}, and in the early universe \cite{Ruffini2010_PAIRSASTRO, Nikishov1962_PAIRSASTRO,Kandus2011_Primordial,Grasso2001_earlyUniverse}. 
 Due to stringent luminosity requirements a future lepton collider (e.g., CLIC \cite{CLIC2012} or ILC \cite{ILC2013}) will reach the critical field strength at the interaction point \cite{Yokoya1992_SFQED_BeamBeam,Esberg2014_SFQED_BeamBeam}. 
@@ -164,6 +173,14 @@ At multi-petawatt laser facilities, which are currently being constructed in Eur
 These facilities will open an exciting new research field within high-energy-density physics (HEDP) \cite{Grismayer2017_SeededQEDCascades,Ridgers2012_DENSE,Nerush2011_LaserAbs_PAIRS}. 
 Reports from Brightest Light \cite{National2018_BrightestLight} and Frontiers of Plasma Science \cite{DoE2015_FES}.
 \vspace{\baselineskip}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{ParticleShower.png}
+\caption{Courtesy T. Blackburn. Adapted from \cite{Blackburn2017_pairs}}
+\end{figure}
+
 
 Wide range of phenomena  \cite{DiPiazza2012_ICS}
 Compton scattering: radiation production meaning compton scattering from classical \cite{Yan2017_ICS} and the perturbative quantum \cite{Bula1996_RR} to the non-perturbative strong-field regime \cite{Bula1996_RR,TaPhuoc2012_ICS,Chen2013_ICS,Powers2014_ICS,Sarri2014_ICS,Khrennikov2015_ICS,Mackenroth2013_nlCompton}. The high field strengths also give rise to radiation reaction.
@@ -198,18 +215,6 @@ At these supercritical fields we reach the field of nonperturbative physics \cit
 \vspace{\baselineskip}
 
 At extreme fields $\chi \alpha \approx 1$ such that the radiative corrections become sizable, this is called the Narozhny conjecture \cite{Ritus1972_NAROZHNY,Narozhny1980_NAROZHNY,Fedotov2017_NAROZHNY,Ilderton2019_QEDPerturbBreakdown}. This is where QED as we know it breaks down and we enter the strong-coupling regime.
-
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.7\columnwidth]{RROverview_Blackburn.png}
-\caption{Overview of radiation reaction regimes and experiments. From \cite{Blackburn2019_RRReview}.}
-\end{figure}
-
-
-
-
 
 \vspace*{\fill}
 
