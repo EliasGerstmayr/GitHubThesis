@@ -1,156 +1,156 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'Thesis_Gerstmayr.blg'
-[68] biber-darwin:313> INFO - === Wed Dec  4, 2019, 11:50:19
-[121] Biber.pm:371> INFO - Reading 'Thesis_Gerstmayr.bcf'
-[387] Biber.pm:857> INFO - Found 360 citekeys in bib section 0
-[418] Biber.pm:3976> INFO - Processing section 0
-[441] Biber.pm:4136> INFO - Looking for bibtex format file './SFQED.bib' for section 0
-[443] bibtex.pm:1500> INFO - LaTeX decoding ...
-[455] bibtex.pm:1316> INFO - Found BibTeX data source './SFQED.bib'
-[477] Biber.pm:4136> INFO - Looking for bibtex format file './ICS_Diag.bib' for section 0
-[479] bibtex.pm:1500> INFO - LaTeX decoding ...
-[572] bibtex.pm:1316> INFO - Found BibTeX data source './ICS_Diag.bib'
-[734] Utils.pm:193> WARN - month field 'May' in entry 'Chouffani2006_ICS_BeamParam' is not an integer - this will probably not sort properly.
-[1338] Utils.pm:193> WARN - month field 'Feb' in entry 'Okugi1999_WireScanner_Emittance' is not an integer - this will probably not sort properly.
-[1381] Utils.pm:193> WARN - month field 'Feb' in entry 'Babzien2006_ICS_2ndHarmonic' is not an integer - this will probably not sort properly.
-[1385] Biber.pm:4136> INFO - Looking for bibtex format file './General.bib' for section 0
-[1387] bibtex.pm:1500> INFO - LaTeX decoding ...
-[1432] bibtex.pm:1316> INFO - Found BibTeX data source './General.bib'
-[1813] Utils.pm:193> WARN - month field 'Nov' in entry 'Emma2018_ML' is not an integer - this will probably not sort properly.
-[1905] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/General.bib_84914.utf8, line 221, warning: 1 characters of junk seen at toplevel
-[1906] Utils.pm:193> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[1906] Utils.pm:193> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
-[1908] Biber.pm:4136> INFO - Looking for bibtex format file 'Theses.bib' for section 0
-[1909] bibtex.pm:1500> INFO - LaTeX decoding ...
-[1926] bibtex.pm:1316> INFO - Found BibTeX data source 'Theses.bib'
-[2012] Biber.pm:4136> INFO - Looking for bibtex format file 'Plasma.bib' for section 0
-[2013] bibtex.pm:1500> INFO - LaTeX decoding ...
-[2048] bibtex.pm:1316> INFO - Found BibTeX data source 'Plasma.bib'
-[2194] Biber.pm:4136> INFO - Looking for bibtex format file 'LaserDiags.bib' for section 0
-[2195] bibtex.pm:1500> INFO - LaTeX decoding ...
-[2224] bibtex.pm:1316> INFO - Found BibTeX data source 'LaserDiags.bib'
-[2238] Utils.pm:193> WARN - month field 'Apr' in entry 'Kapteyn1991_PM' is not an integer - this will probably not sort properly.
-[2288] Utils.pm:193> WARN - month field 'Sep' in entry 'Kato1984_PHASEPLATE' is not an integer - this will probably not sort properly.
-[2306] Utils.pm:193> WARN - month field 'Feb' in entry 'Corvan2016_TIMING' is not an integer - this will probably not sort properly.
-[2479] Utils.pm:193> WARN - month field 'Mar' in entry 'Cavalieri2005_EOS' is not an integer - this will probably not sort properly.
-[2500] Biber.pm:4136> INFO - Looking for bibtex format file 'GammaDet.bib' for section 0
-[2501] bibtex.pm:1500> INFO - LaTeX decoding ...
-[2516] bibtex.pm:1316> INFO - Found BibTeX data source 'GammaDet.bib'
-[2603] Utils.pm:193> WARN - month field 'nov' in entry 'Behm2018_Gamma' is not an integer - this will probably not sort properly.
-[2635] Biber.pm:4136> INFO - Looking for bibtex format file 'Betatron.bib' for section 0
-[2637] bibtex.pm:1500> INFO - LaTeX decoding ...
-[2670] bibtex.pm:1316> INFO - Found BibTeX data source 'Betatron.bib'
-[3032] Biber.pm:4136> INFO - Looking for bibtex format file 'Facilities.bib' for section 0
-[3034] bibtex.pm:1500> INFO - LaTeX decoding ...
-[3080] bibtex.pm:1316> INFO - Found BibTeX data source 'Facilities.bib'
-[3397] Utils.pm:193> WARN - month field 'Feb' in entry 'Yanovsky2008_HERCULES' is not an integer - this will probably not sort properly.
-[3567] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/Facilities.bib_84914.utf8, line 195, warning: 1 characters of junk seen at toplevel
-[3568] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/Facilities.bib_84914.utf8, line 200, warning: 1 characters of junk seen at toplevel
-[3568] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/Facilities.bib_84914.utf8, line 205, warning: 1 characters of junk seen at toplevel
-[3570] Biber.pm:4136> INFO - Looking for bibtex format file 'Wakefield.bib' for section 0
-[3575] bibtex.pm:1500> INFO - LaTeX decoding ...
-[3766] bibtex.pm:1316> INFO - Found BibTeX data source 'Wakefield.bib'
-[3890] Utils.pm:193> WARN - ISBN '0028-0836' in entry 'Mangles2004_MONO' is invalid - run biber with '--validate_datamodel' for details.
-[4005] Utils.pm:193> WARN - ISBN '0034-6861' in entry 'Esarey2009_LPA_Review' is invalid - run biber with '--validate_datamodel' for details.
-[4069] Utils.pm:193> WARN - month field 'Aug' in entry 'Osterhoff2008_CELL' is not an integer - this will probably not sort properly.
-[4118] Utils.pm:193> WARN - month field 'Feb' in entry 'Gonsalves2019_GEV' is not an integer - this will probably not sort properly.
-[4176] Utils.pm:193> WARN - month field 'Nov' in entry 'Weingartner2012_BUNCH' is not an integer - this will probably not sort properly.
-[4207] Utils.pm:193> WARN - month field 'Jan' in entry 'McGuffey2010_ION' is not an integer - this will probably not sort properly.
-[4222] Utils.pm:193> WARN - month field 'Jan' in entry 'Pak2010_ION' is not an integer - this will probably not sort properly.
-[4304] Utils.pm:193> WARN - month field 'Dec' in entry 'Leemans2014_GEV' is not an integer - this will probably not sort properly.
-[4364] Utils.pm:193> WARN - month field 'Oct' in entry 'Kim2013_GEV' is not an integer - this will probably not sort properly.
-[4454] Utils.pm:193> WARN - month field 'Oct' in entry 'Guillaume_REPHASING' is not an integer - this will probably not sort properly.
-[4474] Utils.pm:193> WARN - month field 'Sep' in entry 'Debus2019_BEYONDDEPHASING' is not an integer - this will probably not sort properly.
-[4490] Utils.pm:193> WARN - ISBN '1476-4687' in entry 'Faure2006_STABLEJET' is invalid - run biber with '--validate_datamodel' for details.
-[4541] Utils.pm:193> WARN - month field 'May' in entry 'Buck2013_SHOCK' is not an integer - this will probably not sort properly.
-[4588] Utils.pm:193> WARN - month field 'Sep' in entry 'Schmid2010_SHOCK' is not an integer - this will probably not sort properly.
-[4613] Utils.pm:193> WARN - month field 'Aug' in entry 'Downer2018_DiagnosticReview' is not an integer - this will probably not sort properly.
-[4759] Utils.pm:193> WARN - month field 'Sep' in entry 'Clayton2010_ION' is not an integer - this will probably not sort properly.
-[4805] Utils.pm:193> WARN - month field 'May' in entry 'Swanson2017_SHOCK' is not an integer - this will probably not sort properly.
-[4837] Utils.pm:193> WARN - month field 'apr' in entry 'Tsai2018_SHOCK' is not an integer - this will probably not sort properly.
-[4904] Utils.pm:193> WARN - month field 'Jun' in entry 'Bulanov1997_SELF' is not an integer - this will probably not sort properly.
-[5077] Utils.pm:193> WARN - month field 'Jul' in entry 'Savert2015_BUBBLE' is not an integer - this will probably not sort properly.
-[5079] Utils.pm:193> WARN - month field 'may' in entry 'Siminos2016_FASTSHADOW' is not an integer - this will probably not sort properly.
-[5093] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/Wakefield.bib_84914.utf8, line 28, warning: 1 characters of junk seen at toplevel
-[5097] Biber.pm:4136> INFO - Looking for bibtex format file 'Sims.bib' for section 0
-[5098] bibtex.pm:1500> INFO - LaTeX decoding ...
-[5109] bibtex.pm:1316> INFO - Found BibTeX data source 'Sims.bib'
-[5158] Biber.pm:4136> INFO - Looking for bibtex format file 'Ionisation.bib' for section 0
-[5159] bibtex.pm:1500> INFO - LaTeX decoding ...
-[5177] bibtex.pm:1316> INFO - Found BibTeX data source 'Ionisation.bib'
-[5249] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/Ionisation.bib_84914.utf8, line 57, warning: 1 characters of junk seen at toplevel
-[5249] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/Ionisation.bib_84914.utf8, line 68, warning: 1 characters of junk seen at toplevel
-[5249] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/Ionisation.bib_84914.utf8, line 79, warning: 1 characters of junk seen at toplevel
-[5251] Biber.pm:4136> INFO - Looking for bibtex format file 'Xrays.bib' for section 0
-[5252] bibtex.pm:1500> INFO - LaTeX decoding ...
-[5272] bibtex.pm:1316> INFO - Found BibTeX data source 'Xrays.bib'
-[5415] Biber.pm:4136> INFO - Looking for bibtex format file 'IonAcc.bib' for section 0
-[5416] bibtex.pm:1500> INFO - LaTeX decoding ...
-[5422] bibtex.pm:1316> INFO - Found BibTeX data source 'IonAcc.bib'
-[5469] Biber.pm:4136> INFO - Looking for bibtex format file 'ICSRR.bib' for section 0
-[5475] bibtex.pm:1500> INFO - LaTeX decoding ...
-[5720] bibtex.pm:1316> INFO - Found BibTeX data source 'ICSRR.bib'
-[5883] Utils.pm:193> WARN - month field 'Aug' in entry 'Blackburn2017_pairs' is not an integer - this will probably not sort properly.
-[6071] Utils.pm:193> WARN - month field 'Jul' in entry 'DiPiazza2018_LCFA' is not an integer - this will probably not sort properly.
-[6094] Utils.pm:193> WARN - month field 'Mar' in entry 'Harvey2017_QUENCHING' is not an integer - this will probably not sort properly.
-[6106] Utils.pm:193> WARN - month field 'Jan' in entry 'Blackburn2014_QRR' is not an integer - this will probably not sort properly.
-[6144] Utils.pm:193> WARN - month field 'Feb' in entry 'Shen1972_STRAGGLING' is not an integer - this will probably not sort properly.
-[6158] Utils.pm:193> WARN - month field 'Oct' in entry 'Thomas2012_LL' is not an integer - this will probably not sort properly.
-[6202] Utils.pm:193> WARN - month field 'Oct' in entry 'DelSorbo2017_SPIN' is not an integer - this will probably not sort properly.
-[6304] Utils.pm:193> WARN - month field 'Nov' in entry 'Sokolov2010_QEDPAIRS' is not an integer - this will probably not sort properly.
-[6311] Utils.pm:193> WARN - month field 'Dec' in entry 'King2016_VB' is not an integer - this will probably not sort properly.
-[6366] Utils.pm:193> WARN - month field 'may' in entry 'Blackburn2019_SUPER' is not an integer - this will probably not sort properly.
-[6478] Utils.pm:193> WARN - month field 'Oct' in entry 'Esarey1993_NT' is not an integer - this will probably not sort properly.
-[6498] Utils.pm:193> WARN - month field 'Jan' in entry 'Corde2013_Rad' is not an integer - this will probably not sort properly.
-[6543] Utils.pm:193> WARN - month field 'Nov' in entry 'DiPiazza2010_QRR' is not an integer - this will probably not sort properly.
-[6557] Utils.pm:193> WARN - month field 'Jun' in entry 'Bulanov2010_MultiPulseVac' is not an integer - this will probably not sort properly.
-[6578] Utils.pm:193> WARN - month field 'Nov' in entry 'Bulanov2011_LADLL' is not an integer - this will probably not sort properly.
-[6592] Utils.pm:193> WARN - month field 'Nov' in entry 'Bulanov2011_LL' is not an integer - this will probably not sort properly.
-[6606] Utils.pm:193> WARN - month field 'jun' in entry 'Arran2019_RR_PPCF' is not an integer - this will probably not sort properly.
-[6649] Utils.pm:193> WARN - month field 'Apr' in entry 'Niel2018_RRStochastic' is not an integer - this will probably not sort properly.
-[6656] Utils.pm:193> WARN - month field 'Apr' in entry 'HarShemesh2012_INTENSITY' is not an integer - this will probably not sort properly.
-[6862] Utils.pm:193> WARN - month field 'Nov' in entry 'Bell2008_PairsEta' is not an integer - this will probably not sort properly.
-[6932] Utils.pm:193> WARN - month field 'Sep' in entry 'Harvey2016_ICSFOCUS' is not an integer - this will probably not sort properly.
-[7007] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 14, warning: 1 characters of junk seen at toplevel
-[7007] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 24, warning: 1 characters of junk seen at toplevel
-[7007] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 47, warning: 1 characters of junk seen at toplevel
-[7007] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 360, warning: 1 characters of junk seen at toplevel
-[7007] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 373, warning: 1 characters of junk seen at toplevel
-[7008] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 766, warning: 1 characters of junk seen at toplevel
-[7008] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 792, warning: 1 characters of junk seen at toplevel
-[7008] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 803, warning: 1 characters of junk seen at toplevel
-[7008] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 817, warning: 1 characters of junk seen at toplevel
-[7008] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 828, warning: 1 characters of junk seen at toplevel
-[7008] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/ICSRR.bib_84914.utf8, line 840, warning: 1 characters of junk seen at toplevel
-[7011] Biber.pm:4136> INFO - Looking for bibtex format file 'Narozhny.bib' for section 0
-[7012] bibtex.pm:1500> INFO - LaTeX decoding ...
-[7028] bibtex.pm:1316> INFO - Found BibTeX data source 'Narozhny.bib'
-[7091] Biber.pm:4136> INFO - Looking for bibtex format file 'BW_Astro.bib' for section 0
-[7094] bibtex.pm:1500> INFO - LaTeX decoding ...
-[7237] bibtex.pm:1316> INFO - Found BibTeX data source 'BW_Astro.bib'
-[7492] Utils.pm:193> WARN - month field 'Jan' in entry 'Glinec2005_Brems' is not an integer - this will probably not sort properly.
-[7525] Utils.pm:193> WARN - month field 'Jan' in entry 'Ilderton2011_TRIDENT' is not an integer - this will probably not sort properly.
-[7533] Utils.pm:193> WARN - month field 'Aug' in entry 'dEnterria2013_GammaGamma' is not an integer - this will probably not sort properly.
-[7589] Utils.pm:193> WARN - month field 'Mar' in entry 'Chen2009_BH' is not an integer - this will probably not sort properly.
-[7931] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/BW_Astro.bib_84914.utf8, line 11, warning: 1 characters of junk seen at toplevel
-[7931] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/BW_Astro.bib_84914.utf8, line 23, warning: 1 characters of junk seen at toplevel
-[7931] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/BW_Astro.bib_84914.utf8, line 34, warning: 1 characters of junk seen at toplevel
-[7932] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/BW_Astro.bib_84914.utf8, line 45, warning: 1 characters of junk seen at toplevel
-[7932] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/BW_Astro.bib_84914.utf8, line 56, warning: 1 characters of junk seen at toplevel
-[7932] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/BW_Astro.bib_84914.utf8, line 67, warning: 1 characters of junk seen at toplevel
-[7932] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/BW_Astro.bib_84914.utf8, line 81, warning: 1 characters of junk seen at toplevel
-[7932] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/RT4UthE1XM/BW_Astro.bib_84914.utf8, line 113, warning: 1 characters of junk seen at toplevel
-[7934] Biber.pm:4136> INFO - Looking for bibtex format file 'SPD.bib' for section 0
-[7935] bibtex.pm:1500> INFO - LaTeX decoding ...
-[7941] bibtex.pm:1316> INFO - Found BibTeX data source 'SPD.bib'
-[7986] Biber.pm:4136> INFO - Looking for bibtex format file 'Intro.bib' for section 0
-[7988] bibtex.pm:1500> INFO - LaTeX decoding ...
-[8028] bibtex.pm:1316> INFO - Found BibTeX data source 'Intro.bib'
-[8164] Utils.pm:193> WARN - month field 'Jul' in entry 'Mourou2019_Nobel' is not an integer - this will probably not sort properly.
-[8630] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[8630] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[8630] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[8630] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[9057] bbl.pm:617> INFO - Writing 'Thesis_Gerstmayr.bbl' with encoding 'UTF-8'
-[9296] bbl.pm:720> INFO - Output to Thesis_Gerstmayr.bbl
-[9298] Biber.pm:110> INFO - WARNINGS: 86
+[63] biber-darwin:313> INFO - === Wed Dec  4, 2019, 19:51:26
+[112] Biber.pm:371> INFO - Reading 'Thesis_Gerstmayr.bcf'
+[370] Biber.pm:857> INFO - Found 361 citekeys in bib section 0
+[398] Biber.pm:3976> INFO - Processing section 0
+[417] Biber.pm:4136> INFO - Looking for bibtex format file './SFQED.bib' for section 0
+[419] bibtex.pm:1500> INFO - LaTeX decoding ...
+[427] bibtex.pm:1316> INFO - Found BibTeX data source './SFQED.bib'
+[444] Biber.pm:4136> INFO - Looking for bibtex format file './ICS_Diag.bib' for section 0
+[446] bibtex.pm:1500> INFO - LaTeX decoding ...
+[501] bibtex.pm:1316> INFO - Found BibTeX data source './ICS_Diag.bib'
+[963] Utils.pm:193> WARN - month field 'May' in entry 'Chouffani2006_ICS_BeamParam' is not an integer - this will probably not sort properly.
+[1092] Utils.pm:193> WARN - month field 'Feb' in entry 'Okugi1999_WireScanner_Emittance' is not an integer - this will probably not sort properly.
+[1133] Utils.pm:193> WARN - month field 'Feb' in entry 'Babzien2006_ICS_2ndHarmonic' is not an integer - this will probably not sort properly.
+[1136] Biber.pm:4136> INFO - Looking for bibtex format file './General.bib' for section 0
+[1138] bibtex.pm:1500> INFO - LaTeX decoding ...
+[1188] bibtex.pm:1316> INFO - Found BibTeX data source './General.bib'
+[1408] Utils.pm:193> WARN - month field 'Nov' in entry 'Emma2018_ML' is not an integer - this will probably not sort properly.
+[1447] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/General.bib_85948.utf8, line 228, warning: 1 characters of junk seen at toplevel
+[1447] Utils.pm:193> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[1447] Utils.pm:193> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[1450] Biber.pm:4136> INFO - Looking for bibtex format file 'Theses.bib' for section 0
+[1451] bibtex.pm:1500> INFO - LaTeX decoding ...
+[1468] bibtex.pm:1316> INFO - Found BibTeX data source 'Theses.bib'
+[1525] Biber.pm:4136> INFO - Looking for bibtex format file 'Plasma.bib' for section 0
+[1527] bibtex.pm:1500> INFO - LaTeX decoding ...
+[1557] bibtex.pm:1316> INFO - Found BibTeX data source 'Plasma.bib'
+[1697] Biber.pm:4136> INFO - Looking for bibtex format file 'LaserDiags.bib' for section 0
+[1699] bibtex.pm:1500> INFO - LaTeX decoding ...
+[1728] bibtex.pm:1316> INFO - Found BibTeX data source 'LaserDiags.bib'
+[1742] Utils.pm:193> WARN - month field 'Apr' in entry 'Kapteyn1991_PM' is not an integer - this will probably not sort properly.
+[1793] Utils.pm:193> WARN - month field 'Sep' in entry 'Kato1984_PHASEPLATE' is not an integer - this will probably not sort properly.
+[1811] Utils.pm:193> WARN - month field 'Feb' in entry 'Corvan2016_TIMING' is not an integer - this will probably not sort properly.
+[1986] Utils.pm:193> WARN - month field 'Mar' in entry 'Cavalieri2005_EOS' is not an integer - this will probably not sort properly.
+[2005] Biber.pm:4136> INFO - Looking for bibtex format file 'GammaDet.bib' for section 0
+[2007] bibtex.pm:1500> INFO - LaTeX decoding ...
+[2021] bibtex.pm:1316> INFO - Found BibTeX data source 'GammaDet.bib'
+[2109] Utils.pm:193> WARN - month field 'nov' in entry 'Behm2018_Gamma' is not an integer - this will probably not sort properly.
+[2141] Biber.pm:4136> INFO - Looking for bibtex format file 'Betatron.bib' for section 0
+[2143] bibtex.pm:1500> INFO - LaTeX decoding ...
+[2182] bibtex.pm:1316> INFO - Found BibTeX data source 'Betatron.bib'
+[2642] Biber.pm:4136> INFO - Looking for bibtex format file 'Facilities.bib' for section 0
+[2644] bibtex.pm:1500> INFO - LaTeX decoding ...
+[2691] bibtex.pm:1316> INFO - Found BibTeX data source 'Facilities.bib'
+[3017] Utils.pm:193> WARN - month field 'Feb' in entry 'Yanovsky2008_HERCULES' is not an integer - this will probably not sort properly.
+[3131] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/Facilities.bib_85948.utf8, line 195, warning: 1 characters of junk seen at toplevel
+[3131] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/Facilities.bib_85948.utf8, line 200, warning: 1 characters of junk seen at toplevel
+[3131] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/Facilities.bib_85948.utf8, line 205, warning: 1 characters of junk seen at toplevel
+[3134] Biber.pm:4136> INFO - Looking for bibtex format file 'Wakefield.bib' for section 0
+[3138] bibtex.pm:1500> INFO - LaTeX decoding ...
+[3317] bibtex.pm:1316> INFO - Found BibTeX data source 'Wakefield.bib'
+[3392] Utils.pm:193> WARN - ISBN '0028-0836' in entry 'Mangles2004_MONO' is invalid - run biber with '--validate_datamodel' for details.
+[3446] Utils.pm:193> WARN - ISBN '0034-6861' in entry 'Esarey2009_LPA_Review' is invalid - run biber with '--validate_datamodel' for details.
+[3511] Utils.pm:193> WARN - month field 'Aug' in entry 'Osterhoff2008_CELL' is not an integer - this will probably not sort properly.
+[3563] Utils.pm:193> WARN - month field 'Feb' in entry 'Gonsalves2019_GEV' is not an integer - this will probably not sort properly.
+[3625] Utils.pm:193> WARN - month field 'Nov' in entry 'Weingartner2012_BUNCH' is not an integer - this will probably not sort properly.
+[3656] Utils.pm:193> WARN - month field 'Jan' in entry 'McGuffey2010_ION' is not an integer - this will probably not sort properly.
+[3673] Utils.pm:193> WARN - month field 'Jan' in entry 'Pak2010_ION' is not an integer - this will probably not sort properly.
+[3756] Utils.pm:193> WARN - month field 'Dec' in entry 'Leemans2014_GEV' is not an integer - this will probably not sort properly.
+[3816] Utils.pm:193> WARN - month field 'Oct' in entry 'Kim2013_GEV' is not an integer - this will probably not sort properly.
+[3908] Utils.pm:193> WARN - month field 'Oct' in entry 'Guillaume_REPHASING' is not an integer - this will probably not sort properly.
+[3928] Utils.pm:193> WARN - month field 'Sep' in entry 'Debus2019_BEYONDDEPHASING' is not an integer - this will probably not sort properly.
+[3944] Utils.pm:193> WARN - ISBN '1476-4687' in entry 'Faure2006_STABLEJET' is invalid - run biber with '--validate_datamodel' for details.
+[3996] Utils.pm:193> WARN - month field 'May' in entry 'Buck2013_SHOCK' is not an integer - this will probably not sort properly.
+[4043] Utils.pm:193> WARN - month field 'Sep' in entry 'Schmid2010_SHOCK' is not an integer - this will probably not sort properly.
+[4068] Utils.pm:193> WARN - month field 'Aug' in entry 'Downer2018_DiagnosticReview' is not an integer - this will probably not sort properly.
+[4218] Utils.pm:193> WARN - month field 'Sep' in entry 'Clayton2010_ION' is not an integer - this will probably not sort properly.
+[4265] Utils.pm:193> WARN - month field 'May' in entry 'Swanson2017_SHOCK' is not an integer - this will probably not sort properly.
+[4298] Utils.pm:193> WARN - month field 'apr' in entry 'Tsai2018_SHOCK' is not an integer - this will probably not sort properly.
+[4368] Utils.pm:193> WARN - month field 'Jun' in entry 'Bulanov1997_SELF' is not an integer - this will probably not sort properly.
+[4544] Utils.pm:193> WARN - month field 'Jul' in entry 'Savert2015_BUBBLE' is not an integer - this will probably not sort properly.
+[4545] Utils.pm:193> WARN - month field 'may' in entry 'Siminos2016_FASTSHADOW' is not an integer - this will probably not sort properly.
+[4560] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/Wakefield.bib_85948.utf8, line 28, warning: 1 characters of junk seen at toplevel
+[4564] Biber.pm:4136> INFO - Looking for bibtex format file 'Sims.bib' for section 0
+[4565] bibtex.pm:1500> INFO - LaTeX decoding ...
+[4576] bibtex.pm:1316> INFO - Found BibTeX data source 'Sims.bib'
+[4624] Biber.pm:4136> INFO - Looking for bibtex format file 'Ionisation.bib' for section 0
+[4626] bibtex.pm:1500> INFO - LaTeX decoding ...
+[4642] bibtex.pm:1316> INFO - Found BibTeX data source 'Ionisation.bib'
+[4717] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/Ionisation.bib_85948.utf8, line 57, warning: 1 characters of junk seen at toplevel
+[4718] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/Ionisation.bib_85948.utf8, line 68, warning: 1 characters of junk seen at toplevel
+[4718] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/Ionisation.bib_85948.utf8, line 79, warning: 1 characters of junk seen at toplevel
+[4718] Biber.pm:4136> INFO - Looking for bibtex format file 'Xrays.bib' for section 0
+[4719] bibtex.pm:1500> INFO - LaTeX decoding ...
+[4737] bibtex.pm:1316> INFO - Found BibTeX data source 'Xrays.bib'
+[4879] Biber.pm:4136> INFO - Looking for bibtex format file 'IonAcc.bib' for section 0
+[4880] bibtex.pm:1500> INFO - LaTeX decoding ...
+[4885] bibtex.pm:1316> INFO - Found BibTeX data source 'IonAcc.bib'
+[4930] Biber.pm:4136> INFO - Looking for bibtex format file 'ICSRR.bib' for section 0
+[4936] bibtex.pm:1500> INFO - LaTeX decoding ...
+[5162] bibtex.pm:1316> INFO - Found BibTeX data source 'ICSRR.bib'
+[5258] Utils.pm:193> WARN - month field 'Jan' in entry 'Corde2013_Rad' is not an integer - this will probably not sort properly.
+[5383] Utils.pm:193> WARN - month field 'Aug' in entry 'Blackburn2017_pairs' is not an integer - this will probably not sort properly.
+[5572] Utils.pm:193> WARN - month field 'Jul' in entry 'DiPiazza2018_LCFA' is not an integer - this will probably not sort properly.
+[5595] Utils.pm:193> WARN - month field 'Mar' in entry 'Harvey2017_QUENCHING' is not an integer - this will probably not sort properly.
+[5607] Utils.pm:193> WARN - month field 'Jan' in entry 'Blackburn2014_QRR' is not an integer - this will probably not sort properly.
+[5645] Utils.pm:193> WARN - month field 'Feb' in entry 'Shen1972_STRAGGLING' is not an integer - this will probably not sort properly.
+[5659] Utils.pm:193> WARN - month field 'Oct' in entry 'Thomas2012_LL' is not an integer - this will probably not sort properly.
+[5708] Utils.pm:193> WARN - month field 'Oct' in entry 'DelSorbo2017_SPIN' is not an integer - this will probably not sort properly.
+[5818] Utils.pm:193> WARN - month field 'Nov' in entry 'Sokolov2010_QEDPAIRS' is not an integer - this will probably not sort properly.
+[5827] Utils.pm:193> WARN - month field 'Dec' in entry 'King2016_VB' is not an integer - this will probably not sort properly.
+[5876] Utils.pm:193> WARN - month field 'may' in entry 'Blackburn2019_SUPER' is not an integer - this will probably not sort properly.
+[5974] Utils.pm:193> WARN - month field 'Oct' in entry 'Esarey1993_NT' is not an integer - this will probably not sort properly.
+[6017] Utils.pm:193> WARN - month field 'Nov' in entry 'DiPiazza2010_QRR' is not an integer - this will probably not sort properly.
+[6033] Utils.pm:193> WARN - month field 'Jun' in entry 'Bulanov2010_MultiPulseVac' is not an integer - this will probably not sort properly.
+[6058] Utils.pm:193> WARN - month field 'Nov' in entry 'Bulanov2011_LADLL' is not an integer - this will probably not sort properly.
+[6072] Utils.pm:193> WARN - month field 'Nov' in entry 'Bulanov2011_LL' is not an integer - this will probably not sort properly.
+[6086] Utils.pm:193> WARN - month field 'jun' in entry 'Arran2019_RR_PPCF' is not an integer - this will probably not sort properly.
+[6129] Utils.pm:193> WARN - month field 'Apr' in entry 'Niel2018_RRStochastic' is not an integer - this will probably not sort properly.
+[6137] Utils.pm:193> WARN - month field 'Apr' in entry 'HarShemesh2012_INTENSITY' is not an integer - this will probably not sort properly.
+[6322] Utils.pm:193> WARN - month field 'Nov' in entry 'Bell2008_PairsEta' is not an integer - this will probably not sort properly.
+[6393] Utils.pm:193> WARN - month field 'Sep' in entry 'Harvey2016_ICSFOCUS' is not an integer - this will probably not sort properly.
+[6468] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 14, warning: 1 characters of junk seen at toplevel
+[6468] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 24, warning: 1 characters of junk seen at toplevel
+[6468] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 47, warning: 1 characters of junk seen at toplevel
+[6468] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 360, warning: 1 characters of junk seen at toplevel
+[6468] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 373, warning: 1 characters of junk seen at toplevel
+[6468] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 766, warning: 1 characters of junk seen at toplevel
+[6469] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 792, warning: 1 characters of junk seen at toplevel
+[6469] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 803, warning: 1 characters of junk seen at toplevel
+[6469] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 817, warning: 1 characters of junk seen at toplevel
+[6469] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 828, warning: 1 characters of junk seen at toplevel
+[6469] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/ICSRR.bib_85948.utf8, line 840, warning: 1 characters of junk seen at toplevel
+[6472] Biber.pm:4136> INFO - Looking for bibtex format file 'Narozhny.bib' for section 0
+[6473] bibtex.pm:1500> INFO - LaTeX decoding ...
+[6488] bibtex.pm:1316> INFO - Found BibTeX data source 'Narozhny.bib'
+[6549] Biber.pm:4136> INFO - Looking for bibtex format file 'BW_Astro.bib' for section 0
+[6552] bibtex.pm:1500> INFO - LaTeX decoding ...
+[6677] bibtex.pm:1316> INFO - Found BibTeX data source 'BW_Astro.bib'
+[6942] Utils.pm:193> WARN - month field 'Jan' in entry 'Glinec2005_Brems' is not an integer - this will probably not sort properly.
+[6978] Utils.pm:193> WARN - month field 'Jan' in entry 'Ilderton2011_TRIDENT' is not an integer - this will probably not sort properly.
+[6985] Utils.pm:193> WARN - month field 'Aug' in entry 'dEnterria2013_GammaGamma' is not an integer - this will probably not sort properly.
+[7041] Utils.pm:193> WARN - month field 'Mar' in entry 'Chen2009_BH' is not an integer - this will probably not sort properly.
+[7356] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/BW_Astro.bib_85948.utf8, line 11, warning: 1 characters of junk seen at toplevel
+[7356] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/BW_Astro.bib_85948.utf8, line 23, warning: 1 characters of junk seen at toplevel
+[7356] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/BW_Astro.bib_85948.utf8, line 34, warning: 1 characters of junk seen at toplevel
+[7356] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/BW_Astro.bib_85948.utf8, line 45, warning: 1 characters of junk seen at toplevel
+[7356] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/BW_Astro.bib_85948.utf8, line 56, warning: 1 characters of junk seen at toplevel
+[7356] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/BW_Astro.bib_85948.utf8, line 67, warning: 1 characters of junk seen at toplevel
+[7356] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/BW_Astro.bib_85948.utf8, line 81, warning: 1 characters of junk seen at toplevel
+[7356] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/ck/rgmqdtmx6pb5ny8l7_09tvgm0000gn/T/PdI9gUfK5b/BW_Astro.bib_85948.utf8, line 113, warning: 1 characters of junk seen at toplevel
+[7359] Biber.pm:4136> INFO - Looking for bibtex format file 'SPD.bib' for section 0
+[7360] bibtex.pm:1500> INFO - LaTeX decoding ...
+[7366] bibtex.pm:1316> INFO - Found BibTeX data source 'SPD.bib'
+[7411] Biber.pm:4136> INFO - Looking for bibtex format file 'Intro.bib' for section 0
+[7412] bibtex.pm:1500> INFO - LaTeX decoding ...
+[7451] bibtex.pm:1316> INFO - Found BibTeX data source 'Intro.bib'
+[7585] Utils.pm:193> WARN - month field 'Jul' in entry 'Mourou2019_Nobel' is not an integer - this will probably not sort properly.
+[8070] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[8071] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[8071] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[8071] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[8484] bbl.pm:617> INFO - Writing 'Thesis_Gerstmayr.bbl' with encoding 'UTF-8'
+[8739] bbl.pm:720> INFO - Output to Thesis_Gerstmayr.bbl
+[8739] Biber.pm:110> INFO - WARNINGS: 86

@@ -2674,22 +2674,6 @@
       \verb https://doi.org/10.1119/1.19136
       \endverb
     \endentry
-    \entry{CLIC2012}{report}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labeltitlesource}{title}
-      \field{title}{{{C}{L}{I}{C} {C}onceptual {D}esign {R}eport {N}o. {C}{E}{R}{N}-2012-007}}
-      \field{type}{techreport}
-      \field{year}{2012}
-    \endentry
-    \entry{ILC2013}{report}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labeltitlesource}{title}
-      \field{title}{{{I}{L}{C} {T}echnical {D}esign {R}eport {N}os. {C}{E}{R}{N}-{A}{T}{S}-2013-037}}
-      \field{type}{techreport}
-      \field{year}{2013}
-    \endentry
     \entry{Benedikt2016_FCC}{article}{}
       \name{author}{2}{}{%
         {{hash=36cb5d13668330a21ef92a653afbaf3a}{%
@@ -2719,6 +2703,22 @@
       \field{year}{2016}
       \field{pages}{73\bibrangedash 80}
       \range{pages}{8}
+    \endentry
+    \entry{CLIC2012}{report}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labeltitlesource}{title}
+      \field{title}{{{C}{L}{I}{C} {C}onceptual {D}esign {R}eport {N}o. {C}{E}{R}{N}-2012-007}}
+      \field{type}{techreport}
+      \field{year}{2012}
+    \endentry
+    \entry{ILC2013}{report}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labeltitlesource}{title}
+      \field{title}{{{I}{L}{C} {T}echnical {D}esign {R}eport {N}os. {C}{E}{R}{N}-{A}{T}{S}-2013-037}}
+      \field{type}{techreport}
+      \field{year}{2013}
     \endentry
     \entry{Lee2002_Afterburner}{article}{}
       \true{moreauthor}
@@ -3216,6 +3216,30 @@
       \verb https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.733125
       \endverb
     \endentry
+    \entry{Gibbon2004_LaserMatter}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f3dc862f2a759f6f885659c5360ca11e}{%
+           family={Gibbon},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific Publishing Company Singapore}%
+      }
+      \strng{namehash}{f3dc862f2a759f6f885659c5360ca11e}
+      \strng{fullhash}{f3dc862f2a759f6f885659c5360ca11e}
+      \strng{bibnamehash}{f3dc862f2a759f6f885659c5360ca11e}
+      \strng{authorbibnamehash}{f3dc862f2a759f6f885659c5360ca11e}
+      \strng{authornamehash}{f3dc862f2a759f6f885659c5360ca11e}
+      \strng{authorfullhash}{f3dc862f2a759f6f885659c5360ca11e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Short pulse laser interactions with matter}
+      \field{year}{2004}
+    \endentry
     \entry{Sprangle1987_SELFFOCUS}{article}{}
       \name{author}{3}{}{%
         {{hash=78bf30b5580ecbe00cde0481a2938bdf}{%
@@ -3254,36 +3278,6 @@
       \field{year}{1987}
       \field{pages}{145\bibrangedash 153}
       \range{pages}{9}
-    \endentry
-    \entry{Akhiezcr1956_Waves}{article}{}
-      \name{author}{2}{}{%
-        {{hash=9681fa21059b1a4d7f240a13247f3527}{%
-           family={Akhiezcr},
-           familyi={A\bibinitperiod},
-           given={AI},
-           giveni={A\bibinitperiod}}}%
-        {{hash=02c7d903bbb1cfd5f218bf36b3897dbf}{%
-           family={Polovin},
-           familyi={P\bibinitperiod},
-           given={RV},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{d1806d71500d59bbda05f043b3e91d1a}
-      \strng{fullhash}{d1806d71500d59bbda05f043b3e91d1a}
-      \strng{bibnamehash}{d1806d71500d59bbda05f043b3e91d1a}
-      \strng{authorbibnamehash}{d1806d71500d59bbda05f043b3e91d1a}
-      \strng{authornamehash}{d1806d71500d59bbda05f043b3e91d1a}
-      \strng{authorfullhash}{d1806d71500d59bbda05f043b3e91d1a}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{JETP}
-      \field{title}{On the theory of wave motions of relativistic plasma}
-      \field{volume}{3}
-      \field{year}{1956}
-      \field{pages}{696}
-      \range{pages}{1}
     \endentry
     \entry{Kapteyn1991_PM}{article}{}
       \name{author}{4}{}{%
@@ -3897,6 +3891,114 @@
       \field{pages}{730\bibrangedash 739}
       \range{pages}{10}
     \endentry
+    \entry{Corde2013_Rad}{article}{}
+      \name{author}{8}{}{%
+        {{hash=6ec3015b94e6d2ef6afc76614548ad1a}{%
+           family={Corde},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=39f5a0a825ee4105f7346d9b88a5f404}{%
+           family={Ta\bibnamedelima Phuoc},
+           familyi={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fb3e31af08e14cabec2c0efb7bf8cbc7}{%
+           family={Lambert},
+           familyi={L\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8c1dc2db3e872500c657836c6fbe4da7}{%
+           family={Fitour},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3ad4a81d344c408589f0e7b7df383557}{%
+           family={Malka},
+           familyi={M\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=6e490395b15665e4c0dfe182dd9d18ec}{%
+           family={Rousse},
+           familyi={R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dbc08ec45d9e21d3986f963d3a616f20}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e0a2c8e6ec38ae2cdacee06caf312c11}{%
+           family={Lefebvre},
+           familyi={L\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{1faca63e74825857bbc52c1a844de668}
+      \strng{fullhash}{293f2e753e3865456e5115bf70477457}
+      \strng{bibnamehash}{1faca63e74825857bbc52c1a844de668}
+      \strng{authorbibnamehash}{1faca63e74825857bbc52c1a844de668}
+      \strng{authornamehash}{1faca63e74825857bbc52c1a844de668}
+      \strng{authorfullhash}{293f2e753e3865456e5115bf70477457}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Femtosecond x rays from laser-plasma accelerators}
+      \field{volume}{85}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 48}
+      \range{pages}{48}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.85.1
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.85.1
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.85.1
+      \endverb
+    \endentry
+    \entry{Albert2016_APP}{article}{}
+      \name{author}{2}{}{%
+        {{hash=877208b2686b8c8c9a465209699156d1}{%
+           family={Albert},
+           familyi={A\bibinitperiod},
+           given={Felicie},
+           giveni={F\bibinitperiod}}}%
+        {{hash=993b7bd919ac66657ffd4d8f0dd6f322}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Alec\bibnamedelima GR},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{498487c7d9563ac96ee3baa2bea0af01}
+      \strng{fullhash}{498487c7d9563ac96ee3baa2bea0af01}
+      \strng{bibnamehash}{498487c7d9563ac96ee3baa2bea0af01}
+      \strng{authorbibnamehash}{498487c7d9563ac96ee3baa2bea0af01}
+      \strng{authornamehash}{498487c7d9563ac96ee3baa2bea0af01}
+      \strng{authorfullhash}{498487c7d9563ac96ee3baa2bea0af01}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Plasma Physics and Controlled Fusion}
+      \field{number}{10}
+      \field{title}{Applications of laser wakefield accelerator-based light sources}
+      \field{volume}{58}
+      \field{year}{2016}
+      \field{pages}{103001}
+      \range{pages}{1}
+    \endentry
     \entry{Cole2015_tomography}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -3961,8 +4063,8 @@
       \strng{authorbibnamehash}{996b197b325ceb888684705d0d51fe48}
       \strng{authornamehash}{996b197b325ceb888684705d0d51fe48}
       \strng{authorfullhash}{891867c28862a45ec1b01c310d0d4a3d}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Plasma Physics and Controlled Fusion}
@@ -4034,13 +4136,784 @@
       \strng{authorbibnamehash}{da734a8758af437e91661f25bf227907}
       \strng{authornamehash}{da734a8758af437e91661f25bf227907}
       \strng{authorfullhash}{299e3bad1e9ef6cfc312c994350855a0}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1907.10167}
       \field{title}{Single-shot multi-keV X-ray absorption spectroscopy using an ultrashort laser wakefield accelerator source}
       \field{year}{2019}
+    \endentry
+    \entry{GeminiWebsite}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f5de9674d45a00f6dd322a4461f700d9}{%
+           family={Facility},
+           familyi={F\bibinitperiod},
+           given={Central\bibnamedelima Laser},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{f5de9674d45a00f6dd322a4461f700d9}
+      \strng{fullhash}{f5de9674d45a00f6dd322a4461f700d9}
+      \strng{bibnamehash}{f5de9674d45a00f6dd322a4461f700d9}
+      \strng{authorbibnamehash}{f5de9674d45a00f6dd322a4461f700d9}
+      \strng{authornamehash}{f5de9674d45a00f6dd322a4461f700d9}
+      \strng{authorfullhash}{f5de9674d45a00f6dd322a4461f700d9}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Astra Gemini Facility}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.clf.stfc.ac.uk/Pages/The-Astra-Gemini-Facility.aspx
+      \endverb
+      \verb{url}
+      \verb https://www.clf.stfc.ac.uk/Pages/The-Astra-Gemini-Facility.aspx
+      \endverb
+    \endentry
+    \entry{Barber1993_POL}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=2a7ec90155394b91d6d8c0abc867b40a}{%
+           family={Barber},
+           familyi={B\bibinitperiod},
+           given={DP},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b2673d36d7288a4df6f3ff5fdc14efbd}{%
+           family={Bremer},
+           familyi={B\bibinitperiod},
+           given={H-D},
+           giveni={H\bibinithyphendelim D\bibinitperiod}}}%
+        {{hash=bc9a5345de525fb7673409226207c0e1}{%
+           family={B{ö}ge},
+           familyi={B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=db6e56e2329df42e7f0e6a77808d9905}{%
+           family={Brinkmann},
+           familyi={B\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6aa330ced2be4f3a3b9de0d6762d4630}{%
+           family={Br{ü}ckner},
+           familyi={B\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6329d4de195c393dac8d462c6ca156d5}{%
+           family={B{ü}scher},
+           familyi={B\bibinitperiod},
+           given={Ch},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d4d476dcbb95d4b1932fc9389c7c84b4}{%
+           family={Chapman},
+           familyi={C\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9d8704deea8036ebd08a942ea9c1a974}{%
+           family={Coulter},
+           familyi={C\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=46de736c710cec523df02ed59c59aea8}{%
+           family={Delheij},
+           familyi={D\bibinitperiod},
+           given={PPJ},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f9a1f5a9be94c09df2db7dca7b23b9e6}{%
+           family={D{ü}ren},
+           familyi={D\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{c7ad7d852c5ab240d3982e2102188644}
+      \strng{fullhash}{3bb47f7bb947cdd0c29eae969666bd2a}
+      \strng{bibnamehash}{c7ad7d852c5ab240d3982e2102188644}
+      \strng{authorbibnamehash}{c7ad7d852c5ab240d3982e2102188644}
+      \strng{authornamehash}{c7ad7d852c5ab240d3982e2102188644}
+      \strng{authorfullhash}{3bb47f7bb947cdd0c29eae969666bd2a}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{number}{1-2}
+      \field{title}{The HERA polarimeter and the first observation of electron spin polarization at HERA}
+      \field{volume}{329}
+      \field{year}{1993}
+      \field{pages}{79\bibrangedash 111}
+      \range{pages}{33}
+    \endentry
+    \entry{Alley1996_LaserWire}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=2a4193c4b7528d05f4623d6befedb650}{%
+           family={Alley},
+           familyi={A\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2c086ac8edefbb3e45d69b9842a8fb91}{%
+           family={Arnett},
+           familyi={A\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cf29f6de3ec51d7c486db28e96bae114}{%
+           family={Bong},
+           familyi={B\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f9f69db71f54476dca877d98c174b7cc}{%
+           family={Colocho},
+           familyi={C\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=dd32809bdccc15f0c20186bd5705b94c}{%
+           family={Frisch},
+           familyi={F\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=65816eab5a50adbb51fe667c1c4c4f7b}{%
+           family={Horton-Smith},
+           familyi={H\bibinithyphendelim S\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=95f776b4d23e0b6fb9dac669e6e9e075}{%
+           family={Inman},
+           familyi={I\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9a7277ec91205ae9af46db47558a9692}{%
+           family={Jobe},
+           familyi={J\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c0018858f2f6a3ccc2dfc46f77e4e793}{%
+           family={Kotseroglou},
+           familyi={K\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=572c3da5ac0b3e35d9a6d87fe693056d}{%
+           family={McCormick},
+           familyi={M\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8881ce6d589e72a3595b913d3eb07e26}
+      \strng{fullhash}{a30d39f6d8fcbc9cf3d225d7115efbed}
+      \strng{bibnamehash}{8881ce6d589e72a3595b913d3eb07e26}
+      \strng{authorbibnamehash}{8881ce6d589e72a3595b913d3eb07e26}
+      \strng{authornamehash}{8881ce6d589e72a3595b913d3eb07e26}
+      \strng{authorfullhash}{a30d39f6d8fcbc9cf3d225d7115efbed}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{number}{3}
+      \field{title}{A laser-based beam profile monitor for the SLC/SLD interaction region}
+      \field{volume}{379}
+      \field{year}{1996}
+      \field{pages}{363\bibrangedash 365}
+      \range{pages}{3}
+    \endentry
+    \entry{Leemans1996_ICS_BeamTransLong}{article}{}
+      \name{author}{10}{}{%
+        {{hash=47990152ef68656180da7e1083f5b31e}{%
+           family={Leemans},
+           familyi={L\bibinitperiod},
+           given={WP},
+           giveni={W\bibinitperiod}}}%
+        {{hash=26e2b51099a26079ae918fb5398fe7a9}{%
+           family={Schoenlein},
+           familyi={S\bibinitperiod},
+           given={RW},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5a71beec6869a3cdb24d851ec9870d79}{%
+           family={Volfbeyn},
+           familyi={V\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=feb793bfcd41c1a2c2c2f190217baf32}{%
+           family={Chin},
+           familyi={C\bibinitperiod},
+           given={AH},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4878aca25cb2f3b933a9fd921b8a25ce}{%
+           family={Glover},
+           familyi={G\bibinitperiod},
+           given={TE},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e26eb5d4a2b8df0eb73198bd2a49c964}{%
+           family={Balling},
+           familyi={B\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=92e68c38166d35efd6c383cbd5af9819}{%
+           family={Zolotorev},
+           familyi={Z\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=287f704d8968f3be8261aa88415c302d}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={KJ},
+           giveni={K\bibinitperiod}}}%
+        {{hash=818c5e43ff0656aa5d130f7d4157a958}{%
+           family={Chattopadhyay},
+           familyi={C\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=352f8c06f48279cec140f08697d89835}{%
+           family={Shank},
+           familyi={S\bibinitperiod},
+           given={CV},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{131c00d0ffe9c7fa86f7bf557a8ac01b}
+      \strng{fullhash}{2608a55e18310270ce0f4efe51f90279}
+      \strng{bibnamehash}{131c00d0ffe9c7fa86f7bf557a8ac01b}
+      \strng{authorbibnamehash}{131c00d0ffe9c7fa86f7bf557a8ac01b}
+      \strng{authornamehash}{131c00d0ffe9c7fa86f7bf557a8ac01b}
+      \strng{authorfullhash}{2608a55e18310270ce0f4efe51f90279}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{20}
+      \field{title}{X-ray based subpicosecond electron bunch characterization using 90 Thomson scattering}
+      \field{volume}{77}
+      \field{year}{1996}
+      \field{pages}{4182}
+      \range{pages}{1}
+    \endentry
+    \entry{Sakai2001_BeamSize}{article}{}
+      \name{author}{9}{}{%
+        {{hash=3cb0378ee1eca3f8205e78b66adb4a82}{%
+           family={Sakai},
+           familyi={S\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=53d9c260059c5f026b8455649ce938e0}{%
+           family={Honda},
+           familyi={H\bibinitperiod},
+           given={Yousuke},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=acde559109fc4523d334de1d4803e03d}{%
+           family={Sasao},
+           familyi={S\bibinitperiod},
+           given={Noboru},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1ecfe8592390a713bc207dcc8c19bda6}{%
+           family={Araki},
+           familyi={A\bibinitperiod},
+           given={Sakae},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c891ace950187fe15be0d12a8c179f05}{%
+           family={Higashi},
+           familyi={H\bibinitperiod},
+           given={Yasuo},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2df289bb015a2f52ec318879f28953f3}{%
+           family={Okugi},
+           familyi={O\bibinitperiod},
+           given={Toshiyuki},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5a856342313a0ed8d5c7c0315c53a88f}{%
+           family={Taniguchi},
+           familyi={T\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ceb677adb129c981b94287499bad643b}{%
+           family={Urakawa},
+           familyi={U\bibinitperiod},
+           given={Junji},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4533653748d806adc458add9d270ec54}{%
+           family={Takano},
+           familyi={T\bibinitperiod},
+           given={Mikio},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{fullhash}{b8bc83a0d4ed09d5963422c5f754e67c}
+      \strng{bibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{authorbibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{authornamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{authorfullhash}{b8bc83a0d4ed09d5963422c5f754e67c}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Special Topics-Accelerators and Beams}
+      \field{number}{2}
+      \field{title}{Measurement of an electron beam size with a laser wire beam profile monitor}
+      \field{volume}{4}
+      \field{year}{2001}
+      \field{pages}{022801}
+      \range{pages}{1}
+    \endentry
+    \entry{Sakai2002_ICS_EMITTANCE}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=3cb0378ee1eca3f8205e78b66adb4a82}{%
+           family={Sakai},
+           familyi={S\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=53d9c260059c5f026b8455649ce938e0}{%
+           family={Honda},
+           familyi={H\bibinitperiod},
+           given={Yousuke},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=acde559109fc4523d334de1d4803e03d}{%
+           family={Sasao},
+           familyi={S\bibinitperiod},
+           given={Noboru},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1ecfe8592390a713bc207dcc8c19bda6}{%
+           family={Araki},
+           familyi={A\bibinitperiod},
+           given={Sakae},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8fc58b4e3e22c9d1fd7b871f6819da45}{%
+           family={Hayano},
+           familyi={H\bibinitperiod},
+           given={Hitoshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c891ace950187fe15be0d12a8c179f05}{%
+           family={Higashi},
+           familyi={H\bibinitperiod},
+           given={Yasuo},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b7374166e96d2816e0f46c1e71a2d492}{%
+           family={Kubo},
+           familyi={K\bibinitperiod},
+           given={Kiyoshi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2df289bb015a2f52ec318879f28953f3}{%
+           family={Okugi},
+           familyi={O\bibinitperiod},
+           given={Toshiyuki},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5a856342313a0ed8d5c7c0315c53a88f}{%
+           family={Taniguchi},
+           familyi={T\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f275853b7bf1a7ca6a8b86ed0631fd87}{%
+           family={Terunuma},
+           familyi={T\bibinitperiod},
+           given={Nobuhiro},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{fullhash}{5c299f3799261b7a33daba69f6d32206}
+      \strng{bibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{authorbibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{authornamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{authorfullhash}{5c299f3799261b7a33daba69f6d32206}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Special Topics-Accelerators and Beams}
+      \field{number}{12}
+      \field{title}{Measurement of a small vertical emittance with a laser wire beam profile monitor}
+      \field{volume}{5}
+      \field{year}{2002}
+      \field{pages}{122801}
+      \range{pages}{1}
+    \endentry
+    \entry{Sakai2002_ICS_LaserWire}{article}{}
+      \name{author}{9}{}{%
+        {{hash=3cb0378ee1eca3f8205e78b66adb4a82}{%
+           family={Sakai},
+           familyi={S\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=53d9c260059c5f026b8455649ce938e0}{%
+           family={Honda},
+           familyi={H\bibinitperiod},
+           given={Yousuke},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=acde559109fc4523d334de1d4803e03d}{%
+           family={Sasao},
+           familyi={S\bibinitperiod},
+           given={Noboru},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1ecfe8592390a713bc207dcc8c19bda6}{%
+           family={Araki},
+           familyi={A\bibinitperiod},
+           given={Sakae},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c891ace950187fe15be0d12a8c179f05}{%
+           family={Higashi},
+           familyi={H\bibinitperiod},
+           given={Yasuo},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2df289bb015a2f52ec318879f28953f3}{%
+           family={Okugi},
+           familyi={O\bibinitperiod},
+           given={Toshiyuki},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5a856342313a0ed8d5c7c0315c53a88f}{%
+           family={Taniguchi},
+           familyi={T\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ceb677adb129c981b94287499bad643b}{%
+           family={Urakawa},
+           familyi={U\bibinitperiod},
+           given={Junji},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4533653748d806adc458add9d270ec54}{%
+           family={Takano},
+           familyi={T\bibinitperiod},
+           given={Mikio},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{fullhash}{b8bc83a0d4ed09d5963422c5f754e67c}
+      \strng{bibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{authorbibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{authornamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
+      \strng{authorfullhash}{b8bc83a0d4ed09d5963422c5f754e67c}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Japanese journal of applied physics}
+      \field{number}{11R}
+      \field{title}{Performance studies of a laser wire beam profile monitor}
+      \field{volume}{41}
+      \field{year}{2002}
+      \field{pages}{6398}
+      \range{pages}{1}
+    \endentry
+    \entry{Baylac2002_POL}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=8aa08f44e58803b03a2d09fe124e9d1f}{%
+           family={Baylac},
+           familyi={B\bibinitperiod},
+           given={Maud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7dacf251c44439c4aba7448fdae88261}{%
+           family={Burtin},
+           familyi={B\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=fee05d1634e0c61802e855db23ef63ea}{%
+           family={Cavata},
+           familyi={C\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=65fe0cef6ecb7c8cfdde9d11d55fe15a}{%
+           family={Escoffier},
+           familyi={E\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d19e4ef546fac0079babf38b7eab6528}{%
+           family={Frois},
+           familyi={F\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b0e27e429ac7b7ec49035e77c442c9ac}{%
+           family={Lhuillier},
+           familyi={L\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=81755ed1d000fdf9dcb005d835844515}{%
+           family={Marie},
+           familyi={M\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod}}}%
+        {{hash=44f9e056e9e5c621eea227c691edac05}{%
+           family={Martino},
+           familyi={M\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=84a32abd0217a6eafb11be56e6b899d4}{%
+           family={Neyret},
+           familyi={N\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=78e1818e7f0f5b9e5a13384e7ffa76dc}{%
+           family={Pussieux},
+           familyi={P\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0af79942e850674e06a22fe77731d789}
+      \strng{fullhash}{66281221863cd015e9e52f2f61ac32de}
+      \strng{bibnamehash}{0af79942e850674e06a22fe77731d789}
+      \strng{authorbibnamehash}{0af79942e850674e06a22fe77731d789}
+      \strng{authornamehash}{0af79942e850674e06a22fe77731d789}
+      \strng{authorfullhash}{66281221863cd015e9e52f2f61ac32de}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Letters B}
+      \field{number}{1-2}
+      \field{title}{First electron beam polarization measurements with a Compton polarimeter at Jefferson Laboratory}
+      \field{volume}{539}
+      \field{year}{2002}
+      \field{pages}{8\bibrangedash 12}
+      \range{pages}{5}
+    \endentry
+    \entry{Honda2005_ICS_LaserWire}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=59159cb7dfdde4dff0ac94dee5a20c99}{%
+           family={Honda},
+           familyi={H\bibinitperiod},
+           given={Yosuke},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=acde559109fc4523d334de1d4803e03d}{%
+           family={Sasao},
+           familyi={S\bibinitperiod},
+           given={Noboru},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1ecfe8592390a713bc207dcc8c19bda6}{%
+           family={Araki},
+           familyi={A\bibinitperiod},
+           given={Sakae},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c891ace950187fe15be0d12a8c179f05}{%
+           family={Higashi},
+           familyi={H\bibinitperiod},
+           given={Yasuo},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2df289bb015a2f52ec318879f28953f3}{%
+           family={Okugi},
+           familyi={O\bibinitperiod},
+           given={Toshiyuki},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5a856342313a0ed8d5c7c0315c53a88f}{%
+           family={Taniguchi},
+           familyi={T\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ceb677adb129c981b94287499bad643b}{%
+           family={Urakawa},
+           familyi={U\bibinitperiod},
+           given={Junji},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a1d48fd81b81c209288f8603608ac888}{%
+           family={Yamazaki},
+           familyi={Y\bibinitperiod},
+           given={Yoshio},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a19d7ea53b8ab81c5284e3d86c45d3af}{%
+           family={Hirano},
+           familyi={H\bibinitperiod},
+           given={Koichiro},
+           giveni={K\bibinitperiod}}}%
+        {{hash=dd6fea30159cccdcf603a58fae21fb00}{%
+           family={Nomura},
+           familyi={N\bibinitperiod},
+           given={Masahiro},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{af738d2533c8e2244c88c5ad888cdef5}
+      \strng{fullhash}{502e00d0e1437d4c92df6eabf232624a}
+      \strng{bibnamehash}{af738d2533c8e2244c88c5ad888cdef5}
+      \strng{authorbibnamehash}{af738d2533c8e2244c88c5ad888cdef5}
+      \strng{authornamehash}{af738d2533c8e2244c88c5ad888cdef5}
+      \strng{authorfullhash}{502e00d0e1437d4c92df6eabf232624a}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
+      \field{number}{1-3}
+      \field{title}{Upgraded laser wire beam profile monitor}
+      \field{volume}{538}
+      \field{year}{2005}
+      \field{pages}{100\bibrangedash 115}
+      \range{pages}{16}
+    \endentry
+    \entry{Utsunomiya2014_ICS_BeamEnergy}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=ef34a4087d6d0a0b8529a8d1da6cd61a}{%
+           family={Utsunomiya},
+           familyi={U\bibinitperiod},
+           given={Hiroaki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3774f693aa7204c843e3eeedc475c415}{%
+           family={Shima},
+           familyi={S\bibinitperiod},
+           given={Tatsushi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c971ed2ccfc99ad37b66e72c4c553a37}{%
+           family={Takahisa},
+           familyi={T\bibinitperiod},
+           given={Keiji},
+           giveni={K\bibinitperiod}}}%
+        {{hash=866bc7f89719b05814d956ece16bacdb}{%
+           family={Filipescu},
+           familyi={F\bibinitperiod},
+           given={Dan\bibnamedelima Mihai},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3f3929c4c3bbd06a3ebf1c01e3a94c49}{%
+           family={Tesileanu},
+           familyi={T\bibinitperiod},
+           given={Ovidiu},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b981365a9b5fcb8017951e82e127a68b}{%
+           family={Gheorghe},
+           familyi={G\bibinitperiod},
+           given={Ioana},
+           giveni={I\bibinitperiod}}}%
+        {{hash=14b860fcb1e058b9f797a74cb74aca89}{%
+           family={Nyhus},
+           familyi={N\bibinitperiod},
+           given={Hilde-Therese},
+           giveni={H\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=1982a0a7a25d7047ebcf4a05d5c188cf}{%
+           family={Renstr{ø}m},
+           familyi={R\bibinitperiod},
+           given={Therese},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f2ed148742a01452da33faeaa5afc96b}{%
+           family={Lui},
+           familyi={L\bibinitperiod},
+           given={Yiu-Wing},
+           giveni={Y\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=63574cdce5db60158a50872bffa141c2}{%
+           family={Kitagawa},
+           familyi={K\bibinitperiod},
+           given={Yasuhisa},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{acdc6f9a5c4bf11508e42cb58d65668a}
+      \strng{fullhash}{5310998d831e8dd025acb97f8e4b3297}
+      \strng{bibnamehash}{acdc6f9a5c4bf11508e42cb58d65668a}
+      \strng{authorbibnamehash}{acdc6f9a5c4bf11508e42cb58d65668a}
+      \strng{authornamehash}{acdc6f9a5c4bf11508e42cb58d65668a}
+      \strng{authorfullhash}{5310998d831e8dd025acb97f8e4b3297}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Nuclear Science}
+      \field{number}{3}
+      \field{title}{Energy calibration of the NewSUBARU storage ring for laser Compton-scattering gamma rays and applications}
+      \field{volume}{61}
+      \field{year}{2014}
+      \field{pages}{1252\bibrangedash 1258}
+      \range{pages}{7}
+    \endentry
+    \entry{Nakano2001_ICSNuclear}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=54e5d32ce202d1ed8fb0742fd917e1e1}{%
+           family={Nakano},
+           familyi={N\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=26b0f4aabf52ebce24f729f78f924519}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Jung\bibnamedelima Keun},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=69ba509634a6d1cb0d556f8406833378}{%
+           family={Fujiwara},
+           familyi={F\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b5e68301a3c8f3a45cc62aa1870acccd}{%
+           family={Kohri},
+           familyi={K\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d6e1e21466b3a49c6f8d44a121a648ed}{%
+           family={Matsuoka},
+           familyi={M\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+        {{hash=25e13b539ad11fa3551e66a09de6562d}{%
+           family={Mibe},
+           familyi={M\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7e19a3771941ddf9b8c7155b1c9a28ac}{%
+           family={Muramatsu},
+           familyi={M\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f47c672482633b796dda88d2738e4466}{%
+           family={Nomachi},
+           familyi={N\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=af3767092303b4f05024e3019e841c43}{%
+           family={Shimizu},
+           familyi={S\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d267ed6ff12a09d92bd0b6d4a85ad234}{%
+           family={Yonehara},
+           familyi={Y\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Science Publishing Company, Inc.}%
+      }
+      \strng{namehash}{ee7e1e728ad894a5742b725ce5d9f87e}
+      \strng{fullhash}{dbda3259a46d9e8bb979d40eb328b615}
+      \strng{bibnamehash}{ee7e1e728ad894a5742b725ce5d9f87e}
+      \strng{authorbibnamehash}{ee7e1e728ad894a5742b725ce5d9f87e}
+      \strng{authornamehash}{ee7e1e728ad894a5742b725ce5d9f87e}
+      \strng{authorfullhash}{dbda3259a46d9e8bb979d40eb328b615}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nuclear Physics A}
+      \field{number}{1-4}
+      \field{title}{Multi-GeV laser-electron photon project at SPring-8}
+      \field{volume}{684}
+      \field{year}{2001}
+      \field{pages}{71\bibrangedash 79}
+      \range{pages}{9}
     \endentry
     \entry{Blackburn2019_RRReview}{article}{}
       \name{author}{1}{}{%
@@ -4056,8 +4929,8 @@
       \strng{authorbibnamehash}{695a016040e18e2fd4d7adf3ce33ca83}
       \strng{authornamehash}{695a016040e18e2fd4d7adf3ce33ca83}
       \strng{authorfullhash}{695a016040e18e2fd4d7adf3ce33ca83}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1910.13377}
@@ -4081,8 +4954,8 @@
       \strng{authorbibnamehash}{e9d26c575f8fc6e42f4e02907dff4069}
       \strng{authornamehash}{e9d26c575f8fc6e42f4e02907dff4069}
       \strng{authorfullhash}{e9d26c575f8fc6e42f4e02907dff4069}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rep.}
@@ -4117,8 +4990,8 @@
       \strng{authorbibnamehash}{e5bbc40c2368883a7fe3c457a262b0d3}
       \strng{authornamehash}{e5bbc40c2368883a7fe3c457a262b0d3}
       \strng{authorfullhash}{e5bbc40c2368883a7fe3c457a262b0d3}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Rep. Prog. Phys.}
@@ -4153,8 +5026,8 @@
       \strng{authorbibnamehash}{59b62171bf5678459952c1ecfe5e6b0d}
       \strng{authornamehash}{59b62171bf5678459952c1ecfe5e6b0d}
       \strng{authorfullhash}{59b62171bf5678459952c1ecfe5e6b0d}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Mon. Not. R. Astron. Soc.}
@@ -4194,8 +5067,8 @@
       \strng{authorbibnamehash}{2974f3a313c29bfbec7142b7b12f502d}
       \strng{authornamehash}{2974f3a313c29bfbec7142b7b12f502d}
       \strng{authorfullhash}{ca66490efd355130f12cb84f9a19377c}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physics Reports}
@@ -4223,8 +5096,8 @@
       \strng{authorbibnamehash}{ce10be34566d061cb8761addf82547db}
       \strng{authornamehash}{ce10be34566d061cb8761addf82547db}
       \strng{authorfullhash}{ce10be34566d061cb8761addf82547db}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Sov. Phys. JETP}
@@ -4261,8 +5134,8 @@
       \strng{authorbibnamehash}{d084b191dd47f24ba5b682fee7a77107}
       \strng{authornamehash}{d084b191dd47f24ba5b682fee7a77107}
       \strng{authorfullhash}{4552cee12c3fc18db1226a7ec8ceb94c}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rep.}
@@ -4297,8 +5170,8 @@
       \strng{authorbibnamehash}{3f4bd4963f0892f26dfe03e4a83de073}
       \strng{authornamehash}{3f4bd4963f0892f26dfe03e4a83de073}
       \strng{authorfullhash}{3f4bd4963f0892f26dfe03e4a83de073}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rep.}
@@ -4505,8 +5378,8 @@
       \strng{authorbibnamehash}{0dddc70f28a28792dd185940c2174bf7}
       \strng{authornamehash}{0dddc70f28a28792dd185940c2174bf7}
       \strng{authorfullhash}{9851971e76dcbf8fbd94832b97a5a048}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review E}
@@ -4566,8 +5439,8 @@
       \strng{authorbibnamehash}{815f09aea220e8b4e13f900db884adb5}
       \strng{authornamehash}{815f09aea220e8b4e13f900db884adb5}
       \strng{authorfullhash}{a08c18a21480cb3040700feabbf49ac6}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -4622,8 +5495,8 @@
       \strng{authorbibnamehash}{94a7c807318b30d639cafc2fae5504b5}
       \strng{authornamehash}{94a7c807318b30d639cafc2fae5504b5}
       \strng{authorfullhash}{8ab2786d40dc59a446091bf22ce2dbce}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical review letters}
@@ -4656,8 +5529,8 @@
       \strng{authorbibnamehash}{94bf0358c85dc9aca783f90eb15f6c71}
       \strng{authornamehash}{94bf0358c85dc9aca783f90eb15f6c71}
       \strng{authorfullhash}{94bf0358c85dc9aca783f90eb15f6c71}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{{O}pportunities in {I}ntense {U}ltrafast {L}asers: {R}eaching for the {B}rightest {L}ight}}
@@ -4667,8 +5540,8 @@
       \endverb
     \endentry
     \entry{DoE2015_FES}{misc}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labeltitlesource}{title}
       \field{note}{(US Department of Energy, Office of Fusion Energy Science) \url{https://science.energy.gov/~/media/fes/pdf/program-news/Frontiers_of_Plasma_Science_Final_Report.pdf}}
       \field{title}{{{P}}lasma: at the frontier of scientific discovery -- {{R}}eport of the {{P}}anel on {{F}}rontiers of {{P}}lasma {{S}}cience}
@@ -4890,8 +5763,8 @@
       \strng{authorbibnamehash}{356783575ac3d275aa82a1d8ad88d5a3}
       \strng{authornamehash}{356783575ac3d275aa82a1d8ad88d5a3}
       \strng{authorfullhash}{a2772153ea97a96697b51d65ef34b130}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Letters}
@@ -4956,8 +5829,8 @@
       \strng{authorbibnamehash}{cdfda86662ae5c52a3579104c3ae6ebc}
       \strng{authornamehash}{cdfda86662ae5c52a3579104c3ae6ebc}
       \strng{authorfullhash}{548b1f08fd0207af0f685e45f7942779}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Photonics}
@@ -5051,8 +5924,8 @@
       \strng{authorbibnamehash}{8e2e399e500f1d08f23adb0500be1b7d}
       \strng{authornamehash}{8e2e399e500f1d08f23adb0500be1b7d}
       \strng{authorfullhash}{a5fce3d4ffc3a52f423e8f00aa20619a}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Letters}
@@ -5118,8 +5991,8 @@
       \strng{authorbibnamehash}{c4ef8ff7f8800cee70f3b426dfed9f06}
       \strng{authornamehash}{c4ef8ff7f8800cee70f3b426dfed9f06}
       \strng{authorfullhash}{b1f848a692f7ae0bce5fd85d7e06856c}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Photonics}
@@ -5203,8 +6076,8 @@
       \strng{authorbibnamehash}{c6cc2cc5e1be5339840f6505081a475d}
       \strng{authornamehash}{c6cc2cc5e1be5339840f6505081a475d}
       \strng{authorfullhash}{143a740a4cbb7e968bcbefdac19038ff}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical review letters}
@@ -5259,8 +6132,8 @@
       \strng{authorbibnamehash}{cd099a3cf38848e3ca43754d15338149}
       \strng{authornamehash}{cd099a3cf38848e3ca43754d15338149}
       \strng{authorfullhash}{ea0c0a4bf8072d9bde5b3dd54b4fc1e5}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Letters}
@@ -5299,8 +6172,8 @@
       \strng{authorbibnamehash}{fbd8186b820bbbf6c428f80e1ce4e582}
       \strng{authornamehash}{fbd8186b820bbbf6c428f80e1ce4e582}
       \strng{authorfullhash}{fbd8186b820bbbf6c428f80e1ce4e582}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -5351,8 +6224,8 @@
       \strng{authorbibnamehash}{b582e20eb30a2db319aa4fd3df1a46ed}
       \strng{authornamehash}{b582e20eb30a2db319aa4fd3df1a46ed}
       \strng{authorfullhash}{944694da3322d2316c67877e61a61fbe}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. A}
@@ -5405,8 +6278,8 @@
       \strng{authorbibnamehash}{b582e20eb30a2db319aa4fd3df1a46ed}
       \strng{authornamehash}{b582e20eb30a2db319aa4fd3df1a46ed}
       \strng{authorfullhash}{944694da3322d2316c67877e61a61fbe}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. A}
@@ -5457,8 +6330,8 @@
       \strng{authorbibnamehash}{4e7ef8ecf31362612b175ce1adf314c5}
       \strng{authornamehash}{4e7ef8ecf31362612b175ce1adf314c5}
       \strng{authorfullhash}{ad8e9f0d3e77e8e16a25fbf48fa1a736}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -5511,8 +6384,8 @@
       \strng{authorbibnamehash}{5c14b184d3dbbe5556846ff208fd1514}
       \strng{authornamehash}{5c14b184d3dbbe5556846ff208fd1514}
       \strng{authorfullhash}{afdf606134793225edafe3213c217ba2}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -5550,8 +6423,8 @@
       \strng{authorbibnamehash}{7ddfccf328211211efe52ca8d733e820}
       \strng{authornamehash}{7ddfccf328211211efe52ca8d733e820}
       \strng{authorfullhash}{7ddfccf328211211efe52ca8d733e820}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Russian Laser Research}
@@ -5626,8 +6499,8 @@
       \strng{authorbibnamehash}{73d7cf9bb277fe1c0740619422ace753}
       \strng{authornamehash}{73d7cf9bb277fe1c0740619422ace753}
       \strng{authorfullhash}{c4d70c50b41a962bfd8eaa5b272775de}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Plasma Physics}
@@ -5658,8 +6531,8 @@
       \strng{authorbibnamehash}{58de5eda816be49dcb170f2aaea0473e}
       \strng{authornamehash}{58de5eda816be49dcb170f2aaea0473e}
       \strng{authorfullhash}{58de5eda816be49dcb170f2aaea0473e}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -5717,8 +6590,8 @@
       \strng{authorbibnamehash}{25d70c08b26ac6304446130932bcf149}
       \strng{authornamehash}{25d70c08b26ac6304446130932bcf149}
       \strng{authorfullhash}{a23d3fddae542845b9586562e057c417}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. X}
@@ -5773,8 +6646,8 @@
       \strng{authorbibnamehash}{37fa932aeffd2c4283d30fcde580146f}
       \strng{authornamehash}{37fa932aeffd2c4283d30fcde580146f}
       \strng{authorfullhash}{3aa4c4245f5c901b229d59a9a7fff0b0}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -5821,8 +6694,8 @@
       \strng{authorbibnamehash}{b059168a0df2e995adf6d08d9ec01d14}
       \strng{authornamehash}{b059168a0df2e995adf6d08d9ec01d14}
       \strng{authorfullhash}{a34abe421ad7806ff37b2f3a2b0dd350}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -5882,8 +6755,8 @@
       \strng{authorbibnamehash}{1b0be9d61d04a7cf88cd40077f100dbc}
       \strng{authornamehash}{1b0be9d61d04a7cf88cd40077f100dbc}
       \strng{authorfullhash}{9ae89cb8393b77d39f1e650b8ef9ba1f}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. A}
@@ -5933,8 +6806,8 @@
       \strng{authorbibnamehash}{75e688cb42b05747fec97027fd0e4851}
       \strng{authornamehash}{75e688cb42b05747fec97027fd0e4851}
       \strng{authorfullhash}{dbeff1c77138851f727bfe22a5da225e}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review A}
@@ -5995,8 +6868,8 @@
       \strng{authorbibnamehash}{cc196a5ce1f3c4120fc08f1048e1df69}
       \strng{authornamehash}{cc196a5ce1f3c4120fc08f1048e1df69}
       \strng{authorfullhash}{5610d5688965788f03cdba3fdbda6451}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett.}
@@ -6036,8 +6909,8 @@
       \strng{authorbibnamehash}{d491a41e35a8a56290598528f1245cf7}
       \strng{authornamehash}{d491a41e35a8a56290598528f1245cf7}
       \strng{authorfullhash}{aeacbabebf7e914b4e7ada632b6c541d}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physics Letters B}
@@ -6069,8 +6942,8 @@
       \strng{authorbibnamehash}{b7affd78c49ac39ec3a6ebb9540c8d59}
       \strng{authornamehash}{b7affd78c49ac39ec3a6ebb9540c8d59}
       \strng{authorfullhash}{b7affd78c49ac39ec3a6ebb9540c8d59}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Radiation Effects and Defects in Solids}
@@ -6105,8 +6978,8 @@
       \strng{authorbibnamehash}{6fa060a591916ec9366fd1766c93006e}
       \strng{authornamehash}{6fa060a591916ec9366fd1766c93006e}
       \strng{authorfullhash}{6fa060a591916ec9366fd1766c93006e}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Electromagnetic processes at high energies in oriented single crystals}
@@ -6144,8 +7017,8 @@
       \strng{authorbibnamehash}{a048f6328a740be85197e1b29804ed4a}
       \strng{authornamehash}{a048f6328a740be85197e1b29804ed4a}
       \strng{authorfullhash}{a43a7ac84f01629bc368381ad2dc2ad2}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature communications}
@@ -6190,8 +7063,8 @@
       \strng{authorbibnamehash}{70424fbc52102599b8b4987582fe1a1d}
       \strng{authornamehash}{70424fbc52102599b8b4987582fe1a1d}
       \strng{authorfullhash}{e7277ef35b40b040b8a5d8cb9f281a6e}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1906.09144}
@@ -7229,114 +8102,6 @@
       \field{type}{phdthesis}
       \field{year}{2012}
     \endentry
-    \entry{Corde2013_Rad}{article}{}
-      \name{author}{8}{}{%
-        {{hash=6ec3015b94e6d2ef6afc76614548ad1a}{%
-           family={Corde},
-           familyi={C\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=39f5a0a825ee4105f7346d9b88a5f404}{%
-           family={Ta\bibnamedelima Phuoc},
-           familyi={T\bibinitperiod\bibinitdelim P\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=fb3e31af08e14cabec2c0efb7bf8cbc7}{%
-           family={Lambert},
-           familyi={L\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-        {{hash=8c1dc2db3e872500c657836c6fbe4da7}{%
-           family={Fitour},
-           familyi={F\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=3ad4a81d344c408589f0e7b7df383557}{%
-           family={Malka},
-           familyi={M\bibinitperiod},
-           given={V.},
-           giveni={V\bibinitperiod}}}%
-        {{hash=6e490395b15665e4c0dfe182dd9d18ec}{%
-           family={Rousse},
-           familyi={R\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=dbc08ec45d9e21d3986f963d3a616f20}{%
-           family={Beck},
-           familyi={B\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=e0a2c8e6ec38ae2cdacee06caf312c11}{%
-           family={Lefebvre},
-           familyi={L\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{1faca63e74825857bbc52c1a844de668}
-      \strng{fullhash}{293f2e753e3865456e5115bf70477457}
-      \strng{bibnamehash}{1faca63e74825857bbc52c1a844de668}
-      \strng{authorbibnamehash}{1faca63e74825857bbc52c1a844de668}
-      \strng{authornamehash}{1faca63e74825857bbc52c1a844de668}
-      \strng{authorfullhash}{293f2e753e3865456e5115bf70477457}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Rev. Mod. Phys.}
-      \field{month}{1}
-      \field{number}{1}
-      \field{title}{Femtosecond x rays from laser-plasma accelerators}
-      \field{volume}{85}
-      \field{year}{2013}
-      \field{pages}{1\bibrangedash 48}
-      \range{pages}{48}
-      \verb{doi}
-      \verb 10.1103/RevModPhys.85.1
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/RevModPhys.85.1
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/RevModPhys.85.1
-      \endverb
-    \endentry
-    \entry{Albert2016_APP}{article}{}
-      \name{author}{2}{}{%
-        {{hash=877208b2686b8c8c9a465209699156d1}{%
-           family={Albert},
-           familyi={A\bibinitperiod},
-           given={Felicie},
-           giveni={F\bibinitperiod}}}%
-        {{hash=993b7bd919ac66657ffd4d8f0dd6f322}{%
-           family={Thomas},
-           familyi={T\bibinitperiod},
-           given={Alec\bibnamedelima GR},
-           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{498487c7d9563ac96ee3baa2bea0af01}
-      \strng{fullhash}{498487c7d9563ac96ee3baa2bea0af01}
-      \strng{bibnamehash}{498487c7d9563ac96ee3baa2bea0af01}
-      \strng{authorbibnamehash}{498487c7d9563ac96ee3baa2bea0af01}
-      \strng{authornamehash}{498487c7d9563ac96ee3baa2bea0af01}
-      \strng{authorfullhash}{498487c7d9563ac96ee3baa2bea0af01}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Plasma Physics and Controlled Fusion}
-      \field{number}{10}
-      \field{title}{Applications of laser wakefield accelerator-based light sources}
-      \field{volume}{58}
-      \field{year}{2016}
-      \field{pages}{103001}
-      \range{pages}{1}
-    \endentry
     \entry{Compton1923_Compton}{article}{}
       \name{author}{1}{}{%
         {{hash=41ba027d206333eb97d45a48144ec9ec}{%
@@ -8208,8 +8973,8 @@
       \strng{authorbibnamehash}{5e5b4eea58876a9b4b5ded8bb7aee131}
       \strng{authornamehash}{5e5b4eea58876a9b4b5ded8bb7aee131}
       \strng{authorfullhash}{5e5b4eea58876a9b4b5ded8bb7aee131}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character}
@@ -8237,8 +9002,8 @@
       \strng{authorbibnamehash}{10eab60e36031dbba3ff672eb93b001f}
       \strng{authornamehash}{10eab60e36031dbba3ff672eb93b001f}
       \strng{authorfullhash}{10eab60e36031dbba3ff672eb93b001f}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Mathematical Proceedings of the Cambridge Philosophical Society}
@@ -8266,8 +9031,8 @@
       \strng{authorbibnamehash}{e2867b40f0366c4738061c94da5d04e7}
       \strng{authornamehash}{e2867b40f0366c4738061c94da5d04e7}
       \strng{authorfullhash}{e2867b40f0366c4738061c94da5d04e7}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review}
@@ -8295,8 +9060,8 @@
       \strng{authorbibnamehash}{e2867b40f0366c4738061c94da5d04e7}
       \strng{authornamehash}{e2867b40f0366c4738061c94da5d04e7}
       \strng{authorfullhash}{e2867b40f0366c4738061c94da5d04e7}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review}
@@ -8339,8 +9104,8 @@
       \strng{authorbibnamehash}{ae7a77837680b400b3a116956dad2cac}
       \strng{authornamehash}{ae7a77837680b400b3a116956dad2cac}
       \strng{authorfullhash}{841b9aa1b8baaf85df8d64235e5ba519}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Positron emission tomography}
@@ -8368,8 +9133,8 @@
       \strng{authorbibnamehash}{8f9a7417b082a0a31569131517f6e6f4}
       \strng{authornamehash}{8f9a7417b082a0a31569131517f6e6f4}
       \strng{authorfullhash}{8f9a7417b082a0a31569131517f6e6f4}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review}
@@ -9686,6 +10451,36 @@
       \range{pages}{7}
       \keyw{laser wakefield accelerators,laser-plasma acceleration,plasma accelerators}
     \endentry
+    \entry{Akhiezcr1956_Waves}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9681fa21059b1a4d7f240a13247f3527}{%
+           family={Akhiezcr},
+           familyi={A\bibinitperiod},
+           given={AI},
+           giveni={A\bibinitperiod}}}%
+        {{hash=02c7d903bbb1cfd5f218bf36b3897dbf}{%
+           family={Polovin},
+           familyi={P\bibinitperiod},
+           given={RV},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1806d71500d59bbda05f043b3e91d1a}
+      \strng{fullhash}{d1806d71500d59bbda05f043b3e91d1a}
+      \strng{bibnamehash}{d1806d71500d59bbda05f043b3e91d1a}
+      \strng{authorbibnamehash}{d1806d71500d59bbda05f043b3e91d1a}
+      \strng{authornamehash}{d1806d71500d59bbda05f043b3e91d1a}
+      \strng{authorfullhash}{d1806d71500d59bbda05f043b3e91d1a}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JETP}
+      \field{title}{On the theory of wave motions of relativistic plasma}
+      \field{volume}{3}
+      \field{year}{1956}
+      \field{pages}{696}
+      \range{pages}{1}
+    \endentry
     \entry{WoodThesis}{thesis}{}
       \name{author}{1}{}{%
         {{hash=73f0698553cbb367336f7ef509485e2d}{%
@@ -10749,33 +11544,6 @@
       \field{title}{Commissioning the Astra Gemini petawatt Ti: sapphire laser system}
       \field{year}{2008}
     \endentry
-    \entry{GeminiWebsite}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=f5de9674d45a00f6dd322a4461f700d9}{%
-           family={Facility},
-           familyi={F\bibinitperiod},
-           given={Central\bibnamedelima Laser},
-           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{f5de9674d45a00f6dd322a4461f700d9}
-      \strng{fullhash}{f5de9674d45a00f6dd322a4461f700d9}
-      \strng{bibnamehash}{f5de9674d45a00f6dd322a4461f700d9}
-      \strng{authorbibnamehash}{f5de9674d45a00f6dd322a4461f700d9}
-      \strng{authornamehash}{f5de9674d45a00f6dd322a4461f700d9}
-      \strng{authorfullhash}{f5de9674d45a00f6dd322a4461f700d9}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The Astra Gemini Facility}
-      \field{year}{2019}
-      \verb{urlraw}
-      \verb https://www.clf.stfc.ac.uk/Pages/The-Astra-Gemini-Facility.aspx
-      \endverb
-      \verb{url}
-      \verb https://www.clf.stfc.ac.uk/Pages/The-Astra-Gemini-Facility.aspx
-      \endverb
-    \endentry
     \entry{FROG}{book}{}
       \name{author}{1}{}{%
         {{hash=0f842c063baa31b455ba34216fad6909}{%
@@ -11485,8 +12253,8 @@
       \strng{authorbibnamehash}{3895b16f47e2ab8cd1aba92b14344765}
       \strng{authornamehash}{3895b16f47e2ab8cd1aba92b14344765}
       \strng{authorfullhash}{ebb9624a16dbce0147776b8e839860e4}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Review of Scientific Instruments}
@@ -11570,8 +12338,8 @@
       \strng{authorbibnamehash}{d5c7cf16cc668472b811ce683926ab93}
       \strng{authornamehash}{d5c7cf16cc668472b811ce683926ab93}
       \strng{authorfullhash}{e9eda44e5919113293fe59c7a2540531}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Physics Letters}
@@ -11653,8 +12421,8 @@
       \strng{authorbibnamehash}{43461841deb073dcb08d7fb3645d2826}
       \strng{authornamehash}{43461841deb073dcb08d7fb3645d2826}
       \strng{authorfullhash}{24420da5be5e188529c782e4d24c315a}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical review letters}
@@ -11724,8 +12492,8 @@
       \strng{authorbibnamehash}{21ddc3c479d9123009836ddb1b61b9c8}
       \strng{authornamehash}{21ddc3c479d9123009836ddb1b61b9c8}
       \strng{authorfullhash}{f824fce29f6be197cfdb8b3b603c2de6}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{01689002}
@@ -12478,82 +13246,6 @@
       \field{pages}{1\bibrangedash 4}
       \range{pages}{4}
     \endentry
-    \entry{Nakano2001_ICSNuclear}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=54e5d32ce202d1ed8fb0742fd917e1e1}{%
-           family={Nakano},
-           familyi={N\bibinitperiod},
-           given={T},
-           giveni={T\bibinitperiod}}}%
-        {{hash=26b0f4aabf52ebce24f729f78f924519}{%
-           family={Ahn},
-           familyi={A\bibinitperiod},
-           given={Jung\bibnamedelima Keun},
-           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=69ba509634a6d1cb0d556f8406833378}{%
-           family={Fujiwara},
-           familyi={F\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=b5e68301a3c8f3a45cc62aa1870acccd}{%
-           family={Kohri},
-           familyi={K\bibinitperiod},
-           given={H},
-           giveni={H\bibinitperiod}}}%
-        {{hash=d6e1e21466b3a49c6f8d44a121a648ed}{%
-           family={Matsuoka},
-           familyi={M\bibinitperiod},
-           given={N},
-           giveni={N\bibinitperiod}}}%
-        {{hash=25e13b539ad11fa3551e66a09de6562d}{%
-           family={Mibe},
-           familyi={M\bibinitperiod},
-           given={T},
-           giveni={T\bibinitperiod}}}%
-        {{hash=7e19a3771941ddf9b8c7155b1c9a28ac}{%
-           family={Muramatsu},
-           familyi={M\bibinitperiod},
-           given={N},
-           giveni={N\bibinitperiod}}}%
-        {{hash=f47c672482633b796dda88d2738e4466}{%
-           family={Nomachi},
-           familyi={N\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=af3767092303b4f05024e3019e841c43}{%
-           family={Shimizu},
-           familyi={S\bibinitperiod},
-           given={H},
-           giveni={H\bibinitperiod}}}%
-        {{hash=d267ed6ff12a09d92bd0b6d4a85ad234}{%
-           family={Yonehara},
-           familyi={Y\bibinitperiod},
-           given={K},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier Science Publishing Company, Inc.}%
-      }
-      \strng{namehash}{ee7e1e728ad894a5742b725ce5d9f87e}
-      \strng{fullhash}{dbda3259a46d9e8bb979d40eb328b615}
-      \strng{bibnamehash}{ee7e1e728ad894a5742b725ce5d9f87e}
-      \strng{authorbibnamehash}{ee7e1e728ad894a5742b725ce5d9f87e}
-      \strng{authornamehash}{ee7e1e728ad894a5742b725ce5d9f87e}
-      \strng{authorfullhash}{dbda3259a46d9e8bb979d40eb328b615}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nuclear Physics A}
-      \field{number}{1-4}
-      \field{title}{Multi-GeV laser-electron photon project at SPring-8}
-      \field{volume}{684}
-      \field{year}{2001}
-      \field{pages}{71\bibrangedash 79}
-      \range{pages}{9}
-    \endentry
     \entry{Chouffani2006_ICS_BeamParam}{article}{}
       \name{author}{5}{}{%
         {{hash=effb62a65dff139db97ff68048cae757}{%
@@ -12612,379 +13304,6 @@
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevSTAB.9.050701
       \endverb
-    \endentry
-    \entry{Utsunomiya2014_ICS_BeamEnergy}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=ef34a4087d6d0a0b8529a8d1da6cd61a}{%
-           family={Utsunomiya},
-           familyi={U\bibinitperiod},
-           given={Hiroaki},
-           giveni={H\bibinitperiod}}}%
-        {{hash=3774f693aa7204c843e3eeedc475c415}{%
-           family={Shima},
-           familyi={S\bibinitperiod},
-           given={Tatsushi},
-           giveni={T\bibinitperiod}}}%
-        {{hash=c971ed2ccfc99ad37b66e72c4c553a37}{%
-           family={Takahisa},
-           familyi={T\bibinitperiod},
-           given={Keiji},
-           giveni={K\bibinitperiod}}}%
-        {{hash=866bc7f89719b05814d956ece16bacdb}{%
-           family={Filipescu},
-           familyi={F\bibinitperiod},
-           given={Dan\bibnamedelima Mihai},
-           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=3f3929c4c3bbd06a3ebf1c01e3a94c49}{%
-           family={Tesileanu},
-           familyi={T\bibinitperiod},
-           given={Ovidiu},
-           giveni={O\bibinitperiod}}}%
-        {{hash=b981365a9b5fcb8017951e82e127a68b}{%
-           family={Gheorghe},
-           familyi={G\bibinitperiod},
-           given={Ioana},
-           giveni={I\bibinitperiod}}}%
-        {{hash=14b860fcb1e058b9f797a74cb74aca89}{%
-           family={Nyhus},
-           familyi={N\bibinitperiod},
-           given={Hilde-Therese},
-           giveni={H\bibinithyphendelim T\bibinitperiod}}}%
-        {{hash=1982a0a7a25d7047ebcf4a05d5c188cf}{%
-           family={Renstr{ø}m},
-           familyi={R\bibinitperiod},
-           given={Therese},
-           giveni={T\bibinitperiod}}}%
-        {{hash=f2ed148742a01452da33faeaa5afc96b}{%
-           family={Lui},
-           familyi={L\bibinitperiod},
-           given={Yiu-Wing},
-           giveni={Y\bibinithyphendelim W\bibinitperiod}}}%
-        {{hash=63574cdce5db60158a50872bffa141c2}{%
-           family={Kitagawa},
-           familyi={K\bibinitperiod},
-           given={Yasuhisa},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{acdc6f9a5c4bf11508e42cb58d65668a}
-      \strng{fullhash}{5310998d831e8dd025acb97f8e4b3297}
-      \strng{bibnamehash}{acdc6f9a5c4bf11508e42cb58d65668a}
-      \strng{authorbibnamehash}{acdc6f9a5c4bf11508e42cb58d65668a}
-      \strng{authornamehash}{acdc6f9a5c4bf11508e42cb58d65668a}
-      \strng{authorfullhash}{5310998d831e8dd025acb97f8e4b3297}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Nuclear Science}
-      \field{number}{3}
-      \field{title}{Energy calibration of the NewSUBARU storage ring for laser Compton-scattering gamma rays and applications}
-      \field{volume}{61}
-      \field{year}{2014}
-      \field{pages}{1252\bibrangedash 1258}
-      \range{pages}{7}
-    \endentry
-    \entry{Sakai2002_ICS_LaserWire}{article}{}
-      \name{author}{9}{}{%
-        {{hash=3cb0378ee1eca3f8205e78b66adb4a82}{%
-           family={Sakai},
-           familyi={S\bibinitperiod},
-           given={Hiroshi},
-           giveni={H\bibinitperiod}}}%
-        {{hash=53d9c260059c5f026b8455649ce938e0}{%
-           family={Honda},
-           familyi={H\bibinitperiod},
-           given={Yousuke},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=acde559109fc4523d334de1d4803e03d}{%
-           family={Sasao},
-           familyi={S\bibinitperiod},
-           given={Noboru},
-           giveni={N\bibinitperiod}}}%
-        {{hash=1ecfe8592390a713bc207dcc8c19bda6}{%
-           family={Araki},
-           familyi={A\bibinitperiod},
-           given={Sakae},
-           giveni={S\bibinitperiod}}}%
-        {{hash=c891ace950187fe15be0d12a8c179f05}{%
-           family={Higashi},
-           familyi={H\bibinitperiod},
-           given={Yasuo},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=2df289bb015a2f52ec318879f28953f3}{%
-           family={Okugi},
-           familyi={O\bibinitperiod},
-           given={Toshiyuki},
-           giveni={T\bibinitperiod}}}%
-        {{hash=5a856342313a0ed8d5c7c0315c53a88f}{%
-           family={Taniguchi},
-           familyi={T\bibinitperiod},
-           given={Takashi},
-           giveni={T\bibinitperiod}}}%
-        {{hash=ceb677adb129c981b94287499bad643b}{%
-           family={Urakawa},
-           familyi={U\bibinitperiod},
-           given={Junji},
-           giveni={J\bibinitperiod}}}%
-        {{hash=4533653748d806adc458add9d270ec54}{%
-           family={Takano},
-           familyi={T\bibinitperiod},
-           given={Mikio},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
-      \strng{namehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{fullhash}{b8bc83a0d4ed09d5963422c5f754e67c}
-      \strng{bibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{authorbibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{authornamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{authorfullhash}{b8bc83a0d4ed09d5963422c5f754e67c}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Japanese journal of applied physics}
-      \field{number}{11R}
-      \field{title}{Performance studies of a laser wire beam profile monitor}
-      \field{volume}{41}
-      \field{year}{2002}
-      \field{pages}{6398}
-      \range{pages}{1}
-    \endentry
-    \entry{Sakai2002_ICS_EMITTANCE}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=3cb0378ee1eca3f8205e78b66adb4a82}{%
-           family={Sakai},
-           familyi={S\bibinitperiod},
-           given={Hiroshi},
-           giveni={H\bibinitperiod}}}%
-        {{hash=53d9c260059c5f026b8455649ce938e0}{%
-           family={Honda},
-           familyi={H\bibinitperiod},
-           given={Yousuke},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=acde559109fc4523d334de1d4803e03d}{%
-           family={Sasao},
-           familyi={S\bibinitperiod},
-           given={Noboru},
-           giveni={N\bibinitperiod}}}%
-        {{hash=1ecfe8592390a713bc207dcc8c19bda6}{%
-           family={Araki},
-           familyi={A\bibinitperiod},
-           given={Sakae},
-           giveni={S\bibinitperiod}}}%
-        {{hash=8fc58b4e3e22c9d1fd7b871f6819da45}{%
-           family={Hayano},
-           familyi={H\bibinitperiod},
-           given={Hitoshi},
-           giveni={H\bibinitperiod}}}%
-        {{hash=c891ace950187fe15be0d12a8c179f05}{%
-           family={Higashi},
-           familyi={H\bibinitperiod},
-           given={Yasuo},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=b7374166e96d2816e0f46c1e71a2d492}{%
-           family={Kubo},
-           familyi={K\bibinitperiod},
-           given={Kiyoshi},
-           giveni={K\bibinitperiod}}}%
-        {{hash=2df289bb015a2f52ec318879f28953f3}{%
-           family={Okugi},
-           familyi={O\bibinitperiod},
-           given={Toshiyuki},
-           giveni={T\bibinitperiod}}}%
-        {{hash=5a856342313a0ed8d5c7c0315c53a88f}{%
-           family={Taniguchi},
-           familyi={T\bibinitperiod},
-           given={Takashi},
-           giveni={T\bibinitperiod}}}%
-        {{hash=f275853b7bf1a7ca6a8b86ed0631fd87}{%
-           family={Terunuma},
-           familyi={T\bibinitperiod},
-           given={Nobuhiro},
-           giveni={N\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{fullhash}{5c299f3799261b7a33daba69f6d32206}
-      \strng{bibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{authorbibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{authornamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{authorfullhash}{5c299f3799261b7a33daba69f6d32206}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Special Topics-Accelerators and Beams}
-      \field{number}{12}
-      \field{title}{Measurement of a small vertical emittance with a laser wire beam profile monitor}
-      \field{volume}{5}
-      \field{year}{2002}
-      \field{pages}{122801}
-      \range{pages}{1}
-    \endentry
-    \entry{Barber1993_POL}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=2a7ec90155394b91d6d8c0abc867b40a}{%
-           family={Barber},
-           familyi={B\bibinitperiod},
-           given={DP},
-           giveni={D\bibinitperiod}}}%
-        {{hash=b2673d36d7288a4df6f3ff5fdc14efbd}{%
-           family={Bremer},
-           familyi={B\bibinitperiod},
-           given={H-D},
-           giveni={H\bibinithyphendelim D\bibinitperiod}}}%
-        {{hash=bc9a5345de525fb7673409226207c0e1}{%
-           family={B{ö}ge},
-           familyi={B\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=db6e56e2329df42e7f0e6a77808d9905}{%
-           family={Brinkmann},
-           familyi={B\bibinitperiod},
-           given={R},
-           giveni={R\bibinitperiod}}}%
-        {{hash=6aa330ced2be4f3a3b9de0d6762d4630}{%
-           family={Br{ü}ckner},
-           familyi={B\bibinitperiod},
-           given={W},
-           giveni={W\bibinitperiod}}}%
-        {{hash=6329d4de195c393dac8d462c6ca156d5}{%
-           family={B{ü}scher},
-           familyi={B\bibinitperiod},
-           given={Ch},
-           giveni={C\bibinitperiod}}}%
-        {{hash=d4d476dcbb95d4b1932fc9389c7c84b4}{%
-           family={Chapman},
-           familyi={C\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=9d8704deea8036ebd08a942ea9c1a974}{%
-           family={Coulter},
-           familyi={C\bibinitperiod},
-           given={K},
-           giveni={K\bibinitperiod}}}%
-        {{hash=46de736c710cec523df02ed59c59aea8}{%
-           family={Delheij},
-           familyi={D\bibinitperiod},
-           given={PPJ},
-           giveni={P\bibinitperiod}}}%
-        {{hash=f9a1f5a9be94c09df2db7dca7b23b9e6}{%
-           family={D{ü}ren},
-           familyi={D\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{c7ad7d852c5ab240d3982e2102188644}
-      \strng{fullhash}{3bb47f7bb947cdd0c29eae969666bd2a}
-      \strng{bibnamehash}{c7ad7d852c5ab240d3982e2102188644}
-      \strng{authorbibnamehash}{c7ad7d852c5ab240d3982e2102188644}
-      \strng{authornamehash}{c7ad7d852c5ab240d3982e2102188644}
-      \strng{authorfullhash}{3bb47f7bb947cdd0c29eae969666bd2a}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
-      \field{number}{1-2}
-      \field{title}{The HERA polarimeter and the first observation of electron spin polarization at HERA}
-      \field{volume}{329}
-      \field{year}{1993}
-      \field{pages}{79\bibrangedash 111}
-      \range{pages}{33}
-    \endentry
-    \entry{Baylac2002_POL}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=8aa08f44e58803b03a2d09fe124e9d1f}{%
-           family={Baylac},
-           familyi={B\bibinitperiod},
-           given={Maud},
-           giveni={M\bibinitperiod}}}%
-        {{hash=7dacf251c44439c4aba7448fdae88261}{%
-           family={Burtin},
-           familyi={B\bibinitperiod},
-           given={E},
-           giveni={E\bibinitperiod}}}%
-        {{hash=fee05d1634e0c61802e855db23ef63ea}{%
-           family={Cavata},
-           familyi={C\bibinitperiod},
-           given={C},
-           giveni={C\bibinitperiod}}}%
-        {{hash=65fe0cef6ecb7c8cfdde9d11d55fe15a}{%
-           family={Escoffier},
-           familyi={E\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=d19e4ef546fac0079babf38b7eab6528}{%
-           family={Frois},
-           familyi={F\bibinitperiod},
-           given={B},
-           giveni={B\bibinitperiod}}}%
-        {{hash=b0e27e429ac7b7ec49035e77c442c9ac}{%
-           family={Lhuillier},
-           familyi={L\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-        {{hash=81755ed1d000fdf9dcb005d835844515}{%
-           family={Marie},
-           familyi={M\bibinitperiod},
-           given={F},
-           giveni={F\bibinitperiod}}}%
-        {{hash=44f9e056e9e5c621eea227c691edac05}{%
-           family={Martino},
-           familyi={M\bibinitperiod},
-           given={J},
-           giveni={J\bibinitperiod}}}%
-        {{hash=84a32abd0217a6eafb11be56e6b899d4}{%
-           family={Neyret},
-           familyi={N\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-        {{hash=78e1818e7f0f5b9e5a13384e7ffa76dc}{%
-           family={Pussieux},
-           familyi={P\bibinitperiod},
-           given={T},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{0af79942e850674e06a22fe77731d789}
-      \strng{fullhash}{66281221863cd015e9e52f2f61ac32de}
-      \strng{bibnamehash}{0af79942e850674e06a22fe77731d789}
-      \strng{authorbibnamehash}{0af79942e850674e06a22fe77731d789}
-      \strng{authornamehash}{0af79942e850674e06a22fe77731d789}
-      \strng{authorfullhash}{66281221863cd015e9e52f2f61ac32de}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physics Letters B}
-      \field{number}{1-2}
-      \field{title}{First electron beam polarization measurements with a Compton polarimeter at Jefferson Laboratory}
-      \field{volume}{539}
-      \field{year}{2002}
-      \field{pages}{8\bibrangedash 12}
-      \range{pages}{5}
     \endentry
     \entry{Weber2018_POL}{article}{}
       \name{author}{13}{}{%
@@ -13379,301 +13698,6 @@
       \field{year}{2016}
       \field{pages}{24622}
       \range{pages}{1}
-    \endentry
-    \entry{Alley1996_LaserWire}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=2a4193c4b7528d05f4623d6befedb650}{%
-           family={Alley},
-           familyi={A\bibinitperiod},
-           given={R},
-           giveni={R\bibinitperiod}}}%
-        {{hash=2c086ac8edefbb3e45d69b9842a8fb91}{%
-           family={Arnett},
-           familyi={A\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-        {{hash=cf29f6de3ec51d7c486db28e96bae114}{%
-           family={Bong},
-           familyi={B\bibinitperiod},
-           given={E},
-           giveni={E\bibinitperiod}}}%
-        {{hash=f9f69db71f54476dca877d98c174b7cc}{%
-           family={Colocho},
-           familyi={C\bibinitperiod},
-           given={W},
-           giveni={W\bibinitperiod}}}%
-        {{hash=dd32809bdccc15f0c20186bd5705b94c}{%
-           family={Frisch},
-           familyi={F\bibinitperiod},
-           given={J},
-           giveni={J\bibinitperiod}}}%
-        {{hash=65816eab5a50adbb51fe667c1c4c4f7b}{%
-           family={Horton-Smith},
-           familyi={H\bibinithyphendelim S\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=95f776b4d23e0b6fb9dac669e6e9e075}{%
-           family={Inman},
-           familyi={I\bibinitperiod},
-           given={W},
-           giveni={W\bibinitperiod}}}%
-        {{hash=9a7277ec91205ae9af46db47558a9692}{%
-           family={Jobe},
-           familyi={J\bibinitperiod},
-           given={K},
-           giveni={K\bibinitperiod}}}%
-        {{hash=c0018858f2f6a3ccc2dfc46f77e4e793}{%
-           family={Kotseroglou},
-           familyi={K\bibinitperiod},
-           given={T},
-           giveni={T\bibinitperiod}}}%
-        {{hash=572c3da5ac0b3e35d9a6d87fe693056d}{%
-           family={McCormick},
-           familyi={M\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{8881ce6d589e72a3595b913d3eb07e26}
-      \strng{fullhash}{a30d39f6d8fcbc9cf3d225d7115efbed}
-      \strng{bibnamehash}{8881ce6d589e72a3595b913d3eb07e26}
-      \strng{authorbibnamehash}{8881ce6d589e72a3595b913d3eb07e26}
-      \strng{authornamehash}{8881ce6d589e72a3595b913d3eb07e26}
-      \strng{authorfullhash}{a30d39f6d8fcbc9cf3d225d7115efbed}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
-      \field{number}{3}
-      \field{title}{A laser-based beam profile monitor for the SLC/SLD interaction region}
-      \field{volume}{379}
-      \field{year}{1996}
-      \field{pages}{363\bibrangedash 365}
-      \range{pages}{3}
-    \endentry
-    \entry{Leemans1996_ICS_BeamTransLong}{article}{}
-      \name{author}{10}{}{%
-        {{hash=47990152ef68656180da7e1083f5b31e}{%
-           family={Leemans},
-           familyi={L\bibinitperiod},
-           given={WP},
-           giveni={W\bibinitperiod}}}%
-        {{hash=26e2b51099a26079ae918fb5398fe7a9}{%
-           family={Schoenlein},
-           familyi={S\bibinitperiod},
-           given={RW},
-           giveni={R\bibinitperiod}}}%
-        {{hash=5a71beec6869a3cdb24d851ec9870d79}{%
-           family={Volfbeyn},
-           familyi={V\bibinitperiod},
-           given={P},
-           giveni={P\bibinitperiod}}}%
-        {{hash=feb793bfcd41c1a2c2c2f190217baf32}{%
-           family={Chin},
-           familyi={C\bibinitperiod},
-           given={AH},
-           giveni={A\bibinitperiod}}}%
-        {{hash=4878aca25cb2f3b933a9fd921b8a25ce}{%
-           family={Glover},
-           familyi={G\bibinitperiod},
-           given={TE},
-           giveni={T\bibinitperiod}}}%
-        {{hash=e26eb5d4a2b8df0eb73198bd2a49c964}{%
-           family={Balling},
-           familyi={B\bibinitperiod},
-           given={P},
-           giveni={P\bibinitperiod}}}%
-        {{hash=92e68c38166d35efd6c383cbd5af9819}{%
-           family={Zolotorev},
-           familyi={Z\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=287f704d8968f3be8261aa88415c302d}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={KJ},
-           giveni={K\bibinitperiod}}}%
-        {{hash=818c5e43ff0656aa5d130f7d4157a958}{%
-           family={Chattopadhyay},
-           familyi={C\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=352f8c06f48279cec140f08697d89835}{%
-           family={Shank},
-           familyi={S\bibinitperiod},
-           given={CV},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{131c00d0ffe9c7fa86f7bf557a8ac01b}
-      \strng{fullhash}{2608a55e18310270ce0f4efe51f90279}
-      \strng{bibnamehash}{131c00d0ffe9c7fa86f7bf557a8ac01b}
-      \strng{authorbibnamehash}{131c00d0ffe9c7fa86f7bf557a8ac01b}
-      \strng{authornamehash}{131c00d0ffe9c7fa86f7bf557a8ac01b}
-      \strng{authorfullhash}{2608a55e18310270ce0f4efe51f90279}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical review letters}
-      \field{number}{20}
-      \field{title}{X-ray based subpicosecond electron bunch characterization using 90 Thomson scattering}
-      \field{volume}{77}
-      \field{year}{1996}
-      \field{pages}{4182}
-      \range{pages}{1}
-    \endentry
-    \entry{Sakai2001_BeamSize}{article}{}
-      \name{author}{9}{}{%
-        {{hash=3cb0378ee1eca3f8205e78b66adb4a82}{%
-           family={Sakai},
-           familyi={S\bibinitperiod},
-           given={Hiroshi},
-           giveni={H\bibinitperiod}}}%
-        {{hash=53d9c260059c5f026b8455649ce938e0}{%
-           family={Honda},
-           familyi={H\bibinitperiod},
-           given={Yousuke},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=acde559109fc4523d334de1d4803e03d}{%
-           family={Sasao},
-           familyi={S\bibinitperiod},
-           given={Noboru},
-           giveni={N\bibinitperiod}}}%
-        {{hash=1ecfe8592390a713bc207dcc8c19bda6}{%
-           family={Araki},
-           familyi={A\bibinitperiod},
-           given={Sakae},
-           giveni={S\bibinitperiod}}}%
-        {{hash=c891ace950187fe15be0d12a8c179f05}{%
-           family={Higashi},
-           familyi={H\bibinitperiod},
-           given={Yasuo},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=2df289bb015a2f52ec318879f28953f3}{%
-           family={Okugi},
-           familyi={O\bibinitperiod},
-           given={Toshiyuki},
-           giveni={T\bibinitperiod}}}%
-        {{hash=5a856342313a0ed8d5c7c0315c53a88f}{%
-           family={Taniguchi},
-           familyi={T\bibinitperiod},
-           given={Takashi},
-           giveni={T\bibinitperiod}}}%
-        {{hash=ceb677adb129c981b94287499bad643b}{%
-           family={Urakawa},
-           familyi={U\bibinitperiod},
-           given={Junji},
-           giveni={J\bibinitperiod}}}%
-        {{hash=4533653748d806adc458add9d270ec54}{%
-           family={Takano},
-           familyi={T\bibinitperiod},
-           given={Mikio},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{fullhash}{b8bc83a0d4ed09d5963422c5f754e67c}
-      \strng{bibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{authorbibnamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{authornamehash}{c56135bb3704f4f95d9cd36c2d11aedb}
-      \strng{authorfullhash}{b8bc83a0d4ed09d5963422c5f754e67c}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Special Topics-Accelerators and Beams}
-      \field{number}{2}
-      \field{title}{Measurement of an electron beam size with a laser wire beam profile monitor}
-      \field{volume}{4}
-      \field{year}{2001}
-      \field{pages}{022801}
-      \range{pages}{1}
-    \endentry
-    \entry{Honda2005_ICS_LaserWire}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=59159cb7dfdde4dff0ac94dee5a20c99}{%
-           family={Honda},
-           familyi={H\bibinitperiod},
-           given={Yosuke},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=acde559109fc4523d334de1d4803e03d}{%
-           family={Sasao},
-           familyi={S\bibinitperiod},
-           given={Noboru},
-           giveni={N\bibinitperiod}}}%
-        {{hash=1ecfe8592390a713bc207dcc8c19bda6}{%
-           family={Araki},
-           familyi={A\bibinitperiod},
-           given={Sakae},
-           giveni={S\bibinitperiod}}}%
-        {{hash=c891ace950187fe15be0d12a8c179f05}{%
-           family={Higashi},
-           familyi={H\bibinitperiod},
-           given={Yasuo},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=2df289bb015a2f52ec318879f28953f3}{%
-           family={Okugi},
-           familyi={O\bibinitperiod},
-           given={Toshiyuki},
-           giveni={T\bibinitperiod}}}%
-        {{hash=5a856342313a0ed8d5c7c0315c53a88f}{%
-           family={Taniguchi},
-           familyi={T\bibinitperiod},
-           given={Takashi},
-           giveni={T\bibinitperiod}}}%
-        {{hash=ceb677adb129c981b94287499bad643b}{%
-           family={Urakawa},
-           familyi={U\bibinitperiod},
-           given={Junji},
-           giveni={J\bibinitperiod}}}%
-        {{hash=a1d48fd81b81c209288f8603608ac888}{%
-           family={Yamazaki},
-           familyi={Y\bibinitperiod},
-           given={Yoshio},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=a19d7ea53b8ab81c5284e3d86c45d3af}{%
-           family={Hirano},
-           familyi={H\bibinitperiod},
-           given={Koichiro},
-           giveni={K\bibinitperiod}}}%
-        {{hash=dd6fea30159cccdcf603a58fae21fb00}{%
-           family={Nomura},
-           familyi={N\bibinitperiod},
-           given={Masahiro},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{af738d2533c8e2244c88c5ad888cdef5}
-      \strng{fullhash}{502e00d0e1437d4c92df6eabf232624a}
-      \strng{bibnamehash}{af738d2533c8e2244c88c5ad888cdef5}
-      \strng{authorbibnamehash}{af738d2533c8e2244c88c5ad888cdef5}
-      \strng{authornamehash}{af738d2533c8e2244c88c5ad888cdef5}
-      \strng{authorfullhash}{502e00d0e1437d4c92df6eabf232624a}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}
-      \field{number}{1-3}
-      \field{title}{Upgraded laser wire beam profile monitor}
-      \field{volume}{538}
-      \field{year}{2005}
-      \field{pages}{100\bibrangedash 115}
-      \range{pages}{16}
     \endentry
     \entry{Kevlar}{misc}{}
       \name{author}{1}{}{%
@@ -14934,8 +14958,8 @@
       \strng{authorbibnamehash}{35d5ddee10f22b532a3f5191a2c82d57}
       \strng{authornamehash}{35d5ddee10f22b532a3f5191a2c82d57}
       \strng{authorfullhash}{007a7df0d1154594cfbec1a6bccd4c77}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Accelerators and Beams}
@@ -18263,8 +18287,8 @@
       \strng{authorbibnamehash}{8b1bf54ff95276ce29e499fd9dcc5f8d}
       \strng{authornamehash}{8b1bf54ff95276ce29e499fd9dcc5f8d}
       \strng{authorfullhash}{f6d80cbacf5bc536917ee4f34909302e}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of instrumentation}
@@ -18322,8 +18346,8 @@
       \strng{authorbibnamehash}{9904a333eec80158f3b192c95458d3d9}
       \strng{authornamehash}{9904a333eec80158f3b192c95458d3d9}
       \strng{authorfullhash}{5a3847c0560b17d154aa974f90051f6e}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The European Physical Journal C}
