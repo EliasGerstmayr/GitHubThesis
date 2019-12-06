@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  6 DEC 2019 21:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  6 DEC 2019 23:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3701,23 +3701,32 @@ ne 77.
 (pdftex.def)             Requested size: 227.62204pt x 128.02927pt.
  [270 <./pics/Ch9_Conclusion/DoubleF2Setup.png> <./pics/Ch9_Conclusion/HoleyF2S
 etup.png>] [271] [272] [273]
-<pics/Ch9_Conclusion/GmmaDets_DoubleScreen.png, id=7575, 1927.2pt x 1084.05pt>
-File: pics/Ch9_Conclusion/GmmaDets_DoubleScreen.png Graphic file (type png)
-<use pics/Ch9_Conclusion/GmmaDets_DoubleScreen.png>
-Package pdftex.def Info: pics/Ch9_Conclusion/GmmaDets_DoubleScreen.png  used on
- input line 130.
-(pdftex.def)             Requested size: 273.14922pt x 153.63512pt.
- [274 <./pics/Ch9_Conclusion/GmmaDets_DoubleScreen.png>]
-<pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png, id=7590, 1927.2pt x 1084.05pt>
-File: pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png Graphic file (type png)
-<use pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png>
-Package pdftex.def Info: pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png  used on 
-input line 149.
+<pics/Ch9_Conclusion/GammaDetDouble.pdf, id=7575, 1947.66194pt x 1101.36751pt>
+File: pics/Ch9_Conclusion/GammaDetDouble.pdf Graphic file (type pdf)
+<use pics/Ch9_Conclusion/GammaDetDouble.pdf>
+Package pdftex.def Info: pics/Ch9_Conclusion/GammaDetDouble.pdf  used on input 
+line 130.
+(pdftex.def)             Requested size: 227.62204pt x 128.71327pt.
+<pics/Ch9_Conclusion/LCFACam_CloseUp.png, id=7576, 1927.2pt x 1084.05pt>
+File: pics/Ch9_Conclusion/LCFACam_CloseUp.png Graphic file (type png)
+<use pics/Ch9_Conclusion/LCFACam_CloseUp.png>
+Package pdftex.def Info: pics/Ch9_Conclusion/LCFACam_CloseUp.png  used on input
+ line 130.
+(pdftex.def)             Requested size: 227.62204pt x 128.02927pt.
+ [274 <./pics/Ch9_Conclusion/GammaDetDouble.pdf> <./pics/Ch9_Conclusion/LCFACam
+_CloseUp.png>]
+<pics/Ch9_Conclusion/FullSetup_V6Dec.png, id=7601, 1927.2pt x 1084.05pt>
+File: pics/Ch9_Conclusion/FullSetup_V6Dec.png Graphic file (type png)
+<use pics/Ch9_Conclusion/FullSetup_V6Dec.png>
+Package pdftex.def Info: pics/Ch9_Conclusion/FullSetup_V6Dec.png  used on input
+ line 148.
 (pdftex.def)             Requested size: 692.6886pt x 389.62914pt.
- [275] [276 <./pics/Ch9_Conclusion/RR20_ExpSetup_V12Sep.png>]) [277]
+ [275]
+[276 <./pics/Ch9_Conclusion/FullSetup_V6Dec.png>]) [277]
 \openout2 = `Appendix/Appendix.aux'.
 
- (./Appendix/Appendix.tex
+
+(./Appendix/Appendix.tex
 Appendix A.
 
 Overfull \hbox (24.1634pt too wide) in paragraph at lines 34--53
@@ -3753,7 +3762,7 @@ Overfull \hbox (6.11374pt too wide) in paragraph at lines 228--228
 
  []
 
-<pics/Ch2_Theory/betatron_traj.pdf, id=7640, 581.77347pt x 361.35pt>
+<pics/Ch2_Theory/betatron_traj.pdf, id=7652, 581.77347pt x 361.35pt>
 File: pics/Ch2_Theory/betatron_traj.pdf Graphic file (type pdf)
 <use pics/Ch2_Theory/betatron_traj.pdf>
 Package pdftex.def Info: pics/Ch2_Theory/betatron_traj.pdf  used on input line 
@@ -3844,10 +3853,10 @@ Package logreq Info: Writing requests to 'Thesis_Gerstmayr.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
- 44983 strings out of 492639
- 912133 string characters out of 6129301
- 1757381 words of memory out of 5000000
- 46328 multiletter control sequences out of 15000+600000
+ 44988 strings out of 492639
+ 912291 string characters out of 6129301
+ 1757469 words of memory out of 5000000
+ 46332 multiletter control sequences out of 15000+600000
  562089 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,82p,3099b,3449s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3925,10 +3934,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf
 -dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Thesis_Gerstmayr.pdf (323 pages, 72540751 bytes).
+Output written on Thesis_Gerstmayr.pdf (323 pages, 78798986 bytes).
 PDF statistics:
- 8967 PDF objects out of 10688 (max. 8388607)
- 6516 compressed objects within 66 object streams
+ 8978 PDF objects out of 10688 (max. 8388607)
+ 6523 compressed objects within 66 object streams
  1429 named destinations out of 1440 (max. 500000)
- 30344 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 30349 words of extra memory for PDF output out of 35830 (max. 10000000)
 
