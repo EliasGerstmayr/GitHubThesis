@@ -246,7 +246,7 @@ z(\xi) &= \frac{a^2_0}{4k}\left(\xi + \frac{1}{2}\sin(2\xi)\right),
 \end{align}
 \end{subequations}
 where we chose the initial conditions $x(0)=y(0)=z(0)=0$  and used $\mathrm{d}\xi/\mathrm{d}t = \omega/\gamma$.
-The electron performs a periodic oscillation in the $x$-axis, whilst the motion in the $z$-axis is composed of a constant drift and another oscillation (see Figure \ref{Theory:Figs:FigureOfEight} (left)). This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame (see Figure \ref{Theory:Figs:FigureOfEight} (right)). For $a_0 \leq 1$ the motion in $z$ is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
+The electron performs a periodic oscillation in the $x$-axis, whilst the motion in the $z$-axis is composed of a constant drift and another oscillation [see Figure \ref{Theory:Figs:FigureOfEight} (left)]. This is commonly referred to as the `figure-of-eight' motion, which becomes more evident in the drift frame [see Figure \ref{Theory:Figs:FigureOfEight} (right)]. For $a_0 \leq 1$ the motion in $z$ is suppressed and the motion of the electron is dominated by the transverse oscillation. For $a_0 \gg 1$, the motion is predominantly longitudinal.
 
 
 
@@ -299,11 +299,11 @@ First, we discuss \textit{inverse Compton scattering} or, in its classical limit
 \vspace{\baselineskip}
 
 There are two main routes to determine the spectrum of a specific radiative process:
-In a \textit{classical} picture, we first have to derive the equation of motion of the charged particle and then analyse its trajectory in terms of relativistic Lienard-Wiechert potentials. Solving the corresponding radiation integrals through a Fourier analysis then provides the classical emission spectra \cite{Jackson}. Similar particle motions then provide similar radiation spectra which allows identifying similar behaviour in analogue scenarios. An example is, for instance, the figure-of-eight motion , which can be found in the context of electrons in (alternating) magnetic fields, e.g. synchrotrons and insertion devices (see Appendix \ref{Appendix:Sec:SingleParticleMotion} and \ref{Appendix:Sec:Synchrotron}), but similarly in an electron in a laser field (see Section \ref{Theory:Sec:SingleParticle:FigOfEight}). As a result, we identify a wiggler parameter, $K$, which in one case is related to the magnetic field strength \cite{Jackson} and in the other is the normalised vector potential, $a_0$ \cite{Esarey1993_NT}.
+In a \textit{classical} picture, we first have to derive the equation of motion of the charged particle and then analyse its trajectory in terms of relativistic Lienard-Wiechert potentials. Solving the corresponding radiation integrals through a Fourier analysis then provides the classical emission spectra \cite{Jackson}. Similar particle motions then provide similar radiation spectra which allows identifying similar behaviour in analogue scenarios. An example is the \textit{figure-of-eight motion}, which can be found in the context of electrons in (alternating) magnetic fields, e.g. synchrotrons and insertion devices (see Appendix \ref{Appendix:Sec:SingleParticleMotion} and \ref{Appendix:Sec:Synchrotron}), but similarly in an electron in a laser field (see Section \ref{Theory:Sec:SingleParticle:FigOfEight}). As a result, we identify a wiggler parameter, $K$, which in one case is related to the magnetic field strength \cite{Jackson} and in the other is the normalised vector potential, $a_0$ \cite{Esarey1993_NT}.
 
 In a \textit{quantum} picture, the cross sections and spectra are obtained by calculating the matrix element from the Feynman diagrams related to the process.
 The evaluation of a matrix element, even a simple fundamental tree-level diagram, is relatively tedious, but processes with a similar Feynman representation can be related to each other (crossing symmetry) \cite{PeskinSchroeder} and the small coupling constant, $\alpha \approx 1/137$, allows a perturbative treatment such that more complicated processes contribute only little overall and can be neglected. 
-However, at high field strengths the number of contributing diagrams increases significantly, e.g. at $a^3_0$ for nonlinear Compton scattering \cite{DiPiazza2012_ICS}, which makes the evaluation of standard Feynman diagrams not very feasible and computationally challenging. 
+However, at high field strengths the number of significantly contributing diagrams increases rapidly, e.g. at $\sim a^3_0$ for nonlinear Compton scattering \cite{DiPiazza2012_ICS}, which makes the evaluation of standard Feynman diagrams not very feasible and computationally challenging. 
 To restore a perturbative treatment \textit{`dressed states'} are being introduced, which replaces, for instance, an electron interacting with many photons with one dressed electron, i.e. an electron in a background field. The dressed state uses the exact classical description of the background field, assuming that the quantum nature of the interaction does not originate in the field itself and that there is no backreaction of the particles to the field. This is referred to as the \textit{Furry picture} \cite{Furry1951_FURRY}. In this picture one dressed or \textit{Volkov state} \cite{Wolkow1935_VOLKOV} is equivalent to the infinite sum of standard Feynman diagrams \cite{SeiptThesis}.
 
 
@@ -343,7 +343,7 @@ with the corresponding Feynman diagram shown in Figure \ref{Theory:Fig:ComptonSc
 \label{Theory:Fig:ComptonScattering:Kinematics}
 \end{figure}
 
-In the following, we will treat the electron and the incoming photon both as particles and calculate their final momenta based on energy and momentum conservation in a relativistic framework.
+In the following, we will treat the electron and the incoming photon both as particles and calculate their final momenta relativistically based on energy and momentum conservation.
 \vspace{\baselineskip}
 
 Assuming the electron has a negligible initial momentum $\mathbf{p}_{e,i} = \mathbf{0}$ as in Compton's original experiment \cite{Compton1923_Compton}, the total energy hence reduces to the rest energy of the electron $\epsilon_{e,i} = m_e c^2$. The subscript $e$ stands for `electron' and $i$ for `initial'.
@@ -384,7 +384,7 @@ In terms of photon energy we can write
 \label{Theory:Eqs:Compton_Egammaf}
 \end{equation}
 where the final energy, $\epsilon_{\gamma,f}$, only depends on the energy of the incoming photon, $\epsilon_{\gamma,i}$, and the scattering angle $\theta$. 
-Polar plots of the final photon energies for different initial photon energies are shown in Figure \ref{Theory:Figs:Compton_E_XSEC} (left). At low energies $\epsilon_{\gamma,i} \rightarrow 0$ and $\epsilon_{\gamma,f} \rightarrow E_{\gamma,i}$, and the emitted energy becomes approximately independent of the scattering angle $\theta$ (see Figure \ref{Theory:Figs:Compton_E_XSEC} (left, inset)). At higher energies $\epsilon_{\gamma,i} > m_e ^2c$, the energy distribution is being skewed towards the forwards direction of the incoming photon and the energy of the photon after the interaction is maximised at zero degrees with $\epsilon_{\gamma,f} = \epsilon_{\gamma,i}$, i.e. no significant amount of energy is transferred to the electron (see Figure \ref{Theory:Figs:Compton_E_XSEC} (left)).
+Polar plots of the final photon energies for different initial photon energies are shown in Figure \ref{Theory:Figs:Compton_E_XSEC} (left). At low energies $\epsilon_{\gamma,i} \rightarrow 0$ and $\epsilon_{\gamma,f} \rightarrow E_{\gamma,i}$, and the emitted energy becomes approximately independent of the scattering angle $\theta$ [see Figure \ref{Theory:Figs:Compton_E_XSEC} (left, inset)]. At higher energies $\epsilon_{\gamma,i} > m_e ^2c$, the energy distribution is being skewed towards the forwards direction of the incoming photon and the energy of the photon after the interaction is maximised at zero degrees with $\epsilon_{\gamma,f} = \epsilon_{\gamma,i}$, i.e. no significant amount of energy is transferred to the electron [see Figure \ref{Theory:Figs:Compton_E_XSEC} (left)].
 
 
 \subsubsection{Cross-Section}
@@ -397,7 +397,7 @@ Polar plots of the final photon energies for different initial photon energies a
 \label{Theory:Figs:Compton_E_XSEC}
 \end{figure}
 
-The cross section for Compton scattering, again assuming the electron is initially at rest, is given by the spin-averaged Klein-Nishina formula \cite{Klein1929_KNEq}:
+The cross section for Compton scattering, again assuming the electron is initially at rest, is given by the spin-averaged \textit{Klein-Nishina formula} \cite{Klein1929_KNEq}:
 \begin{subequations}
 \begin{empheq}[box=\widefbox]{align}
 \frac{\mathrm{d}\sigma_{\gamma e}}{\mathrm{d}\cos{\theta}} &= \pi r^2_e \left(\frac{\omega'}{\omega}\right)^2 \left(\frac{\omega'}{\omega} + \frac{\omega}{\omega'}-\sin^2{\theta}\right),\\
@@ -426,7 +426,7 @@ with $x = \epsilon_\gamma /m_e c^2$, so that in the two limits this becomes
 \end{equation}
 so that $\sigma_{\gamma e} \rightarrow \sigma_T$ for $x \rightarrow 0$, which is the limit of Thomson scattering, and $\sigma_{\gamma e} \rightarrow 0$ for $x\rightarrow \infty$, which indicates that ultra-relativistic photons are less likely to scatter.
 
-The differential cross section is shown in a polar plot in Figure \ref{Theory:Figs:Compton_E_XSEC} (right) for different incoming photon energies. At low photon energies the cross section and the photon spectrum are symmetric in forwards and backwards direction following Thomson scattering (see Equation \eqref{Theory:Eqs:ThomsonXsec}). At increasing photon energies reaching the X-ray and gamma regime the photon is preferentially scattered in the forwards direction at lower momentum transfers and falling to $0$ at $\theta = 0$.
+The differential cross section is shown in a polar plot in Figure \ref{Theory:Figs:Compton_E_XSEC} (right) for different incoming photon energies. At low photon energies the cross section and the photon spectrum are symmetric in forwards and backwards direction following Thomson scattering [see Equation \eqref{Theory:Eqs:ThomsonXsec}]. At increasing photon energies reaching the X-ray and gamma regime the photon is preferentially scattered in the forwards direction at lower momentum transfers and falling to $0$ at $\theta = 0$.
 
 \subsection{Linear Inverse Compton Scattering}
 \label{Theory:Sec:LinearICS}
@@ -518,7 +518,7 @@ Assuming all $n$ photons have the same energy $\epsilon_i$ and are parallel to e
 \begin{equation}
 \epsilon'_f = \frac{n \epsilon'_i}{1+\frac{n \epsilon'_i}{m_e c^2}(1-\cos\alpha')},
 \end{equation}
-including the effect of the mass increase $\left(m_e \rightarrow m^\ast = m_e \sqrt{1+a^2_0}\right)$ the energy of the radiation in the laboratory frame is then given by \cite{Esarey1993_NT}
+including the effect of the mass increase $\left(m_e \rightarrow m^\ast_e = m_e \sqrt{1+a^2_0}\right)$ the energy of the radiation in the laboratory frame is then given by \cite{Esarey1993_NT}
 \begin{equation}
 \boxed{\epsilon_f \approx \frac{2 \gamma^2 (1- \cos \theta) n \epsilon_i}{1+a_0^2/2 + (\gamma \theta)^2},}
 \end{equation}
@@ -550,7 +550,7 @@ where we have to evaluate the sum of $n$ differential cross sections to reproduc
 
 Figure \ref{Theory:Figs:NLICS_diffSigma} shows the emission rate, $\dif W/\dif x$, as a function of the transferred energy for values of $a_0$. First, for the limit of $a_0 \rightarrow 0$ (orange), which corresponds to linear Compton scattering, i.e. $n = 1$, and the result from the Klein-Nishina equation. The spectrum rises up to the Compton edge (dashed line) where it sharply falls off. The blue line shows the emission rates evaluated for $a_0 = 1$: the distinct Compton edge is down-shifted to about half of its original energy. On the other hand, higher harmonics, up to $n = 4$, are emerging and are also down-shifted, with a maximum energy of about twice the Compton edge for $a_0 \rightarrow 0$.
 
-The most significant contribution is still the red-shifted fundamental order, but even for a moderate intensity of $a_0 = 1$ we already had to evaluate the emission rates of $n=4$ harmonics to reproduce the tail of the spectrum accurately. The highest significant order scales as $\sim a^3_0$ \cite{DiPiazza2012_ICS}, such that the number of additional harmonics and related emission rates that have to be evaluated increases rapidly, e.g. $n = 1000$ for $a_0 = 10$. As a result, this approach becomes infeasible relatively quickly. As an alternative, we can for $a_0 \gg 1$ approximate the emission spectrum by the \textit{quantum synchrotron function} \cite{BlackburnThesis,Cole2018_RR} (see Appendix \ref{Appendix:Sec:QuantumSynchrotron}). Figure \ref{Theory:Figs:NLICS_diffSigma} (right) shows the emission rate (times energy) for increasing values of $a_0$. Even for these moderate intensities the high-energy component and relatively quickly also lower energy band structures disappear, and give rise to a smooth synchrotron-like emission spectrum, which indicates that this approach is valid (see for instance \cite{BlackburnThesis} for a more rigorous comparison).
+The most significant contribution is still the red-shifted fundamental order, but even for a moderate intensity of $a_0 = 1$ we already had to evaluate the emission rates of $n=4$ harmonics to reproduce the high-energy tail of the spectrum accurately. The highest significant order scales as $\sim a^3_0$ \cite{DiPiazza2012_ICS}, such that the number of additional harmonics and related emission rates that have to be evaluated increases rapidly, e.g. $n = 1000$ for $a_0 = 10$. As a result, this approach becomes infeasible relatively quickly. As an alternative, we can for $a_0 \gg 1$ approximate the emission spectrum by the \textit{quantum synchrotron function} \cite{BlackburnThesis,Cole2018_RR} (see Appendix \ref{Appendix:Sec:QuantumSynchrotron}). Figure \ref{Theory:Figs:NLICS_diffSigma} (right) shows the emission rate (times energy) for increasing values of $a_0$. Even for these moderate intensities the high-energy component and relatively quickly also lower energy band structures disappear, and give rise to a smooth synchrotron-like emission spectrum, which indicates that this approach is valid (see for instance \cite{BlackburnThesis} for a more rigorous comparison).
 Whilst the highest significant order increases at $a^3_0$, the energy of the emitted radiation is red-shifted at $\epsilon_f \propto 1/a^2_0$ for $a_0 \gg 1$, such that the net energy gain is linear in $a_0$.
 
 \iffalse
@@ -573,9 +573,9 @@ Z + e^- \longrightarrow Z + e^- + \gamma
 \end{equation}
 or in terms of the Feyman diagram shown in Figure \ref{Theory:Figs:Feynman_Bremsstrahlung}. In the quantum picture the electron exchanges momentum with a virtual photon from the Coulomb field before radiating a photon. From the classical view the charged particle is decelerated (`braked') in the Coulomb field which results in the production of radiation.
 
-In the limit of small photon energies relative to the initial electron energy, $\hbar \omega \ll \epsilon$, and relativistic initial and final electron energies, $\epsilon, \epsilon' \gg Mc^2$ the differential cross section can be written as \cite{Jackson}:
+In the limit of small photon energies relative to the initial electron energy, $\hbar \omega \ll \epsilon$, and relativistic initial and final electron energies, $\epsilon, \epsilon' \gg mc^2$ the differential cross section can be written as \cite{Jackson}:
 \begin{equation}
-\frac{d \sigma}{d (\hbar \omega)} \approx \frac{16}{3} \frac{Z^2 e^2}{c} \left(\frac{z^2 e^2}{Mc^2}\right)^2 \left(1- \frac{\hbar \omega}{\epsilon} + \frac{3}{4} \frac{(\hbar \omega)^2}{\epsilon^2}\right) \times \left[\ln\left(\frac{2 \epsilon (\epsilon-\hbar\omega)}{Mc^2\hbar \omega}\right) - \frac{1}{2}\right],
+\frac{d \sigma}{d (\hbar \omega)} \approx \frac{16}{3} \frac{Z^2 e^2}{c} \left(\frac{z^2 e^2}{mc^2}\right)^2 \left(1- \frac{\hbar \omega}{\epsilon} + \frac{3}{4} \frac{(\hbar \omega)^2}{\epsilon^2}\right) \times \left[\ln\left(\frac{2 \epsilon (\epsilon-\hbar\omega)}{mc^2\hbar \omega}\right) - \frac{1}{2}\right],
 \label{Theory:Eqns:Brems_dSigma_dEph}
 \end{equation}
 where $Z$ is the charge number of the nucleus and $z$ the number of electrons in the atomic orbit.
@@ -596,7 +596,7 @@ which indicates that for highly relativistic electron the emitted radiation is c
 \section{Radiation Reaction}
 \label{Theory:Sec:RadiationReaction}
 
-In the previous sections we discussed the emission of radiation from charged particles, in particular through inverse Compton scattering. Based on conservation rules the particles lose energy in the process and also have to experience a knock-back force whenever they radiate. Such a knock-back, commonly referred to as \textit{radiation reaction (force)} or \textit{radiation friction (force)}, can in strong electromagnetic fields significantly alter the particle dynamics. Whilst the instantaneous force felt by the emitting particles is small in most settings, it is particularly important in the astrophysical context \cite{Ruffini2010_PAIRSASTRO,Shen1972_STRAGGLING} and will be the subject of research at high-intensity laser facilities \cite{Shen2018_SULF,Gales2018_ELINP,Weber2017_ELIBeamlines,Zou2015_Apollon}. Here a single particle can emit multiple energetic photons in a short span of time and the radiation reaction force becomes comparable to the Lorentz force. In extreme cases the energy emitted by the particle approaches its initial energy, which then occurs in a regime where the process has to be modelled in a quantum picture, i.e. we then have to consider \textit{quantum radiation reaction} \cite{Ritus1985_QRR,Blackburn2014_QRR,Ridgers2017_QRR,DiPiazza2010_QRR}.
+In the previous sections we discussed the emission of radiation from charged particles, in particular through inverse Compton scattering. Based on conservation rules the particles lose energy in the process and also have to experience a knock-back force whenever they radiate. Such a knock-back, commonly referred to as \textit{radiation reaction (force)} or \textit{radiation friction (force)}, can significantly alter the particle dynamics in strong electromagnetic fields. Whilst the instantaneous force felt by the emitting particles is small in most settings, it is particularly important in the astrophysical context \cite{Ruffini2010_PAIRSASTRO,Shen1972_STRAGGLING} and will be the subject of research at high-intensity laser facilities \cite{Shen2018_SULF,Gales2018_ELINP,Weber2017_ELIBeamlines,Li2017_SULF,Zou2015_Apollon}. Here a single particle can emit multiple energetic photons in a short span of time and the radiation reaction force becomes comparable to the Lorentz force. In extreme cases the energy emitted by the particle approaches its initial energy, which then occurs in a regime where the process has to be modelled in a quantum picture, i.e. we then have to consider \textit{quantum radiation reaction} \cite{Ritus1985_QRR,Blackburn2014_QRR,Ridgers2017_QRR,DiPiazza2010_QRR}.
 
 Radiation reaction can be investigated in different experimental geometries using intense laser pulses. Suitable geometries are, for instance, the collision of a relativistic electron beam with an intense laser pulse \cite{Blackburn2014_QRR,Poder2018_RR,Cole2018_RR}, laser-solid interactions \cite{Ridgers2012_DENSE} and an electron in the standing wave of multiple intense laser pulses \cite{Bulanov2010_MultiPulseVac}. Another approach is the use of aligned crystals \cite{Wistisen2018_RR,DiPiazza2017_CrystalRR}, where an electron or positron is undulated by the varying atomic potential of the crystal lattice. In this work we will focus on the measurement of radiation reaction in the collision of a relativistic electron beam with an intense laser pulse.
 
@@ -604,7 +604,7 @@ Radiation reaction is a fundamental phenomenon of electrodynamics but surprising
 A more detailed overview of this topic can be found in parts of \cite{DiPiazza2012_ICS} and in \cite{Blackburn2019_RRReview}.
 
 
-\subsection{Regimes of radiation reaction}
+\subsection{Regimes of Radiation Reaction}
 \label{Theory:Sec:RR:RegimesOfRR}
 
 There are different parameters that indicate the significance of radiation reaction effects and signal the appropriate description that describes the dynamics most accurately in a particular regime.
@@ -637,12 +637,12 @@ In the collision of an electron and a laser pulse at an angle $\theta$ this beco
 \boxed{\eta = \frac{(1-\cos\theta) \hbar \omega_0 \gamma a_0}{m_e c^2},}
 \end{equation}
 where $\omega_0$ is the laser frequency, $m_e$ the electron mass, $c$ the speed of light, $\gamma$ the Lorentz factor of the electron and $a_0$ is the normalised vector potential.
-Quantum effects dominate when $\eta \rightarrow 1$, which can be achieved by high intensities and electron energies. This also coincides with the onset of vacuum pair production, where the electric fields become so strong that virtual pairs can be extracted directly out of the vacuum (see Section \ref{Theory:Sec:Pairs:Schwinger}).
+Quantum effects dominate when $\eta \rightarrow 1$, which can be achieved by high intensities and electron energies. This also coincides with the onset of vacuum pair production, where the electric fields become so strong that virtual pairs can be extracted directly from of the vacuum (see Section \ref{Theory:Sec:Pairs:Schwinger}).
 We can similarly give a relation in terms of $a_0$ and $\gamma_0$ to show a threshold when quantum effects dominate
 \begin{equation}
 a_0 \gamma_0 > \frac{m_e c^2}{2 \hbar \omega_0},
 \end{equation}
-where we assumed $\theta = 0$.
+where we assumed $\theta = 180^\circ$.
 
 \begin{figure}
 \centering
@@ -651,7 +651,7 @@ where we assumed $\theta = 0$.
 \label{Theory:Figs:RR:RegimesOfRR}
 \end{figure}
 
-Figure \ref{Theory:Figs:RR:RegimesOfRR} is a map of $\eta$ (there called $\chi$) and $a_0$, that shows significant regimes for the parameters $\eta$ and $R_c$, as well as previous experimental measurements of radiation reaction. Circles indicate colliding-pulse experiments, whereas the triangle shows the parameter of an experiment using aligned crystals. The shaded regions indicate (on a logarithmic scale) the corresponding values of $R_c$, which increase diagonally across the image. The black line indicates the position on the plane when increasing the intensity of the laser $a_0$ in an interaction with an electron beam of fixed energy $\gamma = 1000$, which corresponds to moving diagonally on the plane. The red lines indicate different values of $\chi$. At $\chi = 0.1$ (dashed) quantum effects become significant, whereas the solid red line indicates the threshold to the quantum dominated regime. Moving upwards on this up (increasing $\chi$) translates into more `quantum', whereas moving in $x$ ($a_0$) results in a higher degree of nonlinearity in the interaction.
+Figure \ref{Theory:Figs:RR:RegimesOfRR} is a map of $\eta$ (there called $\chi$) and $a_0$, that shows significant regimes for the parameters $\eta$ and $R_c$, as well as previous experimental measurements of radiation reaction. Circles indicate colliding-pulse experiments, whereas the triangle shows the parameter of an experiment using aligned crystals. The shaded regions indicate (on a logarithmic scale) the corresponding values of $R_c$, which increase diagonally across the image. The black line indicates the position on the plane when increasing the intensity of the laser $a_0$ in an interaction with an electron beam of fixed energy $\gamma = 1000$, which corresponds to moving diagonally on the plane. The red lines indicate different values of $\eta$. At $\eta = 0.1$ (dashed) quantum effects become significant, whereas the solid red line indicates the threshold to the quantum dominated regime. Moving upwards on this graph (increasing $\eta$) translates into more `quantum', whereas moving in $x$ ($a_0$) results in a higher degree of nonlinearity in the interaction.
 
 
 
@@ -664,9 +664,9 @@ Also $\chi$, which is equivalent for photon which does not have a rest frame:
 
 
 
-\subsubsection{Locally constant crossed field approximation}
+\subsubsection{Locally constant field approximation}
 
-An important assumption that is commonly used is that the electric field remains constant over the \textit{formation time} of the photon, $l_f$. 
+An important assumption that is commonly used in radiation reaction models is that the electric field remains constant over the \textit{formation length} of the photon, $l_f$. 
 The formation length can be estimated geometrically by comparing its overlap with its emission cone \cite{Blackburn2019_RRReview}
 \begin{equation}
 \frac{l_f}{C} \approx \frac{1}{2 \pi a_0},
@@ -676,7 +676,7 @@ where $C = 2\pi r'$ and
 r' = \frac{a_0}{\gamma_0 (1+\beta_0)\omega_0},
 \end{equation}
 where $l_f/C \ll 1$ is satisfied for large $a_0$.
-If we also include the requirement that $a^3_0 \gg \eta$, this approximation is then called the \textit{locally constant crossed field approximation} (LCFA).
+If we also include the requirement that $a^3_0 \gg \eta$, this approximation is then called the \textit{locally constant field approximation} (LCFA).
 Requiring $a_0 \gg 1$ and $a^3_0 \gg \eta$ means that the particle has to be ultrarelativistic and the background field is weak compared to critical field of QED.
 Within the LCFA the background field can be treated classically and it can be assumed that, whilst emission events are governed by (strong-field) QED, the particle trajectories between emission events can be determined classically. As a result, this enables a semi-classical treatment of high-field (radiation reaction) processes, for instance, in numerical implementations.
 
@@ -688,18 +688,18 @@ There is a variety of classical descriptions of radiation reaction rooted in cla
 
 An intuitive way to derive an expression for a radiation reaction force is considering the conservation of energy \cite{Jackson}. The synchrotron emission power, $P$, of an electron with charge $e$ is given by the Larmor power formula:
 \begin{equation}
-P = \frac{2}{3} \frac{e^2}{c^3} \mathbf{\dot{v}}^2,
+P = \frac{e^2}{6 \pi \epsilon_0 c^3} \mathbf{\dot{v}}^2,
 \end{equation}
-where $\mathbf{v}$ is the velocity vector of the particle and $\mathbf{\dot{v}}$ its acceleration.
+where $\mathbf{v}$ is the velocity vector of the particle and $\mathbf{\dot{v}}$ its acceleration, $c$ the speed of light and $\epsilon_0$ the dielectric constant.
 By requiring that the emitted radiation power corresponds to the work done on the radiating particle by the radiation reaction force we can write
 \begin{align}
 \int^{t_2}_{t_1} \mathbf{F}_{rad} \cdot \mathbf{v} \dif t &= - \int^{t_2}_{t_1} P \dif t,\\
-&= \frac{2}{3}\frac{e^2}{c^3}\int^{t_2}_{t_1} \mathbf{\ddot{v}} \cdot \mathbf{v} \dif t - \frac{2}{3}\frac{e^2}{c^3} (\mathbf{\dot{v}} \cdot \mathbf{v})\Big|^{t_2}_{t_1},
+&= \frac{e^2}{6 \pi \epsilon_0 c^3}\int^{t_2}_{t_1} \mathbf{\ddot{v}} \cdot \mathbf{v} \dif t - \frac{e^2}{6 \pi \epsilon_0 c^3} (\mathbf{\dot{v}} \cdot \mathbf{v})\Big|^{t_2}_{t_1},
 \end{align}
 where we used integration by parts.
 For a periodic motion or $\mathbf{\dot{v} \cdot v} = 0$ at $t = t_1$ and $t = t_2$, we can write:
 \begin{equation}
-\int^{t_2}_{t_1} \left(\mathbf{F}_{rad} - \frac{2}{3}\frac{e^2}{c^3} \mathbf{\ddot{v}}\right) \cdot \mathbf{v} \dif t = 0,
+\int^{t_2}_{t_1} \left(\mathbf{F}_{rad} - \frac{e^2}{6 \pi \epsilon_0 c^3} \mathbf{\ddot{v}}\right) \cdot \mathbf{v} \dif t = 0,
 \end{equation}
 so that we can identify the radiation reaction force, $\mathbf{F}_{rad}$, as
 \begin{equation}
@@ -707,7 +707,7 @@ so that we can identify the radiation reaction force, $\mathbf{F}_{rad}$, as
 \end{equation}
 with the \textit{characteristic time}, $\tau$:
 \begin{equation}
-\tau = \frac{2}{3} \frac{e^2}{m c^3},
+\tau =\frac{e^2}{6 \pi \epsilon_0 m c^3},
 \end{equation}
 which for electrons amounts to $\tau = 6.26 \times 10^{-24}\,\mathrm{s}$. A sudden force acting on a similar time scale as $\tau$ will result in a significant modification of the motion through radiative effects.
 The equation of motion then reads
@@ -746,7 +746,7 @@ with the radiation reaction force
 \begin{equation}
 g^\mu =\frac{e^4}{6 \pi m_e} \left[-\frac{m_e}{e}(\partial_\alpha F^{\mu \nu}) u_\nu u^\alpha + F^{\mu\nu} F_{\nu\alpha}u^\alpha + (F^{\nu \alpha}u_\alpha)^2 u^\mu      \right].
 \end{equation}
-This description only holds for length scales larger than the Compton wavelength, $L \gg \lambda_C \approx 2.43 \times 10^{-12}\, \mathrm{m}$, and electric field strengths much smaller than the critical field strength, $E \ll E_{cr}/\alpha \approx 1.89 \times 10^{20}\,\mathrm{V/m}$.
+This description only holds for length scales larger than the Compton wavelength, $L \gg \lambda_C \approx 2.43 \times 10^{-12}\, \mathrm{m}$, and electric field strengths much smaller than the critical field strength, $E \ll E_{cr}/\alpha \approx 1.89 \times 10^{20}\,\mathrm{V/m}$, in the instantaneous rest frame of the electron.
 \vspace{\baselineskip}
 
 In the Landau-Lifschitz model we can also find an analytic expression of the energy loss, $\Delta \gamma$, an electron experiences. For an electron of initial energy $\gamma_0$ interacting with a plane wave with a Gaussian temporal envelope this is given by \cite{Thomas2012_LL,Bulanov2011_LL}
@@ -757,21 +757,21 @@ In the Landau-Lifschitz model we can also find an analytic expression of the ene
 where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$ is again the `characteristic time' for an electron, $t_L$ is the \textsc{fwhm} laser pulse duration, $\lambda$ the wavelength of the laser pulse, and $a_0$ is its normalised vector potential. This is valid if quantum effects are negligible, $\gamma_0 a_0 \ll m_e c^2/2\hbar \omega_0$ (Section \ref{Theory:Sec:RR:RegimesOfRR}). Strong radiation reaction effects are expected for $\gamma a^2_0 > (10 \sqrt{2\pi^3} \omega_0 \tau_0 \gamma_0)^{-1/2}$.
 \vspace{\baselineskip}
 
-Whilst this description is free from runaway solutions unlike the LAD equation it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle \cite{Baylis2002_LL}. Note also that all physical solutions of the LAD equation are also solutions of the LL description \cite{Spohn2000_RR}.
+Whilst this description is free from runaway solutions unlike the LAD equation, it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle \cite{Baylis2002_LL}. Note also that all physical solutions of the LAD equation are also solutions of the LL description \cite{Spohn2000_RR}.
 
 \subsection{Quantum Radiation Reaction}
 \label{Theory:Sec:RR:QRR}
 
 At high electron energies and electric field strengths, when the quantum nonlinearity parameter, $\eta$, approaches unity, i.e. the electric field in rest frame approaches the critical field of QED, the assumptions under which the classical treatments were derived are not valid any more and we expect quantum effects to dominate the particle dynamics. The deviations or quantum corrections to the classical description are fundamentally two-fold:
 
-First, the emission spectrum of the classical model overestimates the emission power and in extreme cases allows more emission than the original particle energy. This is fixed by replacing the classical synchrotron function by the quantum synchrotron function. As a result, the classical radiation reaction force is modified by the Gaunt factor, which is defined as the ratio of the quantum and classical synchrotron emission power $g(\eta) = P_q/P_{cl}$, where $0 \leq g \leq 1$ (see Appendix \ref{Appendix:Sec:QuantumSynchrotron}):
+First, the emission spectrum of the classical model overestimates the emission power and in extreme cases allows more emission than the original particle energy. This is fixed by replacing the classical synchrotron function by the \textit{quantum synchrotron function}. As a result, the classical radiation reaction force is modified by the Gaunt factor, which is defined as the ratio of the quantum and classical synchrotron emission power, $g(\eta) = P_q/P_{cl}$, where $0 \leq g \leq 1$ (see Appendix \ref{Appendix:Sec:QuantumSynchrotron}):
 \begin{equation}
 \mathbf{F}_{mod,cl} = g \mathbf{F}_{cl}.
 \end{equation}
 
 Second, the emission is not continuous and deterministic but stochastic in nature so that we have to consider discrete emission events and related emission probabilities, rather than deterministic one-to-one relations. Quantum radiation reaction is then the overall recoil experienced by an electron undergoing multiple simultaneous incoherent photon emission events. In the collision of an electron and a laser pulse the finite radiation lifetime allows the electrons to enter field regions that are classically forbidden, which can result in more energetic photon emissions. This is referred to as \textit{(energy) straggling} \cite{Shen1972_STRAGGLING}. Similarly, an electron might also pass through the entire laser pulse without emitting a single photon, which is then called \textit{quantum quenching of radiation losses} \cite{Harvey2017_QUENCHING}.
 
-We can estimate the importance of stochastici effects by comparing the typical timescale between emission events, $\Delta t$, with the time scale of the laser pulse, $\omega_0$, \cite{Blackburn2019_RRReview}:
+We can estimate the importance of stochastic effects by comparing the typical timescale between emission events, $\Delta t$, with the time scale of the laser pulse, $\omega_0$, \cite{Blackburn2019_RRReview}:
 \begin{equation}
 \omega_0 \Delta t = 
 \begin{cases}
@@ -803,7 +803,7 @@ Here we will now consider the signatures or observables of radiation reaction in
 
 \subsubsection{Evolution of momentum or energy loss}
 
-The evolution of the average electron momentum interacting with a laser pulse, $\langle \mathbf{p} \rangle$, is determined by the synchrotron power, $P$, \cite{Ridgers2017_QRR}
+The evolution of the average electron momentum interacting with a laser pulse, $\langle \mathbf{p} \rangle$, is determined by the synchrotron power, $P$ \cite{Ridgers2017_QRR}:
 \begin{equation}
 \boxed{\left( \frac{\dif \langle \mathbf{p} \rangle}{\dif t}\right) = - \frac{\langle P \hat{\mathbf{p}}\rangle}{c},}
 \label{Theory:Eqn:SignatureRR:dpdt_classical}
@@ -847,7 +847,7 @@ Considering the by $g$ reduced emission power resulting from quantum corrections
 \begin{equation}
 \boxed{\left(\frac{\dif \sigma^2}{\dif t}\right)_{mod,cl} =  - 2 \frac{\langle \Delta \gamma g P_{cl}\rangle}{m_e c^2}.}
 \end{equation}
-If we not only apply the reduced emission power but also consider the stochasticity of the quantum nature, we obtain an equation complemented by a term $\sim S$:
+If we apply not only the reduced emission power but also consider the stochasticity of the quantum nature, we obtain an equation complemented by a term $\sim S$:
 \begin{equation}
 \boxed{\left(\frac{\dif \sigma^2}{\dif t}\right)_{st} =  - 2 \frac{\langle \Delta \gamma g P_{cl}\rangle}{m_e c^2} + \frac{\langle S \rangle}{m^2_e c^4},}
 \end{equation}
@@ -859,7 +859,7 @@ For a Gaussian electron beam spectrum with mean $\langle\epsilon_i\rangle$ and w
 \end{equation}
 Note that the effective $\eta$ in an interaction is not constant such that the interaction might be dominated by stochastic broadening for parts of the interaction followed by a strong cooling resulting from lower electron energies due to energy loss.
 
-Returning to Figure \ref{Theory:Figs:RidgersEspec} \cite{Ridgers2017_QRR} again, we can now also consider the shape of the electron distributions. We see that the width of the distribution has narrowed for both the classical (black solid) and the modified classical (red) models as they are deterministic models, where the classical model has narrowed the distribution more. This is again consistent as the emission power is for the modified classical model reduced by the Gaunt factor. The model including stochasticity (blue) has, on the other hand, widened significantly whilst losing on average the same amount of energy as the electron beam experiencing the modified classical radiation reaction force. 
+Returning to Figure \ref{Theory:Figs:RidgersEspec} \cite{Ridgers2017_QRR} again, we can now also consider the shape of the electron distributions. We see that the width of the distribution has narrowed for both the classical (black solid) and the modified classical (red) models as they are deterministic models, where the classical model has narrowed the distribution more. This is again consistent as the emission power in the modified classical model is reduced by the Gaunt factor and $g \leq 1$. The model including stochasticity (blue) has, on the other hand, widened significantly whilst losing on average the same amount of energy as the electron beam experiencing the modified classical radiation reaction force. 
 This indicates that whilst the average energy loss is a good indicator to discriminate purely classical models and those that include quantum corrections, the variance of the spectrum can serve as powerful observable to distinguish deterministic and probabilistic models, such that by measuring both quantities they can serve as complementary measurements.
 An analysis of the impact of stochasticity on different beam shapes has been discussed in \cite{Niel2018_RRStochastic}.
 
@@ -1051,9 +1051,9 @@ At extreme field strengths electron-positron pairs can be created directly from 
 \end{equation}
 where we see by rearranging that
 \begin{equation}
-e E_S \bar{\lambda_C} = m_e c^2,
+e E_S \bar{\lambda}_C = m_e c^2,
 \end{equation}
-which provides an intuitive explanation of significance of this field strength: $E_S$ is then the static electric field required to accelerate an electron to an energy of $m_e c^2$, equivalent to its rest mass, within a (reduced) Compton wavelength, $\bar{\lambda_C}$.
+which provides an intuitive explanation of significance of this field strength: $E_S$ is then the static electric field required to accelerate an electron to an energy of $m_e c^2$, equivalent to its rest mass, within a (reduced) Compton wavelength, $\bar{\lambda}_C$.
 Figure \ref{Theory:Figs:Schwinger_FeynmanDiag} (right) shows the associated Feynman diagram.
 
 

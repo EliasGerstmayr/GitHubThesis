@@ -1780,7 +1780,7 @@
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv e-prints}
+      \field{journaltitle}{arXiv preprint ArXiv:1905.00059}
       \field{title}{{Summary of strong-field QED Workshop}}
       \field{year}{2019}
       \verb{doi}
@@ -2172,6 +2172,12 @@
       \field{year}{2018}
       \verb{doi}
       \verb 10.1126/science.359.6374.382
+      \endverb
+      \verb{urlraw}
+      \verb https://science.sciencemag.org/content/359/6374/382
+      \endverb
+      \verb{url}
+      \verb https://science.sciencemag.org/content/359/6374/382
       \endverb
     \endentry
     \entry{Toth2017_BELLA}{inproceedings}{}
@@ -3315,6 +3321,55 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevLett.118.171801
+      \endverb
+    \endentry
+    \entry{Baldenegro2018_PhPh_AXIONLIKE}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5fcf1c46f70f3b5f9a9a534584d44225}{%
+           family={Baldenegro},
+           familyi={B\bibinitperiod},
+           given={Cristian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6a3ac1a650bb571e3c69a024ef338b60}{%
+           family={Fichet},
+           familyi={F\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b69de921abffddfa0700ff27f2aec552}{%
+           family={Gersdorff},
+           familyi={G\bibinitperiod},
+           given={Gero},
+           giveni={G\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=b880c80b78f4b3a0a590de66adba1078}{%
+           family={Royon},
+           familyi={R\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3db64936798dfc063636eb9ab6b25222}
+      \strng{fullhash}{22808c5d3e3ed368ed9de45249c2f392}
+      \strng{bibnamehash}{3db64936798dfc063636eb9ab6b25222}
+      \strng{authorbibnamehash}{3db64936798dfc063636eb9ab6b25222}
+      \strng{authornamehash}{3db64936798dfc063636eb9ab6b25222}
+      \strng{authorfullhash}{22808c5d3e3ed368ed9de45249c2f392}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{number}{6}
+      \field{title}{Searching for axion-like particles with proton tagging at the LHC}
+      \field{volume}{2018}
+      \field{year}{2018}
+      \field{pages}{131}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/JHEP06(2018)131
       \endverb
     \endentry
     \entry{Boutet2010_CXI}{article}{}
@@ -5710,6 +5765,48 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevLett.79.1626
+      \endverb
+    \endentry
+    \entry{Hu2010_TRIDENT}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d62fe0b8b9251befe4723262ce9053af}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Huayu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3bfaf388573b4b68b186ae7779ccd3d7}{%
+           family={M{ü}ller},
+           familyi={M\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cf5f013dd2a1600e06aa9624924ab6ce}{%
+           family={Keitel},
+           familyi={K\bibinitperiod},
+           given={Christoph\bibnamedelima H},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{5a8afb736974d1625e04558b9de6ced9}
+      \strng{fullhash}{8aacb5c5d8378b426610b0d05dc22f90}
+      \strng{bibnamehash}{5a8afb736974d1625e04558b9de6ced9}
+      \strng{authorbibnamehash}{5a8afb736974d1625e04558b9de6ced9}
+      \strng{authornamehash}{5a8afb736974d1625e04558b9de6ced9}
+      \strng{authorfullhash}{8aacb5c5d8378b426610b0d05dc22f90}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{8}
+      \field{title}{Complete QED theory of multiphoton trident pair production in strong laser fields}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{pages}{080401}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.105.080401
       \endverb
     \endentry
     \entry{Yakimenko2019_NONPERTURB}{article}{}
@@ -8422,55 +8519,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevLett.99.130404
-      \endverb
-    \endentry
-    \entry{Baldenegro2018_PhPh_AXIONLIKE}{article}{}
-      \name{author}{4}{}{%
-        {{hash=5fcf1c46f70f3b5f9a9a534584d44225}{%
-           family={Baldenegro},
-           familyi={B\bibinitperiod},
-           given={Cristian},
-           giveni={C\bibinitperiod}}}%
-        {{hash=6a3ac1a650bb571e3c69a024ef338b60}{%
-           family={Fichet},
-           familyi={F\bibinitperiod},
-           given={Sylvain},
-           giveni={S\bibinitperiod}}}%
-        {{hash=b69de921abffddfa0700ff27f2aec552}{%
-           family={Gersdorff},
-           familyi={G\bibinitperiod},
-           given={Gero},
-           giveni={G\bibinitperiod},
-           prefix={von},
-           prefixi={v\bibinitperiod}}}%
-        {{hash=b880c80b78f4b3a0a590de66adba1078}{%
-           family={Royon},
-           familyi={R\bibinitperiod},
-           given={Christophe},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{3db64936798dfc063636eb9ab6b25222}
-      \strng{fullhash}{22808c5d3e3ed368ed9de45249c2f392}
-      \strng{bibnamehash}{3db64936798dfc063636eb9ab6b25222}
-      \strng{authorbibnamehash}{3db64936798dfc063636eb9ab6b25222}
-      \strng{authornamehash}{3db64936798dfc063636eb9ab6b25222}
-      \strng{authorfullhash}{22808c5d3e3ed368ed9de45249c2f392}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of High Energy Physics}
-      \field{number}{6}
-      \field{title}{Searching for axion-like particles with proton tagging at the LHC}
-      \field{volume}{2018}
-      \field{year}{2018}
-      \field{pages}{131}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1007/JHEP06(2018)131
       \endverb
     \endentry
     \entry{Ritus1972_NAROZHNY}{article}{}
@@ -17442,48 +17490,6 @@
       \verb 10.1093/mnras/152.1.21
       \endverb
     \endentry
-    \entry{Hu2010_TRIDENT}{article}{}
-      \name{author}{3}{}{%
-        {{hash=d62fe0b8b9251befe4723262ce9053af}{%
-           family={Hu},
-           familyi={H\bibinitperiod},
-           given={Huayu},
-           giveni={H\bibinitperiod}}}%
-        {{hash=3bfaf388573b4b68b186ae7779ccd3d7}{%
-           family={M{ü}ller},
-           familyi={M\bibinitperiod},
-           given={Carsten},
-           giveni={C\bibinitperiod}}}%
-        {{hash=cf5f013dd2a1600e06aa9624924ab6ce}{%
-           family={Keitel},
-           familyi={K\bibinitperiod},
-           given={Christoph\bibnamedelima H},
-           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{5a8afb736974d1625e04558b9de6ced9}
-      \strng{fullhash}{8aacb5c5d8378b426610b0d05dc22f90}
-      \strng{bibnamehash}{5a8afb736974d1625e04558b9de6ced9}
-      \strng{authorbibnamehash}{5a8afb736974d1625e04558b9de6ced9}
-      \strng{authornamehash}{5a8afb736974d1625e04558b9de6ced9}
-      \strng{authorfullhash}{8aacb5c5d8378b426610b0d05dc22f90}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical review letters}
-      \field{number}{8}
-      \field{title}{Complete QED theory of multiphoton trident pair production in strong laser fields}
-      \field{volume}{105}
-      \field{year}{2010}
-      \field{pages}{080401}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.105.080401
-      \endverb
-    \endentry
     \entry{Ilderton2011_TRIDENT}{article}{}
       \name{author}{1}{}{%
         {{hash=f5e359f01f6febae0d134addfd592f19}{%
@@ -17553,52 +17559,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevD.63.071502
-      \endverb
-    \endentry
-    \entry{dEnterria2013_GammaGamma}{article}{}
-      \name{author}{2}{}{%
-        {{hash=57f80c12bb54b399f06e7e852f5395d5}{%
-           family={d'Enterria},
-           familyi={d\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=fb58a4ad2f4f67c83f3c94b32bd21f83}{%
-           family={Silveira},
-           familyi={S\bibinitperiod},
-           given={Gustavo\bibnamedelima G.},
-           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod},
-           prefix={da},
-           prefixi={d\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{8967efd13a7d2c7c66d03be8bdf9f505}
-      \strng{fullhash}{8967efd13a7d2c7c66d03be8bdf9f505}
-      \strng{bibnamehash}{8967efd13a7d2c7c66d03be8bdf9f505}
-      \strng{authorbibnamehash}{8967efd13a7d2c7c66d03be8bdf9f505}
-      \strng{authornamehash}{8967efd13a7d2c7c66d03be8bdf9f505}
-      \strng{authorfullhash}{8967efd13a7d2c7c66d03be8bdf9f505}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Lett.}
-      \field{month}{8}
-      \field{number}{8}
-      \field{title}{Observing Light-by-Light Scattering at the Large Hadron Collider}
-      \field{volume}{111}
-      \field{year}{2013}
-      \field{pages}{080405}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.111.080405
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.111.080405
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.111.080405
       \endverb
     \endentry
     \entry{OPAL2000_GammaGamma}{article}{}
@@ -19981,6 +19941,84 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.83.256
       \endverb
     \endentry
+    \entry{Wang2013_GEV_FIUDICIAL}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=3968616b3c918008452b8995ddb270e6}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaoming},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b16f26c0e4e2c95457136cd316f6f48c}{%
+           family={Zgadzaj},
+           familyi={Z\bibinitperiod},
+           given={Rafal},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c95752e7a81b3e54f548e302879e256e}{%
+           family={Fazel},
+           familyi={F\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3fd0f24e5fac7b7f9903fd035632fd3e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhengyan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=ab2123606b34c815b1fdf28e56a3c552}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={SA},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cbe8786ed671a7d1bcc71d6c1420229f}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c4edee5b598ff87d17e31f7aa2298891}{%
+           family={Henderson},
+           familyi={H\bibinitperiod},
+           given={Watson},
+           giveni={W\bibinitperiod}}}%
+        {{hash=1d39b42ce361303a18d47f882045e506}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Y-Y},
+           giveni={Y\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=9861954ab67641b3596b0ef295c917ef}{%
+           family={Korzekwa},
+           familyi={K\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=95aec19e261fde1d9ebaf80663b6ec7d}{%
+           family={Tsai},
+           familyi={T\bibinitperiod},
+           given={H-E},
+           giveni={H\bibinithyphendelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{a272c26dabfa88ea7f6bc30232df5da5}
+      \strng{fullhash}{76d01a4128571381038eae7ba21a2273}
+      \strng{bibnamehash}{a272c26dabfa88ea7f6bc30232df5da5}
+      \strng{authorbibnamehash}{a272c26dabfa88ea7f6bc30232df5da5}
+      \strng{authornamehash}{a272c26dabfa88ea7f6bc30232df5da5}
+      \strng{authorfullhash}{76d01a4128571381038eae7ba21a2273}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature communications}
+      \field{title}{Quasi-monoenergetic laser-plasma acceleration of electrons to 2 GeV}
+      \field{volume}{4}
+      \field{year}{2013}
+      \field{pages}{1988}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms2988
+      \endverb
+    \endentry
     \entry{TERMITES}{article}{}
       \name{author}{5}{}{%
         {{hash=e638e6e76ca172a1234e85b1903d9c2f}{%
@@ -20168,82 +20206,248 @@
       \verb https://arxiv.org/abs/1909.05008
       \endverb
     \endentry
-    \entry{Wang2013_GEV_FIUDICIAL}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=3968616b3c918008452b8995ddb270e6}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Xiaoming},
-           giveni={X\bibinitperiod}}}%
-        {{hash=b16f26c0e4e2c95457136cd316f6f48c}{%
-           family={Zgadzaj},
-           familyi={Z\bibinitperiod},
-           given={Rafal},
-           giveni={R\bibinitperiod}}}%
-        {{hash=c95752e7a81b3e54f548e302879e256e}{%
-           family={Fazel},
-           familyi={F\bibinitperiod},
-           given={Neil},
-           giveni={N\bibinitperiod}}}%
-        {{hash=3fd0f24e5fac7b7f9903fd035632fd3e}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Zhengyan},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=ab2123606b34c815b1fdf28e56a3c552}{%
-           family={Yi},
-           familyi={Y\bibinitperiod},
-           given={SA},
-           giveni={S\bibinitperiod}}}%
-        {{hash=cbe8786ed671a7d1bcc71d6c1420229f}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Xi},
-           giveni={X\bibinitperiod}}}%
-        {{hash=c4edee5b598ff87d17e31f7aa2298891}{%
-           family={Henderson},
-           familyi={H\bibinitperiod},
-           given={Watson},
-           giveni={W\bibinitperiod}}}%
-        {{hash=1d39b42ce361303a18d47f882045e506}{%
-           family={Chang},
-           familyi={C\bibinitperiod},
-           given={Y-Y},
-           giveni={Y\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=9861954ab67641b3596b0ef295c917ef}{%
-           family={Korzekwa},
+    \entry{Buck2011_BUBBLE}{article}{}
+      \name{author}{9}{}{%
+        {{hash=17096fbf4ed8306fa64369a4db8ea9ed}{%
+           family={Buck},
+           familyi={B\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=53db5433fedebbbeb675b740bd81dc5a}{%
+           family={Nicolai},
+           familyi={N\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=55f89a62fc0bc11c18f8fcdcd5f31e3a}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9ca67a1aedd3e430a0dbaaeb66d95983}{%
+           family={Sears},
+           familyi={S\bibinitperiod},
+           given={Chris\bibnamedelimb M.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=35c7b70cfead07846103b0d62bd9e17e}{%
+           family={S{ä}vert},
+           familyi={S\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=be346a18fdd1412c892e9cae0fdefb7d}{%
+           family={Mikhailova},
+           familyi={M\bibinitperiod},
+           given={Julia\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e4782cac7fdd90b23a36039769549f9a}{%
+           family={Krausz},
            familyi={K\bibinitperiod},
-           given={R},
-           giveni={R\bibinitperiod}}}%
-        {{hash=95aec19e261fde1d9ebaf80663b6ec7d}{%
-           family={Tsai},
-           familyi={T\bibinitperiod},
-           given={H-E},
-           giveni={H\bibinithyphendelim E\bibinitperiod}}}%
+           given={Ferenc},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0b9764aedf7239a70c7e3253b1673783}{%
+           family={Kaluza},
+           familyi={K\bibinitperiod},
+           given={Malte\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c4206f6ee05cf84738e30895d805830e}{%
+           family={Veisz},
+           familyi={V\bibinitperiod},
+           given={Laszlo},
+           giveni={L\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Nature Publishing Group}%
+        {Nature Publishing Group SN}%
       }
-      \strng{namehash}{a272c26dabfa88ea7f6bc30232df5da5}
-      \strng{fullhash}{76d01a4128571381038eae7ba21a2273}
-      \strng{bibnamehash}{a272c26dabfa88ea7f6bc30232df5da5}
-      \strng{authorbibnamehash}{a272c26dabfa88ea7f6bc30232df5da5}
-      \strng{authornamehash}{a272c26dabfa88ea7f6bc30232df5da5}
-      \strng{authorfullhash}{76d01a4128571381038eae7ba21a2273}
+      \strng{namehash}{b32d7a6c31b381db993f88d7d87cdba2}
+      \strng{fullhash}{98dc039820beaea6766eeb6d6f10091c}
+      \strng{bibnamehash}{b32d7a6c31b381db993f88d7d87cdba2}
+      \strng{authorbibnamehash}{b32d7a6c31b381db993f88d7d87cdba2}
+      \strng{authornamehash}{b32d7a6c31b381db993f88d7d87cdba2}
+      \strng{authorfullhash}{98dc039820beaea6766eeb6d6f10091c}
       \field{sortinit}{7}
       \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature communications}
-      \field{title}{Quasi-monoenergetic laser-plasma acceleration of electrons to 2 GeV}
-      \field{volume}{4}
-      \field{year}{2013}
-      \field{pages}{1988}
+      \field{journaltitle}{Nature Physics}
+      \field{title}{Real-time observation of laser-driven electron acceleration}
+      \field{volume}{7}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/nphys1942
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/nphys1942
+      \endverb
+    \endentry
+    \entry{Savert2015_BUBBLE}{article}{}
+      \name{author}{16}{}{%
+        {{hash=eab32e44ddef4e6e5ef36e61fa0dba9a}{%
+           family={Sävert},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a14338c5eec4e2ed1dbe49cd44722c79}{%
+           family={Mangles},
+           familyi={M\bibinitperiod},
+           given={S.\bibnamedelimi P.\bibnamedelimi D.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=897be23523455e31a66973e777f04bf3}{%
+           family={Schnell},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7697226efea04891535d782e41bd1ebc}{%
+           family={Siminos},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5951024b6454a1fb6c61544264a501cb}{%
+           family={Cole},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=4c409247ea0085d489e5b1722650f032}{%
+           family={Leier},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c8b8a70c58f5872e8fc9ab666c13d0de}{%
+           family={Reuter},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0147a112e4555ccfe983228a83b858e3}{%
+           family={Schwab},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=9e2f9e5b3e60847293cf5fa8188799dc}{%
+           family={Möller},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8fb31e6dab75407f24ab43f96cde112d}{%
+           family={Poder},
+           familyi={P\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6b6bd5cdb5d96c851a58da1fd45ba6c4}{%
+           family={Jäckel},
+           familyi={J\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=def290881fd0bcd950ef33fda4b2b195}{%
+           family={Paulus},
+           familyi={P\bibinitperiod},
+           given={G.\bibnamedelimi G.},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=10f4079b764ebc90f2d2d9b476245e79}{%
+           family={Spielmann},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=717748d573e1bbd4193917b69e865655}{%
+           family={Skupin},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9f7496e33e3bd9525a6ff586e62409a8}{%
+           family={Najmudin},
+           familyi={N\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e472b8348cf9d2e397e06aa0558e0244}{%
+           family={Kaluza},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{5b12d6ed1bf2220e4fb132d907bd15d1}
+      \strng{fullhash}{343925e91b8e73c32e6a9312064c8800}
+      \strng{bibnamehash}{5b12d6ed1bf2220e4fb132d907bd15d1}
+      \strng{authorbibnamehash}{5b12d6ed1bf2220e4fb132d907bd15d1}
+      \strng{authornamehash}{5b12d6ed1bf2220e4fb132d907bd15d1}
+      \strng{authorfullhash}{343925e91b8e73c32e6a9312064c8800}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{7}
+      \field{number}{5}
+      \field{title}{Direct Observation of the Injection Dynamics of a Laser Wakefield Accelerator Using Few-Femtosecond Shadowgraphy}
+      \field{volume}{115}
+      \field{year}{2015}
+      \field{pages}{055002}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1038/ncomms2988
+      \verb 10.1103/PhysRevLett.115.055002
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.115.055002
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.115.055002
+      \endverb
+    \endentry
+    \entry{Siminos2016_FASTSHADOW}{article}{}
+      \name{author}{6}{}{%
+        {{hash=d02329c4e2fd6079e7d4a4e794cdbc8f}{%
+           family={Siminos},
+           familyi={S\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=275b26621122bdba122d37e8bf739842}{%
+           family={Skupin},
+           familyi={S\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3342dc1bd189409afdae16223f22d8d5}{%
+           family={Sävert},
+           familyi={S\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7079c8982786958918e148e96f2cfb66}{%
+           family={Cole},
+           familyi={C\bibinitperiod},
+           given={J\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=eaf361eb7228b15f6d6f4db127a11b10}{%
+           family={Mangles},
+           familyi={M\bibinitperiod},
+           given={S\bibnamedelima P\bibnamedelima D},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=eec8bb0d5d75acdfd034a2df6924694d}{%
+           family={Kaluza},
+           familyi={K\bibinitperiod},
+           given={M\bibnamedelima C},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{a0a231d4f576042dd82597d9005b169f}
+      \strng{fullhash}{3f714a680e1e301e0883274a8cd4d003}
+      \strng{bibnamehash}{a0a231d4f576042dd82597d9005b169f}
+      \strng{authorbibnamehash}{a0a231d4f576042dd82597d9005b169f}
+      \strng{authornamehash}{a0a231d4f576042dd82597d9005b169f}
+      \strng{authorfullhash}{3f714a680e1e301e0883274a8cd4d003}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Plasma Physics and Controlled Fusion}
+      \field{month}{5}
+      \field{number}{6}
+      \field{title}{Modeling ultrafast shadowgraphy in laser-plasma interaction experiments}
+      \field{volume}{58}
+      \field{year}{2016}
+      \field{pages}{065004}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0741-3335/58/6/065004
       \endverb
     \endentry
     \entry{Cavalieri2005_EOS}{article}{}
@@ -20599,325 +20803,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevLett.85.3404
-      \endverb
-    \endentry
-    \entry{Scherkl2019_PLASMAAFTERGLOW}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=f7884b45128c887437229ae7835bfebd}{%
-           family={Scherkl},
-           familyi={S\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod}}}%
-        {{hash=35a37b0d6e04d7bf2ab1b338cf61935b}{%
-           family={Knetsch},
-           familyi={K\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod}}}%
-        {{hash=c551f70f6ea5415d70797830067c0134}{%
-           family={Heinemann},
-           familyi={H\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=39b64057826c6e70abf28e03e9b1fa8f}{%
-           family={Sutherland},
-           familyi={S\bibinitperiod},
-           given={Andrew},
-           giveni={A\bibinitperiod}}}%
-        {{hash=d32a3bee158b602470392b645495cc21}{%
-           family={Habib},
-           familyi={H\bibinitperiod},
-           given={Ahmad\bibnamedelima Fahim},
-           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=623d2c30a6ace6a7a84ab578c03ee1f6}{%
-           family={Karger},
-           familyi={K\bibinitperiod},
-           given={Oliver},
-           giveni={O\bibinitperiod}}}%
-        {{hash=2995081da954752d02a55562eee338a6}{%
-           family={Ullmann},
-           familyi={U\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=bf935a1b8a55352f970b84e592379e3a}{%
-           family={Beaton},
-           familyi={B\bibinitperiod},
-           given={Andrew},
-           giveni={A\bibinitperiod}}}%
-        {{hash=be64283c5f50b7f40ec1ce5dff4e6d2a}{%
-           family={Kirwan},
-           familyi={K\bibinitperiod},
-           given={Gavin},
-           giveni={G\bibinitperiod}}}%
-        {{hash=50238d26cd564f45eebcb70c25948772}{%
-           family={Manahan},
-           familyi={M\bibinitperiod},
-           given={Grace},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{aff465935796b8cf7091d3faae4732da}
-      \strng{fullhash}{9f317124e24e5439e14bfda740b876e1}
-      \strng{bibnamehash}{aff465935796b8cf7091d3faae4732da}
-      \strng{authorbibnamehash}{aff465935796b8cf7091d3faae4732da}
-      \strng{authornamehash}{aff465935796b8cf7091d3faae4732da}
-      \strng{authorfullhash}{9f317124e24e5439e14bfda740b876e1}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1908.09263}
-      \field{title}{Plasma-photonic spatiotemporal synchronization of relativistic electron and laser beams}
-      \field{year}{2019}
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/1908.09263
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/1908.09263
-      \endverb
-    \endentry
-    \entry{Buck2011_BUBBLE}{article}{}
-      \name{author}{9}{}{%
-        {{hash=17096fbf4ed8306fa64369a4db8ea9ed}{%
-           family={Buck},
-           familyi={B\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod}}}%
-        {{hash=53db5433fedebbbeb675b740bd81dc5a}{%
-           family={Nicolai},
-           familyi={N\bibinitperiod},
-           given={Maria},
-           giveni={M\bibinitperiod}}}%
-        {{hash=55f89a62fc0bc11c18f8fcdcd5f31e3a}{%
-           family={Schmid},
-           familyi={S\bibinitperiod},
-           given={Karl},
-           giveni={K\bibinitperiod}}}%
-        {{hash=9ca67a1aedd3e430a0dbaaeb66d95983}{%
-           family={Sears},
-           familyi={S\bibinitperiod},
-           given={Chris\bibnamedelimb M.\bibnamedelimi S.},
-           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=35c7b70cfead07846103b0d62bd9e17e}{%
-           family={S{ä}vert},
-           familyi={S\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod}}}%
-        {{hash=be346a18fdd1412c892e9cae0fdefb7d}{%
-           family={Mikhailova},
-           familyi={M\bibinitperiod},
-           given={Julia\bibnamedelima M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=e4782cac7fdd90b23a36039769549f9a}{%
-           family={Krausz},
-           familyi={K\bibinitperiod},
-           given={Ferenc},
-           giveni={F\bibinitperiod}}}%
-        {{hash=0b9764aedf7239a70c7e3253b1673783}{%
-           family={Kaluza},
-           familyi={K\bibinitperiod},
-           given={Malte\bibnamedelima C.},
-           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=c4206f6ee05cf84738e30895d805830e}{%
-           family={Veisz},
-           familyi={V\bibinitperiod},
-           given={Laszlo},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Nature Publishing Group SN}%
-      }
-      \strng{namehash}{b32d7a6c31b381db993f88d7d87cdba2}
-      \strng{fullhash}{98dc039820beaea6766eeb6d6f10091c}
-      \strng{bibnamehash}{b32d7a6c31b381db993f88d7d87cdba2}
-      \strng{authorbibnamehash}{b32d7a6c31b381db993f88d7d87cdba2}
-      \strng{authornamehash}{b32d7a6c31b381db993f88d7d87cdba2}
-      \strng{authorfullhash}{98dc039820beaea6766eeb6d6f10091c}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature Physics}
-      \field{title}{Real-time observation of laser-driven electron acceleration}
-      \field{volume}{7}
-      \field{year}{2011}
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/nphys1942
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/nphys1942
-      \endverb
-    \endentry
-    \entry{Savert2015_BUBBLE}{article}{}
-      \name{author}{16}{}{%
-        {{hash=eab32e44ddef4e6e5ef36e61fa0dba9a}{%
-           family={Sävert},
-           familyi={S\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=a14338c5eec4e2ed1dbe49cd44722c79}{%
-           family={Mangles},
-           familyi={M\bibinitperiod},
-           given={S.\bibnamedelimi P.\bibnamedelimi D.},
-           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=897be23523455e31a66973e777f04bf3}{%
-           family={Schnell},
-           familyi={S\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=7697226efea04891535d782e41bd1ebc}{%
-           family={Siminos},
-           familyi={S\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-        {{hash=5951024b6454a1fb6c61544264a501cb}{%
-           family={Cole},
-           familyi={C\bibinitperiod},
-           given={J.\bibnamedelimi M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=4c409247ea0085d489e5b1722650f032}{%
-           family={Leier},
-           familyi={L\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c8b8a70c58f5872e8fc9ab666c13d0de}{%
-           family={Reuter},
-           familyi={R\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=0147a112e4555ccfe983228a83b858e3}{%
-           family={Schwab},
-           familyi={S\bibinitperiod},
-           given={M.\bibnamedelimi B.},
-           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=9e2f9e5b3e60847293cf5fa8188799dc}{%
-           family={Möller},
-           familyi={M\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=8fb31e6dab75407f24ab43f96cde112d}{%
-           family={Poder},
-           familyi={P\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=6b6bd5cdb5d96c851a58da1fd45ba6c4}{%
-           family={Jäckel},
-           familyi={J\bibinitperiod},
-           given={O.},
-           giveni={O\bibinitperiod}}}%
-        {{hash=def290881fd0bcd950ef33fda4b2b195}{%
-           family={Paulus},
-           familyi={P\bibinitperiod},
-           given={G.\bibnamedelimi G.},
-           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=10f4079b764ebc90f2d2d9b476245e79}{%
-           family={Spielmann},
-           familyi={S\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-        {{hash=717748d573e1bbd4193917b69e865655}{%
-           family={Skupin},
-           familyi={S\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=9f7496e33e3bd9525a6ff586e62409a8}{%
-           family={Najmudin},
-           familyi={N\bibinitperiod},
-           given={Z.},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=e472b8348cf9d2e397e06aa0558e0244}{%
-           family={Kaluza},
-           familyi={K\bibinitperiod},
-           given={M.\bibnamedelimi C.},
-           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{5b12d6ed1bf2220e4fb132d907bd15d1}
-      \strng{fullhash}{343925e91b8e73c32e6a9312064c8800}
-      \strng{bibnamehash}{5b12d6ed1bf2220e4fb132d907bd15d1}
-      \strng{authorbibnamehash}{5b12d6ed1bf2220e4fb132d907bd15d1}
-      \strng{authornamehash}{5b12d6ed1bf2220e4fb132d907bd15d1}
-      \strng{authorfullhash}{343925e91b8e73c32e6a9312064c8800}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Lett.}
-      \field{month}{7}
-      \field{number}{5}
-      \field{title}{Direct Observation of the Injection Dynamics of a Laser Wakefield Accelerator Using Few-Femtosecond Shadowgraphy}
-      \field{volume}{115}
-      \field{year}{2015}
-      \field{pages}{055002}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.115.055002
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.115.055002
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.115.055002
-      \endverb
-    \endentry
-    \entry{Siminos2016_FASTSHADOW}{article}{}
-      \name{author}{6}{}{%
-        {{hash=d02329c4e2fd6079e7d4a4e794cdbc8f}{%
-           family={Siminos},
-           familyi={S\bibinitperiod},
-           given={E},
-           giveni={E\bibinitperiod}}}%
-        {{hash=275b26621122bdba122d37e8bf739842}{%
-           family={Skupin},
-           familyi={S\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=3342dc1bd189409afdae16223f22d8d5}{%
-           family={Sävert},
-           familyi={S\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=7079c8982786958918e148e96f2cfb66}{%
-           family={Cole},
-           familyi={C\bibinitperiod},
-           given={J\bibnamedelima M},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=eaf361eb7228b15f6d6f4db127a11b10}{%
-           family={Mangles},
-           familyi={M\bibinitperiod},
-           given={S\bibnamedelima P\bibnamedelima D},
-           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=eec8bb0d5d75acdfd034a2df6924694d}{%
-           family={Kaluza},
-           familyi={K\bibinitperiod},
-           given={M\bibnamedelima C},
-           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {{IOP} Publishing}%
-      }
-      \strng{namehash}{a0a231d4f576042dd82597d9005b169f}
-      \strng{fullhash}{3f714a680e1e301e0883274a8cd4d003}
-      \strng{bibnamehash}{a0a231d4f576042dd82597d9005b169f}
-      \strng{authorbibnamehash}{a0a231d4f576042dd82597d9005b169f}
-      \strng{authornamehash}{a0a231d4f576042dd82597d9005b169f}
-      \strng{authorfullhash}{3f714a680e1e301e0883274a8cd4d003}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Plasma Physics and Controlled Fusion}
-      \field{month}{5}
-      \field{number}{6}
-      \field{title}{Modeling ultrafast shadowgraphy in laser-plasma interaction experiments}
-      \field{volume}{58}
-      \field{year}{2016}
-      \field{pages}{065004}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/0741-3335/58/6/065004
       \endverb
     \endentry
     \entry{Glinec2008_BETATRON}{article}{}
@@ -21329,6 +21214,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{dEnterria2013_GammaGamma}
 \endrefsection
 \endinput
 

@@ -1,7 +1,7 @@
 
 \chapter{Symbols and constants}
 
-\section{Frequently used symbols}
+\section{Symbols}
 
 \begin{table}[h]
 
@@ -17,13 +17,17 @@ $\beta$ & Relativistic velocity\\
 $E$ & Electric field strength\\
 $\epsilon$ & Energy, e.g. $\epsilon_\gamma$ gamma energy\\
 $\eta$ & Quantum nonlinearity param.\\
+$g$ & Gaunt factor\\
 $\gamma$ & Relativistic Lorentz factor\\
+$I$ & Intensity\\
 $K$ & Wiggler parameter\\
 $\lambda$ & Wavelength\\
 $N$ & Number of particles/photons\\
 $n_c$ & Critical density\\
 $n_e$ & Electron density\\
+$\nabla$ & Nabla operator\\
 $\omega$ & Frequency\\
+$\Omega$ & Solid angle\\
 \hline
 \end{tabular}
 }
@@ -35,7 +39,9 @@ $\omega$ & Frequency\\
 \hline 
 \textbf{Symbol} & \textbf{Name}  \\ \hline \hline
 $\omega_p$ & Plasma frequency\\
-$Q$ & Charge\\
+$P$ & Power\\
+$q$ & Particle charge\\
+$Q$ & Total charge\\
 $r$ & Radius\\
 $r_\beta$ & Betatron radius\\
 $\rho$ & (Material) density\\
@@ -44,9 +50,11 @@ $s$ & Centre-of-mass energy\\
 $\sigma$ & Standard deviation\\
 $\sigma_{X}$ & Cross section for process $X$ \\
 $\theta$ & Divergence or angle\\
+$v$ & Velocity\\
 $w$ & Waist size\\
 $X_0$ & Radiation length\\
 $z_R$ & Rayleigh length\\
+$Z$ & Atomic Number\\
 \hline
 \end{tabular}
 }
@@ -56,7 +64,7 @@ $z_R$ & Rayleigh length\\
 
 \clearpage
 
-\section{Abbreviatons}
+\section{Abbreviations}
 
 
 \begin{table}[h]
@@ -68,19 +76,23 @@ $z_R$ & Rayleigh length\\
 BW & Breit-Wheeler (process)\\
 CCD & Charge-coupled device\\
 CLF & Central Laser Facility\\
+CM & Centre of mass\\
 CPA & Chirped-pulse amplification\\
 FROG & Frequency resolved optical gating\\
 FWHM & Full width at half maximum\\
+IC & Imperial College\\
 ICS & Inverse Compton scattering\\
 LWFA & Laser wakefield acceleration\\
 LAD & Lorentz-Abraham-Dirac (equation)\\
 LCFA & Locally constant field approximation\\
 LL & Landau-Lifschitz (equation)\\
 OAP & Off-axis parabola\\
+PWFA & Plasma wakefield accleration\\
 QED & Quantum electrodynamics\\
 QUB & Queen's University Belfast\\
 RAL & Rutherford Appleton Laboratory\\
 RR & Radiation reaction\\
+SI & Internation System of Units\\
 (X)FEL & (X-ray) free-electron laser\\
 \hline
 \end{tabular}
@@ -97,6 +109,7 @@ RR & Radiation reaction\\
 \hline
 \textbf{Notation} & \textbf{Meaning} \\ \hline \hline
 \textbf{Bold} & Vector\\
+$()^t$ & Transposed Vector/Matrix\\
 $\langle ...\rangle$ & Average\\
 $\hbar$ & Reduced quantity, $h/2\pi$\\
 $\dot{x}$ & Time derivative of $x$\\
@@ -225,7 +238,7 @@ Integrating this with the initial condition $z(t=0) = z_0$
 where we identify the drift velocity $\beta c \left(1-\frac{r^2_\beta \omega^2_\beta}{4 c^2}\right)$ and in the moving frame the familiar figure-of-eight motion.
 \clearpage
 
-\section{Electron in a cylindrically symmetric electric field with axial field}
+\section[Elec. in a cylindrically symmetric E field with axial field]{Electron in a cylindrically symmetric electric field with axial field}
 
 Now we add a constant axial field in the longitudinal (direction of electron propagation) to the previous case. This comes closer to the reality of a laser wakefield accelerator where electrons experience radial focusing and axial accelerating fields at the same time. Significant parts of this derivation are based on \cite{WoodThesis,Glinec2008_BETATRON}.
 
@@ -302,12 +315,12 @@ The angularly integrated spectral intensity for synchrotron radiation is given b
 where $e$ is the electron charge, $\epsilon_0$ the dielectric constant and $c$ is the speed of light. $\gamma$ is the relativistic Lorentz factor of an electron. $K_{5/3}$ is a modified Bessel function of the second kind.
 $\omega_c$ is the characteristic or \textit{critical frequency} given by
 \begin{equation}
-\omega_c = \frac{3}{2} \gamma^3 \frac{c}{\rho},
+\omega_c = \frac{3}{2} \gamma^3 \frac{c}{r_L},
 \end{equation}
-where $\rho$ is the bending radius, e.g. the Larmor radius.
+where $r_L$ is the bending radius, e.g. the Larmor radius.
 The doubly differential spectral intensity reads
 \begin{equation}
-\frac{d^2 I}{dEd\Omega} = \frac{3e^2}{16\pi^3 \hbar c \epsilon_0} \gamma^2 \frac{\epsilon^2}{\epsilon_c^2} \left(1+\gamma^2 \theta^2\right)^2 [K_{2/3}^2(\psi) + \frac{\gamma^2 \theta^2}{1+\gamma^2 \theta^2} K_{1/3}^2 (\psi)],
+\frac{d^2 I}{d\epsilon d\Omega} = \frac{3e^2}{16\pi^3 \hbar c \epsilon_0} \gamma^2 \frac{\epsilon^2}{\epsilon_c^2} \left(1+\gamma^2 \theta^2\right)^2 [K_{2/3}^2(\psi) + \frac{\gamma^2 \theta^2}{1+\gamma^2 \theta^2} K_{1/3}^2 (\psi)],
 \end{equation}
 with
 \begin{equation}
@@ -713,9 +726,9 @@ where $c$ is the speed of light, $e$ is the electron charge, $m_e$ its mass, $\m
 
 The stochastic operator, $S$, in Section \ref{Theory:Sec:Signatures} is given by \cite{Ridgers2017_QRR}
 \begin{equation}
-S(\eta) = \frac{55 \alpha c}{24 \sqrt{3} \bar{\lambda}_c} m^2_e c^4 \eta^4 g_2(\eta),,
+S(\eta) = \frac{55 \alpha c}{24 \sqrt{3} \bar{\lambda}_c} m^2_e c^4 \eta^4 g_2(\eta),
 \end{equation}
-where $\alpha$ is the fine-structure constant, $c$ the speed of light, $m_e$ the electron mass and $\bar{\lambda}_c$ is the Compton wavelength. $b = |\mathbf{E}_\perp + \mathbf{v}\times \mathbf{B}|/E_S$, i.e. the relative magnitude of the Lorentz force, and $E_S$ is the Schwinger field. $\eta$ is the quantum nonlinearity parameter. $g_2(\eta)$ is similarly defined as the Gaunt factor, $g$, (see Appendix \ref{Appendix:Sec:QuantumSynchrotron} in terms of the quantum synchrotron function, $F$, and the classical synchrotron function, $F_{cl}$:
+where $\alpha$ is the fine-structure constant, $c$ the speed of light, $m_e$ the electron mass and $\bar{\lambda}_c$ is the reduced Compton wavelength. $b = |\mathbf{E}_\perp + \mathbf{v}\times \mathbf{B}|/E_S$, i.e. the relative magnitude of the Lorentz force, and $E_S$ is the Schwinger field. $\eta$ is the quantum nonlinearity parameter. $g_2(\eta)$ is similarly defined as the Gaunt factor, $g$, (see Appendix \ref{Appendix:Sec:QuantumSynchrotron} in terms of the quantum synchrotron function, $F$, and the classical synchrotron function, $F_{cl}$:
 \begin{equation}
 g_2(\eta) = \frac{\int_0^{\eta/2} \chi F(\eta, \chi) \mathrm{d}\chi}{\int_0 \chi F_{cl}\left(\frac{4\chi}{3\eta^2}\right)} = \frac{144}{55 \pi \eta^4} \int_0^{\eta/2}\chi F(\eta,\chi) \mathrm{d}\chi. 
 \end{equation}
