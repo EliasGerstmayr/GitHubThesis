@@ -703,13 +703,13 @@ For a periodic motion or $\mathbf{\dot{v} \cdot v} = 0$ at $t = t_1$ and $t = t_
 \end{equation}
 so that we can identify the radiation reaction force, $\mathbf{F}_{rad}$, as
 \begin{equation}
-\mathbf{F}_{rad} = \frac{2}{3} \frac{e^2}{c^3}\mathbf{\ddot{v}} = m \tau \mathbf{\ddot{v}},
+\mathbf{F}_{rad} = \frac{e^2}{6 \pi \epsilon_0 c^3}\mathbf{\ddot{v}} = m \tau \mathbf{\ddot{v}},
 \end{equation}
 with the \textit{characteristic time}, $\tau$:
 \begin{equation}
 \tau =\frac{e^2}{6 \pi \epsilon_0 m c^3},
 \end{equation}
-which for electrons amounts to $\tau = 6.26 \times 10^{-24}\,\mathrm{s}$. A sudden force acting on a similar time scale as $\tau$ will result in a significant modification of the motion through radiative effects.
+which for electrons amounts to $\tau = 6 \times 10^{-24}\,\mathrm{s}$. A sudden force acting on a similar time scale as $\tau$ will result in a significant modification of the motion through radiative effects.
 The equation of motion then reads
 \begin{equation}
 m(\mathbf{\dot{v}}-\tau \mathbf{\ddot{v}}) = \mathbf{F}_{ext}.
@@ -754,7 +754,7 @@ In the Landau-Lifschitz model we can also find an analytic expression of the ene
 \frac{\Delta \gamma}{\gamma_0} = \frac{\sqrt{\pi/2}\tau_0 t_L \omega_0^2 \gamma_0 a_0^2}{1+\sqrt{\pi/2 \tau_0 t_L \omega_0^2 \gamma_0 a_0^2}},
 \label{Theory:eq:EnergyLoss_LLThomas}
 \end{equation}
-where $\tau_0 = 2 e^2/3m_e c^3 = 6.4 \times 10^{-24}\,\mathrm{s}$ is again the `characteristic time' for an electron, $t_L$ is the \textsc{fwhm} laser pulse duration, $\lambda$ the wavelength of the laser pulse, and $a_0$ is its normalised vector potential. This is valid if quantum effects are negligible, $\gamma_0 a_0 \ll m_e c^2/2\hbar \omega_0$ (Section \ref{Theory:Sec:RR:RegimesOfRR}). Strong radiation reaction effects are expected for $\gamma a^2_0 > (10 \sqrt{2\pi^3} \omega_0 \tau_0 \gamma_0)^{-1/2}$.
+where $\tau_0 = e^2/6 \pi \epsilon_0 m_e c^3 = 6 \times 10^{-24}\,\mathrm{s}$ is again the `characteristic time' for an electron, $t_L$ is the \textsc{fwhm} laser pulse duration, $\lambda$ the wavelength of the laser pulse, and $a_0$ is its normalised vector potential. This is valid if quantum effects are negligible, $\gamma_0 a_0 \ll m_e c^2/2\hbar \omega_0$ (Section \ref{Theory:Sec:RR:RegimesOfRR}). Strong radiation reaction effects are expected for $\gamma a^2_0 > (10 \sqrt{2\pi^3} \omega_0 \tau_0 \gamma_0)^{-1/2}$.
 \vspace{\baselineskip}
 
 Whilst this description is free from runaway solutions unlike the LAD equation, it violates in some cases energy conservation when considering abruptly changing fields, causing the energy loss to exceed the initial energy of the particle \cite{Baylis2002_LL}. Note also that all physical solutions of the LAD equation are also solutions of the LL description \cite{Spohn2000_RR}.
@@ -1028,7 +1028,7 @@ The differential cross section for the process is related to the bremsstrahlung 
 \begin{equation}
 \frac{d \sigma_{\gamma Z}}{dE_+}(\omega,x) = -\frac{1}{\hbar x^2}\frac{d\sigma_{eZ}}{d\omega}(-\omega,x),
 \end{equation}
-where $x = \hbar \omega / \epsilon_+$, the ratio of the initial photon to the final positron energy. The full cross section is given in Section \ref{Appendix:Sec:BetheHeitler}.
+where $x = \hbar \omega / \epsilon_+$, the ratio of the initial photon to the final positron energy. The full cross section is given in Appendix \ref{Appendix:Sec:BetheHeitler}.
 In the ultrarelativistic case the total cross section for a photon of energy $\omega$ to produce a pair is \cite{Bethe1954_BREMS,Davies1954_BREMSPAIR,Ruffini2010_PAIRSASTRO}
 \begin{equation}
 \sigma_{\gamma Z} = \frac{28}{9} Z^2 \alpha r^2_e \left(\ln\frac{2\omega}{m_e} - \frac{109}{42} - f(Z\alpha)\right),
@@ -1068,12 +1068,12 @@ Another interpretation of the Schwinger process is to understand it as an analog
 For a static field, $l_f \ll \lambda$, we can then find an analogue of the Keldysh parameter, $\gamma_K = \omega \sqrt{2mI_p}/eE$, where we then identify the electron rest mass as `ionisation potential' $I_p \sim mc^2$, such that $\gamma_K \sim 1/a_0$.
 In other words, by applying an electric field of strength $\sim E_S$ the virtual particles can tunnel out of the Dirac sea through the rest mass potential into real space. If we can understand the Schwinger process as tunnel ionisation, the nonlinear Breit-Wheeler process then becomes in this picture the analogue to multi-photon ionisation [see Figure \ref{Theory:Figs:Schwinger_FeynmanDiag} (left and centre)].
 
-The pair production rate, $R_{e^+e^-}$, is given by \cite{DiPiazza2012_ICS}
+The pair production rate, $R_{e^+e^-}$, scales as \cite{DiPiazza2012_ICS}
 \begin{equation}
-R_{e^+e^-} (\eta) = 
+R_{e^+e^-} (\eta) \propto 
 \begin{cases}
-m \eta^2 \exp\left(-\frac{\pi}{\eta}\right) \,\, & \eta \ll 1,\\
-m \eta^2 \,\,& \eta \gg 1,
+ \eta^2 \exp\left(-\frac{\pi}{\eta}\right) \,\, & \eta \ll 1,\\
+ \eta^2 \,\,& \eta \gg 1,
 \end{cases}
 \end{equation}
 where $\eta$ is again the quantum nonlinearity parameter indicating the magnitude of the electric field relative to the Schwinger field. The scalings of the production rate coincide for static \cite{Schwinger1951_VACPAIRS} and oscillating fields \cite{Brezin1970_VACPAIRS,Popov1971_VACPAIRS}, and resemble ionisation rates.

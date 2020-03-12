@@ -74,7 +74,7 @@ E &= \frac{e n_{e0}}{\epsilon_0} X.
 If we now consider a force based on this field, we immediately see that this is equivalent to the equation of motion of a harmonic oscillator: 
 
 \begin{equation}
-m_e \frac{\mathrm{d}^2 X}{\mathrm{d}t^2} = - \frac{e^2 n_e}{\epsilon_0} X = - \omega^2_p X,
+m_e \frac{\mathrm{d}^2 X}{\mathrm{d}t^2} = - \frac{e^2 n_{e0}}{\epsilon_0} X = - m_e \omega^2_p X,
 \end{equation}
 
 with the (plasma) frequency, $\omega_p$:
@@ -86,10 +86,10 @@ and the corresponding wavelength $\lambda_p = 2 \pi v_{ph}/\omega_p$, where $v_{
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{omegap_lambdap_density.pdf}
-\caption[Plasma frequency and wavelength as function of plasma density.]{Plasma frequency (blue) in Hz and wavelength (red) in micrometres as function of plasma density.}
+\caption[Plasma frequency and wavelength as function of plasma density.]{Plasma frequency (blue) in Hz and wavelength (red) in micrometres as function of plasma density assuming $v_{ph} = c$.}
 \label{Theory:Figs:PlasmaFreqLambdap}
 \end{figure}
-A typical regime wakefield accelerator in the context of this work operates at an electron density of around $10^{18}-10^{19}\,\mathrm{cm^{-3}}$. This corresponds to a plasma frequency of $(5.6 - 17.7) \times 10^{13} \,\mathrm{Hz}$ or a plasma wavelength of $\lambda_p \approx 33-10\,\mathrm{\mu m}$ (see Figure \ref{Theory:Figs:PlasmaFreqLambdap}).
+A typical wakefield accelerator in the context of this work operates at an electron density of around $10^{18}-10^{19}\,\mathrm{cm^{-3}}$. This corresponds to a plasma frequency of $(5.6 - 17.7) \times 10^{13} \,\mathrm{Hz}$ or a plasma wavelength of $\lambda_p \approx 33-10\,\mathrm{\mu m}$ for $v_{ph} = c$ (see Figure \ref{Theory:Figs:PlasmaFreqLambdap}).
 
 \subsection{Laser Propagation in Vacuum}
 \label{Chap:Theory:Sec:LaserInVac}
@@ -170,7 +170,7 @@ Consider a quasi-neutral plasma (charge density $\rho \approx 0$) with a current
 The acceleration of the electrons is due to the electric field of the wave, i.e. $\partial \mathbf{v}/\partial t = -e\mathbf{E}/m_e$. Now using the solution for a plane wave with $\mathbf{E} = \mathbf{E_0} \exp \left[i (\mathbf{k}\cdot\mathbf{r} - \omega t) \right]$ the dispersion relation is given by $\omega = c k \left[1-\left(\frac{\omega_p}{\omega}\right)^2\right]^{-1/2}$, and hence the group velocity $v_g$ and the phase velocity $v_p$ are given by:
 \begin{align}
 v_p &= \frac{\omega}{k} = \frac{c}{\sqrt{1-\left(\frac{\omega_p}{\omega}\right)^2}},\\
-v_g &= \frac{\partial\omega_L}{\partial k} = c \sqrt{1-\left(\frac{\omega_p}{\omega}\right)^2},
+v_g &= \frac{\partial\omega}{\partial k} = c \sqrt{1-\left(\frac{\omega_p}{\omega}\right)^2},
 \end{align}
 where $\omega$ is the frequency of the electromagnetic wave.
 At $\omega \ll \omega_p$ this the expression can be approximated by a Taylor series:
@@ -369,7 +369,7 @@ In order to trap electrons from the ambient plasma in the wakefield cavity, the 
 \begin{equation}
 \boxed{r_b \geq \frac{2c \sqrt{\ln (2\gamma^2_{ph}-1)}}{\omega_p },}
 \end{equation}
-where $\gamma_{ph} = \omega/\omega_p \approx \sqrt{n_c/(3n_e)}$ and $r_b$ is the radius of the plasma bubble. This is process is referred to as \textit{self-trapping} and triggering the injection of electrons into the cavity solely through the evolution of the laser pulse is called \textit{self-injection}.
+where $\gamma_{ph} = \omega/\omega_p \approx \sqrt{n_c/(3n_e)}$ and $r_b$ is the radius of the plasma bubble. This process is referred to as \textit{self-trapping} and triggering the injection of electrons into the cavity solely through the evolution of the laser pulse is called \textit{self-injection}.
 
 Based on the trapping condition above the minimum power required to reach self-injection, the self-injection threshold, is for the depletion-limited case estimated by \cite{Mangles2012_SELF}
 \begin{equation}
@@ -420,7 +420,7 @@ The dephasing length for the 3D bubble regime is given by \cite{Lu2007_3DWAKE}
 \begin{equation}
 \boxed{L_{dp} = \frac{2}{3}\frac{\omega^2}{\omega^2_p} r_b = \frac{4}{3}\frac{\omega^2}{\omega^2_p}\frac{\sqrt{a_0}}{k_p} \propto \sqrt{a_0} n^{-\frac{3}{2}}_e,}
 \end{equation}
-which is similar to the 1D linear case but using the bubble radius and considering the due to the etching reduced front velocity, $v_f$ (see Equation \eqref{Theory:Eqs:FrontVelocity}).
+which is similar to the 1D linear case but using the bubble radius and considering the due to the etching reduced front velocity, $v_f$ [see Equation \eqref{Theory:Eqs:FrontVelocity}].
 A higher plasma density reduces the front velocity of the laser pulse and the dephasing length.
 
 \subsection{Maximum Energy Gain}
