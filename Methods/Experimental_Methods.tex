@@ -240,7 +240,7 @@ In the colliding-pulse experiments discussed in Chapters \ref{Chap:linICS} and \
 \end{figure}
 
 The following analysis explicitly derives Equation 2 in \cite{Cole2018_RR} and is based on work by Jason Cole (Imperial College).
-We assume that the laser pulse travels through a plasma of electron density $n_e$ at the standard non-linear group velocity reduced by the etching velocity, $v_f \approx 1-\frac{3}{2}\frac{n_e}{n_c}$ (called front velocity in \cite{Decker1996_FV}), where $n_c$ is the critical density. Given a plasma of thickness $d$ the laser pulse of the scattering beam travels in the same time a distance  $d'=d c/v_f > d$.
+We assume that the laser pulse travels through a plasma of electron density $n_e$ at the standard non-linear group velocity reduced by the etching velocity, $v_f/c \approx 1-\frac{3}{2}\frac{n_e}{n_c}$ (called front velocity in \cite{Decker1996_FV}), where $n_c$ is the critical density. Given a plasma of thickness $d$ the laser pulse of the scattering beam travels in the same time a distance  $d'=d c/v_f > d$.
 Both laser pulses now meet at a distance $\delta z_1$ past the focal plane of the scattering beam (see Figure \ref{Methods:Figs:LaserElectronOffset_Sketch}, central row):
 \begin{equation}
 \delta z_1 = \frac{1}{2} \left[d \frac{c}{v_f} - d\right] = \frac{d}{2} \left[\left(1-\frac{3}{2} \frac{n_e}{n_c}\right)^{-1} -1\right] \approx \frac{d}{2}\left(1+\frac{3}{2} \frac{n_e}{n_c} -1\right) = \frac{3d}{4}\frac{n_e}{n_c}.
@@ -268,7 +268,7 @@ Under these assumptions the electron bunch and the scattering beam meet at $\del
 \boxed{\delta z = \frac{3d}{4} \frac{n_e}{n_c} + N \frac{\lambda_0}{2}\sqrt{\frac{n_c}{n_e}},}
 \label{Methods:Eqns:BeamLaser_Timing_deltaz}
 \end{equation}
-where in this context $d$ is the distance of the injection point from the front of the plasma. We can instead also determine, similarly as before, the temporal offset, $\Delta \tau$, relative to the vacuum laser-laser timing:
+where in this context $d$ is the distance of the injection point from the front of the plasma. We can instead also determine, similar as before, the temporal offset, $\Delta \tau$, relative to the vacuum laser-laser timing:
 \begin{equation}
 \boxed{\Delta \tau = \frac{2 \delta z}{c} = \frac{3 d}{2 c} \frac{n_e}{n_c} + N \frac{\lambda_0}{c} \sqrt{\frac{n_c}{n_e}},}
 \end{equation}
@@ -486,7 +486,7 @@ Figure \ref{Methods:Figs:Probe_Examples} (bottom) shows a shadowgram measured du
 \begin{figure}
 \centering
 \includegraphics[width=1.0\columnwidth]{MachZehnder_Comparison.png}
-\caption[Comparison of two Mach-Zehner interferometer geometries.]{Comparison of two Mach-Zehner (MZ) interferometer geometries. The laser beam (red) enters the sketch from the bottom and reaches the detector at the top. On its path it passes through a gas target (grey ring filled blue) in a vacuum chamber (grey box), where it images a plasma channel (blue-purple line). The pink circles indicate the respective beam properties on each arm. Left: Standard MZ setup. One propagates through the plasma, whereas the other beam bypasses it to act as reference. Both are fully overlapped to effect interference. Right: MZ setup used in the experiments at \textsc{Gemini}. A single beam passes through the plasma. The beam is then split up into two identical copies which are recombined with a spatial offset. Different regions of the beam act as reference and others as signal regions. Adapted from \cite{ColeThesis}.}
+\caption[Comparison of two Mach-Zehnder interferometer geometries.]{Comparison of two Mach-Zehnder (MZ) interferometer geometries. The laser beam (red) enters the sketch from the bottom and reaches the detector at the top. On its path it passes through a gas target (grey ring filled blue) in a vacuum chamber (grey box), where it images a plasma channel (blue-purple line). The pink circles indicate the respective beam properties on each arm. Left: Standard MZ setup. One propagates through the plasma, whereas the other beam bypasses it to act as reference. Both are fully overlapped to effect interference. Right: MZ setup used in the experiments at \textsc{Gemini}. A single beam passes through the plasma. The beam is then split up into two identical copies which are recombined with a spatial offset. Different regions of the beam act as reference and others as signal regions. Adapted from \cite{ColeThesis}.}
 \label{Methods:Figs:MachZehnderComparison}
 \end{figure}
 
@@ -522,7 +522,7 @@ An example of an interferometry measurement from an experiment performed at \tex
 In the LWFA experiments in this work the optical probe is split off the main wakefield driver beam by collecting the fraction of light that is transmitted through a highly reflective dielectric mirror. The transmitted light is telescoped down from $\sim 150\mm$, the beam diameter of the collimated main laser pulse, to about one inch using an $f/7$ off-axis parabola and a suitable lens. The final diameter is chosen based on the field of view required for the respective application. 
 
 The collimated probe beam is then following a beam path of the same length as the main beam to ensure that both arrive at the interaction point simultaneously. 
-The probe is send through the gas target at the interaction point and collects phase shifts encoding the density and its variation in the plasma. 
+The probe is sent through the gas target at the interaction point and collects phase shifts encoding the density and its variation in the plasma. 
 If the probe arrives before the main driver at the gas target, no plasma has been formed yet. If the probe arrives much later than the main beam the plasma channel it formed has expanded. 
 As a result, the density measured is not representative of the conditions the driver beam experienced and in turn does not describe the wakefield dynamics correctly either. A motorised linear stage can be used to add or remove beam path dynamically (delay stage) to adjust the relative arrival time of the probe and the main beam. 
 
@@ -548,7 +548,7 @@ The angular deflection of a particle in this case can be solved analytically usi
 \begin{figure}
 \centering
 \includegraphics[width=0.49\columnwidth]{elecspec_2.pdf}\includegraphics[width =0.49\columnwidth]{elecspec_3.pdf}
-\caption[Visualisation of an electron deflected in a homogeneous magnetic field.]{Left: Visualisation of an electron deflected in a homogeneous circular magnetic field (grey) with radius $r_b$. The larger (empty) circle indicates the Larmor radius, determining the electron trajectory (blue) from the point of entry into the field (A) to its exit point (B) resulting in a total deflection $\theta$. Right: Similar visualisation as on the left but considering two electrons entering the same field at different angles and positions. }
+\caption[Visualisation of an electron deflected in a homogeneous magnetic field.]{Left: Visualisation of an electron deflected in a homogeneous circular magnetic field (grey) with radius $r_b$. The larger (empty) circle indicates the Larmor radius, determining the electron trajectory (blue) from the point of entry into the field (A) to its exit point (B) resulting in a total deflection $\theta$. Right: Similar visualisation as on the left but considering three electrons entering the same field at different angles and positions. }
 \label{Methods:Figs:EspecAnalyticSketch}
 \end{figure}
 Since the sum of all angles in a triangle is $\pi$:
@@ -565,7 +565,7 @@ By combining these results and expressing this in quantities relevant in an expe
 \tan \frac{\theta}{2} &= \frac{r_b}{r_L},\nonumber\\
 &= \frac{e B r_b}{p_\perp},
 \end{align}
-which indicates that at a fixed magnetic field strength, $B$, and field region, $r_b$, the deflection angle, $\theta$, is larger for a lower particle momentum, $p_\perp$, the to the magnetic field lines perpendicular momentum component. 
+which indicates that at a fixed magnetic field strength, $B$, and field region, $r_b$, the deflection angle, $\theta$, is larger for a lower particle momentum, $p_\perp$, the momentum component perpendicular to the magnetic field lines. 
 In a typical LWFA experiment $p_\perp$ will be dominated by the component in the laser propagation axis, i.e. if the propagation axis were $z$, $|\mathbf{p_\perp}| \approx p_z$. 
 \vspace{\baselineskip}
 
