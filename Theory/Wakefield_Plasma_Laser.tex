@@ -113,6 +113,7 @@ For an an electric field $\mathbf{E} = \mathbf{E_0}(r,z) e^{i(kz-\omega t)}$ wit
 For an in $x$-direction linearly-polarised electric field moving in $z$ the solution is
 \begin{equation}
 \mathbf{E}(r,z,t) = E_0 \frac{w_0}{w(z)} \exp\left(-\frac{r^2}{w(z)^2}\right) \exp\left[-i(kz-\omega t)-i k\frac{r^2}{2 R(z)} + i \zeta (z)\right]\mathbf{\hat{x}}.
+\label{Equation:GaussianField}
 \end{equation}
 This family of solutions is referred to as Gaussian modes and the physical properties of the beam are captured in the different parameters of the wave function. The function $\mathbf{E}$ describes a beam converging from $z < 0$ at a size $w(z)$ onto a minimum at $z = 0$ achieving the highest field strengths, before diverging again for $z > 0$.
 \vspace{\baselineskip}
@@ -143,8 +144,8 @@ $R(z)$ is the radius of curvature of the wavefront
 \begin{equation}
 R(z) = z \left[1+\left(\frac{z_R}{z}\right)^2\right].
 \end{equation}
-The wavefront is strongly curved around the focus $z < z_R$ and flattens out for $z \gg z_R$. The difference in radii of curvature for beams with different Rayleigh length can be used in spatial interferometry applied in the context of synchronising two laser pulses in time.
-$\zeta$ is called the Guoy phase and is an additional phase term that changes signs once the Gaussian mode passes through its focus.
+The wavefront is strongly curved around the focus $z < z_R$ and flattens out for $z \gg z_R$ and at $z = 0$. The difference in radii of curvature for beams with different Rayleigh length can be used in spatial interferometry applied in the context of synchronising two laser pulses in time.
+$\zeta$, the final term in Equation \eqref{Equation:GaussianField}, is called the Guoy phase and is an additional phase term that changes signs once the Gaussian mode passes through its focus.
 
 When focusing a beam with an optic, for instance an off-axis parabola or spherical mirror, the ratio of the focal length, $f$, and the beam diameter, $d$, is a useful quantity that indicates how tightly a beam is focussed. It is called the f-number, $f_\# = f/d$, and is in shorthand typically written as $f/2$ for $f_\# = 2$, $f/40$ for $f_\# = 40$ and so on.
 Expressing some of the previous quantities in terms of the f-number gives

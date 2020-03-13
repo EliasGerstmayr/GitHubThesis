@@ -520,13 +520,13 @@ Assuming all $n$ photons have the same energy $\epsilon_i$ and are parallel to e
 \end{equation}
 including the effect of the mass increase $\left(m_e \rightarrow m^\ast_e = m_e \sqrt{1+a^2_0}\right)$ the energy of the radiation in the laboratory frame is then given by \cite{Esarey1993_NT}
 \begin{equation}
-\boxed{\epsilon_f \approx \frac{2 \gamma^2 (1- \cos \theta) n \epsilon_i}{1+a_0^2/2 + (\gamma \theta)^2},}
+\boxed{\epsilon_f \approx \frac{2 \gamma^2 (1- \cos \theta) n \epsilon_i}{1+a_0^2/2 + (\gamma \theta_0)^2},}
 \end{equation}
-where the contribution $(\gamma \theta)^2$ leads to a fall-off of the photon energy off-axis, so that it reaches $\epsilon_f/e$ at about $\theta \sim 1/\gamma$ and the emitted radiation is confined to a cone of that opening angle [see Figure \ref{Theory:Figs:ICS:Divergence_and_Redshift} (left)].
+where the contribution $(\gamma \theta_0)^2$ leads to a fall-off of the photon energy off-axis, so that it reaches $\epsilon_f/e$ at about $\theta_0 \sim 1/\gamma$ and the emitted radiation is confined to a cone of that opening angle [see Figure \ref{Theory:Figs:ICS:Divergence_and_Redshift} (left)].
 \begin{figure}
 \centering
 \includegraphics[width=.5\columnwidth]{ICS_Divergence_ElecEnergy.pdf}\includegraphics[width=.5\columnwidth]{ICS_Redshift_a0.pdf}
-\caption[Angular energy distribution as a function of electron energy and redshifting of radiation as a function of $a_0$.]{Left: Energy of the emitted radiation relative to the peak energy, $E_0$, as a function of the observation angle $\theta$ for different electron energies (legend). Right: Decrease in the peak photon energy (redshifting) relative to the peak photon energy in the limit $a_0 \rightarrow 0$ as a function of $a_0$ (right).}
+\caption[Angular energy distribution as a function of electron energy and redshifting of radiation as a function of $a_0$.]{Left: Energy of the emitted radiation relative to the peak energy, $E_0$, as a function of the observation angle $\theta_0$ for different electron energies (legend). Right: Decrease in the peak photon energy (redshifting) relative to the peak photon energy in the limit $a_0 \rightarrow 0$ as a function of $a_0$ (right).}
 \label{Theory:Figs:ICS:Divergence_and_Redshift}
 \end{figure}
 
@@ -811,7 +811,7 @@ The evolution of the average electron momentum interacting with a laser pulse, $
 where $\hat{\mathbf{p}}$ is the unit momentum vector and $c$ is the speed of light. The minus sign indicates that the average momentum decreases over time, i.e. the electrons lose energy equal to the radiated energy. 
 
 In a classical model the emission power is the Larmor power, $P_{cl}$, whereas the average emission power is reduced in the quantum description (see quantum synchrotron in Appendix \ref{Appendix:Sec:QuantumSynchrotron}) by the \textit{Gaunt factor}, $g$, i.e. $P_{q} = g P_{cl}$. 
-The Gaunt factor is analytically approximated by
+The Gaunt factor is analytically approximated by \cite{Baier1991_GAUNT}
 \begin{equation}
 g(\eta) = [1 + 4.8(1+\eta)\ln(1+1.7\eta) + 2.44\eta^2]^{-2/3},
 \end{equation}
