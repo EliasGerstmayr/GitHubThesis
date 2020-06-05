@@ -364,8 +364,8 @@ We will also assume that the peak of the distribution is centred on the collimat
 We then integrate in both dimensions up to a transverse cut-off at $11.11\,\mathrm{mrad}$, assuming that any radiation beyond this angle is terminated efficiently by the collimator. 
 Figure \ref{BW:fig:abs_transmission} shows the transmitted gamma yield estimated this way. 
 Similarly as before, the low-density accelerator achieves a higher yield as the high density configuration, which has a lower initial yield and higher divergence. 
-In general, thicker targets still transmit a higher yield of gamma rays than their thinner counterparts of the same material. 
-The highest transmitted yield is achieved using bismuth of thickness $d = 1\,\mathrm{mm}$, followed by tungsten of $d = 4\,\mathrm{mm}$. 
+In general, thicker targets still produce a higher yield of gamma rays that is transmitted through the collimator than their thinner counterparts of the same material. 
+The highest yield after the collimator is achieved using bismuth of thickness $d = 1\,\mathrm{mm}$, followed by tungsten of $d = 4\,\mathrm{mm}$. 
 Based on this bismuth of $d = 1\,\mathrm{mm}$ in a low density configuration of the accelerator seems to be the most suitable choice for the bremsstrahlung source as the highest yield is transported to the interaction point.
 
 \begin{figure}
@@ -492,7 +492,9 @@ The spectrometer also provides the on-shot yield of the radiation, which is line
 In order to quantify the variation in performance for the shot days nonetheless, we will rely on the characterisation of the electron beams presented in Section \ref{BW:sec:Espec}. 
 The reference electron spectra for each shot day are used to simulate the corresponding gamma spectra in GEANT4 and, using in turn these simulated spectra, an average gamma spectrum is determined for each day (see Figure \ref{BW:fig:GSpec_AverageSpecVariations}). 
 As the average electron spectra are representative of the performance of the accelerator on that day, the simulated gamma spectra will also, within limits, reflect the performance of the bremsstrahlung source. It should, however, be noted that this does not capture changes in performance throughout the process of data taking and that this link becomes less reliable the more the characterisation of the electron source and a particular data shot are separated in time. 
-However, the response measured by the gamma spectrometer in the experiment did not change shape measurably over the course of the days, which suggests that the mean energy of the radiation remained stable. 
+However, the experimental response of the gamma spectrometer did not change shape measurably over the course of the relevant shot days. 
+This suggests that the mean energy, dominated by the large number of photons at low energies, remained stable. 
+On the other hand, this is by itself not sufficient to determine whether the same holds for the full spectral shape, in particular in the high energy tail and at low photon numbers. 
 %The spectra in Figure \ref{BW:fig:GSpec_AverageSpecVariations} were scaled relative to each other to reflect the proportionality of the experimentally measured yield of gamma-rays on the respective shot days. 
 The simulated gamma spectra in Figure \ref{BW:fig:GSpec_AverageSpecVariations} for days \textsc{b} (purple) and \textsc{c} (green) are similar in spectral shape with a cut-off at a photon energy of just under $700\,\mathrm{MeV}$ and $600\,\mathrm{MeV}$, respectively. 
 On day \textsc{a} (blue), the electron spectra reached on average higher maximum energies, which results in producing the highest energy photons of up to $800\,\mathrm{MeV}$. The average radiation yield measured experimentally (see Figure \ref{BW:fig:GSpec_Variations}, left) and the proportion of photons above $400\,\mathrm{MeV}$ (right) was also the highest on day \textsc{a} (blue), followed by \textsc{b} (purple) and \textsc{c} (green).

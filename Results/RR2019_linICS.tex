@@ -232,12 +232,12 @@ where $\theta$ is the angle between the electron and the incoming photon, $a_0$ 
 
 The electron beams shown in Section \ref{Chap:linICS:sec:Espec} were collided with a laser pulse at an intensity of $a_0 \sim 0.28$, as estimated in the previous section (Section \ref{Chap:linICS:Sec:RasterScan}). As $a_0 < 1$, we can ignore at first order the contribution of higher harmonic radiation and only consider the fundamental harmonic from linear inverse Compton scattering \cite{Esarey1993_NT}. Since $a^2_0 \ll 1$, we can also ignore the term $a^2_0/2$ in the denominator, which accounts for red-shifting of the radiation when the longitudinal component of the electron motion becomes significant (see Section \ref{Theory:Sec:SingleParticle:FigOfEight} for `figure-of-eight motion').
 
-\textsc{Gemini} has a central wavelength $800\,\mathrm{nm}$, with a corresponding photon energy, $\epsilon_{ph}=1.55\,\mathrm{eV}$. The bandwidth of the laser introduces a spread in the photon energy of $\Delta \epsilon_{ph} \sim 0.03\,\mathrm{eV}$ or $\Delta \epsilon_{ph}/\epsilon_{ph} < 2\%$, which we will ignore in the following.
+\textsc{Gemini} has a wavelength of $(800\pm15)\,\mathrm{nm}$ \cite{Galletti2016_GeminiBandwidth}, with a corresponding photon energy, $\epsilon_{ph}=(1.55\pm0.03)\,\mathrm{eV}$. The bandwidth of the laser introduces a spread in the photon energy of $\Delta \epsilon_{ph} \sim 0.06\,\mathrm{eV}$ or $\Delta \epsilon_{ph}/\epsilon_{ph} < 4\%$, which we will ignore in the following.
 
-For a beam focused by an $f/2$ optic, the angle between the outer rays, $\Delta \theta$, is up to 14.04 degrees which corresponds to a 3 percent spread in energy. Since the electron beam ($w_0 \sim \microns$) only interacts with a small fraction of the full beam with radius $r$, i.e. $\pi w^2_0/\pi r^2 \ll 1$, the rays in the interaction region are approximately collinear and this contribution can be ignored as well. A systematic shift of the radiation by 3 percent due to the relative pointing of the electron beam and the laser pulse within this solid angle is also negligible for our considerations ($\Delta \epsilon_X <1\MeV$ at $30\MeV$).
+For a beam focused by an $f/2$ optic, the angle between the outer rays and the central axis, $\Delta \theta$, is up to 14.48 degrees which corresponds to $<2$ percent spread in energy. Since the electron beam ($w_0 \sim \microns$) only interacts with a small fraction of the full beam with radius $r$, i.e. $\pi w^2_0/\pi r^2 \ll 1$, the rays in the interaction region are approximately collinear and this contribution can be ignored as well. A systematic shift of the radiation by 3 percent due to the relative pointing of the electron beam and the laser pulse within this solid angle is also negligible for our considerations ($\Delta \epsilon_X <1\MeV$ at $30\MeV$).
 
 In linear ICS, scattered photons will be emitted in a narrow cone of divergence $\sim 1/\gamma \ll 1$ \cite{Corde2013_Rad}.
-The observation angle, on the other hand, introduces a strong position-dependent modulation of the emitted energy within the emission cone as it is paired with the Lorentz factor, $\gamma$, in $(\theta_0 \gamma)^2$.
+The observation angle, on the other hand, introduces a strong position-dependent modulation of the emitted energy within the emission cone as it is paired with the Lorentz factor, $\gamma$, in $(\gamma\theta_0)^2$.
 
 Here, the electron beams are in most cases confined to a divergence cone of few milliradians. For a beam of divergence $4\,\mathrm{mrad}$, the difference introduced by the electron angles in the $\cos\theta$ term, assuming a collimated light source, is less than $0.001\%$, which means that we can ignore a broadening of the spectrum from electron angles as well. The divergence is typically larger than the emission cone $1/\gamma$, such that the total emission loses its strong correlation of position and energy, but the modulation of all emission cones overlap and merge. As a result, we assume that the emission spectrum is on average homogeneously distributed over the profile, maybe with exception of the borders.
 
@@ -264,19 +264,28 @@ with a maximum energy of
 \label{linICS:Eqs:SimpleLinICSEX_MAX}
 \end{equation}
 
-Based on the simplified Equation \eqref{linICS:Eqs:SimpleLinICSEX_MAX} above, we then obtain a quadratic one-to-one mapping of the electron energy to a corresponding maximum gamma-ray energy (see Figure \ref{linICS:fig:ElecEToEgamma} (blue)). Overall, we will integrate Equation \eqref{linICS:Eqs:SimpleLinICSEX} over the observation angle, $\theta_0$, to obtain the full emission spectrum. 
+Based on the simplified Equation \eqref{linICS:Eqs:SimpleLinICSEX_MAX} above, we then obtain a quadratic one-to-one mapping of the electron energy to a corresponding maximum gamma-ray energy (see Figure \ref{linICS:fig:ElecEToEgamma} (blue)). 
+Overall, we will integrate Equation \eqref{linICS:Eqs:SimpleLinICSEX} over the observation angle, $\theta_0$, to obtain the full emission spectrum.
 \vspace{\baselineskip}
 
 \begin{figure}
 \centering
 \includegraphics[trim={1cm 0 1cm 0}, clip, width=1.0\columnwidth]{Example_Espec_ICS_V5.png}
 
-\includegraphics[trim={4cm 0 4cm 0}, clip, width=1.0\columnwidth]{Example_Espec_ICS_full_V1.png}
-\caption[Example of two electron spectra with the corresponding ICS spectra.]{Top: Example of two electron spectra integrated in the non-dispersion axis. The y-axis indicates the charge per MeV and the x-axis the electron energy in MeV. The spectra are normalised to their maximum y-value. The maximum gamma-ray energies corresponding to the electron energies, calculated using Equation \eqref{linICS:Eqs:SimpleLinICSEX_MAX}, are indicated in a second non-linear x-axis on the top. Bottom: Spectral intensity of ICS spectra per MeV as a function of the photon energy corresponding to electron spectra shown above (same line colours).}
+\includegraphics[trim={4cm 0 4cm 0}, clip, width=1.0\columnwidth]{Example_Espec_ICS_full_V2.png}
+\caption[Example of two electron spectra with the corresponding ICS spectra.]{Top: Example of two electron spectra integrated in the non-dispersion axis. The y-axis indicates the charge per MeV and the x-axis the electron energy in MeV. The spectra are normalised to their maximum y-value. The maximum gamma-ray energies corresponding to the electron energies, calculated using Equation \eqref{linICS:Eqs:SimpleLinICSEX_MAX}, are indicated in a second non-linear x-axis on the top. Bottom: Spectral intensity of ICS spectra per MeV as a function of the photon energy corresponding to electron spectra shown above (same line colours). The gamma spectra take into account the broadening due to the $(\gamma_0\theta)^2$ term in Equation \eqref{linICS:Eqs:SimpleLinICSEX} (solid), and the finite laser bandwidth and the divergence of the electron beam (dashed). The dotted lines show the gamma spectra for an interaction at the maximum angle between the laser rays and the electron beam, $\theta = 180^\circ \pm 14.48^\circ$, and include all previous broadening terms. We assumed $a_0 \ll 1$ for all spectra.}
 \label{linICS:fig:ElecEToEgamma_Examples}
 \end{figure}
 
-Since the properties of the electron beam vary strongly in this experiment, we also expect the spectrum of the radiation produced from linear ICS to reflect this behaviour. Here the cross section is independent of the electron energy \cite{Albert2016_APP}, such that the spectral shape of the electron beam is to some extent preserved in the gamma spectrum. Figure \ref{linICS:fig:ElecEToEgamma_Examples} shows two examples of electron spectra and the corresponding gamma-ray spectra calculated with Equation \ref{linICS:Eqs:SimpleLinICSEX}. The first electron beam is spectrally very broad (red) with significant spectral intensity spread from below the measurement threshold of $220\,\mathrm{MeV}$ up to $1200\,\mathrm{MeV}$, resulting in a gamma-ray spectrum spanning few to $35\,\mathrm{MeV}$ with a peak around $8\MeV$. The other beam (blue) is strongly peaked at just under $1.2\,\mathrm{GeV}$ with narrow energy spread of $< 10\%$, which has the potential to be converted into a gamma-ray spectrum peaked at $31\,\mathrm{MeV}$.
+Since the properties of the electron beam vary strongly in this experiment, we also expect the spectrum of the radiation produced from linear ICS to reflect this behaviour. 
+Here the cross section is independent of the electron energy \cite{Albert2016_APP}, such that the spectral shape of the electron beam is to some extent preserved in the gamma spectrum. 
+Figure \ref{linICS:fig:ElecEToEgamma_Examples} shows two examples of electron spectra (top) and the corresponding gamma-ray spectra calculated with Equation \ref{linICS:Eqs:SimpleLinICSEX} (bottom). 
+The first electron beam is spectrally very broad (red) with significant spectral intensity spread from below the measurement threshold of $220\,\mathrm{MeV}$ up to $1200\,\mathrm{MeV}$, resulting in a gamma-ray spectrum spanning few to $35\,\mathrm{MeV}$ with a peak around $8\MeV$. 
+The other beam (blue) is strongly peaked at just under $1.2\,\mathrm{GeV}$ with narrow energy spread of $< 10\%$, which has the potential to be converted into a gamma-ray spectrum peaked at $31\,\mathrm{MeV}$.
+The dashed and dottes lines in Figure \ref{linICS:fig:ElecEToEgamma_Examples} (bottom) indicate that the accuracy of the calculated gamma spectra would be improved by including additional broadening effects. 
+However, the differences are small and the leading order effect remains the $(\gamma_0\theta)^2$ term in Equation \eqref{linICS:Eqs:SimpleLinICSEX}.
+We expect significant deviations due to redshifting and higher harmonic radiation once $a_0\rightarrow 1$.
+
 
 \section{Number of scattered photons}
 \label{Chap:linICS:Sec:Nphotons}
@@ -303,7 +312,8 @@ N_{ph} = \left[\frac{\epsilon_J}{\epsilon_{ph}} \frac{\pi w^2_0}{\pi r^2}\right]
 \label{Chap:linICS:Eqn:Nph_subst}
 \end{equation}
 where $r$ is the full radius of the laser beam at the plane of the interaction.
-Note that $\epsilon_J$ is the total energy in the laser pulse measured on-shot, neglecting the reduction due to the hole in the OAP, since this does not affect the local photon density in the near field of the laser pulse.
+Note that $\epsilon_J$ is the total energy in the laser pulse measured on-shot.
+This neglects the reduction due to the hole in the OAP, since this does not affect the local photon density of the laser pulse far away from the focal plane and sufficiently far away from the hole in the beam.
 We then obtain for the number of scattered photons, $N_X$:
 \begin{align}
 N_X &= \frac{\sigma_T}{\pi w^2_0} \left[\frac{\epsilon_J}{\epsilon_{ph}} \frac{\pi w^2_0}{\pi r^2}\right] \left[\frac{Q}{e}\right],\\ \nonumber
@@ -550,8 +560,8 @@ We will in the following explore the feasibility of this diagnostic.
 \subsection{Resolving spatial features}
 \begin{figure}
 \centering
-\includegraphics[trim={6cm 2cm 6cm 2cm}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_V5.png}
-\caption[Montage of electron spectra and corresponding gamma profile measurements.]{Montage of electron spectra and corresponding gamma profile measurements (on their right side) for a selection of shots. The axes for the gamma profile screens show the horizontal (x-axis) and vertical (y-axis) divergence. The axes for the electron spectrometer images are the vertical divergence (y-axis) and the electron energy (x-axis). The colour scale is proportional to the energy deposited in the gamma profile screen per $mrad^2$, and to the charge of the electron beam per $mrad \times MeV$. The lineouts on the x- and y-axes are the 2D images projected onto that respective axis. The maximum height of the lineouts changes for each image.}
+\includegraphics[trim={6cm 2cm 6cm 2cm}, clip, width=1.0\columnwidth]{linICS_LaserWire_Examples_V6.png}
+\caption[Montage of electron spectra and corresponding gamma profile measurements.]{Montage of electron spectra and corresponding gamma profile measurements (on their right side) for a selection of shots. The axes for the gamma profile screens show the horizontal (x-axis) and vertical (y-axis) divergence. The axes for the electron spectrometer images are the vertical divergence (y-axis) and the electron energy (x-axis). The colour scale is proportional to the energy deposited in the gamma profile screen per $mrad^2$, and to the charge of the electron beam per $mrad \times MeV$. The lineouts on the x- and y-axes are the 2D images projected onto that respective axis. The maximum height of the lineouts changes for each image. Note that electron and gamma pointing deviate from each other in some instances (see Section \ref{Chap:linICS:Sec:ICS_EbeamDiag:Subsec:Pointing}).}
 \label{linICS:Figs:LaserWireExamples_Montage}
 \end{figure}
 
@@ -584,7 +594,7 @@ The example on the top right shows an electron beam that is tilted in the vertic
  \hfill
 \begin{minipage}[t]{.45\textwidth}
 \centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_20190208r015s212_V2.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_20190208r015s212_V3.png}
 
 \includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.95\columnwidth]{GammaProfile_Espec_IntensityEdep_20190208r015s212.png}
 \caption[Electron spectrometer and gamma profile measurements of an electron beam with narrow energy spread and small off-axis features.]{Electron spectrometer (top right) and gamma profile measurements (top left) of an electron beam with narrow energy spread and small off-axis features. Bottom: Projected y-lineouts of the electron spectrometer (blue), corrected for the relative energy deposited by radiation related to that electron energy (red), the gamma profile signal (yellow) and its spatial inversion (purple).}
@@ -642,10 +652,11 @@ The data is, however, too ambiguous and sparse to provide conclusive evidence.
 Despite some discrepancy on some of these examples, this section showed that the gamma profile reproduces features in the electron beam, including their relative signal strength and spatial separation. We have also seen that the profile measurement can give further insight into the spatial arrangement of the electron beam that are not visible on the spectrometer screen.
 
 \subsection{Beam Pointing}
+\label{Chap:linICS:Sec:ICS_EbeamDiag:Subsec:Pointing}
 
 \begin{figure}
 \centering
-\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Espec_GP_Pointing.png}
+\includegraphics[trim={4.8cm 0 5cm 0}, clip, width=0.9\columnwidth]{linICS_Espec_GP_Pointing_V2.png}
 \caption[Vertical beam pointing of the gamma beam and the electron beam.]{Vertical beam pointing (position of the beam centroid) in mrad measured on the gamma profile screen as function of the relative beam pointing of the electron beam. The observables do not show any significant correlation at a correlation coefficient of -0.15.}
 \label{linICS:Figs:Pointing}
 \end{figure}
@@ -665,10 +676,10 @@ The profile screen measures the size of the radiation cone at the plane of the d
 where $d$ is the distance from the source to the detector plane, $\sigma_S$ is the source size and $\theta_f$ is the divergence of the emission cone. The contribution of the source size, $\sigma_S$, is negligible, i.e. $\theta_f d \gg \sigma_S$, since $d \sim \mathrm{m}$ and $\theta \sim \mathrm{mrad}$ but $\sigma_S \sim \mathrm{\upmu m}$. As a consequence, the profile screen measures effectively the divergence of the radiation cone, $\theta_f$.
 
 The divergence of the full gamma ray beam, $\theta_f$, incorporates the divergence of the electron bunch, $\theta_e$, and the gamma emission cones around each individual electron, $\theta_\gamma$:
-\begin{equation}
-\theta_f = \sqrt{\theta^2_e + \theta^2_\gamma},
-\label{linICS:Eqn:DivergenceTheta_f}
-\end{equation}
+\begin{align}
+\theta_f &= \sqrt{\theta^2_e + \theta^2_\gamma},\label{linICS:Eqn:DivergenceTheta_f}\\
+\Rightarrow \theta_\gamma &= \sqrt{\theta^2_f - \theta^2_e}, \label{linICS:Eqn:DivergenceTheta_gamma}
+\end{align}
 where the $\theta_\gamma \sim 1/\gamma$, i.e. radiation from linear ICS is emitted in a narrow cone of divergence $\sim 1/\gamma$. $\gamma$ is the relativistic Lorentz factor of the electrons. 
 Within an electron beam, the divergence, $\theta_e$, and charge distribution might vary with electron energy, which we will ignore for now and instead consider the profile of the full electron beam integrated over all energies.
 We also assume that the laser pulse interacts with the entire electron bunch.
@@ -676,8 +687,8 @@ If $\theta_\gamma \ll \theta_e$, then the divergence of the total emitted radiat
 
 \begin{figure}
 \centering
-\includegraphics[trim={3cm 0 5cm 0}, clip, width=0.5\columnwidth]{linICS_FWHM_Y_Espec_GP_V5.png}\includegraphics[trim={3cm 0 5cm 0}, clip, width=0.5\columnwidth]{linICS_FWHM_XY_V1.png}
-\caption[\textsc{fwhm} divergences of the gamma profile and electron beam.]{\textsc{fwhm} divergences of the gamma profile and electron beam. Left: Vertical divergence of the gamma profile, $\theta_{f,y}$, as a function of the vertical divergence measured on the electron spectrometer screen, $\theta_{e,y}$. The dashed line indicates $\theta_{f,y} = \theta_{e,y}$. Right: Vertical divergence, $\theta_y$, as a function of horizontal divergence, $\theta_x$, for the full gamma profile, $\theta_f$ (purple), the contribution of the gamma emission cone, $\theta_\gamma$ (yellow), and the electron divergence, $\theta_e$ (blue). The dashed line indicates $\theta_{y} = \theta_{x}$.}
+\includegraphics[trim={3cm 0 5cm 0}, clip, width=0.5\columnwidth]{linICS_FWHM_Y_Espec_GP_V6.png}\includegraphics[trim={3cm 0 5cm 0}, clip, width=0.5\columnwidth]{linICS_FWHM_XY_V2.png}
+\caption[\textsc{fwhm} divergences of the gamma profile and electron beam.]{\textsc{fwhm} divergences of the gamma profile and electron beam. Left: Vertical divergence of the gamma profile, $\theta_{f,y}$, as a function of the vertical divergence measured on the electron spectrometer screen, $\theta_{e,y}$. The dashed line indicates $\theta_{f,y} = \theta_{e,y}$. Right: Vertical divergence, $\theta_y$, as a function of horizontal divergence, $\theta_x$, for the full gamma profile, $\theta_f$ (purple), the contribution of the gamma emission cone, $\theta_\gamma$ (yellow, using Equation \eqref{linICS:Eqn:DivergenceTheta_gamma}), and the electron divergence, $\theta_e$ (blue). The dashed line indicates $\theta_{y} = \theta_{x}$.}
 \label{linICS:Figs:ICS_Espec_Divergence}
 \end{figure}
 
@@ -698,8 +709,8 @@ This could either be due to integrating over the entire spectrum, missing a larg
 Figure \ref{linICS:Figs:ICS_Espec_Divergence} (right) shows the measured and calculated divergences in the $x-y$ plane, where only divergences with real values are shown. 
 The values for the full divergence, $\theta_f$ (purple), are mostly larger than the electron divergences, $\theta_e$ (blue), as expected by this selection. 
 The scatter around the dotted axis indicates non-symmetric beams, i.e. for which $\theta_x \neq \theta_y$. The average electron divergences are $\langle \theta_{e,y} \rangle = 2.14 \pm 0.65\mrad$ (measured) and $\langle \theta_{e,x} \rangle = 2.52 \pm 1.13\mrad$ (inferred). 
-The values for $\theta_\gamma$ (yellow) are on the dashed line where $\theta_x = \theta_y$ as we assumed symmetry. 
-$\theta_\gamma$ varies strongly from shot to shot from $\theta_\gamma < 1\mrad$ to $>6\mrad$, which is either related to the strong fluctuations in the electron spectrum or it simply absorbs the potential change in the electron divergence after the interaction.
+The values for $\theta_\gamma$ (yellow), calculated using Equation \eqref{linICS:Eqn:DivergenceTheta_gamma}, lie on the dashed line where $\theta_x = \theta_y$ as we assumed symmetry. 
+$\theta_\gamma$ varies strongly from shot to shot from $\theta_\gamma < 1\mrad$ to $>6\mrad$, which is either related to the strong fluctuations in the electron spectrum or it simply absorbs the potential change in the electron divergence after the interaction, i.e. does not represent the actual value of $\theta_\gamma$.
 The discrepancies in some parts of this dataset should be investigated in a future measurement. 
 
 \begin{figure}
@@ -724,7 +735,7 @@ A value of unity indicates that the beam is symmetric.
 If $\theta_\gamma \ll \theta_e$, then $f_\gamma \approx f_e$, and we can obtain the ellipticity of the electron beam directly from the gamma profile measurement. 
 The results shown in Figure \ref{linICS:Figs:ICS_Espec_Divergence} suggest that this might not always be the case, but this has to be investigated in more detail. 
 Figure \ref{linICS:Figs:EllipticityGamma} shows the ellipticities of the full gamma-ray beam (using only measured quantities), $f_f$ (purple), and the inferred values for the electron beam, $f_e$ (blue). 
-The median value for the gamma-ray beam is $0.97(+0.22/\!-0.11)$ which indicates symmetry on average. 
+The median value for the gamma-ray beam is $0.97(+0.22/\!-0.11)$ which indicates on average symmetry. 
 The deviations reach up to 0.5 and 2, which correspond to an elliptical beam where the long axis is twice the size of the short axis. 
 The electron beam, on the other hand, has a median value of $0.81(+0.2/\!-0.12)$ which indicates a slight asymmetry of the beam on average.  
 However, considering the inconsistencies in some parts of the dataset, the values might not be reliable for all shots.
@@ -847,7 +858,9 @@ The radiation was used to diagnose the properties of the laser pulse and the ele
 
 In Section \ref{Chap:linICS:Sec:RasterScan}, it was demonstrated that by translating the laser beam relative to the fixed electron beam axis (raster scan or spatial correlation technique), we can infer the diameter of the laser pulse and, as a result, determine the plane of the interaction relative to the focus and the intensity of the laser pulse at the interaction.
 
-In Section \ref{Chap:linICS:Sec:YieldBeamSize}, on the other hand, the radiation yield measured on the gamma profile diagnostic was used to infer the diameter and intensity of the laser pulse at the interaction in a single shot. 
+In Section \ref{Chap:linICS:Sec:YieldBeamSize}, on the other hand, the radiation yield measured on the gamma profile diagnostic was used to infer the diameter and intensity of the laser pulse at the interaction in a single shot.  
+Future measurements would be improved by performing interactions in vacuum instead of plasma and by including additional broadening effects in the modelling of the gamma spectra, in particular redshifting and higher harmonics when $a_0 \rightarrow 1$.
+
 Both techniques promise to become useful diagnostics in radiation reaction studies that facilitate high-intensity interactions systematically by measuring the spatio-temporal synchronisation of the electron beam and the laser pulse, rather than fluctuations between two laser pulses that are characterised, for instance, using spectral interferometry.
 \vspace{\baselineskip}
 
